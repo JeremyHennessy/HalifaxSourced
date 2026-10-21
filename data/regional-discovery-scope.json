@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-10-21",
+  "completeCensus": false,
+  "boundaryRule": "Discovery envelopes are search windows, not municipal boundaries or proof of business location. Exact owner/civic evidence is required before admission.",
+  "osm": {
+    "accessState": "blocked_pending_access_review",
+    "reason": "Known Overpass denial retained; no network retry or alternate endpoint until materially changed access evidence is reviewed.",
+    "attribution": "\u00a9 OpenStreetMap contributors, ODbL; preserve object URLs and original receipt dates.",
+    "maximumAreasPerRun": 1,
+    "areas": [
+      {
+        "id": "urban-core",
+        "name": "Retained Halifax and Dartmouth core",
+        "bbox": {
+          "south": 44.575,
+          "west": -63.69,
+          "north": 44.705,
+          "east": -63.505
+        },
+        "receiptState": "retained_snapshot_not_refreshed"
+      },
+      {
+        "id": "bedford-west-bedford",
+        "name": "Bedford, West Bedford and Larry Uteck discovery envelope",
+        "bbox": {
+          "south": 44.685,
+          "west": -63.755,
+          "north": 44.775,
+          "east": -63.63
+        },
+        "receiptState": "planned_not_collected"
+      },
+      {
+        "id": "hammonds-upper-hammonds",
+        "name": "Hammonds Plains, Upper Hammonds Plains and Pockwock discovery envelope",
+        "bbox": {
+          "south": 44.69,
+          "west": -63.9,
+          "north": 44.82,
+          "east": -63.73
+        },
+        "receiptState": "planned_not_collected"
+      }
+    ]
+  },
+  "inspections": {
+    "maximumCitiesPerRun": 3,
+    "sourceUrl": "https://novascotia.ca/nse/food-protection/reports/",
+    "batches": [
+      {
+        "id": "retained-core",
+        "cities": [
+          "Halifax",
+          "Dartmouth",
+          "Bedford"
+        ]
+      },
+      {
+        "id": "bedford-hammonds",
+        "cities": [
+          "Bedford",
+          "Hammonds Plains",
+          "Upper Hammonds Plains"
+        ]
+      },
+      {
+        "id": "sackville",
+        "cities": [
+          "Lower Sackville",
+          "Middle Sackville",
+          "Beaver Bank"
+        ]
+      },
+      {
+        "id": "northern",
+        "cities": [
+          "Waverley",
+          "Fall River",
+          "Wellington"
+        ]
+      },
+      {
+        "id": "eastern",
+        "cities": [
+          "Porters Lake",
+          "Musquodoboit Harbour",
+          "Sheet Harbour"
+        ]
+      },
+      {
+        "id": "western",
+        "cities": [
+          "Timberlea",
+          "Upper Tantallon",
+          "Hubbards"
+        ]
+      }
+    ]
+  },
+  "notes": [
+    "All regional batches remain candidate discovery, never automatic publication.",
+    "The old core north bound 44.705 excludes most Bedford and Hammonds Plains. Adding planned bounds does not enlarge the retained snapshot.",
+    "Hubbards and northern postal names require exact municipal boundary review; no tourism-region inference.",
+    "No YellowPages, Yelp, HappyCow, Discover Halifax or Meta adapter is activated by this manifest."
+  ]
+}

@@ -1,3 +1,4 @@
+import { sourceRunHealth } from './source-run-health.mjs';
 import { createHash } from 'node:crypto';
 
 // Observation/run clocks are receipts, not content changes. Expiry/start/end and
@@ -8,8 +9,9 @@ const processingClockPaths = new Set(['sanitizedAt', 'supplementalAt', 'manualAd
   'events.sourceFailure.attemptedAt', 'events.sourceFailure.previousGeneratedAt']);
 export function meaningfulValue(value, depth = 0, path = []) {
   if (Array.isArray(value)) return value.map(item => meaningfulValue(item, depth + 1, path));
+  if (path[0] === 'refreshObservations' && path.at(-1) === 'state' && ['changed','unchanged','refreshed'].includes(value)) return 'successful_observation';
   if (value && typeof value === 'object') return Object.fromEntries(Object.keys(value).sort()
-    .filter(key => !receiptKeys.has(key) && !(depth === 0 && key === 'range') && !processingClockPaths.has([...path, key].join('.')))
+    .filter(key => !(depth === 0 && key === 'runHealth') && !(path[0] === 'refreshObservations' && ['checkedAt','postsReceived','newOrChangedPosts'].includes(key)) && !receiptKeys.has(key) && !(depth === 0 && key === 'range') && !processingClockPaths.has([...path, key].join('.')))
     .map(key => [key, meaningfulValue(value[key], depth + 1, [...path, key])]));
   return value;
 }
@@ -101,7 +103,7 @@ export function sourceEntry({id, label, payload, path, targetHours, now, sourceC
     source.status = row.state || (typeof row.status === 'string' ? row.status : 'failed');
   }
   return {
-    id,label,path,targetHours,lastAttemptAt:unknownAttemptCount ? null : latest(attempts),
+    id,label,path,targetHours,runHealth:sourceRunHealth(payload),lastAttemptAt:unknownAttemptCount ? null : latest(attempts),
     latestRecordedAttemptAt:latest(attempts),unknownAttemptCount,lastSuccessfulObservationAt:observedAt,
     oldestSuccessfulObservationAt:oldestObservedAt,snapshotGeneratedAt:iso(payload.generatedAt),reviewedAt:null,
     reviewState:'accepted-input-in-release',publicationState:'included-in-this-release',sourceCommitSha,

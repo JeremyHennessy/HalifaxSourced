@@ -130,3 +130,8 @@ console.log('Update consistency regressions passed: complete-bundle semantic no-
 const dateOnlyHtml=context.renderUpdateLedger({deployment:{sourceCommitSha:"a"},updateLedger:{...ledger,reviewedBatches:[{id:"dated",reviewedAt:"2026-10-20",scope:"Recorded correction dates only"}]}});
 assert.match(dateOnlyHtml,/2026-10-20 \(date only\)/);
 assert.match(dateOnlyHtml, /<li>dated · 2026-10-20 \(date only\) · Recorded correction dates only<\/li>/);
+
+const receiptFirst={posts:[{postId:'one',observedAt:'2026-10-21T12:00:00Z'}],refreshObservations:[{sourceId:'one',attempted:true,state:'changed',checkedAt:'2026-10-21T12:00:00Z',postsReceived:1,newOrChangedPosts:1}],runHealth:{state:'success_fresh_data'}};
+const receiptRepeat={posts:[{postId:'one',observedAt:'2026-10-21T14:00:00Z'}],refreshObservations:[{sourceId:'one',attempted:true,state:'unchanged',checkedAt:'2026-10-21T14:00:00Z',postsReceived:1,newOrChangedPosts:0}],runHealth:{state:'success_no_change'}};
+assert.equal(hash(receiptFirst),hash(receiptRepeat),'Repeated content receipts cannot churn full release commits');
+assert.notEqual(hash(receiptFirst),hash({...receiptRepeat,failures:[{reason:'http_403',attempted:true}]}),'A new access failure remains meaningful');

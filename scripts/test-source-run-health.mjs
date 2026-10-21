@@ -1,0 +1,16 @@
+import assert from 'node:assert/strict';
+import { sourceRunHealth, contentFingerprint } from './lib/source-run-health.mjs';
+const receipt = {sourceId:'one',attempted:true,state:'unchanged',checkedAt:'2026-10-21T12:00:00Z',postsReceived:2,newOrChangedPosts:0};
+assert.equal(sourceRunHealth({posts:[{observedAt:'2026-01-01'}]}).state,'unknown');
+assert.equal(sourceRunHealth({profilesAttempted:0,profilesCompleted:0,posts:[{observedAt:'2026-01-01'}],failures:[{platform:'instagram',reason:'META_IG_USER_ID_missing'}]}).state,'no_access');
+assert.equal(sourceRunHealth({refreshObservations:[receipt]}).state,'success_no_change');
+assert.equal(sourceRunHealth({refreshObservations:[{...receipt,postsReceived:0}]}).state,'success_no_change');
+assert.equal(sourceRunHealth({refreshObservations:[{...receipt,state:'changed',newOrChangedPosts:1}]}).state,'success_fresh_data');
+assert.equal(sourceRunHealth({refreshObservations:[],failures:[{attempted:true,state:'failed',reason:'timeout'}]}).state,'failure');
+assert.equal(sourceRunHealth({refreshObservations:[receipt],failures:[{attempted:true,state:'failed',reason:'timeout'}]}).state,'partial_failure');
+assert.equal(sourceRunHealth({refreshObservations:[receipt],failures:[{attempted:false,state:'no_access',reason:'missing_credentials'}]}).state,'partial_failure');
+assert.equal(sourceRunHealth({profilesAttempted:0,profilesCompleted:0}).state,'not_attempted');
+const a={postUrl:'https://example.org/post',publishedAt:'2026-10-21',factCandidate:{observedAt:'2026-10-21T12:00:00Z',priceMentions:['$10']},signalMatches:{specials:['special']}};
+assert.equal(contentFingerprint(a),contentFingerprint({...a,factCandidate:{...a.factCandidate,observedAt:'2026-10-21T14:00:00Z'}}));
+assert.notEqual(contentFingerprint(a),contentFingerprint({...a,factCandidate:{...a.factCandidate,priceMentions:['$12']}}));
+console.log('Source collection states distinguish access, attempted failure, no change, changed facts and unknown legacy receipts.');

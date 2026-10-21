@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-21T13:13:57.324Z",
+  "generatedAt": "2026-10-21T15:19:03.053Z",
   "count": 75,
   "restaurants": [
     {
@@ -8274,14 +8274,82 @@
           "observation": "Not sufficiently verified in this bounded review; no inferred value published."
         },
         "hours": {
-          "status": "unknown",
+          "status": "verified",
+          "value": {
+            "monday": [
+              {
+                "open": "12:00",
+                "close": "22:00",
+                "overnight": false,
+                "sourceForm": "official_website_contact_widget_structured_hours"
+              }
+            ],
+            "tuesday": [
+              {
+                "open": "12:00",
+                "close": "22:00",
+                "overnight": false,
+                "sourceForm": "official_website_contact_widget_structured_hours"
+              }
+            ],
+            "wednesday": [
+              {
+                "open": "12:00",
+                "close": "22:00",
+                "overnight": false,
+                "sourceForm": "official_website_contact_widget_structured_hours"
+              }
+            ],
+            "thursday": [
+              {
+                "open": "12:00",
+                "close": "22:00",
+                "overnight": false,
+                "sourceForm": "official_website_contact_widget_structured_hours"
+              }
+            ],
+            "friday": [
+              {
+                "open": "11:00",
+                "close": "23:00",
+                "overnight": false,
+                "sourceForm": "official_website_contact_widget_structured_hours"
+              }
+            ],
+            "saturday": [
+              {
+                "open": "11:00",
+                "close": "23:00",
+                "overnight": false,
+                "sourceForm": "official_website_contact_widget_structured_hours"
+              }
+            ],
+            "sunday": [
+              {
+                "open": "12:00",
+                "close": "22:00",
+                "overnight": false,
+                "sourceForm": "official_website_contact_widget_structured_hours"
+              }
+            ]
+          },
           "sourceUrls": [
             "https://turkuazrestaurant.ca/",
-            "https://turkuazrestaurant.ca/about-us",
-            "https://turkuazrestaurant.ca/menu"
+            "https://img1.wsimg.com/blobby/go/79a24e76-4851-4cec-bb8c-4389200588ff/gpub/8e7b2625af52af6c/script.js"
           ],
-          "observedAt": "2026-10-21T13:10:10.538180+00:00",
-          "observation": "Not sufficiently verified in this bounded review; no inferred value published."
+          "observedAt": "2026-10-21T15:11:07.122697+00:00",
+          "observation": "Homepage-linked public contact widget structuredHours explicitly contains every weekday and 24-hour opening/closing times. Today-only homepage display is not extrapolated. Ordinary weekly service, no holiday assumption.",
+          "method": "owner_contact_widget_structured_hours",
+          "successfulSourceReceipts": [
+            {
+              "url": "https://img1.wsimg.com/blobby/go/79a24e76-4851-4cec-bb8c-4389200588ff/gpub/8e7b2625af52af6c/script.js",
+              "fetchedAt": "2026-10-21T15:11:07.122697+00:00",
+              "httpStatus": 200,
+              "sha256": "d5010204584c04ed537762fccfa3542bc639f9160d0426989b845074782dea76"
+            }
+          ],
+          "freshContentReceived": true,
+          "publishedText": "Mo-Th 12:00-22:00; Fr-Sa 11:00-23:00; Su 12:00-22:00"
         },
         "menu": {
           "status": "verified",
@@ -8378,11 +8446,11 @@
           "freshContentReceived": true
         }
       },
-      "openingHoursVerifiedAt": null,
+      "openingHoursVerifiedAt": "2026-10-21T15:11:07.122697+00:00",
       "hoursValidThrough": null,
-      "hoursScope": null,
+      "hoursScope": "restaurant",
       "website": "https://turkuazrestaurant.ca/",
-      "openingHours": null,
+      "openingHours": "Mo-Th 12:00-22:00; Fr-Sa 11:00-23:00; Su 12:00-22:00",
       "operatingStatus": "active",
       "operatingStatusEvidence": {
         "claim": "Official location page gives the precise address and telephone and offers restaurant dining and takeaway.",
@@ -8436,7 +8504,7 @@
       "discoveryReview": {
         "approvedByOverride": true,
         "sourceLeadObserved": false,
-        "reviewNote": "Only today’s dynamic hours are visible; no complete weekly schedule is inferred. Separate from Turkuaz Bistro on Washmill Lake Drive."
+        "reviewNote": "Only today’s dynamic hours are visible; no complete weekly schedule is inferred. Separate from Turkuaz Bistro on Washmill Lake Drive. Complete weekly hours now verified from owner-linked structured contact widget; earlier today-only display limitation resolved without guessing."
       }
     },
     {
@@ -10256,12 +10324,30 @@
       "fieldEvidence": {
         "coordinates": {
           "status": "unknown",
+          "value": null,
           "sourceUrls": [
             "https://www.alexandraspizza.com/locations/hammonds-plains-tantallon",
-            "https://www.alexandraspizza.com/our-story"
+            "https://verview.com/biz/9123002-alexandras-pizza-hammonds-plains-nova-scotia"
           ],
-          "observedAt": "2026-10-21T13:10:10.538180+00:00",
-          "observation": "Not sufficiently verified in this bounded review; no inferred value published."
+          "observedAt": "2026-10-21T15:17:32.743688+00:00",
+          "observation": "Owner Restaurant JSON-LD explicitly pairs1679 Hammonds Plains Rd with44.7544,-63.7855, but the exact-business directory pairs the same civic address with44.7331801,-63.7617245. Approximately3km discrepancy is material. Neither coordinate published until current exact civic/owner pin is independently reconciled. Directory map dates to2018, so it is conflict evidence, not a replacement pin.",
+          "method": "conflicting_explicit_coordinate_sources",
+          "successfulSourceReceipts": [
+            {
+              "url": "https://www.alexandraspizza.com/locations/hammonds-plains-tantallon",
+              "fetchedAt": "2026-10-21T13:05:16.962518+00:00",
+              "httpStatus": 200,
+              "sha256": "774292ede4aa5587ee6966f244da85748704c1467c8a1cbfddbe605c1ead24c4"
+            },
+            {
+              "url": "https://verview.com/biz/9123002-alexandras-pizza-hammonds-plains-nova-scotia",
+              "fetchedAt": "2026-10-21T15:17:32.743688+00:00",
+              "httpStatus": 200,
+              "sha256": "11bdc1fdc3041d719f5b2eeaa45b8fc7eba19c77d990e77ee122626d8ba57566"
+            }
+          ],
+          "freshContentReceived": true,
+          "disposition": "held_conflicting_coordinates"
         },
         "hours": {
           "status": "verified",
@@ -10396,7 +10482,7 @@
       "discoveryReview": {
         "approvedByOverride": true,
         "sourceLeadObserved": false,
-        "reviewNote": "Phone is centralized. Existing orphan Alexandra is South End, not this branch."
+        "reviewNote": "Phone is centralized. Existing orphan Alexandra is South End, not this branch. Coordinates remain unknown: owner JSON-LD and exact-address directory coordinates conflict by approximately 3 km. Neither candidate pin is published; independent location evidence is required."
       }
     },
     {

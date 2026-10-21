@@ -1,4 +1,5 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { contentFingerprint, sourceRunHealth } from "./lib/source-run-health.mjs";
 import { factOnlyPost } from "./lib/social-fact-candidates.mjs";
 
 const sourcePayload = JSON.parse(await readFile(new URL("../data/build/first-party-sources.json", import.meta.url), "utf8").catch(() => "{\"records\":[]}"));
@@ -9,6 +10,7 @@ const facebookToken = process.env.META_FB_ACCESS_TOKEN || "";
 const instagramToken = process.env.META_IG_ACCESS_TOKEN || facebookToken;
 const instagramUserId = process.env.META_IG_USER_ID || "";
 const profileLimit = Number(process.env.SOCIAL_PROFILE_LIMIT ?? 100);
+if (!Number.isInteger(profileLimit) || profileLimit < 0 || profileLimit > 200) throw new Error("SOCIAL_PROFILE_LIMIT must be an integer from 0 to 200 per platform");
 const postLimit = Math.min(25, Math.max(1, Number(process.env.SOCIAL_POST_LIMIT ?? 15)));
 const lookbackDays = Number(process.env.SOCIAL_LOOKBACK_DAYS ?? 60);
 const summaryChars = Math.max(120, Math.min(700, Number(process.env.SOCIAL_SUMMARY_CHARS ?? 420)));
@@ -84,6 +86,16 @@ const completedProfiles = new Set();
 const signals = [];
 const posts = [];
 const failures = [];
+const refreshObservations = [];
+const previousPosts = new Map((previousPayload.posts || []).map(post => [`${post.platform}|${post.restaurantId}|${post.postId}`, post]));
+function recordProfileReceipt(profile, startedAt, startPostCount) {
+  const received = posts.slice(startPostCount);
+  const newPosts = received.filter(post => {
+    const old = previousPosts.get(`${post.platform}|${post.restaurantId}|${post.postId}`);
+    return !old || contentFingerprint(old) !== contentFingerprint(post);
+  }).length;
+  refreshObservations.push({sourceId:`${profile.platform}|${profile.restaurantId}|${profile.normalizedHandle}`, restaurantId:profile.restaurantId, platform:profile.platform, attempted:true, checkedAt:new Date().toISOString(), lastAttemptAt:startedAt, state:newPosts ? "changed" : "unchanged", postsReceived:received.length, newOrChangedPosts:newPosts});
+}
 let profilesAttempted = 0;
 let postsObserved = 0;
 
@@ -91,6 +103,7 @@ if (facebookToken) {
   for (const profile of facebookTargets.targets.slice(0, profileLimit)) {
     if (delayMs > 0) await sleep(delayMs);
     profilesAttempted += 1;
+    const startedAt = new Date().toISOString(), startPostCount = posts.length;
     try {
       const page = await graphGet(profile.handle, { fields: "id,name,link" }, facebookToken);
       const pagePosts = await graphGet(`${page.id}/posts`, { fields: "id,message,created_time,permalink_url", limit: postLimit }, facebookToken);
@@ -124,18 +137,20 @@ if (facebookToken) {
         posts.push(record);
         if (Object.keys(matches).length) signals.push(record);
       }
+      recordProfileReceipt(profile, startedAt, startPostCount);
     } catch (error) {
-      failures.push({ restaurantId: profile.restaurantId, platform: "facebook", handle: profile.handle, reason: error.name === "TimeoutError" ? "timeout" : error.message });
+      failures.push({ sourceId:`facebook|${profile.restaurantId}|${profile.normalizedHandle}`, attempted:true, checkedAt:new Date().toISOString(), lastAttemptAt:startedAt, state:"failed", restaurantId: profile.restaurantId, platform: "facebook", handle: profile.handle, reason: error.name === "TimeoutError" ? "timeout" : error.message });
     }
   }
 } else {
-  failures.push({ platform: "facebook", reason: "META_FB_ACCESS_TOKEN_missing" });
+  failures.push({ attempted:false, state:"no_access", platform: "facebook", reason: "META_FB_ACCESS_TOKEN_missing" });
 }
 
 if (instagramToken && instagramUserId) {
   for (const profile of instagramTargets.targets.slice(0, profileLimit)) {
     if (delayMs > 0) await sleep(delayMs);
     profilesAttempted += 1;
+    const startedAt = new Date().toISOString(), startPostCount = posts.length;
     try {
       const fields = `business_discovery.username(${profile.handle}){id,name,username,website,media.limit(${postLimit}){id,caption,permalink,timestamp}}`;
       const body = await graphGet(instagramUserId, { fields }, instagramToken);
@@ -170,13 +185,14 @@ if (instagramToken && instagramUserId) {
         posts.push(record);
         if (Object.keys(matches).length) signals.push(record);
       }
+      recordProfileReceipt(profile, startedAt, startPostCount);
     } catch (error) {
-      failures.push({ restaurantId: profile.restaurantId, platform: "instagram", handle: profile.handle, reason: error.name === "TimeoutError" ? "timeout" : error.message });
+      failures.push({ sourceId:`instagram|${profile.restaurantId}|${profile.normalizedHandle}`, attempted:true, checkedAt:new Date().toISOString(), lastAttemptAt:startedAt, state:"failed", restaurantId: profile.restaurantId, platform: "instagram", handle: profile.handle, reason: error.name === "TimeoutError" ? "timeout" : error.message });
     }
   }
 } else {
-  if (!instagramToken) failures.push({ platform: "instagram", reason: "META_IG_ACCESS_TOKEN_or_META_FB_ACCESS_TOKEN_missing" });
-  if (!instagramUserId) failures.push({ platform: "instagram", reason: "META_IG_USER_ID_missing" });
+  if (!instagramToken) failures.push({ attempted:false, state:"no_access", platform: "instagram", reason: "META_IG_ACCESS_TOKEN_or_META_FB_ACCESS_TOKEN_missing" });
+  if (!instagramUserId) failures.push({ attempted:false, state:"no_access", platform: "instagram", reason: "META_IG_USER_ID_missing" });
 }
 
 // Failed or unattempted profiles do not erase history or invent fresh observations.
@@ -226,10 +242,13 @@ const output = {
   postsObserved,
   retainedPosts,
   profilesCompleted: completedProfiles.size,
+  refreshObservations,
   posts: uniquePosts,
   signals: uniqueSignals,
-  failures: failures.slice(0, 200)
+  failures
 };
+
+output.runHealth = sourceRunHealth(output);
 
 await mkdir(new URL("../data/build", import.meta.url), { recursive: true });
 await writeFile(new URL("../data/build/social-signals.json", import.meta.url), JSON.stringify(output, null, 2));

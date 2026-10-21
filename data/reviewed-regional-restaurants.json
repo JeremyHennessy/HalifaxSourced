@@ -7907,7 +7907,8 @@
         }
       ],
       "fieldCaveats": [
-        "Only today’s dynamic hours are visible; no complete weekly schedule is inferred. Separate from Turkuaz Bistro on Washmill Lake Drive."
+        "Only today’s dynamic hours are visible; no complete weekly schedule is inferred. Separate from Turkuaz Bistro on Washmill Lake Drive.",
+        "Complete weekly hours now verified from owner-linked structured contact widget; earlier today-only display limitation resolved without guessing."
       ],
       "publishedFields": {
         "id": "turkuaz-bedford",
@@ -7916,7 +7917,7 @@
         "website": "https://turkuazrestaurant.ca/",
         "phone": "902-405-5150",
         "coordinates": null,
-        "openingHours": null,
+        "openingHours": "Mo-Th 12:00-22:00; Fr-Sa 11:00-23:00; Su 12:00-22:00",
         "cuisines": [
           "Turkish",
           "Mediterranean"
@@ -7945,14 +7946,82 @@
             "observation": "Not sufficiently verified in this bounded review; no inferred value published."
           },
           "hours": {
-            "status": "unknown",
+            "status": "verified",
+            "value": {
+              "monday": [
+                {
+                  "open": "12:00",
+                  "close": "22:00",
+                  "overnight": false,
+                  "sourceForm": "official_website_contact_widget_structured_hours"
+                }
+              ],
+              "tuesday": [
+                {
+                  "open": "12:00",
+                  "close": "22:00",
+                  "overnight": false,
+                  "sourceForm": "official_website_contact_widget_structured_hours"
+                }
+              ],
+              "wednesday": [
+                {
+                  "open": "12:00",
+                  "close": "22:00",
+                  "overnight": false,
+                  "sourceForm": "official_website_contact_widget_structured_hours"
+                }
+              ],
+              "thursday": [
+                {
+                  "open": "12:00",
+                  "close": "22:00",
+                  "overnight": false,
+                  "sourceForm": "official_website_contact_widget_structured_hours"
+                }
+              ],
+              "friday": [
+                {
+                  "open": "11:00",
+                  "close": "23:00",
+                  "overnight": false,
+                  "sourceForm": "official_website_contact_widget_structured_hours"
+                }
+              ],
+              "saturday": [
+                {
+                  "open": "11:00",
+                  "close": "23:00",
+                  "overnight": false,
+                  "sourceForm": "official_website_contact_widget_structured_hours"
+                }
+              ],
+              "sunday": [
+                {
+                  "open": "12:00",
+                  "close": "22:00",
+                  "overnight": false,
+                  "sourceForm": "official_website_contact_widget_structured_hours"
+                }
+              ]
+            },
             "sourceUrls": [
               "https://turkuazrestaurant.ca/",
-              "https://turkuazrestaurant.ca/about-us",
-              "https://turkuazrestaurant.ca/menu"
+              "https://img1.wsimg.com/blobby/go/79a24e76-4851-4cec-bb8c-4389200588ff/gpub/8e7b2625af52af6c/script.js"
             ],
-            "observedAt": "2026-10-21T13:10:10.538180+00:00",
-            "observation": "Not sufficiently verified in this bounded review; no inferred value published."
+            "observedAt": "2026-10-21T15:11:07.122697+00:00",
+            "observation": "Homepage-linked public contact widget structuredHours explicitly contains every weekday and 24-hour opening/closing times. Today-only homepage display is not extrapolated. Ordinary weekly service, no holiday assumption.",
+            "method": "owner_contact_widget_structured_hours",
+            "successfulSourceReceipts": [
+              {
+                "url": "https://img1.wsimg.com/blobby/go/79a24e76-4851-4cec-bb8c-4389200588ff/gpub/8e7b2625af52af6c/script.js",
+                "fetchedAt": "2026-10-21T15:11:07.122697+00:00",
+                "httpStatus": 200,
+                "sha256": "d5010204584c04ed537762fccfa3542bc639f9160d0426989b845074782dea76"
+              }
+            ],
+            "freshContentReceived": true,
+            "publishedText": "Mo-Th 12:00-22:00; Fr-Sa 11:00-23:00; Su 12:00-22:00"
           },
           "menu": {
             "status": "verified",
@@ -8049,7 +8118,7 @@
             "freshContentReceived": true
           }
         },
-        "reviewNote": "Only today’s dynamic hours are visible; no complete weekly schedule is inferred. Separate from Turkuaz Bistro on Washmill Lake Drive.",
+        "reviewNote": "Only today’s dynamic hours are visible; no complete weekly schedule is inferred. Separate from Turkuaz Bistro on Washmill Lake Drive. Complete weekly hours now verified from owner-linked structured contact widget; earlier today-only display limitation resolved without guessing.",
         "operatingStatusEvidence": {
           "claim": "Official location page gives the precise address and telephone and offers restaurant dining and takeaway.",
           "sourceUrl": "https://turkuazrestaurant.ca/",
@@ -8090,7 +8159,10 @@
             "status": "verified",
             "observedAt": "2026-10-21T13:00:26.010166+00:00"
           }
-        ]
+        ],
+        "openingHoursVerifiedAt": "2026-10-21T15:11:07.122697+00:00",
+        "hoursScope": "restaurant",
+        "hoursValidThrough": null
       }
     },
     {
@@ -10156,7 +10228,8 @@
         }
       ],
       "fieldCaveats": [
-        "Phone is centralized. Existing orphan Alexandra is South End, not this branch."
+        "Phone is centralized. Existing orphan Alexandra is South End, not this branch.",
+        "Coordinates remain unknown: owner JSON-LD and exact-address directory coordinates conflict by approximately 3 km. Neither candidate pin is published; independent location evidence is required."
       ],
       "publishedFields": {
         "id": "alexandras-hammonds-plains",
@@ -10184,12 +10257,30 @@
         "fieldEvidence": {
           "coordinates": {
             "status": "unknown",
+            "value": null,
             "sourceUrls": [
               "https://www.alexandraspizza.com/locations/hammonds-plains-tantallon",
-              "https://www.alexandraspizza.com/our-story"
+              "https://verview.com/biz/9123002-alexandras-pizza-hammonds-plains-nova-scotia"
             ],
-            "observedAt": "2026-10-21T13:10:10.538180+00:00",
-            "observation": "Not sufficiently verified in this bounded review; no inferred value published."
+            "observedAt": "2026-10-21T15:17:32.743688+00:00",
+            "observation": "Owner Restaurant JSON-LD explicitly pairs1679 Hammonds Plains Rd with44.7544,-63.7855, but the exact-business directory pairs the same civic address with44.7331801,-63.7617245. Approximately3km discrepancy is material. Neither coordinate published until current exact civic/owner pin is independently reconciled. Directory map dates to2018, so it is conflict evidence, not a replacement pin.",
+            "method": "conflicting_explicit_coordinate_sources",
+            "successfulSourceReceipts": [
+              {
+                "url": "https://www.alexandraspizza.com/locations/hammonds-plains-tantallon",
+                "fetchedAt": "2026-10-21T13:05:16.962518+00:00",
+                "httpStatus": 200,
+                "sha256": "774292ede4aa5587ee6966f244da85748704c1467c8a1cbfddbe605c1ead24c4"
+              },
+              {
+                "url": "https://verview.com/biz/9123002-alexandras-pizza-hammonds-plains-nova-scotia",
+                "fetchedAt": "2026-10-21T15:17:32.743688+00:00",
+                "httpStatus": 200,
+                "sha256": "11bdc1fdc3041d719f5b2eeaa45b8fc7eba19c77d990e77ee122626d8ba57566"
+              }
+            ],
+            "freshContentReceived": true,
+            "disposition": "held_conflicting_coordinates"
           },
           "hours": {
             "status": "verified",
@@ -10274,7 +10365,7 @@
             "freshContentReceived": true
           }
         },
-        "reviewNote": "Phone is centralized. Existing orphan Alexandra is South End, not this branch.",
+        "reviewNote": "Phone is centralized. Existing orphan Alexandra is South End, not this branch. Coordinates remain unknown: owner JSON-LD and exact-address directory coordinates conflict by approximately 3 km. Neither candidate pin is published; independent location evidence is required.",
         "operatingStatusEvidence": {
           "claim": "Official branch page publishes exact civic address, takeout/delivery, hours and ordering.",
           "sourceUrl": "https://www.alexandraspizza.com/locations/hammonds-plains-tantallon",
@@ -10771,7 +10862,13 @@
       "sources": [
         "https://hongskitchen.com/Hongs-Limited-Menu-sm.pdf",
         "https://sackvillebusiness.com/shops-services/hongs-kitchen"
-      ]
+      ],
+      "latestReview": {
+        "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+        "disposition": "retain_hold",
+        "observation": "Owner PDF URL returned HTTP200 but redirected to cgi-sys/suspendedpage.cgi with Account Suspended HTML, not a PDF or fresh menu. BIA access returned403. No new qualified owner content received. Suspension does not prove business closure.",
+        "auditKey": "held-0cc8a2bc3a8c"
+      }
     },
     {
       "researchGroup": "sackville-south",
@@ -10781,7 +10878,13 @@
       "sources": [
         "https://www.mishoos.ca/",
         "https://novascotia.com/listing/mishoos-take-out/"
-      ]
+      ],
+      "latestReview": {
+        "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+        "disposition": "retain_hold",
+        "observation": "Prior owner-domain 403 respected, not retried. Provincial tourism page fetched successfully; that is corroboration, not a new first-party operation receipt.",
+        "auditKey": "held-39d6c8592f0e"
+      }
     },
     {
       "researchGroup": "coastal",
@@ -10789,7 +10892,13 @@
       "community": "Eastern Passage / Cow Bay corridor",
       "address": "388 Cow Bay Road, Eastern Passage, NS",
       "website": "https://cowbaypizza.com/",
-      "evidence": "Official site address, weekly hours and menu; https://www.skipthedishes.com/cow-bay-pizza-and-variety corroborates prepared food/address. Public Nova Scotia employer record identifies Cow Bay Variety Store Limited. Owner residency/current ownership not verified. Candidate for next batch; named business is not evidence of location in Cow Bay community proper."
+      "evidence": "Official site address, weekly hours and menu; https://www.skipthedishes.com/cow-bay-pizza-and-variety corroborates prepared food/address. Public Nova Scotia employer record identifies Cow Bay Variety Store Limited. Owner residency/current ownership not verified. Candidate for next batch; named business is not evidence of location in Cow Bay community proper.",
+      "latestReview": {
+        "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+        "disposition": "retain_hold",
+        "observation": "Fresh official homepage confirms 388 Cow Bay Road, current weekly schedule and menu navigation. It does not explicitly identify local current owners. No admission; retain ownership hold.",
+        "auditKey": "held-1796a1d6ebf8"
+      }
     },
     {
       "researchGroup": "coastal",
@@ -10797,7 +10906,13 @@
       "community": "Porters Lake",
       "address": "5228 Highway 7, Porters Lake, NS B3E 1J8",
       "website": "https://porterslakepub.ca/",
-      "evidence": "Official address, current weekly service and meal menu. Ownership not explicitly established in inspected pages."
+      "evidence": "Official address, current weekly service and meal menu. Ownership not explicitly established in inspected pages.",
+      "latestReview": {
+        "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+        "disposition": "retain_hold",
+        "observation": "Owner site returned 503. Earlier address/menu evidence is retained with its original observation, not relabeled fresh.",
+        "auditKey": "held-704a267ff938"
+      }
     },
     {
       "researchGroup": "coastal",
@@ -10805,7 +10920,13 @@
       "community": "East Lawrencetown",
       "address": "4144 Lawrencetown Road, East Lawrencetown, NS B2Z 1R1",
       "source": "https://novascotia.com/listing/lawrencetown-beach-cafe/",
-      "evidence": "Tourism confirms cafe, breakfast/lunch and year-round operation, but direct business social page not inspected. Historic Heron’s Nest Tearoom tenant references should not be treated as current."
+      "evidence": "Tourism confirms cafe, breakfast/lunch and year-round operation, but direct business social page not inspected. Historic Heron’s Nest Tearoom tenant references should not be treated as current.",
+      "latestReview": {
+        "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+        "disposition": "retain_hold",
+        "observation": "No new current first-party page verified. Preserve prior provincial tourism identity and year-round statement as directory evidence only.",
+        "auditKey": "held-dcf3b0cc83ed"
+      }
     },
     {
       "researchGroup": "northern",
@@ -10818,7 +10939,13 @@
         "https://www.thegooddaycafe.ca/menu",
         "https://www.fallriverbusiness.ca/showcase",
         "https://restaurantguru.com/Good-Day-Kitchen-and-Cafe-Fall-River-Nova-Scotia"
-      ]
+      ],
+      "latestReview": {
+        "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+        "disposition": "retain_hold",
+        "observation": "Owner homepage/menu freshly available with service hours; status conflict remains unresolved. Current BIA showcase page no longer exposes the prior owner item in visible text; do not refresh that historical owner evidence.",
+        "auditKey": "held-d89575e93b57"
+      }
     },
     {
       "researchGroup": "northern",
@@ -10830,7 +10957,13 @@
         "https://musquodoboitvalley.ca/reids-restaurant-bakery/",
         "https://www.facebook.com/p/Reids-Restaurant-Bakery-100057209599628/",
         "https://discoverhalifaxns.com/itineraries/hidden-waterfalls-of-halifax/"
-      ]
+      ],
+      "latestReview": {
+        "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+        "disposition": "retain_hold",
+        "observation": "Community association again describes a family restaurant, but no newly verified current first-party operation. Do not infer closed from lack of fresh evidence.",
+        "auditKey": "held-8dd0bbdc51b3"
+      }
     },
     {
       "researchGroup": "western",
@@ -10845,7 +10978,13 @@
         "https://peggyscoveregion.com/nova-scotia/things-to-do/?lid=46",
         "https://www.thecoast.ca/news-opinion/finer-dining-960942/"
       ],
-      "lifecycleNote": "Regional tourism describes year-round service. Homepage word Seasonal concerns its presentation/ingredients and is not adequate evidence of seasonal closure. Do not import historical owners as current."
+      "lifecycleNote": "Regional tourism describes year-round service. Homepage word Seasonal concerns its presentation/ingredients and is not adequate evidence of seasonal closure. Do not import historical owners as current.",
+      "latestReview": {
+        "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+        "disposition": "retain_hold",
+        "observation": "Fresh owner about/contact/menu pages support public restaurant at existing held address. About page does not resolve current ownership. Historic founders remain historical only.",
+        "auditKey": "held-d8744d54d373"
+      }
     },
     {
       "researchGroup": "western",
@@ -10858,7 +10997,13 @@
         "https://www.thelinksatbrunellorealestate.com/sales-management-team/management-team/",
         "https://www.foodbuy.ca/resource-center/articles/the-links-at-brunello/"
       ],
-      "lifecycleNote": "Official page lists kitchen hours; no season-end notice observed. Official footer conflicts between B3T 0J4 and B3T 0G9, so postcode withheld. Golf-course branding alone must not imply closed or members-only."
+      "lifecycleNote": "Official page lists kitchen hours; no season-end notice observed. Official footer conflicts between B3T 0J4 and B3T 0G9, so postcode withheld. Golf-course branding alone must not imply closed or members-only.",
+      "latestReview": {
+        "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+        "disposition": "retain_hold",
+        "observation": "Fresh official Nineteen page confirms kitchen service. Restaurant-operator relationship to development ownership remains unresolved; management source returned 403.",
+        "auditKey": "held-34ff6a17c172"
+      }
     },
     {
       "researchGroup": "western",
@@ -10870,7 +11015,13 @@
         "https://timberleabeverageroom.ca/",
         "https://rans.ca/restaurants/timberlea-beverage-room-22/"
       ],
-      "lifecycleNote": "No closure inference. Official own domain is preferable to duplicate s4shops mirrors."
+      "lifecycleNote": "No closure inference. Official own domain is preferable to duplicate s4shops mirrors.",
+      "latestReview": {
+        "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+        "disposition": "retain_hold",
+        "observation": "Current official site and RANS fetches failed (403 and 503). Prior service/address evidence retained. No independent local-ownership resolution.",
+        "auditKey": "held-cee8ddb84cc5"
+      }
     },
     {
       "researchGroup": "western",
@@ -10883,7 +11034,13 @@
         "https://www.granitespringsgolf.com/club-history",
         "https://themastheadnews.ca/wp-content/uploads/2021/03/2018_06_27.pdf"
       ],
-      "lifecycleNote": "Historical corporate operator is a verification warning, not proof of current ownership or closure."
+      "lifecycleNote": "Historical corporate operator is a verification warning, not proof of current ownership or closure.",
+      "latestReview": {
+        "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+        "disposition": "retain_hold",
+        "observation": "Fresh official club restaurant/history pages received, but no verified named current restaurant operator. Historical Chartwells reference remains a warning, not a current corporate conclusion.",
+        "auditKey": "held-b7c4c953f31e"
+      }
     },
     {
       "researchGroup": "western",
@@ -10894,7 +11051,13 @@
       "sources": [
         "https://gfeniyanos.wixsite.com/emileossnackbar"
       ],
-      "lifecycleNote": "Do not convert a stale menu into proof of current hours or assume closure."
+      "lifecycleNote": "Do not convert a stale menu into proof of current hours or assume closure.",
+      "latestReview": {
+        "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+        "disposition": "retain_hold",
+        "observation": "Fresh owner-style Wix page received. No verified dated current operation or current local-ownership proof added; do not treat stale menu artwork as fresh service.",
+        "auditKey": "held-676a733d8b89"
+      }
     },
     {
       "researchGroup": "western",
@@ -10905,7 +11068,13 @@
       "sources": [
         "https://bakersapron.ca/"
       ],
-      "lifecycleNote": "No closure inference. Corporate-directory director names were not treated as verified current beneficial ownership."
+      "lifecycleNote": "No closure inference. Corporate-directory director names were not treated as verified current beneficial ownership.",
+      "latestReview": {
+        "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+        "disposition": "retain_hold",
+        "observation": "Fresh official bakery homepage received. Ready-to-eat public cafe scope and current local ownership still not established by product listings alone.",
+        "auditKey": "held-3c671d6e5471"
+      }
     },
     {
       "researchGroup": "western",
@@ -10916,7 +11085,13 @@
         "https://www.allbiz.ca/lakeside-family-restaurant-902-876-7173",
         "https://openinformation.novascotia.ca/api/views/f3f7-h4mx/files/6d3bb00b-5629-468f-b7a2-c728efa1e759?filename=2016-02656-ENV_PublicPackage.pdf"
       ],
-      "lifecycleNote": "Directory presence is not current-operation proof; no permanent-closure conclusion."
+      "lifecycleNote": "Directory presence is not current-operation proof; no permanent-closure conclusion.",
+      "latestReview": {
+        "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+        "disposition": "retain_hold",
+        "observation": "No current owner source resolved. Historic inspection archive is not a current operation receipt; third-party directory returned 403.",
+        "auditKey": "held-b2f88957144d"
+      }
     },
     {
       "researchGroup": "valley",
@@ -10947,7 +11122,13 @@
         "A locally owned convenience store operating a regional pizza franchise is not automatically an independent restaurant under the preserved project scope.",
         "Do not turn a negative chain-blocklist result into proof of local independent ownership."
       ],
-      "duplicateCheck": "No matching identity found in baseline."
+      "duplicateCheck": "No matching identity found in baseline.",
+      "latestReview": {
+        "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+        "disposition": "retain_hold",
+        "observation": "Fresh valley directory explicitly calls grocery locally owned and operated, and offers pizza/takeout. Regional franchise restaurant eligibility remains separate; no new brand-source retry performed.",
+        "auditKey": "held-c9f79973d63b"
+      }
     },
     {
       "researchGroup": "valley",
@@ -10984,7 +11165,13 @@
         "Do not label an anticipated 2025 restaurant as an actual new opening in 2026.",
         "Owner contact address differs from older Moose River Road references; do not infer separate venues."
       ],
-      "duplicateCheck": "No matching name in baseline."
+      "duplicateCheck": "No matching name in baseline.",
+      "latestReview": {
+        "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+        "disposition": "retain_hold",
+        "observation": "Fresh family-farm/contact/food pages received. Distinguish farm shop and booked experiences from ordinary walk-in restaurant; do not turn anticipated restaurant into confirmed opening.",
+        "auditKey": "held-fa862739c6d2"
+      }
     },
     {
       "researchGroup": "valley",
@@ -11009,7 +11196,13 @@
         "Public walk-in service, operating status and local restaurant/cafe scope are not established.",
         "Do not silently merge with Lindsay Lake Farms based on older references to an on-farm bakery."
       ],
-      "duplicateCheck": "No matching name in baseline."
+      "duplicateCheck": "No matching name in baseline.",
+      "latestReview": {
+        "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+        "disposition": "retain_hold",
+        "observation": "Owner domain returns HTTP 200 with almost no readable body. Community page remains home-bakery discovery evidence; public walk-in cafe status still unknown.",
+        "auditKey": "held-5bcf41412cd8"
+      }
     },
     {
       "researchGroup": "valley",
@@ -11051,7 +11244,13 @@
         "Do not use the golf-course May-October availability as exact restaurant season dates.",
         "Named family ownership evidence from 2020 predates the owner's stated ownership change."
       ],
-      "duplicateCheck": "No River Oaks identity in baseline."
+      "duplicateCheck": "No River Oaks identity in baseline.",
+      "latestReview": {
+        "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+        "disposition": "retain_hold",
+        "observation": "Fresh menu confirms public kitchen/takeout and phone. Exact 3909 versus 3856 civic address/operator conflict remains. Do not transfer lodge identity or golf season to restaurant.",
+        "auditKey": "held-96f02ad441a6"
+      }
     },
     {
       "researchGroup": "valley",
@@ -11075,7 +11274,13 @@
         "No current owner operation proof for the Nova Scotia venue. Do not import an active-looking foreign website or its hours/menu.",
         "Do not infer permanent closure solely from weak or stale third-party status markers."
       ],
-      "duplicateCheck": "No matching name found in baseline."
+      "duplicateCheck": "No matching name found in baseline.",
+      "latestReview": {
+        "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+        "disposition": "retain_hold",
+        "observation": "Same-name North Carolina domain received; explicitly rejected as unrelated. No new Nova Scotia owner operation evidence.",
+        "auditKey": "held-cc43f243ca56"
+      }
     },
     {
       "researchGroup": "panada",
@@ -11118,7 +11323,13 @@
         "One older DoorDash locale snapshot says temporarily closed while another recent snapshot exposes ordering; platform availability is not evidence of permanent business closure."
       ],
       "openingHours": null,
-      "coordinates": null
+      "coordinates": null,
+      "latestReview": {
+        "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+        "disposition": "retain_hold",
+        "observation": "Official homepage/menu fetches returned 403 this pass, no retries. Existing merchant agreement on 1438 Hammonds Plains Road is corroboration, not a new owner civic address receipt.",
+        "auditKey": "held-9f54ac7e40a2"
+      }
     },
     {
       "researchGroup": "panada",
@@ -11165,7 +11376,13 @@
         "Conditional because first-party homepage/social links lack civic address and branded Launchrock page is undated."
       ],
       "openingHours": null,
-      "coordinates": null
+      "coordinates": null,
+      "latestReview": {
+        "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+        "disposition": "retain_hold",
+        "observation": "Official homepage/menu fetches returned 403 this pass. Preserve Dartmouth identity and address conflict without substituting Hammonds Plains evidence or customer reviews.",
+        "auditKey": "held-84e067f4d40e"
+      }
     },
     {
       "name": "Morris East Bedford",
@@ -11176,7 +11393,13 @@
       "sources": [
         "https://www.morriseast.com/",
         "https://order.toasttab.com/online/morris-east-bedford-620-nine-mile-drive?diningOption=takeout"
-      ]
+      ],
+      "latestReview": {
+        "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+        "disposition": "retain_hold",
+        "observation": "Fresh Morris East owner homepage supports Bedford branch at 620 Nine Mile Drive Unit 109. No explicit owner coordinate pair located; Toast fetch returned 403. Existing addressless OSM node must not be overwritten or duplicated from proximity.",
+        "auditKey": "held-c1702abb9854"
+      }
     },
     {
       "name": "Peacock Modern Indian Cuisine",
@@ -11187,7 +11410,13 @@
         "https://peacockhfx.ca/"
       ],
       "researchGroup": "bedford-hammonds-audit-20261021",
-      "observedAt": "2026-10-21T13:11:32.620254+00:00"
+      "observedAt": "2026-10-21T13:11:32.620254+00:00",
+      "latestReview": {
+        "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+        "disposition": "retain_hold",
+        "observation": "Correct owner domain peacockhfx.ca returned 503. Search cache supports four locally settled owners and 27 Dellridge Lane, but is not a fresh body receipt. No borrowing neighboring Patrons coordinates.",
+        "auditKey": "held-f564a56e4897"
+      }
     },
     {
       "name": "Sushi Jet Express",
@@ -11199,7 +11428,13 @@
         "https://novascotia.com/listing/sushi-jet-larry-uteck/"
       ],
       "researchGroup": "bedford-hammonds-audit-20261021",
-      "observedAt": "2026-10-21T13:11:32.620254+00:00"
+      "observedAt": "2026-10-21T13:11:32.620254+00:00",
+      "latestReview": {
+        "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+        "disposition": "retain_hold",
+        "observation": "Fresh owner homepage supports Sushi Jet Express brand, exact 540 Southgate Unit103, current service and full hours. Ownership evidence unresolved in this pass. Do not import template founding-year/phone.",
+        "auditKey": "held-de4f717e7db4"
+      }
     },
     {
       "name": "Modern Orchid Asian Cuisine — Bedford",
@@ -11211,7 +11446,13 @@
         "https://www.modernorchidbedford.ca/reservations"
       ],
       "researchGroup": "bedford-hammonds-audit-20261021",
-      "observedAt": "2026-10-21T13:11:32.620254+00:00"
+      "observedAt": "2026-10-21T13:11:32.620254+00:00",
+      "latestReview": {
+        "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+        "disposition": "retain_hold",
+        "observation": "Two fresh owner/merchant pages agree 11 Bloom Lane Unit103 but disagree postcode B4B2E6 versus B4B1S8. Local ownership still not established; omit postcode when resolved.",
+        "auditKey": "held-86790b542136"
+      }
     },
     {
       "name": "Seoul Korean Restaurant — Bedford",
@@ -11223,7 +11464,13 @@
         "https://seoulkoreanbedford.com/menu/"
       ],
       "researchGroup": "bedford-hammonds-audit-20261021",
-      "observedAt": "2026-10-21T13:11:32.620254+00:00"
+      "observedAt": "2026-10-21T13:11:32.620254+00:00",
+      "latestReview": {
+        "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+        "disposition": "retain_hold",
+        "observation": "Fresh exact branch location/menu at 11 Bloom Lane Unit104, phone9024252237, full weekly hours; local ownership evidence remains unresolved. Do not confuse adjacent Modern Orchid Unit103.",
+        "auditKey": "held-ea800cb26269"
+      }
     },
     {
       "name": "Nayya Pizza & Grill — Bedford",
@@ -11236,20 +11483,32 @@
         "https://twobridgesrealty.ca/3d-model/nayya-pizza/"
       ],
       "researchGroup": "bedford-hammonds-audit-20261021",
-      "observedAt": "2026-10-21T13:11:32.620254+00:00"
+      "observedAt": "2026-10-21T13:11:32.620254+00:00",
+      "latestReview": {
+        "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+        "disposition": "retain_hold",
+        "observation": "Fresh owner site and ordering branch shell received. No readable exact current civic branch text or current owner resolved. Historic/brokerage address and West End orphan do not justify admission.",
+        "auditKey": "held-058a3bb689fe"
+      }
     },
     {
       "name": "Tinápe Bakery & Café",
       "community": "Bedford",
-      "decision": "hold_local_ownership_evidence",
-      "reason": "Firsthand founder interview with Sundy Gernale and Sharon DeLeon on local storyteller RootedTale; testimonial on storyteller homepage confirms owner participation. Interview identifies local cafe; current Skip merchant menu offers sandwiches and cafe food. Interview HTTP200 receipt7363f412c0e1. No owner domain identified.",
+      "decision": "hold_current_owner_operation",
+      "reason": "Fresh owner-participating RootedTale interview names Sundy Gernale and Sharon De Leon; publisher homepage testimonial confirms participation. JSON-LD gives 72 Gary Martin Dr, Bedford B4B1H3. Local family-operation evidence is meaningful; remaining blocker is independently current owner operation/location corroboration, not absence of owner names.",
       "sources": [
         "https://www.rootedtale.com/story/tinape",
         "https://www.rootedtale.com/",
         "https://www.skipthedishes.com/tinape"
       ],
       "researchGroup": "bedford-hammonds-audit-20261021",
-      "observedAt": "2026-10-21T13:11:32.620254+00:00"
+      "observedAt": "2026-10-21T13:11:32.620254+00:00",
+      "latestReview": {
+        "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+        "disposition": "retain_hold",
+        "observation": "Fresh owner-participating RootedTale interview names Sundy Gernale and Sharon De Leon; publisher homepage testimonial confirms participation. JSON-LD gives 72 Gary Martin Dr, Bedford B4B1H3. Local family-operation evidence is meaningful; remaining blocker is independently current owner operation/location corroboration, not absence of owner names.",
+        "auditKey": "held-84762b76dd1e"
+      }
     },
     {
       "name": "JUKAI Japanese & Thai — West Bedford",
@@ -11262,7 +11521,13 @@
         "https://parkviewnews.ca/2025/12/bedford-west-plazas-has-it-all/"
       ],
       "researchGroup": "bedford-hammonds-audit-20261021",
-      "observedAt": "2026-10-21T13:11:32.620254+00:00"
+      "observedAt": "2026-10-21T13:11:32.620254+00:00",
+      "latestReview": {
+        "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+        "disposition": "retain_hold",
+        "observation": "Official legislative recognition supports 2024 West Bedford branch and chef, not current branch operation. Current merchant and local visit remain corroboration; no current owner branch address receipt verified.",
+        "auditKey": "held-fc19c933f19d"
+      }
     },
     {
       "name": "Taquitos Cocina de México",
@@ -11275,7 +11540,13 @@
         "https://parkviewnews.ca/2025/12/bedford-west-plazas-has-it-all/"
       ],
       "researchGroup": "bedford-hammonds-audit-20261021",
-      "observedAt": "2026-10-21T13:11:32.620254+00:00"
+      "observedAt": "2026-10-21T13:11:32.620254+00:00",
+      "latestReview": {
+        "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+        "disposition": "retain_hold",
+        "observation": "Fresh January2026 owner interview supports local ownership and financial stress, not closure. No fresh direct owner branch-address evidence verified; remain held.",
+        "auditKey": "held-d1db398cbb3d"
+      }
     },
     {
       "name": "Goldey’s Crispy Chicken",
@@ -11286,7 +11557,13 @@
         "https://goldeys.ca/"
       ],
       "researchGroup": "bedford-hammonds-audit-20261021",
-      "observedAt": "2026-10-21T13:11:32.620254+00:00"
+      "observedAt": "2026-10-21T13:11:32.620254+00:00",
+      "latestReview": {
+        "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+        "disposition": "retain_hold",
+        "observation": "Fresh official location/menu received. North America franchise solicitation is not itself nonlocal ownership, but current local ownership remains unverified.",
+        "auditKey": "held-feea9d9169b3"
+      }
     },
     {
       "name": "Sou’Wester in the City",
@@ -11298,7 +11575,13 @@
         "https://souwesterinthecity.ca/contact/"
       ],
       "researchGroup": "bedford-hammonds-audit-20261021",
-      "observedAt": "2026-10-21T13:11:32.620254+00:00"
+      "observedAt": "2026-10-21T13:11:32.620254+00:00",
+      "latestReview": {
+        "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+        "disposition": "retain_hold",
+        "observation": "Official homepage/contact returned503. Successor relationship to catalog Patrons remains unproved. Do not duplicate same suite/phone or infer Peggy’s Cove family ownership.",
+        "auditKey": "held-fe7d22d0060b"
+      }
     },
     {
       "name": "Shajeela’s Kitchen",
@@ -11310,7 +11593,13 @@
         "https://es.restaurantguru.com/Shajeelas-Kitchen-Bedford-Nova-Scotia"
       ],
       "researchGroup": "bedford-hammonds-audit-20261021",
-      "observedAt": "2026-10-21T13:11:32.620254+00:00"
+      "observedAt": "2026-10-21T13:11:32.620254+00:00",
+      "latestReview": {
+        "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+        "disposition": "retain_hold",
+        "observation": "Official domain returned HTTP200 with a 195-byte Site Unavailable HTML body, not current restaurant content. Earlier owner menu/address evidence and third-party closure conflict remain unresolved. Do not declare active or closed.",
+        "auditKey": "held-ee8a088bfa70"
+      }
     },
     {
       "name": "Lëvantic Bakery & Café",
@@ -11322,7 +11611,13 @@
         "https://levantic.square.site/"
       ],
       "researchGroup": "bedford-hammonds-audit-20261021",
-      "observedAt": "2026-10-21T13:11:32.620254+00:00"
+      "observedAt": "2026-10-21T13:11:32.620254+00:00",
+      "latestReview": {
+        "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+        "disposition": "retain_hold",
+        "observation": "Fresh linked Linktree and Square shell received. No readable owner civic-address/current ownership resolution. Do not label Hammonds Plains merely from nearby geography.",
+        "auditKey": "held-5f400fb857cd"
+      }
     },
     {
       "name": "Peppertoni’s Pizza",
@@ -11335,7 +11630,13 @@
         "https://baytreasurechest.ca/"
       ],
       "researchGroup": "bedford-hammonds-audit-20261021",
-      "observedAt": "2026-10-21T13:11:32.620254+00:00"
+      "observedAt": "2026-10-21T13:11:32.620254+00:00",
+      "latestReview": {
+        "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+        "disposition": "retain_hold",
+        "observation": "Official domain403 and ordering503. Community partner roster received but cannot replace owner civic address. No bypass/retry or order submission.",
+        "auditKey": "held-7a7f2ddc9135"
+      }
     },
     {
       "name": "Szechuan Restaurant",
@@ -11346,7 +11647,13 @@
         "https://www.szechuanrestaurant.ca/"
       ],
       "researchGroup": "bedford-hammonds-audit-20261021",
-      "observedAt": "2026-10-21T13:11:32.620254+00:00"
+      "observedAt": "2026-10-21T13:11:32.620254+00:00",
+      "latestReview": {
+        "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+        "disposition": "retain_hold",
+        "observation": "Fresh official service page received; no local ownership resolution. Unusual overnight schedule remains unaccepted without clear interpretation.",
+        "auditKey": "held-19f0a40ce70e"
+      }
     },
     {
       "name": "Atithi Indian Restaurant",
@@ -11358,7 +11665,13 @@
         "https://www.clover.com/online-ordering/atithi-indian-restaurant-bedford"
       ],
       "researchGroup": "bedford-hammonds-audit-20261021",
-      "observedAt": "2026-10-21T13:11:32.620254+00:00"
+      "observedAt": "2026-10-21T13:11:32.620254+00:00",
+      "latestReview": {
+        "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+        "disposition": "retain_hold",
+        "observation": "Fresh official site/merchant shell received. Placeholder text and Happy Hours heading prevent using advertised schedule as verified weekly opening hours; ownership still unresolved.",
+        "auditKey": "held-0509b8a5d1d2"
+      }
     },
     {
       "name": "Martha’s Pizza II – Bedford",
@@ -11371,7 +11684,13 @@
         "https://www.marthaspizza2.com/"
       ],
       "researchGroup": "bedford-hammonds-audit-20261021",
-      "observedAt": "2026-10-21T13:11:32.620254+00:00"
+      "observedAt": "2026-10-21T13:11:32.620254+00:00",
+      "latestReview": {
+        "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+        "disposition": "retain_hold",
+        "observation": "Owner domain503. Provincial tourism fetched; prior owner interview remains historical. No fresh owner-location receipt, so hold retained.",
+        "auditKey": "held-734cc413cc0d"
+      }
     },
     {
       "name": "Bedford Neighbourhood Pub",
@@ -11383,7 +11702,13 @@
         "https://bedfordplacemall.com/dining.php"
       ],
       "researchGroup": "bedford-hammonds-audit-20261021",
-      "observedAt": "2026-10-21T13:11:32.620254+00:00"
+      "observedAt": "2026-10-21T13:11:32.620254+00:00",
+      "latestReview": {
+        "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+        "disposition": "retain_hold",
+        "observation": "Direct owner domain503, web reader content marked crawled two days earlier. Cached owner names/address/hours not relabeled freshly received. Landlord dining directory fetched.",
+        "auditKey": "held-bcb691b7267d"
+      }
     },
     {
       "name": "Sakura Sushi House",
@@ -11395,7 +11720,13 @@
         "https://www.skipthedishes.com/sakura-sushi-house?version=v2"
       ],
       "researchGroup": "bedford-hammonds-audit-20261021",
-      "observedAt": "2026-10-21T13:11:32.620254+00:00"
+      "observedAt": "2026-10-21T13:11:32.620254+00:00",
+      "latestReview": {
+        "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+        "disposition": "retain_hold",
+        "observation": "RANS503; no fresh owner operation evidence. Merchant DNU string alone is not a closure declaration.",
+        "auditKey": "held-ff091d51c12c"
+      }
     },
     {
       "name": "Lemon Tree – Bedford",
@@ -11406,7 +11737,13 @@
         "https://lemontree-bedford.com/"
       ],
       "researchGroup": "bedford-hammonds-audit-20261021",
-      "observedAt": "2026-10-21T13:11:32.620254+00:00"
+      "observedAt": "2026-10-21T13:11:32.620254+00:00",
+      "latestReview": {
+        "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+        "disposition": "retain_hold",
+        "observation": "Owner-style merchant domain403 this pass. Prior branch/Queen Street boilerplate and conflicting phones remain unresolved.",
+        "auditKey": "held-0ea6dd512cc3"
+      }
     },
     {
       "name": "Tacoland – Bedford",
@@ -11417,7 +11754,13 @@
         "https://bedfordplacemall.com/dining.php"
       ],
       "researchGroup": "bedford-hammonds-audit-20261021",
-      "observedAt": "2026-10-21T13:11:32.620254+00:00"
+      "observedAt": "2026-10-21T13:11:32.620254+00:00",
+      "latestReview": {
+        "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+        "disposition": "retain_hold",
+        "observation": "Fresh landlord dining directory received. Tenant listing alone does not resolve exact current owner branch and local eligibility.",
+        "auditKey": "held-4205233ab03e"
+      }
     },
     {
       "name": "Su & Su Kitchen",
@@ -11428,7 +11771,13 @@
         "https://bedfordplacemall.com/dining.php"
       ],
       "researchGroup": "bedford-hammonds-audit-20261021",
-      "observedAt": "2026-10-21T13:11:32.620254+00:00"
+      "observedAt": "2026-10-21T13:11:32.620254+00:00",
+      "latestReview": {
+        "reviewedAt": "2026-10-21T15:20:19.800810+00:00",
+        "disposition": "retain_hold",
+        "observation": "Fresh landlord dining directory received. No exact current owner-operated food-service evidence independently resolved.",
+        "auditKey": "held-f1c3e3548bcf"
+      }
     }
   ],
   "policy": [

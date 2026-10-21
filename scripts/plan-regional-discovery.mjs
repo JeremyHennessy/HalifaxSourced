@@ -1,0 +1,11 @@
+import { readFile } from 'node:fs/promises';
+import vm from 'node:vm';
+const read = async file => JSON.parse(await readFile(new URL('../'+file,import.meta.url),'utf8'));
+const scope = await read('data/regional-discovery-scope.json');
+const inspection = await read('data/build/ns-food-inspections.json');
+const sandbox = {window:{}};
+vm.runInNewContext(await readFile(new URL('../data/osm-restaurants.js',import.meta.url),'utf8'),sandbox);
+const actualBbox = sandbox.window.HALIFAX_OSM_META?.bbox;
+const covered = box => actualBbox && box.south>=actualBbox.south && box.north<=actualBbox.north && box.west>=actualBbox.west && box.east<=actualBbox.east;
+const report = {completeCensus:false,networkAttempted:false,osm:{accessState:scope.osm.accessState,actualSnapshot:sandbox.window.HALIFAX_OSM_META,areas:scope.osm.areas.map(area=>({...area,withinRetainedFootprint:Boolean(covered(area.bbox))}))},inspections:{maximumCitiesPerRun:scope.inspections.maximumCitiesPerRun,batches:scope.inspections.batches.map(batch=>({...batch,cities:batch.cities.map(city=>{const records=inspection.records.filter(row=>row.city.toLowerCase()===city.toLowerCase());return {city,retainedRecordCount:records.length,latestRetainedObservation:records.map(row=>row.observedAt).filter(Boolean).sort().at(-1)||null,status:records.length?'retained_evidence_not_fresh_query':'no_retained_receipt_not_proof_of_absence'};})}))},notes:scope.notes};
+console.log(JSON.stringify(report,null,2));

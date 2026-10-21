@@ -94,6 +94,8 @@ jobs:
       - name: Test update consistency and reviewed fact batch
         run: |
           node scripts/test-update-consistency.mjs
+          node scripts/test-source-run-health.mjs
+          node scripts/test-regional-discovery-scope.mjs
           node scripts/test-promotion-semantic-noop.mjs
           node scripts/test-preview-coordinator.mjs
           node scripts/test-reviewed-fact-batch.mjs
