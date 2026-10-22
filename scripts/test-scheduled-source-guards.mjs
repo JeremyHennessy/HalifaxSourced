@@ -122,6 +122,8 @@ const sourceValidationPaths = [
   'scripts/lib/fetch-public-source.mjs',
   'scripts/lib/robots-policy.mjs',
   'scripts/lib/deny-source-network.mjs',
+  'scripts/test-public-special-robots.mjs',
+  'scripts/test-public-special-refresh-safety.mjs',
   ...sourceValidationCommands.filter(command => command.startsWith('node scripts/')).map(command => command.slice(5))
 ];
 function assertSourceExpansionBoundary(workflow) {
@@ -155,6 +157,8 @@ for (const [file, cron] of [
       ['      - scripts/lib/robots-policy.mjs\n', ''],
       ['      - scripts/test-robots-policy.mjs\n', ''],
       ['      - scripts/test-robots-policy-adapters.mjs\n', ''],
+      ['      - scripts/test-public-special-robots.mjs\n', ''],
+      ['      - scripts/test-public-special-refresh-safety.mjs\n', ''],
       ['  refresh:\n', '      - uses: actions/upload-artifact@v4\n\n  refresh:\n']
     ]) assert.throws(() => assertSourceExpansionBoundary(workflow.replace(before, after)), undefined, 'Source Expansion guard must reject an unsafe boundary change: ' + before);
   }
