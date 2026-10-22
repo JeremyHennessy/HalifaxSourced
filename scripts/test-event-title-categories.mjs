@@ -3,12 +3,18 @@ import {readFileSync} from 'node:fs';
 import vm from 'node:vm';
 const source=readFileSync(new URL('./import-supplemental-city-events.mjs',import.meta.url),'utf8');
 const ctx=vm.createContext({});
+vm.runInContext(source.slice(source.indexOf('const MONTHS'),source.indexOf('function sleep')),ctx);
 vm.runInContext(source.slice(source.indexOf('function clean'),source.indexOf('function absoluteUrl')),ctx);
+vm.runInContext(source.slice(source.indexOf('function monthNumber'),source.indexOf('async function fetchHtml')),ctx);
 vm.runInContext(source.slice(source.indexOf('function simpleEventCategories'),source.indexOf('function locationPageWhen')),ctx);
+vm.runInContext(source.slice(source.indexOf('function libraryWhen'),source.indexOf('function libraryCategories')),ctx);
 for(const title of ['Welcome Housing & Support Drop-in Clinic','Starting a Small Business','Research Help','Community Meeting']) assert.deepEqual([...ctx.simpleEventCategories(title)],['Community'],title);
 assert.deepEqual([...ctx.simpleEventCategories('Sing Along')],['Music','Arts']);
 assert.deepEqual([...ctx.simpleEventCategories('Knitting Circle')],['Arts','Community']);
 assert.deepEqual([...ctx.simpleEventCategories('Tea and Conversation')],['Food & Drink','Community']);
+assert.deepEqual(JSON.parse(JSON.stringify(ctx.libraryWhen('Friday, October 23 on October 23, 2026 , 3:30pm – 4:30pm'))),{
+  startAt:'2026-10-23T18:30:00.000Z',endAt:'2026-10-23T19:30:00.000Z',allDay:false
+},'BiblioCommons date markup permits whitespace before the comma following the screen-reader year');
 const events=readFileSync(new URL('../app-events.js',import.meta.url),'utf8');
 vm.runInContext(events.slice(events.indexOf('function eventDisplayTitle'),events.indexOf('function eventSourceButton')),ctx);
 const title='Meet Juno, a St. John Ambulance Therapy Dog';
@@ -16,4 +22,9 @@ assert.equal(ctx.collapseExactRepeatedWords(`${title} ${title}`),title);
 assert.equal(ctx.collapseExactRepeatedWords('Choir! Choir! Choir! presents Landslide'),'Choir! Choir! Choir! presents Landslide');
 assert.equal(ctx.eventDisplayTitle({title:`${title} ${title}`}),title);
 assert.equal(ctx.eventDisplayTitle({title:'Choir! Choir! Choir! presents Landslide'}),'Choir! Choir! Choir! presents Landslide');
+const registry=JSON.parse(readFileSync(new URL('../data/event-source-supplements.json',import.meta.url),'utf8'));
+const bedford=registry.sources.find(source=>source.id==='bedford-library-events');
+assert.equal(bedford?.mode,'bibliocommons_events','Bedford must use its exhaustive official calendar, not the six-item location widget');
+assert.equal(bedford?.url,'https://halifax.bibliocommons.com/v2/events?locations=BED');
+assert.deepEqual(bedford?.allowedLocations,{'Bedford Public Library':'Bedford'});
 console.log('Event title and categories: word boundaries prevent housing/art substring errors; exact repeated title only.');

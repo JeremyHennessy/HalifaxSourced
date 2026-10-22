@@ -2,7 +2,7 @@
 
 window.HALIFAX_CITY_EVENT_ADDITIONS = JSON.parse(`{
   "version": 1,
-  "generatedAt": "2026-10-20T15:21:54.246Z",
+  "generatedAt": "2026-10-22T22:21:55.514Z",
   "policy": "Curated city-event additions are source-backed records used when current official or local calendars have not yet been promoted into the primary city-events build.",
   "sources": [
     {
@@ -76,9 +76,56 @@ window.HALIFAX_CITY_EVENT_ADDITIONS = JSON.parse(`{
       "sourceName": "Symphony Nova Scotia",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
       "authority": "official_primary"
+    },
+    {
+      "sourceId": "bedford-library-reviewed-20261022",
+      "sourceName": "Bedford Public Library reviewed occurrence",
+      "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
+      "authority": "official_primary"
     }
   ],
   "events": [
+    {
+      "id": "bedford-library-events-8613f26616226661",
+      "title": "Cookies & Computers",
+      "startAt": "2026-10-23T18:30:00.000Z",
+      "endAt": "2026-10-23T19:30:00.000Z",
+      "allDay": false,
+      "venueName": "Bedford Public Library",
+      "address": "15 Dartmouth Road, Bedford, NS B4A 3X6",
+      "city": "Bedford",
+      "categories": [
+        "Community"
+      ],
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": "https://halifax.bibliocommons.com/events/6abab4a3ebad220045418778",
+      "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
+      "sourceId": "bedford-library-reviewed-20261022",
+      "sourceName": "Bedford Public Library reviewed occurrence",
+      "sourceKind": "official_library_location_calendar",
+      "observedAt": "2026-10-22T22:21:55.514Z",
+      "reviewState": "source_observed",
+      "latitude": 44.7314,
+      "longitude": -63.6571,
+      "venueId": "bedford-library",
+      "organizerId": "halifax-public-libraries",
+      "organizerName": "Halifax Public Libraries",
+      "sourceEvidence": [
+        {
+          "sourceId": "bedford-library-reviewed-20261022",
+          "sourceName": "Bedford Public Library reviewed occurrence",
+          "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
+          "basis": "official_primary",
+          "observedAt": "2026-10-22T22:21:55.514Z",
+          "httpStatus": 200,
+          "observedFacts": [
+            "Cookies & Computers is listed for October 23, 2026 from 3:30–4:30 pm at Bedford Public Library.",
+            "The official location page links the occurrence to BiblioCommons event 6abab4a3ebad220045418778."
+          ]
+        }
+      ]
+    },
     {
       "id": "taste-asia-2026-food-culture-festival",
       "title": "Taste Asia 2026",

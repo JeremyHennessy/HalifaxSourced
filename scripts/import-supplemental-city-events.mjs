@@ -272,7 +272,7 @@ async function importSymphony(source) {
 }
 
 function libraryWhen(block) {
-  const timed = block.match(/\bon\s+(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2}),\s+(20\d{2}),\s+(\d{1,2}:\d{2})(am|pm)(?:\s*[-–]\s*(\d{1,2}:\d{2})(am|pm))?/i);
+  const timed = block.match(/\bon\s+(January|February|March|April|May|June|July|August|September|October|November|December)\s+(\d{1,2}),\s+(20\d{2})\s*,\s+(\d{1,2}:\d{2})(am|pm)(?:\s*[-–]\s*(\d{1,2}:\d{2})(am|pm))?/i);
   if (timed) {
     const month = monthNumber(timed[1]);
     const startTime = timeParts(timed[4], timed[5]);

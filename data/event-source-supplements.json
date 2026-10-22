@@ -63,8 +63,11 @@
       "id": "bedford-library-events",
       "name": "Bedford Public Library",
       "kind": "official_library_location_calendar",
-      "mode": "official_location_events",
-      "url": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
+      "mode": "bibliocommons_events",
+      "url": "https://halifax.bibliocommons.com/v2/events?locations=BED",
+      "allowedLocations": {
+        "Bedford Public Library": "Bedford"
+      },
       "venueName": "Bedford Public Library",
       "venueAddress": "15 Dartmouth Road, Bedford, NS B4A 3X6",
       "city": "Bedford",
