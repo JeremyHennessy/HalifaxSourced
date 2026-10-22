@@ -9,6 +9,9 @@ on:
       - main
     paths:
       - .github/workflows/city-events-preview.yml
+      - data/reviewed-event-locations.json
+      - scripts/lib/reviewed-event-locations.mjs
+      - scripts/test-reviewed-event-locations.mjs
       - data/event-source-registry.json
       - data/event-source-supplements.json
       - data/event-source-candidates.json
@@ -36,6 +39,9 @@ on:
       - main
     paths:
       - .github/workflows/city-events-preview.yml
+      - data/reviewed-event-locations.json
+      - scripts/lib/reviewed-event-locations.mjs
+      - scripts/test-reviewed-event-locations.mjs
       - data/event-source-registry.json
       - data/event-source-supplements.json
       - data/event-source-candidates.json
@@ -78,6 +84,7 @@ jobs:
         env:
           NODE_OPTIONS: --import ${{ github.workspace }}/scripts/lib/deny-source-network.mjs
         run: |
+          node scripts/test-reviewed-event-locations.mjs
           node scripts/test-event-identity-continuity.mjs
           node scripts/test-event-refresh-safety.mjs
           node scripts/test-event-refresh-dedupe.mjs
@@ -142,6 +149,7 @@ jobs:
       - name: Verify saved-event continuity before preview upload
         run: |
           node scripts/check-event-identity-continuity.mjs /tmp/city-events.previous.json
+          node scripts/test-reviewed-event-locations.mjs
           node scripts/test-event-identity-continuity.mjs
           node scripts/test-canonical-event-dedupe.mjs
 

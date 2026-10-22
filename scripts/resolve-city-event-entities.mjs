@@ -1,5 +1,8 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 
+import { applyReviewedEventLocation } from "./lib/reviewed-event-locations.mjs";
+const { corrections: locationCorrections } = JSON.parse(await readFile(new URL("../data/reviewed-event-locations.json", import.meta.url), "utf8"));
+
 const cityPath = new URL("../data/build/city-events.json", import.meta.url);
 const cityJsPath = new URL("../data/city-events.js", import.meta.url);
 const venues = JSON.parse(await readFile(new URL("../data/venue-registry.json", import.meta.url), "utf8"));
@@ -80,7 +83,8 @@ let venueResolved = 0;
 let organizerResolved = 0;
 let restaurantResolved = 0;
 for (const event of events) {
-  const venueResult = resolveVenue(event);
+  const reviewedLocation = applyReviewedEventLocation(event, locationCorrections);
+  const venueResult = reviewedLocation ? { venue: null, basis: "reviewed_non_branch_location" } : resolveVenue(event);
   const organizerResult = resolveOrganizer(event);
   const restaurantResult = resolveRestaurant(venueResult.venue);
   if (venueResult.venue) {

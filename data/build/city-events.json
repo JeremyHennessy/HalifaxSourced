@@ -9,7 +9,7 @@
   "categoryCounts": {
     "Food & Drink": 10,
     "Comedy": 5,
-    "Arts": 100,
+    "Arts": 101,
     "Sports": 40,
     "Outdoor": 4,
     "Community": 35,
@@ -691,34 +691,6 @@
       ]
     },
     {
-      "id": "bedford-library-events-1a1904b4d4fa55e0",
-      "title": "After School Club: PS5",
-      "startAt": "2026-10-21T18:30:00.000Z",
-      "endAt": "2026-10-21T19:30:00.000Z",
-      "allDay": false,
-      "venueName": "Bedford Public Library",
-      "address": "15 Dartmouth Road, Bedford, NS B4A 3X6",
-      "city": "Bedford",
-      "categories": [
-        "Community"
-      ],
-      "eventUrl": "https://halifax.bibliocommons.com/events/6a90916229a7dd0d67471d1e",
-      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
-      "price": null,
-      "sourceId": "bedford-library-events",
-      "sourceName": "Bedford Public Library",
-      "sourceKind": "official_library_location_calendar",
-      "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
-      "observedAt": "2026-10-21T18:35:10.940Z",
-      "reviewState": "source_observed",
-      "latitude": 44.7314,
-      "longitude": -63.6571,
-      "venueId": "bedford-library",
-      "neighbourhood": null,
-      "organizerId": "halifax-public-libraries",
-      "organizerName": "Halifax Public Libraries"
-    },
-    {
       "id": "alderney-gate-library-events-21eb43d6b209a2c4",
       "title": "Makers Gonna Make: Perler Beads",
       "startAt": "2026-10-21T18:30:00.000Z",
@@ -771,34 +743,6 @@
       "longitude": -63.5684,
       "venueId": "alderney-gate-library",
       "neighbourhood": "Downtown Dartmouth",
-      "organizerId": "halifax-public-libraries",
-      "organizerName": "Halifax Public Libraries"
-    },
-    {
-      "id": "bedford-library-events-d07e900ba609f409",
-      "title": "Growing Up in the Scott Manor House",
-      "startAt": "2026-10-21T21:30:00.000Z",
-      "endAt": "2026-10-21T22:45:00.000Z",
-      "allDay": false,
-      "venueName": "Bedford Public Library",
-      "address": "15 Dartmouth Road, Bedford, NS B4A 3X6",
-      "city": "Bedford",
-      "categories": [
-        "Community"
-      ],
-      "eventUrl": "https://halifax.bibliocommons.com/events/6abebef929c3d600332cfc0b",
-      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
-      "price": null,
-      "sourceId": "bedford-library-events",
-      "sourceName": "Bedford Public Library",
-      "sourceKind": "official_library_location_calendar",
-      "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
-      "observedAt": "2026-10-21T18:35:10.941Z",
-      "reviewState": "source_observed",
-      "latitude": 44.7314,
-      "longitude": -63.6571,
-      "venueId": "bedford-library",
-      "neighbourhood": null,
       "organizerId": "halifax-public-libraries",
       "organizerName": "Halifax Public Libraries"
     },
@@ -1334,8 +1278,8 @@
       "startAt": "2026-10-23T13:00:00.000Z",
       "endAt": "2026-10-23T15:00:00.000Z",
       "allDay": false,
-      "venueName": "Bedford Public Library",
-      "address": "15 Dartmouth Road, Bedford, NS B4A 3X6",
+      "venueName": "Scott Manor House",
+      "address": "15 Fort Sackville Road, Bedford, NS B4A 2G6",
       "city": "Bedford",
       "categories": [
         "Community"
@@ -1349,12 +1293,13 @@
       "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
       "observedAt": "2026-10-21T18:35:10.942Z",
       "reviewState": "source_observed",
-      "latitude": 44.7314,
-      "longitude": -63.6571,
-      "venueId": "bedford-library",
-      "neighbourhood": null,
       "organizerId": "halifax-public-libraries",
-      "organizerName": "Halifax Public Libraries"
+      "organizerName": "Halifax Public Libraries",
+      "locationReview": {
+        "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
+        "reviewedAt": "2026-10-22T01:05:00.000Z",
+        "coordinateStatus": "unverified_non_branch_location"
+      }
     },
     {
       "id": "halifax-convention-centre-829d5bb440393848",
@@ -1625,6 +1570,34 @@
       "organizerName": "Halifax Public Libraries"
     },
     {
+      "id": "bedford-library-events-20781097868f48be",
+      "title": "Puppet Show: Too Much Noise on Halloween Night",
+      "startAt": "2026-10-24T13:30:00.000Z",
+      "endAt": "2026-10-24T14:00:00.000Z",
+      "allDay": false,
+      "venueName": "Bedford Public Library",
+      "address": "15 Dartmouth Road, Bedford, NS B4A 3X6",
+      "city": "Bedford",
+      "categories": [
+        "Community"
+      ],
+      "eventUrl": "https://halifax.bibliocommons.com/events/6a91b4bab204780029963a97",
+      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
+      "price": null,
+      "sourceId": "bedford-library-events",
+      "sourceName": "Bedford Public Library",
+      "sourceKind": "official_library_location_calendar",
+      "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
+      "observedAt": "2026-10-22T00:38:32.759Z",
+      "reviewState": "source_observed",
+      "latitude": 44.7314,
+      "longitude": -63.6571,
+      "venueId": "bedford-library",
+      "neighbourhood": null,
+      "organizerId": "halifax-public-libraries",
+      "organizerName": "Halifax Public Libraries"
+    },
+    {
       "id": "woodlawn-library-events-781108694489a263",
       "title": "Books & Blocks",
       "startAt": "2026-10-24T14:00:00.000Z",
@@ -1680,6 +1653,35 @@
       "organizerId": "the-carleton",
       "organizerName": "The Carleton",
       "restaurantId": "osm-node-771690675-the-carleton"
+    },
+    {
+      "id": "bedford-library-events-9d3efe6e8a8fec69",
+      "title": "Super Saturday: Halloween Crafts",
+      "startAt": "2026-10-24T17:00:00.000Z",
+      "endAt": "2026-10-24T18:00:00.000Z",
+      "allDay": false,
+      "venueName": "Bedford Public Library",
+      "address": "15 Dartmouth Road, Bedford, NS B4A 3X6",
+      "city": "Bedford",
+      "categories": [
+        "Arts",
+        "Community"
+      ],
+      "eventUrl": "https://halifax.bibliocommons.com/events/6a835ef7a821f90037ee7674",
+      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
+      "price": null,
+      "sourceId": "bedford-library-events",
+      "sourceName": "Bedford Public Library",
+      "sourceKind": "official_library_location_calendar",
+      "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
+      "observedAt": "2026-10-22T00:38:32.759Z",
+      "reviewState": "source_observed",
+      "latitude": 44.7314,
+      "longitude": -63.6571,
+      "venueId": "bedford-library",
+      "neighbourhood": null,
+      "organizerId": "halifax-public-libraries",
+      "organizerName": "Halifax Public Libraries"
     },
     {
       "id": "https://novascotia.com/event/spontaneity-duo-competition/#event",
@@ -5434,13 +5436,13 @@
       "organizerName": "Symphony Nova Scotia"
     }
   ],
-  "sanitizedAt": "2026-10-21T18:35:11.374Z",
+  "sanitizedAt": "2026-10-22T01:06:33.354Z",
   "scopeAudit": {
-    "inputEvents": 173,
+    "inputEvents": 172,
     "keptEvents": 172,
-    "canonicalDuplicatesMerged": 1,
+    "canonicalDuplicatesMerged": 0,
     "removedOutOfScope": 0,
-    "categoryReclassified": 11,
+    "categoryReclassified": 0,
     "allowedMunicipalities": [
       "Halifax",
       "Dartmouth",
@@ -5543,10 +5545,10 @@
     ]
   },
   "entityResolution": {
-    "appliedAt": "2026-10-21T18:35:11.462Z",
+    "appliedAt": "2026-10-22T01:06:33.477Z",
     "venueRegistryVersion": 3,
     "organizerRegistryVersion": 2,
-    "venueResolved": 124,
+    "venueResolved": 123,
     "organizerResolved": 150,
     "restaurantResolved": 10,
     "eventCount": 172
