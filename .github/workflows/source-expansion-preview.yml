@@ -50,9 +50,12 @@ on:
       - scripts/merge-first-party-history.mjs
       - scripts/sanitize-first-party-sources.mjs
       - scripts/import-first-party-feed-signals.mjs
+      - scripts/lib/first-party-feed-safety.mjs
+      - scripts/test-first-party-feed-safety.mjs
       - scripts/import-official-page-intelligence.mjs
       - scripts/import-meta-social.mjs
       - scripts/lib/social-fact-candidates.mjs
+      - scripts/lib/lifecycle-language.mjs
       - scripts/build-recent-social-posts.mjs
       - scripts/build-reviewed-social-posts.mjs
       - data/thumbnail-assessments.json
@@ -98,6 +101,7 @@ jobs:
           node --check scripts/import-structured-events.mjs
           node --check scripts/lib/robots-policy.mjs
           node scripts/test-public-source-fetch.mjs
+          node scripts/test-first-party-feed-safety.mjs
           node scripts/test-robots-policy.mjs
           node scripts/test-robots-policy-adapters.mjs
           node scripts/test-robots-redirect-guards.mjs

@@ -94,9 +94,18 @@ Post-level Meta ingestion keeps its stricter unique-location association require
 
 ## Restaurant-owned feeds
 
-`scripts/import-first-party-feed-signals.mjs` reads RSS/Atom feeds discovered by the official-site pass. It uses feed title/summary text only to classify possible menu, special, event, opening, and brunch signals. The output retains only a short feed-item title, source/permalink, timestamps, and matched signal keywords; it does not retain article bodies or long descriptions.
+`scripts/import-first-party-feed-signals.mjs` reads RSS/Atom feeds discovered by the official-site pass. It uses feed title/summary text only to classify possible menu, special, event, opening, and brunch signals. The output retains a short feed-item title, bounded excerpt (default 420, maximum 700 characters), source/permalink, optional image URL reference, timestamps and matched signal keywords. It does not retain raw article bodies or grant publication rights for linked media.
 
 A feed URL linked to more than one Halifax Sourced restaurant is treated as a shared brand feed and is excluded from restaurant-specific signal promotion. Only uniquely associated feed URLs can produce restaurant-specific feed signals.
+
+A failed or limit-unattempted pull preserves eligible prior posts for the exact
+restaurant/feed pair without changing their source, observation, review or rights
+fields. History is bounded by the configured feed lookback (default 180 days) and
+80 posts per source. Current exclusions, shared/unsafe associations and reassigned
+feeds override retention. A complete valid empty feed replaces that source's old
+posts; errors, challenges and malformed feeds do not count as successful empties.
+Snapshot build time and failure-attempt time remain diagnostics, not source clocks.
+See `docs/ingestion-compliance.md` for parser, parity and offline test boundaries.
 
 Feed items remain historical evidence after they age out of consumer discovery. Unstructured feed/social signals set current consumer leads only when they have a parseable publication timestamp within the configured freshness window. The browser currently uses a 60-day maximum age.
 

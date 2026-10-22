@@ -35,11 +35,11 @@ This captures the peninsula, downtown, North End, South End, West End, nearby Da
 
 ## Robots policy repair scope (October 22, 2026)
 
-The shared `scripts/lib/robots-policy.mjs` policy is used by exactly seven adapters:
+The shared `scripts/lib/robots-policy.mjs` policy is used by exactly eight adapters:
 `import-official-sites.mjs`, `verify-official-source-pages.mjs`,
 `import-structured-events.mjs`, `import-official-page-intelligence.mjs`,
 `import-patio-directory-facts.mjs`, `import-city-events.mjs`, and
-`import-public-special-source-leads.mjs`. Policy retrieval uses the existing quarantined-source
+`import-public-special-source-leads.mjs`, and `import-first-party-feed-signals.mjs`. Policy retrieval uses the existing quarantined-source
 and same-host redirect guard, with a deadline around both fetch and body consumption.
 An origin's in-flight result is cached for the run, including unavailable policies;
 failures are not retried. Network/body errors, deadlines, rejected/missing/looping
@@ -59,7 +59,7 @@ exact matching bot group. The prior selected-group/literal-prefix denials are al
 retained, so this repair cannot reopen a legacy-denied path, including legacy
 literal `$` paths and erroneously selected `NotHalifaxSourced` groups. `Allow`
 exceptions never reopen a denial. This is an intentionally stricter project policy,
-not full RFC 9309 conformance. All seven adapters consult the same policy callback
+not full RFC 9309 conformance. All eight adapters consult the same policy callback
 at each guarded content redirect destination. Patio retains its single hardcoded
 source and registry metadata semantics; intelligence retains its existing page,
 restaurant, concurrency and host-serial delay bounds. City retains its registry modes,
@@ -114,6 +114,57 @@ include the 22 original offline audit fixtures with unsafe expectations
 reversed, tightening-only comparisons, cache/no-retry and stalled-body tests.
 No source registry enablement, accepted dataset, source clock, media/review gate,
 or collection schedule is changed by this code-only repair.
+
+## Feed refresh safety (October 22, 2026)
+
+First-party feed refreshes use the shared fail-closed robots policy and the same
+per-hop quarantine/hostname boundary. A complete-operation deadline includes policy
+admission, content fetch, body consumption and bounded parsing. The shared guarded
+fetch also checks abort state before and after policy admission and transport, so
+late responses cannot admit another redirect or revive an expired operation. No
+new credentials, origin permissions, source families or retry paths are added.
+
+Only a complete HTTP 200 RSS/RDF/Atom envelope with a permitted XML/plain media
+type (or no declared type) can complete a feed. The conservative structural parser
+rejects malformed nesting, multiple roots, invalid entities, DTDs, error/challenge
+bodies and out-of-scope item nodes. Comments and CDATA cannot fabricate items or
+item metadata. Unsupported XML is a failure, not an empty successful feed. Content
+is bounded to 4 MiB and extraction to the existing first 80 items. A valid empty
+feed, or one whose valid items all fall outside the configured publication lookback,
+successfully replaces that exact source's history; incomplete 206/other statuses,
+body errors, timeouts and malformed entries do not. Parsing is staged before any
+posts or successful receipt are committed.
+
+Before requests or writes, the previous JSON/JavaScript pair must agree and satisfy
+the bounded post contract, including valid original observation dates and an exact
+signal subset. Only the importer's native `source_signal`/`needs_date_review` prior
+states are admitted. Unsupported review states or explicit prior quarantine/failed
+identity/location decisions abort before transport, so even a successful refresh
+cannot reset them to `source_signal`. Both files absent means first use; an incomplete/malformed pair
+stops the importer without replacing either file. No script snapshot is evaluated.
+Missing/malformed association or exclusion input also stops the run.
+
+Failed and limit-unattempted sources retain only current, uniquely verified exact
+restaurant/feed associations, determined before the collection limit. Global
+reviewed URL exclusions, shared-brand/oEmbed sources, reassigned identities,
+quarantines and explicit failed identity/location validation cannot be resurrected.
+Retention remains at most 80 prior posts per source and within FEED_LOOKBACK_DAYS
+(default 180), using publication time or the original observation when undated,
+never build/attempt time. Future dates are not carried. Pruned historical dates
+are counted separately from completed sources. Retained objects preserve their
+original evidence, rights, media pointers and review fields unchanged. Aggregate
+retention/attempt counters do not certify new observations. Fresh rows win any
+same-restaurant/post collision; signals are projected from the winning posts so a
+retained stale signal cannot survive its refreshed non-signal replacement.
+
+The existing bounded excerpts (default 420, maximum 700 characters) and image URLs
+remain references, not a new grant to retain raw articles or publish media. Source
+association and robots access do not verify business identity or image rights.
+The new actual-entrypoint regression uses finite mocked transport with fatal
+network denial. It runs in protected exact-head Social/Source Expansion PR lanes
+and Quality Gate, with complete fixture dependency paths. Collection job bodies,
+schedules, accepted data and publication/review gates are unchanged. Restaurant
+Discovery's separate legacy PR collection lane is neither touched nor activated.
 
 ## Review workflow
 

@@ -4,9 +4,12 @@ export async function fetchPublicSource(url, options, robotsAllows) {
   const originalHost=host(url);
   let target=url;
   for(let count=0;count<4;count++) {
+    options?.signal?.throwIfAborted();
     if(!integrity.safeSource(target) || host(target)!==originalHost) throw new Error('quarantined_cross_entity_redirect');
     if(!(await robotsAllows(target))) throw new Error('robots_disallow');
+    options?.signal?.throwIfAborted();
     const response=await fetch(target,{...options,redirect:'manual'});
+    options?.signal?.throwIfAborted();
     if(![301,302,303,307,308].includes(response.status))return response;
     const location=response.headers.get('location');
     if(!location)throw new Error('redirect_without_location');

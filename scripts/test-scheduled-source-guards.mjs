@@ -115,6 +115,7 @@ const sourceValidationCommands = [
   'node --check scripts/import-structured-events.mjs',
   'node --check scripts/lib/robots-policy.mjs',
   'node scripts/test-public-source-fetch.mjs',
+  'node scripts/test-first-party-feed-safety.mjs',
   'node scripts/test-robots-policy.mjs',
   'node scripts/test-robots-policy-adapters.mjs',
   'node scripts/test-robots-redirect-guards.mjs',
@@ -154,7 +155,18 @@ const thumbnailFixtureDependencies = [
   'app-restaurant-identity.js',
   'app-inspection-matching.js',
 ];
+const feedFixtureDependencies = [
+  'scripts/import-first-party-feed-signals.mjs',
+  'scripts/lib/first-party-feed-safety.mjs',
+  'scripts/test-first-party-feed-safety.mjs',
+  'scripts/lib/robots-policy.mjs',
+  'scripts/lib/fetch-public-source.mjs',
+  'scripts/lib/lifecycle-language.mjs',
+  'scripts/lib/deny-source-network.mjs',
+  'source-integrity.js'
+];
 const sourceValidationPaths = [...new Set([
+  ...feedFixtureDependencies,
   ...thumbnailFixtureDependencies,
   'scripts/lib/robots-policy.mjs',
   'scripts/test-public-special-robots.mjs',
@@ -221,6 +233,8 @@ const socialValidationCommands = [
   'node scripts/test-social-fact-candidates.mjs',
   'node scripts/test-source-run-health.mjs',
   'node scripts/test-public-source-fetch.mjs',
+  'node scripts/test-first-party-feed-safety.mjs',
+  'node scripts/test-robots-policy.mjs',
   'node scripts/test-media-reference-contract.mjs',
   'node scripts/test-preview-coordinator.mjs',
   'node scripts/test-scheduled-source-guards.mjs',
@@ -245,6 +259,8 @@ const socialValidationPaths = [
   'scripts/merge-first-party-history.mjs',
   'scripts/sanitize-first-party-sources.mjs',
   'scripts/import-first-party-feed-signals.mjs',
+  'scripts/lib/first-party-feed-safety.mjs',
+  'scripts/test-first-party-feed-safety.mjs',
   'scripts/import-meta-social.mjs',
   'scripts/lib/social-fact-candidates.mjs',
   'scripts/build-recent-social-posts.mjs',
@@ -275,6 +291,8 @@ const socialValidationPaths = [
   '.github/workflows/promote-source-expansion-artifact.yml',
   'scripts/lib/deny-source-network.mjs',
   'scripts/lib/fetch-public-source.mjs',
+  'scripts/lib/robots-policy.mjs',
+  'scripts/test-robots-policy.mjs',
   'scripts/lib/source-run-health.mjs',
   'scripts/lib/media-rights-contract.mjs',
   'scripts/lib/lifecycle-language.mjs',
@@ -293,7 +311,7 @@ const socialValidationPaths = [
   'data/thumbnail-candidates.js',
   'data/audit/media-rights-reclassification.json'
 ];
-for (const path of thumbnailFixtureDependencies) assert(socialValidationPaths.includes(path), 'Social must include thumbnail fixture dependency: ' + path);
+for (const path of [...thumbnailFixtureDependencies, ...feedFixtureDependencies]) assert(socialValidationPaths.includes(path), 'Social must include thumbnail fixture dependency: ' + path);
 const socialProducerGuard = "    if: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}\n";
 const socialValidationPrefix = [
   'name: Social Source Preview', '', 'on:', '  workflow_dispatch:', '  schedule:',
@@ -398,7 +416,7 @@ assert.equal(admittedSocialPr(admissionExpression.replace("github.event.workflow
 console.log(`Social PR boundary passed: ${socialMutations} mutations rejected, exact-head guarded fixtures only, unchanged producer, retained-queue admission blocked.`);
 
 const qualityWorkflow = await readFile(new URL('../.github/workflows/quality-gate.yml', import.meta.url), 'utf8');
-for (const script of ['test-robots-policy.mjs', 'test-robots-policy-adapters.mjs', 'test-thumbnail-observation-clocks.mjs']) assert(qualityWorkflow.includes('          node scripts/' + script + '\n'), 'Quality Gate must run ' + script);
+for (const script of ['test-robots-policy.mjs', 'test-robots-policy-adapters.mjs', 'test-thumbnail-observation-clocks.mjs', 'test-first-party-feed-safety.mjs']) assert(qualityWorkflow.includes('          node scripts/' + script + '\n'), 'Quality Gate must run ' + script);
 console.log('Preview PR boundaries passed: exact-head offline validation only, including Source Expansion; scheduled/manual collection remains separate.');
 const { spawnSync } = await import('node:child_process');
 const networkGuard = new URL('./lib/deny-source-network.mjs', import.meta.url).pathname;
