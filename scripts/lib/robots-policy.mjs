@@ -1,3 +1,4 @@
+import { sourceAccessState } from './source-access-state.mjs';
 import integrity from '../../source-integrity.js';
 import { fetchGuardedSource, withSourceDeadline } from './fetch-public-source.mjs';
 
@@ -145,6 +146,8 @@ export function createRobotsPolicy({ userAgent, productToken = 'HalifaxSourced',
   const deadlineMs = Number.isFinite(timeoutMs) && timeoutMs > 0 ? Math.min(timeoutMs, 8000) : 8000;
   return async function robotsFor(url) {
     if (!integrity.safeSource(url)) return { state: 'unavailable' };
+    const accessHold=sourceAccessState().access.find(url);
+    if (accessHold) return {state:'access_hold',accessHold};
     const parsed = new URL(url);
     if (!cache.has(parsed.origin)) {
       // Cache the in-flight promise and failures for this run. No retries, even

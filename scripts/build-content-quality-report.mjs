@@ -111,8 +111,12 @@ const report = {
     blockedEventSources: blockedEventSources.length,
     eventSourcesInAdapterReview: adapterReviewSources.length,
     brokenUrls: linkHealth?.counts?.broken ?? null,
-    restrictedUrls: linkHealth?.counts?.restricted ?? null,
-    transientUrlFailures: linkHealth?.counts?.transient ?? null
+    restrictedUrls: linkHealth ? (linkHealth.counts?.restricted || 0) + (linkHealth.counts?.held || 0) + (linkHealth.results || []).filter(row => row.status === 429).length : null,
+    heldUrls: linkHealth?.counts?.held ?? null,
+    assessedUrls: linkHealth?.counts?.checked ?? null,
+    attemptedUrls: linkHealth?.counts?.attempted ?? null,
+    unattemptedUrls: linkHealth?.counts?.unattempted ?? null,
+    transientUrlFailures: linkHealth ? (linkHealth.counts?.transient || 0) - (linkHealth.results || []).filter(row => row.status === 429).length : null
   },
   freshness,
   reviewQueues: {
@@ -132,6 +136,13 @@ const report = {
       generatedAt: linkHealth.generatedAt,
       totalUniqueUrls: linkHealth.totalUniqueUrls,
       checked: linkHealth.counts?.checked || 0,
+      assessed: linkHealth.counts?.checked || 0,
+      attempted: linkHealth.counts?.attempted ?? null,
+      unattempted: linkHealth.counts?.unattempted ?? null,
+      observed: linkHealth.counts?.observed ?? null,
+      reused: linkHealth.counts?.reused ?? null,
+      held: linkHealth.counts?.held ?? null,
+      assessmentPolicy: "Coverage includes explicit access holds, not fresh HTTP observations. Held and rate-limited targets require reviewed evidence before retry.",
       ok: linkHealth.counts?.ok || 0,
       broken: linkHealth.counts?.broken || 0,
       restricted: linkHealth.counts?.restricted || 0,

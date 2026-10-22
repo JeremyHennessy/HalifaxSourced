@@ -1,0 +1,1331 @@
+{
+  "version": 1,
+  "policy": "link_qa_access_holds",
+  "resume": "reviewed_evidence_required",
+  "provenance": {
+    "repository": "JeremyHennessy/HalifaxSourced",
+    "sourceCommitSha": "4f3a43b0ce8236519d2fb9f93e91c4775d8ecb50",
+    "workflowRunId": "39773856843",
+    "artifactId": "12423373003",
+    "artifactSha256": "d36c9998f8f15ec5f789cd5fe1b9ff4ec1f8b95e00cdb77974817c8db480e2b4",
+    "member": "data/build/source-link-health-report.json",
+    "memberSha256": "307266346c8a7067a2de12a2096d85215629d739df25605b9625f4a149439782",
+    "reportGeneratedAt": "2026-10-22T11:57:04.154Z"
+  },
+  "observations": [
+    {
+      "url": "https://www.instagram.com/bramble.hfx",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fbramble.hfx&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:14.072Z"
+    },
+    {
+      "url": "https://doraku.yolasite.com/",
+      "finalUrl": "https://doraku.yolasite.com/",
+      "status": 403,
+      "observedAt": "2026-10-22T11:56:15.662Z"
+    },
+    {
+      "url": "https://www.kingofdonair.ca/",
+      "finalUrl": "https://www.kingofdonair.ca/",
+      "status": 403,
+      "observedAt": "2026-10-22T11:56:17.775Z"
+    },
+    {
+      "url": "https://mizutakeout.ca/",
+      "finalUrl": "https://mizutakeout.ca/",
+      "status": 403,
+      "observedAt": "2026-10-22T11:56:19.565Z"
+    },
+    {
+      "url": "https://www.sajhouse.ca/",
+      "finalUrl": "https://www.sajhouse.ca/",
+      "status": 403,
+      "observedAt": "2026-10-22T11:56:21.830Z"
+    },
+    {
+      "url": "https://www.smilinggoat.ca/locations/",
+      "finalUrl": "https://www.smilinggoat.ca/locations/",
+      "status": 403,
+      "observedAt": "2026-10-22T11:56:22.432Z"
+    },
+    {
+      "url": "https://www.bedfordbasinmarket.com/",
+      "finalUrl": "https://www.bedfordbasinmarket.com/",
+      "status": 403,
+      "observedAt": "2026-10-22T11:56:24.477Z"
+    },
+    {
+      "url": "https://brooklynwarehouse.ca/",
+      "finalUrl": "https://brooklynwarehouse.ca/",
+      "status": 403,
+      "observedAt": "2026-10-22T11:56:25.052Z"
+    },
+    {
+      "url": "https://www.instagram.com/driftcoffeehfx/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fdriftcoffeehfx%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:25.108Z"
+    },
+    {
+      "url": "https://larryssandwiches.com/",
+      "finalUrl": "https://larryssandwiches.com/",
+      "status": 403,
+      "observedAt": "2026-10-22T11:56:30.952Z"
+    },
+    {
+      "url": "https://larryssandwiches.com/order",
+      "finalUrl": "https://larryssandwiches.com/order",
+      "status": 403,
+      "observedAt": "2026-10-22T11:56:32.018Z"
+    },
+    {
+      "url": "https://www.instagram.com/seasmokehfx/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fseasmokehfx%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:32.039Z"
+    },
+    {
+      "url": "https://www.instagram.com/celtic.corner/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fceltic.corner%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:32.339Z"
+    },
+    {
+      "url": "https://www.instagram.com/stone_pizza/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fstone_pizza%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:32.461Z"
+    },
+    {
+      "url": "https://www.instagram.com/whiskeyslounge/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fwhiskeyslounge%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:32.576Z"
+    },
+    {
+      "url": "https://www.instagram.com/mappaturahalifax/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fmappaturahalifax%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:32.809Z"
+    },
+    {
+      "url": "https://www.instagram.com/sushinami_official/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fsushinami_official%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:32.954Z"
+    },
+    {
+      "url": "https://www.instagram.com/2doorsdowndartmouth/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2F2doorsdowndartmouth%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:33.053Z"
+    },
+    {
+      "url": "https://www.instagram.com/2doorsdownhfx/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2F2doorsdownhfx%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:33.208Z"
+    },
+    {
+      "url": "https://order.online/business/-11872293?utm_medium=website",
+      "finalUrl": "https://order.online/business/-11872293?utm_medium=website",
+      "status": 403,
+      "observedAt": "2026-10-22T11:56:32.954Z"
+    },
+    {
+      "url": "https://www.instagram.com/barkismet/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fbarkismet%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:33.345Z"
+    },
+    {
+      "url": "http://instagram.com/batterybeerbar",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fbatterybeerbar&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:33.115Z"
+    },
+    {
+      "url": "https://www.instagram.com/thecanteenns/?hl=en",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fthecanteenns%2F%3Fhl%3Den&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:33.466Z"
+    },
+    {
+      "url": "https://order.toasttab.com/online/the-canteen-on-portland",
+      "finalUrl": "https://order.toasttab.com/online/the-canteen-on-portland",
+      "status": 403,
+      "observedAt": "2026-10-22T11:56:33.193Z"
+    },
+    {
+      "url": "https://www.opentable.ca/restref/client/?lang=en-CA&ot_source=Restaurant%20website&restref=994912&corrid=8cefe7c3-6080-4d7d-ac77-6dcc1e2be132",
+      "finalUrl": "https://www.opentable.ca/booking/restref/availability?lang=en-CA&ot_source=Restaurant%20website&restref=994912&corrid=8cefe7c3-6080-4d7d-ac77-6dcc1e2be132",
+      "status": 403,
+      "observedAt": "2026-10-22T11:56:33.208Z"
+    },
+    {
+      "url": "https://www.instagram.com/dartybrewing/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fdartybrewing%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:33.609Z"
+    },
+    {
+      "url": "https://www.opentable.ca/r/dear-friend-reservations-dartmouth?restref=1213045&lang=en-CA&ot_source=Restaurant%20website",
+      "finalUrl": "https://www.opentable.ca/r/dear-friend-reservations-dartmouth?restref=1213045&lang=en-CA&ot_source=Restaurant%20website",
+      "status": 403,
+      "observedAt": "2026-10-22T11:56:33.644Z"
+    },
+    {
+      "url": "https://www.instagram.com/ednarestaurant",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fednarestaurant&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:33.727Z"
+    },
+    {
+      "url": "https://www.opentable.com/r/edna-restaurant-reservations-halifax?lang=en-US&ot_source=Restaurant%20website&restref=342271",
+      "finalUrl": "https://www.opentable.com/r/edna-restaurant-reservations-halifax?lang=en-US&ot_source=Restaurant%20website&restref=342271",
+      "status": 403,
+      "observedAt": "2026-10-22T11:56:33.612Z"
+    },
+    {
+      "url": "https://www.instagram.com/highwaymanhfx/?hl=en",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fhighwaymanhfx%2F%3Fhl%3Den&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:33.942Z"
+    },
+    {
+      "url": "https://www.instagram.com/lakecitycider",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Flakecitycider&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:34.150Z"
+    },
+    {
+      "url": "https://www.instagram.com/magnoliahfx/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fmagnoliahfx%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:34.265Z"
+    },
+    {
+      "url": "https://www.instagram.com/mariaspantryhfx/?hl=en",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fmariaspantryhfx%2F%3Fhl%3Den&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:34.414Z"
+    },
+    {
+      "url": "https://www.instagram.com/birdsnesthalifax/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fbirdsnesthalifax%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:34.521Z"
+    },
+    {
+      "url": "http://instagram.com/darrellsrestaurant",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fdarrellsrestaurant&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:34.244Z"
+    },
+    {
+      "url": "https://order.toasttab.com/online/darrells-restaurant-5576-fenwick-st",
+      "finalUrl": "https://order.toasttab.com/online/darrells-restaurant-5576-fenwick-st",
+      "status": 403,
+      "observedAt": "2026-10-22T11:56:34.253Z"
+    },
+    {
+      "url": "https://www.instagram.com/the5kcafe/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fthe5kcafe%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:34.637Z"
+    },
+    {
+      "url": "https://www.instagram.com/pie_humble",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fpie_humble&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:34.773Z"
+    },
+    {
+      "url": "https://www.instagram.com/Dalfood/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2FDalfood%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:34.890Z"
+    },
+    {
+      "url": "https://www.instagram.com/dorakudartmouth/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fdorakudartmouth%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:34.990Z"
+    },
+    {
+      "url": "https://www.instagram.com/kanpai_izakaya",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fkanpai_izakaya&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:35.209Z"
+    },
+    {
+      "url": "https://www.instagram.com/kofukuhalifax/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fkofukuhalifax%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:35.321Z"
+    },
+    {
+      "url": "https://instagram.com/swaadsagaa",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fswaadsagaa&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:35.870Z"
+    },
+    {
+      "url": "https://www.ubereats.com/ca/store/swaad-sagaa-indian-cuisine-inc/dCkbGpvtX2GTgETECBDK3A?srsltid=AfmBOoqb2bBWK8PYu9nZRaus3IdkR8cc4kFmQw8dQVfMKHywdY7TpMV4",
+      "finalUrl": "https://www.ubereats.com/ca/store/swaad-sagaa-indian-cuisine-inc/dCkbGpvtX2GTgETECBDK3A?srsltid=AfmBOoqb2bBWK8PYu9nZRaus3IdkR8cc4kFmQw8dQVfMKHywdY7TpMV4",
+      "status": 403,
+      "observedAt": "2026-10-22T11:56:36.028Z"
+    },
+    {
+      "url": "https://www.doordash.com/en-CA/store/swaad-sagaa-indian-cuisine-inc-25845814/?srsltid=AfmBOoonRIIB0sZoJ8vcRRr98mKDVHOD9NXv0KshcXzxZQEV7rdoIgOM",
+      "finalUrl": "https://www.doordash.com/en-CA/store/swaad-sagaa-indian-cuisine-inc-25845814/?srsltid=AfmBOoonRIIB0sZoJ8vcRRr98mKDVHOD9NXv0KshcXzxZQEV7rdoIgOM",
+      "status": 403,
+      "observedAt": "2026-10-22T11:56:36.058Z"
+    },
+    {
+      "url": "https://www.instagram.com/skettiandballco/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fskettiandballco%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:36.098Z"
+    },
+    {
+      "url": "https://www.instagram.com/seaportsocial/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fseaportsocial%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:36.322Z"
+    },
+    {
+      "url": "https://www.opentable.com/r/seaport-social-reservations-halifax?restref=1120705&lang=en-US&ot_source=Restaurant%20website",
+      "finalUrl": "https://www.opentable.com/r/seaport-social-reservations-halifax?restref=1120705&lang=en-US&ot_source=Restaurant%20website",
+      "status": 403,
+      "observedAt": "2026-10-22T11:56:36.322Z"
+    },
+    {
+      "url": "https://www.instagram.com/cafelunette.hfx/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fcafelunette.hfx%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:36.442Z"
+    },
+    {
+      "url": "https://www.opentable.ca/booking/restref/availability?lang=en-CA&correlationId=a802e0e6-ee0e-4402-b5a5-aaca6d40dd38&restRef=1226047&otSource=Restaurant%20website",
+      "finalUrl": "https://www.opentable.ca/booking/restref/availability?lang=en-CA&correlationId=a802e0e6-ee0e-4402-b5a5-aaca6d40dd38&restRef=1226047&otSource=Restaurant%20website",
+      "status": 403,
+      "observedAt": "2026-10-22T11:56:36.449Z"
+    },
+    {
+      "url": "https://www.instagram.com/cafe.goodluck/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fcafe.goodluck%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:36.660Z"
+    },
+    {
+      "url": "https://www.instagram.com/east.cup/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Feast.cup%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:36.825Z"
+    },
+    {
+      "url": "https://instagram.com/station1finefood?igshid=1u64n2j9b092k",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fstation1finefood%3Figshid%3D1u64n2j9b092k&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:36.617Z"
+    },
+    {
+      "url": "http://instagram.com/lou.pecou",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Flou.pecou&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:36.768Z"
+    },
+    {
+      "url": "https://order.toasttab.com/egiftcards/lou-pecou-pizzeria-5567-cunard-street",
+      "finalUrl": "https://order.toasttab.com/egiftcards/lou-pecou-pizzeria-5567-cunard-street",
+      "status": 403,
+      "observedAt": "2026-10-22T11:56:36.805Z"
+    },
+    {
+      "url": "https://www.instagram.com/kraveburger",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fkraveburger&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:36.947Z"
+    },
+    {
+      "url": "https://ordering.chownow.com/order/20384/locations/29373",
+      "finalUrl": "https://ordering.chownow.com/order/20384/locations/29373",
+      "status": 403,
+      "observedAt": "2026-10-22T11:56:37.004Z"
+    },
+    {
+      "url": "https://www.instagram.com/micmacbarandgrill/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fmicmacbarandgrill%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:37.115Z"
+    },
+    {
+      "url": "https://www.opentable.ca/r/mic-mac-bar-and-grill-reservations-dartmouth?restref=342265&lang=en-CA&ot_source=Restaurant%20website",
+      "finalUrl": "https://www.opentable.ca/r/mic-mac-bar-and-grill-reservations-dartmouth?restref=342265&lang=en-CA&ot_source=Restaurant%20website",
+      "status": 403,
+      "observedAt": "2026-10-22T11:56:37.193Z"
+    },
+    {
+      "url": "https://www.instagram.com/lat44hfx/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Flat44hfx%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:37.536Z"
+    },
+    {
+      "url": "http://www.opentable.com/restaurant/profile/1320568/reserve?restref=1320568",
+      "finalUrl": "https://www.opentable.com/booking/restref/availability?restref=1320568",
+      "status": 403,
+      "observedAt": "2026-10-22T11:56:37.704Z"
+    },
+    {
+      "url": "https://www.opentable.ca/r/latitude-44-restaurant-and-taproom-halifax?ref=16423",
+      "finalUrl": "https://www.opentable.ca/r/latitude-44-restaurant-and-taproom-halifax?ref=16423",
+      "status": 403,
+      "observedAt": "2026-10-22T11:56:37.871Z"
+    },
+    {
+      "url": "https://www.instagram.com/publichfx/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fpublichfx%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:38.334Z"
+    },
+    {
+      "url": "https://www.instagram.com/agricolastreet/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fagricolastreet%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:38.451Z"
+    },
+    {
+      "url": "https://www.instagram.com/waterpolo.hfx/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fwaterpolo.hfx%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:38.779Z"
+    },
+    {
+      "url": "https://www.instagram.com/cremehalifax",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fcremehalifax&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:39.002Z"
+    },
+    {
+      "url": "https://www.opentable.ca/restref/client/?restref=1395742&lang=en-CA&ot_source=Restaurant%2520website&corrid=6e2aee20-0e50-4b76-bdae-b08db2b808ef&fbclid=PAZXh0bgNhZW0CMTEAAaYBK_oqaYbKfdPmSbV0UaGFZP5UvEcIu0j0tjkNMstqkaHGXTy0LEG5xQ4_aem_GyAEP8nt_duDFB5MCY9sBw",
+      "finalUrl": "https://www.opentable.ca/booking/restref/availability?restref=1395742&lang=en-CA&ot_source=Restaurant%2520website&corrid=6e2aee20-0e50-4b76-bdae-b08db2b808ef&fbclid=PAZXh0bgNhZW0CMTEAAaYBK_oqaYbKfdPmSbV0UaGFZP5UvEcIu0j0tjkNMstqkaHGXTy0LEG5xQ4_aem_GyAEP8nt_duDFB5MCY9sBw",
+      "status": 403,
+      "observedAt": "2026-10-22T11:56:39.049Z"
+    },
+    {
+      "url": "https://instagram.com/phohoangminh.ca",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fphohoangminh.ca&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:39.272Z"
+    },
+    {
+      "url": "http://instagram.com/tonysdonair",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Ftonysdonair&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:39.493Z"
+    },
+    {
+      "url": "http://instagram.com/cheesecurdsburgers",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fcheesecurdsburgers&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:39.615Z"
+    },
+    {
+      "url": "https://www.instagram.com/doolys.billiards",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fdoolys.billiards&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:39.898Z"
+    },
+    {
+      "url": "https://www.instagram.com/blacksheephfx/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fblacksheephfx%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:40.011Z"
+    },
+    {
+      "url": "https://www.instagram.com/themellowmug/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fthemellowmug%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:40.127Z"
+    },
+    {
+      "url": "https://www.instagram.com/elagreektavernahfx/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Felagreektavernahfx%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:40.325Z"
+    },
+    {
+      "url": "https://www.instagram.com/pzza.co_hfx/?hl=en",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fpzza.co_hfx%2F%3Fhl%3Den&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:40.687Z"
+    },
+    {
+      "url": "https://www.instagram.com/thebeaversdenhalifax/?hl=en",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fthebeaversdenhalifax%2F%3Fhl%3Den&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:40.831Z"
+    },
+    {
+      "url": "https://instagram.com/7peppersgrill/?hl=en",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2F7peppersgrill%2F%3Fhl%3Den&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:41.007Z"
+    },
+    {
+      "url": "https://www.instagram.com/cheesecurdsburgers/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fcheesecurdsburgers%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:41.196Z"
+    },
+    {
+      "url": "https://x.com/skipcanada",
+      "finalUrl": "https://x.com/skipcanada",
+      "status": 403,
+      "observedAt": "2026-10-22T11:56:41.216Z"
+    },
+    {
+      "url": "https://www.instagram.com/skip_canada",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fskip_canada&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:41.311Z"
+    },
+    {
+      "url": "https://www.skipthedishes.com/user/account/create?forwards=/?utm_source=mashaweemediterraneangrill.ca&utm_medium=microsites&utm_campaign=microsites",
+      "finalUrl": "https://www.skipthedishes.com/user/account/create?forwards=/?utm_source=mashaweemediterraneangrill.ca&utm_medium=microsites&utm_campaign=microsites",
+      "status": 403,
+      "observedAt": "2026-10-22T11:56:41.311Z"
+    },
+    {
+      "url": "https://couriers.skipthedishes.com/application",
+      "finalUrl": "https://couriers.skipthedishes.com/application",
+      "status": 403,
+      "observedAt": "2026-10-22T11:56:41.343Z"
+    },
+    {
+      "url": "https://restaurants.skipthedishes.com/application",
+      "finalUrl": "https://restaurants.skipthedishes.com/application",
+      "status": 403,
+      "observedAt": "2026-10-22T11:56:41.383Z"
+    },
+    {
+      "url": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?menu=All+Day+Menu",
+      "finalUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?menu=All+Day+Menu",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:41.393Z"
+    },
+    {
+      "url": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?menu=Lunch+Menu",
+      "finalUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online?menu=Lunch+Menu",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:41.585Z"
+    },
+    {
+      "url": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050420?menu=All+Day+Menu&category=Appetizers",
+      "finalUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050420?menu=All+Day+Menu&category=Appetizers",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:41.642Z"
+    },
+    {
+      "url": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050421?menu=All+Day+Menu&category=Appetizers",
+      "finalUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050421?menu=All+Day+Menu&category=Appetizers",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:41.662Z"
+    },
+    {
+      "url": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050422?menu=All+Day+Menu&category=Appetizers",
+      "finalUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050422?menu=All+Day+Menu&category=Appetizers",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:41.733Z"
+    },
+    {
+      "url": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050423?menu=All+Day+Menu&category=Appetizers",
+      "finalUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050423?menu=All+Day+Menu&category=Appetizers",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:41.751Z"
+    },
+    {
+      "url": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050424?menu=All+Day+Menu&category=Appetizers",
+      "finalUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050424?menu=All+Day+Menu&category=Appetizers",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:41.772Z"
+    },
+    {
+      "url": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050425?menu=All+Day+Menu&category=Appetizers",
+      "finalUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050425?menu=All+Day+Menu&category=Appetizers",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:41.866Z"
+    },
+    {
+      "url": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050426?menu=All+Day+Menu&category=Appetizers",
+      "finalUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050426?menu=All+Day+Menu&category=Appetizers",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:41.894Z"
+    },
+    {
+      "url": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050427?menu=All+Day+Menu&category=Appetizers",
+      "finalUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050427?menu=All+Day+Menu&category=Appetizers",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:41.918Z"
+    },
+    {
+      "url": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050428?menu=All+Day+Menu&category=Appetizers",
+      "finalUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050428?menu=All+Day+Menu&category=Appetizers",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:41.939Z"
+    },
+    {
+      "url": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050429?menu=All+Day+Menu&category=Appetizers",
+      "finalUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050429?menu=All+Day+Menu&category=Appetizers",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:41.956Z"
+    },
+    {
+      "url": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050430?menu=All+Day+Menu&category=Soups",
+      "finalUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050430?menu=All+Day+Menu&category=Soups",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:41.978Z"
+    },
+    {
+      "url": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050431?menu=All+Day+Menu&category=Soups",
+      "finalUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050431?menu=All+Day+Menu&category=Soups",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:41.997Z"
+    },
+    {
+      "url": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050432?menu=All+Day+Menu&category=Soups",
+      "finalUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050432?menu=All+Day+Menu&category=Soups",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:42.015Z"
+    },
+    {
+      "url": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050433?menu=All+Day+Menu&category=Soups",
+      "finalUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050433?menu=All+Day+Menu&category=Soups",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:42.039Z"
+    },
+    {
+      "url": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050434?menu=All+Day+Menu&category=Soups",
+      "finalUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050434?menu=All+Day+Menu&category=Soups",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:42.059Z"
+    },
+    {
+      "url": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050435?menu=All+Day+Menu&category=Soups",
+      "finalUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050435?menu=All+Day+Menu&category=Soups",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:42.078Z"
+    },
+    {
+      "url": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050436?menu=All+Day+Menu&category=Soups",
+      "finalUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050436?menu=All+Day+Menu&category=Soups",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:42.098Z"
+    },
+    {
+      "url": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050437?menu=All+Day+Menu&category=Soups",
+      "finalUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050437?menu=All+Day+Menu&category=Soups",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:42.115Z"
+    },
+    {
+      "url": "https://www.cantongardenns.com/yik8nsx2/canton-garden-halifax-b3m-0h8/menu",
+      "finalUrl": "https://www.cantongardenns.com/yik8nsx2/canton-garden-halifax-b3m-0h8/menu",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:42.139Z"
+    },
+    {
+      "url": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/lunch-menu/42050533?menu=Lunch+Menu&category=Lunch+Specials",
+      "finalUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/lunch-menu/42050533?menu=Lunch+Menu&category=Lunch+Specials",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:42.163Z"
+    },
+    {
+      "url": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/lunch-menu/42050534?menu=Lunch+Menu&category=Lunch+Specials",
+      "finalUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/lunch-menu/42050534?menu=Lunch+Menu&category=Lunch+Specials",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:42.183Z"
+    },
+    {
+      "url": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/lunch-menu/42050535?menu=Lunch+Menu&category=Lunch+Specials",
+      "finalUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/lunch-menu/42050535?menu=Lunch+Menu&category=Lunch+Specials",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:42.202Z"
+    },
+    {
+      "url": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/lunch-menu/42050536?menu=Lunch+Menu&category=Lunch+Specials",
+      "finalUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/lunch-menu/42050536?menu=Lunch+Menu&category=Lunch+Specials",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:42.223Z"
+    },
+    {
+      "url": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/lunch-menu/42050537?menu=Lunch+Menu&category=Lunch+Specials",
+      "finalUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/lunch-menu/42050537?menu=Lunch+Menu&category=Lunch+Specials",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:42.254Z"
+    },
+    {
+      "url": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/lunch-menu/42050538?menu=Lunch+Menu&category=Lunch+Specials",
+      "finalUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/lunch-menu/42050538?menu=Lunch+Menu&category=Lunch+Specials",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:42.274Z"
+    },
+    {
+      "url": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050420?menu=All+Day+Menu&category=Appetizers#main-content",
+      "finalUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050420?menu=All+Day+Menu&category=Appetizers",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:42.296Z"
+    },
+    {
+      "url": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050420?menu=All+Day+Menu",
+      "finalUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050420?menu=All+Day+Menu",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:42.319Z"
+    },
+    {
+      "url": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050420?menu=Lunch+Menu",
+      "finalUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050420?menu=Lunch+Menu",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:42.367Z"
+    },
+    {
+      "url": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050420?menu=All+Day+Menu&category=Appetizers#menu-section",
+      "finalUrl": "https://www.cantongardenns.com/yik8nsx2/restaurant/order-online/menus/all-day-menu/42050420?menu=All+Day+Menu&category=Appetizers",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:42.396Z"
+    },
+    {
+      "url": "https://instagram.com/ardmore_tea_room",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fardmore_tea_room&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:42.254Z"
+    },
+    {
+      "url": "https://www.instagram.com/kingofdonair/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fkingofdonair%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:42.319Z"
+    },
+    {
+      "url": "https://www.kingofdonair.ca/menu/",
+      "finalUrl": "https://www.kingofdonair.ca/menu/",
+      "status": 403,
+      "observedAt": "2026-10-22T11:56:42.367Z"
+    },
+    {
+      "url": "https://www.ubereats.com/en-CA/halifax/food-delivery/king-of-donair/QN01K4gsSo-JFkTTLNNbug/",
+      "finalUrl": "https://www.ubereats.com/ca/store/king-of-donair/QN01K4gsSo-JFkTTLNNbug",
+      "status": 403,
+      "observedAt": "2026-10-22T11:56:42.412Z"
+    },
+    {
+      "url": "https://order.online/business/king-of-donair-252835",
+      "finalUrl": "https://order.online/business/king-of-donair-252835",
+      "status": 403,
+      "observedAt": "2026-10-22T11:56:42.427Z"
+    },
+    {
+      "url": "https://www.instagram.com/thelowerdeckhfx",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fthelowerdeckhfx&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:42.695Z"
+    },
+    {
+      "url": "https://www.instagram.com/barrioshfx/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fbarrioshfx%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:42.808Z"
+    },
+    {
+      "url": "https://www.instagram.com/stillwellbrewing/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fstillwellbrewing%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:43.060Z"
+    },
+    {
+      "url": "https://www.instagram.com/rinaldoshfx/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Frinaldoshfx%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:43.176Z"
+    },
+    {
+      "url": "https://instagram.com/WildLeek",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2FWildLeek&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:43.288Z"
+    },
+    {
+      "url": "https://www.instagram.com/the_ostrichclub/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fthe_ostrichclub%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:43.356Z"
+    },
+    {
+      "url": "https://www.instagram.com/thestubborngoat/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fthestubborngoat%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:43.474Z"
+    },
+    {
+      "url": "https://www.instagram.com/lebistrobyliz/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Flebistrobyliz%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:43.584Z"
+    },
+    {
+      "url": "https://www.instagram.com/theboardroomgc/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Ftheboardroomgc%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:43.792Z"
+    },
+    {
+      "url": "https://www.instagram.com/ristoranteamano/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fristoranteamano%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:44.283Z"
+    },
+    {
+      "url": "https://www.instagram.com/morriseast/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fmorriseast%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:44.512Z"
+    },
+    {
+      "url": "https://order.toasttab.com/online/locations/ec6ab1aa-2518-430f-aba4-25404d2c2fb8/default",
+      "finalUrl": "https://order.toasttab.com/online/locations/ec6ab1aa-2518-430f-aba4-25404d2c2fb8/default",
+      "status": 403,
+      "observedAt": "2026-10-22T11:56:44.581Z"
+    },
+    {
+      "url": "https://www.instagram.com/tiltedtap",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Ftiltedtap&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:44.664Z"
+    },
+    {
+      "url": "https://www.instagram.com/sullyandporter",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fsullyandporter&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:44.875Z"
+    },
+    {
+      "url": "https://www.instagram.com/sweetandsassyhalifax/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fsweetandsassyhalifax%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:45.002Z"
+    },
+    {
+      "url": "https://www.instagram.com/studioeasthfx/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fstudioeasthfx%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:45.359Z"
+    },
+    {
+      "url": "https://www.exploretock.com/studio-east-asian-gastropub-halifax",
+      "finalUrl": "https://www.exploretock.com/studio-east-asian-gastropub-halifax",
+      "status": 403,
+      "observedAt": "2026-10-22T11:56:45.359Z"
+    },
+    {
+      "url": "https://www.opentable.ca/r/studio-east-halifax?corrid=46ab8db6-a438-466c-8be6-c7bd8f78ca55&avt=eyJ2IjoyLCJtIjowLCJwIjowLCJzIjoxLCJuIjowfQ&p=2&sd=2026-01-06T22%3A30%3A00",
+      "finalUrl": "https://www.opentable.ca/r/studio-east-halifax?corrid=46ab8db6-a438-466c-8be6-c7bd8f78ca55&avt=eyJ2IjoyLCJtIjowLCJwIjowLCJzIjoxLCJuIjowfQ&p=2&sd=2026-01-06T22%3A30%3A00",
+      "status": 403,
+      "observedAt": "2026-10-22T11:56:45.404Z"
+    },
+    {
+      "url": "https://www.instagram.com/2crowsbrewing",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2F2crowsbrewing&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:45.586Z"
+    },
+    {
+      "url": "https://www.instagram.com/goodrobotbrew/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fgoodrobotbrew%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:45.721Z"
+    },
+    {
+      "url": "https://www.instagram.com/tomavinospizza/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Ftomavinospizza%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:45.937Z"
+    },
+    {
+      "url": "https://www.instagram.com/donninispizzahfx/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fdonninispizzahfx%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:46.054Z"
+    },
+    {
+      "url": "https://www.instagram.com/thewardroom/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fthewardroom%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:46.211Z"
+    },
+    {
+      "url": "https://www.instagram.com/orsopubhalifax/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Forsopubhalifax%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:46.347Z"
+    },
+    {
+      "url": "https://www.instagram.com/afriteresto/?hl=en",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fafriteresto%2F%3Fhl%3Den&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:46.564Z"
+    },
+    {
+      "url": "https://www.instagram.com/fanschineserestaurant/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Ffanschineserestaurant%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:46.697Z"
+    },
+    {
+      "url": "http://instagram.com/themercantilesocial",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fthemercantilesocial&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:46.899Z"
+    },
+    {
+      "url": "https://www.instagram.com/mexis_hfx/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fmexis_hfx%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:46.920Z"
+    },
+    {
+      "url": "https://ordering.chownow.com/order/6552/locations?add_cn_ordering_class=true",
+      "finalUrl": "https://ordering.chownow.com/order/6552/locations?add_cn_ordering_class=true",
+      "status": 403,
+      "observedAt": "2026-10-22T11:56:48.525Z"
+    },
+    {
+      "url": "https://www.instagram.com/cutsteakhalifax/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fcutsteakhalifax%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:48.541Z"
+    },
+    {
+      "url": "https://www.instagram.com/realfakemeats",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Frealfakemeats&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:48.661Z"
+    },
+    {
+      "url": "https://www.instagram.com/kajohnthairestaurant/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fkajohnthairestaurant%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:48.801Z"
+    },
+    {
+      "url": "https://www.instagram.com/antojotacos/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fantojotacos%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:48.918Z"
+    },
+    {
+      "url": "https://www.instagram.com/brawtajamaicanjerkjoint/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fbrawtajamaicanjerkjoint%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:49.134Z"
+    },
+    {
+      "url": "https://www.ubereats.com/",
+      "finalUrl": "https://www.ubereats.com/",
+      "status": 403,
+      "observedAt": "2026-10-22T11:56:49.144Z"
+    },
+    {
+      "url": "https://www.instagram.com/gahanbeer/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fgahanbeer%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:49.254Z"
+    },
+    {
+      "url": "https://www.instagram.com/tokyorollhalifax/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Ftokyorollhalifax%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:49.368Z"
+    },
+    {
+      "url": "https://www.skipthedishes.com/user/account/create?forwards=/?utm_source=inspringhotpot.com&utm_medium=microsites&utm_campaign=microsites",
+      "finalUrl": "https://www.skipthedishes.com/user/account/create?forwards=/?utm_source=inspringhotpot.com&utm_medium=microsites&utm_campaign=microsites",
+      "status": 403,
+      "observedAt": "2026-10-22T11:56:49.398Z"
+    },
+    {
+      "url": "https://www.instagram.com/shuckhfx/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fshuckhfx%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:49.486Z"
+    },
+    {
+      "url": "https://www.opentable.ca/r/shuck-seafood-and-raw-bar-halifax",
+      "finalUrl": "https://www.opentable.ca/r/shuck-seafood-and-raw-bar-halifax",
+      "status": 403,
+      "observedAt": "2026-10-22T11:56:49.486Z"
+    },
+    {
+      "url": "https://www.instagram.com/waterfrontwarehouse/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fwaterfrontwarehouse%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:49.593Z"
+    },
+    {
+      "url": "https://www.instagram.com/smokehousenanobrewery/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fsmokehousenanobrewery%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:49.713Z"
+    },
+    {
+      "url": "https://www.instagram.com/almonakhalifax/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Falmonakhalifax%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:49.831Z"
+    },
+    {
+      "url": "https://www.instagram.com/mezzakitchen/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fmezzakitchen%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:49.972Z"
+    },
+    {
+      "url": "https://www.instagram.com/junglejimseatery/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fjunglejimseatery%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:50.188Z"
+    },
+    {
+      "url": "https://www.opentable.ca/r/jungle-jims-eatery-goulds-reservations-st-johns?restref=1461142&lang=en-CA&ot_source=Restaurant%20website",
+      "finalUrl": "https://www.opentable.ca/r/jungle-jims-eatery-goulds-reservations-st-johns?restref=1461142&lang=en-CA&ot_source=Restaurant%20website",
+      "status": 403,
+      "observedAt": "2026-10-22T11:56:55.289Z"
+    },
+    {
+      "url": "https://order.online/store/-758097?hideModal=true",
+      "finalUrl": "https://order.online/store/-758097?hideModal=true",
+      "status": 403,
+      "observedAt": "2026-10-22T11:56:55.344Z"
+    },
+    {
+      "url": "https://www.instagram.com/trident_cafe_halifax?igsh=bWV6NDEwcjg1azZ3&utm_source=website",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Ftrident_cafe_halifax%3Figsh%3DbWV6NDEwcjg1azZ3%26utm_source%3Dwebsite&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:55.835Z"
+    },
+    {
+      "url": "https://www.instagram.com/pazzokitchen/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fpazzokitchen%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:56.954Z"
+    },
+    {
+      "url": "https://www.opentable.ca/restaurant/profile/1336126/reserve?rid=1336126&restref=1336126",
+      "finalUrl": "https://www.opentable.ca/booking/restref/availability?rid=1336126&restref=1336126",
+      "status": 403,
+      "observedAt": "2026-10-22T11:56:57.153Z"
+    },
+    {
+      "url": "http://instagram.com/harvestcleaneats",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fharvestcleaneats&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:57.297Z"
+    },
+    {
+      "url": "https://www.instagram.com/motherspizza/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fmotherspizza%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:57.792Z"
+    },
+    {
+      "url": "https://www.ubereats.com/ca/store/mothers-pizza/n8rHAFzESdugPVm_Dj2jaA",
+      "finalUrl": "https://www.ubereats.com/ca/store/mothers-pizza/n8rHAFzESdugPVm_Dj2jaA",
+      "status": 403,
+      "observedAt": "2026-10-22T11:56:57.833Z"
+    },
+    {
+      "url": "https://www.instagram.com/terracafehfx/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fterracafehfx%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:58.083Z"
+    },
+    {
+      "url": "https://www.instagram.com/armview/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Farmview%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:58.302Z"
+    },
+    {
+      "url": "https://web.ishopfood.com/#/the-armview/orderType",
+      "finalUrl": "https://web.ishopfood.com/",
+      "status": 403,
+      "observedAt": "2026-10-22T11:56:58.348Z"
+    },
+    {
+      "url": "https://www.instagram.com/SICILIANPIZZAHFX/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2FSICILIANPIZZAHFX%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:56:59.029Z"
+    },
+    {
+      "url": "https://www.instagram.com/maygardenhfx/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fmaygardenhfx%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:57:00.265Z"
+    },
+    {
+      "url": "https://www.instagram.com/bedfordbeergarden",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fbedfordbeergarden&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:57:00.498Z"
+    },
+    {
+      "url": "https://www.instagram.com/thewoodenmonkeyrestaurants/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fthewoodenmonkeyrestaurants%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:57:00.665Z"
+    },
+    {
+      "url": "https://www.instagram.com/oxalisns/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Foxalisns%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:57:00.786Z"
+    },
+    {
+      "url": "http://instagram.com/sidehustlesnackbar",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fsidehustlesnackbar&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:57:00.873Z"
+    },
+    {
+      "url": "https://www.instagram.com/stardustbarhalifax",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fstardustbarhalifax&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:57:00.976Z"
+    },
+    {
+      "url": "https://www.instagram.com/ourbicyclethief",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fourbicyclethief&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:57:01.211Z"
+    },
+    {
+      "url": "https://www.instagram.com/thenarrowshalifaxpub/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fthenarrowshalifaxpub%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:57:01.427Z"
+    },
+    {
+      "url": "https://instagram.com/thepressganghfx/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fthepressganghfx%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:57:01.209Z"
+    },
+    {
+      "url": "https://www.instagram.com/tribute.restaurant/",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Ftribute.restaurant%2F&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:57:01.544Z"
+    },
+    {
+      "url": "https://www.instagram.com/indiaparadisehalifaxdowntown",
+      "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Findiaparadisehalifaxdowntown&is_from_rle",
+      "status": 429,
+      "observedAt": "2026-10-22T11:57:01.732Z"
+    }
+  ],
+  "historicalEvidence": [
+    {
+      "provenance": {
+        "repository": "JeremyHennessy/HalifaxSourced",
+        "sourceCommitSha": "03a7fc0911ae4e2517569ccb917f61b3d878824a",
+        "workflowRunId": "39767300296",
+        "artifactId": "12421525297",
+        "artifactSha256": "3686f2d8fbfc678e5a2c1717477b9135ae140e839c3b8206e829e7bae38a2266",
+        "member": "data/build/source-link-health-report.json",
+        "memberSha256": "b1bcb9941b3a4a4726610435820f8c28fcc5e64156eb365d65cac21a5aed1799",
+        "reportGeneratedAt": "2026-10-22T11:04:42.124Z"
+      },
+      "observations": [
+        {
+          "url": "https://junglejims.ca/",
+          "finalUrl": "https://junglejims.ca/",
+          "status": 403,
+          "observedAt": "2026-10-22T11:04:03.501Z"
+        },
+        {
+          "url": "https://junglejims.ca/menu",
+          "finalUrl": "https://junglejims.ca/menu",
+          "status": 403,
+          "observedAt": "2026-10-22T11:04:35.703Z"
+        },
+        {
+          "url": "https://junglejims.ca/menu/bay-roberts",
+          "finalUrl": "https://junglejims.ca/menu/bay-roberts",
+          "status": 403,
+          "observedAt": "2026-10-22T11:04:35.740Z"
+        },
+        {
+          "url": "https://junglejims.ca/menu/cbs-manuels",
+          "finalUrl": "https://junglejims.ca/menu/cbs-manuels",
+          "status": 403,
+          "observedAt": "2026-10-22T11:04:35.782Z"
+        },
+        {
+          "url": "https://junglejims.ca/menu/clarenville",
+          "finalUrl": "https://junglejims.ca/menu/clarenville",
+          "status": 403,
+          "observedAt": "2026-10-22T11:04:35.802Z"
+        },
+        {
+          "url": "https://junglejims.ca/menu/corner-brook",
+          "finalUrl": "https://junglejims.ca/menu/corner-brook",
+          "status": 403,
+          "observedAt": "2026-10-22T11:04:35.817Z"
+        },
+        {
+          "url": "https://junglejims.ca/menu/deer-lake",
+          "finalUrl": "https://junglejims.ca/menu/deer-lake",
+          "status": 403,
+          "observedAt": "2026-10-22T11:04:35.826Z"
+        },
+        {
+          "url": "https://junglejims.ca/menu/fredericton",
+          "finalUrl": "https://junglejims.ca/menu/fredericton",
+          "status": 403,
+          "observedAt": "2026-10-22T11:04:35.836Z"
+        },
+        {
+          "url": "https://junglejims.ca/menu/gander",
+          "finalUrl": "https://junglejims.ca/menu/gander",
+          "status": 403,
+          "observedAt": "2026-10-22T11:04:35.845Z"
+        },
+        {
+          "url": "https://junglejims.ca/menu/goulds",
+          "finalUrl": "https://junglejims.ca/menu/goulds",
+          "status": 403,
+          "observedAt": "2026-10-22T11:04:35.864Z"
+        },
+        {
+          "url": "https://junglejims.ca/menu/grand-falls-windsor",
+          "finalUrl": "https://junglejims.ca/menu/grand-falls-windsor",
+          "status": 403,
+          "observedAt": "2026-10-22T11:04:35.871Z"
+        },
+        {
+          "url": "https://junglejims.ca/menu/halifax-bayers-lake",
+          "finalUrl": "https://junglejims.ca/menu/halifax-bayers-lake",
+          "status": 403,
+          "observedAt": "2026-10-22T11:04:35.877Z"
+        },
+        {
+          "url": "https://junglejims.ca/menu/happy-valley-goose-bay",
+          "finalUrl": "https://junglejims.ca/menu/happy-valley-goose-bay",
+          "status": 403,
+          "observedAt": "2026-10-22T11:04:35.887Z"
+        },
+        {
+          "url": "https://junglejims.ca/menu/lanse-au-clair",
+          "finalUrl": "https://junglejims.ca/menu/lanse-au-clair",
+          "status": 403,
+          "observedAt": "2026-10-22T11:04:35.897Z"
+        },
+        {
+          "url": "https://junglejims.ca/menu/labrador-city",
+          "finalUrl": "https://junglejims.ca/menu/labrador-city",
+          "status": 403,
+          "observedAt": "2026-10-22T11:04:35.918Z"
+        },
+        {
+          "url": "https://junglejims.ca/menu/lewisporte",
+          "finalUrl": "https://junglejims.ca/menu/lewisporte",
+          "status": 403,
+          "observedAt": "2026-10-22T11:04:35.930Z"
+        },
+        {
+          "url": "https://junglejims.ca/menu/old-perlican",
+          "finalUrl": "https://junglejims.ca/menu/old-perlican",
+          "status": 403,
+          "observedAt": "2026-10-22T11:04:35.961Z"
+        },
+        {
+          "url": "https://junglejims.ca/menu/oromocto",
+          "finalUrl": "https://junglejims.ca/menu/oromocto",
+          "status": 403,
+          "observedAt": "2026-10-22T11:04:35.975Z"
+        },
+        {
+          "url": "https://junglejims.ca/menu/saint-john",
+          "finalUrl": "https://junglejims.ca/menu/saint-john",
+          "status": 403,
+          "observedAt": "2026-10-22T11:04:35.981Z"
+        },
+        {
+          "url": "https://junglejims.ca/menu/st-anthony",
+          "finalUrl": "https://junglejims.ca/menu/st-anthony",
+          "status": 403,
+          "observedAt": "2026-10-22T11:04:36.005Z"
+        },
+        {
+          "url": "https://junglejims.ca/menu/st-johns-george-street",
+          "finalUrl": "https://junglejims.ca/menu/st-johns-george-street",
+          "status": 403,
+          "observedAt": "2026-10-22T11:04:36.020Z"
+        },
+        {
+          "url": "https://junglejims.ca/menu/st-johns-topsail-road",
+          "finalUrl": "https://junglejims.ca/menu/st-johns-topsail-road",
+          "status": 403,
+          "observedAt": "2026-10-22T11:04:36.035Z"
+        },
+        {
+          "url": "https://junglejims.ca/menu/st-johns-torbay-road",
+          "finalUrl": "https://junglejims.ca/menu/st-johns-torbay-road",
+          "status": 403,
+          "observedAt": "2026-10-22T11:04:36.042Z"
+        },
+        {
+          "url": "https://junglejims.ca/menu/stellarton",
+          "finalUrl": "https://junglejims.ca/menu/stellarton",
+          "status": 403,
+          "observedAt": "2026-10-22T11:04:36.054Z"
+        },
+        {
+          "url": "https://junglejims.ca/menu/yarmouth",
+          "finalUrl": "https://junglejims.ca/menu/yarmouth",
+          "status": 403,
+          "observedAt": "2026-10-22T11:04:36.064Z"
+        },
+        {
+          "url": "https://junglejims.ca/#",
+          "finalUrl": "https://junglejims.ca/",
+          "status": 403,
+          "observedAt": "2026-10-22T11:04:36.073Z"
+        }
+      ]
+    },
+    {
+      "provenance": {
+        "repository": "JeremyHennessy/HalifaxSourced",
+        "sourceCommitSha": "767ce5216ff948529114645f550885ebc178744e",
+        "workflowRunId": "39744158052",
+        "artifactId": "12411255693",
+        "artifactSha256": "06aabfe570f511c8a6099a06d0e8863566c192c1345dad00aff36d939605ef60",
+        "member": "data/build/source-link-health-report.json",
+        "memberSha256": "eb6d6d683b2a8101bd5e0faaaadbf462d7d9164156b39243e243423415d1741c",
+        "reportGeneratedAt": "2026-10-22T08:01:25.602Z"
+      },
+      "observations": [
+        {
+          "url": "https://www.instagram.com/halifaxcatering/",
+          "finalUrl": "https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fhalifaxcatering%2F&is_from_rle",
+          "status": 429,
+          "observedAt": "2026-10-22T08:01:07.867Z"
+        }
+      ]
+    }
+  ]
+}

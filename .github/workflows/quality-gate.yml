@@ -48,6 +48,7 @@ jobs:
           node scripts/test-coverage-values.mjs
           node scripts/test-coverage-freshness.mjs
           node scripts/test-link-audit-freshness.mjs
+          node scripts/test-link-access-holds.mjs
           node scripts/test-review-trust-contracts.mjs
           node scripts/test-event-title-categories.mjs
           node scripts/test-menu-pointer-audit.mjs
@@ -271,6 +272,8 @@ jobs:
         with:
           name: quality-gate-data-integrity
           path: |
+            artifacts/source-link-health-report.json
+            artifacts/source-access-diagnostics.jsonl
             artifacts/data-integrity-report.json
             artifacts/expanded-source-integrity-report.json
             data/build/thumbnail-auto-approval-report.json

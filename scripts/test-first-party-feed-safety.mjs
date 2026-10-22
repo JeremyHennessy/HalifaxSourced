@@ -4,8 +4,24 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { spawnSync } from 'node:child_process';
 import { feedEntryBlocks, validatePreviousFeedSnapshot } from './lib/first-party-feed-safety.mjs';
+// A real denial or unresolved native request is an intentional nonpublishable
+// subprocess result, not a failed fixture. Derive this from the finite plan,
+// then independently require its diagnostic rather than accepting any exit1.
+function assertAccessExit(result, specs, label, startupExit = 0) {
+  const restrictions = specs.filter(spec => [401,403,429].includes(spec?.status));
+  const unsettled = specs.some(spec => spec?.stallFetch || spec?.stallsFetch || spec?.lateFetch || spec?.delayFetch);
+  const expected = startupExit || (restrictions.length || unsettled ? 1 : 0);
+  assert.equal(result.error,undefined,label + ': child must finish within its existing bound');
+  assert.equal(result.signal,null,label + ': child must not be killed');
+  assert.equal(result.status,expected,label + '\n' + result.stderr);
+  const diagnostics = result.stderr.split('\n').filter(line => line.startsWith('HALIFAX_SOURCE_ACCESS_DIAGNOSTIC ')).map(line => JSON.parse(line.slice('HALIFAX_SOURCE_ACCESS_DIAGNOSTIC '.length)));
+  for (const spec of restrictions) assert(diagnostics.some(item => ['http_restriction','late_http_restriction'].includes(item.kind) && item.evidence.receipt.status === spec.status),label + ': actual denial diagnostic');
+  if (unsettled) assert(diagnostics.some(item => item.kind === 'unsettled_transport'),label + ': unresolved request diagnostic');
+  assert(diagnostics.every(item => item.disposition === 'nonpublishable_requires_review' && (item.kind === 'unsettled_transport' ? unsettled : restrictions.some(spec => item.evidence.receipt?.status === spec.status))),label + ': no unexpected access diagnostic');
+}
 
-const clock = '2026-10-22T10:00:00.000Z';
+
+const clock = '2026-10-23T10:00:00.000Z';
 const feed = 'https://fixture.example/feed?kind=rss';
 const tail = 'https://fixture.example/tail';
 const robot = 'https://fixture.example/robots.txt';
@@ -22,7 +38,7 @@ const root = await mkdtemp(join(tmpdir(),'halifax-feed-safety-'));
 let passed=0;
 try {
   await mkdir(join(root,'scripts/lib'),{recursive:true}); await mkdir(join(root,'data/build'),{recursive:true});
-  for(const file of ['scripts/import-first-party-feed-signals.mjs','scripts/lib/first-party-feed-safety.mjs','scripts/lib/lifecycle-language.mjs','scripts/lib/robots-policy.mjs','scripts/lib/fetch-public-source.mjs','scripts/lib/deny-source-network.mjs','source-integrity.js']) await copyFile(new URL('../'+file,import.meta.url),join(root,file));
+  for(const file of ['scripts/import-first-party-feed-signals.mjs','scripts/lib/first-party-feed-safety.mjs','scripts/lib/lifecycle-language.mjs','scripts/lib/robots-policy.mjs','scripts/lib/fetch-public-source.mjs', 'scripts/lib/source-access-state.mjs', 'scripts/lib/link-access-policy.mjs', 'data/source-link-access-holds.json','scripts/lib/deny-source-network.mjs','source-integrity.js']) await copyFile(new URL('../'+file,import.meta.url),join(root,file));
   await writeFile(join(root,'runner.mjs'),`
 import assert from 'node:assert/strict';
 import {readFile,writeFile} from 'node:fs/promises';
@@ -65,7 +81,7 @@ if(failure){console.error(failure);process.exitCode=1;}
     const trace=JSON.parse(await readFile(join(root,'trace.json'),'utf8').catch(error=>{throw new Error(name+': '+result.stderr+' '+result.stdout+' '+error.message);}));
     assert.deepEqual(trace.unexpected,[],`${name}: unexpected requests`);
     if(abort){assert.notEqual(result.status,0,name);assert.ok(trace.failure,name);assert.deepEqual(trace.trace,[],`${name}: validate before network`);assert.equal(await readFile(jsonPath,'utf8').catch(()=>null),beforeJson,name);assert.equal(await readFile(jsPath,'utf8').catch(()=>null),beforeJs,name);passed++;return;}
-    assert.equal(result.status,0,`${name}: ${result.stderr}`);
+    assertAccessExit(result,trace.trace.map(call=>network[call.url]),name);
     const payload=JSON.parse(await readFile(jsonPath,'utf8'));
     const script=await readFile(jsPath,'utf8');assert.deepEqual(JSON.parse(script.replace(/^window\.HALIFAX_WEBSITE_FEED_SIGNALS = /,'').replace(/;\n$/,'')),payload,`${name}: parity`);
     validatePreviousFeedSnapshot(payload);
@@ -130,7 +146,7 @@ if(failure){console.error(failure);process.exitCode=1;}
   await run('post/signal winner consistency',{network:{[robot]:policy,[feed]:{body:rss(entry('Plain news','https://fixture.example/old').replace('Short patio summary','Plain summary'))},[tail]:{status:500}},records:[record(),record('venue',tail)],prior:snapshot([old({feedUrl:tail})]),failed:1,retained:0,posts:1,check:p=>assert.deepEqual(p.signals,[])});
   await run('80-item bound',{network:{[robot]:policy,[feed]:{body:rss(Array.from({length:85},(_,i)=>entry('News '+i,'https://fixture.example/'+i)).join(''))}},posts:80});
   const first=await run('retention run one',{network:{[robot]:{status:503}},failed:1,retained:1});
-  const second=await run('retention run two',{network:{[robot]:{status:503}},prior:first,failed:1,retained:1,time:'2026-10-23T10:00:00.000Z'});
+  const second=await run('retention run two',{network:{[robot]:{status:503}},prior:first,failed:1,retained:1,time:'2026-10-24T10:00:00.000Z'});
   assert.deepEqual(second.posts,first.posts);assert.notEqual(second.generatedAt,first.generatedAt);assert.notEqual(second.failures[0].attemptedAt,first.failures[0].attemptedAt);
   for(const bad of ['{broken','{}','{"posts":null,"signals":[]}',JSON.stringify(snapshot([old({excerpt:'x'.repeat(701)})])),JSON.stringify(snapshot([old({observedAt:'bad'})])),JSON.stringify(snapshot([old({observedAt:null})])),JSON.stringify(snapshot([old({observedAt:undefined})])),JSON.stringify(snapshot([old({content:'unbounded'})])),JSON.stringify(snapshot([old(),old()])),JSON.stringify({...snapshot([old()]),signals:[]}),JSON.stringify(snapshot([old({signalMatches:{patio:'patio'}})]))])await run('malformed prior refuses overwrite',{badJson:bad,abort:true});
   for(const badJs of ['not an assignment',js(snapshot([])),null])await run('bad/missing script twin',{badJs,abort:true});

@@ -9,7 +9,7 @@ const root = await mkdtemp(join(tmpdir(), 'halifax-source-startup-'));
 try {
   await mkdir(join(root,'scripts','lib'),{recursive:true});
   await mkdir(join(root,'data','build'),{recursive:true});
-  for (const file of ['scripts/verify-official-source-pages.mjs','scripts/lib/source-page-classification.mjs','scripts/lib/fetch-public-source.mjs','scripts/lib/robots-policy.mjs','source-integrity.js']) {
+  for (const file of ['scripts/verify-official-source-pages.mjs','scripts/lib/source-page-classification.mjs','scripts/lib/fetch-public-source.mjs', 'scripts/lib/source-access-state.mjs', 'scripts/lib/link-access-policy.mjs', 'data/source-link-access-holds.json','scripts/lib/robots-policy.mjs','source-integrity.js']) {
     await copyFile(new URL('../'+file,import.meta.url),join(root,file));
   }
   const venue={id:'fixture-local',name:'Fixture Local',website:'https://fixture.example/',address:'1537 Barrington Street, Halifax'};

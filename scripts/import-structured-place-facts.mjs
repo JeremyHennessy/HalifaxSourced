@@ -1,3 +1,4 @@
+import { sourceAccessState } from './lib/source-access-state.mjs';
 import { fetchGuardedSource as fetch } from "./lib/fetch-public-source.mjs";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { blockedFactReason, inactiveFactStatuses, placeFactEvidenceKey, reconcilePlaceFacts } from './lib/place-facts-history.mjs';
@@ -131,8 +132,10 @@ async function robotsAllows(url) {
   const u=new URL(url); if(!robotsCache.has(u.origin)) robotsCache.set(u.origin,(async()=>{try{const r=await fetch(new URL('/robots.txt',u.origin),{headers:{"User-Agent":userAgent},signal:AbortSignal.timeout(Math.min(timeoutMs,7000))}); if(r.status===401||r.status===403)return ['/']; if(!r.ok)return []; let active=false; const dis=[]; for(const raw of (await r.text()).split(/\r?\n/)){const line=raw.replace(/#.*$/,"").trim(); if(/^user-agent\s*:/i.test(line)){active=/^user-agent\s*:\s*\*\s*$/i.test(line);continue;} if(active){const m=line.match(/^disallow\s*:\s*(.*)$/i); if(m?.[1])dis.push(m[1].trim());}} return dis;}catch{return [];}})()); const dis=await robotsCache.get(u.origin); return !dis.some((p)=>p==='/'||(p&&u.pathname.startsWith(p)));
 }
 async function fetchHtml(url) {
-  if(!(await robotsAllows(url))) return {error:"robots_disallow",url};
-  try { const r=await fetch(url,{headers:{"User-Agent":userAgent,Accept:"text/html,application/xhtml+xml"},redirect:"follow",signal:AbortSignal.timeout(timeoutMs)}); if(!r.ok)return {error:`http_${r.status}`,url}; const ct=r.headers.get('content-type')||''; if(!/html|xhtml/i.test(ct))return {error:"not_html",url}; return {html:await r.text(),url:r.url||url}; } catch(e){ return {error:e.name==='TimeoutError'?"timeout":e.message,url}; }
+  const hold=sourceAccessState().access.find(url);
+  if(hold)return {error:'source_access_hold',url,attempted:false,accessHold:hold};
+  if(!(await robotsAllows(url))) return {error:"robots_disallow",url,attempted:false};
+  try { const r=await fetch(url,{headers:{"User-Agent":userAgent,Accept:"text/html,application/xhtml+xml"},redirect:"follow",signal:AbortSignal.timeout(timeoutMs)}); if(!r.ok)return {error:`http_${r.status}`,url,attempted:true}; const ct=r.headers.get('content-type')||''; if(!/html|xhtml/i.test(ct))return {error:"not_html",url,attempted:true}; return {html:await r.text(),url:r.url||url,attempted:true}; } catch(e){ return {error:e.name==='TimeoutError'?"timeout":e.message,url,attempted:e.code==='SOURCE_ACCESS_HOLD'?e.attempted:true,...(e.accessHold?{accessHold:e.accessHold}:{})}; }
 }
 
 const placesById=new Map((catalog.restaurants||[]).map((p)=>[p.id,p]));
@@ -147,7 +150,7 @@ const output=new Array(targets.length); const failures=[]; const observations=[]
 async function worker(){ while(true){ const i=cursor++; if(i>=targets.length)return; const source=targets[i]; const place=placesById.get(source.restaurantId); const observedAt=new Date().toISOString(); const sourceUrl=source.resolvedUrl||source.website;
       const blocked=knownBlocked.get(sourceUrl);
       const fetched=blocked?{error:blocked}:await fetchHtml(sourceUrl);
-      if(!fetched.html){const failure={restaurantId:source.restaurantId,sourceUrl,reason:fetched.error,checkedAt:observedAt,attempted:!blocked}; failures.push(failure); if(!blocked&&blockedFactReason(fetched.error))accessRestrictions.push(failure); observations.push({restaurantId:source.restaurantId,state:blockedFactReason(fetched.error)?'blocked':'failed',reason:fetched.error,checkedAt:observedAt,attempted:!blocked}); continue;}
+      if(!fetched.html){const failure={restaurantId:source.restaurantId,sourceUrl,reason:fetched.error,checkedAt:observedAt,attempted:!blocked && fetched.attempted!==false,...(fetched.accessHold?{accessHold:fetched.accessHold}:{})}; failures.push(failure); if(!blocked&&blockedFactReason(fetched.error))accessRestrictions.push(failure); observations.push({restaurantId:source.restaurantId,state:blockedFactReason(fetched.error)||fetched.accessHold?'blocked':'failed',reason:fetched.error,checkedAt:observedAt,attempted:failure.attempted}); continue;}
       observations.push({restaurantId:source.restaurantId,state:'refreshed',checkedAt:observedAt,attempted:true});
       const nodes=[]; for(const m of fetched.html.matchAll(/<script\b[^>]*type\s*=\s*["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)){try{flattenJsonLd(JSON.parse(m[1].trim()),nodes);}catch{}} const fact={restaurantId:source.restaurantId,name:place.name,sourceUrl:fetched.url,observedAt,lastVerifiedAt:observedAt,sourceKind:"official_website_structured_facts",reviewState:"verified_source",hours:null,phone:null,email:null,address:null,features:[],menus:[],reservations:[],ordering:[]};
       for(const node of nodes){ if(schemaLocationConflicts(node, place)) continue; if(!fact.phone && node.telephone) fact.phone=String(node.telephone).trim(); if(!fact.email && node.email) fact.email=String(node.email).replace(/^mailto:/i,"").trim(); if(!fact.address) fact.address=structuredAddress(node); if(!fact.hours){ fact.hours=node.openingHoursSpecification ? parseOpeningHoursSpecification(node.openingHoursSpecification) : parseOpeningHoursStrings(node.openingHours); } }

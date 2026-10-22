@@ -44,6 +44,10 @@ on:
       - scripts/test-robots-redirect-guards.mjs
       - scripts/test-source-verifier-startup.mjs
       - scripts/test-scheduled-source-guards.mjs
+      - scripts/lib/link-access-policy.mjs
+      - scripts/lib/source-access-state.mjs
+      - scripts/lib/link-health-urls.mjs
+      - scripts/lib/link-health-report.mjs
       - scripts/import-patio-directory-facts.mjs
       - scripts/import-public-special-source-leads.mjs
       - scripts/discover-first-party-sources.mjs
