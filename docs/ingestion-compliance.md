@@ -33,6 +33,52 @@ This captures the peninsula, downtown, North End, South End, West End, nearby Da
 - Google Places: store stable place IDs where allowed; display Google-sourced ratings/reviews/photos only through permitted API use, attribution, and cache controls.
 - Review sites: do not copy review text at scale without a license; link to profiles and store manually verified summaries only when permitted.
 
+## Robots policy repair scope (October 22, 2026)
+
+The shared `scripts/lib/robots-policy.mjs` policy is used by exactly three adapters:
+`import-official-sites.mjs`, `verify-official-source-pages.mjs`, and
+`import-structured-events.mjs`. Policy retrieval uses the existing quarantined-source
+and same-host redirect guard, with a deadline around both fetch and body consumption.
+An origin's in-flight result is cached for the run, including unavailable policies;
+failures are not retried. Network/body errors, deadlines, rejected/missing/looping
+redirects, HTTP 401/403, 429, 5xx, incomplete 206 responses and unknown statuses deny
+collection. Only complete HTTP 200 policies are parsed; 404/410 are the explicit
+absent-policy exceptions. A valid empty/comment-only 200 policy and Sitemap-only text are permitted.
+Declared media types other than plain text, HTML/XML/JSON/error bodies, binary
+control characters, nonempty Allow/Disallow values without a leading slash,
+bodies without usable robots directives and policies larger
+than 512 KiB remain unavailable, not empty policies. Absent media types are accepted
+only when the body itself qualifies as usable robots text.
+
+Matching includes pathname plus query, literal URI characters, `*`, terminal `$`,
+UTF-8/percent-encoding normalization and case-insensitive exact product tokens.
+Matching bot groups are merged; wildcard groups are merged only when there is no
+exact matching bot group. The prior selected-group/literal-prefix denials are also
+retained, so this repair cannot reopen a legacy-denied path, including legacy
+literal `$` paths and erroneously selected `NotHalifaxSourced` groups. `Allow`
+exceptions never reopen a denial. This is an intentionally stricter project policy,
+not full RFC 9309 conformance. Structured-event page redirects now consult the same
+policy callback at each guarded destination, as the other two adapters already did.
+
+Nine independent implementations remain outside this migration:
+`discover-first-party-sources.mjs`, `import-official-page-intelligence.mjs`,
+`import-structured-place-facts.mjs`, `import-review-directory-restaurants.mjs`,
+`import-patio-directory-facts.mjs`, `import-public-special-source-leads.mjs`,
+`import-directory-restaurants.mjs`, `import-city-events.mjs`, and
+`refine-dartmouth-directory.mjs`. Their robots semantics and failure handling have
+not been repaired by this change. Future migration must preserve each adapter's
+sitemap, crawl-delay, source enablement, rate and review constraints and add actual
+entrypoint fixtures before any expansion.
+
+Source Expansion pull requests now run exact-head offline validation with a
+transport-denial preload and cannot run collection or publish preview artifacts.
+Existing scheduled/manual collection remains separate and otherwise unchanged.
+The policy and actual-adapter regressions run in both that PR lane and Quality Gate.
+They include the 22 original offline audit fixtures with unsafe expectations
+reversed, tightening-only comparisons, cache/no-retry and stalled-body tests.
+No source registry enablement, accepted dataset, source clock, media/review gate,
+or collection schedule is changed by this code-only repair.
+
 ## Review workflow
 
 Every captured fact should carry:

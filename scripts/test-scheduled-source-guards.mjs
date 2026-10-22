@@ -95,20 +95,73 @@ try {
 } finally {await rm(root,{recursive:true,force:true});}
 
 // PR validation must not execute collectors or upload promotable preview artifacts.
-for (const [file, cron] of [
-  ['structured-place-facts-preview.yml', '29 11 * * 2'],
-  ['structured-specials-preview.yml', '37 11 * * 3']
-]) {
-  const workflow = await readFile(new URL('../.github/workflows/' + file, import.meta.url), 'utf8');
+function assertPreviewPrBoundary(workflow, file, cron) {
   const prJob = workflow.split('  validate-pr:\n')[1]?.split('  refresh:\n')[0];
   const collector = workflow.split('  refresh:\n')[1];
-  assert(prJob?.includes("if: ${{ github.event_name == 'pull_request' }}"), file + ' needs a PR-only validator');
+  assert(prJob?.startsWith("    if: ${{ github.event_name == 'pull_request' }}\n"), file + ' needs a PR-only validator');
   assert(collector?.startsWith("    if: ${{ github.event_name != 'pull_request' }}\n"), file + ' collector must skip PRs');
-  assert(prJob.includes('NODE_OPTIONS: --import ${{ github.workspace }}/scripts/lib/deny-source-network.mjs'));
+  assert(prJob.includes('ref: ${{ github.event.pull_request.head.sha }}'), file + ' must validate the exact PR head');
+  assert(prJob.includes('NODE_OPTIONS: --import ${{ github.workspace }}/scripts/lib/deny-source-network.mjs'), file + ' must deny source network access');
   assert(!/node scripts\/(import-|discover-|verify-official)|upload-artifact/.test(prJob), file + ' PR job cannot collect or produce preview artifacts');
   assert(workflow.includes('workflow_dispatch:') && workflow.includes(`cron: "${cron}"`), file + ' must preserve manual/scheduled collection');
+  return prJob;
 }
-console.log('Preview PR boundaries passed: fixture/snapshot validation only; scheduled/manual collection remains separate.');
+const sourceValidationCommands = [
+  'node --check scripts/import-official-sites.mjs',
+  'node --check scripts/verify-official-source-pages.mjs',
+  'node --check scripts/import-structured-events.mjs',
+  'node --check scripts/lib/robots-policy.mjs',
+  'node scripts/test-public-source-fetch.mjs',
+  'node scripts/test-robots-policy.mjs',
+  'node scripts/test-robots-policy-adapters.mjs',
+  'node scripts/test-robots-redirect-guards.mjs',
+  'node scripts/test-source-verifier-startup.mjs',
+  'node scripts/test-scheduled-source-guards.mjs'
+];
+const sourceValidationPaths = [
+  'scripts/lib/fetch-public-source.mjs',
+  'scripts/lib/robots-policy.mjs',
+  'scripts/lib/deny-source-network.mjs',
+  ...sourceValidationCommands.filter(command => command.startsWith('node scripts/')).map(command => command.slice(5))
+];
+function assertSourceExpansionBoundary(workflow) {
+  const prJob = assertPreviewPrBoundary(workflow, 'source-expansion-preview.yml', '17 9 * * *');
+  // Keep this PR job limited to one guarded, explicit offline command block.
+  // Syntax checks must never become collector executions, even with node flags.
+  assert.equal((prJob.match(/\brun:/g) || []).length, 1, 'Source Expansion PR validation must use one guarded run block');
+  const run = prJob.split('        run: |\n')[1];
+  assert(run, 'Source Expansion needs an explicit offline validation command block');
+  assert.deepEqual(run.trim().split('\n').map(line => line.trim()), sourceValidationCommands, 'Source Expansion PR commands must stay offline and cover the source policy regressions');
+  assert(prJob.includes('        env:\n          NODE_OPTIONS: --import ${{ github.workspace }}/scripts/lib/deny-source-network.mjs\n        run: |'), 'Source Expansion must apply the network guard to its validation commands');
+  const pathFilter = workflow.split('    paths:\n')[1]?.split('\npermissions:')[0];
+  for (const path of sourceValidationPaths) assert(pathFilter?.split('\n').includes('      - ' + path), 'Source Expansion must validate changes to ' + path);
+}
+for (const [file, cron] of [
+  ['structured-place-facts-preview.yml', '29 11 * * 2'],
+  ['structured-specials-preview.yml', '37 11 * * 3'],
+  ['source-expansion-preview.yml', '17 9 * * *']
+]) {
+  const workflow = await readFile(new URL('../.github/workflows/' + file, import.meta.url), 'utf8');
+  assertPreviewPrBoundary(workflow, file, cron);
+  if (file === 'source-expansion-preview.yml') {
+    assertSourceExpansionBoundary(workflow);
+    for (const [before, after] of [
+      ["    if: ${{ github.event_name != 'pull_request' }}\n", ''],
+      ['ref: ${{ github.event.pull_request.head.sha }}', 'ref: main'],
+      ['NODE_OPTIONS: --import ${{ github.workspace }}/scripts/lib/deny-source-network.mjs', 'NODE_OPTIONS:'],
+      ['node --check scripts/import-official-sites.mjs', 'node scripts/import-official-sites.mjs'],
+      ['node scripts/test-robots-policy.mjs', 'node --trace-warnings scripts/import-official-sites.mjs'],
+      ['node scripts/test-robots-policy-adapters.mjs', 'node scripts/test-public-source-fetch.mjs'],
+      ['      - scripts/lib/robots-policy.mjs\n', ''],
+      ['      - scripts/test-robots-policy.mjs\n', ''],
+      ['      - scripts/test-robots-policy-adapters.mjs\n', ''],
+      ['  refresh:\n', '      - uses: actions/upload-artifact@v4\n\n  refresh:\n']
+    ]) assert.throws(() => assertSourceExpansionBoundary(workflow.replace(before, after)), undefined, 'Source Expansion guard must reject an unsafe boundary change: ' + before);
+  }
+}
+const qualityWorkflow = await readFile(new URL('../.github/workflows/quality-gate.yml', import.meta.url), 'utf8');
+for (const script of ['test-robots-policy.mjs', 'test-robots-policy-adapters.mjs']) assert(qualityWorkflow.includes('          node scripts/' + script + '\n'), 'Quality Gate must run ' + script);
+console.log('Preview PR boundaries passed: exact-head offline validation only, including Source Expansion; scheduled/manual collection remains separate.');
 const { spawnSync } = await import('node:child_process');
 const networkGuard = new URL('./lib/deny-source-network.mjs', import.meta.url).pathname;
 for (const expression of [
