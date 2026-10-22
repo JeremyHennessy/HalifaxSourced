@@ -129,13 +129,22 @@ for (const item of discovered) {
 const canonicalIds = new Set(canonical.map((restaurant) => restaurant.id));
 const officialResults = (Array.isArray(official.results) ? official.results : []).filter(item => canonicalIds.has(item.restaurantId));
 const officialById = new Map(officialResults.map((result) => [result.restaurantId, result]));
+const successfulOfficialResults = officialResults.filter((result) => Number(result.status) >= 200 && Number(result.status) < 400 && !result.error);
+const officialObservedAtById = new Map();
+// Failed checks also carry observedAt, but that clock records an attempt, not
+// successful source evidence. Preserve the latest valid success if both exist.
+for (const result of successfulOfficialResults) {
+  const stamp = dateStamp(result.observedAt);
+  const previous = dateStamp(officialObservedAtById.get(result.restaurantId));
+  if (stamp !== null && stamp <= now && (previous === null || stamp > previous)) officialObservedAtById.set(result.restaurantId, result.observedAt);
+}
 const firstPartyRecords = (Array.isArray(firstParty.records) ? firstParty.records : []).filter(item => canonicalIds.has(item.restaurantId));
 const firstPartyById = new Map(firstPartyRecords.map((record) => [record.restaurantId, record]));
 const feedSignals = Array.isArray(websiteFeeds.signals) ? websiteFeeds.signals : [];
 const apiSignals = Array.isArray(socialSignals.signals) ? socialSignals.signals : [];
 
 const verifiedWebsiteIds = uniqueIds([
-  ...officialResults.filter((result) => Number(result.status) >= 200 && Number(result.status) < 400 && !result.error).map((result) => result.restaurantId),
+  ...successfulOfficialResults.map((result) => result.restaurantId),
   ...firstPartyRecords.filter((record) => record.reviewState === "verified" && validUrl(record.resolvedUrl || record.website)).map((record) => record.restaurantId)
 ]);
 const websiteIds = uniqueIds(canonical.filter((restaurant) => validUrl(restaurant.website) && integrity.safeSource(restaurant.website)).map((restaurant) => restaurant.id));
@@ -293,7 +302,7 @@ for (const restaurant of canonical) {
     restaurant.operatingStatusEvidence?.observedAt || restaurant.operatingStatusEvidence?.verifiedAt,
     ...(restaurant.sources || []).map(source => source.observedAt),
     firstPartyById.get(restaurant.id)?.observedAt,
-    officialById.get(restaurant.id)?.observedAt
+    officialObservedAtById.get(restaurant.id)
   ].map(dateStamp).filter((stamp) => stamp !== null && stamp <= now).sort((a, b) => b - a)[0];
   const bucket = freshnessBucket(observed === undefined ? null : new Date(observed).toISOString());
   freshness[bucket] += 1;

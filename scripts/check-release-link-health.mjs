@@ -1,9 +1,12 @@
 import { readFile } from 'node:fs/promises';
+import integrity from '../source-integrity.js';
 import { reviewedCorrections, reviewedLocationLinks } from './lib/reviewed-corrections.mjs';
 const report = JSON.parse(await readFile(new URL('../data/build/source-link-health-report.json', import.meta.url)));
 const catalog = JSON.parse(await readFile(new URL('../data/build/catalog.json', import.meta.url)));
 if (report.totalCatalogRecords !== catalog.restaurants.length) throw Error('Link audit catalog count mismatch');
-if (Date.now() - Date.parse(report.generatedAt) > 86400000) throw Error('Release link audit is stale');
+const now = Date.now();
+if (!integrity.publicationState(report.generatedAt, now, 1).isRecent) throw Error('Release link audit timestamp is missing, invalid, future or stale');
+if ((report.results || []).some(item => !integrity.publicationState(item.observedAt, now, 1).isRecent)) throw Error('Release link audit contains missing, invalid, future or stale observation timestamps');
 const expected = process.env.SOURCE_COMMIT_SHA || process.env.GITHUB_SHA;
 if (!expected || report.sourceCommitSha !== expected || !report.complete || report.scope !== 'active_catalog_official_social_menu_actions') throw Error('Missing, partial or wrong-SHA release link-health evidence');
 const corrected = new Set(reviewedCorrections.records.filter(item => item.fields.website).map(item => item.fields.website));
