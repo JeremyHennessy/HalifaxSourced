@@ -8,6 +8,17 @@ on:
     branches:
       - main
     paths:
+      - index.html
+      - app-events.js
+      - app-event-pagination.js
+      - app-event-date-fixes.js
+      - app-event-local-sort-fixes.js
+      - data/**
+      - scripts/export-catalog.mjs
+      - scripts/resolve-place-candidates.mjs
+      - scripts/lib/local-restaurant-policy.mjs
+      - app-restaurant-identity.js
+      - app-inspection-matching.js
       - .github/workflows/social-source-preview.yml
       - data/discovered-restaurants.js
       - data/social-platform-registry.json
@@ -22,6 +33,10 @@ on:
       - scripts/approve-eligible-thumbnails.mjs
       - scripts/lib/automatic-thumbnail-approval.mjs
       - scripts/build-thumbnail-candidates.mjs
+      - scripts/test-thumbnail-observation-clocks.mjs
+      - scripts/import-thumbnail-candidates-to-sqlite.py
+      - app-home-rich.js
+      - app-admin.js
       - scripts/build-thumbnail-coverage-report.mjs
       - scripts/check-thumbnail-candidates.mjs
       - scripts/check-expanded-sources.mjs
@@ -101,6 +116,7 @@ jobs:
           node scripts/test-media-reference-contract.mjs
           node scripts/test-preview-coordinator.mjs
           node scripts/test-scheduled-source-guards.mjs
+          node scripts/test-thumbnail-observation-clocks.mjs
 
   social-refresh:
     if: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}

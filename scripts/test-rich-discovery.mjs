@@ -1,3 +1,4 @@
+import assert from "node:assert/strict";
 import { existsSync } from "node:fs";
 import { installOfflineResources } from "./lib/offline-browser-resources.mjs";
 
@@ -82,6 +83,32 @@ const state = await page.evaluate(() => {
     }
   };
 });
+// The photo section promises approval, not an unrecorded addition date. Keep
+// its existing cards and selection stable at desktop and narrow mobile widths.
+const photoSelections = [];
+for (const width of [1440, 390, 320]) {
+  await page.setViewportSize({ width, height: 1000 });
+  const photos = await page.evaluate(() => {
+    const section = [...document.querySelectorAll(".home-action-section")]
+      .find(node => node.querySelector(".eyebrow")?.textContent === "Approved restaurant photos");
+    const selected = approvedThumbnailRestaurants(4).map(restaurant => restaurant.id);
+    return { selected, heading: section?.querySelector("h2")?.textContent,
+      cards: section?.querySelectorAll(".restaurant-card").length || 0,
+      links: section ? [...section.querySelectorAll(".restaurant-card h3 a")].map(link => link.getAttribute("href")) : [],
+      obsoleteLabel: document.body.textContent.includes("New thumbnails added"),
+      horizontalOverflow: document.documentElement.scrollWidth > innerWidth + 1 };
+  });
+  assert(!photos.obsoleteLabel);
+  assert(!photos.horizontalOverflow, `Photo section must preserve the ${width}px mobile layout.`);
+  if (photos.selected.length) {
+    assert.equal(photos.heading, "Restaurants with approved images");
+    assert.equal(photos.cards, photos.selected.length);
+    assert.deepEqual(photos.links, photos.selected.map(id => `#restaurant/${encodeURIComponent(id)}`));
+  }
+  photoSelections.push(photos.selected);
+}
+assert.deepEqual(photoSelections[1], photoSelections[0]);
+assert.deepEqual(photoSelections[2], photoSelections[0]);
 resources.assertClean();
 if (errors.length) throw new Error(`Rich discovery emitted browser errors:\n${errors.join("\n")}`);
 if (responseFailures.length) throw new Error(`Rich discovery resource failures:\n${responseFailures.join("\n")}\nSTATE=${JSON.stringify(state)}`);

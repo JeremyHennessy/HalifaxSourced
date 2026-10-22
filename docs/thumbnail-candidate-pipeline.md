@@ -153,3 +153,21 @@ All 9 previously licensed manifest records are preserved (one is outside the
 current eligible catalog). The report gives overlapping hold-reason counts and a
 per-candidate disposition, rather than presenting the 72 metadata-shortlisted
 restaurants as permission-cleared.
+
+## Observation clocks
+
+Candidate `observedAt` is preserved source evidence, not candidate-build or approval
+time. Offline projections and normalization keep an explicit observation unchanged;
+missing, null and empty observations remain null. Review, assessment, rights
+verification, publication, capture and source-update dates do not fill that gap.
+Only successful opt-in page discovery can introduce a source observation. The
+top-level `generatedAt` remains the build receipt, and first-wins duplicate retention
+is unchanged. Approved photo cards make no claim about when a photo was added.
+
+`node scripts/test-thumbnail-observation-clocks.mjs` exercises the real offline
+entrypoint at two clocks, finite mocked page success/failure, nullable JSON/JS and
+SQLite output, coverage, decision exports and the actual base/later home renderers
+in `index.html` load order. Negative controls reject the obsolete addition-date
+label in either renderer. It denies external source/image transport and does not
+collect, approve media or modify accepted inputs. Browser layout checks remain
+part of the hosted Quality Gate.
