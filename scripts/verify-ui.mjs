@@ -301,6 +301,8 @@ if (!aliasTarget) throw new Error('Saved-alias fixture needs an event.');
 await aliasPage.evaluate(id => localStorage.setItem('halifaxSourced.savedEvents.v1',JSON.stringify(['qa-legacy-'+id,id])),aliasTarget);
 await aliasPage.reload({waitUntil:'networkidle'});
 const aliasButton = aliasPage.locator('[data-save-event-id]').filter({hasText:'Saved'});
+console.log('Saved alias restoration state', JSON.stringify(await aliasPage.evaluate(target => ({target, now: new Date().toISOString(), stored: localStorage.getItem('halifaxSourced.savedEvents.v1'), saved: [...savedCityEvents], targetEvent: cityEvents.find(event=>event.id===target), buttons: [...document.querySelectorAll('[data-save-event-id]')].map(button=>({id:button.dataset.saveEventId,pressed:button.getAttribute('aria-pressed'),text:button.textContent}))}),aliasTarget)));
+aliasResources.assertClean();
 if (await aliasButton.count() !== 1 || await aliasButton.getAttribute('data-save-event-id') !== aliasTarget) throw new Error('Legacy alias did not restore one canonical saved event.');
 await aliasPage.locator('#eventSavedFilter').check({force:true});
 if (await aliasPage.locator('.event-card').count() !== 1) throw new Error('Saved-only alias filter lost or duplicated its event.');
