@@ -81,20 +81,29 @@ assert.equal(app.find(record => record.id === 'osm-node-11552069056-sushi-cove')
 for (const records of [app, catalog.restaurants]) {
   const sushi = records.find(record => record.id === 'sushi-square-scotia-square');
   assert.equal(sushi.operatingStatus, 'active');
-  assert.equal(sushi.website, 'https://sushisquare.ca/');
+  assert.equal(sushi.website, records === app ? null : 'https://sushisquare.ca/', 'Hide the unavailable homepage in browser state while retaining catalog history');
   assert.equal((sushi.menuLinks || []).length, 0, 'Historical enrichment must not resurrect the confirmed broken menu');
   assert(!(sushi.sources || []).some(source => source.type === 'menu'));
 }
 for (const suffix of ['', '/', '/?view=all#menu']) {
   assert.equal(integrity.safeSource('https://sushisquare.ca/menu' + suffix), false);
 }
-assert.equal(integrity.safeSource('https://sushisquare.ca/'), true, 'Do not quarantine the whole domain');
+assert.equal(integrity.safeSource('https://sushisquare.ca/'), false, 'Suppress the separately confirmed unavailable homepage');
 assert.equal(integrity.safeSource('https://sushisquare.ca/menu-new/'), true, 'Do not invent failures for unreviewed paths');
 const reviewedSushi = reviewedCorrections.additions.find(record => record.id === 'sushi-square-scotia-square');
+assert.equal(reviewedSushi.website, 'https://sushisquare.ca/', 'Preserve the historical official-site identity');
 assert.equal(reviewedSushi.operatingStatusEvidence.observedAt, '2026-10-19');
 assert.equal(reviewedSushi.sources[0].observedAt, '2026-10-19');
 const historicalMenu = JSON.parse(await readFile(new URL('data/build/verified-source-pages.json', root))).menuSources.find(record => record.url === 'https://sushisquare.ca/menu/');
 assert(historicalMenu, 'Retain historical observations, rather than rewriting past evidence');
+vm.runInContext(await readFile(new URL('app-detail.js', root), 'utf8'), context);
+assert.equal(vm.runInContext("safeUrl('https://sushisquare.ca/')", context), null);
+assert(!JSON.parse(vm.runInContext("JSON.stringify(uniqueSourceLinks(restaurants.find(record => record.id === 'sushi-square-scotia-square')))", context)).some(source => source.url === 'https://sushisquare.ca/'), 'Detail evidence links must not resurrect the unavailable homepage');
+const archivedCove = app.find(record => record.id === 'osm-node-11552069056-sushi-cove');
+assert.equal(archivedCove.operatingStatus, 'moved', 'Unavailable source does not create a new closure claim');
+assert.deepEqual(archivedCove.structuredFeatures, []);
+assert.deepEqual(archivedCove.structuredFacts.features, []);
+assert.deepEqual(archivedCove.structuredFacts.menus, []);
 const browserSaj = app.find(record => record.id === sajId);
 assert.equal(browserSaj.structuredAddress, null);
 assert.equal(browserSaj.structuredFacts.address, null);

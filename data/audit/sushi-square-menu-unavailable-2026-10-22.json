@@ -18,5 +18,18 @@
       "qualification": "Generic WordPress placeholder does not verify a replacement restaurant menu. Search cache contains older restaurant content and is not accepted as a current receipt."
     }
   },
-  "scope": "Remove the reviewed menu source and suppress its exact normalized path from historical enrichment. Preserve historical source snapshots, all other location facts and clocks, operating status, and homepage pointer. No closure, relocation, domain-ownership change, new menu, hours, coordinates or image rights are inferred."
+  "scope": "Remove the reviewed menu source and suppress its exact normalized path from historical enrichment. Preserve historical source snapshots, all other location facts and clocks, operating status, and homepage pointer. No closure, relocation, domain-ownership change, new menu, hours, coordinates or image rights are inferred.",
+  "followUp": {
+    "reviewedAt": "2026-10-22T02:37:59.652877+00:00",
+    "qualityGateRunId": 39711883998,
+    "jobUrl": "https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/39711883998/job/119604875546",
+    "failureReportedAt": "2026-10-22T02:34:06.8939890Z",
+    "failure": "Reviewed current official URL failed repeated 404/410: https://sushisquare.ca/",
+    "decision": "Extend suppression to the exact homepage path after the subsequent main audit confirmed it unavailable. Do not retry the site, infer closure, erase historical identity or block unreviewed neighboring paths.",
+    "browserEffects": {
+      "sushi-square-scotia-square": "website becomes null; all other browser fields unchanged",
+      "osm-node-11552069056-sushi-cove": "Shared unavailable-root enrichment is withheld: structuredFeatures, structuredFacts.features and structuredFacts.menus become empty arrays. All other fields, moved operating status, evidence and September source clocks remain unchanged.",
+      "otherRecords": "All other browser records unchanged; raw catalog/source history remains preserved."
+    }
+  }
 }
