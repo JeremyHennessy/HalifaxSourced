@@ -200,7 +200,7 @@ status or observation clock, or retry a blocked target merely to fit this schema
 Before committing any such group, retrieve the actual job log and job metadata and
 independently verify those hashes and the selected original line. Local structural
 validation does not authenticate an external log merely because hashes are present.
-The variant has hostile fixture coverage and is also used below for six actual
+The variant has hostile fixture coverage and is also used below for eight actual
 reviewed QA diagnostics. It adds no storage service or automatic cross-run writes.
 
 Content Quality Audit PRs run only exact-head, transport-denied fixtures; its
@@ -304,3 +304,25 @@ of the unchanged 1,060 release references. Finite entrypoint fixtures require th
 new target and normalized aliases to be unattempted while unrelated same-host
 business paths remain unaffected. No business facts, public URLs, runtime request
 rules, expiry or retry permission are changed.
+
+Main Quality run 39817151873, attempt 1, `data-integrity` job 119958511096 at
+source commit 18091d41dbcc1d57e759cb9149d93f5c2396a251 failed closed on two
+additional actual 403 responses. `https://classic-pizza.order-online.ai/` was
+observed at `2026-10-22T16:54:04.780Z` after its request began at
+`2026-10-22T16:54:04.233Z`; `https://maygarden.order-online.ai/#/` was observed at
+`2026-10-22T16:54:35.670Z` after its request began at
+`2026-10-22T16:54:35.468Z`. Their diagnostic emission clocks are respectively
+`2026-10-22T16:54:04.781Z` and `2026-10-22T16:54:35.671Z`.
+
+Two appended reviewed-log groups preserve those exact URL restrictions and the
+unchanged fragment-bearing May Garden source identity; neither becomes a host
+hold, business-status claim or link deletion. The independently retrieved full
+job-log SHA-256 is
+`5090ddddc0d48d57a60333afb892f42c06a5456cb47066dc3ed324376f975df6`.
+The same failed job uploaded diagnostic artifact 12442648906 with ZIP SHA-256
+`ac226410e158569f86f2222f33b37532d3da753823257650b39e8c29daae1ae2`.
+There was no Retry-After, late restriction or unresolved transport outcome for
+either receipt. All previous 220 observations, clocks and provenance remain
+unchanged. The union now has 222 observations (77 actual 403, 145 actual 429 and
+no production 401) while preserving all 1,060 release URLs. No blocked endpoint
+was retried to construct this reviewed policy update.
