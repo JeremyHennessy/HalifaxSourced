@@ -7,7 +7,7 @@ import {pathToFileURL} from 'node:url';
 const root=await mkdtemp(join(tmpdir(),'halifax-robots-redirect-'));
 try {
   await mkdir(join(root,'scripts','lib'),{recursive:true});await mkdir(join(root,'data','build'),{recursive:true});
-  for(const file of ['scripts/verify-official-source-pages.mjs','scripts/import-structured-events.mjs','scripts/lib/fetch-public-source.mjs','scripts/lib/source-page-classification.mjs','source-integrity.js'])await copyFile(new URL('../'+file,import.meta.url),join(root,file));
+  for(const file of ['scripts/verify-official-source-pages.mjs','scripts/import-structured-events.mjs','scripts/lib/fetch-public-source.mjs','scripts/lib/robots-policy.mjs','scripts/lib/source-page-classification.mjs','source-integrity.js'])await copyFile(new URL('../'+file,import.meta.url),join(root,file));
   const venue={id:'fixture',name:'Fixture Local',website:'https://fixture.example/menu'};
   await writeFile(join(root,'data','restaurants.js'),`window.HALIFAX_RESTAURANTS = ${JSON.stringify([venue])};`);
   await writeFile(join(root,'data','osm-restaurants.js'),'window.HALIFAX_OSM_RESTAURANTS = [];');

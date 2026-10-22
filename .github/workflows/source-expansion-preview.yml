@@ -19,6 +19,15 @@ on:
       - scripts/import-official-sites.mjs
       - scripts/verify-official-source-pages.mjs
       - scripts/import-structured-events.mjs
+      - scripts/lib/fetch-public-source.mjs
+      - scripts/lib/robots-policy.mjs
+      - scripts/lib/deny-source-network.mjs
+      - scripts/test-public-source-fetch.mjs
+      - scripts/test-robots-policy.mjs
+      - scripts/test-robots-policy-adapters.mjs
+      - scripts/test-robots-redirect-guards.mjs
+      - scripts/test-source-verifier-startup.mjs
+      - scripts/test-scheduled-source-guards.mjs
       - scripts/import-patio-directory-facts.mjs
       - scripts/import-public-special-source-leads.mjs
       - scripts/discover-first-party-sources.mjs
@@ -45,7 +54,38 @@ permissions:
   contents: read
 
 jobs:
+  validate-pr:
+    if: ${{ github.event_name == 'pull_request' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout exact PR head
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Validate source policy and fixtures without collection
+        env:
+          NODE_OPTIONS: --import ${{ github.workspace }}/scripts/lib/deny-source-network.mjs
+        run: |
+          node --check scripts/import-official-sites.mjs
+          node --check scripts/verify-official-source-pages.mjs
+          node --check scripts/import-structured-events.mjs
+          node --check scripts/lib/robots-policy.mjs
+          node scripts/test-public-source-fetch.mjs
+          node scripts/test-robots-policy.mjs
+          node scripts/test-robots-policy-adapters.mjs
+          node scripts/test-robots-redirect-guards.mjs
+          node scripts/test-source-verifier-startup.mjs
+          node scripts/test-scheduled-source-guards.mjs
+
   refresh:
+    if: ${{ github.event_name != 'pull_request' }}
     runs-on: ubuntu-latest
     timeout-minutes: 45
     steps:

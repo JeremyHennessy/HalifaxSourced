@@ -1,4 +1,5 @@
-import { fetchGuardedSource as fetch } from "./lib/fetch-public-source.mjs";
+import { fetchPublicSource } from "./lib/fetch-public-source.mjs";
+import { createRobotsAllows } from "./lib/robots-policy.mjs";
 import integrity from "../source-integrity.js";
 import { createHash } from "node:crypto";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
@@ -11,6 +12,7 @@ const pageLimit = Number(process.env.STRUCTURED_EVENT_PAGE_LIMIT ?? 180);
 const perRestaurantLimit = Number(process.env.STRUCTURED_EVENT_PAGES_PER_RESTAURANT ?? 3);
 const delayMs = Number(process.env.STRUCTURED_EVENT_DELAY_MS ?? 400);
 const userAgent = "HalifaxSourced/0.2 (+https://github.com/JeremyHennessy/HalifaxSourced)";
+const robotsAllows = createRobotsAllows({ userAgent, timeoutMs: Number(process.env.STRUCTURED_EVENT_ROBOTS_TIMEOUT_MS ?? 8000) });
 const now = Date.now();
 const earliest = now - 30 * 60 * 1000;
 const latest = now + 370 * 24 * 60 * 60 * 1000;
@@ -32,7 +34,6 @@ const rawRestaurants = [
   ...(Array.isArray(osmWindow.HALIFAX_OSM_RESTAURANTS) ? osmWindow.HALIFAX_OSM_RESTAURANTS : [])
 ];
 const restaurantById = new Map(rawRestaurants.map((restaurant) => [restaurant.id, restaurant]));
-const robotsCache = new Map();
 
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -109,54 +110,6 @@ function pageMatchesRestaurantLocation(url, html, restaurant) {
   const fingerprint = streetFingerprint(restaurant);
   if (!fingerprint) return false;
   return normalizedText(html).includes(fingerprint);
-}
-
-function parseRobotsGroup(text, wantedAgent) {
-  const groups = [];
-  let current = null;
-  for (const rawLine of String(text ?? "").split(/\r?\n/)) {
-    const line = rawLine.replace(/#.*$/, "").trim();
-    if (!line) continue;
-    const index = line.indexOf(":");
-    if (index < 0) continue;
-    const key = line.slice(0, index).trim().toLowerCase();
-    const value = line.slice(index + 1).trim();
-    if (key === "user-agent") {
-      if (!current || current.hasRules) {
-        current = { agents: [], disallow: [], hasRules: false };
-        groups.push(current);
-      }
-      current.agents.push(value.toLowerCase());
-      continue;
-    }
-    if (!current) continue;
-    current.hasRules = true;
-    if (key === "disallow" && value) current.disallow.push(value);
-  }
-  const specific = groups.find((group) => group.agents.some((agent) => agent.includes(wantedAgent.toLowerCase())));
-  const wildcard = groups.find((group) => group.agents.includes("*"));
-  return (specific || wildcard)?.disallow ?? [];
-}
-
-async function robotsAllows(url) {
-  if (!integrity.safeSource(url)) return false;
-  const parsed = new URL(url);
-  const origin = parsed.origin;
-  if (!robotsCache.has(origin)) {
-    const promise = (async () => {
-      try {
-        const response = await fetch(new URL("/robots.txt", origin), { headers: { "User-Agent": userAgent } });
-        if (response.status === 401 || response.status === 403) return ["/"];
-        if (!response.ok) return [];
-        return parseRobotsGroup(await response.text(), "HalifaxSourced");
-      } catch {
-        return ["/"];
-      }
-    })();
-    robotsCache.set(origin, promise);
-  }
-  const disallow = await robotsCache.get(origin);
-  return !disallow.some((prefix) => prefix === "/" || parsed.pathname.startsWith(prefix));
 }
 
 function eventType(node) {
@@ -272,7 +225,7 @@ for (const page of pages) {
   const observedAt = new Date().toISOString();
   try {
     if (!integrity.safeSource(page.pageUrl)) throw new Error("quarantined_source");
-    const response = await fetch(page.pageUrl, { headers: { "User-Agent": userAgent, Accept: "text/html,application/xhtml+xml" }, redirect: "manual" });
+    const response = await fetchPublicSource(page.pageUrl, { headers: { "User-Agent": userAgent, Accept: "text/html,application/xhtml+xml" }, redirect: "manual" }, robotsAllows);
     if (!response.ok) {
       failures.push({ ...page, reason: `http_${response.status}` });
       continue;

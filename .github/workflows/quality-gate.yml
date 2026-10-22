@@ -69,6 +69,8 @@ jobs:
         run: |
           node scripts/test-source-integrity.mjs
           node scripts/test-public-source-fetch.mjs
+          node scripts/test-robots-policy.mjs
+          node scripts/test-robots-policy-adapters.mjs
           node scripts/test-scheduled-source-guards.mjs
           node scripts/test-ns-food-inspection-refresh.mjs
           node scripts/test-inspection-location-matching.mjs
