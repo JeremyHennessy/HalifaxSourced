@@ -1,4 +1,4 @@
-import { canonicalEventKey } from "./canonical-event-dedupe.mjs";
+import { canonicalEventKey, preservePublishedEventIds, assertUniqueEventIds } from "./canonical-event-dedupe.mjs";
 
 const DAY = 86400000;
 const normalize = value => String(value || "").normalize("NFKD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
@@ -64,8 +64,9 @@ export function reconcileFutureEventLosses(current, previous, options = {}) {
   if (!Number.isFinite(now)) throw new Error("Invalid refresh guard clock");
   const recentStartCutoff = now - Number(options.pastGraceHours ?? 6) * 3600000;
   const maxTime = now + Number(options.futureDays ?? 400) * DAY;
-  const currentEvents = current.events || [];
   const previousEvents = previous.events || [];
+  const currentEvents = preservePublishedEventIds(current.events || [], previousEvents);
+  current = { ...current, events: currentEvents };
   const representedIds = new Set(currentEvents.flatMap(event => [
     event.id, ...(event.duplicateEventIds || []), ...(event.supersedesEventIds || [])
   ]).filter(Boolean));
@@ -133,6 +134,7 @@ export function reconcileFutureEventLosses(current, previous, options = {}) {
   const retainedBySource = new Map();
   for (const event of retained) retainedBySource.set(event.sourceId, (retainedBySource.get(event.sourceId) || 0) + 1);
   const events = [...currentEvents, ...retained];
+  assertUniqueEventIds(events);
   return {
     payload: {
       ...current,

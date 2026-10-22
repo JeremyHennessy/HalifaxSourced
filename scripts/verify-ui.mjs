@@ -286,6 +286,31 @@ await page.goto(`${url}/${socialDetailHref}`, { waitUntil: "networkidle" });
 await page.locator("#detailLinks").waitFor();
 if (await page.locator("#detailLinks .source-link-row").count() < 1) throw new Error("Expected official social or related links on a social-linked restaurant detail page.");
 
+// Isolated legacy-alias fixture: no production data or user storage is modified.
+const aliasContext = await browser.newContext({viewport:{width:1440,height:1000},serviceWorkers:'block'});
+const aliasResources = await installOfflineResources(aliasContext,url);
+const aliasPage = await aliasContext.newPage();
+await aliasPage.clock.install({time:new Date('2026-10-06T02:00:00Z')});
+await aliasContext.route('**/data/city-events.js*', async route => {
+  const body = await readFile(new URL('../data/city-events.js',import.meta.url),'utf8');
+  await route.fulfill({status:200,contentType:'application/javascript',body:body + '\nwindow.HALIFAX_CITY_EVENTS.events.forEach(event => { event.duplicateEventIds = [...(event.duplicateEventIds || []), "qa-legacy-" + event.id]; });'});
+});
+await aliasPage.goto(`${url}/#events`,{waitUntil:'networkidle'});
+const aliasTarget = await aliasPage.locator('[data-save-event-id]').first().getAttribute('data-save-event-id');
+if (!aliasTarget) throw new Error('Saved-alias fixture needs an event.');
+await aliasPage.evaluate(id => localStorage.setItem('halifaxSourced.savedEvents.v1',JSON.stringify(['qa-legacy-'+id,id])),aliasTarget);
+await aliasPage.reload({waitUntil:'networkidle'});
+const aliasButton = aliasPage.locator('[data-save-event-id]').filter({hasText:'Saved'});
+if (await aliasButton.count() !== 1 || await aliasButton.getAttribute('data-save-event-id') !== aliasTarget) throw new Error('Legacy alias did not restore one canonical saved event.');
+await aliasPage.locator('#eventSavedFilter').check({force:true});
+if (await aliasPage.locator('.event-card').count() !== 1) throw new Error('Saved-only alias filter lost or duplicated its event.');
+await aliasPage.locator('[data-save-event-id]').click();
+if (await aliasPage.locator('.event-card').count() !== 0) throw new Error('Unsave did not remove canonical and alias save.');
+await aliasPage.reload({waitUntil:'networkidle'});
+if (await aliasPage.evaluate(()=>JSON.parse(localStorage.getItem('halifaxSourced.savedEvents.v1')).length) !== 0) throw new Error('Unsave did not persist across reload.');
+aliasResources.assertClean();
+await aliasContext.close();
+
 // Event discovery: every filter must change actual result state, not just visual controls.
 await page.goto(`${url}/#events`, { waitUntil: "networkidle" });
 await page.locator(".event-filter-panel").waitFor();

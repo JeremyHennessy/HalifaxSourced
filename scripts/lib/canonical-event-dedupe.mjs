@@ -52,3 +52,42 @@ export function dedupeCanonicalEvents(events) {
   }
   return output;
 }
+
+// Refreshes may improve titles or change source order, but published occurrence
+// IDs are durable user data (saved events and calendar UIDs). Match only the
+// same strict identities already admitted by canonicalEventKey, never titles
+// or a shared calendar URL alone. Do not copy stale content or observation dates.
+export function preservePublishedEventIds(events, previousEvents) {
+  const previousByKey = new Map();
+  for (const event of previousEvents) {
+    const key = canonicalEventKey(event);
+    if (!key || !event.id) continue;
+    const list = previousByKey.get(key) || [];
+    list.push(event);
+    previousByKey.set(key, list);
+  }
+  const current = dedupeCanonicalEvents(events);
+  const output = current.map(event => {
+    const matches = previousByKey.get(canonicalEventKey(event)) || [];
+    const ids = new Set(matches.map(previous => previous.id));
+    if (ids.size > 1) throw new Error('Ambiguous published event identity: ' + [...ids].join(', '));
+    if (!matches.length) return event;
+    const previous = matches[0];
+    const aliases = [...new Set([
+      ...(previous.duplicateEventIds || []), ...(event.duplicateEventIds || []), event.id
+    ].filter(id => id && id !== previous.id))];
+    return { ...event, id: previous.id, duplicateEventIds: aliases };
+  });
+  assertUniqueEventIds(output);
+  return output;
+}
+
+export function assertUniqueEventIds(events) {
+  const owners = new Map();
+  for (const event of events) {
+    for (const id of [event.id, ...(event.duplicateEventIds || [])].filter(Boolean)) {
+      if (owners.has(id) && owners.get(id) !== event) throw new Error('Conflicting event identity: ' + id);
+      owners.set(id, event);
+    }
+  }
+}

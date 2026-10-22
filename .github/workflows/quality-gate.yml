@@ -75,6 +75,7 @@ jobs:
           node scripts/test-media-reference-contract.mjs
           node scripts/test-event-refresh-dedupe.mjs
           node scripts/test-canonical-event-dedupe.mjs
+          node scripts/test-event-identity-continuity.mjs
 
       - name: Export reviewed catalog before dependent builds
         run: |
