@@ -338,6 +338,8 @@ function extractHtmlContentImages(html, baseUrl) {
     .filter((image, index, all) => all.findIndex((item) => item.url === image.url) === index)
     .slice(0, 18);
 }
+// Offline projections preserve source observations; only successful page fetches
+// below may introduce an observation clock. generatedAt is the build receipt.
 function approvedCandidate(record, restaurantName) {
   if (!mediaPermitted(record)) throw Error(`Invalid approved media: ${record.restaurantId}`);
   return {
@@ -355,7 +357,7 @@ function approvedCandidate(record, restaurantName) {
     attribution: record.attribution || null,
     alt: record.alt || restaurantName || "Restaurant thumbnail",
     confidence: "approved_exact_restaurant_id",
-    observedAt: generatedAt
+    observedAt: record.observedAt || null
   };
 }
 function postCandidate(post, restaurantName, sourceKind) {
@@ -378,7 +380,7 @@ function postCandidate(post, restaurantName, sourceKind) {
     attribution: null,
     alt: post.title ? `${post.restaurantName || restaurantName}: ${post.title}` : `${post.restaurantName || restaurantName} update thumbnail`,
     confidence: sourceKind === "meta_social_media" ? "official_social_api_media" : sourceKind === "official_page_thumbnail_candidate" ? "official_page_source_media" : "official_feed_media",
-    observedAt: post.observedAt || generatedAt,
+    observedAt: post.observedAt || null,
     publishedAt: post.publishedAt || null,
     title: post.title || null,
     category: post.primaryCategory || null
@@ -404,7 +406,7 @@ function publicSpecialImageCandidate(lead, restaurantName) {
     attribution: lead.sourceName || null,
     alt: lead.title ? `${lead.venueName || restaurantName}: ${lead.title}` : `${lead.venueName || restaurantName} special image candidate`,
     confidence: "public_special_source_media",
-    observedAt: lead.observedAt || (lead.refreshState === "retained_after_failure" ? null : generatedAt),
+    observedAt: lead.observedAt || null,
     ...(lead.refreshState === "retained_after_failure" ? { refreshState: lead.refreshState, sourceFailure: lead.sourceFailure || null } : {}),
     publishedAt: lead.sourceUpdatedAt || null,
     title: lead.title || null,
@@ -432,7 +434,7 @@ function directoryImageCandidate(lead, resolution, restaurantName) {
     attribution: lead.sourceName || null,
     alt: `${restaurantName || resolution.matchedRestaurantName || lead.name} directory thumbnail candidate`,
     confidence: "trusted_directory_source_media",
-    observedAt: lead.observedAt || generatedAt,
+    observedAt: lead.observedAt || null,
     publishedAt: null,
     title: lead.name || null,
     category: lead.category || null
@@ -487,7 +489,7 @@ function ownerSubmittedImageCandidate(submission, image, restaurantName) {
     attribution: image.attribution || null,
     alt: image.alt || `${submission.name || restaurantName || "Restaurant"} owner-submitted image`,
     confidence: permissionConfirmed ? "owner_submitted_permission_declared" : "owner_submitted_needs_permission",
-    observedAt: submission.observedAt || generatedAt,
+    observedAt: submission.observedAt || null,
     title: submission.name || restaurantName || null,
     category: "owner_submission"
   };
@@ -523,7 +525,7 @@ function normalizeCandidate(candidate) {
     attribution: candidate.attribution || null,
     alt: String(candidate.alt || candidate.restaurantName || "Restaurant thumbnail").slice(0, 180),
     confidence: candidate.confidence,
-    observedAt: (candidate.recordKind === "source_reference" || candidate.sourceKind === "approved_restaurant_media" || candidate.refreshState === "retained_after_failure") ? (candidate.observedAt || null) : (candidate.observedAt || generatedAt),
+    observedAt: candidate.observedAt || null,
     publishedAt: candidate.publishedAt || null,
     title: candidate.title || null,
     category: candidate.category || null,

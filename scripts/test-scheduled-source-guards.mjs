@@ -119,16 +119,43 @@ const sourceValidationCommands = [
   'node scripts/test-robots-policy-adapters.mjs',
   'node scripts/test-robots-redirect-guards.mjs',
   'node scripts/test-source-verifier-startup.mjs',
-  'node scripts/test-scheduled-source-guards.mjs'
+  'node scripts/test-scheduled-source-guards.mjs',
+  'node scripts/test-thumbnail-observation-clocks.mjs'
 ];
-const sourceValidationPaths = [
-  'scripts/lib/fetch-public-source.mjs',
-  'scripts/lib/robots-policy.mjs',
+// The fixture executes prerequisites and their imports/VM-loaded code, not only
+// the thumbnail builder. Data glob coverage includes accepted and fallback inputs;
+// it only widens the already guarded, network-denied PR validation lanes.
+const thumbnailFixtureDependencies = [
+  'data/**',
+  'scripts/test-thumbnail-observation-clocks.mjs',
+  'scripts/build-thumbnail-candidates.mjs',
+  'scripts/check-thumbnail-candidates.mjs',
+  'scripts/build-thumbnail-coverage-report.mjs',
+  'scripts/export-catalog.mjs',
+  'scripts/resolve-place-candidates.mjs',
+  'scripts/build-recent-social-posts.mjs',
+  'scripts/build-reviewed-social-posts.mjs',
+  'scripts/import-thumbnail-candidates-to-sqlite.py',
   'scripts/lib/deny-source-network.mjs',
+  'scripts/lib/fetch-public-source.mjs',
+  'scripts/lib/media-rights-contract.mjs',
+  'scripts/lib/reviewed-corrections.mjs',
+  'scripts/lib/local-restaurant-policy.mjs',
+  'source-integrity.js',
+  'restaurant-corrections.js',
+  'app-media.js',
+  'app-home-rich.js',
+  'app-admin.js',
+  'app-restaurant-identity.js',
+  'app-inspection-matching.js',
+];
+const sourceValidationPaths = [...new Set([
+  ...thumbnailFixtureDependencies,
+  'scripts/lib/robots-policy.mjs',
   'scripts/test-public-special-robots.mjs',
   'scripts/test-public-special-refresh-safety.mjs',
   ...sourceValidationCommands.filter(command => command.startsWith('node scripts/')).map(command => command.slice(5))
-];
+])];
 function assertSourceExpansionBoundary(workflow) {
   const prJob = assertPreviewPrBoundary(workflow, 'source-expansion-preview.yml', '17 9 * * *');
   // Keep this PR job limited to one guarded, explicit offline command block.
@@ -162,8 +189,11 @@ for (const [file, cron] of [
       ['      - scripts/test-robots-policy-adapters.mjs\n', ''],
       ['      - scripts/test-public-special-robots.mjs\n', ''],
       ['      - scripts/test-public-special-refresh-safety.mjs\n', ''],
+      ['      - scripts/test-thumbnail-observation-clocks.mjs\n', ''],
+      ['          node scripts/test-thumbnail-observation-clocks.mjs\n', ''],
       ['  refresh:\n', '      - uses: actions/upload-artifact@v4\n\n  refresh:\n']
     ]) assert.throws(() => assertSourceExpansionBoundary(workflow.replace(before, after)), undefined, 'Source Expansion guard must reject an unsafe boundary change: ' + before);
+    for (const path of sourceValidationPaths) assert.throws(() => assertSourceExpansionBoundary(workflow.replace('      - ' + path + '\n', '')), undefined, 'Source Expansion guard must require fixture dependency: ' + path);
   }
 }
 // Social has only two event lanes. Pin the complete executable envelope so
@@ -188,9 +218,16 @@ const socialValidationCommands = [
   'node scripts/test-public-source-fetch.mjs',
   'node scripts/test-media-reference-contract.mjs',
   'node scripts/test-preview-coordinator.mjs',
-  'node scripts/test-scheduled-source-guards.mjs'
+  'node scripts/test-scheduled-source-guards.mjs',
+  'node scripts/test-thumbnail-observation-clocks.mjs'
 ];
 const socialValidationPaths = [
+  'data/**',
+  'scripts/export-catalog.mjs',
+  'scripts/resolve-place-candidates.mjs',
+  'scripts/lib/local-restaurant-policy.mjs',
+  'app-restaurant-identity.js',
+  'app-inspection-matching.js',
   '.github/workflows/social-source-preview.yml',
   'data/discovered-restaurants.js',
   'data/social-platform-registry.json',
@@ -205,6 +242,10 @@ const socialValidationPaths = [
   'scripts/approve-eligible-thumbnails.mjs',
   'scripts/lib/automatic-thumbnail-approval.mjs',
   'scripts/build-thumbnail-candidates.mjs',
+  'scripts/test-thumbnail-observation-clocks.mjs',
+  'scripts/import-thumbnail-candidates-to-sqlite.py',
+  'app-home-rich.js',
+  'app-admin.js',
   'scripts/build-thumbnail-coverage-report.mjs',
   'scripts/check-thumbnail-candidates.mjs',
   'scripts/check-expanded-sources.mjs',
@@ -242,6 +283,7 @@ const socialValidationPaths = [
   'data/thumbnail-candidates.js',
   'data/audit/media-rights-reclassification.json'
 ];
+for (const path of thumbnailFixtureDependencies) assert(socialValidationPaths.includes(path), 'Social must include thumbnail fixture dependency: ' + path);
 const socialProducerGuard = "    if: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}\n";
 const socialValidationPrefix = [
   'name: Social Source Preview', '', 'on:', '  workflow_dispatch:', '  schedule:',
@@ -346,7 +388,7 @@ assert.equal(admittedSocialPr(admissionExpression.replace("github.event.workflow
 console.log(`Social PR boundary passed: ${socialMutations} mutations rejected, exact-head guarded fixtures only, unchanged producer, retained-queue admission blocked.`);
 
 const qualityWorkflow = await readFile(new URL('../.github/workflows/quality-gate.yml', import.meta.url), 'utf8');
-for (const script of ['test-robots-policy.mjs', 'test-robots-policy-adapters.mjs']) assert(qualityWorkflow.includes('          node scripts/' + script + '\n'), 'Quality Gate must run ' + script);
+for (const script of ['test-robots-policy.mjs', 'test-robots-policy-adapters.mjs', 'test-thumbnail-observation-clocks.mjs']) assert(qualityWorkflow.includes('          node scripts/' + script + '\n'), 'Quality Gate must run ' + script);
 console.log('Preview PR boundaries passed: exact-head offline validation only, including Source Expansion; scheduled/manual collection remains separate.');
 const { spawnSync } = await import('node:child_process');
 const networkGuard = new URL('./lib/deny-source-network.mjs', import.meta.url).pathname;

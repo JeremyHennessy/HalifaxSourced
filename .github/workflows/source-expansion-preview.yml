@@ -8,6 +8,12 @@ on:
     branches:
       - main
     paths:
+      - data/**
+      - scripts/resolve-place-candidates.mjs
+      - scripts/lib/reviewed-corrections.mjs
+      - restaurant-corrections.js
+      - app-restaurant-identity.js
+      - app-inspection-matching.js
       - .github/workflows/source-expansion-preview.yml
       - data/social-platform-registry.json
       - data/reviewed-social-post-decisions.json
@@ -22,6 +28,9 @@ on:
       - scripts/lib/fetch-public-source.mjs
       - scripts/lib/robots-policy.mjs
       - scripts/lib/deny-source-network.mjs
+      - scripts/lib/media-rights-contract.mjs
+      - app-media.js
+      - source-integrity.js
       - scripts/test-public-source-fetch.mjs
       - scripts/test-robots-policy.mjs
       - scripts/test-robots-policy-adapters.mjs
@@ -45,6 +54,10 @@ on:
       - scripts/approve-eligible-thumbnails.mjs
       - scripts/lib/automatic-thumbnail-approval.mjs
       - scripts/build-thumbnail-candidates.mjs
+      - scripts/test-thumbnail-observation-clocks.mjs
+      - scripts/import-thumbnail-candidates-to-sqlite.py
+      - app-home-rich.js
+      - app-admin.js
       - scripts/build-thumbnail-coverage-report.mjs
       - scripts/plan-thumbnail-coverage-attack.mjs
       - scripts/check-thumbnail-candidates.mjs
@@ -85,6 +98,7 @@ jobs:
           node scripts/test-robots-redirect-guards.mjs
           node scripts/test-source-verifier-startup.mjs
           node scripts/test-scheduled-source-guards.mjs
+          node scripts/test-thumbnail-observation-clocks.mjs
 
   refresh:
     if: ${{ github.event_name != 'pull_request' }}
