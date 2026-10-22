@@ -154,9 +154,49 @@ suite and watches all its local fixture dependencies. The suite includes the com
 per-hop denials and the real discovery/history/sanitation path. The scheduled/manual
 producer body, permissions, collection limits, schedules and artifact paths remain
 byte-identical. Source Expansion and City's existing offline adapter commands also
-exercise these fixtures. Restaurant Discovery's independent PR collector is not
-activated. No accepted data, UI, source registry, API authentication or publication
+exercise these fixtures. Restaurant Discovery has its separate PR boundary below.
+No accepted data, UI, source registry, API authentication or publication
 rights change is included.
+
+## Restaurant Discovery PR isolation (October 22, 2026)
+
+Restaurant Discovery Preview now separates exact-head pull-request validation
+from its existing `discover` producer. The PR job has read-only permissions and
+one command block with `deny-source-network.mjs` preloaded. Collector entrypoints
+are syntax-checked only: directory import, review-directory import, Dartmouth
+refinement and opening-watch collection never execute in that job. It does not
+upload preview or diagnostic artifacts and is not a publication path.
+
+The real Dartmouth decoder and Taste member-helper regressions run offline.
+`test-restaurant-discovery-offline.mjs` also runs them and the actual approved
+discovery builder, catalog exporter, directory resolver and two discovery checks
+in disposable copies. It starts without stale catalog/resolution/discovery build
+outputs, proves the resolver needs the catalog export, checks accepted JS/JSON
+input parity, and verifies every immutable input byte and candidate/approved-ID
+count. Two runs at one test-only clock must produce identical derived bytes.
+Transport and subprocess attempts fail even when caught. The checkout's accepted
+inputs, output files, observation dates and approval decisions are never rewritten.
+This projection test does not certify or repair collector robots semantics,
+historical association eligibility or existing build-time freshness fallbacks.
+
+The workflow regression pins the complete PR command/path/checkout/environment/
+permissions/job envelope and rejects adversarial mutations. `scripts/**` covers
+the source scanner and transitive fixture dependencies, `data/**` covers accepted
+and fallback inputs, `.github/workflows/**` covers workflow readers, and the five
+root runtime dependencies are explicit. These wider filters enter only the
+offline validator. The `discover` job gains only a pull-request exclusion; its
+body is byte-identical to the merged #158 baseline, including source bounds,
+commands, artifact paths and 30-day retention. Daily 10:43 UTC and manual behavior
+are unchanged. No other workflow or producer changes.
+
+Restaurant remains absent from the preview coordinator's trigger and lane
+allowlists. A synthetic successful Restaurant PR is also rejected by the global
+PR admission guard even when all three older retained artifact lanes are ready;
+an empty/new artifact set alone is not that protection. Quality Gate retains its
+existing bounded live link-status exception and the full immutable release path.
+Local offline tests are not hosted Node 22, Pages deployment or live acceptance.
+No source/coordinate holds, accepted data, UI, rights, clocks or review states
+are changed, and the separate first-party history defects remain unresolved.
 
 ## Feed refresh safety (October 22, 2026)
 

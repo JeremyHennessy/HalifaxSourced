@@ -99,9 +99,9 @@ try {
 } finally {await rm(root,{recursive:true,force:true});}
 
 // PR validation must not execute collectors or upload promotable preview artifacts.
-function assertPreviewPrBoundary(workflow, file, cron) {
-  const prJob = workflow.split('  validate-pr:\n')[1]?.split('  refresh:\n')[0];
-  const collector = workflow.split('  refresh:\n')[1];
+function assertPreviewPrBoundary(workflow, file, cron, collectorName = 'refresh') {
+  const prJob = workflow.split('  validate-pr:\n')[1]?.split('  ' + collectorName + ':\n')[0];
+  const collector = workflow.split('  ' + collectorName + ':\n')[1];
   assert(prJob?.startsWith("    if: ${{ github.event_name == 'pull_request' }}\n"), file + ' needs a PR-only validator');
   assert(collector?.startsWith("    if: ${{ github.event_name != 'pull_request' }}\n"), file + ' collector must skip PRs');
   assert(prJob.includes('ref: ${{ github.event.pull_request.head.sha }}'), file + ' must validate the exact PR head');
@@ -451,6 +451,145 @@ assert.equal(admittedSocialPr(admissionExpression), false);
 assert.equal(admittedSocialPr(admissionExpression.replace("github.event.workflow_run.event != 'pull_request'", 'true')), true,
   'Mutation control must demonstrate that the global PR rejection, not the empty trigger artifact, protects retained work');
 console.log(`Social PR boundary passed: ${socialMutations} mutations rejected, exact-head guarded fixtures only, unchanged producer, retained-queue admission blocked.`);
+
+// Restaurant has exactly three triggers and two jobs. Pin its entire executable
+// envelope rather than searching for a safe-looking command next to unsafe YAML.
+// scripts/** covers this suite's source scan; data/** covers accepted/fallback
+// inputs; workflow readers and root runtime imports are covered explicitly.
+const restaurantValidationPaths = [
+  ".github/workflows/**",
+  "scripts/**",
+  "data/**",
+  "app-media.js",
+  "source-integrity.js",
+  "restaurant-corrections.js",
+  "app-restaurant-identity.js",
+  "app-inspection-matching.js"
+];
+const restaurantValidationCommands = [
+  "node --check scripts/import-directory-restaurants.mjs",
+  "node --check scripts/import-review-directory-restaurants.mjs",
+  "node --check scripts/review-directory-sources.mjs",
+  "node --check scripts/refine-dartmouth-directory.mjs",
+  "node --check scripts/import-opening-watch.mjs",
+  "node --check scripts/lib/taste-ns-member-api.mjs",
+  "node --check scripts/export-catalog.mjs",
+  "node --check scripts/resolve-place-candidates.mjs",
+  "node --check scripts/build-discovered-restaurants.mjs",
+  "node --check scripts/check-place-source-resolution.mjs",
+  "node --check scripts/check-restaurant-discovery.mjs",
+  "node scripts/test-dartmouth-directory-names.mjs",
+  "node scripts/test-taste-ns-member-api.mjs",
+  "node scripts/test-restaurant-discovery-offline.mjs",
+  "node scripts/test-scheduled-source-guards.mjs"
+];
+const restaurantProducerGuard = "    if: ${{ github.event_name != 'pull_request' }}\n";
+const restaurantValidationPrefix = [
+  'name: Restaurant Discovery Preview', '', 'on:', '  workflow_dispatch:', '  schedule:',
+  '    - cron: "43 10 * * *"', '  pull_request:', '    branches:', '      - main', '    paths:',
+  ...restaurantValidationPaths.map(path => '      - ' + path),
+  '', 'permissions:', '  contents: read', '', 'jobs:',
+  '  validate-pr:', "    if: ${{ github.event_name == 'pull_request' }}",
+  '    runs-on: ubuntu-latest', '    timeout-minutes: 10', '    steps:',
+  '      - name: Checkout exact PR head', '        uses: actions/checkout@v6', '        with:',
+  '          ref: ${{ github.event.pull_request.head.sha }}', '',
+  '      - name: Set up Node', '        uses: actions/setup-node@v4', '        with:', '          node-version: 22', '',
+  '      - name: Validate restaurant discovery without collection',
+  '        env:', '          NODE_OPTIONS: --import ${{ github.workspace }}/scripts/lib/deny-source-network.mjs',
+  '        run: |', ...restaurantValidationCommands.map(command => '          ' + command),
+  '', '  discover:', ''
+].join('\n') + restaurantProducerGuard;
+function assertRestaurantPreviewBoundary(workflow) {
+  assertPreviewPrBoundary(workflow, 'restaurant-discovery-preview.yml', '43 10 * * *', 'discover');
+  assert.equal(workflow.slice(0, restaurantValidationPrefix.length), restaurantValidationPrefix,
+    'Restaurant must preserve its exact offline commands, dependency paths, checkout, env, permissions, triggers and two-job envelope');
+  // Frozen producer body from merged #158 (4f3a43b), before adding only the
+  // PR exclusion. This baseline is independent of the candidate workflow.
+  assert.equal(createHash('sha256').update(workflow.slice(restaurantValidationPrefix.length)).digest('hex'),
+    '65cd547756a3295c527ad8699f142376e9881724641265163a649c545231c1a7',
+    'Restaurant scheduled/manual commands, bounds and artifact paths/retention must remain byte-identical');
+}
+const restaurantWorkflow = await readFile(new URL('../.github/workflows/restaurant-discovery-preview.yml', import.meta.url), 'utf8');
+assertRestaurantPreviewBoundary(restaurantWorkflow);
+let restaurantMutations = 0;
+function rejectRestaurantMutation(before, after) {
+  assert(restaurantWorkflow.includes(before), 'Restaurant mutation target must exist: ' + before);
+  assert.notEqual(before, after);
+  assert.throws(() => assertRestaurantPreviewBoundary(restaurantWorkflow.replace(before, after)), undefined,
+    'Restaurant boundary must reject: ' + before);
+  restaurantMutations++;
+}
+for (const [before, after] of [
+  [restaurantProducerGuard, ''],
+  [restaurantProducerGuard, "    if: ${{ always() }}\n"],
+  [restaurantProducerGuard, "    if: ${{ github.event_name == 'pull_request' }}\n"],
+  ["    if: ${{ github.event_name == 'pull_request' }}\n", ''],
+  ["    if: ${{ github.event_name == 'pull_request' }}", "    if: ${{ always() }}"],
+  ['ref: ${{ github.event.pull_request.head.sha }}', 'ref: main'],
+  ['ref: ${{ github.event.pull_request.head.sha }}', 'ref: ${{ github.sha }}'],
+  ['ref: ${{ github.event.pull_request.head.sha }}', 'ref: ${{ github.event.pull_request.base.sha }}'],
+  ['        uses: actions/checkout@v6', '        uses: actions/checkout@v4'],
+  ['          NODE_OPTIONS: --import ${{ github.workspace }}/scripts/lib/deny-source-network.mjs\n', ''],
+  ['NODE_OPTIONS: --import ${{ github.workspace }}/scripts/lib/deny-source-network.mjs', 'NODE_OPTIONS:'],
+  ['        run: |', '        run: |\n          unset NODE_OPTIONS'],
+  ['        run: |', '        shell: bash\n        run: |'],
+  ['        run: |', '        run: |\n          curl https://fixture.invalid/'],
+  ['node --check scripts/import-directory-restaurants.mjs', 'node scripts/import-directory-restaurants.mjs'],
+  ['node --check scripts/refine-dartmouth-directory.mjs', 'node scripts/refine-dartmouth-directory.mjs'],
+  ['node --check scripts/import-opening-watch.mjs', 'node --trace-warnings scripts/import-opening-watch.mjs'],
+  ['node scripts/test-dartmouth-directory-names.mjs', 'node scripts/test-dartmouth-directory-names.mjs && node scripts/import-review-directory-restaurants.mjs'],
+  ['node scripts/test-restaurant-discovery-offline.mjs', 'node scripts/build-discovered-restaurants.mjs'],
+  ['  discover:\n', '      - run: node scripts/import-directory-restaurants.mjs\n\n  discover:\n'],
+  ['  discover:\n', '      - uses: actions/upload-artifact@v4\n\n  discover:\n'],
+  ['  discover:\n', '  unguarded-job:\n    runs-on: ubuntu-latest\n    steps:\n      - run: node scripts/import-opening-watch.mjs\n\n  discover:\n'],
+  ['  discover:\n', '  validate-pr:\n    runs-on: ubuntu-latest\n    steps:\n      - run: node scripts/import-opening-watch.mjs\n\n  discover:\n'],
+  ['    timeout-minutes: 10\n', '    timeout-minutes: 10\n    permissions:\n      contents: write\n'],
+  ['        env:\n', '        env:\n          TOKEN: ${{ secrets.META_FB_ACCESS_TOKEN }}\n'],
+  ['        env:\n', '        env:\n          NODE_OPTIONS: ""\n'],
+  ['jobs:\n', 'env:\n  NODE_OPTIONS: ""\n\njobs:\n'],
+  ['permissions:\n  contents: read', 'permissions:\n  contents: write'],
+  ['permissions:\n  contents: read', 'permissions:\n  contents: read\n  actions: write'],
+  ['  workflow_dispatch:\n', '  workflow_dispatch:\n  push:\n'],
+  ['  workflow_dispatch:\n', '  workflow_dispatch:\n  pull_request_target:\n'],
+  ['  workflow_dispatch:\n', '  workflow_dispatch:\n    inputs:\n      collect:\n        default: true\n'],
+  ['  workflow_dispatch:\n', ''],
+  ['cron: "43 10 * * *"', 'cron: "* * * * *"'],
+  ['NS_TOURISM_PAGE_LIMIT: 30', 'NS_TOURISM_PAGE_LIMIT: 300'],
+  ['DOWNTOWN_DIRECTORY_DETAIL_LIMIT: 120', 'DOWNTOWN_DIRECTORY_DETAIL_LIMIT: 1'],
+  ['OPENING_WATCH_LOOKBACK_DAYS: 180', 'OPENING_WATCH_LOOKBACK_DAYS: 365'],
+  ['run: node scripts/import-directory-restaurants.mjs', 'run: echo skipped'],
+  ['          retention-days: 30', '          retention-days: 1'],
+  ['            data/build/directory-restaurant-leads.json\n', ''],
+  ['          name: restaurant-discovery-preview', '          name: source-expansion-preview'],
+  ['          if-no-files-found: error', '          if-no-files-found: warn'],
+  ['          node-version: 22', '          node-version: 24']
+]) rejectRestaurantMutation(before, after);
+for (const path of restaurantValidationPaths) rejectRestaurantMutation('      - ' + path + '\n', '');
+for (const command of restaurantValidationCommands) rejectRestaurantMutation('          ' + command + '\n', '');
+assert.throws(() => assertRestaurantPreviewBoundary(restaurantWorkflow + '\n  injected:\n    runs-on: ubuntu-latest\n    steps:\n      - run: curl https://fixture.invalid/\n'));
+restaurantMutations++;
+// Evaluate actual job conditions together with the pinned trigger envelope. The
+// producer's only new line is the PR exclusion; unsupported events never start it.
+const restaurantTriggers = ['pull_request', 'schedule', 'workflow_dispatch'];
+for (const [job, allowed] of [['validate-pr', ['pull_request']], ['discover', ['schedule', 'workflow_dispatch']]]) {
+  const expression = restaurantWorkflow.split('  ' + job + ':\n')[1].match(/^    if: \$\{\{ (.+) \}\}$/m)?.[1];
+  assert(expression, 'Restaurant job condition must be identifiable: ' + job);
+  for (const event_name of ['pull_request', 'pull_request_target', 'push', 'schedule', 'workflow_dispatch', 'workflow_run', 'unknown', undefined]) {
+    assert.equal(restaurantTriggers.includes(event_name) && vm.runInNewContext(expression, { github: { event_name } }),
+      allowed.includes(event_name), job + ': ' + event_name);
+  }
+}
+// Restaurant is not a promotable lane. Also test the global PR denial with
+// retained eligible artifacts, since no new upload alone cannot protect a queue.
+assert(!LANES.some(lane => lane.workflow === 'Restaurant Discovery Preview' || lane.artifact === 'restaurant-discovery-preview'));
+assert(!coordinatorWorkflow.split('permissions:')[0].includes('Restaurant Discovery Preview'));
+assert(!coordinatorWorkflow.split('permissions:')[0].includes('restaurant-discovery-preview'));
+const restaurantPr = { ...socialPr, name: 'Restaurant Discovery Preview', path: '.github/workflows/restaurant-discovery-preview.yml' };
+const admittedRestaurantPr = expression => vm.runInNewContext(expression, { github: { event_name: 'workflow_run', repository, event: { workflow_run: restaurantPr } } });
+assert.equal(admittedRestaurantPr(admissionExpression), false);
+assert.equal(admittedRestaurantPr(admissionExpression.replace("github.event.workflow_run.event != 'pull_request'", 'true')), true,
+  'Mutation control must expose retained-lane reconciliation if the global PR rejection is removed');
+console.log(`Restaurant PR boundary passed: ${restaurantMutations} mutations rejected, exact-head guarded fixtures only, unchanged scheduled/manual producer, retained-queue admission blocked.`);
 
 const qualityWorkflow = await readFile(new URL('../.github/workflows/quality-gate.yml', import.meta.url), 'utf8');
 for (const script of ['test-robots-policy.mjs', 'test-robots-policy-adapters.mjs', 'test-thumbnail-observation-clocks.mjs', 'test-first-party-feed-safety.mjs']) assert(qualityWorkflow.includes('          node scripts/' + script + '\n'), 'Quality Gate must run ' + script);
