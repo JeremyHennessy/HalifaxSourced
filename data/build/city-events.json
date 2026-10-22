@@ -152,14 +152,6 @@
       "durationMs": 218
     },
     {
-      "sourceId": "bedford-library-events",
-      "sourceName": "Bedford Public Library",
-      "status": "ok",
-      "eventCount": 6,
-      "observedAt": "2026-10-21T18:35:10.944Z",
-      "durationMs": 1132
-    },
-    {
       "sourceId": "alderney-landing-events",
       "sourceName": "Alderney Landing",
       "status": "blocked",
@@ -169,6 +161,23 @@
       "observedAt": null,
       "lastAttemptAt": "2026-10-20T17:16:30.561Z",
       "resumeWhen": "Owner review confirms a permitted public collection interface. Elapsed time alone does not authorize another request."
+    },
+    {
+      "sourceId": "bedford-library-events",
+      "sourceName": "Bedford Public Library",
+      "status": "ok",
+      "eventCount": 6,
+      "observedAt": "2026-10-21T18:35:10.944Z",
+      "durationMs": 1132
+    },
+    {
+      "sourceId": "bedford-library-reviewed-20261022",
+      "sourceName": "Bedford Public Library reviewed occurrence",
+      "mode": "official_library_location_calendar",
+      "observedAt": "2026-10-22T22:21:55.514Z",
+      "eventCount": 1,
+      "durationMs": 0,
+      "status": "ok"
     },
     {
       "sourceId": "taste-asia-2026",
@@ -1340,21 +1349,48 @@
       "categories": [
         "Community"
       ],
-      "eventUrl": "https://halifax.bibliocommons.com/events/6abab4a3ebad220045418778",
-      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
       "price": null,
+      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
+      "eventUrl": "https://halifax.bibliocommons.com/events/6abab4a3ebad220045418778",
+      "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
       "sourceId": "bedford-library-events",
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
-      "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
       "observedAt": "2026-10-21T18:35:10.942Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
       "venueId": "bedford-library",
-      "neighbourhood": null,
       "organizerId": "halifax-public-libraries",
-      "organizerName": "Halifax Public Libraries"
+      "organizerName": "Halifax Public Libraries",
+      "sourceEvidence": [
+        {
+          "sourceId": "bedford-library-events",
+          "sourceName": "Bedford Public Library",
+          "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
+          "basis": "official_primary",
+          "observedAt": "2026-10-22T22:21:55.514Z",
+          "httpStatus": 200,
+          "observedFacts": [
+            "Cookies & Computers is listed for October 23, 2026 from 3:30–4:30 pm at Bedford Public Library.",
+            "The official location page links the occurrence to BiblioCommons event 6abab4a3ebad220045418778."
+          ]
+        },
+        {
+          "sourceId": "bedford-library-reviewed-20261022",
+          "sourceName": "Bedford Public Library reviewed occurrence",
+          "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
+          "basis": "official_primary",
+          "observedAt": "2026-10-22T22:21:55.514Z",
+          "httpStatus": 200,
+          "observedFacts": [
+            "Cookies & Computers is listed for October 23, 2026 from 3:30–4:30 pm at Bedford Public Library.",
+            "The official location page links the occurrence to BiblioCommons event 6abab4a3ebad220045418778."
+          ]
+        }
+      ],
+      "neighbourhood": null,
+      "alternateSources": []
     },
     {
       "id": "woodlawn-library-events-2d52b0ef2b118f54",
@@ -5527,21 +5563,21 @@
     ]
   },
   "manualAdditions": {
-    "appliedAt": "2026-10-21T18:35:11.089Z",
+    "appliedAt": "2026-10-22T22:22:50.366Z",
     "source": "data/build/city-event-additions.json",
-    "eventCount": 9,
-    "addedIds": [
+    "eventCount": 10,
+    "addedIds": [],
+    "mergedIds": [
+      "bedford-library-events-8613f26616226661",
       "taste-asia-2026-food-culture-festival",
       "maritime-museum-peggys-cove-talk-2026-10-20",
       "rejigged-2026-10-22-macgillivrays",
       "rejigged-2026-10-23-cassie-maggie-traverse",
       "rejigged-2026-10-24-ete-inn-echo",
       "maritime-museum-sea-turtle-talk-2026-10-27",
+      "symphony-nova-scotia-648004b43df2a1b3",
       "https://novascotia.com/event/craft-nova-scotia-designer-craft-show/#event",
       "https://novascotia.com/event/halifax-international-wine-festival/#event"
-    ],
-    "mergedIds": [
-      "symphony-nova-scotia-648004b43df2a1b3"
     ]
   },
   "entityResolution": {
