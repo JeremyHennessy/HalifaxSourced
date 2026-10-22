@@ -21,6 +21,7 @@ on:
       - data/build/city-event-additions.json
       - scripts/import-city-events.mjs
       - scripts/import-supplemental-city-events.mjs
+      - scripts/test-event-title-categories.mjs
       - scripts/apply-city-event-additions.mjs
       - scripts/check-city-event-additions.mjs
       - scripts/sanitize-city-events.mjs
@@ -60,6 +61,7 @@ on:
       - data/build/city-event-additions.json
       - scripts/import-city-events.mjs
       - scripts/import-supplemental-city-events.mjs
+      - scripts/test-event-title-categories.mjs
       - scripts/apply-city-event-additions.mjs
       - scripts/check-city-event-additions.mjs
       - scripts/sanitize-city-events.mjs
@@ -107,6 +109,7 @@ jobs:
           node scripts/test-event-refresh-safety.mjs
           node scripts/test-event-refresh-dedupe.mjs
           node scripts/test-canonical-event-dedupe.mjs
+          node scripts/test-event-title-categories.mjs
           node scripts/test-robots-policy.mjs
           node scripts/test-robots-policy-adapters.mjs
           node scripts/test-preview-coordinator.mjs

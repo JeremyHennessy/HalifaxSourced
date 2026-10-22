@@ -36,6 +36,15 @@ function clean(value) {
     .trim();
 }
 function inline(value) { return clean(value).replace(/\s+/g, " ").trim(); }
+function collapseExactRepeatedWords(value) {
+  const title = inline(value);
+  const words = title.split(/\s+/);
+  if (words.length >= 4 && words.length % 2 === 0) {
+    const half = words.length / 2;
+    if (words.slice(0, half).join(" ") === words.slice(half).join(" ")) return words.slice(0, half).join(" ");
+  }
+  return title;
+}
 function absoluteUrl(value, base) {
   try {
     const url = new URL(String(value ?? ""), base);
@@ -306,7 +315,7 @@ async function importLibraries(source) {
       const nextIndex = headings[index + 1]?.index ?? page.text.length;
       const block = clean(page.text.slice(current.index, nextIndex));
       if (/\bcancelled\b/i.test(block)) continue;
-      const title = inline(current[2]).replace(/^Featured Event\.\s*/i, "");
+      const title = collapseExactRepeatedWords(current[2]).replace(/^Featured Event\.\s*/i, "");
       const location = Object.entries(allowedLocations).find(([name]) => block.includes(name));
       if (!title || !location) continue;
       const when = libraryWhen(block);
