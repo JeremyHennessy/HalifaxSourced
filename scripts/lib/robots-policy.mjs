@@ -4,7 +4,7 @@ import { fetchGuardedSource, withSourceDeadline } from './fetch-public-source.mj
 // Project policy, not a claim of full RFC 9309 conformance: no Allow exceptions,
 // same-host guarded redirects, and only 404/410 mean an absent policy. Retain
 // every legacy denial while adding correct group/path/query matching.
-function groupsFrom(text, legacy = false) {
+function groupsFrom(text, legacy = false, discoveryLegacy = false) {
   const groups = [];
   let current;
   for (const rawLine of text.split(legacy ? /\r?\n/ : /\r\n|\r|\n/)) {
@@ -13,6 +13,9 @@ function groupsFrom(text, legacy = false) {
     if (index < 0) continue;
     const key = line.slice(0, index).trim().toLowerCase();
     const value = line.slice(index + 1).trim();
+    // Discovery historically skipped nonempty Sitemap records before grouping.
+    // Keep that separate projection: a blind parser swap could reopen its denial.
+    if (discoveryLegacy && key === 'sitemap' && value) continue;
     if (key === 'user-agent') {
       if (!current || current.hasRules) {
         current = { agents: [], disallow: [], hasRules: false };
@@ -106,14 +109,25 @@ export function parseRobotsPolicy(text, productToken = 'HalifaxSourced') {
   const legacyGroups = groupsFrom(source, true);
   const legacySpecific = legacyGroups.find(group => group.agents.some(agent => agent.includes(wanted)));
   const legacyWildcard = legacyGroups.find(group => group.agents.includes('*'));
+  const discoveryGroups = groupsFrom(source, true, true);
+  const discoverySpecific = discoveryGroups.find(group => group.agents.some(agent => agent.includes(wanted)));
+  const discoveryWildcard = discoveryGroups.find(group => group.agents.includes('*'));
+  // Only a fully qualified policy can supply metadata. Never expose partial or
+  // challenge-body declarations, and never fetch declared sitemap destinations.
+  const sitemaps = [...new Set(source.split(/\r\n|\r|\n/).flatMap(line => {
+    const match = line.replace(/#.*$/, '').trim().match(/^sitemap\s*:\s*(.+)$/i);
+    return match ? [new URL(match[1].trim()).href] : [];
+  }))];
   return {
     state: 'parsed',
     disallow: selected.flatMap(group => group.disallow).map(rulePattern),
-    legacyDisallow: (legacySpecific || legacyWildcard)?.disallow ?? []
+    legacyDisallow: (legacySpecific || legacyWildcard)?.disallow ?? [],
+    discoveryLegacyDisallow: (discoverySpecific || discoveryWildcard)?.disallow ?? [],
+    sitemaps
   };
 }
 
-export function robotsPolicyAllows(policy, url) {
+export function robotsPolicyAllows(policy, url, { preserveDiscoveryDenials = false } = {}) {
   if (!integrity.safeSource(url)) return false;
   if (policy?.state === 'absent') return true;
   if (policy?.state !== 'parsed') return false;
@@ -121,15 +135,16 @@ export function robotsPolicyAllows(policy, url) {
   // Tightening-only: even a formerly literal '*' or '$', or an erroneously
   // selected NotHalifaxSourced group, must not reopen a legacy-denied path.
   if (policy.legacyDisallow.some(prefix => prefix === '/' || parsed.pathname.startsWith(prefix))) return false;
+  if (preserveDiscoveryDenials && policy.discoveryLegacyDisallow?.some(prefix => prefix === '/' || parsed.pathname.startsWith(prefix))) return false;
   const target = normalizeOctets(parsed.pathname + parsed.search);
   return !policy.disallow.some(pattern => matchesRule(pattern, target));
 }
 
-export function createRobotsAllows({ userAgent, productToken = 'HalifaxSourced', timeoutMs = 8000 } = {}) {
+export function createRobotsPolicy({ userAgent, productToken = 'HalifaxSourced', timeoutMs = 8000 } = {}) {
   const cache = new Map();
   const deadlineMs = Number.isFinite(timeoutMs) && timeoutMs > 0 ? Math.min(timeoutMs, 8000) : 8000;
-  return async function robotsAllows(url) {
-    if (!integrity.safeSource(url)) return false;
+  return async function robotsFor(url) {
+    if (!integrity.safeSource(url)) return { state: 'unavailable' };
     const parsed = new URL(url);
     if (!cache.has(parsed.origin)) {
       // Cache the in-flight promise and failures for this run. No retries, even
@@ -148,6 +163,13 @@ export function createRobotsAllows({ userAgent, productToken = 'HalifaxSourced',
         return parseRobotsPolicy(text, productToken);
       }, deadlineMs).catch(() => ({ state: 'unavailable' })));
     }
-    return robotsPolicyAllows(await cache.get(parsed.origin), parsed);
+    return cache.get(parsed.origin);
   };
+}
+
+// Preserve the callback API for existing adapters. Discovery additionally uses
+// the same policy retrieval for sitemap metadata and its own legacy denial union.
+export function createRobotsAllows(options = {}) {
+  const robotsFor = createRobotsPolicy(options);
+  return async url => robotsPolicyAllows(await robotsFor(url), url);
 }

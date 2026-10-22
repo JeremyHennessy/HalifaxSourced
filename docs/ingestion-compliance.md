@@ -35,11 +35,12 @@ This captures the peninsula, downtown, North End, South End, West End, nearby Da
 
 ## Robots policy repair scope (October 22, 2026)
 
-The shared `scripts/lib/robots-policy.mjs` policy is used by exactly eight adapters:
+The shared `scripts/lib/robots-policy.mjs` policy is used by exactly nine adapters:
 `import-official-sites.mjs`, `verify-official-source-pages.mjs`,
 `import-structured-events.mjs`, `import-official-page-intelligence.mjs`,
-`import-patio-directory-facts.mjs`, `import-city-events.mjs`, and
-`import-public-special-source-leads.mjs`, and `import-first-party-feed-signals.mjs`. Policy retrieval uses the existing quarantined-source
+`import-patio-directory-facts.mjs`, `import-city-events.mjs`,
+`import-public-special-source-leads.mjs`, `import-first-party-feed-signals.mjs`, and
+`discover-first-party-sources.mjs`. Policy retrieval uses the existing quarantined-source
 and same-host redirect guard, with a deadline around both fetch and body consumption.
 An origin's in-flight result is cached for the run, including unavailable policies;
 failures are not retried. Network/body errors, deadlines, rejected/missing/looping
@@ -59,7 +60,7 @@ exact matching bot group. The prior selected-group/literal-prefix denials are al
 retained, so this repair cannot reopen a legacy-denied path, including legacy
 literal `$` paths and erroneously selected `NotHalifaxSourced` groups. `Allow`
 exceptions never reopen a denial. This is an intentionally stricter project policy,
-not full RFC 9309 conformance. All eight adapters consult the same policy callback
+not full RFC 9309 conformance. All nine adapters consult the same policy callback
 at each guarded content redirect destination. Patio retains its single hardcoded
 source and registry metadata semantics; intelligence retains its existing page,
 restaurant, concurrency and host-serial delay bounds. City retains its registry modes,
@@ -87,8 +88,8 @@ The existing API path still requires the applicable provider permission, terms,
 attribution and retention limits; this code-only policy guard establishes no new
 permission or source-specific agreement. Provider denials must not be bypassed.
 
-Five independent implementations remain outside this migration:
-`discover-first-party-sources.mjs`, `import-structured-place-facts.mjs`,
+Four independent implementations remain outside this migration:
+`import-structured-place-facts.mjs`,
 `import-review-directory-restaurants.mjs`, `import-directory-restaurants.mjs`, and
 `refine-dartmouth-directory.mjs`. Their robots semantics and failure handling have
 not been repaired by this change. Future migration must preserve each adapter's
@@ -114,6 +115,48 @@ include the 22 original offline audit fixtures with unsafe expectations
 reversed, tightening-only comparisons, cache/no-retry and stalled-body tests.
 No source registry enablement, accepted dataset, source clock, media/review gate,
 or collection schedule is changed by this code-only repair.
+
+## First-party discovery transport safety (October 22, 2026)
+
+Discovery obtains permission and sitemap metadata from one qualified, cached robots
+response per origin. Unavailable, partial or challenge responses yield no metadata
+and no content fetch; unavailable results are not retried. The existing
+`createRobotsAllows` callback API remains unchanged for other adapters. Discovery
+also retains its distinct historical Sitemap/group denial projection as an opt-in
+union with the shared modern and legacy denials. In particular, a nonempty Sitemap
+line never splits that historical discovery group; switching parsers cannot reopen
+a path denied by the old discovery implementation. Sitemap pointers stay deduplicated,
+same-site filtered and limited to 12; they do not authorize fetching their targets.
+
+HTML fetch and body consumption share a bounded operation deadline. A stalled body
+settles as a failure and releases that host's queue; late responses cannot admit
+another redirect or manufacture a successful observation. The existing target/ID,
+owned-page, link-hub, concurrency and host-serial bounds remain unchanged. Only
+restaurant-linked supported hubs may be traversed, under their own robots policy.
+Social destinations and discovered feed/sitemap pointers are never crawled here.
+HTTP/MIME success is not venue identity, ownership, content verification or media
+permission; HTML challenge/content classification beyond the existing checks is not
+claimed by this scoped transport repair.
+
+Failed and unattempted discovery records retain their exact prior objects, including
+hashes, genuine observation/verification clocks, rights and review fields. Actual
+entrypoint fixtures run discovery, history merge and sanitation to verify retained
+records and genuine old relationship dates after partial owned-page/hub failures.
+This is not an association-lifetime repair: the separate history merger still has
+known build-receipt clock fallback, review-state upgrade, expired/changed-site feed
+association and attempt-counter limitations. Those require a separately reviewed
+provenance batch, not fabricated new clocks or destructive history loss here.
+No historical record is re-observed, re-reviewed or newly licensed by this patch.
+
+Social's exact-head, transport-denied PR lane now runs the composite policy/adapter
+suite and watches all its local fixture dependencies. The suite includes the complete
+105-case discovery policy matrix, HTML deadlines, cached sitemap metadata, bounds,
+per-hop denials and the real discovery/history/sanitation path. The scheduled/manual
+producer body, permissions, collection limits, schedules and artifact paths remain
+byte-identical. Source Expansion and City's existing offline adapter commands also
+exercise these fixtures. Restaurant Discovery's independent PR collector is not
+activated. No accepted data, UI, source registry, API authentication or publication
+rights change is included.
 
 ## Feed refresh safety (October 22, 2026)
 

@@ -235,6 +235,7 @@ const socialValidationCommands = [
   'node scripts/test-public-source-fetch.mjs',
   'node scripts/test-first-party-feed-safety.mjs',
   'node scripts/test-robots-policy.mjs',
+  'node scripts/test-robots-policy-adapters.mjs',
   'node scripts/test-media-reference-contract.mjs',
   'node scripts/test-preview-coordinator.mjs',
   'node scripts/test-scheduled-source-guards.mjs',
@@ -293,6 +294,19 @@ const socialValidationPaths = [
   'scripts/lib/fetch-public-source.mjs',
   'scripts/lib/robots-policy.mjs',
   'scripts/test-robots-policy.mjs',
+  'scripts/test-robots-policy-adapters.mjs',
+  'scripts/test-public-special-robots.mjs',
+  'scripts/test-public-special-refresh-safety.mjs',
+  'scripts/lib/public-special-refresh-safety.mjs',
+  'scripts/lib/source-page-classification.mjs',
+  'scripts/build-structured-specials.mjs',
+  'scripts/import-public-special-source-leads.mjs',
+  'scripts/import-official-sites.mjs',
+  'scripts/verify-official-source-pages.mjs',
+  'scripts/import-structured-events.mjs',
+  'scripts/import-official-page-intelligence.mjs',
+  'scripts/import-patio-directory-facts.mjs',
+  'scripts/import-city-events.mjs',
   'scripts/lib/source-run-health.mjs',
   'scripts/lib/media-rights-contract.mjs',
   'scripts/lib/lifecycle-language.mjs',
@@ -311,6 +325,23 @@ const socialValidationPaths = [
   'data/thumbnail-candidates.js',
   'data/audit/media-rights-reclassification.json'
 ];
+// All local files consumed by the newly enabled composite adapter suite are
+// covered by Social's PR filters (accepted fixture inputs are covered by data/**).
+const adapterFixtureDependencies = [
+  'scripts/test-robots-policy-adapters.mjs', 'scripts/test-public-special-robots.mjs',
+  'scripts/test-public-special-refresh-safety.mjs', 'scripts/lib/public-special-refresh-safety.mjs',
+  'scripts/lib/source-page-classification.mjs', 'scripts/lib/lifecycle-language.mjs',
+  'scripts/build-structured-specials.mjs', 'scripts/build-recent-social-posts.mjs',
+  'scripts/build-thumbnail-candidates.mjs', 'scripts/lib/media-rights-contract.mjs', 'app-media.js',
+  'scripts/lib/deny-source-network.mjs',
+  'scripts/lib/robots-policy.mjs', 'scripts/lib/fetch-public-source.mjs', 'source-integrity.js',
+  'scripts/import-official-sites.mjs', 'scripts/verify-official-source-pages.mjs',
+  'scripts/import-structured-events.mjs', 'scripts/import-official-page-intelligence.mjs',
+  'scripts/import-patio-directory-facts.mjs', 'scripts/import-city-events.mjs',
+  'scripts/import-public-special-source-leads.mjs', 'scripts/discover-first-party-sources.mjs',
+  'scripts/merge-first-party-history.mjs', 'scripts/sanitize-first-party-sources.mjs'
+];
+for (const path of adapterFixtureDependencies) assert(socialValidationPaths.includes(path), 'Social must include adapter fixture dependency: ' + path);
 for (const path of [...thumbnailFixtureDependencies, ...feedFixtureDependencies]) assert(socialValidationPaths.includes(path), 'Social must include thumbnail fixture dependency: ' + path);
 const socialProducerGuard = "    if: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}\n";
 const socialValidationPrefix = [

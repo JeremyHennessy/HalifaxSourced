@@ -60,6 +60,19 @@ on:
       - scripts/lib/fetch-public-source.mjs
       - scripts/lib/robots-policy.mjs
       - scripts/test-robots-policy.mjs
+      - scripts/test-robots-policy-adapters.mjs
+      - scripts/test-public-special-robots.mjs
+      - scripts/test-public-special-refresh-safety.mjs
+      - scripts/lib/public-special-refresh-safety.mjs
+      - scripts/lib/source-page-classification.mjs
+      - scripts/build-structured-specials.mjs
+      - scripts/import-public-special-source-leads.mjs
+      - scripts/import-official-sites.mjs
+      - scripts/verify-official-source-pages.mjs
+      - scripts/import-structured-events.mjs
+      - scripts/import-official-page-intelligence.mjs
+      - scripts/import-patio-directory-facts.mjs
+      - scripts/import-city-events.mjs
       - scripts/lib/source-run-health.mjs
       - scripts/lib/media-rights-contract.mjs
       - scripts/lib/lifecycle-language.mjs
@@ -119,6 +132,7 @@ jobs:
           node scripts/test-public-source-fetch.mjs
           node scripts/test-first-party-feed-safety.mjs
           node scripts/test-robots-policy.mjs
+          node scripts/test-robots-policy-adapters.mjs
           node scripts/test-media-reference-contract.mjs
           node scripts/test-preview-coordinator.mjs
           node scripts/test-scheduled-source-guards.mjs

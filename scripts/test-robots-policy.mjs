@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { createRobotsAllows, parseRobotsPolicy, robotsPolicyAllows } from './lib/robots-policy.mjs';
+import { createRobotsAllows, createRobotsPolicy, parseRobotsPolicy, robotsPolicyAllows } from './lib/robots-policy.mjs';
 
 const base = 'https://fixture.example';
 const allows = (body, path) => robotsPolicyAllows(parseRobotsPolicy(body), base + path);
@@ -69,7 +69,7 @@ const matching = [
 for (const [body, path, expected] of matching) assert.equal(allows(body, path), expected, JSON.stringify({body, path}));
 
 // Independent frozen legacy implementation for the tightening-only invariant.
-function oldAllows(text, path) {
+function oldAllows(text, path, discovery = false) {
   const groups = [];
   let current = null;
   for (const rawLine of String(text ?? '').split(/\r?\n/)) {
@@ -79,6 +79,7 @@ function oldAllows(text, path) {
     if (index < 0) continue;
     const key = line.slice(0, index).trim().toLowerCase();
     const value = line.slice(index + 1).trim();
+    if (discovery && key === 'sitemap' && value) continue;
     if (key === 'user-agent') {
       if (!current || current.hasRules) {
         current = { agents: [], disallow: [], hasRules: false };
@@ -106,6 +107,23 @@ for (const body of bodies) for (const path of paths) {
 }
 assert.equal(oldAllows(wildcard('/menu$'), '/menu$legacy'), false);
 assert.equal(oldAllows('User-agent: NotHalifaxSourced\nDisallow: /\nUser-agent: HalifaxSourced\nDisallow: /unrelated', '/legacy'), false);
+
+// Discovery's additional legacy projection is opt-in; the existing shared API
+// stays unchanged while the migrated adapter can only tighten either policy.
+const discoveryBody = 'User-agent: NotHalifaxSourced\nSitemap: https://fixture.example/sitemap.xml\nUser-agent: Other\nDisallow: /menu\nUser-agent: *\nDisallow: /else';
+assert.equal(allows(discoveryBody, '/menu'), true, 'Counterexample distinguishes the old shared policy');
+assert.equal(oldAllows(discoveryBody, '/menu', true), false);
+const discoveryBodies = [...bodies, discoveryBody];
+for (const agent of ['*', 'HalifaxSourced', 'NotHalifaxSourced', 'Other']) {
+  for (const middle of ['Sitemap: https://fixture.example/map.xml', 'Sitemap:', 'Sitemap: invalid', 'Unknown: value']) {
+    discoveryBodies.push(`User-agent: ${agent}\n${middle}\nUser-agent: Other\nDisallow: /menu\nUser-agent: *\nDisallow: /legacy`);
+  }
+}
+for (const body of discoveryBodies) for (const path of paths) {
+  const result = robotsPolicyAllows(parseRobotsPolicy(body), base + path, { preserveDiscoveryDenials: true });
+  assert(!result || oldAllows(body, path, true), `Reopened discovery denial: ${JSON.stringify({body, path})}`);
+  assert(!result || allows(body, path), 'Discovery also preserves every shared-policy denial');
+}
 
 const originalFetch = globalThis.fetch;
 try {
@@ -166,6 +184,34 @@ try {
     assert.equal(requests.length, location === '/robots.txt' ? 4 : 1);
     assert(requests.every(url => url === base + '/robots.txt'));
   }
+  // Permission and sitemap consumers share one qualified in-flight origin result.
+  for (const policy of [
+    { status: 200, body: 'Sitemap: https://fixture.example/map.xml\nSitemap: https://fixture.example/map.xml\nSitemap: https://other.example/map.xml', expected: [base + '/map.xml', 'https://other.example/map.xml'] },
+    { status: 404 }, { status: 410 }, { status: 206 }, { status: 503 },
+    { body: 'Sitemap: https://fixture.example/map.xml\n<html>Challenge</html>' },
+    { body: 'Sitemap: https://fixture.example/map.xml', contentType: 'text/html' },
+    { body: 'Sitemap: https://fixture.example/map.xml', bodyError: true },
+    { body: 'Sitemap: https://fixture.example/map.xml', bodyStall: true }
+  ]) {
+    const calls = [];
+    globalThis.fetch = async (input, options) => {
+      calls.push(String(input));
+      assert.deepEqual(Object.keys(options.headers), ['User-Agent'], 'Robots receives no content/API headers');
+      if (policy.bodyError || policy.bodyStall) return {status: 200, text: async () => {
+        if (policy.bodyError) throw new Error('fixture body failure');
+        return new Promise(() => {});
+      }};
+      return new Response(policy.body || 'Sitemap: https://fixture.example/map.xml', {
+        status: policy.status || 200, headers: {'content-type': policy.contentType || 'text/plain'}
+      });
+    };
+    const get = createRobotsPolicy({userAgent: 'HalifaxSourced/fixture', timeoutMs: 20});
+    const [metadata, permission] = await Promise.all([get(base + '/one'), get(base + '/two').then(value => robotsPolicyAllows(value, base + '/two'))]);
+    assert.deepEqual(metadata.sitemaps || [], policy.expected || [], 'Only complete qualified text yields metadata');
+    assert.equal(permission, Boolean(policy.expected) || [404, 410].includes(policy.status));
+    assert.strictEqual(await get(base + '/again'), metadata, 'Same cached policy result, including failures');
+    assert.deepEqual(calls, [base + '/robots.txt']);
+  }
   const requests = [];
   globalThis.fetch = async input => {
     const url = String(input); requests.push(url);
@@ -182,4 +228,4 @@ try {
   assert.equal(await check('not a url'), false);
   assert.equal(requests.length, 4, 'Unsafe sources never request robots');
 } finally { globalThis.fetch = originalFetch; }
-console.log(`Robots policy passed offline: ${matching.length} semantic cases, ${bodies.length * paths.length} tightening-only pairs, failure/cache/deadline/redirect controls.`);
+console.log(`Robots policy passed offline: ${matching.length} semantic cases, ${bodies.length * paths.length} shared and ${discoveryBodies.length * paths.length} discovery tightening-only pairs, failure/cache/deadline/redirect controls.`);
