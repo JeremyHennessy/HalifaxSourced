@@ -1671,6 +1671,75 @@
           "observedAt": "2026-10-22T14:06:42.882Z"
         }
       ]
+    },
+    {
+      "provenance": {
+        "kind": "reviewed_workflow_log",
+        "repository": "JeremyHennessy/HalifaxSourced",
+        "sourceCommitSha": "8baaca6180488c84ba31d0bb4eef9617a5b1aa0d",
+        "workflowRunId": "39801572908",
+        "workflowRunAttempt": "1",
+        "workflowJob": "data-integrity",
+        "workflowJobId": 119903376388,
+        "accessPolicySha256": "2556894ef813c8d585120bad40af0cd211662467c3694cd1b8b28338f4f28a03",
+        "logSha256": "75c5846730bc055cb7383f1b1982e2acd67570628a7e00d1008cd01deb3110b0",
+        "diagnosticSha256": "552243f66334af73ccad3d91897e770eb5eb2004c4fd083d5aa998bed7a5c65f",
+        "receiptSha256": "e528a4bc91b78549bca4d1dd4d7ce11dc5573e667ed056b49dd2f5bc5deb1585",
+        "loggedAt": "2026-10-22T15:11:21.213Z",
+        "diagnostic": {
+          "version": 1,
+          "disposition": "nonpublishable_requires_review",
+          "kind": "http_restriction",
+          "repository": "JeremyHennessy/HalifaxSourced",
+          "workflowJob": "data-integrity",
+          "loggedAt": "2026-10-22T15:11:21.213Z",
+          "sourceCommitSha": "8baaca6180488c84ba31d0bb4eef9617a5b1aa0d",
+          "sourceWorkflowRunId": "39801572908",
+          "sourceWorkflowRunAttempt": "1",
+          "accessPolicySha256": "2556894ef813c8d585120bad40af0cd211662467c3694cd1b8b28338f4f28a03",
+          "evidence": {
+            "hold": {
+              "id": "33367083423af473bec0c4512066ac5f102bec830be5547fefe1ac966731dfd3",
+              "scope": "url",
+              "target": "https://order.online/business/~277519",
+              "reason": "access_restricted",
+              "resume": "reviewed_evidence_required",
+              "evidence": {
+                "url": "https://order.online/business/~277519",
+                "finalUrl": "https://order.online/business/~277519",
+                "status": 403,
+                "observedAt": "2026-10-22T15:11:21.212Z"
+              },
+              "provenance": {
+                "kind": "current_run",
+                "sourceCommitSha": "8baaca6180488c84ba31d0bb4eef9617a5b1aa0d",
+                "sourceWorkflowRunId": "39801572908",
+                "sourceWorkflowRunAttempt": "1",
+                "accessPolicySha256": "2556894ef813c8d585120bad40af0cd211662467c3694cd1b8b28338f4f28a03",
+                "requestId": "641"
+              }
+            },
+            "receipt": {
+              "requestId": "641",
+              "url": "https://order.online/business/~277519",
+              "status": 403,
+              "observedAt": "2026-10-22T15:11:21.212Z",
+              "attemptedAt": "2026-10-22T15:11:21.146Z",
+              "mediaType": "text/html"
+            },
+            "late": false,
+            "suspensionId": null
+          }
+        }
+      },
+      "observations": [
+        {
+          "url": "https://order.online/business/~277519",
+          "finalUrl": "https://order.online/business/~277519",
+          "status": 403,
+          "observedAt": "2026-10-22T15:11:21.212Z"
+        }
+      ]
     }
   ]
 }

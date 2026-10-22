@@ -200,7 +200,7 @@ status or observation clock, or retry a blocked target merely to fit this schema
 Before committing any such group, retrieve the actual job log and job metadata and
 independently verify those hashes and the selected original line. Local structural
 validation does not authenticate an external log merely because hashes are present.
-The variant has hostile fixture coverage and is also used below for five actual
+The variant has hostile fixture coverage and is also used below for six actual
 reviewed QA diagnostics. It adds no storage service or automatic cross-run writes.
 
 Content Quality Audit PRs run only exact-head, transport-denied fixtures; its
@@ -273,11 +273,34 @@ Each compact diagnostic exactly matches its JSONL line in diagnostic artifact
 and its actual receipt in the artifact's link report. This failed-run artifact is
 not an accepted release. Existing accepted-artifact evidence is unchanged.
 
-The expanded union has 219 observations (74 actual 403, 145 actual 429 and no
+After those five additions, the union had 219 observations (74 actual 403, 145 actual 429 and no
 production 401), 78 exact original/final 403 URL keys and three canonical 429 hosts.
-It holds 222 of the unchanged 1,060 release reference URLs. The seven additional
+It held 222 of the unchanged 1,060 release reference URLs. The seven additional
 held references are the four exact denied URLs and three LinkedIn references;
 the latter are host-scope decisions, not three separate 429 observations. No
 business facts, public URLs or lifecycle decisions are changed. The next hosted
 batch still requires independent review of these original receipts and metadata;
 neither elapsed time nor a failed job permits automatic source retries.
+
+
+PR 159 Quality run 39801572908, attempt 1, `data-integrity` job 119903376388
+at source commit 8baaca6180488c84ba31d0bb4eef9617a5b1aa0d then failed closed on
+one additional actual 403: `https://order.online/business/~277519`, observed at
+`2026-10-22T15:11:21.212Z` after the request began at
+`2026-10-22T15:11:21.146Z`. Its separate diagnostic `loggedAt` is
+`2026-10-22T15:11:21.213Z`. One appended reviewed-log group preserves this exact
+URL restriction, not an order.online host hold. All previous 219 observations,
+clocks and provenance are unchanged. No Retry-After, late restriction or unresolved
+transport outcome was recorded for this new receipt.
+The independently retrieved full log SHA-256 is
+`75c5846730bc055cb7383f1b1982e2acd67570628a7e00d1008cd01deb3110b0`.
+The diagnostic matches the JSONL and actual report receipt in diagnostic artifact
+12436426711, ZIP SHA-256
+`8b44c2e29796f4061491fb2472e03aeac811d3b45373d65dcf34eb1dd61c3fce`.
+This failed-run diagnostic is not an accepted release. The resulting union has
+220 observations (75 actual 403, 145 actual 429, no production 401), 79 exact
+original/final 403 URL keys and the same three canonical 429 hosts. It holds 223
+of the unchanged 1,060 release references. Finite entrypoint fixtures require the
+new target and normalized aliases to be unattempted while unrelated same-host
+business paths remain unaffected. No business facts, public URLs, runtime request
+rules, expiry or retry permission are changed.
