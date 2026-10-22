@@ -27,6 +27,10 @@ on:
       - scripts/resolve-city-event-entities.mjs
       - scripts/check-event-entity-resolution.mjs
       - scripts/check-city-events.mjs
+      - scripts/lib/canonical-event-dedupe.mjs
+      - scripts/lib/event-refresh-safety.mjs
+      - scripts/test-event-identity-continuity.mjs
+      - scripts/check-event-identity-continuity.mjs
   pull_request:
     branches:
       - main
@@ -50,12 +54,36 @@ on:
       - scripts/resolve-city-event-entities.mjs
       - scripts/check-event-entity-resolution.mjs
       - scripts/check-city-events.mjs
+      - scripts/lib/canonical-event-dedupe.mjs
+      - scripts/lib/event-refresh-safety.mjs
+      - scripts/test-event-identity-continuity.mjs
+      - scripts/check-event-identity-continuity.mjs
 
 permissions:
   contents: read
 
 jobs:
+  validate-pr:
+    if: ${{ github.event_name == 'pull_request' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Validate event identity without source collection
+        env:
+          NODE_OPTIONS: --import ${{ github.workspace }}/scripts/lib/deny-source-network.mjs
+        run: |
+          node scripts/test-event-identity-continuity.mjs
+          node scripts/test-event-refresh-safety.mjs
+          node scripts/test-event-refresh-dedupe.mjs
+          node scripts/test-canonical-event-dedupe.mjs
   refresh-events:
+    if: ${{ github.event_name != 'pull_request' }}
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
@@ -110,6 +138,12 @@ jobs:
 
       - name: Validate event entity resolution
         run: node scripts/check-event-entity-resolution.mjs
+
+      - name: Verify saved-event continuity before preview upload
+        run: |
+          node scripts/check-event-identity-continuity.mjs /tmp/city-events.previous.json
+          node scripts/test-event-identity-continuity.mjs
+          node scripts/test-canonical-event-dedupe.mjs
 
       - name: Upload city event preview
         uses: actions/upload-artifact@v4

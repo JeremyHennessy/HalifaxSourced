@@ -37,10 +37,30 @@ const savedCityEvents = readSavedCityEvents();
 function readSavedCityEvents() {
   try {
     const parsed = JSON.parse(localStorage.getItem(CITY_EVENT_SAVED_KEY) || "[]");
-    return new Set(Array.isArray(parsed) ? parsed.map(String) : []);
+    return resolveSavedCityEventIds(Array.isArray(parsed) ? parsed.map(String) : [], cityEvents);
   } catch {
     return new Set();
   }
+}
+
+// Migrate only uniquely owned aliases. Unknown or ambiguous saves remain intact;
+// no automatic storage write, and canonical IDs always take precedence.
+function resolveSavedCityEventIds(ids, events) {
+  const canonical = new Set(events.map(event => String(event.id)));
+  const aliases = new Map();
+  for (const event of events) {
+    for (const alias of event.duplicateEventIds || []) {
+      const id = String(alias);
+      const owners = aliases.get(id) || new Set();
+      owners.add(String(event.id));
+      aliases.set(id, owners);
+    }
+  }
+  return new Set(ids.map(id => {
+    if (canonical.has(id)) return id;
+    const owners = aliases.get(id);
+    return owners?.size === 1 ? [...owners][0] : id;
+  }));
 }
 
 function persistSavedCityEvents() {
