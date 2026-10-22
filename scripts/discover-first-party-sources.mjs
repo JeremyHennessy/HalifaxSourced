@@ -1,5 +1,5 @@
-import { fetchGuardedSource as fetch } from "./lib/fetch-public-source.mjs";
-import { fetchPublicSource } from "./lib/fetch-public-source.mjs";
+import { fetchPublicSource, withSourceDeadline } from "./lib/fetch-public-source.mjs";
+import { createRobotsPolicy, robotsPolicyAllows } from "./lib/robots-policy.mjs";
 import integrity from "../source-integrity.js";
 // First-party discovery runs as a bounded, review-only refresh before production publication.
 import { mkdir, readFile, writeFile } from "node:fs/promises";
@@ -28,7 +28,7 @@ const concurrency = Math.max(1, Math.min(16, Number(process.env.FIRST_PARTY_SOUR
 const ownedPageLimit = Math.max(1, Math.min(5, Number(process.env.FIRST_PARTY_OWNED_PAGE_LIMIT ?? 3)));
 const linkHubLimit = Math.max(0, Math.min(4, Number(process.env.FIRST_PARTY_LINK_HUB_LIMIT ?? 2)));
 const userAgent = "HalifaxSourced/0.7 (+https://github.com/JeremyHennessy/HalifaxSourced)";
-const robotsCache = new Map();
+const robotsFor = createRobotsPolicy({ userAgent, timeoutMs });
 
 const PLATFORM_BY_ID = new Map((socialRegistry.platforms || []).map((platform) => [platform.id, platform]));
 const SOCIAL_PLATFORM_IDS = new Set((socialRegistry.platforms || []).filter((platform) => platform.kind === "social").map((platform) => platform.id));
@@ -80,66 +80,8 @@ function attrs(fragment) {
   return out;
 }
 
-function parseRobots(text) {
-  const groups = [];
-  const sitemaps = [];
-  let current = null;
-  for (const rawLine of String(text ?? "").split(/\r?\n/)) {
-    const line = rawLine.replace(/#.*$/, "").trim();
-    if (!line) continue;
-    const index = line.indexOf(":");
-    if (index < 0) continue;
-    const key = line.slice(0, index).trim().toLowerCase();
-    const value = line.slice(index + 1).trim();
-    if (key === "sitemap" && value) {
-      const url = safeUrl(value);
-      if (url) sitemaps.push(url.href);
-      continue;
-    }
-    if (key === "user-agent") {
-      if (!current || current.hasRules) {
-        current = { agents: [], disallow: [], hasRules: false };
-        groups.push(current);
-      }
-      current.agents.push(value.toLowerCase());
-      continue;
-    }
-    if (!current) continue;
-    current.hasRules = true;
-    if (key === "disallow" && value) current.disallow.push(value);
-  }
-  const specific = groups.find((group) => group.agents.some((agent) => agent.includes("halifaxsourced")));
-  const wildcard = groups.find((group) => group.agents.includes("*"));
-  return { disallow: (specific || wildcard)?.disallow ?? [], sitemaps: [...new Set(sitemaps)] };
-}
-
-async function robotsFor(url) {
-  if (!integrity.safeSource(url)) return null;
-  const parsed = new URL(url);
-  if (!robotsCache.has(parsed.origin)) {
-    robotsCache.set(parsed.origin, (async () => {
-      try {
-        const response = await fetch(new URL("/robots.txt", parsed.origin), {
-          headers: { "User-Agent": userAgent },
-          redirect: "manual",
-          signal: AbortSignal.timeout(Math.min(timeoutMs, 8000))
-        });
-        if (response.status === 401 || response.status === 403) return { disallow: ["/"], sitemaps: [] };
-        if (!response.ok) return { disallow: [], sitemaps: [] };
-        return parseRobots(await response.text());
-      } catch {
-        return { disallow: [], sitemaps: [] };
-      }
-    })());
-  }
-  return robotsCache.get(parsed.origin);
-}
-
 async function robotsAllows(url) {
-  if (!integrity.safeSource(url)) return null;
-  const parsed = new URL(url);
-  const robots = await robotsFor(url);
-  return !robots.disallow.some((prefix) => prefix === "/" || (prefix && parsed.pathname.startsWith(prefix)));
+  return robotsPolicyAllows(await robotsFor(url), url, { preserveDiscoveryDenials: true });
 }
 
 function platformForUrl(value) {
@@ -371,15 +313,19 @@ async function fetchHtml(url) {
   if (!integrity.safeSource(url)) return { error: "quarantined_source", url };
   if (!(await robotsAllows(url))) return { error: "robots_disallow", url };
   try {
-    const response = await fetchPublicSource(url, {
-      headers: { "User-Agent": userAgent, Accept: "text/html,application/xhtml+xml" },
-      redirect: "manual",
-      signal: AbortSignal.timeout(timeoutMs)
-    }, robotsAllows);
-    const contentType = response.headers.get("content-type") || "";
-    if (!response.ok) return { error: `http_${response.status}`, url };
-    if (!/html|xhtml/i.test(contentType)) return { error: "not_html", url };
-    return { html: await response.text(), url: response.url || url };
+    return await withSourceDeadline(async signal => {
+      const response = await fetchPublicSource(url, {
+        headers: { "User-Agent": userAgent, Accept: "text/html,application/xhtml+xml" },
+        redirect: "manual",
+        signal
+      }, robotsAllows);
+      const contentType = response.headers.get("content-type") || "";
+      if (!response.ok) return { error: `http_${response.status}`, url };
+      if (!/html|xhtml/i.test(contentType)) return { error: "not_html", url };
+      const html = await response.text();
+      signal.throwIfAborted();
+      return { html, url: response.url || url };
+    }, timeoutMs);
   } catch (error) {
     return { error: error.name === "TimeoutError" ? "timeout" : error.message, url };
   }

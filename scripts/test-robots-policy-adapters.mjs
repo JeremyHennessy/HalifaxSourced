@@ -250,7 +250,8 @@ try {
     }
   }
   const targetedCityCount = await testCityAdapter(root);
-  console.log(`Robots adapter regressions passed offline: ${cases.length} fixtures × ${adapters.length + 1} actual entrypoints, plus ${targetedCityCount} targeted City fixtures, including all 22 audit cases, deadlines, caches, redirects and positive controls.`);
+  const discoveryCount = await testDiscoveryAdapter(root);
+  console.log(`Robots adapter regressions passed offline: ${cases.length} fixtures × ${adapters.length + 1} actual entrypoints, plus ${targetedCityCount} targeted City and ${discoveryCount} discovery/history fixtures, including all 22 audit cases, deadlines, caches, redirects and positive controls.`);
 } finally { await rm(root, { recursive: true, force: true }); }
 
 // Public-special combines three independent source families and source-atomic
@@ -445,5 +446,289 @@ async function testCityAdapter(parentRoot) {
       requests: [robotsUrl, ...(denied ? [] : [tribe.icalUrl]), tribe.url, detail],
       events: [expectedEvent(event(), tribe, detail)], rawCounts: [1]});
   }
+  return count;
+}
+
+async function testDiscoveryAdapter(parentRoot) {
+  const root = join(parentRoot, 'discovery');
+  await mkdir(join(root, 'scripts/lib'), {recursive: true});
+  await mkdir(join(root, 'data/build'), {recursive: true});
+  for (const file of ['scripts/discover-first-party-sources.mjs', 'scripts/merge-first-party-history.mjs',
+    'scripts/sanitize-first-party-sources.mjs', 'scripts/lib/robots-policy.mjs',
+    'scripts/lib/fetch-public-source.mjs', 'source-integrity.js', 'data/social-platform-registry.json']) {
+    await copyFile(new URL('../' + file, import.meta.url), join(root, file));
+  }
+  const origin = 'https://fixture.example';
+  const robotsUrl = origin + '/robots.txt';
+  const oldAt = new Date(Date.now() - 3 * 86400000).toISOString();
+  const oldHash = 'a'.repeat(64);
+  const venue = (index = 0, website = origin + '/menu') => ({id: `fixture-${index}`, name: `Fixture ${index}`, website});
+  const priorRecord = item => ({restaurantId: item.id, name: item.name, website: item.website, resolvedUrl: item.website,
+    observedAt: oldAt, lastVerifiedAt: oldAt, contentHash: oldHash, rightsState: 'public_reference_not_media_licence',
+    reviewState: 'needs-review', sourceKind: 'official_website_discovery', scannedOwnedPages: [item.website],
+    socialProfiles: [], linkHubs: [], relatedLinks: [], feeds: [], sitemaps: [origin + '/old-map.xml']});
+  let count = 0;
+  async function run({name, policy = {body: ''}, policies = {}, venues = [venue()], discovered = [], routes = {},
+    expectedRequests = [], refreshed = [], failures = [], env = {}, previous = venues.map(priorRecord),
+    pipeline = false, expectedExit = 0, settleMs = 0}) {
+    count++;
+    const label = `discover-first-party-sources.mjs: ${name}`;
+    await writeFile(join(root, 'data/build/catalog.json'), JSON.stringify({restaurants: venues}));
+    await writeFile(join(root, 'data/discovered-restaurants.js'), `window.HALIFAX_DISCOVERED_RESTAURANTS = ${JSON.stringify(discovered)};`);
+    await writeFile(join(root, 'data/social-profile-review-overrides.json'), '{"records":[]}');
+    const before = JSON.stringify({generatedAt: oldAt, records: previous}, null, 2);
+    await writeFile(join(root, 'previous.json'), before);
+    await writeFile(join(root, 'data/build/first-party-sources.json'), before);
+    const beforeJs = `window.HALIFAX_FIRST_PARTY_SOURCES = ${before};\n`;
+    await writeFile(join(root, 'data/first-party-sources.js'), beforeJs);
+    await writeFile(join(root, 'runner.mjs'), `
+      import assert from 'node:assert/strict';
+      import {writeFile} from 'node:fs/promises';
+      const policy = ${JSON.stringify(policy)}, policies = ${JSON.stringify(policies)}, routes = ${JSON.stringify(routes)};
+      const requests = [], unexpected = [];
+      const base = ${JSON.stringify(origin)};
+      globalThis.fetch = async (input, options) => {
+        const url = String(input); requests.push(url);
+        assert.equal(options.redirect, 'manual');
+        assert(options.signal instanceof AbortSignal);
+        let spec;
+        const parsed = new URL(url);
+        if (parsed.pathname === '/robots.txt' || parsed.pathname === '/policy') {
+          assert.deepEqual(Object.keys(options.headers), ['User-Agent'], 'No content or API headers on policy requests');
+          assert.equal(options.headers['User-Agent'], 'HalifaxSourced/0.7 (+https://github.com/JeremyHennessy/HalifaxSourced)');
+          spec = policies[parsed.origin] || (parsed.origin === base ? policy : null);
+          if (spec?.policyRedirect && parsed.pathname === '/robots.txt') spec = {status: 302, location: '/policy'};
+        } else if (Object.hasOwn(routes, url)) {
+          assert.deepEqual(Object.keys(options.headers).sort(), ['Accept', 'User-Agent']);
+          spec = {...routes[url], contentType: routes[url].contentType || 'text/html'};
+        }
+        if (!spec) { unexpected.push(url); throw new Error('NO NETWORK: unexpected fixture URL ' + url); }
+        if (spec.throws) throw spec.throws === 'TimeoutError' ? new DOMException('fixture timeout', 'TimeoutError') : new TypeError('fixture network failure');
+        if (spec.stallsFetch) return new Promise(() => {});
+        if (spec.lateFetch) await new Promise(resolve => setTimeout(resolve, 90));
+        if (spec.oversizedLength) return {status: 200, headers: new Headers({'content-length': '999999'}), text: () => {throw new Error('Oversized body must not be read');}};
+        const response = new Response([204, 302, 304].includes(spec.status) ? null : (spec.body ?? ''), {
+          status: spec.status ?? 200, headers: {...(spec.location ? {location: spec.location} : {}),
+            ...(spec.contentType ? {'content-type': spec.contentType} : {})}
+        });
+        Object.defineProperty(response, 'url', {value: url});
+        if (spec.throwsBody || spec.stallsBody || spec.lateBody) response.text = async () => {
+          if (spec.throwsBody) throw new TypeError('fixture body failure');
+          if (spec.stallsBody) return new Promise(() => {});
+          await new Promise(resolve => setTimeout(resolve, 90)); return spec.body || '<html>Late, not new evidence</html>';
+        };
+        return response;
+      };
+      try { await import('./scripts/discover-first-party-sources.mjs'); }
+      finally {
+        if (${settleMs}) await new Promise(resolve => setTimeout(resolve, ${settleMs}));
+        await writeFile('./requests.json', JSON.stringify(requests));
+        if (unexpected.length) throw new Error('Unexpected fixture URLs: ' + unexpected.join(', '));
+      }
+    `);
+    const result = spawnSync(process.execPath, [join(root, 'runner.mjs')], {cwd: root, encoding: 'utf8', timeout: 5000,
+      env: {...offlineEnv, FIRST_PARTY_SOURCE_DELAY_MS: '0', FIRST_PARTY_SOURCE_TIMEOUT_MS: '35',
+        FIRST_PARTY_SOURCE_CONCURRENCY: '1', FIRST_PARTY_SOURCE_LIMIT: '9999', FIRST_PARTY_SOURCE_IDS: '',
+        FIRST_PARTY_OWNED_PAGE_LIMIT: '3', FIRST_PARTY_LINK_HUB_LIMIT: '2', ...env}});
+    assert.equal(result.status, expectedExit, label + '\n' + result.stderr + '\n' + (result.error || ''));
+    assert.deepEqual(JSON.parse(await readFile(join(root, 'requests.json'), 'utf8')), expectedRequests, label + ': requests');
+    async function readPair() {
+      const json = JSON.parse(await readFile(join(root, 'data/build/first-party-sources.json'), 'utf8'));
+      const js = await readFile(join(root, 'data/first-party-sources.js'), 'utf8');
+      const assignment = js.match(/^window\.HALIFAX_FIRST_PARTY_SOURCES = ([\s\S]*);\s*$/);
+      assert(assignment, label + ': JS assignment');
+      assert.deepEqual(JSON.parse(assignment[1]), json, label + ': JSON/JS parity');
+      return json;
+    }
+    const output = await readPair();
+    if (expectedExit) {
+      assert.equal(await readFile(join(root, 'data/build/first-party-sources.json'), 'utf8'), before, label + ': failed startup leaves bytes');
+      assert.equal(await readFile(join(root, 'data/first-party-sources.js'), 'utf8'), beforeJs);
+      return {output, stderr: result.stderr};
+    }
+    assert.equal(output.refreshedRecords, refreshed.length, label);
+    assert.deepEqual(output.failures.map(row => row.reason), failures, label + ': classified failures');
+    assert.equal(output.failedWebsites, failures.length, label);
+    for (const old of previous.filter(row => !refreshed.includes(row.restaurantId))) {
+      const retained = output.records.find(row => row.restaurantId === old.restaurantId);
+      assert.equal(JSON.stringify(retained), JSON.stringify(old), label + ': exact failed/unattempted prior record');
+    }
+    for (const id of refreshed) {
+      const record = output.records.find(row => row.restaurantId === id);
+      assert(record, label + ': fresh record');
+      assert.equal(record.reviewState, 'verified');
+      assert.equal(record.rightsState, 'public_reference_not_media_licence');
+      assert.equal(record.observedAt, record.lastVerifiedAt);
+      assert(record.observedAt > oldAt, label + ': actual observation, not previous clock');
+      const content = record.scannedOwnedPages.map(url => `${url}|${routes[url].body}`).join('\n');
+      assert.equal(record.contentHash, createHash('sha256').update(content).digest('hex'), label + ': actual successful-page hash');
+    }
+    let merged;
+    if (pipeline) {
+      for (const script of ['merge-first-party-history.mjs', 'sanitize-first-party-sources.mjs']) {
+        const run = spawnSync(process.execPath, [join(root, 'scripts', script)], {cwd: root, encoding: 'utf8', timeout: 5000,
+          env: {...offlineEnv, FIRST_PARTY_PREVIOUS_PATH: join(root, 'previous.json'),
+            FIRST_PARTY_CARRY_FORWARD_MAX_DAYS: '180', FIRST_PARTY_PRESERVE_UNREFRESHED_RECORDS: '0',
+            FIRST_PARTY_PRESERVE_SANITIZATION_AUDIT: '0'}});
+        assert.equal(run.status, 0, label + ': ' + script + '\n' + run.stderr);
+        merged = await readPair();
+      }
+      for (const old of previous.filter(row => !refreshed.includes(row.restaurantId))) {
+        assert.equal(JSON.stringify(merged.records.find(row => row.restaurantId === old.restaurantId)), JSON.stringify(old),
+          label + ': actual merge/sanitize preserves retained record');
+      }
+    }
+    return {output, merged};
+  }
+  for (const test of cases) {
+    const page = new URL(test.path || '/menu', origin).href;
+    const pages = test.repeat ? [page, page + '-second'] : [page];
+    const venues = pages.map((url, index) => venue(index, url));
+    const expectedRequests = Array(test.robotsRequests || 1).fill(robotsUrl);
+    if (test.policyRedirect) expectedRequests.push(origin + '/policy');
+    if (test.allowed || test.requestedPage) expectedRequests.push(...pages);
+    await run({name: test.name, policy: test, venues, expectedRequests,
+      routes: Object.fromEntries(pages.map(url => [url, test.pageRedirect ? {status: 302, location: test.pageRedirect} : {body: '<html>Fixture</html>'}])),
+      refreshed: test.allowed ? venues.map(row => row.id) : [],
+      failures: test.allowed ? [] : venues.map(() => test.error || 'robots_disallow')});
+  }
+  const legacyBody = 'User-agent: NotHalifaxSourced\nSitemap: https://fixture.example/sitemap.xml\nUser-agent: Other\nDisallow: /menu\nUser-agent: *\nDisallow: /else';
+  await run({name: 'discovery-specific Sitemap group denial', policy: {body: legacyBody}, expectedRequests: [robotsUrl], failures: ['robots_disallow'], pipeline: true});
+  const maps = Array.from({length: 14}, (_, index) => `${origin}/map-${index}.xml`);
+  const policy = {body: ['Sitemap: https://other.example/map.xml', ...maps.map(url => 'Sitemap: ' + url), 'Sitemap: ' + maps[0]].join('\n')};
+  const home = origin + '/menu';
+  const homeHtml = '<html><a href="/about">About</a><a href="https://instagram.com/fixture">Instagram</a><link rel="alternate" type="application/rss+xml" href="/feed.xml"></html>';
+  const metadata = await run({name: 'one robots cache for permission and bounded deduplicated sitemaps', policy,
+    routes: {[home]: {body: homeHtml}, [origin + '/about']: {body: '<html>About</html>'}}, expectedRequests: [robotsUrl, home, origin + '/about'], refreshed: ['fixture-0']});
+  assert.deepEqual(metadata.output.records[0].sitemaps, maps.slice(0, 12));
+  assert.equal(metadata.output.records[0].socialProfiles[0].url, 'https://instagram.com/fixture');
+  assert.equal(metadata.output.records[0].feeds[0].url, origin + '/feed.xml');
+  // Sitemap/feed/profile links are stored references, never fetched here.
+  for (const kind of ['throws', 'throwsBody', 'stallsFetch', 'stallsBody', 'lateBody', 'lateFetch', 'http', 'mime']) {
+    const route = kind === 'http' ? {status: 503} : kind === 'mime' ? {contentType: 'application/json'} : {[kind]: kind === 'throws' ? 'TypeError' : true};
+    const tail = origin + '/healthy';
+    const result = await run({name: `HTML ${kind} failure releases same-host queue`, venues: [venue(), venue(1, tail)],
+      routes: {[home]: route, [tail]: {body: '<html>Tail</html>'}}, expectedRequests: [robotsUrl, home, tail], refreshed: ['fixture-1'],
+      failures: [kind === 'http' ? 'http_503' : kind === 'mime' ? 'not_html' : kind === 'throws' ? 'fixture network failure' : kind === 'throwsBody' ? 'fixture body failure' : 'timeout'],
+      settleMs: kind.startsWith('late') ? 110 : 0, pipeline: true});
+    assert.equal(result.output.records.find(row => row.restaurantId === 'fixture-0').contentHash, oldHash);
+  }
+  await run({name: 'late content redirect cannot revive expired request', routes: {[home]: {lateFetch: true, status: 302, location: '/forbidden-late'}},
+    expectedRequests: [robotsUrl, home], failures: ['timeout'], settleMs: 110});
+  for (const [name, location, body, failure] of [
+    ['query', '/about?private=1', 'User-agent: *\nDisallow: /about?private=1', 'robots_disallow'],
+    ['wildcard', '/about/private/a', 'User-agent: *\nDisallow: /about/private/*', 'robots_disallow'],
+    ['cross-host', 'https://other.example/about', '', 'quarantined_cross_entity_redirect'],
+    ['quarantine', 'https://glitterbeancafe.com./about', '', 'quarantined_cross_entity_redirect'],
+    ['missing', null, '', 'redirect_without_location'],
+    ['loop', '/menu', '', 'redirect_limit']
+  ]) {
+    await run({name: `HTML redirect ${name}`, policy: {body}, routes: {[home]: {status: 302, ...(location ? {location} : {})}},
+      expectedRequests: [robotsUrl, ...Array(name === 'loop' ? 4 : 1).fill(home)], failures: [failure]});
+  }
+  const finalHome = origin + '/landing/';
+  const finalAbout = finalHome + 'about';
+  const redirected = await run({name: 'allowed same-host redirects retain final URLs and relative-link bases',
+    routes: {[home]: {status: 302, location: '/landing/'}, [finalHome]: {body: '<html><a href="about">About</a></html>'},
+      [finalAbout]: {body: '<a href="https://instagram.com/finalfixture">Instagram</a>'}},
+    expectedRequests: [robotsUrl, home, finalHome, finalAbout], refreshed: ['fixture-0']});
+  assert.equal(redirected.output.records[0].resolvedUrl, finalHome);
+  assert.equal(redirected.output.records[0].socialProfiles[0].discoveredFrom, finalAbout);
+  await run({name: 'owned page retains discovery-specific Sitemap group denial',
+    policy: {body: legacyBody.replace('Disallow: /menu', 'Disallow: /about')},
+    routes: {[home]: {body: '<html><a href="/about">About</a></html>'}},
+    expectedRequests: [robotsUrl, home], refreshed: ['fixture-0']});
+  await run({name: 'owned-page redirect checks query policy before transport',
+    policy: {body: 'User-agent: *\nDisallow: /about?private=1'},
+    routes: {[home]: {body: '<html><a href="/about">About</a></html>'}, [origin + '/about']: {status: 302, location: '/about?private=1'}},
+    expectedRequests: [robotsUrl, home, origin + '/about'], refreshed: ['fixture-0']});
+  for (const policy of [{status: 503}, {stallsBody: true}]) {
+    await run({name: `unavailable hub policy is cached across linked hubs: ${JSON.stringify(policy)}`,
+      policies: {'https://linktr.ee': policy}, routes: {[home]: {body: '<html><a href="https://linktr.ee/one">Links</a><a href="https://linktr.ee/two">Links</a></html>'}},
+      expectedRequests: [robotsUrl, home, 'https://linktr.ee/robots.txt'], refreshed: ['fixture-0'],
+      failures: ['link_hub_robots_disallow', 'link_hub_robots_disallow']});
+  }
+  await run({name: 'linked hub redirect obeys destination policy and never fetches social HTML',
+    policies: {'https://linktr.ee': {body: 'User-agent: *\nDisallow: /blocked'}},
+    routes: {[home]: {body: '<html><a href="https://linktr.ee/fixture">Links</a></html>'},
+      'https://linktr.ee/fixture': {status: 302, location: '/blocked'}},
+    expectedRequests: [robotsUrl, home, 'https://linktr.ee/robots.txt', 'https://linktr.ee/fixture'],
+    refreshed: ['fixture-0'], failures: ['link_hub_robots_disallow']});
+  const old = priorRecord(venue());
+  old.socialProfiles = [{platform: 'instagram', platformKind: 'social', handle: 'oldfixture', url: 'https://instagram.com/oldfixture',
+    profileUrl: 'https://instagram.com/oldfixture', label: 'Instagram', locationSpecific: false, sharedBrandProfile: false,
+    discoveredFrom: origin + '/about', associationBasis: 'linked_from_official_website', observedAt: oldAt, lastVerifiedAt: oldAt,
+    reviewState: 'verified_link', confidence: 'authoritative', status: 'active'}];
+  old.relatedLinks = [{kind: 'menu', url: origin + '/old-menu.pdf', label: 'Menu', discoveredFrom: origin + '/about',
+    associationBasis: 'linked_from_official_website', observedAt: oldAt, lastVerifiedAt: oldAt,
+    reviewState: 'verified_link', confidence: 'authoritative', status: 'active', rightsState: 'public_reference_not_media_licence'}];
+  old.feeds = [{url: origin + '/old-feed.xml', type: 'application/rss+xml', title: 'Old feed', discoveredFrom: origin + '/about',
+    observedAt: oldAt, lastVerifiedAt: oldAt, reviewState: 'verified_link', rightsState: 'public_reference_not_media_licence'}];
+  for (const variant of ['denied', 'HTTP failure', 'zero targets']) {
+    await run({name: `actual history pipeline: ${variant}`, previous: [old], pipeline: true,
+      policy: {status: variant === 'denied' ? 503 : 200}, routes: {[home]: {status: 503}},
+      expectedRequests: variant === 'zero targets' ? [] : [robotsUrl, ...(variant === 'HTTP failure' ? [home] : [])],
+      failures: variant === 'zero targets' ? [] : [variant === 'denied' ? 'robots_disallow' : 'http_503'],
+      env: variant === 'zero targets' ? {FIRST_PARTY_SOURCE_LIMIT: '0'} : {}});
+  }
+  // Preserve genuinely old historical evidence too; do not silently turn this
+  // transport migration into the separately required association-expiry repair.
+  const historical = JSON.parse(JSON.stringify(old).replaceAll(oldAt, '2020-01-02T03:04:05.000Z'));
+  await run({name: 'old history remains byte-exact through denial and actual merge/sanitize', previous: [historical],
+    pipeline: true, policy: {status: 403}, expectedRequests: [robotsUrl], failures: ['robots_disallow']});
+  const hub = 'https://linktr.ee/fixture';
+  for (const variant of ['owned denied', 'owned body stalled', 'hub denied', 'hub body stalled']) {
+    const isHub = variant.startsWith('hub');
+    const html = `<html><a href="${isHub ? hub : '/about'}">${isHub ? 'Links' : 'About'}</a></html>`;
+    const partial = await run({name: `partial ${variant} retains genuine old link clocks through merge`, previous: [old], pipeline: true,
+      policy: {body: variant === 'owned denied' ? 'User-agent: *\nDisallow: /about' : ''},
+      policies: isHub ? {'https://linktr.ee': {body: variant === 'hub denied' ? 'User-agent: *\nDisallow: /fixture' : ''}} : {},
+      routes: {[home]: {body: html}, [isHub ? hub : origin + '/about']: {stallsBody: true}},
+      expectedRequests: [robotsUrl, home, ...(isHub ? ['https://linktr.ee/robots.txt'] : []), ...(variant.endsWith('stalled') ? [isHub ? hub : origin + '/about'] : [])],
+      refreshed: ['fixture-0'], failures: isHub ? [variant === 'hub denied' ? 'link_hub_robots_disallow' : 'link_hub_timeout'] : []});
+    for (const kind of ['socialProfiles', 'relatedLinks', 'feeds']) {
+      const retained = partial.merged.records[0][kind][0];
+      assert.equal(retained.observedAt, oldAt, variant + ': old link observation survives actual merge');
+      assert.equal(retained.lastVerifiedAt, oldAt);
+      assert.equal(retained.reviewState, old[kind][0].reviewState);
+      assert.equal(retained.rightsState, old[kind][0].rightsState);
+      assert.equal(retained.refreshState, 'carried_forward_previous_verification');
+    }
+  }
+  const boundedHtml = '<html>' + Array.from({length: 8}, (_, index) => `<a href="/about-${index}">About</a>`).join('')
+    + Array.from({length: 6}, (_, index) => `<a href="https://linktr.ee/fixture-${index}">Links</a>`).join('') + '</html>';
+  const bounded = await run({name: 'existing upper owned-page and linked-hub bounds, no social destination fetch',
+    env: {FIRST_PARTY_OWNED_PAGE_LIMIT: '99', FIRST_PARTY_LINK_HUB_LIMIT: '99', FIRST_PARTY_SOURCE_CONCURRENCY: '99'},
+    policies: {'https://linktr.ee': {body: ''}}, routes: {[home]: {body: boundedHtml},
+      ...Object.fromEntries(Array.from({length: 4}, (_, index) => [origin + `/about-${index}`, {body: '<html>About</html>'}])),
+      ...Object.fromEntries(Array.from({length: 4}, (_, index) => [`https://linktr.ee/fixture-${index}`, {body: `<a href="https://instagram.com/fixture-${index}">Instagram</a>`}]))},
+    expectedRequests: [robotsUrl, home, ...Array.from({length: 4}, (_, index) => origin + `/about-${index}`), 'https://linktr.ee/robots.txt',
+      ...Array.from({length: 4}, (_, index) => `https://linktr.ee/fixture-${index}`)], refreshed: ['fixture-0']});
+  assert.equal(bounded.output.ownedPageLimit, 5); assert.equal(bounded.output.linkHubLimit, 4); assert.equal(bounded.output.concurrency, 16);
+  assert.equal(bounded.output.records[0].socialProfiles.length, 4); assert.equal(bounded.output.records[0].linkHubs.length, 6);
+  const minimum = await run({name: 'owned/hub lower bounds do not admit extra pages',
+    env: {FIRST_PARTY_OWNED_PAGE_LIMIT: '0', FIRST_PARTY_LINK_HUB_LIMIT: '0', FIRST_PARTY_SOURCE_CONCURRENCY: '0'},
+    routes: {[home]: {body: boundedHtml}}, expectedRequests: [robotsUrl, home], refreshed: ['fixture-0']});
+  assert.equal(minimum.output.ownedPageLimit, 1); assert.equal(minimum.output.linkHubLimit, 0); assert.equal(minimum.output.concurrency, 1);
+  const discoveredVenue = venue(1, origin + '/discovered');
+  const combined = await run({name: 'reviewed discovered targets append while canonical duplicate ID wins',
+    discovered: [venue(0, 'https://never.example/duplicate'), discoveredVenue],
+    routes: {[home]: {body: '<html>Canonical</html>'}, [discoveredVenue.website]: {body: '<html>Discovered</html>'}},
+    expectedRequests: [robotsUrl, home, discoveredVenue.website], refreshed: ['fixture-0', 'fixture-1']});
+  assert.equal(combined.output.records.length, 2);
+  for (const env of [{FIRST_PARTY_SOURCE_LIMIT: '1'}, {FIRST_PARTY_SOURCE_IDS: 'fixture-0'}]) {
+    const selected = await run({name: 'selected/limited target retains other prior records', venues: [venue(), venue(1, origin + '/unattempted')],
+      env, routes: {[home]: {body: '<html>Selected</html>'}}, expectedRequests: [robotsUrl, home], refreshed: ['fixture-0'], pipeline: true});
+    assert.equal(selected.output.checkedWebsites, 1);
+  }
+  await run({name: 'quarantined initial website never requests policy or content', venues: [venue(0, 'https://glitterbeancafe.com./')],
+    previous: [], failures: ['quarantined_source']});
+  await run({name: 'invalid initial website never requests policy or content', venues: [venue(0, 'not a url')],
+    previous: [], failures: ['invalid_url']});
+  const missing = await run({name: 'unknown selected ID stops before transport or writes', env: {FIRST_PARTY_SOURCE_IDS: 'missing'}, expectedExit: 1});
+  assert.match(missing.stderr, /Unknown FIRST_PARTY_SOURCE_IDS: missing/);
+  const empty = await run({name: 'successful empty discovery is not a failure', routes: {[home]: {body: '<html>No relationships</html>'}},
+    expectedRequests: [robotsUrl, home], refreshed: ['fixture-0'], previous: [old]});
+  assert.deepEqual(empty.output.records[0].socialProfiles, []);
   return count;
 }
