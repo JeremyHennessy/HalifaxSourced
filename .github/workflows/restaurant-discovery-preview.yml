@@ -8,27 +8,56 @@ on:
     branches:
       - main
     paths:
-      - .github/workflows/restaurant-discovery-preview.yml
-      - scripts/import-directory-restaurants.mjs
-      - scripts/lib/taste-ns-member-api.mjs
-      - scripts/test-taste-ns-member-api.mjs
-      - scripts/import-review-directory-restaurants.mjs
-      - scripts/review-directory-sources.mjs
-      - scripts/refine-dartmouth-directory.mjs
-      - scripts/test-dartmouth-directory-names.mjs
-      - scripts/import-opening-watch.mjs
-      - scripts/resolve-place-candidates.mjs
-      - scripts/build-discovered-restaurants.mjs
-      - scripts/check-place-source-resolution.mjs
-      - scripts/check-restaurant-discovery.mjs
-      - data/place-source-registry.json
-      - data/discovery-overrides.json
+      - .github/workflows/**
+      - scripts/**
+      - data/**
+      - app-media.js
+      - source-integrity.js
+      - restaurant-corrections.js
+      - app-restaurant-identity.js
+      - app-inspection-matching.js
 
 permissions:
   contents: read
 
 jobs:
+  validate-pr:
+    if: ${{ github.event_name == 'pull_request' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout exact PR head
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Validate restaurant discovery without collection
+        env:
+          NODE_OPTIONS: --import ${{ github.workspace }}/scripts/lib/deny-source-network.mjs
+        run: |
+          node --check scripts/import-directory-restaurants.mjs
+          node --check scripts/import-review-directory-restaurants.mjs
+          node --check scripts/review-directory-sources.mjs
+          node --check scripts/refine-dartmouth-directory.mjs
+          node --check scripts/import-opening-watch.mjs
+          node --check scripts/lib/taste-ns-member-api.mjs
+          node --check scripts/export-catalog.mjs
+          node --check scripts/resolve-place-candidates.mjs
+          node --check scripts/build-discovered-restaurants.mjs
+          node --check scripts/check-place-source-resolution.mjs
+          node --check scripts/check-restaurant-discovery.mjs
+          node scripts/test-dartmouth-directory-names.mjs
+          node scripts/test-taste-ns-member-api.mjs
+          node scripts/test-restaurant-discovery-offline.mjs
+          node scripts/test-scheduled-source-guards.mjs
+
   discover:
+    if: ${{ github.event_name != 'pull_request' }}
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:

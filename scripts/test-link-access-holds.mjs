@@ -1251,22 +1251,62 @@ process.on('exit', () => {
       return {workflow, pullRequest:paths !== null, matched:paths ? changedScope.filter(path => paths.some(pattern => matchesPath(pattern,path))) : []};
     });
   }
+  function validateRestaurantOfflineBoundary(source) {
+    // Frozen complete offline envelope: broad fixture paths may now intersect
+    // the historical access-hold scope, but must never restore its legacy PR
+    // collector. Pin every key/step as well as the unchanged producer bytes.
+    assert.equal(textDigest(source), '7f884c1787f2b2e6f6c3f6d88bbb56f4abafaa976994022679b34c453f3083ff',
+      'Restaurant must retain its exact offline PR envelope and unchanged scheduled/manual producer');
+    assert.equal(source.split('jobs:\n').length, 2);
+    const jobs = source.split('jobs:\n')[1];
+    assert(jobs.startsWith("  validate-pr:\n    if: ${{ github.event_name == 'pull_request' }}\n"));
+    assert.equal(jobs.split('  discover:\n').length, 2);
+    const [validator, producer] = jobs.split('  discover:\n');
+    assert(validator.includes('ref: ${{ github.event.pull_request.head.sha }}'));
+    assert(validator.includes('NODE_OPTIONS: --import ${{ github.workspace }}/scripts/lib/deny-source-network.mjs'));
+    assert(validator.includes('node scripts/test-restaurant-discovery-offline.mjs'));
+    assert(!validator.includes('upload-artifact'));
+    assert(producer.startsWith("    if: ${{ github.event_name != 'pull_request' }}\n"));
+  }
   function validateChangedScope(sources) {
     const matrix = changedScopeMatrix(sources);
     assert.deepEqual(matrix.filter(row => row.matched.length).map(row => row.workflow), [
-      'city-events-preview.yml', 'content-quality-audit.yml', 'quality-gate.yml',
+      'city-events-preview.yml', 'content-quality-audit.yml', 'quality-gate.yml', 'restaurant-discovery-preview.yml',
       'social-source-preview.yml', 'source-expansion-preview.yml', 'structured-place-facts-preview.yml', 'structured-specials-preview.yml'
-    ], 'Changed-scope PR activation matrix changed; never activate Restaurant legacy PR paths');
-    assert.equal(matrix.find(row => row.workflow === 'restaurant-discovery-preview.yml').matched.length, 0);
+    ], 'Historical changed-scope matrix must select only the eight protected validations');
+    assert(matrix.find(row => row.workflow === 'restaurant-discovery-preview.yml').matched.length > 0);
+    validateRestaurantOfflineBoundary(sources['restaurant-discovery-preview.yml']);
     return matrix;
   }
   const scopeMatrix = validateChangedScope(workflows);
   for (const path of ['scripts/check-source-links.mjs','data/**']) {
     const altered = {...workflows, 'restaurant-discovery-preview.yml':workflows['restaurant-discovery-preview.yml'].replace('    paths:\n','    paths:\n      - ' + path + '\n')};
-    assert.throws(() => validateChangedScope(altered), undefined, 'Reject Restaurant legacy PR activation: ' + path);
+    assert.throws(() => validateChangedScope(altered), undefined, 'Reject changes to Restaurant protected PR filters: ' + path);
+  }
+  const restaurantBoundaryMutations = [
+    ['PR condition removed', s => s.replace("    if: ${{ github.event_name == 'pull_request' }}\n", '')],
+    ['PR condition broadened', s => s.replace("github.event_name == 'pull_request'", 'always()')],
+    ['producer exclusion removed', s => s.replace("    if: ${{ github.event_name != 'pull_request' }}\n", '')],
+    ['producer exclusion reversed', s => s.replace("github.event_name != 'pull_request'", "github.event_name == 'pull_request'")],
+    ['wrong head', s => s.replace('ref: ${{ github.event.pull_request.head.sha }}', 'ref: main')],
+    ['network denial removed', s => s.replace('          NODE_OPTIONS: --import ${{ github.workspace }}/scripts/lib/deny-source-network.mjs\n', '')],
+    ['network denial bypassed', s => s.replace('node scripts/test-restaurant-discovery-offline.mjs', 'env -u NODE_OPTIONS node scripts/test-restaurant-discovery-offline.mjs')],
+    ['collector replaces fixture', s => s.replace('node scripts/test-restaurant-discovery-offline.mjs', 'node scripts/import-directory-restaurants.mjs')],
+    ['collector appended', s => s.replace('node scripts/test-restaurant-discovery-offline.mjs', 'node scripts/test-restaurant-discovery-offline.mjs; node scripts/import-opening-watch.mjs')],
+    ['extra PR upload', s => s.replace('  discover:\n', '      - uses: actions/upload-artifact@v4\n\n  discover:\n')],
+    ['duplicate PR job', s => s.replace('  discover:\n', '  validate-pr:\n    runs-on: ubuntu-latest\n    steps:\n      - run: node scripts/import-opening-watch.mjs\n\n  discover:\n')],
+    ['new live job', s => s + '  unexpected-live-job:\n    runs-on: ubuntu-latest\n    steps:\n      - run: node scripts/import-opening-watch.mjs\n'],
+    ['new push trigger', s => s.replace('  workflow_dispatch:\n', '  workflow_dispatch:\n  push:\n')],
+    ['write permissions', s => s.replace('  contents: read', '  contents: write')]
+  ];
+  for (const [label, mutate] of restaurantBoundaryMutations) {
+    const changed = mutate(workflows['restaurant-discovery-preview.yml']);
+    assert.notEqual(changed, workflows['restaurant-discovery-preview.yml'], 'Mutation must exercise its target: ' + label);
+    assert.throws(() => validateChangedScope({...workflows, 'restaurant-discovery-preview.yml':changed}), undefined,
+      'Reject Restaurant collector activation or unsafe PR envelope: ' + label);
   }
   console.log('Changed-scope PR matrix: ' + scopeMatrix.map(row => row.workflow + '=' + (row.matched.length ? 'triggered' : row.pullRequest ? 'not-matched' : 'no-PR-trigger')).join(', '));
-  checked('all 13 workflow PR filters reviewed; seven expected validations selected and Restaurant legacy paths remain inactive');
+  checked('all 13 workflow PR filters reviewed; eight protected validations selected; Restaurant PR collector remains excluded and ' + (restaurantBoundaryMutations.length + 2) + ' boundary mutations rejected');
 
   // This standalone fixture owns its own temporary tree. Execute its real
   // sibling entrypoint with an explicit transport denial, not sandbox copies.
