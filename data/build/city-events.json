@@ -1365,18 +1365,6 @@
       "organizerName": "Halifax Public Libraries",
       "sourceEvidence": [
         {
-          "sourceId": "bedford-library-events",
-          "sourceName": "Bedford Public Library",
-          "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
-          "basis": "official_primary",
-          "observedAt": "2026-10-22T22:21:55.514Z",
-          "httpStatus": 200,
-          "observedFacts": [
-            "Cookies & Computers is listed for October 23, 2026 from 3:30–4:30 pm at Bedford Public Library.",
-            "The official location page links the occurrence to BiblioCommons event 6abab4a3ebad220045418778."
-          ]
-        },
-        {
           "sourceId": "bedford-library-reviewed-20261022",
           "sourceName": "Bedford Public Library reviewed occurrence",
           "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
@@ -5563,7 +5551,7 @@
     ]
   },
   "manualAdditions": {
-    "appliedAt": "2026-10-22T22:22:50.366Z",
+    "appliedAt": "2026-10-22T22:33:01.325Z",
     "source": "data/build/city-event-additions.json",
     "eventCount": 10,
     "addedIds": [],
