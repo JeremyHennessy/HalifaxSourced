@@ -25,12 +25,85 @@ on:
       - scripts/build-thumbnail-coverage-report.mjs
       - scripts/check-thumbnail-candidates.mjs
       - scripts/check-expanded-sources.mjs
+      - scripts/report-social-collection-health.mjs
+      - scripts/test-social-platform-registry.mjs
+      - scripts/test-social-fact-candidates.mjs
+      - scripts/test-source-run-health.mjs
+      - scripts/test-public-source-fetch.mjs
+      - scripts/test-media-reference-contract.mjs
+      - scripts/test-preview-coordinator.mjs
+      - scripts/test-scheduled-source-guards.mjs
+      - .github/workflows/source-expansion-preview.yml
+      - .github/workflows/structured-place-facts-preview.yml
+      - .github/workflows/structured-specials-preview.yml
+      - .github/workflows/quality-gate.yml
+      - .github/workflows/promote-preview-artifacts.yml
+      - .github/workflows/promote-source-expansion-artifact.yml
+      - scripts/lib/deny-source-network.mjs
+      - scripts/lib/fetch-public-source.mjs
+      - scripts/lib/source-run-health.mjs
+      - scripts/lib/media-rights-contract.mjs
+      - scripts/lib/lifecycle-language.mjs
+      - scripts/lib/reviewed-corrections.mjs
+      - scripts/lib/preview-coordinator.mjs
+      - scripts/build-reviewed-social-posts.mjs
+      - scripts/check-source-links.mjs
+      - scripts/coordinate-preview-updates.mjs
+      - scripts/fixtures/media-preservation.json
+      - source-integrity.js
+      - restaurant-corrections.js
+      - app-media.js
+      - app-source-signals.js
+      - data/restaurant-media.js
+      - data/restaurant-media-references.js
+      - data/thumbnail-candidates.js
+      - data/audit/media-rights-reclassification.json
 
 permissions:
   contents: read
 
 jobs:
+  validate-pr:
+    if: ${{ github.event_name == 'pull_request' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout exact PR head
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Validate social policy and fixtures without collection
+        env:
+          NODE_OPTIONS: --import ${{ github.workspace }}/scripts/lib/deny-source-network.mjs
+        run: |
+          node --check scripts/discover-first-party-sources.mjs
+          node --check scripts/merge-first-party-history.mjs
+          node --check scripts/sanitize-first-party-sources.mjs
+          node --check scripts/import-first-party-feed-signals.mjs
+          node --check scripts/import-meta-social.mjs
+          node --check scripts/report-social-collection-health.mjs
+          node --check scripts/build-recent-social-posts.mjs
+          node --check scripts/build-thumbnail-candidates.mjs
+          node --check scripts/approve-eligible-thumbnails.mjs
+          node --check scripts/check-expanded-sources.mjs
+          node --check scripts/check-thumbnail-candidates.mjs
+          node --check scripts/build-thumbnail-coverage-report.mjs
+          node scripts/test-social-platform-registry.mjs
+          node scripts/test-social-fact-candidates.mjs
+          node scripts/test-source-run-health.mjs
+          node scripts/test-public-source-fetch.mjs
+          node scripts/test-media-reference-contract.mjs
+          node scripts/test-preview-coordinator.mjs
+          node scripts/test-scheduled-source-guards.mjs
+
   social-refresh:
+    if: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
