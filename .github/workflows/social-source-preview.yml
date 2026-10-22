@@ -50,6 +50,10 @@ on:
       - scripts/test-media-reference-contract.mjs
       - scripts/test-preview-coordinator.mjs
       - scripts/test-scheduled-source-guards.mjs
+      - scripts/lib/link-access-policy.mjs
+      - scripts/lib/source-access-state.mjs
+      - scripts/lib/link-health-urls.mjs
+      - scripts/lib/link-health-report.mjs
       - .github/workflows/source-expansion-preview.yml
       - .github/workflows/structured-place-facts-preview.yml
       - .github/workflows/structured-specials-preview.yml

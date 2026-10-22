@@ -2,6 +2,7 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { classifyLifecycleLanguage } from './lib/lifecycle-language.mjs';
 import { applyReviewedCorrections } from './lib/reviewed-corrections.mjs';
 import integrity from '../source-integrity.js';
+import { currentLifecycleCandidates } from './lib/link-health-report.mjs';
 
 const json = async path => JSON.parse(await readFile(new URL('../' + path, import.meta.url), 'utf8'));
 const catalog = await json('data/build/catalog.json');
@@ -34,8 +35,8 @@ let liveSourceAudit = { state: 'not_available', candidates: 0 };
 try {
   const links = await json('data/build/source-link-health-report.json');
   const current = Boolean(expectedSha && links.sourceCommitSha === expectedSha && links.complete && integrity.publicationState(links.generatedAt, Date.now(), 1).isRecent);
-  liveSourceAudit = { state: current ? 'same_head_complete' : 'not_current_complete', sourceCommitSha: links.sourceCommitSha || null, observedAt: links.generatedAt || null, candidates: 0 };
-  for (const item of current ? links.lifecycleCandidates || [] : []) for (const id of item.restaurantIds || []) {
+  liveSourceAudit = { state: current ? 'same_head_complete' : 'not_current_complete', sourceCommitSha: links.sourceCommitSha || null, assessedAt: links.generatedAt || null, candidates: 0 };
+  for (const item of current ? currentLifecycleCandidates(links, Date.now(), catalog) : []) for (const id of item.restaurantIds || []) {
     const restaurant = restaurants.find(record => record.id === id);
     if (restaurant) { liveSourceAudit.candidates++; candidates.push({ ...item, restaurantId: id, name: restaurant.name, sourceLayer: 'release_official_page_fetch', reviewState: inactive.has(restaurant.operatingStatus) ? 'reviewed_inactive' : 'candidate_requires_location_review' }); }
   }

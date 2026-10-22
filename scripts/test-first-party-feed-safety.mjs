@@ -3,9 +3,27 @@ import { copyFile, mkdir, mkdtemp, readFile, rm, writeFile } from 'node:fs/promi
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { spawnSync } from 'node:child_process';
+import { createHash } from 'node:crypto';
 import { feedEntryBlocks, validatePreviousFeedSnapshot } from './lib/first-party-feed-safety.mjs';
+// A real denial or unresolved native request is an intentional nonpublishable
+// subprocess result, not a failed fixture. Derive this from the finite plan,
+// then independently require its diagnostic rather than accepting any exit1.
+function assertAccessExit(result, specs, label, boundary = null) {
+  const restrictions = specs.filter(spec => [401,403,429].includes(spec?.status));
+  assert(!specs.some(spec => spec?.delayFetch || spec?.lateFetch), label + ': native delay alone cannot establish a settlement boundary');
+  const unsettled = specs.some(spec => spec?.stallFetch) || boundary?.stage === 'after-suspension';
+  const expected = restrictions.length || unsettled ? 1 : 0;
+  assert.equal(result.error,undefined,label + ': child must finish within its existing bound');
+  assert.equal(result.signal,null,label + ': child must not be killed');
+  assert.equal(result.status,expected,label + '\n' + result.stderr);
+  const diagnostics = result.stderr.split('\n').filter(line => line.startsWith('HALIFAX_SOURCE_ACCESS_DIAGNOSTIC ')).map(line => JSON.parse(line.slice('HALIFAX_SOURCE_ACCESS_DIAGNOSTIC '.length)));
+  for (const spec of restrictions) assert(diagnostics.some(item => ['http_restriction','late_http_restriction'].includes(item.kind) && item.evidence.receipt.status === spec.status),label + ': actual denial diagnostic');
+  if (unsettled) assert(diagnostics.some(item => item.kind === 'unsettled_transport'),label + ': unresolved request diagnostic');
+  assert(diagnostics.every(item => item.disposition === 'nonpublishable_requires_review' && (item.kind === 'unsettled_transport' ? unsettled : restrictions.some(spec => item.evidence.receipt?.status === spec.status))),label + ': no unexpected access diagnostic');
+}
 
-const clock = '2026-10-22T10:00:00.000Z';
+
+const clock = '2026-10-23T10:00:00.000Z';
 const feed = 'https://fixture.example/feed?kind=rss';
 const tail = 'https://fixture.example/tail';
 const robot = 'https://fixture.example/robots.txt';
@@ -19,38 +37,72 @@ const snapshot = posts => ({version:3,generatedAt:'2026-10-03T00:00:00.000Z',pos
 const js = payload => `window.HALIFAX_WEBSITE_FEED_SIGNALS = ${JSON.stringify(payload)};\n`;
 const routes = () => ({[robot]:policy,[feed]:{body:rss(entry()),type:'application/rss+xml'}});
 const root = await mkdtemp(join(tmpdir(),'halifax-feed-safety-'));
-let passed=0;
+let passed=0, activeCase=null, fixtureFailed=false;
 try {
   await mkdir(join(root,'scripts/lib'),{recursive:true}); await mkdir(join(root,'data/build'),{recursive:true});
-  for(const file of ['scripts/import-first-party-feed-signals.mjs','scripts/lib/first-party-feed-safety.mjs','scripts/lib/lifecycle-language.mjs','scripts/lib/robots-policy.mjs','scripts/lib/fetch-public-source.mjs','scripts/lib/deny-source-network.mjs','source-integrity.js']) await copyFile(new URL('../'+file,import.meta.url),join(root,file));
+  for(const file of ['scripts/import-first-party-feed-signals.mjs','scripts/lib/first-party-feed-safety.mjs','scripts/lib/lifecycle-language.mjs','scripts/lib/robots-policy.mjs','scripts/lib/fetch-public-source.mjs', 'scripts/lib/source-access-state.mjs', 'scripts/lib/link-access-policy.mjs', 'data/source-link-access-holds.json','scripts/lib/deny-source-network.mjs','source-integrity.js']) await copyFile(new URL('../'+file,import.meta.url),join(root,file));
   await writeFile(join(root,'runner.mjs'),`
 import assert from 'node:assert/strict';
-import {readFile,writeFile} from 'node:fs/promises';
+import fsPromises, {readFile,writeFile} from 'node:fs/promises';
+import {appendFileSync} from 'node:fs';
+import {syncBuiltinESMExports} from 'node:module';
+import {sourceAccessState} from './scripts/lib/source-access-state.mjs';
 const config=JSON.parse(await readFile(new URL('./config.json',import.meta.url)));
 const RealDate=Date; globalThis.Date=class extends RealDate { constructor(...args){super(...(args.length?args:[config.clock]));} static now(){return RealDate.parse(config.clock);} };
-const trace=[], unexpected=[], counts=new Map();
-const sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms));
+const trace=[], unexpected=[], counts=new Map(), events=[];
+const note=(event,extra={})=>{const row={sequence:events.length,event,...extra};events.push(row);appendFileSync(new URL('./events.jsonl',import.meta.url),JSON.stringify(row)+'\\n');};
+const boundary=config.boundary;
+let releaseBoundary, markProcessed, state, released=false;
+const releasedPromise=new Promise(resolve=>releaseBoundary=stage=>{if(released)throw Error('Duplicate boundary release');released=true;note('release',{stage});resolve();});
+const processedPromise=new Promise(resolve=>markProcessed=resolve);
+if(boundary){
+ new Headers(); // Initialize fixture machinery before the unchanged 50ms operation deadlines.
+ const NativeController=AbortController;let controllerId=0;
+ globalThis.AbortController=class extends NativeController {
+  constructor(){super();this.fixtureId=++controllerId;note('controller',{id:this.fixtureId});}
+  abort(reason){note('abort',{id:this.fixtureId});super.abort(reason);if(boundary.stage==='outer-abort'&&this.fixtureId===1)queueMicrotask(()=>releaseBoundary('outer-abort'));}
+ };
+ state=sourceAccessState();
+ const suspend=state.suspend,response=state.response,failed=state.failed;
+ state.suspend=request=>{note('suspend-called',{url:request.target,settled:request.settled});const hold=suspend(request);note('suspend-result',{url:request.target,reason:hold?.reason||null});if(request.target===boundary.url&&boundary.stage==='after-suspension')releaseBoundary('after-suspension');return hold;};
+ state.response=(request,value,late)=>{const receipt=response(request,value,late);note('native-settled',{url:request.target,status:value.status,late,pending:state.pendingTransportReviews.length});if(request.target===boundary.url&&boundary.resource!=='body')markProcessed();return receipt;};
+ state.failed=request=>{failed(request);note('native-rejected',{url:request.target,pending:state.pendingTransportReviews.length});if(request.target===boundary.url)markProcessed();};
+ const actualWrite=fsPromises.writeFile;
+ fsPromises.writeFile=async(...args)=>{const result=await actualWrite(...args);if(String(args[0]).endsWith('/data/website-feed-signals.js')){note('snapshot-written');if(boundary.stage==='after-snapshot')releaseBoundary('after-snapshot');}return result;};
+ syncBuiltinESMExports();
+}
 globalThis.fetch=async(input,options={})=>{
  const url=String(input);const item=config.routes[url]; const count=(counts.get(url)||0)+1;counts.set(url,count);
  trace.push({url,headers:Object.fromEntries(new Headers(options.headers)),redirect:options.redirect,aborted:options.signal?.aborted,signal:options.signal instanceof AbortSignal});
+ note('fetch',trace.at(-1));
  if(!item || count>(item.max||1) || trace.length>300){unexpected.push(url);throw new Error('Unexpected fixture URL: '+url);}
  if(item.throw)throw new TypeError('synthetic network failure');
- if(item.delayFetch)await sleep(item.delayFetch);
+ const selected=boundary?.url===url;
+ if(selected){
+  options.signal.addEventListener('abort',()=>{note('request-abort',{url});if(boundary.stage==='abort-cleanup')queueMicrotask(()=>releaseBoundary('abort-cleanup'));},{once:true});
+  if(boundary.resource!=='body')await releasedPromise;
+  if(boundary.outcome==='reject'){note('fetch-reject',{url});throw new TypeError('synthetic native rejection at selected boundary');}
+ }
  if(item.stallFetch)return new Promise(()=>{});
  const response=new Response([204,304].includes(item.status)?null:(item.body??''),{status:item.status||200,headers:{...(item.type===null?{}:{'content-type':item.type||'application/rss+xml'}),...(item.location?{location:item.location}:{}),...(item.length?{'content-length':String(item.length)}:{})}});
  Object.defineProperty(response,'url',{value:url});
  if(item.throwBody)response.text=async()=>{throw new Error('synthetic body failure');};
  if(item.stallBody)response.text=()=>new Promise(()=>{});
- if(item.delayBody)response.text=async()=>{await sleep(item.delayBody);return item.body||'';};
+ if(boundary){
+  const text=response.text.bind(response);
+  response.text=async()=>{note('body-read',{url});if(selected&&boundary.resource==='body')await releasedPromise;const value=await text();note('body-return',{url});if(selected&&boundary.resource==='body')markProcessed();return value;};
+  note('response-return',{url,aborted:options.signal.aborted});
+ }
  return response;
 };
 let failure=null;try {await import('./scripts/import-first-party-feed-signals.mjs');}catch(error){failure=error.message;}
-if(config.settleMs)await sleep(config.settleMs);
-await writeFile(new URL('./trace.json',import.meta.url),JSON.stringify({trace,unexpected,failure}));
+if(boundary&&!failure){await processedPromise;await state.drainDecisions();await new Promise(resolve=>setImmediate(resolve));assert(released,'Selected boundary must execute');}
+await writeFile(new URL('./trace.json',import.meta.url),JSON.stringify({trace,unexpected,failure,events,pendingTransportReviews:state?.pendingTransportReviews||[],lateRestrictionReceipts:state?.lateRestrictionReceipts||[]}));
 assert.deepEqual(unexpected,[],'unexpected transport remains fatal even if caught by importer');
 if(failure){console.error(failure);process.exitCode=1;}
 `);
-  async function run(name,{network=routes(),records=[record()],prior=snapshot([old()]),exclusions=[],env={},failed=0,retained=0,posts=1,check,abort=false,badJson,badJs,sourceText,overrideText,settleMs=0,time=clock}={}) {
+  async function run(name,{network=routes(),records=[record()],prior=snapshot([old()]),exclusions=[],env={},failed=0,retained=0,posts=1,check,abort=false,badJson,badJs,sourceText,overrideText,boundary=null,time=clock}={}) {
+    activeCase={name,boundary,env:{FEED_PULL_TIMEOUT_MS:'50',FEED_PULL_DELAY_MS:'0',FEED_PULL_LIMIT:'120',FEED_PULL_CONCURRENCY:'2',FEED_LOOKBACK_DAYS:'180',FEED_EXCERPT_CHARS:'420',...env},childTimeoutMs:5000};
     const jsonPath=join(root,'data/build/website-feed-signals.json'),jsPath=join(root,'data/website-feed-signals.js');
     await rm(jsonPath,{force:true}); await rm(jsPath,{force:true});
     if(prior!==null){await writeFile(jsonPath,badJson??JSON.stringify(prior));await writeFile(jsPath,badJs??js(prior));}
@@ -58,21 +110,24 @@ if(failure){console.error(failure);process.exitCode=1;}
     const beforeJson=await readFile(jsonPath,'utf8').catch(()=>null),beforeJs=await readFile(jsPath,'utf8').catch(()=>null);
     await writeFile(join(root,'data/build/first-party-sources.json'),sourceText??JSON.stringify({records}));
     await writeFile(join(root,'data/feed-review-overrides.json'),overrideText??JSON.stringify({records:exclusions}));
-    await writeFile(join(root,'config.json'),JSON.stringify({routes:network,clock:time,settleMs}));
+    await writeFile(join(root,'config.json'),JSON.stringify({routes:network,clock:time,boundary}));
     await rm(join(root,'trace.json'),{force:true});
+    await rm(join(root,'events.jsonl'),{force:true});
     const result=spawnSync(process.execPath,['--import',join(root,'scripts/lib/deny-source-network.mjs'),join(root,'runner.mjs')],{cwd:root,encoding:'utf8',timeout:5000,env:{...process.env,FEED_PULL_TIMEOUT_MS:'50',FEED_PULL_DELAY_MS:'0',FEED_PULL_LIMIT:'120',FEED_PULL_CONCURRENCY:'2',FEED_LOOKBACK_DAYS:'180',FEED_EXCERPT_CHARS:'420',...env}});
+    activeCase.result={status:result.status,signal:result.signal,stdout:result.stdout,stderr:result.stderr,error:result.error?{name:result.error.name,message:result.error.message,code:result.error.code}:null};
+    activeCase.before={json:beforeJson,js:beforeJs};
     assert.equal(result.error,undefined,`${name}: process failed/timed out`);
     const trace=JSON.parse(await readFile(join(root,'trace.json'),'utf8').catch(error=>{throw new Error(name+': '+result.stderr+' '+result.stdout+' '+error.message);}));
     assert.deepEqual(trace.unexpected,[],`${name}: unexpected requests`);
     if(abort){assert.notEqual(result.status,0,name);assert.ok(trace.failure,name);assert.deepEqual(trace.trace,[],`${name}: validate before network`);assert.equal(await readFile(jsonPath,'utf8').catch(()=>null),beforeJson,name);assert.equal(await readFile(jsPath,'utf8').catch(()=>null),beforeJs,name);passed++;return;}
-    assert.equal(result.status,0,`${name}: ${result.stderr}`);
+    assertAccessExit(result,trace.trace.map(call=>network[call.url]),name,boundary);
     const payload=JSON.parse(await readFile(jsonPath,'utf8'));
     const script=await readFile(jsPath,'utf8');assert.deepEqual(JSON.parse(script.replace(/^window\.HALIFAX_WEBSITE_FEED_SIGNALS = /,'').replace(/;\n$/,'')),payload,`${name}: parity`);
     validatePreviousFeedSnapshot(payload);
     assert.equal(payload.failedFeeds,failed,`${name}: failures`);assert.equal(payload.retainedPosts,retained,`${name}: retained`);assert.equal(payload.posts.length,posts,`${name}: posts`);
     for(const call of trace.trace){assert.equal(call.redirect,'manual',name);assert.equal(call.signal,true,name);assert.equal(call.aborted,false,`${name}: no aborted request admitted`);if(new URL(call.url).pathname.startsWith('/robots'))assert.deepEqual(call.headers,{'user-agent':'HalifaxSourced/0.3 (+https://github.com/JeremyHennessy/HalifaxSourced)'},`${name}: policy headers`);}
     if(retained===1 && posts===1 && prior.posts.length===1)assert.deepEqual(payload.posts,prior.posts,`${name}: original clocks/review/rights/source preserved`);
-    if(check)check(payload,trace.trace);passed++;return payload;
+    if(check)check(payload,trace.trace,trace);passed++;return payload;
   }
   await run('valid RSS', {check:p=>{assert.equal(p.feedsChecked,1);assert.equal(p.posts[0].observedAt,clock);assert.equal(p.posts[0].excerpt,'Short patio summary only .');assert.equal(p.posts[0].mediaUrl,'https://images.example/photo.jpg');}});
   await run('first run', {prior:null});
@@ -101,9 +156,42 @@ if(failure){console.error(failure);process.exitCode=1;}
     if(allowed || (resource==='robots' && ['deny','new-origin-deny'].includes(kind)))network[target]=resource==='robots'?{body:`User-agent: *\nDisallow: ${allowed?'':'/'}`,type:'text/plain'}:{body:rss(entry())};
     await run(`${resource} redirect ${kind}`,{network,failed:allowed?0:1,retained:allowed?0:1,check:(_,t)=>{if(['cross-host','quarantine'].includes(kind))assert.ok(!t.some(c=>c.url===target));}});
   }
-  // Observe beyond the deadline: ignored aborts must not admit a later redirect
-  // or content request, nor append a late parsed item to a committed snapshot.
-  for(const [url,patch] of [[robot,{delayFetch:100,body:'User-agent: *\nDisallow:',type:'text/plain'}],[robot,{delayFetch:100,status:302,location:'/robots-late'}],[feed,{delayFetch:100,status:302,location:'/late'}],[feed,{delayBody:100,body:rss(entry())}]])await run('late result cannot mutate/admit',{network:{...routes(),[url]:patch},failed:1,retained:1,settleMs:150});
+  // Native resolution/rejection during the one-turn abort cleanup is settled,
+  // not durable uncertainty. A response released only after actual suspension
+  // must retain that unknown outcome. Neither boundary admits expired content.
+  const boundaries=[];
+  for(const resource of ['robots','content'])for(const stage of ['abort-cleanup','after-suspension'])for(const outcome of [200,302,401,403,429,'reject'])boundaries.push({resource,stage,outcome});
+  for(const outcome of [200,302])boundaries.push({resource:'robots',stage:'outer-abort',outcome});
+  for(const stage of ['abort-cleanup','after-snapshot'])boundaries.push({resource:'body',stage,outcome:200});
+  for(const boundary of boundaries){
+    const {resource,stage,outcome}=boundary,url=resource==='robots'?robot:feed;
+    boundary.url=url;
+    const patch={body:resource==='robots'?policy.body:rss(entry()),type:resource==='robots'?'text/plain':'application/rss+xml',...(outcome==='reject'?{}:{status:outcome}),...(outcome===302?{location:'/boundary-redirect'}:{})};
+    const network={...routes(),[url]:patch};
+    const liveRobotsRedirect=resource==='robots'&&stage==='outer-abort'&&outcome===302;
+    const redirected='https://fixture.example/boundary-redirect';
+    if(liveRobotsRedirect)network[redirected]=policy;
+    const label=`deadline boundary ${resource} / ${stage} / ${outcome}`;
+    await run(label,{network,boundary,failed:1,retained:1,check:(payload,calls,details)=>{
+      assert.equal(payload.feedsChecked,0,label+': no late successful feed');
+      assert.deepEqual(calls.map(call=>call.url),resource==='robots'?(liveRobotsRedirect?[robot,redirected]:[robot]):[robot,feed],label+': no expired-signal transport or content admission');
+      const events=details.events,at=event=>events.findIndex(item=>item.event===event&&(event.startsWith('native-')?item.url===url:true));
+      const requestAbort=events.findIndex(item=>item.event==='request-abort'&&item.url===url);
+      const settled=at(outcome==='reject'?'native-rejected':'native-settled');
+      const unresolved=stage==='after-suspension';
+      assert.equal(details.pendingTransportReviews.length,unresolved?1:0,label+': exact controlled uncertainty');
+      if(unresolved){assert(requestAbort>=0&&at('suspend-result')>requestAbort&&settled>at('suspend-result'),label+': actual abort then suspension then settlement');const hold=details.pendingTransportReviews[0];assert.equal(hold.reason,'transport_unresolved');assert.equal(hold.evidence.status,null);assert.equal(hold.evidence.observedAt,null);}
+      else assert(!events.some(item=>item.event==='suspend-called'),label+': settled request must not be suspended');
+      if(stage==='abort-cleanup'&&resource!=='body')assert(requestAbort>=0&&settled>requestAbort,label+': settle after native abort but before cleanup suspension');
+      if(stage==='outer-abort'){assert(events.findIndex(item=>item.event==='abort'&&item.id===1)<settled,label+': feed deadline precedes robots response');assert.equal(requestAbort,-1,label+': independent robots signal remains live');}
+      if(resource!=='body'&&stage!=='outer-abort')assert(!events.some(item=>item.event==='body-read'&&item.url===url),label+': expired response body must not be consumed');
+      if(resource==='body'){assert(events.findIndex(item=>item.event==='body-return'&&item.url===url)>requestAbort,label+': body completes only after abort');if(stage==='after-snapshot')assert(at('release')>at('snapshot-written'),label+': late body cannot revise published evidence');}
+      const restriction=[401,403,429].includes(outcome);
+      assert.equal(details.lateRestrictionReceipts.length,restriction?1:0,label+': actual late denial only');
+      if(restriction){const receipt=details.lateRestrictionReceipts[0];assert.equal(receipt.status,outcome);assert.equal(receipt.url,url);assert.equal(receipt.suspensionId,unresolved?details.pendingTransportReviews[0].id:null);}
+    }});
+    console.log(label+' passed');
+  }
   for(const patch of [{status:503},{throw:true},{stallFetch:true},{throwBody:true},{stallBody:true}])await run('cached robots failure across same-host feeds',{network:{[robot]:patch},records:[record(),record('venue',tail)],prior:snapshot([old(),old({feedUrl:tail,postUrl:'https://fixture.example/old-tail'})]),failed:2,retained:2,posts:2,check:(_,t)=>assert.equal(t.length,1)});
   await run('body deadline releases same-host queue',{network:{[robot]:policy,[feed]:{stallBody:true},[tail]:{body:rss(entry('Tail brunch','https://fixture.example/tail-post'))}},records:[record(),record('venue',tail)],failed:1,retained:1,posts:2,check:p=>assert.equal(p.feedsChecked,1)});
   await run('different feeds fail atomically',{network:{[robot]:policy,[feed]:{body:rss(entry())},[tail]:{status:500}},records:[record(),record('venue',tail)],prior:snapshot([old(),old({feedUrl:tail,postUrl:'https://fixture.example/old-tail'})]),failed:1,retained:1,posts:2,check:p=>{assert.ok(p.posts.some(x=>x.postUrl.endsWith('old-tail')));assert.ok(!p.posts.some(x=>x.postUrl.endsWith('/old')));}});
@@ -130,7 +218,7 @@ if(failure){console.error(failure);process.exitCode=1;}
   await run('post/signal winner consistency',{network:{[robot]:policy,[feed]:{body:rss(entry('Plain news','https://fixture.example/old').replace('Short patio summary','Plain summary'))},[tail]:{status:500}},records:[record(),record('venue',tail)],prior:snapshot([old({feedUrl:tail})]),failed:1,retained:0,posts:1,check:p=>assert.deepEqual(p.signals,[])});
   await run('80-item bound',{network:{[robot]:policy,[feed]:{body:rss(Array.from({length:85},(_,i)=>entry('News '+i,'https://fixture.example/'+i)).join(''))}},posts:80});
   const first=await run('retention run one',{network:{[robot]:{status:503}},failed:1,retained:1});
-  const second=await run('retention run two',{network:{[robot]:{status:503}},prior:first,failed:1,retained:1,time:'2026-10-23T10:00:00.000Z'});
+  const second=await run('retention run two',{network:{[robot]:{status:503}},prior:first,failed:1,retained:1,time:'2026-10-24T10:00:00.000Z'});
   assert.deepEqual(second.posts,first.posts);assert.notEqual(second.generatedAt,first.generatedAt);assert.notEqual(second.failures[0].attemptedAt,first.failures[0].attemptedAt);
   for(const bad of ['{broken','{}','{"posts":null,"signals":[]}',JSON.stringify(snapshot([old({excerpt:'x'.repeat(701)})])),JSON.stringify(snapshot([old({observedAt:'bad'})])),JSON.stringify(snapshot([old({observedAt:null})])),JSON.stringify(snapshot([old({observedAt:undefined})])),JSON.stringify(snapshot([old({content:'unbounded'})])),JSON.stringify(snapshot([old(),old()])),JSON.stringify({...snapshot([old()]),signals:[]}),JSON.stringify(snapshot([old({signalMatches:{patio:'patio'}})]))])await run('malformed prior refuses overwrite',{badJson:bad,abort:true});
   for(const badJs of ['not an assignment',js(snapshot([])),null])await run('bad/missing script twin',{badJs,abort:true});
@@ -141,5 +229,18 @@ if(failure){console.error(failure);process.exitCode=1;}
   // Conservative parser rejects structural corruption independently of whether
   // the first 80 extractable items looked valid.
   assert.throws(()=>feedEntryBlocks(rss(entry()).replace('</rss>','')));
-} finally {await rm(root,{recursive:true,force:true});}
+} catch(error) {
+  fixtureFailed=true;
+  const files={};
+  for(const file of ['config.json','trace.json','events.jsonl','data/build/first-party-sources.json','data/feed-review-overrides.json','data/build/website-feed-signals.json','data/website-feed-signals.js'])files[file]=await readFile(join(root,file),'utf8').catch(()=>null);
+  const failure={version:1,fixtureRoot:root,selectedCase:activeCase,assertion:{name:error.name,message:error.message,stack:error.stack},files};
+  const serialized=JSON.stringify(failure),sha256=createHash('sha256').update(serialized).digest('hex');
+  await writeFile(join(root,'fixture-failure.json'),serialized+'\n',{flag:'wx'});
+  // Persist the exact per-case context in existing job logs as well as the
+  // retained temp directory. This needs no new artifact workflow or storage.
+  const encoded=Buffer.from(serialized).toString('base64'),total=Math.ceil(encoded.length/8192);
+  for(let index=0;index<total;index++)console.error('HALIFAX_FEED_FIXTURE_FAILURE_CHUNK '+JSON.stringify({version:1,sha256,index,total,encoding:'base64',data:encoded.slice(index*8192,(index+1)*8192)}));
+  console.error('First-party feed fixture failure retained at '+join(root,'fixture-failure.json'));
+  throw error;
+} finally {if(!fixtureFailed)await rm(root,{recursive:true,force:true});}
 console.log(`First-party feed safety passed: ${passed} actual-entrypoint offline cases; atomic failure/unattempted retention, original clocks/rights, strict prior parity, robots/per-hop deadlines and finite mocked transport.`);

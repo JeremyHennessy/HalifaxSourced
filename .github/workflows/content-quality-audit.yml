@@ -10,6 +10,17 @@ on:
     paths:
       - .github/workflows/content-quality-audit.yml
       - scripts/check-source-links.mjs
+      - scripts/check-release-link-health.mjs
+      - scripts/lib/link-access-policy.mjs
+      - scripts/lib/source-access-state.mjs
+      - scripts/lib/link-health-urls.mjs
+      - scripts/lib/link-health-report.mjs
+      - scripts/lib/validate-link-health.mjs
+      - scripts/lib/fetch-public-source.mjs
+      - scripts/test-link-access-holds.mjs
+      - scripts/test-link-audit-freshness.mjs
+      - scripts/lib/deny-source-network.mjs
+      - data/source-link-access-holds.json
       - scripts/build-content-quality-report.mjs
       - scripts/reconcile-structured-coverage.mjs
       - scripts/build-structured-specials.mjs
@@ -21,7 +32,28 @@ permissions:
   contents: read
 
 jobs:
+  validate-pr:
+    if: ${{ github.event_name == 'pull_request' }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Checkout exact PR head
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Validate link access policy without source requests
+        env:
+          NODE_OPTIONS: --import ${{ github.workspace }}/scripts/lib/deny-source-network.mjs
+        run: |
+          node scripts/test-link-audit-freshness.mjs
+          node scripts/test-link-access-holds.mjs
+
   audit:
+    if: ${{ github.event_name != 'pull_request' }}
     runs-on: ubuntu-24.04
     timeout-minutes: 25
     env:
@@ -50,6 +82,16 @@ jobs:
         run: |
           node scripts/check-source-links.mjs
           node scripts/check-release-link-health.mjs
+      - name: Preserve access-hold diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: source-link-access-diagnostics
+          path: |
+            artifacts/source-link-health-report.json
+            artifacts/source-access-diagnostics.jsonl
+          if-no-files-found: ignore
+          retention-days: 30
       - name: Rebuild reconciled content quality report
         run: |
           node scripts/check-restaurant-lifecycle.mjs

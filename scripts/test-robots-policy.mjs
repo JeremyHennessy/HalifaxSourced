@@ -1,4 +1,8 @@
 import assert from 'node:assert/strict';
+import { copyFile, mkdir, mkdtemp, rm } from 'node:fs/promises';
+import { tmpdir } from 'node:os';
+import { dirname, join } from 'node:path';
+import { spawnSync } from 'node:child_process';
 import { createRobotsAllows, createRobotsPolicy, parseRobotsPolicy, robotsPolicyAllows } from './lib/robots-policy.mjs';
 
 const base = 'https://fixture.example';
@@ -125,9 +129,30 @@ for (const body of discoveryBodies) for (const path of paths) {
   assert(!result || allows(body, path), 'Discovery also preserves every shared-policy denial');
 }
 
+// Keep dynamic holds and diagnostics inside a disposable process. This is a
+// test-only entrypoint split, not a production policy switch or registry reset.
+if (!process.argv.includes('--isolated-access-fixture')) {
+  const root = await mkdtemp(join(tmpdir(),'halifax-robots-policy-'));
+  try {
+    for (const file of ['scripts/test-robots-policy.mjs','scripts/lib/robots-policy.mjs','scripts/lib/fetch-public-source.mjs','scripts/lib/source-access-state.mjs','scripts/lib/link-access-policy.mjs','scripts/lib/deny-source-network.mjs','data/source-link-access-holds.json','source-integrity.js']) {
+      await mkdir(dirname(join(root,file)),{recursive:true});
+      await copyFile(new URL('../'+file,import.meta.url),join(root,file));
+    }
+    const child=spawnSync(process.execPath,['--import',join(root,'scripts/lib/deny-source-network.mjs'),join(root,'scripts/test-robots-policy.mjs'),'--isolated-access-fixture'],{cwd:root,env:process.env,encoding:'utf8',timeout:30000});
+    assert.equal(child.error,undefined);assert.equal(child.signal,null);
+    assert.equal(child.status,1,'Actual denial cases intentionally make this isolated run nonpublishable: '+child.stderr);
+    assert.match(child.stdout,/Robots policy passed offline:/,'Assertions must finish, not merely exit1');
+    const diagnostics=child.stderr.split('\n').filter(line=>line.startsWith('HALIFAX_SOURCE_ACCESS_DIAGNOSTIC ')).map(line=>JSON.parse(line.slice('HALIFAX_SOURCE_ACCESS_DIAGNOSTIC '.length)));
+    assert.deepEqual(diagnostics.filter(item=>item.kind==='http_restriction').map(item=>item.evidence.receipt.status).sort((a,b)=>a-b),[401,403,429]);
+    assert.equal(diagnostics.filter(item=>item.kind==='unsettled_transport').length,1);
+    assert.equal(diagnostics.length,4,'No unexpected access diagnostics');
+    process.stdout.write(child.stdout);
+  } finally { await rm(root,{recursive:true,force:true}); }
+} else {
 const originalFetch = globalThis.fetch;
 try {
   for (const status of [200, 201, 204, 206, 300, 304, 400, 401, 403, 404, 405, 408, 410, 418, 429, 500, 502, 503, 504, 599]) {
+    const base = `https://status-${status}.fixture.example`;
     const requests = [];
     globalThis.fetch = async input => { requests.push(String(input)); return new Response([204, 304].includes(status) ? null : '', { status }); };
     const check = createRobotsAllows({ userAgent: 'HalifaxSourced/fixture' });
@@ -153,6 +178,7 @@ try {
   globalThis.fetch = async () => ({status: 200, headers: new Headers({'content-length': '999999'}), text: () => { throw new Error('Oversized body must not be read'); }});
   assert.equal(await createRobotsAllows({userAgent: 'HalifaxSourced/fixture'})(base + '/menu'), false);
   for (const kind of ['network', 'fetch-stall', 'body-error', 'body-stall']) {
+    const base = `https://${kind}.fixture.example`;
     let calls = 0;
     let signal;
     globalThis.fetch = async (_input, options) => {
@@ -229,3 +255,5 @@ try {
   assert.equal(requests.length, 4, 'Unsafe sources never request robots');
 } finally { globalThis.fetch = originalFetch; }
 console.log(`Robots policy passed offline: ${matching.length} semantic cases, ${bodies.length * paths.length} shared and ${discoveryBodies.length * paths.length} discovery tightening-only pairs, failure/cache/deadline/redirect controls.`);
+
+}

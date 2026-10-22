@@ -53,6 +53,16 @@ assert.equal(mixed.failures.length,3);assert.equal(mixed.observationCount,2);
 assert.equal(mixed.sources.find(row=>row.id==='restricted').lastSuccessfulObservationAt,null);
 assert.equal(mixed.freshness,'stale');
 
+// A current assessment, or historical held evidence, is never a new success.
+for (const state of ['held','unattempted']) for (const observedAt of [null,'2026-10-20T11:00:00Z']) {
+  const held=sourceEntry({...base,payload:{results:[{restaurantId:'held',state,attempted:false,status:null,observedAt,assessedAt:base.now},{restaurantId:'ok',state:'ok',status:200,observedAt:'2026-10-20T10:00:00Z'}]}});
+  assert.equal(held.observationCount,1);assert.equal(held.unknownObservationCount,0);
+  assert.equal(held.lastSuccessfulObservationAt,'2026-10-20T10:00:00.000Z');
+  assert.equal(held.sources.find(row=>row.id==='held').status,state);
+  assert.equal(held.sources.find(row=>row.id==='held').lastAttemptAt,null);
+  assert.equal(held.sources.find(row=>row.id==='held').lastSuccessfulObservationAt,null);
+}
+
 const retained=sourceEntry({...base,sourceStats:true,payload:{events:[{sourceId:'one',observedAt:'2026-10-01'},{sourceId:'two',observedAt:'2026-10-02'}],
   sourceStats:[{sourceId:'one',status:'ok',observedAt:'2026-10-20T11:00:00Z'},{sourceId:'two',status:'failed',reason:'http_403',observedAt:'2026-10-20T11:30:00Z'}],
   failures:[{sourceId:'two',reason:'http_403'}]}});

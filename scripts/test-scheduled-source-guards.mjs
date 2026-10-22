@@ -10,7 +10,7 @@ import {pathToFileURL} from 'node:url';
 const root=await mkdtemp(join(tmpdir(),'halifax-scheduled-guard-'));
 try {
   await mkdir(join(root,'scripts','lib'),{recursive:true});await mkdir(join(root,'data','build'),{recursive:true});
-  for(const file of ['scripts/check-source-links.mjs','scripts/build-thumbnail-candidates.mjs','scripts/lib/fetch-public-source.mjs','scripts/lib/lifecycle-language.mjs','scripts/lib/media-rights-contract.mjs','scripts/lib/reviewed-corrections.mjs','restaurant-corrections.js','app-media.js','source-integrity.js'])await copyFile(new URL('../'+file,import.meta.url),join(root,file));
+  for(const file of ['scripts/check-source-links.mjs','scripts/lib/link-access-policy.mjs','scripts/lib/link-health-urls.mjs','scripts/lib/link-health-report.mjs','data/source-link-access-holds.json','scripts/build-thumbnail-candidates.mjs','scripts/lib/fetch-public-source.mjs', 'scripts/lib/source-access-state.mjs','scripts/lib/lifecycle-language.mjs','scripts/lib/media-rights-contract.mjs','scripts/lib/reviewed-corrections.mjs','restaurant-corrections.js','app-media.js','source-integrity.js'])await copyFile(new URL('../'+file,import.meta.url),join(root,file));
   await writeFile(join(root,'data/reviewed-restaurant-corrections.js'),'window.HALIFAX_RESTAURANT_CORRECTIONS={records:[],aliases:[],additions:[]};');
   await writeFile(join(root,'data/reviewed-place-resolutions.js'),'window.HALIFAX_REVIEWED_PLACE_RESOLUTIONS={records:[{restaurantId:"redirect",menuUrl:"https://fixture.example/reviewed-menu"}]};');
   const venues=[{id:'unsafe',name:'Unsafe venue',website:'https://www.glitterbeancafe.com/contact'},{id:'unsafe-dot',name:'Unsafe dotted venue',website:'https://glitterbeancafe.com./contact'},{id:'redirect',name:'Redirect venue',website:'https://fixture.example/contact'}];
@@ -44,7 +44,8 @@ try {
     const child=spawn(process.execPath,[join(root,'deadline-runner.mjs')],{cwd:root,env:{...process.env,GITHUB_EVENT_NAME:'schedule',LINK_HEALTH_SCOPE:'release',LINK_HEALTH_LIMIT:'0',LINK_HEALTH_TIMEOUT_MS:'30',LINK_HEALTH_CONCURRENCY:'5'},stdio:['ignore','pipe','pipe']});
     let error='';child.stderr.on('data',chunk=>error+=chunk);child.stdout.resume();child.on('error',reject);child.on('close',code=>resolve({code,error}));
   });
-  assert.equal(deadlineResult.code,0,'Hung source must be classified, not exit 13: '+deadlineResult.error);
+  assert.equal(deadlineResult.code,1,'Unresolved native fetch must block publication, not exit13: '+deadlineResult.error);
+  assert.match(deadlineResult.error,/HALIFAX_SOURCE_ACCESS_DIAGNOSTIC .*unsettled_transport/);
   const deadlineReport=JSON.parse(await readFile(join(root,'data/build/source-link-health-report.json')));
   assert.equal(deadlineReport.complete,true);
   assert.equal(deadlineReport.counts.checked,5);
@@ -69,7 +70,7 @@ try {
     if(!name.endsWith('.mjs')||name.startsWith('test-')||['import-meta-social.mjs','import-google-places.mjs','import-ns-food-inspections.mjs','import-osm-restaurants.mjs'].includes(name))continue;
     const source=await readFile(new URL(name,import.meta.url),'utf8');
     if(name==='coordinate-preview-updates.mjs'){assert(source.includes("const apiRoot = 'https://api.github.com';"));assert(source.includes("method: 'GET', redirect: 'error'"));assert(!source.includes('process.env.GITHUB_API_URL'));assert(source.includes('AbortSignal.timeout(30_000)'));continue;}
-    if(/\bfetch\(/.test(source))assert(source.includes('import { fetchGuardedSource as fetch }'),name+' has an unguarded source request');
+    if(/\bfetch\(/.test(source))assert(source.includes('import { fetchGuardedSource as fetch'),name+' has an unguarded source request');
   }
   // PR link QA checks status only; main/manual/scheduled retain lifecycle extraction.
   await writeFile(join(root,'data/build/catalog.json'),JSON.stringify({restaurants:[{id:'qa-fixture',name:'Fixture',website:'https://fixture.example/'}]}));
@@ -166,6 +167,7 @@ const feedFixtureDependencies = [
   'source-integrity.js'
 ];
 const sourceValidationPaths = [...new Set([
+  'scripts/lib/link-access-policy.mjs', 'scripts/lib/source-access-state.mjs', 'scripts/lib/link-health-urls.mjs', 'scripts/lib/link-health-report.mjs',
   ...feedFixtureDependencies,
   ...thumbnailFixtureDependencies,
   'scripts/lib/robots-policy.mjs',
@@ -284,6 +286,10 @@ const socialValidationPaths = [
   'scripts/test-media-reference-contract.mjs',
   'scripts/test-preview-coordinator.mjs',
   'scripts/test-scheduled-source-guards.mjs',
+  'scripts/lib/link-access-policy.mjs',
+  'scripts/lib/source-access-state.mjs',
+  'scripts/lib/link-health-urls.mjs',
+  'scripts/lib/link-health-report.mjs',
   '.github/workflows/source-expansion-preview.yml',
   '.github/workflows/structured-place-facts-preview.yml',
   '.github/workflows/structured-specials-preview.yml',
@@ -334,7 +340,7 @@ const adapterFixtureDependencies = [
   'scripts/build-structured-specials.mjs', 'scripts/build-recent-social-posts.mjs',
   'scripts/build-thumbnail-candidates.mjs', 'scripts/lib/media-rights-contract.mjs', 'app-media.js',
   'scripts/lib/deny-source-network.mjs',
-  'scripts/lib/robots-policy.mjs', 'scripts/lib/fetch-public-source.mjs', 'source-integrity.js',
+  'scripts/lib/robots-policy.mjs', 'scripts/lib/fetch-public-source.mjs', 'scripts/lib/source-access-state.mjs', 'scripts/lib/link-access-policy.mjs', 'source-integrity.js',
   'scripts/import-official-sites.mjs', 'scripts/verify-official-source-pages.mjs',
   'scripts/import-structured-events.mjs', 'scripts/import-official-page-intelligence.mjs',
   'scripts/import-patio-directory-facts.mjs', 'scripts/import-city-events.mjs',

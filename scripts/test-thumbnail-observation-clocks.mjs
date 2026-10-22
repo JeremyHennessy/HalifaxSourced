@@ -29,6 +29,7 @@ async function copyRuntime(directory, full = false) {
     for (const file of ["app-media.js", "source-integrity.js"]) await cp(join(repository, file), join(directory, file));
   }
   for (const folder of ["data/build", "docs", "artifacts"]) await mkdir(join(directory, folder), { recursive: true });
+  if (!full) await cp(join(repository, "data/source-link-access-holds.json"), join(directory, "data/source-link-access-holds.json"));
 }
 const guard = join(root, "clock-and-transport-guard.mjs");
 function run(directory, script, clock, extraEnv = {}, expected = 0) {

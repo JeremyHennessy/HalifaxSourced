@@ -5,6 +5,22 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { spawnSync } from 'node:child_process';
 import { fileURLToPath, pathToFileURL } from 'node:url';
+// A real denial or unresolved native request is an intentional nonpublishable
+// subprocess result, not a failed fixture. Derive this from the finite plan,
+// then independently require its diagnostic rather than accepting any exit1.
+function assertAccessExit(result, specs, label, startupExit = 0) {
+  const restrictions = specs.filter(spec => [401,403,429].includes(spec?.status));
+  const unsettled = specs.some(spec => spec?.stallFetch || spec?.stallsFetch || spec?.lateFetch || spec?.delayFetch);
+  const expected = startupExit || (restrictions.length || unsettled ? 1 : 0);
+  assert.equal(result.error,undefined,label + ': child must finish within its existing bound');
+  assert.equal(result.signal,null,label + ': child must not be killed');
+  assert.equal(result.status,expected,label + '\n' + result.stderr);
+  const diagnostics = result.stderr.split('\n').filter(line => line.startsWith('HALIFAX_SOURCE_ACCESS_DIAGNOSTIC ')).map(line => JSON.parse(line.slice('HALIFAX_SOURCE_ACCESS_DIAGNOSTIC '.length)));
+  for (const spec of restrictions) assert(diagnostics.some(item => ['http_restriction','late_http_restriction'].includes(item.kind) && item.evidence.receipt.status === spec.status),label + ': actual denial diagnostic');
+  if (unsettled) assert(diagnostics.some(item => item.kind === 'unsettled_transport'),label + ': unresolved request diagnostic');
+  assert(diagnostics.every(item => item.disposition === 'nonpublishable_requires_review' && (item.kind === 'unsettled_transport' ? unsettled : restrictions.some(spec => item.evidence.receipt?.status === spec.status))),label + ': no unexpected access diagnostic');
+}
+
 
 // The first 22 cases retain the October 22 audit's actual-collector fixtures,
 // but invert each unsafe allowed result. Nothing reaches a real transport.
@@ -132,7 +148,7 @@ try {
   await mkdir(join(root, 'data/build'), { recursive: true });
   for (const file of [
     ...adapters.map(([script]) => 'scripts/' + script),
-    'scripts/lib/robots-policy.mjs', 'scripts/lib/fetch-public-source.mjs',
+    'scripts/lib/robots-policy.mjs', 'scripts/lib/fetch-public-source.mjs', 'scripts/lib/source-access-state.mjs', 'scripts/lib/link-access-policy.mjs', 'data/source-link-access-holds.json',
     'scripts/lib/lifecycle-language.mjs', 'scripts/lib/source-page-classification.mjs', 'source-integrity.js'
   ]) await copyFile(new URL('../' + file, import.meta.url), join(root, file));
   for (const [script, outputName] of adapters) for (const fixture of cases) {
@@ -198,7 +214,7 @@ try {
         SOURCE_VERIFY_DELAY_MS: '0', SOURCE_VERIFY_TIMEOUT_MS: '35', STRUCTURED_EVENT_DELAY_MS: '0', STRUCTURED_EVENT_ROBOTS_TIMEOUT_MS: '35' }
     });
     const label = `${script}: ${test.name}`;
-    assert.equal(result.status, 0, label + '\n' + result.stderr + '\n' + (result.error || ''));
+    assertAccessExit(result,[test],label);
     const requests = JSON.parse(await readFile(requestLog, 'utf8'));
     const expected = Array(test.robotsRequests || 1).fill(origin + '/robots.txt');
     if (test.policyRedirect) expected.push(origin + '/policy');
@@ -273,7 +289,7 @@ async function testCityAdapter(parentRoot) {
   await mkdir(join(root, 'scripts/lib'), { recursive: true });
   await mkdir(join(root, 'data/build'), { recursive: true });
   for (const file of ['scripts/import-city-events.mjs', 'scripts/lib/robots-policy.mjs',
-    'scripts/lib/fetch-public-source.mjs', 'source-integrity.js']) {
+    'scripts/lib/fetch-public-source.mjs', 'scripts/lib/source-access-state.mjs', 'scripts/lib/link-access-policy.mjs', 'data/source-link-access-holds.json', 'source-integrity.js']) {
     await copyFile(new URL('../' + file, import.meta.url), join(root, file));
   }
   const origin = 'https://fixture.example';
@@ -338,7 +354,7 @@ async function testCityAdapter(parentRoot) {
     const result = spawnSync(process.execPath, [join(root, 'runner.mjs')], {
       cwd: root, encoding: 'utf8', timeout: 5000, env: { ...offlineEnv, CITY_EVENT_TIMEOUT_MS: '35' }
     });
-    assert.equal(result.status, 0, label + '\n' + result.stderr + '\n' + (result.error || ''));
+    assertAccessExit(result,requests.map(url => routes[url] || policy),label);
     assert.deepEqual(JSON.parse(await readFile(join(root, 'requests.json'), 'utf8')), requests, label + ': requests');
     const output = JSON.parse(await readFile(join(root, 'data/build/city-events.json'), 'utf8'));
     const js = await readFile(join(root, 'data/city-events.js'), 'utf8');
@@ -455,7 +471,7 @@ async function testDiscoveryAdapter(parentRoot) {
   await mkdir(join(root, 'data/build'), {recursive: true});
   for (const file of ['scripts/discover-first-party-sources.mjs', 'scripts/merge-first-party-history.mjs',
     'scripts/sanitize-first-party-sources.mjs', 'scripts/lib/robots-policy.mjs',
-    'scripts/lib/fetch-public-source.mjs', 'source-integrity.js', 'data/social-platform-registry.json']) {
+    'scripts/lib/fetch-public-source.mjs', 'scripts/lib/source-access-state.mjs', 'scripts/lib/link-access-policy.mjs', 'data/source-link-access-holds.json', 'source-integrity.js', 'data/social-platform-registry.json']) {
     await copyFile(new URL('../' + file, import.meta.url), join(root, file));
   }
   const origin = 'https://fixture.example';
@@ -530,7 +546,7 @@ async function testDiscoveryAdapter(parentRoot) {
       env: {...offlineEnv, FIRST_PARTY_SOURCE_DELAY_MS: '0', FIRST_PARTY_SOURCE_TIMEOUT_MS: '35',
         FIRST_PARTY_SOURCE_CONCURRENCY: '1', FIRST_PARTY_SOURCE_LIMIT: '9999', FIRST_PARTY_SOURCE_IDS: '',
         FIRST_PARTY_OWNED_PAGE_LIMIT: '3', FIRST_PARTY_LINK_HUB_LIMIT: '2', ...env}});
-    assert.equal(result.status, expectedExit, label + '\n' + result.stderr + '\n' + (result.error || ''));
+    assertAccessExit(result,expectedRequests.map(url => routes[url] || policies[new URL(url).origin] || policy),label,expectedExit);
     assert.deepEqual(JSON.parse(await readFile(join(root, 'requests.json'), 'utf8')), expectedRequests, label + ': requests');
     async function readPair() {
       const json = JSON.parse(await readFile(join(root, 'data/build/first-party-sources.json'), 'utf8'));
@@ -607,9 +623,10 @@ async function testDiscoveryAdapter(parentRoot) {
   for (const kind of ['throws', 'throwsBody', 'stallsFetch', 'stallsBody', 'lateBody', 'lateFetch', 'http', 'mime']) {
     const route = kind === 'http' ? {status: 503} : kind === 'mime' ? {contentType: 'application/json'} : {[kind]: kind === 'throws' ? 'TypeError' : true};
     const tail = origin + '/healthy';
+    const suspended = ['stallsFetch','lateFetch'].includes(kind);
     const result = await run({name: `HTML ${kind} failure releases same-host queue`, venues: [venue(), venue(1, tail)],
-      routes: {[home]: route, [tail]: {body: '<html>Tail</html>'}}, expectedRequests: [robotsUrl, home, tail], refreshed: ['fixture-1'],
-      failures: [kind === 'http' ? 'http_503' : kind === 'mime' ? 'not_html' : kind === 'throws' ? 'fixture network failure' : kind === 'throwsBody' ? 'fixture body failure' : 'timeout'],
+      routes: {[home]: route, [tail]: {body: '<html>Tail</html>'}}, expectedRequests: [robotsUrl, home, ...(suspended ? [] : [tail])], refreshed: suspended ? [] : ['fixture-1'],
+      failures: [kind === 'http' ? 'http_503' : kind === 'mime' ? 'not_html' : kind === 'throws' ? 'fixture network failure' : kind === 'throwsBody' ? 'fixture body failure' : 'timeout', ...(suspended ? ['source_access_hold'] : [])],
       settleMs: kind.startsWith('late') ? 110 : 0, pipeline: true});
     assert.equal(result.output.records.find(row => row.restaurantId === 'fixture-0').contentHash, oldHash);
   }

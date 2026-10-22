@@ -1,5 +1,7 @@
 import { readFile } from "node:fs/promises";
 import vm from "node:vm";
+import { currentLifecycleCandidates } from "./lib/link-health-report.mjs";
+import integrity from "../source-integrity.js";
 
 async function windowData(path) {
   const context = { window: {} };
@@ -17,8 +19,8 @@ const mediaCount = new Set((mediaWindow.HALIFAX_RESTAURANT_MEDIA?.records || [])
 const failures = [];
 try {
   const links = JSON.parse(await readFile(new URL('../data/build/source-link-health-report.json', import.meta.url), 'utf8'));
-  if (links.sourceCommitSha === expectedSha && links.complete) {
-    const expectedCandidates = (links.lifecycleCandidates || []).reduce((count,item) => count + (item.restaurantIds || []).filter(id => canonicalIds.has(id)).length, 0);
+  if (links.sourceCommitSha === expectedSha && links.complete && integrity.publicationState(links.generatedAt,Date.now(),1).isRecent) {
+    const expectedCandidates = currentLifecycleCandidates(links, Date.now(), catalog).reduce((count,item) => count + (item.restaurantIds || []).filter(id => canonicalIds.has(id)).length, 0);
     const actualCandidates = (lifecycle.candidates || []).filter(item => item.sourceLayer === 'release_official_page_fetch').length;
     if (lifecycle.liveSourceAudit?.state !== 'same_head_complete' || lifecycle.liveSourceAudit?.sourceCommitSha !== expectedSha || actualCandidates !== expectedCandidates) failures.push('lifecycle report omits same-head fresh-page observations');
   }

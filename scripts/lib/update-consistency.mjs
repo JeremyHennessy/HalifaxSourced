@@ -38,7 +38,7 @@ export function freshness(observedAt, now, targetHours) {
 const rows = value => Array.isArray(value) ? value.filter(row => row && typeof row === 'object') : [];
 const sourceId = row => row.sourceId || row.restaurantId || row.platform || row.id || null;
 const attemptTime = row => row.attempted === false ? null : iso(row.observedAt || row.checkedAt || row.lastAttemptAt);
-const failedStates = new Set(['failed', 'error', 'blocked', 'restricted', 'unavailable', 'inconclusive']);
+const failedStates = new Set(['failed', 'error', 'blocked', 'restricted', 'unavailable', 'inconclusive', 'held', 'unattempted']);
 function failed(row) {
   return Boolean(row.error) || (typeof row.status === 'number' && (row.status < 200 || row.status >= 400)) ||
     failedStates.has(String(row.status || '').toLowerCase()) || failedStates.has(row.state);

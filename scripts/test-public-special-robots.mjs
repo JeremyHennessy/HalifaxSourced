@@ -4,6 +4,22 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { spawnSync } from 'node:child_process';
 import vm from 'node:vm';
+// A real denial or unresolved native request is an intentional nonpublishable
+// subprocess result, not a failed fixture. Derive this from the finite plan,
+// then independently require its diagnostic rather than accepting any exit1.
+function assertAccessExit(result, specs, label, startupExit = 0) {
+  const restrictions = specs.filter(spec => [401,403,429].includes(spec?.status));
+  const unsettled = specs.some(spec => spec?.stallFetch || spec?.stallsFetch || spec?.lateFetch || spec?.delayFetch);
+  const expected = startupExit || (restrictions.length || unsettled ? 1 : 0);
+  assert.equal(result.error,undefined,label + ': child must finish within its existing bound');
+  assert.equal(result.signal,null,label + ': child must not be killed');
+  assert.equal(result.status,expected,label + '\n' + result.stderr);
+  const diagnostics = result.stderr.split('\n').filter(line => line.startsWith('HALIFAX_SOURCE_ACCESS_DIAGNOSTIC ')).map(line => JSON.parse(line.slice('HALIFAX_SOURCE_ACCESS_DIAGNOSTIC '.length)));
+  for (const spec of restrictions) assert(diagnostics.some(item => ['http_restriction','late_http_restriction'].includes(item.kind) && item.evidence.receipt.status === spec.status),label + ': actual denial diagnostic');
+  if (unsettled) assert(diagnostics.some(item => item.kind === 'unsettled_transport'),label + ': unresolved request diagnostic');
+  assert(diagnostics.every(item => item.disposition === 'nonpublishable_requires_review' && (item.kind === 'unsettled_transport' ? unsettled : restrictions.some(spec => item.evidence.receipt?.status === spec.status))),label + ': no unexpected access diagnostic');
+}
+
 
 // Actual composite entrypoint, unchanged real helpers, finite fake transport only.
 // The token below is deliberately synthetic public-client metadata, not a secret.
@@ -39,7 +55,7 @@ let passed = 0;
 try {
   await mkdir(join(root,'scripts/lib'), {recursive:true});
   await mkdir(join(root,'data/build'), {recursive:true});
-  for (const file of ['scripts/import-public-special-source-leads.mjs','scripts/lib/public-special-refresh-safety.mjs','scripts/lib/robots-policy.mjs','scripts/lib/fetch-public-source.mjs','scripts/lib/deny-source-network.mjs','source-integrity.js']) await copyFile(new URL(`../${file}`,import.meta.url),join(root,file));
+  for (const file of ['scripts/import-public-special-source-leads.mjs','scripts/lib/public-special-refresh-safety.mjs','scripts/lib/robots-policy.mjs','scripts/lib/fetch-public-source.mjs', 'scripts/lib/source-access-state.mjs', 'scripts/lib/link-access-policy.mjs', 'data/source-link-access-holds.json','scripts/lib/deny-source-network.mjs','source-integrity.js']) await copyFile(new URL(`../${file}`,import.meta.url),join(root,file));
   await writeFile(join(root,'data/build/catalog.json'), JSON.stringify({restaurants:[{id:'fixture-venue',name:'Fixture Venue',address:'123 Main Street'}]}));
   await writeFile(join(root,'runner.mjs'), `
 import assert from 'node:assert/strict';
@@ -78,7 +94,7 @@ if(failure)process.exitCode=1;
     assert.deepEqual(unexpected,[],`${name}: unexpected request`);
     assert.ok(trace.length<=30,`${name}: finite trace`);
     if(abort){assert.notEqual(result.status,0,name);assert.ok(failure,name);assert.deepEqual(trace,[],name);assert.equal(await readFile(snapshot,'utf8'),badPrior,name);assert.equal(await readFile(jsPath,'utf8'),'unchanged output sentinel',name);passed++;return;}
-    assert.equal(result.status,0,`${name}: ${result.stderr}`);
+    assertAccessExit(result,trace.map(call=>routes[call.url]),name);
     const payload=JSON.parse(await readFile(snapshot,'utf8'));
     const context={window:{}};vm.runInNewContext(await readFile(jsPath,'utf8'),context);
     assert.deepEqual(JSON.parse(JSON.stringify(context.window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS)),payload,`${name}: JSON/JS parity`);
