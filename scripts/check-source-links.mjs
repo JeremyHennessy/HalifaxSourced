@@ -100,5 +100,10 @@ await Promise.all(Array.from({length:Math.min(concurrency,list.length || 1)}, wo
 await registry.drainDecisions();
 const counts = linkCounts(results);
 const payload = {version:3, lifecycleExtraction:collectLifecycle, generatedAt:new Date().toISOString(), sourceCommitSha, sourceWorkflowRunId:process.env.GITHUB_RUN_ID || null, sourceWorkflowRunAttempt:process.env.GITHUB_RUN_ATTEMPT || null, accessPolicySha256:digest(policy), scope:release ? 'active_catalog_official_social_menu_actions' : 'all_sources', totalCatalogRecords:catalog.restaurants.length, activeCatalogRecords:universe.activeCatalogRecords, totalUniqueUrls:universe.urls.length, limit, timeoutMs, complete:results.length === universe.urls.length, counts, broken:results.filter(item => item.confirmedBroken), restricted:results.filter(item => item.state === 'restricted'), transient:results.filter(item => item.state === 'transient'), held:results.filter(item => item.state === 'held'), lifecycleCandidates:lifecycleCandidates(results, collectLifecycle), pendingAccessHolds:registry.pendingAccessHolds, pendingTransportReviews:registry.pendingTransportReviews, lateRestrictionReceipts:registry.lateRestrictionReceipts, results};
-for (const directory of ['artifacts','data/build']) { await mkdir(new URL('../' + directory, import.meta.url), {recursive:true}); await writeFile(new URL('../' + directory + '/source-link-health-report.json', import.meta.url), JSON.stringify(payload,null,2)+'\n'); }
+// Freeze one point-in-time byte snapshot before yielding to filesystem work.
+// Late native responses may still append to registry-owned arrays while writes
+// await; their durable diagnostics remain authoritative, but neither report copy
+// may absorb later evidence or be rewritten after publication.
+const reportJson = JSON.stringify(payload,null,2)+'\n';
+for (const directory of ['artifacts','data/build']) { await mkdir(new URL('../' + directory, import.meta.url), {recursive:true}); await writeFile(new URL('../' + directory + '/source-link-health-report.json', import.meta.url), reportJson); }
 console.log(JSON.stringify({scope:payload.scope, complete:payload.complete, totalUniqueUrls:universe.urls.length, lifecycleCandidates:payload.lifecycleCandidates.length, pendingAccessHolds:payload.pendingAccessHolds.length, diagnosticReport:"artifacts/source-link-health-report.json", ...counts},null,2));

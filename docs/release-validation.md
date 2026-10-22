@@ -123,6 +123,11 @@ event-loop turn lets an ordinary native abort settle. A genuinely still-pending,
 abort-ignoring transport creates a host suspension with null HTTP observation,
 `pendingTransportReviews`, and a failing process status. Its host cannot resume.
 Late actual restrictions are separately logged even after the QA report snapshot.
+The report is serialized once, synchronously before filesystem awaits, and both
+artifact/build copies receive those same immutable bytes. Registry callbacks may
+append later actual restrictions to stderr/JSONL, but cannot change either copy or
+rewrite an already published snapshot. An unresolved transport in that snapshot
+still blocks release even when a subsequent diagnostic supplies actual HTTP status.
 The cleanup does not extend a deadline or accept late content. This mandatory
 access boundary intentionally also affects callers without optional observers;
 their unaffected manual redirects, quarantine, robots decisions, limits and schedules

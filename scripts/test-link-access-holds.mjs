@@ -50,12 +50,42 @@ try {
   const hook = join(root, 'mock-fetch.mjs');
   await writeFile(hook, `
 import { readFileSync, appendFileSync } from 'node:fs';
+import fsPromises from 'node:fs/promises';
+import { syncBuiltinESMExports } from 'node:module';
+import { createHash } from 'node:crypto';
+import { sourceAccessState } from './scripts/lib/source-access-state.mjs';
 const plan = JSON.parse(readFileSync(new URL('./fetch-plan.json', import.meta.url), 'utf8'));
 const events = new URL('./fetch-events.jsonl', import.meta.url);
 const note = event => appendFileSync(events, JSON.stringify({at:new Date().toISOString(), ...event}) + '\\n');
 new Headers(); // Warm the implementation before fixture operation deadlines begin.
 const forever = () => new Promise(() => {});
 let failed = false;
+const deferredResponses = [];
+const actualWriteFile = fsPromises.writeFile;
+fsPromises.writeFile = async (...args) => {
+  const result = await actualWriteFile(...args);
+  const path = String(args[0]);
+  const directory = ['artifacts','data/build'].find(value => path.endsWith('/' + value + '/source-link-health-report.json'));
+  if (!directory || !deferredResponses.length) return result;
+  note({event:'report-written',directory,sha256:createHash('sha256').update(readFileSync(args[0])).digest('hex')});
+  const ready = deferredResponses.filter(item => !item.released && item.after === directory);
+  for (const item of ready) { item.released = true; item.resolve(); }
+  if (ready.length) {
+    // Explicit I/O barrier, not a delay race: resolve late transport only after
+    // the chosen report write, then drain its promise callbacks before allowing
+    // the collector's next filesystem operation or completion to continue.
+    await new Promise(resolve => setImmediate(resolve));
+    const state = sourceAccessState();
+    for (const item of ready) {
+      const late = state.lateRestrictionReceipts.filter(receipt => receipt.sourceUrl === item.url);
+      const suspended = state.access.find(item.url)?.reason === 'transport_unresolved';
+      if (!suspended || late.length !== ([401,403,429].includes(item.status) ? 1 : 0)) { failed = true; throw Error('Deterministic late-response barrier did not settle safely'); }
+      note({event:'interleaved-response-processed',url:item.url,directory,suspended,lateRestrictions:late.length});
+    }
+  }
+  return result;
+};
+syncBuiltinESMExports();
 globalThis.fetch = async (input, options = {}) => {
   const url = String(input);
   note({event:'fetch', url, method:options.method, redirect:options.redirect});
@@ -72,6 +102,7 @@ globalThis.fetch = async (input, options = {}) => {
     if (options.signal?.aborted) queueMicrotask(resolve);
     else options.signal?.addEventListener('abort',() => queueMicrotask(resolve),{once:true});
   });
+  if (step.fetchMode === 'after-report-write') await new Promise(resolve => deferredResponses.push({url,status:step.status,after:step.releaseAfter,resolve,released:false}));
   if (step.fetchMode === 'reject') throw Error('fixture transport failed');
   if (step.delayMs) await new Promise(resolve => setTimeout(resolve, step.delayMs));
   let read = false;
@@ -92,7 +123,7 @@ globalThis.fetch = async (input, options = {}) => {
 };
 process.on('exit', () => {
   const unused = Object.entries(plan).filter(([, queue]) => queue.length).map(([url, queue]) => url + ' (' + queue.length + ')');
-  if (failed || unused.length) {
+  if (failed || unused.length || deferredResponses.some(item => !item.released)) {
     process.stderr.write('Finite fixture transport mismatch. Unexpected=' + failed + '; unused=' + unused.join(', ') + '\\n');
     process.exitCode = 91;
   }
@@ -128,8 +159,11 @@ process.on('exit', () => {
     const hasPendingReview = report.pendingAccessHolds.length > 0 || (report.pendingTransportReviews || []).length > 0;
     assert.equal(result.status, hasPendingReview ? 1 : 0, 'New restrictions or unresolved transport must stop the workflow command after diagnostics');
     const diagnostics = (await readFile(join(root, 'artifacts/source-access-diagnostics.jsonl'), 'utf8').catch(error => { if (error.code !== 'ENOENT') throw error; return ''; })).trim().split('\n').filter(Boolean).map(JSON.parse);
+    const loggedDiagnostics = result.stderr.split('\n').filter(line => line.startsWith('HALIFAX_SOURCE_ACCESS_DIAGNOSTIC ')).map(line => JSON.parse(line.slice('HALIFAX_SOURCE_ACCESS_DIAGNOSTIC '.length)));
+    assert.deepEqual(loggedDiagnostics,diagnostics,'Every durable diagnostic must also remain retrievable verbatim from stderr');
     const artifacts = await load('artifacts/source-link-health-report.json');
     assert.deepEqual(artifacts, report, 'Published artifact and build report match exactly');
+    assert.equal(await readFile(join(root,'artifacts/source-link-health-report.json'),'utf8'),await readFile(join(root,reportPath),'utf8'),'Both report copies must contain the same immutable bytes');
     const events = (await readFile(join(root, 'fetch-events.jsonl'), 'utf8')).trim().split('\n').filter(Boolean).map(JSON.parse);
     for (const event of events.filter(event => event.event === 'fetch')) {
       assert.equal(event.method, 'GET');
@@ -454,15 +488,29 @@ process.on('exit', () => {
   await gate(result.report);
   checked('terminal ordinary native abort settles within cleanup and creates no fabricated uncertainty or HTTP evidence');
 
-  // Without unrelated work, report serialization precedes a 70ms late response.
-  // The timeout review must already block publication; a later genuine denial
-  // must still be saved to durable diagnostics and force a nonzero command exit.
-  for (const lateStatus of [429,200]) {
+  // Deterministically release an abort-ignoring response between the two actual
+  // report writes, and separately after both. No timing margin decides the
+  // interleaving. The report stays a point-in-time snapshot while later genuine
+  // restrictions survive in diagnostics and the host suspension still blocks.
+  for (const releaseAfter of ['artifacts','data/build']) for (const lateStatus of [401,403,429,200]) {
     const url = 'https://terminal-late.example.com/' + lateStatus;
-    await configure({catalog:catalogFor([url])});
-    result = await collect({[url]:[{status:lateStatus,delayMs:70,headers:{'content-type':'text/html','retry-after':'120'},body:'<p>We are permanently closed.</p>'}]}, {LINK_HEALTH_TIMEOUT_MS:'45'});
+    const alias = 'http://www.terminal-late.example.com./queued';
+    await configure({catalog:catalogFor([url,alias])});
+    result = await collect({[url]:[{status:lateStatus,fetchMode:'after-report-write',releaseAfter,headers:{'content-type':'text/html','retry-after':'120'},body:'<p>We are permanently closed.</p>'}]}, {LINK_HEALTH_TIMEOUT_MS:'45'});
+    const writes = result.events.filter(event => event.event === 'report-written');
+    assert.deepEqual(writes.map(event=>event.directory),['artifacts','data/build'],'Both reports are written once, never rewritten to absorb late evidence');
+    assert.equal(writes[0].sha256,writes[1].sha256,'The published byte snapshot cannot change between writes');
+    assert.equal(writes[0].sha256,createHash('sha256').update(await readFile(join(root,reportPath))).digest('hex'),'Neither copy changes after its write');
+    const writtenIndex = result.events.findIndex(event => event.event === 'report-written' && event.directory === releaseAfter);
+    const responseIndex = result.events.findIndex(event => event.event === 'response' && event.url === url);
+    const processedIndex = result.events.findIndex(event => event.event === 'interleaved-response-processed' && event.url === url);
+    assert(writtenIndex >= 0 && responseIndex > writtenIndex && processedIndex > responseIndex,'The chosen filesystem barrier must precede the actual response and its registry callback');
+    if (releaseAfter === 'artifacts') assert(result.events.findIndex(event=>event.event==='report-written' && event.directory==='data/build') > processedIndex,'Late callback must complete between the report copies');
+    else assert.equal(result.events.filter((event,index)=>index>processedIndex && event.event==='report-written').length,0,'Post-publication diagnostics never rewrite the snapshot');
+    assert.equal(result.events[processedIndex].suspended,true,'An actual late response never silently resumes the unresolved host');
+    assert.deepEqual(result.events.filter(event=>event.event==='fetch').map(event=>event.url),[url],'Queued canonical-host alias remains unattempted');
     const lateResponse = result.events.find(event => event.event === 'response' && event.url === url);
-    assert(lateResponse && Date.parse(lateResponse.at) > Date.parse(result.report.generatedAt), 'This fixture must exercise evidence arriving after report serialization');
+    assert(lateResponse && Date.parse(lateResponse.at) >= Date.parse(result.report.generatedAt),'Real clocks must agree with the explicitly ordered post-snapshot response, including equal-millisecond observations');
     assert.equal(result.report.pendingTransportReviews.length, 1);
     assert.deepEqual(result.report.lateRestrictionReceipts, []);
     assert.deepEqual(result.report.pendingAccessHolds, [], 'The serialized report must not invent knowledge of a response not yet received');
@@ -471,22 +519,24 @@ process.on('exit', () => {
     assert.equal(result.report.results[0].observedAt, null);
     assert.deepEqual(result.report.results[0].receipts, []);
     assert.deepEqual(result.report.results[0].lifecycle, []);
+    held(result.report.results[1]);
+    assert.equal(result.report.results[1].accessHold.id,result.report.pendingTransportReviews[0].id);
     assert.deepEqual(result.report.lifecycleCandidates, []);
     const lateDiagnostics = result.diagnostics.filter(row => row.kind === 'late_http_restriction');
-    if (lateStatus === 429) {
-      assert.equal(lateDiagnostics.length, 1, 'Actual post-snapshot429 must survive in durable source diagnostics');
+    if ([401,403,429].includes(lateStatus)) {
+      assert.equal(lateDiagnostics.length, 1, 'Actual post-snapshot restriction must survive in durable source diagnostics');
       const receipt = lateDiagnostics[0].evidence.receipt;
       assert.equal(receipt.url, url);
-      assert.equal(receipt.status, 429);
+      assert.equal(receipt.status, lateStatus);
       assert(Date.parse(receipt.observedAt) >= Date.parse(lateResponse.at));
       assert.equal(receipt.retryAfter, '120');
       assert.equal(lateDiagnostics[0].disposition, 'nonpublishable_requires_review');
       assert.equal(lateDiagnostics[0].evidence.suspensionId, result.report.pendingTransportReviews[0].id);
     } else assert.deepEqual(lateDiagnostics, [], 'Late200 cannot be reclassified as a restriction or used for closure claims');
     assert(!result.events.some(event => event.event === 'body' && event.url === url));
-    await gate(result.report, false, 'terminal late' + lateStatus + ' cannot clear transport uncertainty');
+    await gate(result.report, false, 'terminal late' + lateStatus + ' after ' + releaseAfter + ' cannot clear transport uncertainty');
   }
-  checked('terminal late429 persists beyond report snapshot in blocking diagnostics; terminal late200 never revives success or closure evidence');
+  checked('eight deterministic interleavings preserve identical immutable report bytes; late401/403/429 remain in blocking stderr/JSONL and late200 never revives content or the suspended host');
 
   for (const status of [401,403]) {
     const source = 'https://runtime-exact.example.com/denied';
