@@ -224,22 +224,24 @@ process.on('exit', () => {
     assert(Date.now() - Date.parse(row.assessedAt) < 10000, 'Assessment clock belongs to this run, not the old source evidence');
   }
 
-  // All 220 actual committed current and historical observations must suppress transport, even when
+  // All 222 actual committed current and historical observations must suppress transport, even when
   // a recent same-head success cache would otherwise be eligible for reuse.
   assert.equal(committedPolicy.observations.length, 187, 'Retain all reviewed incident observations');
-  assert.equal(committedObservations.length, 220, 'Retain earlier restrictions and all six reviewed HTTP receipts');
-  assert.deepEqual(committedPolicy.historicalEvidence.map(group => [group.provenance.workflowRunId,group.observations.length]), [['39767300296',26],['39744158052',1],...Array.from({length:5},()=>['39792176695',1]),['39801572908',1]]);
+  assert.equal(committedObservations.length, 222, 'Retain earlier restrictions and all eight reviewed HTTP receipts');
+  assert.deepEqual(committedPolicy.historicalEvidence.map(group => [group.provenance.workflowRunId,group.observations.length]), [['39767300296',26],['39744158052',1],...Array.from({length:5},()=>['39792176695',1]),['39801572908',1],['39817151873',1],['39817151873',1]]);
   const originalPolicy = {...clone(committedPolicy),historicalEvidence:clone(committedPolicy.historicalEvidence.slice(0,2))};
   assert.equal(digest(originalPolicy),'1a77c729b7328969f7f244e6d4d1343dda513447a1f271e56cf75ee852c9c123','All original observations, clocks and provenance remain unchanged');
-  const previousPolicy = {...clone(committedPolicy),historicalEvidence:clone(committedPolicy.historicalEvidence.slice(0,-1))};
-  assert.equal(digest(previousPolicy),'2556894ef813c8d585120bad40af0cd211662467c3694cd1b8b28338f4f28a03','All 219 prior observations, clocks and provenance remain exactly unchanged');
+  const beforeOrderOnlinePolicy = {...clone(committedPolicy),historicalEvidence:clone(committedPolicy.historicalEvidence.slice(0,-3))};
+  assert.equal(digest(beforeOrderOnlinePolicy),'2556894ef813c8d585120bad40af0cd211662467c3694cd1b8b28338f4f28a03','All 219 prior observations, clocks and provenance remain exactly unchanged');
+  const beforeCurrentMainPolicy = {...clone(committedPolicy),historicalEvidence:clone(committedPolicy.historicalEvidence.slice(0,-2))};
+  assert.equal(digest(beforeCurrentMainPolicy),'f30a03d7dbe7b22298e2e2145c17c4fa4e95ab3e1c1f4cc07b99f0c32cdd043e','All 220 observations preceding current main remain exactly unchanged');
   validateAccessPolicy(committedPolicy);
   assert(committedPolicy.historicalEvidence[0].observations.every(row => row.status === 403 && new URL(row.url).hostname === 'junglejims.ca'));
   assert.equal(committedPolicy.historicalEvidence[1].observations[0].status, 429);
   const independentUrl = value => { const url = new URL(value); url.hash = ''; url.hostname = url.hostname.toLowerCase().replace(/\.+$/,'').replace(/^www\./,''); return url.href; };
   const exactRestrictionKeys = new Set(committedObservations.filter(row => [401,403].includes(row.status)).flatMap(row => [independentUrl(row.url),independentUrl(row.finalUrl)]));
   const restrictedHosts = new Set(committedObservations.filter(row => row.status === 429).map(row => new URL(independentUrl(row.finalUrl)).hostname));
-  assert.equal(exactRestrictionKeys.size, 79, 'Independent normalized exact source/final restriction union');
+  assert.equal(exactRestrictionKeys.size, 81, 'Independent normalized exact source/final restriction union');
   assert.deepEqual([...restrictedHosts].sort(), ['cantongardenns.com','instagram.com','linkedin.com']);
   for (const group of [committedPolicy,...committedPolicy.historicalEvidence]) {
     assert.equal(group.provenance.repository, 'JeremyHennessy/HalifaxSourced');
@@ -247,9 +249,10 @@ process.on('exit', () => {
       const p = group.provenance;
       const expected = {
         '39792176695':{sourceCommitSha:'c1fd484193edb6200a508f067f00d47ac6656de2',workflowJobId:119870732180,logSha256:'24ccd634fb6f1b5677901fb4250bef55a2b80539918576f8b5d7d377db958bca',policy:originalPolicy},
-        '39801572908':{sourceCommitSha:'8baaca6180488c84ba31d0bb4eef9617a5b1aa0d',workflowJobId:119903376388,logSha256:'75c5846730bc055cb7383f1b1982e2acd67570628a7e00d1008cd01deb3110b0',policy:previousPolicy}
+        '39801572908':{sourceCommitSha:'8baaca6180488c84ba31d0bb4eef9617a5b1aa0d',workflowJobId:119903376388,logSha256:'75c5846730bc055cb7383f1b1982e2acd67570628a7e00d1008cd01deb3110b0',policy:beforeOrderOnlinePolicy},
+        '39817151873':{sourceCommitSha:'18091d41dbcc1d57e759cb9149d93f5c2396a251',workflowJobId:119958511096,logSha256:'5090ddddc0d48d57a60333afb892f42c06a5456cb47066dc3ed324376f975df6',policy:beforeCurrentMainPolicy}
       }[p.workflowRunId];
-      assert(expected,'Only the two specifically reviewed failed QA runs may supply these real observations');
+      assert(expected,'Only the three specifically reviewed failed QA runs may supply these real observations');
       assert.equal(p.sourceCommitSha,expected.sourceCommitSha);
       assert.equal(p.workflowRunAttempt,'1');
       assert.equal(p.workflowJob,'data-integrity');
@@ -272,26 +275,26 @@ process.on('exit', () => {
       assert(group.observations.every(row => Date.parse(row.observedAt) <= Date.parse(group.provenance.reportGeneratedAt)));
     }
   }
-  assert.deepEqual(committedPolicy.historicalEvidence.slice(2).map(group=>group.observations[0].status),[403,403,403,403,429,403]);
+  assert.deepEqual(committedPolicy.historicalEvidence.slice(2).map(group=>group.observations[0].status),[403,403,403,403,429,403,403,403]);
   await configure({policy:committedPolicy, catalog:catalogFor(committedObservations.map(r => r.url))});
   const fakeRecent = {version:3, sourceCommitSha:sha, accessPolicySha256:digest(committedPolicy), results:committedObservations.map((r, i) => ({url:r.url, state:'ok', status:200, observedAt:fresh(), attempted:true, lifecycle:[{kind:'closures', phrase:'permanently closed'}], entityIds:['fixture-' + i], kinds:['official_website']}))};
   await save(reportPath, fakeRecent);
   let result = await collect({}, {LINK_HEALTH_REUSE_RECENT:'1'});
   assert.equal(result.events.length, 0);
-  assert.equal(result.report.results.length, 220);
+  assert.equal(result.report.results.length, 222);
   result.report.results.forEach((r, i) => held(r, committedObservations[i]));
-  assert.equal(result.report.counts.held, 220);
+  assert.equal(result.report.counts.held, 222);
   assert.equal(result.report.counts.attempted, 0);
   assert.deepEqual(result.report.lifecycleCandidates, []);
   assert.deepEqual(result.report.pendingAccessHolds, []);
   counts(result.report);
   await gate(result.report);
-  checked('all 220 committed artifact/log restrictions retain original evidence and make zero calls; independent union is 79 exact keys and three hosts');
+  checked('all 222 committed artifact/log restrictions retain original evidence and make zero calls; independent union is 81 exact keys and three hosts');
 
-  // The next failed QA run adds exactly one URL, never an order.online host hold.
-  const latestObservation = committedPolicy.historicalEvidence.at(-1).observations[0];
+  // The previous failed QA run adds exactly one URL, never an order.online host hold.
+  const latestObservation = committedPolicy.historicalEvidence.at(-3).observations[0];
   assert.deepEqual(latestObservation,{url:'https://order.online/business/~277519',finalUrl:'https://order.online/business/~277519',status:403,observedAt:'2026-10-22T15:11:21.212Z'});
-  assert.equal(committedPolicy.historicalEvidence.at(-1).provenance.diagnostic.evidence.receipt.attemptedAt,'2026-10-22T15:11:21.146Z');
+  assert.equal(committedPolicy.historicalEvidence.at(-3).provenance.diagnostic.evidence.receipt.attemptedAt,'2026-10-22T15:11:21.146Z');
   const latestAliases = [latestObservation.url,'https://www.order.online./business/~277519#retained-reference'];
   const unrelatedBusinessUrls = ['https://order.online/business/fixture-unrelated-one','https://order.online/business/fixture-unrelated-two'];
   await configure({policy:committedPolicy,catalog:catalogFor([...latestAliases,...unrelatedBusinessUrls])});
@@ -305,6 +308,30 @@ process.on('exit', () => {
   assert.equal(result.report.counts.attempted,2);
   await gate(result.report);
   checked('new actual order.online403 and its normalized alias are unattempted with the original clock; unrelated same-host business fixtures remain unaffected');
+
+  // Current main's two reviewed 403s are exact URL holds. Preserve their
+  // source identities while allowing unrelated paths on the same hosts.
+  const currentMainObservations = committedPolicy.historicalEvidence.slice(-2).map(group => group.observations[0]);
+  assert.deepEqual(currentMainObservations,[
+    {url:'https://classic-pizza.order-online.ai/',finalUrl:'https://classic-pizza.order-online.ai/',status:403,observedAt:'2026-10-22T16:54:04.780Z'},
+    {url:'https://maygarden.order-online.ai/#/',finalUrl:'https://maygarden.order-online.ai/#/',status:403,observedAt:'2026-10-22T16:54:35.670Z'}
+  ]);
+  const currentAliases = ['https://www.classic-pizza.order-online.ai./#menu','https://www.maygarden.order-online.ai./#retained-reference'];
+  const currentUnrelated = ['https://classic-pizza.order-online.ai/menu','https://maygarden.order-online.ai/menu'];
+  await configure({policy:committedPolicy,catalog:catalogFor([currentMainObservations[0].url,currentAliases[0],currentMainObservations[1].url,currentAliases[1],...currentUnrelated])});
+  result = await collect(Object.fromEntries(currentUnrelated.map(url=>[url,[ok]])));
+  held(result.report.results[0],currentMainObservations[0]);
+  held(result.report.results[1],null);
+  held(result.report.results[2],currentMainObservations[1]);
+  held(result.report.results[3],null);
+  assert.deepEqual(result.report.results[1].accessHold.evidence,currentMainObservations[0]);
+  assert.deepEqual(result.report.results[3].accessHold.evidence,currentMainObservations[1]);
+  assert.deepEqual(result.events.filter(event=>event.event==='fetch').map(event=>event.url),currentUnrelated);
+  assert(result.report.results.slice(4).every(row=>row.attempted && row.state==='ok' && row.status===200));
+  assert.equal(result.report.counts.held,4);
+  assert.equal(result.report.counts.attempted,2);
+  await gate(result.report);
+  checked('current main Classic Pizza and May Garden exact403 aliases stay unattempted with original clocks; unrelated same-host fixtures remain callable');
 
   const exact = 'https://www.exact-hold.example.com/denied?which=one';
   const final = 'https://exact-hold.example.com/login?return=one';

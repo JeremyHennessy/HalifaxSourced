@@ -1740,6 +1740,144 @@
           "observedAt": "2026-10-22T15:11:21.212Z"
         }
       ]
+    },
+    {
+      "provenance": {
+        "kind": "reviewed_workflow_log",
+        "repository": "JeremyHennessy/HalifaxSourced",
+        "sourceCommitSha": "18091d41dbcc1d57e759cb9149d93f5c2396a251",
+        "workflowRunId": "39817151873",
+        "workflowRunAttempt": "1",
+        "workflowJob": "data-integrity",
+        "workflowJobId": 119958511096,
+        "accessPolicySha256": "f30a03d7dbe7b22298e2e2145c17c4fa4e95ab3e1c1f4cc07b99f0c32cdd043e",
+        "logSha256": "5090ddddc0d48d57a60333afb892f42c06a5456cb47066dc3ed324376f975df6",
+        "diagnosticSha256": "e73eccde675dddee80e4ae85d574a450d549d5c8ef60bb8d44026d5c412259c0",
+        "receiptSha256": "2e55883ee987f2ca6b037ceed5778804cc414906ff8c6693aa5c9afb7c635d56",
+        "loggedAt": "2026-10-22T16:54:04.781Z",
+        "diagnostic": {
+          "version": 1,
+          "disposition": "nonpublishable_requires_review",
+          "kind": "http_restriction",
+          "repository": "JeremyHennessy/HalifaxSourced",
+          "workflowJob": "data-integrity",
+          "loggedAt": "2026-10-22T16:54:04.781Z",
+          "sourceCommitSha": "18091d41dbcc1d57e759cb9149d93f5c2396a251",
+          "sourceWorkflowRunId": "39817151873",
+          "sourceWorkflowRunAttempt": "1",
+          "accessPolicySha256": "f30a03d7dbe7b22298e2e2145c17c4fa4e95ab3e1c1f4cc07b99f0c32cdd043e",
+          "evidence": {
+            "hold": {
+              "id": "0c432e2e05a86cd0ccbc17f4a6aacd203844379a7df2635d4e5e87ba100a37e1",
+              "scope": "url",
+              "target": "https://classic-pizza.order-online.ai/",
+              "reason": "access_restricted",
+              "resume": "reviewed_evidence_required",
+              "evidence": {
+                "url": "https://classic-pizza.order-online.ai/",
+                "finalUrl": "https://classic-pizza.order-online.ai/",
+                "status": 403,
+                "observedAt": "2026-10-22T16:54:04.780Z"
+              },
+              "provenance": {
+                "kind": "current_run",
+                "sourceCommitSha": "18091d41dbcc1d57e759cb9149d93f5c2396a251",
+                "sourceWorkflowRunId": "39817151873",
+                "sourceWorkflowRunAttempt": "1",
+                "accessPolicySha256": "f30a03d7dbe7b22298e2e2145c17c4fa4e95ab3e1c1f4cc07b99f0c32cdd043e",
+                "requestId": "47"
+              }
+            },
+            "receipt": {
+              "requestId": "47",
+              "url": "https://classic-pizza.order-online.ai/",
+              "status": 403,
+              "observedAt": "2026-10-22T16:54:04.780Z",
+              "attemptedAt": "2026-10-22T16:54:04.233Z",
+              "mediaType": "text/html"
+            },
+            "late": false,
+            "suspensionId": null
+          }
+        }
+      },
+      "observations": [
+        {
+          "url": "https://classic-pizza.order-online.ai/",
+          "finalUrl": "https://classic-pizza.order-online.ai/",
+          "status": 403,
+          "observedAt": "2026-10-22T16:54:04.780Z"
+        }
+      ]
+    },
+    {
+      "provenance": {
+        "kind": "reviewed_workflow_log",
+        "repository": "JeremyHennessy/HalifaxSourced",
+        "sourceCommitSha": "18091d41dbcc1d57e759cb9149d93f5c2396a251",
+        "workflowRunId": "39817151873",
+        "workflowRunAttempt": "1",
+        "workflowJob": "data-integrity",
+        "workflowJobId": 119958511096,
+        "accessPolicySha256": "f30a03d7dbe7b22298e2e2145c17c4fa4e95ab3e1c1f4cc07b99f0c32cdd043e",
+        "logSha256": "5090ddddc0d48d57a60333afb892f42c06a5456cb47066dc3ed324376f975df6",
+        "diagnosticSha256": "0f146fc21bd03e3fc9ab880af29e960f9dc2b55c0706e185dd3ec0880f3e5106",
+        "receiptSha256": "10318838841d98dc475b354219596562a8cdc856988ef104577d83822f97e720",
+        "loggedAt": "2026-10-22T16:54:35.671Z",
+        "diagnostic": {
+          "version": 1,
+          "disposition": "nonpublishable_requires_review",
+          "kind": "http_restriction",
+          "repository": "JeremyHennessy/HalifaxSourced",
+          "workflowJob": "data-integrity",
+          "loggedAt": "2026-10-22T16:54:35.671Z",
+          "sourceCommitSha": "18091d41dbcc1d57e759cb9149d93f5c2396a251",
+          "sourceWorkflowRunId": "39817151873",
+          "sourceWorkflowRunAttempt": "1",
+          "accessPolicySha256": "f30a03d7dbe7b22298e2e2145c17c4fa4e95ab3e1c1f4cc07b99f0c32cdd043e",
+          "evidence": {
+            "hold": {
+              "id": "a7b16eee9085f3bc179745a5941bac1fa9c6c5a2ee0fb86f1ced5ad57bb4efcc",
+              "scope": "url",
+              "target": "https://maygarden.order-online.ai/",
+              "reason": "access_restricted",
+              "resume": "reviewed_evidence_required",
+              "evidence": {
+                "url": "https://maygarden.order-online.ai/#/",
+                "finalUrl": "https://maygarden.order-online.ai/#/",
+                "status": 403,
+                "observedAt": "2026-10-22T16:54:35.670Z"
+              },
+              "provenance": {
+                "kind": "current_run",
+                "sourceCommitSha": "18091d41dbcc1d57e759cb9149d93f5c2396a251",
+                "sourceWorkflowRunId": "39817151873",
+                "sourceWorkflowRunAttempt": "1",
+                "accessPolicySha256": "f30a03d7dbe7b22298e2e2145c17c4fa4e95ab3e1c1f4cc07b99f0c32cdd043e",
+                "requestId": "943"
+              }
+            },
+            "receipt": {
+              "requestId": "943",
+              "url": "https://maygarden.order-online.ai/#/",
+              "status": 403,
+              "observedAt": "2026-10-22T16:54:35.670Z",
+              "attemptedAt": "2026-10-22T16:54:35.468Z",
+              "mediaType": "text/html"
+            },
+            "late": false,
+            "suspensionId": null
+          }
+        }
+      },
+      "observations": [
+        {
+          "url": "https://maygarden.order-online.ai/#/",
+          "finalUrl": "https://maygarden.order-online.ai/#/",
+          "status": 403,
+          "observedAt": "2026-10-22T16:54:35.670Z"
+        }
+      ]
     }
   ]
 }
