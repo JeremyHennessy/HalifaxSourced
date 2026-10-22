@@ -182,7 +182,7 @@ collection coordination must enforce the reviewed policy-update boundary. Time
 passing or a later incidental 200 is never a hold-removal decision. No credentials,
 access, durable-state service or permissions were added.
 
-For non-QA producer failures, a reviewed `reviewed_workflow_log` evidence group can
+For QA or other producer failures, a reviewed `reviewed_workflow_log` evidence group can
 bind an original HTTP-restriction diagnostic to the exact repository, source SHA,
 workflow run/attempt/job identity, independently retrieved full job-log hash, and
 exact compact diagnostic/HTTP-receipt hashes. `loggedAt` is a diagnostic emission
@@ -195,8 +195,8 @@ status or observation clock, or retry a blocked target merely to fit this schema
 Before committing any such group, retrieve the actual job log and job metadata and
 independently verify those hashes and the selected original line. Local structural
 validation does not authenticate an external log merely because hashes are present.
-This candidate adds fixture-only coverage of the variant, not a production log
-observation or a new storage service.
+The variant has hostile fixture coverage and is also used below for five actual
+reviewed QA diagnostics. It adds no storage service or automatic cross-run writes.
 
 Content Quality Audit PRs run only exact-head, transport-denied fixtures; its
 scheduled/manual producer commands, bounds and schedule remain unchanged. Quality
@@ -243,7 +243,7 @@ Historical restriction union: the policy also preserves 26 exact Jungle Jim's
 Instagram 429 receipt from accepted run 39744158052/artifact 12411255693. Their own
 immutable ZIP/member hashes and original clocks are recorded in historical evidence
 groups. A later 200 is not a reviewed decision to lift an earlier restriction.
-The resulting 214 original receipt URLs yield 74 unique normalized exact 403
+That accepted-artifact union of 214 original receipt URLs yields 74 unique normalized exact 403
 original/final keys plus two canonical 429 hosts, covering 215 current reference
 URLs. One of those references had a source-response-dependent quarantine in the
 original artifact. The host hold prevents contacting it to recreate that redirect.
@@ -252,3 +252,27 @@ must come from actual decisions, not a projected replay of old redirect outcomes
 All ten locally retained accepted ZIPs were inspected offline; their 1,232 restriction
 rows add no URL/status pair outside this three-artifact union. No new source request
 was used to reconstruct this evidence. Public reference URLs remain unchanged.
+
+PR 159 Quality run 39792176695, attempt 1, `data-integrity` job 119870732180
+at source commit c1fd484193edb6200a508f067f00d47ac6656de2 failed closed after
+five new actual HTTP restrictions. Five appended `reviewed_workflow_log` groups
+preserve the original diagnostic and request/observation clocks from that job:
+four exact 403 URLs (two order.online paths, one Uber Eats URL and one SkipTheDishes
+URL), plus a canonical linkedin.com host hold from one 429. No Retry-After was
+recorded, and there were no unresolved-transport or late-restriction diagnostics.
+The full retrieved log SHA-256 is
+`24ccd634fb6f1b5677901fb4250bef55a2b80539918576f8b5d7d377db958bca`.
+Each compact diagnostic exactly matches its JSONL line in diagnostic artifact
+12431353274, ZIP SHA-256
+`b85096b6c05c52f7ff44ccc9bae6a34d1c248114c8878adb72a78ec5a1436d21`,
+and its actual receipt in the artifact's link report. This failed-run artifact is
+not an accepted release. Existing accepted-artifact evidence is unchanged.
+
+The expanded union has 219 observations (74 actual 403, 145 actual 429 and no
+production 401), 78 exact original/final 403 URL keys and three canonical 429 hosts.
+It holds 222 of the unchanged 1,060 release reference URLs. The seven additional
+held references are the four exact denied URLs and three LinkedIn references;
+the latter are host-scope decisions, not three separate 429 observations. No
+business facts, public URLs or lifecycle decisions are changed. The next hosted
+batch still requires independent review of these original receipts and metadata;
+neither elapsed time nor a failed job permits automatic source retries.

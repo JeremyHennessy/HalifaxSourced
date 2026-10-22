@@ -5,6 +5,7 @@ import { join, dirname } from 'node:path';
 import { spawnSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
+import { validateAccessPolicy } from './lib/link-access-policy.mjs';
 
 // Regression tests run the real collector and release gate in isolated trees.
 // The finite fetch preload has no path to the network: unexpected or unused
@@ -189,39 +190,63 @@ process.on('exit', () => {
     assert(Date.now() - Date.parse(row.assessedAt) < 10000, 'Assessment clock belongs to this run, not the old source evidence');
   }
 
-  // All 214 actual committed current and historical observations must suppress transport, even when
+  // All 219 actual committed current and historical observations must suppress transport, even when
   // a recent same-head success cache would otherwise be eligible for reuse.
   assert.equal(committedPolicy.observations.length, 187, 'Retain all reviewed incident observations');
-  assert.equal(committedObservations.length, 214, 'Retain earlier restrictions, not just the latest successful-source inventory');
-  assert.deepEqual(committedPolicy.historicalEvidence.map(group => [group.provenance.workflowRunId,group.observations.length]), [['39767300296',26],['39744158052',1]]);
+  assert.equal(committedObservations.length, 219, 'Retain earlier restrictions and all five newly reviewed HTTP receipts');
+  assert.deepEqual(committedPolicy.historicalEvidence.map(group => [group.provenance.workflowRunId,group.observations.length]), [['39767300296',26],['39744158052',1],...Array.from({length:5},()=>['39792176695',1])]);
+  const originalPolicy = {...clone(committedPolicy),historicalEvidence:clone(committedPolicy.historicalEvidence.slice(0,2))};
+  assert.equal(digest(originalPolicy),'1a77c729b7328969f7f244e6d4d1343dda513447a1f271e56cf75ee852c9c123','All original observations, clocks and provenance remain unchanged');
+  validateAccessPolicy(committedPolicy);
   assert(committedPolicy.historicalEvidence[0].observations.every(row => row.status === 403 && new URL(row.url).hostname === 'junglejims.ca'));
   assert.equal(committedPolicy.historicalEvidence[1].observations[0].status, 429);
   const independentUrl = value => { const url = new URL(value); url.hash = ''; url.hostname = url.hostname.toLowerCase().replace(/\.+$/,'').replace(/^www\./,''); return url.href; };
   const exactRestrictionKeys = new Set(committedObservations.filter(row => [401,403].includes(row.status)).flatMap(row => [independentUrl(row.url),independentUrl(row.finalUrl)]));
   const restrictedHosts = new Set(committedObservations.filter(row => row.status === 429).map(row => new URL(independentUrl(row.finalUrl)).hostname));
-  assert.equal(exactRestrictionKeys.size, 74, 'Independent normalized exact source/final restriction union');
-  assert.deepEqual([...restrictedHosts].sort(), ['cantongardenns.com','instagram.com']);
+  assert.equal(exactRestrictionKeys.size, 78, 'Independent normalized exact source/final restriction union');
+  assert.deepEqual([...restrictedHosts].sort(), ['cantongardenns.com','instagram.com','linkedin.com']);
   for (const group of [committedPolicy,...committedPolicy.historicalEvidence]) {
     assert.equal(group.provenance.repository, 'JeremyHennessy/HalifaxSourced');
-    assert.equal(group.provenance.member, 'data/build/source-link-health-report.json');
-    assert.match(group.provenance.artifactSha256, /^[a-f0-9]{64}$/);
-    assert.match(group.provenance.memberSha256, /^[a-f0-9]{64}$/);
-    assert(group.observations.every(row => Date.parse(row.observedAt) <= Date.parse(group.provenance.reportGeneratedAt)));
+    if (group.provenance.kind === 'reviewed_workflow_log') {
+      const p = group.provenance;
+      assert.equal(p.sourceCommitSha,'c1fd484193edb6200a508f067f00d47ac6656de2');
+      assert.equal(p.workflowRunId,'39792176695');
+      assert.equal(p.workflowRunAttempt,'1');
+      assert.equal(p.workflowJob,'data-integrity');
+      assert.equal(p.workflowJobId,119870732180);
+      assert.equal(p.logSha256,'24ccd634fb6f1b5677901fb4250bef55a2b80539918576f8b5d7d377db958bca');
+      assert.equal(p.accessPolicySha256,digest(originalPolicy));
+      assert.equal(p.diagnostic.kind,'http_restriction');
+      assert.equal(p.diagnosticSha256,digest(p.diagnostic));
+      assert.equal(p.receiptSha256,digest(p.diagnostic.evidence.receipt));
+      assert.deepEqual(group.observations,[p.diagnostic.evidence.hold.evidence]);
+      assert.equal(p.diagnostic.evidence.late,false);
+      assert.equal(p.diagnostic.evidence.suspensionId,null);
+      assert(!Object.hasOwn(p.diagnostic.evidence.receipt,'retryAfter'),'No Retry-After header was recorded');
+      assert(group.observations.every(row => Date.parse(row.observedAt) <= Date.parse(p.loggedAt)));
+    } else {
+      assert.equal(group.provenance.kind, undefined, 'Only the strict original artifact provenance or reviewed workflow-log variant is accepted');
+      assert.equal(group.provenance.member, 'data/build/source-link-health-report.json');
+      assert.match(group.provenance.artifactSha256, /^[a-f0-9]{64}$/);
+      assert.match(group.provenance.memberSha256, /^[a-f0-9]{64}$/);
+      assert(group.observations.every(row => Date.parse(row.observedAt) <= Date.parse(group.provenance.reportGeneratedAt)));
+    }
   }
+  assert.deepEqual(committedPolicy.historicalEvidence.slice(2).map(group=>group.observations[0].status),[403,403,403,403,429]);
   await configure({policy:committedPolicy, catalog:catalogFor(committedObservations.map(r => r.url))});
   const fakeRecent = {version:3, sourceCommitSha:sha, accessPolicySha256:digest(committedPolicy), results:committedObservations.map((r, i) => ({url:r.url, state:'ok', status:200, observedAt:fresh(), attempted:true, lifecycle:[{kind:'closures', phrase:'permanently closed'}], entityIds:['fixture-' + i], kinds:['official_website']}))};
   await save(reportPath, fakeRecent);
   let result = await collect({}, {LINK_HEALTH_REUSE_RECENT:'1'});
   assert.equal(result.events.length, 0);
-  assert.equal(result.report.results.length, 214);
+  assert.equal(result.report.results.length, 219);
   result.report.results.forEach((r, i) => held(r, committedObservations[i]));
-  assert.equal(result.report.counts.held, 214);
+  assert.equal(result.report.counts.held, 219);
   assert.equal(result.report.counts.attempted, 0);
   assert.deepEqual(result.report.lifecycleCandidates, []);
   assert.deepEqual(result.report.pendingAccessHolds, []);
   counts(result.report);
   await gate(result.report);
-  checked('all 214 committed current/historical restrictions retain original evidence and make zero calls; independent union is 74 exact keys and two hosts');
+  checked('all 219 committed artifact/log restrictions retain original evidence and make zero calls; independent union is 78 exact keys and three hosts');
 
   const exact = 'https://www.exact-hold.example.com/denied?which=one';
   const final = 'https://exact-hold.example.com/login?return=one';

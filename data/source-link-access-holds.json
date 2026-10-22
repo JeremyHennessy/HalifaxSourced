@@ -1326,6 +1326,351 @@
           "observedAt": "2026-10-22T08:01:07.867Z"
         }
       ]
+    },
+    {
+      "provenance": {
+        "kind": "reviewed_workflow_log",
+        "repository": "JeremyHennessy/HalifaxSourced",
+        "sourceCommitSha": "c1fd484193edb6200a508f067f00d47ac6656de2",
+        "workflowRunId": "39792176695",
+        "workflowRunAttempt": "1",
+        "workflowJob": "data-integrity",
+        "workflowJobId": 119870732180,
+        "accessPolicySha256": "1a77c729b7328969f7f244e6d4d1343dda513447a1f271e56cf75ee852c9c123",
+        "logSha256": "24ccd634fb6f1b5677901fb4250bef55a2b80539918576f8b5d7d377db958bca",
+        "diagnosticSha256": "0c482e228f11869714beee64c5db2c791c60af65f902cd8153f8858a23418200",
+        "receiptSha256": "ee4ea94823b803cdd05734e6b0b261613a45c26878667df72440126aae897aad",
+        "loggedAt": "2026-10-22T14:06:31.797Z",
+        "diagnostic": {
+          "version": 1,
+          "disposition": "nonpublishable_requires_review",
+          "kind": "http_restriction",
+          "repository": "JeremyHennessy/HalifaxSourced",
+          "workflowJob": "data-integrity",
+          "loggedAt": "2026-10-22T14:06:31.797Z",
+          "sourceCommitSha": "c1fd484193edb6200a508f067f00d47ac6656de2",
+          "sourceWorkflowRunId": "39792176695",
+          "sourceWorkflowRunAttempt": "1",
+          "accessPolicySha256": "1a77c729b7328969f7f244e6d4d1343dda513447a1f271e56cf75ee852c9c123",
+          "evidence": {
+            "hold": {
+              "id": "a86b31988336bc61a9c94c20884939d76ae0382b62960877bc50fade0edc4e34",
+              "scope": "url",
+              "target": "https://ubereats.com/ca/store/krave-burger-vero-pizzeria/yw9NTYvvWuGpyTfGh1GyEA?diningMode=PICKUP&sc=SEARCH_SUGGESTION",
+              "reason": "access_restricted",
+              "resume": "reviewed_evidence_required",
+              "evidence": {
+                "url": "https://www.ubereats.com/ca/store/krave-burger-vero-pizzeria/yw9NTYvvWuGpyTfGh1GyEA?diningMode=PICKUP&sc=SEARCH_SUGGESTION",
+                "finalUrl": "https://www.ubereats.com/ca/store/krave-burger-vero-pizzeria/yw9NTYvvWuGpyTfGh1GyEA?diningMode=PICKUP&sc=SEARCH_SUGGESTION",
+                "status": 403,
+                "observedAt": "2026-10-22T14:06:31.797Z"
+              },
+              "provenance": {
+                "kind": "current_run",
+                "sourceCommitSha": "c1fd484193edb6200a508f067f00d47ac6656de2",
+                "sourceWorkflowRunId": "39792176695",
+                "sourceWorkflowRunAttempt": "1",
+                "accessPolicySha256": "1a77c729b7328969f7f244e6d4d1343dda513447a1f271e56cf75ee852c9c123",
+                "requestId": "490"
+              }
+            },
+            "receipt": {
+              "requestId": "490",
+              "url": "https://www.ubereats.com/ca/store/krave-burger-vero-pizzeria/yw9NTYvvWuGpyTfGh1GyEA?diningMode=PICKUP&sc=SEARCH_SUGGESTION",
+              "status": 403,
+              "observedAt": "2026-10-22T14:06:31.797Z",
+              "attemptedAt": "2026-10-22T14:06:31.609Z",
+              "mediaType": "text/html"
+            },
+            "late": false,
+            "suspensionId": null
+          }
+        }
+      },
+      "observations": [
+        {
+          "url": "https://www.ubereats.com/ca/store/krave-burger-vero-pizzeria/yw9NTYvvWuGpyTfGh1GyEA?diningMode=PICKUP&sc=SEARCH_SUGGESTION",
+          "finalUrl": "https://www.ubereats.com/ca/store/krave-burger-vero-pizzeria/yw9NTYvvWuGpyTfGh1GyEA?diningMode=PICKUP&sc=SEARCH_SUGGESTION",
+          "status": 403,
+          "observedAt": "2026-10-22T14:06:31.797Z"
+        }
+      ]
+    },
+    {
+      "provenance": {
+        "kind": "reviewed_workflow_log",
+        "repository": "JeremyHennessy/HalifaxSourced",
+        "sourceCommitSha": "c1fd484193edb6200a508f067f00d47ac6656de2",
+        "workflowRunId": "39792176695",
+        "workflowRunAttempt": "1",
+        "workflowJob": "data-integrity",
+        "workflowJobId": 119870732180,
+        "accessPolicySha256": "1a77c729b7328969f7f244e6d4d1343dda513447a1f271e56cf75ee852c9c123",
+        "logSha256": "24ccd634fb6f1b5677901fb4250bef55a2b80539918576f8b5d7d377db958bca",
+        "diagnosticSha256": "ee915cee47f5fe7a462a5aa473b4a965577983a6c76cc41c123a82676c7cbe4b",
+        "receiptSha256": "97bd7e1626ec70aa89f5c9cae753c88b3d4db21408d367f7d5dd58259e1d9490",
+        "loggedAt": "2026-10-22T14:06:32.729Z",
+        "diagnostic": {
+          "version": 1,
+          "disposition": "nonpublishable_requires_review",
+          "kind": "http_restriction",
+          "repository": "JeremyHennessy/HalifaxSourced",
+          "workflowJob": "data-integrity",
+          "loggedAt": "2026-10-22T14:06:32.729Z",
+          "sourceCommitSha": "c1fd484193edb6200a508f067f00d47ac6656de2",
+          "sourceWorkflowRunId": "39792176695",
+          "sourceWorkflowRunAttempt": "1",
+          "accessPolicySha256": "1a77c729b7328969f7f244e6d4d1343dda513447a1f271e56cf75ee852c9c123",
+          "evidence": {
+            "hold": {
+              "id": "c9823632a44745cb1ad7cd2135d30f3f0f6e45fad496437e06d7f7d3595a1a4e",
+              "scope": "url",
+              "target": "https://order.online/business/~851745",
+              "reason": "access_restricted",
+              "resume": "reviewed_evidence_required",
+              "evidence": {
+                "url": "https://order.online/business/~851745",
+                "finalUrl": "https://order.online/business/~851745",
+                "status": 403,
+                "observedAt": "2026-10-22T14:06:32.728Z"
+              },
+              "provenance": {
+                "kind": "current_run",
+                "sourceCommitSha": "c1fd484193edb6200a508f067f00d47ac6656de2",
+                "sourceWorkflowRunId": "39792176695",
+                "sourceWorkflowRunAttempt": "1",
+                "accessPolicySha256": "1a77c729b7328969f7f244e6d4d1343dda513447a1f271e56cf75ee852c9c123",
+                "requestId": "466"
+              }
+            },
+            "receipt": {
+              "requestId": "466",
+              "url": "https://order.online/business/~851745",
+              "status": 403,
+              "observedAt": "2026-10-22T14:06:32.728Z",
+              "attemptedAt": "2026-10-22T14:06:30.612Z",
+              "mediaType": "text/html"
+            },
+            "late": false,
+            "suspensionId": null
+          }
+        }
+      },
+      "observations": [
+        {
+          "url": "https://order.online/business/~851745",
+          "finalUrl": "https://order.online/business/~851745",
+          "status": 403,
+          "observedAt": "2026-10-22T14:06:32.728Z"
+        }
+      ]
+    },
+    {
+      "provenance": {
+        "kind": "reviewed_workflow_log",
+        "repository": "JeremyHennessy/HalifaxSourced",
+        "sourceCommitSha": "c1fd484193edb6200a508f067f00d47ac6656de2",
+        "workflowRunId": "39792176695",
+        "workflowRunAttempt": "1",
+        "workflowJob": "data-integrity",
+        "workflowJobId": 119870732180,
+        "accessPolicySha256": "1a77c729b7328969f7f244e6d4d1343dda513447a1f271e56cf75ee852c9c123",
+        "logSha256": "24ccd634fb6f1b5677901fb4250bef55a2b80539918576f8b5d7d377db958bca",
+        "diagnosticSha256": "aa2a71870e27cab19c9a0b4c26779f4db2997aae826f81ddc394bdd68ada236d",
+        "receiptSha256": "0da5011f0a45607287dc88a062ffbcc6d92c390cba1267c9a4bc5a218ced6077",
+        "loggedAt": "2026-10-22T14:06:38.284Z",
+        "diagnostic": {
+          "version": 1,
+          "disposition": "nonpublishable_requires_review",
+          "kind": "http_restriction",
+          "repository": "JeremyHennessy/HalifaxSourced",
+          "workflowJob": "data-integrity",
+          "loggedAt": "2026-10-22T14:06:38.284Z",
+          "sourceCommitSha": "c1fd484193edb6200a508f067f00d47ac6656de2",
+          "sourceWorkflowRunId": "39792176695",
+          "sourceWorkflowRunAttempt": "1",
+          "accessPolicySha256": "1a77c729b7328969f7f244e6d4d1343dda513447a1f271e56cf75ee852c9c123",
+          "evidence": {
+            "hold": {
+              "id": "c78aa1145a3acd743c12a1ae4cd222a084d9a42e29cddd3cb5751f9228800ce1",
+              "scope": "url",
+              "target": "https://skipthedishes.com/king-of-donair-quinpool",
+              "reason": "access_restricted",
+              "resume": "reviewed_evidence_required",
+              "evidence": {
+                "url": "https://www.skipthedishes.com/king-of-donair-quinpool",
+                "finalUrl": "https://www.skipthedishes.com/king-of-donair-quinpool",
+                "status": 403,
+                "observedAt": "2026-10-22T14:06:38.284Z"
+              },
+              "provenance": {
+                "kind": "current_run",
+                "sourceCommitSha": "c1fd484193edb6200a508f067f00d47ac6656de2",
+                "sourceWorkflowRunId": "39792176695",
+                "sourceWorkflowRunAttempt": "1",
+                "accessPolicySha256": "1a77c729b7328969f7f244e6d4d1343dda513447a1f271e56cf75ee852c9c123",
+                "requestId": "599"
+              }
+            },
+            "receipt": {
+              "requestId": "599",
+              "url": "https://www.skipthedishes.com/king-of-donair-quinpool",
+              "status": 403,
+              "observedAt": "2026-10-22T14:06:38.284Z",
+              "attemptedAt": "2026-10-22T14:06:38.137Z",
+              "mediaType": "text/html"
+            },
+            "late": false,
+            "suspensionId": null
+          }
+        }
+      },
+      "observations": [
+        {
+          "url": "https://www.skipthedishes.com/king-of-donair-quinpool",
+          "finalUrl": "https://www.skipthedishes.com/king-of-donair-quinpool",
+          "status": 403,
+          "observedAt": "2026-10-22T14:06:38.284Z"
+        }
+      ]
+    },
+    {
+      "provenance": {
+        "kind": "reviewed_workflow_log",
+        "repository": "JeremyHennessy/HalifaxSourced",
+        "sourceCommitSha": "c1fd484193edb6200a508f067f00d47ac6656de2",
+        "workflowRunId": "39792176695",
+        "workflowRunAttempt": "1",
+        "workflowJob": "data-integrity",
+        "workflowJobId": 119870732180,
+        "accessPolicySha256": "1a77c729b7328969f7f244e6d4d1343dda513447a1f271e56cf75ee852c9c123",
+        "logSha256": "24ccd634fb6f1b5677901fb4250bef55a2b80539918576f8b5d7d377db958bca",
+        "diagnosticSha256": "b34cdc3d3b370e603c0bde6f94b2b08b9145251fe8a52dab1884cf1da71af7d0",
+        "receiptSha256": "036daa43ea5fa7ae2ebd9c9503e8debad9a63be8e3087b8cd19a487f9e3e0781",
+        "loggedAt": "2026-10-22T14:06:39.272Z",
+        "diagnostic": {
+          "version": 1,
+          "disposition": "nonpublishable_requires_review",
+          "kind": "http_restriction",
+          "repository": "JeremyHennessy/HalifaxSourced",
+          "workflowJob": "data-integrity",
+          "loggedAt": "2026-10-22T14:06:39.272Z",
+          "sourceCommitSha": "c1fd484193edb6200a508f067f00d47ac6656de2",
+          "sourceWorkflowRunId": "39792176695",
+          "sourceWorkflowRunAttempt": "1",
+          "accessPolicySha256": "1a77c729b7328969f7f244e6d4d1343dda513447a1f271e56cf75ee852c9c123",
+          "evidence": {
+            "hold": {
+              "id": "bf03f783de80bc8a4213311bb80b8f85f4733eeec94fd9d3380f7fef18249000",
+              "scope": "url",
+              "target": "https://order.online/business/~11847598",
+              "reason": "access_restricted",
+              "resume": "reviewed_evidence_required",
+              "evidence": {
+                "url": "https://order.online/business/~11847598",
+                "finalUrl": "https://order.online/business/~11847598",
+                "status": 403,
+                "observedAt": "2026-10-22T14:06:39.272Z"
+              },
+              "provenance": {
+                "kind": "current_run",
+                "sourceCommitSha": "c1fd484193edb6200a508f067f00d47ac6656de2",
+                "sourceWorkflowRunId": "39792176695",
+                "sourceWorkflowRunAttempt": "1",
+                "accessPolicySha256": "1a77c729b7328969f7f244e6d4d1343dda513447a1f271e56cf75ee852c9c123",
+                "requestId": "634"
+              }
+            },
+            "receipt": {
+              "requestId": "634",
+              "url": "https://order.online/business/~11847598",
+              "status": 403,
+              "observedAt": "2026-10-22T14:06:39.272Z",
+              "attemptedAt": "2026-10-22T14:06:39.215Z",
+              "mediaType": "text/html"
+            },
+            "late": false,
+            "suspensionId": null
+          }
+        }
+      },
+      "observations": [
+        {
+          "url": "https://order.online/business/~11847598",
+          "finalUrl": "https://order.online/business/~11847598",
+          "status": 403,
+          "observedAt": "2026-10-22T14:06:39.272Z"
+        }
+      ]
+    },
+    {
+      "provenance": {
+        "kind": "reviewed_workflow_log",
+        "repository": "JeremyHennessy/HalifaxSourced",
+        "sourceCommitSha": "c1fd484193edb6200a508f067f00d47ac6656de2",
+        "workflowRunId": "39792176695",
+        "workflowRunAttempt": "1",
+        "workflowJob": "data-integrity",
+        "workflowJobId": 119870732180,
+        "accessPolicySha256": "1a77c729b7328969f7f244e6d4d1343dda513447a1f271e56cf75ee852c9c123",
+        "logSha256": "24ccd634fb6f1b5677901fb4250bef55a2b80539918576f8b5d7d377db958bca",
+        "diagnosticSha256": "80268ddcfbcb56a3197d67f88a02aeb896f26d7f38e6788528f29a7f810c8252",
+        "receiptSha256": "60bfbdf0ca20f3dc76d3860b69e3baadddd1ef073e6ef7b755d77cc4c9b1565c",
+        "loggedAt": "2026-10-22T14:06:42.883Z",
+        "diagnostic": {
+          "version": 1,
+          "disposition": "nonpublishable_requires_review",
+          "kind": "http_restriction",
+          "repository": "JeremyHennessy/HalifaxSourced",
+          "workflowJob": "data-integrity",
+          "loggedAt": "2026-10-22T14:06:42.883Z",
+          "sourceCommitSha": "c1fd484193edb6200a508f067f00d47ac6656de2",
+          "sourceWorkflowRunId": "39792176695",
+          "sourceWorkflowRunAttempt": "1",
+          "accessPolicySha256": "1a77c729b7328969f7f244e6d4d1343dda513447a1f271e56cf75ee852c9c123",
+          "evidence": {
+            "hold": {
+              "id": "b63e6afec6004b25e154f0192b66534e0c67eed0a029c7f7c513e6d36982d0f9",
+              "scope": "host",
+              "target": "linkedin.com",
+              "reason": "rate_limited",
+              "resume": "reviewed_evidence_required",
+              "evidence": {
+                "url": "https://www.linkedin.com/school/universityofkingscollege/",
+                "finalUrl": "https://www.linkedin.com/school/universityofkingscollege/",
+                "status": 429,
+                "observedAt": "2026-10-22T14:06:42.882Z"
+              },
+              "provenance": {
+                "kind": "current_run",
+                "sourceCommitSha": "c1fd484193edb6200a508f067f00d47ac6656de2",
+                "sourceWorkflowRunId": "39792176695",
+                "sourceWorkflowRunAttempt": "1",
+                "accessPolicySha256": "1a77c729b7328969f7f244e6d4d1343dda513447a1f271e56cf75ee852c9c123",
+                "requestId": "763"
+              }
+            },
+            "receipt": {
+              "requestId": "763",
+              "url": "https://www.linkedin.com/school/universityofkingscollege/",
+              "status": 429,
+              "observedAt": "2026-10-22T14:06:42.882Z",
+              "attemptedAt": "2026-10-22T14:06:42.755Z",
+              "mediaType": "text/html"
+            },
+            "late": false,
+            "suspensionId": null
+          }
+        }
+      },
+      "observations": [
+        {
+          "url": "https://www.linkedin.com/school/universityofkingscollege/",
+          "finalUrl": "https://www.linkedin.com/school/universityofkingscollege/",
+          "status": 429,
+          "observedAt": "2026-10-22T14:06:42.882Z"
+        }
+      ]
     }
   ]
 }
