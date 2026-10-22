@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
+import vm from 'node:vm';
 import { LANES, planPreviewUpdates, validateRun, PR_CREATION_BLOCKER, laneForPath, promotionLane, reservedBranchNames } from './lib/preview-coordinator.mjs';
 const repository = 'JeremyHennessy/HalifaxSourced';
 const now = '2026-10-20T15:00:00Z';
@@ -55,5 +56,108 @@ test('reopened old source review still reserves both source lanes',()=>{const st
 test('changed preserved source head blocks replacement and overlapping social lane',()=>{const state=fresh();state.lanes[source.artifact].retiredBranchConflicts=[{branch:source.retiredBranches[0].branch,actualSha:'owner-edit'}];assert.equal(held(state,source.artifact).reason,'retired-branch-changed');assert.equal(held(state,social.artifact).reason,'retired-branch-changed');assert.equal(held(state,events.artifact).status,'ready');});
 test('unchanged preserved old heads do not reserve fresh replacement branches',()=>{const state=fresh();state.lanes[source.artifact].retiredBranchConflicts=[];assert.equal(held(state,source.artifact).status,'ready');assert.equal(planPreviewUpdates(state).matrix.include.find(row=>row.artifact_name===source.artifact).expected_sha,'');});
 test('publisher uses the same branch policy and read-only dispatch skips mutations',()=>{const workflow=readFileSync(new URL('../.github/workflows/promote-preview-artifacts.yml',import.meta.url),'utf8');assert(workflow.includes('node scripts/preview-branch-policy.mjs target'));assert(workflow.includes('node scripts/preview-branch-policy.mjs peers'));assert(workflow.includes("inputs.dry_run != true"));assert(reservedBranchNames(source.artifact).includes(source.retiredBranches[0].branch));assert(reservedBranchNames(source.artifact).includes(social.branch));});
+
+// Admission must run before the coordinator considers ANY retained lane. Evaluate
+// the expression extracted from the real reconcile job rather than a copied predicate.
+const promotionWorkflow = readFileSync(new URL('../.github/workflows/promote-preview-artifacts.yml', import.meta.url), 'utf8');
+const cityGuard = "(github.event.workflow_run.name != 'City Events Preview' || github.event.workflow_run.event == 'schedule' || github.event.workflow_run.event == 'workflow_dispatch')";
+function reconcileCondition(workflow) {
+  const reconcile = workflow.match(/^  reconcile:\n([\s\S]*?)(?=^  promote:)/m)?.[1];
+  assert(reconcile, 'Reconcile job exists');
+  const expression = reconcile.match(/^    if: >-\n([\s\S]*?)(?=^    runs-on:)/m)?.[1]?.trim();
+  assert(expression, 'Admission is on reconcile itself, before checkout, planning or diagnostic upload');
+  return expression;
+}
+const admitted = (expression, run, event_name = 'workflow_run') => vm.runInNewContext(expression, { github: { event_name, repository, event: { workflow_run: run } } });
+const admissionCases = [];
+for (const lane of LANES) {
+  for (const event of ['pull_request', 'pull_request_target', 'push', 'schedule', 'workflow_dispatch', undefined, 'unknown']) {
+    // Existing non-City admission semantics are intentionally unchanged, including
+    // unknown non-PR event values. validateRun still performs its own trust checks.
+    const expected = lane === events ? ['schedule', 'workflow_dispatch'].includes(event) : event !== 'pull_request';
+    admissionCases.push([`${lane.workflow}: ${String(event)}`, { ...runFor(lane), event }, expected]);
+  }
+}
+for (const event of ['schedule', 'workflow_dispatch']) {
+  for (const [label, overrides] of [
+    ['fork', { head_repository: { full_name: 'other/fork' } }],
+    ['failed', { conclusion: 'failure' }],
+    ['cancelled', { conclusion: 'cancelled' }],
+    ['wrong branch', { head_branch: 'feature' }]
+  ]) admissionCases.push([`City ${event} ${label}`, { ...runFor(events), event, ...overrides }, false]);
+}
+function assertTruthTable(expression) {
+  for (const [label, run, expected] of admissionCases) assert.equal(admitted(expression, run), expected, label);
+  assert.equal(admitted(expression, undefined, 'workflow_dispatch'), true, 'Explicit coordinator manual invocation remains admitted without workflow_run metadata');
+}
+function assertAdmissionTruthTable(workflow) {
+  const expression = reconcileCondition(workflow);
+  const normalized = expression.replace(/\s+/g, ' ');
+  const trustedBranch = "github.event_name == 'workflow_dispatch' || ( github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main' && github.event.workflow_run.head_repository.full_name == github.repository && github.event.workflow_run.event != 'pull_request' && " + cityGuard + ' )';
+  assert.equal(normalized, trustedBranch, 'City allowlist must be a conjunct inside the existing trusted-success branch');
+  assertTruthTable(expression);
+  return expression;
+}
+const admission = assertAdmissionTruthTable(promotionWorkflow);
+test('actual reconcile condition truth table preserves trusted producers and rejects City validation events', () => {
+  assert.equal(admissionCases.length, 29);
+});
+test('City validation push cannot reconcile ready older artifacts from ANY retained lane', () => {
+  const state = fresh();
+  const queue = planPreviewUpdates(state).matrix.include;
+  assert.deepEqual(queue.map(row => row.artifact_name), LANES.map(lane => lane.artifact));
+  assert.equal(queue.find(row => row.artifact_name === events.artifact).run_id, '101');
+  const validationPush = { ...runFor(events, 999, '2026-10-20T14:00:00Z'), event: 'push', artifacts: [] };
+  assert.equal(validateRun(validationPush, events, repository, now), 'artifact-not-retained');
+  assert.equal(admitted(admission, validationPush), false, 'Missing trigger artifact alone would not protect the already-ready queue');
+  assert.equal(admitted(admission, { ...validationPush, event: 'pull_request' }), false);
+  assert.equal(queue.length, 3, 'Admission guard, not absence of retained work, prevents all downstream execution');
+});
+for (const event of ['schedule', 'workflow_dispatch']) test(`exact manual selection retains successful City ${event} producer provenance`, () => {
+  const state = fresh();
+  const selected = { ...runFor(events, 77, '2026-10-19T12:00:00Z'), event, head_sha: 'historical-producer-sha' };
+  state.lanes[events.artifact].runs.push(selected);
+  state.manual = { artifact: events.artifact, runId: '77' };
+  assert.equal(validateRun(selected, events, repository, now), null);
+  assert.equal(admitted(admission, selected), true);
+  const plan = planPreviewUpdates(state);
+  assert.equal(plan.matrix.include.length, 1);
+  assert.equal(plan.matrix.include[0].run_id, '77');
+  assert.equal(plan.matrix.include[0].artifact_name, events.artifact);
+  assert.equal(plan.matrix.include[0].source_run_url, selected.html_url);
+  assert.equal(plan.matrix.include[0].source_run_created_at, selected.created_at);
+});
+test('skipped reconcile cannot reach promotion, downloads, pushes, PRs, dispatch or always receipt', () => {
+  const promote = promotionWorkflow.match(/^  promote:\n([\s\S]*)$/m)?.[1];
+  assert(promote);
+  assert.match(promote, /^    needs: reconcile$/m);
+  assert.match(promote, /^    if: needs\.reconcile\.outputs\.has_work == 'true' && \(github\.event_name != 'workflow_dispatch' \|\| inputs\.dry_run != true\)$/m);
+  for (const marker of ['actions/download-artifact@v4', 'git push --force-with-lease', 'gh pr create', 'gh workflow run', 'name: Preserve promotion attempt receipt']) assert(promote.includes(marker), `Downstream operation stays inside gated promote: ${marker}`);
+  assert.match(promote, /name: Preserve promotion attempt receipt\n        if: always\(\)/);
+  const reconcile = promotionWorkflow.split('  reconcile:\n')[1].split('  promote:\n')[0];
+  assert(reconcile.indexOf('    if: >-') < reconcile.indexOf('actions/checkout'));
+  assert(reconcile.includes('node scripts/coordinate-preview-updates.mjs'));
+  assert(reconcile.includes('name: preview-queue-plan'));
+});
+test('mutation controls reject dropped, widened, misplaced or globally restrictive City guards', () => {
+  for (const [label, from, to] of [
+    ['remove City guard', ' &&\n        ' + cityGuard, ''],
+    ['permit City push', "github.event.workflow_run.event == 'schedule'", "github.event.workflow_run.event == 'push'"],
+    ['bypass trust with OR', ' &&\n        ' + cityGuard, ' ||\n        ' + cityGuard],
+    ['restrict other producer lanes', cityGuard, "(github.event.workflow_run.event == 'schedule' || github.event.workflow_run.event == 'workflow_dispatch')"],
+    ['remove repository trust', 'github.event.workflow_run.head_repository.full_name == github.repository', 'true'],
+    ['remove success check', "github.event.workflow_run.conclusion == 'success'", 'true'],
+    ['remove branch check', "github.event.workflow_run.head_branch == 'main'", 'true']
+  ]) {
+    assert(promotionWorkflow.includes(from), `Mutation target exists: ${label}`);
+    const mutated = promotionWorkflow.replace(from, to);
+    assert.throws(() => assertAdmissionTruthTable(mutated), undefined, `${label}: structural placement`);
+    assert.throws(() => assertTruthTable(reconcileCondition(mutated)), undefined, `${label}: admission semantics`);
+  }
+  // Merely mentioning the conjunct later (or on promote) cannot satisfy admission.
+  const misplaced = promotionWorkflow.replace(' &&\n        ' + cityGuard, '') + '\n# ' + cityGuard + '\n';
+  assert.throws(() => assertAdmissionTruthTable(misplaced));
+  assert.throws(() => assertTruthTable(reconcileCondition(misplaced)));
+});
 
 console.log(`Preview coordinator: ${count} fixture scenarios passed.`);

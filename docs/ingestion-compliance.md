@@ -35,10 +35,10 @@ This captures the peninsula, downtown, North End, South End, West End, nearby Da
 
 ## Robots policy repair scope (October 22, 2026)
 
-The shared `scripts/lib/robots-policy.mjs` policy is used by exactly five adapters:
+The shared `scripts/lib/robots-policy.mjs` policy is used by exactly six adapters:
 `import-official-sites.mjs`, `verify-official-source-pages.mjs`,
-`import-structured-events.mjs`, `import-official-page-intelligence.mjs`, and
-`import-patio-directory-facts.mjs`. Policy retrieval uses the existing quarantined-source
+`import-structured-events.mjs`, `import-official-page-intelligence.mjs`,
+`import-patio-directory-facts.mjs`, and `import-city-events.mjs`. Policy retrieval uses the existing quarantined-source
 and same-host redirect guard, with a deadline around both fetch and body consumption.
 An origin's in-flight result is cached for the run, including unavailable policies;
 failures are not retried. Network/body errors, deadlines, rejected/missing/looping
@@ -58,15 +58,18 @@ exact matching bot group. The prior selected-group/literal-prefix denials are al
 retained, so this repair cannot reopen a legacy-denied path, including legacy
 literal `$` paths and erroneously selected `NotHalifaxSourced` groups. `Allow`
 exceptions never reopen a denial. This is an intentionally stricter project policy,
-not full RFC 9309 conformance. All five adapters consult the same policy callback
+not full RFC 9309 conformance. All six adapters consult the same policy callback
 at each guarded content redirect destination. Patio retains its single hardcoded
 source and registry metadata semantics; intelligence retains its existing page,
-restaurant, concurrency and host-serial delay bounds.
+restaurant, concurrency and host-serial delay bounds. City retains its registry modes,
+priority, date windows, source page limits, batching, delays, extraction, identities
+and ICS-to-list fallback semantics; unavailable same-origin policy remains cached
+across fallback attempts.
 
-Seven independent implementations remain outside this migration:
+Six independent implementations remain outside this migration:
 `discover-first-party-sources.mjs`, `import-structured-place-facts.mjs`,
 `import-review-directory-restaurants.mjs`, `import-public-special-source-leads.mjs`,
-`import-directory-restaurants.mjs`, `import-city-events.mjs`, and
+`import-directory-restaurants.mjs`, and
 `refine-dartmouth-directory.mjs`. Their robots semantics and failure handling have
 not been repaired by this change. Future migration must preserve each adapter's
 sitemap, crawl-delay, source enablement, rate and review constraints and add actual
@@ -74,9 +77,15 @@ entrypoint fixtures before any expansion.
 
 Source Expansion pull requests now run exact-head offline validation with a
 transport-denial preload and cannot run collection or publish preview artifacts.
+City pull requests and code pushes likewise run exact-head transport-denied validation
+only, without collection or preview/diagnostic uploads. City workflow-run admission
+to retained-queue reconciliation is restricted to trusted successful main
+schedule/manual producers, so validation pushes cannot promote any retained lane.
 Existing scheduled/manual collection remains separate and otherwise unchanged.
 The policy and actual-adapter regressions run in both that PR lane and Quality Gate.
-They include the 22 original offline audit fixtures with unsafe expectations
+Quality Gate link-status QA remains unchanged and is not wholly offline:
+`LINK_HEALTH_LIMIT=0` checks all release URLs. The offline policy regressions
+include the 22 original offline audit fixtures with unsafe expectations
 reversed, tightening-only comparisons, cache/no-retry and stalled-body tests.
 No source registry enablement, accepted dataset, source clock, media/review gate,
 or collection schedule is changed by this code-only repair.

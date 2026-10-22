@@ -34,6 +34,15 @@ on:
       - scripts/lib/event-refresh-safety.mjs
       - scripts/test-event-identity-continuity.mjs
       - scripts/check-event-identity-continuity.mjs
+      - scripts/lib/robots-policy.mjs
+      - scripts/lib/fetch-public-source.mjs
+      - source-integrity.js
+      - scripts/lib/deny-source-network.mjs
+      - scripts/test-robots-policy.mjs
+      - scripts/test-robots-policy-adapters.mjs
+      - .github/workflows/promote-preview-artifacts.yml
+      - scripts/test-preview-coordinator.mjs
+      - scripts/lib/preview-coordinator.mjs
   pull_request:
     branches:
       - main
@@ -64,23 +73,32 @@ on:
       - scripts/lib/event-refresh-safety.mjs
       - scripts/test-event-identity-continuity.mjs
       - scripts/check-event-identity-continuity.mjs
+      - scripts/lib/robots-policy.mjs
+      - scripts/lib/fetch-public-source.mjs
+      - source-integrity.js
+      - scripts/lib/deny-source-network.mjs
+      - scripts/test-robots-policy.mjs
+      - scripts/test-robots-policy-adapters.mjs
+      - .github/workflows/promote-preview-artifacts.yml
+      - scripts/test-preview-coordinator.mjs
+      - scripts/lib/preview-coordinator.mjs
 
 permissions:
   contents: read
 
 jobs:
   validate-pr:
-    if: ${{ github.event_name == 'pull_request' }}
+    if: ${{ github.event_name == 'pull_request' || github.event_name == 'push' }}
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v6
         with:
-          ref: ${{ github.event.pull_request.head.sha }}
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Validate event identity without source collection
+      - name: Validate PR/push event identity without source collection
         env:
           NODE_OPTIONS: --import ${{ github.workspace }}/scripts/lib/deny-source-network.mjs
         run: |
@@ -89,8 +107,11 @@ jobs:
           node scripts/test-event-refresh-safety.mjs
           node scripts/test-event-refresh-dedupe.mjs
           node scripts/test-canonical-event-dedupe.mjs
+          node scripts/test-robots-policy.mjs
+          node scripts/test-robots-policy-adapters.mjs
+          node scripts/test-preview-coordinator.mjs
   refresh-events:
-    if: ${{ github.event_name != 'pull_request' }}
+    if: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:

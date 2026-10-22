@@ -1,4 +1,5 @@
-import { fetchGuardedSource as fetch } from "./lib/fetch-public-source.mjs";
+import { fetchPublicSource } from "./lib/fetch-public-source.mjs";
+import { createRobotsAllows } from "./lib/robots-policy.mjs";
 import { createHash } from "node:crypto";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 
@@ -12,7 +13,7 @@ const minStamp = now - pastGraceHours * 60 * 60 * 1000;
 const maxStamp = now + futureDays * 24 * 60 * 60 * 1000;
 const timeoutMs = Number(process.env.CITY_EVENT_TIMEOUT_MS ?? 15000);
 const userAgent = "HalifaxSourced/0.6 (+https://github.com/JeremyHennessy/HalifaxSourced)";
-const robotsCache = new Map();
+const robotsAllows = createRobotsAllows({ userAgent, timeoutMs: Math.min(8000, timeoutMs) });
 const MONTHS = "January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec";
 const WEEKDAYS = "Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday|Mon|Tue|Wed|Thu|Fri|Sat|Sun";
 
@@ -65,58 +66,13 @@ function dateOnly(value) {
   return Number.isFinite(stamp) ? new Date(stamp).toISOString().slice(0, 10) : "";
 }
 
-function parseRobots(text) {
-  const groups = [];
-  let current = null;
-  for (const rawLine of String(text ?? "").split(/\r?\n/)) {
-    const line = rawLine.replace(/#.*$/, "").trim();
-    if (!line) continue;
-    const index = line.indexOf(":");
-    if (index < 0) continue;
-    const key = line.slice(0, index).trim().toLowerCase();
-    const value = line.slice(index + 1).trim();
-    if (key === "user-agent") {
-      if (!current || current.hasRules) {
-        current = { agents: [], disallow: [], hasRules: false };
-        groups.push(current);
-      }
-      current.agents.push(value.toLowerCase());
-      continue;
-    }
-    if (!current) continue;
-    current.hasRules = true;
-    if (key === "disallow" && value) current.disallow.push(value);
-  }
-  const specific = groups.find((group) => group.agents.some((agent) => agent.includes("halifaxsourced")));
-  const wildcard = groups.find((group) => group.agents.includes("*"));
-  return (specific || wildcard)?.disallow || [];
-}
-async function robotsAllows(url) {
-  const parsed = new URL(url);
-  if (!robotsCache.has(parsed.origin)) {
-    robotsCache.set(parsed.origin, (async () => {
-      try {
-        const response = await fetch(new URL("/robots.txt", parsed.origin), {
-          headers: { "User-Agent": userAgent },
-          redirect: "follow",
-          signal: AbortSignal.timeout(Math.min(8000, timeoutMs))
-        });
-        if (response.status === 401 || response.status === 403) return ["/"];
-        if (!response.ok) return [];
-        return parseRobots(await response.text());
-      } catch { return []; }
-    })());
-  }
-  const disallow = await robotsCache.get(parsed.origin);
-  return !disallow.some((prefix) => prefix === "/" || (prefix && parsed.pathname.startsWith(prefix)));
-}
 async function fetchText(url, accept = "text/html,application/xhtml+xml,text/calendar;q=0.9,*/*;q=0.5") {
   if (!(await robotsAllows(url))) throw new Error("robots_disallow");
-  const response = await fetch(url, {
+  const response = await fetchPublicSource(url, {
     headers: { "User-Agent": userAgent, Accept: accept },
     redirect: "follow",
     signal: AbortSignal.timeout(timeoutMs)
-  });
+  }, robotsAllows);
   if (!response.ok) throw new Error(`http_${response.status}`);
   return { text: await response.text(), resolvedUrl: response.url || url, contentType: response.headers.get("content-type") || "" };
 }

@@ -50,11 +50,58 @@ vm.runInContext('const saved = readSavedCityEvents(); saved.delete("published");
 assert.equal(vm.runInContext('saved.size',context),0,'Unsave canonical ID removes migrated alias save');
 
 const workflow = await readFile(new URL('../.github/workflows/city-events-preview.yml',import.meta.url),'utf8');
-const prJob = workflow.split('  validate-pr:\n')[1]?.split('  refresh-events:\n')[0];
-assert(prJob?.includes("github.event_name == 'pull_request'"));
-assert(prJob.includes('deny-source-network.mjs'));
-assert(!/import-city-events|import-supplemental|upload-artifact/.test(prJob),'PR must not collect or upload previews');
-assert(workflow.includes("github.event_name != 'pull_request'"));
-assert(workflow.indexOf('Verify saved-event continuity before preview upload') < workflow.indexOf('Upload city event preview'));
-assert(workflow.includes('23 */6 * * *'));
-console.log('Event identity continuity passed: source/title ordering, repeated refresh, unique occurrence matching, collision hold, saved alias migration, expiry and offline PR/preview gates.');
+// Inspect the actual job boundaries, not a matching phrase elsewhere in the file.
+function assertCityWorkflow(text) {
+  const prJob = text.match(/^  validate-pr:\n([\s\S]*?)(?=^  refresh-events:)/m)?.[1];
+  const refreshJob = text.match(/^  refresh-events:\n([\s\S]*)$/m)?.[1];
+  assert(prJob && refreshJob, 'Both validation and producer jobs must remain');
+  const condition = job => job.match(/^    if: \$\{\{ (.*?) \}\}$/m)?.[1];
+  assert.equal(condition(prJob), "github.event_name == 'pull_request' || github.event_name == 'push'");
+  assert.equal(condition(refreshJob), "github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'");
+  for (const event_name of ['pull_request', 'push', 'schedule', 'workflow_dispatch', 'workflow_run', 'pull_request_target', '', 'unknown']) {
+    const github = { event_name };
+    assert.equal(vm.runInNewContext(condition(prJob), { github }), ['pull_request', 'push'].includes(event_name));
+    assert.equal(vm.runInNewContext(condition(refreshJob), { github }), ['schedule', 'workflow_dispatch'].includes(event_name));
+  }
+  assert.match(prJob, /ref: \$\{\{ github\.event\.pull_request\.head\.sha \|\| github\.sha \}\}/);
+  assert.match(text, /^permissions:\n  contents: read\n/m);
+  assert.doesNotMatch(prJob, /import-city-events|import-supplemental|upload-artifact|promote-|coordinate-preview|dispatch|permissions:|\bwrite\b|ref: main/,
+    'Validation must not collect, upload, promote, dispatch, or acquire write permissions');
+  const tests = ['reviewed-event-locations', 'event-identity-continuity', 'event-refresh-safety', 'event-refresh-dedupe', 'canonical-event-dedupe', 'robots-policy', 'robots-policy-adapters', 'preview-coordinator'];
+  const steps = prJob.split(/^      - /m).slice(1);
+  const runSteps = steps.filter(step => /^        run:/m.test(step));
+  assert.equal(runSteps.length, 1, 'All validation commands share one transport-denied step');
+  assert.match(runSteps[0], /env:\n          NODE_OPTIONS: --import \$\{\{ github.workspace \}\}\/scripts\/lib\/deny-source-network.mjs\n        run: \|/);
+  assert.deepEqual(runSteps[0].split('        run: |\n')[1].trim().split('\n').map(line => line.trim()),
+    tests.map(name => `node scripts/test-${name}.mjs`), 'No unguarded commands or missing validation suites');
+  const paths = ['scripts/lib/robots-policy.mjs', 'scripts/lib/fetch-public-source.mjs', 'source-integrity.js', 'scripts/lib/deny-source-network.mjs', 'scripts/test-robots-policy.mjs', 'scripts/test-robots-policy-adapters.mjs', '.github/workflows/promote-preview-artifacts.yml', 'scripts/test-preview-coordinator.mjs', 'scripts/lib/preview-coordinator.mjs'];
+  for (const trigger of ['push', 'pull_request']) {
+    const block = text.match(new RegExp(`^  ${trigger}:\\n([\\s\\S]*?)(?=^  \\w|^permissions:)`, 'm'))?.[1];
+    assert(block, `${trigger} trigger exists`);
+    for (const path of paths) assert(block.includes(`      - ${path}\n`), `${trigger} covers ${path}`);
+  }
+  assert(text.includes('cron: "23 */6 * * *"'));
+  for (const bound of ['timeout-minutes: 30', 'CITY_EVENT_TIMEOUT_MS: 15000', 'SUPPLEMENTAL_EVENT_TIMEOUT_MS: 15000', 'LIBRARY_EVENT_PAGE_LIMIT: 120', 'LIBRARY_EVENT_DELAY_MS: 100', 'CITY_EVENT_ANOMALY_MIN_PRIOR_COUNT: 20', 'CITY_EVENT_ANOMALY_MAX_SNAPSHOT_AGE_DAYS: 3', 'CITY_EVENT_ANOMALY_CARRY_DAYS: 7']) assert(refreshJob.includes(bound), `Preserve producer bound ${bound}`);
+  assert.match(refreshJob, /name: Checkout\n        uses: actions\/checkout@v6\n\n/);
+  assert(refreshJob.indexOf('Verify saved-event continuity before preview upload') >= 0);
+  assert(refreshJob.indexOf('Verify saved-event continuity before preview upload') < refreshJob.indexOf('Upload city event preview'));
+  assert(refreshJob.includes('node scripts/check-event-identity-continuity.mjs /tmp/city-events.previous.json'));
+  assert.match(refreshJob, /name: city-events-preview\n/);
+  assert.match(refreshJob, /name: Preserve event refresh diagnostics\n        if: always\(\)\n        uses: actions\/upload-artifact@v4\n        with:\n          name: city-events-refresh-diagnostics/);
+  assert.equal((refreshJob.match(/uses: actions\/upload-artifact@v4/g) || []).length, 2);
+}
+assertCityWorkflow(workflow);
+// Negative controls prove these assertions reject the former push-collection route,
+// moving-head validation and loss of transport denial without editing real files.
+for (const [label, from, to] of [
+  ['push collects', "github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'", "github.event_name != 'pull_request'"],
+  ['push unvalidated', "github.event_name == 'pull_request' || github.event_name == 'push'", "github.event_name == 'pull_request'"],
+  ['moving head', 'github.event.pull_request.head.sha || github.sha', "'main'"],
+  ['transport denial removed', 'NODE_OPTIONS: --import', 'DISABLED_NODE_OPTIONS: --import'],
+  ['adapter suite removed', '          node scripts/test-robots-policy-adapters.mjs\n', ''],
+  ['unexpected collection command', '          node scripts/test-robots-policy.mjs', '          node scripts/import-city-events.mjs']
+]) {
+  assert(workflow.includes(from), `Mutation target exists: ${label}`);
+  assert.throws(() => assertCityWorkflow(workflow.replace(from, to)), undefined, `Mutation rejected: ${label}`);
+}
+console.log('Event identity continuity passed: source/title ordering, repeated refresh, unique occurrence matching, collision hold, saved alias migration, expiry and offline PR/push/producer gates.');
