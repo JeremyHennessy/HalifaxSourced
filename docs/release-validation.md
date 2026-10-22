@@ -304,3 +304,38 @@ of the unchanged 1,060 release references. Finite entrypoint fixtures require th
 new target and normalized aliases to be unattempted while unrelated same-host
 business paths remain unaffected. No business facts, public URLs, runtime request
 rules, expiry or retry permission are changed.
+
+
+After PR 159 merged, main Quality run 39817151873, attempt 1, `data-integrity`
+job 119958511096 at source commit 18091d41dbcc1d57e759cb9149d93f5c2396a251
+failed closed on two new actual 403 receipts. This is a separate post-159 policy
+amendment, not a retry of that failed main run. The exact originals are:
+
+- `https://classic-pizza.order-online.ai/`, attempted at
+  `2026-10-22T16:54:04.233Z`, observed at `2026-10-22T16:54:04.780Z`, and logged
+  separately at `2026-10-22T16:54:04.781Z`.
+- `https://maygarden.order-online.ai/#/`, attempted at
+  `2026-10-22T16:54:35.468Z`, observed at `2026-10-22T16:54:35.670Z`, and logged
+  separately at `2026-10-22T16:54:35.671Z`.
+
+Two appended reviewed-log groups preserve these original URLs and clocks exactly.
+The existing fragment-free matching key holds May Garden's root alias too, but
+an alias without its own exact receipt has `priorObservation: null`. Neither 403
+becomes a host-wide hold. Finite actual-entrypoint fixtures require both originals
+and normalized aliases to make no requests, while unrelated paths, queries,
+HTTP-scheme variants and a sibling provider subdomain remain unaffected by these
+exact restrictions. All previous 220 observations and provenance reconstruct the
+prior policy bytes exactly. No Retry-After, late denial or unresolved transport
+was recorded for either new receipt.
+
+The full retrieved job-log SHA-256 is
+`5090ddddc0d48d57a60333afb892f42c06a5456cb47066dc3ed324376f975df6`.
+Both diagnostics match the JSONL and actual report receipts in artifact
+12442648906, ZIP SHA-256
+`ac226410e158569f86f2222f33b37532d3da753823257650b39e8c29daae1ae2`.
+The union now has 222 observations (77 actual 403, 145 actual 429, no production
+401), 81 exact original/final 403 keys, and the same three canonical 429 hosts.
+It holds 225 of the unchanged 1,060 reference URLs. This diagnostic is not an
+accepted release: at this boundary PR 159 was merged but not released, and 158
+remained the accepted live artifact. No runtime, business facts, public reference
+URLs, expiry, rights, UI or retry permission is changed by this amendment.
