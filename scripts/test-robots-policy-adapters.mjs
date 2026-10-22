@@ -4,7 +4,7 @@ import { copyFile, mkdir, mkdtemp, readFile, rm, writeFile } from 'node:fs/promi
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { spawnSync } from 'node:child_process';
-import { pathToFileURL } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 
 // The first 22 cases retain the October 22 audit's actual-collector fixtures,
 // but invert each unsafe allowed result. Nothing reaches a real transport.
@@ -252,6 +252,17 @@ try {
   const targetedCityCount = await testCityAdapter(root);
   console.log(`Robots adapter regressions passed offline: ${cases.length} fixtures × ${adapters.length + 1} actual entrypoints, plus ${targetedCityCount} targeted City fixtures, including all 22 audit cases, deadlines, caches, redirects and positive controls.`);
 } finally { await rm(root, { recursive: true, force: true }); }
+
+// Public-special combines three independent source families and source-atomic
+// history retention. Keep its composite fixtures separate from the unchanged
+// generic/City matrix above, and execute each suite once with transport denied.
+for (const script of ['test-public-special-robots.mjs', 'test-public-special-refresh-safety.mjs']) {
+  const result = spawnSync(process.execPath, [fileURLToPath(new URL(script, import.meta.url))], {
+    cwd: new URL('..', import.meta.url), encoding: 'utf8', timeout: 120000, env: offlineEnv
+  });
+  assert.equal(result.status, 0, script + '\n' + result.stdout + '\n' + result.stderr + '\n' + (result.error || ''));
+  process.stdout.write(result.stdout);
+}
 
 
 async function testCityAdapter(parentRoot) {

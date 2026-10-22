@@ -35,10 +35,11 @@ This captures the peninsula, downtown, North End, South End, West End, nearby Da
 
 ## Robots policy repair scope (October 22, 2026)
 
-The shared `scripts/lib/robots-policy.mjs` policy is used by exactly six adapters:
+The shared `scripts/lib/robots-policy.mjs` policy is used by exactly seven adapters:
 `import-official-sites.mjs`, `verify-official-source-pages.mjs`,
 `import-structured-events.mjs`, `import-official-page-intelligence.mjs`,
-`import-patio-directory-facts.mjs`, and `import-city-events.mjs`. Policy retrieval uses the existing quarantined-source
+`import-patio-directory-facts.mjs`, `import-city-events.mjs`, and
+`import-public-special-source-leads.mjs`. Policy retrieval uses the existing quarantined-source
 and same-host redirect guard, with a deadline around both fetch and body consumption.
 An origin's in-flight result is cached for the run, including unavailable policies;
 failures are not retried. Network/body errors, deadlines, rejected/missing/looping
@@ -58,7 +59,7 @@ exact matching bot group. The prior selected-group/literal-prefix denials are al
 retained, so this repair cannot reopen a legacy-denied path, including legacy
 literal `$` paths and erroneously selected `NotHalifaxSourced` groups. `Allow`
 exceptions never reopen a denial. This is an intentionally stricter project policy,
-not full RFC 9309 conformance. All six adapters consult the same policy callback
+not full RFC 9309 conformance. All seven adapters consult the same policy callback
 at each guarded content redirect destination. Patio retains its single hardcoded
 source and registry metadata semantics; intelligence retains its existing page,
 restaurant, concurrency and host-serial delay bounds. City retains its registry modes,
@@ -66,10 +67,29 @@ priority, date windows, source page limits, batching, delays, extraction, identi
 and ICS-to-list fallback semantics; unavailable same-origin policy remains cached
 across fallback attempts.
 
-Six independent implementations remain outside this migration:
+Public-special retains its three hardcoded source families, discovery rules,
+request limits, campaign delay, parsing and review states. The same policy callback
+guards its HTML, discovered JavaScript bundle and existing happy-hour JSON API,
+including each same-host content redirect destination. The API origin's robots
+request carries only the collection User-Agent, never API authentication headers;
+an unavailable or denied policy stops the API request without retries or alternate
+credentials. The redirect boundary is canonical hostname, not strict same-origin;
+each distinct origin receives its own policy check. Any failure within a source
+family discards its partial refresh and retains that family's prior records,
+preserving evidence clocks, rights/review states and media pointers. A successful
+empty result remains distinct from a failed source. No retained record becomes
+fresh or licensed merely because another refresh was attempted.
+
+Publicly discoverable API metadata, an anonymous client value in a public bundle,
+and a permitting robots policy are not licensing or provider-authorization
+evidence. They neither authorize API access nor grant image or content rights.
+The existing API path still requires the applicable provider permission, terms,
+attribution and retention limits; this code-only policy guard establishes no new
+permission or source-specific agreement. Provider denials must not be bypassed.
+
+Five independent implementations remain outside this migration:
 `discover-first-party-sources.mjs`, `import-structured-place-facts.mjs`,
-`import-review-directory-restaurants.mjs`, `import-public-special-source-leads.mjs`,
-`import-directory-restaurants.mjs`, and
+`import-review-directory-restaurants.mjs`, `import-directory-restaurants.mjs`, and
 `refine-dartmouth-directory.mjs`. Their robots semantics and failure handling have
 not been repaired by this change. Future migration must preserve each adapter's
 sitemap, crawl-delay, source enablement, rate and review constraints and add actual
@@ -83,6 +103,11 @@ to retained-queue reconciliation is restricted to trusted successful main
 schedule/manual producers, so validation pushes cannot promote any retained lane.
 Existing scheduled/manual collection remains separate and otherwise unchanged.
 The policy and actual-adapter regressions run in both that PR lane and Quality Gate.
+The adapter suite preserves the 105-case, six-entrypoint matrix and 22 targeted
+City fixtures, then runs the dedicated public-special and retention suites once
+each under transport denial. Changes to either public-special suite trigger
+Source Expansion PR validation. Adapter-suite changes also trigger City's offline
+PR/push validation, never its collection job or retained-queue promotion.
 Quality Gate link-status QA remains unchanged and is not wholly offline:
 `LINK_HEALTH_LIMIT=0` checks all release URLs. The offline policy regressions
 include the 22 original offline audit fixtures with unsafe expectations

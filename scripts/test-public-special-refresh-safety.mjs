@@ -51,7 +51,7 @@ try {
   await writeFile(join(root,'invalid.json'),'{}');
   await assert.rejects(readPreviousPublicSpecialRecords(join(root,'invalid.json')));
   await cp(new URL('./lib/',import.meta.url),join(root,'scripts/lib'),{recursive:true});
-  await writeFile(join(root,'scripts/lib/fetch-public-source.mjs'),'export function fetchGuardedSource(){throw new Error("NETWORK_FORBIDDEN")}');
+  const denyNetwork=join(root,'scripts/lib/deny-source-network.mjs');
   await copyFile(new URL('../source-integrity.js',import.meta.url),join(root,'source-integrity.js'));
   await copyFile(new URL("../app-media.js",import.meta.url),join(root,"app-media.js"));
   for (const name of ['build-structured-specials.mjs','build-recent-social-posts.mjs','build-thumbnail-candidates.mjs']) await copyFile(new URL(name,import.meta.url),join(root,'scripts',name));
@@ -64,7 +64,7 @@ try {
   await put('data/build/first-party-sources.json',{records:[]});
   await put('data/build/public-special-source-leads.json',{records:[lead,expired,unknownClock]});
   for(const name of ['build-structured-specials.mjs','build-recent-social-posts.mjs','build-thumbnail-candidates.mjs']) {
-    const run=spawnSync(process.execPath,[join(root,'scripts',name)],{cwd:root,encoding:'utf8',env:{...process.env,THUMBNAIL_DISCOVERY_FETCH:'0',THUMBNAIL_IMAGE_PROBE:'0'}});
+    const run=spawnSync(process.execPath,['--import',denyNetwork,join(root,'scripts',name)],{cwd:root,encoding:'utf8',env:{...process.env,THUMBNAIL_DISCOVERY_FETCH:'0',THUMBNAIL_IMAGE_PROBE:'0'}});
     assert.equal(run.status,0,`${name}: ${run.stderr}\n${run.stdout}`);
   }
   const specials=JSON.parse(await readFile(join(root,'data/build/structured-specials.json'))).records;
@@ -81,25 +81,66 @@ try {
   assert.equal(candidate.observedAt,null); assert.equal(candidate.rightsStatus,'requires_rights_review');
   assert.equal(candidate.reviewState,'candidate_review');
   assert.equal(candidate.refreshState,'retained_after_failure');
-  // Execute the real importer with a throwing transport fixture: no source requests.
+  // Keep the real shared helpers intact. Only these finite synthetic robots
+  // responses exist; transport remains denied and no content request is allowed.
   await copyFile(new URL('./import-public-special-source-leads.mjs',import.meta.url),join(root,'scripts/import-public-special-source-leads.mjs'));
-  const runImporter = () => spawnSync(process.execPath,[join(root,'scripts/import-public-special-source-leads.mjs')],{cwd:root,encoding:'utf8'});
+  const robotsUrls=[
+    'https://halifaxevents.ca/robots.txt',
+    'https://downtownhalifax.ca/robots.txt',
+    'https://www.downtowndartmouth.ca/robots.txt'
+  ];
+  await writeFile(join(root,'scripts/run-importer-fixture.mjs'),`
+import assert from 'node:assert/strict';
+import { writeFile } from 'node:fs/promises';
+const fixtures = new Map(${JSON.stringify(robotsUrls)}.map(url => [url, {status:403, body:'Forbidden'}]));
+const requests = [];
+const unexpected = [];
+globalThis.fetch = async url => {
+  const target = String(url);
+  requests.push(target);
+  const fixture = fixtures.get(target);
+  if (!fixture) {
+    unexpected.push(target);
+    throw new Error('Unexpected fixture URL: ' + target);
+  }
+  return new Response(fixture.body, {status:fixture.status, headers:{'content-type':'text/plain'}});
+};
+let importError;
+try { await import('./import-public-special-source-leads.mjs'); }
+catch (error) { importError = error; }
+await writeFile(new URL('../importer-requests.json', import.meta.url), JSON.stringify({requests, unexpected}));
+assert.deepEqual(unexpected, [], 'Importer must never request an unconfigured URL');
+if (importError) throw importError;
+`);
+  const runImporter = () => spawnSync(process.execPath,['--import',denyNetwork,join(root,'scripts/run-importer-fixture.mjs')],{cwd:root,encoding:'utf8'});
   const imported = runImporter();
   assert.equal(imported.status,0,imported.stderr);
+  const importerRequests=JSON.parse(await readFile(join(root,'importer-requests.json')));
+  assert.deepEqual(importerRequests.unexpected,[]);
+  assert.deepEqual(importerRequests.requests,robotsUrls,'Only one policy request per source origin; no content or fallback requests');
   const retainedOutput=JSON.parse(await readFile(join(root,'data/build/public-special-source-leads.json')));
+  const retainedContext={window:{}};
+  vm.runInNewContext(await readFile(join(root,'data/public-special-source-leads.js'),'utf8'),retainedContext);
+  assert.equal(JSON.stringify(retainedContext.window.HALIFAX_PUBLIC_SPECIAL_SOURCE_LEADS),JSON.stringify(retainedOutput),'Retained JSON and window payloads agree');
   assert.equal(retainedOutput.records.length,3);
-  assert.ok(retainedOutput.failures.length > 0);
+  assert.deepEqual(retainedOutput.failures.map(row=>row.sourceId),[
+    'halifax-events-happy-hour','discover-halifax-dine-around-2026','downtown-dartmouth-food-crawl-spring-2026'
+  ]);
+  assert.ok(retainedOutput.failures.every(row=>row.reason==='robots_disallow'));
   for (const original of [lead,expired,unknownClock]) {
     const row=retainedOutput.records.find(item=>item.sourceRecordId===original.sourceRecordId);
     const strip=({refreshState,sourceFailure,...rest})=>rest;
     assert.deepEqual(strip(row),strip(original));
   }
   const invalid='{"records":null}';
+  const previousWindowPayload=await readFile(join(root,'data/public-special-source-leads.js'),'utf8');
   await writeFile(join(root,'data/build/public-special-source-leads.json'),invalid);
   const refused=runImporter();
   assert.notEqual(refused.status,0);
   assert.match(refused.stderr,/Invalid previous public-special snapshot/);
+  assert.deepEqual(JSON.parse(await readFile(join(root,'importer-requests.json'))),{requests:[],unexpected:[]},'Invalid previous snapshot aborts before any source request');
   assert.equal(await readFile(join(root,'data/build/public-special-source-leads.json'),'utf8'),invalid);
+  assert.equal(await readFile(join(root,'data/public-special-source-leads.js'),'utf8'),previousWindowPayload,'Invalid previous snapshot does not overwrite the window payload');
 
 } finally { await rm(root,{recursive:true,force:true}); }
 console.log('Public-special retention passed: source-atomic failure rollback, original clocks, stale/expired projections, no social activation or image-rights upgrade; offline only.');
