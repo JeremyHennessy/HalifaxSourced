@@ -1,4 +1,5 @@
-import { fetchGuardedSource as fetch } from "./lib/fetch-public-source.mjs";
+import { createRobotsAllows } from "./lib/robots-policy.mjs";
+import { fetchPublicSource } from "./lib/fetch-public-source.mjs";
 import { createHash } from "node:crypto";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 
@@ -7,6 +8,7 @@ const sourceName = "Downtown Halifax patio directory";
 const sourceUrl = "https://downtownhalifax.ca/patios";
 const timeoutMs = Number(process.env.PATIO_DIRECTORY_TIMEOUT_MS ?? 12000);
 const userAgent = "HalifaxSourced/0.8 (+https://github.com/JeremyHennessy/HalifaxSourced)";
+const robotsAllows = createRobotsAllows({ userAgent, timeoutMs });
 const observedAt = new Date().toISOString();
 
 const catalog = JSON.parse(await readFile(new URL("../data/build/catalog.json", import.meta.url), "utf8"));
@@ -105,54 +107,13 @@ function streetKey(value) {
   return match ? `${match[1]} ${match[2].trim()}` : "";
 }
 
-function parseRobots(text) {
-  const groups = [];
-  let current = null;
-  for (const rawLine of String(text ?? "").split(/\r?\n/)) {
-    const line = rawLine.replace(/#.*$/, "").trim();
-    if (!line) continue;
-    const index = line.indexOf(":");
-    if (index < 0) continue;
-    const key = line.slice(0, index).trim().toLowerCase();
-    const value = line.slice(index + 1).trim();
-    if (key === "user-agent") {
-      if (!current || current.hasRules) {
-        current = { agents: [], disallow: [], hasRules: false };
-        groups.push(current);
-      }
-      current.agents.push(value.toLowerCase());
-    } else if (current) {
-      current.hasRules = true;
-      if (key === "disallow" && value) current.disallow.push(value);
-    }
-  }
-  const specific = groups.find((group) => group.agents.some((agent) => agent.includes("halifaxsourced")));
-  const wildcard = groups.find((group) => group.agents.includes("*"));
-  return (specific || wildcard)?.disallow || [];
-}
-
-async function robotsAllows(url) {
-  const parsed = new URL(url);
-  try {
-    const response = await fetch(new URL("/robots.txt", parsed.origin), {
-      headers: { "User-Agent": userAgent },
-      redirect: "follow",
-      signal: AbortSignal.timeout(Math.min(8000, timeoutMs))
-    });
-    if (response.status === 401 || response.status === 403) return false;
-    if (!response.ok) return true;
-    const disallow = parseRobots(await response.text());
-    return !disallow.some((prefix) => prefix === "/" || (prefix && parsed.pathname.startsWith(prefix)));
-  } catch { return true; }
-}
-
 async function get(url) {
   if (!(await robotsAllows(url))) throw new Error("robots_disallow");
-  const response = await fetch(url, {
+  const response = await fetchPublicSource(url, {
     headers: { "User-Agent": userAgent, Accept: "text/html,application/xhtml+xml" },
     redirect: "follow",
     signal: AbortSignal.timeout(timeoutMs)
-  });
+  }, robotsAllows);
   if (!response.ok) throw new Error(`http_${response.status}`);
   return { html: await response.text(), resolvedUrl: response.url || url };
 }

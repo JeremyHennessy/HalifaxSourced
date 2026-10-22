@@ -69,10 +69,56 @@ const cases = [
   { name: 'failure cache is not retried', status: 503, repeat: true },
   { name: 'valid cache is reused', body: '', allowed: true, repeat: true }
 ];
+// Complete the helper's semantic/status matrix at the actual entrypoints too.
+// These stay independent expectations rather than asking the helper for an oracle.
+for (const [name, body, path, allowed] of [
+  ['different query remains allowed', 'User-agent: *\nDisallow: /menu?format=json', '/menu?format=html', true],
+  ['ordered wildcard deny', 'User-agent: *\nDisallow: /a*b*c$', '/a-b-b-c', false],
+  ['anchor suffix remains allowed', 'User-agent: *\nDisallow: /a*b*c$', '/a-b-c-d', true],
+  ['wildcard order matters', 'User-agent: *\nDisallow: /a*b*c$', '/a-c-b', true],
+  ['consecutive wildcards', 'User-agent: *\nDisallow: /a**b*', '/ab', false],
+  ['bounded wildcard matching', 'User-agent: *\nDisallow: /a*' + 'a*'.repeat(80) + 'b$', '/' + 'a'.repeat(1000) + 'c', true],
+  ['anchor excludes query', 'User-agent: *\nDisallow: /menu$', '/menu?open=1', true],
+  ['regex metacharacters literal', 'User-agent: *\nDisallow: /a.b+(c)[d]{e}^|', '/a.b+(c)[d]{e}^|/menu', false],
+  ['encoded tilde', 'User-agent: *\nDisallow: /%7euser', '/~user', false],
+  ['UTF8 encoded path', 'User-agent: *\nDisallow: /café', '/caf%C3%A9', false],
+  ['UTF8 encoded rule', 'User-agent: *\nDisallow: /caf%c3%a9', '/café', false],
+  ['reserved encoding case', 'User-agent: *\nDisallow: /a%2fb', '/a%2Fb', false],
+  ['encoded slash not literal slash', 'User-agent: *\nDisallow: /a%2Fb', '/a/b', true],
+  ['literal slash not encoded slash', 'User-agent: *\nDisallow: /a/b', '/a%2Fb', true],
+  ['encoded wildcard literal', 'User-agent: *\nDisallow: /literal%2A', '/literal%2a', false],
+  ['encoded wildcard not glob', 'User-agent: *\nDisallow: /literal%2A', '/literal-anything', true],
+  ['encoded dollar literal', 'User-agent: *\nDisallow: /money%24', '/money%24', false],
+  ['nonterminal dollar literal', 'User-agent: *\nDisallow: /money$inside', '/money$inside', false],
+  ['encoded query unreserved', 'User-agent: *\nDisallow: /menu?x=%7E', '/menu?x=~', false],
+  ['encoded query reserved', 'User-agent: *\nDisallow: /menu?x=%2F', '/menu?x=/&tail=1', true],
+  ['suffixed bot fallback', 'User-agent: HalifaxSourcedBot\nDisallow: /other\nUser-agent: *\nDisallow: /menu', '/menu', false],
+  ['other bot ignored', 'User-agent: Other\nDisallow: /\nUser-agent: *\nDisallow:', '/menu', true],
+  ['shared agent group', 'User-agent: Other\nUser-agent: HalifaxSourced\nDisallow: /menu', '/menu', false],
+  ['Sitemap group boundary legacy', 'User-agent: HalifaxSourced\nSitemap: https://fixture.example/sitemap.xml\nUser-agent: Other\nDisallow: /menu', '/menu', false],
+  ['CR line endings', 'User-agent: *\rDisallow: /menu', '/menu', false],
+  ['BOM and inline comment', '\uFEFFUser-agent: *\r\nDisallow: /menu # comment', '/menu', false],
+  ['crawl delay directive', 'User-agent: *\nCrawl-delay: 2\nDisallow: /private', '/menu', true],
+  ['missing agent directive', 'Disallow: /private', null, false],
+  ['oversized policy body', 'User-agent: *\n#' + 'a'.repeat(512 * 1024), null, false]
+]) cases.push({ name, body, ...(path ? { path } : {}), allowed });
+for (const status of [201, 300, 405, 408, 418, 502, 504, 599]) cases.push({ name: `HTTP ${status}`, status });
+cases.push(
+  { name: 'patio exact query destination denied', path: '/patios?format=json', body: 'User-agent: *\nDisallow: /patios?format=json' },
+  { name: 'patio wildcard query destination denied', path: '/patios?format=json', body: 'User-agent: *\nDisallow: /patios?format=*' },
+  { name: 'patio anchored destination denied', path: '/patios/details', body: 'User-agent: *\nDisallow: /patios/details$' },
+  { name: 'patio legacy dollar destination denied', path: '/patios/details$legacy', body: 'User-agent: *\nDisallow: /patios/details$' },
+  { name: 'patio allowed query destination', path: '/patios?format=html', body: 'User-agent: *\nDisallow: /patios?format=json', allowed: true },
+  { name: 'oversized declared body', oversizedLength: true },
+  { name: 'cross-host content redirect', body: '', pageRedirect: 'https://other-fixture.example/blocked', requestedPage: true, error: 'quarantined_cross_entity_redirect' },
+  { name: 'quarantined content redirect', body: '', pageRedirect: 'https://glitterbeancafe.com./blocked', requestedPage: true, error: 'quarantined_cross_entity_redirect' }
+);
 const adapters = [
   ['import-official-sites.mjs', 'official-site-signals'],
   ['verify-official-source-pages.mjs', 'verified-source-pages'],
-  ['import-structured-events.mjs', 'structured-events']
+  ['import-structured-events.mjs', 'structured-events'],
+  ['import-official-page-intelligence.mjs', 'website-page-intelligence'],
+  ['import-patio-directory-facts.mjs', 'patio-directory-facts']
 ];
 const root = await mkdtemp(join(tmpdir(), 'halifax-robots-policy-adapters-'));
 try {
@@ -83,10 +129,21 @@ try {
     'scripts/lib/robots-policy.mjs', 'scripts/lib/fetch-public-source.mjs',
     'scripts/lib/lifecycle-language.mjs', 'scripts/lib/source-page-classification.mjs', 'source-integrity.js'
   ]) await copyFile(new URL('../' + file, import.meta.url), join(root, file));
-  for (const [script, outputName] of adapters) for (const test of cases) {
-    const pageUrl = new URL(test.path || '/menu', 'https://fixture.example').href;
-    const pages = test.repeat ? [pageUrl, pageUrl + '-second'] : [pageUrl];
+  for (const [script, outputName] of adapters) for (const fixture of cases) {
+    const patio = script === 'import-patio-directory-facts.mjs';
+    const intelligence = script === 'import-official-page-intelligence.mjs';
+    // Patio's real entrypoint always starts at this hardcoded URL. Do not rewrite
+    // the collector: exercise path/query variants through same-host redirects.
+    const origin = patio ? 'https://downtownhalifax.ca' : 'https://fixture.example';
+    const test = patio && !fixture.path
+      ? { ...fixture, body: fixture.body?.replaceAll('/menu', '/patios').replaceAll('/%6denu', '/%70atios') }
+      : fixture;
+    const pageUrl = new URL(patio ? '/patios' : (test.path || '/menu'), origin).href;
+    const pages = test.repeat && !patio ? [pageUrl, pageUrl + '-second'] : [pageUrl];
+    const redirectTarget = patio && test.path ? new URL(test.path, origin).href : null;
     const venues = pages.map((website, index) => ({ id: 'fixture-' + index, name: 'Fixture Local ' + index, website }));
+    const sourceMetadata = { id: 'downtown-halifax-patios-2026', enabled: false, label: 'Fixture metadata only' };
+    await writeFile(join(root, 'data/place-source-registry.json'), JSON.stringify({ sources: [sourceMetadata] }));
     await writeFile(join(root, 'data/build/catalog.json'), JSON.stringify({ restaurants: venues }));
     await writeFile(join(root, 'data/restaurants.js'), `window.HALIFAX_RESTAURANTS = ${JSON.stringify(venues)};`);
     await writeFile(join(root, 'data/osm-restaurants.js'), 'window.HALIFAX_OSM_RESTAURANTS = [];');
@@ -100,48 +157,83 @@ try {
       import { writeFile } from 'node:fs/promises';
       const test = ${JSON.stringify(test)};
       const pages = ${JSON.stringify(pages)};
+      const origin = ${JSON.stringify(origin)};
+      const redirectTarget = ${JSON.stringify(redirectTarget)};
+      const patio = ${patio};
+      const unexpected = [];
       const requests = [];
       globalThis.fetch = async (input, options) => {
         const url = String(input); requests.push(url);
-        if (url === 'https://fixture.example/robots.txt' || url === 'https://fixture.example/policy') {
+        if (url === origin + '/robots.txt' || url === origin + '/policy') {
           if (test.policyRedirect && url.endsWith('/robots.txt')) return new Response(null, {status: 302, headers: {location: '/policy'}});
+          if (test.oversizedLength) return {status: 200, headers: new Headers({'content-length': '999999'}), text: async () => { throw new Error('Oversized body must not be read'); }};
           if (test.throws) throw test.throws === 'TimeoutError' ? new DOMException('fixture timeout', 'TimeoutError') : new TypeError('fixture network failure');
           if (test.stallsFetch) return new Promise(() => {});
           if (test.throwsBody || test.stallsBody) return {status: 200, text: async () => { if (test.throwsBody) throw new TypeError('fixture body failure'); return new Promise(() => {}); }};
           return new Response([204, 302, 304].includes(test.status) ? null : (test.body ?? ''), {status: test.status ?? 200, headers: {...(test.location ? {location: test.location} : {}), ...(test.contentType ? {'content-type': test.contentType} : {})}});
         }
-        if (pages.includes(url)) {
+        if (pages.includes(url) || url === redirectTarget) {
+          if (redirectTarget && pages.includes(url)) return new Response(null, {status: 302, headers: {location: redirectTarget}});
           if (test.pageRedirect) return new Response(null, {status: 302, headers: {location: test.pageRedirect}});
-          return new Response('<html><body>Menu specials</body></html>', {headers: {'content-type': 'text/html'}});
+          return new Response(patio
+            ? '<div class="c-info-card"><h4><strong>Fixture Local 0</strong></h4><p>123 Fixture Street</p><div style="background-image:url(/fixture-patio.jpg)"></div></div>'
+            : '<html><body>Menu specials</body></html>', {headers: {'content-type': 'text/html'}});
         }
+        unexpected.push(url);
         throw new Error('NO NETWORK: unexpected fixture target ' + url);
       };
       try { await import(${JSON.stringify(pathToFileURL(join(root, 'scripts', script)).href)}); }
-      finally { await writeFile(${JSON.stringify(requestLog)}, JSON.stringify(requests)); }
+      finally { await writeFile(${JSON.stringify(requestLog)}, JSON.stringify(requests)); if (unexpected.length) throw new Error('Unexpected fixture URLs: ' + unexpected.join(', ')); }
     `);
     const result = spawnSync(process.execPath, [join(root, 'runner.mjs')], {
       cwd: root, encoding: 'utf8', timeout: 5000,
       env: { ...process.env, OFFICIAL_SITE_DELAY_MS: '0', OFFICIAL_SITE_CONCURRENCY: '2', OFFICIAL_SITE_TIMEOUT_MS: '35',
+        PAGE_INTELLIGENCE_DELAY_MS: '0', PAGE_INTELLIGENCE_TIMEOUT_MS: '35', PATIO_DIRECTORY_TIMEOUT_MS: '35',
         SOURCE_VERIFY_DELAY_MS: '0', SOURCE_VERIFY_TIMEOUT_MS: '35', STRUCTURED_EVENT_DELAY_MS: '0', STRUCTURED_EVENT_ROBOTS_TIMEOUT_MS: '35' }
     });
     const label = `${script}: ${test.name}`;
     assert.equal(result.status, 0, label + '\n' + result.stderr + '\n' + (result.error || ''));
     const requests = JSON.parse(await readFile(requestLog, 'utf8'));
-    const expected = Array(test.robotsRequests || 1).fill('https://fixture.example/robots.txt');
-    if (test.policyRedirect) expected.push('https://fixture.example/policy');
-    if (test.allowed || test.requestedPage) expected.push(...pages);
+    const expected = Array(test.robotsRequests || 1).fill(origin + '/robots.txt');
+    if (test.policyRedirect) expected.push(origin + '/policy');
+    if (test.allowed || test.requestedPage || redirectTarget) expected.push(...pages);
+    if (test.allowed && redirectTarget) expected.push(redirectTarget);
     assert.deepEqual(requests, expected, label + ': requests');
     const output = JSON.parse(await readFile(join(root, 'data/build', outputName + '.json'), 'utf8'));
     if (script === 'import-official-sites.mjs') {
       assert.equal(output.results.length, pages.length, label);
       for (const row of output.results) {
         if (test.allowed) { assert.equal(row.status, 200, label); assert.equal(row.reviewState, 'cross-check', label); assert(!row.error, label); }
-        else { assert.equal(row.error, 'robots_disallow', label); assert(!row.status, label + ': no successful receipt'); if (!test.requestedPage) assert.equal(row.reviewState, 'restricted', label); }
+        else { assert.equal(row.error, test.error || 'robots_disallow', label); assert(!row.status, label + ': no successful receipt'); if (!test.requestedPage) assert.equal(row.reviewState, 'restricted', label); }
+      }
+    } else if (intelligence || patio) {
+      assert.equal(output.records.length, test.allowed ? pages.length : 0, label);
+      assert.equal(output.failures.length, test.allowed ? 0 : pages.length, label);
+      for (const failure of output.failures) assert.equal(failure.reason, test.error || 'robots_disallow', label);
+      if (intelligence) {
+        assert.equal(output.pagesChecked, test.allowed ? pages.length : 0, label);
+        for (const record of output.records) {
+          assert.equal(record.rightsState, 'public_reference_not_media_licence', label);
+          assert.equal(record.reviewState, 'needs_date_review', label);
+          assert(record.signalMatches.menu.includes('menu'), label);
+          assert.equal(record.publishedAt, null, label);
+        }
+      } else {
+        // Registry enablement remains metadata-only in this pre-existing adapter.
+        assert.deepEqual(output.source, sourceMetadata, label);
+        for (const record of output.records) {
+          assert.equal(record.restaurantId, 'fixture-0', label);
+          assert.equal(record.reviewState, 'source_signal', label);
+          assert.equal(record.rightsState, 'requires_rights_review', label);
+          assert.equal(record.sourceImageUrl, origin + '/fixture-patio.jpg', label);
+          assert.equal(record.sourceUrl, pageUrl, label);
+          assert.equal(record.address, '123 Fixture Street', label);
+        }
       }
     } else {
       assert.equal(output.scannedPages, test.allowed ? pages.length : 0, label);
       assert.equal(output.failures.length, test.allowed ? 0 : pages.length, label);
-      for (const failure of output.failures) assert.equal(failure.reason, 'robots_disallow', label);
+      for (const failure of output.failures) assert.equal(failure.reason, test.error || 'robots_disallow', label);
       if (!test.allowed) {
         if (script.startsWith('verify-')) {
           assert.deepEqual(output.menuSources, [], label);

@@ -1,4 +1,4 @@
-import { fetchGuardedSource as fetch } from "./lib/fetch-public-source.mjs";
+import { createRobotsAllows } from "./lib/robots-policy.mjs";
 import { fetchPublicSource } from "./lib/fetch-public-source.mjs";
 import integrity from "../source-integrity.js";
 import { createHash } from "node:crypto";
@@ -21,7 +21,7 @@ const timeoutMs = Number(process.env.PAGE_INTELLIGENCE_TIMEOUT_MS ?? 10000);
 const concurrency = Math.max(1, Math.min(16, Number(process.env.PAGE_INTELLIGENCE_CONCURRENCY ?? 8)));
 const summaryChars = Math.max(120, Math.min(700, Number(process.env.PAGE_INTELLIGENCE_SUMMARY_CHARS ?? 420)));
 const userAgent = "HalifaxSourced/0.8 (+https://github.com/JeremyHennessy/HalifaxSourced)";
-const robotsCache = new Map();
+const robotsAllows = createRobotsAllows({ userAgent, timeoutMs });
 
 const signalGroups = {
   happy_hour: ["happy hour", "buck a shuck", "oyster hour", "half price", "drink special", "cocktail special"],
@@ -90,53 +90,6 @@ function classify(text) {
 }
 function hashId(parts) {
   return createHash("sha1").update(parts.filter(Boolean).join("|"), "utf8").digest("hex").slice(0, 18);
-}
-function parseRobots(text) {
-  const groups = [];
-  let current = null;
-  for (const rawLine of String(text ?? "").split(/\r?\n/)) {
-    const line = rawLine.replace(/#.*$/, "").trim();
-    if (!line) continue;
-    const index = line.indexOf(":");
-    if (index < 0) continue;
-    const key = line.slice(0, index).trim().toLowerCase();
-    const value = line.slice(index + 1).trim();
-    if (key === "user-agent") {
-      if (!current || current.hasRules) {
-        current = { agents: [], disallow: [], hasRules: false };
-        groups.push(current);
-      }
-      current.agents.push(value.toLowerCase());
-      continue;
-    }
-    if (!current) continue;
-    current.hasRules = true;
-    if (key === "disallow" && value) current.disallow.push(value);
-  }
-  const specific = groups.find((group) => group.agents.some((agent) => agent.includes("halifaxsourced")));
-  const wildcard = groups.find((group) => group.agents.includes("*"));
-  return (specific || wildcard)?.disallow ?? [];
-}
-async function robotsAllows(url) {
-  const parsed = new URL(url);
-  if (!robotsCache.has(parsed.origin)) {
-    robotsCache.set(parsed.origin, (async () => {
-      try {
-        const response = await fetch(new URL("/robots.txt", parsed.origin), {
-          headers: { "User-Agent": userAgent },
-          redirect: "manual",
-          signal: AbortSignal.timeout(Math.min(timeoutMs, 8000))
-        });
-        if (response.status === 401 || response.status === 403) return ["/"];
-        if (!response.ok) return [];
-        return parseRobots(await response.text());
-      } catch {
-        return [];
-      }
-    })());
-  }
-  const disallow = await robotsCache.get(parsed.origin);
-  return !disallow.some((prefix) => prefix === "/" || (prefix && parsed.pathname.startsWith(prefix)));
 }
 async function fetchHtml(url) {
   if (!integrity.safeSource(url)) return { error: "quarantined_source", url };

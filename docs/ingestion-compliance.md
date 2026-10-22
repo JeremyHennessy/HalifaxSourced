@@ -35,9 +35,10 @@ This captures the peninsula, downtown, North End, South End, West End, nearby Da
 
 ## Robots policy repair scope (October 22, 2026)
 
-The shared `scripts/lib/robots-policy.mjs` policy is used by exactly three adapters:
-`import-official-sites.mjs`, `verify-official-source-pages.mjs`, and
-`import-structured-events.mjs`. Policy retrieval uses the existing quarantined-source
+The shared `scripts/lib/robots-policy.mjs` policy is used by exactly five adapters:
+`import-official-sites.mjs`, `verify-official-source-pages.mjs`,
+`import-structured-events.mjs`, `import-official-page-intelligence.mjs`, and
+`import-patio-directory-facts.mjs`. Policy retrieval uses the existing quarantined-source
 and same-host redirect guard, with a deadline around both fetch and body consumption.
 An origin's in-flight result is cached for the run, including unavailable policies;
 failures are not retried. Network/body errors, deadlines, rejected/missing/looping
@@ -57,13 +58,14 @@ exact matching bot group. The prior selected-group/literal-prefix denials are al
 retained, so this repair cannot reopen a legacy-denied path, including legacy
 literal `$` paths and erroneously selected `NotHalifaxSourced` groups. `Allow`
 exceptions never reopen a denial. This is an intentionally stricter project policy,
-not full RFC 9309 conformance. Structured-event page redirects now consult the same
-policy callback at each guarded destination, as the other two adapters already did.
+not full RFC 9309 conformance. All five adapters consult the same policy callback
+at each guarded content redirect destination. Patio retains its single hardcoded
+source and registry metadata semantics; intelligence retains its existing page,
+restaurant, concurrency and host-serial delay bounds.
 
-Nine independent implementations remain outside this migration:
-`discover-first-party-sources.mjs`, `import-official-page-intelligence.mjs`,
-`import-structured-place-facts.mjs`, `import-review-directory-restaurants.mjs`,
-`import-patio-directory-facts.mjs`, `import-public-special-source-leads.mjs`,
+Seven independent implementations remain outside this migration:
+`discover-first-party-sources.mjs`, `import-structured-place-facts.mjs`,
+`import-review-directory-restaurants.mjs`, `import-public-special-source-leads.mjs`,
 `import-directory-restaurants.mjs`, `import-city-events.mjs`, and
 `refine-dartmouth-directory.mjs`. Their robots semantics and failure handling have
 not been repaired by this change. Future migration must preserve each adapter's
