@@ -1,6 +1,9 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import vm from "node:vm";
 
+import { reviewedEventLocation, isReviewedUnpinnedLocation, validEventCoordinates } from "./lib/reviewed-event-locations.mjs";
+const { corrections: locationCorrections } = JSON.parse(await readFile(new URL("../data/reviewed-event-locations.json", import.meta.url), "utf8"));
+
 const source = await readFile(new URL("../data/city-events.js", import.meta.url), "utf8");
 const context = { window: {} };
 vm.createContext(context);
@@ -52,9 +55,10 @@ for (const event of events) {
     const locationCity = canonicalCity(`${event.address || ""} ${event.venueName || ""}`);
     if (!locationCity) failures.push({ type: "province_wide_event_missing_local_location_evidence", id: event.id, title: event.title, address: event.address, venueName: event.venueName });
   }
+  if (reviewedEventLocation(event, locationCorrections) && !isReviewedUnpinnedLocation(event, locationCorrections)) failures.push({ type: "reviewed_event_location_mismatch", id: event.id });
   const expectedRegionalCity = REGIONAL_SOURCE_CITIES.get(event.sourceId);
   if (expectedRegionalCity && city !== expectedRegionalCity) failures.push({ type: "regional_event_wrong_municipality", id: event.id, sourceId: event.sourceId, expected: expectedRegionalCity, actual: city });
-  if (expectedRegionalCity && (!Number.isFinite(Number(event.latitude)) || !Number.isFinite(Number(event.longitude)))) failures.push({ type: "regional_event_missing_coordinates", id: event.id, sourceId: event.sourceId });
+  if (expectedRegionalCity && !validEventCoordinates(event) && !isReviewedUnpinnedLocation(event, locationCorrections)) failures.push({ type: "regional_event_missing_coordinates", id: event.id, sourceId: event.sourceId });
 
   const key = `${normalize(event.title)}|${String(event.startAt).slice(0, 10)}|${normalize(event.venueName || event.address || "halifax")}`;
   if (keys.has(key)) warnings.push({ type: "possible_duplicate_event", id: event.id, title: event.title, key });

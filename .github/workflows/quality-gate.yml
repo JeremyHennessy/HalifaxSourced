@@ -169,6 +169,9 @@ jobs:
       - name: Sanitize city events
         run: node scripts/sanitize-city-events.mjs
 
+      - name: Test reviewed off-site event locations
+        run: node scripts/test-reviewed-event-locations.mjs
+
       - name: Resolve city event entities
         run: node scripts/resolve-city-event-entities.mjs
 

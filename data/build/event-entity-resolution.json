@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-21T18:35:11.467Z",
+  "generatedAt": "2026-10-22T01:06:33.483Z",
   "eventCount": 172,
-  "venueResolved": 124,
+  "venueResolved": 123,
   "organizerResolved": 150,
   "restaurantResolved": 10,
-  "unresolvedVenue": 48,
+  "unresolvedVenue": 49,
   "unresolvedOrganizer": 22,
   "resolutions": [
     {
@@ -140,17 +140,6 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "bedford-library-events-1a1904b4d4fa55e0",
-      "title": "After School Club: PS5",
-      "sourceId": "bedford-library-events",
-      "venueId": "bedford-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
       "eventId": "alderney-gate-library-events-21eb43d6b209a2c4",
       "title": "Makers Gonna Make: Perler Beads",
       "sourceId": "alderney-gate-library-events",
@@ -166,17 +155,6 @@
       "title": "Teen Night",
       "sourceId": "alderney-gate-library-events",
       "venueId": "alderney-gate-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "bedford-library-events-d07e900ba609f409",
-      "title": "Growing Up in the Scott Manor House",
-      "sourceId": "bedford-library-events",
-      "venueId": "bedford-library",
       "venueBasis": "source_id",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -385,8 +363,8 @@
       "eventId": "bedford-library-events-1025ea0d8b163ffb",
       "title": "PD Day: Halloween Haunt Party",
       "sourceId": "bedford-library-events",
-      "venueId": "bedford-library",
-      "venueBasis": "source_id",
+      "venueId": null,
+      "venueBasis": "reviewed_non_branch_location",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
       "restaurantId": null,
@@ -481,6 +459,17 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "bedford-library-events-20781097868f48be",
+      "title": "Puppet Show: Too Much Noise on Halloween Night",
+      "sourceId": "bedford-library-events",
+      "venueId": "bedford-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "woodlawn-library-events-781108694489a263",
       "title": "Books & Blocks",
       "sourceId": "woodlawn-library-events",
@@ -501,6 +490,17 @@
       "organizerBasis": "source_id",
       "restaurantId": "osm-node-771690675-the-carleton",
       "restaurantBasis": "exact_venue_place_name"
+    },
+    {
+      "eventId": "bedford-library-events-9d3efe6e8a8fec69",
+      "title": "Super Saturday: Halloween Crafts",
+      "sourceId": "bedford-library-events",
+      "venueId": "bedford-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
     },
     {
       "eventId": "https://novascotia.com/event/spontaneity-duo-competition/#event",
