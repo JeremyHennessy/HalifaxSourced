@@ -166,5 +166,8 @@ is unchanged. Approved photo cards make no claim about when a photo was added.
 
 `node scripts/test-thumbnail-observation-clocks.mjs` exercises the real offline
 entrypoint at two clocks, finite mocked page success/failure, nullable JSON/JS and
-SQLite output, coverage, decision exports and home selection. It denies external
-source/image transport and does not collect, approve media or modify accepted inputs.
+SQLite output, coverage, decision exports and the actual base/later home renderers
+in `index.html` load order. Negative controls reject the obsolete addition-date
+label in either renderer. It denies external source/image transport and does not
+collect, approve media or modify accepted inputs. Browser layout checks remain
+part of the hosted Quality Gate.

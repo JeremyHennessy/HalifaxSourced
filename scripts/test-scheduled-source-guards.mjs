@@ -126,6 +126,11 @@ const sourceValidationCommands = [
 // the thumbnail builder. Data glob coverage includes accepted and fallback inputs;
 // it only widens the already guarded, network-denied PR validation lanes.
 const thumbnailFixtureDependencies = [
+  'index.html',
+  'app-events.js',
+  'app-event-pagination.js',
+  'app-event-date-fixes.js',
+  'app-event-local-sort-fixes.js',
   'data/**',
   'scripts/test-thumbnail-observation-clocks.mjs',
   'scripts/build-thumbnail-candidates.mjs',
@@ -222,6 +227,11 @@ const socialValidationCommands = [
   'node scripts/test-thumbnail-observation-clocks.mjs'
 ];
 const socialValidationPaths = [
+  'index.html',
+  'app-events.js',
+  'app-event-pagination.js',
+  'app-event-date-fixes.js',
+  'app-event-local-sort-fixes.js',
   'data/**',
   'scripts/export-catalog.mjs',
   'scripts/resolve-place-candidates.mjs',

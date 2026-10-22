@@ -75,15 +75,48 @@ async function checkDownstream(directory, payload, clock) {
   }
   return coverage;
 }
-async function homeResult(payload, restaurants) {
-  const context = { window: { HALIFAX_THUMBNAIL_CANDIDATES: payload }, activeRestaurants: restaurants.map(({ id, name }) => ({ id, name })),
-    renderHome() {}, recentOfficialPosts: [], currentStructuredSpecial: () => false,
-    restaurantCard: restaurant => `<article>${restaurant.id}</article>` };
-  vm.runInNewContext(await readFile(join(repository, "app-home-rich.js"), "utf8"), context);
-  const selected = plain(context.approvedThumbnailRestaurants(100)).map(restaurant => restaurant.id);
-  const markup = context.homeRichSections();
-  if (selected.length) assert(markup.includes("Approved restaurant photos"));
-  assert(!markup.includes("New thumbnails added"), "Observation date is not photo addition date.");
+async function homeResult(payload, restaurants, obsoleteRenderer = null) {
+  let rendered = "";
+  const context = vm.createContext({ window: { HALIFAX_THUMBNAIL_CANDIDATES: payload, addEventListener() {} },
+    activeRestaurants: restaurants.map(({ id, name }) => ({ id, name })),
+    renderHome() { rendered = ""; }, recentOfficialPosts: [], currentStructuredSpecial: () => false,
+    restaurantCard: restaurant => `<article>${restaurant.id}</article>`,
+    appView: { insertAdjacentHTML(position, markup) { assert.equal(position, "beforeend"); rendered += markup; } },
+    bindCommonActions() {}, structuredEvents: [], globalSearch: null, searchForm: null,
+    localStorage: { getItem() { return "[]"; }, setItem() { assert.fail("Home rendering must not write saved decisions."); } }
+  });
+  // Exercise actual scripts in document order, including the later home override.
+  // Peripheral browser hooks are inert; renderer and date helpers are not copied.
+  const runtimeFiles = ["app-home-rich.js", "app-events.js", "app-event-pagination.js", "app-event-date-fixes.js", "app-event-local-sort-fixes.js"];
+  const document = await readFile(join(repository, "index.html"), "utf8");
+  const documentScripts = [...document.matchAll(/<script\b[^>]*\bsrc="\.\/([^"?]+)(?:\?[^"]*)?"/g)].map(match => match[1]);
+  assert.deepEqual(documentScripts.filter(file => runtimeFiles.includes(file)), runtimeFiles,
+    "The regression must follow the actual home/event override load order.");
+  let selected, baseRenderer;
+  for (const file of runtimeFiles) {
+    let source = await readFile(join(repository, file), "utf8");
+    if (file === obsoleteRenderer) {
+      const mutated = source.replace(">Approved restaurant photos<", ">New thumbnails added<");
+      assert.notEqual(mutated, source, "Heading mutation target must exist: " + file);
+      source = mutated;
+    }
+    vm.runInContext(source, context, { filename: file, timeout: 20_000 });
+    if (file === "app-home-rich.js") baseRenderer = context.homeRichSections;
+    if (file === "app-event-date-fixes.js") assert.notEqual(context.homeRichSections, baseRenderer, "The actual later renderer must be installed.");
+    if (!["app-home-rich.js", "app-event-date-fixes.js", "app-event-local-sort-fixes.js"].includes(file)) continue;
+    const currentSelection = plain(context.approvedThumbnailRestaurants(100)).map(restaurant => restaurant.id);
+    if (selected) assert.deepEqual(currentSelection, selected, "Runtime overrides must preserve thumbnail selection.");
+    else selected = currentSelection;
+    const markup = context.homeRichSections();
+    assert(!markup.includes("New thumbnails added"), `${file}: Observation date is not photo addition date.`);
+    if (selected.length) {
+      assert(markup.includes("Approved restaurant photos"), file + ": Accurate photo label must render.");
+      assert(markup.includes("Restaurants with approved images"));
+      for (const id of selected.slice(0, 4)) assert(markup.includes(`<article>${id}</article>`), file + ": Photo cards must remain selected.");
+    }
+    context.renderHome();
+    assert.equal(rendered, markup, file + ": The renderHome wrapper must use the current runtime renderer.");
+  }
   return selected;
 }
 async function assertDecisionClock(payload) {
@@ -208,6 +241,10 @@ globalThis.Date = class extends RealDate { constructor(...args) { super(...(args
     assert.equal(home[0], "approved-old", "Known source observations still sort ahead of unknown clocks.");
     assert.deepEqual(home.slice(1), ["approved-empty", "approved-missing", "approved-null"], "Unknown clocks preserve stable input order.");
   }
+  for (const renderer of ["app-home-rich.js", "app-event-date-fixes.js"]) {
+    await assert.rejects(homeResult(first, restaurants, renderer), /Observation date is not photo addition date/,
+      "Reverting either actual renderer label must fail the offline regression: " + renderer);
+  }
   await assertDecisionClock(first);
 
   // Finite fake page responses still go through the production source guard and
@@ -270,7 +307,7 @@ finally { assert.deepEqual(unexpected, []); assert.deepEqual(requests, expected)
     assert.deepEqual(secondAccepted.candidates.find(row => row.id === candidate.id), candidate, "Existing research evidence must remain byte-for-byte stable.");
   }
   assert.deepEqual(await homeResult(firstAccepted, catalog.restaurants), await homeResult(secondAccepted, catalog.restaurants));
-  console.log(`Thumbnail observation clocks passed: ${expected.size} projection fixtures at two clocks; finite successful/duplicate/failed fetches; JSON/JS, SQLite, coverage, review decisions and home selection; ${secondAccepted.candidates.length} accepted candidates with unchanged source/rights inputs. No outbound source or image transport.`);
+  console.log(`Thumbnail observation clocks passed: ${expected.size} projection fixtures at two clocks; finite successful/duplicate/failed fetches; JSON/JS, SQLite, coverage, review decisions and actual home override rendering (both label mutation controls); ${secondAccepted.candidates.length} accepted candidates with unchanged source/rights inputs. No outbound source or image transport.`);
 } finally {
   await rm(root, { recursive: true, force: true });
 }

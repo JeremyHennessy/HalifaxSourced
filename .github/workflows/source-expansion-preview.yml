@@ -8,6 +8,11 @@ on:
     branches:
       - main
     paths:
+      - index.html
+      - app-events.js
+      - app-event-pagination.js
+      - app-event-date-fixes.js
+      - app-event-local-sort-fixes.js
       - data/**
       - scripts/resolve-place-candidates.mjs
       - scripts/lib/reviewed-corrections.mjs
