@@ -1082,14 +1082,6 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
           "url": "https://sushisquare.ca/",
           "observedAt": "2026-10-19",
           "status": "verified"
-        },
-        {
-          "type": "menu",
-          "label": "Official Sushi Square lunch and dinner menu",
-          "url": "https://sushisquare.ca/menu/",
-          "status": "verified",
-          "observedAt": "2026-10-20",
-          "reviewedAt": "2026-10-20"
         }
       ],
       "evidenceStatus": "verified",

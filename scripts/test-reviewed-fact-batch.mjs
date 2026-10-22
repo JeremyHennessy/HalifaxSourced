@@ -5,6 +5,7 @@ import { join } from 'node:path';
 import { spawnSync } from 'node:child_process';
 import vm from 'node:vm';
 import corrections from '../restaurant-corrections.js';
+import integrity from '../source-integrity.js';
 import { reviewedCorrections } from './lib/reviewed-corrections.mjs';
 
 const root = new URL('../', import.meta.url);
@@ -16,7 +17,6 @@ const expected = new Map([
   ['osm-node-4797459279-tilted-tap', { address: '172 Wyse Road, Dartmouth, NS B3A 1M6', phone: '902-462-5333', openingHours: 'Bar: Mo-Tu 10:00-23:00; We-Su 10:00-24:00. Kitchen: Mo-We 11:30-21:00; Th-Fr 11:30-22:00; Sa 10:00-22:00; Su 10:00-21:00. Holidays open at 12:00; check official source.' }]
 ]);
 const menus = new Map([
-  ['sushi-square-scotia-square', ['https://sushisquare.ca/menu/']],
   ['retas-gottingen', ['https://www.retasrestaurant.com/s/Retas-FOOD-menu-16th-October-2026.pdf', 'https://www.retasrestaurant.com/s/Retas-DRINK-menu-16th-October-2026.pdf']]
 ]);
 
@@ -77,6 +77,24 @@ for (const records of [app, catalog.restaurants]) {
 }
 for (const [id, urls] of menus) for (const url of urls) assert.equal(app.find(record => record.id === id).menuLinks.filter(link => link.url === url).length, 1);
 assert.equal(app.find(record => record.id === 'osm-node-11552069056-sushi-cove').menuLinks.length, 0, 'Do not reactivate the archived former Sushi Cove');
+// An unavailable menu is not a restaurant closure or a newly verified homepage.
+for (const records of [app, catalog.restaurants]) {
+  const sushi = records.find(record => record.id === 'sushi-square-scotia-square');
+  assert.equal(sushi.operatingStatus, 'active');
+  assert.equal(sushi.website, 'https://sushisquare.ca/');
+  assert.equal((sushi.menuLinks || []).length, 0, 'Historical enrichment must not resurrect the confirmed broken menu');
+  assert(!(sushi.sources || []).some(source => source.type === 'menu'));
+}
+for (const suffix of ['', '/', '/?view=all#menu']) {
+  assert.equal(integrity.safeSource('https://sushisquare.ca/menu' + suffix), false);
+}
+assert.equal(integrity.safeSource('https://sushisquare.ca/'), true, 'Do not quarantine the whole domain');
+assert.equal(integrity.safeSource('https://sushisquare.ca/menu-new/'), true, 'Do not invent failures for unreviewed paths');
+const reviewedSushi = reviewedCorrections.additions.find(record => record.id === 'sushi-square-scotia-square');
+assert.equal(reviewedSushi.operatingStatusEvidence.observedAt, '2026-10-19');
+assert.equal(reviewedSushi.sources[0].observedAt, '2026-10-19');
+const historicalMenu = JSON.parse(await readFile(new URL('data/build/verified-source-pages.json', root))).menuSources.find(record => record.url === 'https://sushisquare.ca/menu/');
+assert(historicalMenu, 'Retain historical observations, rather than rewriting past evidence');
 const browserSaj = app.find(record => record.id === sajId);
 assert.equal(browserSaj.structuredAddress, null);
 assert.equal(browserSaj.structuredFacts.address, null);
