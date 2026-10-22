@@ -1,4 +1,7 @@
 import assert from 'node:assert/strict';
+import { createHash } from 'node:crypto';
+import vm from 'node:vm';
+import { LANES, planPreviewUpdates } from './lib/preview-coordinator.mjs';
 import {copyFile,mkdir,mkdtemp,readFile,rm,writeFile,readdir} from 'node:fs/promises';
 import {tmpdir} from 'node:os';
 import {join} from 'node:path';
@@ -163,6 +166,185 @@ for (const [file, cron] of [
     ]) assert.throws(() => assertSourceExpansionBoundary(workflow.replace(before, after)), undefined, 'Source Expansion guard must reject an unsafe boundary change: ' + before);
   }
 }
+// Social has only two event lanes. Pin the complete executable envelope so
+// duplicate keys, additional jobs/steps, permissions, env or shell wrappers
+// cannot hide behind a matching guard elsewhere in the document.
+const socialValidationCommands = [
+  'node --check scripts/discover-first-party-sources.mjs',
+  'node --check scripts/merge-first-party-history.mjs',
+  'node --check scripts/sanitize-first-party-sources.mjs',
+  'node --check scripts/import-first-party-feed-signals.mjs',
+  'node --check scripts/import-meta-social.mjs',
+  'node --check scripts/report-social-collection-health.mjs',
+  'node --check scripts/build-recent-social-posts.mjs',
+  'node --check scripts/build-thumbnail-candidates.mjs',
+  'node --check scripts/approve-eligible-thumbnails.mjs',
+  'node --check scripts/check-expanded-sources.mjs',
+  'node --check scripts/check-thumbnail-candidates.mjs',
+  'node --check scripts/build-thumbnail-coverage-report.mjs',
+  'node scripts/test-social-platform-registry.mjs',
+  'node scripts/test-social-fact-candidates.mjs',
+  'node scripts/test-source-run-health.mjs',
+  'node scripts/test-public-source-fetch.mjs',
+  'node scripts/test-media-reference-contract.mjs',
+  'node scripts/test-preview-coordinator.mjs',
+  'node scripts/test-scheduled-source-guards.mjs'
+];
+const socialValidationPaths = [
+  '.github/workflows/social-source-preview.yml',
+  'data/discovered-restaurants.js',
+  'data/social-platform-registry.json',
+  'scripts/discover-first-party-sources.mjs',
+  'scripts/merge-first-party-history.mjs',
+  'scripts/sanitize-first-party-sources.mjs',
+  'scripts/import-first-party-feed-signals.mjs',
+  'scripts/import-meta-social.mjs',
+  'scripts/lib/social-fact-candidates.mjs',
+  'scripts/build-recent-social-posts.mjs',
+  'data/thumbnail-assessments.json',
+  'scripts/approve-eligible-thumbnails.mjs',
+  'scripts/lib/automatic-thumbnail-approval.mjs',
+  'scripts/build-thumbnail-candidates.mjs',
+  'scripts/build-thumbnail-coverage-report.mjs',
+  'scripts/check-thumbnail-candidates.mjs',
+  'scripts/check-expanded-sources.mjs',
+  'scripts/report-social-collection-health.mjs',
+  'scripts/test-social-platform-registry.mjs',
+  'scripts/test-social-fact-candidates.mjs',
+  'scripts/test-source-run-health.mjs',
+  'scripts/test-public-source-fetch.mjs',
+  'scripts/test-media-reference-contract.mjs',
+  'scripts/test-preview-coordinator.mjs',
+  'scripts/test-scheduled-source-guards.mjs',
+  '.github/workflows/source-expansion-preview.yml',
+  '.github/workflows/structured-place-facts-preview.yml',
+  '.github/workflows/structured-specials-preview.yml',
+  '.github/workflows/quality-gate.yml',
+  '.github/workflows/promote-preview-artifacts.yml',
+  '.github/workflows/promote-source-expansion-artifact.yml',
+  'scripts/lib/deny-source-network.mjs',
+  'scripts/lib/fetch-public-source.mjs',
+  'scripts/lib/source-run-health.mjs',
+  'scripts/lib/media-rights-contract.mjs',
+  'scripts/lib/lifecycle-language.mjs',
+  'scripts/lib/reviewed-corrections.mjs',
+  'scripts/lib/preview-coordinator.mjs',
+  'scripts/build-reviewed-social-posts.mjs',
+  'scripts/check-source-links.mjs',
+  'scripts/coordinate-preview-updates.mjs',
+  'scripts/fixtures/media-preservation.json',
+  'source-integrity.js',
+  'restaurant-corrections.js',
+  'app-media.js',
+  'app-source-signals.js',
+  'data/restaurant-media.js',
+  'data/restaurant-media-references.js',
+  'data/thumbnail-candidates.js',
+  'data/audit/media-rights-reclassification.json'
+];
+const socialProducerGuard = "    if: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}\n";
+const socialValidationPrefix = [
+  'name: Social Source Preview', '', 'on:', '  workflow_dispatch:', '  schedule:',
+  '    - cron: "41 8 * * *"', '  pull_request:', '    branches:', '      - main', '    paths:',
+  ...socialValidationPaths.map(path => '      - ' + path),
+  '', 'permissions:', '  contents: read', '', 'jobs:',
+  '  validate-pr:', "    if: ${{ github.event_name == 'pull_request' }}",
+  '    runs-on: ubuntu-latest', '    timeout-minutes: 10', '    steps:',
+  '      - name: Checkout exact PR head', '        uses: actions/checkout@v6', '        with:',
+  '          ref: ${{ github.event.pull_request.head.sha }}', '',
+  '      - name: Set up Node', '        uses: actions/setup-node@v4', '        with:', '          node-version: 22', '',
+  '      - name: Validate social policy and fixtures without collection',
+  '        env:', '          NODE_OPTIONS: --import ${{ github.workspace }}/scripts/lib/deny-source-network.mjs',
+  '        run: |', ...socialValidationCommands.map(command => '          ' + command),
+  '', '  social-refresh:', ''
+].join('\n') + socialProducerGuard;
+function assertSocialPreviewBoundary(workflow) {
+  assert.equal(workflow.slice(0, socialValidationPrefix.length), socialValidationPrefix,
+    'Social must preserve its exact guarded PR commands, dependency paths, triggers, permissions and two-job envelope');
+  // Frozen accepted producer body from main 477d0cb (#154), excluding only its
+  // job key and the newly inserted schedule/manual allowlist above. An intentional
+  // future producer change needs its own review and a new explicit baseline.
+  assert.equal(createHash('sha256').update(workflow.slice(socialValidationPrefix.length)).digest('hex'),
+    '7cd35ab53cab2684ca4377094118a701732f0bbbb8fb8213a53826df0eae49b3',
+    'Social scheduled/manual producer steps, source limits, secrets and artifacts must remain byte-identical');
+}
+const socialWorkflow = await readFile(new URL('../.github/workflows/social-source-preview.yml', import.meta.url), 'utf8');
+assertSocialPreviewBoundary(socialWorkflow);
+let socialMutations = 0;
+function rejectSocialMutation(before, after) {
+  assert(socialWorkflow.includes(before), 'Social mutation target must exist: ' + before);
+  assert.notEqual(before, after);
+  assert.throws(() => assertSocialPreviewBoundary(socialWorkflow.replace(before, after)), undefined,
+    'Social boundary must reject: ' + before);
+  socialMutations++;
+}
+for (const [before, after] of [
+  [socialProducerGuard, ''],
+  [socialProducerGuard, "    if: ${{ github.event_name != 'pull_request' }}\n"],
+  [socialProducerGuard, "    if: ${{ always() }}\n"],
+  [socialProducerGuard, "    if: ${{ github.event_name == 'pull_request' || github.event_name == 'schedule' }}\n"],
+  ["    if: ${{ github.event_name == 'pull_request' }}\n", ''],
+  ["    if: ${{ github.event_name == 'pull_request' }}", "    if: ${{ always() }}"],
+  ['ref: ${{ github.event.pull_request.head.sha }}', 'ref: main'],
+  ['ref: ${{ github.event.pull_request.head.sha }}', 'ref: ${{ github.sha }}'],
+  ['          NODE_OPTIONS: --import ${{ github.workspace }}/scripts/lib/deny-source-network.mjs\n', ''],
+  ['NODE_OPTIONS: --import ${{ github.workspace }}/scripts/lib/deny-source-network.mjs', 'NODE_OPTIONS:'],
+  ['        run: |', '        run: |\n          unset NODE_OPTIONS'],
+  ['        run: |', '        run: |\n          curl https://fixture.invalid/'],
+  ['node --check scripts/import-meta-social.mjs', 'node scripts/import-meta-social.mjs'],
+  ['node scripts/test-social-fact-candidates.mjs', 'node --trace-warnings scripts/import-meta-social.mjs'],
+  ['node scripts/test-social-platform-registry.mjs', 'node scripts/test-social-platform-registry.mjs && node scripts/import-meta-social.mjs'],
+  ['node scripts/test-social-fact-candidates.mjs', 'node scripts/test-source-run-health.mjs'],
+  ['  social-refresh:\n', '      - run: node scripts/import-meta-social.mjs\n\n  social-refresh:\n'],
+  ['  social-refresh:\n', '      - uses: actions/upload-artifact@v4\n\n  social-refresh:\n'],
+  ['  social-refresh:\n', '  unguarded-job:\n    runs-on: ubuntu-latest\n    steps:\n      - run: node scripts/import-meta-social.mjs\n\n  social-refresh:\n'],
+  ['    timeout-minutes: 10\n', '    timeout-minutes: 10\n    permissions:\n      contents: write\n'],
+  ['        env:\n', '        env:\n          TOKEN: ${{ secrets.META_FB_ACCESS_TOKEN }}\n'],
+  ['permissions:\n  contents: read', 'permissions:\n  contents: write'],
+  ['  workflow_dispatch:\n', '  workflow_dispatch:\n  push:\n'],
+  ['  workflow_dispatch:\n', ''],
+  ['cron: "41 8 * * *"', 'cron: "* * * * *"'],
+  ['FIRST_PARTY_SOURCE_LIMIT: 9999', 'FIRST_PARTY_SOURCE_LIMIT: 1'],
+  ['META_GRAPH_VERSION: v25.0', 'META_GRAPH_VERSION: v26.0'],
+  ['secrets.META_IG_ACCESS_TOKEN', 'secrets.OTHER_TOKEN'],
+  ['run: node scripts/import-meta-social.mjs', 'run: echo skipped'],
+  ['          retention-days: 30', '          retention-days: 1'],
+  ['            data/build/social-signals.json\n', '']
+]) rejectSocialMutation(before, after);
+for (const path of socialValidationPaths) rejectSocialMutation('      - ' + path + '\n', '');
+for (const command of socialValidationCommands) rejectSocialMutation('          ' + command + '\n', '');
+// Evaluate the actual job guards over every relevant event, not a parallel copy
+// of the condition. In particular, push is not an implicit collection fallback.
+for (const [job, allowed] of [['validate-pr', ['pull_request']], ['social-refresh', ['schedule', 'workflow_dispatch']]]) {
+  const expression = socialWorkflow.split('  ' + job + ':\n')[1].match(/^    if: \$\{\{ (.+) \}\}$/m)?.[1];
+  assert(expression, 'Social job condition must be identifiable: ' + job);
+  for (const event_name of ['pull_request', 'pull_request_target', 'push', 'schedule', 'workflow_dispatch', 'workflow_run', 'unknown', undefined]) {
+    assert.equal(vm.runInNewContext(expression, { github: { event_name } }), allowed.includes(event_name), job + ': ' + event_name);
+  }
+}
+// A successful offline Social PR must not wake ANY older retained queue lane.
+// Inspect the unchanged global admission condition before coordinator execution;
+// absence of a new PR artifact alone would not prevent retained-queue writes.
+const coordinatorWorkflow = await readFile(new URL('../.github/workflows/promote-preview-artifacts.yml', import.meta.url), 'utf8');
+const reconcile = coordinatorWorkflow.match(/^  reconcile:\n([\s\S]*?)(?=^  promote:)/m)?.[1];
+const admissionExpression = reconcile?.match(/^    if: >-\n([\s\S]*?)(?=^    runs-on:)/m)?.[1]?.trim();
+assert(admissionExpression);
+const repository = 'JeremyHennessy/HalifaxSourced';
+const retainedRuns = Object.fromEntries(LANES.map(lane => [lane.artifact, { runs: [{
+  id: 100 + lane.priority, name: lane.workflow, path: '.github/workflows/' + lane.file,
+  status: 'completed', conclusion: 'success', head_branch: 'main', head_repository: { full_name: repository },
+  event: 'schedule', created_at: '2026-10-20T12:00:00Z',
+  artifacts: [{ name: lane.artifact, expired: false, expires_at: '2026-11-20T12:00:00Z' }]
+}] }]));
+const retained = planPreviewUpdates({ repository, now: '2026-10-20T15:00:00Z', mainSha: 'fixture-main', lanes: retainedRuns, openPulls: [], attempts: [] });
+assert.equal(retained.matrix.include.length, 3, 'All three lanes must be ready to prove admission protects retained work');
+const socialPr = { ...retainedRuns['social-source-preview'].runs[0], event: 'pull_request', artifacts: [] };
+const admittedSocialPr = expression => vm.runInNewContext(expression, { github: { event_name: 'workflow_run', repository, event: { workflow_run: socialPr } } });
+assert.equal(admittedSocialPr(admissionExpression), false);
+assert.equal(admittedSocialPr(admissionExpression.replace("github.event.workflow_run.event != 'pull_request'", 'true')), true,
+  'Mutation control must demonstrate that the global PR rejection, not the empty trigger artifact, protects retained work');
+console.log(`Social PR boundary passed: ${socialMutations} mutations rejected, exact-head guarded fixtures only, unchanged producer, retained-queue admission blocked.`);
+
 const qualityWorkflow = await readFile(new URL('../.github/workflows/quality-gate.yml', import.meta.url), 'utf8');
 for (const script of ['test-robots-policy.mjs', 'test-robots-policy-adapters.mjs']) assert(qualityWorkflow.includes('          node scripts/' + script + '\n'), 'Quality Gate must run ' + script);
 console.log('Preview PR boundaries passed: exact-head offline validation only, including Source Expansion; scheduled/manual collection remains separate.');
