@@ -33,7 +33,7 @@ const expectedSha = process.env.SOURCE_COMMIT_SHA || process.env.GITHUB_SHA || n
 let liveSourceAudit = { state: 'not_available', candidates: 0 };
 try {
   const links = await json('data/build/source-link-health-report.json');
-  const current = Boolean(expectedSha && links.sourceCommitSha === expectedSha && links.complete);
+  const current = Boolean(expectedSha && links.sourceCommitSha === expectedSha && links.complete && integrity.publicationState(links.generatedAt, Date.now(), 1).isRecent);
   liveSourceAudit = { state: current ? 'same_head_complete' : 'not_current_complete', sourceCommitSha: links.sourceCommitSha || null, observedAt: links.generatedAt || null, candidates: 0 };
   for (const item of current ? links.lifecycleCandidates || [] : []) for (const id of item.restaurantIds || []) {
     const restaurant = restaurants.find(record => record.id === id);

@@ -1,3 +1,4 @@
+import integrity from '../source-integrity.js';
 import { fetchGuardedSource as fetch } from './lib/fetch-public-source.mjs';
 import { withSourceDeadline } from './lib/fetch-public-source.mjs';
 import { classifyLifecycleLanguage, lifecycleText } from './lib/lifecycle-language.mjs';
@@ -36,7 +37,8 @@ const list = [...urls.values()].slice(0, limit > 0 ? limit : undefined), results
 let reusable = new Map();
 if (process.env.LINK_HEALTH_REUSE_RECENT === '1') {
   const previous = await load('source-link-health-report', {});
-  if (previous.sourceCommitSha === (process.env.SOURCE_COMMIT_SHA || process.env.GITHUB_SHA)) reusable = new Map((previous.results || []).filter(item => Date.now() - Date.parse(item.observedAt) < 3600000).map(item => [item.url, item]));
+  const expectedSha = process.env.SOURCE_COMMIT_SHA || process.env.GITHUB_SHA;
+  if (expectedSha && previous.sourceCommitSha === expectedSha) reusable = new Map((previous.results || []).filter(item => integrity.publicationState(item.observedAt, Date.now(), 1 / 24).isRecent).map(item => [item.url, item]));
 }
 const domainTails = new Map();
 let cursor = 0;

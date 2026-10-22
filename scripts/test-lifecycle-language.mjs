@@ -56,5 +56,10 @@ try {
   await save('source-link-health-report',{...links,sourceCommitSha:'old-head'}); report=await run();
   assert.equal(report.liveSourceAudit.state,'not_current_complete');
   assert(!report.candidates.some(x=>x.sourceLayer==='release_official_page_fetch'));
+  for (const generatedAt of [undefined, null, '', 'not-a-date', new Date(Date.now()+60000).toISOString(), new Date(Date.now()-86400001).toISOString()]) {
+    await save('source-link-health-report',{...links,generatedAt}); report=await run();
+    assert.equal(report.liveSourceAudit.state,'not_current_complete','Invalid report date cannot be current: '+generatedAt);
+    assert(!report.candidates.some(x=>x.sourceLayer==='release_official_page_fetch'));
+  }
   console.log('Lifecycle report consumes same-head fresh-page candidates and rejects stale-run/future-date evidence.');
 } finally { await rm(root,{recursive:true,force:true}); }
