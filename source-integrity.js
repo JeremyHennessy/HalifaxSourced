@@ -20,7 +20,9 @@
   "youtube.com/afriteresto",
   "brawta-by-grafton.square.site",
   "brawtajerk.ca/menu",
-  "stardustbar.ca/reservations"
+  "stardustbar.ca/reservations",
+  // Repeated 404/410 confirmed by the October 22 release audit; no replacement verified.
+  "sushisquare.ca/menu"
 ]);
   // Exact restaurant + content kind + URL decisions. Raw historical observations
   // remain in the audit ledger; a bad specials link can still be a valid menu.

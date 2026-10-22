@@ -1,0 +1,22 @@
+{
+  "reviewedAt": "2026-10-22T02:20:00Z",
+  "restaurantId": "sushi-square-scotia-square",
+  "decision": "suppress_confirmed_unavailable_menu_only",
+  "url": "https://sushisquare.ca/menu/",
+  "evidence": {
+    "qualityGateRunId": 39710029406,
+    "jobUrl": "https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/39710029406/job/119598897813",
+    "failureReportedAt": "2026-10-22T02:14:31.4257197Z",
+    "failure": "Reviewed current official URL failed repeated 404/410: https://sushisquare.ca/menu/",
+    "homepage": {
+      "url": "https://sushisquare.ca/",
+      "fetchedAt": "2026-10-22T02:17:38.228025+00:00",
+      "httpStatus": 200,
+      "sha256": "a566e10d20d0344d8d03092c09de68f4833f64826512d1bbb560cceff3ee7a96",
+      "title": "free-werewolf",
+      "text": "A bright idea, coming soon",
+      "qualification": "Generic WordPress placeholder does not verify a replacement restaurant menu. Search cache contains older restaurant content and is not accepted as a current receipt."
+    }
+  },
+  "scope": "Remove the reviewed menu source and suppress its exact normalized path from historical enrichment. Preserve historical source snapshots, all other location facts and clocks, operating status, and homepage pointer. No closure, relocation, domain-ownership change, new menu, hours, coordinates or image rights are inferred."
+}
