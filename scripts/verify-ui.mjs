@@ -295,11 +295,21 @@ await aliasContext.route('**/data/city-events.js*', async route => {
   const body = await readFile(new URL('../data/city-events.js',import.meta.url),'utf8');
   await route.fulfill({status:200,contentType:'application/javascript',body:body + '\nwindow.HALIFAX_CITY_EVENTS.events.forEach(event => { event.duplicateEventIds = [...(event.duplicateEventIds || []), "qa-legacy-" + event.id]; });'});
 });
-await aliasPage.goto(`${url}/#events`,{waitUntil:'networkidle'});
+await aliasPage.goto(`${url}/#events`,{waitUntil:'load'});
+aliasResources.assertClean();
+try {
+  await aliasPage.waitForFunction(() => document.readyState === 'complete' && typeof savedCityEvents !== 'undefined' && window.__halifaxEventFilterState, null, {timeout:15000});
+} catch (error) { aliasResources.assertClean(); throw error; }
+aliasResources.assertClean();
 const aliasTarget = await aliasPage.locator('[data-save-event-id]').first().getAttribute('data-save-event-id');
 if (!aliasTarget) throw new Error('Saved-alias fixture needs an event.');
-await aliasPage.evaluate(id => localStorage.setItem('halifaxSourced.savedEvents.v1',JSON.stringify(['qa-legacy-'+id,id])),aliasTarget);
-await aliasPage.reload({waitUntil:'networkidle'});
+await aliasPage.evaluate(id => localStorage.setItem('halifaxSourced.savedEvents.v1',JSON.stringify(['qa-legacy-'+id])),aliasTarget);
+await aliasPage.reload({waitUntil:'load'});
+aliasResources.assertClean();
+try {
+  await aliasPage.waitForFunction(() => document.readyState === 'complete' && typeof savedCityEvents !== 'undefined' && window.__halifaxEventFilterState, null, {timeout:15000});
+} catch (error) { aliasResources.assertClean(); throw error; }
+aliasResources.assertClean();
 const aliasButton = aliasPage.locator('[data-save-event-id]').filter({hasText:'Saved'});
 console.log('Saved alias restoration state', JSON.stringify(await aliasPage.evaluate(target => ({target, now: new Date().toISOString(), stored: localStorage.getItem('halifaxSourced.savedEvents.v1'), saved: [...savedCityEvents], targetEvent: cityEvents.find(event=>event.id===target), buttons: [...document.querySelectorAll('[data-save-event-id]')].map(button=>({id:button.dataset.saveEventId,pressed:button.getAttribute('aria-pressed'),text:button.textContent}))}),aliasTarget)));
 aliasResources.assertClean();
@@ -308,7 +318,12 @@ await aliasPage.locator('#eventSavedFilter').check({force:true});
 if (await aliasPage.locator('.event-card').count() !== 1) throw new Error('Saved-only alias filter lost or duplicated its event.');
 await aliasPage.locator('[data-save-event-id]').click();
 if (await aliasPage.locator('.event-card').count() !== 0) throw new Error('Unsave did not remove canonical and alias save.');
-await aliasPage.reload({waitUntil:'networkidle'});
+await aliasPage.reload({waitUntil:'load'});
+aliasResources.assertClean();
+try {
+  await aliasPage.waitForFunction(() => document.readyState === 'complete' && typeof savedCityEvents !== 'undefined' && window.__halifaxEventFilterState, null, {timeout:15000});
+} catch (error) { aliasResources.assertClean(); throw error; }
+aliasResources.assertClean();
 if (await aliasPage.evaluate(()=>JSON.parse(localStorage.getItem('halifaxSourced.savedEvents.v1')).length) !== 0) throw new Error('Unsave did not persist across reload.');
 aliasResources.assertClean();
 await aliasContext.close();
