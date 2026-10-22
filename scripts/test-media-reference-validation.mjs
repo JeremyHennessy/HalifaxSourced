@@ -9,9 +9,9 @@ const run=(script,expected)=>{const result=spawnSync(process.execPath,['--import
 const read=async file=>{const context={window:{}};vm.runInNewContext(await readFile(join(root,file),'utf8'),context);return context.window;};
 try{
  for(const directory of ['scripts','data','assets'])await cp(new URL('../'+directory,import.meta.url),join(root,directory),{recursive:true});
- for(const file of ['app-media.js','source-integrity.js'])await cp(new URL('../'+file,import.meta.url),join(root,file));
+ for(const file of ['app-media.js','source-integrity.js','app-restaurant-identity.js','app-inspection-matching.js','restaurant-corrections.js'])await cp(new URL('../'+file,import.meta.url),join(root,file));
  await mkdir(join(root,'artifacts'),{recursive:true});
- for(const script of ['check-data-integrity.mjs','check-restaurant-media-rights.mjs','build-thumbnail-candidates.mjs','check-thumbnail-candidates.mjs','build-content-coverage-report.mjs','build-thumbnail-coverage-report.mjs'])run(script,0);
+ for(const script of ['export-catalog.mjs','check-data-integrity.mjs','check-restaurant-media-rights.mjs','build-thumbnail-candidates.mjs','check-thumbnail-candidates.mjs','build-content-coverage-report.mjs','build-thumbnail-coverage-report.mjs'])run(script,0);
  const firstBuild=JSON.parse(await readFile(join(root,'data/build/thumbnail-candidates.json'),'utf8'));run('build-thumbnail-candidates.mjs',0);assert.deepEqual(JSON.parse(await readFile(join(root,'data/build/thumbnail-candidates.json'),'utf8')),firstBuild,'Builder must be idempotent for fixed inputs and clock');
  const file='data/restaurant-media.js',original=await readFile(join(root,file),'utf8'),media=(await read(file)).HALIFAX_RESTAURANT_MEDIA;
  media.records[0].permissionConfirmed=false;await writeFile(join(root,file),'window.HALIFAX_RESTAURANT_MEDIA = '+JSON.stringify(media)+';');
