@@ -9,6 +9,10 @@ import integrity from '../source-integrity.js';
 import { reviewedCorrections } from './lib/reviewed-corrections.mjs';
 
 const root = new URL('../', import.meta.url);
+// The fixture's virtual time must not precede authentic reviewed access receipts.
+const reviewedAccessPolicy = JSON.parse(await readFile(new URL('data/source-link-access-holds.json', root), 'utf8'));
+const latestReviewedRestriction = Math.max(...[reviewedAccessPolicy, ...(reviewedAccessPolicy.historicalEvidence || [])].flatMap(group=>group.observations.map(row=>Date.parse(row.observedAt))));
+const defaultFixtureClock = new Date(Math.max(Date.parse('2026-10-23T16:00:00.000Z'), latestReviewedRestriction + 1000)).toISOString();
 const sajId = 'osm-node-8443747544-saj-house';
 const foreign = '433 World Trade Center, Gibraltar, GI';
 const expected = new Map([
@@ -141,7 +145,7 @@ try {
     finally{await writeFile('requests.json',JSON.stringify(requests));}
   `);
   const run = (limit, extraEnv = {}) => {
-    const result = spawnSync(process.execPath, [join(fixture, 'runner.mjs')], { cwd: fixture, env: { ...process.env, STRUCTURED_PLACE_FACT_LIMIT: String(limit), STRUCTURED_PLACE_FACT_DELAY_MS: '0', STRUCTURED_PLACE_FACT_CONCURRENCY: '1', ...extraEnv }, encoding: 'utf8', timeout: 10000 });
+    const result = spawnSync(process.execPath, [join(fixture, 'runner.mjs')], { cwd: fixture, env: { ...process.env, FIXTURE_NOW: defaultFixtureClock, STRUCTURED_PLACE_FACT_LIMIT: String(limit), STRUCTURED_PLACE_FACT_DELAY_MS: '0', STRUCTURED_PLACE_FACT_CONCURRENCY: '1', ...extraEnv }, encoding: 'utf8', timeout: 10000 });
     assert.equal(result.status, 0, result.stderr);
   };
   run(0);
