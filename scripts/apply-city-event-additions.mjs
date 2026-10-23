@@ -65,6 +65,8 @@ function mergeEvents(existing, addition) {
   merged.categories = uniqueBy([...(addition.categories || []), ...(existing.categories || [])], (value) => String(value || ""));
   merged.alternateSources = uniqueBy([...(existing.alternateSources || []), ...(addition.alternateSources || [])], (source) => `${source?.sourceId || ""}|${source?.sourceUrl || ""}`);
   merged.sourceEvidence = uniqueBy([...(existing.sourceEvidence || []), ...(addition.sourceEvidence || [])], (source) => `${source?.sourceId || ""}|${source?.basis || ""}|${source?.sourceUrl || ""}`);
+  merged.supersedesEventIds = uniqueBy([...(existing.supersedesEventIds || []), ...(addition.supersedesEventIds || [])], (value) => String(value || ""))
+    .filter((value) => value && value !== merged.id);
   return merged;
 }
 
@@ -96,6 +98,7 @@ function validateAdditions(additions) {
     if (!event.city || !/\b(halifax|dartmouth|bedford)\b/i.test(`${event.city} ${event.address || ""} ${event.venueName || ""}`)) errors.push(`missing Halifax-metro location evidence for ${event.id || event.title || "<missing>"}`);
     if (!event.sourceId || !event.sourceName || !event.sourceKind || !validUrl(event.sourceUrl) || !event.observedAt) errors.push(`invalid source fields for ${event.id || event.title || "<missing>"}`);
     if (!Array.isArray(event.categories) || !event.categories.length) errors.push(`missing categories for ${event.id || event.title || "<missing>"}`);
+    if (event.supersedesEventIds && (!Array.isArray(event.supersedesEventIds) || event.supersedesEventIds.some((id) => !id || id === event.id))) errors.push(`invalid superseded event ids for ${event.id || event.title || "<missing>"}`);
     if (Object.hasOwn(event, "description") || Object.hasOwn(event, "body") || Object.hasOwn(event, "rawHtml") || Object.hasOwn(event, "content")) errors.push(`raw body field retained for ${event.id || event.title || "<missing>"}`);
     if (!Array.isArray(event.sourceEvidence) || !event.sourceEvidence.some((source) => source.basis === "official_primary" && validUrl(source.sourceUrl))) errors.push(`missing official-primary source evidence for ${event.id || event.title || "<missing>"}`);
     for (const source of [...(event.alternateSources || []), ...(event.sourceEvidence || [])]) {
@@ -135,7 +138,17 @@ function applyAdditions(payload, additions) {
     addedIds.push(id || key);
   }
 
-  const sortedEvents = events.sort(sortEvents);
+  const currentAdditionIds = new Set((additions.events || []).map((event) => String(event?.id || "")).filter(Boolean));
+  const supersededIds = new Set((additions.events || []).flatMap((event) => event.supersedesEventIds || []).map(String).filter(Boolean));
+  const removedSupersededIds = [];
+  const filteredEvents = events.filter((event) => {
+    const id = String(event?.id || "");
+    const remove = supersededIds.has(id) && !currentAdditionIds.has(id);
+    if (remove) removedSupersededIds.push(id);
+    return !remove;
+  });
+
+  const sortedEvents = filteredEvents.sort(sortEvents);
   const categoryCounts = sortedEvents.reduce((counts, event) => {
     for (const category of event.categories || []) counts[category] = (counts[category] || 0) + 1;
     return counts;
@@ -169,12 +182,14 @@ function applyAdditions(payload, additions) {
         source: "data/build/city-event-additions.json",
         eventCount: additions.events.length,
         addedIds,
-        mergedIds
+        mergedIds,
+        removedSupersededIds
       },
       events: sortedEvents
     },
     addedIds,
-    mergedIds
+    mergedIds,
+    removedSupersededIds
   };
 }
 
@@ -198,7 +213,8 @@ await writeFile(reportUrl, JSON.stringify({
   outputEventCount: result.payload.events.length,
   addedIds: result.addedIds,
   mergedIds: result.mergedIds,
+  removedSupersededIds: result.removedSupersededIds,
   additionSourceCount: Array.isArray(additions.sources) ? additions.sources.length : 0,
   additionEventCount: Array.isArray(additions.events) ? additions.events.length : 0
 }, null, 2) + "\n");
-console.log(`Applied city-event additions: added=${result.addedIds.length}, merged=${result.mergedIds.length}, total=${result.payload.events.length}.`);
+console.log(`Applied city-event additions: added=${result.addedIds.length}, merged=${result.mergedIds.length}, superseded=${result.removedSupersededIds.length}, total=${result.payload.events.length}.`);
