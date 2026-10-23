@@ -5,7 +5,7 @@ import { join, dirname } from 'node:path';
 import { spawnSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
-import { validateAccessPolicy } from './lib/link-access-policy.mjs';
+import { validateAccessPolicy, createAccessHolds } from './lib/link-access-policy.mjs';
 
 // Regression tests run the real collector and release gate in isolated trees.
 // The finite fetch preload has no path to the network: unexpected or unused
@@ -240,6 +240,18 @@ process.on('exit', () => {
   const beforeDowntownHalifaxPolicy = {...clone(committedPolicy),historicalEvidence:clone(committedPolicy.historicalEvidence.slice(0,-1))};
   assert.equal(digest(beforeDowntownHalifaxPolicy),'a309b469376de324369575599eb41e36d33f57348f87ccb1dfabf71b422866fe','All 223 observations preceding the Downtown Halifax directory denial remain exactly unchanged');
   validateAccessPolicy(committedPolicy);
+const acceptedBarriosHolds = createAccessHolds(committedPolicy);
+for (const url of [
+  'https://www.barrioshfx.ca/',
+  'https://barrioshfx.ca/barrios-menu',
+  'https://barrioshfx.ca/delivery',
+  'https://barrioshfx.ca/reservation',
+  'https://barrioshfx.ca/menu-guide'
+]) {
+  assert.equal(acceptedBarriosHolds.find(url)?.scope, 'url', 'Only the exact evidenced Barrios path is access-held: ' + url);
+}
+assert.equal(acceptedBarriosHolds.find('https://barrioshfx.ca/unknown-page'), null, 'Other Barrios paths are not host-wide blocked');
+
   assert(committedPolicy.historicalEvidence[0].observations.every(row => row.status === 403 && new URL(row.url).hostname === 'junglejims.ca'));
   assert.equal(committedPolicy.historicalEvidence[1].observations[0].status, 429);
   const independentUrl = value => { const url = new URL(value); url.hash = ''; url.hostname = url.hostname.toLowerCase().replace(/\.+$/,'').replace(/^www\./,''); return url.href; };
