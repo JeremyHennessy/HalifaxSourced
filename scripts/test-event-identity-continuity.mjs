@@ -20,7 +20,7 @@ assert.equal(vm.runInContext("absoluteUrl('javascript:alert(1)', 'https://exampl
 // The primary importer likewise must not fabricate ticket links when no offer exists.
 const primaryImporter = await readFile(new URL('./import-city-events.mjs',import.meta.url),'utf8');
 const primarySafeUrl = primaryImporter.match(/^function safeUrl\(value, base\) \{[\s\S]*?^\}/m)?.[0];
-const primaryTicketExpression = primaryImporter.match(/^    ticketUrl: (raw\.ticketUrl[^\n]+),$/m)?.[1];
+const primaryTicketExpression = primaryImporter.match(/^    ticketUrl: (\(raw\.ticketUrl[^\n]+),$/m)?.[1];
 assert.ok(primarySafeUrl && primaryTicketExpression, 'Primary event normalization and ticket expression must exist');
 const primaryUrlContext = vm.createContext({URL, source:{url:'https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/'}, raw:{ticketUrl:null,website:null}});
 vm.runInContext(primarySafeUrl,primaryUrlContext);
