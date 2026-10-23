@@ -200,8 +200,8 @@ status or observation clock, or retry a blocked target merely to fit this schema
 Before committing any such group, retrieve the actual job log and job metadata and
 independently verify those hashes and the selected original line. Local structural
 validation does not authenticate an external log merely because hashes are present.
-The variant has hostile fixture coverage and is also used below for eight actual
-reviewed QA diagnostics. It adds no storage service or automatic cross-run writes.
+The variant has hostile fixture coverage and is also used below for nine actual
+reviewed workflow diagnostics. It adds no storage service or automatic cross-run writes.
 
 Content Quality Audit PRs run only exact-head, transport-denied fixtures; its
 scheduled/manual producer commands, bounds and schedule remain unchanged. Quality
@@ -326,3 +326,25 @@ either receipt. All previous 220 observations, clocks and provenance remain
 unchanged. The union now has 222 observations (77 actual 403, 145 actual 429 and
 no production 401) while preserving all 1,060 release URLs. No blocked endpoint
 was retried to construct this reviewed policy update.
+
+
+On October 23, scheduled Social Source run 39964122111, attempt 1, `social-refresh`
+job 120449390865 at source commit ba6be06ce519e66aabb6b866d18e2dfb4f9ef96f
+failed closed when `https://nogginsfarm.ca/robots.txt` returned HTTP 403. The request
+began at `2026-10-23T13:47:49.628Z`, the response was observed at
+`2026-10-23T13:47:53.874Z`, and the diagnostic was logged at that same observation
+clock. Its independently retrieved full job-log SHA-256 is
+`e152a2329e1f5548e14d842539684b327e3b4f203c8eb2908d5d2ac14c02b41c`.
+The appended reviewed-log group preserves that exact URL restriction; it is not a
+host-wide claim, permission grant, business-status inference, link removal or media
+rights change.
+
+Scheduled Source Expansion run 39967685268 then independently observed the same
+robots URL returning HTTP 403 at `2026-10-23T14:13:01.848Z` after its request began
+at `2026-10-23T14:12:59.721Z`; full job-log SHA-256
+`77eede484546707aea78a8263465654cc33d7f15bfe9569011099de7fd15bca7`.
+That corroborating receipt is retained in its original workflow log, but it is not
+duplicated in the committed policy because the validated registry permits one
+canonical observation per URL. Future shared robots checks are denied before
+transport while previously accepted Noggins facts and references retain their
+original clocks. No blocked endpoint was retried to construct this repair.
