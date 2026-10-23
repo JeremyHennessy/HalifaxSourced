@@ -231,7 +231,7 @@ process.on('exit', () => {
   assert.deepEqual(committedPolicy.historicalEvidence.map(group => [group.provenance.workflowRunId,group.observations.length]), [['39767300296',26],['39744158052',1],...Array.from({length:5},()=>['39792176695',1]),['39801572908',1],['39817151873',1],['39817151873',1],['39964122111',1]]);
   const originalPolicy = {...clone(committedPolicy),historicalEvidence:clone(committedPolicy.historicalEvidence.slice(0,2))};
   assert.equal(digest(originalPolicy),'1a77c729b7328969f7f244e6d4d1343dda513447a1f271e56cf75ee852c9c123','All original observations, clocks and provenance remain unchanged');
-  const beforeOrderOnlinePolicy = {...clone(committedPolicy),historicalEvidence:clone(committedPolicy.historicalEvidence.slice(0,-3))};
+  const beforeOrderOnlinePolicy = {...clone(committedPolicy),historicalEvidence:clone(committedPolicy.historicalEvidence.slice(0,-4))};
   assert.equal(digest(beforeOrderOnlinePolicy),'2556894ef813c8d585120bad40af0cd211662467c3694cd1b8b28338f4f28a03','All 219 prior observations, clocks and provenance remain exactly unchanged');
   const beforeCurrentMainPolicy = {...clone(committedPolicy),historicalEvidence:clone(committedPolicy.historicalEvidence.slice(0,-3))};
   assert.equal(digest(beforeCurrentMainPolicy),'f30a03d7dbe7b22298e2e2145c17c4fa4e95ab3e1c1f4cc07b99f0c32cdd043e','All 220 observations preceding current main remain exactly unchanged');
