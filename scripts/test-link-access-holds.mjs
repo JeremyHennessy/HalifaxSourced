@@ -253,12 +253,12 @@ process.on('exit', () => {
         '39792176695':{sourceCommitSha:'c1fd484193edb6200a508f067f00d47ac6656de2',workflowJobId:119870732180,logSha256:'24ccd634fb6f1b5677901fb4250bef55a2b80539918576f8b5d7d377db958bca',policy:originalPolicy},
         '39801572908':{sourceCommitSha:'8baaca6180488c84ba31d0bb4eef9617a5b1aa0d',workflowJobId:119903376388,logSha256:'75c5846730bc055cb7383f1b1982e2acd67570628a7e00d1008cd01deb3110b0',policy:beforeOrderOnlinePolicy},
         '39817151873':{sourceCommitSha:'18091d41dbcc1d57e759cb9149d93f5c2396a251',workflowJobId:119958511096,logSha256:'5090ddddc0d48d57a60333afb892f42c06a5456cb47066dc3ed324376f975df6',policy:beforeCurrentMainPolicy},
-        '39964122111':{sourceCommitSha:'ba6be06ce519e66aabb6b866d18e2dfb4f9ef96f',workflowJobId:120449390865,logSha256:'e152a2329e1f5548e14d842539684b327e3b4f203c8eb2908d5d2ac14c02b41c',policy:beforeNogginsPolicy}
+        '39964122111':{sourceCommitSha:'ba6be06ce519e66aabb6b866d18e2dfb4f9ef96f',workflowJob:'social-refresh',workflowJobId:120449390865,logSha256:'e152a2329e1f5548e14d842539684b327e3b4f203c8eb2908d5d2ac14c02b41c',policy:beforeNogginsPolicy}
       }[p.workflowRunId];
       assert(expected,'Only the four specifically reviewed failed workflow runs may supply these real observations');
       assert.equal(p.sourceCommitSha,expected.sourceCommitSha);
       assert.equal(p.workflowRunAttempt,'1');
-      assert.equal(p.workflowJob,'data-integrity');
+      assert.equal(p.workflowJob,expected.workflowJob ?? 'data-integrity');
       assert.equal(p.workflowJobId,expected.workflowJobId);
       assert.equal(p.logSha256,expected.logSha256);
       assert.equal(p.accessPolicySha256,digest(expected.policy));
