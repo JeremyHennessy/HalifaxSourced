@@ -48,6 +48,27 @@ assert.deepEqual(dedupeCanonicalEvents([library,{...library,id:'fresh'}])[0].dup
 assert.equal(dedupeCanonicalEvents([library,{...library,id:'other',startAt:'2026-10-22T21:30:00Z'}]).length,2);
 assert.equal(dedupeCanonicalEvents([library,{...library,id:'other',eventUrl:'https://halifax.bibliocommons.com/events/abcdef'}]).length,2);
 
+const bedfordPuppet = {
+  id:'bedford-library-events-20781097868f48be',
+  sourceKind:'official_library_location_calendar',
+  sourceId:'bedford-library-events',
+  title:'Puppet Show: Too Much Noise on Halloween Night',
+  eventUrl:'https://halifax.bibliocommons.com/events/6a91b4bab204780029963a97',
+  startAt:'2026-10-24T13:30:00.000Z'
+};
+const bedfordV2 = {
+  ...bedfordPuppet,
+  id:'halifax-public-libraries-current',
+  sourceKind:'public_library_calendar',
+  sourceId:'halifax-public-libraries',
+  eventUrl:'https://halifax.bibliocommons.com/v2/events/6a91b4bab204780029963a97'
+};
+const bedfordRoutes = dedupeCanonicalEvents([bedfordPuppet, bedfordV2]);
+assert.equal(bedfordRoutes.length, 1, 'BiblioCommons legacy and v2 routes identify one occurrence');
+assert.equal(bedfordRoutes[0].id, bedfordPuppet.id, 'Published event identity remains the owner');
+assert.deepEqual(bedfordRoutes[0].duplicateEventIds, [bedfordV2.id]);
+assert.equal(dedupeCanonicalEvents([bedfordPuppet, {...bedfordV2, eventUrl:'https://halifax.bibliocommons.com/v2/events/6a91b4bab204780029963a98'}]).length, 2, 'Different BiblioCommons detail IDs remain distinct');
+
 // A title cleanup must not invalidate saves keyed to the published occurrence ID.
 const publishedJunoId = 'alderney-gate-library-events-dd528c059fc415a5';
 const cleanedJunoAlias = 'alderney-gate-library-events-ec0ca632d4bf24a5';

@@ -30,8 +30,12 @@ export function canonicalEventKey(event) {
     try {
       const url = new URL(event.eventUrl);
       const stamp = Date.parse(event.startAt);
-      if (url.hostname === 'halifax.bibliocommons.com' && /^\/events\/[a-f0-9]+\/?$/.test(url.pathname) && Number.isFinite(stamp)) {
-        return `library|${url.hostname}${url.pathname.replace(/\/$/,'')}|${stamp}`;
+      const detail = url.pathname.match(/^\/(?:v2\/)?events\/([a-f0-9]+)\/?$/);
+      if (url.hostname === 'halifax.bibliocommons.com' && detail && Number.isFinite(stamp)) {
+        // BiblioCommons serves the same occurrence at both /events/:id and
+        // /v2/events/:id. Treating those routes as different can manufacture
+        // a removal when source order changes during a refresh.
+        return `library|${url.hostname}/events/${detail[1]}|${stamp}`;
       }
     } catch { /* Unqualified URL: never infer identity from a title. */ }
   }
