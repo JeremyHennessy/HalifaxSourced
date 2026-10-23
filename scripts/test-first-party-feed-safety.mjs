@@ -23,7 +23,7 @@ function assertAccessExit(result, specs, label, boundary = null) {
 }
 
 
-const clock = '2026-10-23T10:00:00.000Z';
+const clock = '2026-10-23T15:00:00.000Z';
 const feed = 'https://fixture.example/feed?kind=rss';
 const tail = 'https://fixture.example/tail';
 const robot = 'https://fixture.example/robots.txt';
