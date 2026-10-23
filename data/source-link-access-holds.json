@@ -2361,6 +2361,75 @@
           "observedAt": "2026-10-23T19:43:22.120Z"
         }
       ]
+    },
+    {
+      "provenance": {
+        "kind": "reviewed_workflow_log",
+        "repository": "JeremyHennessy/HalifaxSourced",
+        "sourceCommitSha": "1a9ffb0453b76316a6eba1937f30a6815bbb81b1",
+        "workflowRunId": "40018299320",
+        "workflowRunAttempt": "1",
+        "workflowJob": "data-integrity",
+        "workflowJobId": 120635975319,
+        "accessPolicySha256": "afdcd678a29fea37147e34a4e9f184635a4bc6daca9ae8ffbf192bd62c708466",
+        "logSha256": "d96d5075fbe20eb0370a73ef4a949dc664d3bd7990ea49409941eee3356a3eef",
+        "diagnosticSha256": "9ef649812ac2cd3ad3c73a666bd5c4b62e9024b3305a7c96f735e2ac1a580e1e",
+        "receiptSha256": "69cd044c456faf006d618a403d9a29a172806038ce5434e5ee61348a4a1f5605",
+        "loggedAt": "2026-10-23T20:24:58.376Z",
+        "diagnostic": {
+          "version": 1,
+          "disposition": "nonpublishable_requires_review",
+          "kind": "http_restriction",
+          "repository": "JeremyHennessy/HalifaxSourced",
+          "workflowJob": "data-integrity",
+          "loggedAt": "2026-10-23T20:24:58.376Z",
+          "sourceCommitSha": "1a9ffb0453b76316a6eba1937f30a6815bbb81b1",
+          "sourceWorkflowRunId": "40018299320",
+          "sourceWorkflowRunAttempt": "1",
+          "accessPolicySha256": "afdcd678a29fea37147e34a4e9f184635a4bc6daca9ae8ffbf192bd62c708466",
+          "evidence": {
+            "hold": {
+              "id": "a12ba310c0c8a361cfa87c18fcd4c4d584c24e62fc47cc419e58f61be3b94607",
+              "scope": "url",
+              "target": "https://secretsauce.skipthedishes.com/",
+              "reason": "access_restricted",
+              "resume": "reviewed_evidence_required",
+              "evidence": {
+                "url": "https://secretsauce.skipthedishes.com/",
+                "finalUrl": "https://secretsauce.skipthedishes.com/",
+                "status": 403,
+                "observedAt": "2026-10-23T20:24:58.376Z"
+              },
+              "provenance": {
+                "kind": "current_run",
+                "sourceCommitSha": "1a9ffb0453b76316a6eba1937f30a6815bbb81b1",
+                "sourceWorkflowRunId": "40018299320",
+                "sourceWorkflowRunAttempt": "1",
+                "accessPolicySha256": "afdcd678a29fea37147e34a4e9f184635a4bc6daca9ae8ffbf192bd62c708466",
+                "requestId": "587"
+              }
+            },
+            "receipt": {
+              "requestId": "587",
+              "url": "https://secretsauce.skipthedishes.com/",
+              "status": 403,
+              "observedAt": "2026-10-23T20:24:58.376Z",
+              "attemptedAt": "2026-10-23T20:24:58.070Z",
+              "mediaType": "text/html"
+            },
+            "late": false,
+            "suspensionId": null
+          }
+        }
+      },
+      "observations": [
+        {
+          "url": "https://secretsauce.skipthedishes.com/",
+          "finalUrl": "https://secretsauce.skipthedishes.com/",
+          "status": 403,
+          "observedAt": "2026-10-23T20:24:58.376Z"
+        }
+      ]
     }
   ]
 }
