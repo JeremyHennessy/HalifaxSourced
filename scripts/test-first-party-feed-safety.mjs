@@ -23,7 +23,11 @@ function assertAccessExit(result, specs, label, boundary = null) {
 }
 
 
-const clock = '2026-10-23T16:00:00.000Z';
+// Keep the virtual fixture clock after real committed access observations; otherwise
+// the production policy must (correctly) reject receipts that seem to be in the future.
+const accessLedger = JSON.parse(await readFile(new URL('../data/source-link-access-holds.json',import.meta.url),'utf8'));
+const latestAcceptedReceipt = Math.max(...[accessLedger,...(accessLedger.historicalEvidence||[])].flatMap(group=>group.observations.map(row=>Date.parse(row.observedAt))));
+const clock = new Date(Math.max(Date.parse('2026-10-23T16:00:00.000Z'),latestAcceptedReceipt + 1000)).toISOString();
 const feed = 'https://fixture.example/feed?kind=rss';
 const tail = 'https://fixture.example/tail';
 const robot = 'https://fixture.example/robots.txt';
