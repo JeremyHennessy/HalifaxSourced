@@ -547,7 +547,7 @@ window.HALIFAX_CITY_EVENTS = {
         "Community"
       ],
       "eventUrl": "https://www2.halifaxpubliclibraries.ca/store/",
-      "ticketUrl": "https://halifax.bibliocommons.com/v2/events",
+      "ticketUrl": null,
       "price": null,
       "sourceId": "halifax-public-libraries",
       "sourceName": "Halifax Public Libraries",
@@ -574,7 +574,7 @@ window.HALIFAX_CITY_EVENTS = {
         "Community"
       ],
       "eventUrl": "https://halifax.bibliocommons.com/v2/events/6aaadff3ca248a00291648e2",
-      "ticketUrl": "https://halifax.bibliocommons.com/v2/events",
+      "ticketUrl": null,
       "price": null,
       "sourceId": "halifax-public-libraries",
       "sourceName": "Halifax Public Libraries",
