@@ -9,7 +9,12 @@ import vm from "node:vm";
 
 const repository = fileURLToPath(new URL("../", import.meta.url));
 const root = await mkdtemp(join(tmpdir(), "halifax-thumbnail-clocks-"));
-const clocks = ["2026-10-23T16:00:00.000Z", "2026-11-01T12:00:00.000Z"];
+// Mocked build clocks must not precede authentic accepted access receipts.
+const reviewedAccessPolicy = JSON.parse(await readFile(join(repository, "data/source-link-access-holds.json"), "utf8"));
+const latestReviewedRestriction = Math.max(...[reviewedAccessPolicy,...(reviewedAccessPolicy.historicalEvidence||[])].flatMap(group=>group.observations.map(row=>Date.parse(row.observedAt))));
+const firstClock = new Date(Math.max(Date.parse("2026-10-23T16:00:00.000Z"),latestReviewedRestriction + 1000)).toISOString();
+const secondClock = new Date(Math.max(Date.parse("2026-11-01T12:00:00.000Z"),Date.parse(firstClock)+7*86400000)).toISOString();
+const clocks = [firstClock, secondClock];
 const oldObservation = "2020-01-02T03:04:05Z"; // Preserve the actual spelling, not just the instant.
 const json = async (directory, file) => JSON.parse(await readFile(join(directory, file), "utf8"));
 const put = (directory, file, value) => writeFile(join(directory, file), JSON.stringify(value, null, 2));

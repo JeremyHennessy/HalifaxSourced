@@ -5,7 +5,7 @@ import { join, dirname } from 'node:path';
 import { spawnSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
-import { validateAccessPolicy } from './lib/link-access-policy.mjs';
+import { validateAccessPolicy, createAccessHolds } from './lib/link-access-policy.mjs';
 
 // Regression tests run the real collector and release gate in isolated trees.
 // The finite fetch preload has no path to the network: unexpected or unused
@@ -20,7 +20,9 @@ const dependencies = [
   'scripts/lib/deny-source-network.mjs', 'scripts/lib/source-access-state.mjs',
   'restaurant-corrections.js', 'source-integrity.js'
 ];
-const committedPolicy = JSON.parse(await readFile(new URL('../data/source-link-access-holds.json', import.meta.url), 'utf8'));
+const fullReviewedPolicy = JSON.parse(await readFile(new URL('../data/source-link-access-holds.json', import.meta.url), 'utf8'));
+// Preserve the original 224-receipt regression corpus independently of the five new exact holds.
+const committedPolicy = {...structuredClone(fullReviewedPolicy), historicalEvidence:structuredClone(fullReviewedPolicy.historicalEvidence.slice(0, -5))};
 const digest = value => createHash('sha256').update(JSON.stringify(value)).digest('hex');
 const clone = value => structuredClone(value);
 const committedObservations = [committedPolicy, ...(committedPolicy.historicalEvidence || [])].flatMap(group => group.observations);
@@ -240,6 +242,46 @@ process.on('exit', () => {
   const beforeDowntownHalifaxPolicy = {...clone(committedPolicy),historicalEvidence:clone(committedPolicy.historicalEvidence.slice(0,-1))};
   assert.equal(digest(beforeDowntownHalifaxPolicy),'a309b469376de324369575599eb41e36d33f57348f87ccb1dfabf71b422866fe','All 223 observations preceding the Downtown Halifax directory denial remain exactly unchanged');
   validateAccessPolicy(committedPolicy);
+  validateAccessPolicy(fullReviewedPolicy);
+  assert.equal(fullReviewedPolicy.historicalEvidence.length, committedPolicy.historicalEvidence.length + 5, 'Only five Barrios groups added to immutable baseline');
+  const newBarriosGroups = fullReviewedPolicy.historicalEvidence.slice(-5);
+  for (const group of newBarriosGroups) {
+    const p = group.provenance;
+    assert.equal(p.kind, 'reviewed_workflow_log');
+    assert.equal(p.workflowRunId, '40012922138');
+    assert.equal(p.workflowJobId, 120617582171);
+    assert.equal(p.sourceCommitSha, '593cf3b03ff2a7409d1b7ebbb6e4de22ba11bff6');
+    assert.equal(p.accessPolicySha256, digest(committedPolicy), 'Receipt policy must match the exact previous baseline');
+    assert.equal(p.logSha256, '63f8a1631ccae2cad852bd375f17ad788be1a34a59b86db8e1bd03f92e3f91e9');
+    assert.equal(p.diagnosticSha256, digest(p.diagnostic));
+    assert.equal(p.receiptSha256, digest(p.diagnostic.evidence.receipt));
+    assert.deepEqual(group.observations, [p.diagnostic.evidence.hold.evidence]);
+  }
+const acceptedBarriosHolds = createAccessHolds(fullReviewedPolicy);
+for (const url of [
+  'https://www.barrioshfx.ca/',
+  'https://barrioshfx.ca/barrios-menu',
+  'https://barrioshfx.ca/delivery',
+  'https://barrioshfx.ca/reservation',
+  'https://barrioshfx.ca/menu-guide'
+]) {
+  assert.equal(acceptedBarriosHolds.find(url)?.scope, 'url', 'Only the exact evidenced Barrios path is access-held: ' + url);
+}
+assert.equal(acceptedBarriosHolds.find('https://barrioshfx.ca/unknown-page'), null, 'Other Barrios paths are not host-wide blocked');
+  // Exercise the real finite collector and release gate under the full new policy.
+  const deniedBarrios = ['https://www.barrioshfx.ca/', 'https://barrioshfx.ca/barrios-menu',
+    'https://barrioshfx.ca/delivery', 'https://barrioshfx.ca/reservation', 'https://barrioshfx.ca/menu-guide'];
+  const allowedBarrios = 'https://barrioshfx.ca/unknown-page';
+  await configure({policy:fullReviewedPolicy, catalog:catalogFor([...deniedBarrios,allowedBarrios])});
+  const barriosCheck = await collect({[allowedBarrios]:[ok]});
+  assert.equal(barriosCheck.report.counts.held,5,'All five exactly evidenced Barrios paths stay unattempted');
+  assert.equal(barriosCheck.report.counts.attempted,1,'Unrelated same-host path is allowed through normal policy');
+  assert.deepEqual(barriosCheck.events.filter(e=>e.event==='fetch').map(e=>e.url),[allowedBarrios]);
+  barriosCheck.report.results.slice(0,5).forEach((row,i)=>held(row,newBarriosGroups[i].observations[0]));
+  await gate(barriosCheck.report);
+  checked('five Barrios receipt-backed URL holds are unattempted; a new same-host URL remains independently eligible');
+
+
   assert(committedPolicy.historicalEvidence[0].observations.every(row => row.status === 403 && new URL(row.url).hostname === 'junglejims.ca'));
   assert.equal(committedPolicy.historicalEvidence[1].observations[0].status, 429);
   const independentUrl = value => { const url = new URL(value); url.hash = ''; url.hostname = url.hostname.toLowerCase().replace(/\.+$/,'').replace(/^www\./,''); return url.href; };
