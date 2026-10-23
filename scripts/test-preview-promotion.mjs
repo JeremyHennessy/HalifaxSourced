@@ -64,7 +64,7 @@ try {
     'steps.preview.outputs.source_run_url': 'https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/12345',
     'steps.reservation.outputs.expected_sha': '',
     'steps.reservation.outputs.released_sha': '',
-    'steps.commit.outputs.branch': 'codex/promote-city-events-preview-v2'
+    'steps.commit.outputs.branch': 'codex/promote-city-events-preview-v3'
   };
   const shellFor = (name, extra = {}) => step(name).split('        run: |\n')[1]
     .split('\n').map(s => s.replace(/^          /, '')).join('\n')
@@ -79,7 +79,7 @@ try {
   for(const file of ['scripts/preview-branch-policy.mjs','scripts/lib/preview-coordinator.mjs']) put(join(seed,file),readFileSync(join(root,file),'utf8'));
   put(join(seed, 'data/build/base.json'), '{}'); git(seed, 'add', '.'); git(seed, 'commit', '-m', 'base');
   git(scratch, 'init', '--bare', remote); git(seed, 'remote', 'add', 'origin', remote); git(seed, 'push', 'origin', 'main');
-  const branch = 'refs/heads/codex/promote-city-events-preview-v2';
+  const branch = 'refs/heads/codex/promote-city-events-preview-v3';
   const realGit = execFileSync('which', ['git'], { encoding: 'utf8' }).trim();
   const shim = join(scratch, 'bin', 'git');
   put(shim, `#!/bin/bash\nif [ "$1" = push ] && [ -n "$RACE_SHA" ]; then\n  "${realGit}" --git-dir="$RACE_REMOTE" update-ref "${branch}" "$RACE_SHA"\nfi\nexec "${realGit}" "$@"\n`); chmodSync(shim, 0o755);
@@ -105,7 +105,7 @@ try {
 
   // Only a branch already accepted into main can be safely reused.
   git(seed, 'fetch', 'origin', branch); git(seed, 'merge', '--ff-only', 'FETCH_HEAD'); git(seed, 'push', 'origin', 'main');
-  pushed = run('active-review', { ACTIVE_HEADS: 'codex/promote-city-events-preview-v2' }, 'other', first);
+  pushed = run('active-review', { ACTIVE_HEADS: 'codex/promote-city-events-preview-v3' }, 'other', first);
   assert.notEqual(pushed.status, 0); assert.match(pushed.stdout, /active review reserves/); assertions += 2;
   pushed = run('merged-branch', {}, 'new-data', first);
   assert.equal(pushed.status, 0, pushed.stderr);
@@ -152,7 +152,7 @@ case "$1 $2" in
 esac
 `);
   chmodSync(ghShim, 0o755);
-  const compareUrl = 'https://github.com/JeremyHennessy/HalifaxSourced/compare/main...codex/promote-city-events-preview-v2?expand=1';
+  const compareUrl = 'https://github.com/JeremyHennessy/HalifaxSourced/compare/main...codex/promote-city-events-preview-v3?expand=1';
   for (const scenario of ['create-blocked', 'existing-pr', 'new-pr', 'list-fails', 'edit-fails', 'view-fails', 'view-partial-fails', 'empty-url', 'invalid-url']) {
     const cwd = join(scratch, `pr-${scenario}`); mkdirSync(cwd);
     const output = join(cwd, 'outputs'); const summary = join(cwd, 'summary'); const calls = join(cwd, 'gh-calls');
@@ -175,7 +175,7 @@ esac
     const dispatches = ghCalls.split('\n').filter(line => line.startsWith('workflow run '));
     assert.equal(dispatches.length, hasPr ? 1 : 0, `${scenario}: ${ghCalls}`); assertions++;
     if (hasPr) {
-      assert.equal(dispatches[0].trim(), 'workflow run Quality Gate --ref codex/promote-city-events-preview-v2');
+      assert.equal(dispatches[0].trim(), 'workflow run Quality Gate --ref codex/promote-city-events-preview-v3');
       assert.ok(ghCalls.includes(scenario === 'new-pr' ? 'pr create --draft ' : 'pr view 17 '));
       assert.ok(!ghCalls.includes('pr edit '));
       assertions += 2;

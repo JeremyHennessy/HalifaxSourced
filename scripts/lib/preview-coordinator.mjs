@@ -1,7 +1,10 @@
 // Pure, read-only queue policy. GitHub branches, PRs and retained workflow runs
 // are the durable state; an Actions concurrency slot is never treated as a FIFO.
 export const LANES = [
-  { artifact: 'city-events-preview', workflow: 'City Events Preview', file: 'city-events-preview.yml', priority: 1, group: 'events', branch: 'codex/promote-city-events-preview-v2', retiredBranches: [{branch:'codex/promote-city-events-preview', sha:'a0c4f28512269aace14da4c7d7efcd11ed9723e4'}] },
+  { artifact: 'city-events-preview', workflow: 'City Events Preview', file: 'city-events-preview.yml', priority: 1, group: 'events', branch: 'codex/promote-city-events-preview-v3', retiredBranches: [
+    {branch:'codex/promote-city-events-preview', sha:'a0c4f28512269aace14da4c7d7efcd11ed9723e4'},
+    {branch:'codex/promote-city-events-preview-v2', sha:'cf297092c01613441b241bcf6627c33f413ad729'}
+  ] },
   { artifact: 'source-expansion-preview', workflow: 'Source Expansion Preview', file: 'source-expansion-preview.yml', priority: 2, group: 'source-social', branch: 'codex/promote-source-expansion-preview-v2', retiredBranches: [{branch:'codex/promote-source-expansion-preview', sha:'f1af8dc099331a27f0da2528b3c86114c446ea5d'}] },
   { artifact: 'social-source-preview', workflow: 'Social Source Preview', file: 'social-source-preview.yml', priority: 3, group: 'source-social' }
 ].map(lane => ({ ...lane, branch: lane.branch || `codex/promote-${lane.artifact}`, retiredBranches: lane.retiredBranches || [] }));
