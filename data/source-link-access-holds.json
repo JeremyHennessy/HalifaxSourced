@@ -1947,6 +1947,75 @@
           "observedAt": "2026-10-23T13:47:53.874Z"
         }
       ]
+    },
+    {
+      "provenance": {
+        "kind": "reviewed_workflow_log",
+        "repository": "JeremyHennessy/HalifaxSourced",
+        "sourceCommitSha": "762bb0ebd839bb53db0cfd247a92d5c41472ca7f",
+        "workflowRunId": "39978562448",
+        "workflowRunAttempt": "1",
+        "workflowJob": "discover",
+        "workflowJobId": 120499516166,
+        "accessPolicySha256": "a309b469376de324369575599eb41e36d33f57348f87ccb1dfabf71b422866fe",
+        "logSha256": "8e6d9972ca033e3e0334f605e801b8c2d3c9f0f8f6de7acecea2537d8f3ee5ba",
+        "diagnosticSha256": "f0f3d9d6e2eca471fd4a7de898e3439e312af5f39fc407bea1ccd0989b7af72c",
+        "receiptSha256": "e736da6c0ad1c9761de3b0cb2a2d4bce25ec610b3d94faddc10c980db2ac02a7",
+        "loggedAt": "2026-10-23T15:29:54.546Z",
+        "diagnostic": {
+          "version": 1,
+          "disposition": "nonpublishable_requires_review",
+          "kind": "http_restriction",
+          "repository": "JeremyHennessy/HalifaxSourced",
+          "workflowJob": "discover",
+          "loggedAt": "2026-10-23T15:29:54.546Z",
+          "sourceCommitSha": "762bb0ebd839bb53db0cfd247a92d5c41472ca7f",
+          "sourceWorkflowRunId": "39978562448",
+          "sourceWorkflowRunAttempt": "1",
+          "accessPolicySha256": "a309b469376de324369575599eb41e36d33f57348f87ccb1dfabf71b422866fe",
+          "evidence": {
+            "hold": {
+              "id": "cca68dbef4c963a6545c0e5980965d6f9121ef4731c44e11a3d9e44abefd264c",
+              "scope": "url",
+              "target": "https://members.downtownhalifax.ca/directory/Search/food-drink-526691",
+              "reason": "access_restricted",
+              "resume": "reviewed_evidence_required",
+              "evidence": {
+                "url": "https://members.downtownhalifax.ca/directory/Search/food-drink-526691",
+                "finalUrl": "https://members.downtownhalifax.ca/directory/Search/food-drink-526691",
+                "status": 403,
+                "observedAt": "2026-10-23T15:29:54.546Z"
+              },
+              "provenance": {
+                "kind": "current_run",
+                "sourceCommitSha": "762bb0ebd839bb53db0cfd247a92d5c41472ca7f",
+                "sourceWorkflowRunId": "39978562448",
+                "sourceWorkflowRunAttempt": "1",
+                "accessPolicySha256": "a309b469376de324369575599eb41e36d33f57348f87ccb1dfabf71b422866fe",
+                "requestId": "31"
+              }
+            },
+            "receipt": {
+              "requestId": "31",
+              "url": "https://members.downtownhalifax.ca/directory/Search/food-drink-526691",
+              "status": 403,
+              "observedAt": "2026-10-23T15:29:54.546Z",
+              "attemptedAt": "2026-10-23T15:29:54.523Z",
+              "mediaType": "text/html"
+            },
+            "late": false,
+            "suspensionId": null
+          }
+        }
+      },
+      "observations": [
+        {
+          "url": "https://members.downtownhalifax.ca/directory/Search/food-drink-526691",
+          "finalUrl": "https://members.downtownhalifax.ca/directory/Search/food-drink-526691",
+          "status": 403,
+          "observedAt": "2026-10-23T15:29:54.546Z"
+        }
+      ]
     }
   ]
 }
