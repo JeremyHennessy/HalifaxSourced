@@ -46,6 +46,8 @@ function collapseExactRepeatedWords(value) {
   return title;
 }
 function absoluteUrl(value, base) {
+  // An absent ticket URL is not a link to the source calendar.
+  if (value == null || !String(value).trim()) return null;
   try {
     const url = new URL(String(value ?? ""), base);
     return ["http:", "https:"].includes(url.protocol) ? url.href : null;

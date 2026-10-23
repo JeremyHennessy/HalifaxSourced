@@ -446,7 +446,7 @@ async function testCityAdapter(parentRoot) {
     `DTSTART:${icsDate(startAt)}`, `DTEND:${icsDate(endAt)}`, 'LOCATION:Fixture Hall\\, Halifax',
     `URL:${detail}`, 'END:VEVENT', 'END:VCALENDAR'];
   const icsExpected = {...expectedEvent(event(), tribe, detail), id: `${tribe.id}-${hash('fixture-uid')}`,
-    eventUrl: detail, venueName: 'Fixture Hall, Halifax', address: 'Fixture Hall, Halifax', price: null, ticketUrl: tribe.url};
+    eventUrl: detail, venueName: 'Fixture Hall, Halifax', address: 'Fixture Hall, Halifax', price: null, ticketUrl: null};
   for (const [name, body] of [['normal', icsLines.join('\r\n')],
     ['harmless folding and LF', icsLines.join('\n').replace('SUMMARY:Fixture Concert', 'SUMMARY:Fixture\n  Concert')]]) {
     await targeted({name: `Tribe ICS identity stable: ${name}`, sources: [tribe],

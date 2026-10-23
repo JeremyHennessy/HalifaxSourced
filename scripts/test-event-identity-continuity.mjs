@@ -4,6 +4,30 @@ import vm from 'node:vm';
 import { preservePublishedEventIds, dedupeCanonicalEvents } from './lib/canonical-event-dedupe.mjs';
 import { reconcileFutureEventLosses } from './lib/event-refresh-safety.mjs';
 
+// A missing optional ticket URL must not become the library's general calendar URL.
+const supplementalImporter = await readFile(new URL('./import-supplemental-city-events.mjs',import.meta.url),'utf8');
+const absoluteUrlFunction = supplementalImporter.match(/^function absoluteUrl\(value, base\) \{[\s\S]*?^\}/m)?.[0];
+assert.ok(absoluteUrlFunction, 'Supplemental URL normalization function must exist');
+const urlContext = vm.createContext({URL});
+vm.runInContext(absoluteUrlFunction,urlContext);
+for (const missing of ['undefined', 'null', '\'\'', '\'   \'']) {
+  assert.equal(vm.runInContext(`absoluteUrl(${missing}, 'https://halifax.bibliocommons.com/v2/events')`,urlContext), null, 'Absent ticket link must remain unknown');
+}
+assert.equal(vm.runInContext("absoluteUrl('/tickets', 'https://example.org/calendar')",urlContext), 'https://example.org/tickets', 'Genuine relative ticket URLs still resolve');
+assert.equal(vm.runInContext("absoluteUrl('https://tickets.example.org/show', 'https://example.org/calendar')",urlContext), 'https://tickets.example.org/show', 'Genuine absolute ticket URLs survive');
+assert.equal(vm.runInContext("absoluteUrl('javascript:alert(1)', 'https://example.org/calendar')",urlContext), null, 'Non-web ticket protocols remain denied');
+
+// The primary importer likewise must not fabricate ticket links when no offer exists.
+const primaryImporter = await readFile(new URL('./import-city-events.mjs',import.meta.url),'utf8');
+const primarySafeUrl = primaryImporter.match(/^function safeUrl\(value, base\) \{[\s\S]*?^\}/m)?.[0];
+const primaryTicketExpression = primaryImporter.match(/^    ticketUrl: (\(raw\.ticketUrl[^\n]+),$/m)?.[1];
+assert.ok(primarySafeUrl && primaryTicketExpression, 'Primary event normalization and ticket expression must exist');
+const primaryUrlContext = vm.createContext({URL, source:{url:'https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/'}, raw:{ticketUrl:null,website:null}});
+vm.runInContext(primarySafeUrl,primaryUrlContext);
+assert.equal(vm.runInContext(primaryTicketExpression,primaryUrlContext),null,'Missing library ticket must not become generic venue calendar');
+primaryUrlContext.raw = {ticketUrl:'/register',website:null};
+assert.equal(vm.runInContext(primaryTicketExpression,primaryUrlContext),'https://www.halifaxpubliclibraries.ca/register','Explicit primary-source ticket link remains valid');
+
 const old = {id:'published', title:'Meet Juno Meet Juno', sourceKind:'official_library_location_calendar', sourceId:'library', eventUrl:'https://halifax.bibliocommons.com/events/6a8ddc4657c264087ad3ac1b', sourceUrl:'https://halifax.bibliocommons.com/events/6a8ddc4657c264087ad3ac1b', startAt:'2026-10-21T21:30:00Z', endAt:'2026-10-21T22:30:00Z', observedAt:'2026-10-20T12:00:00Z', duplicateEventIds:['historical-alias']};
 const fresh = {...old, id:'new-title-hash',title:'Meet Juno', observedAt:'2026-10-21T12:00:00Z',duplicateEventIds:[]};
 const untouchedOld = structuredClone(old), untouchedFresh = structuredClone(fresh);
