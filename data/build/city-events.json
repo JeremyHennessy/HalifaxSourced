@@ -712,7 +712,7 @@
         "Community"
       ],
       "eventUrl": "https://halifax.bibliocommons.com/events/6a9acd4769166f088b9746c7",
-      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
+      "ticketUrl": null,
       "price": null,
       "sourceId": "alderney-gate-library-events",
       "sourceName": "Alderney Gate Public Library",
@@ -740,7 +740,7 @@
         "Community"
       ],
       "eventUrl": "https://halifax.bibliocommons.com/events/6a7387aae700090faa68b9ed",
-      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
+      "ticketUrl": null,
       "price": null,
       "sourceId": "alderney-gate-library-events",
       "sourceName": "Alderney Gate Public Library",
@@ -768,7 +768,7 @@
         "Community"
       ],
       "eventUrl": "https://halifax.bibliocommons.com/events/6a8ddc4657c264087ad3ac1b",
-      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
+      "ticketUrl": null,
       "price": null,
       "sourceId": "alderney-gate-library-events",
       "sourceName": "Alderney Gate Public Library",
@@ -862,7 +862,7 @@
         "Community"
       ],
       "eventUrl": "https://halifax.bibliocommons.com/events/6a8f34f3be148200298a46c4",
-      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
+      "ticketUrl": null,
       "price": null,
       "sourceId": "alderney-gate-library-events",
       "sourceName": "Alderney Gate Public Library",
@@ -890,7 +890,7 @@
         "Community"
       ],
       "eventUrl": "https://halifax.bibliocommons.com/events/6a95d02c4cb69d003e24b36b",
-      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
+      "ticketUrl": null,
       "price": null,
       "sourceId": "alderney-gate-library-events",
       "sourceName": "Alderney Gate Public Library",
@@ -918,7 +918,7 @@
         "Community"
       ],
       "eventUrl": "https://halifax.bibliocommons.com/events/6a6b9f3388e9bf2800346a32",
-      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/woodlawn-public-library/",
+      "ticketUrl": null,
       "price": null,
       "sourceId": "woodlawn-library-events",
       "sourceName": "Woodlawn Public Library",
@@ -946,7 +946,7 @@
         "Community"
       ],
       "eventUrl": "https://halifax.bibliocommons.com/events/6a8364dcb204780029938566",
-      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
+      "ticketUrl": null,
       "price": null,
       "sourceId": "alderney-gate-library-events",
       "sourceName": "Alderney Gate Public Library",
@@ -1056,7 +1056,7 @@
         "Arts"
       ],
       "eventUrl": "https://halifax.bibliocommons.com/events/6a9b1e436562d0229684b37f",
-      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
+      "ticketUrl": null,
       "price": null,
       "sourceId": "alderney-gate-library-events",
       "sourceName": "Alderney Gate Public Library",
@@ -1084,7 +1084,7 @@
         "Community"
       ],
       "eventUrl": "https://halifax.bibliocommons.com/events/6a8f3345be148200298a4638",
-      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
+      "ticketUrl": null,
       "price": null,
       "sourceId": "bedford-library-events",
       "sourceName": "Bedford Public Library",
@@ -1141,7 +1141,7 @@
         "Community"
       ],
       "eventUrl": "https://halifax.bibliocommons.com/events/6abebe41e06996003a8097cf",
-      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
+      "ticketUrl": null,
       "price": null,
       "sourceId": "bedford-library-events",
       "sourceName": "Bedford Public Library",
@@ -1198,7 +1198,7 @@
         "Community"
       ],
       "eventUrl": "https://halifax.bibliocommons.com/events/6a9861b869166f088b96cee2",
-      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/woodlawn-public-library/",
+      "ticketUrl": null,
       "price": null,
       "sourceId": "woodlawn-library-events",
       "sourceName": "Woodlawn Public Library",
@@ -1266,7 +1266,7 @@
         "Family"
       ],
       "eventUrl": "https://halifax.bibliocommons.com/events/6a6b9f1c0d65ac360043549d",
-      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/woodlawn-public-library/",
+      "ticketUrl": null,
       "price": null,
       "sourceId": "woodlawn-library-events",
       "sourceName": "Woodlawn Public Library",
@@ -1294,7 +1294,7 @@
         "Community"
       ],
       "eventUrl": "https://halifax.bibliocommons.com/events/6aa820e3ca248a002915b216",
-      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
+      "ticketUrl": null,
       "price": null,
       "sourceId": "bedford-library-events",
       "sourceName": "Bedford Public Library",
@@ -1350,7 +1350,7 @@
         "Community"
       ],
       "price": null,
-      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
+      "ticketUrl": null,
       "eventUrl": "https://halifax.bibliocommons.com/events/6abab4a3ebad220045418778",
       "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
       "sourceId": "bedford-library-events",
@@ -1394,7 +1394,7 @@
         "Family"
       ],
       "eventUrl": "https://halifax.bibliocommons.com/events/6a6b9ee5cca66c2f00a71adb",
-      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/woodlawn-public-library/",
+      "ticketUrl": null,
       "price": null,
       "sourceId": "woodlawn-library-events",
       "sourceName": "Woodlawn Public Library",
@@ -1578,7 +1578,7 @@
         "Community"
       ],
       "eventUrl": "https://halifax.bibliocommons.com/events/6a8f32ca36204e08fbb76386",
-      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/woodlawn-public-library/",
+      "ticketUrl": null,
       "price": null,
       "sourceId": "woodlawn-library-events",
       "sourceName": "Woodlawn Public Library",
@@ -1606,7 +1606,7 @@
         "Community"
       ],
       "eventUrl": "https://halifax.bibliocommons.com/events/6a91b4bab204780029963a97",
-      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
+      "ticketUrl": null,
       "price": null,
       "sourceId": "bedford-library-events",
       "sourceName": "Bedford Public Library",
@@ -1634,7 +1634,7 @@
         "Community"
       ],
       "eventUrl": "https://halifax.bibliocommons.com/events/6a6b9e670d65ac360043540f",
-      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/woodlawn-public-library/",
+      "ticketUrl": null,
       "price": null,
       "sourceId": "woodlawn-library-events",
       "sourceName": "Woodlawn Public Library",
@@ -1692,7 +1692,7 @@
         "Community"
       ],
       "eventUrl": "https://halifax.bibliocommons.com/events/6a835ef7a821f90037ee7674",
-      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
+      "ticketUrl": null,
       "price": null,
       "sourceId": "bedford-library-events",
       "sourceName": "Bedford Public Library",
@@ -2253,7 +2253,7 @@
         "Comedy"
       ],
       "eventUrl": "https://halifax.bibliocommons.com/events/6aa1ac15ca248a0029149a43",
-      "ticketUrl": "https://www.halifaxpubliclibraries.ca/locations/woodlawn-public-library/",
+      "ticketUrl": null,
       "price": null,
       "sourceId": "woodlawn-library-events",
       "sourceName": "Woodlawn Public Library",
