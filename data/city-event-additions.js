@@ -2,7 +2,7 @@
 
 window.HALIFAX_CITY_EVENT_ADDITIONS = JSON.parse(`{
   "version": 1,
-  "generatedAt": "2026-10-22T22:21:55.514Z",
+  "generatedAt": "2026-10-23T05:16:48.006Z",
   "policy": "Curated city-event additions are source-backed records used when current official or local calendars have not yet been promoted into the primary city-events build.",
   "sources": [
     {
@@ -82,9 +82,112 @@ window.HALIFAX_CITY_EVENT_ADDITIONS = JSON.parse(`{
       "sourceName": "Bedford Public Library reviewed occurrence",
       "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/bedford-public-library/",
       "authority": "official_primary"
+    },
+    {
+      "sourceId": "bedford-library-events",
+      "sourceName": "Bedford Public Library",
+      "sourceUrl": "https://halifax.bibliocommons.com/events/6aa820e3ca248a002915b216",
+      "authority": "official_primary"
+    },
+    {
+      "sourceId": "the-carleton",
+      "sourceName": "The Carleton",
+      "sourceUrl": "https://www.thecarleton.ca/events/garnet-rogers-2/",
+      "authority": "official_primary"
     }
   ],
   "events": [
+    {
+      "id": "bedford-library-events-1025ea0d8b163ffb",
+      "title": "PD Day: Halloween Haunt Party",
+      "startAt": "2026-10-23T13:00:00.000Z",
+      "endAt": "2026-10-23T15:00:00.000Z",
+      "allDay": false,
+      "venueName": "Scott Manor House",
+      "address": "15 Fort Sackville Road, Bedford, NS B4A 2G6",
+      "city": "Bedford",
+      "categories": [
+        "Community",
+        "Family"
+      ],
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": "https://halifax.bibliocommons.com/events/6aa820e3ca248a002915b216",
+      "sourceUrl": "https://halifax.bibliocommons.com/events/6aa820e3ca248a002915b216",
+      "sourceId": "bedford-library-events",
+      "sourceName": "Bedford Public Library",
+      "sourceKind": "official_library_location_calendar",
+      "observedAt": "2026-10-23T05:16:48.006Z",
+      "reviewState": "source_observed",
+      "organizerId": "halifax-public-libraries",
+      "organizerName": "Halifax Public Libraries",
+      "locationReview": {
+        "sourceUrl": "https://halifax.bibliocommons.com/events/6aa820e3ca248a002915b216",
+        "reviewedAt": "2026-10-23T05:16:48.006Z",
+        "coordinateStatus": "unverified_non_branch_location"
+      },
+      "sourceEvidence": [
+        {
+          "sourceId": "bedford-library-events",
+          "sourceName": "Bedford Public Library",
+          "sourceUrl": "https://halifax.bibliocommons.com/events/6aa820e3ca248a002915b216",
+          "basis": "official_primary",
+          "observedAt": "2026-10-23T05:16:48.006Z",
+          "httpStatus": 200,
+          "contentSha256": "3c644f89619630eefb007bc5f7d216e79cebb1833ac1d2eb50586561af412e55",
+          "observedFacts": [
+            "October 23, 2026 from 10:00 am–12:00 pm at Scott Manor House, 15 Fort Sackville Road, Bedford.",
+            "The current official occurrence page remains published for BiblioCommons event 6aa820e3ca248a002915b216."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the-carleton-876ba7e576b6c6fe",
+      "supersedesEventIds": [
+        "the-carleton-d2693c5a7b5c42a3"
+      ],
+      "title": "6 TIX JUST RELEASED! Garnet Rogers – Friday",
+      "startAt": "2026-10-23T23:00:00.000Z",
+      "endAt": "2026-10-24T01:00:00.000Z",
+      "allDay": false,
+      "venueName": "The Carleton",
+      "address": "1685 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Music",
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": "https://www.thecarleton.ca/events/garnet-rogers-2/",
+      "eventUrl": "https://www.thecarleton.ca/events/garnet-rogers-2/",
+      "sourceUrl": "https://www.thecarleton.ca/events/garnet-rogers-2/",
+      "sourceId": "the-carleton",
+      "sourceName": "The Carleton",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-10-23T05:16:48.006Z",
+      "reviewState": "source_observed",
+      "venueId": "the-carleton-halifax",
+      "neighbourhood": "Downtown",
+      "organizerId": "the-carleton",
+      "organizerName": "The Carleton",
+      "restaurantId": "osm-node-771690675-the-carleton",
+      "sourceEvidence": [
+        {
+          "sourceId": "the-carleton",
+          "sourceName": "The Carleton",
+          "sourceUrl": "https://www.thecarleton.ca/events/garnet-rogers-2/",
+          "basis": "official_primary",
+          "observedAt": "2026-10-23T05:16:48.006Z",
+          "httpStatus": 200,
+          "contentSha256": "395a24a7343b3a1036446ea72a9baf9c65fb0d334916f0bd29cf1dae8f6a6e3f",
+          "observedFacts": [
+            "October 23, 2026 from 8:00–10:00 pm at The Carleton.",
+            "The current official event title says six tickets were just released, replacing the earlier sold-out wording."
+          ]
+        }
+      ]
+    },
     {
       "id": "bedford-library-events-8613f26616226661",
       "title": "Cookies & Computers",
