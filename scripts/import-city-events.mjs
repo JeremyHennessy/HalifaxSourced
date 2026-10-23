@@ -183,7 +183,7 @@ function normalizeEvent(source, raw) {
     city,
     categories,
     price: cleanText(raw.price || raw.cost || "") || null,
-    ticketUrl: safeUrl(raw.ticketUrl || raw.website, source.url),
+    ticketUrl: (raw.ticketUrl || raw.website) ? safeUrl(raw.ticketUrl || raw.website, source.url) : null,
     eventUrl,
     sourceUrl,
     sourceId: source.id,
