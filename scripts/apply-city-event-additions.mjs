@@ -48,6 +48,20 @@ function eventKey(event) {
   ].join("|");
 }
 
+function normalizedUrl(value) {
+  const url = String(value ?? "").trim().replace(/#.*$/, "").replace(/\/+$/, "");
+  return /^https?:\/\//i.test(url) ? url : "";
+}
+
+function occurrenceKey(event) {
+  const eventUrl = normalizedUrl(event?.eventUrl);
+  const startAt = Date.parse(String(event?.startAt || ""));
+  const sourceId = String(event?.sourceId || "").trim();
+  return eventUrl && Number.isFinite(startAt) && sourceId
+    ? `${sourceId}|${eventUrl}|${new Date(startAt).toISOString()}`
+    : "";
+}
+
 function uniqueBy(items, keyFn) {
   const seen = new Set();
   const unique = [];
@@ -68,6 +82,32 @@ function mergeEvents(existing, addition) {
   merged.supersedesEventIds = uniqueBy([...(existing.supersedesEventIds || []), ...(addition.supersedesEventIds || [])], (value) => String(value || ""))
     .filter((value) => value && value !== merged.id);
   return merged;
+}
+
+function mergeCanonicalOccurrence(existing, addition) {
+  const existingObservedAt = Date.parse(String(existing?.observedAt || ""));
+  const additionObservedAt = Date.parse(String(addition?.observedAt || ""));
+  const freshest = Number.isFinite(existingObservedAt)
+    && (!Number.isFinite(additionObservedAt) || existingObservedAt >= additionObservedAt)
+    ? existing
+    : addition;
+  const merged = { ...clone(addition), ...existing, ...clone(freshest), id: addition.id };
+  merged.categories = uniqueBy([...(addition.categories || []), ...(existing.categories || [])], (value) => String(value || ""));
+  merged.alternateSources = uniqueBy([...(existing.alternateSources || []), ...(addition.alternateSources || [])], (source) => `${source?.sourceId || ""}|${source?.sourceUrl || ""}`);
+  merged.sourceEvidence = uniqueBy([...(existing.sourceEvidence || []), ...(addition.sourceEvidence || [])], (source) => `${source?.sourceId || ""}|${source?.basis || ""}|${source?.sourceUrl || ""}|${source?.observedAt || ""}`);
+  merged.duplicateEventIds = uniqueBy([
+    ...(addition.duplicateEventIds || []),
+    ...(existing.duplicateEventIds || []),
+    existing.id
+  ], (value) => String(value || "")).filter((value) => value && value !== merged.id);
+  merged.supersedesEventIds = uniqueBy([...(existing.supersedesEventIds || []), ...(addition.supersedesEventIds || [])], (value) => String(value || ""))
+    .filter((value) => value && value !== merged.id);
+  return merged;
+}
+
+function indexUnique(map, key, index) {
+  if (!key) return;
+  map.set(key, map.has(key) ? null : index);
 }
 
 function sortEvents(a, b) {
@@ -114,10 +154,12 @@ function applyAdditions(payload, additions) {
   const events = Array.isArray(payload.events) ? payload.events.slice() : [];
   const byId = new Map();
   const byKey = new Map();
+  const byOccurrence = new Map();
   events.forEach((event, index) => {
     if (event?.id) byId.set(String(event.id), index);
     const key = eventKey(event);
     if (key) byKey.set(key, index);
+    indexUnique(byOccurrence, occurrenceKey(event), index);
   });
 
   const addedIds = [];
@@ -125,9 +167,18 @@ function applyAdditions(payload, additions) {
   for (const addition of additions.events || []) {
     const id = addition?.id ? String(addition.id) : "";
     const key = eventKey(addition);
-    const index = byId.has(id) ? byId.get(id) : byKey.get(key);
+    const occurrence = occurrenceKey(addition);
+    const exactIndex = byId.has(id) ? byId.get(id) : byKey.get(key);
+    const occurrenceIndex = byOccurrence.get(occurrence);
+    const index = Number.isInteger(exactIndex) ? exactIndex : occurrenceIndex;
     if (Number.isInteger(index)) {
-      events[index] = mergeEvents(events[index], addition);
+      const occurrenceMatch = !Number.isInteger(exactIndex) && Number.isInteger(occurrenceIndex);
+      events[index] = occurrenceMatch
+        ? mergeCanonicalOccurrence(events[index], addition)
+        : mergeEvents(events[index], addition);
+      if (events[index]?.id) byId.set(String(events[index].id), index);
+      const mergedKey = eventKey(events[index]);
+      if (mergedKey) byKey.set(mergedKey, index);
       mergedIds.push(events[index].id || id || key);
       continue;
     }
@@ -135,6 +186,7 @@ function applyAdditions(payload, additions) {
     const nextIndex = events.push(next) - 1;
     if (id) byId.set(id, nextIndex);
     if (key) byKey.set(key, nextIndex);
+    indexUnique(byOccurrence, occurrenceKey(next), nextIndex);
     addedIds.push(id || key);
   }
 
