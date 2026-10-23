@@ -224,26 +224,28 @@ process.on('exit', () => {
     assert(Date.now() - Date.parse(row.assessedAt) < 10000, 'Assessment clock belongs to this run, not the old source evidence');
   }
 
-  // All 223 actual committed current and historical observations must suppress transport, even when
+  // All 224 actual committed current and historical observations must suppress transport, even when
   // a recent same-head success cache would otherwise be eligible for reuse.
   assert.equal(committedPolicy.observations.length, 187, 'Retain all reviewed incident observations');
-  assert.equal(committedObservations.length, 223, 'Retain earlier restrictions and all nine reviewed HTTP receipts');
-  assert.deepEqual(committedPolicy.historicalEvidence.map(group => [group.provenance.workflowRunId,group.observations.length]), [['39767300296',26],['39744158052',1],...Array.from({length:5},()=>['39792176695',1]),['39801572908',1],['39817151873',1],['39817151873',1],['39964122111',1]]);
+  assert.equal(committedObservations.length, 224, 'Retain earlier restrictions and every reviewed HTTP receipt');
+  assert.deepEqual(committedPolicy.historicalEvidence.map(group => [group.provenance.workflowRunId,group.observations.length]), [['39767300296',26],['39744158052',1],...Array.from({length:5},()=>['39792176695',1]),['39801572908',1],['39817151873',1],['39817151873',1],['39964122111',1],['39978562448',1]]);
   const originalPolicy = {...clone(committedPolicy),historicalEvidence:clone(committedPolicy.historicalEvidence.slice(0,2))};
   assert.equal(digest(originalPolicy),'1a77c729b7328969f7f244e6d4d1343dda513447a1f271e56cf75ee852c9c123','All original observations, clocks and provenance remain unchanged');
-  const beforeOrderOnlinePolicy = {...clone(committedPolicy),historicalEvidence:clone(committedPolicy.historicalEvidence.slice(0,-4))};
+  const beforeOrderOnlinePolicy = {...clone(committedPolicy),historicalEvidence:clone(committedPolicy.historicalEvidence.slice(0,-5))};
   assert.equal(digest(beforeOrderOnlinePolicy),'2556894ef813c8d585120bad40af0cd211662467c3694cd1b8b28338f4f28a03','All 219 prior observations, clocks and provenance remain exactly unchanged');
-  const beforeCurrentMainPolicy = {...clone(committedPolicy),historicalEvidence:clone(committedPolicy.historicalEvidence.slice(0,-3))};
+  const beforeCurrentMainPolicy = {...clone(committedPolicy),historicalEvidence:clone(committedPolicy.historicalEvidence.slice(0,-4))};
   assert.equal(digest(beforeCurrentMainPolicy),'f30a03d7dbe7b22298e2e2145c17c4fa4e95ab3e1c1f4cc07b99f0c32cdd043e','All 220 observations preceding current main remain exactly unchanged');
-  const beforeNogginsPolicy = {...clone(committedPolicy),historicalEvidence:clone(committedPolicy.historicalEvidence.slice(0,-1))};
+  const beforeNogginsPolicy = {...clone(committedPolicy),historicalEvidence:clone(committedPolicy.historicalEvidence.slice(0,-2))};
   assert.equal(digest(beforeNogginsPolicy),'6d7a0ab05fe6a190af187869ff077958c6911abbf3b3faef7e0572f766715343','All 222 observations preceding the scheduled Noggins denial remain exactly unchanged');
+  const beforeDowntownHalifaxPolicy = {...clone(committedPolicy),historicalEvidence:clone(committedPolicy.historicalEvidence.slice(0,-1))};
+  assert.equal(digest(beforeDowntownHalifaxPolicy),'a309b469376de324369575599eb41e36d33f57348f87ccb1dfabf71b422866fe','All 223 observations preceding the Downtown Halifax directory denial remain exactly unchanged');
   validateAccessPolicy(committedPolicy);
   assert(committedPolicy.historicalEvidence[0].observations.every(row => row.status === 403 && new URL(row.url).hostname === 'junglejims.ca'));
   assert.equal(committedPolicy.historicalEvidence[1].observations[0].status, 429);
   const independentUrl = value => { const url = new URL(value); url.hash = ''; url.hostname = url.hostname.toLowerCase().replace(/\.+$/,'').replace(/^www\./,''); return url.href; };
   const exactRestrictionKeys = new Set(committedObservations.filter(row => [401,403].includes(row.status)).flatMap(row => [independentUrl(row.url),independentUrl(row.finalUrl)]));
   const restrictedHosts = new Set(committedObservations.filter(row => row.status === 429).map(row => new URL(independentUrl(row.finalUrl)).hostname));
-  assert.equal(exactRestrictionKeys.size, 82, 'Independent normalized exact source/final restriction union');
+  assert.equal(exactRestrictionKeys.size, 83, 'Independent normalized exact source/final restriction union');
   assert.deepEqual([...restrictedHosts].sort(), ['cantongardenns.com','instagram.com','linkedin.com']);
   for (const group of [committedPolicy,...committedPolicy.historicalEvidence]) {
     assert.equal(group.provenance.repository, 'JeremyHennessy/HalifaxSourced');
@@ -253,9 +255,10 @@ process.on('exit', () => {
         '39792176695':{sourceCommitSha:'c1fd484193edb6200a508f067f00d47ac6656de2',workflowJobId:119870732180,logSha256:'24ccd634fb6f1b5677901fb4250bef55a2b80539918576f8b5d7d377db958bca',policy:originalPolicy},
         '39801572908':{sourceCommitSha:'8baaca6180488c84ba31d0bb4eef9617a5b1aa0d',workflowJobId:119903376388,logSha256:'75c5846730bc055cb7383f1b1982e2acd67570628a7e00d1008cd01deb3110b0',policy:beforeOrderOnlinePolicy},
         '39817151873':{sourceCommitSha:'18091d41dbcc1d57e759cb9149d93f5c2396a251',workflowJobId:119958511096,logSha256:'5090ddddc0d48d57a60333afb892f42c06a5456cb47066dc3ed324376f975df6',policy:beforeCurrentMainPolicy},
-        '39964122111':{sourceCommitSha:'ba6be06ce519e66aabb6b866d18e2dfb4f9ef96f',workflowJob:'social-refresh',workflowJobId:120449390865,logSha256:'e152a2329e1f5548e14d842539684b327e3b4f203c8eb2908d5d2ac14c02b41c',policy:beforeNogginsPolicy}
+        '39964122111':{sourceCommitSha:'ba6be06ce519e66aabb6b866d18e2dfb4f9ef96f',workflowJob:'social-refresh',workflowJobId:120449390865,logSha256:'e152a2329e1f5548e14d842539684b327e3b4f203c8eb2908d5d2ac14c02b41c',policy:beforeNogginsPolicy},
+        '39978562448':{sourceCommitSha:'762bb0ebd839bb53db0cfd247a92d5c41472ca7f',workflowJob:'discover',workflowJobId:120499516166,logSha256:'8e6d9972ca033e3e0334f605e801b8c2d3c9f0f8f6de7acecea2537d8f3ee5ba',policy:beforeDowntownHalifaxPolicy}
       }[p.workflowRunId];
-      assert(expected,'Only the four specifically reviewed failed workflow runs may supply these real observations');
+      assert(expected,'Only the five specifically reviewed failed workflow runs may supply these real observations');
       assert.equal(p.sourceCommitSha,expected.sourceCommitSha);
       assert.equal(p.workflowRunAttempt,'1');
       assert.equal(p.workflowJob,expected.workflowJob ?? 'data-integrity');
@@ -278,26 +281,26 @@ process.on('exit', () => {
       assert(group.observations.every(row => Date.parse(row.observedAt) <= Date.parse(group.provenance.reportGeneratedAt)));
     }
   }
-  assert.deepEqual(committedPolicy.historicalEvidence.slice(2).map(group=>group.observations[0].status),[403,403,403,403,429,403,403,403,403]);
+  assert.deepEqual(committedPolicy.historicalEvidence.slice(2).map(group=>group.observations[0].status),[403,403,403,403,429,403,403,403,403,403]);
   await configure({policy:committedPolicy, catalog:catalogFor(committedObservations.map(r => r.url))});
   const fakeRecent = {version:3, sourceCommitSha:sha, accessPolicySha256:digest(committedPolicy), results:committedObservations.map((r, i) => ({url:r.url, state:'ok', status:200, observedAt:fresh(), attempted:true, lifecycle:[{kind:'closures', phrase:'permanently closed'}], entityIds:['fixture-' + i], kinds:['official_website']}))};
   await save(reportPath, fakeRecent);
   let result = await collect({}, {LINK_HEALTH_REUSE_RECENT:'1'});
   assert.equal(result.events.length, 0);
-  assert.equal(result.report.results.length, 223);
+  assert.equal(result.report.results.length, 224);
   result.report.results.forEach((r, i) => held(r, committedObservations[i]));
-  assert.equal(result.report.counts.held, 223);
+  assert.equal(result.report.counts.held, 224);
   assert.equal(result.report.counts.attempted, 0);
   assert.deepEqual(result.report.lifecycleCandidates, []);
   assert.deepEqual(result.report.pendingAccessHolds, []);
   counts(result.report);
   await gate(result.report);
-  checked('all 223 committed artifact/log restrictions retain original evidence and make zero calls; independent union is 82 exact keys and three hosts');
+  checked('all 224 committed artifact/log restrictions retain original evidence and make zero calls; independent union is 83 exact keys and three hosts');
 
   // The previous failed QA run adds exactly one URL, never an order.online host hold.
-  const latestObservation = committedPolicy.historicalEvidence.at(-4).observations[0];
+  const latestObservation = committedPolicy.historicalEvidence.at(-5).observations[0];
   assert.deepEqual(latestObservation,{url:'https://order.online/business/~277519',finalUrl:'https://order.online/business/~277519',status:403,observedAt:'2026-10-22T15:11:21.212Z'});
-  assert.equal(committedPolicy.historicalEvidence.at(-4).provenance.diagnostic.evidence.receipt.attemptedAt,'2026-10-22T15:11:21.146Z');
+  assert.equal(committedPolicy.historicalEvidence.at(-5).provenance.diagnostic.evidence.receipt.attemptedAt,'2026-10-22T15:11:21.146Z');
   const latestAliases = [latestObservation.url,'https://www.order.online./business/~277519#retained-reference'];
   const unrelatedBusinessUrls = ['https://order.online/business/fixture-unrelated-one','https://order.online/business/fixture-unrelated-two'];
   await configure({policy:committedPolicy,catalog:catalogFor([...latestAliases,...unrelatedBusinessUrls])});
@@ -314,7 +317,7 @@ process.on('exit', () => {
 
   // Current main's two reviewed 403s are exact URL holds. Preserve their
   // source identities while allowing unrelated paths on the same hosts.
-  const currentMainObservations = committedPolicy.historicalEvidence.slice(-3,-1).map(group => group.observations[0]);
+  const currentMainObservations = committedPolicy.historicalEvidence.slice(-4,-2).map(group => group.observations[0]);
   assert.deepEqual(currentMainObservations,[
     {url:'https://classic-pizza.order-online.ai/',finalUrl:'https://classic-pizza.order-online.ai/',status:403,observedAt:'2026-10-22T16:54:04.780Z'},
     {url:'https://maygarden.order-online.ai/#/',finalUrl:'https://maygarden.order-online.ai/#/',status:403,observedAt:'2026-10-22T16:54:35.670Z'}
