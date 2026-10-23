@@ -22,7 +22,7 @@ const dependencies = [
 ];
 const fullReviewedPolicy = JSON.parse(await readFile(new URL('../data/source-link-access-holds.json', import.meta.url), 'utf8'));
 // Preserve the original 224-receipt regression corpus independently of the five new exact holds.
-const committedPolicy = {...structuredClone(fullReviewedPolicy), historicalEvidence:structuredClone(fullReviewedPolicy.historicalEvidence.slice(0, -5))};
+const committedPolicy = {...structuredClone(fullReviewedPolicy), historicalEvidence:structuredClone(fullReviewedPolicy.historicalEvidence.slice(0, -6))};
 const digest = value => createHash('sha256').update(JSON.stringify(value)).digest('hex');
 const clone = value => structuredClone(value);
 const committedObservations = [committedPolicy, ...(committedPolicy.historicalEvidence || [])].flatMap(group => group.observations);
@@ -243,8 +243,8 @@ process.on('exit', () => {
   assert.equal(digest(beforeDowntownHalifaxPolicy),'a309b469376de324369575599eb41e36d33f57348f87ccb1dfabf71b422866fe','All 223 observations preceding the Downtown Halifax directory denial remain exactly unchanged');
   validateAccessPolicy(committedPolicy);
   validateAccessPolicy(fullReviewedPolicy);
-  assert.equal(fullReviewedPolicy.historicalEvidence.length, committedPolicy.historicalEvidence.length + 5, 'Only five Barrios groups added to immutable baseline');
-  const newBarriosGroups = fullReviewedPolicy.historicalEvidence.slice(-5);
+  assert.equal(fullReviewedPolicy.historicalEvidence.length, committedPolicy.historicalEvidence.length + 6, 'Only five Barrios groups and one Secret Sauce group added to immutable baseline');
+  const newBarriosGroups = fullReviewedPolicy.historicalEvidence.slice(-6, -1);
   for (const group of newBarriosGroups) {
     const p = group.provenance;
     assert.equal(p.kind, 'reviewed_workflow_log');
@@ -280,6 +280,30 @@ assert.equal(acceptedBarriosHolds.find('https://barrioshfx.ca/unknown-page'), nu
   barriosCheck.report.results.slice(0,5).forEach((row,i)=>held(row,newBarriosGroups[i].observations[0]));
   await gate(barriosCheck.report);
   checked('five Barrios receipt-backed URL holds are unattempted; a new same-host URL remains independently eligible');
+
+  const secretSauceGroup = fullReviewedPolicy.historicalEvidence.at(-1);
+  const secretProvenance = secretSauceGroup.provenance;
+  assert.equal(secretProvenance.kind, 'reviewed_workflow_log');
+  assert.equal(secretProvenance.workflowRunId, '40018299320');
+  assert.equal(secretProvenance.workflowJobId, 120635975319);
+  assert.equal(secretProvenance.sourceCommitSha, '1a9ffb0453b76316a6eba1937f30a6815bbb81b1');
+  assert.equal(secretProvenance.accessPolicySha256, digest({...clone(fullReviewedPolicy), historicalEvidence:clone(fullReviewedPolicy.historicalEvidence.slice(0, -1))}));
+  assert.equal(secretProvenance.logSha256, 'd96d5075fbe20eb0370a73ef4a949dc664d3bd7990ea49409941eee3356a3eef');
+  assert.equal(secretProvenance.diagnosticSha256, digest(secretProvenance.diagnostic));
+  assert.equal(secretProvenance.receiptSha256, digest(secretProvenance.diagnostic.evidence.receipt));
+  assert.deepEqual(secretSauceGroup.observations, [secretProvenance.diagnostic.evidence.hold.evidence]);
+  const secretSauceUrl = 'https://secretsauce.skipthedishes.com/';
+  const siblingSecretSauceUrl = 'https://secretsauce.skipthedishes.com/other';
+  assert.equal(acceptedBarriosHolds.find(secretSauceUrl)?.scope, 'url', 'Only the exact evidenced Secret Sauce URL is access-held');
+  assert.equal(acceptedBarriosHolds.find(siblingSecretSauceUrl), null, 'Sibling Secret Sauce paths are not host-wide blocked');
+  await configure({policy:fullReviewedPolicy, catalog:catalogFor([secretSauceUrl, siblingSecretSauceUrl])});
+  const secretSauceCheck = await collect({[siblingSecretSauceUrl]:[ok]});
+  assert.equal(secretSauceCheck.report.counts.held, 1, 'Exact Secret Sauce URL stays unattempted');
+  assert.equal(secretSauceCheck.report.counts.attempted, 1, 'Sibling Secret Sauce path remains eligible');
+  assert.deepEqual(secretSauceCheck.events.filter(e=>e.event==='fetch').map(e=>e.url), [siblingSecretSauceUrl]);
+  held(secretSauceCheck.report.results[0], secretSauceGroup.observations[0]);
+  await gate(secretSauceCheck.report);
+  checked('Secret Sauce receipt-backed exact URL stays unattempted; a sibling path remains independently eligible');
 
 
   assert(committedPolicy.historicalEvidence[0].observations.every(row => row.status === 403 && new URL(row.url).hostname === 'junglejims.ca'));
