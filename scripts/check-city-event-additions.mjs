@@ -72,6 +72,7 @@ for (const event of additions.events || []) {
   if (!event.city || !/\b(halifax|dartmouth|bedford)\b/i.test(`${event.city} ${event.address || ""} ${event.venueName || ""}`)) errors.push(`missing Halifax-metro evidence for ${event.id || event.title || "<missing>"}`);
   if (!event.sourceId || !event.sourceName || !event.sourceKind || !validUrl(event.sourceUrl) || !event.observedAt) errors.push(`invalid source fields for ${event.id || event.title || "<missing>"}`);
   if (!Array.isArray(event.categories) || !event.categories.length) errors.push(`missing categories for ${event.id || event.title || "<missing>"}`);
+  if (event.supersedesEventIds && (!Array.isArray(event.supersedesEventIds) || event.supersedesEventIds.some((id) => !id || id === event.id))) errors.push(`invalid superseded event ids for ${event.id || event.title || "<missing>"}`);
   if (Object.hasOwn(event, "description") || Object.hasOwn(event, "body") || Object.hasOwn(event, "rawHtml") || Object.hasOwn(event, "content")) errors.push(`raw body field retained for ${event.id || event.title || "<missing>"}`);
   if (!Array.isArray(event.sourceEvidence) || !event.sourceEvidence.some((source) => source.basis === "official_primary" && validUrl(source.sourceUrl))) errors.push(`missing official-primary evidence for ${event.id || event.title || "<missing>"}`);
   for (const source of [...(event.alternateSources || []), ...(event.sourceEvidence || [])]) {
@@ -100,6 +101,17 @@ if (tasteAsia) {
   if (!(tasteAsia.categories || []).includes("Food & Drink") || !(tasteAsia.categories || []).includes("Festivals")) errors.push("Taste Asia 2026 must remain visible in Food & Drink and Festivals filters.");
   if (!validUrl(tasteAsia.sourceUrl) || !validUrl(tasteAsia.eventUrl)) errors.push("Taste Asia 2026 source/event URLs are invalid after runtime merge.");
 }
+
+const garnetRogersUrl = "https://www.thecarleton.ca/events/garnet-rogers-2/";
+const garnetRogersEvents = mergedEvents.filter((event) => event.eventUrl === garnetRogersUrl);
+if (garnetRogersEvents.length !== 1) errors.push(`expected one current Garnet Rogers Friday record after supersession, found ${garnetRogersEvents.length}.`);
+const garnetRogers = garnetRogersEvents[0];
+if (garnetRogers) {
+  if (garnetRogers.id !== "the-carleton-876ba7e576b6c6fe") errors.push("current Garnet Rogers Friday event id did not survive runtime merge.");
+  if (!(garnetRogers.supersedesEventIds || []).includes("the-carleton-d2693c5a7b5c42a3")) errors.push("prior Garnet Rogers Friday event id was not preserved as superseded identity.");
+  if (!/^6 TIX JUST RELEASED!/i.test(String(garnetRogers.title || ""))) errors.push("current Garnet Rogers Friday official title did not survive runtime merge.");
+}
+if (mergedEvents.some((event) => event.id === "the-carleton-d2693c5a7b5c42a3")) errors.push("superseded Garnet Rogers Friday record remained in the runtime event list.");
 
 await mkdir(new URL("../artifacts", import.meta.url), { recursive: true });
 await writeFile(reportUrl, JSON.stringify({
