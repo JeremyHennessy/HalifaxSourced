@@ -9,7 +9,7 @@ import vm from "node:vm";
 
 const repository = fileURLToPath(new URL("../", import.meta.url));
 const root = await mkdtemp(join(tmpdir(), "halifax-thumbnail-clocks-"));
-const clocks = ["2026-10-23T15:00:00.000Z", "2026-11-01T12:00:00.000Z"];
+const clocks = ["2026-10-23T16:00:00.000Z", "2026-11-01T12:00:00.000Z"];
 const oldObservation = "2020-01-02T03:04:05Z"; // Preserve the actual spelling, not just the instant.
 const json = async (directory, file) => JSON.parse(await readFile(join(directory, file), "utf8"));
 const put = (directory, file, value) => writeFile(join(directory, file), JSON.stringify(value, null, 2));
