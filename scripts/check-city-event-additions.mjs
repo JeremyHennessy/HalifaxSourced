@@ -83,6 +83,7 @@ for (const event of additions.events || []) {
 
 const context = vm.createContext({ window: {}, Date, console });
 vm.runInContext(await readFile(cityEventsJsUrl, "utf8"), context, { filename: "data/city-events.js", timeout: 20000 });
+const sourceEvents = JSON.parse(JSON.stringify(context.window.HALIFAX_CITY_EVENTS?.events || []));
 const beforeEvents = Array.isArray(context.window.HALIFAX_CITY_EVENTS?.events) ? context.window.HALIFAX_CITY_EVENTS.events.length : 0;
 vm.runInContext(await readFile(additionsJsUrl, "utf8"), context, { filename: "data/city-event-additions.js", timeout: 20000 });
 const jsAdditions = context.window.HALIFAX_CITY_EVENT_ADDITIONS;
@@ -107,9 +108,22 @@ const garnetRogersEvents = mergedEvents.filter((event) => event.eventUrl === gar
 if (garnetRogersEvents.length !== 1) errors.push(`expected one current Garnet Rogers Friday record after supersession, found ${garnetRogersEvents.length}.`);
 const garnetRogers = garnetRogersEvents[0];
 if (garnetRogers) {
+  const sourceGarnetRogers = sourceEvents.find((event) => event.eventUrl === garnetRogersUrl && event.startAt === garnetRogers.startAt);
+  const reviewedGarnetRogers = additions.events.find((event) => event.eventUrl === garnetRogersUrl && event.startAt === garnetRogers.startAt);
+  const sourceObservedAt = Date.parse(String(sourceGarnetRogers?.observedAt || ""));
+  const reviewedObservedAt = Date.parse(String(reviewedGarnetRogers?.observedAt || ""));
+  const expectedTitle = Number.isFinite(sourceObservedAt) && (!Number.isFinite(reviewedObservedAt) || sourceObservedAt >= reviewedObservedAt)
+    ? sourceGarnetRogers?.title
+    : reviewedGarnetRogers?.title;
   if (garnetRogers.id !== "the-carleton-876ba7e576b6c6fe") errors.push("current Garnet Rogers Friday event id did not survive runtime merge.");
   if (!(garnetRogers.supersedesEventIds || []).includes("the-carleton-d2693c5a7b5c42a3")) errors.push("prior Garnet Rogers Friday event id was not preserved as superseded identity.");
-  if (!/^6 TIX JUST RELEASED!/i.test(String(garnetRogers.title || ""))) errors.push("current Garnet Rogers Friday official title did not survive runtime merge.");
+  if (expectedTitle && garnetRogers.title !== expectedTitle) errors.push("freshest Garnet Rogers Friday official title did not survive runtime merge.");
+  if (sourceGarnetRogers?.id
+    && sourceGarnetRogers.id !== garnetRogers.id
+    && !(garnetRogers.supersedesEventIds || []).includes(sourceGarnetRogers.id)
+    && !(garnetRogers.duplicateEventIds || []).includes(sourceGarnetRogers.id)) {
+    errors.push("fresh source-generated Garnet Rogers Friday alias was not preserved.");
+  }
 }
 if (mergedEvents.some((event) => event.id === "the-carleton-d2693c5a7b5c42a3")) errors.push("superseded Garnet Rogers Friday record remained in the runtime event list.");
 
