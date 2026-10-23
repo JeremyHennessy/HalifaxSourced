@@ -1878,6 +1878,75 @@
           "observedAt": "2026-10-22T16:54:35.670Z"
         }
       ]
+    },
+    {
+      "provenance": {
+        "kind": "reviewed_workflow_log",
+        "repository": "JeremyHennessy/HalifaxSourced",
+        "sourceCommitSha": "ba6be06ce519e66aabb6b866d18e2dfb4f9ef96f",
+        "workflowRunId": "39964122111",
+        "workflowRunAttempt": "1",
+        "workflowJob": "social-refresh",
+        "workflowJobId": 120449390865,
+        "accessPolicySha256": "6d7a0ab05fe6a190af187869ff077958c6911abbf3b3faef7e0572f766715343",
+        "logSha256": "e152a2329e1f5548e14d842539684b327e3b4f203c8eb2908d5d2ac14c02b41c",
+        "diagnosticSha256": "209b03b907f81c1c3c028e097b6a3c0e9d0f9b058bd8454ae3710ec1addb57e8",
+        "receiptSha256": "ca1f32235f02b755302f9ecac3ecf3e69c99b8a7d31ba7a1e5c4f98563d124e6",
+        "loggedAt": "2026-10-23T13:47:53.874Z",
+        "diagnostic": {
+          "version": 1,
+          "disposition": "nonpublishable_requires_review",
+          "kind": "http_restriction",
+          "repository": "JeremyHennessy/HalifaxSourced",
+          "workflowJob": "social-refresh",
+          "loggedAt": "2026-10-23T13:47:53.874Z",
+          "sourceCommitSha": "ba6be06ce519e66aabb6b866d18e2dfb4f9ef96f",
+          "sourceWorkflowRunId": "39964122111",
+          "sourceWorkflowRunAttempt": "1",
+          "accessPolicySha256": "6d7a0ab05fe6a190af187869ff077958c6911abbf3b3faef7e0572f766715343",
+          "evidence": {
+            "hold": {
+              "id": "05a27c90babe17a4282dd24bf51611e1a0136b355be15e3a32fc26f3fe470702",
+              "scope": "url",
+              "target": "https://nogginsfarm.ca/robots.txt",
+              "reason": "access_restricted",
+              "resume": "reviewed_evidence_required",
+              "evidence": {
+                "url": "https://nogginsfarm.ca/robots.txt",
+                "finalUrl": "https://nogginsfarm.ca/robots.txt",
+                "status": 403,
+                "observedAt": "2026-10-23T13:47:53.874Z"
+              },
+              "provenance": {
+                "kind": "current_run",
+                "sourceCommitSha": "ba6be06ce519e66aabb6b866d18e2dfb4f9ef96f",
+                "sourceWorkflowRunId": "39964122111",
+                "sourceWorkflowRunAttempt": "1",
+                "accessPolicySha256": "6d7a0ab05fe6a190af187869ff077958c6911abbf3b3faef7e0572f766715343",
+                "requestId": "271"
+              }
+            },
+            "receipt": {
+              "requestId": "271",
+              "url": "https://nogginsfarm.ca/robots.txt",
+              "status": 403,
+              "observedAt": "2026-10-23T13:47:53.874Z",
+              "attemptedAt": "2026-10-23T13:47:49.628Z",
+              "mediaType": "text/html"
+            },
+            "late": false,
+            "suspensionId": null
+          }
+        }
+      },
+      "observations": [
+        {
+          "url": "https://nogginsfarm.ca/robots.txt",
+          "finalUrl": "https://nogginsfarm.ca/robots.txt",
+          "status": 403,
+          "observedAt": "2026-10-23T13:47:53.874Z"
+        }
+      ]
     }
   ]
 }

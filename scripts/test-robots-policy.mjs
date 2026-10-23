@@ -250,6 +250,7 @@ try {
   assert.equal(await check('https://second.example/menu'), true);
   assert.equal(requests.length, 4, 'Distinct origins get distinct policy caches');
   assert.equal(await check('https://glitterbeancafe.com./menu'), false);
+  assert.equal(await check('https://nogginsfarm.ca/menu'), false, 'Reviewed robots URL hold suppresses the Noggins host before transport');
   assert.equal(await check('file:///menu'), false);
   assert.equal(await check('not a url'), false);
   assert.equal(requests.length, 4, 'Unsafe sources never request robots');
