@@ -769,6 +769,8 @@ window.HALIFAX_CITY_EVENT_ADDITIONS = JSON.parse(`{
     merged.categories = uniqueBy([...(addition.categories || []), ...(existing.categories || [])], (value) => String(value || ""));
     merged.alternateSources = uniqueBy([...(existing.alternateSources || []), ...(addition.alternateSources || [])], (source) => `${source?.sourceId || ""}|${source?.sourceUrl || ""}`);
     merged.sourceEvidence = uniqueBy([...(existing.sourceEvidence || []), ...(addition.sourceEvidence || [])], (source) => `${source?.sourceId || ""}|${source?.basis || ""}|${source?.sourceUrl || ""}`);
+    merged.supersedesEventIds = uniqueBy([...(existing.supersedesEventIds || []), ...(addition.supersedesEventIds || [])], (value) => String(value || ""))
+      .filter((value) => value && value !== merged.id);
     return merged;
   }
 
@@ -807,7 +809,17 @@ window.HALIFAX_CITY_EVENT_ADDITIONS = JSON.parse(`{
     addedIds.push(id || key);
   }
 
-  const sorted = events.sort(sortEvents);
+  const currentAdditionIds = new Set(additions.events.map((event) => String(event?.id || "")).filter(Boolean));
+  const supersededIds = new Set(additions.events.flatMap((event) => event.supersedesEventIds || []).map(String).filter(Boolean));
+  const removedSupersededIds = [];
+  const filteredEvents = events.filter((event) => {
+    const id = String(event?.id || "");
+    const remove = supersededIds.has(id) && !currentAdditionIds.has(id);
+    if (remove) removedSupersededIds.push(id);
+    return !remove;
+  });
+
+  const sorted = filteredEvents.sort(sortEvents);
   payload.events.splice(0, payload.events.length, ...sorted);
   payload.eventCount = payload.events.length;
   payload.categoryCounts = payload.events.reduce((counts, event) => {
@@ -837,6 +849,7 @@ window.HALIFAX_CITY_EVENT_ADDITIONS = JSON.parse(`{
     source: "data/city-event-additions.js",
     eventCount: additions.events.length,
     addedIds,
-    mergedIds
+    mergedIds,
+    removedSupersededIds
   };
 })();
