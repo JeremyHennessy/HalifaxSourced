@@ -2016,6 +2016,351 @@
           "observedAt": "2026-10-23T15:29:54.546Z"
         }
       ]
+    },
+    {
+      "provenance": {
+        "kind": "reviewed_workflow_log",
+        "repository": "JeremyHennessy/HalifaxSourced",
+        "sourceCommitSha": "593cf3b03ff2a7409d1b7ebbb6e4de22ba11bff6",
+        "workflowRunId": "40012922138",
+        "workflowRunAttempt": "1",
+        "workflowJob": "data-integrity",
+        "workflowJobId": 120617582171,
+        "accessPolicySha256": "1c27e3f4b2000f5c0395450dab27a03a4dfe8d55621f88328bd4ca561a687ece",
+        "logSha256": "63f8a1631ccae2cad852bd375f17ad788be1a34a59b86db8e1bd03f92e3f91e9",
+        "diagnosticSha256": "6a3cc7f4259605d3472d8af3950604dfef01a3329e2a71946c15394250d95253",
+        "receiptSha256": "9d3e4d527790060e48b63a2b62a8dc0ec2dda407ae03a304b4932978f75612dc",
+        "loggedAt": "2026-10-23T19:42:48.659Z",
+        "diagnostic": {
+          "version": 1,
+          "disposition": "nonpublishable_requires_review",
+          "kind": "http_restriction",
+          "repository": "JeremyHennessy/HalifaxSourced",
+          "workflowJob": "data-integrity",
+          "loggedAt": "2026-10-23T19:42:48.659Z",
+          "sourceCommitSha": "593cf3b03ff2a7409d1b7ebbb6e4de22ba11bff6",
+          "sourceWorkflowRunId": "40012922138",
+          "sourceWorkflowRunAttempt": "1",
+          "accessPolicySha256": "1c27e3f4b2000f5c0395450dab27a03a4dfe8d55621f88328bd4ca561a687ece",
+          "evidence": {
+            "hold": {
+              "id": "f9fc3af88d8c8ee789203eb68e5b16ab814409e2a69dc9845868b40a58d7321b",
+              "scope": "url",
+              "target": "https://barrioshfx.ca/",
+              "reason": "access_restricted",
+              "resume": "reviewed_evidence_required",
+              "evidence": {
+                "url": "https://www.barrioshfx.ca/",
+                "finalUrl": "https://barrioshfx.ca/",
+                "status": 403,
+                "observedAt": "2026-10-23T19:42:48.659Z"
+              },
+              "provenance": {
+                "kind": "current_run",
+                "sourceCommitSha": "593cf3b03ff2a7409d1b7ebbb6e4de22ba11bff6",
+                "sourceWorkflowRunId": "40012922138",
+                "sourceWorkflowRunAttempt": "1",
+                "accessPolicySha256": "1c27e3f4b2000f5c0395450dab27a03a4dfe8d55621f88328bd4ca561a687ece",
+                "requestId": "32"
+              }
+            },
+            "receipt": {
+              "requestId": "32",
+              "url": "https://barrioshfx.ca/",
+              "status": 403,
+              "observedAt": "2026-10-23T19:42:48.659Z",
+              "attemptedAt": "2026-10-23T19:42:48.265Z",
+              "mediaType": "text/html"
+            },
+            "late": false,
+            "suspensionId": null
+          }
+        }
+      },
+      "observations": [
+        {
+          "url": "https://www.barrioshfx.ca/",
+          "finalUrl": "https://barrioshfx.ca/",
+          "status": 403,
+          "observedAt": "2026-10-23T19:42:48.659Z"
+        }
+      ]
+    },
+    {
+      "provenance": {
+        "kind": "reviewed_workflow_log",
+        "repository": "JeremyHennessy/HalifaxSourced",
+        "sourceCommitSha": "593cf3b03ff2a7409d1b7ebbb6e4de22ba11bff6",
+        "workflowRunId": "40012922138",
+        "workflowRunAttempt": "1",
+        "workflowJob": "data-integrity",
+        "workflowJobId": 120617582171,
+        "accessPolicySha256": "1c27e3f4b2000f5c0395450dab27a03a4dfe8d55621f88328bd4ca561a687ece",
+        "logSha256": "63f8a1631ccae2cad852bd375f17ad788be1a34a59b86db8e1bd03f92e3f91e9",
+        "diagnosticSha256": "a79c9c60922aaac532c62834b8a1989f6e9329225e83c23e1f1dff8a2ffdf2a7",
+        "receiptSha256": "6a9354fb861f320cb359d5540d3d4ac0a262108fed991b76f36c50beeddc970a",
+        "loggedAt": "2026-10-23T19:43:21.629Z",
+        "diagnostic": {
+          "version": 1,
+          "disposition": "nonpublishable_requires_review",
+          "kind": "http_restriction",
+          "repository": "JeremyHennessy/HalifaxSourced",
+          "workflowJob": "data-integrity",
+          "loggedAt": "2026-10-23T19:43:21.629Z",
+          "sourceCommitSha": "593cf3b03ff2a7409d1b7ebbb6e4de22ba11bff6",
+          "sourceWorkflowRunId": "40012922138",
+          "sourceWorkflowRunAttempt": "1",
+          "accessPolicySha256": "1c27e3f4b2000f5c0395450dab27a03a4dfe8d55621f88328bd4ca561a687ece",
+          "evidence": {
+            "hold": {
+              "id": "16803473d12905226db6188856446e528441b984990060e9381d787d58033db7",
+              "scope": "url",
+              "target": "https://barrioshfx.ca/barrios-menu",
+              "reason": "access_restricted",
+              "resume": "reviewed_evidence_required",
+              "evidence": {
+                "url": "https://barrioshfx.ca/barrios-menu",
+                "finalUrl": "https://barrioshfx.ca/barrios-menu",
+                "status": 403,
+                "observedAt": "2026-10-23T19:43:21.629Z"
+              },
+              "provenance": {
+                "kind": "current_run",
+                "sourceCommitSha": "593cf3b03ff2a7409d1b7ebbb6e4de22ba11bff6",
+                "sourceWorkflowRunId": "40012922138",
+                "sourceWorkflowRunAttempt": "1",
+                "accessPolicySha256": "1c27e3f4b2000f5c0395450dab27a03a4dfe8d55621f88328bd4ca561a687ece",
+                "requestId": "618"
+              }
+            },
+            "receipt": {
+              "requestId": "618",
+              "url": "https://barrioshfx.ca/barrios-menu",
+              "status": 403,
+              "observedAt": "2026-10-23T19:43:21.629Z",
+              "attemptedAt": "2026-10-23T19:43:21.268Z",
+              "mediaType": "text/html"
+            },
+            "late": false,
+            "suspensionId": null
+          }
+        }
+      },
+      "observations": [
+        {
+          "url": "https://barrioshfx.ca/barrios-menu",
+          "finalUrl": "https://barrioshfx.ca/barrios-menu",
+          "status": 403,
+          "observedAt": "2026-10-23T19:43:21.629Z"
+        }
+      ]
+    },
+    {
+      "provenance": {
+        "kind": "reviewed_workflow_log",
+        "repository": "JeremyHennessy/HalifaxSourced",
+        "sourceCommitSha": "593cf3b03ff2a7409d1b7ebbb6e4de22ba11bff6",
+        "workflowRunId": "40012922138",
+        "workflowRunAttempt": "1",
+        "workflowJob": "data-integrity",
+        "workflowJobId": 120617582171,
+        "accessPolicySha256": "1c27e3f4b2000f5c0395450dab27a03a4dfe8d55621f88328bd4ca561a687ece",
+        "logSha256": "63f8a1631ccae2cad852bd375f17ad788be1a34a59b86db8e1bd03f92e3f91e9",
+        "diagnosticSha256": "bda093f6569ca8097dc32a563232bfba4eaa9de485a5b8ef6a3c5dd392a6696b",
+        "receiptSha256": "cd980c0daab23c8eec535f574c1ba0b7321ae17fb07fd75d92f56257c6aff8e8",
+        "loggedAt": "2026-10-23T19:43:21.839Z",
+        "diagnostic": {
+          "version": 1,
+          "disposition": "nonpublishable_requires_review",
+          "kind": "http_restriction",
+          "repository": "JeremyHennessy/HalifaxSourced",
+          "workflowJob": "data-integrity",
+          "loggedAt": "2026-10-23T19:43:21.839Z",
+          "sourceCommitSha": "593cf3b03ff2a7409d1b7ebbb6e4de22ba11bff6",
+          "sourceWorkflowRunId": "40012922138",
+          "sourceWorkflowRunAttempt": "1",
+          "accessPolicySha256": "1c27e3f4b2000f5c0395450dab27a03a4dfe8d55621f88328bd4ca561a687ece",
+          "evidence": {
+            "hold": {
+              "id": "406e68742192adbfd0307ea6b63e32c775de3d8e756008c36ce2955c219ac490",
+              "scope": "url",
+              "target": "https://barrioshfx.ca/delivery",
+              "reason": "access_restricted",
+              "resume": "reviewed_evidence_required",
+              "evidence": {
+                "url": "https://barrioshfx.ca/delivery",
+                "finalUrl": "https://barrioshfx.ca/delivery",
+                "status": 403,
+                "observedAt": "2026-10-23T19:43:21.839Z"
+              },
+              "provenance": {
+                "kind": "current_run",
+                "sourceCommitSha": "593cf3b03ff2a7409d1b7ebbb6e4de22ba11bff6",
+                "sourceWorkflowRunId": "40012922138",
+                "sourceWorkflowRunAttempt": "1",
+                "accessPolicySha256": "1c27e3f4b2000f5c0395450dab27a03a4dfe8d55621f88328bd4ca561a687ece",
+                "requestId": "626"
+              }
+            },
+            "receipt": {
+              "requestId": "626",
+              "url": "https://barrioshfx.ca/delivery",
+              "status": 403,
+              "observedAt": "2026-10-23T19:43:21.839Z",
+              "attemptedAt": "2026-10-23T19:43:21.634Z",
+              "mediaType": "text/html"
+            },
+            "late": false,
+            "suspensionId": null
+          }
+        }
+      },
+      "observations": [
+        {
+          "url": "https://barrioshfx.ca/delivery",
+          "finalUrl": "https://barrioshfx.ca/delivery",
+          "status": 403,
+          "observedAt": "2026-10-23T19:43:21.839Z"
+        }
+      ]
+    },
+    {
+      "provenance": {
+        "kind": "reviewed_workflow_log",
+        "repository": "JeremyHennessy/HalifaxSourced",
+        "sourceCommitSha": "593cf3b03ff2a7409d1b7ebbb6e4de22ba11bff6",
+        "workflowRunId": "40012922138",
+        "workflowRunAttempt": "1",
+        "workflowJob": "data-integrity",
+        "workflowJobId": 120617582171,
+        "accessPolicySha256": "1c27e3f4b2000f5c0395450dab27a03a4dfe8d55621f88328bd4ca561a687ece",
+        "logSha256": "63f8a1631ccae2cad852bd375f17ad788be1a34a59b86db8e1bd03f92e3f91e9",
+        "diagnosticSha256": "650efa03ff44318ff0e647b512c7770975e9421eaf9001538c93ba83f5862121",
+        "receiptSha256": "2401f99d01d5741fc6c805903bd04d64f0d034bcbca4a62a251449690b32e590",
+        "loggedAt": "2026-10-23T19:43:21.910Z",
+        "diagnostic": {
+          "version": 1,
+          "disposition": "nonpublishable_requires_review",
+          "kind": "http_restriction",
+          "repository": "JeremyHennessy/HalifaxSourced",
+          "workflowJob": "data-integrity",
+          "loggedAt": "2026-10-23T19:43:21.910Z",
+          "sourceCommitSha": "593cf3b03ff2a7409d1b7ebbb6e4de22ba11bff6",
+          "sourceWorkflowRunId": "40012922138",
+          "sourceWorkflowRunAttempt": "1",
+          "accessPolicySha256": "1c27e3f4b2000f5c0395450dab27a03a4dfe8d55621f88328bd4ca561a687ece",
+          "evidence": {
+            "hold": {
+              "id": "0ee6436b05c214c86a03a3eb3c1f2988a16720b5b98e2f9d4b5cdbbd95cb0f20",
+              "scope": "url",
+              "target": "https://barrioshfx.ca/reservation",
+              "reason": "access_restricted",
+              "resume": "reviewed_evidence_required",
+              "evidence": {
+                "url": "https://barrioshfx.ca/reservation",
+                "finalUrl": "https://barrioshfx.ca/reservation",
+                "status": 403,
+                "observedAt": "2026-10-23T19:43:21.910Z"
+              },
+              "provenance": {
+                "kind": "current_run",
+                "sourceCommitSha": "593cf3b03ff2a7409d1b7ebbb6e4de22ba11bff6",
+                "sourceWorkflowRunId": "40012922138",
+                "sourceWorkflowRunAttempt": "1",
+                "accessPolicySha256": "1c27e3f4b2000f5c0395450dab27a03a4dfe8d55621f88328bd4ca561a687ece",
+                "requestId": "631"
+              }
+            },
+            "receipt": {
+              "requestId": "631",
+              "url": "https://barrioshfx.ca/reservation",
+              "status": 403,
+              "observedAt": "2026-10-23T19:43:21.910Z",
+              "attemptedAt": "2026-10-23T19:43:21.843Z",
+              "mediaType": "text/html"
+            },
+            "late": false,
+            "suspensionId": null
+          }
+        }
+      },
+      "observations": [
+        {
+          "url": "https://barrioshfx.ca/reservation",
+          "finalUrl": "https://barrioshfx.ca/reservation",
+          "status": 403,
+          "observedAt": "2026-10-23T19:43:21.910Z"
+        }
+      ]
+    },
+    {
+      "provenance": {
+        "kind": "reviewed_workflow_log",
+        "repository": "JeremyHennessy/HalifaxSourced",
+        "sourceCommitSha": "593cf3b03ff2a7409d1b7ebbb6e4de22ba11bff6",
+        "workflowRunId": "40012922138",
+        "workflowRunAttempt": "1",
+        "workflowJob": "data-integrity",
+        "workflowJobId": 120617582171,
+        "accessPolicySha256": "1c27e3f4b2000f5c0395450dab27a03a4dfe8d55621f88328bd4ca561a687ece",
+        "logSha256": "63f8a1631ccae2cad852bd375f17ad788be1a34a59b86db8e1bd03f92e3f91e9",
+        "diagnosticSha256": "1fb683268de67cce258b0703599c44768bdbd09b7ec1b0e84209da8b6a3d0570",
+        "receiptSha256": "b9fbb38e3c16b03b1871f015c81dc6f880dd38db8c22a1671944a21cc1ab4dc1",
+        "loggedAt": "2026-10-23T19:43:22.120Z",
+        "diagnostic": {
+          "version": 1,
+          "disposition": "nonpublishable_requires_review",
+          "kind": "http_restriction",
+          "repository": "JeremyHennessy/HalifaxSourced",
+          "workflowJob": "data-integrity",
+          "loggedAt": "2026-10-23T19:43:22.120Z",
+          "sourceCommitSha": "593cf3b03ff2a7409d1b7ebbb6e4de22ba11bff6",
+          "sourceWorkflowRunId": "40012922138",
+          "sourceWorkflowRunAttempt": "1",
+          "accessPolicySha256": "1c27e3f4b2000f5c0395450dab27a03a4dfe8d55621f88328bd4ca561a687ece",
+          "evidence": {
+            "hold": {
+              "id": "698af37141f789ae384a09e36a554fe9c28bc90b969be456640c4cb12432dc11",
+              "scope": "url",
+              "target": "https://barrioshfx.ca/menu-guide",
+              "reason": "access_restricted",
+              "resume": "reviewed_evidence_required",
+              "evidence": {
+                "url": "https://barrioshfx.ca/menu-guide",
+                "finalUrl": "https://barrioshfx.ca/menu-guide",
+                "status": 403,
+                "observedAt": "2026-10-23T19:43:22.120Z"
+              },
+              "provenance": {
+                "kind": "current_run",
+                "sourceCommitSha": "593cf3b03ff2a7409d1b7ebbb6e4de22ba11bff6",
+                "sourceWorkflowRunId": "40012922138",
+                "sourceWorkflowRunAttempt": "1",
+                "accessPolicySha256": "1c27e3f4b2000f5c0395450dab27a03a4dfe8d55621f88328bd4ca561a687ece",
+                "requestId": "632"
+              }
+            },
+            "receipt": {
+              "requestId": "632",
+              "url": "https://barrioshfx.ca/menu-guide",
+              "status": 403,
+              "observedAt": "2026-10-23T19:43:22.120Z",
+              "attemptedAt": "2026-10-23T19:43:21.914Z",
+              "mediaType": "text/html"
+            },
+            "late": false,
+            "suspensionId": null
+          }
+        }
+      },
+      "observations": [
+        {
+          "url": "https://barrioshfx.ca/menu-guide",
+          "finalUrl": "https://barrioshfx.ca/menu-guide",
+          "status": 403,
+          "observedAt": "2026-10-23T19:43:22.120Z"
+        }
+      ]
     }
   ]
 }
