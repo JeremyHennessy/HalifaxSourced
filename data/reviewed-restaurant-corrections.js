@@ -1,5 +1,5 @@
 window.HALIFAX_RESTAURANT_CORRECTIONS = {
-  "version": 2,
+  "version": 3,
   "reviewedAt": "2026-10-24",
   "policy": "Reviewed location evidence overrides stale imports; observation dates are retained and uncertain coordinates, hours, successor identities and closure day remain unknown.",
   "records": [
@@ -15,6 +15,20 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
       "claim": "The official Portland Street Crêperie site confirms the family-owned Downtown Dartmouth restaurant at 55 Portland Street, phone 902-466-7686, its Wednesday–Sunday service and order cutoffs, and links the current FoodBooking menu. The official page does not publish Monday or Tuesday service, so this correction preserves only the stated schedule and makes no additional closed-day claim.",
       "observedAt": "2026-10-24T08:20:25Z",
       "reviewedAt": "2026-10-24T08:20:25Z",
+      "reviewState": "verified"
+    },
+    {
+      "restaurantId": "osm-node-3801688860-revana-pizza",
+      "fields": {
+        "address": "29 Portland Street, Dartmouth, NS B2Y 1H1",
+        "phone": "902-461-0000",
+        "website": "https://dartmouth.revanapizza.ca/",
+        "openingHours": "Monday 11am–11pm; Tuesday–Thursday 11am–midnight; Friday 11am–1am; Saturday noon–1am; Sunday 4pm–11pm"
+      },
+      "sourceUrl": "https://dartmouth.revanapizza.ca/",
+      "claim": "The current official Dartmouth site confirms Revana Pizza at 29 Portland Street, Dartmouth, phone 902-461-0000, the complete Monday–Sunday schedule, and its location-specific menu. The official root-domain contact page independently identifies the same Dartmouth address and phone, resolving the directory root-domain versus Dartmouth-subdomain conflict without merging the separate Truro location.",
+      "observedAt": "2026-10-24T08:51:37Z",
+      "reviewedAt": "2026-10-24T08:51:37Z",
       "reviewState": "verified"
     },
     {
