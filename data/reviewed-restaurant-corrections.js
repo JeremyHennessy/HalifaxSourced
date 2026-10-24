@@ -1,8 +1,22 @@
 window.HALIFAX_RESTAURANT_CORRECTIONS = {
-  "version": 1,
-  "reviewedAt": "2026-10-20",
+  "version": 2,
+  "reviewedAt": "2026-10-24",
   "policy": "Reviewed location evidence overrides stale imports; observation dates are retained and uncertain coordinates, hours, successor identities and closure day remain unknown.",
   "records": [
+    {
+      "restaurantId": "osm-node-8376551845-portland-street-creperie",
+      "fields": {
+        "address": "55 Portland Street, Dartmouth, NS B2Y 1H1",
+        "phone": "902-466-7686",
+        "website": "https://www.xn--portlandstreetcrperie-d6b.com/",
+        "openingHours": "Wednesday–Friday 9:30am–4pm (orders until 3:45pm); Saturday–Sunday 9am–5pm (orders until 4:45pm)"
+      },
+      "sourceUrl": "https://www.xn--portlandstreetcrperie-d6b.com/locations",
+      "claim": "The official Portland Street Crêperie site confirms the family-owned Downtown Dartmouth restaurant at 55 Portland Street, phone 902-466-7686, its Wednesday–Sunday service and order cutoffs, and links the current FoodBooking menu. The official page does not publish Monday or Tuesday service, so this correction preserves only the stated schedule and makes no additional closed-day claim.",
+      "observedAt": "2026-10-24T08:20:25Z",
+      "reviewedAt": "2026-10-24T08:20:25Z",
+      "reviewState": "verified"
+    },
     {
       "restaurantId": "battery-park",
       "fields": {

@@ -119,6 +119,22 @@ for (const records of [app.restaurants, catalog.restaurants]) {
 }
 assert(active.has(larryId));
 assert(app.restaurants.find(record => record.id === larryId).menuLinks.some(link => link.url === 'https://larryssandwiches.com/order'));
+const creperieId = 'osm-node-8376551845-portland-street-creperie';
+for (const records of [app.restaurants, catalog.restaurants]) {
+  const matches = records.filter(record => record.id === creperieId);
+  assert.equal(matches.length, 1, 'Portland Street Crêperie must retain one canonical identity');
+  const creperie = matches[0];
+  assert.equal(creperie.neighborhood, 'Downtown Dartmouth');
+  assert.equal(creperie.address, '55 Portland Street, Dartmouth, NS B2Y 1H1');
+  assert.equal(creperie.phone, '902-466-7686');
+  assert.equal(creperie.website, 'https://www.xn--portlandstreetcrperie-d6b.com/');
+  assert.equal(creperie.openingHours, 'Wednesday–Friday 9:30am–4pm (orders until 3:45pm); Saturday–Sunday 9am–5pm (orders until 4:45pm)');
+  assert.equal(creperie.coordinates.lat, 44.6653413, 'Preserve accepted source coordinates');
+  assert.equal(creperie.coordinates.lon, -63.5671447, 'Preserve accepted source coordinates');
+  assert(creperie.sources.some(source => source.type === 'menu' && source.url === 'https://www.foodbooking.com/api/fb/8r4_o7'));
+}
+assert(active.has(creperieId));
+assert(app.restaurants.find(record => record.id === creperieId).menuLinks.some(link => link.url === 'https://www.foodbooking.com/api/fb/8r4_o7'));
 const marcoId = 'osm-node-4421124794-cafe-marco-polo';
 const marco = app.restaurants.find(record => record.id === marcoId);
 assert(marco && active.has(marcoId), 'Keep the existing Café Marco Polo identity active');
