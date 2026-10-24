@@ -1,6 +1,6 @@
 window.HALIFAX_OPENING_WATCH_LEADS = {
   "version": 1,
-  "generatedAt": "2026-09-02T11:16:18.770Z",
+  "generatedAt": "2026-10-24T14:13:15.899Z",
   "lookbackDays": 180,
   "sources": [
     {
@@ -9,8 +9,106 @@ window.HALIFAX_OPENING_WATCH_LEADS = {
       "url": "https://halifax.retales.ca/feed/"
     }
   ],
-  "count": 12,
+  "count": 19,
   "leads": [
+    {
+      "id": "spicy-parmo-38b8a05969c35dff",
+      "name": "Spicy Parmo",
+      "status": "opening",
+      "locationHint": "Sackville Dr",
+      "articleTitle": "Co=op pub?",
+      "sourceName": "Halifax ReTales",
+      "sourceType": "local_opening_watch",
+      "sourceUrl": "https://halifax.retales.ca/2026/10/coop-pub/",
+      "publishedAt": "2026-10-11T02:42:51.000Z",
+      "observedAt": "2026-10-24T14:13:15.890Z",
+      "confidence": "local_opening_lead",
+      "reviewState": "needs-cross-check"
+    },
+    {
+      "id": "coffee-club-edbdf8839bfe8303",
+      "name": "Coffee Club",
+      "status": "open",
+      "locationHint": "2849 Robie",
+      "articleTitle": "Co=op pub?",
+      "sourceName": "Halifax ReTales",
+      "sourceType": "local_opening_watch",
+      "sourceUrl": "https://halifax.retales.ca/2026/10/coop-pub/",
+      "publishedAt": "2026-10-11T02:42:51.000Z",
+      "observedAt": "2026-10-24T14:13:15.890Z",
+      "confidence": "local_opening_lead",
+      "reviewState": "needs-cross-check"
+    },
+    {
+      "id": "star-of-the-sea-cafe-0f7410d5fb5593d4",
+      "name": "Star of the Sea cafe",
+      "status": "open",
+      "locationHint": null,
+      "articleTitle": "Co=op pub?",
+      "sourceName": "Halifax ReTales",
+      "sourceType": "local_opening_watch",
+      "sourceUrl": "https://halifax.retales.ca/2026/10/coop-pub/",
+      "publishedAt": "2026-10-11T02:42:51.000Z",
+      "observedAt": "2026-10-24T14:13:15.891Z",
+      "confidence": "local_opening_lead",
+      "reviewState": "needs-cross-check"
+    },
+    {
+      "id": "well-met-cafe-5f6852db6bade018",
+      "name": "Well Met Cafe",
+      "status": "opening",
+      "locationHint": "Hollis @ Sackville",
+      "articleTitle": "Cafe talk",
+      "sourceName": "Halifax ReTales",
+      "sourceType": "local_opening_watch",
+      "sourceUrl": "https://halifax.retales.ca/2026/10/cafe-talk/",
+      "publishedAt": "2026-10-04T02:51:51.000Z",
+      "observedAt": "2026-10-24T14:13:15.891Z",
+      "confidence": "local_opening_lead",
+      "reviewState": "needs-cross-check"
+    },
+    {
+      "id": "sea-lily-cafe-d4692748f1fb23de",
+      "name": "Sea Lily Cafe",
+      "status": "opening",
+      "locationHint": "Old Post Office Rd in Porters Lake, where Pure Cafe was",
+      "articleTitle": "Cafe talk",
+      "sourceName": "Halifax ReTales",
+      "sourceType": "local_opening_watch",
+      "sourceUrl": "https://halifax.retales.ca/2026/10/cafe-talk/",
+      "publishedAt": "2026-10-04T02:51:51.000Z",
+      "observedAt": "2026-10-24T14:13:15.891Z",
+      "confidence": "local_opening_lead",
+      "reviewState": "needs-cross-check"
+    },
+    {
+      "id": "flynn-s-dairy-bar-01050b0e69b30416",
+      "name": "Flynn’s Dairy Bar",
+      "status": "open",
+      "locationHint": "1924 Robie, across the street from the QEII expansion",
+      "articleTitle": "Shige Bows",
+      "sourceName": "Halifax ReTales",
+      "sourceType": "local_opening_watch",
+      "sourceUrl": "https://halifax.retales.ca/2026/09/10002/",
+      "publishedAt": "2026-09-20T02:55:24.000Z",
+      "observedAt": "2026-10-24T14:13:15.891Z",
+      "confidence": "local_opening_lead",
+      "reviewState": "needs-cross-check"
+    },
+    {
+      "id": "garrison-d9c7265d0e6512cf",
+      "name": "Garrison",
+      "status": "open",
+      "locationHint": null,
+      "articleTitle": "Broken Man on a Halifax Pier",
+      "sourceName": "Halifax ReTales",
+      "sourceType": "local_opening_watch",
+      "sourceUrl": "https://halifax.retales.ca/2026/09/broken-man-on-a-halifax-pier/",
+      "publishedAt": "2026-09-13T02:04:26.000Z",
+      "observedAt": "2026-10-24T14:13:15.892Z",
+      "confidence": "local_opening_lead",
+      "reviewState": "needs-cross-check"
+    },
     {
       "id": "purdy-s-chocolatier-c1cf54daccdb10ea",
       "name": "Purdy’s Chocolatier",
@@ -180,5 +278,6 @@ window.HALIFAX_OPENING_WATCH_LEADS = {
       "reviewState": "needs-cross-check"
     }
   ],
-  "failures": []
+  "failures": [],
+  "retainedPriorWithinLookbackCount": 12
 };
