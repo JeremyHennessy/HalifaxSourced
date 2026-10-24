@@ -88,6 +88,10 @@ function inRange(startAt, endAt = startAt) {
   const end = Date.parse(endAt);
   return Number.isFinite(start) && Number.isFinite(end) && end >= rangeStart && start <= rangeEnd;
 }
+function descendingPageNumbers(totalPages, pageLimit) {
+  const count = Math.max(1, Math.min(Number(totalPages) || 1, Number(pageLimit) || 1));
+  return Array.from({ length: count }, (_, index) => count - index);
+}
 async function fetchHtml(url) {
   const response = await fetch(url, { headers: { "User-Agent": userAgent, Accept: "text/html,application/xhtml+xml" }, redirect: "follow", signal: AbortSignal.timeout(timeoutMs) });
   if (!response.ok) throw new Error(`http_${response.status}`);
@@ -303,15 +307,22 @@ function libraryCategories(block, title) {
 async function importLibraries(source) {
   const allowedLocations = source.allowedLocations || {};
   const events = [];
-  let expectedPages = libraryPageLimit;
-  for (let pageNumber = 1; pageNumber <= Math.min(libraryPageLimit, expectedPages); pageNumber += 1) {
+  const firstUrl = `${source.url}${source.url.includes("?") ? "&" : "?"}page=1`;
+  const firstPage = await fetchHtml(firstUrl);
+  const firstPlain = clean(firstPage.text);
+  const totalMatch = firstPlain.match(/\b\d+\s+to\s+\d+\s+of\s+([\d,]+)\s+items\b/i);
+  const expectedPages = totalMatch
+    ? Math.ceil(Number(totalMatch[1].replace(/,/g, "")) / 20)
+    : 1;
+  // BiblioCommons removes ended events from the front of the live result set.
+  // Walking upward then skips records as every later offset shifts left. Start
+  // at the last page and walk backward so those shifts only create duplicates,
+  // which the established event dedupe removes.
+  for (const pageNumber of descendingPageNumbers(expectedPages, libraryPageLimit)) {
     const url = `${source.url}${source.url.includes("?") ? "&" : "?"}page=${pageNumber}`;
-    const page = await fetchHtml(url);
-    const plain = clean(page.text);
-    const totalMatch = plain.match(/\b\d+\s+to\s+\d+\s+of\s+([\d,]+)\s+items\b/i);
-    if (totalMatch) expectedPages = Math.min(libraryPageLimit, Math.ceil(Number(totalMatch[1].replace(/,/g, "")) / 20));
+    const page = pageNumber === 1 ? firstPage : await fetchHtml(url);
     const headings = [...page.text.matchAll(/<h3\b[^>]*>[\s\S]*?<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>[\s\S]*?<\/h3>/gi)];
-    if (!headings.length) break;
+    if (!headings.length) continue;
     for (let index = 0; index < headings.length; index += 1) {
       const current = headings[index];
       const nextIndex = headings[index + 1]?.index ?? page.text.length;
