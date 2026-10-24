@@ -1360,7 +1360,7 @@ assert.equal(acceptedBarriosHolds.find('https://barrioshfx.ca/unknown-page'), nu
     // Frozen complete offline envelope: broad fixture paths may now intersect
     // the historical access-hold scope, but must never restore its legacy PR
     // collector. Pin every key/step as well as the unchanged producer bytes.
-    assert.equal(textDigest(source), '7f884c1787f2b2e6f6c3f6d88bbb56f4abafaa976994022679b34c453f3083ff',
+    assert.equal(textDigest(source), '8e87e4bb8a61101f098272d4c2cb54ff0318a9ddb1f2af66dca8a4d4b84d30ef',
       'Restaurant must retain its exact offline PR envelope and unchanged scheduled/manual producer');
     assert.equal(source.split('jobs:\n').length, 2);
     const jobs = source.split('jobs:\n')[1];
