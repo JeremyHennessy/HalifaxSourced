@@ -21,8 +21,8 @@ const dependencies = [
   'restaurant-corrections.js', 'source-integrity.js'
 ];
 const fullReviewedPolicy = JSON.parse(await readFile(new URL('../data/source-link-access-holds.json', import.meta.url), 'utf8'));
-// Preserve the original 224-receipt regression corpus independently of the five new exact holds.
-const committedPolicy = {...structuredClone(fullReviewedPolicy), historicalEvidence:structuredClone(fullReviewedPolicy.historicalEvidence.slice(0, -6))};
+// Preserve the original 224-receipt regression corpus independently of the eight new exact holds.
+const committedPolicy = {...structuredClone(fullReviewedPolicy), historicalEvidence:structuredClone(fullReviewedPolicy.historicalEvidence.slice(0, -8))};
 const digest = value => createHash('sha256').update(JSON.stringify(value)).digest('hex');
 const clone = value => structuredClone(value);
 const committedObservations = [committedPolicy, ...(committedPolicy.historicalEvidence || [])].flatMap(group => group.observations);
@@ -243,8 +243,8 @@ process.on('exit', () => {
   assert.equal(digest(beforeDowntownHalifaxPolicy),'a309b469376de324369575599eb41e36d33f57348f87ccb1dfabf71b422866fe','All 223 observations preceding the Downtown Halifax directory denial remain exactly unchanged');
   validateAccessPolicy(committedPolicy);
   validateAccessPolicy(fullReviewedPolicy);
-  assert.equal(fullReviewedPolicy.historicalEvidence.length, committedPolicy.historicalEvidence.length + 6, 'Only five Barrios groups and one Secret Sauce group added to immutable baseline');
-  const newBarriosGroups = fullReviewedPolicy.historicalEvidence.slice(-6, -1);
+  assert.equal(fullReviewedPolicy.historicalEvidence.length, committedPolicy.historicalEvidence.length + 8, 'Only five Barrios groups, one Secret Sauce group, one Greco feed group and one happy-hour API group added to immutable baseline');
+  const newBarriosGroups = fullReviewedPolicy.historicalEvidence.slice(-8, -3);
   for (const group of newBarriosGroups) {
     const p = group.provenance;
     assert.equal(p.kind, 'reviewed_workflow_log');
@@ -281,13 +281,13 @@ assert.equal(acceptedBarriosHolds.find('https://barrioshfx.ca/unknown-page'), nu
   await gate(barriosCheck.report);
   checked('five Barrios receipt-backed URL holds are unattempted; a new same-host URL remains independently eligible');
 
-  const secretSauceGroup = fullReviewedPolicy.historicalEvidence.at(-1);
+  const secretSauceGroup = fullReviewedPolicy.historicalEvidence.at(-3);
   const secretProvenance = secretSauceGroup.provenance;
   assert.equal(secretProvenance.kind, 'reviewed_workflow_log');
   assert.equal(secretProvenance.workflowRunId, '40018299320');
   assert.equal(secretProvenance.workflowJobId, 120635975319);
   assert.equal(secretProvenance.sourceCommitSha, '1a9ffb0453b76316a6eba1937f30a6815bbb81b1');
-  assert.equal(secretProvenance.accessPolicySha256, digest({...clone(fullReviewedPolicy), historicalEvidence:clone(fullReviewedPolicy.historicalEvidence.slice(0, -1))}));
+  assert.equal(secretProvenance.accessPolicySha256, digest({...clone(fullReviewedPolicy), historicalEvidence:clone(fullReviewedPolicy.historicalEvidence.slice(0, -3))}));
   assert.equal(secretProvenance.logSha256, 'd96d5075fbe20eb0370a73ef4a949dc664d3bd7990ea49409941eee3356a3eef');
   assert.equal(secretProvenance.diagnosticSha256, digest(secretProvenance.diagnostic));
   assert.equal(secretProvenance.receiptSha256, digest(secretProvenance.diagnostic.evidence.receipt));
@@ -304,6 +304,39 @@ assert.equal(acceptedBarriosHolds.find('https://barrioshfx.ca/unknown-page'), nu
   held(secretSauceCheck.report.results[0], secretSauceGroup.observations[0]);
   await gate(secretSauceCheck.report);
   checked('Secret Sauce receipt-backed exact URL stays unattempted; a sibling path remains independently eligible');
+
+  const grecoGroup = fullReviewedPolicy.historicalEvidence.at(-2);
+  const grecoProvenance = grecoGroup.provenance;
+  assert.equal(grecoProvenance.kind, 'reviewed_workflow_log');
+  assert.equal(grecoProvenance.workflowRunId, '40095873604');
+  assert.equal(grecoProvenance.workflowJob, 'social-refresh');
+  assert.equal(grecoProvenance.workflowJobId, 120877906540);
+  assert.equal(grecoProvenance.sourceCommitSha, 'e3203d6d1be871c0e70a9ff1e26197e8b6499d0c');
+  assert.equal(grecoProvenance.accessPolicySha256, digest({...clone(fullReviewedPolicy), historicalEvidence:clone(fullReviewedPolicy.historicalEvidence.slice(0, -2))}));
+  assert.equal(grecoProvenance.logSha256, '61b60fe33e2d355bad72c2e88e3b6f5c4da330f768cb661bbdd97ede7a123f72');
+  assert.equal(grecoProvenance.diagnosticSha256, digest(grecoProvenance.diagnostic));
+  assert.equal(grecoProvenance.receiptSha256, digest(grecoProvenance.diagnostic.evidence.receipt));
+  assert.deepEqual(grecoGroup.observations, [grecoProvenance.diagnostic.evidence.hold.evidence]);
+  assert.deepEqual(grecoGroup.observations[0], {url:'https://greco.ca/feed/',finalUrl:'https://greco.ca/feed/',status:403,observedAt:'2026-10-24T12:55:16.063Z'});
+  assert.equal(acceptedBarriosHolds.find('https://greco.ca/feed/')?.scope, 'url', 'The exact evidenced Greco feed is access-held');
+  assert.equal(acceptedBarriosHolds.find('https://greco.ca/other'), null, 'Sibling Greco paths remain independently eligible');
+  checked('Greco receipt-backed feed URL stays unattempted; sibling paths remain independently eligible');
+
+  const happyHourGroup = fullReviewedPolicy.historicalEvidence.at(-1);
+  const happyHourProvenance = happyHourGroup.provenance;
+  assert.equal(happyHourProvenance.kind, 'reviewed_workflow_log');
+  assert.equal(happyHourProvenance.workflowRunId, '40097535579');
+  assert.equal(happyHourProvenance.workflowJob, 'refresh');
+  assert.equal(happyHourProvenance.workflowJobId, 120882817648);
+  assert.equal(happyHourProvenance.sourceCommitSha, 'e3203d6d1be871c0e70a9ff1e26197e8b6499d0c');
+  assert.equal(happyHourProvenance.accessPolicySha256, digest({...clone(fullReviewedPolicy), historicalEvidence:clone(fullReviewedPolicy.historicalEvidence.slice(0, -2))}));
+  assert.equal(happyHourProvenance.logSha256, 'a8581f02226285da8349ea195041ece8703ef6c6b83a3f1d084201ba6941b5fb');
+  assert.equal(happyHourProvenance.diagnosticSha256, digest(happyHourProvenance.diagnostic));
+  assert.equal(happyHourProvenance.receiptSha256, digest(happyHourProvenance.diagnostic.evidence.receipt));
+  assert.deepEqual(happyHourGroup.observations, [happyHourProvenance.diagnostic.evidence.hold.evidence]);
+  assert.equal(happyHourGroup.observations[0].status, 401);
+  assert.equal(acceptedBarriosHolds.find("https://oxngzjrkqsmhstkiyllz.supabase.co/rest/v1/happy_hours?select=id%2Cslug%2Cvenue_name%2Cspecial_title%2Cdeal_type%2Cdeal_details%2Cdays_of_week%2Cstart_time%2Cend_time%2Csecond_start_time%2Csecond_end_time%2Cvenue_address%2Cneighbourhood%2Cprice_from%2Cexternal_url%2Cimage_url%2Cvalid_from%2Cvalid_until%2Cstatus%2Cverification_status%2Clast_verified%2Cis_active%2Cis_featured%2Cis_claimable%2Ccreated_at%2Cupdated_at&status=eq.approved&is_active=eq.true&order=updated_at.desc&limit=500")?.scope, 'url', 'The exact evidenced happy-hour API query is access-held');
+  checked('Happy-hour API receipt-backed query stays unattempted after its HTTP 401');
 
 
   assert(committedPolicy.historicalEvidence[0].observations.every(row => row.status === 403 && new URL(row.url).hostname === 'junglejims.ca'));
