@@ -152,6 +152,27 @@ for (const records of [app.restaurants, catalog.restaurants]) {
 }
 assert(active.has(revanaId));
 assert(app.restaurants.find(record => record.id === revanaId).menuLinks.some(link => link.url === 'https://dartmouth.revanapizza.ca/'));
+const beaversDartmouthId = 'beavers-den-dartmouth';
+for (const records of [app.restaurants, catalog.restaurants]) {
+  const dartmouthMatches = records.filter(record => record.id === beaversDartmouthId);
+  assert.equal(dartmouthMatches.length, 1, 'Beaver’s Den Dartmouth must be a distinct location identity');
+  const dartmouth = dartmouthMatches[0];
+  const halifax = records.find(record => record.id === 'osm-node-2714150694-the-beaver-s-den');
+  assert.equal(dartmouth.neighborhood, 'Downtown Dartmouth');
+  assert.equal(dartmouth.address, '101A-16 Portland Street, Dartmouth, NS B2Y 1G9');
+  assert.equal(dartmouth.phone, '902-333-8156', 'Use the current owner phone, not the conflicting directory phone');
+  assert.equal(dartmouth.website, 'https://thebeaversden.ca/');
+  assert.equal(dartmouth.openingHours, null, 'Do not copy shared or third-party hours without location-specific owner evidence');
+  assert.equal(dartmouth.coordinates, null, 'Do not borrow Quinpool coordinates for the Dartmouth branch');
+  assert(dartmouth.sources.some(source => source.type === 'menu' && source.url === 'https://thebeaversden.ca/menu'));
+  assert(halifax, 'The separate Quinpool location must remain present');
+  assert.equal(halifax.address, '6273 Quinpool Road, Halifax, Nova Scotia');
+  assert.equal(halifax.coordinates.lat, 44.6453379, 'Preserve the Quinpool source coordinates');
+  assert.equal(halifax.coordinates.lon, -63.5980941, 'Preserve the Quinpool source coordinates');
+  assert(!dartmouth.aliasIds?.includes(halifax.id), 'Two owner-listed branches are not aliases');
+}
+assert(active.has(beaversDartmouthId));
+assert(app.restaurants.find(record => record.id === beaversDartmouthId).menuLinks.some(link => link.url === 'https://thebeaversden.ca/menu'));
 const marcoId = 'osm-node-4421124794-cafe-marco-polo';
 const marco = app.restaurants.find(record => record.id === marcoId);
 assert(marco && active.has(marcoId), 'Keep the existing Café Marco Polo identity active');

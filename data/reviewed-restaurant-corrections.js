@@ -789,6 +789,61 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
   ],
   "additions": [
     {
+      "id": "beavers-den-dartmouth",
+      "name": "The Beaver's Den Dartmouth",
+      "address": "101A-16 Portland Street, Dartmouth, NS B2Y 1G9",
+      "neighborhood": "Downtown Dartmouth",
+      "category": "Pub",
+      "website": "https://thebeaversden.ca/",
+      "phone": "902-333-8156",
+      "coordinates": null,
+      "openingHours": null,
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current official owner site identifies two distinct Beaver's Den locations and publishes the Dartmouth branch at 101A-16 Portland Street with phone 902-333-8156. The current Downtown Dartmouth business directory independently lists the same Portland Street branch. The directory's older phone conflicts with the owner contact, so the owner phone is retained. No location-specific weekly schedule or coordinates were verified.",
+        "sourceUrl": "https://thebeaversden.ca/",
+        "observedAt": "2026-10-24T10:13:48Z",
+        "reviewState": "verified",
+        "location": "101A-16 Portland Street, Dartmouth, NS B2Y 1G9"
+      },
+      "cuisines": [
+        "Canadian",
+        "Pub"
+      ],
+      "vibe": [
+        "pub",
+        "casual"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [],
+      "sources": [
+        {
+          "type": "official_website",
+          "label": "Owner contact for the separate Dartmouth location",
+          "url": "https://thebeaversden.ca/",
+          "observedAt": "2026-10-24T10:13:48Z",
+          "status": "verified"
+        },
+        {
+          "type": "menu",
+          "label": "Official owner menu",
+          "url": "https://thebeaversden.ca/menu",
+          "observedAt": "2026-10-24T10:13:48Z",
+          "status": "verified"
+        },
+        {
+          "type": "business_directory",
+          "label": "Current Downtown Dartmouth location listing; phone superseded by owner contact",
+          "url": "https://www.downtowndartmouth.ca/fooddrink",
+          "observedAt": "2026-10-24T10:13:48Z",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
       "id": "chanoeys-pasta-dartmouth",
       "name": "Chanoey’s Pasta — Dartmouth",
       "address": "41 Portland Street, Dartmouth, NS B2Y 1H1",
