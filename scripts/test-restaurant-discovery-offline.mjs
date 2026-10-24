@@ -100,6 +100,7 @@ process.on('exit', () => { if (attempts) { console.error('Blocked subprocess att
     for (const command of commands) run(directory, ['scripts/' + command]);
     const discovery = await json(directory, 'data/build/discovered-restaurants.json');
     const resolutions = await json(directory, 'data/build/place-source-resolutions.json');
+    const catalog = await json(directory, 'data/build/catalog.json');
     const resolutionReport = await json(directory, 'artifacts/place-source-resolution-report.json');
     const discoveryReport = await json(directory, 'artifacts/restaurant-discovery-report.json');
     assert.deepEqual(discovery.restaurants.map(row => row.id), approved.map(row => row.id), 'Only explicit approved overrides become discovery listings');
@@ -107,6 +108,20 @@ process.on('exit', () => { if (attempts) { console.error('Blocked subprocess att
     assert.equal(resolutions.candidateCount, directoryInput.records.length);
     assert.deepEqual(resolutions.resolutions.map(row => row.candidateId), directoryInput.records.map(row => row.id));
     assert.equal(resolutions.directoryGeneratedAt, directoryInput.generatedAt, 'Resolution cannot refresh source observation time');
+    const reviewedCandidates = (await windowValue(directory, 'data/reviewed-place-resolutions.js', 'HALIFAX_REVIEWED_PLACE_RESOLUTIONS')).records
+      .filter(row => row.candidateId && row.restaurantId
+        && directoryInput.records.some(candidate => candidate.id === row.candidateId)
+        && catalog.restaurants.some(restaurant => restaurant.id === row.restaurantId));
+    assert(reviewedCandidates.length > 0, 'Accepted inputs must exercise candidate-scoped reviewed resolutions');
+    for (const reviewed of reviewedCandidates) {
+      const resolved = resolutions.resolutions.find(row => row.candidateId === reviewed.candidateId);
+      assert.equal(resolved?.matchedRestaurantId, reviewed.restaurantId, `Reviewed candidate must resolve to ${reviewed.restaurantId}`);
+      assert.equal(resolved?.resolutionBasis, 'reviewed_candidate_override');
+      assert.equal(resolved?.reviewState, 'resolved-by-reviewed-candidate');
+      assert.deepEqual(resolved?.conflicts, [], 'A completed reviewed resolution supersedes stale directory conflicts');
+      assert(resolved?.state.startsWith('resolved_'));
+      assert(!resolutions.reviewQueue.some(row => row.candidateId === reviewed.candidateId), 'Reviewed candidate must leave the review queue');
+    }
     assert.equal(resolutionReport.directoryCandidates, directoryInput.records.length);
     assert.deepEqual(resolutionReport.errors, []);
     assert.deepEqual(discoveryReport.failures, []);

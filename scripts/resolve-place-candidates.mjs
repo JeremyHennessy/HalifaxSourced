@@ -1,4 +1,5 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
+import vm from "node:vm";
 
 const catalog = JSON.parse(await readFile(new URL("../data/build/catalog.json", import.meta.url), "utf8"));
 const directoryPayload = JSON.parse(await readFile(new URL("../data/build/directory-restaurant-leads.json", import.meta.url), "utf8"));
@@ -11,6 +12,15 @@ try {
 const canonical = [...(Array.isArray(catalog.restaurants) ? catalog.restaurants : []), ...discoveredRestaurants]
   .filter((place, index, all) => all.findIndex((item) => item.id === place.id) === index);
 const candidates = Array.isArray(directoryPayload.records) ? directoryPayload.records : [];
+const canonicalById = new Map(canonical.map((place) => [place.id, place]));
+const reviewedContext = { window: {} };
+vm.runInNewContext(await readFile(new URL("../data/reviewed-place-resolutions.js", import.meta.url), "utf8"), reviewedContext);
+const reviewedPlaceResolutions = Array.isArray(reviewedContext.window.HALIFAX_REVIEWED_PLACE_RESOLUTIONS?.records)
+  ? reviewedContext.window.HALIFAX_REVIEWED_PLACE_RESOLUTIONS.records
+  : [];
+const reviewedByCandidateId = new Map(reviewedPlaceResolutions
+  .filter((record) => record?.candidateId && record?.restaurantId)
+  .map((record) => [record.candidateId, record]));
 
 function normalizeName(value) {
   return String(value ?? "").toLowerCase().normalize("NFKD")
@@ -133,6 +143,37 @@ function classify(best, second) {
 
 const resolutions = [];
 for (const candidate of candidates) {
+  const reviewed = reviewedByCandidateId.get(candidate.id);
+  const reviewedPlace = reviewed && (!reviewed.directorySourceId || reviewed.directorySourceId === candidate.sourceId)
+    ? canonicalById.get(reviewed.restaurantId)
+    : null;
+  const reviewedEvidence = Array.isArray(reviewed?.evidence) ? [...new Set(reviewed.evidence)] : [];
+  const reviewedHasCompatibleName = reviewedEvidence.some((item) => ["exact_normalized_name", "compatible_name"].includes(item));
+  const reviewedHasLocationEvidence = reviewedEvidence.some((item) => !["exact_normalized_name", "compatible_name"].includes(item));
+  if (reviewedPlace && reviewedHasCompatibleName && reviewedHasLocationEvidence) {
+    const reviewedState = String(reviewed.resolutionState || "resolved_high");
+    resolutions.push({
+      candidateId: candidate.id,
+      candidateName: candidate.name,
+      sourceId: candidate.sourceId || null,
+      sourceUrl: candidate.sourceUrl,
+      candidateAddress: candidate.address || null,
+      candidateWebsite: candidate.website || null,
+      state: reviewedState.startsWith("resolved_") ? reviewedState : "resolved_high",
+      matchedRestaurantId: reviewedPlace.id,
+      matchedRestaurantName: reviewedPlace.name,
+      score: 100,
+      evidence: reviewedEvidence,
+      conflicts: [],
+      distanceMeters: null,
+      addressSimilarity: Number(tokenSimilarity(candidate.address, reviewedPlace.address).toFixed(3)),
+      scoreMargin: 100,
+      nextBestRestaurantId: null,
+      reviewState: "resolved-by-reviewed-candidate",
+      resolutionBasis: "reviewed_candidate_override"
+    });
+    continue;
+  }
   const scored = canonical.map((place) => ({ place, ...scorePair(candidate, place) }))
     .filter((item) => item.score > 0)
     .sort((a, b) => b.score - a.score || String(a.place.id).localeCompare(String(b.place.id)));
