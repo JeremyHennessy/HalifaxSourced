@@ -76,6 +76,7 @@ for(const name of ["Antoinette's Cheesecakes",'Apartment 3 Espresso Bar']) {
   const records=browser.filter(r=>r.name===name);assert.equal(records.length,name.startsWith('Antoinette')?3:2);assert.equal(new Set(records.map(r=>r.address)).size,records.length);
 }
 const tuna=browser.find(r=>r.id==='tuna-blue-hubbards');assert.equal(tuna.operatingStatus,'seasonally_closed');assert.equal(tuna.openingHours,null);assert.equal(tuna.hasMenu,false);assert.equal(tuna.hasOpening,false);assert.equal(tuna.menuLinks.length,0);
+const dairyBar=browser.find(r=>r.id==='osm-node-12908626114-dairy-bar');assert.equal(dairyBar.operatingStatus,'seasonally_closed');assert.equal(dairyBar.openingHours,null);assert.equal(dairyBar.address,'5688 Spring Garden Road, Halifax, NS');assert.equal(dairyBar.operatingStatusEvidence?.sourceUrl,'https://cafegoodluck.ca/dairybar');assert.equal(dairyBar.hasMenu,false);assert.equal(dairyBar.hasOpening,false);assert.equal(dairyBar.menuLinks.length,0);
 assert.equal(browser.find(r=>r.id==='field-guide').operatingStatus,'permanently_closed');
 assert.equal(savedWrites.length,1,'Merged legacy bookmarks persist once');
 assert.deepEqual(JSON.parse(savedWrites[0]).sort(),['osm-node-13286396472-matadora-tapas-bar','the-press-gang'].sort());
