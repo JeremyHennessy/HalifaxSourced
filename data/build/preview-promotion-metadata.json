@@ -2,17 +2,16 @@
   "schemaVersion": 2,
   "meaningfulChanges": [
     "data/city-events.js",
-    "data/build/city-events.json",
-    "data/build/event-entity-resolution.json"
+    "data/build/city-events.json"
   ],
   "state": "prepared-for-review",
   "reviewedAt": null,
   "publishedAt": null,
-  "generatedAt": "2026-10-24T04:47:55.227Z",
+  "generatedAt": "2026-10-24T11:14:16.903Z",
   "artifactName": "city-events-preview",
-  "artifactRunId": "40063509153",
+  "artifactRunId": "40088846486",
   "sourceWorkflowName": "City Events Preview",
-  "sourceWorkflowRunUrl": "https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/40063509153",
+  "sourceWorkflowRunUrl": "https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/40088846486",
   "promotedFileCount": 3,
   "promotedFiles": [
     "data/build/city-events.json",
