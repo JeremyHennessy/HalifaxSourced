@@ -140,7 +140,7 @@ jobs:
       - name: Add convention, symphony, and public-library events
         env:
           SUPPLEMENTAL_EVENT_TIMEOUT_MS: 15000
-          LIBRARY_EVENT_PAGE_LIMIT: 120
+          LIBRARY_EVENT_PAGE_LIMIT: 150
           LIBRARY_EVENT_DELAY_MS: 100
         run: node scripts/import-supplemental-city-events.mjs
 

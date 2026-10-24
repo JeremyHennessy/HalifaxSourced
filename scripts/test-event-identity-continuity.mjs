@@ -105,7 +105,7 @@ function assertCityWorkflow(text) {
     for (const path of paths) assert(block.includes(`      - ${path}\n`), `${trigger} covers ${path}`);
   }
   assert(text.includes('cron: "23 */6 * * *"'));
-  for (const bound of ['timeout-minutes: 30', 'CITY_EVENT_TIMEOUT_MS: 15000', 'SUPPLEMENTAL_EVENT_TIMEOUT_MS: 15000', 'LIBRARY_EVENT_PAGE_LIMIT: 120', 'LIBRARY_EVENT_DELAY_MS: 100', 'CITY_EVENT_ANOMALY_MIN_PRIOR_COUNT: 20', 'CITY_EVENT_ANOMALY_MAX_SNAPSHOT_AGE_DAYS: 3', 'CITY_EVENT_ANOMALY_CARRY_DAYS: 7']) assert(refreshJob.includes(bound), `Preserve producer bound ${bound}`);
+  for (const bound of ['timeout-minutes: 30', 'CITY_EVENT_TIMEOUT_MS: 15000', 'SUPPLEMENTAL_EVENT_TIMEOUT_MS: 15000', 'LIBRARY_EVENT_PAGE_LIMIT: 150', 'LIBRARY_EVENT_DELAY_MS: 100', 'CITY_EVENT_ANOMALY_MIN_PRIOR_COUNT: 20', 'CITY_EVENT_ANOMALY_MAX_SNAPSHOT_AGE_DAYS: 3', 'CITY_EVENT_ANOMALY_CARRY_DAYS: 7']) assert(refreshJob.includes(bound), `Preserve producer bound ${bound}`);
   assert.match(refreshJob, /name: Checkout\n        uses: actions\/checkout@v6\n\n/);
   assert(refreshJob.indexOf('Verify saved-event continuity before preview upload') >= 0);
   assert(refreshJob.indexOf('Verify saved-event continuity before preview upload') < refreshJob.indexOf('Upload city event preview'));
