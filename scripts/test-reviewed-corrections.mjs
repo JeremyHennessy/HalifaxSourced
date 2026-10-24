@@ -135,6 +135,23 @@ for (const records of [app.restaurants, catalog.restaurants]) {
 }
 assert(active.has(creperieId));
 assert(app.restaurants.find(record => record.id === creperieId).menuLinks.some(link => link.url === 'https://www.foodbooking.com/api/fb/8r4_o7'));
+const revanaId = 'osm-node-3801688860-revana-pizza';
+for (const records of [app.restaurants, catalog.restaurants]) {
+  const matches = records.filter(record => record.id === revanaId);
+  assert.equal(matches.length, 1, 'Revana Dartmouth must retain one location-specific canonical identity');
+  const revana = matches[0];
+  assert.equal(revana.neighborhood, 'Downtown Dartmouth');
+  assert.equal(revana.address, '29 Portland Street, Dartmouth, NS B2Y 1H1');
+  assert.equal(revana.phone, '902-461-0000');
+  assert.equal(revana.website, 'https://dartmouth.revanapizza.ca/');
+  assert.equal(revana.openingHours, 'Monday 11am–11pm; Tuesday–Thursday 11am–midnight; Friday 11am–1am; Saturday noon–1am; Sunday 4pm–11pm');
+  assert.equal(revana.coordinates.lat, 44.6649407, 'Preserve accepted Dartmouth coordinates');
+  assert.equal(revana.coordinates.lon, -63.5675812, 'Preserve accepted Dartmouth coordinates');
+  assert(revana.sources.some(source => source.type === 'menu' && source.url === 'https://dartmouth.revanapizza.ca/'));
+  assert(!/truro/i.test(revana.address), 'Never merge the separate Truro location into Dartmouth');
+}
+assert(active.has(revanaId));
+assert(app.restaurants.find(record => record.id === revanaId).menuLinks.some(link => link.url === 'https://dartmouth.revanapizza.ca/'));
 const marcoId = 'osm-node-4421124794-cafe-marco-polo';
 const marco = app.restaurants.find(record => record.id === marcoId);
 assert(marco && active.has(marcoId), 'Keep the existing Café Marco Polo identity active');
