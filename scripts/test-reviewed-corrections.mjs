@@ -152,6 +152,22 @@ for (const records of [app.restaurants, catalog.restaurants]) {
 }
 assert(active.has(revanaId));
 assert(app.restaurants.find(record => record.id === revanaId).menuLinks.some(link => link.url === 'https://dartmouth.revanapizza.ca/'));
+const ilaiId = 'ilai-halifax';
+for (const records of [app.restaurants, catalog.restaurants]) {
+  const matches = records.filter(record => record.id === ilaiId);
+  assert.equal(matches.length, 1, 'Ilai must have one location-specific Spring Garden identity');
+  const ilai = matches[0];
+  assert.equal(ilai.neighborhood, 'Spring Garden');
+  assert.equal(ilai.address, '1569 Dresden Row, Halifax, NS B3J 2K4');
+  assert.equal(ilai.phone, '782-321-7362');
+  assert.equal(ilai.website, null, 'Do not publish the owner domain while the origin is not currently reachable');
+  assert.equal(ilai.openingHours, null, 'Do not infer weekly hours from delivery marketplaces');
+  assert.equal(ilai.coordinates, null, 'Do not invent coordinates from an address');
+  assert.deepEqual([...ilai.cuisines], ['South Indian', 'Indian']);
+  assert(ilai.socialProfiles.some(profile => profile.platform === 'instagram' && profile.url === 'https://www.instagram.com/ilai.halifax/'));
+  assert(ilai.sources.some(source => source.type === 'business_directory' && source.url === 'https://www.springgardenarea.com/eat-drink'));
+}
+assert(active.has(ilaiId));
 const beaversDartmouthId = 'beavers-den-dartmouth';
 for (const records of [app.restaurants, catalog.restaurants]) {
   const dartmouthMatches = records.filter(record => record.id === beaversDartmouthId);

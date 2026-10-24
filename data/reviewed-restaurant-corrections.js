@@ -789,6 +789,68 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
   ],
   "additions": [
     {
+      "id": "ilai-halifax",
+      "name": "Ilai South Indian Restaurant",
+      "address": "1569 Dresden Row, Halifax, NS B3J 2K4",
+      "neighborhood": "Spring Garden",
+      "category": "Restaurant",
+      "website": null,
+      "phone": "782-321-7362",
+      "coordinates": null,
+      "openingHours": null,
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current Spring Garden Area Business Association directory lists Ilai as open for dine-in and takeout and links the restaurant's Instagram profile. The public owner social preview identifies the same 1569 Dresden Row location and phone 782-321-7362. Weekly hours, coordinates and a currently reachable owner website were not verified.",
+        "sourceUrl": "https://www.springgardenarea.com/eat-drink",
+        "observedAt": "2026-10-24T17:14:11Z",
+        "reviewState": "verified",
+        "location": "1569 Dresden Row, Halifax, NS B3J 2K4"
+      },
+      "cuisines": [
+        "South Indian",
+        "Indian"
+      ],
+      "vibe": [
+        "casual",
+        "local"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [
+        {
+          "platform": "instagram",
+          "handle": "ilai.halifax",
+          "url": "https://www.instagram.com/ilai.halifax/",
+          "reviewState": "verified"
+        }
+      ],
+      "sources": [
+        {
+          "type": "business_directory",
+          "label": "Current Spring Garden listing and explicit owner Instagram link",
+          "url": "https://www.springgardenarea.com/eat-drink",
+          "observedAt": "2026-10-24T17:14:11Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_social",
+          "label": "Owner Instagram profile linked by the business directory",
+          "url": "https://www.instagram.com/ilai.halifax/",
+          "observedAt": "2026-10-24T17:14:11Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_social",
+          "label": "Public owner Facebook preview confirming address and phone; direct page access restricted",
+          "url": "https://www.facebook.com/ilai.halifax/",
+          "observedAt": "2026-10-24T17:14:11Z",
+          "status": "restricted"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
       "id": "beavers-den-dartmouth",
       "name": "The Beaver's Den Dartmouth",
       "address": "101A-16 Portland Street, Dartmouth, NS B2Y 1G9",
