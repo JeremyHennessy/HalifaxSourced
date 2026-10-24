@@ -920,6 +920,68 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
       "sourceLayer": "reviewed_location_correction"
     },
     {
+      "id": "young-pocha-halifax",
+      "name": "Young Pocha Korean BBQ Restaurant",
+      "address": "5650 Spring Garden Road, Halifax, NS B3J 1H4",
+      "neighborhood": "Spring Garden",
+      "category": "Restaurant",
+      "website": "https://young-pocha.com/",
+      "phone": "902-932-2309",
+      "coordinates": null,
+      "openingHours": "Monday–Thursday noon–10pm; Friday–Saturday noon–midnight; Sunday noon–10pm",
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current Spring Garden Area Business Association directory lists Young Pocha, the owner site publishes the Halifax location, phone, weekly hours and menu, and the Nova Scotia food-inspection snapshot current as of October 19, 2026 independently records Young Pocha Korean Restaurant at the same civic address. The owner site's momentary ordering-disabled message is treated as ordering state, not closure evidence. No unit or coordinates are inferred.",
+        "sourceUrl": "https://young-pocha.com/location/",
+        "observedAt": "2026-10-24T19:17:00Z",
+        "reviewState": "verified",
+        "location": "5650 Spring Garden Road, Halifax, NS B3J 1H4"
+      },
+      "cuisines": [
+        "Korean",
+        "Korean BBQ"
+      ],
+      "vibe": [
+        "casual",
+        "local"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [],
+      "sources": [
+        {
+          "type": "business_directory",
+          "label": "Current Spring Garden restaurant listing",
+          "url": "https://www.springgardenarea.com/eat-drink",
+          "observedAt": "2026-10-24T19:17:00Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Owner location page with address, phone and weekly hours",
+          "url": "https://young-pocha.com/location/",
+          "observedAt": "2026-10-24T19:17:00Z",
+          "status": "verified"
+        },
+        {
+          "type": "menu",
+          "label": "Current owner menu",
+          "url": "https://young-pocha.com/menu/",
+          "observedAt": "2026-10-24T19:17:00Z",
+          "status": "verified"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Nova Scotia food-establishment record current as of October 19, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2865778",
+          "observedAt": "2026-10-20T07:20:13.079Z",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
       "id": "beavers-den-dartmouth",
       "name": "The Beaver's Den Dartmouth",
       "address": "101A-16 Portland Street, Dartmouth, NS B2Y 1G9",
