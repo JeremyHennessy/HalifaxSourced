@@ -480,6 +480,7 @@ const restaurantValidationCommands = [
   "node --check scripts/check-restaurant-discovery.mjs",
   "node scripts/test-dartmouth-directory-names.mjs",
   "node scripts/test-taste-ns-member-api.mjs",
+  "node scripts/test-source-evidence-retention.mjs",
   "node scripts/test-restaurant-discovery-offline.mjs",
   "node scripts/test-scheduled-source-guards.mjs"
 ];

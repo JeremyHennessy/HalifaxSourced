@@ -1,6 +1,7 @@
 import { fetchGuardedSource as fetch } from "./lib/fetch-public-source.mjs";
+import { retainOpeningLeadsWithinLookback } from "./lib/source-evidence-retention.mjs";
 import { createHash } from "node:crypto";
-import { mkdir, writeFile } from "node:fs/promises";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
 
 const lookbackDays = Number(process.env.OPENING_WATCH_LOOKBACK_DAYS ?? 180);
 const cutoff = Date.now() - lookbackDays * 24 * 60 * 60 * 1000;
@@ -12,6 +13,10 @@ const sources = [
     url: "https://halifax.retales.ca/feed/"
   }
 ];
+let previousOpeningWatch = { leads: [] };
+try {
+  previousOpeningWatch = JSON.parse(await readFile(new URL("../data/build/opening-watch-leads.json", import.meta.url), "utf8"));
+} catch {}
 
 function decode(value) {
   return String(value ?? "")
@@ -170,13 +175,19 @@ for (const source of sources) {
   }
 }
 
-const unique = leads.filter((lead, index, all) =>
+const currentUnique = leads.filter((lead, index, all) =>
   all.findIndex((item) =>
     item.sourceUrl === lead.sourceUrl &&
     item.name.toLowerCase() === lead.name.toLowerCase() &&
     item.status === lead.status
   ) === index
 ).sort((a, b) => String(b.publishedAt || b.observedAt).localeCompare(String(a.publishedAt || a.observedAt)));
+const retainedEvidence = retainOpeningLeadsWithinLookback({
+  previousLeads: Array.isArray(previousOpeningWatch.leads) ? previousOpeningWatch.leads : [],
+  currentLeads: currentUnique,
+  cutoff
+});
+const unique = retainedEvidence.leads.sort((a, b) => String(b.publishedAt || b.observedAt).localeCompare(String(a.publishedAt || a.observedAt)));
 
 const payload = {
   version: 1,
@@ -185,6 +196,7 @@ const payload = {
   sources,
   count: unique.length,
   leads: unique,
+  retainedPriorWithinLookbackCount: retainedEvidence.retained.length,
   failures
 };
 
@@ -192,4 +204,5 @@ await mkdir(new URL("../data/build", import.meta.url), { recursive: true });
 await writeFile(new URL("../data/build/opening-watch-leads.json", import.meta.url), JSON.stringify(payload, null, 2));
 await writeFile(new URL("../data/opening-watch-leads.js", import.meta.url), `window.HALIFAX_OPENING_WATCH_LEADS = ${JSON.stringify(payload, null, 2)};\n`);
 console.log(`Opening watch: leads=${unique.length}, failures=${failures.length}.`);
+if (retainedEvidence.retained.length) console.log(`- retained prior within lookback=${retainedEvidence.retained.length}`);
 for (const lead of unique.slice(0, 20)) console.log(`- ${lead.name}: ${lead.status}${lead.locationHint ? ` @ ${lead.locationHint}` : ""}`);

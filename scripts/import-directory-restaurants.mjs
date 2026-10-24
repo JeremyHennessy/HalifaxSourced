@@ -1,9 +1,20 @@
 import { fetchGuardedSource as fetch } from "./lib/fetch-public-source.mjs";
 import { assertTasteMemberCompleteness, tasteDetailAddress, tasteDetailOpeningHours, tasteMemberApiUrl, tasteMemberLinksFromApi, tasteRegionId, tasteScopedDetailHtml } from "./lib/taste-ns-member-api.mjs";
+import { retainFailedSourceRecords } from "./lib/source-evidence-retention.mjs";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
+import vm from "node:vm";
 
 const catalog = JSON.parse(await readFile(new URL("../data/build/catalog.json", import.meta.url), "utf8"));
 const registry = JSON.parse(await readFile(new URL("../data/place-source-registry.json", import.meta.url), "utf8"));
+let previousDirectory = { records: [] };
+try {
+  previousDirectory = JSON.parse(await readFile(new URL("../data/build/directory-restaurant-leads.json", import.meta.url), "utf8"));
+} catch {}
+const reviewedContext = { window: {} };
+vm.runInNewContext(await readFile(new URL("../data/reviewed-place-resolutions.js", import.meta.url), "utf8"), reviewedContext);
+const reviewedCandidateIds = (reviewedContext.window.HALIFAX_REVIEWED_PLACE_RESOLUTIONS?.records || [])
+  .map((record) => record?.candidateId)
+  .filter(Boolean);
 let discoveredRestaurants = [];
 try {
   const source = await readFile(new URL("../data/discovered-restaurants.js", import.meta.url), "utf8");
@@ -1239,15 +1250,24 @@ const uniqueRecords = records.filter((record, index, all) => {
   alreadyInCatalogByName: knownNames.has(normalize(record.name)),
   alreadyInCatalog: knownNames.has(normalize(record.name))
 }));
+const retainedEvidence = retainFailedSourceRecords({
+  previousRecords: Array.isArray(previousDirectory.records) ? previousDirectory.records : [],
+  currentRecords: uniqueRecords,
+  failures,
+  protectedRecordIds: reviewedCandidateIds
+});
+const acceptedRecords = retainedEvidence.records;
 
 const payload = {
   version: 2,
   generatedAt: new Date().toISOString(),
   registryVersion: registry.version,
   sources: sourceMeta,
-  count: uniqueRecords.length,
-  newToCatalogCount: uniqueRecords.filter((record) => !record.alreadyInCatalogByName).length,
-  records: uniqueRecords,
+  count: acceptedRecords.length,
+  newToCatalogCount: acceptedRecords.filter((record) => !record.alreadyInCatalogByName).length,
+  records: acceptedRecords,
+  retainedSourceFailures: retainedEvidence.retentions,
+  retainedReviewedCandidateCount: retainedEvidence.retainedReviewedCount,
   failures
 };
 
@@ -1255,6 +1275,8 @@ await mkdir(new URL("../data/build", import.meta.url), { recursive: true });
 await writeFile(new URL("../data/build/directory-restaurant-leads.json", import.meta.url), JSON.stringify(payload, null, 2));
 await writeFile(new URL("../data/directory-restaurant-leads.js", import.meta.url), `window.HALIFAX_DIRECTORY_RESTAURANT_LEADS = ${JSON.stringify(payload, null, 2)};\n`);
 console.log(`Directory discovery: records=${payload.count}, new-to-catalog-name=${payload.newToCatalogCount}, failures=${failures.length}.`);
+for (const item of retainedEvidence.retentions) console.log(`- ${item.sourceId}: retained=${item.retainedCount} after ${item.reasons.join(",") || "source_failure"}`);
+if (retainedEvidence.retainedReviewedCount) console.log(`- reviewed candidate evidence retained=${retainedEvidence.retainedReviewedCount}`);
 for (const item of sourceMeta) console.log(`- ${item.id}: observed=${item.directoryEntriesObserved ?? "paged"}`);
 
 
