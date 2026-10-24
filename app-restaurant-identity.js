@@ -83,6 +83,7 @@
     record.neighborhood = resolution.neighborhood || record.neighborhood;
     for (const field of ['address', 'coordinates', 'phone', 'openingHours', 'website']) record[field] ||= resolution[field];
     record.operatingStatus = resolution.operatingStatus || record.operatingStatus;
+    record.operatingStatusEvidence ||= resolution.operatingStatusEvidence;
     record.socialProfiles = [...new Map([...(record.socialProfiles || []), ...(resolution.socialProfiles || [])].map(item => [item.url || item.profileUrl, item])).values()];
     record.reviewedPlaceResolution = resolution;
     const source = { label: 'Reviewed neighbourhood resolution', type: 'business_district_directory', url: resolution.sourceUrl, status: resolution.reviewState, observedAt: resolution.observedAt };
