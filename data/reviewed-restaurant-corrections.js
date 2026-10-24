@@ -982,6 +982,81 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
       "sourceLayer": "reviewed_location_correction"
     },
     {
+      "id": "beyond-pho-halifax",
+      "name": "Beyond Pho Halifax",
+      "address": "5518 Spring Garden Road, Halifax, NS",
+      "neighborhood": "Spring Garden",
+      "category": "Restaurant",
+      "website": "https://www.beyondphohalifax.com/",
+      "phone": "902-425-3133",
+      "coordinates": null,
+      "openingHours": "Pho menu daily 11:30am–9pm; barbecue menu Friday–Saturday 4pm–1am and Sunday–Thursday 4pm–midnight",
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current Spring Garden Area Business Association directory lists Beyond Pho, the current owner site identifies the restaurant at 5518 Spring Garden Road with phone 902-425-3133, publishes separate pho and barbecue service schedules and a current menu, and links the restaurant Instagram. The Nova Scotia food-inspection snapshot current as of October 19, 2026 independently records Beyond Pho Vietnamese Cuisine at the same civic address. The owner site and tourism directory disagree on postal code, so no postal code or coordinates are published.",
+        "sourceUrl": "https://www.beyondphohalifax.com/",
+        "observedAt": "2026-10-24T23:12:06Z",
+        "reviewState": "verified",
+        "location": "5518 Spring Garden Road, Halifax, NS"
+      },
+      "cuisines": [
+        "Vietnamese"
+      ],
+      "vibe": [
+        "casual",
+        "local"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [
+        {
+          "platform": "instagram",
+          "handle": "beyondpho_halifax",
+          "url": "https://www.instagram.com/beyondpho_halifax/",
+          "reviewState": "verified"
+        }
+      ],
+      "sources": [
+        {
+          "type": "business_directory",
+          "label": "Current Spring Garden restaurant listing",
+          "url": "https://www.springgardenarea.com/eat-drink",
+          "observedAt": "2026-10-24T23:12:06Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Owner homepage with exact civic address, phone and published service schedules",
+          "url": "https://www.beyondphohalifax.com/",
+          "observedAt": "2026-10-24T23:12:06Z",
+          "status": "verified"
+        },
+        {
+          "type": "menu",
+          "label": "Current owner menu",
+          "url": "https://www.beyondphohalifax.com/menu",
+          "observedAt": "2026-10-24T23:12:06Z",
+          "status": "verified"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Nova Scotia food-establishment record current as of October 19, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2984006",
+          "observedAt": "2026-10-20T07:20:13.079Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_social",
+          "label": "Instagram profile linked from the owner site",
+          "url": "https://www.instagram.com/beyondpho_halifax/",
+          "observedAt": "2026-10-24T23:12:06Z",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
       "id": "beavers-den-dartmouth",
       "name": "The Beaver's Den Dartmouth",
       "address": "101A-16 Portland Street, Dartmouth, NS B2Y 1G9",
