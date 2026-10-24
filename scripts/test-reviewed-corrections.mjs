@@ -185,6 +185,25 @@ for (const records of [app.restaurants, catalog.restaurants]) {
   assert(manillaThai.sources.some(source => source.type === 'official_website' && source.status === 'failed'));
 }
 assert(active.has(manillaThaiId));
+const youngPochaId = 'young-pocha-halifax';
+for (const records of [app.restaurants, catalog.restaurants]) {
+  const matches = records.filter(record => record.id === youngPochaId);
+  assert.equal(matches.length, 1, 'Young Pocha must have one location-specific Spring Garden identity');
+  const youngPocha = matches[0];
+  assert.equal(youngPocha.neighborhood, 'Spring Garden');
+  assert.equal(youngPocha.address, '5650 Spring Garden Road, Halifax, NS B3J 1H4');
+  assert.equal(youngPocha.phone, '902-932-2309');
+  assert.equal(youngPocha.website, 'https://young-pocha.com/');
+  assert.equal(youngPocha.openingHours, 'Monday–Thursday noon–10pm; Friday–Saturday noon–midnight; Sunday noon–10pm');
+  assert.equal(youngPocha.coordinates, null, 'Do not invent a unit or coordinates from the civic address');
+  assert.deepEqual([...youngPocha.cuisines], ['Korean', 'Korean BBQ']);
+  assert.equal(youngPocha.specials.length, 0, 'Menu sections are not time-bounded specials');
+  assert.equal(youngPocha.events.length, 0);
+  assert(youngPocha.sources.some(source => source.type === 'government_inspection' && source.url.endsWith('Id1=2865778')));
+  assert(youngPocha.sources.some(source => source.type === 'menu' && source.url === 'https://young-pocha.com/menu/'));
+}
+assert(active.has(youngPochaId));
+assert(app.restaurants.find(record => record.id === youngPochaId).menuLinks.some(link => link.url === 'https://young-pocha.com/menu/'));
 const beaversDartmouthId = 'beavers-den-dartmouth';
 for (const records of [app.restaurants, catalog.restaurants]) {
   const dartmouthMatches = records.filter(record => record.id === beaversDartmouthId);
