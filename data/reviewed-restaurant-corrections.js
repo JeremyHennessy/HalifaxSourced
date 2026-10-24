@@ -851,6 +851,75 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
       "sourceLayer": "reviewed_location_correction"
     },
     {
+      "id": "manilla-thai-grill-halifax",
+      "name": "Manilla Thai Grill",
+      "address": "5686 Spring Garden Road, Halifax, NS B3J 1H5",
+      "neighborhood": "Spring Garden",
+      "category": "Restaurant",
+      "website": null,
+      "phone": null,
+      "coordinates": null,
+      "openingHours": null,
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current Spring Garden Area Business Association directory lists Manilla Thai Grill, the current owner Instagram identifies the Halifax Filipino and Thai restaurant at 5686 Spring Garden Road, and the Nova Scotia food-inspection snapshot current as of October 19, 2026 independently records MANILLA THAI GRILL & CATERING at the same civic address. The directory-linked owner website returned HTTP 404, so no website, menu, phone, weekly hours or coordinates are published.",
+        "sourceUrl": "https://www.springgardenarea.com/eat-drink",
+        "observedAt": "2026-10-24T18:18:00Z",
+        "reviewState": "verified",
+        "location": "5686 Spring Garden Road, Halifax, NS B3J 1H5"
+      },
+      "cuisines": [
+        "Filipino",
+        "Thai"
+      ],
+      "vibe": [
+        "casual",
+        "local"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [
+        {
+          "platform": "instagram",
+          "handle": "manillathaigrillhfx",
+          "url": "https://www.instagram.com/manillathaigrillhfx/",
+          "reviewState": "verified"
+        }
+      ],
+      "sources": [
+        {
+          "type": "business_directory",
+          "label": "Current Spring Garden restaurant listing",
+          "url": "https://www.springgardenarea.com/eat-drink",
+          "observedAt": "2026-10-24T18:18:00Z",
+          "status": "verified"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Nova Scotia food-establishment record current as of October 19, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3356936",
+          "observedAt": "2026-10-20T07:20:13.079Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_social",
+          "label": "Current owner Instagram profile confirming the Halifax identity and civic address",
+          "url": "https://www.instagram.com/manillathaigrillhfx/",
+          "observedAt": "2026-10-24T18:18:00Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Directory-linked owner domain returned HTTP 404; not published",
+          "url": "https://www.manillathaigrill.com/",
+          "observedAt": "2026-10-24T18:18:00Z",
+          "status": "failed"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
       "id": "beavers-den-dartmouth",
       "name": "The Beaver's Den Dartmouth",
       "address": "101A-16 Portland Street, Dartmouth, NS B2Y 1G9",
