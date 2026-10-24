@@ -2430,6 +2430,75 @@
           "observedAt": "2026-10-23T20:24:58.376Z"
         }
       ]
+    },
+    {
+      "provenance": {
+        "kind": "reviewed_workflow_log",
+        "repository": "JeremyHennessy/HalifaxSourced",
+        "sourceCommitSha": "e3203d6d1be871c0e70a9ff1e26197e8b6499d0c",
+        "workflowRunId": "40095873604",
+        "workflowRunAttempt": "1",
+        "workflowJob": "social-refresh",
+        "workflowJobId": 120877906540,
+        "accessPolicySha256": "dd583c5e139c6e81acc13805a4b09a919e7c535981a91469860856a2068d66fb",
+        "logSha256": "61b60fe33e2d355bad72c2e88e3b6f5c4da330f768cb661bbdd97ede7a123f72",
+        "diagnosticSha256": "9eae5ce7ae6aee1d2ed996c9cd726937aee5505eab27278551e48104f54362ac",
+        "receiptSha256": "34359621010903ef98b35a272657f92ae3f53fb2cd8f65ac83a7b82b5e313131",
+        "loggedAt": "2026-10-24T12:55:16.063Z",
+        "diagnostic": {
+          "version": 1,
+          "disposition": "nonpublishable_requires_review",
+          "kind": "http_restriction",
+          "repository": "JeremyHennessy/HalifaxSourced",
+          "workflowJob": "social-refresh",
+          "loggedAt": "2026-10-24T12:55:16.063Z",
+          "sourceCommitSha": "e3203d6d1be871c0e70a9ff1e26197e8b6499d0c",
+          "sourceWorkflowRunId": "40095873604",
+          "sourceWorkflowRunAttempt": "1",
+          "accessPolicySha256": "dd583c5e139c6e81acc13805a4b09a919e7c535981a91469860856a2068d66fb",
+          "evidence": {
+            "hold": {
+              "id": "99270922ad528402a91f2928411fd6c75d348794e310067dca3d79044d7475f7",
+              "scope": "url",
+              "target": "https://greco.ca/feed/",
+              "reason": "access_restricted",
+              "resume": "reviewed_evidence_required",
+              "evidence": {
+                "url": "https://greco.ca/feed/",
+                "finalUrl": "https://greco.ca/feed/",
+                "status": 403,
+                "observedAt": "2026-10-24T12:55:16.063Z"
+              },
+              "provenance": {
+                "kind": "current_run",
+                "sourceCommitSha": "e3203d6d1be871c0e70a9ff1e26197e8b6499d0c",
+                "sourceWorkflowRunId": "40095873604",
+                "sourceWorkflowRunAttempt": "1",
+                "accessPolicySha256": "dd583c5e139c6e81acc13805a4b09a919e7c535981a91469860856a2068d66fb",
+                "requestId": "94"
+              }
+            },
+            "receipt": {
+              "requestId": "94",
+              "url": "https://greco.ca/feed/",
+              "status": 403,
+              "observedAt": "2026-10-24T12:55:16.063Z",
+              "attemptedAt": "2026-10-24T12:55:16.044Z",
+              "mediaType": "text/html"
+            },
+            "late": false,
+            "suspensionId": null
+          }
+        }
+      },
+      "observations": [
+        {
+          "url": "https://greco.ca/feed/",
+          "finalUrl": "https://greco.ca/feed/",
+          "status": 403,
+          "observedAt": "2026-10-24T12:55:16.063Z"
+        }
+      ]
     }
   ]
 }
