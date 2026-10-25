@@ -281,6 +281,51 @@ for (const records of [app.restaurants, catalog.restaurants]) {
 }
 assert(active.has(beaversDartmouthId));
 assert(app.restaurants.find(record => record.id === beaversDartmouthId).menuLinks.some(link => link.url === 'https://thebeaversden.ca/menu'));
+// Corrections must precede automatic inspection association in both consumers.
+const kaiId = 'osm-node-26041176-kai-brady-s';
+const kaiBrowser = app.restaurants.find(record => record.id === kaiId);
+const kaiExport = catalog.restaurants.find(record => record.id === kaiId);
+assert.equal(kaiBrowser.address, '5679 Spring Garden Road, Halifax, NS B3J 1G9');
+assert.deepEqual(kaiBrowser.inspections.map(record => record.id), ['ns-food-3670733'], 'Bind inspection evidence to the corrected Kai Brady location, not stale OSM 5675');
+assert.deepEqual(kaiBrowser.inspections.map(record => record.id), kaiExport.inspectionRecords.map(record => record.id), 'Reviewed inspection matches must agree between browser and catalog');
+
+// A correction can also invalidate an old automatic match. Do not retain the
+// previous branch or erase separately reviewed evidence while rebinding it.
+const inspectionFixture = vm.createContext({ window: {}, Intl, Date: FixtureDate });
+vm.runInContext(await readFile(new URL('restaurant-corrections.js', root), 'utf8'), inspectionFixture);
+vm.runInContext(await readFile(new URL('app-inspection-matching.js', root), 'utf8'), inspectionFixture);
+vm.runInContext(`
+  const registry = [
+    { id: 'old-branch', name: 'Fixture Cafe', address: '101 Main Street, Halifax' },
+    { id: 'new-branch', name: 'Fixture Cafe', address: '102 Main Street, Halifax' }
+  ];
+  const reviewedEvidence = [{ id: 'reviewed-evidence', reviewState: 'verified' }];
+  const sources = [{ type: 'government_inspection', url: 'https://example.test/reviewed' }];
+  const restaurants = [
+    { id: 'moved-fixture', name: 'Fixture Cafe', address: '101 Main Street, Halifax', inspections: [registry[0]], inspectionRecords: reviewedEvidence, sources },
+    { id: 'unmatched-fixture', name: 'Fixture Cafe', address: '101 Main Street, Halifax', inspections: [registry[0]] },
+    { id: 'name-fixture', name: 'Fixture Cafe', address: '101 Main Street, Halifax', inspections: [registry[0]] },
+    { id: 'unchanged-fixture', name: 'Unrelated Cafe', address: 'Unknown address', inspections: [{ id: 'unchanged' }] }
+  ];
+  const reviewedRestaurantCorrections = { records: [
+    { restaurantId: 'moved-fixture', fields: { address: '102 Main Street, Halifax' } },
+    { restaurantId: 'unmatched-fixture', fields: { address: '103 Main Street, Halifax' } },
+    { restaurantId: 'name-fixture', fields: { name: 'Unrelated Cafe' } }
+  ] };
+  const inspectionMatches = restaurant => window.HalifaxInspectionMatching.matches(restaurant, registry);
+  const isRestaurantActive = restaurant => HalifaxRestaurantCorrections.isActive(restaurant);
+  const activeRestaurants = [];
+  const HalifaxDataIntegrity = { pointerSafe: () => true };
+`, inspectionFixture);
+vm.runInContext(await readFile(new URL('app-lifecycle.js', root), 'utf8'), inspectionFixture);
+const inspectionProjection = JSON.parse(vm.runInContext('JSON.stringify(restaurants)', inspectionFixture));
+assert.deepEqual(inspectionProjection[0].inspections.map(record => record.id), ['new-branch']);
+assert.deepEqual(inspectionProjection[0].inspectionRecords, [{ id: 'reviewed-evidence', reviewState: 'verified' }]);
+assert(inspectionProjection[0].sources.some(source => source.url === 'https://example.test/reviewed'), 'Do not erase independently reviewed evidence');
+assert.deepEqual(inspectionProjection[1].inspections, [], 'Do not carry an old branch match across a corrected civic address');
+assert.deepEqual(inspectionProjection[2].inspections, [], 'Do not carry an old business match across a corrected name');
+assert.deepEqual(inspectionProjection[3].inspections.map(record => record.id), ['unchanged'], 'Unrelated projections must be untouched');
+
 const marcoId = 'osm-node-4421124794-cafe-marco-polo';
 const marco = app.restaurants.find(record => record.id === marcoId);
 assert(marco && active.has(marcoId), 'Keep the existing Café Marco Polo identity active');

@@ -1,5 +1,6 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import vm from "node:vm";
+import { unambiguousCivicNumber } from "./lib/place-address-identity.mjs";
 
 const catalog = JSON.parse(await readFile(new URL("../data/build/catalog.json", import.meta.url), "utf8"));
 const directoryPayload = JSON.parse(await readFile(new URL("../data/build/directory-restaurant-leads.json", import.meta.url), "utf8"));
@@ -119,10 +120,17 @@ function scorePair(candidate, place) {
     else if (distance <= 500) { score += 10; evidence.push("coordinates_within_500m"); }
   }
 
-  const addressConflict = Boolean(cNumber && pNumber && cNumber !== pNumber && similarity < 0.4);
+  // Nearby coordinates, a shared domain/phone or similar street text cannot
+  // overrule an explicit civic-number disagreement. Keep it for source review.
+  const legacyAddressConflict = Boolean(cNumber && pNumber && cNumber !== pNumber && similarity < 0.4);
+  const candidateCivic = unambiguousCivicNumber(candidate.address);
+  const placeCivic = unambiguousCivicNumber(place.address);
+  const addressConflict = legacyAddressConflict || Boolean(candidateCivic && placeCivic && candidateCivic !== placeCivic);
   const domainConflict = Boolean(cDomain && pDomain && cDomain !== pDomain);
   const phoneConflict = Boolean(cPhone && pPhone && cPhone !== pPhone);
-  const conflictCount = [addressConflict, domainConflict, phoneConflict].filter(Boolean).length;
+  // Keep candidate scores/ranking unchanged: this is an eligibility guard, not
+  // permission to promote a runner-up merely because its competitor is held.
+  const conflictCount = [legacyAddressConflict, domainConflict, phoneConflict].filter(Boolean).length;
   if (conflictCount) score -= conflictCount * 20;
 
   return { score, evidence, conflicts: [addressConflict ? "street_number_conflict" : null, domainConflict ? "domain_conflict" : null, phoneConflict ? "phone_conflict" : null].filter(Boolean), distanceMeters: distance === null ? null : Math.round(distance), addressSimilarity: Number(similarity.toFixed(3)) };
