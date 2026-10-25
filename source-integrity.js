@@ -85,6 +85,26 @@
   function sourceHost(value) {
     try { return new URL(value).hostname.toLowerCase().replace(/\.+$/, '').replace(/^www\./, ''); } catch { return ''; }
   }
+  // Action arrays retain their source order/evidence. Every public consumer
+  // must apply the existing location/kind/URL policy, not merely URL safety.
+  function actionLinks(restaurantId, kind, links = []) {
+    if (!primaryActionUrl(restaurantId, kind, links)) return [];
+    return (Array.isArray(links) ? links : []).filter(link => pointerSafe(restaurantId, kind, link?.url));
+  }
+  function primaryActionUrl(restaurantId, kind, links = []) {
+    // A rejected first choice is not permission to promote an unreviewed
+    // runner-up (which may be a provider homepage or another branch).
+    if (!['ordering', 'reservations'].includes(kind)) return null;
+    const url = Array.isArray(links) ? links[0]?.url : null;
+    return pointerSafe(restaurantId, kind, url) ? url : null;
+  }
+  function actionAvailable(restaurantId, kind, links, capability = false) {
+    if (Array.isArray(links) && links.length) return Boolean(primaryActionUrl(restaurantId, kind, links));
+    // Historical keyword-only reservation capability is not a direct link.
+    // Preserve that separate existing signal, but never use it as a fallback
+    // when a supplied primary action has been rejected.
+    return kind === 'reservations' && Boolean(capability);
+  }
   function safeSource(value) {
     try { const u = new URL(value); const host = sourceHost(u); return Boolean(host) && !brokenPaths.has(host + u.pathname.replace(/\/+$/, '')) && ['http:', 'https:'].includes(u.protocol) && ![...blockedHosts].some(h => host === h || host.endsWith('.' + h)); } catch { return false; }
   }
@@ -154,7 +174,7 @@
     }
     return [...new Set(dates)].sort().reverse();
   }
-  const api = { heldSocialFact, pointerSafe, safeSource, sourceHost, publicationState, locationSafe, currentOffer, currentPost, postExpiry, publisherDates };
+  const api = { heldSocialFact, pointerSafe, actionLinks, primaryActionUrl, actionAvailable, safeSource, sourceHost, publicationState, locationSafe, currentOffer, currentPost, postExpiry, publisherDates };
   root.HalifaxDataIntegrity = api;
   if (typeof module !== 'undefined') module.exports = api;
 })(globalThis);

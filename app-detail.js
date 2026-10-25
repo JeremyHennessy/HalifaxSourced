@@ -48,8 +48,8 @@ function renderRestaurantDetail(id) {
   const successor = restaurants.find(item => item.id === restaurant.successorId && isRestaurantActive(item));
   const website = active ? safeUrl(restaurant.website) : null;
   const menuLink = safeUrl(restaurant.menuLinks?.[0]?.url);
-  const reservation = safeUrl(restaurant.reservationLinks?.[0]?.url);
-  const ordering = safeUrl(restaurant.orderingLinks?.[0]?.url);
+  const reservation = safeUrl(HalifaxDataIntegrity.primaryActionUrl(restaurant.id, 'reservations', restaurant.reservationLinks));
+  const ordering = safeUrl(HalifaxDataIntegrity.primaryActionUrl(restaurant.id, 'ordering', restaurant.orderingLinks));
   const sourceLinks = uniqueSourceLinks(restaurant);
   const socialProfiles = (restaurant.socialProfiles || []).filter((profile) => safeUrl(profile.url));
   const linkHubs = (restaurant.linkHubs || []).filter((hub) => safeUrl(hub.url));

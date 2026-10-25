@@ -19,6 +19,12 @@ for (const restaurant of restaurants) {
   restaurant.specialLinks = (restaurant.specialLinks || []).filter(link => HalifaxDataIntegrity.pointerSafe(restaurant.id, 'special', link.url));
   restaurant.structuredSpecials = (restaurant.structuredSpecials || []).filter(item => HalifaxDataIntegrity.pointerSafe(restaurant.id, 'special', item.sourceUrl));
   restaurant.currentVerifiedSpecials = (restaurant.currentVerifiedSpecials || []).filter(item => HalifaxDataIntegrity.pointerSafe(restaurant.id, 'special', item.sourceUrl));
+  for (const [kind, field, flag] of [['ordering', 'orderingLinks', 'hasOrdering'], ['reservations', 'reservationLinks', 'hasReservation']]) {
+    const links = restaurant[field] || [];
+    // Match the primary CTA without promoting a runner-up; unrelated
+    // keyword-only reservation capability remains a separate existing signal.
+    restaurant[flag] = HalifaxDataIntegrity.actionAvailable(restaurant.id, kind, links, restaurant[flag]);
+  }
   restaurant.hasMenu = restaurant.menuLinks.length > 0;
   restaurant.hasSpecial = Boolean(restaurant.specialLinks.length || restaurant.structuredSpecials.length || restaurant.specials?.length);
   if (isRestaurantActive(restaurant)) continue;

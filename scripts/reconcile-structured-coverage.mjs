@@ -2,6 +2,7 @@ import { placeFactCounts } from "./lib/coverage-values.mjs";
 import { readFile, writeFile } from "node:fs/promises";
 import vm from "node:vm";
 import integrity from "../source-integrity.js";
+import { rejectedOrderingPrimaryIds } from "./lib/action-pointer-coverage.mjs";
 import { applyReviewedFactFieldRejections } from './lib/reviewed-corrections.mjs';
 
 const DAY_MS = 24 * 60 * 60 * 1000;
@@ -155,6 +156,11 @@ for (const resolution of reviewedResolutions) {
   }
 }
 
+// Match the base report exclusion; retained facts must not re-add a held CTA.
+for (const id of rejectedOrderingPrimaryIds(firstParty.records || [], facts.records || [])) {
+  baseOrderingIds.delete(id);
+  orderingIds.delete(id);
+}
 for (const ids of [basePhoneIds, baseHoursIds, baseMenuIds, baseSpecialIds, baseReservationIds, baseOrderingIds, basePatioIds, baseAccessibilityIds, verifiedSpecialIds, phoneIds, hoursIds, menuIds, specialIds, reservationIds, orderingIds, patioIds, accessibilityIds, socialIds, hubIds, ...Object.values(platformSets)]) {
   for (const id of ids) if (!catalogById.has(id)) ids.delete(id);
 }

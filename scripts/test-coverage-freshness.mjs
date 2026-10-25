@@ -11,7 +11,7 @@ const asOf = '2026-10-22T00:00:00.000Z';
 const recent = '2026-10-21T12:00:00.000Z';
 const stale = '2026-01-01T12:00:00.000Z';
 try {
-  for (const file of ['scripts/build-content-coverage-report.mjs', 'scripts/lib/coverage-values.mjs', 'scripts/lib/media-rights-contract.mjs', 'source-integrity.js', 'app-media.js']) {
+  for (const file of ['scripts/build-content-coverage-report.mjs', 'scripts/lib/coverage-values.mjs', 'scripts/lib/action-pointer-coverage.mjs', 'scripts/lib/media-rights-contract.mjs', 'source-integrity.js', 'app-media.js']) {
     await mkdir(dirname(join(root, file)), { recursive: true });
     await copyFile(new URL('../' + file, import.meta.url), join(root, file));
   }
