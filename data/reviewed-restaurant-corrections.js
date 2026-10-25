@@ -4,6 +4,31 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
   "policy": "Reviewed location evidence overrides stale imports; observation dates are retained and uncertain coordinates, hours, successor identities and closure day remain unknown.",
   "records": [
     {
+      "restaurantId": "osm-node-11239721834-humble-pie-kitchen",
+      "fields": {
+        "address": "77 King Street, Dartmouth, NS B2Y 2R7",
+        "phone": "902-431-0444",
+        "website": "https://humblepiekitchen.ca/",
+        "openingHours": "Mo-Sa 09:00-18:00; Su 09:00-15:00",
+        "evidenceStatus": "verified",
+        "summary": "Owner-verified Downtown Dartmouth pie shop at 77 King Street with current contact details, weekly hours and a published menu; independently corroborated by the Downtown Dartmouth directory and Nova Scotia food-inspection registry."
+      },
+      "sourceUrl": "https://humblepiekitchen.ca/",
+      "claim": "The current owner site identifies Humble Pie Kitchen's Dartmouth shop at 77 King Street, gives phone 902-431-0444, publishes its pie menu, and states Monday-Saturday 9am-6pm and Sunday 9am-3pm. The current Downtown Dartmouth directory independently lists Humble Pie at the same address and phone, while the Nova Scotia food-inspection registry records HUMBLE PIE KITCHEN at 77 King. These current owner hours supersede the stale OpenStreetMap schedule that opened one hour later and closed one hour earlier on Sunday.",
+      "observedAt": "2026-10-25T10:50:41Z",
+      "reviewedAt": "2026-10-25T10:50:41Z",
+      "reviewState": "verified",
+      "fieldEvidence": {
+        "address": {
+          "sourceUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2044336",
+          "observedAt": "2026-10-20T07:20:13.079Z",
+          "reviewedAt": "2026-10-25T10:50:41Z",
+          "claim": "Nova Scotia food-establishment record current as of October 19, 2026 confirms HUMBLE PIE KITCHEN at 77 King, Dartmouth.",
+          "reviewState": "verified"
+        }
+      }
+    },
+    {
       "restaurantId": "osm-node-7947984988-the-hungry-hut",
       "fields": {
         "address": "135 Ochterloney Street, Dartmouth, NS B2Y 1C9",
