@@ -928,6 +928,66 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
   ],
   "additions": [
     {
+      "id": "big-life-bakery-dartmouth",
+      "name": "Big Life Bakery",
+      "address": "84 Portland Street, Dartmouth, NS",
+      "neighborhood": "Downtown Dartmouth",
+      "category": "Bakery",
+      "website": null,
+      "phone": "902-664-9692",
+      "coordinates": null,
+      "openingHours": "Th-Fr 09:00-15:00; Sa-Su 10:00-16:00",
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current Big Life Bakery owner Instagram profile identifies the organic bakery at 84 Portland Street, Dartmouth, and publishes Thursday-Friday 9am-3pm and Saturday-Sunday 10am-4pm hours. The Downtown Dartmouth business directory directly links that owner profile and independently lists the same bakery and address with phone 902-664-9692, while the Nova Scotia food-inspection registry records BIG LIFE WHOLE FOODS at 84 Portland. Older third-party closure and legacy phone records are not used. An official website, menu and coordinates remain unknown.",
+        "sourceUrl": "https://www.instagram.com/biglifebakery/",
+        "observedAt": "2026-10-25T16:12:43Z",
+        "reviewState": "verified",
+        "location": "84 Portland Street, Dartmouth, NS"
+      },
+      "cuisines": [
+        "Bakery"
+      ],
+      "vibe": [
+        "organic",
+        "local"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/biglifebakery/",
+          "reviewState": "verified"
+        }
+      ],
+      "sources": [
+        {
+          "type": "official_social",
+          "label": "Owner address and current weekly hours",
+          "url": "https://www.instagram.com/biglifebakery/",
+          "observedAt": "2026-10-25T16:12:43Z",
+          "status": "verified"
+        },
+        {
+          "type": "business_directory",
+          "label": "Current Downtown Dartmouth address, phone and owner-social link",
+          "url": "https://www.downtowndartmouth.ca/fooddrink",
+          "observedAt": "2026-10-25T16:12:43Z",
+          "status": "verified"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Nova Scotia food-establishment record current as of October 19, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1882297",
+          "observedAt": "2026-10-20T07:20:13.079Z",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
       "id": "daawat-traditional-kitchen-dartmouth",
       "name": "Daawat Traditional Kitchen",
       "address": "156 Ochterloney Street, Dartmouth, NS B2Y 1E1",
