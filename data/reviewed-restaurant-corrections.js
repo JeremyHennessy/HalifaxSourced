@@ -843,6 +843,70 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
   ],
   "additions": [
     {
+      "id": "jacobs-lounge-dartmouth",
+      "name": "Jacob's Lounge",
+      "address": "106 Portland Street, Dartmouth, NS B2Y 1H8",
+      "neighborhood": "Downtown Dartmouth",
+      "category": "Restaurant & Bar",
+      "website": "https://www.jacobslounge.com/",
+      "phone": "902-461-1727",
+      "coordinates": null,
+      "openingHours": "Tu-Sa 16:00-00:00; Su-Mo closed",
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current owner site identifies Jacob's Lounge at 106 Portland Street, publishes phone 902-461-1727, temporary Tuesday-Saturday 4pm-midnight hours, and a current menu. The Downtown Dartmouth business directory independently lists the same restaurant, address, phone and owner domain, while the Nova Scotia food-inspection registry records JACOB'S LOUNGE at 106 Portland. Coordinates, social profiles, dated offers and events remain unknown.",
+        "sourceUrl": "https://www.jacobslounge.com/",
+        "observedAt": "2026-10-25T09:22:00Z",
+        "reviewState": "verified",
+        "location": "106 Portland Street, Dartmouth, NS B2Y 1H8"
+      },
+      "cuisines": [
+        "Pizza",
+        "Burgers",
+        "Pasta"
+      ],
+      "vibe": [
+        "casual",
+        "bar",
+        "local"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [],
+      "sources": [
+        {
+          "type": "official_website",
+          "label": "Owner address, contact and temporary weekly hours",
+          "url": "https://www.jacobslounge.com/",
+          "observedAt": "2026-10-25T09:22:00Z",
+          "status": "verified"
+        },
+        {
+          "type": "menu",
+          "label": "Current owner menu",
+          "url": "https://www.jacobslounge.com/menu-1",
+          "observedAt": "2026-10-25T09:22:00Z",
+          "status": "verified"
+        },
+        {
+          "type": "business_directory",
+          "label": "Current Downtown Dartmouth location, phone and owner-domain link",
+          "url": "https://www.downtowndartmouth.ca/fooddrink",
+          "observedAt": "2026-10-25T09:22:00Z",
+          "status": "verified"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Nova Scotia food-establishment record current as of October 19, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312661",
+          "observedAt": "2026-10-20T07:20:13.079Z",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
       "id": "little-pisa-dartmouth",
       "name": "Little Pisa",
       "address": "98 Portland Street, Dartmouth, NS B2Y 1H6",
