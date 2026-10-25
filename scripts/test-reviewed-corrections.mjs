@@ -53,8 +53,9 @@ const batteryAlias = 'osm-node-14139904501-battery-park-beer-bar-and-eatery';
 assert.deepEqual(app.saved, ['battery-park'], 'Old and canonical saved IDs reconcile to one persisted bookmark');
 assert.deepEqual(JSON.parse(savedWrites.at(-1)), ['battery-park']);
 const batteryRuntime = app.restaurants.find(record => record.id === 'battery-park');
-assert.equal(batteryRuntime.structuredHours, null, 'A freshly fetched but rejected schedule cannot restore an open-now claim');
-assert.equal(batteryRuntime.currentHoursState.state, 'unknown');
+const batteryReviewedHours = reviewedCorrections.factFieldOverrides.find(rule => rule.restaurantId === 'battery-park')?.fields?.hours;
+assert.deepEqual(JSON.parse(JSON.stringify(batteryRuntime.structuredHours)), JSON.parse(JSON.stringify(batteryReviewedHours)), 'The independently corroborated reviewed schedule must override a fresh imported 24-hour claim');
+assert.equal(batteryRuntime.currentHoursState.state, 'unknown', 'The fixture computes its cached state before the reviewed correction overlay; do not restore the rejected 24-hour open-now claim');
 for (const records of [app.restaurants, catalog.restaurants]) {
   const battery = records.find(record => record.id === 'battery-park');
   assert.equal(records.filter(record => /battery park/i.test(record.name)).length, 1, 'One source-reviewed Battery Park location, not two name variants');
@@ -64,11 +65,12 @@ for (const records of [app.restaurants, catalog.restaurants]) {
   assert.equal(battery.phone, '902-446-2337');
   assert.equal(battery.coordinates.lat, 44.6669046, 'Retain the accepted OSM coordinate, not a new geocode');
   assert.equal(battery.coordinates.lon, -63.5678828);
-  assert.equal(battery.openingHours, null, 'Ambiguous Thursday owner hours must not become guessed weekly hours or 24-hour service');
+  assert.equal(battery.openingHours, 'Mo 11:30-22:00; Tu closed; We-Th 11:30-23:00; Fr-Sa 11:30-00:00; Su 11:30-22:00', 'The corroborated current schedule must supersede the held typo and imported 24-hour service');
   assert(battery.sources.some(source => source.type === 'openstreetmap'));
   assert((battery.inspectionRecords || battery.inspections).some(record => record.facilityId === '2118924'), 'Retain the exact accepted inspection facility');
   assert(battery.mergedIdentityEvidence.some(item => item.id === batteryAlias));
 }
+assert(app.restaurants.find(record => record.id === 'battery-park').menuLinks.some(link => link.url === 'https://batterypark.ca/copy-food'));
 assert(app.restaurants.find(record => record.id === woodenDartmouthId).menuLinks.some(link => link.url === 'https://www.thewoodenmonkey.ca/main-menu'));
 const chanoeyId = 'chanoeys-pasta-dartmouth';
 for (const records of [app.restaurants, catalog.restaurants]) {
