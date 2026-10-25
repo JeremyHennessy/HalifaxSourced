@@ -16,3 +16,6 @@ assert.equal(context.hash,'#explore?q=Bar+Kismet');
 context.navigateDiscovery({},'explore',true);assert.equal(context.hash,'#explore');
 for(const bad of ['-1','0','abc','1.2','Infinity']) assert.equal(context.discoveryStateFromParams(new URLSearchParams('page='+bad)).page,1);
 console.log('Discovery route state passed: complete URL round trip, global reset, clear and invalid pagination.');
+
+// Detail anchors must remain local scroll actions rather than hash routes.
+await import('./test-detail-anchor-offsets.mjs');

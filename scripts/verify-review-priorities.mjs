@@ -2,13 +2,14 @@ import assert from 'node:assert/strict';
 import {existsSync} from 'node:fs';
 import {mkdir,writeFile} from 'node:fs/promises';
 import {installOfflineResources} from './lib/offline-browser-resources.mjs';
+import {verifyDetailAnchorNavigation} from './lib/detail-anchor-browser-checks.mjs';
 let playwright;for(const path of [process.env.PLAYWRIGHT_MODULE,'playwright'].filter(Boolean)){try{playwright=await import(path);break;}catch{}}
 if(!playwright)throw Error('Playwright required');
 const browser=await playwright.chromium.launch({headless:true,executablePath:[process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE,'/usr/bin/chromium'].filter(Boolean).find(existsSync)});
 const url=(process.env.APP_URL||'http://127.0.0.1:5173').replace(/\/$/,'');
 const evidence=[];await mkdir('artifacts/review-priorities',{recursive:true});
 try{
- for(const width of [1440,1180,900,768,390]){
+ for(const width of [1440,1180,900,768,500,390]){
   const context=await browser.newContext({viewport:{width,height:1000},serviceWorkers:'block'});const resources=await installOfflineResources(context,url);const page=await context.newPage();
   const errors=[];page.on('pageerror',e=>errors.push(e.message));
   await page.goto(url+'/#explore',{waitUntil:'load'});
@@ -36,12 +37,28 @@ try{
   const titles=await page.locator('.special-card.is-verified h2').allTextContents();assert.equal(new Set(titles).size,titles.length);
   await page.goto(url+'/#events',{waitUntil:'load'});assert.match(await page.title(),/^Events \|/);
   assert.equal(await page.evaluate(()=>eventDisplayTitle({title:'Meet Juno Meet Juno'})),'Meet Juno');
+  const eventTitleRendering=await page.evaluate(()=>{
+   // Keep the rendering regression after this accepted occurrence expires from the feed.
+   const clean='An Afternoon of Creature Connections with the Evergreen Writers Group';
+   // Dates are test-only current-window values, never written into accepted data.
+   const start=Date.now()+60*60*1000;
+   const event={id:'halifax-public-libraries-8a7fdff7c67b162a',title:`${clean} Featured Event. ${clean}`,startAt:new Date(start).toISOString(),endAt:new Date(start+90*60*1000).toISOString(),venueName:'Central Library',eventUrl:'https://halifax.bibliocommons.com/v2/events/6abe6719e06996003a8073b8',observedAt:'2026-10-24T11:11:15.996Z'};
+   const before=JSON.stringify(event),originalHomeEvents=homeUpcomingCityEvents;
+   let homeTitle;
+   try { homeUpcomingCityEvents=()=>[event]; renderHome(); homeTitle=document.querySelector('.home-discovery-panel .lead-row strong').textContent; }
+   finally { homeUpcomingCityEvents=originalHomeEvents; }
+   renderCityEvents([event]);
+   return {id:event.id,homeTitle,featuredTitle:document.querySelector('.featured-event h2').textContent,cardTitle:document.querySelector('.event-title-line h3').textContent,rawUnchanged:before===JSON.stringify(event)};
+  });
+  for(const key of ['homeTitle','featuredTitle','cardTitle']) assert.equal(eventTitleRendering[key],'An Afternoon of Creature Connections with the Evergreen Writers Group');
+  assert(eventTitleRendering.rawUnchanged,'Rendering must preserve accepted title, ID and source clocks');
   await page.evaluate(()=>{document.querySelector('.calendar-card').innerHTML=simpleCalendar([])});assert.match(await page.locator('.calendar-card').innerText(),/No event dates match/);
+  const detailAnchors=await verifyDetailAnchorNavigation(page,width);
   await page.goto(url+'/#home',{waitUntil:'load'});
   assert.equal(await page.locator('.lead-row a[href="#events"]').count(),0);
   await page.screenshot({path:`artifacts/review-priorities/home-${width}.png`,fullPage:false});
-  assert.deepEqual(errors,[]);resources.assertClean();evidence.push({width,savedReachable:true,urlReloadBackForward:true,offerCards:Math.min(offers,12),errors});await context.close();
+  assert.deepEqual(errors,[]);resources.assertClean();evidence.push({width,savedReachable:true,urlReloadBackForward:true,offerCards:Math.min(offers,12),eventTitleRendering,detailAnchors,errors});await context.close();
  }
  await writeFile('artifacts/review-priorities/results.json',JSON.stringify(evidence,null,2));
 }finally{await browser.close()}
-console.log('Review priority browser regressions passed at five desktop/tablet/mobile widths.');
+console.log('Review priority browser regressions passed at six desktop/tablet/mobile widths.');

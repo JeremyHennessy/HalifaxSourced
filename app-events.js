@@ -99,6 +99,10 @@ function canonicalEventUrl(event) {
 
 function eventDisplayTitle(event) {
   const title = String(event.title || "").trim();
+  // BiblioCommons can repeat the same heading around a screen-reader badge.
+  // Remove that badge only when both complete titles agree, not by keyword.
+  const featured = title.replace(/\s+/g, " ").match(/^(.+?)\s+Featured Event\.\s+(.+)$/i);
+  if (featured && featured[1] === featured[2] && featured[1].split(/\s+/).length >= 2) return featured[1];
   const words = title.split(/\s+/);
   if (words.length >= 4 && words.length % 2 === 0) {
     const half = words.length / 2;
