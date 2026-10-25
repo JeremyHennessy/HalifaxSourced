@@ -1145,6 +1145,67 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
       "sourceLayer": "reviewed_location_correction"
     },
     {
+      "id": "besharam-bar-grill-halifax",
+      "name": "Besharam Bar & Grill",
+      "address": "First floor, 5680 Spring Garden Road, Halifax, NS B3J 1H5",
+      "neighborhood": "Spring Garden",
+      "category": "Restaurant",
+      "website": "https://besharamfood.com/",
+      "phone": "902-444-0484",
+      "coordinates": null,
+      "openingHours": "Monday–Thursday 4pm–11pm; Friday 4pm–midnight; Saturday noon–midnight; Sunday noon–11pm",
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current Spring Garden Area Business Association directory lists Besharam Bar & Grill and links its owner domain. The owner site publishes the first-floor 5680 Spring Garden Road location, phone, complete weekly hours and current menu, while the Nova Scotia food-inspection snapshot current as of October 19, 2026 independently records Besharam Bar and Grill at the same civic address. Coordinates, social profiles and the undated happy-hour offer are withheld.",
+        "sourceUrl": "https://besharamfood.com/",
+        "observedAt": "2026-10-25T02:15:58Z",
+        "reviewState": "verified",
+        "location": "First floor, 5680 Spring Garden Road, Halifax, NS B3J 1H5"
+      },
+      "cuisines": [
+        "Indian"
+      ],
+      "vibe": [
+        "casual",
+        "local"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [],
+      "sources": [
+        {
+          "type": "business_directory",
+          "label": "Current Spring Garden restaurant listing and owner-domain link",
+          "url": "https://www.springgardenarea.com/eat-drink",
+          "observedAt": "2026-10-25T02:15:58Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Owner homepage with location, phone and complete weekly hours",
+          "url": "https://besharamfood.com/",
+          "observedAt": "2026-10-25T02:15:58Z",
+          "status": "verified"
+        },
+        {
+          "type": "menu",
+          "label": "Current owner menu",
+          "url": "https://besharamfood.com/menu/",
+          "observedAt": "2026-10-25T02:15:58Z",
+          "status": "verified"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Nova Scotia food-establishment record current as of October 19, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3004869",
+          "observedAt": "2026-10-20T07:20:13.079Z",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
       "id": "beavers-den-dartmouth",
       "name": "The Beaver's Den Dartmouth",
       "address": "101A-16 Portland Street, Dartmouth, NS B2Y 1G9",
