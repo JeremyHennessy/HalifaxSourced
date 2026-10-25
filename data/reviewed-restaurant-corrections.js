@@ -1057,6 +1057,68 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
       "sourceLayer": "reviewed_location_correction"
     },
     {
+      "id": "efes-turkish-cuisine-halifax",
+      "name": "Efes Turkish Cuisine",
+      "address": "5650 Spring Garden Road, Halifax, NS B3J 1H4",
+      "neighborhood": "Spring Garden",
+      "category": "Restaurant",
+      "website": "https://efesturkish.com/",
+      "phone": "902-405-4028",
+      "coordinates": null,
+      "openingHours": "Monday–Wednesday 11:30am–9pm; Thursday–Saturday 11:30am–10pm; Sunday 4:30pm–9pm",
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current Spring Garden Area Business Association directory lists Efes Turkish Cuisine, the owner site publishes a location-specific Halifax address, phone, weekly hours and current menu while separately listing the Bedford branch, and the Nova Scotia food-inspection snapshot current as of October 19, 2026 independently records the Halifax restaurant at the same civic address. The Bedford identity, phone, hours and inspection record remain separate. No coordinates or social profiles are inferred.",
+        "sourceUrl": "https://efesturkish.com/",
+        "observedAt": "2026-10-24T23:46:44Z",
+        "reviewState": "verified",
+        "location": "5650 Spring Garden Road, Halifax, NS B3J 1H4"
+      },
+      "cuisines": [
+        "Turkish",
+        "Mediterranean"
+      ],
+      "vibe": [
+        "casual",
+        "local"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [],
+      "sources": [
+        {
+          "type": "business_directory",
+          "label": "Current Spring Garden restaurant listing",
+          "url": "https://www.springgardenarea.com/eat-drink",
+          "observedAt": "2026-10-24T23:46:44Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Owner site with separate Halifax and Bedford contact details and weekly hours",
+          "url": "https://efesturkish.com/",
+          "observedAt": "2026-10-24T23:46:44Z",
+          "status": "verified"
+        },
+        {
+          "type": "menu",
+          "label": "Current owner menu",
+          "url": "https://efesturkish.com/",
+          "observedAt": "2026-10-24T23:46:44Z",
+          "status": "verified"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Nova Scotia food-establishment record current as of October 19, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6361775",
+          "observedAt": "2026-10-20T07:20:13.079Z",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
       "id": "beavers-den-dartmouth",
       "name": "The Beaver's Den Dartmouth",
       "address": "101A-16 Portland Street, Dartmouth, NS B2Y 1G9",
