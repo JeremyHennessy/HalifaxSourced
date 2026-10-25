@@ -101,6 +101,21 @@ for (const records of [app.restaurants, catalog.restaurants]) {
 }
 assert(active.has(coffeeStreetId));
 assert(app.restaurants.find(record => record.id === coffeeStreetId).menuLinks.some(link => link.url === 'https://www.coffeestreet.ca/find-your-grind'));
+const portCityId = 'port-city-coffee-dartmouth';
+for (const records of [app.restaurants, catalog.restaurants]) {
+  const matches = records.filter(record => record.id === portCityId);
+  assert.equal(matches.length, 1, 'Port City Coffee must have one reviewed Downtown Dartmouth identity');
+  const portCity = matches[0];
+  assert.equal(portCity.address, '2 Ochterloney Street, Dartmouth, NS');
+  assert.equal(portCity.phone, '902-460-6575');
+  assert.equal(portCity.website, 'https://portcitycoffee.ca/');
+  assert.equal(portCity.openingHours, 'Mo-Fr 07:00-16:00; Sa 07:00-14:00; Su 10:00-15:00');
+  assert.equal(portCity.coordinates, null, 'Do not invent coordinates from the civic address');
+  assert.equal(portCity.specials.length, 0, 'Subscription language is not a verified current offer');
+  assert.equal(portCity.events.length, 0);
+  assert(portCity.sources.some(source => source.type === 'government_inspection' && source.url.endsWith('Id1=2180072')));
+}
+assert(active.has(portCityId));
 const evansId = 'evans-fresh-seafoods-dartmouth';
 for (const records of [app.restaurants, catalog.restaurants]) {
   const matches = records.filter(record => record.id === evansId);
