@@ -4,6 +4,31 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
   "policy": "Reviewed location evidence overrides stale imports; observation dates are retained and uncertain coordinates, hours, successor identities and closure day remain unknown.",
   "records": [
     {
+      "restaurantId": "osm-node-3800103657-celtic-corner-public-house",
+      "fields": {
+        "address": "69 Alderney Drive, Dartmouth, NS B2Y 2N7",
+        "phone": "902-464-0764",
+        "website": "https://www.celticcorner.ca/",
+        "openingHours": "Sunday–Tuesday 11am–10:30pm last call; Wednesday 11am–11pm last call; Thursday–Saturday 11am–midnight last call",
+        "evidenceStatus": "verified",
+        "summary": "Owner-verified independent pub at 69 Alderney Drive in Downtown Dartmouth with current contact details, weekly hours and a published menu; independently corroborated by the Downtown Dartmouth directory and Nova Scotia food-inspection registry."
+      },
+      "sourceUrl": "https://www.celticcorner.ca/",
+      "claim": "The current Celtic Corner owner site identifies the Downtown Dartmouth pub at 69 Alderney Drive, gives phone 902-464-0764, publishes its current menu and states Sunday-Tuesday 11am-10:30pm last call, Wednesday 11am-11pm last call, and Thursday-Saturday 11am-midnight last call. The current Downtown Dartmouth directory independently lists the same restaurant, address, phone and owner domain, while the Nova Scotia food-inspection registry records CELTIC CORNER PUB at 69 Alderney. Undated recurring entertainment and offer descriptions remain source evidence only and are not converted into dated occurrences.",
+      "observedAt": "2026-10-25T13:16:39Z",
+      "reviewedAt": "2026-10-25T13:16:39Z",
+      "reviewState": "verified",
+      "fieldEvidence": {
+        "address": {
+          "sourceUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311174",
+          "observedAt": "2026-10-20T07:20:13.079Z",
+          "reviewedAt": "2026-10-25T13:16:39Z",
+          "claim": "Nova Scotia food-establishment record current as of October 19, 2026 confirms CELTIC CORNER PUB at 69 Alderney, Dartmouth.",
+          "reviewState": "verified"
+        }
+      }
+    },
+    {
       "restaurantId": "osm-node-11239721834-humble-pie-kitchen",
       "fields": {
         "address": "77 King Street, Dartmouth, NS B2Y 2R7",
