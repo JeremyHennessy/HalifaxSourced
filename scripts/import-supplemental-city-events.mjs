@@ -45,6 +45,12 @@ function collapseExactRepeatedWords(value) {
   }
   return title;
 }
+function libraryDisplayTitle(value) {
+  const title = inline(value);
+  const featured = title.match(/^(.+?)\s+Featured Event\.\s+(.+)$/i);
+  if (featured && featured[1] === featured[2] && featured[1].split(/\s+/).length >= 2) return featured[1];
+  return collapseExactRepeatedWords(title).replace(/^Featured Event\.\s*/i, "");
+}
 function absoluteUrl(value, base) {
   // An absent ticket URL is not a link to the source calendar.
   if (value == null || !String(value).trim()) return null;
@@ -328,13 +334,16 @@ async function importLibraries(source) {
       const nextIndex = headings[index + 1]?.index ?? page.text.length;
       const block = clean(page.text.slice(current.index, nextIndex));
       if (/\bcancelled\b/i.test(block)) continue;
-      const title = collapseExactRepeatedWords(current[2]).replace(/^Featured Event\.\s*/i, "");
+      // The legacy parsed title is part of makeEvent's durable ID seed. Repair
+      // presentation separately so this badge fix cannot rename saved events.
+      const identityTitle = collapseExactRepeatedWords(current[2]).replace(/^Featured Event\.\s*/i, "");
+      const title = libraryDisplayTitle(current[2]);
       const location = Object.entries(allowedLocations).find(([name]) => block.includes(name));
       if (!title || !location) continue;
       const when = libraryWhen(block);
       if (!when) continue;
-      const event = makeEvent(source, { ...when, title, venueName: location[0], city: location[1], categories: libraryCategories(block, title), eventUrl: absoluteUrl(current[1], page.resolvedUrl) });
-      if (event) events.push(event);
+      const event = makeEvent(source, { ...when, title: identityTitle, venueName: location[0], city: location[1], categories: libraryCategories(block, title), eventUrl: absoluteUrl(current[1], page.resolvedUrl) });
+      if (event) { event.title = title.slice(0, 240); events.push(event); }
     }
     if (libraryDelayMs) await sleep(libraryDelayMs);
   }

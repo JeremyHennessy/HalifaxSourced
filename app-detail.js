@@ -1,4 +1,42 @@
 "use strict";
+let restaurantDetailResizeBound = false;
+function syncRestaurantDetailTabs() {
+  const tabs = document.querySelector('.detail-tabs');
+  const header = document.getElementById('siteHeader');
+  // The tablet search row can wrap beyond the CSS header-height estimate.
+  if (tabs && header) tabs.style.top = `${Math.max(0, header.getBoundingClientRect().bottom)}px`;
+  return tabs;
+}
+function scrollRestaurantDetailSection(target) {
+  if (!target) return;
+  const header = document.getElementById('siteHeader');
+  const tabs = syncRestaurantDetailTabs();
+  const headerBottom = Math.max(0, header?.getBoundingClientRect().bottom || 0);
+  const tabHeight = tabs?.getBoundingClientRect().height || 0;
+  const stickyTop = tabs ? parseFloat(window.getComputedStyle(tabs).top) || 0 : 0;
+  // Measure on every activation: wrapped headers and responsive tabs do not
+  // share a fixed height. Keep the target below both sticky navigation layers.
+  const offset = Math.max(headerBottom, stickyTop) + tabHeight + 8;
+  target.style.scrollMarginTop = `${offset}px`;
+  target.setAttribute('tabindex', '-1');
+  target.focus({ preventScroll: true });
+  target.scrollIntoView({ behavior: window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth', block: 'start' });
+}
+function bindRestaurantDetailTabs() {
+  syncRestaurantDetailTabs();
+  if (!restaurantDetailResizeBound) {
+    // One listener for the app lifetime; it only queries the current route DOM.
+    window.addEventListener('resize', syncRestaurantDetailTabs);
+    restaurantDetailResizeBound = true;
+  }
+  document.querySelectorAll('.detail-tabs a').forEach((link) => link.addEventListener('click', (event) => {
+    event.preventDefault();
+    let target = document.getElementById(link.getAttribute('href').slice(1));
+    if (target && !target.getClientRects().length) target = document.getElementById('detailInfo');
+    scrollRestaurantDetailSection(target);
+  }));
+}
+
 function renderRestaurantDetail(id) {
   id = reviewedRestaurantCorrections.aliases.find(alias => alias.from === id)?.to || id;
   const restaurant = restaurants.find((item) => item.id === id || encodeURIComponent(item.id) === id || (item.aliasIds || []).some(alias => alias === id || encodeURIComponent(alias) === id));
@@ -65,12 +103,7 @@ function renderRestaurantDetail(id) {
         ${restaurant.coordinates ? `<div class="sidebar-card"><h2>Map</h2><div id="detailMap" class="detail-map"></div><a class="sidebar-link" href="https://www.openstreetmap.org/?mlat=${restaurant.coordinates.lat}&mlon=${restaurant.coordinates.lon}#map=17/${restaurant.coordinates.lat}/${restaurant.coordinates.lon}" target="_blank" rel="noreferrer">Open map ↗</a></div>` : ""}
       </aside>
     </section>`;
-  document.querySelectorAll('.detail-tabs a').forEach((link) => link.addEventListener('click', (event) => {
-    event.preventDefault();
-    let target = document.getElementById(link.getAttribute('href').slice(1));
-    if (target && !target.getClientRects().length) target = document.getElementById('detailInfo');
-    if (target) { target.setAttribute('tabindex', '-1'); target.focus({ preventScroll: true }); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
-  }));
+  bindRestaurantDetailTabs();
   bindCommonActions();
   if (historicalSpecials.length) document.querySelector('#detailSpecials .section-heading')?.insertAdjacentHTML('afterend', `<div class="info-message">${historicalSpecials.length} historical offer record${historicalSpecials.length === 1 ? '' : 's'} need${historicalSpecials.length === 1 ? 's' : ''} a fresh check. Current availability is unverified.</div>`);
   if (restaurant.coordinates) {
