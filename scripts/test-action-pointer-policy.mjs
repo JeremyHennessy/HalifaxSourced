@@ -127,9 +127,9 @@ vm.runInContext(await readFile(new URL('app-media.js', root), 'utf8'), after.con
 vm.runInContext(await readFile(new URL('app-detail.js', root), 'utf8'), after.context);
 vm.runInContext(`
   mediaTone=()=>''; permittedImageClass=()=>''; mediaImageMarkup=()=>''; mediaAttributionMarkup=()=>'';
-  consumerTags=()=>[]; uniqueSourceLinks=()=>[]; primaryCuisine=()=>'';
-  sourceLinkRow=()=>''; relatedLinkRow=()=>''; socialProfileRow=()=>''; linkHubRow=()=>'';
-  structuredSpecialDetailRow=()=>''; structuredEventDetailRow=()=>''; officialUpdateCard=()=>'';
+  consumerTags=()=>[]; primaryCuisine=()=>'';
+  relatedLinkRow=()=>''; socialProfileRow=()=>''; linkHubRow=()=>'';
+  structuredSpecialDetailRow=()=>''; structuredEventDetailRow=()=>'';
   currentStructuredSpecial=()=>false; infoCard=()=>''; socialPlatformLabel=()=>''; linkHubLabel=()=>'';
   bindRestaurantDetailTabs=()=>{}; bindCommonActions=()=>{};
   requestAnimationFrame=()=>{};
@@ -138,10 +138,81 @@ for (const id of changed) {
   vm.runInContext(`renderRestaurantDetail(${JSON.stringify(id)})`, after.context);
   const rendered = vm.runInContext('appView.innerHTML', after.context);
   assert(!/>Order online ↗<\/a>/.test(rendered), 'Neither mobile nor desktop may promote a rejected primary or its runner-up');
-  assert(!rendered.includes(`href="${wrongBranch}"`), 'No wrong-branch Order CTA');
+  assert(!rendered.includes(`href="${wrongBranch}"`), 'No rejected branch pointer in actions, source evidence or latest updates');
 }
 vm.runInContext(`renderRestaurantDetail(${JSON.stringify(downtown)})`, after.context);
 assert(vm.runInContext('appView.innerHTML', after.context).includes(`href="${wrongBranch}"`), 'Valid original-first Downtown action remains visible');
+// Exercise actual source/update renderers for every final restaurant. Compare
+// only original display slots, retaining raw evidence and kind-specific history.
+const rawBeforeRender = vm.runInContext('JSON.stringify(restaurants)', after.context);
+const evidenceChanges = [];
+const rejectedEvidencePaths = {
+  'osm-node-6910685885-mexi-s': {
+    source: ['/moncton/lunch', '/moncton/dinner/', '/moncton/kids/', '/ottawa/dinner/', '/ottawa/kids/'],
+    update: ['/moncton/kids/', '/moncton/dinner/', '/moncton/lunch/']
+  },
+  [downtown]: {
+    source: ['/dartmouth-crossing/lunch-menu/', '/bayers-lake/lunch-menu/', '/bedford-highway/lunch-menu/', '/bayers-lake/dinner/', '/dartmouth-crossing/dinner/'],
+    update: ['/dartmouth-crossing/dinner/', '/bayers-lake/dinner/', '/bedford-highway/lunch-menu/', '/bayers-lake/lunch-menu/', '/dartmouth-crossing/lunch-menu/']
+  },
+  [bayers]: {
+    source: ['/downtown-halifax/lunch-menu/', '/downtown-halifax/take-out/', '/dartmouth-crossing/lunch-menu/', '/bedford-highway/lunch-menu/', '/downtown-halifax/dinner/', '/dartmouth-crossing/dinner/'],
+    update: ['/dartmouth-crossing/dinner/', '/downtown-halifax/dinner/', '/bedford-highway/lunch-menu/', '/dartmouth-crossing/lunch-menu/', '/downtown-halifax/take-out/', '/downtown-halifax/lunch-menu/']
+  }
+};
+for (const record of after.restaurants) {
+  const formerlyShown = [];
+  for (const source of record.sources || []) {
+    const url = vm.runInContext(`safeUrl(${JSON.stringify(source.url ?? null)})`, after.context);
+    if (url) formerlyShown.push({ label: source.label || source.type || 'Source', url });
+  }
+  if (record.signal?.website) formerlyShown.push({ label: 'Official website', url: vm.runInContext(`safeUrl(${JSON.stringify(record.signal.website)})`, after.context) });
+  const priorSources = formerlyShown.filter((link, index, links) => link.url && links.findIndex(item => item.url === link.url) === index).slice(0, 24);
+  const expectedSources = priorSources.filter(link => integrity.pointerSafe(record.id, 'source', link.url));
+  const actualSources = JSON.parse(vm.runInContext(`JSON.stringify(uniqueSourceLinks(restaurants.find(record=>record.id===${JSON.stringify(record.id)})))`, after.context));
+  assert.deepEqual(actualSources, expectedSources, `Source links retain original order/cap and neutral evidence scope: ${record.id}`);
+  const priorUpdates = !vm.runInContext(`isRestaurantActive(restaurants.find(record=>record.id===${JSON.stringify(record.id)}))`, after.context) ? [] : (record.officialUpdates || []).filter(update => vm.runInContext(`safeUrl(${JSON.stringify(update.postUrl ?? null)})`, after.context)).slice(0, 12);
+  const rejectedUpdates = priorUpdates.filter(update => !integrity.pointerSafe(record.id, 'update', update.postUrl));
+  const removedSources = priorSources.length - actualSources.length;
+  if (removedSources || rejectedUpdates.length) {
+    evidenceChanges.push({ id: record.id, sourceLinks: removedSources, updates: rejectedUpdates.length });
+    const origin = record.id === 'osm-node-6910685885-mexi-s' ? 'https://www.mexicalirosas.com' : 'https://sushinami.ca';
+    assert.deepEqual(priorSources.filter(link => !integrity.pointerSafe(record.id, 'source', link.url)).map(link => link.url), rejectedEvidencePaths[record.id].source.map(path => origin + path));
+    assert.deepEqual(rejectedUpdates.map(update => update.postUrl), rejectedEvidencePaths[record.id].update.map(path => origin + path));
+    vm.runInContext(`renderRestaurantDetail(${JSON.stringify(record.id)})`, after.context);
+    const rendered = vm.runInContext('appView.innerHTML', after.context);
+    for (const match of rendered.matchAll(/href="(https?:[^" ]+)"/g)) assert(integrity.pointerSafe(record.id, 'source', match[1].replaceAll('&amp;', '&')), `Rejected cross-branch public anchor: ${record.id} ${match[1]}`);
+    for (const update of priorUpdates.filter(update => integrity.pointerSafe(record.id, 'update', update.postUrl))) assert(rendered.includes(`href="${update.postUrl.replaceAll('&','&amp;')}"`), 'Valid update remains visible');
+  }
+}
+assert.deepEqual(evidenceChanges, [
+  { id: 'osm-node-6910685885-mexi-s', sourceLinks: 5, updates: 3 },
+  { id: downtown, sourceLinks: 5, updates: 5 },
+  { id: bayers, sourceLinks: 6, updates: 6 }
+]);
+assert.equal(vm.runInContext('JSON.stringify(restaurants)', after.context), rawBeforeRender, 'Rendering preserves every source/update object and original date');
+for (const url of ['https://sushinami.ca/', 'https://sushinami.ca/contact/']) assert(integrity.pointerSafe(bayers, 'source', url), 'Shared-brand source evidence remains allowed');
+assert(integrity.pointerSafe('osm-node-11552510567-tako-sushi-and-ramen', 'source', kindSpecific), 'Neutral evidence must not inherit a menu/special-specific rejection');
+// Synthetic cap regression: neither evidence section fills a rejected original slot.
+vm.runInContext(`
+  const cappedSourcesFixture = { id: ${JSON.stringify(bayers)}, sources: [
+    {url:${JSON.stringify(wrongBranch)}}, ...Array.from({length:24},(_,index)=>({url:'https://sushinami.ca/bayers-lake/?source='+index}))
+  ] };
+`, after.context);
+assert.equal(vm.runInContext('uniqueSourceLinks(cappedSourcesFixture).length', after.context), 23);
+assert(!vm.runInContext('uniqueSourceLinks(cappedSourcesFixture).some(link=>link.url.endsWith("source=23"))', after.context));
+vm.runInContext(`
+  const updateCapRestaurant = restaurants.find(record=>record.id===${JSON.stringify(bayers)});
+  const retainedUpdates = updateCapRestaurant.officialUpdates;
+  updateCapRestaurant.officialUpdates = [{postUrl:${JSON.stringify(wrongBranch)}}, ...Array.from({length:12},(_,index)=>({postUrl:'https://sushinami.ca/bayers-lake/?update='+index}))];
+  renderRestaurantDetail(${JSON.stringify(bayers)});
+`, after.context);
+const cappedUpdateHtml = vm.runInContext('appView.innerHTML', after.context);
+assert(cappedUpdateHtml.includes('href="https://sushinami.ca/bayers-lake/?update=10"'));
+assert(!cappedUpdateHtml.includes('href="https://sushinami.ca/bayers-lake/?update=11"'), 'Update cap cannot promote a later item');
+vm.runInContext('updateCapRestaurant.officialUpdates = retainedUpdates', after.context);
+assert.equal(vm.runInContext('JSON.stringify(restaurants)', after.context), rawBeforeRender);
+console.log(JSON.stringify({ removedExistingRejectedPublicEvidence: evidenceChanges }, null, 2));
 // Exercise reservation rejection through the same final lifecycle, filter and
 // actual mobile/sidebar renderer, even though no accepted record has it today.
 vm.runInContext(`

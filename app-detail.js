@@ -54,7 +54,9 @@ function renderRestaurantDetail(id) {
   const socialProfiles = (restaurant.socialProfiles || []).filter((profile) => safeUrl(profile.url));
   const linkHubs = (restaurant.linkHubs || []).filter((hub) => safeUrl(hub.url));
   const relatedLinks = active ? (restaurant.relatedLinks || []).filter((link) => safeUrl(link.url)) : [];
-  const officialUpdates = active ? (restaurant.officialUpdates || []).filter((update) => safeUrl(update.postUrl)) : [];
+  // Keep original display slots: rejecting a pointer must not promote later evidence.
+  const officialUpdates = active ? (restaurant.officialUpdates || []).filter((update) => safeUrl(update.postUrl)).slice(0, 12)
+    .filter((update) => HalifaxDataIntegrity.pointerSafe(restaurant.id, 'update', update.postUrl)) : [];
   const verifiedSpecials = active ? (restaurant.structuredSpecials || []).filter(currentStructuredSpecial) : [];
   const historicalSpecials = active ? (restaurant.structuredSpecials || []).filter(special => ['stale', 'expired'].includes(special.status) || (special.status === 'verified_current' && !currentStructuredSpecial(special))) : [];
   const statusEvidenceUrl = safeUrl(restaurant.operatingStatusEvidence?.sourceUrl);
@@ -186,7 +188,10 @@ function uniqueSourceLinks(restaurant) {
     if (url) links.push({ label: source.label || source.type || "Source", url });
   }
   if (restaurant.signal?.website) links.push({ label: "Official website", url: safeUrl(restaurant.signal.website) });
-  return links.filter((link) => link.url && links.findIndex((item) => item.url === link.url) === links.indexOf(link)).slice(0, 24);
+  // Neutral source evidence is not a menu/special claim. Apply only its existing
+  // location/source policy after the original cap, without mutating the audit trail.
+  return links.filter((link) => link.url && links.findIndex((item) => item.url === link.url) === links.indexOf(link)).slice(0, 24)
+    .filter((link) => HalifaxDataIntegrity.pointerSafe(restaurant.id, 'source', link.url));
 }
 
 function sourceLinkRow(link) {

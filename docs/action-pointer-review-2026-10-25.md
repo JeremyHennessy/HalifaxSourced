@@ -46,9 +46,34 @@ historical/active denominator semantics, but exclude rejected assembled ordering
 primaries. Structured history cannot re-add those IDs. Raw structured-layer
 counts remain evidence counts. Reservation source-coverage semantics are unchanged.
 
+## Source/update navigation found by hosted regression
+
+The first exact-head browser regression correctly failed: Bayers still rendered
+the rejected Downtown take-out URL twice, as “Take Out Menu” under Source evidence
+and “Take Out - Sushi Nami Royale, Downtown Halifax” under Latest official updates.
+Neither context labelled the URL as historical evidence about a different location.
+The action CTA and availability checks had already passed; these were independent
+public-navigation leaks hidden by the first offline test’s source/update stubs.
+
+Those two render paths now use existing neutral `source` and `update` pointer
+kinds. This enforces the established cross-location/source safety rules without
+turning an evidence link into a menu/special availability claim. Raw source/update
+objects, excerpts and original dates remain intact. Original 24-source and
+12-update display slots are retained before policy filtering, so no later item
+is promoted. Shared Sushi homepage/contact and correct-branch links remain visible.
+Kind-specific menu/special rejection does not erase otherwise permitted neutral
+evidence; historical audit data is not rewritten.
+
+The exact fixed-snapshot render-only effect is 30 rejected anchor instances:
+Bayers 6 sources + 6 updates; Queen Street/Downtown 5 sources + 5 updates; Mexi’s
+(`osm-node-6910685885-mexi-s`) 5 sources + 3 updates. The offline regression now
+executes the real source/update renderers, checks each affected URL and the entire
+raw model, and covers both original caps. Existing policy is unchanged; in
+particular no additional Mexi’s location is newly rejected.
+
 ## Fixed-snapshot verification
 
-On base `a358876c9bf3ff8732116e7be3aace8990dbc141`, the actual browser script order
+On base `86aef98bb6b5911ababa05b29b40e932c4d035b5` (including concurrent #216), the actual browser script order
 has 654 identities. Exactly the three ordering flags above change, 62 to 59; all
 651 other complete restaurant projections are identical. Reservation flags stay
 97, including all 42 keyword-only capabilities. Every raw source payload and

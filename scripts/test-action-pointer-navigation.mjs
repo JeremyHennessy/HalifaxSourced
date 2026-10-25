@@ -24,6 +24,8 @@ try {
           primary: HalifaxDataIntegrity.primaryActionUrl(id, 'ordering', place.orderingLinks),
           ctas: [...document.querySelectorAll('.mobile-essential-actions a, .detail-official-actions a')].filter(link => /Order online/.test(link.textContent)).map(link => link.href),
           wrongBranchActionAnchors: [...document.querySelectorAll('.mobile-essential-actions a[href], .detail-official-actions a[href]')].filter(link => link.href === wrongForBayers).length,
+          wrongBranchAnchors: [...document.querySelectorAll('a[href]')].filter(link => link.href === wrongForBayers).length,
+          rejectedPublicEvidence: [...document.querySelectorAll('a[href^="http"]')].filter(link => !HalifaxDataIntegrity.pointerSafe(id, 'source', link.href)).map(link => ({href:link.href,label:link.textContent.trim()})),
           inOrderingFilter: filteredRestaurants({ feature: 'ordering', query: '', area: 'all', cuisine: 'all' }).some(record => record.id === id),
           overflow: document.documentElement.scrollWidth > innerWidth + 1
         };
@@ -31,6 +33,7 @@ try {
       assert.equal(details.hasOrdering, expectedOrder);
       assert.equal(details.inOrderingFilter, expectedOrder);
       assert.equal(details.overflow, false, 'No new page overflow');
+      assert.deepEqual(details.rejectedPublicEvidence, [], 'No existing cross-branch rejection leaks through source/update navigation');
       if (expectedOrder) {
         assert.equal(details.primary, wrongForBayers);
         assert(details.ctas.includes(wrongForBayers));
@@ -38,6 +41,7 @@ try {
         assert.equal(details.primary, null);
         assert.deepEqual(details.ctas, [], 'No mobile/sidebar CTA or alternate-primary promotion');
         assert.equal(details.wrongBranchActionAnchors, 0);
+        assert.equal(details.wrongBranchAnchors, 0);
       }
       receipts.push({ width, ...details });
     }
@@ -56,6 +60,10 @@ try {
       await page.waitForSelector('.restaurant-title h1');
       await inspect(id, false);
     }
+    const mexis = 'osm-node-6910685885-mexi-s';
+    await page.evaluate(id => { location.hash = '#restaurant/' + id; }, mexis);
+    await page.waitForFunction(id => document.querySelector('.save-detail')?.dataset.saveId === id, mexis);
+    assert.deepEqual(await page.evaluate(id => [...document.querySelectorAll('a[href^="http"]')].filter(link => !HalifaxDataIntegrity.pointerSafe(id, 'source', link.href)).map(link => link.href), mexis), [], 'Mexi’s existing cross-location source/update holds are enforced');
     assert.deepEqual(errors, []);
     await mkdir('artifacts', { recursive: true });
     await page.screenshot({ path: `artifacts/action-pointer-${width}.png`, fullPage: true });
