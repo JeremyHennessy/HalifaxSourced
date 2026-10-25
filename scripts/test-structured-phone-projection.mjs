@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import vm from 'node:vm';
+import integrity from '../source-integrity.js';
 
 const root = new URL('../', import.meta.url);
 const source = await readFile(new URL('app-place-facts-display.js', root), 'utf8');
@@ -16,7 +17,7 @@ function project(phone, priorPhone = acceptedPhone, reviewedPhone) {
   const context = vm.createContext({
     restaurants: [restaurant], activeRestaurants: [], Intl, Date,
     reviewedRestaurantCorrections: { records: reviewedPhone === undefined ? [] : [{ restaurantId: 'fixture', fields: { phone: reviewedPhone }, sourceUrl: 'https://example.test/reviewed', observedAt: OBSERVED }] },
-    HalifaxDataIntegrity: { pointerSafe: () => true }, inspectionMatches: () => [],
+    HalifaxDataIntegrity: integrity, inspectionMatches: () => [],
   });
   vm.runInContext(correctionsSource, context);
   vm.runInContext('const isRestaurantActive = restaurant => HalifaxRestaurantCorrections.isActive(restaurant);', context);

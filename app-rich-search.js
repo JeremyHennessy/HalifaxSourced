@@ -12,8 +12,8 @@ searchableText = function searchableTextWithStructuredContent(restaurant) {
   const structured = [
     ...(restaurant.structuredFeatures || []).map((item) => item.feature?.replaceAll("_", " ")),
     ...(restaurant.structuredSpecials || []).flatMap((item) => [item.title, item.specialType?.replaceAll("_", " "), item.recurrence]),
-    ...(facts?.reservations || []).map((item) => item.provider?.replaceAll("_", " ")),
-    ...(facts?.ordering || []).map((item) => item.provider?.replaceAll("_", " ")),
+    ...(HalifaxDataIntegrity.primaryActionUrl(restaurant.id, 'reservations', restaurant.reservationLinks) ? (facts?.reservations || []).filter(item => HalifaxDataIntegrity.pointerSafe(restaurant.id, 'reservations', item.url)) : []).map((item) => item.provider?.replaceAll("_", " ")),
+    ...(HalifaxDataIntegrity.primaryActionUrl(restaurant.id, 'ordering', restaurant.orderingLinks) ? (facts?.ordering || []).filter(item => HalifaxDataIntegrity.pointerSafe(restaurant.id, 'ordering', item.url)) : []).map((item) => item.provider?.replaceAll("_", " ")),
     ...(restaurant.socialProfiles || []).map((item) => `${item.platform} ${item.handle || ""}`),
     ...(linkedEventsByRestaurant.get(restaurant.id) || []).flatMap((event) => [event.title, event.venueName, event.organizerName, ...(event.categories || [])])
   ].filter(Boolean).join(" ").toLowerCase();

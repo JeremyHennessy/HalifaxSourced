@@ -1,6 +1,7 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import vm from "node:vm";
 import integrity from "../source-integrity.js";
+import { rejectedOrderingPrimaryIds } from "./lib/action-pointer-coverage.mjs";
 import {mediaPermitted,referenceProblems} from "./lib/media-rights-contract.mjs";
 
 import { validCoordinates, isUpcoming as eventIsUpcoming } from "./lib/coverage-values.mjs";
@@ -93,6 +94,7 @@ const firstParty = await loadJson("data/build/first-party-sources.json", { recor
 const websiteFeeds = await loadJson("data/build/website-feed-signals.json", { signals: [], failures: [] });
 const socialSignals = await loadJson("data/build/social-signals.json", { signals: [], failures: [] });
 const patioDirectory = await loadJson("data/build/patio-directory-facts.json", { records: [], failures: [], counts: {} });
+const actionFacts = await loadJson("data/build/structured-place-facts.json", { records: [] });
 const publicSpecialLeads = await loadJson("data/build/public-special-source-leads.json", { records: [], failures: [], counts: {} });
 
 const curated = Array.isArray(curatedWindow.HALIFAX_RESTAURANTS) ? curatedWindow.HALIFAX_RESTAURANTS : [];
@@ -325,6 +327,8 @@ const sourceFailures = {
 };
 
 // Every place metric uses the same published catalog universe.
+// Rejected primaries cannot become coverage through an alternate source layer.
+for (const id of rejectedOrderingPrimaryIds(firstPartyRecords, actionFacts.records || [])) orderingIds.delete(id);
 for (const ids of [verifiedWebsiteIds, verifiedMenuIds, verifiedSpecialIds, menuIds, specialIds, reservationIds, orderingIds, directEventIds, socialPlaceIds, socialOrHubPlaceIds, linkHubIds, mediaIds, structuredUpcomingRestaurantIds, ...Object.values(socialPlatformPlaceIds)]) {
   for (const id of ids) if (!canonicalIds.has(id)) ids.delete(id);
 }

@@ -294,6 +294,7 @@ assert.deepEqual(kaiBrowser.inspections.map(record => record.id), kaiExport.insp
 // A correction can also invalidate an old automatic match. Do not retain the
 // previous branch or erase separately reviewed evidence while rebinding it.
 const inspectionFixture = vm.createContext({ window: {}, Intl, Date: FixtureDate });
+vm.runInContext(await readFile(new URL('source-integrity.js', root), 'utf8'), inspectionFixture);
 vm.runInContext(await readFile(new URL('restaurant-corrections.js', root), 'utf8'), inspectionFixture);
 vm.runInContext(await readFile(new URL('app-inspection-matching.js', root), 'utf8'), inspectionFixture);
 vm.runInContext(`
@@ -317,7 +318,6 @@ vm.runInContext(`
   const inspectionMatches = restaurant => window.HalifaxInspectionMatching.matches(restaurant, registry);
   const isRestaurantActive = restaurant => HalifaxRestaurantCorrections.isActive(restaurant);
   const activeRestaurants = [];
-  const HalifaxDataIntegrity = { pointerSafe: () => true };
 `, inspectionFixture);
 vm.runInContext(await readFile(new URL('app-lifecycle.js', root), 'utf8'), inspectionFixture);
 const inspectionProjection = JSON.parse(vm.runInContext('JSON.stringify(restaurants)', inspectionFixture));
