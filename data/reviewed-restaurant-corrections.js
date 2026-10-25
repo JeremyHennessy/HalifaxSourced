@@ -4,6 +4,30 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
   "policy": "Reviewed location evidence overrides stale imports; observation dates are retained and uncertain coordinates, hours, successor identities and closure day remain unknown.",
   "records": [
     {
+      "restaurantId": "osm-node-7947984988-the-hungry-hut",
+      "fields": {
+        "address": "135 Ochterloney Street, Dartmouth, NS B2Y 1C9",
+        "phone": "902-466-4488",
+        "website": "https://thehungryhut.com/",
+        "evidenceStatus": "verified",
+        "summary": "Owner-verified Downtown Dartmouth restaurant at 135 Ochterloney Street with a current image-based menu; independently corroborated by the Downtown Dartmouth directory and Nova Scotia food-inspection registry. Current weekly hours remain unknown."
+      },
+      "sourceUrl": "https://thehungryhut.com/location.html",
+      "claim": "The current owner site identifies The Hungry Hut, publishes an image-based food menu and embeds the exact 135 Ochterloney Street, Dartmouth location. Its owner phone graphic gives 902-466-4488. The current Downtown Dartmouth directory independently lists Hungry Hut at the same address and phone and links the same owner domain, while the Nova Scotia food-inspection registry records THE HUNGRY HUT at 135 Ochterloney. No current owner-published weekly schedule was found, so hours remain unknown rather than adopting third-party directory hours.",
+      "observedAt": "2026-10-25T10:18:12Z",
+      "reviewedAt": "2026-10-25T10:18:12Z",
+      "reviewState": "verified",
+      "fieldEvidence": {
+        "address": {
+          "sourceUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312047",
+          "observedAt": "2026-10-20T07:20:13.079Z",
+          "reviewedAt": "2026-10-25T10:18:12Z",
+          "claim": "Nova Scotia food-establishment record current as of October 19, 2026 confirms THE HUNGRY HUT at 135 Ochterloney, Dartmouth.",
+          "reviewState": "verified"
+        }
+      }
+    },
+    {
       "restaurantId": "osm-node-8376551845-portland-street-creperie",
       "fields": {
         "address": "55 Portland Street, Dartmouth, NS B2Y 1H1",
