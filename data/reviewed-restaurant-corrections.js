@@ -32,6 +32,32 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
       "reviewState": "verified"
     },
     {
+      "restaurantId": "osm-node-26041176-kai-brady-s",
+      "fields": {
+        "name": "Kai Brady's Fancy Dive Bar",
+        "address": "5679 Spring Garden Road, Halifax, NS B3J 1G9",
+        "phone": "902-429-9999",
+        "website": "https://kaibradys.com/",
+        "openingHours": "Monday–Wednesday 4pm–midnight; Thursday 4pm–1am; Friday–Saturday 4pm–2am; Sunday 4pm–midnight",
+        "evidenceStatus": "verified",
+        "summary": "Owner-verified Spring Garden pub at 5679 Spring Garden Road with current contact details and weekly hours; independently corroborated by the Nova Scotia food-inspection registry."
+      },
+      "sourceUrl": "https://kaibradys.com/",
+      "claim": "The current owner site confirms the full Kai Brady's Fancy Dive Bar identity at 5679 Spring Garden Road, phone 902-429-9999, and its complete weekly schedule. The Nova Scotia food-inspection snapshot current as of October 19, 2026 independently records the same business at 5679 Spring Garden Road. These sources supersede the stale 5675 OpenStreetMap address; existing source coordinates are retained, while holiday and special-event deviations remain unstructured.",
+      "observedAt": "2026-10-25T01:20:39Z",
+      "reviewedAt": "2026-10-25T01:20:39Z",
+      "reviewState": "verified",
+      "fieldEvidence": {
+        "address": {
+          "sourceUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3670733",
+          "observedAt": "2026-10-20T07:20:13.079Z",
+          "reviewedAt": "2026-10-25T01:20:39Z",
+          "claim": "Nova Scotia food-establishment record current as of October 19, 2026 confirms Kai Brady's Fancy Dive Bar at 5679 Spring Garden Road, Halifax.",
+          "reviewState": "verified"
+        }
+      }
+    },
+    {
       "restaurantId": "battery-park",
       "fields": {
         "address": "62 Ochterloney Street, Dartmouth, NS B2Y 1C2",
