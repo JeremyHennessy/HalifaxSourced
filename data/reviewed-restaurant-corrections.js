@@ -928,6 +928,67 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
   ],
   "additions": [
     {
+      "id": "daawat-traditional-kitchen-dartmouth",
+      "name": "Daawat Traditional Kitchen",
+      "address": "156 Ochterloney Street, Dartmouth, NS B2Y 1E1",
+      "neighborhood": "Downtown Dartmouth",
+      "category": "Restaurant",
+      "website": "https://daawatkitchen.ca/",
+      "phone": "902-404-3177",
+      "coordinates": null,
+      "openingHours": "Mo-Su 10:00-20:00",
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current owner site publishes Daawat Traditional Kitchen at 156 Ochterloney Street, Dartmouth, with phone 902-404-3177, daily 10am-8pm hours and a current menu. The Downtown Dartmouth business directory independently lists the same restaurant, address and phone, while the Nova Scotia food-inspection registry records PV's DAAWAT TRADITIONAL KITCHEN at 156 Ochterloney. Coordinates and social profiles remain unverified.",
+        "sourceUrl": "https://daawatkitchen.ca/",
+        "observedAt": "2026-10-25T15:20:05Z",
+        "reviewState": "verified",
+        "location": "156 Ochterloney Street, Dartmouth, NS B2Y 1E1"
+      },
+      "cuisines": [
+        "Indian"
+      ],
+      "vibe": [
+        "casual",
+        "local"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [],
+      "sources": [
+        {
+          "type": "business_directory",
+          "label": "Current Downtown Dartmouth restaurant listing",
+          "url": "https://www.downtowndartmouth.ca/fooddrink",
+          "observedAt": "2026-10-25T15:20:05Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Owner location, phone and weekly hours",
+          "url": "https://daawatkitchen.ca/",
+          "observedAt": "2026-10-25T15:20:05Z",
+          "status": "verified"
+        },
+        {
+          "type": "menu",
+          "label": "Current owner menu",
+          "url": "https://daawatkitchen.ca/",
+          "observedAt": "2026-10-25T15:20:05Z",
+          "status": "verified"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Nova Scotia food-establishment record current as of October 19, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4626222",
+          "observedAt": "2026-10-20T07:20:13.079Z",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
       "id": "jacobs-lounge-dartmouth",
       "name": "Jacob's Lounge",
       "address": "106 Portland Street, Dartmouth, NS B2Y 1H8",
