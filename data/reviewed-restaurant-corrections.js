@@ -1,6 +1,6 @@
 window.HALIFAX_RESTAURANT_CORRECTIONS = {
   "version": 3,
-  "reviewedAt": "2026-10-24",
+  "reviewedAt": "2026-10-25",
   "policy": "Reviewed location evidence overrides stale imports; observation dates are retained and uncertain coordinates, hours, successor identities and closure day remain unknown.",
   "records": [
     {
@@ -1198,6 +1198,74 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
           "type": "government_inspection",
           "label": "Nova Scotia food-establishment record current as of October 19, 2026",
           "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3004869",
+          "observedAt": "2026-10-20T07:20:13.079Z",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
+      "id": "bulwark-cider-house-halifax",
+      "name": "Bulwark Cider House",
+      "address": "1518 Dresden Row, Halifax, NS B3J 2K2",
+      "neighborhood": "Spring Garden",
+      "category": "Cidery",
+      "website": "https://bulwarkciderhouse.ca/",
+      "phone": "902-425-0076",
+      "coordinates": null,
+      "openingHours": "Monday–Wednesday 11am–10pm; Thursday–Saturday 11am–11pm; Sunday 11am–10pm",
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current Spring Garden Area Business Association directory lists Bulwark Cider House and links its owner domain. The owner location page publishes the 1518 Dresden Row address, phone and complete weekly hours; the owner food page publishes its current pizza and snack menu; and the owner story identifies Bulwark as owner-operated and Nova Scotia-based. The Nova Scotia food-inspection snapshot current as of October 19, 2026 independently records Bulwark Cider House at 1518 Dresden Row. Coordinates, social profiles and undated recurring movie-night occurrences are withheld.",
+        "sourceUrl": "https://bulwarkciderhouse.ca/location-hours/",
+        "observedAt": "2026-10-25T03:16:27Z",
+        "reviewState": "verified",
+        "location": "1518 Dresden Row, Halifax, NS B3J 2K2"
+      },
+      "cuisines": [
+        "Pizza"
+      ],
+      "vibe": [
+        "taproom",
+        "local"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [],
+      "sources": [
+        {
+          "type": "business_directory",
+          "label": "Current Spring Garden restaurant listing and owner-domain link",
+          "url": "https://www.springgardenarea.com/eat-drink",
+          "observedAt": "2026-10-25T03:16:27Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Owner location page with address, phone and complete weekly hours",
+          "url": "https://bulwarkciderhouse.ca/location-hours/",
+          "observedAt": "2026-10-25T03:16:27Z",
+          "status": "verified"
+        },
+        {
+          "type": "menu",
+          "label": "Current owner pizza and snack menu",
+          "url": "https://bulwarkciderhouse.ca/visit-us/taproom/food/",
+          "observedAt": "2026-10-25T03:16:27Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Owner-operated Nova Scotia business statement",
+          "url": "https://bulwarkciderhouse.ca/our-story/",
+          "observedAt": "2026-10-25T03:16:27Z",
+          "status": "verified"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Nova Scotia food-establishment record current as of October 19, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2792648",
           "observedAt": "2026-10-20T07:20:13.079Z",
           "status": "verified"
         }
