@@ -1469,9 +1469,9 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
       },
       "operatingStatus": "active",
       "operatingStatusEvidence": {
-        "claim": "Official Dartmouth site publishes ordinary weekly hours and an October 9–22, 2026 scheduled closure. Date-specific display shows this closure rather than claiming normal service during the window. October 23 is the end of the announced closure period, not a verified reopening event. Original local independent business occupies a former Subway tenancy.",
+        "claim": "The current Downtown Dartmouth business directory and official site both confirm Chanoey’s Pasta at 41 Portland Street with phone 902-405-2211. The official site continues to publish its complete Monday–Sunday hours and current menu after the October 9–22, 2026 scheduled closure; that ended exception remains in date-specific history and is not treated as a continuing closure or reopening event. The Nova Scotia food-inspection snapshot current as of October 19, 2026 independently records CHANOEY PASTA Dartmouth at 41 Portland. The owner page identifies the original locally managed business; coordinates, social profiles, offers and events remain unknown.",
         "sourceUrl": "https://www.chanoeyspasta.com/",
-        "observedAt": "2026-10-20",
+        "observedAt": "2026-10-25T05:23:52Z",
         "reviewState": "verified",
         "location": "41 Portland Street, Dartmouth, NS B2Y 1H1"
       },
@@ -1517,6 +1517,20 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
           "label": "2020 owner interview on former Subway tenancy",
           "url": "https://halifax.citynews.ca/2020/10/07/filipino-couples-dartmouth-restaurant-thrives-despite-hurdles-2774709/",
           "observedAt": "2026-10-20",
+          "status": "verified"
+        },
+        {
+          "type": "business_directory",
+          "label": "Current Downtown Dartmouth location, address and phone",
+          "url": "https://www.downtowndartmouth.ca/fooddrink",
+          "observedAt": "2026-10-25T05:23:52Z",
+          "status": "verified"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Nova Scotia food-establishment record current as of October 19, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2655436",
+          "observedAt": "2026-10-20T07:20:13.079Z",
           "status": "verified"
         }
       ],
