@@ -1,10 +1,17 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { unambiguousCivicNumber } from "./lib/place-address-identity.mjs";
+import vm from "node:vm";
 
 const registry = JSON.parse(await readFile(new URL("../data/place-source-registry.json", import.meta.url), "utf8"));
 const directory = JSON.parse(await readFile(new URL("../data/build/directory-restaurant-leads.json", import.meta.url), "utf8"));
 const resolutions = JSON.parse(await readFile(new URL("../data/build/place-source-resolutions.json", import.meta.url), "utf8"));
 const catalog = JSON.parse(await readFile(new URL("../data/build/catalog.json", import.meta.url), "utf8"));
 const discovered = JSON.parse(await readFile(new URL("../data/build/discovered-restaurants.json", import.meta.url), "utf8"));
+
+const reviewedContext = { window: {} };
+vm.runInNewContext(await readFile(new URL("../data/reviewed-place-resolutions.js", import.meta.url), "utf8"), reviewedContext);
+const reviewedByCandidateId = new Map((reviewedContext.window.HALIFAX_REVIEWED_PLACE_RESOLUTIONS?.records || [])
+  .filter(item => item?.candidateId && item?.restaurantId).map(item => [item.candidateId, item]));
 
 const errors = [];
 const warnings = [];
@@ -36,6 +43,11 @@ const canonicalIds = new Set([
   ...(catalog.restaurants || []).map((item) => item.id),
   ...(discovered.restaurants || []).map((item) => item.id)
 ]);
+const candidatesById = new Map((directory.records || []).map(item => [item.id, item]));
+const canonicalById = new Map();
+for (const item of [...(catalog.restaurants || []), ...(discovered.restaurants || [])]) {
+  if (!canonicalById.has(item.id)) canonicalById.set(item.id, item);
+}
 const resolutionIds = new Set();
 for (const item of resolutions.resolutions || []) {
   if (!candidateIds.has(item.candidateId)) errors.push(`resolution_unknown_candidate:${item.candidateId}`);
@@ -46,6 +58,19 @@ for (const item of resolutions.resolutions || []) {
     if (!Array.isArray(item.evidence) || !item.evidence.some((evidence) => ["exact_normalized_name", "compatible_name"].includes(evidence))) errors.push(`resolved_without_compatible_name:${item.candidateId}`);
     if (!Array.isArray(item.evidence) || !item.evidence.some((evidence) => !["exact_normalized_name", "compatible_name"].includes(evidence))) errors.push(`resolved_without_non_name_evidence:${item.candidateId}`);
     if (item.conflicts?.length) errors.push(`resolved_with_conflict:${item.candidateId}`);
+    const reviewed = reviewedByCandidateId.get(item.candidateId);
+    const candidate = candidatesById.get(item.candidateId);
+    const reviewedEvidence = reviewed?.evidence || [];
+    const hasReviewedIdentity = item.resolutionBasis === "reviewed_candidate_override"
+      && reviewed?.restaurantId === item.matchedRestaurantId
+      && (!reviewed.directorySourceId || reviewed.directorySourceId === candidate?.sourceId)
+      && reviewedEvidence.some(evidence => ["exact_normalized_name", "compatible_name"].includes(evidence))
+      && reviewedEvidence.some(evidence => !["exact_normalized_name", "compatible_name"].includes(evidence));
+    if (!hasReviewedIdentity) {
+      const candidateNumber = unambiguousCivicNumber(candidatesById.get(item.candidateId)?.address);
+      const canonicalNumber = unambiguousCivicNumber(canonicalById.get(item.matchedRestaurantId)?.address);
+      if (candidateNumber && canonicalNumber && candidateNumber !== canonicalNumber) errors.push(`resolved_with_civic_number_conflict:${item.candidateId}`);
+    }
   }
   if (item.state === "name_only_review" && item.matchedRestaurantId) errors.push(`name_only_must_not_auto_resolve:${item.candidateId}`);
 }

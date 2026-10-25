@@ -6,6 +6,13 @@
 // Reapply reviewed fields after enrichment so stale facts cannot reopen a venue.
 HalifaxRestaurantCorrections.apply(restaurants, reviewedRestaurantCorrections);
 for (const restaurant of restaurants) {
+  // Automatic inspection matches were computed before reviewed identity fields.
+  // Rebind only corrected names/addresses to the final location, as the catalog
+  // exporter does. Keep independently reviewed source/inspection evidence intact.
+  const identityFields = restaurant.reviewedCorrection?.fields;
+  if (identityFields && ['name', 'address'].some(field => Object.prototype.hasOwnProperty.call(identityFields, field))) {
+    restaurant.inspections = inspectionMatches(restaurant);
+  }
   // Apply last: candidate/fact layers must not resurrect a rejected destination.
   restaurant.relatedLinks = (restaurant.relatedLinks || []).filter(link => HalifaxDataIntegrity.pointerSafe(restaurant.id, link.kind, link.url));
   restaurant.menuLinks = (restaurant.menuLinks || []).filter(link => HalifaxDataIntegrity.pointerSafe(restaurant.id, 'menu', link.url));

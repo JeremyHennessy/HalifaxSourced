@@ -15,6 +15,7 @@ const runtimeFiles = [
   'scripts/test-taste-ns-member-api.mjs', 'scripts/lib/taste-ns-member-api.mjs',
   'scripts/build-discovered-restaurants.mjs', 'scripts/export-catalog.mjs',
   'scripts/resolve-place-candidates.mjs', 'scripts/check-place-source-resolution.mjs',
+  'scripts/lib/place-address-identity.mjs',
   'scripts/check-restaurant-discovery.mjs', 'scripts/lib/deny-source-network.mjs',
   'scripts/lib/reviewed-corrections.mjs', 'scripts/lib/local-restaurant-policy.mjs',
   'restaurant-corrections.js', 'app-restaurant-identity.js', 'app-inspection-matching.js'

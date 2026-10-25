@@ -114,6 +114,9 @@ jobs:
       - name: Test source name decoding
         run: node scripts/test-dartmouth-directory-names.mjs
 
+      - name: Test directory civic identity conflicts
+        run: node scripts/test-place-source-location-conflicts.mjs
+
       - name: Resolve accepted directory candidates without collection
         run: |
           node scripts/resolve-place-candidates.mjs
