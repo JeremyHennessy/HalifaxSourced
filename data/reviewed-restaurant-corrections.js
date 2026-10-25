@@ -539,6 +539,21 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
       "observedAt": "2026-10-21T13:10:10.671Z",
       "reviewedAt": "2026-10-21T13:10:10.671Z",
       "reviewState": "verified"
+    },
+    {
+      "restaurantId": "osm-node-13958623779-coffee-street",
+      "fields": {
+        "address": "33 Alderney Drive, Dartmouth, NS B2Y 2N4",
+        "phone": "902-444-1655",
+        "website": "https://www.coffeestreet.ca/",
+        "openingHours": "Mo-Su 07:00-22:00",
+        "operatingStatus": "active"
+      },
+      "sourceUrl": "https://www.coffeestreet.ca/",
+      "claim": "The current owner site confirms Coffee Street at 33 Alderney Drive, phone 902-444-1655, and daily 7am-10pm hours. These owner-published hours supersede the older OpenStreetMap midnight closing time. The Downtown Dartmouth directory and Nova Scotia food-inspection registry independently corroborate the same location; existing mapped coordinates are retained, while social profiles, dated offers and events remain unknown.",
+      "observedAt": "2026-10-25T06:17:50Z",
+      "reviewedAt": "2026-10-25T06:17:50Z",
+      "reviewState": "verified"
     }
   ],
   "aliases": [
@@ -1530,77 +1545,6 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
           "type": "government_inspection",
           "label": "Nova Scotia food-establishment record current as of October 19, 2026",
           "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2655436",
-          "observedAt": "2026-10-20T07:20:13.079Z",
-          "status": "verified"
-        }
-      ],
-      "evidenceStatus": "verified",
-      "sourceLayer": "reviewed_location_correction"
-    },
-    {
-      "id": "osm-node-13958623779-coffee-street",
-      "name": "Coffee Street",
-      "address": "33 Alderney Drive, Dartmouth, NS B2Y 2N4",
-      "neighborhood": "Downtown Dartmouth",
-      "category": "Cafe",
-      "website": "https://www.coffeestreet.ca/",
-      "phone": "902-444-1655",
-      "coordinates": {
-        "lat": 44.6655819,
-        "lon": -63.5699189
-      },
-      "openingHours": "Mo-Su 07:00-22:00",
-      "operatingStatus": "active",
-      "operatingStatusEvidence": {
-        "claim": "The current Downtown Dartmouth business directory lists Coffee Street at 33 Alderney Drive. The official site independently confirms the exact address, phone 902-444-1655, daily 7am–10pm hours and a current breakfast, lunch, drink and treat menu. Those owner-published hours supersede the older OpenStreetMap midnight closing time. The owner describes Coffee Street as a local community cafe, and the Nova Scotia food-inspection snapshot current as of October 19, 2026 independently records Coffee Street Limited at 33 Alderney. Existing OpenStreetMap coordinates are retained; social profiles, dated offers and events remain unknown.",
-        "sourceUrl": "https://www.coffeestreet.ca/",
-        "observedAt": "2026-10-25T06:17:50Z",
-        "reviewState": "verified",
-        "location": "33 Alderney Drive, Dartmouth, NS B2Y 2N4"
-      },
-      "cuisines": [
-        "Cafe"
-      ],
-      "vibe": [
-        "coffee",
-        "daytime"
-      ],
-      "specials": [],
-      "events": [],
-      "socialProfiles": [],
-      "sources": [
-        {
-          "type": "openstreetmap",
-          "label": "Existing mapped identity and coordinates; owner hours supersede stale closing time",
-          "url": "https://www.openstreetmap.org/node/13958623779",
-          "observedAt": "2026-09-01",
-          "status": "verified"
-        },
-        {
-          "type": "business_directory",
-          "label": "Current Downtown Dartmouth location listing",
-          "url": "https://www.downtowndartmouth.ca/fooddrink",
-          "observedAt": "2026-10-25T06:17:50Z",
-          "status": "verified"
-        },
-        {
-          "type": "official_website",
-          "label": "Owner address, phone, seven-day hours and local community-cafe description",
-          "url": "https://www.coffeestreet.ca/",
-          "observedAt": "2026-10-25T06:17:50Z",
-          "status": "verified"
-        },
-        {
-          "type": "menu",
-          "label": "Current official breakfast, lunch, drink and treat menu",
-          "url": "https://www.coffeestreet.ca/find-your-grind",
-          "observedAt": "2026-10-25T06:17:50Z",
-          "status": "verified"
-        },
-        {
-          "type": "government_inspection",
-          "label": "Nova Scotia food-establishment record current as of October 19, 2026",
-          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3547472",
           "observedAt": "2026-10-20T07:20:13.079Z",
           "status": "verified"
         }

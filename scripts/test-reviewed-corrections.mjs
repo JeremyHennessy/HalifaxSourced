@@ -86,6 +86,21 @@ for (const records of [app.restaurants, catalog.restaurants]) {
 }
 assert(active.has(chanoeyId), 'Time-limited closure is not permanent archive');
 assert(app.restaurants.find(record => record.id === chanoeyId).menuLinks.some(link => link.url === 'https://www.chanoeyspasta.com/menu'));
+const coffeeStreetId = 'osm-node-13958623779-coffee-street';
+for (const records of [app.restaurants, catalog.restaurants]) {
+  const matches = records.filter(record => record.id === coffeeStreetId);
+  assert.equal(matches.length, 1, 'Coffee Street must retain its existing canonical identity');
+  const coffeeStreet = matches[0];
+  assert.equal(coffeeStreet.address, '33 Alderney Drive, Dartmouth, NS B2Y 2N4');
+  assert.equal(coffeeStreet.phone, '902-444-1655');
+  assert.equal(coffeeStreet.website, 'https://www.coffeestreet.ca/');
+  assert.equal(coffeeStreet.openingHours, 'Mo-Su 07:00-22:00', 'Owner hours must supersede the stale OpenStreetMap midnight close');
+  assert.equal(coffeeStreet.coordinates.lat, 44.6655819, 'Preserve accepted source coordinates');
+  assert.equal(coffeeStreet.coordinates.lon, -63.5699189, 'Preserve accepted source coordinates');
+  assert(coffeeStreet.sources.some(source => source.type === 'menu' && source.url === 'https://www.coffeestreet.ca/find-your-grind'));
+}
+assert(active.has(coffeeStreetId));
+assert(app.restaurants.find(record => record.id === coffeeStreetId).menuLinks.some(link => link.url === 'https://www.coffeestreet.ca/find-your-grind'));
 const evansId = 'evans-fresh-seafoods-dartmouth';
 for (const records of [app.restaurants, catalog.restaurants]) {
   const matches = records.filter(record => record.id === evansId);
