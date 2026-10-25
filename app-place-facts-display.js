@@ -23,11 +23,29 @@ function formatStructuredHours(restaurant, date = new Date()) {
   if (state.state === "closed") return schedule;
   return `${schedule} · check current hours`;
 }
+// A structured observation can contain only a locality or malformed contact
+// text. Keep that raw evidence, but do not replace a public civic address with
+// it. This is a completeness guard, not a geocode or a new location approval.
+function usableStructuredCivicAddress(value) {
+  if (typeof value !== "string") return false;
+  const normalized = value.trim().replace(/\s*[\r\n]+\s*/g, ", ");
+  const firstLine = normalized.split(",")[0].trim();
+  const civic = firstLine.match(/^\d{1,5}[a-z]?\s+(.+)$/i);
+  if (!civic) return false;
+  const street = civic[1].trim();
+  // Numeric contact tails and unlabelled unit-first forms are not streets.
+  if (!/^(?:[\p{L}][\p{L}'’.-]*(?:\s|$)|\d+(?:st|nd|rd|th)\s+[\p{L}])/iu.test(street)) return false;
+  if (/^(?:to|through|and)\s+\d/i.test(street)) return false;
+  if (/^(?:unit|suite|phone|tel|telephone|fax|ext|extension)\b/i.test(street)) return false;
+  if (/^(?:january|february|march|april|may|june|july|august|september|october|november|december)\s+\d{1,2}\b/i.test(street)) return false;
+  const parsed = HalifaxRestaurantIdentity.address(normalized);
+  return Boolean(parsed && !parsed.inconsistent);
+}
 for (const restaurant of restaurants) {
   const facts = restaurant.structuredFacts;
   if (!facts) continue;
   if (facts.phone) { restaurant.previousPhone = restaurant.phone || null; restaurant.phone = facts.phone; }
-  if (facts.address) { restaurant.previousAddress = restaurant.address || null; restaurant.address = facts.address; }
+  if (usableStructuredCivicAddress(facts.address)) { restaurant.previousAddress = restaurant.address || null; restaurant.address = facts.address; }
   if (facts.hours) {
     restaurant.previousOpeningHours = restaurant.openingHours || null;
     restaurant.openingHours = formatStructuredHours(restaurant);
