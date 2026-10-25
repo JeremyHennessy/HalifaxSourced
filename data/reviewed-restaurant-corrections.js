@@ -137,13 +137,22 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
         "address": "62 Ochterloney Street, Dartmouth, NS B2Y 1C2",
         "phone": "902-446-2337",
         "website": "https://batterypark.ca/",
-        "openingHours": null
+        "openingHours": "Mo 11:30-22:00; Tu closed; We-Th 11:30-23:00; Fr-Sa 11:30-00:00; Su 11:30-22:00"
       },
       "sourceUrl": "https://batterypark.ca/",
-      "claim": "Owner confirms Battery Park at 62 Ochterloney Street, Dartmouth, phone 902-446-2337. The current owner schedule gives Monday and Sunday 11:30-22:00, Tuesday closed, Wednesday 11:30-23:00 and Friday-Saturday 11:30-midnight, but Thursday is literally 11:30am -11am. Hold the weekly opening-hours field until that ambiguous day is clarified; do not invent 23:00, retain stale directory hours, or publish imported 24-hour service. The source-linked partial schedule remains evidence, not a complete verified weekly schedule.",
-      "observedAt": "2026-10-20T18:15:55Z",
-      "reviewedAt": "2026-10-20T18:15:55Z",
-      "reviewState": "verified"
+      "claim": "The owner confirms Battery Park Beer Bar & Eatery at 62 Ochterloney Street, Dartmouth, phone 902-446-2337, and publishes its food menu. The owner hours contain a literal Thursday 11:30am-11am typo; Discover Halifax's current 2026 Dine Around listing independently publishes the otherwise matching full schedule and confirms Thursday closes at 11pm. Publish Monday and Sunday 11:30-22:00, Tuesday closed, Wednesday-Thursday 11:30-23:00, and Friday-Saturday 11:30-midnight. Reject the Downtown Dartmouth directory's conflicting 902-466-2337 phone and stale imported 24-hour hours. The provincial inspection registry independently matches BATTERY PARK BEER BAR AND EATERY at 62 Ochterloney.",
+      "observedAt": "2026-10-25T17:13:47Z",
+      "reviewedAt": "2026-10-25T17:13:47Z",
+      "reviewState": "verified",
+      "fieldEvidence": {
+        "openingHours": {
+          "sourceUrl": "https://discoverhalifaxns.com/dinearound/menu/battery-park-beer-bar-eatery/",
+          "observedAt": "2026-10-25T17:13:47Z",
+          "reviewedAt": "2026-10-25T17:13:47Z",
+          "claim": "Discover Halifax's 2026 Dine Around listing supplies the complete weekly schedule and independently resolves the owner page's Thursday typo as 11:30am-11pm.",
+          "reviewState": "verified"
+        }
+      }
     },
     {
       "restaurantId": "osm-node-472054712-the-wooden-monkey",
@@ -2432,6 +2441,40 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
     }
   ],
   "factFieldOverrides": [
+    {
+      "id": "hours-review-2026-10-25-battery-park",
+      "restaurantId": "battery-park",
+      "fields": {
+        "hours": {
+          "monday": [
+            { "open": "11:30", "close": "22:00", "overnight": false, "sourceForm": "reviewed_visible_official_hours" }
+          ],
+          "tuesday": [],
+          "wednesday": [
+            { "open": "11:30", "close": "23:00", "overnight": false, "sourceForm": "reviewed_visible_official_hours" }
+          ],
+          "thursday": [
+            { "open": "11:30", "close": "23:00", "overnight": false, "sourceForm": "reviewed_visible_official_hours" }
+          ],
+          "friday": [
+            { "open": "11:30", "close": "00:00", "overnight": true, "sourceForm": "reviewed_visible_official_hours" }
+          ],
+          "saturday": [
+            { "open": "11:30", "close": "00:00", "overnight": true, "sourceForm": "reviewed_visible_official_hours" }
+          ],
+          "sunday": [
+            { "open": "11:30", "close": "22:00", "overnight": false, "sourceForm": "reviewed_visible_official_hours" }
+          ]
+        },
+        "hoursVerifiedAt": "2026-10-25T17:13:47Z",
+        "hoursSourceUrl": "https://discoverhalifaxns.com/dinearound/menu/battery-park-beer-bar-eatery/",
+        "hoursUnknownDays": [],
+        "hoursReviewEvidence": "Discover Halifax's current 2026 Dine Around listing corroborates the owner schedule and resolves the owner page's Thursday typo as an 11pm close."
+      },
+      "sourceUrl": "https://discoverhalifaxns.com/dinearound/menu/battery-park-beer-bar-eatery/",
+      "reviewedAt": "2026-10-25T17:13:47Z",
+      "reviewState": "verified"
+    },
     {
       "id": "hours-review-2026-10-20-osm-node-10038454787-bird-s-nest-cafe",
       "restaurantId": "osm-node-10038454787-bird-s-nest-cafe",
