@@ -4,6 +4,40 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
   "policy": "Reviewed location evidence overrides stale imports; observation dates are retained and uncertain coordinates, hours, successor identities and closure day remain unknown.",
   "records": [
     {
+      "restaurantId": "osm-node-13235716922-foody-jojo-waffle-and-sandwich",
+      "fields": {
+        "name": "Foody JoJo Waffle & Sandwich",
+        "neighborhood": "Downtown Dartmouth",
+        "address": "2 Ochterloney Street, Dartmouth, NS",
+        "phone": "902-818-9489",
+        "website": "https://www.foodyjojo.ca/",
+        "openingHours": "Mo-Sa 08:00-16:00; Su 10:00-15:00",
+        "evidenceStatus": "verified",
+        "summary": "Owner-verified family-owned Downtown Dartmouth sandwich and waffle shop at Alderney Landing with a current menu and weekly hours; independently corroborated by the Downtown Dartmouth directory, venue listing and Nova Scotia food-inspection registry."
+      },
+      "sourceUrl": "https://www.foodyjojo.ca/",
+      "claim": "The current owner site identifies the family-owned Foody JoJo Waffle & Sandwich at 2 Ochterloney Street, publishes its sandwich and waffle menu, and states Monday-Saturday 8am-4pm and Sunday 10am-3pm hours. The current Downtown Dartmouth directory independently lists the same restaurant, address, owner domain and phone 902-818-9489; Alderney Landing identifies it as open; and the Nova Scotia food-inspection registry records Foody Jojo Waffle and Sandwiches at 2 Ochterloney. The owner page's conflicting B2Y 4W1 postal code is not published, and social profiles, dated offers and events remain unknown.",
+      "observedAt": "2026-10-25T19:16:44Z",
+      "reviewedAt": "2026-10-25T19:16:44Z",
+      "reviewState": "verified",
+      "fieldEvidence": {
+        "phone": {
+          "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
+          "observedAt": "2026-10-25T19:16:44Z",
+          "reviewedAt": "2026-10-25T19:16:44Z",
+          "claim": "The current Downtown Dartmouth business directory publishes phone 902-818-9489 with the exact Foody JoJo name, 2 Ochterloney Street address and owner domain.",
+          "reviewState": "verified"
+        },
+        "address": {
+          "sourceUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3615225",
+          "observedAt": "2026-10-20T07:20:13.079Z",
+          "reviewedAt": "2026-10-25T19:16:44Z",
+          "claim": "Nova Scotia food-establishment record current as of October 19, 2026 confirms Foody Jojo Waffle and Sandwiches at 2 Ochterloney, Dartmouth.",
+          "reviewState": "verified"
+        }
+      }
+    },
+    {
       "restaurantId": "osm-node-3800103657-celtic-corner-public-house",
       "fields": {
         "address": "69 Alderney Drive, Dartmouth, NS B2Y 2N7",
