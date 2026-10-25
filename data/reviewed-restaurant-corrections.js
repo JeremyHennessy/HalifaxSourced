@@ -830,6 +830,68 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
   ],
   "additions": [
     {
+      "id": "port-city-coffee-dartmouth",
+      "name": "Port City Coffee Co.",
+      "address": "2 Ochterloney Street, Dartmouth, NS",
+      "neighborhood": "Downtown Dartmouth",
+      "category": "Cafe",
+      "website": "https://portcitycoffee.ca/",
+      "phone": "902-460-6575",
+      "coordinates": null,
+      "openingHours": "Mo-Fr 07:00-16:00; Sa 07:00-14:00; Su 10:00-15:00",
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current owner location page confirms Port City Coffee Co. at Alderney Landing, 2 Ochterloney Street, with Monday-Friday 7am-4pm, Saturday 7am-2pm and Sunday 10am-3pm hours. Alderney Landing and the Downtown Dartmouth directory independently confirm the location and phone 902-460-6575, while the Nova Scotia food-inspection registry records PORT CITY COFFEE at the same civic address. Coordinates, an itemized menu, social profiles, dated offers and events remain unknown.",
+        "sourceUrl": "https://portcitycoffee.ca/pages/where-to-find-us",
+        "observedAt": "2026-10-25T08:12:03Z",
+        "reviewState": "verified",
+        "location": "2 Ochterloney Street, Dartmouth, NS"
+      },
+      "cuisines": [
+        "Cafe"
+      ],
+      "vibe": [
+        "coffee",
+        "breakfast",
+        "takeaway"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [],
+      "sources": [
+        {
+          "type": "official_website",
+          "label": "Owner location, current hours and food-and-drink overview",
+          "url": "https://portcitycoffee.ca/pages/where-to-find-us",
+          "observedAt": "2026-10-25T08:12:03Z",
+          "status": "verified"
+        },
+        {
+          "type": "business_directory",
+          "label": "Current Downtown Dartmouth location and phone",
+          "url": "https://www.downtowndartmouth.ca/fooddrink",
+          "observedAt": "2026-10-25T08:12:03Z",
+          "status": "verified"
+        },
+        {
+          "type": "venue_directory",
+          "label": "Alderney Landing permanent-vendor profile confirming phone, hours and takeaway cafe offering",
+          "url": "https://www.alderneylanding.com/vendors/port-city-coffee/",
+          "observedAt": "2026-10-25T08:12:03Z",
+          "status": "verified"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Nova Scotia food-establishment record current as of October 19, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2180072",
+          "observedAt": "2026-10-20T07:20:13.079Z",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
       "id": "ilai-halifax",
       "name": "Ilai South Indian Restaurant",
       "address": "1569 Dresden Row, Halifax, NS B3J 2K4",
