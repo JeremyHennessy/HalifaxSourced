@@ -554,6 +554,19 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
       "observedAt": "2026-10-25T06:17:50Z",
       "reviewedAt": "2026-10-25T06:17:50Z",
       "reviewState": "verified"
+    },
+    {
+      "restaurantId": "osm-node-5150636926-cafe-98",
+      "fields": {
+        "operatingStatus": "replaced",
+        "openingHours": null,
+        "successorId": "little-pisa-dartmouth"
+      },
+      "sourceUrl": "https://littlepisa.ca/about-us/",
+      "claim": "The current owner site identifies Little Pisa at the exact 98 Portland Street unit formerly represented by the stale Cafe 98 OpenStreetMap record. The current Downtown Dartmouth directory and Nova Scotia food-inspection registry independently identify Little Pisa at the same civic address. Archive Cafe 98 as replaced while retaining its source history; the predecessor closure date is unknown and is not invented.",
+      "observedAt": "2026-10-25T08:48:18Z",
+      "reviewedAt": "2026-10-25T08:48:18Z",
+      "reviewState": "verified"
     }
   ],
   "aliases": [
@@ -829,6 +842,68 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
     }
   ],
   "additions": [
+    {
+      "id": "little-pisa-dartmouth",
+      "name": "Little Pisa",
+      "address": "98 Portland Street, Dartmouth, NS B2Y 1H6",
+      "neighborhood": "Downtown Dartmouth",
+      "category": "Restaurant",
+      "website": "https://littlepisa.ca/",
+      "phone": "902-209-4222",
+      "coordinates": null,
+      "openingHours": "Mo-Th 11:00-21:00; Fr-Sa 11:00-21:30; Su 14:00-21:00",
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current owner site identifies Little Pisa at 98 Portland Street, publishes phone 902-209-4222, complete weekly hours and a current itemized menu. The Downtown Dartmouth business directory independently lists the same restaurant, address, phone and owner domain, while the Nova Scotia food-inspection registry records Little Pisa at 98 Portland. The stale Cafe 98 record for the exact unit is retained as a replaced predecessor. Coordinates, social profiles, dated offers and events remain unknown.",
+        "sourceUrl": "https://littlepisa.ca/about-us/",
+        "observedAt": "2026-10-25T08:48:18Z",
+        "reviewState": "verified",
+        "location": "98 Portland Street, Dartmouth, NS B2Y 1H6"
+      },
+      "cuisines": [
+        "Pizza",
+        "Italian"
+      ],
+      "vibe": [
+        "casual",
+        "local"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [],
+      "sources": [
+        {
+          "type": "official_website",
+          "label": "Owner address, contact and complete weekly hours",
+          "url": "https://littlepisa.ca/about-us/",
+          "observedAt": "2026-10-25T08:48:18Z",
+          "status": "verified"
+        },
+        {
+          "type": "menu",
+          "label": "Current itemized owner menu",
+          "url": "https://littlepisa.ca/menu-offering/",
+          "observedAt": "2026-10-25T08:48:18Z",
+          "status": "verified"
+        },
+        {
+          "type": "business_directory",
+          "label": "Current Downtown Dartmouth location, phone and owner-domain link",
+          "url": "https://www.downtowndartmouth.ca/fooddrink",
+          "observedAt": "2026-10-25T08:48:18Z",
+          "status": "verified"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Nova Scotia food-establishment record current as of October 19, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3892094",
+          "observedAt": "2026-10-20T07:20:13.079Z",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
     {
       "id": "port-city-coffee-dartmouth",
       "name": "Port City Coffee Co.",

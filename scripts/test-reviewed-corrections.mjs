@@ -116,6 +116,32 @@ for (const records of [app.restaurants, catalog.restaurants]) {
   assert(portCity.sources.some(source => source.type === 'government_inspection' && source.url.endsWith('Id1=2180072')));
 }
 assert(active.has(portCityId));
+const littlePisaId = 'little-pisa-dartmouth';
+const cafe98Id = 'osm-node-5150636926-cafe-98';
+for (const records of [app.restaurants, catalog.restaurants]) {
+  const matches = records.filter(record => record.id === littlePisaId);
+  assert.equal(matches.length, 1, 'Little Pisa must have one reviewed Downtown Dartmouth identity');
+  const littlePisa = matches[0];
+  assert.equal(littlePisa.address, '98 Portland Street, Dartmouth, NS B2Y 1H6');
+  assert.equal(littlePisa.phone, '902-209-4222');
+  assert.equal(littlePisa.website, 'https://littlepisa.ca/');
+  assert.equal(littlePisa.openingHours, 'Mo-Th 11:00-21:00; Fr-Sa 11:00-21:30; Su 14:00-21:00');
+  assert.equal(littlePisa.coordinates, null, 'Do not invent coordinates from the civic address');
+  assert.deepEqual([...littlePisa.cuisines], ['Pizza', 'Italian']);
+  assert.equal(littlePisa.socialProfiles.length, 0, 'Do not publish an unlinked or throttled social profile');
+  assert.equal(littlePisa.specials.length, 0, 'Undated menu bundles are not time-bounded offers');
+  assert.equal(littlePisa.events.length, 0);
+  assert(littlePisa.sources.some(source => source.type === 'menu' && source.url === 'https://littlepisa.ca/menu-offering/'));
+  assert(littlePisa.sources.some(source => source.type === 'government_inspection' && source.url.endsWith('Id1=3892094')));
+  const cafe98 = records.find(record => record.id === cafe98Id);
+  assert(cafe98, 'Retain the stale Cafe 98 identity as lifecycle history');
+  assert.equal(cafe98.operatingStatus, 'replaced');
+  assert.equal(cafe98.successorId, littlePisaId);
+  assert.equal(cafe98.openingHours, null);
+}
+assert(active.has(littlePisaId));
+assert(!active.has(cafe98Id));
+assert(app.restaurants.find(record => record.id === littlePisaId).menuLinks.some(link => link.url === 'https://littlepisa.ca/menu-offering/'));
 const evansId = 'evans-fresh-seafoods-dartmouth';
 for (const records of [app.restaurants, catalog.restaurants]) {
   const matches = records.filter(record => record.id === evansId);
