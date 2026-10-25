@@ -1274,6 +1274,75 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
       "sourceLayer": "reviewed_location_correction"
     },
     {
+      "id": "the-arms-halifax",
+      "name": "The Arms",
+      "address": "1515 South Park Street, Halifax, NS B3J 2L2",
+      "neighborhood": "Spring Garden",
+      "category": "Pub",
+      "website": "https://www.rcr.ca/restaurants/the-arms/",
+      "phone": "902-420-9781",
+      "coordinates": null,
+      "openingHours": "Monday–Thursday 7am–10pm; Friday–Saturday 7am–11pm; Sunday 7am–10pm",
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current Spring Garden Area Business Association directory lists The Arms Pub. The Halifax operator page confirms The Arms at 1515 South Park Street, phone 902-420-9781, breakfast, lunch and dinner seven days a week, and links current menus. The Lord Nelson Hotel dining page independently publishes the same address and complete Monday–Sunday venue hours. RCR identifies itself as a Halifax restaurant operator since 1974, and the Nova Scotia food-inspection snapshot current as of October 19, 2026 records ARMS (THE) at the same civic address. Coordinates, social profiles, specials and events are withheld.",
+        "sourceUrl": "https://www.rcr.ca/restaurants/the-arms/",
+        "observedAt": "2026-10-25T03:49:14Z",
+        "reviewState": "verified",
+        "location": "1515 South Park Street, Halifax, NS B3J 2L2"
+      },
+      "cuisines": [
+        "British",
+        "Canadian"
+      ],
+      "vibe": [
+        "pub",
+        "local"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [],
+      "sources": [
+        {
+          "type": "business_directory",
+          "label": "Current Spring Garden restaurant listing",
+          "url": "https://www.springgardenarea.com/eat-drink",
+          "observedAt": "2026-10-25T03:49:14Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Halifax operator page with address, phone, service and menu hub",
+          "url": "https://www.rcr.ca/restaurants/the-arms/",
+          "observedAt": "2026-10-25T03:49:14Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Lord Nelson Hotel dining page with complete venue hours",
+          "url": "https://lordnelsonhotel.ca/services/dining",
+          "observedAt": "2026-10-25T03:49:14Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Halifax operator history since 1974",
+          "url": "https://www.rcr.ca/about/",
+          "observedAt": "2026-10-25T03:49:14Z",
+          "status": "verified"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Nova Scotia food-establishment record current as of October 19, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1942031",
+          "observedAt": "2026-10-20T07:20:13.079Z",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
       "id": "beavers-den-dartmouth",
       "name": "The Beaver's Den Dartmouth",
       "address": "101A-16 Portland Street, Dartmouth, NS B2Y 1G9",
