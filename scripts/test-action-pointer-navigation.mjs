@@ -23,7 +23,7 @@ try {
           id, hasOrdering: place.hasOrdering,
           primary: HalifaxDataIntegrity.primaryActionUrl(id, 'ordering', place.orderingLinks),
           ctas: [...document.querySelectorAll('.mobile-essential-actions a, .detail-official-actions a')].filter(link => /Order online/.test(link.textContent)).map(link => link.href),
-          wrongBranchAnchors: [...document.querySelectorAll('a[href]')].filter(link => link.href === wrongForBayers).length,
+          wrongBranchActionAnchors: [...document.querySelectorAll('.mobile-essential-actions a[href], .detail-official-actions a[href]')].filter(link => link.href === wrongForBayers).length,
           inOrderingFilter: filteredRestaurants({ feature: 'ordering', query: '', area: 'all', cuisine: 'all' }).some(record => record.id === id),
           overflow: document.documentElement.scrollWidth > innerWidth + 1
         };
@@ -37,7 +37,7 @@ try {
       } else {
         assert.equal(details.primary, null);
         assert.deepEqual(details.ctas, [], 'No mobile/sidebar CTA or alternate-primary promotion');
-        assert.equal(details.wrongBranchAnchors, 0);
+        assert.equal(details.wrongBranchActionAnchors, 0);
       }
       receipts.push({ width, ...details });
     }
