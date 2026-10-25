@@ -308,13 +308,24 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
         "website": "https://cafemarcopolodartmouth.com/",
         "address": "15 Kings Wharf Place, Dartmouth, NS B2Y 0B4",
         "phone": "902-406-0901",
-        "openingHours": "Mo-Fr 07:00-16:00; Sa-Su 08:00-16:00"
+        "openingHours": "Mo-Fr 07:00-16:00; Sa-Su 08:00-16:00",
+        "evidenceStatus": "verified",
+        "summary": "Owner-verified Downtown Dartmouth waterfront cafe at 15 Kings Wharf Place with current contact details, weekly hours and a published menu; independently corroborated by the Downtown Dartmouth directory and Nova Scotia food-inspection registry."
       },
       "sourceUrl": "https://cafemarcopolodartmouth.com/",
-      "claim": "Official Café Marco Polo homepage confirms 15 Kings Wharf Place, Dartmouth, phone 902-406-0901, weekdays 7am–4pm and weekends 8am–4pm. Its Contact page independently repeats this address and phone. Preserve the existing location identity and source coordinates; do not infer special holiday hours or image permission.",
-      "observedAt": "2026-10-20",
-      "reviewedAt": "2026-10-20",
-      "reviewState": "verified"
+      "claim": "The current Café Marco Polo owner site confirms the Dartmouth cafe at 15 Kings Wharf Place, phone 902-406-0901, weekdays 7am–4pm and weekends 8am–4pm, and publishes a current menu. The Downtown Dartmouth directory independently lists the same cafe, address, phone and owner domain, while the Nova Scotia food-inspection registry records CAFE MARCO POLO at 15 Kings Wharf. This reviewed evidence supersedes the obsolete Just Us Coffee domain retained in the OpenStreetMap import; preserve the existing source coordinates and do not infer special holiday hours or image permission.",
+      "observedAt": "2026-10-25T12:19:32Z",
+      "reviewedAt": "2026-10-25T12:19:32Z",
+      "reviewState": "verified",
+      "fieldEvidence": {
+        "address": {
+          "sourceUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2481231",
+          "observedAt": "2026-10-20T07:20:13.079Z",
+          "reviewedAt": "2026-10-25T12:19:32Z",
+          "claim": "Nova Scotia food-establishment record current as of October 19, 2026 confirms CAFE MARCO POLO at 15 Kings Wharf, Dartmouth.",
+          "reviewState": "verified"
+        }
+      }
     },
     {
       "restaurantId": "osm-node-2624400763-java-blend",
