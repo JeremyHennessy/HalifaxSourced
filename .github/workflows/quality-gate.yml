@@ -54,6 +54,7 @@ jobs:
           node scripts/test-menu-pointer-audit.mjs
           node scripts/test-reviewed-hours-refresh.mjs
           node scripts/test-structured-address-projection.mjs
+          node scripts/test-structured-phone-projection.mjs
 
       - name: Test preview promotion contract and branch leases
         run: node scripts/test-preview-promotion.mjs

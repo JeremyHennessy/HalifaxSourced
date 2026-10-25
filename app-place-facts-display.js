@@ -41,10 +41,27 @@ function usableStructuredCivicAddress(value) {
   const parsed = HalifaxRestaurantIdentity.address(normalized);
   return Boolean(parsed && !parsed.inconsistent);
 }
+// Do not let escaped HTML, URI fragments or other extraction debris replace a
+// readable contact number. This is a display-completeness check, not proof that
+// a number belongs to this business. Keep the original source text and clocks.
+function usableStructuredPhone(value) {
+  if (typeof value !== "string") return false;
+  const match = value.trim().match(/^(\+?[\d ()\u00a0\u202f.\-\u2010-\u2015\u2212]+?)(?:\s*(?:ext(?:ension)?\.?|x|#)\s*(\d{1,6}))?$/i);
+  if (!match) return false;
+  const number = match[1];
+  const digits = number.replace(/\D/g, "");
+  if (digits.length < 7 || digits.length > 15) return false;
+  let parentheses = 0;
+  for (const character of number) {
+    if (character === "(" && ++parentheses > 1) return false;
+    if (character === ")" && --parentheses < 0) return false;
+  }
+  return parentheses === 0;
+}
 for (const restaurant of restaurants) {
   const facts = restaurant.structuredFacts;
   if (!facts) continue;
-  if (facts.phone) { restaurant.previousPhone = restaurant.phone || null; restaurant.phone = facts.phone; }
+  if (usableStructuredPhone(facts.phone)) { restaurant.previousPhone = restaurant.phone || null; restaurant.phone = facts.phone; }
   if (usableStructuredCivicAddress(facts.address)) { restaurant.previousAddress = restaurant.address || null; restaurant.address = facts.address; }
   if (facts.hours) {
     restaurant.previousOpeningHours = restaurant.openingHours || null;
