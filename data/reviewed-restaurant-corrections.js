@@ -4,6 +4,19 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
   "policy": "Reviewed location evidence overrides stale imports; observation dates are retained and uncertain coordinates, hours, successor identities and closure day remain unknown.",
   "records": [
     {
+      "restaurantId": "osm-node-5161526522-sushi-nami-royale",
+      "fields": {
+        "phone": "902-422-1636"
+      },
+      "sourceUrl": "https://sushinami.ca/downtown-halifax/",
+      "claim": "Retain the accepted Queen Street phone from the 2026-08-29 location review; generic-homepage extraction does not supersede location-specific reviewed evidence. This is not a new source or current phone-ownership verification.",
+      "observedAt": "2026-08-29",
+      "reviewedAt": "2026-10-25T22:35:00Z",
+      "reviewState": "verified",
+      "reviewBasis": "preserve_accepted_location_evidence",
+      "location": "1458 Queen Street, Halifax, NS B3J 2H7"
+    },
+    {
       "restaurantId": "osm-node-13235716922-foody-jojo-waffle-and-sandwich",
       "fields": {
         "name": "Foody JoJo Waffle & Sandwich",

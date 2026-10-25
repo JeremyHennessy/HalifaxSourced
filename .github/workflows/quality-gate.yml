@@ -57,6 +57,7 @@ jobs:
           node scripts/test-reviewed-hours-refresh.mjs
           node scripts/test-structured-address-projection.mjs
           node scripts/test-structured-phone-projection.mjs
+          node scripts/test-queen-street-contact.mjs
 
       - name: Test preview promotion contract and branch leases
         run: node scripts/test-preview-promotion.mjs
@@ -402,6 +403,7 @@ jobs:
           node scripts/verify-admin-status.mjs
           node scripts/verify-iphone-links.mjs
           node scripts/test-action-pointer-navigation.mjs
+          node scripts/test-queen-street-contact-navigation.mjs
           node scripts/test-explore-minimap-lifecycle.mjs
           node scripts/test-rich-discovery.mjs
 
