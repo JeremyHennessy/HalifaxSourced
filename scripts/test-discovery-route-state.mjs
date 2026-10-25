@@ -19,3 +19,4 @@ console.log('Discovery route state passed: complete URL round trip, global reset
 
 // Detail anchors must remain local scroll actions rather than hash routes.
 await import('./test-detail-anchor-offsets.mjs');
+await import('./test-detail-anchor-settlement.mjs');
