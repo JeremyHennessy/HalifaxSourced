@@ -2425,6 +2425,7 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
       "neighborhood": "Spring Garden",
       "category": "Beer Garden",
       "website": "https://www.barstillwell.com/pages/the-beer-garden",
+      "menuUrl": "https://www.barstillwell.com/pages/the-beer-garden",
       "phone": null,
       "coordinates": null,
       "openingHours": null,
