@@ -179,6 +179,32 @@ for (const records of [app.restaurants, catalog.restaurants]) {
 }
 assert(active.has(larryId));
 assert(app.restaurants.find(record => record.id === larryId).menuLinks.some(link => link.url === 'https://larryssandwiches.com/order'));
+const butaHalifaxId = 'osm-node-6031036960-buta-ramen';
+const butaDartmouthId = 'buta-ramen-dartmouth';
+for (const records of [app.restaurants, catalog.restaurants]) {
+  const halifax = records.find(record => record.id === butaHalifaxId);
+  const dartmouth = records.find(record => record.id === butaDartmouthId);
+  assert(halifax, 'Retain and identify the existing South End Buta Ramen coordinate');
+  assert(dartmouth, 'Publish a separate reviewed Downtown Dartmouth Buta Ramen branch');
+  assert(!records.some(record => record.id === 'buta-ramen-halifax'), 'Merge the duplicate official-site Halifax branch into the coordinate-backed canonical record');
+  assert(halifax.aliasIds?.includes('buta-ramen-halifax'), 'Retain the official-site Halifax ID as a reviewed alias');
+  assert.equal(records.filter(record => record.id === butaDartmouthId).length, 1);
+  assert.equal(halifax.address, '5190 Morris Street, Halifax, NS');
+  assert.equal(halifax.phone, '902-422-0245');
+  assert.equal(halifax.openingHours, 'Mo-Su 10:30-21:30');
+  assert.equal(halifax.coordinates.lat, 44.6417349, 'Preserve the accepted South End source coordinate');
+  assert.deepEqual((halifax.inspectionRecords || halifax.inspections).map(record => record.facilityId), ['2382179'], 'Do not attach Dartmouth or Bedford inspections to the Halifax coordinate');
+  assert.equal(dartmouth.address, '65 King Street, Dartmouth, NS');
+  assert.equal(dartmouth.phone, '902-461-0250');
+  assert.equal(dartmouth.website, 'https://butaramen.ca/');
+  assert.equal(dartmouth.openingHours, 'Mo-Su 11:30-20:30');
+  assert(dartmouth.coordinates == null, 'Do not borrow the Halifax coordinate or invent one from the civic address');
+  assert.deepEqual((dartmouth.inspectionRecords || dartmouth.inspections).map(record => record.facilityId), ['2619282'], 'Bind only the Dartmouth inspection record');
+  assert.equal(dartmouth.socialProfiles.length, 0, 'A shared multi-location owner profile is evidence, not a Dartmouth-only feed');
+  assert(!dartmouth.aliasIds?.includes(butaHalifaxId), 'Dartmouth and Halifax branches are not aliases');
+}
+assert(active.has(butaHalifaxId));
+assert(active.has(butaDartmouthId));
 const creperieId = 'osm-node-8376551845-portland-street-creperie';
 for (const records of [app.restaurants, catalog.restaurants]) {
   const matches = records.filter(record => record.id === creperieId);
