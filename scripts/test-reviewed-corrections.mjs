@@ -205,6 +205,30 @@ for (const records of [app.restaurants, catalog.restaurants]) {
 }
 assert(active.has(butaHalifaxId));
 assert(active.has(butaDartmouthId));
+const desiGardenId = 'desi-garden-halifax';
+for (const records of [app.restaurants, catalog.restaurants]) {
+  const matches = records.filter(record => record.id === desiGardenId);
+  assert.equal(matches.length, 1, 'Desi Garden must have one reviewed Spring Garden identity');
+  const garden = matches[0];
+  assert.equal(garden.name, 'Desi Garden Food Bar and Lounge');
+  assert.equal(garden.address, '1446 Queen Street, Halifax, NS B3J 2H7');
+  assert.equal(garden.phone, '902-830-9341');
+  assert.equal(garden.website, 'https://www.desigarden.ca/');
+  assert.equal(garden.openingHours, 'Tu-Fr 16:00-23:00; Sa-Su 12:00-23:00; Mo closed');
+  assert.equal(garden.coordinates, null, 'Do not invent coordinates from the civic address');
+  assert.equal(garden.specials.length, 0, 'Menu items are not verified current offers');
+  assert.equal(garden.events.length, 0);
+  assert.deepEqual((garden.inspectionRecords || garden.inspections).map(record => record.facilityId), [], 'Do not weaken conservative automatic inspection-name matching for a renamed business');
+  assert(garden.sources.some(source => source.type === 'government_inspection' && source.url.endsWith('Id1=3421686')), 'Retain the reviewed same-address predecessor inspection as explicit source evidence');
+  assert(garden.sources.some(source => source.type === 'menu' && source.url === 'https://www.desigarden.ca/s/Food-Menu-Desi-Garden-2-r2wr.pdf'));
+  assert.deepEqual(garden.socialProfiles.map(profile => `${profile.platform}:${profile.url}`).sort(), [
+    'facebook:https://www.facebook.com/desigardentakeout',
+    'instagram:https://www.instagram.com/desigarden.hfx'
+  ]);
+  assert(garden.operatingStatusEvidence.claim.includes('exact rebrand date') && garden.operatingStatusEvidence.claim.includes('remain unknown'), 'Preserve rebrand-date uncertainty');
+}
+assert(active.has(desiGardenId));
+assert(app.restaurants.find(record => record.id === desiGardenId).menuLinks.some(link => link.url === 'https://www.desigarden.ca/s/Food-Menu-Desi-Garden-2-r2wr.pdf'));
 const phoNo1Id = 'pho-no-1-halifax';
 const alexOhId = 'osm-node-2721708499-alex-oh-sushi-rolls';
 for (const records of [app.restaurants, catalog.restaurants]) {

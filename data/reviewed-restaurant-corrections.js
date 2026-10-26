@@ -1087,6 +1087,85 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
   ],
   "additions": [
     {
+      "id": "desi-garden-halifax",
+      "name": "Desi Garden Food Bar and Lounge",
+      "address": "1446 Queen Street, Halifax, NS B3J 2H7",
+      "neighborhood": "Spring Garden",
+      "category": "Restaurant",
+      "website": "https://www.desigarden.ca/",
+      "menuUrl": "https://www.desigarden.ca/s/Food-Menu-Desi-Garden-2-r2wr.pdf",
+      "phone": "902-830-9341",
+      "coordinates": null,
+      "openingHours": "Tu-Fr 16:00-23:00; Sa-Su 12:00-23:00; Mo closed",
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current owner site identifies Desi Garden Food Bar and Lounge at 1446 Queen Street, Halifax, with phone 902-830-9341, a current food-menu PDF and Tuesday-Friday 4pm-11pm, Saturday-Sunday noon-11pm hours; its contact page explicitly states closed Mondays. The current Spring Garden directory retains the historical The Garden Halifax name and gardenhalifax.com link, which redirects to this owner site. The owner story describes The Garden Retreat as formerly Garden Food Bar & Lounge at the same location, and the Nova Scotia food-inspection snapshot independently records Garden Food Bar & Lounge at 1446 Queen. The exact rebrand date, coordinates, dated offers and events remain unknown.",
+        "sourceUrl": "https://www.desigarden.ca/",
+        "observedAt": "2026-10-26T21:24:11Z",
+        "reviewState": "verified",
+        "location": "1446 Queen Street, Halifax, NS B3J 2H7"
+      },
+      "cuisines": [
+        "Indian"
+      ],
+      "vibe": [
+        "local"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/desigarden.hfx",
+          "reviewState": "verified"
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/desigardentakeout",
+          "reviewState": "verified"
+        }
+      ],
+      "sources": [
+        {
+          "type": "business_directory",
+          "label": "Current Spring Garden historical-name listing and redirecting owner-domain link",
+          "url": "https://www.springgardenarea.com/eat-drink",
+          "observedAt": "2026-10-26T21:24:11Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Current owner identity, location, phone, weekly hours and owner-linked profiles",
+          "url": "https://www.desigarden.ca/",
+          "observedAt": "2026-10-26T21:24:11Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Owner history preserving the former Garden identity at this location",
+          "url": "https://www.desigarden.ca/our-story",
+          "observedAt": "2026-10-26T21:24:11Z",
+          "status": "verified"
+        },
+        {
+          "type": "menu",
+          "label": "Owner food-menu PDF",
+          "url": "https://www.desigarden.ca/s/Food-Menu-Desi-Garden-2-r2wr.pdf",
+          "observedAt": "2026-10-26T21:24:11Z",
+          "status": "verified"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Nova Scotia food-establishment record current as of October 19, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3421686",
+          "observedAt": "2026-10-20T07:20:13.079Z",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
       "id": "big-life-bakery-dartmouth",
       "name": "Big Life Bakery",
       "address": "84 Portland Street, Dartmouth, NS",
