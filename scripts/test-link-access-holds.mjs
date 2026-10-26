@@ -22,8 +22,10 @@ const dependencies = [
 ];
 const fullReviewedPolicy = JSON.parse(await readFile(new URL('../data/source-link-access-holds.json', import.meta.url), 'utf8'));
 // Preserve the original 224-receipt regression corpus independently of the
-// ten previously reviewed exact holds and the six current exact holds.
-const reviewedBeforeCurrentRun = {...structuredClone(fullReviewedPolicy), historicalEvidence:structuredClone(fullReviewedPolicy.historicalEvidence.slice(0, -6))};
+// ten previously reviewed exact holds, six source-refresh holds and seven
+// current Quality Gate holds.
+const policyBeforeTako = {...structuredClone(fullReviewedPolicy), historicalEvidence:structuredClone(fullReviewedPolicy.historicalEvidence.slice(0, -7))};
+const reviewedBeforeCurrentRun = {...structuredClone(policyBeforeTako), historicalEvidence:structuredClone(policyBeforeTako.historicalEvidence.slice(0, -6))};
 const priorReviewedPolicy = {...structuredClone(reviewedBeforeCurrentRun), historicalEvidence:structuredClone(reviewedBeforeCurrentRun.historicalEvidence.slice(0, -2))};
 const committedPolicy = {...structuredClone(reviewedBeforeCurrentRun), historicalEvidence:structuredClone(reviewedBeforeCurrentRun.historicalEvidence.slice(0, -10))};
 const digest = value => createHash('sha256').update(JSON.stringify(value)).digest('hex');
@@ -247,10 +249,12 @@ process.on('exit', () => {
   validateAccessPolicy(committedPolicy);
   validateAccessPolicy(priorReviewedPolicy);
   validateAccessPolicy(reviewedBeforeCurrentRun);
+  validateAccessPolicy(policyBeforeTako);
   validateAccessPolicy(fullReviewedPolicy);
   assert.equal(priorReviewedPolicy.historicalEvidence.length, committedPolicy.historicalEvidence.length + 8, 'Only five Barrios groups, one Secret Sauce group, one Greco feed group and one happy-hour API group added to immutable baseline');
   assert.equal(reviewedBeforeCurrentRun.historicalEvidence.length, priorReviewedPolicy.historicalEvidence.length + 2, 'Only the exact Little Pisa homepage and menu receipts extend the prior reviewed policy');
-  assert.equal(fullReviewedPolicy.historicalEvidence.length, reviewedBeforeCurrentRun.historicalEvidence.length + 6, 'Only six exact current-run HTTP 403 receipts extend the reviewed policy');
+  assert.equal(policyBeforeTako.historicalEvidence.length, reviewedBeforeCurrentRun.historicalEvidence.length + 6, 'Only six exact source-refresh HTTP 403 receipts extend the reviewed policy');
+  assert.equal(fullReviewedPolicy.historicalEvidence.length, policyBeforeTako.historicalEvidence.length + 7, 'Only seven exact Tako Sushi & Ramen HTTP 401 receipts extend the reviewed policy');
   const newBarriosGroups = priorReviewedPolicy.historicalEvidence.slice(-8, -3);
   for (const group of newBarriosGroups) {
     const p = group.provenance;
@@ -374,7 +378,7 @@ assert.equal(acceptedBarriosHolds.find('https://barrioshfx.ca/unknown-page'), nu
   await gate(littlePisaCheck.report);
   checked('Little Pisa homepage and menu receipt-backed URL holds are unattempted; a sibling path remains independently eligible');
 
-  const currentGroups = fullReviewedPolicy.historicalEvidence.slice(-6);
+  const currentGroups = policyBeforeTako.historicalEvidence.slice(-6);
   const currentUrls = [
     'https://greco.ca/comments/feed/',
     'https://order.online/robots.txt',
@@ -407,10 +411,10 @@ assert.equal(acceptedBarriosHolds.find('https://barrioshfx.ca/unknown-page'), nu
     assert.equal(group.observations[0].url, currentUrls[index]);
     assert.equal(group.observations[0].status, 403);
   });
-  const acceptedCurrentHolds = createAccessHolds(fullReviewedPolicy);
+  const acceptedCurrentHolds = createAccessHolds(policyBeforeTako);
   currentUrls.forEach(url => assert.equal(acceptedCurrentHolds.find(url)?.scope, 'url', 'The exact current-run URL is held: ' + url));
   currentSiblings.forEach(url => assert.equal(acceptedCurrentHolds.find(url), null, 'An unevidenced sibling URL remains eligible: ' + url));
-  await configure({policy:fullReviewedPolicy, catalog:catalogFor([...currentUrls, ...currentSiblings])});
+  await configure({policy:policyBeforeTako, catalog:catalogFor([...currentUrls, ...currentSiblings])});
   const currentCheck = await collect(Object.fromEntries(currentSiblings.map(url => [url, [ok]])));
   assert.equal(currentCheck.report.counts.held, 6);
   assert.equal(currentCheck.report.counts.attempted, 6);
@@ -418,6 +422,52 @@ assert.equal(acceptedBarriosHolds.find('https://barrioshfx.ca/unknown-page'), nu
   currentCheck.report.results.slice(0,6).forEach((row,index)=>held(row,currentGroups[index].observations[0]));
   await gate(currentCheck.report);
   checked('six current receipt-backed URL holds are unattempted; sibling paths remain independently eligible');
+
+  const takoGroups = fullReviewedPolicy.historicalEvidence.slice(-7);
+  const takoUrls = [
+    'https://www.takosushiramen.ca/',
+    'https://www.takosushiramen.ca/menu/chefs-special-rolls',
+    'https://www.takosushiramen.ca/menu/appetizers/tempura',
+    'https://www.takosushiramen.ca/menu/chefs-special-rolls/entrees',
+    'https://www.takosushiramen.ca/menu/ramen',
+    'https://www.takosushiramen.ca/menu/party-tray',
+    'https://www.takosushiramen.ca/menu/lunch-special'
+  ];
+  const takoSiblings = [
+    'https://www.takosushiramen.ca/about',
+    'https://www.takosushiramen.ca/menu/chefs-special-rolls-other',
+    'https://www.takosushiramen.ca/menu/appetizers/tempura-other',
+    'https://www.takosushiramen.ca/menu/chefs-special-rolls/entrees-other',
+    'https://www.takosushiramen.ca/menu/ramen-other',
+    'https://www.takosushiramen.ca/menu/party-tray-other',
+    'https://www.takosushiramen.ca/menu/lunch-special-other'
+  ];
+  takoGroups.forEach((group, index) => {
+    const p = group.provenance;
+    assert.equal(p.kind, 'reviewed_workflow_log');
+    assert.equal(p.workflowRunId, '40377927347');
+    assert.equal(p.workflowJob, 'data-integrity');
+    assert.equal(p.workflowJobId, 121765971337);
+    assert.equal(p.sourceCommitSha, '3b27224b0a885bf832d8eacf4c2a9721a77d8420');
+    assert.equal(p.accessPolicySha256, digest(policyBeforeTako), 'Every same-head Tako receipt references the exact pre-hold policy');
+    assert.equal(p.logSha256, '12b76615a4b9ee7799c20785c6d3d9723a8d03bfcde3bb29d6acc74a93147531');
+    assert.equal(p.diagnosticSha256, digest(p.diagnostic));
+    assert.equal(p.receiptSha256, digest(p.diagnostic.evidence.receipt));
+    assert.deepEqual(group.observations, [p.diagnostic.evidence.hold.evidence]);
+    assert.equal(group.observations[0].url, takoUrls[index]);
+    assert.equal(group.observations[0].status, 401);
+  });
+  const acceptedTakoHolds = createAccessHolds(fullReviewedPolicy);
+  takoUrls.forEach(url => assert.equal(acceptedTakoHolds.find(url)?.scope, 'url', 'The exact evidenced Tako URL is held: ' + url));
+  takoSiblings.forEach(url => assert.equal(acceptedTakoHolds.find(url), null, 'An unevidenced Tako sibling URL remains eligible: ' + url));
+  await configure({policy:fullReviewedPolicy, catalog:catalogFor([...takoUrls, ...takoSiblings])});
+  const takoCheck = await collect(Object.fromEntries(takoSiblings.map(url => [url, [ok]])));
+  assert.equal(takoCheck.report.counts.held, 7);
+  assert.equal(takoCheck.report.counts.attempted, 7);
+  assert.deepEqual(takoCheck.events.filter(e=>e.event==='fetch').map(e=>e.url), takoSiblings);
+  takoCheck.report.results.slice(0,7).forEach((row,index)=>held(row,takoGroups[index].observations[0]));
+  await gate(takoCheck.report);
+  checked('seven receipt-backed Tako URL holds are unattempted; sibling paths remain independently eligible');
 
 
   assert(committedPolicy.historicalEvidence[0].observations.every(row => row.status === 403 && new URL(row.url).hostname === 'junglejims.ca'));

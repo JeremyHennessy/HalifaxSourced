@@ -4,6 +4,74 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
   "policy": "Reviewed location evidence overrides stale imports; observation dates are retained and uncertain coordinates, hours, successor identities and closure day remain unknown.",
   "records": [
     {
+      "restaurantId": "osm-node-6031036960-buta-ramen",
+      "fields": {
+        "name": "Buta Ramen — Halifax",
+        "neighborhood": "South End",
+        "address": "5190 Morris Street, Halifax, NS",
+        "phone": "902-422-0245",
+        "website": "https://butaramen.ca/",
+        "openingHours": "Mo-Su 10:30-21:30",
+        "evidenceStatus": "verified",
+        "summary": "Owner-verified South End Halifax Buta Ramen location, kept distinct from the Dartmouth and Bedford branches that share the brand name."
+      },
+      "sourceUrl": "https://butaramen.ca/",
+      "claim": "The current owner site lists the Halifax branch at 5190 Morris Street with phone 902-422-0245, the owner Instagram profile publishes daily 10:30am-9:30pm hours for that exact branch, and the Nova Scotia inspection registry independently records BUTA RAMEN at 5190 Morris, Halifax. The Dartmouth and Bedford inspection records are separate locations and must not attach to this South End coordinate.",
+      "observedAt": "2026-10-26T18:04:00Z",
+      "reviewedAt": "2026-10-26T18:04:00Z",
+      "reviewState": "verified",
+      "fieldEvidence": {
+        "address": {
+          "sourceUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2382179",
+          "observedAt": "2026-10-20T07:20:13.079Z",
+          "reviewedAt": "2026-10-26T18:04:00Z",
+          "claim": "Nova Scotia food-establishment record current as of October 19, 2026 confirms BUTA RAMEN at 5190 Morris, Halifax.",
+          "reviewState": "verified"
+        },
+        "openingHours": {
+          "sourceUrl": "https://www.instagram.com/butaramen5190/",
+          "observedAt": "2026-10-26T18:04:00Z",
+          "reviewedAt": "2026-10-26T18:04:00Z",
+          "claim": "The current owner profile lists the Halifax branch at 5190 Morris Street with daily 10:30am-9:30pm hours.",
+          "reviewState": "verified"
+        }
+      }
+    },
+    {
+      "restaurantId": "buta-ramen-dartmouth",
+      "fields": {
+        "name": "Buta Ramen — Dartmouth",
+        "neighborhood": "Downtown Dartmouth",
+        "address": "65 King Street, Dartmouth, NS",
+        "phone": "902-461-0250",
+        "website": "https://butaramen.ca/",
+        "openingHours": "Mo-Su 11:30-20:30",
+        "evidenceStatus": "verified",
+        "summary": "Reviewed Downtown Dartmouth Buta Ramen location, kept distinct from the Halifax and Bedford branches that share the brand name."
+      },
+      "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
+      "claim": "The current Downtown Dartmouth directory, owner Instagram profile and Nova Scotia inspection record identify the Dartmouth branch at 65 King Street with phone 902-461-0250. The owner site currently prints 67 King Street; that conflicting civic number remains in source history but does not replace the regulatory and local-directory address. The Halifax and Bedford branches remain separate identities.",
+      "observedAt": "2026-10-26T18:04:00Z",
+      "reviewedAt": "2026-10-26T18:04:00Z",
+      "reviewState": "verified",
+      "fieldEvidence": {
+        "address": {
+          "sourceUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2619282",
+          "observedAt": "2026-10-20T07:20:13.079Z",
+          "reviewedAt": "2026-10-26T18:04:00Z",
+          "claim": "Nova Scotia food-establishment record current as of October 19, 2026 and the current Downtown Dartmouth directory both identify this branch at 65 King Street, Dartmouth.",
+          "reviewState": "verified"
+        },
+        "openingHours": {
+          "sourceUrl": "https://www.instagram.com/butaramen5190/",
+          "observedAt": "2026-10-26T18:04:00Z",
+          "reviewedAt": "2026-10-26T18:04:00Z",
+          "claim": "The current owner profile lists the Dartmouth branch at 65 King Street with daily 11:30am-8:30pm hours.",
+          "reviewState": "verified"
+        }
+      }
+    },
+    {
       "restaurantId": "osm-node-5161526522-sushi-nami-royale",
       "fields": {
         "phone": "902-422-1636"
@@ -711,6 +779,28 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
     }
   ],
   "aliases": [
+    {
+      "from": "buta-ramen-halifax",
+      "to": "osm-node-6031036960-buta-ramen",
+      "sourceUrl": "https://butaramen.ca/",
+      "reviewedAt": "2026-10-26T18:04:00Z",
+      "reason": "The official-site discovery record and the retained OpenStreetMap record represent the same 5190 Morris Street Halifax branch with exact phone 902-422-0245. Preserve the accepted South End coordinate and both source histories under the OSM-backed canonical record; Dartmouth and Bedford remain separate locations.",
+      "evidence": [
+        {
+          "type": "official_location",
+          "url": "https://butaramen.ca/",
+          "observedAt": "2026-10-26T18:04:00Z",
+          "address": "5190 Morris Street, Halifax, NS",
+          "phone": "902-422-0245"
+        },
+        {
+          "type": "government_inspection",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2382179",
+          "observedAt": "2026-10-20T07:20:13.079Z",
+          "address": "5190 Morris Street, Halifax, NS"
+        }
+      ]
+    },
     {
       "from": "osm-node-14139904501-battery-park-beer-bar-and-eatery",
       "to": "battery-park",
