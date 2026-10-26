@@ -229,7 +229,7 @@ try {
           diagnostics: { capture: audit.captureMetadata, beforeConsumers, afterOracle, afterActualSort, final: audit.snapshotDiagnostics() },
           modelUnchanged: JSON.stringify(restaurants) === audit.modelBefore,
           sourcesUnchanged: audit.raw() === audit.sourcesBefore,
-          overflow: document.documentElement.scrollWidth > innerWidth + 1
+          overflow: document.documentElement.scrollWidth > document.documentElement.clientWidth + 1
         };
       }, stage);
       await saveStage(result);
@@ -265,7 +265,7 @@ try {
           diagnostics: audit.snapshotDiagnostics(),
           modelUnchanged: JSON.stringify(restaurants) === audit.modelBefore,
           sourcesUnchanged: audit.raw() === audit.sourcesBefore,
-          overflow: document.documentElement.scrollWidth > innerWidth + 1
+          overflow: document.documentElement.scrollWidth > document.documentElement.clientWidth + 1
         };
       }, stage);
       await saveStage(result);
