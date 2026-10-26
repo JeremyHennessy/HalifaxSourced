@@ -13,6 +13,7 @@ const root = new URL('../', import.meta.url);
 const reviewedAccessPolicy = JSON.parse(await readFile(new URL('data/source-link-access-holds.json', root), 'utf8'));
 const latestReviewedRestriction = Math.max(...[reviewedAccessPolicy, ...(reviewedAccessPolicy.historicalEvidence || [])].flatMap(group=>group.observations.map(row=>Date.parse(row.observedAt))));
 const defaultFixtureClock = new Date(Math.max(Date.parse('2026-10-23T16:00:00.000Z'), latestReviewedRestriction + 1000)).toISOString();
+const laterFixtureClock = hours => new Date(Date.parse(defaultFixtureClock) + hours * 60 * 60 * 1000).toISOString();
 const sajId = 'osm-node-8443747544-saj-house';
 const foreign = '433 World Trade Center, Gibraltar, GI';
 const expected = new Map([
@@ -165,7 +166,7 @@ try {
   assert.equal(JSON.stringify(output.window.HALIFAX_STRUCTURED_PLACE_FACTS), JSON.stringify(refreshed));
   // Repeated identical rejected observations must not invent accepted changes
   // or grow raw/superseded history simply because source timestamps advance.
-  run(2, { FIXTURE_NOW: '2026-10-26T16:00:00.000Z' });
+  run(2, { FIXTURE_NOW: laterFixtureClock(1) });
   const repeated = JSON.parse(await readFile(join(fixture, 'data/build/structured-place-facts.json')));
   assert.equal(repeated.refreshCounts.changed, 0);
   assert.equal(repeated.refreshCounts.unchanged, 2);
@@ -173,13 +174,13 @@ try {
   assert.equal(repeated.records.find(record => record.restaurantId === sajId).address, null);
   assert.notEqual(repeated.records.find(record => record.restaurantId === sajId).observedAt, refreshed.records.find(record => record.restaurantId === sajId).observedAt, 'A genuinely repeated fetch may record a new observation, but is not a content change');
   const differentRejectedAddress = '434 World Trade Center, Gibraltar, GI';
-  run(2, { FIXTURE_SAJ_ADDRESS: differentRejectedAddress, FIXTURE_NOW: '2026-10-27T16:00:00.000Z' });
+  run(2, { FIXTURE_SAJ_ADDRESS: differentRejectedAddress, FIXTURE_NOW: laterFixtureClock(2) });
   const distinctRejected = JSON.parse(await readFile(join(fixture, 'data/build/structured-place-facts.json')));
   assert.equal(distinctRejected.refreshCounts.changed, 0, 'A change confined to a rejected field is not an accepted-content change');
   assert.equal(distinctRejected.refreshCounts.unchanged, 2);
   assert.equal(distinctRejected.sourceHistory.length, refreshed.sourceHistory.length + 1, 'Distinct rejected raw evidence is retained once');
   assert(distinctRejected.sourceHistory.some(entry => entry.reason === 'reviewed_field_rejection' && entry.record.address === differentRejectedAddress));
-  run(2, { FIXTURE_SAJ_ADDRESS: differentRejectedAddress, FIXTURE_NOW: '2026-10-28T16:00:00.000Z' });
+  run(2, { FIXTURE_SAJ_ADDRESS: differentRejectedAddress, FIXTURE_NOW: laterFixtureClock(3) });
   const repeatedDistinct = JSON.parse(await readFile(join(fixture, 'data/build/structured-place-facts.json')));
   assert.deepEqual(repeatedDistinct.sourceHistory, distinctRejected.sourceHistory);
   assert.equal(repeatedDistinct.refreshCounts.changed, 0);
