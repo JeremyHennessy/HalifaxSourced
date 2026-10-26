@@ -1,6 +1,6 @@
 window.HALIFAX_RESTAURANT_CORRECTIONS = {
   "version": 3,
-  "reviewedAt": "2026-10-25",
+  "reviewedAt": "2026-10-26",
   "policy": "Reviewed location evidence overrides stale imports; observation dates are retained and uncertain coordinates, hours, successor identities and closure day remain unknown.",
   "records": [
     {
@@ -2412,6 +2412,74 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
           "label": "Reviewed official location",
           "url": "https://www.viacondotti.ca/",
           "observedAt": "2026-10-19",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
+      "id": "stillwell-beergarden-halifax",
+      "name": "Stillwell Beergarden",
+      "address": "5688 Spring Garden Road, Halifax, NS B3J 1H5",
+      "neighborhood": "Spring Garden",
+      "category": "Beer Garden",
+      "website": "https://www.barstillwell.com/pages/the-beer-garden",
+      "phone": null,
+      "coordinates": null,
+      "openingHours": null,
+      "operatingStatus": "seasonally_closed",
+      "operatingStatusEvidence": {
+        "claim": "Stillwell's owner site identifies The Beergarden as a distinct 5688 Spring Garden Road location and publishes its food menu. The location's current owner Instagram profile states that it is closed for the season and says to return in 2027. No reopening date or in-season weekly schedule is inferred. The Nova Scotia food-inspection snapshot current as of October 19, 2026 independently records STILLWELL BEERGARDEN at 5688 SPRING GARDEN.",
+        "sourceUrl": "https://www.instagram.com/stillwellbeergarden/",
+        "observedAt": "2026-10-26T13:40:30Z",
+        "reviewState": "verified",
+        "location": "5688 Spring Garden Road, Halifax, NS B3J 1H5"
+      },
+      "cuisines": [
+        "Pub Food"
+      ],
+      "vibe": [
+        "beer garden",
+        "patio",
+        "local"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/stillwellbeergarden/",
+          "reviewState": "verified"
+        }
+      ],
+      "sources": [
+        {
+          "type": "business_directory",
+          "label": "Current Spring Garden restaurant listing and owner-domain link",
+          "url": "https://www.springgardenarea.com/eat-drink",
+          "observedAt": "2026-10-26T13:40:30Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Owner location page with exact address and current food menu",
+          "url": "https://www.barstillwell.com/pages/the-beer-garden",
+          "observedAt": "2026-10-26T13:40:30Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_social",
+          "label": "Owner profile with current seasonal closure state",
+          "url": "https://www.instagram.com/stillwellbeergarden/",
+          "observedAt": "2026-10-26T13:40:30Z",
+          "status": "verified"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Nova Scotia food-establishment record current as of October 19, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2148875",
+          "observedAt": "2026-10-20T07:20:13.079Z",
           "status": "verified"
         }
       ],
