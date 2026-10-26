@@ -1,12 +1,81 @@
 import assert from 'node:assert/strict';
-import { mkdir, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, writeFile } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
 import { gzipSync } from 'node:zlib';
+import { runInNewContext } from 'node:vm';
 import { chromium } from 'playwright';
 import { installOfflineResources } from './lib/offline-browser-resources.mjs';
+
+function exploreAuditReady(expectedIdentities) {
+  // Network idleness can occur between parser-blocking app decorators. Capture
+  // only after the document lifecycle and the requested route render complete.
+  const sameIds = (records, expected) => {
+    const actual = records.map(record => record.id).sort();
+    return actual.length === expected.length && actual.every((id, index) => id === expected[index]);
+  };
+  return document.readyState === 'complete' && location.hash === '#explore?sort=fresh' &&
+    typeof state !== 'undefined' && state.sort === 'fresh' && state.page === 1 &&
+    state.query === '' && state.cuisine === 'all' && state.neighbourhood === 'all' && state.feature === 'all' &&
+    typeof restaurants !== 'undefined' && typeof activeRestaurants !== 'undefined' && typeof PAGE_SIZE !== 'undefined' &&
+    sameIds(restaurants, expectedIdentities.canonical) && sameIds(activeRestaurants, expectedIdentities.active) &&
+    document.querySelector('#appView #sortFilter')?.value === 'fresh' &&
+    document.querySelector('#appView .results-toolbar strong')?.textContent.trim() === `${activeRestaurants.length.toLocaleString()} places found` &&
+    document.querySelectorAll('#appView .results-area .restaurant-card h3 a').length === Math.min(PAGE_SIZE, activeRestaurants.length);
+}
+
+// Exercise the exact browser predicate without a browser. A partial lifecycle
+// must not pass even when a plausible route DOM and populated model are present.
+const readinessFixtures = [];
+for (const fixture of [
+  { name: 'parser-loading-with-rendered-route', readyState: 'loading', expected: false },
+  { name: 'parser-interactive-with-rendered-route', readyState: 'interactive', expected: false },
+  { name: 'complete-wrong-route', hash: '#home', expected: false },
+  { name: 'complete-unrendered-state', state: undefined, expected: false },
+  { name: 'complete-wrong-sort-state', state: { sort: 'recommended' }, expected: false },
+  { name: 'complete-missing-route-controls', sort: null, expected: false },
+  { name: 'complete-pre-decoration-identities', canonical: ['a', 'b'], expected: false },
+  { name: 'complete-substituted-canonical-identity', canonical: ['a', 'b', 'other', 'closed'], expected: false },
+  { name: 'complete-substituted-active-identity', active: ['a', 'b', 'closed'], expected: false },
+  { name: 'complete-stale-route-count', toolbar: '1 places found', expected: false },
+  { name: 'complete-partial-route-cards', cardCount: 1, expected: false },
+  { name: 'complete-rendered-route', expected: true }
+]) {
+  const options = { readyState: 'complete', hash: '#explore?sort=fresh', state: { sort: 'fresh', page: 1, query: '', cuisine: 'all', neighbourhood: 'all', feature: 'all' }, canonical: ['a', 'b', 'c', 'closed'], active: ['a', 'b', 'c'], sort: { value: 'fresh' }, toolbar: '3 places found', cardCount: 3, ...fixture };
+  const actual = runInNewContext(`(${exploreAuditReady.toString()})(expectedIdentities)`, {
+    document: { readyState: options.readyState, querySelector: selector => selector.endsWith('#sortFilter') ? options.sort : { textContent: options.toolbar }, querySelectorAll: () => Array(options.cardCount).fill({}) },
+    location: { hash: options.hash }, state: options.state, restaurants: options.canonical.map(id => ({ id })), activeRestaurants: options.active.map(id => ({ id })), PAGE_SIZE: 12,
+    expectedIdentities: { canonical: ['a', 'b', 'c', 'closed'], active: ['a', 'b', 'c'] }
+  });
+  assert.equal(actual, fixture.expected, `Capture readiness: ${fixture.name}`);
+  readinessFixtures.push({ name: fixture.name, actual, expected: fixture.expected });
+}
 
 const base = (process.env.APP_URL || 'http://127.0.0.1:5173').replace(/\/$/, '');
 const asOf = process.env.FRESHNESS_AS_OF || new Date().toISOString();
 assert(Number.isFinite(Date.parse(asOf)), 'A finite test clock is required');
+// Quality UI verifies the immutable release and copies its data before running
+// this test. Read its independent catalog, not the browser model under test.
+const catalogBytes = await readFile(new URL('../data/build/catalog.json', import.meta.url));
+const catalog = JSON.parse(catalogBytes);
+const releaseManifest = JSON.parse(await readFile(new URL('../data/build/release-manifest.json', import.meta.url), 'utf8'));
+const deploymentMetadata = JSON.parse(await readFile(new URL('../data/build/deployment-metadata.json', import.meta.url), 'utf8'));
+const catalogSha256 = createHash('sha256').update(catalogBytes).digest('hex');
+assert.equal(catalogSha256, releaseManifest.files['data/build/catalog.json'], 'Identity fixture is the exact validated release catalog');
+assert.equal(releaseManifest.sourceCommitSha, deploymentMetadata.sourceCommitSha);
+assert.equal(String(releaseManifest.qualityWorkflowRunId), String(deploymentMetadata.qualityWorkflowRunId));
+assert.equal(catalog.generatedAt, deploymentMetadata.catalogGeneratedAt);
+const inactiveStatuses = new Set(['permanently_closed', 'temporarily_closed', 'seasonally_closed', 'moved', 'replaced']);
+const dateParts = Object.fromEntries(new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Halifax', year: 'numeric', month: '2-digit', day: '2-digit' }).formatToParts(new Date(asOf)).map(part => [part.type, part.value]));
+const today = `${dateParts.year}-${dateParts.month}-${dateParts.day}`;
+const artifactActive = record => {
+  if (inactiveStatuses.has(record.operatingStatus)) return false;
+  const end = record.lifecycleSchedule?.seasonEndsOn;
+  return !(typeof end === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(end) && today > end);
+};
+const expectedIdentities = { canonical: catalog.restaurants.map(record => record.id).sort(), active: catalog.restaurants.filter(artifactActive).map(record => record.id).sort() };
+assert.equal(new Set(expectedIdentities.canonical).size, expectedIdentities.canonical.length, 'Artifact canonical identities are unique');
+assert.equal(expectedIdentities.canonical.length, deploymentMetadata.counts.canonicalPlaces);
+const identityFixture = { sourceCommitSha: releaseManifest.sourceCommitSha, qualityWorkflowRunId: releaseManifest.qualityWorkflowRunId, catalogSha256, canonicalCount: expectedIdentities.canonical.length, activeCount: expectedIdentities.active.length };
 const browser = await chromium.launch({ headless: true });
 const receipts = [];
 
@@ -28,7 +97,7 @@ try {
       receipts.push(receipt);
       await mkdir('artifacts', { recursive: true });
       // Save before assertions: a failed stage must retain its exact delta.
-      await writeFile('artifacts/source-freshness-navigation.json', JSON.stringify({ asOf, receipts }, null, 2));
+      await writeFile('artifacts/source-freshness-navigation.json', JSON.stringify({ asOf, identityFixture, readinessFixtures, receipts }, null, 2));
       const changed = value => value && typeof value === 'object' &&
         (value.equal === false || value.modelUnchanged === false || value.sourcesUnchanged === false || Object.values(value).some(changed));
       if (changed(result)) {
@@ -36,11 +105,13 @@ try {
         const path = `artifacts/source-freshness-mutation-${width}-${result.stage}.json.gz`;
         await writeFile(path, gzipSync(JSON.stringify(snapshots)));
         receipt.fullSnapshotArtifact = path;
-        await writeFile('artifacts/source-freshness-navigation.json', JSON.stringify({ asOf, receipts }, null, 2));
+        await writeFile('artifacts/source-freshness-navigation.json', JSON.stringify({ asOf, identityFixture, readinessFixtures, receipts }, null, 2));
       }
     }
 
     async function prepareAudit() {
+      await page.waitForLoadState('load');
+      await page.waitForFunction(exploreAuditReady, expectedIdentities);
       const capture = await page.evaluate(() => {
         // Independently reproduce the report's evidence families, not the
         // implementation helper being tested. Build/import clocks are absent.
@@ -129,7 +200,7 @@ try {
         // Return the same bytes sampled by the stage, not a later live read
         // after a filesystem await could allow browser activity to advance.
         const fullSnapshots = () => capturedSnapshots;
-        const captureMetadata = { href: location.href, restaurantCount: restaurants.length, activeCount: activeRestaurants.length, capturedAt: new Date().toISOString() };
+        const captureMetadata = { href: location.href, readyState: document.readyState, routeSort: document.querySelector('#appView #sortFilter')?.value, renderedCards: document.querySelectorAll('#appView .results-area .restaurant-card h3 a').length, restaurantCount: restaurants.length, activeCount: activeRestaurants.length, capturedAt: new Date().toISOString() };
         window.__sourceFreshnessAudit = { expected, official, officialForRestaurant, label, raw, modelBefore, sourcesBefore, snapshotDiagnostics, fullSnapshots, captureMetadata };
         return { stage: 'capture', ...captureMetadata, diagnostics: snapshotDiagnostics() };
       });
@@ -383,5 +454,5 @@ try {
   }
 } finally { await browser.close(); }
 
-await writeFile('artifacts/source-freshness-navigation.json', JSON.stringify({ asOf, receipts }, null, 2));
+await writeFile('artifacts/source-freshness-navigation.json', JSON.stringify({ asOf, identityFixture, readinessFixtures, receipts }, null, 2));
 console.log(`Source freshness passed ${receipts.length} responsive/history/reload/fixture checks; raw data unchanged and external sources not contacted.`);
