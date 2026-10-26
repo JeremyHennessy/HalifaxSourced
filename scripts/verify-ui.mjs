@@ -2,6 +2,7 @@ import { existsSync } from "node:fs";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import { installOfflineResources } from './lib/offline-browser-resources.mjs';
+import { verifyHomeCarouselLayout } from './lib/home-carousel-browser-checks.mjs';
 
 const candidates = [
   process.env.PLAYWRIGHT_MODULE,
@@ -144,6 +145,9 @@ const homeDiscovery = await page.evaluate(() => ({
 if (homeDiscovery.invalidEvents.length || homeDiscovery.adminLinks || homeDiscovery.setupCopy) throw new Error(`Public home discovery regression: ${JSON.stringify(homeDiscovery)}`);
 await page.screenshot({ path: resolve("artifacts", "ui-check-desktop.png"), fullPage: true });
 
+// Check document bounds separately from intentional carousel scrolling.
+await verifyHomeCarouselLayout(page);
+
 // Inspect the actual decorative image/crop, not just its left background edge.
 // Include both sides of the former 1500px discontinuity and the reported viewport.
 const heroFrames = [];
@@ -162,7 +166,7 @@ for (const width of [641, 768, 900, 901, 1180, 1440, 1499, 1500, 1743]) {
       sourceTop,sourceBottom:sourceTop+box.height/scale,objectFit:getComputedStyle(image).objectFit,
       feather:getComputedStyle(artwork,"::after").backgroundImage,
       background:getComputedStyle(hero).backgroundImage,
-      overflow:document.documentElement.scrollWidth>innerWidth};
+      overflow:document.documentElement.scrollWidth>document.documentElement.clientWidth+1};
   });
   if (frame.naturalWidth!==540 || frame.naturalHeight!==959 || frame.objectFit!=="cover") throw new Error(`Hero active artwork must decode: ${JSON.stringify(frame)}`);
   if (frame.box.x<frame.copy.right+24 || frame.box.right>frame.outer.right || frame.box.width>561 || frame.overflow) throw new Error(`Hero artwork/copy separation failed: ${JSON.stringify(frame)}`);
@@ -177,7 +181,7 @@ for (const width of [641, 768, 900, 901, 1180, 1440, 1499, 1500, 1743]) {
 const before=heroFrames.find(frame=>frame.viewport===1499),after=heroFrames.find(frame=>frame.viewport===1500);
 if (Math.abs(after.box.x-before.box.x)>2 || Math.abs(after.box.width-before.box.width)>2 || Math.abs(after.sourceTop-before.sourceTop)>1) throw new Error("Hero composition jumped at 1500px");
 await page.setViewportSize({width:390,height:844});
-const mobileHero=await page.locator(".home-hero").evaluate(hero=>({artwork:getComputedStyle(hero.querySelector(".hero-artwork")).display,background:getComputedStyle(hero).backgroundImage,overflow:document.documentElement.scrollWidth>innerWidth}));
+const mobileHero=await page.locator(".home-hero").evaluate(hero=>({artwork:getComputedStyle(hero.querySelector(".hero-artwork")).display,background:getComputedStyle(hero).backgroundImage,overflow:document.documentElement.scrollWidth>document.documentElement.clientWidth+1}));
 if (mobileHero.artwork!=="none" || !mobileHero.background.includes("hero-mobile.webp") || mobileHero.overflow) throw new Error(`Mobile hero isolation failed: ${JSON.stringify(mobileHero)}`);
 await page.screenshot({path:resolve("artifacts","ui-hero-390.png"),fullPage:false});
 await page.setViewportSize({ width: 1440, height: 1000 });

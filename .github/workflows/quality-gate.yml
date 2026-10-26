@@ -44,6 +44,7 @@ jobs:
 
       - name: Test discovery URL state and reporting values
         run: |
+          node scripts/test-home-carousel-layout.mjs
           node scripts/test-discovery-route-state.mjs
           node scripts/test-coverage-values.mjs
           node scripts/test-coverage-freshness.mjs
@@ -399,6 +400,7 @@ jobs:
           node scripts/test-offline-resource-gate.mjs
           node scripts/test-popup-resource-gate.mjs
           node scripts/test-map-tile-controls.mjs
+          node scripts/test-home-carousel-classic-scrollbar.mjs
           node scripts/verify-ui.mjs
           node scripts/verify-reviewed-corrections.mjs
           node scripts/verify-regional-restaurants.mjs
