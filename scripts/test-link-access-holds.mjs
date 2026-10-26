@@ -21,9 +21,11 @@ const dependencies = [
   'restaurant-corrections.js', 'source-integrity.js'
 ];
 const fullReviewedPolicy = JSON.parse(await readFile(new URL('../data/source-link-access-holds.json', import.meta.url), 'utf8'));
-// Preserve the original 224-receipt regression corpus independently of the ten new exact holds.
-const priorReviewedPolicy = {...structuredClone(fullReviewedPolicy), historicalEvidence:structuredClone(fullReviewedPolicy.historicalEvidence.slice(0, -2))};
-const committedPolicy = {...structuredClone(fullReviewedPolicy), historicalEvidence:structuredClone(fullReviewedPolicy.historicalEvidence.slice(0, -10))};
+// Preserve the original 224-receipt regression corpus independently of the
+// ten previously reviewed exact holds and the six current exact holds.
+const reviewedBeforeCurrentRun = {...structuredClone(fullReviewedPolicy), historicalEvidence:structuredClone(fullReviewedPolicy.historicalEvidence.slice(0, -6))};
+const priorReviewedPolicy = {...structuredClone(reviewedBeforeCurrentRun), historicalEvidence:structuredClone(reviewedBeforeCurrentRun.historicalEvidence.slice(0, -2))};
+const committedPolicy = {...structuredClone(reviewedBeforeCurrentRun), historicalEvidence:structuredClone(reviewedBeforeCurrentRun.historicalEvidence.slice(0, -10))};
 const digest = value => createHash('sha256').update(JSON.stringify(value)).digest('hex');
 const clone = value => structuredClone(value);
 const committedObservations = [committedPolicy, ...(committedPolicy.historicalEvidence || [])].flatMap(group => group.observations);
@@ -244,9 +246,11 @@ process.on('exit', () => {
   assert.equal(digest(beforeDowntownHalifaxPolicy),'a309b469376de324369575599eb41e36d33f57348f87ccb1dfabf71b422866fe','All 223 observations preceding the Downtown Halifax directory denial remain exactly unchanged');
   validateAccessPolicy(committedPolicy);
   validateAccessPolicy(priorReviewedPolicy);
+  validateAccessPolicy(reviewedBeforeCurrentRun);
   validateAccessPolicy(fullReviewedPolicy);
   assert.equal(priorReviewedPolicy.historicalEvidence.length, committedPolicy.historicalEvidence.length + 8, 'Only five Barrios groups, one Secret Sauce group, one Greco feed group and one happy-hour API group added to immutable baseline');
-  assert.equal(fullReviewedPolicy.historicalEvidence.length, priorReviewedPolicy.historicalEvidence.length + 2, 'Only the exact Little Pisa homepage and menu receipts extend the reviewed policy');
+  assert.equal(reviewedBeforeCurrentRun.historicalEvidence.length, priorReviewedPolicy.historicalEvidence.length + 2, 'Only the exact Little Pisa homepage and menu receipts extend the prior reviewed policy');
+  assert.equal(fullReviewedPolicy.historicalEvidence.length, reviewedBeforeCurrentRun.historicalEvidence.length + 6, 'Only six exact current-run HTTP 403 receipts extend the reviewed policy');
   const newBarriosGroups = priorReviewedPolicy.historicalEvidence.slice(-8, -3);
   for (const group of newBarriosGroups) {
     const p = group.provenance;
@@ -341,7 +345,7 @@ assert.equal(acceptedBarriosHolds.find('https://barrioshfx.ca/unknown-page'), nu
   assert.equal(acceptedBarriosHolds.find("https://oxngzjrkqsmhstkiyllz.supabase.co/rest/v1/happy_hours?select=id%2Cslug%2Cvenue_name%2Cspecial_title%2Cdeal_type%2Cdeal_details%2Cdays_of_week%2Cstart_time%2Cend_time%2Csecond_start_time%2Csecond_end_time%2Cvenue_address%2Cneighbourhood%2Cprice_from%2Cexternal_url%2Cimage_url%2Cvalid_from%2Cvalid_until%2Cstatus%2Cverification_status%2Clast_verified%2Cis_active%2Cis_featured%2Cis_claimable%2Ccreated_at%2Cupdated_at&status=eq.approved&is_active=eq.true&order=updated_at.desc&limit=500")?.scope, 'url', 'The exact evidenced happy-hour API query is access-held');
   checked('Happy-hour API receipt-backed query stays unattempted after its HTTP 401');
 
-  const littlePisaGroups = fullReviewedPolicy.historicalEvidence.slice(-2);
+  const littlePisaGroups = reviewedBeforeCurrentRun.historicalEvidence.slice(-2);
   const littlePisaUrls = ['https://littlepisa.ca/', 'https://littlepisa.ca/menu-offering/'];
   littlePisaGroups.forEach((group, index) => {
     const p = group.provenance;
@@ -357,11 +361,11 @@ assert.equal(acceptedBarriosHolds.find('https://barrioshfx.ca/unknown-page'), nu
     assert.deepEqual(group.observations, [p.diagnostic.evidence.hold.evidence]);
     assert.deepEqual(group.observations[0], {url:littlePisaUrls[index], finalUrl:littlePisaUrls[index], status:403, observedAt:index === 0 ? '2026-10-25T13:51:50.880Z' : '2026-10-25T13:51:52.967Z'});
   });
-  const acceptedAllHolds = createAccessHolds(fullReviewedPolicy);
+  const acceptedAllHolds = createAccessHolds(reviewedBeforeCurrentRun);
   littlePisaUrls.forEach(url => assert.equal(acceptedAllHolds.find(url)?.scope, 'url', 'The exact evidenced Little Pisa URL is held: ' + url));
   const littlePisaSibling = 'https://littlepisa.ca/about-us/';
   assert.equal(acceptedAllHolds.find(littlePisaSibling), null, 'An unevidenced Little Pisa sibling path remains eligible');
-  await configure({policy:fullReviewedPolicy, catalog:catalogFor([...littlePisaUrls,littlePisaSibling])});
+  await configure({policy:reviewedBeforeCurrentRun, catalog:catalogFor([...littlePisaUrls,littlePisaSibling])});
   const littlePisaCheck = await collect({[littlePisaSibling]:[ok]});
   assert.equal(littlePisaCheck.report.counts.held, 2);
   assert.equal(littlePisaCheck.report.counts.attempted, 1);
@@ -369,6 +373,51 @@ assert.equal(acceptedBarriosHolds.find('https://barrioshfx.ca/unknown-page'), nu
   littlePisaCheck.report.results.slice(0,2).forEach((row,index)=>held(row,littlePisaGroups[index].observations[0]));
   await gate(littlePisaCheck.report);
   checked('Little Pisa homepage and menu receipt-backed URL holds are unattempted; a sibling path remains independently eligible');
+
+  const currentGroups = fullReviewedPolicy.historicalEvidence.slice(-6);
+  const currentUrls = [
+    'https://greco.ca/comments/feed/',
+    'https://order.online/robots.txt',
+    'https://www.ubereats.com/robots.txt',
+    'http://www.skipthedishes.com/robots.txt',
+    'https://www.kingofdonair.ca/menu',
+    'https://www.smilinggoat.ca/robots.txt'
+  ];
+  const currentSiblings = [
+    'https://greco.ca/comments/',
+    'https://order.online/robots-other.txt',
+    'https://www.ubereats.com/robots-other.txt',
+    'https://www.skipthedishes.com/robots-other.txt',
+    'https://www.kingofdonair.ca/menu-other',
+    'https://www.smilinggoat.ca/robots-other.txt'
+  ];
+  currentGroups.forEach((group, index) => {
+    const p = group.provenance;
+    const social = index === 0;
+    assert.equal(p.kind, 'reviewed_workflow_log');
+    assert.equal(p.workflowRunId, social ? '40349403466' : '40355676114');
+    assert.equal(p.workflowJob, social ? 'social-refresh' : 'refresh');
+    assert.equal(p.workflowJobId, social ? 121665014144 : 121687359657);
+    assert.equal(p.sourceCommitSha, 'c18fb5243ab42183d9adc20d700962f6eb941b7d');
+    assert.equal(p.accessPolicySha256, digest(reviewedBeforeCurrentRun), 'Every same-head receipt references the exact pre-hold policy');
+    assert.equal(p.logSha256, social ? 'e502e03a905d8da4fe3bf16b2faa687c41ce3c1da8b0315cf36d221492215f90' : '225dd9076bcf719a590e0686d947646d7fb7c72ee76e96534ff6349db771303e');
+    assert.equal(p.diagnosticSha256, digest(p.diagnostic));
+    assert.equal(p.receiptSha256, digest(p.diagnostic.evidence.receipt));
+    assert.deepEqual(group.observations, [p.diagnostic.evidence.hold.evidence]);
+    assert.equal(group.observations[0].url, currentUrls[index]);
+    assert.equal(group.observations[0].status, 403);
+  });
+  const acceptedCurrentHolds = createAccessHolds(fullReviewedPolicy);
+  currentUrls.forEach(url => assert.equal(acceptedCurrentHolds.find(url)?.scope, 'url', 'The exact current-run URL is held: ' + url));
+  currentSiblings.forEach(url => assert.equal(acceptedCurrentHolds.find(url), null, 'An unevidenced sibling URL remains eligible: ' + url));
+  await configure({policy:fullReviewedPolicy, catalog:catalogFor([...currentUrls, ...currentSiblings])});
+  const currentCheck = await collect(Object.fromEntries(currentSiblings.map(url => [url, [ok]])));
+  assert.equal(currentCheck.report.counts.held, 6);
+  assert.equal(currentCheck.report.counts.attempted, 6);
+  assert.deepEqual(currentCheck.events.filter(e=>e.event==='fetch').map(e=>e.url), currentSiblings);
+  currentCheck.report.results.slice(0,6).forEach((row,index)=>held(row,currentGroups[index].observations[0]));
+  await gate(currentCheck.report);
+  checked('six current receipt-backed URL holds are unattempted; sibling paths remain independently eligible');
 
 
   assert(committedPolicy.historicalEvidence[0].observations.every(row => row.status === 403 && new URL(row.url).hostname === 'junglejims.ca'));

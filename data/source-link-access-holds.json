@@ -2706,6 +2706,420 @@
           "observedAt": "2026-10-25T13:51:52.967Z"
         }
       ]
+    },
+    {
+      "provenance": {
+        "kind": "reviewed_workflow_log",
+        "repository": "JeremyHennessy/HalifaxSourced",
+        "sourceCommitSha": "c18fb5243ab42183d9adc20d700962f6eb941b7d",
+        "workflowRunId": "40349403466",
+        "workflowRunAttempt": "1",
+        "workflowJob": "social-refresh",
+        "workflowJobId": 121665014144,
+        "accessPolicySha256": "8a6e672b7c0d09958e1f9a5fd329c5fa815552cb6a2f2d1945bd91a4b487dd54",
+        "logSha256": "e502e03a905d8da4fe3bf16b2faa687c41ce3c1da8b0315cf36d221492215f90",
+        "diagnosticSha256": "e6591de492a5f61de450aceb4c9645573c1246e6889100a2fc09a69479b84bf0",
+        "receiptSha256": "3d7d6d45bec2056aeb23715823ad5e4ef94cb4fce905479baed600224f167f72",
+        "loggedAt": "2026-10-26T15:27:46.136Z",
+        "diagnostic": {
+          "version": 1,
+          "disposition": "nonpublishable_requires_review",
+          "kind": "http_restriction",
+          "repository": "JeremyHennessy/HalifaxSourced",
+          "workflowJob": "social-refresh",
+          "loggedAt": "2026-10-26T15:27:46.136Z",
+          "sourceCommitSha": "c18fb5243ab42183d9adc20d700962f6eb941b7d",
+          "sourceWorkflowRunId": "40349403466",
+          "sourceWorkflowRunAttempt": "1",
+          "accessPolicySha256": "8a6e672b7c0d09958e1f9a5fd329c5fa815552cb6a2f2d1945bd91a4b487dd54",
+          "evidence": {
+            "hold": {
+              "id": "229cdbb895c6c231d953546a336cb70c34d8faa5391616a8ce996f23a2fc1618",
+              "scope": "url",
+              "target": "https://greco.ca/comments/feed/",
+              "reason": "access_restricted",
+              "resume": "reviewed_evidence_required",
+              "evidence": {
+                "url": "https://greco.ca/comments/feed/",
+                "finalUrl": "https://greco.ca/comments/feed/",
+                "status": 403,
+                "observedAt": "2026-10-26T15:27:46.135Z"
+              },
+              "provenance": {
+                "kind": "current_run",
+                "sourceCommitSha": "c18fb5243ab42183d9adc20d700962f6eb941b7d",
+                "sourceWorkflowRunId": "40349403466",
+                "sourceWorkflowRunAttempt": "1",
+                "accessPolicySha256": "8a6e672b7c0d09958e1f9a5fd329c5fa815552cb6a2f2d1945bd91a4b487dd54",
+                "requestId": "112"
+              }
+            },
+            "receipt": {
+              "requestId": "112",
+              "url": "https://greco.ca/comments/feed/",
+              "status": 403,
+              "observedAt": "2026-10-26T15:27:46.135Z",
+              "attemptedAt": "2026-10-26T15:27:46.111Z",
+              "mediaType": "text/html"
+            },
+            "late": false,
+            "suspensionId": null
+          }
+        }
+      },
+      "observations": [
+        {
+          "url": "https://greco.ca/comments/feed/",
+          "finalUrl": "https://greco.ca/comments/feed/",
+          "status": 403,
+          "observedAt": "2026-10-26T15:27:46.135Z"
+        }
+      ]
+    },
+    {
+      "provenance": {
+        "kind": "reviewed_workflow_log",
+        "repository": "JeremyHennessy/HalifaxSourced",
+        "sourceCommitSha": "c18fb5243ab42183d9adc20d700962f6eb941b7d",
+        "workflowRunId": "40355676114",
+        "workflowRunAttempt": "1",
+        "workflowJob": "refresh",
+        "workflowJobId": 121687359657,
+        "accessPolicySha256": "8a6e672b7c0d09958e1f9a5fd329c5fa815552cb6a2f2d1945bd91a4b487dd54",
+        "logSha256": "225dd9076bcf719a590e0686d947646d7fb7c72ee76e96534ff6349db771303e",
+        "diagnosticSha256": "c8a2cd901b1901a21a352ba2ecc88ba0a86ff6b6b46e6e89337d831ed6f29880",
+        "receiptSha256": "2e12b93f6060726e0db2ec204c3e45a96df60ad5b9a4aed1266176e9bdfeacf7",
+        "loggedAt": "2026-10-26T16:10:58.264Z",
+        "diagnostic": {
+          "version": 1,
+          "disposition": "nonpublishable_requires_review",
+          "kind": "http_restriction",
+          "repository": "JeremyHennessy/HalifaxSourced",
+          "workflowJob": "refresh",
+          "loggedAt": "2026-10-26T16:10:58.264Z",
+          "sourceCommitSha": "c18fb5243ab42183d9adc20d700962f6eb941b7d",
+          "sourceWorkflowRunId": "40355676114",
+          "sourceWorkflowRunAttempt": "1",
+          "accessPolicySha256": "8a6e672b7c0d09958e1f9a5fd329c5fa815552cb6a2f2d1945bd91a4b487dd54",
+          "evidence": {
+            "hold": {
+              "id": "ae5fc3b5a32d8670b1be08c2e5852c8af329c8849bc217a95eeb07c8578b276f",
+              "scope": "url",
+              "target": "https://order.online/robots.txt",
+              "reason": "access_restricted",
+              "resume": "reviewed_evidence_required",
+              "evidence": {
+                "url": "https://order.online/robots.txt",
+                "finalUrl": "https://order.online/robots.txt",
+                "status": 403,
+                "observedAt": "2026-10-26T16:10:58.264Z"
+              },
+              "provenance": {
+                "kind": "current_run",
+                "sourceCommitSha": "c18fb5243ab42183d9adc20d700962f6eb941b7d",
+                "sourceWorkflowRunId": "40355676114",
+                "sourceWorkflowRunAttempt": "1",
+                "accessPolicySha256": "8a6e672b7c0d09958e1f9a5fd329c5fa815552cb6a2f2d1945bd91a4b487dd54",
+                "requestId": "17"
+              }
+            },
+            "receipt": {
+              "requestId": "17",
+              "url": "https://order.online/robots.txt",
+              "status": 403,
+              "observedAt": "2026-10-26T16:10:58.264Z",
+              "attemptedAt": "2026-10-26T16:10:58.205Z",
+              "mediaType": "text/html"
+            },
+            "late": false,
+            "suspensionId": null
+          }
+        }
+      },
+      "observations": [
+        {
+          "url": "https://order.online/robots.txt",
+          "finalUrl": "https://order.online/robots.txt",
+          "status": 403,
+          "observedAt": "2026-10-26T16:10:58.264Z"
+        }
+      ]
+    },
+    {
+      "provenance": {
+        "kind": "reviewed_workflow_log",
+        "repository": "JeremyHennessy/HalifaxSourced",
+        "sourceCommitSha": "c18fb5243ab42183d9adc20d700962f6eb941b7d",
+        "workflowRunId": "40355676114",
+        "workflowRunAttempt": "1",
+        "workflowJob": "refresh",
+        "workflowJobId": 121687359657,
+        "accessPolicySha256": "8a6e672b7c0d09958e1f9a5fd329c5fa815552cb6a2f2d1945bd91a4b487dd54",
+        "logSha256": "225dd9076bcf719a590e0686d947646d7fb7c72ee76e96534ff6349db771303e",
+        "diagnosticSha256": "8e44eb568dcd243a74c646fedb5572c25f3aec50f65be632779c77f61467d19a",
+        "receiptSha256": "e143e5d15913bee8fa27ab5a8a202c377b31941abb65b053c63c08a7427166fe",
+        "loggedAt": "2026-10-26T16:11:01.609Z",
+        "diagnostic": {
+          "version": 1,
+          "disposition": "nonpublishable_requires_review",
+          "kind": "http_restriction",
+          "repository": "JeremyHennessy/HalifaxSourced",
+          "workflowJob": "refresh",
+          "loggedAt": "2026-10-26T16:11:01.609Z",
+          "sourceCommitSha": "c18fb5243ab42183d9adc20d700962f6eb941b7d",
+          "sourceWorkflowRunId": "40355676114",
+          "sourceWorkflowRunAttempt": "1",
+          "accessPolicySha256": "8a6e672b7c0d09958e1f9a5fd329c5fa815552cb6a2f2d1945bd91a4b487dd54",
+          "evidence": {
+            "hold": {
+              "id": "0b5a9af71eff3ded30b7b8b23674987e4ccd17c9c608fd9d8cda272b028dd8fa",
+              "scope": "url",
+              "target": "https://ubereats.com/robots.txt",
+              "reason": "access_restricted",
+              "resume": "reviewed_evidence_required",
+              "evidence": {
+                "url": "https://www.ubereats.com/robots.txt",
+                "finalUrl": "https://www.ubereats.com/robots.txt",
+                "status": 403,
+                "observedAt": "2026-10-26T16:11:01.609Z"
+              },
+              "provenance": {
+                "kind": "current_run",
+                "sourceCommitSha": "c18fb5243ab42183d9adc20d700962f6eb941b7d",
+                "sourceWorkflowRunId": "40355676114",
+                "sourceWorkflowRunAttempt": "1",
+                "accessPolicySha256": "8a6e672b7c0d09958e1f9a5fd329c5fa815552cb6a2f2d1945bd91a4b487dd54",
+                "requestId": "89"
+              }
+            },
+            "receipt": {
+              "requestId": "89",
+              "url": "https://www.ubereats.com/robots.txt",
+              "status": 403,
+              "observedAt": "2026-10-26T16:11:01.609Z",
+              "attemptedAt": "2026-10-26T16:11:01.542Z",
+              "mediaType": "text/html"
+            },
+            "late": false,
+            "suspensionId": null
+          }
+        }
+      },
+      "observations": [
+        {
+          "url": "https://www.ubereats.com/robots.txt",
+          "finalUrl": "https://www.ubereats.com/robots.txt",
+          "status": 403,
+          "observedAt": "2026-10-26T16:11:01.609Z"
+        }
+      ]
+    },
+    {
+      "provenance": {
+        "kind": "reviewed_workflow_log",
+        "repository": "JeremyHennessy/HalifaxSourced",
+        "sourceCommitSha": "c18fb5243ab42183d9adc20d700962f6eb941b7d",
+        "workflowRunId": "40355676114",
+        "workflowRunAttempt": "1",
+        "workflowJob": "refresh",
+        "workflowJobId": 121687359657,
+        "accessPolicySha256": "8a6e672b7c0d09958e1f9a5fd329c5fa815552cb6a2f2d1945bd91a4b487dd54",
+        "logSha256": "225dd9076bcf719a590e0686d947646d7fb7c72ee76e96534ff6349db771303e",
+        "diagnosticSha256": "c4be272837c886c3953baadb70179e0549b0d5c01f72a7ce9f111a5e723cac61",
+        "receiptSha256": "f572d1fb57f45595b7287f92cf48e698a29392318fbb49dac9e0471b28b73815",
+        "loggedAt": "2026-10-26T16:11:13.197Z",
+        "diagnostic": {
+          "version": 1,
+          "disposition": "nonpublishable_requires_review",
+          "kind": "http_restriction",
+          "repository": "JeremyHennessy/HalifaxSourced",
+          "workflowJob": "refresh",
+          "loggedAt": "2026-10-26T16:11:13.197Z",
+          "sourceCommitSha": "c18fb5243ab42183d9adc20d700962f6eb941b7d",
+          "sourceWorkflowRunId": "40355676114",
+          "sourceWorkflowRunAttempt": "1",
+          "accessPolicySha256": "8a6e672b7c0d09958e1f9a5fd329c5fa815552cb6a2f2d1945bd91a4b487dd54",
+          "evidence": {
+            "hold": {
+              "id": "7933fe0e78ad7ecbf3933f547a66e0a6780d2b409e55678c3e9deaa6804f8f83",
+              "scope": "url",
+              "target": "http://skipthedishes.com/robots.txt",
+              "reason": "access_restricted",
+              "resume": "reviewed_evidence_required",
+              "evidence": {
+                "url": "http://www.skipthedishes.com/robots.txt",
+                "finalUrl": "https://www.skipthedishes.com/robots.txt",
+                "status": 403,
+                "observedAt": "2026-10-26T16:11:13.197Z"
+              },
+              "provenance": {
+                "kind": "current_run",
+                "sourceCommitSha": "c18fb5243ab42183d9adc20d700962f6eb941b7d",
+                "sourceWorkflowRunId": "40355676114",
+                "sourceWorkflowRunAttempt": "1",
+                "accessPolicySha256": "8a6e672b7c0d09958e1f9a5fd329c5fa815552cb6a2f2d1945bd91a4b487dd54",
+                "requestId": "273"
+              }
+            },
+            "receipt": {
+              "requestId": "273",
+              "url": "https://www.skipthedishes.com/robots.txt",
+              "status": 403,
+              "observedAt": "2026-10-26T16:11:13.197Z",
+              "attemptedAt": "2026-10-26T16:11:13.175Z",
+              "mediaType": "text/html"
+            },
+            "late": false,
+            "suspensionId": null
+          }
+        }
+      },
+      "observations": [
+        {
+          "url": "http://www.skipthedishes.com/robots.txt",
+          "finalUrl": "https://www.skipthedishes.com/robots.txt",
+          "status": 403,
+          "observedAt": "2026-10-26T16:11:13.197Z"
+        }
+      ]
+    },
+    {
+      "provenance": {
+        "kind": "reviewed_workflow_log",
+        "repository": "JeremyHennessy/HalifaxSourced",
+        "sourceCommitSha": "c18fb5243ab42183d9adc20d700962f6eb941b7d",
+        "workflowRunId": "40355676114",
+        "workflowRunAttempt": "1",
+        "workflowJob": "refresh",
+        "workflowJobId": 121687359657,
+        "accessPolicySha256": "8a6e672b7c0d09958e1f9a5fd329c5fa815552cb6a2f2d1945bd91a4b487dd54",
+        "logSha256": "225dd9076bcf719a590e0686d947646d7fb7c72ee76e96534ff6349db771303e",
+        "diagnosticSha256": "5b7e59b45f65227a0acafbe72ce2af6dd4b6bf0bd072be556921f6860ea454e8",
+        "receiptSha256": "2d45347bb96633cb8aec2539b536f0668eb5bae1fadc40bff291b90ab5cf038c",
+        "loggedAt": "2026-10-26T16:11:15.511Z",
+        "diagnostic": {
+          "version": 1,
+          "disposition": "nonpublishable_requires_review",
+          "kind": "http_restriction",
+          "repository": "JeremyHennessy/HalifaxSourced",
+          "workflowJob": "refresh",
+          "loggedAt": "2026-10-26T16:11:15.511Z",
+          "sourceCommitSha": "c18fb5243ab42183d9adc20d700962f6eb941b7d",
+          "sourceWorkflowRunId": "40355676114",
+          "sourceWorkflowRunAttempt": "1",
+          "accessPolicySha256": "8a6e672b7c0d09958e1f9a5fd329c5fa815552cb6a2f2d1945bd91a4b487dd54",
+          "evidence": {
+            "hold": {
+              "id": "5467ccf4672687b9a1fdf4addcf15dcecddb689f1ee774dba60d25ffa3111f3c",
+              "scope": "url",
+              "target": "https://kingofdonair.ca/menu",
+              "reason": "access_restricted",
+              "resume": "reviewed_evidence_required",
+              "evidence": {
+                "url": "https://www.kingofdonair.ca/menu",
+                "finalUrl": "https://www.kingofdonair.ca/menu",
+                "status": 403,
+                "observedAt": "2026-10-26T16:11:15.511Z"
+              },
+              "provenance": {
+                "kind": "current_run",
+                "sourceCommitSha": "c18fb5243ab42183d9adc20d700962f6eb941b7d",
+                "sourceWorkflowRunId": "40355676114",
+                "sourceWorkflowRunAttempt": "1",
+                "accessPolicySha256": "8a6e672b7c0d09958e1f9a5fd329c5fa815552cb6a2f2d1945bd91a4b487dd54",
+                "requestId": "327"
+              }
+            },
+            "receipt": {
+              "requestId": "327",
+              "url": "https://www.kingofdonair.ca/menu",
+              "status": 403,
+              "observedAt": "2026-10-26T16:11:15.511Z",
+              "attemptedAt": "2026-10-26T16:11:15.460Z",
+              "mediaType": "text/html"
+            },
+            "late": false,
+            "suspensionId": null
+          }
+        }
+      },
+      "observations": [
+        {
+          "url": "https://www.kingofdonair.ca/menu",
+          "finalUrl": "https://www.kingofdonair.ca/menu",
+          "status": 403,
+          "observedAt": "2026-10-26T16:11:15.511Z"
+        }
+      ]
+    },
+    {
+      "provenance": {
+        "kind": "reviewed_workflow_log",
+        "repository": "JeremyHennessy/HalifaxSourced",
+        "sourceCommitSha": "c18fb5243ab42183d9adc20d700962f6eb941b7d",
+        "workflowRunId": "40355676114",
+        "workflowRunAttempt": "1",
+        "workflowJob": "refresh",
+        "workflowJobId": 121687359657,
+        "accessPolicySha256": "8a6e672b7c0d09958e1f9a5fd329c5fa815552cb6a2f2d1945bd91a4b487dd54",
+        "logSha256": "225dd9076bcf719a590e0686d947646d7fb7c72ee76e96534ff6349db771303e",
+        "diagnosticSha256": "44f85b6945cbfd56a05f2dd632d93e80a09cbce34074c9a7fe4de2b26f3fd838",
+        "receiptSha256": "0de45be9a800c77b019b1f634ce62b17b98d9520f6c246f60080dd9b556503da",
+        "loggedAt": "2026-10-26T16:11:26.934Z",
+        "diagnostic": {
+          "version": 1,
+          "disposition": "nonpublishable_requires_review",
+          "kind": "http_restriction",
+          "repository": "JeremyHennessy/HalifaxSourced",
+          "workflowJob": "refresh",
+          "loggedAt": "2026-10-26T16:11:26.934Z",
+          "sourceCommitSha": "c18fb5243ab42183d9adc20d700962f6eb941b7d",
+          "sourceWorkflowRunId": "40355676114",
+          "sourceWorkflowRunAttempt": "1",
+          "accessPolicySha256": "8a6e672b7c0d09958e1f9a5fd329c5fa815552cb6a2f2d1945bd91a4b487dd54",
+          "evidence": {
+            "hold": {
+              "id": "1f48eedf1ede90bbeeb1e84bbaa5d918b67a86e1586acb108418e4584a9e10f6",
+              "scope": "url",
+              "target": "https://smilinggoat.ca/robots.txt",
+              "reason": "access_restricted",
+              "resume": "reviewed_evidence_required",
+              "evidence": {
+                "url": "https://www.smilinggoat.ca/robots.txt",
+                "finalUrl": "https://www.smilinggoat.ca/robots.txt",
+                "status": 403,
+                "observedAt": "2026-10-26T16:11:26.934Z"
+              },
+              "provenance": {
+                "kind": "current_run",
+                "sourceCommitSha": "c18fb5243ab42183d9adc20d700962f6eb941b7d",
+                "sourceWorkflowRunId": "40355676114",
+                "sourceWorkflowRunAttempt": "1",
+                "accessPolicySha256": "8a6e672b7c0d09958e1f9a5fd329c5fa815552cb6a2f2d1945bd91a4b487dd54",
+                "requestId": "530"
+              }
+            },
+            "receipt": {
+              "requestId": "530",
+              "url": "https://www.smilinggoat.ca/robots.txt",
+              "status": 403,
+              "observedAt": "2026-10-26T16:11:26.934Z",
+              "attemptedAt": "2026-10-26T16:11:26.846Z",
+              "mediaType": "text/html"
+            },
+            "late": false,
+            "suspensionId": null
+          }
+        }
+      },
+      "observations": [
+        {
+          "url": "https://www.smilinggoat.ca/robots.txt",
+          "finalUrl": "https://www.smilinggoat.ca/robots.txt",
+          "status": 403,
+          "observedAt": "2026-10-26T16:11:26.934Z"
+        }
+      ]
     }
   ]
 }
