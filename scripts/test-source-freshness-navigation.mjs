@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
 import { mkdir, writeFile } from 'node:fs/promises';
+import { gzipSync } from 'node:zlib';
 import { chromium } from 'playwright';
 import { installOfflineResources } from './lib/offline-browser-resources.mjs';
 
@@ -22,8 +23,25 @@ try {
     }, asOf);
     const page = await context.newPage();
 
+    async function saveStage(result) {
+      const receipt = { width, ...result };
+      receipts.push(receipt);
+      await mkdir('artifacts', { recursive: true });
+      // Save before assertions: a failed stage must retain its exact delta.
+      await writeFile('artifacts/source-freshness-navigation.json', JSON.stringify({ asOf, receipts }, null, 2));
+      const changed = value => value && typeof value === 'object' &&
+        (value.equal === false || value.modelUnchanged === false || value.sourcesUnchanged === false || Object.values(value).some(changed));
+      if (changed(result)) {
+        const snapshots = await page.evaluate(() => window.__sourceFreshnessAudit.fullSnapshots());
+        const path = `artifacts/source-freshness-mutation-${width}-${result.stage}.json.gz`;
+        await writeFile(path, gzipSync(JSON.stringify(snapshots)));
+        receipt.fullSnapshotArtifact = path;
+        await writeFile('artifacts/source-freshness-navigation.json', JSON.stringify({ asOf, receipts }, null, 2));
+      }
+    }
+
     async function prepareAudit() {
-      await page.evaluate(() => {
+      const capture = await page.evaluate(() => {
         // Independently reproduce the report's evidence families, not the
         // implementation helper being tested. Build/import clocks are absent.
         const clock = value => {
@@ -76,16 +94,59 @@ try {
         };
         const label = value => value ? new Date(value).toLocaleDateString('en-CA', { timeZone: 'America/Halifax', month: 'short', day: 'numeric' }) : null;
         const raw = () => JSON.stringify(Object.fromEntries(Object.entries(window).filter(([key]) => key.startsWith('HALIFAX_'))));
-        window.__sourceFreshnessAudit = { expected, official, officialForRestaurant, label, raw, modelBefore: JSON.stringify(restaurants), sourcesBefore: raw() };
+        const difference = (before, after) => {
+          if (before === after) return { equal: true, beforeLength: before.length, afterLength: after.length, changes: [], changeCount: 0 };
+          let firstDifferingOffset = 0;
+          while (firstDifferingOffset < Math.min(before?.length || 0, after?.length || 0) && before[firstDifferingOffset] === after[firstDifferingOffset]) firstDifferingOffset++;
+          const result = { equal: false, beforeType: typeof before, afterType: typeof after, beforeLength: before?.length, afterLength: after?.length, firstDifferingOffset, beforeContext: String(before).slice(Math.max(0, firstDifferingOffset - 80), firstDifferingOffset + 160), afterContext: String(after).slice(Math.max(0, firstDifferingOffset - 80), firstDifferingOffset + 160), changes: [], changeCount: 0 };
+          const summarize = value => {
+            if (value === undefined) return { type: 'missing' };
+            if (value === null || typeof value !== 'object') return typeof value === 'string' && value.length > 500 ? { value: value.slice(0, 500), originalLength: value.length } : value;
+            return { type: Array.isArray(value) ? 'array' : 'object', keys: Object.keys(value).slice(0, 20), size: Object.keys(value).length };
+          };
+          const walk = (left, right, path) => {
+            if (Object.is(left, right)) return;
+            if (left !== null && right !== null && typeof left === 'object' && typeof right === 'object' && Array.isArray(left) === Array.isArray(right)) {
+              for (const key of new Set([...Object.keys(left), ...Object.keys(right)])) walk(left[key], right[key], path + '/' + key.replaceAll('~', '~0').replaceAll('/', '~1'));
+              return;
+            }
+            result.changeCount++;
+            if (result.changes.length < 50) result.changes.push({ path, before: summarize(left), after: summarize(right) });
+          };
+          try { walk(JSON.parse(before), JSON.parse(after), ''); }
+          catch (error) { result.parseError = error.message; }
+          result.changesTruncated = result.changeCount > result.changes.length;
+          return result;
+        };
+        const modelBefore = JSON.stringify(restaurants);
+        const sourcesBefore = raw();
+        let capturedSnapshots = null;
+        let sampleIndex = 0;
+        const snapshotDiagnostics = () => {
+          capturedSnapshots = { sampleIndex: ++sampleIndex, modelBefore, modelAfter: JSON.stringify(restaurants), sourcesBefore, sourcesAfter: raw(), storedModelBefore: window.__sourceFreshnessAudit?.modelBefore, storedSourcesBefore: window.__sourceFreshnessAudit?.sourcesBefore };
+          return { sampleIndex, model: difference(modelBefore, capturedSnapshots.modelAfter), sources: difference(sourcesBefore, capturedSnapshots.sourcesAfter) };
+        };
+        // Return the same bytes sampled by the stage, not a later live read
+        // after a filesystem await could allow browser activity to advance.
+        const fullSnapshots = () => capturedSnapshots;
+        const captureMetadata = { href: location.href, restaurantCount: restaurants.length, activeCount: activeRestaurants.length, capturedAt: new Date().toISOString() };
+        window.__sourceFreshnessAudit = { expected, official, officialForRestaurant, label, raw, modelBefore, sourcesBefore, snapshotDiagnostics, fullSnapshots, captureMetadata };
+        return { stage: 'capture', ...captureMetadata, diagnostics: snapshotDiagnostics() };
       });
+      await saveStage(capture);
+      assert.equal(capture.diagnostics.model.equal, true, 'Initial model capture is stable across raw-source enumeration');
+      assert.equal(capture.diagnostics.sources.equal, true, 'Initial raw-source capture is stable');
     }
 
     async function inspectExplore(stage) {
       await page.waitForFunction(() => document.querySelector('#sortFilter')?.value === 'fresh' && location.hash.startsWith('#explore'));
       const result = await page.evaluate(stage => {
         const audit = window.__sourceFreshnessAudit;
+        const beforeConsumers = audit.snapshotDiagnostics();
         const expected = activeRestaurants.slice().sort((a, b) => audit.expected(b).localeCompare(audit.expected(a)));
+        const afterOracle = audit.snapshotDiagnostics();
         const actual = filteredRestaurants({ query: '', cuisine: 'all', neighbourhood: 'all', feature: 'all', sort: 'fresh' });
+        const afterActualSort = audit.snapshotDiagnostics();
         const queen = restaurants.find(record => record.id === 'osm-node-5161526522-sushi-nami-royale');
         return {
           stage,
@@ -97,11 +158,13 @@ try {
           unknown: restaurants.filter(record => !audit.expected(record)).length,
           queenStamp: restaurantSourceObservationStamp(queen),
           queenReviewedAt: queen.reviewedCorrection?.reviewedAt,
+          diagnostics: { capture: audit.captureMetadata, beforeConsumers, afterOracle, afterActualSort, final: audit.snapshotDiagnostics() },
           modelUnchanged: JSON.stringify(restaurants) === audit.modelBefore,
           sourcesUnchanged: audit.raw() === audit.sourcesBefore,
           overflow: document.documentElement.scrollWidth > innerWidth + 1
         };
       }, stage);
+      await saveStage(result);
       assert.deepEqual(result.actualIds, result.expectedIds, 'Fresh sort uses the independently qualified latest source clock, with unknown dates last');
       assert.deepEqual(result.visibleIds, result.expectedVisible, 'Rendered Explore cards follow the qualified ordering');
       assert.deepEqual(result.clockDifferences, [], 'Every assembled restaurant follows the same evidence selector');
@@ -111,7 +174,6 @@ try {
       assert.equal(result.modelUnchanged, true, 'Ordering never rewrites restaurant objects');
       assert.equal(result.sourcesUnchanged, true, 'Ordering never rewrites raw source clocks');
       assert.equal(result.overflow, false);
-      receipts.push({ width, ...result });
     }
 
     async function inspectHome(stage) {
@@ -135,17 +197,18 @@ try {
           expectedCards: expected.map(record => ({ id: record.id, label: audit.label(audit.expected(record)) })),
           openingIds: homeOpeningLeads().map(record => record.id),
           expectedOpenings: activeRestaurants.filter(record => record.hasOpening === true).sort((a, b) => openingRank(b).localeCompare(openingRank(a))).slice(0, 4).map(record => record.id),
+          diagnostics: audit.snapshotDiagnostics(),
           modelUnchanged: JSON.stringify(restaurants) === audit.modelBefore,
           sourcesUnchanged: audit.raw() === audit.sourcesBefore,
           overflow: document.documentElement.scrollWidth > innerWidth + 1
         };
       }, stage);
+      await saveStage(result);
       assert.deepEqual(result.cards, result.expectedCards, 'Home dates/order use actual observations, not failure/import clocks');
       assert.deepEqual(result.openingIds, result.expectedOpenings, 'Preserve opening discovery ranking/eligibility while qualifying its optional official fallback');
       assert.equal(result.modelUnchanged, true);
       assert.equal(result.sourcesUnchanged, true);
       assert.equal(result.overflow, false);
-      receipts.push({ width, ...result });
     }
 
     await page.goto(`${base}/#explore?sort=fresh`, { waitUntil: 'networkidle' });
@@ -215,8 +278,9 @@ try {
           expectedEventDate: officialStamp === null ? 'SOURCE' : audit.label(new Date(officialStamp).toISOString())
         };
       });
-      return { results, fixturesUnchanged: JSON.stringify(fixtures) === before, modelUnchanged: JSON.stringify(restaurants) === audit.modelBefore, sourcesUnchanged: audit.raw() === audit.sourcesBefore };
+      return { results, diagnostics: audit.snapshotDiagnostics(), fixturesUnchanged: JSON.stringify(fixtures) === before, modelUnchanged: JSON.stringify(restaurants) === audit.modelBefore, sourcesUnchanged: audit.raw() === audit.sourcesBefore };
     });
+    await saveStage({ stage: 'hostile-clock-fixtures', ...fixtureResults });
     for (const result of fixtureResults.results) {
       assert.equal(result.actual, result.expected, result.name);
       assert.equal(result.repeated, result.expected, result.name + ': repeated selector');
@@ -229,7 +293,6 @@ try {
     assert.equal(fixtureResults.fixturesUnchanged, true);
     assert.equal(fixtureResults.modelUnchanged, true);
     assert.equal(fixtureResults.sourcesUnchanged, true);
-    receipts.push({ width, stage: 'hostile-clock-fixtures', ...fixtureResults });
 
     const duplicateResults = await page.evaluate(() => {
       const audit = window.__sourceFreshnessAudit;
@@ -293,12 +356,14 @@ try {
       }
       return {
         results,
+        diagnostics: audit.snapshotDiagnostics(),
         mapsUnchanged: JSON.stringify([[...officialObservationRowsById], [...firstPartyObservationRowsById]]) === mapsBefore,
         activeUnchanged: activeRestaurants.length === originalActive.length && activeRestaurants.every((record, index) => record === originalActive[index]),
         modelUnchanged: JSON.stringify(restaurants) === audit.modelBefore,
         sourcesUnchanged: audit.raw() === audit.sourcesBefore
       };
     });
+    await saveStage({ stage: 'duplicate-observation-consumers', ...duplicateResults });
     for (const result of duplicateResults.results) {
       assert.equal(result.actual, result.expected, 'All duplicate rows contribute independently of raw model selection/order');
       assert.equal(result.official, result.expectedOfficial, 'Later failed attempt does not erase genuine official success');
@@ -311,7 +376,6 @@ try {
       assert.equal(result.inputsUnchanged, true);
     }
     for (const key of ['mapsUnchanged', 'activeUnchanged', 'modelUnchanged', 'sourcesUnchanged']) assert.equal(duplicateResults[key], true, key);
-    receipts.push({ width, stage: 'duplicate-observation-consumers', ...duplicateResults });
     resources.assertClean();
     await mkdir('artifacts', { recursive: true });
     await page.screenshot({ path: `artifacts/source-freshness-${width}.png`, fullPage: true });
