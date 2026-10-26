@@ -205,6 +205,33 @@ for (const records of [app.restaurants, catalog.restaurants]) {
 }
 assert(active.has(butaHalifaxId));
 assert(active.has(butaDartmouthId));
+const phoNo1Id = 'pho-no-1-halifax';
+const alexOhId = 'osm-node-2721708499-alex-oh-sushi-rolls';
+for (const records of [app.restaurants, catalog.restaurants]) {
+  const matches = records.filter(record => record.id === phoNo1Id);
+  assert.equal(matches.length, 1, 'Pho No.1 must have one reviewed Spring Garden identity');
+  const pho = matches[0];
+  assert.equal(pho.address, '1589 Dresden Row, Halifax, NS B3J 2K4');
+  assert.equal(pho.phone, '902-422-3589');
+  assert.equal(pho.website, 'https://phono1vietnameserestaurant.com/');
+  assert.equal(pho.openingHours, 'Mo-Th 11:00-21:00; Fr-Sa 11:00-22:00; Su 11:00-20:00');
+  assert.equal(pho.coordinates, null, 'Do not transfer the stale predecessor coordinate');
+  assert.equal(pho.socialProfiles.length, 0, 'Do not infer an owner social profile');
+  assert.equal(pho.specials.length, 0, 'Menu items are not verified current offers');
+  assert.equal(pho.events.length, 0);
+  assert.deepEqual((pho.inspectionRecords || pho.inspections).map(record => record.facilityId), ['3884146'], 'Bind only the exact Pho No.1 inspection record');
+  assert(pho.sources.some(source => source.type === 'menu' && source.url === 'https://www.phono1vietnameserestaurant.com/pho-no1-vietnamese-restaurant/'));
+  const alex = records.find(record => record.id === alexOhId);
+  assert(alex, 'Retain the stale Alex Oh identity as lifecycle history');
+  assert.equal(alex.operatingStatus, 'replaced');
+  assert.equal(alex.successorId, phoNo1Id);
+  assert.equal(alex.openingHours, null);
+  assert.deepEqual(JSON.parse(JSON.stringify(alex.coordinates)), { lat: 44.644613, lon: -63.5786251 }, 'Retain the predecessor source coordinate only on its archived record');
+  assert(!pho.aliasIds?.includes(alexOhId), 'The replacement is not an identity alias of its predecessor');
+}
+assert(active.has(phoNo1Id));
+assert(!active.has(alexOhId));
+assert(app.restaurants.find(record => record.id === phoNo1Id).menuLinks.some(link => link.url === 'https://www.phono1vietnameserestaurant.com/pho-no1-vietnamese-restaurant/'));
 const creperieId = 'osm-node-8376551845-portland-street-creperie';
 for (const records of [app.restaurants, catalog.restaurants]) {
   const matches = records.filter(record => record.id === creperieId);
