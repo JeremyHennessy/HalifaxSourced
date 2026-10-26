@@ -47,6 +47,7 @@ jobs:
           node scripts/test-discovery-route-state.mjs
           node scripts/test-coverage-values.mjs
           node scripts/test-coverage-freshness.mjs
+          node scripts/test-source-freshness.mjs
           node scripts/test-link-audit-freshness.mjs
           node scripts/test-link-access-holds.mjs
           node scripts/test-review-trust-contracts.mjs
@@ -404,6 +405,7 @@ jobs:
           node scripts/verify-iphone-links.mjs
           node scripts/test-action-pointer-navigation.mjs
           node scripts/test-queen-street-contact-navigation.mjs
+          node scripts/test-source-freshness-navigation.mjs
           node scripts/test-explore-minimap-lifecycle.mjs
           node scripts/test-rich-discovery.mjs
 

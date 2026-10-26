@@ -158,6 +158,52 @@
     if (item.validTo && (!Number.isFinite(Date.parse(item.validTo)) || Date.parse(item.validTo) < now)) return false;
     return true;
   }
+  // Observation clocks describe evidence, not refresh attempts or rebuilds.
+  // Keep a genuine prior observation even when its separate latestAssessment
+  // reports a later held/failed refresh. No raw source object is rewritten.
+  function observationStamp(value, now = Date.now()) {
+    const stamp = typeof value === 'string' ? Date.parse(value) : NaN;
+    return Number.isFinite(stamp) && Number.isFinite(now) && stamp <= now ? new Date(stamp).toISOString() : '';
+  }
+  function observationRootEligible(record) {
+    const status = record?.status;
+    if (record && Object.hasOwn(record, 'status') && !['number', 'string'].includes(typeof status)) return false;
+    const statusText = typeof status === 'string' ? status.trim().toLowerCase() : status;
+    const httpStatus = typeof status === 'number' || typeof statusText === 'string' && /^[+-]?(?:\d|\.\d)/.test(statusText);
+    const contentStatus = !httpStatus || Number.isInteger(Number(status)) && Number(status) >= 200 && Number(status) < 300;
+    return Boolean(record && contentStatus && !record.error &&
+      (!Object.hasOwn(record, 'attempted') || record.attempted === true) &&
+      (!Object.hasOwn(record, 'state') || ['ok', 'observed'].includes(record.state)) &&
+      !Object.hasOwn(record, 'accessHold') && !Object.hasOwn(record, 'holdTarget') &&
+      record.reusedObservation !== true &&
+      !['failed', 'restricted', 'held', 'blocked', 'unattempted', 'not_attempted', 'rejected'].includes(statusText) &&
+      !['failed', 'restricted', 'held', 'blocked', 'rejected'].includes(record.reviewState));
+  }
+  function officialObservationStamp(record, now = Date.now()) {
+    const status = Number(record?.status);
+    return ['number', 'string'].includes(typeof record?.status) && Number.isInteger(status) &&
+      observationRootEligible(record) && status >= 200 && status < 300
+      ? observationStamp(record.observedAt, now) : '';
+  }
+  function restaurantObservationStamp(restaurant, inputs = {}, now = Date.now()) {
+    if (!restaurant || typeof restaurant !== 'object') return '';
+    const official = inputs.officialResults ?? (restaurant.signal ? [restaurant.signal] : []);
+    const firstParty = inputs.firstPartyRecords ?? (restaurant.firstPartySources ? [restaurant.firstPartySources] : []);
+    const associated = record => record && record.restaurantId === restaurant.id;
+    const nestedEvidence = record => observationRootEligible(record) &&
+      (!Object.hasOwn(record, 'restaurantId') || associated(record));
+    const stamps = [
+      restaurant.sourceObservedAt,
+      nestedEvidence(restaurant.reviewedPlaceResolution) ? restaurant.reviewedPlaceResolution.observedAt : '',
+      nestedEvidence(restaurant.operatingStatusEvidence) ? restaurant.operatingStatusEvidence.observedAt || restaurant.operatingStatusEvidence.verifiedAt : '',
+      ...(Array.isArray(restaurant.sources) ? restaurant.sources : []).filter(nestedEvidence).map(source => source.observedAt),
+      ...(Array.isArray(firstParty) ? firstParty : []).filter(record => associated(record) && record.reviewState === 'verified' && observationRootEligible(record)).map(record => record.observedAt),
+      ...(Array.isArray(official) ? official : []).filter(associated).map(record => officialObservationStamp(record, now))
+    ].map(value => observationStamp(value, now)).filter(Boolean);
+    // Import freshnessDate, generatedAt, lastVerifiedAt and attempt/assessment
+    // clocks are deliberately absent. Unknown evidence stays undated.
+    return stamps.sort().at(-1) || '';
+  }
   function publisherDates(html, now = Date.now()) {
     const dates = [];
     const add = value => { if (publicationState(value, now).dateState === 'valid') dates.push(new Date(value).toISOString()); };
@@ -174,7 +220,7 @@
     }
     return [...new Set(dates)].sort().reverse();
   }
-  const api = { heldSocialFact, pointerSafe, actionLinks, primaryActionUrl, actionAvailable, safeSource, sourceHost, publicationState, locationSafe, currentOffer, currentPost, postExpiry, publisherDates };
+  const api = { observationStamp, officialObservationStamp, restaurantObservationStamp, heldSocialFact, pointerSafe, actionLinks, primaryActionUrl, actionAvailable, safeSource, sourceHost, publicationState, locationSafe, currentOffer, currentPost, postExpiry, publisherDates };
   root.HalifaxDataIntegrity = api;
   if (typeof module !== 'undefined') module.exports = api;
 })(globalThis);

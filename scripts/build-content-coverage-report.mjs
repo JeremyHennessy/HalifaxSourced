@@ -132,16 +132,7 @@ const canonicalIds = new Set(canonical.map((restaurant) => restaurant.id));
 const officialResults = (Array.isArray(official.results) ? official.results : []).filter(item => canonicalIds.has(item.restaurantId));
 const officialById = new Map(officialResults.map((result) => [result.restaurantId, result]));
 const successfulOfficialResults = officialResults.filter((result) => Number(result.status) >= 200 && Number(result.status) < 400 && !result.error);
-const officialObservedAtById = new Map();
-// Failed checks also carry observedAt, but that clock records an attempt, not
-// successful source evidence. Preserve the latest valid success if both exist.
-for (const result of successfulOfficialResults) {
-  const stamp = dateStamp(result.observedAt);
-  const previous = dateStamp(officialObservedAtById.get(result.restaurantId));
-  if (stamp !== null && stamp <= now && (previous === null || stamp > previous)) officialObservedAtById.set(result.restaurantId, result.observedAt);
-}
 const firstPartyRecords = (Array.isArray(firstParty.records) ? firstParty.records : []).filter(item => canonicalIds.has(item.restaurantId));
-const firstPartyById = new Map(firstPartyRecords.map((record) => [record.restaurantId, record]));
 const feedSignals = Array.isArray(websiteFeeds.signals) ? websiteFeeds.signals : [];
 const apiSignals = Array.isArray(socialSignals.signals) ? socialSignals.signals : [];
 
@@ -298,15 +289,11 @@ const duplicateEventCount = [...duplicateEventKeys.values()].reduce((sum, count)
 const freshness = { lt7Days: 0, days7To30: 0, days30To90: 0, gt90Days: 0, unknown: 0 };
 const staleRestaurantIds = new Set();
 for (const restaurant of canonical) {
-  const observed = [
-    restaurant.sourceObservedAt,
-    restaurant.reviewedPlaceResolution?.observedAt,
-    restaurant.operatingStatusEvidence?.observedAt || restaurant.operatingStatusEvidence?.verifiedAt,
-    ...(restaurant.sources || []).map(source => source.observedAt),
-    firstPartyById.get(restaurant.id)?.observedAt,
-    officialObservedAtById.get(restaurant.id)
-  ].map(dateStamp).filter((stamp) => stamp !== null && stamp <= now).sort((a, b) => b - a)[0];
-  const bucket = freshnessBucket(observed === undefined ? null : new Date(observed).toISOString());
+  const observed = integrity.restaurantObservationStamp(restaurant, {
+    officialResults: officialResults.filter(result => result.restaurantId === restaurant.id),
+    firstPartyRecords: firstPartyRecords.filter(record => record.restaurantId === restaurant.id)
+  }, now);
+  const bucket = freshnessBucket(observed);
   freshness[bucket] += 1;
   if (bucket === "gt90Days") staleRestaurantIds.add(restaurant.id);
 }
