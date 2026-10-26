@@ -233,13 +233,14 @@ for (const records of [app.restaurants, catalog.restaurants]) {
   const manillaThai = matches[0];
   assert.equal(manillaThai.neighborhood, 'Spring Garden');
   assert.equal(manillaThai.address, '5686 Spring Garden Road, Halifax, NS B3J 1H5');
-  assert.equal(manillaThai.phone, null, 'Do not infer a current phone from stale or third-party profiles');
+  assert.equal(manillaThai.phone, '902-410-7979', 'Publish only the current owner-social phone');
   assert.equal(manillaThai.website, null, 'Do not publish the directory-linked owner domain while it returns HTTP 404');
   assert.equal(manillaThai.openingHours, null, 'Do not infer weekly hours from delivery marketplaces');
   assert.equal(manillaThai.coordinates, null, 'Do not invent coordinates from an address');
   assert.deepEqual([...manillaThai.cuisines], ['Filipino', 'Thai']);
   assert(manillaThai.socialProfiles.some(profile => profile.platform === 'instagram' && profile.url === 'https://www.instagram.com/manillathaigrillhfx/'));
   assert(manillaThai.sources.some(source => source.type === 'government_inspection' && source.url.endsWith('Id1=3356936')));
+  assert(manillaThai.sources.some(source => source.type === 'official_social' && source.url === 'https://www.facebook.com/100094234341135/' && source.status === 'verified'));
   assert(manillaThai.sources.some(source => source.type === 'official_website' && source.status === 'failed'));
 }
 assert(active.has(manillaThaiId));

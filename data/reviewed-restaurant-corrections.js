@@ -1361,14 +1361,14 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
       "neighborhood": "Spring Garden",
       "category": "Restaurant",
       "website": null,
-      "phone": null,
+      "phone": "902-410-7979",
       "coordinates": null,
       "openingHours": null,
       "operatingStatus": "active",
       "operatingStatusEvidence": {
-        "claim": "The current Spring Garden Area Business Association directory lists Manilla Thai Grill, the current owner Instagram identifies the Halifax Filipino and Thai restaurant at 5686 Spring Garden Road, and the Nova Scotia food-inspection snapshot current as of October 19, 2026 independently records MANILLA THAI GRILL & CATERING at the same civic address. The directory-linked owner website returned HTTP 404, so no website, menu, phone, weekly hours or coordinates are published.",
-        "sourceUrl": "https://www.springgardenarea.com/eat-drink",
-        "observedAt": "2026-10-24T18:18:00Z",
+        "claim": "The current Spring Garden Area Business Association directory lists Manilla Thai Grill, the current owner Instagram identifies the Halifax Filipino and Thai restaurant at 5686 Spring Garden Road and publishes phone 902-410-7979, and current owner Facebook posts repeat the same phone. The Nova Scotia food-inspection snapshot current as of October 19, 2026 independently records MANILLA THAI GRILL & CATERING at the same civic address. The directory-linked owner website returned HTTP 404, so no website, menu, weekly hours or coordinates are published.",
+        "sourceUrl": "https://www.instagram.com/manillathaigrillhfx/",
+        "observedAt": "2026-10-26T00:12:58Z",
         "reviewState": "verified",
         "location": "5686 Spring Garden Road, Halifax, NS B3J 1H5"
       },
@@ -1407,9 +1407,16 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
         },
         {
           "type": "official_social",
-          "label": "Current owner Instagram profile confirming the Halifax identity and civic address",
+          "label": "Current owner Instagram profile confirming the Halifax identity, civic address and phone",
           "url": "https://www.instagram.com/manillathaigrillhfx/",
-          "observedAt": "2026-10-24T18:18:00Z",
+          "observedAt": "2026-10-26T00:12:58Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_social",
+          "label": "Current owner Facebook posts repeating phone 902-410-7979",
+          "url": "https://www.facebook.com/100094234341135/",
+          "observedAt": "2026-10-26T00:12:58Z",
           "status": "verified"
         },
         {
