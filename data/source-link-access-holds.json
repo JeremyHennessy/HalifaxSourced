@@ -3120,6 +3120,489 @@
           "observedAt": "2026-10-26T16:11:26.934Z"
         }
       ]
+    },
+    {
+      "provenance": {
+        "kind": "reviewed_workflow_log",
+        "repository": "JeremyHennessy/HalifaxSourced",
+        "sourceCommitSha": "3b27224b0a885bf832d8eacf4c2a9721a77d8420",
+        "workflowRunId": "40377927347",
+        "workflowRunAttempt": "1",
+        "workflowJob": "data-integrity",
+        "workflowJobId": 121765971337,
+        "accessPolicySha256": "8db1ea304530b17639090e5be6424b9cc0995eff35ad3cc0a04993bbd49b21b4",
+        "logSha256": "12b76615a4b9ee7799c20785c6d3d9723a8d03bfcde3bb29d6acc74a93147531",
+        "diagnosticSha256": "1a20244b6d637834d615eb7b28382bef564fe3076051336f4de82d40f248a66a",
+        "receiptSha256": "efe96acaffd254f63ad74724aabf823993b443e0bdc4e5a0f64d46a11dd91c0f",
+        "loggedAt": "2026-10-26T18:34:20.488Z",
+        "diagnostic": {
+          "version": 1,
+          "disposition": "nonpublishable_requires_review",
+          "kind": "http_restriction",
+          "repository": "JeremyHennessy/HalifaxSourced",
+          "workflowJob": "data-integrity",
+          "loggedAt": "2026-10-26T18:34:20.488Z",
+          "sourceCommitSha": "3b27224b0a885bf832d8eacf4c2a9721a77d8420",
+          "sourceWorkflowRunId": "40377927347",
+          "sourceWorkflowRunAttempt": "1",
+          "accessPolicySha256": "8db1ea304530b17639090e5be6424b9cc0995eff35ad3cc0a04993bbd49b21b4",
+          "evidence": {
+            "hold": {
+              "id": "30353b21d419a0ef01c933c8db6620f935a14d1df584b99fbcbee8c89e524ce5",
+              "scope": "url",
+              "target": "https://takosushiramen.ca/",
+              "reason": "access_restricted",
+              "resume": "reviewed_evidence_required",
+              "evidence": {
+                "url": "https://www.takosushiramen.ca/",
+                "finalUrl": "https://www.takosushiramen.ca/",
+                "status": 401,
+                "observedAt": "2026-10-26T18:34:20.488Z"
+              },
+              "provenance": {
+                "kind": "current_run",
+                "sourceCommitSha": "3b27224b0a885bf832d8eacf4c2a9721a77d8420",
+                "sourceWorkflowRunId": "40377927347",
+                "sourceWorkflowRunAttempt": "1",
+                "accessPolicySha256": "8db1ea304530b17639090e5be6424b9cc0995eff35ad3cc0a04993bbd49b21b4",
+                "requestId": "194"
+              }
+            },
+            "receipt": {
+              "requestId": "194",
+              "url": "https://www.takosushiramen.ca/",
+              "status": 401,
+              "observedAt": "2026-10-26T18:34:20.488Z",
+              "attemptedAt": "2026-10-26T18:34:19.202Z",
+              "mediaType": "text/html"
+            },
+            "late": false,
+            "suspensionId": null
+          }
+        }
+      },
+      "observations": [
+        {
+          "url": "https://www.takosushiramen.ca/",
+          "finalUrl": "https://www.takosushiramen.ca/",
+          "status": 401,
+          "observedAt": "2026-10-26T18:34:20.488Z"
+        }
+      ]
+    },
+    {
+      "provenance": {
+        "kind": "reviewed_workflow_log",
+        "repository": "JeremyHennessy/HalifaxSourced",
+        "sourceCommitSha": "3b27224b0a885bf832d8eacf4c2a9721a77d8420",
+        "workflowRunId": "40377927347",
+        "workflowRunAttempt": "1",
+        "workflowJob": "data-integrity",
+        "workflowJobId": 121765971337,
+        "accessPolicySha256": "8db1ea304530b17639090e5be6424b9cc0995eff35ad3cc0a04993bbd49b21b4",
+        "logSha256": "12b76615a4b9ee7799c20785c6d3d9723a8d03bfcde3bb29d6acc74a93147531",
+        "diagnosticSha256": "6190483a7af1f39db8b4a7bb921f8b3801e7252753eff98752c15cf0778a6c5f",
+        "receiptSha256": "f1798dfca3fd6bc1da6f5f8ff8b12dba3b17102dfd6c2d10271be15fcd13c199",
+        "loggedAt": "2026-10-26T18:34:39.480Z",
+        "diagnostic": {
+          "version": 1,
+          "disposition": "nonpublishable_requires_review",
+          "kind": "http_restriction",
+          "repository": "JeremyHennessy/HalifaxSourced",
+          "workflowJob": "data-integrity",
+          "loggedAt": "2026-10-26T18:34:39.480Z",
+          "sourceCommitSha": "3b27224b0a885bf832d8eacf4c2a9721a77d8420",
+          "sourceWorkflowRunId": "40377927347",
+          "sourceWorkflowRunAttempt": "1",
+          "accessPolicySha256": "8db1ea304530b17639090e5be6424b9cc0995eff35ad3cc0a04993bbd49b21b4",
+          "evidence": {
+            "hold": {
+              "id": "dd157116e9e839475c0142172a21b614f965e54d26baf9bb3b275fac83115d04",
+              "scope": "url",
+              "target": "https://takosushiramen.ca/menu/chefs-special-rolls",
+              "reason": "access_restricted",
+              "resume": "reviewed_evidence_required",
+              "evidence": {
+                "url": "https://www.takosushiramen.ca/menu/chefs-special-rolls",
+                "finalUrl": "https://www.takosushiramen.ca/menu/chefs-special-rolls",
+                "status": 401,
+                "observedAt": "2026-10-26T18:34:39.480Z"
+              },
+              "provenance": {
+                "kind": "current_run",
+                "sourceCommitSha": "3b27224b0a885bf832d8eacf4c2a9721a77d8420",
+                "sourceWorkflowRunId": "40377927347",
+                "sourceWorkflowRunAttempt": "1",
+                "accessPolicySha256": "8db1ea304530b17639090e5be6424b9cc0995eff35ad3cc0a04993bbd49b21b4",
+                "requestId": "475"
+              }
+            },
+            "receipt": {
+              "requestId": "475",
+              "url": "https://www.takosushiramen.ca/menu/chefs-special-rolls",
+              "status": 401,
+              "observedAt": "2026-10-26T18:34:39.480Z",
+              "attemptedAt": "2026-10-26T18:34:39.185Z",
+              "mediaType": "text/html"
+            },
+            "late": false,
+            "suspensionId": null
+          }
+        }
+      },
+      "observations": [
+        {
+          "url": "https://www.takosushiramen.ca/menu/chefs-special-rolls",
+          "finalUrl": "https://www.takosushiramen.ca/menu/chefs-special-rolls",
+          "status": 401,
+          "observedAt": "2026-10-26T18:34:39.480Z"
+        }
+      ]
+    },
+    {
+      "provenance": {
+        "kind": "reviewed_workflow_log",
+        "repository": "JeremyHennessy/HalifaxSourced",
+        "sourceCommitSha": "3b27224b0a885bf832d8eacf4c2a9721a77d8420",
+        "workflowRunId": "40377927347",
+        "workflowRunAttempt": "1",
+        "workflowJob": "data-integrity",
+        "workflowJobId": 121765971337,
+        "accessPolicySha256": "8db1ea304530b17639090e5be6424b9cc0995eff35ad3cc0a04993bbd49b21b4",
+        "logSha256": "12b76615a4b9ee7799c20785c6d3d9723a8d03bfcde3bb29d6acc74a93147531",
+        "diagnosticSha256": "81514f0caa40561d33957a006366e259df920d345d63c103249181b25e8a9ffd",
+        "receiptSha256": "19c01bc8a4823fa84f46d583280fe4037da8e12c2bd574b2a31378f4c078946e",
+        "loggedAt": "2026-10-26T18:34:39.567Z",
+        "diagnostic": {
+          "version": 1,
+          "disposition": "nonpublishable_requires_review",
+          "kind": "http_restriction",
+          "repository": "JeremyHennessy/HalifaxSourced",
+          "workflowJob": "data-integrity",
+          "loggedAt": "2026-10-26T18:34:39.567Z",
+          "sourceCommitSha": "3b27224b0a885bf832d8eacf4c2a9721a77d8420",
+          "sourceWorkflowRunId": "40377927347",
+          "sourceWorkflowRunAttempt": "1",
+          "accessPolicySha256": "8db1ea304530b17639090e5be6424b9cc0995eff35ad3cc0a04993bbd49b21b4",
+          "evidence": {
+            "hold": {
+              "id": "dee1cef3b1ea23f1c65316b9519674872ea53bc235ffbec27a4a7544cd276f7d",
+              "scope": "url",
+              "target": "https://takosushiramen.ca/menu/appetizers/tempura",
+              "reason": "access_restricted",
+              "resume": "reviewed_evidence_required",
+              "evidence": {
+                "url": "https://www.takosushiramen.ca/menu/appetizers/tempura",
+                "finalUrl": "https://www.takosushiramen.ca/menu/appetizers/tempura",
+                "status": 401,
+                "observedAt": "2026-10-26T18:34:39.567Z"
+              },
+              "provenance": {
+                "kind": "current_run",
+                "sourceCommitSha": "3b27224b0a885bf832d8eacf4c2a9721a77d8420",
+                "sourceWorkflowRunId": "40377927347",
+                "sourceWorkflowRunAttempt": "1",
+                "accessPolicySha256": "8db1ea304530b17639090e5be6424b9cc0995eff35ad3cc0a04993bbd49b21b4",
+                "requestId": "481"
+              }
+            },
+            "receipt": {
+              "requestId": "481",
+              "url": "https://www.takosushiramen.ca/menu/appetizers/tempura",
+              "status": 401,
+              "observedAt": "2026-10-26T18:34:39.567Z",
+              "attemptedAt": "2026-10-26T18:34:39.484Z",
+              "mediaType": "text/html"
+            },
+            "late": false,
+            "suspensionId": null
+          }
+        }
+      },
+      "observations": [
+        {
+          "url": "https://www.takosushiramen.ca/menu/appetizers/tempura",
+          "finalUrl": "https://www.takosushiramen.ca/menu/appetizers/tempura",
+          "status": 401,
+          "observedAt": "2026-10-26T18:34:39.567Z"
+        }
+      ]
+    },
+    {
+      "provenance": {
+        "kind": "reviewed_workflow_log",
+        "repository": "JeremyHennessy/HalifaxSourced",
+        "sourceCommitSha": "3b27224b0a885bf832d8eacf4c2a9721a77d8420",
+        "workflowRunId": "40377927347",
+        "workflowRunAttempt": "1",
+        "workflowJob": "data-integrity",
+        "workflowJobId": 121765971337,
+        "accessPolicySha256": "8db1ea304530b17639090e5be6424b9cc0995eff35ad3cc0a04993bbd49b21b4",
+        "logSha256": "12b76615a4b9ee7799c20785c6d3d9723a8d03bfcde3bb29d6acc74a93147531",
+        "diagnosticSha256": "bb5c2a88a88a17be688945f4ecfe887339e445cf4c9a105f8507b3a3b5ed072b",
+        "receiptSha256": "9acab63eed41d001da1f0d7978d3d076e19f8efdede7fd5d569b11021b7c354c",
+        "loggedAt": "2026-10-26T18:34:39.603Z",
+        "diagnostic": {
+          "version": 1,
+          "disposition": "nonpublishable_requires_review",
+          "kind": "http_restriction",
+          "repository": "JeremyHennessy/HalifaxSourced",
+          "workflowJob": "data-integrity",
+          "loggedAt": "2026-10-26T18:34:39.603Z",
+          "sourceCommitSha": "3b27224b0a885bf832d8eacf4c2a9721a77d8420",
+          "sourceWorkflowRunId": "40377927347",
+          "sourceWorkflowRunAttempt": "1",
+          "accessPolicySha256": "8db1ea304530b17639090e5be6424b9cc0995eff35ad3cc0a04993bbd49b21b4",
+          "evidence": {
+            "hold": {
+              "id": "af755ba926c53b3e92f4ac8e5aca755126b0677c7d273c7737a79fdb39322997",
+              "scope": "url",
+              "target": "https://takosushiramen.ca/menu/chefs-special-rolls/entrees",
+              "reason": "access_restricted",
+              "resume": "reviewed_evidence_required",
+              "evidence": {
+                "url": "https://www.takosushiramen.ca/menu/chefs-special-rolls/entrees",
+                "finalUrl": "https://www.takosushiramen.ca/menu/chefs-special-rolls/entrees",
+                "status": 401,
+                "observedAt": "2026-10-26T18:34:39.603Z"
+              },
+              "provenance": {
+                "kind": "current_run",
+                "sourceCommitSha": "3b27224b0a885bf832d8eacf4c2a9721a77d8420",
+                "sourceWorkflowRunId": "40377927347",
+                "sourceWorkflowRunAttempt": "1",
+                "accessPolicySha256": "8db1ea304530b17639090e5be6424b9cc0995eff35ad3cc0a04993bbd49b21b4",
+                "requestId": "483"
+              }
+            },
+            "receipt": {
+              "requestId": "483",
+              "url": "https://www.takosushiramen.ca/menu/chefs-special-rolls/entrees",
+              "status": 401,
+              "observedAt": "2026-10-26T18:34:39.603Z",
+              "attemptedAt": "2026-10-26T18:34:39.571Z",
+              "mediaType": "text/html"
+            },
+            "late": false,
+            "suspensionId": null
+          }
+        }
+      },
+      "observations": [
+        {
+          "url": "https://www.takosushiramen.ca/menu/chefs-special-rolls/entrees",
+          "finalUrl": "https://www.takosushiramen.ca/menu/chefs-special-rolls/entrees",
+          "status": 401,
+          "observedAt": "2026-10-26T18:34:39.603Z"
+        }
+      ]
+    },
+    {
+      "provenance": {
+        "kind": "reviewed_workflow_log",
+        "repository": "JeremyHennessy/HalifaxSourced",
+        "sourceCommitSha": "3b27224b0a885bf832d8eacf4c2a9721a77d8420",
+        "workflowRunId": "40377927347",
+        "workflowRunAttempt": "1",
+        "workflowJob": "data-integrity",
+        "workflowJobId": 121765971337,
+        "accessPolicySha256": "8db1ea304530b17639090e5be6424b9cc0995eff35ad3cc0a04993bbd49b21b4",
+        "logSha256": "12b76615a4b9ee7799c20785c6d3d9723a8d03bfcde3bb29d6acc74a93147531",
+        "diagnosticSha256": "6201b1196988016bf65ade5eb74fbfc1bda5cf87d430c8358954f58fbfc6ff2b",
+        "receiptSha256": "5a0b2d99e0aba2acd1c8666f84f2451bd85be50815a6c2652b964aca02d66d89",
+        "loggedAt": "2026-10-26T18:34:39.638Z",
+        "diagnostic": {
+          "version": 1,
+          "disposition": "nonpublishable_requires_review",
+          "kind": "http_restriction",
+          "repository": "JeremyHennessy/HalifaxSourced",
+          "workflowJob": "data-integrity",
+          "loggedAt": "2026-10-26T18:34:39.638Z",
+          "sourceCommitSha": "3b27224b0a885bf832d8eacf4c2a9721a77d8420",
+          "sourceWorkflowRunId": "40377927347",
+          "sourceWorkflowRunAttempt": "1",
+          "accessPolicySha256": "8db1ea304530b17639090e5be6424b9cc0995eff35ad3cc0a04993bbd49b21b4",
+          "evidence": {
+            "hold": {
+              "id": "54fc29ca02341447f654146d38f7906245117ecb08da75afb27195df17d8324a",
+              "scope": "url",
+              "target": "https://takosushiramen.ca/menu/ramen",
+              "reason": "access_restricted",
+              "resume": "reviewed_evidence_required",
+              "evidence": {
+                "url": "https://www.takosushiramen.ca/menu/ramen",
+                "finalUrl": "https://www.takosushiramen.ca/menu/ramen",
+                "status": 401,
+                "observedAt": "2026-10-26T18:34:39.637Z"
+              },
+              "provenance": {
+                "kind": "current_run",
+                "sourceCommitSha": "3b27224b0a885bf832d8eacf4c2a9721a77d8420",
+                "sourceWorkflowRunId": "40377927347",
+                "sourceWorkflowRunAttempt": "1",
+                "accessPolicySha256": "8db1ea304530b17639090e5be6424b9cc0995eff35ad3cc0a04993bbd49b21b4",
+                "requestId": "484"
+              }
+            },
+            "receipt": {
+              "requestId": "484",
+              "url": "https://www.takosushiramen.ca/menu/ramen",
+              "status": 401,
+              "observedAt": "2026-10-26T18:34:39.637Z",
+              "attemptedAt": "2026-10-26T18:34:39.609Z",
+              "mediaType": "text/html"
+            },
+            "late": false,
+            "suspensionId": null
+          }
+        }
+      },
+      "observations": [
+        {
+          "url": "https://www.takosushiramen.ca/menu/ramen",
+          "finalUrl": "https://www.takosushiramen.ca/menu/ramen",
+          "status": 401,
+          "observedAt": "2026-10-26T18:34:39.637Z"
+        }
+      ]
+    },
+    {
+      "provenance": {
+        "kind": "reviewed_workflow_log",
+        "repository": "JeremyHennessy/HalifaxSourced",
+        "sourceCommitSha": "3b27224b0a885bf832d8eacf4c2a9721a77d8420",
+        "workflowRunId": "40377927347",
+        "workflowRunAttempt": "1",
+        "workflowJob": "data-integrity",
+        "workflowJobId": 121765971337,
+        "accessPolicySha256": "8db1ea304530b17639090e5be6424b9cc0995eff35ad3cc0a04993bbd49b21b4",
+        "logSha256": "12b76615a4b9ee7799c20785c6d3d9723a8d03bfcde3bb29d6acc74a93147531",
+        "diagnosticSha256": "d485af6c882eda75dadebb8af9fa52665a63657a348de244ad46b609028c262e",
+        "receiptSha256": "d52eb23ed9b6f15f3367208b87f8cb9340f620d0e3a9da2822ac0704629a15f4",
+        "loggedAt": "2026-10-26T18:34:39.676Z",
+        "diagnostic": {
+          "version": 1,
+          "disposition": "nonpublishable_requires_review",
+          "kind": "http_restriction",
+          "repository": "JeremyHennessy/HalifaxSourced",
+          "workflowJob": "data-integrity",
+          "loggedAt": "2026-10-26T18:34:39.676Z",
+          "sourceCommitSha": "3b27224b0a885bf832d8eacf4c2a9721a77d8420",
+          "sourceWorkflowRunId": "40377927347",
+          "sourceWorkflowRunAttempt": "1",
+          "accessPolicySha256": "8db1ea304530b17639090e5be6424b9cc0995eff35ad3cc0a04993bbd49b21b4",
+          "evidence": {
+            "hold": {
+              "id": "85180607ed5de4d3c79d1ff1050c142272ea8bb5cf45cb50490f68cbf3ad069e",
+              "scope": "url",
+              "target": "https://takosushiramen.ca/menu/party-tray",
+              "reason": "access_restricted",
+              "resume": "reviewed_evidence_required",
+              "evidence": {
+                "url": "https://www.takosushiramen.ca/menu/party-tray",
+                "finalUrl": "https://www.takosushiramen.ca/menu/party-tray",
+                "status": 401,
+                "observedAt": "2026-10-26T18:34:39.676Z"
+              },
+              "provenance": {
+                "kind": "current_run",
+                "sourceCommitSha": "3b27224b0a885bf832d8eacf4c2a9721a77d8420",
+                "sourceWorkflowRunId": "40377927347",
+                "sourceWorkflowRunAttempt": "1",
+                "accessPolicySha256": "8db1ea304530b17639090e5be6424b9cc0995eff35ad3cc0a04993bbd49b21b4",
+                "requestId": "486"
+              }
+            },
+            "receipt": {
+              "requestId": "486",
+              "url": "https://www.takosushiramen.ca/menu/party-tray",
+              "status": 401,
+              "observedAt": "2026-10-26T18:34:39.676Z",
+              "attemptedAt": "2026-10-26T18:34:39.643Z",
+              "mediaType": "text/html"
+            },
+            "late": false,
+            "suspensionId": null
+          }
+        }
+      },
+      "observations": [
+        {
+          "url": "https://www.takosushiramen.ca/menu/party-tray",
+          "finalUrl": "https://www.takosushiramen.ca/menu/party-tray",
+          "status": 401,
+          "observedAt": "2026-10-26T18:34:39.676Z"
+        }
+      ]
+    },
+    {
+      "provenance": {
+        "kind": "reviewed_workflow_log",
+        "repository": "JeremyHennessy/HalifaxSourced",
+        "sourceCommitSha": "3b27224b0a885bf832d8eacf4c2a9721a77d8420",
+        "workflowRunId": "40377927347",
+        "workflowRunAttempt": "1",
+        "workflowJob": "data-integrity",
+        "workflowJobId": 121765971337,
+        "accessPolicySha256": "8db1ea304530b17639090e5be6424b9cc0995eff35ad3cc0a04993bbd49b21b4",
+        "logSha256": "12b76615a4b9ee7799c20785c6d3d9723a8d03bfcde3bb29d6acc74a93147531",
+        "diagnosticSha256": "e7618e904b0e17e458e1c0b0ba54498c0b25b561438c03f8b7f173699666beeb",
+        "receiptSha256": "4f92d64080dd4951506803a358a0c633def4d92d8fd58f0b33b38981bae32235",
+        "loggedAt": "2026-10-26T18:34:39.707Z",
+        "diagnostic": {
+          "version": 1,
+          "disposition": "nonpublishable_requires_review",
+          "kind": "http_restriction",
+          "repository": "JeremyHennessy/HalifaxSourced",
+          "workflowJob": "data-integrity",
+          "loggedAt": "2026-10-26T18:34:39.707Z",
+          "sourceCommitSha": "3b27224b0a885bf832d8eacf4c2a9721a77d8420",
+          "sourceWorkflowRunId": "40377927347",
+          "sourceWorkflowRunAttempt": "1",
+          "accessPolicySha256": "8db1ea304530b17639090e5be6424b9cc0995eff35ad3cc0a04993bbd49b21b4",
+          "evidence": {
+            "hold": {
+              "id": "93da68cf548309881643a668d62ce75cff2806fe412ca2d6b45d6926124a1487",
+              "scope": "url",
+              "target": "https://takosushiramen.ca/menu/lunch-special",
+              "reason": "access_restricted",
+              "resume": "reviewed_evidence_required",
+              "evidence": {
+                "url": "https://www.takosushiramen.ca/menu/lunch-special",
+                "finalUrl": "https://www.takosushiramen.ca/menu/lunch-special",
+                "status": 401,
+                "observedAt": "2026-10-26T18:34:39.707Z"
+              },
+              "provenance": {
+                "kind": "current_run",
+                "sourceCommitSha": "3b27224b0a885bf832d8eacf4c2a9721a77d8420",
+                "sourceWorkflowRunId": "40377927347",
+                "sourceWorkflowRunAttempt": "1",
+                "accessPolicySha256": "8db1ea304530b17639090e5be6424b9cc0995eff35ad3cc0a04993bbd49b21b4",
+                "requestId": "488"
+              }
+            },
+            "receipt": {
+              "requestId": "488",
+              "url": "https://www.takosushiramen.ca/menu/lunch-special",
+              "status": 401,
+              "observedAt": "2026-10-26T18:34:39.707Z",
+              "attemptedAt": "2026-10-26T18:34:39.680Z",
+              "mediaType": "text/html"
+            },
+            "late": false,
+            "suspensionId": null
+          }
+        }
+      },
+      "observations": [
+        {
+          "url": "https://www.takosushiramen.ca/menu/lunch-special",
+          "finalUrl": "https://www.takosushiramen.ca/menu/lunch-special",
+          "status": 401,
+          "observedAt": "2026-10-26T18:34:39.707Z"
+        }
+      ]
     }
   ]
 }
