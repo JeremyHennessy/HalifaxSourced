@@ -776,6 +776,19 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
       "observedAt": "2026-10-25T08:48:18Z",
       "reviewedAt": "2026-10-25T08:48:18Z",
       "reviewState": "verified"
+    },
+    {
+      "restaurantId": "osm-node-2721708499-alex-oh-sushi-rolls",
+      "fields": {
+        "operatingStatus": "replaced",
+        "openingHours": null,
+        "successorId": "pho-no-1-halifax"
+      },
+      "sourceUrl": "https://community.thecoast.ca/best-of/2016/food-drink/best-sushi-5772173",
+      "claim": "The Coast explicitly identifies Alex Oh Sushi & Rolls as closed. Pho No.1's current owner site and the Nova Scotia food-inspection registry identify the current restaurant at the exact 1589 Dresden Row address. Archive the stale OpenStreetMap identity as replaced while retaining its source history; the closure and replacement dates remain unknown, and the predecessor coordinate is not transferred to Pho No.1.",
+      "observedAt": "2026-10-26T20:25:14Z",
+      "reviewedAt": "2026-10-26T20:25:14Z",
+      "reviewState": "verified"
     }
   ],
   "aliases": [
@@ -2502,6 +2515,69 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
           "label": "Reviewed official location",
           "url": "https://www.viacondotti.ca/",
           "observedAt": "2026-10-19",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
+      "id": "pho-no-1-halifax",
+      "name": "Pho No.1 Vietnamese Restaurant",
+      "address": "1589 Dresden Row, Halifax, NS B3J 2K4",
+      "neighborhood": "Spring Garden",
+      "category": "Restaurant",
+      "website": "https://phono1vietnameserestaurant.com/",
+      "menuUrl": "https://www.phono1vietnameserestaurant.com/pho-no1-vietnamese-restaurant/",
+      "phone": "902-422-3589",
+      "coordinates": null,
+      "openingHours": "Mo-Th 11:00-21:00; Fr-Sa 11:00-22:00; Su 11:00-20:00",
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current single-location owner site identifies Pho No.1 Vietnamese Restaurant at 1589 Dresden Row, Halifax, with phone 902-422-3589, a location menu/order page and a complete weekly schedule. The current Spring Garden directory links the same owner domain, and the Nova Scotia food-inspection snapshot independently records Pho No. 1 Vietnamese Restaurant at 1589 Dresden. The stale Alex Oh Sushi Rolls record at this address is archived separately; its coordinate is not transferred.",
+        "sourceUrl": "https://phono1vietnameserestaurant.com/",
+        "observedAt": "2026-10-26T20:25:14Z",
+        "reviewState": "verified",
+        "location": "1589 Dresden Row, Halifax, NS B3J 2K4"
+      },
+      "cuisines": [
+        "Vietnamese",
+        "Pho"
+      ],
+      "vibe": [
+        "casual",
+        "local"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [],
+      "sources": [
+        {
+          "type": "business_directory",
+          "label": "Current Spring Garden restaurant listing and owner-domain link",
+          "url": "https://www.springgardenarea.com/eat-drink",
+          "observedAt": "2026-10-26T20:25:14Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Owner location, phone and complete weekly hours",
+          "url": "https://phono1vietnameserestaurant.com/",
+          "observedAt": "2026-10-26T20:25:14Z",
+          "status": "verified"
+        },
+        {
+          "type": "menu",
+          "label": "Owner location menu and ordering page",
+          "url": "https://www.phono1vietnameserestaurant.com/pho-no1-vietnamese-restaurant/",
+          "observedAt": "2026-10-26T20:25:14Z",
+          "status": "verified"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Nova Scotia food-establishment record current as of October 19, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3884146",
+          "observedAt": "2026-10-20T07:20:13.079Z",
           "status": "verified"
         }
       ],
