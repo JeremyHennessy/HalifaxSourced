@@ -61,6 +61,17 @@
   "[\"osm-node-5631529440-hmcs-king-s-wardroom\",\"special\",\"https://ukings.ca/alumni/giving/support/special-projects/\"]",
   "[\"osm-node-8636456775-booster-juice\",\"special\",\"https://boosterjuice.com/en-ca/collections/specialty-shots\"]"
 ]);
+  // Bluenose admin/login aliases of the already reviewed non-menu destination.
+  // Exact presentation-only additions; raw evidence and collection rules stay intact.
+  // BEGIN BLUENOSE ADMIN POINTER SUPPRESSIONS
+  for (const key of [
+    "[\"osm-node-267592735-bluenose-ii\",\"menu\",\"https://bluenoseii.ca/wp-admin/nav-menus.php?action=locations\"]",
+    "[\"osm-node-267592735-bluenose-ii\",\"source\",\"https://bluenoseii.ca/wp-admin/nav-menus.php?action=locations\"]",
+    "[\"osm-node-267592735-bluenose-ii\",\"update\",\"https://bluenoseii.ca/wp-admin/nav-menus.php?action=locations\"]",
+    "[\"osm-node-267592735-bluenose-ii\",\"source\",\"https://bluenoseii.ca/wp-login.php?redirect_to=https%3A%2F%2Fbluenoseii.ca%2Fwp-admin%2Fnav-menus.php%3Faction%3Dlocations&reauth=1\"]",
+    "[\"osm-node-267592735-bluenose-ii\",\"update\",\"https://bluenoseii.ca/wp-login.php?redirect_to=https%3A%2F%2Fbluenoseii.ca%2Fwp-admin%2Fnav-menus.php%3Faction%3Dlocations&reauth=1\"]"
+  ]) rejectedPointerKeys.add(key);
+  // END BLUENOSE ADMIN POINTER SUPPRESSIONS
   function pointerSafe(restaurantId, kind, value) {
     try { const url = new URL(value); url.hash = '';
       // A shared header/footer address does not qualify another branch's menu

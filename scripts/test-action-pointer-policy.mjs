@@ -147,6 +147,10 @@ assert(vm.runInContext('appView.innerHTML', after.context).includes(`href="${wro
 const rawBeforeRender = vm.runInContext('JSON.stringify(restaurants)', after.context);
 const evidenceChanges = [];
 const rejectedEvidencePaths = {
+  'osm-node-267592735-bluenose-ii': {
+    source: ['/wp-admin/nav-menus.php?action=locations'],
+    update: ['/wp-login.php?redirect_to=https%3A%2F%2Fbluenoseii.ca%2Fwp-admin%2Fnav-menus.php%3Faction%3Dlocations&reauth=1']
+  },
   'osm-node-6910685885-mexi-s': {
     source: ['/moncton/lunch', '/moncton/dinner/', '/moncton/kids/', '/ottawa/dinner/', '/ottawa/kids/'],
     update: ['/moncton/kids/', '/moncton/dinner/', '/moncton/lunch/']
@@ -176,7 +180,7 @@ for (const record of after.restaurants) {
   const removedSources = priorSources.length - actualSources.length;
   if (removedSources || rejectedUpdates.length) {
     evidenceChanges.push({ id: record.id, sourceLinks: removedSources, updates: rejectedUpdates.length });
-    const origin = record.id === 'osm-node-6910685885-mexi-s' ? 'https://www.mexicalirosas.com' : 'https://sushinami.ca';
+    const origin = record.id === 'osm-node-267592735-bluenose-ii' ? 'https://bluenoseii.ca' : record.id === 'osm-node-6910685885-mexi-s' ? 'https://www.mexicalirosas.com' : 'https://sushinami.ca';
     assert.deepEqual(priorSources.filter(link => !integrity.pointerSafe(record.id, 'source', link.url)).map(link => link.url), rejectedEvidencePaths[record.id].source.map(path => origin + path));
     assert.deepEqual(rejectedUpdates.map(update => update.postUrl), rejectedEvidencePaths[record.id].update.map(path => origin + path));
     vm.runInContext(`renderRestaurantDetail(${JSON.stringify(record.id)})`, after.context);
@@ -188,7 +192,8 @@ for (const record of after.restaurants) {
 assert.deepEqual(evidenceChanges, [
   { id: 'osm-node-6910685885-mexi-s', sourceLinks: 5, updates: 3 },
   { id: downtown, sourceLinks: 5, updates: 5 },
-  { id: bayers, sourceLinks: 6, updates: 6 }
+  { id: bayers, sourceLinks: 6, updates: 6 },
+  { id: 'osm-node-267592735-bluenose-ii', sourceLinks: 1, updates: 1 }
 ]);
 assert.equal(vm.runInContext('JSON.stringify(restaurants)', after.context), rawBeforeRender, 'Rendering preserves every source/update object and original date');
 for (const url of ['https://sushinami.ca/', 'https://sushinami.ca/contact/']) assert(integrity.pointerSafe(bayers, 'source', url), 'Shared-brand source evidence remains allowed');
