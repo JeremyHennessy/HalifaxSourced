@@ -229,6 +229,24 @@ for (const records of [app.restaurants, catalog.restaurants]) {
 }
 assert(active.has(desiGardenId));
 assert(app.restaurants.find(record => record.id === desiGardenId).menuLinks.some(link => link.url === 'https://www.desigarden.ca/s/Food-Menu-Desi-Garden-2-r2wr.pdf'));
+const viaCondottiId = 'via-condotti-queen';
+const viaCondottiResolution = reviewedPlaceResolutions.find(record => record.candidateId === 'sgaba-via-condotti-http-lafrasca-ca');
+assert.equal(viaCondottiResolution?.restaurantId, viaCondottiId, 'Resolve the current Spring Garden candidate to the reviewed Via Condotti identity');
+assert.equal(viaCondottiResolution?.website, 'https://www.viacondotti.ca/', 'Retain the current owner domain, not the predecessor directory URL');
+for (const records of [app.restaurants, catalog.restaurants]) {
+  const matches = records.filter(record => record.id === viaCondottiId);
+  assert.equal(matches.length, 1, 'Via Condotti must remain one reviewed Spring Garden identity');
+  const viaCondotti = matches[0];
+  assert.equal(viaCondotti.address, '1480 Queen Street, Halifax, NS B3J 0L2');
+  assert.equal(viaCondotti.phone, '902-444-1860');
+  assert.equal(viaCondotti.website, 'https://www.viacondotti.ca/');
+  assert.equal(viaCondotti.coordinates, null, 'Do not inherit the predecessor location or invent coordinates');
+  assert.equal(viaCondotti.openingHours, null, 'Do not infer a weekly schedule from partial service-hour evidence');
+  assert.equal(viaCondotti.specials.length, 0);
+  assert.equal(viaCondotti.events.length, 0);
+  assert.deepEqual((viaCondotti.inspectionRecords || viaCondotti.inspections).map(record => record.facilityId), [], 'Do not attach the conflicting 1470 Queen inspection address to the reviewed 1480 Queen identity');
+}
+assert(active.has(viaCondottiId));
 const phoNo1Id = 'pho-no-1-halifax';
 const alexOhId = 'osm-node-2721708499-alex-oh-sushi-rolls';
 for (const records of [app.restaurants, catalog.restaurants]) {
