@@ -32,13 +32,13 @@ function dateLabel(value) {
   return date.toLocaleDateString("en-CA", { timeZone: "America/Halifax", month: "short", day: "numeric" });
 }
 function sourceFreshnessStamp(restaurant) {
-  const firstPartyStamp = restaurant.firstPartySources?.lastVerifiedAt || restaurant.firstPartySources?.observedAt || "";
-  return String(restaurant.signal?.observedAt || firstPartyStamp || restaurant.freshnessDate || "");
+  return restaurantSourceObservationStamp(restaurant);
 }
 function freshSourceCard(restaurant) {
+  const observedAt = sourceFreshnessStamp(restaurant);
   const sourceCount = (restaurant.relatedLinks?.length || 0) + (restaurant.socialProfiles?.length || 0) + (restaurant.officialUpdates?.length || 0);
   return `<article class="fresh-data-card">
-    <span class="eyebrow">${escapeHtml(dateLabel(sourceFreshnessStamp(restaurant)))}</span>
+    <span class="eyebrow">${escapeHtml(observedAt ? dateLabel(observedAt) : "Date unavailable")}</span>
     <h3><a href="#restaurant/${encodeURIComponent(restaurant.id)}">${escapeHtml(restaurant.name)}</a></h3>
     <p>${escapeHtml(restaurant.neighborhood || "Halifax")} - ${sourceCount.toLocaleString()} official source lead${sourceCount === 1 ? "" : "s"}</p>
     <div>${consumerTags(restaurant).slice(0, 3).map((tag) => `<span>${escapeHtml(tag)}</span>`).join("")}</div>

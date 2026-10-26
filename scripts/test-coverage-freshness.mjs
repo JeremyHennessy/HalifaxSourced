@@ -61,6 +61,20 @@ try {
   ]) {
     await check('Malformed or future success cannot invent freshness: ' + JSON.stringify(result), { results: [result], bucket: 'unknown' });
   }
+  for (const result of [
+    { status: 301, observedAt: recent }, { status: 200.5, observedAt: recent }, { status: [200], observedAt: recent },
+    { status: 200, observedAt: recent, attempted: false },
+    { status: 200, observedAt: recent, state: 'held' },
+    { status: 200, observedAt: recent, accessHold: {} },
+    { status: 200, observedAt: recent, reviewState: 'restricted' }
+  ]) await check('Contradictory/non-content root cannot invent freshness: ' + JSON.stringify(result), { results: [result], bucket: 'unknown' });
+  await check('A genuine prior observation remains stale after a separately held refresh', {
+    results: [{ status: 200, observedAt: stale, latestAssessment: { state: 'held', attempted: false, assessedAt: recent, observedAt: null } }], bucket: 'gt90Days'
+  });
+  await check('Import and verification metadata are not source observations', {
+    restaurant: { freshnessDate: recent, generatedAt: recent },
+    firstParty: [{ restaurantId: 'fixture', reviewState: 'verified', lastVerifiedAt: recent }], bucket: 'unknown'
+  });
   await check('A later failure cannot discard an older successful receipt', {
     results: [{ status: 200, observedAt: stale }, { error: 'timeout', observedAt: recent }], bucket: 'gt90Days', failures: 1
   });
@@ -69,6 +83,9 @@ try {
   });
   await check('Successful receipts use newest evidence regardless of array order', {
     results: [{ status: 200, observedAt: recent }, { status: 200, observedAt: stale }], bucket: 'lt7Days'
+  });
+  await check('Failed or foreign nested source clocks cannot refresh a restaurant', {
+    restaurant: { sources: [{ status: 'failed', observedAt: recent }, { status: 'restricted', observedAt: recent }, { restaurantId: 'another-place', observedAt: recent }, { status: 'verified', observedAt: stale }] }, bucket: 'gt90Days'
   });
   await check('A failed official check does not erase independent source evidence', {
     restaurant: { sources: [{ observedAt: recent }] }, results: [{ error: 'timeout', observedAt: recent }], bucket: 'lt7Days', failures: 1

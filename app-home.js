@@ -1,7 +1,7 @@
 "use strict";
 function homeOpeningLeads(items = activeRestaurants) {
   return items.filter((restaurant) => restaurant.hasOpening === true)
-    .sort((a, b) => String(b.freshnessDate || b.signal?.observedAt || "").localeCompare(String(a.freshnessDate || a.signal?.observedAt || "")))
+    .sort((a, b) => String(b.freshnessDate || officialSourceObservationStamp(b) || "").localeCompare(String(a.freshnessDate || officialSourceObservationStamp(a) || "")))
     .slice(0, 4);
 }
 

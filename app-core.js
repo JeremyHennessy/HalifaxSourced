@@ -84,6 +84,31 @@ function normalize(value) {
 
 
 const officialById = new Map(officialSignals.map((signal) => [signal.restaurantId, signal]));
+// Source recency must consider every original observation, not the single row
+// chosen by legacy detail decorators. A later failure cannot hide old success.
+function observationRowsById(records) {
+  const grouped = new Map();
+  for (const record of Array.isArray(records) ? records : []) {
+    if (!record?.restaurantId) continue;
+    if (!grouped.has(record.restaurantId)) grouped.set(record.restaurantId, []);
+    grouped.get(record.restaurantId).push(record);
+  }
+  return grouped;
+}
+const officialObservationRowsById = observationRowsById(officialSignals);
+const firstPartyObservationRowsById = observationRowsById(window.HALIFAX_FIRST_PARTY_SOURCES?.records);
+function officialSourceObservationStamp(restaurant) {
+  const rows = officialObservationRowsById.get(restaurant?.id) || (restaurant?.signal ? [restaurant.signal] : []);
+  return rows.filter(record => record.restaurantId === restaurant?.id)
+    .map(record => HalifaxDataIntegrity.officialObservationStamp(record)).filter(Boolean).sort().at(-1) || "";
+}
+function restaurantSourceObservationStamp(restaurant) {
+  return HalifaxDataIntegrity.restaurantObservationStamp(restaurant, {
+    officialResults: officialObservationRowsById.get(restaurant?.id),
+    firstPartyRecords: firstPartyObservationRowsById.get(restaurant?.id)
+  });
+}
+
 const structuredEventsByRestaurant = new Map();
 for (const event of structuredEvents) {
   if (!event?.restaurantId) continue;
@@ -351,7 +376,7 @@ function filteredRestaurants(options = {}) {
   return filtered.sort((a, b) => {
     if (sort === "name") return a.name.localeCompare(b.name);
     if (sort === "neighbourhood") return (a.neighborhood || "").localeCompare(b.neighborhood || "") || a.name.localeCompare(b.name);
-    if (sort === "fresh") return String(b.signal?.observedAt || b.freshnessDate || "").localeCompare(String(a.signal?.observedAt || a.freshnessDate || ""));
+    if (sort === "fresh") return restaurantSourceObservationStamp(b).localeCompare(restaurantSourceObservationStamp(a));
     return (b.score || 0) - (a.score || 0) || a.name.localeCompare(b.name);
   });
 }

@@ -158,9 +158,10 @@ function structuredEventWhen(event) {
 function eventSourceCard(item) {
   const restaurant = item.restaurant;
   const link = item.credibleLinks[0];
-  const observed = restaurant.signal?.observedAt ? new Date(restaurant.signal.observedAt).toLocaleDateString("en-CA", { month: "short", day: "numeric", timeZone: HALIFAX_EVENT_TIME_ZONE }) : "SOURCE";
+  const observedAt = officialSourceObservationStamp(restaurant);
+  const observed = observedAt ? new Date(observedAt).toLocaleDateString("en-CA", { month: "short", day: "numeric", timeZone: HALIFAX_EVENT_TIME_ZONE }) : "SOURCE";
   const label = displayEventLabel(link?.label, item.curatedEvents[0]?.title || "Official channel contains event-related information");
-  return `<article class="event-card"><div class="event-date"><span>CHECKED</span><strong>${escapeHtml(observed)}</strong></div><div class="event-thumb media-${mediaTone(restaurant)}${permittedImageClass(restaurant)}">${mediaImageMarkup(restaurant)}</div><div class="event-copy"><div class="event-title-line"><h3>${escapeHtml(restaurant.name)}</h3><span>Event lead</span></div><p>${escapeHtml(label)}</p><small>${escapeHtml(restaurant.neighborhood || "Halifax")} · Confirm current details</small><div class="card-tags"><span>Official source</span>${restaurant.hasPatio ? "<span>Patio</span>" : ""}</div></div><a class="button tertiary" href="#restaurant/${encodeURIComponent(restaurant.id)}">View</a></article>`;
+  return `<article class="event-card"><div class="event-date"><span>${observedAt ? "OBSERVED" : "UNDATED"}</span><strong>${escapeHtml(observed)}</strong></div><div class="event-thumb media-${mediaTone(restaurant)}${permittedImageClass(restaurant)}">${mediaImageMarkup(restaurant)}</div><div class="event-copy"><div class="event-title-line"><h3>${escapeHtml(restaurant.name)}</h3><span>Event lead</span></div><p>${escapeHtml(label)}</p><small>${escapeHtml(restaurant.neighborhood || "Halifax")} · Confirm current details</small><div class="card-tags"><span>Official source</span>${restaurant.hasPatio ? "<span>Patio</span>" : ""}</div></div><a class="button tertiary" href="#restaurant/${encodeURIComponent(restaurant.id)}">View</a></article>`;
 }
 
 function halifaxDateParts(value) {
