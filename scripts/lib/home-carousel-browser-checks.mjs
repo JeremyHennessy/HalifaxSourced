@@ -12,11 +12,17 @@ export function measureDocumentBounds() {
   };
 }
 
-export async function verifyHomeCarouselLayout(page) {
+export function assertClassicScrollbarBounds(bounds) {
+  assert.equal(bounds.viewportWidth, 500, 'Use the observed 500px desktop viewport');
+  assert(bounds.clientWidth < bounds.viewportWidth, 'Classic-scrollbar acceptance requires an actual positive browser gutter; zero-gutter coverage is separate');
+  assert.equal(bounds.overflow, false, 'The classic-scrollbar document must fit its clientWidth');
+}
+
+export async function verifyHomeCarouselLayout(page, { artifactPrefix = 'home-carousel' } = {}) {
   const viewport = page.viewportSize();
   const receipts = [];
   await mkdir('artifacts', { recursive: true });
-  const save = () => writeFile('artifacts/home-carousel-layout.json', JSON.stringify(receipts, null, 2));
+  const save = () => writeFile(`artifacts/${artifactPrefix}-layout.json`, JSON.stringify(receipts, null, 2));
   try {
     for (const width of [320, 390, 500, 900]) {
       await page.setViewportSize({ width, height: 900 });
@@ -74,7 +80,7 @@ export async function verifyHomeCarouselLayout(page) {
       receipt.returnBounds = await page.evaluate(measureDocumentBounds);
       await save();
       assert.equal(receipt.returnBounds.overflow, false, 'Returning from a card must preserve Home bounds');
-      await page.screenshot({ path: `artifacts/home-carousel-${width}.png`, fullPage: true });
+      await page.screenshot({ path: `artifacts/${artifactPrefix}-${width}.png`, fullPage: true });
     }
   } finally {
     if (viewport) await page.setViewportSize(viewport);

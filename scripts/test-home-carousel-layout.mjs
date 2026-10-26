@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { runInNewContext } from 'node:vm';
-import { measureDocumentBounds } from './lib/home-carousel-browser-checks.mjs';
+import { measureDocumentBounds, assertClassicScrollbarBounds } from './lib/home-carousel-browser-checks.mjs';
 
 const css = await readFile(new URL('../styles-responsive.css', import.meta.url), 'utf8');
 const mobileRules = css.match(/@media \(max-width:640px\)\{([\s\S]*?)\n\}/)?.[1];
@@ -23,6 +23,11 @@ assert.equal(sample(500, 485, 500).overflow, true, 'Catch the observed 15px scro
 assert.equal(sample(500, 485, 485).overflow, false);
 assert.equal(sample(500, 485, 486).overflow, false, 'Allow at most 1px rounding');
 assert.equal(sample(500, 485, 487).overflow, true);
+assertClassicScrollbarBounds(sample(500, 485, 485));
+assert.throws(() => assertClassicScrollbarBounds(sample(500, 500, 500)), /actual positive browser gutter/);
+assert.throws(() => assertClassicScrollbarBounds(sample(500, 485, 500)), /fit its clientWidth/);
+const classicRunner = await readFile(new URL('./test-home-carousel-classic-scrollbar.mjs', import.meta.url), 'utf8');
+assert.match(classicRunner, /ignoreDefaultArgs: \['--hide-scrollbars'\]/, 'Only the scrollbar-hiding default may be omitted; retain other launch/security defaults');
 
 // Geometry contract, not a browser-rendering claim: .page-shell is 100%-28px
 // below 640px. Zero-gutter phones retain exactly the old width; classic-gutter
