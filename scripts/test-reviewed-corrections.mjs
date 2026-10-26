@@ -6,8 +6,10 @@ import { spawnSync } from 'node:child_process';
 import vm from 'node:vm';
 import integrity from '../source-integrity.js';
 import { localRestaurantPolicyDecision } from './lib/local-restaurant-policy.mjs';
-import { reviewedCorrections, applyReviewedCorrections } from './lib/reviewed-corrections.mjs';
+import { reviewedCorrections, reviewedPlaceResolutions, applyReviewedCorrections } from './lib/reviewed-corrections.mjs';
 const root = new URL('../', import.meta.url);
+const reviewedResolutionCounts = reviewedPlaceResolutions.reduce((counts, record) => counts.set(record.restaurantId, (counts.get(record.restaurantId) || 0) + 1), new Map());
+assert.deepEqual([...reviewedResolutionCounts].filter(([, count]) => count > 1), [], 'Reviewed place resolutions must have unique restaurant IDs');
 const FIXTURE_NOW = '2026-10-20T16:00:00.000Z';
 class FixtureDate extends Date {
   constructor(...args) { super(...(args.length ? args : [FIXTURE_NOW])); }
