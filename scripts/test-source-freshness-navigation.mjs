@@ -218,7 +218,6 @@ try {
         const afterOracle = audit.snapshotDiagnostics();
         const actual = filteredRestaurants({ query: '', cuisine: 'all', neighbourhood: 'all', feature: 'all', sort: 'fresh' });
         const afterActualSort = audit.snapshotDiagnostics();
-        const queen = restaurants.find(record => record.id === 'osm-node-5161526522-sushi-nami-royale');
         return {
           stage,
           expectedIds: expected.map(record => record.id),
@@ -227,8 +226,6 @@ try {
           expectedVisible: expected.slice(0, PAGE_SIZE).map(record => record.id),
           clockDifferences: restaurants.filter(record => restaurantSourceObservationStamp(record) !== audit.expected(record)).map(record => record.id),
           unknown: restaurants.filter(record => !audit.expected(record)).length,
-          queenStamp: restaurantSourceObservationStamp(queen),
-          queenReviewedAt: queen.reviewedCorrection?.reviewedAt,
           diagnostics: { capture: audit.captureMetadata, beforeConsumers, afterOracle, afterActualSort, final: audit.snapshotDiagnostics() },
           modelUnchanged: JSON.stringify(restaurants) === audit.modelBefore,
           sourcesUnchanged: audit.raw() === audit.sourcesBefore,
@@ -239,9 +236,6 @@ try {
       assert.deepEqual(result.actualIds, result.expectedIds, 'Fresh sort uses the independently qualified latest source clock, with unknown dates last');
       assert.deepEqual(result.visibleIds, result.expectedVisible, 'Rendered Explore cards follow the qualified ordering');
       assert.deepEqual(result.clockDifferences, [], 'Every assembled restaurant follows the same evidence selector');
-      assert(result.queenStamp.startsWith('2026-09-04T'), 'Queen Street retains its latest source observation, not the later retention-review clock');
-      assert(result.queenReviewedAt.startsWith('2026-10-25'), 'The production correction still preserves its separate review timestamp');
-      assert.notEqual(result.queenStamp.slice(0, 10), result.queenReviewedAt.slice(0, 10));
       assert.equal(result.modelUnchanged, true, 'Ordering never rewrites restaurant objects');
       assert.equal(result.sourcesUnchanged, true, 'Ordering never rewrites raw source clocks');
       assert.equal(result.overflow, false);
@@ -265,7 +259,7 @@ try {
         };
         return {
           stage, cards,
-          expectedCards: expected.map(record => ({ id: record.id, label: audit.label(audit.expected(record)) })),
+          expectedCards: expected.map(record => ({ id: record.id, label: audit.label(audit.expected(record)) || 'Date unavailable' })),
           openingIds: homeOpeningLeads().map(record => record.id),
           expectedOpenings: activeRestaurants.filter(record => record.hasOpening === true).sort((a, b) => openingRank(b).localeCompare(openingRank(a))).slice(0, 4).map(record => record.id),
           diagnostics: audit.snapshotDiagnostics(),
@@ -298,62 +292,82 @@ try {
     await inspectExplore('reload');
 
     const fixtureResults = await page.evaluate(() => {
-      const audit = window.__sourceFreshnessAudit;
-      const recent = new Date(Date.now() - 86400000).toISOString();
-      const old = new Date(Date.now() - 180 * 86400000).toISOString();
-      const future = new Date(Date.now() + 86400000).toISOString();
-      const root = { id: 'freshness-fixture', name: 'Freshness fixture', website: 'https://fixture.example/', sources: [], freshnessDate: recent, relatedLinks: [], socialProfiles: [], officialUpdates: [] };
-      const signal = { restaurantId: root.id, website: root.website, sourceKind: 'official_website', status: 200, observedAt: old };
-      const fixtures = [
-        { name: 'failed-only', record: { ...root, signal: { ...signal, error: 'timeout', observedAt: recent } }, expected: '' },
-        { name: 'held-root', record: { ...root, signal: { ...signal, attempted: false, state: 'held', observedAt: recent } }, expected: '' },
-        { name: 'future-only', record: { ...root, signal: { ...signal, observedAt: future } }, expected: '' },
-        { name: 'redirect-not-content', record: { ...root, signal: { ...signal, status: 301, observedAt: recent } }, expected: '' },
-        { name: 'fractional-status', record: { ...root, signal: { ...signal, status: 200.5, observedAt: recent } }, expected: '' },
-        { name: 'array-status', record: { ...root, signal: { ...signal, status: [200], observedAt: recent } }, expected: '' },
-        { name: 'malformed-only', record: { ...root, signal: { ...signal, observedAt: 'not-a-date' } }, expected: '' },
-        { name: 'missing-only', record: { ...root, signal: { ...signal, observedAt: null } }, expected: '' },
-        { name: 'import-only', record: { ...root }, expected: '' },
-        { name: 'failed-preserves-independent', record: { ...root, sourceObservedAt: old, signal: { ...signal, error: 'timeout', observedAt: recent } }, expected: old },
-        { name: 'successful-prior-latest-held', record: { ...root, signal: { ...signal, latestAssessment: { attempted: false, state: 'held', error: 'source_access_hold', assessedAt: recent, observedAt: null } } }, expected: old },
-        { name: 'failed-nested-source', record: { ...root, sources: [{ status: 'verified', observedAt: old }, { status: 'failed', observedAt: recent }] }, expected: old },
-        { name: 'restricted-nested-source', record: { ...root, sources: [{ status: 'verified', observedAt: old }, { reviewState: 'restricted', observedAt: recent }] }, expected: old },
-        { name: 'spaced-http-failure-source', record: { ...root, sources: [{ status: 'verified', observedAt: old }, { status: ' 404', observedAt: recent }] }, expected: old },
-        { name: 'spaced-named-failure-source', record: { ...root, sources: [{ status: 'verified', observedAt: old }, { status: ' FAILED ', observedAt: recent }] }, expected: old },
-        { name: 'array-status-source', record: { ...root, sources: [{ status: 'verified', observedAt: old }, { status: [200], observedAt: recent }] }, expected: old },
-        { name: 'object-status-source', record: { ...root, sources: [{ status: 'verified', observedAt: old }, { status: {}, observedAt: recent }] }, expected: old },
-        { name: 'foreign-nested-source', record: { ...root, sources: [{ status: 'verified', observedAt: old }, { restaurantId: 'another-place', status: 'verified', observedAt: recent }] }, expected: old },
-        { name: 'foreign-nested-resolution', record: { ...root, sources: [{ status: 'verified', observedAt: old }], reviewedPlaceResolution: { restaurantId: 'another-place', observedAt: recent } }, expected: old },
-        { name: 'foreign-nested-lifecycle', record: { ...root, sources: [{ status: 'verified', observedAt: old }], operatingStatusEvidence: { restaurantId: 'another-place', verifiedAt: recent } }, expected: old },
-        { name: 'rejected-nested-resolution', record: { ...root, sources: [{ status: 'verified', observedAt: old }], reviewedPlaceResolution: { restaurantId: root.id, reviewState: 'rejected', observedAt: recent } }, expected: old },
-        { name: 'held-nested-lifecycle', record: { ...root, sources: [{ status: 'verified', observedAt: old }], operatingStatusEvidence: { restaurantId: root.id, status: 'held', observedAt: recent } }, expected: old },
-        { name: 'newer-accepted-source', record: { ...root, sources: [{ observedAt: recent }], signal }, expected: recent },
-        { name: 'first-party-original-clock', record: { ...root, firstPartySources: { restaurantId: root.id, reviewState: 'verified', observedAt: old, lastVerifiedAt: recent } }, expected: old }
-      ];
-      const before = JSON.stringify(fixtures);
-      const results = fixtures.map(({ name, record, expected }) => {
-        const card = document.createElement('div');
-        card.innerHTML = freshSourceCard(record);
-        const event = document.createElement('div');
-        event.innerHTML = eventSourceCard({ restaurant: record, credibleLinks: [{ label: 'Official event information', url: root.website }], curatedEvents: [] });
-        const officialStamp = audit.officialForRestaurant(record);
-        return {
-          name, expected,
-          actual: restaurantSourceObservationStamp(record),
-          repeated: restaurantSourceObservationStamp(record),
-          homeStamp: sourceFreshnessStamp(record),
-          homeLabel: card.querySelector('.eyebrow').textContent.trim(),
-          expectedHomeLabel: audit.label(expected),
-          eventDate: event.querySelector('.event-date strong').textContent.trim(),
-          eventLabel: event.querySelector('.event-date span').textContent.trim(),
-          expectedEventDate: officialStamp === null ? 'SOURCE' : audit.label(new Date(officialStamp).toISOString())
-        };
-      });
-      return { results, diagnostics: audit.snapshotDiagnostics(), fixturesUnchanged: JSON.stringify(fixtures) === before, modelUnchanged: JSON.stringify(restaurants) === audit.modelBefore, sourcesUnchanged: audit.raw() === audit.sourcesBefore };
+      const CorpusDate = Date;
+      const fixtureAsOf = '2026-10-26T00:00:00.000Z';
+      window.Date = class extends CorpusDate {
+        constructor(...args) { super(...(args.length ? args : [fixtureAsOf])); }
+        static now() { return CorpusDate.parse(fixtureAsOf); }
+      };
+      try {
+        const audit = window.__sourceFreshnessAudit;
+        const recent = new Date(Date.now() - 86400000).toISOString();
+        const old = new Date(Date.now() - 180 * 86400000).toISOString();
+        const future = new Date(Date.now() + 86400000).toISOString();
+        const root = { id: 'freshness-fixture', name: 'Freshness fixture', website: 'https://fixture.example/', sources: [], freshnessDate: recent, relatedLinks: [], socialProfiles: [], officialUpdates: [] };
+        const signal = { restaurantId: root.id, website: root.website, sourceKind: 'official_website', status: 200, observedAt: old };
+        if (restaurants.some(record => record.id === root.id) || officialObservationRowsById.has(root.id) || firstPartyObservationRowsById.has(root.id)) throw new Error('Synthetic hostile identity collides with published observations');
+        const reviewStamp = '2026-10-25T22:35:00.000Z', newerSuccess = '2026-10-25T23:00:00.000Z';
+        const retainedQueenStamp = '2026-09-04T13:33:35.848Z';
+        const dharma = { ...root, name: 'Dharma Sushi frozen fixture', signal: { ...signal, status: 503, error: 'robots_unavailable', observedAt: recent } };
+        const queen = { ...root, name: 'Queen Street Sushi frozen fixture', reviewedCorrection: { observedAt: '2026-08-29', reviewedAt: reviewStamp }, firstPartySources: { restaurantId: root.id, reviewState: 'verified', observedAt: retainedQueenStamp, lastVerifiedAt: reviewStamp } };
+        const fixtures = [
+          { name: 'frozen-dharma-failure-undated', record: dharma, expected: '' },
+          { name: 'frozen-dharma-new-success', record: { ...dharma, signal: { ...signal, observedAt: newerSuccess } }, expected: newerSuccess },
+          { name: 'frozen-queen-review-does-not-restamp', record: queen, expected: retainedQueenStamp },
+          { name: 'frozen-queen-genuine-success-at-review-instant', record: { ...queen, signal: { ...signal, observedAt: reviewStamp } }, expected: reviewStamp },
+          { name: 'frozen-queen-newer-success', record: { ...queen, signal: { ...signal, observedAt: newerSuccess } }, expected: newerSuccess },
+          { name: 'failed-only', record: { ...root, signal: { ...signal, error: 'timeout', observedAt: recent } }, expected: '' },
+          { name: 'held-root', record: { ...root, signal: { ...signal, attempted: false, state: 'held', observedAt: recent } }, expected: '' },
+          { name: 'future-only', record: { ...root, signal: { ...signal, observedAt: future } }, expected: '' },
+          { name: 'redirect-not-content', record: { ...root, signal: { ...signal, status: 301, observedAt: recent } }, expected: '' },
+          { name: 'fractional-status', record: { ...root, signal: { ...signal, status: 200.5, observedAt: recent } }, expected: '' },
+          { name: 'array-status', record: { ...root, signal: { ...signal, status: [200], observedAt: recent } }, expected: '' },
+          { name: 'malformed-only', record: { ...root, signal: { ...signal, observedAt: 'not-a-date' } }, expected: '' },
+          { name: 'missing-only', record: { ...root, signal: { ...signal, observedAt: null } }, expected: '' },
+          { name: 'import-only', record: { ...root }, expected: '' },
+          { name: 'failed-preserves-independent', record: { ...root, sourceObservedAt: old, signal: { ...signal, error: 'timeout', observedAt: recent } }, expected: old },
+          { name: 'successful-prior-latest-held', record: { ...root, signal: { ...signal, latestAssessment: { attempted: false, state: 'held', error: 'source_access_hold', assessedAt: recent, observedAt: null } } }, expected: old },
+          { name: 'failed-nested-source', record: { ...root, sources: [{ status: 'verified', observedAt: old }, { status: 'failed', observedAt: recent }] }, expected: old },
+          { name: 'restricted-nested-source', record: { ...root, sources: [{ status: 'verified', observedAt: old }, { reviewState: 'restricted', observedAt: recent }] }, expected: old },
+          { name: 'spaced-http-failure-source', record: { ...root, sources: [{ status: 'verified', observedAt: old }, { status: ' 404', observedAt: recent }] }, expected: old },
+          { name: 'spaced-named-failure-source', record: { ...root, sources: [{ status: 'verified', observedAt: old }, { status: ' FAILED ', observedAt: recent }] }, expected: old },
+          { name: 'array-status-source', record: { ...root, sources: [{ status: 'verified', observedAt: old }, { status: [200], observedAt: recent }] }, expected: old },
+          { name: 'object-status-source', record: { ...root, sources: [{ status: 'verified', observedAt: old }, { status: {}, observedAt: recent }] }, expected: old },
+          { name: 'foreign-nested-source', record: { ...root, sources: [{ status: 'verified', observedAt: old }, { restaurantId: 'another-place', status: 'verified', observedAt: recent }] }, expected: old },
+          { name: 'foreign-nested-resolution', record: { ...root, sources: [{ status: 'verified', observedAt: old }], reviewedPlaceResolution: { restaurantId: 'another-place', observedAt: recent } }, expected: old },
+          { name: 'foreign-nested-lifecycle', record: { ...root, sources: [{ status: 'verified', observedAt: old }], operatingStatusEvidence: { restaurantId: 'another-place', verifiedAt: recent } }, expected: old },
+          { name: 'rejected-nested-resolution', record: { ...root, sources: [{ status: 'verified', observedAt: old }], reviewedPlaceResolution: { restaurantId: root.id, reviewState: 'rejected', observedAt: recent } }, expected: old },
+          { name: 'held-nested-lifecycle', record: { ...root, sources: [{ status: 'verified', observedAt: old }], operatingStatusEvidence: { restaurantId: root.id, status: 'held', observedAt: recent } }, expected: old },
+          { name: 'newer-accepted-source', record: { ...root, sources: [{ observedAt: recent }], signal }, expected: recent },
+          { name: 'first-party-original-clock', record: { ...root, firstPartySources: { restaurantId: root.id, reviewState: 'verified', observedAt: old, lastVerifiedAt: recent } }, expected: old }
+        ];
+        const before = JSON.stringify(fixtures);
+        const results = fixtures.map(({ name, record, expected }) => {
+          const card = document.createElement('div');
+          card.innerHTML = freshSourceCard(record);
+          const event = document.createElement('div');
+          event.innerHTML = eventSourceCard({ restaurant: record, credibleLinks: [{ label: 'Official event information', url: root.website }], curatedEvents: [] });
+          const officialStamp = audit.officialForRestaurant(record);
+          return {
+            name, expected, oracle: audit.expected(record),
+            actual: restaurantSourceObservationStamp(record),
+            repeated: restaurantSourceObservationStamp(record),
+            homeStamp: sourceFreshnessStamp(record),
+            homeLabel: card.querySelector('.eyebrow').textContent.trim(),
+            expectedHomeLabel: audit.label(expected),
+            eventDate: event.querySelector('.event-date strong').textContent.trim(),
+            eventLabel: event.querySelector('.event-date span').textContent.trim(),
+            expectedEventDate: officialStamp === null ? 'SOURCE' : audit.label(new Date(officialStamp).toISOString())
+          };
+        });
+        return { fixtureAsOf, results, diagnostics: audit.snapshotDiagnostics(), fixturesUnchanged: JSON.stringify(fixtures) === before, modelUnchanged: JSON.stringify(restaurants) === audit.modelBefore, sourcesUnchanged: audit.raw() === audit.sourcesBefore };
+      } finally { window.Date = CorpusDate; }
     });
+    assert.equal(await page.evaluate(() => Date.now()), Date.parse(asOf), 'Frozen hostile clock is restored before returning to the live corpus');
     await saveStage({ stage: 'hostile-clock-fixtures', ...fixtureResults });
     for (const result of fixtureResults.results) {
       assert.equal(result.actual, result.expected, result.name);
+      assert.equal(result.oracle, result.expected, result.name + ': independent qualified-evidence oracle');
       assert.equal(result.repeated, result.expected, result.name + ': repeated selector');
       assert.equal(result.homeStamp, result.expected, result.name + ': Home uses same clock');
       if (result.expectedHomeLabel) assert.equal(result.homeLabel, result.expectedHomeLabel, result.name + ': original date preserved');
@@ -366,74 +380,83 @@ try {
     assert.equal(fixtureResults.sourcesUnchanged, true);
 
     const duplicateResults = await page.evaluate(() => {
-      const audit = window.__sourceFreshnessAudit;
-      const id = 'source-freshness-duplicate-fixture';
-      const controlId = 'source-freshness-order-control';
-      if (restaurants.some(record => [id, controlId].includes(record.id))) throw new Error('Synthetic freshness identity collides with published data');
-      const stamp = days => new Date(Date.now() - days * 86400000).toISOString();
-      const old = stamp(120), successful = stamp(60), independent = stamp(30), attempted = stamp(1);
-      const baseRecord = { id, name: 'Duplicate observations fixture', website: 'https://fixture.example/', sources: [], relatedLinks: [], socialProfiles: [], officialUpdates: [] };
-      const success = { restaurantId: id, website: baseRecord.website, sourceKind: 'official_website', status: 200, observedAt: successful };
-      const failure = { restaurantId: id, website: baseRecord.website, error: 'timeout', observedAt: attempted };
-      const earlierFirstParty = { restaurantId: id, reviewState: 'verified', observedAt: old };
-      const laterFirstParty = { restaurantId: id, reviewState: 'verified', observedAt: independent };
-      const control = { ...baseRecord, id: controlId, name: 'Older independent source fixture', sourceObservedAt: stamp(90), signal: { ...success, restaurantId: controlId, observedAt: stamp(90) } };
-      const originalActive = activeRestaurants.slice();
-      const officialHad = officialObservationRowsById.has(id), officialBefore = officialObservationRowsById.get(id);
-      const firstPartyHad = firstPartyObservationRowsById.has(id), firstPartyBefore = firstPartyObservationRowsById.get(id);
-      const mapsBefore = JSON.stringify([[...officialObservationRowsById], [...firstPartyObservationRowsById]]);
-      const results = [];
-      try {
-        for (const reverse of [false, true]) {
-          for (const withFirstParty of [false, true]) {
-            const officialRows = reverse ? [failure, success] : [success, failure];
-            const firstPartyRows = reverse ? [laterFirstParty, earlierFirstParty] : [earlierFirstParty, laterFirstParty];
-            officialObservationRowsById.set(id, officialRows);
-            if (withFirstParty) firstPartyObservationRowsById.set(id, firstPartyRows);
-            else firstPartyObservationRowsById.delete(id);
-            // Match the legacy model's lossy last-official/first-discovery
-            // projections. Consumers must still retain every eligible receipt.
-            const record = { ...baseRecord, signal: officialRows.at(-1), firstPartySources: withFirstParty ? firstPartyRows[0] : null };
-            const inputBefore = JSON.stringify({ record, officialRows, firstPartyRows, control });
-            activeRestaurants.splice(0, activeRestaurants.length, control, record);
-            const expected = withFirstParty ? independent : successful;
-            const card = document.createElement('div');
-            card.innerHTML = freshSourceCard(record);
-            const event = document.createElement('div');
-            event.innerHTML = eventSourceCard({ restaurant: record, credibleLinks: [{ label: 'Official events', url: record.website }], curatedEvents: [] });
-            const home = document.createElement('div');
-            home.innerHTML = homeRichSections();
-            results.push({
-              reverse, withFirstParty, expected, expectedOfficial: successful,
-              actual: restaurantSourceObservationStamp(record),
-              official: officialSourceObservationStamp(record),
-              homeStamp: sourceFreshnessStamp(record),
-              homeLabel: card.querySelector('.eyebrow').textContent.trim(),
-              expectedHomeLabel: audit.label(expected),
-              eventDate: event.querySelector('.event-date strong').textContent.trim(),
-              eventLabel: event.querySelector('.event-date span').textContent.trim(),
-              expectedEventDate: audit.label(successful),
-              sortedIds: filteredRestaurants({ query: '', cuisine: 'all', neighbourhood: 'all', feature: 'all', sort: 'fresh' }).map(item => item.id),
-              homeIds: [...home.querySelectorAll('.fresh-data-card h3 a')].map(link => decodeURIComponent(link.hash.replace('#restaurant/', ''))),
-              expectedIds: [id, controlId],
-              inputsUnchanged: JSON.stringify({ record, officialRows, firstPartyRows, control }) === inputBefore
-            });
-          }
-        }
-      } finally {
-        activeRestaurants.splice(0, activeRestaurants.length, ...originalActive);
-        if (officialHad) officialObservationRowsById.set(id, officialBefore); else officialObservationRowsById.delete(id);
-        if (firstPartyHad) firstPartyObservationRowsById.set(id, firstPartyBefore); else firstPartyObservationRowsById.delete(id);
-      }
-      return {
-        results,
-        diagnostics: audit.snapshotDiagnostics(),
-        mapsUnchanged: JSON.stringify([[...officialObservationRowsById], [...firstPartyObservationRowsById]]) === mapsBefore,
-        activeUnchanged: activeRestaurants.length === originalActive.length && activeRestaurants.every((record, index) => record === originalActive[index]),
-        modelUnchanged: JSON.stringify(restaurants) === audit.modelBefore,
-        sourcesUnchanged: audit.raw() === audit.sourcesBefore
+      const CorpusDate = Date;
+      const fixtureAsOf = '2026-10-26T00:00:00.000Z';
+      window.Date = class extends CorpusDate {
+        constructor(...args) { super(...(args.length ? args : [fixtureAsOf])); }
+        static now() { return CorpusDate.parse(fixtureAsOf); }
       };
+      try {
+        const audit = window.__sourceFreshnessAudit;
+        const id = 'source-freshness-duplicate-fixture';
+        const controlId = 'source-freshness-order-control';
+        if (restaurants.some(record => [id, controlId].includes(record.id))) throw new Error('Synthetic freshness identity collides with published data');
+        const stamp = days => new Date(Date.now() - days * 86400000).toISOString();
+        const old = stamp(120), successful = stamp(60), independent = stamp(30), attempted = stamp(1);
+        const baseRecord = { id, name: 'Duplicate observations fixture', website: 'https://fixture.example/', sources: [], relatedLinks: [], socialProfiles: [], officialUpdates: [] };
+        const success = { restaurantId: id, website: baseRecord.website, sourceKind: 'official_website', status: 200, observedAt: successful };
+        const failure = { restaurantId: id, website: baseRecord.website, error: 'timeout', observedAt: attempted };
+        const earlierFirstParty = { restaurantId: id, reviewState: 'verified', observedAt: old };
+        const laterFirstParty = { restaurantId: id, reviewState: 'verified', observedAt: independent };
+        const control = { ...baseRecord, id: controlId, name: 'Older independent source fixture', sourceObservedAt: stamp(90), signal: { ...success, restaurantId: controlId, observedAt: stamp(90) } };
+        const originalActive = activeRestaurants.slice();
+        const officialHad = officialObservationRowsById.has(id), officialBefore = officialObservationRowsById.get(id);
+        const firstPartyHad = firstPartyObservationRowsById.has(id), firstPartyBefore = firstPartyObservationRowsById.get(id);
+        const mapsBefore = JSON.stringify([[...officialObservationRowsById], [...firstPartyObservationRowsById]]);
+        const results = [];
+        try {
+          for (const reverse of [false, true]) {
+            for (const withFirstParty of [false, true]) {
+              const officialRows = reverse ? [failure, success] : [success, failure];
+              const firstPartyRows = reverse ? [laterFirstParty, earlierFirstParty] : [earlierFirstParty, laterFirstParty];
+              officialObservationRowsById.set(id, officialRows);
+              if (withFirstParty) firstPartyObservationRowsById.set(id, firstPartyRows);
+              else firstPartyObservationRowsById.delete(id);
+              // Match the legacy model's lossy last-official/first-discovery
+              // projections. Consumers must still retain every eligible receipt.
+              const record = { ...baseRecord, signal: officialRows.at(-1), firstPartySources: withFirstParty ? firstPartyRows[0] : null };
+              const inputBefore = JSON.stringify({ record, officialRows, firstPartyRows, control });
+              activeRestaurants.splice(0, activeRestaurants.length, control, record);
+              const expected = withFirstParty ? independent : successful;
+              const card = document.createElement('div');
+              card.innerHTML = freshSourceCard(record);
+              const event = document.createElement('div');
+              event.innerHTML = eventSourceCard({ restaurant: record, credibleLinks: [{ label: 'Official events', url: record.website }], curatedEvents: [] });
+              const home = document.createElement('div');
+              home.innerHTML = homeRichSections();
+              results.push({
+                reverse, withFirstParty, expected, expectedOfficial: successful,
+                actual: restaurantSourceObservationStamp(record),
+                official: officialSourceObservationStamp(record),
+                homeStamp: sourceFreshnessStamp(record),
+                homeLabel: card.querySelector('.eyebrow').textContent.trim(),
+                expectedHomeLabel: audit.label(expected),
+                eventDate: event.querySelector('.event-date strong').textContent.trim(),
+                eventLabel: event.querySelector('.event-date span').textContent.trim(),
+                expectedEventDate: audit.label(successful),
+                sortedIds: filteredRestaurants({ query: '', cuisine: 'all', neighbourhood: 'all', feature: 'all', sort: 'fresh' }).map(item => item.id),
+                homeIds: [...home.querySelectorAll('.fresh-data-card h3 a')].map(link => decodeURIComponent(link.hash.replace('#restaurant/', ''))),
+                expectedIds: [id, controlId],
+                inputsUnchanged: JSON.stringify({ record, officialRows, firstPartyRows, control }) === inputBefore
+              });
+            }
+          }
+        } finally {
+          activeRestaurants.splice(0, activeRestaurants.length, ...originalActive);
+          if (officialHad) officialObservationRowsById.set(id, officialBefore); else officialObservationRowsById.delete(id);
+          if (firstPartyHad) firstPartyObservationRowsById.set(id, firstPartyBefore); else firstPartyObservationRowsById.delete(id);
+        }
+        return {
+          fixtureAsOf, results,
+          diagnostics: audit.snapshotDiagnostics(),
+          mapsUnchanged: JSON.stringify([[...officialObservationRowsById], [...firstPartyObservationRowsById]]) === mapsBefore,
+          activeUnchanged: activeRestaurants.length === originalActive.length && activeRestaurants.every((record, index) => record === originalActive[index]),
+          modelUnchanged: JSON.stringify(restaurants) === audit.modelBefore,
+          sourcesUnchanged: audit.raw() === audit.sourcesBefore
+        };
+      } finally { window.Date = CorpusDate; }
     });
+    assert.equal(await page.evaluate(() => Date.now()), Date.parse(asOf), 'Frozen duplicate clock is restored before returning to the live corpus');
     await saveStage({ stage: 'duplicate-observation-consumers', ...duplicateResults });
     for (const result of duplicateResults.results) {
       assert.equal(result.actual, result.expected, 'All duplicate rows contribute independently of raw model selection/order');
