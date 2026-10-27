@@ -57,10 +57,12 @@
       "id": "superseded-preview-closures",
       "lane": "publication",
       "priority": 1,
-      "state": "needs-owner-confirmation",
-      "blocker": "Obsolete drafts122 and131 are still open and reserve event/source lanes. Branches and candidate history must be preserved.",
-      "retryWhen": "Owner explicitly confirms closing these two superseded drafts; closing them does not approve their data.",
-      "url": "https://github.com/JeremyHennessy/HalifaxSourced/pull/138"
+      "state": "verified",
+      "blocker": null,
+      "retryWhen": "Closed historical drafts require no further closure; this does not approve their data.",
+      "url": "https://github.com/JeremyHennessy/HalifaxSourced/pull/138",
+      "verifiedAt": "2026-10-27",
+      "evidence": "Read-only GitHub review on 2026-10-27 confirmed PR122 and PR131 closed. Preserve history and the independent hold on PR141."
     }
   ]
 }

@@ -1,3 +1,4 @@
+import { verifyNewsAndSources } from './lib/news-source-browser-checks.mjs';
 import { existsSync } from "node:fs";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
@@ -864,6 +865,8 @@ if (!externalTargetState.external || externalTargetState.unsafeTargets) throw ne
 
 await page.goto(`${url}/#home`, { waitUntil: "networkidle" });
 await page.screenshot({ path: resolve("artifacts", "ui-check-mobile.png"), fullPage: true });
+
+await verifyNewsAndSources(page, url);
 
 await writeFile(resolve('artifacts/offline-resource-evidence.json'), JSON.stringify(offlineResources.evidence, null, 2));
 offlineResources.assertClean();

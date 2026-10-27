@@ -39,8 +39,19 @@ jobs:
             node --check "$file"
           done
 
+      - name: Validate reviewed news and source catalogue offline
+        run: |
+          node scripts/build-regional-news.mjs
+          node scripts/check-news.mjs
+          node scripts/test-regional-news.mjs
+          node scripts/test-news-ui.mjs
+          node scripts/test-source-catalog.mjs
+          node scripts/test-library-event-boundaries.mjs
+
       - name: Run structured-special evidence regression
-        run: node scripts/test-structured-specials-model.mjs
+        run: |
+          node scripts/test-structured-specials-model.mjs
+          node scripts/test-highwayman-sangria-pitcher.mjs
 
       - name: Test discovery URL state and reporting values
         run: |
@@ -251,6 +262,7 @@ jobs:
           node scripts/report-missed-local-restaurants.mjs
           node scripts/build-deployment-metadata.mjs
           node scripts/build-update-ledger.mjs
+          node scripts/build-source-catalog.mjs
           node scripts/check-regional-restaurant-coverage.mjs
 
       - name: Build SQLite database artifacts

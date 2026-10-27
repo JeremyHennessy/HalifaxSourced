@@ -48,7 +48,7 @@ const failureReason = row => row.reason || row.error || (typeof row.status === '
 const severity = (age, hasFailures, unknownCount) => age === 'stale' ? 'stale' : unknownCount ? 'unknown' : age === 'fresh' && hasFailures ? 'warn' : age;
 
 export function sourceEntry({id, label, payload, path, targetHours, now, sourceCommitSha, sourceStats = false}) {
-  const records = rows(payload.records || payload.events || payload.results || (payload.posts?.length ? payload.posts : payload.signals) || []);
+  const records = rows(payload.records || payload.events || payload.results || payload.items || (payload.posts?.length ? payload.posts : payload.signals) || []);
   const stats = sourceStats ? rows(payload.sourceStats) : [];
   const refresh = rows(payload.refreshObservations);
   const explicitFailures = rows(payload.failures);

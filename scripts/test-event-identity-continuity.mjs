@@ -91,7 +91,7 @@ function assertCityWorkflow(text) {
   assert.match(text, /^permissions:\n  contents: read\n/m);
   assert.doesNotMatch(prJob, /import-city-events|import-supplemental|upload-artifact|promote-|coordinate-preview|dispatch|permissions:|\bwrite\b|ref: main/,
     'Validation must not collect, upload, promote, dispatch, or acquire write permissions');
-  const tests = ['reviewed-event-locations', 'event-identity-continuity', 'event-refresh-safety', 'event-refresh-dedupe', 'canonical-event-dedupe', 'event-title-categories', 'robots-policy', 'robots-policy-adapters', 'preview-coordinator'];
+  const tests = ['reviewed-event-locations', 'event-identity-continuity', 'event-refresh-safety', 'event-refresh-dedupe', 'canonical-event-dedupe', 'library-event-boundaries', 'event-title-categories', 'robots-policy', 'robots-policy-adapters', 'preview-coordinator'];
   const steps = prJob.split(/^      - /m).slice(1);
   const runSteps = steps.filter(step => /^        run:/m.test(step));
   assert.equal(runSteps.length, 1, 'All validation commands share one transport-denied step');
