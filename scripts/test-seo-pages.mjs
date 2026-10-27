@@ -47,7 +47,7 @@ try{
  assert.ok(htmls.some(h=>h.includes('Safe &lt;script&gt;alert(1)&lt;/script&gt; Cafe')));
  assert.ok(htmls.every(h=>!h.includes('Needs cross-reference')&&!h.includes('Past concert')));
  assert.ok(htmls.some(h=>h.includes('Image source')));
- const graph=htmls.map(h=>JSON.parse(h.match(/<script type="application\\/ld\\+json">([\\s\\S]*?)<\\/script>/)?.[1]||'null'));
+ const graph=htmls.map(h=>JSON.parse(h.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)?.[1]||'null'));
  assert.ok(graph.every(g=>g?.['@graph']?.some(x=>x['@type']==='BreadcrumbList')),'Every detail page must include breadcrumbs');
  assert.ok(graph.every(g=>g['@graph'].find(x=>x['@type']==='BreadcrumbList').itemListElement.at(-1).item.startsWith('https://halifaxsourced.com/')),'Breadcrumb links must remain local');
  assert.ok(graph.some(g=>g['@graph'].some(x=>x['@type']==='Restaurant'&&x.address?.['@type']==='PostalAddress'&&x.address.postalCode==='B3J 1A1')),'Use structured address only for fully labelled evidence');
