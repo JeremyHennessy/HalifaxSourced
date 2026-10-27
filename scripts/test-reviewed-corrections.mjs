@@ -293,6 +293,11 @@ assert(app.restaurants.find(record => record.id === creperieId).menuLinks.some(l
 const creperieResolution = reviewedPlaceResolutions.find(record => record.restaurantId === creperieId);
 assert.equal(creperieResolution?.candidateId, 'ddbc-bubble-waffle-ice-cream-55-portland-street-dartmouth-ns', 'Resolve the seasonal Bubble Waffle listing into the existing same-address, same-phone, same-domain restaurant');
 assert(!app.restaurants.some(record => /bubble waffle/i.test(record.name)), 'The seasonal offering must not create a duplicate canonical restaurant');
+const cafeGoodluckId = 'osm-node-11752614922-cafe-good-luck';
+const cafeGoodluckResolution = reviewedPlaceResolutions.find(record => record.restaurantId === cafeGoodluckId);
+assert.equal(cafeGoodluckResolution?.candidateId, 'ddbc-cafe-goodluck-145-portland-street-dartmouth-ns', 'Resolve the stale-domain Cafe Goodluck directory listing into the existing same-address, same-phone restaurant');
+assert.equal(cafeGoodluckResolution?.website, 'https://cafegoodluck.ca/goodluck', 'Retain the current owner page instead of the stale directory outbound domain');
+assert.equal(app.restaurants.filter(record => record.id === cafeGoodluckId).length, 1, 'Cafe Goodluck must retain one canonical restaurant identity');
 const revanaId = 'osm-node-3801688860-revana-pizza';
 for (const records of [app.restaurants, catalog.restaurants]) {
   const matches = records.filter(record => record.id === revanaId);
