@@ -3603,6 +3603,213 @@
           "observedAt": "2026-10-26T18:34:39.707Z"
         }
       ]
+    },
+    {
+      "provenance": {
+        "kind": "reviewed_workflow_log",
+        "repository": "JeremyHennessy/HalifaxSourced",
+        "sourceCommitSha": "6cac73216403c1c2e047fa39391e4bb0033e561f",
+        "workflowRunId": "40525512605",
+        "workflowRunAttempt": "1",
+        "workflowJob": "social-refresh",
+        "workflowJobId": 122263883257,
+        "accessPolicySha256": "006f87be1b60d5fa3f78aebafbb3f14fdbd3fbe901005190291990fc680a9dd3",
+        "logSha256": "8a8935cc6a31822fdbae8ad6916375583c669c3bcbedeeef6f2620ab669008e4",
+        "diagnosticSha256": "1e1550e24da8269119281bd82b9a0ef7a2acc7095fa5e9aa93ee98f01e6068a5",
+        "receiptSha256": "9766543151277515a4c25c89faf4718e2eecdb75fb5f3cfa099346a276d022f3",
+        "loggedAt": "2026-10-27T14:55:53.931Z",
+        "diagnostic": {
+          "version": 1,
+          "disposition": "nonpublishable_requires_review",
+          "kind": "http_restriction",
+          "repository": "JeremyHennessy/HalifaxSourced",
+          "workflowJob": "social-refresh",
+          "loggedAt": "2026-10-27T14:55:53.931Z",
+          "sourceCommitSha": "6cac73216403c1c2e047fa39391e4bb0033e561f",
+          "sourceWorkflowRunId": "40525512605",
+          "sourceWorkflowRunAttempt": "1",
+          "accessPolicySha256": "006f87be1b60d5fa3f78aebafbb3f14fdbd3fbe901005190291990fc680a9dd3",
+          "evidence": {
+            "hold": {
+              "id": "41084eaa3cd812e4353cf6eee627e7988bc48f764bd4119c13f6d7f16ba25a4e",
+              "scope": "url",
+              "target": "https://bedfordbasinmarket.com/menu",
+              "reason": "access_restricted",
+              "resume": "reviewed_evidence_required",
+              "evidence": {
+                "url": "https://www.bedfordbasinmarket.com/menu",
+                "finalUrl": "https://www.bedfordbasinmarket.com/menu",
+                "status": 403,
+                "observedAt": "2026-10-27T14:55:53.931Z"
+              },
+              "provenance": {
+                "kind": "current_run",
+                "sourceCommitSha": "6cac73216403c1c2e047fa39391e4bb0033e561f",
+                "sourceWorkflowRunId": "40525512605",
+                "sourceWorkflowRunAttempt": "1",
+                "accessPolicySha256": "006f87be1b60d5fa3f78aebafbb3f14fdbd3fbe901005190291990fc680a9dd3",
+                "requestId": "167"
+              }
+            },
+            "receipt": {
+              "requestId": "167",
+              "url": "https://www.bedfordbasinmarket.com/menu",
+              "status": 403,
+              "observedAt": "2026-10-27T14:55:53.931Z",
+              "attemptedAt": "2026-10-27T14:55:53.738Z",
+              "mediaType": "text/html"
+            },
+            "late": false,
+            "suspensionId": null
+          }
+        }
+      },
+      "observations": [
+        {
+          "url": "https://www.bedfordbasinmarket.com/menu",
+          "finalUrl": "https://www.bedfordbasinmarket.com/menu",
+          "status": 403,
+          "observedAt": "2026-10-27T14:55:53.931Z"
+        }
+      ]
+    },
+    {
+      "provenance": {
+        "kind": "reviewed_workflow_log",
+        "repository": "JeremyHennessy/HalifaxSourced",
+        "sourceCommitSha": "6cac73216403c1c2e047fa39391e4bb0033e561f",
+        "workflowRunId": "40525512605",
+        "workflowRunAttempt": "1",
+        "workflowJob": "social-refresh",
+        "workflowJobId": 122263883257,
+        "accessPolicySha256": "006f87be1b60d5fa3f78aebafbb3f14fdbd3fbe901005190291990fc680a9dd3",
+        "logSha256": "8a8935cc6a31822fdbae8ad6916375583c669c3bcbedeeef6f2620ab669008e4",
+        "diagnosticSha256": "405c47afdb6193974794b8855bc10998d3130feb78f1c7e6701a695233a60100",
+        "receiptSha256": "4ee90211dd716a22cbf30d0ca0b07764d3877f2b1fcc63f652d0667c7ba46057",
+        "loggedAt": "2026-10-27T14:55:54.580Z",
+        "diagnostic": {
+          "version": 1,
+          "disposition": "nonpublishable_requires_review",
+          "kind": "http_restriction",
+          "repository": "JeremyHennessy/HalifaxSourced",
+          "workflowJob": "social-refresh",
+          "loggedAt": "2026-10-27T14:55:54.580Z",
+          "sourceCommitSha": "6cac73216403c1c2e047fa39391e4bb0033e561f",
+          "sourceWorkflowRunId": "40525512605",
+          "sourceWorkflowRunAttempt": "1",
+          "accessPolicySha256": "006f87be1b60d5fa3f78aebafbb3f14fdbd3fbe901005190291990fc680a9dd3",
+          "evidence": {
+            "hold": {
+              "id": "be5dc747fd1810a61685c7ed5b1bf028776d680420187b5e5fcb6d33e0d7e3de",
+              "scope": "url",
+              "target": "https://brooklynwarehouse.ca/menu",
+              "reason": "access_restricted",
+              "resume": "reviewed_evidence_required",
+              "evidence": {
+                "url": "https://brooklynwarehouse.ca/menu",
+                "finalUrl": "https://brooklynwarehouse.ca/menu",
+                "status": 403,
+                "observedAt": "2026-10-27T14:55:54.580Z"
+              },
+              "provenance": {
+                "kind": "current_run",
+                "sourceCommitSha": "6cac73216403c1c2e047fa39391e4bb0033e561f",
+                "sourceWorkflowRunId": "40525512605",
+                "sourceWorkflowRunAttempt": "1",
+                "accessPolicySha256": "006f87be1b60d5fa3f78aebafbb3f14fdbd3fbe901005190291990fc680a9dd3",
+                "requestId": "169"
+              }
+            },
+            "receipt": {
+              "requestId": "169",
+              "url": "https://brooklynwarehouse.ca/menu",
+              "status": 403,
+              "observedAt": "2026-10-27T14:55:54.580Z",
+              "attemptedAt": "2026-10-27T14:55:54.458Z",
+              "mediaType": "text/html"
+            },
+            "late": false,
+            "suspensionId": null
+          }
+        }
+      },
+      "observations": [
+        {
+          "url": "https://brooklynwarehouse.ca/menu",
+          "finalUrl": "https://brooklynwarehouse.ca/menu",
+          "status": 403,
+          "observedAt": "2026-10-27T14:55:54.580Z"
+        }
+      ]
+    },
+    {
+      "provenance": {
+        "kind": "reviewed_workflow_log",
+        "repository": "JeremyHennessy/HalifaxSourced",
+        "sourceCommitSha": "6cac73216403c1c2e047fa39391e4bb0033e561f",
+        "workflowRunId": "40525512605",
+        "workflowRunAttempt": "1",
+        "workflowJob": "social-refresh",
+        "workflowJobId": 122263883257,
+        "accessPolicySha256": "006f87be1b60d5fa3f78aebafbb3f14fdbd3fbe901005190291990fc680a9dd3",
+        "logSha256": "8a8935cc6a31822fdbae8ad6916375583c669c3bcbedeeef6f2620ab669008e4",
+        "diagnosticSha256": "e278a2f382556cbc4e15d6159cd4c1ef589f27ecd59bf9b70ecb8ee0fd41ddee",
+        "receiptSha256": "5ec059c4f13b225b0d1b728b78a1f8f6060a6c98c6a7755537ee4a1d477c8a83",
+        "loggedAt": "2026-10-27T14:55:54.669Z",
+        "diagnostic": {
+          "version": 1,
+          "disposition": "nonpublishable_requires_review",
+          "kind": "http_restriction",
+          "repository": "JeremyHennessy/HalifaxSourced",
+          "workflowJob": "social-refresh",
+          "loggedAt": "2026-10-27T14:55:54.669Z",
+          "sourceCommitSha": "6cac73216403c1c2e047fa39391e4bb0033e561f",
+          "sourceWorkflowRunId": "40525512605",
+          "sourceWorkflowRunAttempt": "1",
+          "accessPolicySha256": "006f87be1b60d5fa3f78aebafbb3f14fdbd3fbe901005190291990fc680a9dd3",
+          "evidence": {
+            "hold": {
+              "id": "808680daffdc4b8e2fe3f6acf167c1093414a5cdc8d62b1ed3b36fdf602c0f99",
+              "scope": "url",
+              "target": "https://brooklynwarehouse.ca/menus",
+              "reason": "access_restricted",
+              "resume": "reviewed_evidence_required",
+              "evidence": {
+                "url": "https://brooklynwarehouse.ca/menus",
+                "finalUrl": "https://brooklynwarehouse.ca/menus",
+                "status": 403,
+                "observedAt": "2026-10-27T14:55:54.669Z"
+              },
+              "provenance": {
+                "kind": "current_run",
+                "sourceCommitSha": "6cac73216403c1c2e047fa39391e4bb0033e561f",
+                "sourceWorkflowRunId": "40525512605",
+                "sourceWorkflowRunAttempt": "1",
+                "accessPolicySha256": "006f87be1b60d5fa3f78aebafbb3f14fdbd3fbe901005190291990fc680a9dd3",
+                "requestId": "170"
+              }
+            },
+            "receipt": {
+              "requestId": "170",
+              "url": "https://brooklynwarehouse.ca/menus",
+              "status": 403,
+              "observedAt": "2026-10-27T14:55:54.669Z",
+              "attemptedAt": "2026-10-27T14:55:54.582Z",
+              "mediaType": "text/html"
+            },
+            "late": false,
+            "suspensionId": null
+          }
+        }
+      },
+      "observations": [
+        {
+          "url": "https://brooklynwarehouse.ca/menus",
+          "finalUrl": "https://brooklynwarehouse.ca/menus",
+          "status": 403,
+          "observedAt": "2026-10-27T14:55:54.669Z"
+        }
+      ]
     }
   ]
 }
