@@ -7,13 +7,7 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 const lookbackDays = Number(process.env.OPENING_WATCH_LOOKBACK_DAYS ?? 180);
 const cutoff = Date.now() - lookbackDays * 24 * 60 * 60 * 1000;
 const userAgent = "HalifaxSourced/0.4 (+https://github.com/JeremyHennessy/HalifaxSourced)";
-const sources = [
-  {
-    name: "Halifax ReTales",
-    type: "local_opening_watch",
-    url: "https://halifax.retales.ca/feed/"
-  }
-];
+const { sources } = JSON.parse(await readFile(new URL("../data/opening-watch-source-registry.json", import.meta.url), "utf8"));
 let previousOpeningWatch = { leads: [] };
 try {
   previousOpeningWatch = JSON.parse(await readFile(new URL("../data/build/opening-watch-leads.json", import.meta.url), "utf8"));

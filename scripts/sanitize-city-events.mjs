@@ -1,5 +1,6 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dedupeCanonicalEvents } from "./lib/canonical-event-dedupe.mjs";
+import { applyReviewedEventQuarantine, REVIEWED_EVENT_QUARANTINE_PATH } from "./lib/reviewed-event-quarantine.mjs";
 
 const buildUrl = new URL("../data/build/city-events.json", import.meta.url);
 const jsUrl = new URL("../data/city-events.js", import.meta.url);
@@ -7,7 +8,15 @@ const registryUrl = new URL("../data/event-source-registry.json", import.meta.ur
 const payload = JSON.parse(await readFile(buildUrl, "utf8"));
 const registry = JSON.parse(await readFile(registryUrl, "utf8"));
 const sources = new Map((registry.sources || []).map((source) => [source.id, source]));
-const events = Array.isArray(payload.events) ? payload.events : [];
+const inputEvents = Array.isArray(payload.events) ? payload.events : [];
+const archive = JSON.parse(await readFile(new URL("../" + REVIEWED_EVENT_QUARANTINE_PATH, import.meta.url), "utf8"));
+const quarantine = applyReviewedEventQuarantine(inputEvents, archive);
+// Write an explicit receipt even when a changed reviewed ID blocks the build.
+// The candidate/runtime payloads must remain untouched on that failure.
+await mkdir(new URL("../artifacts", import.meta.url), { recursive: true });
+await writeFile(new URL("../artifacts/city-event-quarantine-report.json", import.meta.url), JSON.stringify(quarantine.receipt, null, 2) + "\n");
+if (quarantine.blocked) throw new Error(`City-event reviewed quarantine requires re-review: ${quarantine.receipt.mismatchCount} changed records. See artifacts/city-event-quarantine-report.json.`);
+const events = quarantine.events;
 
 const allowedMunicipalities = new Map([
   ["halifax", "Halifax"],
@@ -157,7 +166,8 @@ const output = {
   eventCount: kept.length,
   categoryCounts,
   scopeAudit: {
-    inputEvents: events.length,
+    inputEvents: inputEvents.length,
+    reviewedQuarantine: quarantine.receipt,
     keptEvents: kept.length,
     canonicalDuplicatesMerged: preDedupeCount - kept.length,
     removedOutOfScope: removed.length,
@@ -171,5 +181,5 @@ const output = {
 await mkdir(new URL("../data/build", import.meta.url), { recursive: true });
 await writeFile(buildUrl, JSON.stringify(output, null, 2));
 await writeFile(jsUrl, `window.HALIFAX_CITY_EVENTS = ${JSON.stringify(output, null, 2)};\n`);
-console.log(`City event sanitation: input=${events.length}, kept=${kept.length}, removed-out-of-scope=${removed.length}, categories-reclassified=${categoryReclassified}.`);
+console.log(`City event sanitation: input=${inputEvents.length}, quarantined=${quarantine.receipt.quarantinedCount}, kept=${kept.length}, removed-out-of-scope=${removed.length}, categories-reclassified=${categoryReclassified}.`);
 console.log(`Categories: ${Object.entries(categoryCounts).sort((a, b) => b[1] - a[1]).map(([key, value]) => `${key}=${value}`).join(", ")}`);

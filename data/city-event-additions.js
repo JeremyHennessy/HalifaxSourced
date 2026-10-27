@@ -997,26 +997,26 @@ window.HALIFAX_CITY_EVENT_ADDITIONS = JSON.parse(`{
   }, {});
 
   const additionSourceIds = new Set(additions.events.map((event) => event.sourceId).filter(Boolean));
-  const existingStats = Array.isArray(payload.sourceStats) ? payload.sourceStats.filter((stat) => !additionSourceIds.has(stat.sourceId)) : [];
-  const additionStats = [...additionSourceIds].map((sourceId) => {
+  // Curated evidence is not a collection receipt. Keep collector counts,
+  // statuses and all attempt/success/failure clocks untouched, even on overlap.
+  const sourceContributions = [...additionSourceIds].map((sourceId) => {
     const sourceEvents = additions.events.filter((event) => event.sourceId === sourceId);
     const sample = sourceEvents[0] || {};
     return {
       sourceId,
       sourceName: sample.sourceName || sourceId,
-      mode: sample.sourceKind || "curated_city_event_addition",
-      observedAt: sample.observedAt || additions.generatedAt,
-      eventCount: sourceEvents.length,
-      durationMs: 0,
-      status: "ok"
+      sourceKind: sample.sourceKind || "curated_city_event_addition",
+      curatedEventCount: sourceEvents.length,
+      eventIds: sourceEvents.map((event) => event.id),
+      evidenceObservedAt: uniqueBy(sourceEvents.map((event) => event.observedAt), (value) => value)
     };
   });
-  payload.sourceStats = [...existingStats, ...additionStats];
   payload.manualAdditions = {
     ...(payload.manualAdditions || {}),
     appliedAt: new Date().toISOString(),
     source: "data/city-event-additions.js",
     eventCount: additions.events.length,
+    sourceContributions,
     addedIds,
     mergedIds,
     removedSupersededIds

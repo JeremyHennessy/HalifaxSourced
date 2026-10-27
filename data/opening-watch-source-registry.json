@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "name": "Halifax ReTales",
+      "type": "local_opening_watch",
+      "url": "https://halifax.retales.ca/feed/"
+    }
+  ]
+}

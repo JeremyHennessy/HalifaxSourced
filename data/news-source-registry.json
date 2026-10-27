@@ -96,10 +96,50 @@
       "admission": {
         "reviewedAt": "2026-10-27T21:05:03.000Z",
         "reviewer": "Halifax Sourced source review",
-        "accessEvidence": "Manual page review only: https://halifax.citynews.ca/2026/10/27/three-alarm-fire-at-halifax-grain-elevator-under-control/ . Successful text/html web-reader result turn277view2, 136 lines, labelled crawled today. Runtime UTC bounds for the tool call were 2026-10-27T20:53:39.000Z through 2026-10-27T20:53:45.000Z; the accepted record observedAt is the window upper bound, not an exact fetch time. A later web-reader attempt reported inaccessible; it was not retried. Automated collection remains disabled.",
+        "accessEvidence": "Manual page review only: https://halifax.citynews.ca/2026/10/27/three-alarm-fire-at-halifax-grain-elevator-under-control/ . Successful text/html web-reader result with 136 lines, labelled crawled today. Runtime UTC bounds for the tool call were 2026-10-27T20:53:39.000Z through 2026-10-27T20:53:45.000Z; the accepted record observedAt is the window upper bound, not an exact fetch time. A later web-reader attempt reported inaccessible; it was not retried. Automated collection remains disabled.",
         "schemaEvidence": "One manually reviewed canonical link with original neutral title, source attribution and no summary. No RSS feed or automated article adapter verified. The publisher credits Natasha O'Neill.",
         "dateEvidence": "The publisher displays October 27, 2026 at an unqualified local clock. Preserve publication day only; no timezone or modification instant inferred.",
         "rightsEvidence": "Original factual title and attributed outbound link only. Public accessibility is not a republication licence. No article body, excerpts, feed description, photographs, logos or other publisher media reproduced; no general reuse or collection permission inferred."
+      }
+    },
+    {
+      "id": "the-coast",
+      "name": "The Coast",
+      "source_type": "newsroom",
+      "homeUrl": "https://www.thecoast.ca/",
+      "feedUrl": null,
+      "allowedHosts": [
+        "www.thecoast.ca"
+      ],
+      "enabled": false,
+      "status": "admitted",
+      "admission": {
+        "reviewedAt": "2026-10-27T23:48:37.000Z",
+        "reviewer": "Halifax Sourced source review",
+        "accessEvidence": "The Coast arts index and six linked articles successfully returned primary text/html web-reader views. No login/paywall/access denial observed; exact origin freshness unknown. Source manual only; no feed/schema/rights admission for automation. Accepted canonical article links are retained in data/reviewed-news-decisions.json. Observations fall within 2026-10-27T23:42:40.326Z through 2026-10-27T23:42:54.660Z. Per-item windows and cached-view labels are retained in rightsBasis. No successful live origin-fetch clock is inferred.",
+        "schemaEvidence": "4 manually reviewed canonical links, original factual titles and null summaries. No RSS feed or automated article adapter verified. Collection stays disabled; proposed feed discovery is not authorized by this admission.",
+        "dateEvidence": "Publisher calendar dates are preserved at day precision; byline clocks have no verified timezone. Original publication dates remain separate from update dates, cached-view observations and review time. No modification instant is inferred.",
+        "rightsEvidence": "Admission is for the individually reviewed attributed outbound links only. Public accessibility is not a republication licence. No copied article bodies, quotations, excerpts, descriptions, publisher photos or logos. No blanket reuse or automated collection permission inferred."
+      }
+    },
+    {
+      "id": "the-signal",
+      "name": "The Signal",
+      "source_type": "newsroom",
+      "homeUrl": "https://signalhfx.ca/",
+      "feedUrl": null,
+      "allowedHosts": [
+        "signalhfx.ca"
+      ],
+      "enabled": false,
+      "status": "admitted",
+      "admission": {
+        "reviewedAt": "2026-10-27T23:48:37.000Z",
+        "reviewer": "Halifax Sourced source review",
+        "accessEvidence": "The Signal homepage and linked Nocturne article successfully returned primary text/html web-reader views. No login/paywall/access denial observed; exact origin freshness unknown. Source manual only; no feed/schema/rights admission for automation. Accepted canonical article links are retained in data/reviewed-news-decisions.json. Observations fall within 2026-10-27T23:42:40.326Z through 2026-10-27T23:42:54.660Z. Per-item windows and cached-view labels are retained in rightsBasis. No successful live origin-fetch clock is inferred.",
+        "schemaEvidence": "1 manually reviewed canonical links, original factual titles and null summaries. No RSS feed or automated article adapter verified. Collection stays disabled; proposed feed discovery is not authorized by this admission.",
+        "dateEvidence": "Publisher calendar dates are preserved at day precision; byline clocks have no verified timezone. Original publication dates remain separate from update dates, cached-view observations and review time. No modification instant is inferred.",
+        "rightsEvidence": "Admission is for the individually reviewed attributed outbound links only. Public accessibility is not a republication licence. No copied article bodies, quotations, excerpts, descriptions, publisher photos or logos. No blanket reuse or automated collection permission inferred."
       }
     }
   ]

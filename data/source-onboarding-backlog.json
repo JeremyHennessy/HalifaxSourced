@@ -1,0 +1,613 @@
+{
+  "version": 1,
+  "enabled": false,
+  "status": "disabled_review_required",
+  "reviewedOn": "2026-10-27",
+  "scope": "Automated-interface research backlog only, not a collector input or accepted content. A disabled interface may belong to an already manually admitted news source. Halifax, Dartmouth and Bedford item-level scope; no new collection, publication, schedules or access permissions. Review date is not a source attempt or success clock.",
+  "formatPolicy": "Only the observed HTML interface is described. Null RSS/iCal/API/JSON-LD means not verified, not absent.",
+  "candidates": [
+    {
+      "id": "bus-stop-theatre-direct",
+      "name": "The Bus Stop Theatre Co-operative",
+      "url": "https://busstoptheatre.coop/venue/bst/",
+      "enabled": false,
+      "status": "disabled_review_required",
+      "priority": 1,
+      "rank": 1,
+      "interface": "Official public event listing",
+      "geography": "2203 Gottingen Street, Halifax",
+      "categories": [
+        "theatre",
+        "improv",
+        "comedy",
+        "music"
+      ],
+      "distinction": "direct_source_upgrade_existing_tourism_event",
+      "existingRepresentation": "Bus Stop Theatre already has a tourism-backed venue event; direct collection is an upgrade, not a new organization.",
+      "format": {
+        "observed": "text/html event index",
+        "rss": null,
+        "ical": null,
+        "api": null,
+        "jsonLd": null
+      },
+      "evidence": [
+        {
+          "url": "https://busstoptheatre.coop/venue/bst/",
+          "observation": "Official venue page identifies co-operative and Halifax address; rendered HTML contains dated occurrences with start/end times and recurrence links. One tourism-backed Bus Stop venue event already exists."
+        }
+      ],
+      "additionalOfficialUrls": [],
+      "accessLimitations": "Public HTML rendered successfully in one bounded web-reader lookup. HTTP success in this reader is not a collector-access or robots-policy admission. Robots and terms have not been reviewed; no automated use authorized.",
+      "rightsLimitations": "No reuse licence established. Keep disabled. Retain only reviewed factual metadata and attributed outbound links after access/rights review; do not copy bodies, descriptions, photos, logos or other publisher media.",
+      "nextSafeAction": "Review robots/terms and event-specific metadata permission, then prepare a disabled occurrence-aware candidate parser. Preserve each showtime, cancellation status and official link; do not treat rental availability as a public event calendar."
+    },
+    {
+      "id": "sanctuary-arts-centre-direct",
+      "name": "Sanctuary Arts Centre",
+      "url": "https://sanctuaryartscentre.com/events-calendar",
+      "enabled": false,
+      "status": "disabled_review_required",
+      "priority": 1,
+      "rank": 2,
+      "interface": "Official public event listing",
+      "geography": "Dartmouth; exact venue address not recovered in this bounded pass",
+      "categories": [
+        "music",
+        "theatre",
+        "comedy",
+        "dance",
+        "workshops"
+      ],
+      "distinction": "direct_source_upgrade_existing_organizer_events",
+      "existingRepresentation": "Sanctuary already has ReJigged Festival-backed events; direct collection is an upgrade, not a new organization.",
+      "format": {
+        "observed": "text/html event index",
+        "rss": null,
+        "ical": null,
+        "api": null,
+        "jsonLd": null
+      },
+      "evidence": [
+        {
+          "url": "https://sanctuaryartscentre.com/events-calendar",
+          "observation": "Official HTML calendar shows dated listings, prices, promoters and multiple performance times. Three Sanctuary events already come from ReJigged Festival. Calendar links often lead to third-party listing/ticket hosts."
+        }
+      ],
+      "additionalOfficialUrls": [],
+      "accessLimitations": "Public HTML rendered successfully in one bounded web-reader lookup. HTTP success in this reader is not a collector-access or robots-policy admission. Robots and terms have not been reviewed; no automated use authorized.",
+      "rightsLimitations": "No reuse licence established. Keep disabled. Retain only reviewed factual metadata and attributed outbound links after access/rights review; do not copy bodies, descriptions, photos, logos or other publisher media.",
+      "nextSafeAction": "Review robots/terms; keep venue-owned factual index metadata separate from promoter/ticket content. Resolve exact venue address and occurrence identity before review; do not traverse third-party destinations without their own checks."
+    },
+    {
+      "id": "pier21-events",
+      "name": "Canadian Museum of Immigration at Pier 21",
+      "url": "https://pier21.ca/events",
+      "enabled": false,
+      "status": "disabled_review_required",
+      "priority": 1,
+      "rank": 3,
+      "interface": "Official public event listing",
+      "geography": "1055 Marginal Road, Halifax; exclude travelling/virtual programs unless explicitly in scope",
+      "categories": [
+        "museum",
+        "heritage",
+        "talks",
+        "film",
+        "workshops",
+        "food"
+      ],
+      "distinction": "new_direct_source_candidate",
+      "existingRepresentation": "No direct registry or catalogue-host match found in the reviewed inventory. This does not establish absence from all project evidence or prove a new organization.",
+      "format": {
+        "observed": "text/html event index",
+        "rss": null,
+        "ical": null,
+        "api": null,
+        "jsonLd": null
+      },
+      "evidence": [
+        {
+          "url": "https://pier21.ca/events",
+          "observation": "Official HTML events/programs index exposes dates, times, location and price, including November 2026 programs and a rescheduled entry. No direct registry/catalog-host match found."
+        }
+      ],
+      "additionalOfficialUrls": [],
+      "accessLimitations": "Public HTML rendered successfully in one bounded web-reader lookup. HTTP success in this reader is not a collector-access or robots-policy admission. Robots and terms have not been reviewed; no automated use authorized.",
+      "rightsLimitations": "No reuse licence established. Keep disabled. Retain only reviewed factual metadata and attributed outbound links after access/rights review; do not copy bodies, descriptions, photos, logos or other publisher media.",
+      "nextSafeAction": "Review museum terms/robots and factual-metadata reuse policy. Prepare disabled event candidates retaining rescheduled status and local venue; do not enumerate an unspecified twice-monthly recurrence or use collection assets."
+    },
+    {
+      "id": "agns-direct-events",
+      "name": "Art Gallery of Nova Scotia",
+      "url": "https://agns.ca/",
+      "enabled": false,
+      "status": "disabled_review_required",
+      "priority": 1,
+      "rank": 4,
+      "interface": "Official public event listing",
+      "geography": "1723 Hollis Street, Halifax; verify location on each program",
+      "categories": [
+        "art",
+        "exhibitions",
+        "talks",
+        "tours"
+      ],
+      "distinction": "direct_source_upgrade_existing_two_tourism_events",
+      "existingRepresentation": "AGNS already has two tourism-backed events; direct collection is an upgrade, not a new organization.",
+      "format": {
+        "observed": "text/html event index",
+        "rss": null,
+        "ical": null,
+        "api": null,
+        "jsonLd": null
+      },
+      "evidence": [
+        {
+          "url": "https://agns.ca/",
+          "observation": "Official HTML homepage has upcoming-event names, dates, times and sold-out status. Programs/events index URL is discoverable, but indexed snapshot said No Results. Two AGNS events already exist via Tourism Nova Scotia; no direct adapter found."
+        }
+      ],
+      "additionalOfficialUrls": [
+        {
+          "url": "https://agns.ca/experience/programs-events/",
+          "verification": "Official indexed search result only; returned No Results in indexed snapshot; not admitted as working calendar."
+        },
+        {
+          "url": "https://agns.ca/event/creative-minds-music-and-storytelling-with-raymond-sewell/",
+          "verification": "Exact official ticket/detail pointer already in data/build/city-events.json; not opened in this pass."
+        }
+      ],
+      "accessLimitations": "Public HTML rendered successfully in one bounded web-reader lookup. HTTP success in this reader is not a collector-access or robots-policy admission. Robots and terms have not been reviewed; no automated use authorized.",
+      "rightsLimitations": "No reuse licence established. Keep disabled. Retain only reviewed factual metadata and attributed outbound links after access/rights review; do not copy bodies, descriptions, photos, logos or other publisher media.",
+      "nextSafeAction": "Review robots/terms; verify the source-owned event-detail/index interface before designing an adapter. Preserve sold-out/cancellation state; deduplicate existing tourism records. Do not claim artwork/media rights."
+    },
+    {
+      "id": "bella-rose-events",
+      "name": "Bella Rose Arts Centre",
+      "url": "https://bellaroseartscentre.com/events/",
+      "enabled": false,
+      "status": "disabled_review_required",
+      "priority": 1,
+      "rank": 5,
+      "interface": "Official public event listing",
+      "geography": "283 Thomas Raddall Drive, Halifax",
+      "categories": [
+        "music",
+        "theatre",
+        "comedy",
+        "dance",
+        "family"
+      ],
+      "distinction": "new_direct_source_candidate",
+      "existingRepresentation": "No direct registry or catalogue-host match found in the reviewed inventory. This does not establish absence from all project evidence or prove a new organization.",
+      "format": {
+        "observed": "text/html event index",
+        "rss": null,
+        "ical": null,
+        "api": null,
+        "jsonLd": null
+      },
+      "evidence": [
+        {
+          "url": "https://bellaroseartscentre.com/events/",
+          "observation": "Official text/html index contains event titles and detail links, venue address and a cancellation-labelled listing. Index mixes upcoming/past material; exact dates require detail review. No direct registry/catalog-host match found."
+        }
+      ],
+      "additionalOfficialUrls": [],
+      "accessLimitations": "Public HTML rendered successfully in one bounded web-reader lookup. HTTP success in this reader is not a collector-access or robots-policy admission. Robots and terms have not been reviewed; no automated use authorized.",
+      "rightsLimitations": "No reuse licence established. Keep disabled. Retain only reviewed factual metadata and attributed outbound links after access/rights review; do not copy bodies, descriptions, photos, logos or other publisher media.",
+      "nextSafeAction": "Review robots/terms, then verify exact detail dates before metadata-only candidate admission. Do not assume everything under Upcoming Events is current; preserve cancellation and ticket-host separation."
+    },
+    {
+      "id": "dartmouth-players",
+      "name": "Dartmouth Players",
+      "url": "https://dartmouthplayers.ns.ca/",
+      "enabled": false,
+      "status": "disabled_review_required",
+      "priority": 1,
+      "rank": 6,
+      "interface": "Official public event listing",
+      "geography": "Stairs Memorial United Church, 44 Hester Street, Dartmouth",
+      "categories": [
+        "community_theatre",
+        "performing_arts"
+      ],
+      "distinction": "new_direct_source_candidate",
+      "existingRepresentation": "No direct registry or catalogue-host match found in the reviewed inventory. This does not establish absence from all project evidence or prove a new organization.",
+      "format": {
+        "observed": "text/html event index",
+        "rss": null,
+        "ical": null,
+        "api": null,
+        "jsonLd": null
+      },
+      "evidence": [
+        {
+          "url": "https://dartmouthplayers.ns.ca/",
+          "observation": "Official rendered HTML homepage identifies Dartmouth venue and November 26–December 12, 2026 production run. Search snapshot showed an older October production, demonstrating index staleness. No direct registry/catalog-host match found."
+        }
+      ],
+      "additionalOfficialUrls": [],
+      "accessLimitations": "Public HTML rendered successfully in one bounded web-reader lookup. HTTP success in this reader is not a collector-access or robots-policy admission. Robots and terms have not been reviewed; no automated use authorized.",
+      "rightsLimitations": "No reuse licence established. Keep disabled. Retain only reviewed factual metadata and attributed outbound links after access/rights review; do not copy bodies, descriptions, photos, logos or other publisher media.",
+      "nextSafeAction": "Review robots/terms and official season/performance detail. Preserve production run as a range; do not invent nightly occurrences or showtimes. Reject Devon/US organizations sharing the Dartmouth name."
+    },
+    {
+      "id": "halifax-water-notices",
+      "name": "Halifax Water",
+      "url": "https://halifaxwater.ca/notices-and-news",
+      "enabled": false,
+      "status": "disabled_review_required",
+      "priority": 1,
+      "rank": 7,
+      "interface": "Official public news/notices HTML index",
+      "geography": "Halifax Water service territory; admit exact Halifax, Dartmouth and Bedford affected locations only, not all HRM by default.",
+      "categories": [
+        "official_local_utility_notices"
+      ],
+      "distinction": "new_direct_source_candidate",
+      "existingRepresentation": "No matching news registry or source-catalog host entry; absence from this incomplete catalog does not prove organization absent from all project evidence.",
+      "format": {
+        "observed": "HTML index",
+        "rss": null,
+        "ical": null,
+        "api": null,
+        "jsonLd": null
+      },
+      "evidence": [
+        {
+          "url": "https://halifaxwater.ca/notices-and-news",
+          "observation": "HTML index distinguishes Current Notices from All Notices; dated service notices are visible through October 23, 2026. Current Notices section said no new notices."
+        }
+      ],
+      "additionalOfficialUrls": [],
+      "accessLimitations": "One official public HTML page opened successfully through web reader. This is not a robots-policy or automated-collector admission check. Do not infer general access permission.",
+      "rightsLimitations": "No reuse grant established from inspected index. Metadata/source-link research only; no article bodies, summaries, feed descriptions, photographs, logos or copied publisher media. Keep disabled pending access, rights, dates and editorial review.",
+      "nextSafeAction": "Review source terms/robots first; design notice-only metadata candidate parser with affected-location and active/resolved/expiry fields. Do not treat archived index order as current status. Exclude allegations and unrelated corporate news; manually review each accepted notice."
+    },
+    {
+      "id": "halifax-harbour-bridges",
+      "name": "Halifax Harbour Bridges",
+      "url": "https://halifaxharbourbridges.ca/",
+      "enabled": false,
+      "status": "disabled_review_required",
+      "priority": 1,
+      "rank": 8,
+      "interface": "Official public news/notices HTML index",
+      "geography": "Macdonald and MacKay bridges linking Halifax and Dartmouth; admit nearby local impact notices only.",
+      "categories": [
+        "official_local_transport_notices"
+      ],
+      "distinction": "new_direct_source_candidate",
+      "existingRepresentation": "No matching news registry or source-catalog host entry; absence from this incomplete catalog does not prove organization absent from all project evidence.",
+      "format": {
+        "observed": "HTML index",
+        "rss": null,
+        "ical": null,
+        "api": null,
+        "jsonLd": null
+      },
+      "evidence": [
+        {
+          "url": "https://halifaxharbourbridges.ca/",
+          "observation": "Official HTML homepage identifies operator and shows its own dated October 21, 2026 closure notice. Also contains live traffic/image links and some HRM/provincial reposts, none traversed."
+        }
+      ],
+      "additionalOfficialUrls": [],
+      "accessLimitations": "One official public HTML page opened successfully through web reader. This is not a robots-policy or automated-collector admission check. Do not infer general access permission.",
+      "rightsLimitations": "No reuse grant established from inspected index. Metadata/source-link research only; no article bodies, summaries, feed descriptions, photographs, logos or copied publisher media. Keep disabled pending access, rights, dates and editorial review.",
+      "nextSafeAction": "Review publisher terms/robots, then use only operator-authored notice metadata and source links; preserve start/end/updates separately from publication dates. Exclude traffic camera/graph/media assets, third-party reposts and held municipal/provincial destinations. Do not duplicate HRM as another independent publisher."
+    },
+    {
+      "id": "the-coast",
+      "name": "The Coast",
+      "url": "https://www.thecoast.ca/",
+      "enabled": false,
+      "status": "disabled_review_required",
+      "priority": 2,
+      "rank": null,
+      "interface": "Official public news/notices HTML index",
+      "geography": "Halifax-centred newsroom; some Nova Scotia-wide content requires explicit local applicability.",
+      "categories": [
+        "local_original_newsroom"
+      ],
+      "distinction": "automated_interface_upgrade_existing_manual_news",
+      "existingRepresentation": "The Coast is manually admitted in the news registry with four individually approved links in the October 27, 2026 review; it also appears in restaurant/correction evidence. This row reviews only a future automated interface, not a new publisher or missing manual admission.",
+      "format": {
+        "observed": "HTML index",
+        "rss": null,
+        "ical": null,
+        "api": null,
+        "jsonLd": null
+      },
+      "evidence": [
+        {
+          "url": "https://www.thecoast.ca/",
+          "observation": "Official HTML homepage identifies local coverage and lists News + Opinion, Arts + Music and Food + Drink; visible dated entries include October 15, 2026. Advertising and opinion are explicitly mixed into the index."
+        }
+      ],
+      "additionalOfficialUrls": [],
+      "accessLimitations": "One official public HTML page opened successfully through web reader. This is not a robots-policy or automated-collector admission check. Do not infer general access permission.",
+      "rightsLimitations": "Manual editorial admission covers only the individually reviewed factual metadata and attributed outbound links in the news decisions. It does not establish a general reuse licence or automated collection permission. Collection remains disabled and feed URL null; no article bodies, copied summaries, photographs, logos or publisher media.",
+      "nextSafeAction": "Keep existing individually approved news links separate from this disabled automated-interface review. Review terms/robots and publisher-linked interface evidence before any automated candidate parser; do not infer a feed URL or activate collection. Preserve item-level geography, dates and editorial review; separate reporting from opinion/sponsored items and exclude allegations or automatic summaries."
+    },
+    {
+      "id": "the-signal",
+      "name": "The Signal (King’s Journalism)",
+      "url": "https://signalhfx.ca/",
+      "enabled": false,
+      "status": "disabled_review_required",
+      "priority": 2,
+      "rank": null,
+      "interface": "Official public news/notices HTML index",
+      "geography": "Halifax-centred reporting; item-level Halifax/Dartmouth/Bedford filtering required.",
+      "categories": [
+        "local_original_newsroom"
+      ],
+      "distinction": "automated_interface_upgrade_existing_manual_news",
+      "existingRepresentation": "The Signal is manually admitted in the news registry with one individually approved link in the October 27, 2026 review. This row reviews only a future automated interface, not a new publisher or missing manual admission.",
+      "format": {
+        "observed": "HTML index",
+        "rss": null,
+        "ical": null,
+        "api": null,
+        "jsonLd": null
+      },
+      "evidence": [
+        {
+          "url": "https://signalhfx.ca/",
+          "observation": "Official HTML homepage labels itself Produced by King’s Journalism students and shows a Nocturne 2026 listing dated October 17, 2026."
+        }
+      ],
+      "additionalOfficialUrls": [],
+      "accessLimitations": "One official public HTML page opened successfully through web reader. This is not a robots-policy or automated-collector admission check. Do not infer general access permission.",
+      "rightsLimitations": "Manual editorial admission covers only the individually reviewed factual metadata and attributed outbound links in the news decisions. It does not establish a general reuse licence or automated collection permission. Collection remains disabled and feed URL null; no article bodies, copied summaries, photographs, logos or publisher media.",
+      "nextSafeAction": "Keep existing individually approved news links separate from this disabled automated-interface review. Review terms/robots and publisher-linked interface evidence before any automated candidate parser; do not infer a feed URL or activate collection. Preserve item-level geography, dates and editorial review; separate reporting from opinion/sponsored items and exclude allegations or automatic summaries. Expect academic-year cadence rather than daily completeness."
+    },
+    {
+      "id": "halifax-partnership-news",
+      "name": "Halifax Partnership",
+      "url": "https://halifaxpartnership.com/news/",
+      "enabled": false,
+      "status": "disabled_review_required",
+      "priority": 3,
+      "rank": null,
+      "interface": "Official public news/notices HTML index",
+      "geography": "Halifax regional economic organization; distinguish city-wide announcements from nonlocal provincial/national commentary.",
+      "categories": [
+        "official_local_economic_announcements"
+      ],
+      "distinction": "new_direct_source_candidate",
+      "existingRepresentation": "No matching news registry or source-catalog host entry; absence from this incomplete catalog does not prove organization absent from all project evidence.",
+      "format": {
+        "observed": "HTML index",
+        "rss": null,
+        "ical": null,
+        "api": null,
+        "jsonLd": null
+      },
+      "evidence": [
+        {
+          "url": "https://halifaxpartnership.com/news/",
+          "observation": "Official HTML index exposes dates and Article/Media Release types, including October 5 and October 1, 2026; it is paginated. Some items are republished commentary."
+        }
+      ],
+      "additionalOfficialUrls": [],
+      "accessLimitations": "One official public HTML page opened successfully through web reader. This is not a robots-policy or automated-collector admission check. Do not infer general access permission.",
+      "rightsLimitations": "No reuse grant established from inspected index. Metadata/source-link research only; no article bodies, summaries, feed descriptions, photographs, logos or copied publisher media. Keep disabled pending access, rights, dates and editorial review.",
+      "nextSafeAction": "Review terms/robots and admit only organization-originated local announcement metadata initially. Separate press releases from commentary and externally sourced material; no fabricated feed/API or blanket reuse right."
+    },
+    {
+      "id": "discovery-centre",
+      "name": "Discovery Centre",
+      "url": "https://thediscoverycentre.ca/events-month/",
+      "enabled": false,
+      "status": "disabled_review_required",
+      "priority": 2,
+      "rank": null,
+      "interface": "Official public event listing",
+      "geography": "1215 Lower Water Street, Halifax; outreach may be outside target geography",
+      "categories": [
+        "science",
+        "family",
+        "workshops",
+        "dome_shows",
+        "adult_events"
+      ],
+      "distinction": "new_direct_source_candidate",
+      "existingRepresentation": "No direct registry or catalogue-host match found in the reviewed inventory. This does not establish absence from all project evidence or prove a new organization.",
+      "format": {
+        "observed": "text/html calendar shell only; indexed HTML event-list evidence, not a verified live payload",
+        "rss": null,
+        "ical": null,
+        "api": null,
+        "jsonLd": null
+      },
+      "evidence": [
+        {
+          "url": "https://thediscoverycentre.ca/events-month/",
+          "observation": "Official HTML calendar shell rendered but event payload was absent (visible events placeholder). Official indexed HTML list provides dated September/October events; live list/API schema not verified. No direct registry/catalog-host match found."
+        }
+      ],
+      "additionalOfficialUrls": [
+        {
+          "url": "https://thediscoverycentre.ca/events/list/?tribe-bar-date=2026-09-01",
+          "verification": "Exact indexed primary-source URL; not opened or admitted as collector endpoint."
+        }
+      ],
+      "accessLimitations": "Public HTML rendered successfully in one bounded web-reader lookup. HTTP success in this reader is not a collector-access or robots-policy admission. Robots and terms have not been reviewed; no automated use authorized.",
+      "rightsLimitations": "No reuse licence established. Keep disabled. Retain only reviewed factual metadata and attributed outbound links after access/rights review; do not copy bodies, descriptions, photos, logos or other publisher media.",
+      "nextSafeAction": "Review robots/terms, then inspect a source-linked public event-list interface if permitted. Keep disabled until usable payload and occurrence dates are verified; distinguish family programming from 19+ events."
+    },
+    {
+      "id": "halifax-brewery-market",
+      "name": "Halifax Brewery Farmers’ Market",
+      "url": "https://www.halifaxbrewerymarket.com/accessibility-community",
+      "enabled": false,
+      "status": "disabled_review_required",
+      "priority": 3,
+      "rank": null,
+      "interface": "Official community information and previously reviewed event page",
+      "geography": "Lower Water Street, Halifax; street number not verified on inspected official page",
+      "categories": [
+        "markets",
+        "food",
+        "community"
+      ],
+      "distinction": "new_direct_source_candidate",
+      "existingRepresentation": "No direct registry or catalogue-host match found in the reviewed inventory. This does not establish absence from all project evidence or prove a new organization.",
+      "format": {
+        "observed": "text/html community information and event listings; no current occurrence verified",
+        "rss": null,
+        "ical": null,
+        "api": null,
+        "jsonLd": null
+      },
+      "evidence": [
+        {
+          "url": "https://www.halifaxbrewerymarket.com/accessibility-community",
+          "observation": "Official community page confirms Saturday market and organization-run ticketed events. Recurring market hours do not establish special-event occurrences."
+        },
+        {
+          "url": "https://www.halifaxbrewerymarket.com/events",
+          "observation": "Previously reviewed event page has March/April entries without years. No current occurrence was verified; do not infer a year, entrance or current special event."
+        }
+      ],
+      "additionalOfficialUrls": [
+        {
+          "url": "https://www.halifaxbrewerymarket.com/events",
+          "verification": "Previously reviewed HTML event page; March/April entries lack years and no current occurrence is verified."
+        }
+      ],
+      "accessLimitations": "Public HTML rendered successfully in one bounded web-reader lookup. HTTP success in this reader is not a collector-access or robots-policy admission. Robots and terms have not been reviewed; no automated use authorized.",
+      "rightsLimitations": "No reuse licence established. Keep disabled. Retain only reviewed factual metadata and attributed outbound links after access/rights review; do not copy bodies, descriptions, photos, logos or other publisher media.",
+      "nextSafeAction": "Review terms/robots and verify years, occurrence dates and exact venue before any candidate admission. Do not invent an entrance or infer special events from recurring market hours. This is distinct from held halifaxfarmersmarket.com; transit/parking claims are not verified current."
+    }
+  ],
+  "holds": [
+    {
+      "id": "light-house-arts-centre",
+      "name": "Light House Arts Centre",
+      "url": "https://www.lighthouseartscentre.ca/events/",
+      "enabled": false,
+      "status": "mandatory_hold",
+      "holdReason": "robots_denial",
+      "evidence": "Recorded sourceStats report robots_disallow for this events page. Keep the access hold.",
+      "nextSafeAction": "No retry, alternate host/path/tool or collector activation. Retain hold until materially new relevant permission/access evidence is reviewed; elapsed time alone does not qualify."
+    },
+    {
+      "id": "alderney-landing",
+      "name": "Alderney Landing",
+      "url": "https://www.alderneylanding.com/events-directory/",
+      "enabled": false,
+      "status": "mandatory_hold",
+      "holdReason": "http_403",
+      "evidence": "Reported HTTP 403 for this events-directory page. This mandatory hold supersedes older active-candidate wording.",
+      "nextSafeAction": "No retry, alternate host/path/tool or collector activation. Retain hold until materially new relevant permission/access evidence is reviewed; elapsed time alone does not qualify."
+    },
+    {
+      "id": "halifax-examiner",
+      "name": "Halifax Examiner",
+      "url": "https://www.halifaxexaminer.ca/",
+      "enabled": false,
+      "status": "mandatory_hold",
+      "holdReason": "robots_denial",
+      "evidence": "OAI-SearchBot robots denial applies to the exact listed homepage: https://www.halifaxexaminer.ca/.",
+      "nextSafeAction": "No retry, alternate host/path/tool or collector activation. Retain hold until materially new relevant permission/access evidence is reviewed; elapsed time alone does not qualify."
+    },
+    {
+      "id": "discover-halifax",
+      "name": "Discover Halifax",
+      "url": "https://discoverhalifaxns.com/events/",
+      "enabled": false,
+      "status": "mandatory_hold",
+      "holdReason": "permission_hold",
+      "evidence": "No collection/republication licence established. Permission review remains required.",
+      "nextSafeAction": "No retry, alternate host/path/tool or collector activation. Retain hold until materially new relevant permission/access evidence is reviewed; elapsed time alone does not qualify."
+    },
+    {
+      "id": "halifax-seaport-farmers-market",
+      "name": "Halifax Seaport Farmers Market",
+      "url": "https://halifaxfarmersmarket.com/",
+      "enabled": false,
+      "status": "mandatory_hold",
+      "holdReason": "http_403",
+      "evidence": "Reported HTTP 403 for the listed homepage. Keep distinct from Halifax Brewery Farmers’ Market.",
+      "nextSafeAction": "No retry, alternate host/path/tool or collector activation. Retain hold until materially new relevant permission/access evidence is reviewed; elapsed time alone does not qualify."
+    },
+    {
+      "id": "halifax-regional-municipality-news",
+      "name": "Halifax Regional Municipality news",
+      "url": "https://www.halifax.ca/home/news",
+      "enabled": false,
+      "status": "mandatory_hold",
+      "holdReason": "http_403",
+      "evidence": "Reported HTTP 403 for the listed municipal news page.",
+      "nextSafeAction": "No retry, alternate host/path/tool or collector activation. Retain hold until materially new relevant permission/access evidence is reviewed; elapsed time alone does not qualify."
+    },
+    {
+      "id": "halifax-port-authority-media-centre",
+      "name": "Halifax Port Authority media centre",
+      "url": "https://www.portofhalifax.ca/media-centre/",
+      "enabled": false,
+      "status": "mandatory_hold",
+      "holdReason": "http_403",
+      "evidence": "Reported HTTP 403 for the listed media-centre page. The alternate porthalifax.ca host is not a permitted workaround.",
+      "nextSafeAction": "No retry, alternate host/path/tool or collector activation. Retain hold until materially new relevant permission/access evidence is reviewed; elapsed time alone does not qualify."
+    },
+    {
+      "id": "forum-farmers-market",
+      "name": "Forum Farmers Market",
+      "url": "https://forumfarmersmarket.ca/",
+      "enabled": false,
+      "status": "mandatory_hold",
+      "holdReason": "uncertain_transport_timeout",
+      "evidence": "Transport timeout with uncertain outcome, not a confirmed HTTP 400 or source denial. No retry is authorized; check the uncertain outcome before any further action.",
+      "nextSafeAction": "No retry, alternate host/path/tool or collector activation. Retain hold until materially new relevant permission/access evidence is reviewed; elapsed time alone does not qualify."
+    },
+    {
+      "id": "halifax-tides-northern-super-league",
+      "name": "Halifax Tides / Northern Super League",
+      "url": "https://www.nsl.ca/terms-of-use",
+      "enabled": false,
+      "status": "mandatory_hold",
+      "holdReason": "permission_hold",
+      "evidence": "Reviewed terms prohibit systematic retrieval/database compilation without written consent. Existing Tides organizer/tourism representation is not a new organization.",
+      "nextSafeAction": "No retry, alternate host/path/tool or collector activation. Retain hold until materially new relevant permission/access evidence is reviewed; elapsed time alone does not qualify."
+    },
+    {
+      "id": "yuk-yuk-s",
+      "name": "Yuk Yuk’s",
+      "url": null,
+      "enabled": false,
+      "status": "mandatory_hold",
+      "holdReason": "permission_hold",
+      "evidence": "Reviewed terms restrict extraction/personal use. Exact reviewed terms URL was not recovered; no clickable target is invented.",
+      "nextSafeAction": "No retry, alternate host/path/tool or collector activation. Retain hold until materially new relevant permission/access evidence is reviewed; elapsed time alone does not qualify."
+    }
+  ],
+  "existingSources": [
+    {
+      "name": "Halifax ReTales",
+      "url": "https://halifax.retales.ca/feed/",
+      "distinction": "existing_collector_not_new",
+      "evidence": "scripts/import-opening-watch.mjs already declares this RSS interface; data/opening-watch-leads.js contains collected leads. Category HTML is not a new source.",
+      "nextSafeAction": "Audit existing discovery coverage instead of adding a duplicate collector. Owner-confirm lifecycle claims; preserve uncertain leads unpublished."
+    },
+    {
+      "name": "HFX Wanderers FC",
+      "url": "https://hfxwanderersfc.canpl.ca/",
+      "distinction": "existing_organizer_tourism_schedule",
+      "evidence": "organizer-registry.json and event-source-registry.json already represent this club.",
+      "nextSafeAction": "Any direct-schedule interface would be a separately reviewed upgrade, not a new organization."
+    },
+    {
+      "name": "Halifax Tides FC",
+      "url": "https://www.tidesfc.ca/",
+      "distinction": "existing_organizer_tourism_schedule_permission_held_direct_interface",
+      "evidence": "organizer-registry.json and event-source-registry.json already represent this club; NSL terms hold above applies to direct systematic retrieval.",
+      "nextSafeAction": "Retain permission hold; no direct collector activation."
+    }
+  ]
+}

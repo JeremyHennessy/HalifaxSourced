@@ -53,6 +53,7 @@ try {
   await mkdir(join(root, 'scripts/lib'), { recursive: true });
   await mkdir(join(root, 'data/build'), { recursive: true });
   await copyFile(new URL('./import-supplemental-city-events.mjs', import.meta.url), join(root, 'scripts/import-supplemental-city-events.mjs'));
+  await copyFile(new URL('./lib/canonical-event-dedupe.mjs', import.meta.url), join(root, 'scripts/lib/canonical-event-dedupe.mjs'));
   const fixture = '<p>1 to 20 of 40 items</p>' + navigation
     + card(heading(`/events/${second}`, 'Missing date') + '<div>Central Library</div>')
     + card(details + heading(`/v2/events/${id}`))

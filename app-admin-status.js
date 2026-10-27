@@ -391,12 +391,15 @@ function renderSourceCatalog(payload) {
   if (!Array.isArray(payload?.sources)) return `<section class="admin-status-block" aria-label="Source catalogue"><h2>Source catalogue</h2><p>Source inventory unavailable in this release. No live status is inferred.</p></section>`;
   const sources = payload.sources;
   const families = [...new Set(sources.map(row => row.family))].sort();
+  const count = key => Number.isInteger(payload.counts?.[key]) && payload.counts[key] >= 0 ? payload.counts[key].toLocaleString() : "Unknown";
   const counts = Object.fromEntries(["enabled", "held", "failing", "stale", "unknown"].map(state => [state, sources.filter(row => catalogCurrentState(row) === state).length]));
+  const onboarding = sources.filter(row => row.family === "source-onboarding");
   return `<section class="admin-status-block source-catalog" aria-label="Source catalogue" data-source-catalog>
     <h2>Source catalogue</h2>
-    <p>${sources.length.toLocaleString()} registered sources and evidence relationships across ${families.length} families. Published snapshot, not live monitoring. Latest recorded clock: ${statusEscape(payload.snapshotAt ? formatStatusDate(payload.snapshotAt) : "Unknown")}.</p>
-    <p>Attempt, successful collection, and content publication/change clocks are separate. Unknown does not mean failed. Link discovery does not establish a successful collection. Stale means more than twice the target lane cadence since recorded success, evaluated now. Held takes precedence over failure; retained evidence may remain available.</p>
-    <div class="source-catalog-counters" aria-label="Source state counts">${Object.entries(counts).map(([state,count]) => `<span>${statusEscape(state)}: <strong>${count.toLocaleString()}</strong></span>`).join(" ")}</div>
+    <p>${sources.length.toLocaleString()} catalogue rows (configured sources, evidence and relationships) across ${families.length} families. ${count("distinctUrls")} distinct sanitized URLs · ${count("distinctHosts")} normalized hosts. URL and host counts are not publisher counts. Published snapshot, not live monitoring. Latest recorded clock: ${statusEscape(payload.snapshotAt ? formatStatusDate(payload.snapshotAt) : "Unknown")}.</p>
+    <p>Attempt, successful collection, and content publication/change clocks are separate. Unknown does not mean failed. Link discovery does not establish a successful collection. Stale means more than twice the target lane cadence since recorded success, evaluated now. Target cadence is policy, not proof of an active schedule. Hosts are lowercase, without leading www or a trailing DNS dot; subdomains remain distinct. Held takes precedence over failure; retained evidence may remain available.</p>
+    ${onboarding.length ? `<p><strong>Disabled onboarding backlog:</strong> ${onboarding.filter(row => row.review?.kind === "candidate").length} candidate interfaces and ${onboarding.filter(row => row.review?.kind === "hold").length} manual holds. These are not ingested events/news, approved feeds or newly discovered organizations. Filter family to source-onboarding for review priorities, limitations and next steps. All collection remains disabled.</p>` : ""}
+    <div class="source-catalog-counters" aria-label="Catalogue row state counts">${Object.entries(counts).map(([state,count]) => `<span>${statusEscape(state)}: <strong>${count.toLocaleString()}</strong></span>`).join(" ")}</div>
     <div class="source-catalog-filters">
       <label>Search sources <input type="search" data-catalog-query placeholder="Name, URL, source ID or geography"></label>
       <label>State <select data-catalog-state><option value="">All states</option>${Object.keys(counts).map(state => `<option value="${state}">${state}</option>`).join("")}</select></label>
@@ -414,6 +417,26 @@ function catalogLink(url, title) {
   const safe = statusSafeUrl(url);
   return safe ? `<a href="${statusEscape(safe)}" target="_blank" rel="noreferrer">${statusEscape(title)}</a>` : "";
 }
+function catalogReviewMetadata(row) {
+  if (row.family !== "source-onboarding" || !row.review) return "";
+  const review = row.review;
+  const field = (title, value) => value ? `<p><strong>${statusEscape(title)}:</strong> ${statusEscape(value)}</p>` : "";
+  const evidence = Array.isArray(review.evidence) ? review.evidence : [];
+  return `<section aria-label="Disabled source onboarding review">
+    <p><strong>DISABLED · ${review.kind === "hold" ? "Mandatory hold — review required" : "Review required — not ingested"}</strong></p>
+    ${field("Review priority", review.priority ? `${review.priority}${review.rank ? ` · ranked ${review.rank}` : " · secondary candidate"} (investigation order, not approval)` : null)}
+    ${field("Observed interface", review.interface)}
+    ${field("Verified format", review.format?.observed)}
+    ${review.format ? `<p>RSS / iCal / API / JSON-LD: unknown (not verified; not evidence of absence).</p>` : ""}
+    ${field("Existing representation", review.existingRepresentation)}
+    ${field("Distinction", review.distinction)}
+    ${field("Hold reason", review.holdReason)}
+    ${field("Access limitations", review.accessLimitations)}
+    ${field("Rights limitations", review.rightsLimitations)}
+    ${field("Next safe action", review.nextSafeAction)}
+    <details><summary>Review observations (not collection receipts)</summary>${evidence.map(item => `<p>${statusEscape(item.observation)}${item.url ? `<br>${catalogLink(item.url, item.url)}` : ""}</p>`).join("")}</details>
+  </section>`;
+}
 function renderCatalogRow(row) {
   const state = catalogCurrentState(row);
   return `<article class="source-catalog-row">
@@ -421,7 +444,8 @@ function renderCatalogRow(row) {
     <p>${statusEscape(row.family)} · ${statusEscape(row.category || "Category unknown")} · ${statusEscape(row.geography || "Geography unknown")}</p>
     <p>${row.url ? catalogLink(row.url, row.url) : "Source URL unknown"}</p>
     <dl class="source-catalog-clocks"><div><dt>Last attempt</dt><dd>${catalogClock(row.lastAttemptAt)}</dd></div><div><dt>Last successful collection</dt><dd>${catalogClock(row.lastSuccessAt)}</dd></div><div><dt>Latest content publication/change</dt><dd>${catalogClock(row.contentAt)}</dd></div></dl>
-    <p>Collection enabled: ${row.enabled === true ? "yes (registered)" : row.enabled === false ? "no" : "unknown"} · Target lane cadence: ${row.targetHours ? `${statusEscape(row.targetHours)} hours` : "unknown"} · Parser: ${statusEscape(row.parser || "unknown")}</p>
+    <p>Collection enabled: ${row.enabled === true ? "yes (registered)" : row.enabled === false ? "no" : "unknown"} · Target lane cadence (not live scheduling): ${row.targetHours ? `${statusEscape(row.targetHours)} hours` : "unknown"} · Parser: ${statusEscape(row.parser || "unknown")}</p>
+    ${catalogReviewMetadata(row)}
     <details><summary>Provenance and operations</summary><p>Source ID: ${statusEscape(row.sourceId || "unknown")}<br>Catalogue ID: ${statusEscape(row.id)}</p><p>${(row.provenance || []).map(path => statusEscape(path)).join("<br>")}</p><p>${row.workflowUrl ? catalogLink(row.workflowUrl, "Inspect workflow runs / authenticated dispatch") : "No mapped workflow"} · ${catalogLink(row.reviewUrl, "Review changes")}</p></details>
   </article>`;
 }
@@ -433,7 +457,7 @@ function bindSourceCatalog(payload) {
   const previous = host.querySelector("[data-catalog-previous]"), next = host.querySelector("[data-catalog-next]");
   let page = 0;
   const pageSize = 30;
-  const searchable = payload.sources.map(row => ({row, text:[row.name,row.url,row.sourceId,row.family,row.category,row.geography].join(" ").toLowerCase()}));
+  const searchable = payload.sources.map(row => ({row, text:[row.name,row.url,row.sourceId,row.family,row.category,row.geography,...(row.family === "source-onboarding" && row.review ? [row.review.status,row.review.distinction,row.review.existingRepresentation,row.review.interface,row.review.format?.observed,row.review.holdReason,row.review.accessLimitations,row.review.rightsLimitations,row.review.nextSafeAction,...(row.review.evidence || []).map(item => item.observation)] : [])].join(" ").toLowerCase()}));
   function render() {
     const term = query.value.trim().toLowerCase();
     const filtered = searchable.filter(({row,text}) => (!term || text.includes(term)) && (!state.value || catalogCurrentState(row) === state.value) && (!family.value || row.family === family.value));
