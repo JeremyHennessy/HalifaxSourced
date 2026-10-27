@@ -13,7 +13,7 @@ const hash = x => createHash('sha256').update(String(x)).digest('hex').slice(0,8
 const validDate = x => {const d=typeof x==='string'&&/^\d{4}-\d\d-\d\dT/.test(x)?new Date(x):null;return d&&Number.isFinite(+d)?d:null;};
 function postalAddress(value){
  const original=clean(value,250);
- const match=original.match(/^(.+),\\s*(Halifax|Dartmouth|Bedford|Lower Sackville|Upper Sackville|Hammonds Plains|Beaver Bank|Sackville),\\s*(?:NS|Nova Scotia)(?:\\s+([A-Z]\\d[A-Z]\\s?\\d[A-Z]\\d))?$/i);
+ const match=original.match(/^(.+),\s*(Halifax|Dartmouth|Bedford|Lower Sackville|Upper Sackville|Hammonds Plains|Beaver Bank|Sackville),\s*(?:NS|Nova Scotia)(?:\s+([A-Z]\d[A-Z]\s?\d[A-Z]\d))?$/i);
  if(!match)return original;
  const [,street,locality,postalCode]=match;
  return {'@type':'PostalAddress',streetAddress:street,addressLocality:locality,addressRegion:'NS',addressCountry:'CA',...(postalCode?{postalCode:postalCode.toUpperCase()}: {})};
