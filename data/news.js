@@ -2,6 +2,32 @@ window.HALIFAX_NEWS = {
   "version": 1,
   "items": [
     {
+      "id": "news-1fb9284920d1d77fe4f03345",
+      "canonicalUrl": "https://halifax.citynews.ca/2026/10/27/three-alarm-fire-at-halifax-grain-elevator-under-control/",
+      "sourceId": "citynews-halifax",
+      "sourceName": "CityNews Halifax",
+      "sourceGUID": "https://halifax.citynews.ca/2026/10/27/three-alarm-fire-at-halifax-grain-elevator-under-control/",
+      "source_type": "newsroom",
+      "title": "Halifax grain-terminal fire reported under control",
+      "region": "Halifax",
+      "regionEvidence": "The report identifies the Halifax Grain Elevator and Marginal Road.",
+      "topics": [
+        "Public safety",
+        "Local news"
+      ],
+      "publishedAt": "2026-10-27",
+      "publishedPrecision": "day",
+      "modifiedAt": null,
+      "observedAt": "2026-10-27T20:53:45.000Z",
+      "reviewStatus": "approved",
+      "correctionStatus": "none",
+      "summary": null,
+      "summaryKind": "none",
+      "reviewedAt": "2026-10-27T21:05:03.000Z",
+      "reviewer": "Halifax Sourced source review",
+      "rightsBasis": "Original factual title and attributed link to CityNews Halifax; publisher credits Natasha O'Neill. No article body, quotations, descriptions or images copied. Public access does not establish a republication licence. Observation provenance: observedAt is the upper bound of the reviewed 2026-10-27T20:53:39.000Z to 2026-10-27T20:53:45.000Z tool-response window, not an exact fetch time; source admission retains the receipt reference."
+    },
+    {
       "id": "news-81a930d96a2a76a3cbe04cb9",
       "canonicalUrl": "https://news.novascotia.ca/en/2026/10/27/province-strengthens-business-support-across-nova-scotia",
       "sourceId": "ns-newsroom",

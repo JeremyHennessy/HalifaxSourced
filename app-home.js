@@ -17,11 +17,11 @@ function renderHome() {
       <div class="page-shell hero-content">
         <div class="hero-copy">
           <span class="eyebrow">Halifax, Nova Scotia</span>
-          <h1>Local flavour.<br />Coastal character.</h1>
-          <p>Discover restaurants, menus, specials, city events, patios, new openings, and local favourites across Halifax.</p>
+          <h1>Local stories.<br />Things to do.</h1>
+          <p>Explore source-linked news, events, restaurants and specials in Halifax, Dartmouth and Bedford, plus clearly labelled provincial updates.</p>
           <div class="hero-actions">
-            <a class="button primary" href="#explore">Explore restaurants</a>
-            <a class="button secondary" href="#events">What's on</a>
+            <a class="button primary" href="#events">What's on</a>
+            <a class="button secondary" href="#news">Local news &amp; notices</a>
           </div>
           <div class="hero-proof"><span>✓</span> Source-backed local discovery</div>
         </div>
@@ -29,7 +29,25 @@ function renderHome() {
       </div>
     </section>
 
-    <section class="category-ribbon page-shell" aria-label="Explore by category">
+    ${homeBrowseGateway()}
+    ${homeNewsSection()}
+
+    <section class="page-shell triptych section-block home-discovery-panel" aria-label="Latest Halifax discovery">
+      <div class="panel-card">
+        ${miniHeader("What's on next", "#events")}
+        <div class="lead-list">${cityEventItems.length ? cityEventItems.map(cityEventLeadRow).join("") : emptyLead("No upcoming event listings are available in this snapshot. Check the Events page for source coverage.")}</div>
+      </div>
+      <div class="panel-card">
+        ${miniHeader("Current special leads", "#specials")}
+        <div class="lead-list">${specialLeads.length ? specialLeads.map(specialLeadRow).join("") : emptyLead("No special-source leads are loaded yet.")}</div>
+      </div>
+      <div class="panel-card" data-home-openings>
+        ${miniHeader("New & opening", "#explore?feature=opening")}
+        <div class="lead-list">${openingLeads.length ? openingLeads.map(openingLeadRow).join("") : emptyLead("New-opening discovery is refreshing.")}</div>
+      </div>
+    </section>
+
+    <section class="category-ribbon home-cuisine-ribbon page-shell" aria-label="Explore by category">
       <strong>Explore by category</strong>
       ${topCuisineButtons(7)}
       <button class="text-link" type="button" data-action="all-cuisines">View all →</button>
@@ -47,21 +65,6 @@ function renderHome() {
       <div class="restaurant-carousel">${featured.map((restaurant, index) => restaurantCard(restaurant, { index, compact: true })).join("")}</div>
     </section>
 
-    <section class="page-shell triptych section-block home-discovery-panel" aria-label="Latest Halifax discovery">
-      <div class="panel-card">
-        ${miniHeader("What's on next", "#events")}
-        <div class="lead-list">${cityEventItems.length ? cityEventItems.map(cityEventLeadRow).join("") : emptyLead("City-wide event listings are refreshing.")}</div>
-      </div>
-      <div class="panel-card">
-        ${miniHeader("Current special leads", "#specials")}
-        <div class="lead-list">${specialLeads.length ? specialLeads.map(specialLeadRow).join("") : emptyLead("No special-source leads are loaded yet.")}</div>
-      </div>
-      <div class="panel-card" data-home-openings>
-        ${miniHeader("New & opening", "#explore?feature=opening")}
-        <div class="lead-list">${openingLeads.length ? openingLeads.map(openingLeadRow).join("") : emptyLead("New-opening discovery is refreshing.")}</div>
-      </div>
-    </section>
-
     <section class="page-shell section-block neighbourhood-home-section">
       ${sectionHeader("Discover neighbourhoods", "Browse Halifax and Dartmouth by the places already mapped in the source layer.", "#map", "Open the map")}
       <div class="neighbourhood-grid">${neighbourhoodCards.map(neighbourhoodTile).join("")}</div>
@@ -69,6 +72,34 @@ function renderHome() {
 
   `;
   bindCommonActions();
+}
+
+function homeBrowseGateway() {
+  const destinations = [
+    ["Today", "#events?when=today", "Events on the calendar today"],
+    ["This weekend", "#events?when=weekend", "Friday through Sunday"],
+    ["Music & shows", "#events?category=Music", "Browse music listings"],
+    ["Markets", "#events?category=Markets", "Upcoming market listings"],
+    ["Festivals", "#events?category=Festivals", "Browse festival listings"],
+    ["Restaurants", "#explore", "Menus, patios & local places"],
+    ["Specials", "#specials", "Offers & official source leads"],
+    ["Local news", "#news", "Stories & official notices"]
+  ];
+  return `<section class="page-shell section-block home-browse" aria-labelledby="home-browse-title">
+    <div class="section-heading"><div><h2 id="home-browse-title">Find your next local stop</h2><p>Browse the listings we have, then check the original source for current details.</p></div></div>
+    <nav class="home-browse-links" aria-label="Browse news, entertainment and food">${destinations.map(([label, href, detail]) => `<a href="${escapeHtml(href)}"><strong>${escapeHtml(label)}</strong><span>${escapeHtml(detail)}</span></a>`).join("")}</nav>
+  </section>`;
+}
+
+function homeNewsSection() {
+  const available = typeof acceptedNewsItems === "function" && window.HALIFAX_NEWS?.version === 1 && Array.isArray(window.HALIFAX_NEWS.items);
+  const items = available ? acceptedNewsItems().slice(0, 3) : [];
+  return `<section class="page-shell section-block home-news" aria-label="News and notices">
+    ${sectionHeader("News & notices", "A reviewed selection from Halifax and Nova Scotia. Official announcements are labelled separately from journalism.", "#news", "Browse news & notices")}
+    <div class="news-grid">${items.map((item) => newsCard(item, { headingLevel: 3, compact: true })).join("")}</div>
+    ${items.length ? "" : `<p class="news-empty">${available ? "No reviewed news items are available yet. Only approved source links will appear here." : "News data is unavailable. This does not mean there are no local stories."}</p>`}
+    <p class="news-coverage-note">Dates show original publication, not collection. This is not a complete or live news service. Read the original for current details.</p>
+  </section>`;
 }
 
 function homeUpcomingCityEvents() {
