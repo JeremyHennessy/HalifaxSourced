@@ -3810,6 +3810,144 @@
           "observedAt": "2026-10-27T14:55:54.669Z"
         }
       ]
+    },
+    {
+      "provenance": {
+        "kind": "reviewed_workflow_log",
+        "repository": "JeremyHennessy/HalifaxSourced",
+        "sourceCommitSha": "d9062c9411761f15939ade5856d89ae2c6a9616e",
+        "workflowRunId": "40544322033",
+        "workflowRunAttempt": "1",
+        "workflowJob": "refresh",
+        "workflowJobId": 122330713318,
+        "accessPolicySha256": "86fb3945fefe31dd265e558d1309573666f9a81673968e679ce0738d4c82fc0e",
+        "logSha256": "38adcf891cdf2c558e7e66c016be178b343cd786960b6bf61505bd011a72a17b",
+        "diagnosticSha256": "6ae0ebaecb661230d9874c718a48f699f45996eafd2c4c8a892cdf5e472e3e90",
+        "receiptSha256": "6b6d5cd219fe5996b9933bbf9dda6e7c87b786875120f6a8fb48fd4f84c6e3af",
+        "loggedAt": "2026-10-27T16:47:29.506Z",
+        "diagnostic": {
+          "version": 1,
+          "disposition": "nonpublishable_requires_review",
+          "kind": "http_restriction",
+          "repository": "JeremyHennessy/HalifaxSourced",
+          "workflowJob": "refresh",
+          "loggedAt": "2026-10-27T16:47:29.506Z",
+          "sourceCommitSha": "d9062c9411761f15939ade5856d89ae2c6a9616e",
+          "sourceWorkflowRunId": "40544322033",
+          "sourceWorkflowRunAttempt": "1",
+          "accessPolicySha256": "86fb3945fefe31dd265e558d1309573666f9a81673968e679ce0738d4c82fc0e",
+          "evidence": {
+            "hold": {
+              "id": "bca9f9ecc142d36a0dc94951b83c1922e9cc3735c351db14115c62cdf6f5670f",
+              "scope": "url",
+              "target": "https://skipthedishes.com/?utm_source=mashaweemediterraneangrill.ca&utm_medium=microsites&utm_campaign=microsites",
+              "reason": "access_restricted",
+              "resume": "reviewed_evidence_required",
+              "evidence": {
+                "url": "https://www.skipthedishes.com/?utm_source=mashaweemediterraneangrill.ca&utm_medium=microsites&utm_campaign=microsites",
+                "finalUrl": "https://www.skipthedishes.com/?utm_source=mashaweemediterraneangrill.ca&utm_medium=microsites&utm_campaign=microsites",
+                "status": 403,
+                "observedAt": "2026-10-27T16:47:29.506Z"
+              },
+              "provenance": {
+                "kind": "current_run",
+                "sourceCommitSha": "d9062c9411761f15939ade5856d89ae2c6a9616e",
+                "sourceWorkflowRunId": "40544322033",
+                "sourceWorkflowRunAttempt": "1",
+                "accessPolicySha256": "86fb3945fefe31dd265e558d1309573666f9a81673968e679ce0738d4c82fc0e",
+                "requestId": "128"
+              }
+            },
+            "receipt": {
+              "requestId": "128",
+              "url": "https://www.skipthedishes.com/?utm_source=mashaweemediterraneangrill.ca&utm_medium=microsites&utm_campaign=microsites",
+              "status": 403,
+              "observedAt": "2026-10-27T16:47:29.506Z",
+              "attemptedAt": "2026-10-27T16:47:29.387Z",
+              "mediaType": "text/html"
+            },
+            "late": false,
+            "suspensionId": null
+          }
+        }
+      },
+      "observations": [
+        {
+          "url": "https://www.skipthedishes.com/?utm_source=mashaweemediterraneangrill.ca&utm_medium=microsites&utm_campaign=microsites",
+          "finalUrl": "https://www.skipthedishes.com/?utm_source=mashaweemediterraneangrill.ca&utm_medium=microsites&utm_campaign=microsites",
+          "status": 403,
+          "observedAt": "2026-10-27T16:47:29.506Z"
+        }
+      ]
+    },
+    {
+      "provenance": {
+        "kind": "reviewed_workflow_log",
+        "repository": "JeremyHennessy/HalifaxSourced",
+        "sourceCommitSha": "d9062c9411761f15939ade5856d89ae2c6a9616e",
+        "workflowRunId": "40544322033",
+        "workflowRunAttempt": "1",
+        "workflowJob": "refresh",
+        "workflowJobId": 122330713318,
+        "accessPolicySha256": "86fb3945fefe31dd265e558d1309573666f9a81673968e679ce0738d4c82fc0e",
+        "logSha256": "38adcf891cdf2c558e7e66c016be178b343cd786960b6bf61505bd011a72a17b",
+        "diagnosticSha256": "cc4c12e55e8960ea2eaa9c12e619340ba2cb37b2a4bb707d72e0a5a20066d635",
+        "receiptSha256": "546194f5b790215e980428657c180ae3adb92365384f46227db573bfb5e7ffda",
+        "loggedAt": "2026-10-27T16:47:37.485Z",
+        "diagnostic": {
+          "version": 1,
+          "disposition": "nonpublishable_requires_review",
+          "kind": "http_restriction",
+          "repository": "JeremyHennessy/HalifaxSourced",
+          "workflowJob": "refresh",
+          "loggedAt": "2026-10-27T16:47:37.485Z",
+          "sourceCommitSha": "d9062c9411761f15939ade5856d89ae2c6a9616e",
+          "sourceWorkflowRunId": "40544322033",
+          "sourceWorkflowRunAttempt": "1",
+          "accessPolicySha256": "86fb3945fefe31dd265e558d1309573666f9a81673968e679ce0738d4c82fc0e",
+          "evidence": {
+            "hold": {
+              "id": "73cbd79da8f07ae2b3cbdf399e73bab39ed19fd2c951dd696d01b68eaa3395af",
+              "scope": "url",
+              "target": "https://skipthedishes.com/?utm_source=inspringhotpot.com&utm_medium=microsites&utm_campaign=microsites",
+              "reason": "access_restricted",
+              "resume": "reviewed_evidence_required",
+              "evidence": {
+                "url": "https://www.skipthedishes.com/?utm_source=inspringhotpot.com&utm_medium=microsites&utm_campaign=microsites",
+                "finalUrl": "https://www.skipthedishes.com/?utm_source=inspringhotpot.com&utm_medium=microsites&utm_campaign=microsites",
+                "status": 403,
+                "observedAt": "2026-10-27T16:47:37.485Z"
+              },
+              "provenance": {
+                "kind": "current_run",
+                "sourceCommitSha": "d9062c9411761f15939ade5856d89ae2c6a9616e",
+                "sourceWorkflowRunId": "40544322033",
+                "sourceWorkflowRunAttempt": "1",
+                "accessPolicySha256": "86fb3945fefe31dd265e558d1309573666f9a81673968e679ce0738d4c82fc0e",
+                "requestId": "252"
+              }
+            },
+            "receipt": {
+              "requestId": "252",
+              "url": "https://www.skipthedishes.com/?utm_source=inspringhotpot.com&utm_medium=microsites&utm_campaign=microsites",
+              "status": 403,
+              "observedAt": "2026-10-27T16:47:37.485Z",
+              "attemptedAt": "2026-10-27T16:47:37.438Z",
+              "mediaType": "text/html"
+            },
+            "late": false,
+            "suspensionId": null
+          }
+        }
+      },
+      "observations": [
+        {
+          "url": "https://www.skipthedishes.com/?utm_source=inspringhotpot.com&utm_medium=microsites&utm_campaign=microsites",
+          "finalUrl": "https://www.skipthedishes.com/?utm_source=inspringhotpot.com&utm_medium=microsites&utm_campaign=microsites",
+          "status": 403,
+          "observedAt": "2026-10-27T16:47:37.485Z"
+        }
+      ]
     }
   ]
 }
