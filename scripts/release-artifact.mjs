@@ -1,4 +1,5 @@
 import { createHash } from 'node:crypto';
+import { generateSeoPages } from './generate-seo-pages.mjs';
 import { cp, mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises';
 import { resolve, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -39,6 +40,8 @@ if (process.argv[2] === 'build') {
   for (const entry of rootFiles) await cp(join(root, entry.name), join(site, entry.name));
   for (const directory of ['assets', 'data', 'vendor', 'docs']) await cp(join(root, directory), join(site, directory), { recursive: true, dereference: false });
   await validateMetadata();
+  const seo = await generateSeoPages({ sourceDir: root, siteDir: site });
+  console.log('Generated source-backed SEO pages:', JSON.stringify(seo));
   const files = await inventory(site);
   await writeFile(join(site, receiptPath), JSON.stringify({ version: 1, sourceCommitSha: sha, qualityWorkflowRunId: runId, files }, null, 2) + '\n');
   console.log(`Built immutable release: ${Object.keys(files).length} files, ${sha}, Quality Gate ${runId}`);

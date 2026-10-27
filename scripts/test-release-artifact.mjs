@@ -21,6 +21,9 @@ try {
   await writeFile(join(source, 'index.html'), '<h1>Release fixture</h1>');
   await writeFile(join(source, '.nojekyll'), '');
   await writeFile(join(source, 'app-core.js'), 'const fixture = true;');
+  await writeFile(join(source, 'data/build/catalog.json'), JSON.stringify({ restaurants: [] }));
+  await writeFile(join(source, 'data/build/city-events.json'), JSON.stringify({ events: [] }));
+  await writeFile(join(source, 'data/restaurant-media.js'), 'window.HALIFAX_RESTAURANT_MEDIA = {"records": []};');
   await writeFile(join(source, 'data/build/deployment-metadata.json'), JSON.stringify({ sourceCommitSha: sha, qualityWorkflowRunId: runId, counts: { canonicalPlaces: 4, activePlaces: 3, archivedPlaces: 1, rightsApprovedMedia: 2 } }));
   await writeFile(join(source, 'data/build/content-coverage-report.json'), JSON.stringify({ sourceCommitSha: sha, restaurantCoverage: { totalCanonicalPlaces: 4, activeCanonicalPlaces: 3, archivedLifecyclePlaces: 1, withUsableMedia: 2 } }));
   run('build');
