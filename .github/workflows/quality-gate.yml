@@ -261,6 +261,9 @@ jobs:
       - name: Test immutable release receipts
         run: node scripts/test-release-artifact.mjs
 
+      - name: Test crawlable SEO pages and media rights
+        run: node scripts/test-seo-pages.mjs
+
       - name: Package validated release
         env:
           SOURCE_COMMIT_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
