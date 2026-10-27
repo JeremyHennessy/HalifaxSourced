@@ -21,6 +21,29 @@ assert.equal(context.newsExternalUrl('https://user:secret@example.org/'),'');
 assert.equal(context.acceptedNewsItems({version:2,items:[record]}).length,0);
 const html=readFileSync(new URL('../index.html',import.meta.url),'utf8');
 assert.ok(html.includes('data-route-link="news"'));assert.ok(html.includes('app-news.js'));
+
+// Adding News must not squeeze the desktop header beyond its containing block.
+// This is an offline CSS/geometry contract, not a browser-rendering assertion.
+const desktopNav = html.match(/<nav class="desktop-nav"[^>]*>([\s\S]*?)<\/nav>/)?.[1] || '';
+assert.deepEqual([...desktopNav.matchAll(/href="(#[^"]+)"/g)].map(match => match[1]),
+  ['#explore', '#events', '#news', '#specials', '#menus', '#map', '#saved']);
+assert.match(html, /data-mobile-more-sheet[\s\S]*?<a href="#news">/, 'Keep News in mobile More');
+const responsiveCss = readFileSync(new URL('../styles-responsive.css', import.meta.url), 'utf8');
+const compactHeader = responsiveCss.match(/@media \(max-width:1180px\)\{([\s\S]*?)\n\}/)?.[1] || '';
+const header = compactHeader.match(/\.header-inner\{grid-template-columns:(\d+)px minmax\((\d+)px,1fr\) auto;gap:(\d+)px\}/);
+const navGap = Number(compactHeader.match(/\.desktop-nav\{gap:(\d+)px\}/)?.[1]);
+assert(header, 'Compact desktop header must budget its own grid gaps');
+const [brandWidth, searchMinimum, gridGap] = header.slice(1).map(Number);
+assert(brandWidth >= 165 && searchMinimum >= 190, 'Keep the existing logo and usable search controls');
+// Reserve 360px for the seven labels (Arial Bold 14px needs about 334px), plus
+// their gaps. Include classic scrollbar gutters and both compact boundaries.
+for (const width of [901, 902, 1024, 1180]) {
+  for (const gutter of [0, 15, 17]) {
+    const shell = Math.min(1100, width - gutter - 64);
+    assert(brandWidth + searchMinimum + 2 * gridGap + 360 + 6 * navGap <= shell,
+      `Seven-link header width budget must fit at ${width}px with a ${gutter}px gutter`);
+  }
+}
 console.log('News UI tests passed: separate URL state, filtering, day precision, unsafe links/text, source labels and navigation.');
 
 const core=readFileSync(new URL('../app-core.js',import.meta.url),'utf8');

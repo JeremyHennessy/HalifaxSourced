@@ -152,7 +152,7 @@ await verifyHomeCarouselLayout(page);
 // Inspect the actual decorative image/crop, not just its left background edge.
 // Include both sides of the former 1500px discontinuity and the reported viewport.
 const heroFrames = [];
-for (const width of [641, 768, 900, 901, 1180, 1440, 1499, 1500, 1743]) {
+for (const width of [641, 768, 900, 901, 902, 1024, 1180, 1181, 1440, 1499, 1500, 1743]) {
   await page.setViewportSize({ width, height: 833 });
   const frame = await page.locator(".home-hero").evaluate(async hero => {
     const artwork = hero.querySelector(".hero-artwork");
@@ -163,13 +163,28 @@ for (const width of [641, 768, 900, 901, 1180, 1440, 1499, 1500, 1743]) {
     const scale=Math.max(box.width/image.naturalWidth,box.height/image.naturalHeight);
     const position=getComputedStyle(image).objectPosition.split(" ").map(value=>parseFloat(value)/100);
     const sourceTop=(image.naturalHeight*scale-box.height)*position[1]/scale;
-    return {viewport:innerWidth,box,copy,outer,naturalWidth:image.naturalWidth,naturalHeight:image.naturalHeight,
+    const nav = document.querySelector('.desktop-nav');
+    const header = {brand:rect(document.querySelector('.brand-link img')),
+      search:rect(document.querySelector('.global-search')), input:rect(document.querySelector('#globalSearch')),
+      nav:rect(nav), display:getComputedStyle(nav).display,
+      links:[...nav.querySelectorAll('a')].map(link=>({href:link.getAttribute('href'),...rect(link)}))};
+    return {viewport:innerWidth,clientWidth:document.documentElement.clientWidth,header,box,copy,outer,naturalWidth:image.naturalWidth,naturalHeight:image.naturalHeight,
       sourceTop,sourceBottom:sourceTop+box.height/scale,objectFit:getComputedStyle(image).objectFit,
       feather:getComputedStyle(artwork,"::after").backgroundImage,
       background:getComputedStyle(hero).backgroundImage,
       overflow:document.documentElement.scrollWidth>document.documentElement.clientWidth+1};
   });
   if (frame.naturalWidth!==540 || frame.naturalHeight!==959 || frame.objectFit!=="cover") throw new Error(`Hero active artwork must decode: ${JSON.stringify(frame)}`);
+  if (width>900) {
+    const {brand,search,input,nav,display,links}=frame.header;
+    const routes=['#explore','#events','#news','#specials','#menus','#map','#saved'];
+    if (display==='none' || links.map(link=>link.href).join()!==routes.join() || input.width<60 ||
+      brand.right>search.x+1 || search.right>nav.x+1 ||
+      [brand,search,input,nav,...links].some(box=>box.x<0 || box.right>frame.clientWidth+1 || box.width<=0) ||
+      links.some((link,index)=>index>0 && links[index-1].right>link.x+1)) {
+      throw new Error(`Desktop navigation/search layout failed: ${JSON.stringify(frame)}`);
+    }
+  }
   if (frame.box.x<frame.copy.right+24 || frame.box.right>frame.outer.right || frame.box.width>561 || frame.overflow) throw new Error(`Hero artwork/copy separation failed: ${JSON.stringify(frame)}`);
   // The lighthouse starts at source y~475; skyline and coastal water reach y900.
   // A crop beginning below470 or ending above900 is the prior giant-crop bug.
