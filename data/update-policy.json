@@ -1,13 +1,52 @@
 {
   "version": 1,
   "lanes": [
-    {"id":"city-events","label":"City events","path":"data/build/city-events.json","targetHours":6,"workflow":"city-events-preview.yml","sourceStats":true},
-    {"id":"restaurant-facts","label":"Restaurant hours, menus and contacts","path":"data/build/structured-place-facts.json","targetHours":168,"workflow":"structured-place-facts-preview.yml"},
-    {"id":"specials","label":"Restaurant specials evidence","path":"data/build/structured-specials.json","targetHours":168,"workflow":"structured-specials-preview.yml"},
-    {"id":"official-sources","label":"Official website observations","path":"data/build/official-site-signals.json","targetHours":24,"workflow":"source-expansion-preview.yml"},
-    {"id":"social-sources","label":"Public social source observations","path":"data/build/social-signals.json","targetHours":24,"workflow":"social-source-preview.yml"}
+    {
+      "id": "city-events",
+      "label": "City events",
+      "path": "data/build/city-events.json",
+      "targetHours": 6,
+      "workflow": "city-events-preview.yml",
+      "sourceStats": true
+    },
+    {
+      "id": "restaurant-facts",
+      "label": "Restaurant hours, menus and contacts",
+      "path": "data/build/structured-place-facts.json",
+      "targetHours": 168,
+      "workflow": "structured-place-facts-preview.yml"
+    },
+    {
+      "id": "specials",
+      "label": "Restaurant specials evidence",
+      "path": "data/build/structured-specials.json",
+      "targetHours": 168,
+      "workflow": "structured-specials-preview.yml"
+    },
+    {
+      "id": "official-sources",
+      "label": "Official website observations",
+      "path": "data/build/official-site-signals.json",
+      "targetHours": 24,
+      "workflow": "source-expansion-preview.yml"
+    },
+    {
+      "id": "social-sources",
+      "label": "Public social source observations",
+      "path": "data/build/social-signals.json",
+      "targetHours": 24,
+      "workflow": "social-source-preview.yml"
+    },
+    {
+      "id": "regional-news",
+      "label": "Regional news metadata previews",
+      "path": "data/build/news.json",
+      "targetHours": 6,
+      "workflow": "news-preview.yml",
+      "promotion": "Explicit reviewed decisions only; preview never writes accepted records."
+    }
   ],
-  "publicationCoordinator":"One reviewed release at a time; reserve the lane in its PR before mutation.",
-  "unchangedPolicy":"No content commit or full Quality Gate for receipt-only changes; latest attempt stays in workflow artifact, not falsely reported as newly published data.",
-  "restrictionPolicy":"Do not retry denied sources or expand permissions without changed authorization. Link the existing blocker rather than repeatedly researching it."
+  "publicationCoordinator": "One reviewed release at a time; reserve the lane in its PR before mutation.",
+  "unchangedPolicy": "No content commit or full Quality Gate for receipt-only changes; latest attempt stays in workflow artifact, not falsely reported as newly published data.",
+  "restrictionPolicy": "Do not retry denied sources or expand permissions without changed authorization. Link the existing blocker rather than repeatedly researching it."
 }

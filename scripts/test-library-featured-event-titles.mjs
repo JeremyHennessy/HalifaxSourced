@@ -30,7 +30,7 @@ try {
     ['6abe6719e06996003a8073bc', 'A Full Workshop Featured Event. A Different Workshop', 'A Full Workshop Featured Event. A Different Workshop'],
     ['6abe6719e06996003a8073bd', 'Meet Juno Therapy Dog Meet Juno Therapy Dog', 'Meet Juno Therapy Dog'],
   ];
-  const html = headings.map(([id, heading]) => `<h3><a href="/v2/events/${id}">${heading}</a></h3><p>Sunday, October 25 on October 25, 2026, 2:00pm – 3:30pm</p><div>Central Library</div><p>Authors &amp; Writing</p>`).join('\n');
+  const html = headings.map(([id, heading]) => `<li class="cp-events-search-result"><h3><a href="/v2/events/${id}">${heading}</a></h3><p>Sunday, October 25 on October 25, 2026, 2:00pm – 3:30pm</p><div>Central Library</div><p>Authors &amp; Writing</p></li>`).join('\n');
   const sourceURL = 'https://halifax.bibliocommons.com/v2/events';
   await writeFile(join(root, 'scripts/lib/fetch-public-source.mjs'), `
     import { appendFile } from 'node:fs/promises';

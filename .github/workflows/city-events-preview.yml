@@ -21,6 +21,7 @@ on:
       - data/build/city-event-additions.json
       - scripts/import-city-events.mjs
       - scripts/import-supplemental-city-events.mjs
+      - scripts/test-library-event-boundaries.mjs
       - scripts/test-event-title-categories.mjs
       - scripts/apply-city-event-additions.mjs
       - scripts/check-city-event-additions.mjs
@@ -61,6 +62,7 @@ on:
       - data/build/city-event-additions.json
       - scripts/import-city-events.mjs
       - scripts/import-supplemental-city-events.mjs
+      - scripts/test-library-event-boundaries.mjs
       - scripts/test-event-title-categories.mjs
       - scripts/apply-city-event-additions.mjs
       - scripts/check-city-event-additions.mjs
@@ -109,6 +111,7 @@ jobs:
           node scripts/test-event-refresh-safety.mjs
           node scripts/test-event-refresh-dedupe.mjs
           node scripts/test-canonical-event-dedupe.mjs
+          node scripts/test-library-event-boundaries.mjs
           node scripts/test-event-title-categories.mjs
           node scripts/test-robots-policy.mjs
           node scripts/test-robots-policy-adapters.mjs
@@ -192,11 +195,25 @@ jobs:
           if-no-files-found: error
           retention-days: 30
 
+      # Keep the last candidate for diagnosing a failed gate, not publication.
+      # This artifact is deliberately separate from the promotable preview.
+      - name: Preserve last produced candidate snapshot
+        if: always()
+        run: |
+          mkdir -p artifacts
+          if [ -f data/build/city-events.json ]; then
+            cp data/build/city-events.json artifacts/city-events-candidate-snapshot.json
+          fi
+
       - name: Preserve event refresh diagnostics
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: city-events-refresh-diagnostics
-          path: artifacts/city-event-source-drift-report.json
+          path: |
+            artifacts/city-event-source-drift-report.json
+            artifacts/city-event-integrity-report.json
+            artifacts/library-event-parser-report.json
+            artifacts/city-events-candidate-snapshot.json
           if-no-files-found: warn
           retention-days: 30

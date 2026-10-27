@@ -1,5 +1,6 @@
+/* Keep all seven desktop destinations and a usable search field above 900px. */
 @media (max-width:1180px){
-  :root{--page:1100px}.header-inner{grid-template-columns:180px minmax(230px,1fr) auto}.desktop-nav{gap:15px}.header-actions{display:none}.brand-link img{width:165px}.explore-layout{grid-template-columns:200px minmax(0,1fr)}.context-column{display:none}.restaurant-carousel{grid-template-columns:repeat(4,minmax(0,1fr));overflow:hidden}.restaurant-carousel .restaurant-card:nth-child(5){display:none}.specials-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  :root{--page:1100px}.header-inner{grid-template-columns:165px minmax(190px,1fr) auto;gap:16px}.desktop-nav{gap:12px}.header-actions{display:none}.brand-link img{width:165px}.explore-layout{grid-template-columns:200px minmax(0,1fr)}.context-column{display:none}.restaurant-carousel{grid-template-columns:repeat(4,minmax(0,1fr));overflow:hidden}.restaurant-carousel .restaurant-card:nth-child(5){display:none}.specials-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 
 @media (max-width:900px){

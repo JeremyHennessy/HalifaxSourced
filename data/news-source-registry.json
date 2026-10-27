@@ -1,0 +1,99 @@
+{
+  "version": 1,
+  "policy": "Feed discovery is not reuse permission. Disabled proposed sources are not fetched. Admission requires reviewed access, schema, date and rights evidence. Metadata and links only; no feed images or descriptions.",
+  "sources": [
+    {
+      "id": "global-halifax",
+      "name": "Global News Halifax",
+      "source_type": "newsroom",
+      "homeUrl": "https://globalnews.ca/halifax/",
+      "feedUrl": "https://globalnews.ca/halifax/feed/",
+      "allowedHosts": [
+        "globalnews.ca"
+      ],
+      "enabled": true,
+      "status": "admitted",
+      "admission": {
+        "reviewedAt": "2026-10-27T20:06:00.000Z",
+        "reviewer": "Halifax Sourced source review",
+        "accessEvidence": "One guarded request through existing robots/access policy returned HTTP200 application/rss+xml on2026-10-27T19:54:50Z. No article requests, descriptions or images retained.",
+        "schemaEvidence": "Ten RSS metadata candidates parsed with valid canonical globalnews.ca URLs. Retain metadata and links only in review artifacts; no automatic accepted publication.",
+        "dateEvidence": "Observed feed publication instants range from2026-10-26T15:40:21Z to2026-10-27T15:36:26Z. Publication clocks remain separate from retrieval.",
+        "rightsEvidence": "Admission covers public RSS metadata/link collection for review only, not republication permission. No article bodies, feed descriptions, publisher photographs or automatic publication. Every accepted record requires a separate original editorial review and rights basis."
+      }
+    },
+    {
+      "id": "halifax-libraries",
+      "name": "Halifax Public Libraries",
+      "source_type": "library_notice",
+      "homeUrl": "https://www.halifaxpubliclibraries.ca/news/",
+      "feedUrl": "https://www.halifaxpubliclibraries.ca/news/feed/",
+      "allowedHosts": [
+        "www.halifaxpubliclibraries.ca"
+      ],
+      "enabled": false,
+      "status": "proposed",
+      "admission": null
+    },
+    {
+      "id": "ns-traffic",
+      "name": "Nova Scotia Traffic Notices",
+      "source_type": "official_public_notice",
+      "homeUrl": "https://novascotia.ca/news/",
+      "feedUrl": "https://novascotia.ca/news/rss/traffic.asp",
+      "allowedHosts": [
+        "novascotia.ca",
+        "news.novascotia.ca"
+      ],
+      "enabled": false,
+      "status": "proposed",
+      "admission": null
+    },
+    {
+      "id": "ns-newsroom",
+      "name": "Nova Scotia Newsroom",
+      "source_type": "official_public_notice",
+      "homeUrl": "https://news.novascotia.ca/",
+      "feedUrl": null,
+      "allowedHosts": [
+        "news.novascotia.ca"
+      ],
+      "enabled": false,
+      "status": "admitted",
+      "admission": {
+        "reviewedAt": "2026-10-27T19:53:00.000Z",
+        "reviewer": "Halifax Sourced source review",
+        "accessEvidence": "Official public newsroom and three linked pages read through web retrieval on 2026-10-27. Direct metadata request returned HTTP403; no retry. Automated collection remains disabled.",
+        "schemaEvidence": "Manual reviewed link metadata only. No claim of a verified RSS adapter for this newsroom.",
+        "dateEvidence": "Calendar publication dates displayed on each official article. Preserve day precision; do not infer UTC from an unqualified local clock.",
+        "rightsEvidence": "Original factual annotations with publisher attribution and original outbound links only. No article bodies, quotations, logos or photographs reproduced. Provincial terms: https://www.novascotia.ca/copyright . No general republication or image licence inferred."
+      }
+    },
+    {
+      "id": "cbc-ns",
+      "name": "CBC Nova Scotia",
+      "source_type": "newsroom",
+      "homeUrl": "https://www.cbc.ca/news/canada/nova-scotia",
+      "feedUrl": null,
+      "allowedHosts": [
+        "www.cbc.ca"
+      ],
+      "enabled": false,
+      "status": "proposed",
+      "admission": null
+    },
+    {
+      "id": "citynews-halifax",
+      "name": "CityNews Halifax",
+      "source_type": "newsroom",
+      "homeUrl": "https://halifax.citynews.ca/",
+      "feedUrl": null,
+      "allowedHosts": [
+        "halifax.citynews.ca"
+      ],
+      "enabled": false,
+      "status": "proposed",
+      "admission": null
+    }
+  ]
+}

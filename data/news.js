@@ -1,0 +1,83 @@
+window.HALIFAX_NEWS = {
+  "version": 1,
+  "items": [
+    {
+      "id": "news-81a930d96a2a76a3cbe04cb9",
+      "canonicalUrl": "https://news.novascotia.ca/en/2026/10/27/province-strengthens-business-support-across-nova-scotia",
+      "sourceId": "ns-newsroom",
+      "sourceName": "Nova Scotia Newsroom",
+      "sourceGUID": "https://news.novascotia.ca/en/2026/10/27/province-strengthens-business-support-across-nova-scotia",
+      "source_type": "official_public_notice",
+      "title": "Business support funding announced across Nova Scotia",
+      "region": "Nova Scotia",
+      "regionEvidence": "Release describes a province-wide program and lists nine regional delivery partners, including Halifax Partnership.",
+      "topics": [
+        "Business",
+        "Provincial affairs"
+      ],
+      "publishedAt": "2026-10-27",
+      "publishedPrecision": "day",
+      "modifiedAt": null,
+      "observedAt": "2026-10-27T19:51:06.000Z",
+      "reviewStatus": "approved",
+      "correctionStatus": "none",
+      "summary": "The Province announced $1.48 million for a program connecting businesses with nine regional delivery partners. The announcement lists Halifax Partnership among the funded organizations.",
+      "summaryKind": "reviewed_original",
+      "reviewedAt": "2026-10-27T19:53:00.000Z",
+      "reviewer": "Halifax Sourced source review",
+      "rightsBasis": "Original factual link annotation; attributed official source. No copied article body, quotations, photographs or official marks. Publisher terms: https://www.novascotia.ca/copyright"
+    },
+    {
+      "id": "news-c3ab1f08f5c4ffbe39559478",
+      "canonicalUrl": "https://news.novascotia.ca/en/2026/10/26/province-invests-nova-scotia-boatbuilders",
+      "sourceId": "ns-newsroom",
+      "sourceName": "Nova Scotia Newsroom",
+      "sourceGUID": "https://news.novascotia.ca/en/2026/10/26/province-invests-nova-scotia-boatbuilders",
+      "source_type": "official_public_notice",
+      "title": "Funding announced for Nova Scotia boatbuilding sector",
+      "region": "Nova Scotia",
+      "regionEvidence": "Release describes funding for the provincial boatbuilding association and businesses across the province.",
+      "topics": [
+        "Business",
+        "Coastal communities"
+      ],
+      "publishedAt": "2026-10-26",
+      "publishedPrecision": "day",
+      "modifiedAt": null,
+      "observedAt": "2026-10-27T19:51:06.000Z",
+      "reviewStatus": "approved",
+      "correctionStatus": "none",
+      "summary": "The Nova Scotia Boatbuilders Association is receiving $366,000 for work including trade shows, trade missions and industry promotion, according to the provincial announcement.",
+      "summaryKind": "reviewed_original",
+      "reviewedAt": "2026-10-27T19:53:00.000Z",
+      "reviewer": "Halifax Sourced source review",
+      "rightsBasis": "Original factual link annotation; attributed official source. No copied article body, quotations, photographs or official marks. Publisher terms: https://www.novascotia.ca/copyright"
+    },
+    {
+      "id": "news-8f4e6405f6c6e8856e667bc9",
+      "canonicalUrl": "https://news.novascotia.ca/en/2026/10/14/video-level-8-halifax-infirmary-acute-care-tower-complete",
+      "sourceId": "ns-newsroom",
+      "sourceName": "Nova Scotia Newsroom",
+      "sourceGUID": "https://news.novascotia.ca/en/2026/10/14/video-level-8-halifax-infirmary-acute-care-tower-complete",
+      "source_type": "official_public_notice",
+      "title": "Halifax Infirmary construction update marks level-eight completion",
+      "region": "Halifax",
+      "regionEvidence": "Official video title explicitly identifies the Halifax Infirmary Acute Care Tower.",
+      "topics": [
+        "Infrastructure",
+        "Community"
+      ],
+      "publishedAt": "2026-10-14",
+      "publishedPrecision": "day",
+      "modifiedAt": null,
+      "observedAt": "2026-10-27T19:51:06.000Z",
+      "reviewStatus": "approved",
+      "correctionStatus": "none",
+      "summary": null,
+      "summaryKind": "none",
+      "reviewedAt": "2026-10-27T19:53:00.000Z",
+      "reviewer": "Halifax Sourced source review",
+      "rightsBasis": "Original factual link annotation; attributed official source. No copied article body, quotations, photographs or official marks. Publisher terms: https://www.novascotia.ca/copyright"
+    }
+  ]
+};

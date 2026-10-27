@@ -1,0 +1,134 @@
+import assert from 'node:assert/strict';
+import { parseNewsFeed, newsId, buildNews, newsScript, validateNewsRegistry, canonicalNewsUrl, NEWS_MAX_ITEMS, NEWS_MAX_BYTES } from './lib/news-contract.mjs';
+import { collectNews, boundedNewsBody, validateNewsCache } from './import-regional-news.mjs';
+// Offline fixtures only. Any accidentally introduced network dependency fails.
+globalThis.fetch = () => { throw new Error('network_forbidden_in_news_tests'); };
+const now = '2026-10-27T12:00:00.000Z';
+const source = {id:'fixture',name:'Fixture newsroom',source_type:'official_public_notice',homeUrl:'https://example.org/',feedUrl:'https://example.org/feed',allowedHosts:['example.org'],enabled:true,status:'admitted',admission:{reviewedAt:now,reviewer:'Fixture reviewer',accessEvidence:'Fixture only',schemaEvidence:'Fixture RSS',dateEvidence:'Fixture dates',rightsEvidence:'Fixture original metadata'}};
+const registry = {version:1,sources:[source]};
+const item = (title='Local notice',link='https://example.org/story?utm_source=rss',date='Tue, 27 Oct 2026 10:00:00 GMT') => `<item><title>${title}</title><link>${link}</link><guid>story-1</guid><pubDate>${date}</pubDate><description><![CDATA[Never publish this copied article <img src="x">]]></description></item>`;
+const rss = body => `<rss version="2.0"><channel><title>Fixture</title>${body}</channel></rss>`;
+const parsed = parseNewsFeed(rss(item()),source,now);
+assert.equal(parsed.length,1);
+assert.equal(parsed[0].canonicalUrl,'https://example.org/story');
+assert.ok(!('description' in parsed[0]));
+assert.equal(parsed[0].reviewStatus,'pending');
+assert.equal(parseNewsFeed(rss(''),source,now).length,0);
+assert.equal(parseNewsFeed(rss(item()+item()),source,now).length,1);
+const atom = '<feed xmlns="http://www.w3.org/2005/Atom"><entry><title>Library update</title><id>urn:fixture:2</id><link rel="alternate" href="https://example.org/library"/><published>2026-10-27T10:00:00Z</published><updated>2026-10-27T11:00:00Z</updated></entry></feed>';
+assert.equal(parseNewsFeed(atom,source,now)[0].modifiedAt,'2026-10-27T11:00:00.000Z');
+for (const xml of [
+ '<!DOCTYPE rss [<!ENTITY x SYSTEM "file:///etc/passwd">]>'+rss(item()),
+ rss(item('&unknown;')),rss(item('&lt;script&gt;bad')),rss(item('bad','javascript:alert(1)')),
+ rss(item('bad','https://evil.example/story')),rss(item('bad','https://example.org@evil.example/story')),
+ rss(item('bad','https://example.org/story','2026-10-27')),rss(item('bad','https://example.org/story','2026-02-30T10:00:00Z')),
+ rss(item('bad','https://example.org/story','2027-10-27T10:00:00Z')),rss(item()).slice(0,-6),'<html>Access denied</html>',
+ rss(item().replace('</item>','<title>Second title</title></item>')),rss(item().repeat(NEWS_MAX_ITEMS+1)),
+ rss(item()+'x'.repeat(NEWS_MAX_BYTES)),atom.replace('2026-10-27T11:00:00Z','2026-10-26T11:00:00Z')
+]) assert.throws(()=>parseNewsFeed(xml,source,now));
+assert.throws(()=>canonicalNewsUrl('http://example.org/story',source.allowedHosts));
+assert.throws(()=>validateNewsRegistry({version:1,sources:[{...source,admission:null}]}));
+assert.throws(()=>validateNewsRegistry({version:1,sources:[{...source,status:'proposed'}]}));
+const accepted = {...parsed[0],region:'Halifax',regionEvidence:'Official notice names Halifax',topics:['community'],reviewStatus:'approved',correctionStatus:'none',summary:null,summaryKind:'none',reviewedAt:now,reviewer:'Fixture reviewer',rightsBasis:'Reviewed original title and link only'};
+const decisions = {version:1,decisions:[{id:accepted.id,status:'approved',record:accepted}]};
+const built = buildNews(decisions,registry);
+assert.equal(built.items.length,1);
+const dayRecord = {...accepted,publishedAt:'2026-10-27',publishedPrecision:'day',region:'East Hants'};
+assert.equal(buildNews({version:1,decisions:[{id:accepted.id,status:'approved',record:dayRecord}]},registry).items[0].publishedAt,'2026-10-27');
+for(const change of [{publishedAt:'2026-02-30',publishedPrecision:'day'},{publishedAt:'2026-10-27',publishedPrecision:'instant'},{publishedAt:accepted.publishedAt,publishedPrecision:'day'},{publishedPrecision:undefined}]) assert.throws(()=>buildNews({version:1,decisions:[{id:accepted.id,status:'approved',record:{...accepted,...change}}]},registry));
+assert.deepEqual(buildNews(decisions,{...registry,sources:[{...source,enabled:false,feedUrl:null}]}),built,'Disabled transport must preserve reviewed records');
+assert.deepEqual(buildNews({version:1,decisions:[{id:accepted.id,status:'withdrawn'}]},registry).items,[]);
+for (const change of [{reviewStatus:'pending'},{description:'copied'},{summary:'Copied feed description',summaryKind:'feed_description'},{regionEvidence:''},{publishedAt:'not a date'},{rightsBasis:''},{canonicalUrl:'javascript:alert(1)'},{image:'https://example.org/image.jpg'}]) {
+ assert.throws(()=>buildNews({version:1,decisions:[{...decisions.decisions[0],record:{...accepted,...change}}]},registry));
+}
+assert.throws(()=>buildNews({version:1,decisions:[...decisions.decisions,...decisions.decisions]},registry));
+assert.equal(newsId('https://example.org/story'),accepted.id);
+assert.equal(newsScript(built),newsScript(buildNews(decisions,registry)));
+let requests=0;
+const collected = await collectNews(registry,{now,fetchFeed:async()=>{requests++;return rss(item());}});
+assert.equal(requests,1); assert.equal(collected.candidates.length,1);
+const unchanged = await collectNews(registry,{now:'2026-10-28T12:00:00.000Z',previous:collected,fetchFeed:async()=>rss(item())});
+assert.deepEqual(unchanged.candidates,collected.candidates,'No change must not churn observation clocks');
+assert.equal(unchanged.diagnostics[0].lastAttemptAt,'2026-10-28T12:00:00.000Z');
+assert.equal(unchanged.diagnostics[0].lastSuccessAt,'2026-10-28T12:00:00.000Z');
+const failed = await collectNews(registry,{now,previous:collected,fetchFeed:async()=>{throw new Error('news_http_503');}});
+assert.deepEqual(failed.candidates,collected.candidates);
+requests=0;
+const backoff = await collectNews(registry,{now,previous:failed,fetchFeed:async()=>{requests++;return rss(item());}});
+assert.equal(requests,0); assert.deepEqual(backoff.candidates,failed.candidates); assert.equal(backoff.diagnostics[0].lastAttemptAt,now);
+const disabled = await collectNews({version:1,sources:[{...source,status:'proposed',enabled:false,admission:null}]},{now,fetchFeed:async()=>{throw new Error('must not fetch');}});
+assert.equal(disabled.candidates.length,0);
+assert.equal(disabled.diagnostics[0].status,'disabled');
+assert.equal(await boundedNewsBody(new Response('safe feed')), 'safe feed');
+await assert.rejects(boundedNewsBody(new Response('x'.repeat(NEWS_MAX_BYTES+1))),/news_byte_limit/);
+await assert.rejects(boundedNewsBody(new Response(new Uint8Array([0xff]))));
+console.log('Regional news offline tests passed: RSS/Atom, XML safety, bounds, dates, dedup, explicit review, withdrawal, disabled sources, retention and backoff.');
+
+const cached = await collectNews(registry,{now,fetchFeed:async()=>({status:200,xml:rss(item()),etag:'"fixture-v1"',lastModified:'Tue, 27 Oct 2026 10:00:00 GMT'})});
+const next = '2026-10-28T12:00:00.000Z';
+const notModified = await collectNews(registry,{now:next,previous:cached,fetchFeed:async(_s,headers)=>{assert.equal(headers.etag,'"fixture-v1"');return {status:304};}});
+assert.deepEqual(notModified.candidates,cached.candidates);
+assert.equal(notModified.diagnostics[0].status,'not_modified');
+assert.equal(notModified.diagnostics[0].lastSuccessAt,next);
+const changed = await collectNews(registry,{now:next,previous:cached,fetchFeed:async()=>({status:200,xml:rss(item('Revised local notice')),etag:'"fixture-v2"'})});
+assert.equal(changed.candidates[0].title,'Revised local notice');
+assert.equal(changed.candidates[0].observedAt,next);
+assert.equal(changed.diagnostics[0].etag,'"fixture-v2"');
+const held = await collectNews(registry,{now,previous:cached,fetchFeed:async()=>{throw new Error('news_http_429');}});
+assert.equal(held.diagnostics[0].accessHeld,true);
+const afterHold = await collectNews(registry,{now:'2027-10-27T12:00:00.000Z',previous:held,fetchFeed:async()=>{throw new Error('must never request held source');}});
+assert.equal(afterHold.diagnostics[0].lastAttemptAt,now);
+assert.equal(afterHold.diagnostics[0].status,'access_held');
+const changedRegistry = {version:1,sources:[{...source,feedUrl:'https://example.org/feed-v2'}]};
+let checkedConfig=false;
+await collectNews(changedRegistry,{now:next,previous:cached,fetchFeed:async(_s,headers)=>{checkedConfig=true;assert.equal(headers.etag,null);assert.equal(headers.lastModified,null);return {status:200,xml:rss(item())};}});
+assert.equal(checkedConfig,true);
+const changedHeld = await collectNews(changedRegistry,{now:next,previous:held,fetchFeed:async()=>{throw new Error('must not bypass hold with new config');}});
+assert.equal(changedHeld.diagnostics[0].accessHeld,true);
+for(const corrupt of [{}, {...cached,version:1}, {...cached,diagnostics:[{...cached.diagnostics[0],etag:'bad\nheader'}]}, {...cached,candidates:[{...cached.candidates[0],description:'copied'}]}]) {
+ assert.throws(()=>validateNewsCache(corrupt));
+ await assert.rejects(collectNews(registry,{now,previous:corrupt,fetchFeed:async()=>{throw new Error('must not request corrupt cache');}}),/invalid_previous_news_cache/);
+}
+console.log('News cache tests passed: conditional 304, changed content, durable holds, config invalidation and corrupt-cache fail-closed.');
+// RFC calendar values must not normalize through Date.parse.
+for (const date of ['Mon, 30 Feb 2026 10:00:00 GMT','29 Feb 2026 10:00:00 GMT','29 Feb 1900 10:00:00 GMT','31 Apr 2026 10:00:00 GMT','00 Jan 2026 10:00:00 GMT','01 Jan 0000 10:00:00 GMT','01 Jan 26 10:00:00 GMT','27 Oct 2026 24:00:00 GMT','27 Oct 2026 10:60:00 GMT','27 Oct 2026 10:00:60 GMT','27 Oct 2026 10:00:00 +2460','Mon, 27 Oct 2026 10:00:00 GMT','2026-10-27T24:00:00Z']) {
+ assert.throws(()=>parseNewsFeed(rss(item('Calendar test','https://example.org/story',date)),source,now),/invalid_news_date/);
+}
+for (const date of ['Thu, 29 Feb 2024 10:00:00 GMT','Tue, 29 Feb 2000 10:00:00 GMT','27 Oct 2026 10:00:00 +0100']) assert.equal(parseNewsFeed(rss(item('Valid calendar','https://example.org/story',date)),source,now).length,1);
+const badCalendar = await collectNews(registry,{now:next,previous:cached,fetchFeed:async()=>({status:200,xml:rss(item('Bad date','https://example.org/story','Mon, 30 Feb 2026 10:00:00 GMT')),etag:'"must-not-replace"'})});
+assert.deepEqual(badCalendar.candidates,cached.candidates);
+assert.equal(badCalendar.diagnostics[0].status,'failed_preserved');
+assert.equal(badCalendar.diagnostics[0].etag,cached.diagnostics[0].etag);
+assert.equal(badCalendar.diagnostics[0].lastSuccessAt,cached.diagnostics[0].lastSuccessAt);
+
+// Exercise the exact helper called by the workflow, not a duplicate gate model.
+const {mayInitializeNewsCache,prepareNewsCache} = await import('./import-regional-news.mjs');
+const {mkdtemp,readFile,writeFile,rm} = await import('node:fs/promises');
+const {tmpdir} = await import('node:os');
+const {pathToFileURL} = await import('node:url');
+const gate = {requested:'true',runNumber:'1',runAttempt:'1',eventName:'workflow_dispatch',exists:false};
+assert.equal(mayInitializeNewsCache(gate),true);
+for (const change of [{requested:'false'},{requested:undefined},{runNumber:'2'},{runAttempt:'2'},{eventName:'schedule'},{eventName:'pull_request'},{exists:true}]) assert.equal(mayInitializeNewsCache({...gate,...change}),false);
+const directory = await mkdtemp(`${tmpdir()}/news-cache-test-`);
+const artifact = pathToFileURL(`${directory}/news-preview.json`);
+const initEnv = {NEWS_INITIALIZE_REVIEW_CACHE:'true',GITHUB_RUN_NUMBER:'1',GITHUB_RUN_ATTEMPT:'1',GITHUB_EVENT_NAME:'workflow_dispatch'};
+try {
+ await assert.rejects(prepareNewsCache({artifact,registry,env:{}}),/news_cache_missing_no_requests/);
+ await assert.rejects(prepareNewsCache({artifact,registry,env:{...initEnv,GITHUB_RUN_NUMBER:'2'}}),/initialization_not_authorized/);
+ await prepareNewsCache({artifact,registry,env:initEnv});
+ validateNewsCache(JSON.parse(await readFile(artifact,'utf8')));
+ await assert.rejects(prepareNewsCache({artifact,registry,env:initEnv}),/initialization_not_authorized/);
+ await writeFile(artifact,JSON.stringify(held));
+ await prepareNewsCache({artifact,registry,env:{}});
+ assert.equal(JSON.parse(await readFile(artifact,'utf8')).diagnostics[0].accessHeld,true);
+ await assert.rejects(prepareNewsCache({artifact,registry,env:initEnv}),/initialization_not_authorized/);
+ await writeFile(artifact,'corrupt');
+ await assert.rejects(prepareNewsCache({artifact,registry,env:initEnv}));
+ assert.equal(await readFile(artifact,'utf8'),'corrupt');
+} finally { await rm(directory,{recursive:true,force:true}); }
+const workflow = await readFile(new URL('../.github/workflows/news-preview.yml',import.meta.url),'utf8');
+assert.match(workflow,/initialize_review_cache:[\s\S]*?default: false/);
+assert.match(workflow,/NEWS_INITIALIZE_REVIEW_CACHE: \$\{\{ inputs.initialize_review_cache \}\}/);
+assert.match(workflow,/node scripts\/import-regional-news.mjs --prepare-review-cache/);
+assert.doesNotMatch(workflow,/\n\s+schedule:/);
+console.log('News date/bootstrap tests passed: RFC calendar precision, failure preservation, first-run-only explicit initialization, no reset or default cache-miss requests.');

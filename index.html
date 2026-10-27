@@ -22,11 +22,13 @@
     <link rel="stylesheet" href="./vendor/leaflet/leaflet.css?v=20261019-release-1" />
     <link rel="stylesheet" href="./styles-base.css?v=20261020-bounded-hero-3" />
     <link rel="stylesheet" href="./styles-pages.css?v=20261020-bounded-hero-3" />
-    <link rel="stylesheet" href="./styles-responsive.css?v=20261020-review-priorities-1" />
+    <link rel="stylesheet" href="./styles-responsive.css?v=20261027-news-header-1" />
     <link rel="stylesheet" href="./styles-media.css?v=20261021-quality-contrast-1" />
     <link rel="stylesheet" href="./styles-events.css?v=20261019-release-1" />
     <link rel="stylesheet" href="./styles-admin.css?v=20261019-release-1" />
     <link rel="stylesheet" href="./styles-admin-status.css?v=20261019-release-1" />
+    <link rel="stylesheet" href="./styles-source-catalog.css?v=20261027-sources-news-1" />
+    <link rel="stylesheet" href="./styles-news.css?v=20261027-sources-news-1" />
     <link rel="stylesheet" href="./styles-admin-review-io.css?v=20261019-release-1" />
     <link rel="stylesheet" href="./styles-mobile-fixes.css?v=20261020-regional-1" />
   </head>
@@ -47,6 +49,7 @@
         <nav class="desktop-nav" aria-label="Primary navigation">
           <a href="#explore" data-route-link="explore">Restaurants</a>
           <a href="#events" data-route-link="events">Events</a>
+          <a href="#news" data-route-link="news">News</a>
           <a href="#specials" data-route-link="specials">Specials</a>
           <a href="#menus" data-route-link="menus">Menus</a>
           <a href="#map" data-route-link="map">Map</a>
@@ -67,7 +70,7 @@
           <div class="footer-brand-lockup"><img src="./assets/brand/logo-emblem.webp" alt="" width="74" height="74" /><strong>Halifax Sourced</strong></div>
           <p><strong>Local flavour. Coastal character.</strong></p><p>Discover restaurants, events, specials, and local favourites across Halifax.</p>
         </section>
-        <section><h2>Explore</h2><a href="#explore">Restaurants</a><a href="#events">Events</a><a href="#specials">Specials</a><a href="#menus">Menus</a><a href="#map">Map</a><a href="#saved">Saved places</a></section>
+        <section><h2>Explore</h2><a href="#news">Local news</a><a href="#explore">Restaurants</a><a href="#events">Events</a><a href="#specials">Specials</a><a href="#menus">Menus</a><a href="#map">Map</a><a href="#saved">Saved places</a></section>
         <section><h2>Neighbourhoods</h2><button type="button" data-neighbourhood-link="Downtown">Downtown</button><button type="button" data-neighbourhood-link="North End">North End</button><button type="button" data-neighbourhood-link="South End">South End</button><button type="button" data-neighbourhood-link="Waterfront">Waterfront</button><button type="button" data-neighbourhood-link="Dartmouth">Dartmouth</button></section>
         <section><h2>About the data</h2><p>Discovery combines curated listings, public map and tourism directories, local opening-watch leads, restaurant-owned websites and feeds, official social links, permitted social API signals, structured restaurant facts and specials, Halifax event calendars, venue schedules, sports schedules, and Nova Scotia public registry evidence.</p><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap attribution</a><a href="#admin/status">Status</a><a href="#admin/thumbnails">Thumbnail review</a><a href="#admin/social">Post review</a><a href="#admin/places">Place queues</a></section>
       </div>
@@ -85,6 +88,7 @@
     <aside class="mobile-more-sheet" data-mobile-more-sheet aria-label="More Halifax Sourced navigation" aria-hidden="true">
       <div class="mobile-more-heading"><strong>Discover more</strong><button type="button" data-mobile-more-close aria-label="Close more navigation">×</button></div>
       <nav>
+        <a href="#news"><span aria-hidden="true">◫</span><div><strong>Local news</strong><small>Nova Scotia stories and official notices</small></div></a>
         <a href="#specials"><span aria-hidden="true">✦</span><div><strong>Specials</strong><small>Verified offers and official leads</small></div></a>
         <a href="#menus"><span aria-hidden="true">≡</span><div><strong>Menus</strong><small>Direct restaurant menu sources</small></div></a>
         <a href="#saved" data-route-link="saved"><span aria-hidden="true">♡</span><div><strong>Saved places</strong><small>Your list on this device</small></div></a>
@@ -126,7 +130,9 @@
     <script src="./data/reviewed-restaurant-corrections.js?v=20261025-queen-contact-1"></script>
     <script src="./app-inspection-matching.js?v=20261020-location-1"></script>
     <script src="./app-restaurant-identity.js?v=20261020-regional-1"></script>
-    <script src="./app-core.js?v=20261026-source-observation-1"></script>
+    <script src="./data/news.js?v=20261027-sources-news-1"></script>
+    <script src="./app-core.js?v=20261027-sources-news-1"></script>
+    <script src="./app-news.js?v=20261027-sources-news-1"></script>
     <script src="./app-discovered.js?v=20261020-regional-1"></script>
     <script src="./app-reviewed-corrections.js?v=20261020-regional-1"></script>
     <script src="./app-source-signals.js?v=20261019-release-1"></script>
@@ -148,7 +154,7 @@
     <script src="./app-discovery.js?v=20261020-review-priorities-1"></script>
     <script src="./app-detail.js?v=20261025-action-policy-2"></script>
     <script src="./app-admin.js?v=20261020-review-priorities-1"></script>
-    <script src="./app-admin-status.js?v=20261020-review-priorities-1"></script>
+    <script src="./app-admin-status.js?v=20261027-sources-news-1"></script>
     <script src="./app-admin-review-io.js?v=20261019-release-1"></script>
     <script src="./app-init.js?v=20261020-review-priorities-1"></script>
     <script src="./app-accessibility.js?v=20261019-release-1"></script>

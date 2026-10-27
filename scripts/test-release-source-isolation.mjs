@@ -18,6 +18,7 @@ const snapshotPaths = snapshots.flatMap(([name]) => [`data/${name}.js`, `data/bu
 // Adding a release entry point requires an explicit classification here. The
 // offline entries below are also executed, not merely trusted by their names.
 const offlineScripts = new Set([
+  "build-regional-news", "check-news", "build-source-catalog",
   "export-catalog", "check-public-special-source-leads", "check-patio-directory-facts",
   "build-structured-specials", "resolve-place-candidates", "check-place-source-resolution",
   "build-recent-social-posts", "build-reviewed-social-posts", "check-local-restaurant-policy",

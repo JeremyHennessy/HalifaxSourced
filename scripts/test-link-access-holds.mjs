@@ -1547,8 +1547,14 @@ assert.equal(acceptedBarriosHolds.find('https://barrioshfx.ca/unknown-page'), nu
     "scripts/test-update-consistency.mjs"
   ];
   const workflowNames = (await readdir(new URL('../.github/workflows/', import.meta.url))).filter(name => name.endsWith('.yml')).sort();
-  assert.equal(workflowNames.length, 13, 'Review new workflow filters before expanding this change scope');
+  assert.equal(workflowNames.length, 14, 'Review new workflow filters before expanding this change scope');
   const workflows = Object.fromEntries(await Promise.all(workflowNames.map(async name => [name,await readFile(new URL('../.github/workflows/' + name, import.meta.url),'utf8')])));
+  const newsWorkflow = workflows['news-preview.yml'];
+  assert(newsWorkflow.includes('  workflow_dispatch:'), 'News preview is manually dispatched');
+  assert(!/^  (?:pull_request|pull_request_target|push|schedule):/m.test(newsWorkflow), 'News collection never runs on PR/push/schedule');
+  assert(newsWorkflow.includes('  contents: read') && !newsWorkflow.includes('contents: write'), 'News has no content write permission');
+  assert(newsWorkflow.includes("if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)"), 'News only uses trusted default branch');
+  assert(newsWorkflow.includes("NEWS_REQUIRE_CACHE: '1'"), 'News cannot silently discard denied-source history');
   function prPaths(source) {
     const start = source.indexOf('  pull_request:\n');
     if (start < 0) return null;
@@ -1622,7 +1628,7 @@ assert.equal(acceptedBarriosHolds.find('https://barrioshfx.ca/unknown-page'), nu
       'Reject Restaurant collector activation or unsafe PR envelope: ' + label);
   }
   console.log('Changed-scope PR matrix: ' + scopeMatrix.map(row => row.workflow + '=' + (row.matched.length ? 'triggered' : row.pullRequest ? 'not-matched' : 'no-PR-trigger')).join(', '));
-  checked('all 13 workflow PR filters reviewed; eight protected validations selected; Restaurant PR collector remains excluded and ' + (restaurantBoundaryMutations.length + 2) + ' boundary mutations rejected');
+  checked('all 14 workflow PR filters reviewed; manual news lane excluded; eight protected validations selected; Restaurant PR collector remains excluded and ' + (restaurantBoundaryMutations.length + 2) + ' boundary mutations rejected');
 
   // This standalone fixture owns its own temporary tree. Execute its real
   // sibling entrypoint with an explicit transport denial, not sandbox copies.

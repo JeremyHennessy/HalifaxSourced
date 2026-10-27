@@ -1,6 +1,6 @@
 import { fetchGuardedSource as fetch } from "./lib/fetch-public-source.mjs";
 import { createHash } from "node:crypto";
-import { readFile, writeFile } from "node:fs/promises";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
 
 const payloadUrl = new URL("../data/build/city-events.json", import.meta.url);
 const jsUrl = new URL("../data/city-events.js", import.meta.url);
@@ -310,6 +310,72 @@ function libraryCategories(block, title) {
   return categories.length ? [...new Set(categories)] : ["Community"];
 }
 
+// Parse only closed publisher result cards. A heading-to-heading slice can
+// borrow dates from the next card (whose metadata may precede its heading).
+// This deliberately fails closed on unknown markup; diagnostics contain counts,
+// never scraped HTML or description bodies.
+function libraryEventCards(html, pageUrl) {
+  const text = String(html);
+  const root = { tag: "root", children: [], start: 0, end: text.length };
+  const stack = [root];
+  const nodes = [];
+  const token = /<!--[\s\S]*?-->|<(?:[^>"']|"[^"]*"|'[^']*')+>/g;
+  const voidTags = new Set(["area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "param", "source", "track", "wbr"]);
+  for (const match of text.matchAll(token)) {
+    const raw = match[0];
+    if (/^<!/.test(raw)) continue;
+    const parsed = raw.match(/^<\s*(\/?)\s*([a-z][\w:-]*)/i);
+    if (!parsed) continue;
+    const tag = parsed[2].toLowerCase();
+    if (["script", "style"].includes(stack.at(-1).tag) && !(parsed[1] && tag === stack.at(-1).tag)) continue;
+    if (parsed[1]) {
+      const index = stack.findLastIndex(node => node.tag === tag);
+      if (index > 0) {
+        // Mismatched/unclosed descendants are not usable card evidence.
+        const node = stack[index];
+        node.end = match.index + raw.length;
+        node.innerEnd = match.index;
+        stack.length = index;
+      }
+      continue;
+    }
+    const attrs = {};
+    for (const attr of raw.slice(parsed[0].length).matchAll(/([\w:-]+)\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s>]+))/g)) attrs[attr[1].toLowerCase()] = attr[2] ?? attr[3] ?? attr[4];
+    const parent = stack.at(-1);
+    const node = { tag, attrs, parent, children: [], start: match.index, innerStart: match.index + raw.length };
+    parent.children.push(node);
+    nodes.push(node);
+    if (!voidTags.has(tag) && !/\/\s*>$/.test(raw)) stack.push(node);
+  }
+  const descendants = (node, tag) => nodes.filter(other => {
+    if (other.tag !== tag || other.end == null) return false;
+    for (let parent = other.parent; parent; parent = parent.parent) if (parent === node) return true;
+    return false;
+  });
+  const counts = { headings: 0, nonDetailLinks: 0, unboundedCards: 0, ambiguousCards: 0 };
+  const cards = [];
+  for (const heading of nodes.filter(node => node.tag === "h3" && node.end != null)) {
+    counts.headings++;
+    const links = descendants(heading, "a").map(link => {
+      const url = absoluteUrl(clean(link.attrs.href || ""), pageUrl);
+      if (!url) return null;
+      const parsed = new URL(url);
+      const publisher = new URL(pageUrl);
+      if (parsed.origin !== publisher.origin || !publisher.hostname.endsWith(".bibliocommons.com") || parsed.username || parsed.password || !/^\/(?:v2\/)?events\/[a-f0-9]{24}\/?$/i.test(parsed.pathname)) return null;
+      return { url, titleHtml: text.slice(link.innerStart, link.innerEnd) };
+    }).filter(Boolean);
+    if (links.length !== 1) { counts.nonDetailLinks++; continue; }
+    let card = heading.parent;
+    while (card !== root && !(card.tag === "li" || card.tag === "article" || /(?:^|\s)(?:cp-)?(?:events?-search-result|event-card|event-item|event-row)(?:\s|$)/i.test(card.attrs.class || ""))) card = card.parent;
+    if (card === root || card.end == null) { counts.unboundedCards++; continue; }
+    if (descendants(card, "h3").length !== 1) { counts.ambiguousCards++; continue; }
+    cards.push({ ...links[0], html: text.slice(card.innerStart, card.innerEnd) });
+  }
+  return { cards, counts };
+}
+
+const libraryParserDiagnostics = [];
+
 async function importLibraries(source) {
   const allowedLocations = source.allowedLocations || {};
   const events = [];
@@ -327,23 +393,22 @@ async function importLibraries(source) {
   for (const pageNumber of descendingPageNumbers(expectedPages, libraryPageLimit)) {
     const url = `${source.url}${source.url.includes("?") ? "&" : "?"}page=${pageNumber}`;
     const page = pageNumber === 1 ? firstPage : await fetchHtml(url);
-    const headings = [...page.text.matchAll(/<h3\b[^>]*>[\s\S]*?<a\b[^>]*href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>[\s\S]*?<\/h3>/gi)];
-    if (!headings.length) continue;
-    for (let index = 0; index < headings.length; index += 1) {
-      const current = headings[index];
-      const nextIndex = headings[index + 1]?.index ?? page.text.length;
-      const block = clean(page.text.slice(current.index, nextIndex));
+    const parsed = libraryEventCards(page.text, page.resolvedUrl);
+    const diagnostic = { sourceId: source.id, pageNumber, ...parsed.counts, cards: parsed.cards.length, missingOccurrence: 0, missingLocation: 0, emitted: 0 };
+    libraryParserDiagnostics.push(diagnostic);
+    for (const current of parsed.cards) {
+      const block = clean(current.html);
       if (/\bcancelled\b/i.test(block)) continue;
       // The legacy parsed title is part of makeEvent's durable ID seed. Repair
       // presentation separately so this badge fix cannot rename saved events.
-      const identityTitle = collapseExactRepeatedWords(current[2]).replace(/^Featured Event\.\s*/i, "");
-      const title = libraryDisplayTitle(current[2]);
+      const identityTitle = collapseExactRepeatedWords(current.titleHtml).replace(/^Featured Event\.\s*/i, "");
+      const title = libraryDisplayTitle(current.titleHtml);
       const location = Object.entries(allowedLocations).find(([name]) => block.includes(name));
-      if (!title || !location) continue;
+      if (!title || !location) { diagnostic.missingLocation++; continue; }
       const when = libraryWhen(block);
-      if (!when) continue;
-      const event = makeEvent(source, { ...when, title: identityTitle, venueName: location[0], city: location[1], categories: libraryCategories(block, title), eventUrl: absoluteUrl(current[1], page.resolvedUrl) });
-      if (event) { event.title = title.slice(0, 240); events.push(event); }
+      if (!when) { diagnostic.missingOccurrence++; continue; }
+      const event = makeEvent(source, { ...when, title: identityTitle, venueName: location[0], city: location[1], categories: libraryCategories(block, title), eventUrl: current.url });
+      if (event) { event.title = title.slice(0, 240); events.push(event); diagnostic.emitted++; }
     }
     if (libraryDelayMs) await sleep(libraryDelayMs);
   }
@@ -415,6 +480,8 @@ const output = {
   supplementalAudit: { addedBeforeDedupe: supplemental.length, sourceStats, failures },
   events
 };
+await mkdir(new URL("../artifacts/", import.meta.url), { recursive: true });
+await writeFile(new URL("../artifacts/library-event-parser-report.json", import.meta.url), JSON.stringify({ version: 1, pages: libraryParserDiagnostics }, null, 2));
 await writeFile(payloadUrl, JSON.stringify(output, null, 2));
 await writeFile(jsUrl, `window.HALIFAX_CITY_EVENTS = ${JSON.stringify(output, null, 2)};\n`);
 console.log(`Supplemental city events: collected=${supplemental.length}, merged-total=${events.length}, failures=${failures.length}.`);

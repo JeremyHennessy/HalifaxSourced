@@ -1,0 +1,67 @@
+name: Regional News Preview (Review Required)
+on:
+  workflow_dispatch:
+    inputs:
+      initialize_review_cache:
+        description: "Initialize only the first reviewed run; never resets prior cache or holds"
+        type: boolean
+        default: false
+        required: false
+permissions:
+  contents: read
+concurrency:
+  group: regional-news-review-cache
+  cancel-in-progress: false
+jobs:
+  preview:
+    # Never restore privileged review state or fetch sources from PR branches.
+    if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Offline contract and cache tests
+        run: node scripts/test-regional-news.mjs
+      - name: Validate accepted snapshot
+        run: node scripts/check-news.mjs
+      - name: Restore review metadata and access-hold cache
+        id: review-cache
+        uses: actions/cache/restore@v4
+        with:
+          path: artifacts/news-preview.json
+          key: news-review-v2-${{ github.repository_id }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            news-review-v2-${{ github.repository_id }}-
+      - name: Validate cache or explicitly initialize first reviewed run only
+        env:
+          NEWS_INITIALIZE_REVIEW_CACHE: ${{ inputs.initialize_review_cache }}
+        run: node scripts/import-regional-news.mjs --prepare-review-cache
+      - name: Collect admitted feed metadata only
+        id: collect
+        env:
+          NEWS_REQUIRE_CACHE: '1'
+        run: node scripts/import-regional-news.mjs
+      - name: Preserve metadata and denial state even when transport is denied
+        if: always() && steps.collect.outcome != 'skipped'
+        uses: actions/cache/save@v4
+        with:
+          path: artifacts/news-preview.json
+          key: news-review-v2-${{ github.repository_id }}-${{ github.run_id }}-${{ github.run_attempt }}
+      - name: Upload nonpublishable review evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: regional-news-review-only
+          path: |
+            artifacts/news-preview.json
+            artifacts/source-access-diagnostics.jsonl
+          if-no-files-found: warn
+# MANUAL ONLY. Cache misses/corruption stop requests. An initial reviewed cache
+# may be initialized explicitly only on run_number=1 and run_attempt=1.
+# Later cache loss/retries require reviewed recovery, never a reset of holds.
+# No 6-hour schedule until durable denial storage survives cache eviction AND
+# runner interruption between receiving a restriction and saving this cache.
+# No write token, promotion, publication, AI/model calls, or deployment.

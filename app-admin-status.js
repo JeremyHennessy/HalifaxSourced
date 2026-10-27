@@ -2,6 +2,7 @@
 
 const ADMIN_STATUS_REPORT_FILES = {
   deployment: "data/build/deployment-metadata.json",
+  sourceCatalog: "data/build/source-catalog.json",
   updateLedger: "data/build/update-ledger.json",
   preview: "data/build/preview-promotion-metadata.json",
   contentQuality: "data/build/content-quality-report.json",
@@ -65,11 +66,13 @@ function loadAdminStatusReports() {
   adminStatusReportsPromise = Promise.all([
     fetchAdminStatusJson(ADMIN_STATUS_REPORT_FILES.deployment),
     fetchAdminStatusJson(ADMIN_STATUS_REPORT_FILES.preview),
-    fetchAdminStatusJson(ADMIN_STATUS_REPORT_FILES.updateLedger)
-  ]).then(([deployment, preview, updateLedger]) => ({
+    fetchAdminStatusJson(ADMIN_STATUS_REPORT_FILES.updateLedger),
+    fetchAdminStatusJson(ADMIN_STATUS_REPORT_FILES.sourceCatalog)
+  ]).then(([deployment, preview, updateLedger, sourceCatalog]) => ({
     deployment,
     preview,
     updateLedger,
+    sourceCatalog,
     quality: statusPayloadValue(() => contentQualityPayload(), window.HALIFAX_CONTENT_QUALITY_REPORT || {}),
     cityEvents: window.HALIFAX_CITY_EVENTS || {},
     thumbnails: statusPayloadValue(() => thumbnailCandidatesPayload(), window.HALIFAX_THUMBNAIL_CANDIDATES || {}),
@@ -316,6 +319,7 @@ function renderAdminStatusMarkup(reports) {
         </div>
       </section>
       ${renderUpdateLedger(reports)}
+      ${renderSourceCatalog(reports.sourceCatalog)}
       <div class="admin-status-grid">
         <section class="admin-status-block" aria-label="Data product freshness">
           <div class="admin-section-heading"><div><h2>Data product ages</h2><p>${productRows.length.toLocaleString()} generated data products with report links.</p></div></div>
@@ -354,6 +358,7 @@ function renderFreshnessStatusAdmin() {
     const current = route();
     if (current.name !== "admin" || current.id !== "status") return;
     appView.innerHTML = renderAdminStatusMarkup(reports);
+    bindSourceCatalog(reports.sourceCatalog);
     document.querySelector("#mainContent")?.focus({ preventScroll: true });
     window.scrollTo({ top: 0, behavior: "instant" });
   });
@@ -370,4 +375,77 @@ if (typeof halifaxAdminStatusBaseRenderRoute === "function") {
     }
     halifaxAdminStatusBaseRenderRoute();
   };
+}
+
+// Public, sanitized release evidence only. GitHub enforces authentication and
+// permissions for workflow dispatch/review; this page never receives credentials.
+function catalogCurrentState(row) {
+  if (row.held || row.state === "held") return "held";
+  if (row.failing || row.state === "failing") return "failing";
+  const success = Date.parse(row.lastSuccessAt || "");
+  if (Number.isFinite(success) && Number.isFinite(row.targetHours) && row.targetHours > 0 && Date.now() - success > row.targetHours * 2 * 36e5) return "stale";
+  return row.enabled === true ? "enabled" : "unknown";
+}
+
+function renderSourceCatalog(payload) {
+  if (!Array.isArray(payload?.sources)) return `<section class="admin-status-block" aria-label="Source catalogue"><h2>Source catalogue</h2><p>Source inventory unavailable in this release. No live status is inferred.</p></section>`;
+  const sources = payload.sources;
+  const families = [...new Set(sources.map(row => row.family))].sort();
+  const counts = Object.fromEntries(["enabled", "held", "failing", "stale", "unknown"].map(state => [state, sources.filter(row => catalogCurrentState(row) === state).length]));
+  return `<section class="admin-status-block source-catalog" aria-label="Source catalogue" data-source-catalog>
+    <h2>Source catalogue</h2>
+    <p>${sources.length.toLocaleString()} registered sources and evidence relationships across ${families.length} families. Published snapshot, not live monitoring. Latest recorded clock: ${statusEscape(payload.snapshotAt ? formatStatusDate(payload.snapshotAt) : "Unknown")}.</p>
+    <p>Attempt, successful collection, and content publication/change clocks are separate. Unknown does not mean failed. Link discovery does not establish a successful collection. Stale means more than twice the target lane cadence since recorded success, evaluated now. Held takes precedence over failure; retained evidence may remain available.</p>
+    <div class="source-catalog-counters" aria-label="Source state counts">${Object.entries(counts).map(([state,count]) => `<span>${statusEscape(state)}: <strong>${count.toLocaleString()}</strong></span>`).join(" ")}</div>
+    <div class="source-catalog-filters">
+      <label>Search sources <input type="search" data-catalog-query placeholder="Name, URL, source ID or geography"></label>
+      <label>State <select data-catalog-state><option value="">All states</option>${Object.keys(counts).map(state => `<option value="${state}">${state}</option>`).join("")}</select></label>
+      <label>Family <select data-catalog-family><option value="">All families</option>${families.map(family => `<option value="${statusEscape(family)}">${statusEscape(family)}</option>`).join("")}</select></label>
+    </div>
+    <p data-catalog-result-count role="status" aria-live="polite"></p>
+    <div class="admin-status-list" data-catalog-results></div>
+    <div class="source-catalog-pagination"><button type="button" class="button secondary" data-catalog-previous>Previous</button><button type="button" class="button secondary" data-catalog-next>Next</button></div>
+    <p>Operational actions happen on GitHub with your existing authenticated permissions. A workflow link is not permission to retry a held source. Review restrictions before dispatching. <a href="https://github.com/JeremyHennessy/HalifaxSourced/pulls" target="_blank" rel="noreferrer">Review pull requests</a> · <a href="${ADMIN_STATUS_REPORT_FILES.sourceCatalog}">Sanitized catalogue JSON</a></p>
+  </section>`;
+}
+
+function catalogClock(value) { return value ? statusEscape(formatStatusDate(value)) : "Unknown"; }
+function catalogLink(url, title) {
+  const safe = statusSafeUrl(url);
+  return safe ? `<a href="${statusEscape(safe)}" target="_blank" rel="noreferrer">${statusEscape(title)}</a>` : "";
+}
+function renderCatalogRow(row) {
+  const state = catalogCurrentState(row);
+  return `<article class="source-catalog-row">
+    <h3>${statusEscape(row.name)} <span class="source-catalog-state">${state}</span></h3>
+    <p>${statusEscape(row.family)} · ${statusEscape(row.category || "Category unknown")} · ${statusEscape(row.geography || "Geography unknown")}</p>
+    <p>${row.url ? catalogLink(row.url, row.url) : "Source URL unknown"}</p>
+    <dl class="source-catalog-clocks"><div><dt>Last attempt</dt><dd>${catalogClock(row.lastAttemptAt)}</dd></div><div><dt>Last successful collection</dt><dd>${catalogClock(row.lastSuccessAt)}</dd></div><div><dt>Latest content publication/change</dt><dd>${catalogClock(row.contentAt)}</dd></div></dl>
+    <p>Collection enabled: ${row.enabled === true ? "yes (registered)" : row.enabled === false ? "no" : "unknown"} · Target lane cadence: ${row.targetHours ? `${statusEscape(row.targetHours)} hours` : "unknown"} · Parser: ${statusEscape(row.parser || "unknown")}</p>
+    <details><summary>Provenance and operations</summary><p>Source ID: ${statusEscape(row.sourceId || "unknown")}<br>Catalogue ID: ${statusEscape(row.id)}</p><p>${(row.provenance || []).map(path => statusEscape(path)).join("<br>")}</p><p>${row.workflowUrl ? catalogLink(row.workflowUrl, "Inspect workflow runs / authenticated dispatch") : "No mapped workflow"} · ${catalogLink(row.reviewUrl, "Review changes")}</p></details>
+  </article>`;
+}
+
+function bindSourceCatalog(payload) {
+  const host = document.querySelector("[data-source-catalog]");
+  if (!host || !Array.isArray(payload?.sources)) return;
+  const query = host.querySelector("[data-catalog-query]"), state = host.querySelector("[data-catalog-state]"), family = host.querySelector("[data-catalog-family]");
+  const previous = host.querySelector("[data-catalog-previous]"), next = host.querySelector("[data-catalog-next]");
+  let page = 0;
+  const pageSize = 30;
+  const searchable = payload.sources.map(row => ({row, text:[row.name,row.url,row.sourceId,row.family,row.category,row.geography].join(" ").toLowerCase()}));
+  function render() {
+    const term = query.value.trim().toLowerCase();
+    const filtered = searchable.filter(({row,text}) => (!term || text.includes(term)) && (!state.value || catalogCurrentState(row) === state.value) && (!family.value || row.family === family.value));
+    page = Math.max(0, Math.min(page, Math.ceil(filtered.length / pageSize) - 1));
+    const start = page * pageSize;
+    host.querySelector("[data-catalog-results]").innerHTML = filtered.length ? filtered.slice(start,start+pageSize).map(({row}) => renderCatalogRow(row)).join("") : "<p>No matching sources.</p>";
+    host.querySelector("[data-catalog-result-count]").textContent = `${filtered.length.toLocaleString()} matches${filtered.length ? ` · Showing ${start+1}–${Math.min(start+pageSize,filtered.length)}` : ""}`;
+    previous.disabled = page === 0; next.disabled = start + pageSize >= filtered.length;
+  }
+  query.addEventListener("input", () => { page = 0; render(); });
+  [state,family].forEach(control => control.addEventListener("change", () => { page = 0; render(); }));
+  previous.addEventListener("click", () => { page--; render(); });
+  next.addEventListener("click", () => { page++; render(); });
+  render();
 }

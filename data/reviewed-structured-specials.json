@@ -451,6 +451,34 @@
     },
     {
       "restaurantId": "highwayman",
+      "title": "Sangria by the pitcher",
+      "specialType": "happy_hour",
+      "dayOfWeek": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday"
+      ],
+      "startTime": "16:00",
+      "endTime": "17:00",
+      "price": 38,
+      "currency": "CAD",
+      "recurrence": "16:00–17:00 on the published Monday–Saturday operating days; Sunday unconfirmed",
+      "sourceUrl": "https://www.highwaymanhfx.com/happyhour",
+      "verifiedAt": "2026-10-27T18:59:25Z",
+      "observedAt": "2026-10-27T18:59:25Z",
+      "timeZone": "America/Halifax",
+      "validFrom": null,
+      "validTo": null,
+      "locationValidated": true,
+      "identityValidated": true,
+      "reviewDueAt": "2026-11-26T18:59:25Z",
+      "description": "The page says daily happy hour but lists Monday–Saturday operation; Sunday is not confirmed."
+    },
+    {
+      "restaurantId": "highwayman",
       "title": "Cava by the glass",
       "specialType": "happy_hour",
       "dayOfWeek": [
