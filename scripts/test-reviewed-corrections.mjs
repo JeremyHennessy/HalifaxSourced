@@ -290,6 +290,9 @@ for (const records of [app.restaurants, catalog.restaurants]) {
 }
 assert(active.has(creperieId));
 assert(app.restaurants.find(record => record.id === creperieId).menuLinks.some(link => link.url === 'https://www.foodbooking.com/api/fb/8r4_o7'));
+const creperieResolution = reviewedPlaceResolutions.find(record => record.restaurantId === creperieId);
+assert.equal(creperieResolution?.candidateId, 'ddbc-bubble-waffle-ice-cream-55-portland-street-dartmouth-ns', 'Resolve the seasonal Bubble Waffle listing into the existing same-address, same-phone, same-domain restaurant');
+assert(!app.restaurants.some(record => /bubble waffle/i.test(record.name)), 'The seasonal offering must not create a duplicate canonical restaurant');
 const revanaId = 'osm-node-3801688860-revana-pizza';
 for (const records of [app.restaurants, catalog.restaurants]) {
   const matches = records.filter(record => record.id === revanaId);
