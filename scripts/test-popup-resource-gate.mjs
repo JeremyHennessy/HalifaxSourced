@@ -9,7 +9,7 @@ const unknown='https://unreviewed-popup.example/first-navigation',evidence=[];
 try{
  const context=await browser.newContext({serviceWorkers:'block'}),gate=await installOfflineResources(context,'http://127.0.0.1:5173');const page=await context.newPage();
  await page.setContent('<button id="open" onclick="window.open(\''+unknown+'\',\'_blank\')">Open fixture popup</button>');
- const failed=context.waitForEvent('requestfailed',{predicate:r=>r.url()===unknown});const popupEvent=context.waitForEvent('page');await page.locator('#open').click();const popup=await popupEvent;const failedRequest=await failed;
+ const failed=context.waitForEvent('requestfailed',{predicate:r=>r.url()===unknown});const popupEvent=context.waitForEvent('page');await page.locator('#open').evaluate(button=>button.click());const popup=await popupEvent;const failedRequest=await failed;
  assert.deepEqual(gate.evidence.unknown,[{url:unknown,method:'GET',resourceType:'document'}]);assert.equal(failedRequest.failure()?.errorText,'net::ERR_BLOCKED_BY_CLIENT');assert.equal(gate.evidence.requests.find(r=>r.url===unknown)?.action,'fatal unknown; blocked before transmission');assert.throws(()=>gate.assertClean(),/Unknown external request is fatal/);
  evidence.push({control:'unknown popup first navigation',blockedBeforeTransmission:true,unknown:gate.evidence.unknown,failure:failedRequest.failure(),fatal:true});await popup.close();await context.close();
  const errorContext=await browser.newContext({serviceWorkers:'block'}),errorGate=await installOfflineResources(errorContext,'http://127.0.0.1:5173'),main=await errorContext.newPage();
