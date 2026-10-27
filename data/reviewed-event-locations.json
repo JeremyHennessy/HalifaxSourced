@@ -11,6 +11,19 @@
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
       "reviewedAt": "2026-10-22T01:05:00.000Z",
       "basis": "Official library event listing explicitly identifies the non-branch location and October 23, 2026, 10:00am–12:00pm Atlantic time. Coordinates remain unverified."
+    },
+    {
+      "sourceId": "the-carleton",
+      "sourceKind": "official_venue_calendar",
+      "eventUrl": "https://www.thecarleton.ca/events/afterwords-the-world-we-long-for-nov2/",
+      "startAt": "2026-11-02T17:00:00.000Z",
+      "endAt": "2026-11-02T18:30:00.000Z",
+      "venueName": "The Stardust Bar + Kitchen",
+      "address": "1688 Barrington Street",
+      "city": "Halifax",
+      "sourceUrl": "https://www.thecarleton.ca/events/afterwords-the-world-we-long-for-nov2/",
+      "reviewedAt": "2026-10-27T21:07:42.000Z",
+      "basis": "The official Carleton occurrence page explicitly announces a change of venue to The Stardust Bar + Kitchen, 1688 Barrington Street, and lists November 2, 2026, 1:00pm–2:30pm. UTC instants are derived from that source wall time using the existing Halifax local-time policy (UTC−04:00 on this date), not a timezone or UTC timestamp printed by the source. Coordinates and venue/restaurant associations remain unverified."
     }
   ]
 }

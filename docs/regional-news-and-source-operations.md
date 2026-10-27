@@ -60,3 +60,11 @@ Failed previews retain the last produced candidate snapshot as a separate diagno
 - Keep allegations and uncertain content in review. Do not infer factual certainty from publication in a feed.
 - Add an authenticated backend only if actual write controls are needed; a static-page password is not protection.
 - Independently verify the exact merged commit, required checks and deployed artifacts before claiming a release is live.
+
+## Local discovery home follow-up
+
+The home page now links directly to Today, This weekend, Music & shows, Markets, Festivals, Restaurants, Specials and Local news. It reuses existing date/category filters rather than promising a new live search service. The compact news section shows up to three approved items, retaining publisher, source type, region and original publication date.
+
+One manually reviewed CityNews Halifax link brings the accepted selection to four items. CityNews collection remains disabled with no feed configured. Its observation timestamp is explicitly the upper bound of the evidenced six-second observation window in committed admission provenance, not a claimed exact fetch time.
+
+A reviewed correction protects the exact November 2 Carleton-listed AfterWords occurrence from inheriting the wrong venue when imported later: it belongs at The Stardust Bar + Kitchen. This guard creates no event and requires the exact source ID, source kind, URL and occurrence times; UTC times are derived using the existing Halifax local-time policy. It removes inherited Carleton identifiers and coordinates. Other missing event candidates and unverified market occurrences remain unpublished.

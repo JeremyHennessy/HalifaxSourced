@@ -1,4 +1,4 @@
-import { verifyNewsAndSources } from './lib/news-source-browser-checks.mjs';
+import { verifyNewsAndSources, verifyHomeDiscovery } from './lib/news-source-browser-checks.mjs';
 import { existsSync } from "node:fs";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
@@ -70,7 +70,7 @@ async function captureIphone(name) {
 
 await page.goto(`${url}/#home`, { waitUntil: "networkidle" });
 await page.locator(".brand-link img").waitFor();
-await page.locator("h1", { hasText: "Local flavour" }).waitFor();
+await page.locator("h1", { hasText: "Local stories" }).waitFor();
 // Decode every local CSS artwork, including fallbacks on other routes. A valid
 // HTTP response or WebP extension is not proof the downloaded asset is intact.
 const decodedCssArtwork = await page.evaluate(async () => {
@@ -881,6 +881,7 @@ if (!externalTargetState.external || externalTargetState.unsafeTargets) throw ne
 await page.goto(`${url}/#home`, { waitUntil: "networkidle" });
 await page.screenshot({ path: resolve("artifacts", "ui-check-mobile.png"), fullPage: true });
 
+await verifyHomeDiscovery(page, url);
 await verifyNewsAndSources(page, url);
 
 await writeFile(resolve('artifacts/offline-resource-evidence.json'), JSON.stringify(offlineResources.evidence, null, 2));

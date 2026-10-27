@@ -92,8 +92,15 @@
         "halifax.citynews.ca"
       ],
       "enabled": false,
-      "status": "proposed",
-      "admission": null
+      "status": "admitted",
+      "admission": {
+        "reviewedAt": "2026-10-27T21:05:03.000Z",
+        "reviewer": "Halifax Sourced source review",
+        "accessEvidence": "Manual page review only: https://halifax.citynews.ca/2026/10/27/three-alarm-fire-at-halifax-grain-elevator-under-control/ . Successful text/html web-reader result turn277view2, 136 lines, labelled crawled today. Runtime UTC bounds for the tool call were 2026-10-27T20:53:39.000Z through 2026-10-27T20:53:45.000Z; the accepted record observedAt is the window upper bound, not an exact fetch time. A later web-reader attempt reported inaccessible; it was not retried. Automated collection remains disabled.",
+        "schemaEvidence": "One manually reviewed canonical link with original neutral title, source attribution and no summary. No RSS feed or automated article adapter verified. The publisher credits Natasha O'Neill.",
+        "dateEvidence": "The publisher displays October 27, 2026 at an unqualified local clock. Preserve publication day only; no timezone or modification instant inferred.",
+        "rightsEvidence": "Original factual title and attributed outbound link only. Public accessibility is not a republication licence. No article body, excerpts, feed description, photographs, logos or other publisher media reproduced; no general reuse or collection permission inferred."
+      }
     }
   ]
 }

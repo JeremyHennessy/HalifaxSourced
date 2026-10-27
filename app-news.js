@@ -40,9 +40,10 @@ function newsDateLabel(item) {
   return new Intl.DateTimeFormat("en-CA", { dateStyle: "medium", ...(day ? {} : { timeStyle: "short" }), timeZone: day ? "UTC" : "America/Halifax" }).format(new Date(value));
 }
 
-function newsCard(item) {
+function newsCard(item, options = {}) {
+  const heading = options.headingLevel === 3 ? "h3" : "h2";
   const summary = item.summaryKind === "reviewed_original" && typeof item.summary === "string" ? '<p class="news-summary">' + escapeHtml(item.summary) + '</p>' : "";
-  return '<article class="news-card"><div class="news-card-meta"><span class="news-type">' + escapeHtml(NEWS_TYPE_LABELS[item.source_type]) + '</span><span>' + escapeHtml(item.region) + '</span></div><h2><a href="' + escapeHtml(newsExternalUrl(item.canonicalUrl)) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(item.title) + '</a></h2><p class="news-byline">' + escapeHtml(item.sourceName) + ' · <time datetime="' + escapeHtml(item.publishedAt) + '">' + escapeHtml(newsDateLabel(item)) + '</time></p>' + summary + (item.correctionStatus === "corrected" ? '<p class="news-correction">Corrected item — check the original for the latest information.</p>' : "") + '<div class="news-topics">' + (item.topics || []).map(topic => '<span>' + escapeHtml(topic) + '</span>').join("") + '</div><a class="text-link" href="' + escapeHtml(newsExternalUrl(item.canonicalUrl)) + '" target="_blank" rel="noopener noreferrer">Read original ↗</a></article>';
+  return '<article class="news-card"><div class="news-card-meta"><span class="news-type">' + escapeHtml(NEWS_TYPE_LABELS[item.source_type]) + '</span><span>' + escapeHtml(item.region) + '</span></div><' + heading + '><a href="' + escapeHtml(newsExternalUrl(item.canonicalUrl)) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(item.title) + '</a></' + heading + '><p class="news-byline">' + escapeHtml(item.sourceName) + ' · <time datetime="' + escapeHtml(item.publishedAt) + '">' + escapeHtml(newsDateLabel(item)) + '</time></p>' + summary + (item.correctionStatus === "corrected" ? '<p class="news-correction">Corrected item — check the original for the latest information.</p>' : "") + (options.compact ? '' : '<div class="news-topics">' + (item.topics || []).map(topic => '<span>' + escapeHtml(topic) + '</span>').join("") + '</div>') + '<a class="text-link" href="' + escapeHtml(newsExternalUrl(item.canonicalUrl)) + '" target="_blank" rel="noopener noreferrer">Read original ↗</a></article>';
 }
 
 function renderNews() {

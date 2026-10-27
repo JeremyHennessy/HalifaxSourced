@@ -132,3 +132,44 @@ assert.match(workflow,/NEWS_INITIALIZE_REVIEW_CACHE: \$\{\{ inputs.initialize_re
 assert.match(workflow,/node scripts\/import-regional-news.mjs --prepare-review-cache/);
 assert.doesNotMatch(workflow,/\n\s+schedule:/);
 console.log('News date/bootstrap tests passed: RFC calendar precision, failure preservation, first-run-only explicit initialization, no reset or default cache-miss requests.');
+
+// Real reviewed manual-only newsroom record: exact approved JSON/browser pair,
+// honest day/observation precision, and no source activation as a side effect.
+const readJson = async path => JSON.parse(await readFile(new URL('../' + path, import.meta.url), 'utf8'));
+const reviewedRegistry = await readJson('data/news-source-registry.json');
+const reviewedDecisions = await readJson('data/reviewed-news-decisions.json');
+const cityNewsUrl = 'https://halifax.citynews.ca/2026/10/27/three-alarm-fire-at-halifax-grain-elevator-under-control/';
+const cityNewsSource = reviewedRegistry.sources.find(row => row.id === 'citynews-halifax');
+assert.equal(cityNewsSource.status, 'admitted');
+assert.equal(cityNewsSource.enabled, false);
+assert.equal(cityNewsSource.feedUrl, null);
+assert.match(cityNewsSource.admission.accessEvidence, /turn277view2/);
+assert.match(cityNewsSource.admission.accessEvidence, /2026-10-27T20:53:39\.000Z through 2026-10-27T20:53:45\.000Z/);
+assert.match(cityNewsSource.admission.accessEvidence, /upper bound, not an exact fetch time/);
+const reviewedPayload = buildNews(reviewedDecisions, reviewedRegistry);
+const cityNewsRecord = reviewedPayload.items.find(row => row.canonicalUrl === cityNewsUrl);
+assert.equal(cityNewsRecord.id, newsId(cityNewsUrl));
+assert.equal(cityNewsRecord.sourceGUID, cityNewsUrl);
+assert.equal(cityNewsRecord.title, 'Halifax grain-terminal fire reported under control');
+assert.equal(cityNewsRecord.region, 'Halifax');
+assert.equal(cityNewsRecord.publishedAt, '2026-10-27');
+assert.equal(cityNewsRecord.publishedPrecision, 'day');
+assert.equal(cityNewsRecord.modifiedAt, null);
+assert.equal(cityNewsRecord.observedAt, '2026-10-27T20:53:45.000Z');
+assert.equal(cityNewsRecord.summary, null);
+assert.equal(cityNewsRecord.summaryKind, 'none');
+assert.match(cityNewsRecord.rightsBasis, /upper bound/);
+assert.match(cityNewsRecord.rightsBasis, /not an exact fetch time/);
+assert.match(cityNewsRecord.rightsBasis, /does not establish a republication licence/);
+assert.deepEqual(await readJson('data/build/news.json'), reviewedPayload);
+assert.equal(await readFile(new URL('../data/news.js', import.meta.url), 'utf8'), newsScript(reviewedPayload));
+assert.deepEqual(buildNews(reviewedDecisions, reviewedRegistry), reviewedPayload, 'Reviewed build must not refresh clocks');
+let manualSourceRequests = 0;
+const manualSourceResult = await collectNews({version:1, sources:[cityNewsSource]}, {
+ now:cityNewsRecord.reviewedAt,
+ fetchFeed:async()=>{ manualSourceRequests++; throw new Error('manual_source_must_not_collect'); }
+});
+assert.equal(manualSourceRequests, 0);
+assert.equal(manualSourceResult.diagnostics[0].status, 'disabled');
+assert.deepEqual(manualSourceResult.candidates, []);
+console.log('Reviewed CityNews regression passed: exact approved pair, day precision, bounded observation provenance, null summary and disabled collection.');
