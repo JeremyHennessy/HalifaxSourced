@@ -16,7 +16,7 @@ try{
  await put(approved.url,'fixture media bytes');
  const sources=[{label:'Owner site',status:'verified',url:'https://example.org/'}];
  await put('data/build/catalog.json',JSON.stringify({restaurants:[
-  {id:approved.restaurantId,name:'Photo venue',address:'12 Main Street, Halifax',operatingStatus:'active',sourceLayer:'openstreetmap',website:'https://example.org/',sources,summary:'Captured from OpenStreetMap. Needs cross-reference.'},
+  {id:approved.restaurantId,name:'Photo venue',address:'12 Main Street, Halifax, NS B3J 1A1',operatingStatus:'active',sourceLayer:'openstreetmap',website:'https://example.org/',sources,summary:'Captured from OpenStreetMap. Needs cross-reference.'},
   {id:'safe',name:'Safe <script>alert(1)</script> Cafe',address:'15 Queen Street, Halifax',operatingStatus:'listed_current',sourceLayer:'local_discovery',website:'https://example.org/',sources,summary:'A local café with published venue details.'},
   {id:'closed',name:'Closed venue',address:'1 Main Street, Halifax',operatingStatus:'seasonally_closed',sourceLayer:'curated',website:'https://example.org/',sources},
   {id:'held',name:'Held venue',address:'1 Main Street, Halifax',operatingStatus:'active',sourceLayer:'openstreetmap',website:'https://example.org/',sources:[{status:'unverified',url:'https://example.org/'}]}
@@ -47,5 +47,11 @@ try{
  assert.ok(htmls.some(h=>h.includes('Safe &lt;script&gt;alert(1)&lt;/script&gt; Cafe')));
  assert.ok(htmls.every(h=>!h.includes('Needs cross-reference')&&!h.includes('Past concert')));
  assert.ok(htmls.some(h=>h.includes('Image source')));
+ const graph=htmls.map(h=>JSON.parse(h.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)?.[1]||'null'));
+ assert.ok(graph.every(g=>g?.['@graph']?.some(x=>x['@type']==='BreadcrumbList')),'Every detail page must include breadcrumbs');
+ assert.ok(graph.every(g=>g['@graph'].find(x=>x['@type']==='BreadcrumbList').itemListElement.at(-1).item.startsWith('https://halifaxsourced.com/')),'Breadcrumb links must remain local');
+ assert.ok(graph.some(g=>g['@graph'].some(x=>x['@type']==='Restaurant'&&x.address?.['@type']==='PostalAddress'&&x.address.postalCode==='B3J 1A1')),'Use structured address only for fully labelled evidence');
+ assert.ok(graph.some(g=>g['@graph'].some(x=>x['@type']==='Restaurant'&&typeof x.address==='string')),'Keep ambiguous addresses as strings');
+
  console.log('SEO regression passed: approved media, 2 restaurants, 1 dated event, 2 hubs, escaped metadata, excluded holds and sitemap.');
 }finally{await rm(base,{recursive:true,force:true});}
