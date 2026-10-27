@@ -711,6 +711,123 @@
           ]
         }
       ]
+    },
+    {
+      "id": "the-carleton-71e1161aec5a8fa0",
+      "title": "AfterWords Literary Festival – The World We Long For: Readings and Conversation",
+      "startAt": "2026-11-02T17:00:00.000Z",
+      "endAt": "2026-11-02T18:30:00.000Z",
+      "allDay": false,
+      "venueName": "The Stardust Bar + Kitchen",
+      "address": "1688 Barrington Street",
+      "city": "Halifax",
+      "categories": [
+        "Arts",
+        "Festivals"
+      ],
+      "price": "$8",
+      "ticketUrl": null,
+      "eventUrl": "https://www.thecarleton.ca/events/afterwords-the-world-we-long-for-nov2/",
+      "sourceUrl": "https://www.thecarleton.ca/events/afterwords-the-world-we-long-for-nov2/",
+      "sourceId": "the-carleton",
+      "sourceName": "The Carleton",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-10-27T21:46:52.000Z",
+      "reviewState": "source_observed",
+      "reviewedAt": "2026-10-27T21:47:17.000Z",
+      "sourceEvidence": [
+        {
+          "sourceId": "the-carleton",
+          "sourceName": "The Carleton",
+          "sourceUrl": "https://www.thecarleton.ca/events/afterwords-the-world-we-long-for-nov2/",
+          "basis": "official_primary",
+          "observedAt": "2026-10-27T21:46:52.000Z",
+          "reviewedAt": "2026-10-27T21:47:17.000Z",
+          "observationBasis": "Upper bound of the successful official-page web-reader review window, not an exact HTTP fetch timestamp or a claim that the page was freshly fetched.",
+          "reviewWindow": {
+            "startedAt": "2026-10-27T21:46:48.000Z",
+            "completedBy": "2026-10-27T21:46:52.000Z"
+          },
+          "sourceCrawlAgeReported": "today",
+          "sourceCrawlTimestamp": null,
+          "observedFacts": [
+            "November 2, 2026; program 1:00–2:30 pm; admission $8.",
+            "The venue-change notice places this occurrence at The Stardust Bar + Kitchen, 1688 Barrington Street, rather than The Carleton."
+          ]
+        }
+      ],
+      "timeReview": {
+        "reviewedAt": "2026-10-27T21:47:17.000Z",
+        "sourceDate": "2026-11-02",
+        "sourceStartTime": "1:00pm",
+        "sourceEndTime": "2:30pm",
+        "derivedTimeZone": "America/Halifax",
+        "conversionPolicy": "scripts/import-city-events.mjs: localIso / atlanticOffset",
+        "basis": "The source prints local wall times, not a timezone or UTC timestamp. America/Halifax and the ISO instants are derived from the Halifax venue location using the existing application policy."
+      },
+      "locationReview": {
+        "sourceUrl": "https://www.thecarleton.ca/events/afterwords-the-world-we-long-for-nov2/",
+        "reviewedAt": "2026-10-27T21:07:42.000Z",
+        "coordinateStatus": "unverified_offsite_venue_location"
+      },
+      "alternateSources": [],
+      "supersedesEventIds": []
+    },
+    {
+      "id": "the-carleton-910f8a7dbcdeadaf",
+      "title": "An Evening With Alan Cross",
+      "startAt": "2026-11-04T23:00:00.000Z",
+      "endAt": "2026-11-05T01:00:00.000Z",
+      "allDay": false,
+      "venueName": "The Carleton",
+      "address": "1685 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Music",
+        "Arts"
+      ],
+      "price": "$30 + HST",
+      "ticketUrl": null,
+      "eventUrl": "https://www.thecarleton.ca/events/an-evening-with-alan-cross/",
+      "sourceUrl": "https://www.thecarleton.ca/events/an-evening-with-alan-cross/",
+      "sourceId": "the-carleton",
+      "sourceName": "The Carleton",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-10-27T21:46:52.000Z",
+      "reviewState": "source_observed",
+      "reviewedAt": "2026-10-27T21:47:17.000Z",
+      "sourceEvidence": [
+        {
+          "sourceId": "the-carleton",
+          "sourceName": "The Carleton",
+          "sourceUrl": "https://www.thecarleton.ca/events/an-evening-with-alan-cross/",
+          "basis": "official_primary",
+          "observedAt": "2026-10-27T21:46:52.000Z",
+          "reviewedAt": "2026-10-27T21:47:17.000Z",
+          "observationBasis": "Upper bound of the successful official-page web-reader review window, not an exact HTTP fetch timestamp or a claim that the page was freshly fetched.",
+          "reviewWindow": {
+            "startedAt": "2026-10-27T21:46:48.000Z",
+            "completedBy": "2026-10-27T21:46:52.000Z"
+          },
+          "sourceCrawlAgeReported": "2 days ago",
+          "sourceCrawlTimestamp": null,
+          "observedFacts": [
+            "November 4, 2026; event 7:00–9:00 pm at The Carleton.",
+            "The official event page lists $30 plus HST; its venue contact address is 1685 Argyle Street, Halifax, NS."
+          ]
+        }
+      ],
+      "timeReview": {
+        "reviewedAt": "2026-10-27T21:47:17.000Z",
+        "sourceDate": "2026-11-04",
+        "sourceStartTime": "7:00pm",
+        "sourceEndTime": "9:00pm",
+        "derivedTimeZone": "America/Halifax",
+        "conversionPolicy": "scripts/import-city-events.mjs: localIso / atlanticOffset",
+        "basis": "The source prints local wall times, not a timezone or UTC timestamp. America/Halifax and the ISO instants are derived from the Halifax venue location using the existing application policy."
+      },
+      "alternateSources": [],
+      "supersedesEventIds": []
     }
   ]
 }

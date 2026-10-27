@@ -58,8 +58,10 @@
 
   [data-mobile-more-sheet] button,
   .mobile-more-sheet button{
-    min-width:44px!important;
-    min-height:44px!important;
+    /* Leave room above the 44px floor during fractional sheet translation. */
+    min-width:48px!important;
+    min-height:48px!important;
+    flex-shrink:0;
   }
 
   .restaurant-hero{

@@ -85,6 +85,45 @@ await collectNews(changedRegistry,{now:next,previous:cached,fetchFeed:async(_s,h
 assert.equal(checkedConfig,true);
 const changedHeld = await collectNews(changedRegistry,{now:next,previous:held,fetchFeed:async()=>{throw new Error('must not bypass hold with new config');}});
 assert.equal(changedHeld.diagnostics[0].accessHeld,true);
+// Cache host spelling is evidence: preserve it, but match the shared www/apex
+// and trailing-DNS-dot identity even when a source is retired and renamed.
+const sourceAtHost = (host,id) => ({...source,id,homeUrl:`https://${host}/`,feedUrl:`https://${host}/feed`,allowedHosts:[host]});
+for (const status of [401,403,429]) for (const [oldHost,newHost] of [
+ ['www.example.org','example.org'], ['example.org','www.example.org'],
+ ['www.example.org.','example.org'], ['example.org','www.example.org.']
+]) {
+ const oldSource = sourceAtHost(oldHost,'retired-fixture');
+ const priorHold = await collectNews({version:1,sources:[oldSource]},{now,fetchFeed:async()=>{throw new Error(`news_http_${status}`);}});
+ const originalCache = JSON.stringify(priorHold);
+ let aliasRequests = 0;
+ const aliasResult = await collectNews({version:1,sources:[sourceAtHost(newHost,'renamed-fixture')]},{now:next,previous:priorHold,fetchFeed:async()=>{aliasRequests++;return rss('');}});
+ assert.equal(aliasRequests,0,`${status}: ${oldHost} -> ${newHost} must retain its hold after an ID change`);
+ assert.equal(aliasResult.diagnostics[0].status,'access_held');
+ assert.equal(aliasResult.diagnostics[0].accessHeld,true);
+ assert.equal(aliasResult.diagnostics[0].lastAttemptAt,null);
+ assert.deepEqual(aliasResult.diagnostics.find(d=>d.sourceId===oldSource.id),priorHold.diagnostics[0],'Retired hold evidence remains an unchanged tombstone');
+ assert.equal(JSON.stringify(priorHold),originalCache,'Hold matching must not rewrite the previous cache');
+ validateNewsCache(aliasResult);
+}
+let unchangedHeldRequests = 0;
+const unchangedHeld = await collectNews(registry,{now:next,previous:held,fetchFeed:async()=>{unchangedHeldRequests++;return rss('');}});
+assert.equal(unchangedHeldRequests,0);
+assert.deepEqual(unchangedHeld.candidates,held.candidates);
+for (const key of ['sourceId','sourceHost','configHash','status','accessHeld','etag','lastModified','lastAttemptAt','lastSuccessAt','retryNotBefore']) assert.equal(unchangedHeld.diagnostics[0][key],held.diagnostics[0][key]);
+for (const host of ['news.example.org','example.net','notexample.org']) {
+ let unheldRequests = 0;
+ const unheld = await collectNews({version:1,sources:[sourceAtHost(host,'unheld-fixture')]},{now:next,previous:held,fetchFeed:async()=>{unheldRequests++;return rss('');}});
+ assert.equal(unheldRequests,1,`${host} is a distinct, unheld host`);
+ assert.equal(unheld.diagnostics[0].accessHeld,false);
+ assert.equal(unheld.diagnostics[0].status,'pending_review');
+ assert.deepEqual(unheld.diagnostics.find(d=>d.sourceId===source.id),held.diagnostics[0]);
+}
+let sameRunRequests = 0;
+const sameRunHold = await collectNews({version:1,sources:[sourceAtHost('www.example.org','a-first'),sourceAtHost('example.org','b-alias')]},{now,fetchFeed:async()=>{sameRunRequests++;throw new Error('news_http_429');}});
+assert.equal(sameRunRequests,1,'A new denial must also hold later equivalent hosts in the same run');
+assert.equal(sameRunHold.diagnostics[1].status,'access_held');
+assert.equal(sameRunHold.diagnostics[1].lastAttemptAt,null);
+console.log('News host-alias tests passed: zero held-host requests across source-ID/www/apex/DNS-dot changes, unchanged tombstones and distinct unheld hosts.');
 for(const corrupt of [{}, {...cached,version:1}, {...cached,diagnostics:[{...cached.diagnostics[0],etag:'bad\nheader'}]}, {...cached,candidates:[{...cached.candidates[0],description:'copied'}]}]) {
  assert.throws(()=>validateNewsCache(corrupt));
  await assert.rejects(collectNews(registry,{now,previous:corrupt,fetchFeed:async()=>{throw new Error('must not request corrupt cache');}}),/invalid_previous_news_cache/);
