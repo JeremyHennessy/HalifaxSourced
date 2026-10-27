@@ -1,4 +1,5 @@
 import { fetchGuardedSource as fetch } from "./lib/fetch-public-source.mjs";
+import { openingWatchReviewDecision } from "./lib/opening-watch-review.mjs";
 import { retainOpeningLeadsWithinLookback } from "./lib/source-evidence-retention.mjs";
 import { createHash } from "node:crypto";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
@@ -154,7 +155,7 @@ for (const source of sources) {
           .digest("hex")
           .slice(0, 16);
 
-        leads.push({
+        const draftLead = {
           id: `${slug(name)}-${fingerprint}`,
           name,
           status,
@@ -167,7 +168,9 @@ for (const source of sources) {
           observedAt: new Date().toISOString(),
           confidence: "local_opening_lead",
           reviewState: "needs-cross-check"
-        });
+        };
+        if (openingWatchReviewDecision(draftLead)) continue;
+        leads.push(draftLead);
       }
     }
   } catch (error) {
@@ -183,7 +186,9 @@ const currentUnique = leads.filter((lead, index, all) =>
   ) === index
 ).sort((a, b) => String(b.publishedAt || b.observedAt).localeCompare(String(a.publishedAt || a.observedAt)));
 const retainedEvidence = retainOpeningLeadsWithinLookback({
-  previousLeads: Array.isArray(previousOpeningWatch.leads) ? previousOpeningWatch.leads : [],
+  previousLeads: Array.isArray(previousOpeningWatch.leads)
+    ? previousOpeningWatch.leads.filter((lead) => !openingWatchReviewDecision(lead))
+    : [],
   currentLeads: currentUnique,
   cutoff
 });

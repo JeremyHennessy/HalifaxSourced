@@ -6,11 +6,38 @@ import { tmpdir } from 'node:os';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import vm from 'node:vm';
+import { openingWatchReviewDecision, openingWatchReviewedExclusions } from './lib/opening-watch-review.mjs';
+
+const reviewedOpeningSource = 'https://halifax.retales.ca/2026/10/krave-closes-spring-garden-location/';
+const leeValleyReview = openingWatchReviewDecision({
+  sourceName: 'Halifax ReTales',
+  sourceUrl: reviewedOpeningSource,
+  name: 'Lee Valley'
+});
+assert.equal(leeValleyReview?.decision, 'reviewed_non_restaurant');
+assert.equal(leeValleyReview?.observedAt, '2026-10-27T16:08:48.501Z');
+assert.equal(leeValleyReview?.evidenceUrl, 'https://www.leevalley.com/');
+assert.match(leeValleyReview?.evidence ?? '', /tools retailer, not a restaurant/i);
+assert.equal(openingWatchReviewedExclusions().length, 1);
+assert.equal(openingWatchReviewDecision({
+  sourceName: 'Halifax ReTales',
+  sourceUrl: reviewedOpeningSource,
+  name: 'True Love Creperie'
+}), null, 'The restaurant lead from the same article remains pending review');
+assert.equal(openingWatchReviewDecision({
+  sourceName: 'Different source',
+  sourceUrl: reviewedOpeningSource,
+  name: 'Lee Valley'
+}), null, 'The reviewed decision remains scoped to its exact source identity');
 
 // Run real decoders and projections, never a directory/review/opening collector.
 // Copy an explicit dependency closure, not the checked-in stale build outputs.
 const repository = fileURLToPath(new URL('../', import.meta.url));
+const openingImporterSource = await readFile(new URL('./import-opening-watch.mjs', import.meta.url), 'utf8');
+assert.match(openingImporterSource, /if \(openingWatchReviewDecision\(draftLead\)\) continue;/);
+assert.match(openingImporterSource, /previousOpeningWatch\.leads\.filter\(\(lead\) => !openingWatchReviewDecision\(lead\)\)/);
 const runtimeFiles = [
+  'scripts/lib/opening-watch-review.mjs',
   'scripts/test-dartmouth-directory-names.mjs', 'scripts/refine-dartmouth-directory.mjs',
   'scripts/test-taste-ns-member-api.mjs', 'scripts/lib/taste-ns-member-api.mjs',
   'scripts/build-discovered-restaurants.mjs', 'scripts/export-catalog.mjs',
