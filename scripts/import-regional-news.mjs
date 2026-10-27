@@ -4,6 +4,7 @@ import { pathToFileURL } from 'node:url';
 import { fetchGuardedSource, withSourceDeadline } from './lib/fetch-public-source.mjs';
 import { createRobotsAllows } from './lib/robots-policy.mjs';
 import { sourceAccessState } from './lib/source-access-state.mjs';
+import { accessHost } from './lib/link-access-policy.mjs';
 import { validateNewsRegistry, parseNewsFeed, NEWS_MAX_BYTES, validNewsDate, canonicalNewsUrl, newsId } from './lib/news-contract.mjs';
 const root = new URL('../', import.meta.url);
 export async function boundedNewsBody(response) {
@@ -39,13 +40,14 @@ export async function collectNews(registry, {fetchFeed, now = new Date().toISOSt
   if (previous !== null) validateNewsCache(previous);
   previous ||= {candidates:[],diagnostics:[]};
   const candidates = [], diagnostics = [];
-  const heldHosts = new Set(previous.diagnostics.filter(d => d.accessHeld).map(d => d.sourceHost));
+  // Match shared host identity without rewriting cached denial evidence.
+  const heldHosts = new Set(previous.diagnostics.filter(d => d.accessHeld).map(d => accessHost(`https://${d.sourceHost}`)));
   for (const source of [...registry.sources].sort((a,b) => a.id.localeCompare(b.id))) {
     const old = previous.diagnostics.find(d => d.sourceId === source.id);
     // Source configuration changes invalidate conditional validators, never an
     // access hold. A source ID cannot escape a hold by changing its feed URL.
     const sameConfig = old?.configHash === fingerprint(source);
-    const state = {sourceId:source.id,sourceHost:old?.accessHeld ? old.sourceHost : new URL(source.feedUrl || source.homeUrl).hostname,configHash:fingerprint(source),status:'disabled',etag:sameConfig ? old.etag : null,lastModified:sameConfig ? old.lastModified : null,lastAttemptAt:old?.lastAttemptAt || null,lastSuccessAt:sameConfig ? old.lastSuccessAt : null,retryNotBefore:old?.retryNotBefore || null,accessHeld:Boolean(old?.accessHeld || heldHosts.has(new URL(source.feedUrl || source.homeUrl).hostname))};
+    const state = {sourceId:source.id,sourceHost:old?.accessHeld ? old.sourceHost : new URL(source.feedUrl || source.homeUrl).hostname,configHash:fingerprint(source),status:'disabled',etag:sameConfig ? old.etag : null,lastModified:sameConfig ? old.lastModified : null,lastAttemptAt:old?.lastAttemptAt || null,lastSuccessAt:sameConfig ? old.lastSuccessAt : null,retryNotBefore:old?.retryNotBefore || null,accessHeld:Boolean(old?.accessHeld || heldHosts.has(accessHost(source.feedUrl || source.homeUrl)))};
     const retained = previous.candidates.filter(r => r.sourceId === source.id);
     if (state.accessHeld) { candidates.push(...retained); diagnostics.push({...state,status:'access_held'}); continue; }
     if (!source.enabled) { candidates.push(...retained); diagnostics.push(state); continue; }
@@ -72,7 +74,7 @@ export async function collectNews(registry, {fetchFeed, now = new Date().toISOSt
     } catch(error) {
       candidates.push(...retained);
       state.accessHeld = Boolean(error.accessHeld || error.accessHold || /source_access_hold|robots_disallow|news_http_(401|403|429)/.test(error.message));
-      if (state.accessHeld) heldHosts.add(state.sourceHost);
+      if (state.accessHeld) heldHosts.add(accessHost(`https://${state.sourceHost}`));
       state.status = state.accessHeld ? 'access_held' : 'failed_preserved';
       state.retryNotBefore = state.accessHeld ? null : new Date(Date.parse(now)+24*3600000).toISOString();
       state.error = String(error.message).replace(/[<>\u0000-\u001f]/g,'').slice(0,160);

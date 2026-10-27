@@ -106,7 +106,7 @@ async function auditRoute(name, selectors = auditSelectors) {
       const rect = element.getBoundingClientRect();
       const label = (element.textContent || element.getAttribute("aria-label") || element.getAttribute("href") || element.className || element.tagName).trim().replace(/\s+/g, " ").slice(0, 90);
       if (rect.width < 44 || rect.height < 44) {
-        smallTargets.push({ label, selector: element.tagName.toLowerCase(), width: Math.round(rect.width), height: Math.round(rect.height) });
+        smallTargets.push({ label, selector: element.tagName.toLowerCase(), width: rect.width, height: rect.height });
       }
       const x = Math.min(Math.max(rect.left + rect.width / 2, 1), innerWidth - 1);
       const y = Math.min(Math.max(rect.top + rect.height / 2, 1), innerHeight - 1);

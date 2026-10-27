@@ -34,7 +34,7 @@ const libraryOriginal = {
   venueId: 'bedford-library', latitude: 44.7314, longitude: -63.6571, neighbourhood: 'branch', restaurantId: 'stale',
   observedAt: '2026-10-21T18:35:10.942Z', categories: ['Community']
 };
-// Synthetic import fixture only: this event is not added to the accepted dataset.
+// Synthetic stale import fields/clocks; the reviewed addition is tested separately.
 const venueOriginal = {
   id: 'carleton-import-id', duplicateEventIds: ['carleton-saved-alias'], title: 'AfterWords: The World We Long For',
   eventUrl: venueCorrection.eventUrl, startAt: venueCorrection.startAt, endAt: venueCorrection.endAt,
@@ -157,3 +157,4 @@ try {
   await rm(root, { recursive: true, force: true });
 }
 console.log('Reviewed event locations passed: library compatibility; exact Carleton source/kind/URL/time scope; Halifax-derived occurrence; repeat/reimport; stale association removal; strict gates; unchanged identities and clocks.');
+await import('./test-reviewed-carleton-additions.mjs');
