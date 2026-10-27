@@ -23,8 +23,9 @@ const dependencies = [
 const fullReviewedPolicy = JSON.parse(await readFile(new URL('../data/source-link-access-holds.json', import.meta.url), 'utf8'));
 // Preserve the original 224-receipt regression corpus independently of the
 // ten previously reviewed exact holds, six source-refresh holds, seven
-// Quality Gate holds and three current Social Source holds.
-const policyBeforeThumbnail = {...structuredClone(fullReviewedPolicy), historicalEvidence:structuredClone(fullReviewedPolicy.historicalEvidence.slice(0, -3))};
+// Quality Gate holds, three Social Source holds and two current place-fact holds.
+const policyBeforePlaceFacts = {...structuredClone(fullReviewedPolicy), historicalEvidence:structuredClone(fullReviewedPolicy.historicalEvidence.slice(0, -2))};
+const policyBeforeThumbnail = {...structuredClone(policyBeforePlaceFacts), historicalEvidence:structuredClone(policyBeforePlaceFacts.historicalEvidence.slice(0, -3))};
 const policyBeforeTako = {...structuredClone(policyBeforeThumbnail), historicalEvidence:structuredClone(policyBeforeThumbnail.historicalEvidence.slice(0, -7))};
 const reviewedBeforeCurrentRun = {...structuredClone(policyBeforeTako), historicalEvidence:structuredClone(policyBeforeTako.historicalEvidence.slice(0, -6))};
 const priorReviewedPolicy = {...structuredClone(reviewedBeforeCurrentRun), historicalEvidence:structuredClone(reviewedBeforeCurrentRun.historicalEvidence.slice(0, -2))};
@@ -252,12 +253,14 @@ process.on('exit', () => {
   validateAccessPolicy(reviewedBeforeCurrentRun);
   validateAccessPolicy(policyBeforeTako);
   validateAccessPolicy(policyBeforeThumbnail);
+  validateAccessPolicy(policyBeforePlaceFacts);
   validateAccessPolicy(fullReviewedPolicy);
   assert.equal(priorReviewedPolicy.historicalEvidence.length, committedPolicy.historicalEvidence.length + 8, 'Only five Barrios groups, one Secret Sauce group, one Greco feed group and one happy-hour API group added to immutable baseline');
   assert.equal(reviewedBeforeCurrentRun.historicalEvidence.length, priorReviewedPolicy.historicalEvidence.length + 2, 'Only the exact Little Pisa homepage and menu receipts extend the prior reviewed policy');
   assert.equal(policyBeforeTako.historicalEvidence.length, reviewedBeforeCurrentRun.historicalEvidence.length + 6, 'Only six exact source-refresh HTTP 403 receipts extend the reviewed policy');
   assert.equal(policyBeforeThumbnail.historicalEvidence.length, policyBeforeTako.historicalEvidence.length + 7, 'Only seven exact Tako Sushi & Ramen HTTP 401 receipts extend the reviewed policy');
-  assert.equal(fullReviewedPolicy.historicalEvidence.length, policyBeforeThumbnail.historicalEvidence.length + 3, 'Only three exact thumbnail-discovery HTTP 403 receipts extend the reviewed policy');
+  assert.equal(policyBeforePlaceFacts.historicalEvidence.length, policyBeforeThumbnail.historicalEvidence.length + 3, 'Only three exact thumbnail-discovery HTTP 403 receipts extend the reviewed policy');
+  assert.equal(fullReviewedPolicy.historicalEvidence.length, policyBeforePlaceFacts.historicalEvidence.length + 2, 'Only two exact structured-place-fact HTTP 403 receipts extend the reviewed policy');
   const newBarriosGroups = priorReviewedPolicy.historicalEvidence.slice(-8, -3);
   for (const group of newBarriosGroups) {
     const p = group.provenance;
@@ -472,7 +475,7 @@ assert.equal(acceptedBarriosHolds.find('https://barrioshfx.ca/unknown-page'), nu
   await gate(takoCheck.report);
   checked('seven receipt-backed Tako URL holds are unattempted; sibling paths remain independently eligible');
 
-  const thumbnailGroups = fullReviewedPolicy.historicalEvidence.slice(-3);
+  const thumbnailGroups = policyBeforePlaceFacts.historicalEvidence.slice(-3);
   const thumbnailUrls = [
     'https://www.bedfordbasinmarket.com/menu',
     'https://brooklynwarehouse.ca/menu',
@@ -498,10 +501,10 @@ assert.equal(acceptedBarriosHolds.find('https://barrioshfx.ca/unknown-page'), nu
     assert.equal(group.observations[0].url, thumbnailUrls[index]);
     assert.equal(group.observations[0].status, 403);
   });
-  const acceptedThumbnailHolds = createAccessHolds(fullReviewedPolicy);
+  const acceptedThumbnailHolds = createAccessHolds(policyBeforePlaceFacts);
   thumbnailUrls.forEach(url => assert.equal(acceptedThumbnailHolds.find(url)?.scope, 'url', 'The exact denied thumbnail URL is held: ' + url));
   thumbnailSiblings.forEach(url => assert.equal(acceptedThumbnailHolds.find(url), null, 'An unevidenced thumbnail sibling remains eligible: ' + url));
-  await configure({policy:fullReviewedPolicy, catalog:catalogFor([...thumbnailUrls, ...thumbnailSiblings])});
+  await configure({policy:policyBeforePlaceFacts, catalog:catalogFor([...thumbnailUrls, ...thumbnailSiblings])});
   const thumbnailCheck = await collect(Object.fromEntries(thumbnailSiblings.map(url => [url, [ok]])));
   assert.equal(thumbnailCheck.report.counts.held, 3);
   assert.equal(thumbnailCheck.report.counts.attempted, 3);
@@ -509,6 +512,42 @@ assert.equal(acceptedBarriosHolds.find('https://barrioshfx.ca/unknown-page'), nu
   thumbnailCheck.report.results.slice(0,3).forEach((row,index)=>held(row,thumbnailGroups[index].observations[0]));
   await gate(thumbnailCheck.report);
   checked('three receipt-backed thumbnail URL holds are unattempted; sibling paths remain independently eligible');
+
+  const placeFactGroups = fullReviewedPolicy.historicalEvidence.slice(-2);
+  const placeFactUrls = [
+    'https://www.skipthedishes.com/?utm_source=mashaweemediterraneangrill.ca&utm_medium=microsites&utm_campaign=microsites',
+    'https://www.skipthedishes.com/?utm_source=inspringhotpot.com&utm_medium=microsites&utm_campaign=microsites'
+  ];
+  const placeFactSiblings = [
+    'https://www.skipthedishes.com/?utm_source=mashaweemediterraneangrill.ca&utm_medium=microsites&utm_campaign=other',
+    'https://www.skipthedishes.com/?utm_source=inspringhotpot.com&utm_medium=microsites&utm_campaign=other'
+  ];
+  placeFactGroups.forEach((group, index) => {
+    const p = group.provenance;
+    assert.equal(p.kind, 'reviewed_workflow_log');
+    assert.equal(p.workflowRunId, '40544322033');
+    assert.equal(p.workflowJob, 'refresh');
+    assert.equal(p.workflowJobId, 122330713318);
+    assert.equal(p.sourceCommitSha, 'd9062c9411761f15939ade5856d89ae2c6a9616e');
+    assert.equal(p.accessPolicySha256, digest(policyBeforePlaceFacts), 'Every same-head place-fact receipt references the exact pre-hold policy');
+    assert.equal(p.logSha256, '38adcf891cdf2c558e7e66c016be178b343cd786960b6bf61505bd011a72a17b');
+    assert.equal(p.diagnosticSha256, digest(p.diagnostic));
+    assert.equal(p.receiptSha256, digest(p.diagnostic.evidence.receipt));
+    assert.deepEqual(group.observations, [p.diagnostic.evidence.hold.evidence]);
+    assert.equal(group.observations[0].url, placeFactUrls[index]);
+    assert.equal(group.observations[0].status, 403);
+  });
+  const acceptedPlaceFactHolds = createAccessHolds(fullReviewedPolicy);
+  placeFactUrls.forEach(url => assert.equal(acceptedPlaceFactHolds.find(url)?.scope, 'url', 'The exact denied place-fact URL is held: ' + url));
+  placeFactSiblings.forEach(url => assert.equal(acceptedPlaceFactHolds.find(url), null, 'An unevidenced place-fact sibling remains eligible: ' + url));
+  await configure({policy:fullReviewedPolicy, catalog:catalogFor([...placeFactUrls, ...placeFactSiblings])});
+  const placeFactCheck = await collect(Object.fromEntries(placeFactSiblings.map(url => [url, [ok]])));
+  assert.equal(placeFactCheck.report.counts.held, 2);
+  assert.equal(placeFactCheck.report.counts.attempted, 2);
+  assert.deepEqual(placeFactCheck.events.filter(e=>e.event==='fetch').map(e=>e.url), placeFactSiblings);
+  placeFactCheck.report.results.slice(0,2).forEach((row,index)=>held(row,placeFactGroups[index].observations[0]));
+  await gate(placeFactCheck.report);
+  checked('two receipt-backed place-fact URL holds are unattempted; sibling query variants remain independently eligible');
 
 
   assert(committedPolicy.historicalEvidence[0].observations.every(row => row.status === 403 && new URL(row.url).hostname === 'junglejims.ca'));
