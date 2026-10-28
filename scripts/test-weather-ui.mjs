@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import vm from 'node:vm';
+import {projectEccc,acceptedEnvelope} from './lib/eccc-weather.mjs';
 
 const read = path => readFileSync(new URL(path, import.meta.url), 'utf8');
 const source = read('../app-weather.js');
@@ -16,7 +17,8 @@ const context = {
 };
 vm.createContext(context);
 vm.runInContext(read('../weather-contract.js'), context);
-vm.runInContext(read('../data/weather.js'), context);
+const fixtureReceipt=JSON.parse(read('./fixtures/weather/eccc-citypage-20261028-receipt.json'));
+context.window.HalifaxWeather=acceptedEnvelope(projectEccc(read('./fixtures/weather/eccc-citypage-20261028.json'),fixtureReceipt),fixtureReceipt);
 vm.runInContext(source, context);
 const data = context.window.HalifaxWeather;
 const evaluated = context.window.HalifaxWeatherContract.evaluate(data, fixedNow);

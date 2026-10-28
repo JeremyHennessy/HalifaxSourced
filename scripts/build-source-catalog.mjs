@@ -93,7 +93,7 @@ export function buildCatalog(inputs) {
   const weatherPath = 'data/weather-source-registry.json', weatherSnapshotPath = 'data/build/halifax-weather.json';
   const weatherSnapshot = inputs[weatherSnapshotPath];
   for (const source of rows(inputs[weatherPath]?.sources)) {
-    const row = add('weather',source,weatherPath,null,{registry:true});
+    const row = add('weather',source,weatherPath,null,{registry:true,...(source.enabled ? {workflow:'weather-preview.yml'} : {})});
     if (source.id !== 'eccc-halifax-citypage' || !row) continue;
     const accepted = weatherSnapshot?.version === 1 ? weatherSnapshot.lastKnownGood : null;
     if (accepted?.sourceUrl !== source.endpoint) continue;
@@ -102,7 +102,7 @@ export function buildCatalog(inputs) {
     row.lastSuccessAt = iso(accepted.retrievedAt);
     row.contentAt = iso(accepted.forecast?.issuedAt);
     row.failing = !['success',undefined].includes(weatherSnapshot.lastAttempt?.status);
-    row.weather = {collection:'Disabled — recorded manual snapshot; no schedule',
+    row.weather = {collection:source.enabled ? (source.refreshPolicy?.scheduleEnabled ? 'Guarded hourly review; publication separately reviewed' : 'Guarded manual review; automatic schedule disabled') : 'Disabled — recorded manual snapshot; no schedule',
       forecastIssuedAt:iso(accepted.forecast?.issuedAt), retrievedAt:iso(accepted.retrievedAt),
       observationTimes:rows(accepted.observations).map(x=>({station:label(x.stationName),observedAt:iso(x.observedAt)})),
       warningCheckedAt:iso(accepted.warnings?.checkedAt), coverage:label(accepted.warnings?.coverage)};

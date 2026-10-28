@@ -29,6 +29,7 @@ on:
           - source-expansion-preview
           - city-events-preview
           - social-source-preview
+          - weather-preview
 
 permissions:
   actions: write
@@ -147,6 +148,7 @@ jobs:
           ARTIFACT_DIR: ${{ runner.temp }}/preview-artifact
           ARTIFACT_NAME: ${{ steps.preview.outputs.artifact_name }}
           ARTIFACT_RUN_ID: ${{ steps.preview.outputs.run_id }}
+          ARTIFACT_HEAD_SHA: ${{ matrix.source_head_sha }}
           SOURCE_WORKFLOW_NAME: ${{ steps.preview.outputs.workflow_name }}
           SOURCE_WORKFLOW_RUN_URL: ${{ steps.preview.outputs.source_run_url }}
           SOURCE_RUN_CREATED_AT: ${{ matrix.source_run_created_at }}

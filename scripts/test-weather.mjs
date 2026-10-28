@@ -7,6 +7,7 @@ import {projectEccc,acceptedEnvelope,retainOnFailure,metric,stamp,hash,ENDPOINT,
 import {collectEcccReview} from './lib/eccc-weather-adapter.mjs';
 import {sourceAccessState} from './lib/source-access-state.mjs';
 import {buildWeather} from './build-weather.mjs';
+import {loadCurrentWeather} from './lib/weather-capture.mjs';
 import {buildCatalog} from './build-source-catalog.mjs';
 import contract from '../weather-contract.js';
 const read=p=>readFile(new URL('../'+p,import.meta.url),'utf8');
@@ -60,12 +61,12 @@ await test('nonempty warning objects preserve originals, neutral notice only, ne
 });
 await test('recorded build is byte/mtime deterministic and cannot freshen fixture',async()=>{
   const first=await buildWeather(),path=new URL('../data/weather.js',import.meta.url),before=await readFile(path,'utf8'),mtime=(await stat(path)).mtimeMs;
-  assert.deepEqual(first,envelope);await buildWeather();assert.equal(await readFile(path,'utf8'),before);assert.equal((await stat(path)).mtimeMs,mtime);
-  const browser={window:{}};vm.runInNewContext(before,browser);assert.equal(JSON.stringify(browser.window.HalifaxWeather),JSON.stringify(envelope));
+  const actual=(await loadCurrentWeather()).envelope;assert.deepEqual(first,actual);await buildWeather();assert.equal(await readFile(path,'utf8'),before);assert.equal((await stat(path)).mtimeMs,mtime);
+  const browser={window:{}};vm.runInNewContext(before,browser);assert.equal(JSON.stringify(browser.window.HalifaxWeather),JSON.stringify(actual));
 });
 await test('disabled registry makes zero requests and no journal',async()=>{
   const fetch=globalThis.fetch;let requests=0;globalThis.fetch=async()=>{requests++;throw Error('network forbidden')};
-  try{await assert.rejects(collectEcccReview(),/disabled/);assert.equal(requests,0);}finally{globalThis.fetch=fetch;}
+  try{await assert.rejects(collectEcccReview({registry:{...config,sources:config.sources.map(s=>({...s,enabled:false}))}}),/disabled/);assert.equal(requests,0);}finally{globalThis.fetch=fetch;}
 });
 const temp=await mkdtemp(join(tmpdir(),'halifax-weather-test-'));
 try{
@@ -88,10 +89,10 @@ try{
   });
 }finally{await rm(temp,{recursive:true,force:true});}
 await test('source catalogue keeps disabled schedule and separate issue/observation/retrieval clocks',async()=>{
-  const rows=buildCatalog({'data/weather-source-registry.json':config,'data/build/halifax-weather.json':envelope}).sources;assert.equal(rows.length,1);const row=rows[0];assert.equal(row.family,'weather');assert.equal(row.enabled,false);assert.equal(row.state,'held');assert.equal(row.workflowUrl,null);assert.equal(row.targetHours,null);assert.equal(row.lastAttemptAt,'2026-10-28T00:43:26.981Z');assert.equal(row.lastSuccessAt,receipt.retrievedAt);assert.equal(row.contentAt,'2026-10-27T19:00:00.000Z');assert.equal(row.weather.observationTimes[0].observedAt,'2026-10-28T00:00:00.000Z');
+  const rows=buildCatalog({'data/weather-source-registry.json':{...config,sources:config.sources.map(s=>({...s,enabled:false}))},'data/build/halifax-weather.json':envelope}).sources;assert.equal(rows.length,1);const row=rows[0];assert.equal(row.family,'weather');assert.equal(row.enabled,false);assert.equal(row.state,'held');assert.equal(row.workflowUrl,null);assert.equal(row.targetHours,null);assert.equal(row.lastAttemptAt,'2026-10-28T00:43:26.981Z');assert.equal(row.lastSuccessAt,receipt.retrievedAt);assert.equal(row.contentAt,'2026-10-27T19:00:00.000Z');assert.equal(row.weather.observationTimes[0].observedAt,'2026-10-28T00:00:00.000Z');
   const context={window:{location:{href:'https://example.test/'}},URL,Date,console};vm.createContext(context);vm.runInContext(await read('app-admin-status.js'),context);const html=context.renderCatalogRow(row);assert.match(html,/recorded manual snapshot/);assert.match(html,/No mapped workflow/);assert.match(html,/not establish current weather or an all-clear/);
 });
-await test('no weather collector is activated by any workflow',async()=>{
-  for(const path of await readdir(new URL('../.github/workflows/',import.meta.url))){const yaml=await read('.github/workflows/'+path);assert.ok(!yaml.includes('collectEcccReview'));assert.ok(!yaml.includes('eccc-weather-adapter'));}
+await test('weather collector remains isolated from general workflows',async()=>{
+  for(const path of await readdir(new URL('../.github/workflows/',import.meta.url))){if(path==='weather-preview.yml')continue;const yaml=await read('.github/workflows/'+path);assert.ok(!yaml.includes('collectEcccReview'));assert.ok(!yaml.includes('eccc-weather-adapter'));}
 });
 console.log(`${checks} weather foundation checks passed; all transport mocked, zero external requests.`);

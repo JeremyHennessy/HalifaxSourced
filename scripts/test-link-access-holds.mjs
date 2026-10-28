@@ -1547,8 +1547,15 @@ assert.equal(acceptedBarriosHolds.find('https://barrioshfx.ca/unknown-page'), nu
     "scripts/test-update-consistency.mjs"
   ];
   const workflowNames = (await readdir(new URL('../.github/workflows/', import.meta.url))).filter(name => name.endsWith('.yml')).sort();
-  assert.equal(workflowNames.length, 14, 'Review new workflow filters before expanding this change scope');
+  assert.equal(workflowNames.length, 15, 'Review new workflow filters before expanding this change scope');
   const workflows = Object.fromEntries(await Promise.all(workflowNames.map(async name => [name,await readFile(new URL('../.github/workflows/' + name, import.meta.url),'utf8')])));
+  const weatherWorkflow = workflows['weather-preview.yml'];
+  assert(weatherWorkflow.includes('  workflow_dispatch:'));
+  assert(!/^  (?:pull_request|pull_request_target|push|schedule):/m.test(weatherWorkflow), 'Weather stays manually bootstrapped and not activated');
+  assert(weatherWorkflow.includes('  contents: read') && !weatherWorkflow.includes('contents: write'));
+  assert(weatherWorkflow.includes("if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)"));
+  assert(weatherWorkflow.includes('node scripts/weather-preview-lineage.mjs collect'));
+  assert(!weatherWorkflow.includes('restore-keys:'));
   const newsWorkflow = workflows['news-preview.yml'];
   assert(newsWorkflow.includes('  workflow_dispatch:'), 'News preview preserves explicit manual dispatch');
   assert(newsWorkflow.includes('  schedule:\n    - cron: "17 */6 * * *"'), 'News attempts review-only collection every six hours through the same lineage guard');
@@ -1632,7 +1639,7 @@ assert.equal(acceptedBarriosHolds.find('https://barrioshfx.ca/unknown-page'), nu
       'Reject Restaurant collector activation or unsafe PR envelope: ' + label);
   }
   console.log('Changed-scope PR matrix: ' + scopeMatrix.map(row => row.workflow + '=' + (row.matched.length ? 'triggered' : row.pullRequest ? 'not-matched' : 'no-PR-trigger')).join(', '));
-  checked('all 14 workflow PR filters reviewed; guarded manual/scheduled news lane excluded from PRs; eight protected validations selected; Restaurant PR collector remains excluded and ' + (restaurantBoundaryMutations.length + 2) + ' boundary mutations rejected');
+  checked('all 15 workflow PR filters reviewed; guarded manual/scheduled news and manual weather lanes excluded from PRs; eight protected validations selected; Restaurant PR collector remains excluded and ' + (restaurantBoundaryMutations.length + 2) + ' boundary mutations rejected');
 
   // This standalone fixture owns its own temporary tree. Execute its real
   // sibling entrypoint with an explicit transport denial, not sandbox copies.

@@ -2,9 +2,11 @@ import { copyFile, mkdir, readdir, readFile, writeFile } from "node:fs/promises"
 import { dirname, isAbsolute, relative, resolve, sep } from "node:path";
 import process from "node:process";
 
+import { validateWeatherArtifact, WEATHER_REVIEW_FILES, WEATHER_DATA_FILES } from './lib/weather-publication.mjs';
 import { meaningfulHash } from "./lib/update-consistency.mjs";
 
 const PROMOTED_FILES_BY_ARTIFACT = {
+  "weather-preview": WEATHER_DATA_FILES,
   "source-expansion-preview": [
     "data/official-site-signals.js",
     "data/build/official-site-signals.json",
@@ -53,6 +55,7 @@ const PROMOTED_FILES_BY_ARTIFACT = {
 };
 
 const REVIEW_ONLY_FILES_BY_ARTIFACT = {
+  "weather-preview": WEATHER_REVIEW_FILES,
   "source-expansion-preview": [
     "data/build/thumbnail-auto-approval-report.json",
     "docs/thumbnail-coverage-report.md",
@@ -158,6 +161,10 @@ async function main() {
   ]);
 
   const artifactFiles = (await listFiles(artifactRoot)).sort();
+  if (artifactName === 'weather-preview') {
+    const validated = await validateWeatherArtifact({root:repoRoot,artifactRoot,artifactFiles,runId:process.env.ARTIFACT_RUN_ID,headSha:process.env.ARTIFACT_HEAD_SHA});
+    for(const path of validated){promotedFiles.add(path);knownFiles.add(path);}
+  }
   const unexpectedFiles = artifactFiles.filter((filePath) => !knownFiles.has(filePath));
   if (unexpectedFiles.length > 0) {
     fail(`Artifact contains unexpected files:\n${unexpectedFiles.map((filePath) => `- ${filePath}`).join("\n")}`);
@@ -178,7 +185,7 @@ async function main() {
     const incoming = await readFile(resolve(artifactRoot, filePath), "utf8");
     let existing = null;
     try { existing = await readFile(resolve(repoRoot, filePath), "utf8"); } catch {}
-    if (existing === null || meaningfulHash(incoming) !== meaningfulHash(existing)) meaningfulChanges.push(filePath);
+    if (existing === null || (artifactName === 'weather-preview' ? incoming !== existing : meaningfulHash(incoming) !== meaningfulHash(existing))) meaningfulChanges.push(filePath);
   }
   if (process.env.PROMOTION_RESULT_PATH) await writeFile(process.env.PROMOTION_RESULT_PATH, JSON.stringify({artifactName, artifactRunId:process.env.ARTIFACT_RUN_ID || null, checkedAt:new Date().toISOString(), changed:meaningfulChanges.length > 0, meaningfulChanges}, null, 2) + "\n");
   if (!meaningfulChanges.length) {
@@ -196,7 +203,12 @@ async function main() {
     const targetPath = resolve(repoRoot, ...filePath.split("/"));
     ensureInsideRepo(repoRoot, targetPath);
     await mkdir(dirname(targetPath), { recursive: true });
-    await copyFile(sourcePath, targetPath);
+    if (artifactName === 'weather-preview' && /^data\/weather\/captures\/[a-f0-9]{64}\.json$/.test(filePath)) {
+      // Append-only archive: never replace even an identical original's inode/mtime.
+      const bytes = await readFile(sourcePath);
+      try { await writeFile(targetPath, bytes, {flag:'wx'}); }
+      catch (error) { if (error.code !== 'EEXIST' || !(await readFile(targetPath)).equals(bytes)) throw error; }
+    } else await copyFile(sourcePath, targetPath);
   }
 
   // Each lane keeps its own accepted provenance once this commit reaches main.

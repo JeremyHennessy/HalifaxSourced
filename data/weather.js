@@ -1,4 +1,4 @@
-// Recorded ECCC evidence. Offline builds preserve all original clocks.
+// Accepted ECCC evidence. Offline builds preserve all original clocks.
 window.HalifaxWeather = {
   "version": 1,
   "activation": "recorded_snapshot_no_refresh",

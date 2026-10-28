@@ -69,7 +69,7 @@ async function collect({ manual = null } = {}) {
     }
     const runs = [];
     let readBlocker = null;
-    if (!manual || manual.artifact === lane.artifact) {
+    if ((!lane.manualOnly && !manual) || manual?.artifact === lane.artifact) {
       if (manual) {
         const run = await get(`actions/runs/${manual.runId}`);
         run.artifacts = await pages(`actions/runs/${run.id}/artifacts`, 'artifacts');
@@ -104,7 +104,7 @@ async function collect({ manual = null } = {}) {
     if (String(run.id) === process.env.GITHUB_RUN_ID) continue;
     const jobs = await pages(`actions/runs/${run.id}/jobs?filter=all`, 'jobs');
     for (const job of jobs) {
-      const match = job.name.match(/^Promote (city-events-preview|source-expansion-preview|social-source-preview) \(source (\d+)\)$/);
+      const match = job.name.match(/^Promote (city-events-preview|source-expansion-preview|social-source-preview|weather-preview) \(source (\d+)\)$/);
       if (match && ready.some(item => item.artifact_name === match[1] && item.run_id === match[2]) && job.status === 'completed' && (job.conclusion !== 'success' || job.steps?.some(step => step.name === 'Promote allowlisted data files' && step.conclusion === 'success'))) state.attempts.push({ artifact: match[1], runId: match[2], conclusion: job.conclusion, completedAt: job.completed_at, baseSha: run.head_sha });
     }
   }

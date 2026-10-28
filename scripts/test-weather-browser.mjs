@@ -1,7 +1,9 @@
 // Hosted exact-release browser assertions. Uses frozen local resource gate only.
 import assert from 'node:assert/strict';
 import {existsSync} from 'node:fs';
-import {mkdir,writeFile} from 'node:fs/promises';
+import {mkdir,writeFile,readFile} from 'node:fs/promises';
+import {projectEccc,acceptedEnvelope} from './lib/eccc-weather.mjs';
+import {loadCurrentWeather} from './lib/weather-capture.mjs';
 import {installOfflineResources} from './lib/offline-browser-resources.mjs';
 let playwright;
 for(const candidate of [process.env.PLAYWRIGHT_MODULE,'playwright'].filter(Boolean)){
@@ -17,9 +19,25 @@ try{
   const context=await browser.newContext({viewport:{width:1440,height:1000},serviceWorkers:'block'});
   const resources=await installOfflineResources(context,base);
   const page=await context.newPage();
-  await page.clock.install({time:new Date('2026-10-28T00:50:00Z')});
+  const actual=(await loadCurrentWeather()).envelope;
+  await page.clock.install({time:new Date()});
   await page.goto(base+'/#weather',{waitUntil:'networkidle'});
   await page.locator('#weatherForecastHeading').waitFor();
+  // First verify the actual packaged release semantically, at viewing time.
+  assert.deepEqual(await page.evaluate(()=>window.HalifaxWeather),actual);
+  const currentView=await page.evaluate(()=>window.HalifaxWeatherContract.evaluate(window.HalifaxWeather));
+  assert.equal(await page.locator('#weatherForecastHeading').count(),1);
+  if(currentView.warnings.status==='unavailable')assert.match(await page.locator('#weatherWarningHeading').innerText(),/unavailable/);
+  checks.push('actual packaged current capture validated separately from immutable edge fixture');
+  await page.screenshot({path:new URL('weather-current-desktop.png',artifacts).pathname,fullPage:true});
+  await page.setViewportSize({width:390,height:844});
+  await page.screenshot({path:new URL('weather-current-mobile.png',artifacts).pathname,fullPage:true});
+  await page.setViewportSize({width:1440,height:1000});
+  // Fixed regression cases remain deterministic even after the accepted capture advances.
+  const fixtureReceipt=JSON.parse(await readFile(new URL('fixtures/weather/eccc-citypage-20261028-receipt.json',import.meta.url),'utf8'));
+  const fixture=acceptedEnvelope(projectEccc(await readFile(new URL('fixtures/weather/eccc-citypage-20261028.json',import.meta.url),'utf8'),fixtureReceipt),fixtureReceipt);
+  await page.clock.setFixedTime(new Date('2026-10-28T00:50:00Z'));
+  await page.evaluate(value=>{window.HalifaxWeather=value;renderWeather();},fixture);
   const fresh=await page.locator('#appView').innerText();
   assert.match(fresh,/No warnings listed at the recorded check/);
   assert.match(fresh,/Halifax Stanfield/);assert.match(fresh,/Shearwater Airport/);
