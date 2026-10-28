@@ -2,7 +2,7 @@ import { createHash } from 'node:crypto';
 import { feedEntryBlocks } from './first-party-feed-safety.mjs';
 export const NEWS_MAX_BYTES = 1024 * 1024;
 export const NEWS_MAX_ITEMS = 100;
-export const NEWS_TYPES = ['newsroom', 'official_public_notice', 'library_notice'];
+export const NEWS_TYPES = ['newsroom', 'official_public_notice', 'library_notice', 'local_business_publication'];
 const text = (x, max = 500) => typeof x === 'string' && x.trim() === x && x.length > 0 && x.length <= max && !/[<>\u0000-\u001f]/.test(x);
 export const validNewsDate = value => typeof value === 'string' && /^\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{3}Z$/.test(value) && Number.isFinite(Date.parse(value)) && new Date(value).toISOString() === value;
 export const validNewsDay = value => typeof value === 'string' && /^\d{4}-\d\d-\d\d$/.test(value) && Number.isFinite(Date.parse(value + 'T00:00:00.000Z')) && new Date(value + 'T00:00:00.000Z').toISOString().slice(0,10) === value;

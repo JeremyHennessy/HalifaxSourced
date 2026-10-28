@@ -335,9 +335,11 @@ for (const [id, sourceId, canonicalUrl, title, publishedAt, region, observedAt] 
  const proposedOnly = {...reviewedRegistry,sources:reviewedRegistry.sources.map(item=>item.id===sourceId?{...item,status:'proposed',enabled:false,admission:null}:item)};
  assert.throws(() => buildNews({version:1,decisions:[{id,status:'approved',record:row}]},proposedOnly), /invalid_accepted_news_shape/);
 }
-assert.equal(reviewedPayload.items.length, 11);
-assert.equal(new Set(reviewedPayload.items.map(row=>row.sourceId)).size, 5);
-assert.equal(reviewedRegistry.sources.length, 8);
+const october27Ids = new Set([...Object.keys(retainedDecisionHashes), ...expansionExpected.map(row=>row[0])]);
+const october27Items = reviewedPayload.items.filter(row=>october27Ids.has(row.id));
+assert.equal(october27Items.length,11,'Preserve every item in the October 27 batch');
+assert.equal(new Set(october27Items.map(row=>row.sourceId)).size,5);
+assert.equal(reviewedRegistry.sources.filter(row=>Object.hasOwn(retainedSourceHashes,row.id) || ['the-coast','the-signal'].includes(row.id)).length,8);
 assert.deepEqual(reviewedRegistry.sources.filter(row=>row.enabled).map(row=>row.id), ['global-halifax'], 'Only the existing preview feed stays enabled');
 for (const id of ['the-coast','the-signal']) {
  const source = reviewedRegistry.sources.find(row=>row.id===id);
@@ -352,5 +354,8 @@ for (const id of ['the-coast','the-signal']) {
 assert.deepEqual(await readJson('data/build/news.json'), reviewedPayload);
 assert.equal(await readFile(new URL('../data/news.js',import.meta.url),'utf8'), newsScript(reviewedPayload));
 assert.deepEqual(buildNews(reviewedDecisions, reviewedRegistry), reviewedPayload, 'No review or observation clock churn on rebuild');
-assert.match(await readFile(new URL('../index.html',import.meta.url),'utf8'), /data\/news\.js\?v=20261027-news-expansion-1/);
-console.log('Reviewed publisher expansion passed: 7 original-title links, 11 total items/5 publishers, all 4 original decisions and 6 original source states preserved (one opaque CityNews receipt removed), cached observation windows, exact JSON/JS parity, no media/body/unreviewed promotion, 2 manual-only admissions.');
+assert.match(await readFile(new URL('../index.html',import.meta.url),'utf8'), /data\/news\.js\?v=20261028-news-archive-1/);
+console.log('Reviewed publisher expansion passed: the original 7 expansion links remain, all 4 original decisions and 6 original source states preserved (one opaque CityNews receipt removed), cached observation windows, exact JSON/JS parity, no media/body/unreviewed promotion, 2 manual-only admissions.');
+
+// Manual backfill and additional publisher types stay additive and offline.
+await import('./test-news-archive-expansion.mjs');

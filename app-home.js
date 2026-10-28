@@ -95,7 +95,7 @@ function homeNewsSection() {
   const available = typeof acceptedNewsItems === "function" && window.HALIFAX_NEWS?.version === 1 && Array.isArray(window.HALIFAX_NEWS.items);
   const items = available ? acceptedNewsItems().slice(0, 3) : [];
   return `<section class="page-shell section-block home-news" aria-label="News and notices">
-    ${sectionHeader("News & notices", "A reviewed selection from Halifax and Nova Scotia. Official announcements are labelled separately from journalism.", "#news", "Browse news & notices")}
+    ${sectionHeader("News & notices", "A reviewed selection from Halifax and Nova Scotia. Journalism, official announcements and local business publications are labelled separately.", "#news", "Browse news & notices")}
     <div class="news-grid">${items.map((item) => newsCard(item, { headingLevel: 3, compact: true })).join("")}</div>
     ${items.length ? "" : `<p class="news-empty">${available ? "No reviewed news items are available yet. Only approved source links will appear here." : "News data is unavailable. This does not mean there are no local stories."}</p>`}
     <p class="news-coverage-note">Dates show original publication, not collection. This is not a complete or live news service. Read the original for current details.</p>
