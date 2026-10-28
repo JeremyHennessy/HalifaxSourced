@@ -141,6 +141,66 @@
         "dateEvidence": "Publisher calendar dates are preserved at day precision; byline clocks have no verified timezone. Original publication dates remain separate from update dates, cached-view observations and review time. No modification instant is inferred.",
         "rightsEvidence": "Admission is for the individually reviewed attributed outbound links only. Public accessibility is not a republication licence. No copied article bodies, quotations, excerpts, descriptions, publisher photos or logos. No blanket reuse or automated collection permission inferred."
       }
+    },
+    {
+      "id": "dalhousie-gazette",
+      "name": "The Dalhousie Gazette",
+      "source_type": "newsroom",
+      "homeUrl": "https://dalgazette.com/",
+      "feedUrl": null,
+      "allowedHosts": [
+        "dalgazette.com"
+      ],
+      "enabled": false,
+      "status": "admitted",
+      "admission": {
+        "reviewedAt": "2026-10-28T00:40:32.000Z",
+        "reviewer": "Halifax Sourced source review",
+        "accessEvidence": "Publisher homepage and three individual primary article pages returned text/html web-reader views. Article observations bounded by 2026-10-28T00:34:45.388Z and 2026-10-28T00:34:46.678Z. Reader cache labels vary; exact origin retrieval time is unknown. Four other exact article targets returned Cache miss and were not retried; exact no-retry targets retained in docs/news-archive-review-20261028.md. These are reader failures, not confirmed publisher HTTP denials. No feed collection or automated adapter activated.",
+        "schemaEvidence": "Three individually reviewed canonical article links with original factual titles, attributed publisher and null summaries. Source identifies itself as the student publication at Dalhousie University in Halifax. Articles have named reporting bylines, dates, factual text and distinct subjects. Manual admission only; no feed or automation permission inferred.",
+        "dateEvidence": "Each accepted candidate displays October 22, 2026 next to its byline. A top-of-page current/date masthead can differ and was not used as publication date. Day precision retained; modification clocks unknown. Cached-view observations and review time remain separate.",
+        "rightsEvidence": "Individually reviewed attributed outbound links and original factual titles only. Publisher footer reserves all rights. No copied body, excerpt, quotation, description, photograph or logo. Public access is not a republication licence or automated collection permission."
+      }
+    },
+    {
+      "id": "the-laker-news",
+      "name": "The Laker News",
+      "source_type": "newsroom",
+      "homeUrl": "https://thelaker.ca/",
+      "feedUrl": null,
+      "allowedHosts": [
+        "thelaker.ca"
+      ],
+      "enabled": false,
+      "status": "admitted",
+      "admission": {
+        "reviewedAt": "2026-10-28T00:40:32.000Z",
+        "reviewer": "Halifax Sourced source review",
+        "accessEvidence": "Publisher homepage/contact page and three nonsponsored sports reports returned text/html primary web-reader views. Article observation window: 2026-10-28T00:36:25.250Z through 2026-10-28T00:36:26.569Z. Cache labels yesterday or last week; exact origin freshness unknown. No access denial on accepted targets. No feed discovery, collector or automated adapter activated.",
+        "schemaEvidence": "Three manually reviewed canonical links, original factual titles, publisher attribution and null summaries. Website identifies The Laker News as an online publication and provides a named local reporter. Source runs distinct editorial and advertorial categories; a separately inspected sponsored video story was explicitly excluded. Sports reports based partly on submitted team results remain attributed.",
+        "dateEvidence": "Two article bylines display October 25, 2026; one displays October 18, 2026. Original publication days retained separately from competition dates and related-story dates. No exact timestamp or modification time inferred.",
+        "rightsEvidence": "Individual original factual titles and attributed canonical outbound links only. Footer reserves all rights. No story bodies, quotes, descriptions, player photos, submitted photographs, video or logos reproduced. Public accessibility grants no general republication or automated collection licence."
+      }
+    },
+    {
+      "id": "halifax-retales",
+      "name": "Halifax ReTales",
+      "source_type": "local_business_publication",
+      "homeUrl": "https://halifax.retales.ca/",
+      "feedUrl": null,
+      "allowedHosts": [
+        "halifax.retales.ca"
+      ],
+      "enabled": false,
+      "status": "admitted",
+      "admission": {
+        "reviewedAt": "2026-10-28T00:40:32.000Z",
+        "reviewer": "Halifax Sourced source review",
+        "accessEvidence": "About page and three retail roundup articles returned text/html primary web-reader views within 2026-10-28T00:35:23.985Z through 2026-10-28T00:35:25.308Z. Reader cache labels range from today to last week; exact origin freshness unknown. Existing opening-watch feed state is untouched. Manual News-lane link candidates only.",
+        "schemaEvidence": "Three individually reviewed canonical links, original factual titles and null summaries. Local specialist business-reporting publication; its About page describes observation and news-source gathering around HRM. This is an existing organization and opening-watch source, newly represented in the News lane, not a newly discovered publisher or an independent newsroom. No blanket validation of every claim, prediction or reader comment.",
+        "dateEvidence": "Article pages show August 22, September 12 and October 3, 2026, respectively. Preserve original calendar dates and day precision. No refreshed publication date, inferred modification time or publication clock derived from current cache date.",
+        "rightsEvidence": "Original title and attributed outbound link only. No body, quotation, image or logo reuse permission inferred. These news links do not owner-confirm business lifecycles or authorize changing restaurant-directory/opening-watch records. Uncertain predictions, opinion and reader comments are excluded from annotations."
+      }
     }
   ]
 }

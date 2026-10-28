@@ -1,16 +1,32 @@
 import assert from 'node:assert/strict';
 export async function verifyNewsAndSources(page, base) {
-  for (const width of [1440,390,320]) {
+  for (const width of [1440,1024,901,390,320]) {
     await page.setViewportSize({width,height:900});
     await page.goto(base+'/#news');
     await page.getByRole('heading',{name:'Local news & notices',exact:true}).waitFor();
     const approved=await page.evaluate(()=>window.HALIFAX_NEWS.items.length);
     assert.equal(await page.locator('.news-card').count(),Math.min(12,approved));
     assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth-document.documentElement.clientWidth<=2),'News must not overflow');
+    await page.screenshot({path:'artifacts/ui-check-news-selection-'+width+'.png',fullPage:true});
     await page.locator('[name="newsType"]').selectOption('newsroom');
     await page.locator('[data-news-filters] button[type="submit"]').click();
     assert.ok(page.url().includes('type=newsroom'));
     await page.getByRole('link',{name:'Clear filters',exact:true}).click();
+    await page.waitForFunction(()=>location.hash==='#news' && document.querySelector('[name="newsType"]').value==='all');
+    await page.locator('[name="newsType"]').selectOption('local_business_publication');
+    await page.locator('[name="newsMonth"]').selectOption('2026-09');
+    await page.locator('[data-news-filters] button[type="submit"]').click();
+    await page.waitForFunction(()=>location.hash==='#news?type=local_business_publication&month=2026-09' && document.querySelectorAll('.news-card').length===1);
+    assert.equal(await page.locator('.news-type').innerText(),'Local business publication');
+    assert.ok((await page.locator('.news-card').innerText()).includes('ReTales reports Broken Man Café'));
+    assert.equal(await page.locator('.news-card time').getAttribute('datetime'),'2026-09-12');
+    assert.ok((await page.locator('.news-coverage-note').innerText()).includes('not active alerts or upcoming-event listings'));
+    assert.ok(await page.locator('.news-controls input,.news-controls select,.news-controls button,.news-controls>a').evaluateAll(controls=>controls.every(control=>{
+      const box=control.getBoundingClientRect();
+      return box.width>0 && box.left>=0 && box.right<=document.documentElement.clientWidth+1;
+    })), 'Archive controls fit mobile and narrow-desktop viewports');
+    assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth-document.documentElement.clientWidth<=2),'Archive month/type filters must not overflow');
+    await page.screenshot({path:'artifacts/ui-check-news-archive-'+width+'.png',fullPage:true});
     await page.goto(base+'/#admin/status');
     await page.locator('[data-source-catalog]').waitFor();
     await page.locator('[data-catalog-family]').selectOption('news');
@@ -38,6 +54,38 @@ export async function verifyNewsAndSources(page, base) {
     await page.goForward();
     await page.waitForFunction(()=>document.querySelectorAll('.news-card').length===3);
     assert.equal(await page.locator('.news-card').count(),3);
+    // Month filtering must survive pagination, Back/Forward, empty bookmarks
+    // and repeated Apply. Fixtures retain a separate older month and business type.
+    await page.evaluate(()=>{
+      const seed=window.HALIFAX_NEWS.items[0];
+      window.HALIFAX_NEWS={version:1,items:Array.from({length:15},(_,i)=>({...seed,id:'archive-fixture-'+i,title:'Archive fixture '+i,source_type:'local_business_publication',publishedAt:i<13?'2026-09-15':'2026-08-15',publishedPrecision:'day'}))};
+      location.hash='#news';renderRoute();
+    });
+    await page.locator('[name="newsMonth"]').selectOption('2026-09');
+    await page.locator('[name="newsType"]').selectOption('local_business_publication');
+    await page.locator('[data-news-filters] button[type="submit"]').click();
+    const archiveHash='#news?type=local_business_publication&month=2026-09';
+    await page.waitForFunction(hash=>location.hash===hash && document.querySelector('.news-result-count').textContent.includes('13 reviewed items'),archiveHash);
+    assert.equal(await page.locator('.news-card').count(),12);
+    await page.getByRole('link',{name:'Next',exact:true}).click();
+    await page.waitForFunction(hash=>location.hash===hash+'&page=2' && document.querySelectorAll('.news-card').length===1,archiveHash);
+    assert.equal(await page.locator('[name="newsMonth"]').inputValue(),'2026-09');
+    await page.goBack();
+    await page.waitForFunction(hash=>location.hash===hash && document.querySelectorAll('.news-card').length===12,archiveHash);
+    await page.goForward();
+    await page.waitForFunction(hash=>location.hash===hash+'&page=2' && document.querySelectorAll('.news-card').length===1,archiveHash);
+    await page.locator('[data-news-filters] button[type="submit"]').click();
+    await page.waitForFunction(hash=>location.hash===hash && document.querySelectorAll('.news-card').length===12,archiveHash);
+    await page.locator('[data-news-filters] button[type="submit"]').click();
+    assert.equal(await page.locator('[data-news-filters]').count(),1);
+    assert.equal(await page.locator('.news-card').count(),12);
+    assert.equal(await page.locator('[name="newsType"]').inputValue(),'local_business_publication');
+    await page.evaluate(()=>{location.hash='#news?month=2026-05&page=99';renderRoute();});
+    await page.waitForFunction(()=>document.querySelector('[name="newsMonth"]').value==='2026-05' && document.querySelector('.news-result-count').textContent.includes('0 reviewed items'));
+    assert.ok((await page.locator('.news-empty').innerText()).includes('No items match these filters'));
+    await page.getByRole('link',{name:'Clear filters',exact:true}).click();
+    await page.waitForFunction(()=>location.hash==='#news' && document.querySelector('[name="newsMonth"]').value==='all');
+    assert.equal(await page.locator('.news-card').count(),12);
   } finally { await page.evaluate(value=>{window.HALIFAX_NEWS=value;location.hash='#news';renderRoute();},original); }
 }
 

@@ -123,7 +123,8 @@ assert(context.homeNewsSection().includes('News data is unavailable'));
 
 const index = read('index.html');
 assert(index.indexOf('app-news.js') < index.indexOf('app-home.js'));
-for (const file of ['styles-pages.css', 'app-home.js', 'app-news.js']) assert(index.includes(file + '?v=20261027-home-discovery-1'));
+for (const file of ['app-home.js', 'app-news.js']) assert(index.includes(file + '?v=20261028-news-archive-1'));
+assert(index.includes('styles-pages.css?v=20261027-home-discovery-1'));
 const css = read('styles-pages.css');
 assert(css.includes('.home-browse-links{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))'));
 assert(css.includes('@media(max-width:900px){.home-browse-links{grid-template-columns:repeat(2,minmax(0,1fr))}}'));
