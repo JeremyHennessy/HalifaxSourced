@@ -2,12 +2,13 @@
   "version": 1,
   "archiveId": "city-event-lifecycle-20261028",
   "disposition": "reviewed_source_lifecycle_exclusion",
-  "reason": "Exact reviewed event lifecycle decisions only: one official cancellation and four successful-source withdrawals. Raw accepted evidence and source clocks remain preserved; unrelated omissions stay protected.",
-  "decisionReviewedAt": "2026-10-28T13:15:11.207Z",
-  "verifiedAgainstCommit": "754db8b8543dc36d6d18d0cb89f81fc6fdad5acd",
-  "rawArchiveRecordCount": 5,
+  "reason": "Exact reviewed event lifecycle decisions only: two official cancellations and four successful-source withdrawals. Raw accepted evidence and source clocks remain preserved; unrelated omissions stay protected.",
+  "decisionReviewedAt": "2026-10-28T23:15:17.864Z",
+  "verifiedAgainstCommit": "2eadecd4512c701008902597085ffa296b113e50",
+  "rawArchiveRecordCount": 6,
   "activeQuarantineIds": [
     "halifax-public-libraries-18e0f73c90fb3674",
+    "bedford-library-events-4bd8c911b59b9f58",
     "halifax-public-libraries-4b80fdd1a4cca573",
     "bedford-library-events-82bb7fc4a9f33612",
     "bedford-library-events-cee0720ae1991ade",
@@ -36,9 +37,77 @@
       "keptEventCount": 1360,
       "heldRemovalCount": 6
     },
-    "decisionBasis": "Exact-record offline review of the fail-closed diagnostics plus current official pages. No restricted source was retried, no timestamp was refreshed, and the separate Carleton occurrence remains protected."
+    "decisionBasis": "Exact-record offline review of fail-closed diagnostics plus current official pages. The October 28 follow-up added only the newly verified November 20 cancellation; no restricted source was retried, no source clock was refreshed, and unrelated omissions remain protected.",
+    "followupReview": {
+      "reviewedAt": "2026-10-28T23:15:17.864Z",
+      "verifiedAgainstCommit": "2eadecd4512c701008902597085ffa296b113e50",
+      "scheduledRunId": 40781661292,
+      "artifactId": 12856374615,
+      "artifactSha256": "a230c4888c07e53cf6907aac61d64b4f0b318dbbf9fbd9d58565d5b79fef07e2",
+      "sourceObservation": "The current official detail page marks the exact November 20 Cookies & Computers occurrence Cancelled; the series page still lists the occurrence, explaining why list presence alone was insufficient lifecycle evidence."
+    }
   },
   "records": [
+    {
+      "expected": {
+        "id": "bedford-library-events-4bd8c911b59b9f58",
+        "sourceId": "bedford-library-events",
+        "title": "Cookies & Computers",
+        "eventUrl": "https://halifax.bibliocommons.com/v2/events/6abab4a3ebad22004541877c",
+        "startAt": "2026-11-20T19:30:00.000Z",
+        "endAt": "2026-11-20T20:30:00.000Z",
+        "observedAt": "2026-10-24T11:13:10.255Z"
+      },
+      "expectedRawRecordCanonicalSha256": "6fcc9216a7a20b26e079384fccca8451caa213756b3e469b0c38a1af3125dcfc",
+      "rawAcceptedRecord": {
+        "id": "bedford-library-events-4bd8c911b59b9f58",
+        "title": "Cookies & Computers",
+        "startAt": "2026-11-20T19:30:00.000Z",
+        "endAt": "2026-11-20T20:30:00.000Z",
+        "allDay": false,
+        "venueName": "Bedford Public Library",
+        "address": "15 Dartmouth Road, Bedford, NS B4A 3X6",
+        "city": "Bedford",
+        "categories": [
+          "Arts"
+        ],
+        "eventUrl": "https://halifax.bibliocommons.com/v2/events/6abab4a3ebad22004541877c",
+        "ticketUrl": null,
+        "price": null,
+        "sourceId": "bedford-library-events",
+        "sourceName": "Bedford Public Library",
+        "sourceKind": "official_library_location_calendar",
+        "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
+        "observedAt": "2026-10-24T11:13:10.255Z",
+        "reviewState": "source_observed",
+        "latitude": 44.7314,
+        "longitude": -63.6571,
+        "duplicateEventIds": [],
+        "venueId": "bedford-library",
+        "neighbourhood": null,
+        "organizerId": "halifax-public-libraries",
+        "organizerName": "Halifax Public Libraries"
+      },
+      "decision": {
+        "kind": "official_source_cancelled",
+        "reviewedAt": "2026-10-28T23:15:17.864Z",
+        "reason": "The current official Halifax Public Libraries detail page marks this exact November 20 occurrence Cancelled."
+      },
+      "evidence": [
+        {
+          "kind": "current_official_source",
+          "url": "https://halifax.bibliocommons.com/v2/events/6abab4a3ebad22004541877c",
+          "observedAt": "2026-10-28T23:15:17.864Z",
+          "observation": "Official detail page shows the exact title, Friday November 20 3:30–4:30 p.m. occurrence and Cancelled status."
+        },
+        {
+          "kind": "scheduled_refresh_diagnostics",
+          "url": "https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/40781661292/artifacts/12856374615",
+          "path": "city-event-source-drift-report.json",
+          "observation": "Exact accepted ID appears in heldRemovals after successful Bedford collection; the refresh failed closed and did not silently remove it."
+        }
+      ]
+    },
     {
       "expected": {
         "id": "halifax-public-libraries-18e0f73c90fb3674",
