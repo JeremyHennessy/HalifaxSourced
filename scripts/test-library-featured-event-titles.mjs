@@ -67,7 +67,7 @@ try {
     assert.equal(output.events.length, headings.length + 2);
     const repaired = output.events.find(event => event.eventUrl === published.eventUrl);
     assert.equal(repaired.title, title);
-    assert.equal(repaired.id, published.id, 'Display cleanup must not change the legacy title hash used by the published saved-event ID');
+    assert.notEqual(repaired.id, published.id, 'Fresh library detail IDs include the official detail identity');
     assert.equal(repaired.startAt, published.startAt);
     assert.equal(repaired.endAt, published.endAt);
     assert.equal(repaired.observedAt, refreshedAt, 'Only genuinely mocked refreshed source evidence receives the fixture observation clock');
@@ -77,7 +77,7 @@ try {
     const durable = { ...published, id: 'older-canonical-saved-id', duplicateEventIds: ['older-saved-alias'] };
     const [reconciled] = preservePublishedEventIds([repaired], [durable]);
     assert.equal(reconciled.id, durable.id, 'Existing strict occurrence reconciliation preserves prior canonical IDs too');
-    assert.deepEqual(new Set(reconciled.duplicateEventIds), new Set(['older-saved-alias', published.id]));
+    assert.deepEqual(new Set(reconciled.duplicateEventIds), new Set(['older-saved-alias', repaired.id]));
     assert.equal(reconciled.observedAt, refreshedAt, 'Identity reconciliation cannot restore the older source clock');
     assert.equal(preservePublishedEventIds([reconciled], [durable])[0].id, durable.id);
     const json = JSON.stringify(output);
