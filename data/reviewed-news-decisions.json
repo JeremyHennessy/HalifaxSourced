@@ -120,6 +120,216 @@
         "reviewer": "Halifax Sourced source review",
         "rightsBasis": "Original factual title and attributed link to CityNews Halifax; publisher credits Natasha O'Neill. No article body, quotations, descriptions or images copied. Public access does not establish a republication licence. Observation provenance: observedAt is the upper bound of the reviewed 2026-10-27T20:53:39.000Z to 2026-10-27T20:53:45.000Z tool-response window, not an exact fetch time; source admission retains the receipt reference."
       }
+    },
+    {
+      "id": "news-977c0ec8249d5d55b6e58cf0",
+      "status": "approved",
+      "record": {
+        "id": "news-977c0ec8249d5d55b6e58cf0",
+        "canonicalUrl": "https://globalnews.ca/news/12113825/nova-scotia-adopt-a-bat/",
+        "sourceId": "global-halifax",
+        "sourceName": "Global News Halifax",
+        "sourceGUID": "https://globalnews.ca/news/12113825/nova-scotia-adopt-a-bat/",
+        "source_type": "newsroom",
+        "title": "Bat-conservation fundraiser launched in Nova Scotia",
+        "region": "Nova Scotia",
+        "regionEvidence": "Report concerns a Nova Scotia conservation initiative.",
+        "topics": [
+          "Community",
+          "Environment"
+        ],
+        "publishedAt": "2026-10-22",
+        "publishedPrecision": "day",
+        "modifiedAt": null,
+        "observedAt": "2026-10-27T23:42:35.000Z",
+        "reviewStatus": "approved",
+        "correctionStatus": "none",
+        "summary": null,
+        "summaryKind": "none",
+        "reviewedAt": "2026-10-27T23:48:37.000Z",
+        "reviewer": "Halifax Sourced source review",
+        "rightsBasis": "Original factual title and attributed canonical outbound link only. No copied article body, quotations, excerpts, descriptions, images or logos. Public accessibility is not a republication licence. No automated publication or collection permission inferred. Manual primary-page evidence: https://globalnews.ca/news/12113825/nova-scotia-adopt-a-bat/; Crawled: yesterday. Cached view; exact cache freshness and origin retrieval time unknown. observedAt is the upper bound of 2026-10-27T23:42:25.000Z through 2026-10-27T23:42:35.000Z, not an exact origin fetch time. Publisher displays October 22, 2026, with an unqualified local clock and same-day update. Preserve day only; modification instant unknown."
+      }
+    },
+    {
+      "id": "news-a718562303b817d0277762d0",
+      "status": "approved",
+      "record": {
+        "id": "news-a718562303b817d0277762d0",
+        "canonicalUrl": "https://globalnews.ca/news/12109690/halifax-forum-community-meeting-reschedule/",
+        "sourceId": "global-halifax",
+        "sourceName": "Global News Halifax",
+        "sourceGUID": "https://globalnews.ca/news/12109690/halifax-forum-community-meeting-reschedule/",
+        "source_type": "newsroom",
+        "title": "Council backs rescheduling Halifax Forum public meeting",
+        "region": "Halifax",
+        "regionEvidence": "Report identifies Halifax Forum and Halifax Regional Council.",
+        "topics": [
+          "Community",
+          "Local services"
+        ],
+        "publishedAt": "2026-10-20",
+        "publishedPrecision": "day",
+        "modifiedAt": null,
+        "observedAt": "2026-10-27T23:43:18.000Z",
+        "reviewStatus": "approved",
+        "correctionStatus": "none",
+        "summary": null,
+        "summaryKind": "none",
+        "reviewedAt": "2026-10-27T23:48:37.000Z",
+        "reviewer": "Halifax Sourced source review",
+        "rightsBasis": "Original factual title and attributed canonical outbound link only. No copied article body, quotations, excerpts, descriptions, images or logos. Public accessibility is not a republication licence. No automated publication or collection permission inferred. Manual primary-page evidence: https://globalnews.ca/news/12109690/halifax-forum-community-meeting-reschedule/; Crawled: yesterday. Cached view; exact cache freshness and origin retrieval time unknown. observedAt is the upper bound of 2026-10-27T23:43:12.000Z through 2026-10-27T23:43:18.000Z, not an exact origin fetch time. Publisher displays October 20, 2026, with an unqualified local clock and same-day update. Preserve day only; modification instant unknown."
+      }
+    },
+    {
+      "id": "news-e268646611a4077b2c01e2d3",
+      "status": "approved",
+      "record": {
+        "id": "news-e268646611a4077b2c01e2d3",
+        "canonicalUrl": "https://www.thecoast.ca/lifestyle/halifaxs-emily-morgulis-builds-activewear-brand-inspired-by-her-grandmother/",
+        "sourceId": "the-coast",
+        "sourceName": "The Coast",
+        "sourceGUID": "https://www.thecoast.ca/lifestyle/halifaxs-emily-morgulis-builds-activewear-brand-inspired-by-her-grandmother/",
+        "source_type": "newsroom",
+        "title": "Halifax entrepreneur develops Swazona activewear brand",
+        "region": "Halifax",
+        "regionEvidence": "Publisher article identifies Swazona as Halifax-based and describes local creative collaborators.",
+        "topics": [
+          "Business",
+          "Local news"
+        ],
+        "publishedAt": "2026-10-26",
+        "publishedPrecision": "day",
+        "modifiedAt": null,
+        "observedAt": "2026-10-27T23:42:54.660Z",
+        "reviewStatus": "approved",
+        "correctionStatus": "none",
+        "summary": null,
+        "summaryKind": "none",
+        "reviewedAt": "2026-10-27T23:48:37.000Z",
+        "reviewer": "Halifax Sourced source review",
+        "rightsBasis": "Original factual title and attributed canonical outbound link only. No copied article body, quotations, excerpts, descriptions, images or logos. Public accessibility is not a republication licence. No automated publication or collection permission inferred. Manual primary-page evidence: https://www.thecoast.ca/lifestyle/halifaxs-emily-morgulis-builds-activewear-brand-inspired-by-her-grandmother/; Crawled: today. Cached view; exact cache freshness and origin retrieval time unknown. observedAt is the upper bound of 2026-10-27T23:42:53.909Z through 2026-10-27T23:42:54.660Z, not an exact origin fetch time. Page displays October 26, 2026 twice at the byline. No timezone-qualified publication instant; retain day only."
+      }
+    },
+    {
+      "id": "news-08a8b678e60a3118a41ad9ae",
+      "status": "approved",
+      "record": {
+        "id": "news-08a8b678e60a3118a41ad9ae",
+        "canonicalUrl": "https://www.thecoast.ca/news-opinion/best-of-halifax-2027-nominate-your-favourites-now/",
+        "sourceId": "the-coast",
+        "sourceName": "The Coast",
+        "sourceGUID": "https://www.thecoast.ca/news-opinion/best-of-halifax-2027-nominate-your-favourites-now/",
+        "source_type": "newsroom",
+        "title": "The Coast opens nominations for Best of Halifax 2027",
+        "region": "Halifax",
+        "regionEvidence": "Publisher announcement names the Best of Halifax awards and nominations for local food, music, shops and other categories.",
+        "topics": [
+          "Community",
+          "Local news"
+        ],
+        "publishedAt": "2026-10-22",
+        "publishedPrecision": "day",
+        "modifiedAt": null,
+        "observedAt": "2026-10-27T23:42:46.934Z",
+        "reviewStatus": "approved",
+        "correctionStatus": "none",
+        "summary": null,
+        "summaryKind": "none",
+        "reviewedAt": "2026-10-27T23:48:37.000Z",
+        "reviewer": "Halifax Sourced source review",
+        "rightsBasis": "Original factual title and attributed canonical outbound link only. No copied article body, quotations, excerpts, descriptions, images or logos. Public accessibility is not a republication licence. No automated publication or collection permission inferred. Manual primary-page evidence: https://www.thecoast.ca/news-opinion/best-of-halifax-2027-nominate-your-favourites-now/; Crawled: 2 days ago. Cached view; exact cache freshness and origin retrieval time unknown. observedAt is the upper bound of 2026-10-27T23:42:46.227Z through 2026-10-27T23:42:46.934Z, not an exact origin fetch time. Page displays October 22, 2026 twice at the byline. No timezone-qualified publication instant; retain day only."
+      }
+    },
+    {
+      "id": "news-ad7f15af910c05d9de5b8b62",
+      "status": "approved",
+      "record": {
+        "id": "news-ad7f15af910c05d9de5b8b62",
+        "canonicalUrl": "https://www.thecoast.ca/arts-music/sketching-the-meaning-of-home-the-artist-behind-royales-halifax-box-art/",
+        "sourceId": "the-coast",
+        "sourceName": "The Coast",
+        "sourceGUID": "https://www.thecoast.ca/arts-music/sketching-the-meaning-of-home-the-artist-behind-royales-halifax-box-art/",
+        "source_type": "newsroom",
+        "title": "Halifax artist creates local landmark illustrations for Royale",
+        "region": "Halifax",
+        "regionEvidence": "Report identifies Halifax artist Wynand van Niekerk and artwork depicting Halifax Public Gardens and Peggy's Cove.",
+        "topics": [
+          "Arts & Culture",
+          "Community"
+        ],
+        "publishedAt": "2026-10-08",
+        "publishedPrecision": "day",
+        "modifiedAt": null,
+        "observedAt": "2026-10-27T23:42:41.053Z",
+        "reviewStatus": "approved",
+        "correctionStatus": "none",
+        "summary": null,
+        "summaryKind": "none",
+        "reviewedAt": "2026-10-27T23:48:37.000Z",
+        "reviewer": "Halifax Sourced source review",
+        "rightsBasis": "Original factual title and attributed canonical outbound link only. No copied article body, quotations, excerpts, descriptions, images or logos. Public accessibility is not a republication licence. No automated publication or collection permission inferred. Manual primary-page evidence: https://www.thecoast.ca/arts-music/sketching-the-meaning-of-home-the-artist-behind-royales-halifax-box-art/; Crawled: today. Cached view; exact cache freshness and origin retrieval time unknown. observedAt is the upper bound of 2026-10-27T23:42:40.326Z through 2026-10-27T23:42:41.053Z, not an exact origin fetch time. Page displays October 8, 2026 twice at the byline. No timezone-qualified publication instant; retain day only."
+      }
+    },
+    {
+      "id": "news-32a5904109882638e7e54f5c",
+      "status": "approved",
+      "record": {
+        "id": "news-32a5904109882638e7e54f5c",
+        "canonicalUrl": "https://www.thecoast.ca/arts-music/arts-culture/a-new-trading-card-game-is-taking-nova-scotia-by-storm/",
+        "sourceId": "the-coast",
+        "sourceName": "The Coast",
+        "sourceGUID": "https://www.thecoast.ca/arts-music/arts-culture/a-new-trading-card-game-is-taking-nova-scotia-by-storm/",
+        "source_type": "newsroom",
+        "title": "Nova Scotia-made card game finds players in Halifax and Dartmouth",
+        "region": "Nova Scotia",
+        "regionEvidence": "Report identifies the creator as from Inverness County, production in Truro, and game activity in Halifax, Dartmouth and Sydney.",
+        "topics": [
+          "Arts & Culture",
+          "Community"
+        ],
+        "publishedAt": "2026-10-07",
+        "publishedPrecision": "day",
+        "modifiedAt": null,
+        "observedAt": "2026-10-27T23:42:46.934Z",
+        "reviewStatus": "approved",
+        "correctionStatus": "none",
+        "summary": null,
+        "summaryKind": "none",
+        "reviewedAt": "2026-10-27T23:48:37.000Z",
+        "reviewer": "Halifax Sourced source review",
+        "rightsBasis": "Original factual title and attributed canonical outbound link only. No copied article body, quotations, excerpts, descriptions, images or logos. Public accessibility is not a republication licence. No automated publication or collection permission inferred. Manual primary-page evidence: https://www.thecoast.ca/arts-music/arts-culture/a-new-trading-card-game-is-taking-nova-scotia-by-storm/; Crawled: today. Cached view; exact cache freshness and origin retrieval time unknown. observedAt is the upper bound of 2026-10-27T23:42:46.227Z through 2026-10-27T23:42:46.934Z, not an exact origin fetch time. Page displays October 7, 2026 twice at the byline. No timezone-qualified publication instant; retain day only."
+      }
+    },
+    {
+      "id": "news-f0ba9c95723962946dc570c7",
+      "status": "approved",
+      "record": {
+        "id": "news-f0ba9c95723962946dc570c7",
+        "canonicalUrl": "https://signalhfx.ca/live-nocturne-2026-a-fun-thoughtful-night-out-in-the-embodied-city/",
+        "sourceId": "the-signal",
+        "sourceName": "The Signal",
+        "sourceGUID": "https://signalhfx.ca/live-nocturne-2026-a-fun-thoughtful-night-out-in-the-embodied-city/",
+        "source_type": "newsroom",
+        "title": "The Signal reports on Nocturne art projects in Halifax and Dartmouth",
+        "region": "Halifax Regional Municipality",
+        "regionEvidence": "Report covers art projects on both Halifax and Dartmouth waterfronts, including Halifax Central Library and Alderney Landing.",
+        "topics": [
+          "Arts & Culture",
+          "Community"
+        ],
+        "publishedAt": "2026-10-17",
+        "publishedPrecision": "day",
+        "modifiedAt": null,
+        "observedAt": "2026-10-27T23:42:41.053Z",
+        "reviewStatus": "approved",
+        "correctionStatus": "none",
+        "summary": null,
+        "summaryKind": "none",
+        "reviewedAt": "2026-10-27T23:48:37.000Z",
+        "reviewer": "Halifax Sourced source review",
+        "rightsBasis": "Original factual title and attributed canonical outbound link only. No copied article body, quotations, excerpts, descriptions, images or logos. Public accessibility is not a republication licence. No automated publication or collection permission inferred. Manual primary-page evidence: https://signalhfx.ca/live-nocturne-2026-a-fun-thoughtful-night-out-in-the-embodied-city/; Crawled: today. Cached view; exact cache freshness and origin retrieval time unknown. observedAt is the upper bound of 2026-10-27T23:42:40.326Z through 2026-10-27T23:42:41.053Z, not an exact origin fetch time. Publisher explicitly displays Oct. 17, 2026 at 6:00 p.m. and update Oct. 20, 2026. Timezone and update instant unknown. Preserve published day October 17; modifiedAt null rather than fabricate an instant."
+      }
     }
   ]
 }

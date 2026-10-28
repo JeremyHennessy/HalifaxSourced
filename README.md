@@ -110,7 +110,7 @@ The city pipeline currently combines sources including:
 - selected Halifax, Dartmouth and Bedford Halifax Public Libraries branches
 - HalifaxEvents.ca when its current markup yields structured records
 
-`data/event-source-registry.json` and `data/event-source-supplements.json` define the source registry. `scripts/import-city-events.mjs` and `scripts/import-supplemental-city-events.mjs` perform collection. `scripts/sanitize-city-events.mjs` then restricts the public event dataset to Halifax, Dartmouth and Bedford and normalizes categories. Province-wide Tourism Nova Scotia records are never allowed to default to Halifax merely because a location could not be parsed.
+`data/event-source-registry.json` and `data/event-source-supplements.json` define the source registry. `scripts/import-city-events.mjs` and `scripts/import-supplemental-city-events.mjs` perform collection. `scripts/sanitize-city-events.mjs` then restricts the public event dataset to Halifax, Dartmouth and Bedford and normalizes categories. Province-wide Tourism Nova Scotia records are never allowed to default to Halifax merely because a location could not be parsed. Exact reviewed legacy navigation extractions are reversibly quarantined from active projections while their complete original evidence is preserved; see [reviewed event quarantine](docs/reviewed-event-quarantine.md).
 
 The current category vocabulary includes Sports, Music, Arts, Food & Drink, Festivals, Markets, Comedy, Outdoor, Community and Other. The Events UI exposes category filters, 7/30/90-day windows, All Upcoming, and progressive Load More behavior.
 

@@ -103,6 +103,7 @@ jobs:
           node scripts/test-media-reference-validation.mjs
           node scripts/test-thumbnail-observation-clocks.mjs
           node scripts/test-event-refresh-dedupe.mjs
+          node scripts/test-reviewed-event-quarantine.mjs
           node scripts/test-canonical-event-dedupe.mjs
           node scripts/test-event-identity-continuity.mjs
 

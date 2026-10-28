@@ -1,5 +1,6 @@
 import { fetchGuardedSource as fetch } from "./lib/fetch-public-source.mjs";
 import { createHash } from "node:crypto";
+import { canonicalEventKey, dedupeCanonicalEvents } from "./lib/canonical-event-dedupe.mjs";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 
 const payloadUrl = new URL("../data/build/city-events.json", import.meta.url);
@@ -415,15 +416,25 @@ async function importLibraries(source) {
   return events;
 }
 
+function collectedEventKey(event) {
+  const canonical = canonicalEventKey(event);
+  if (canonical) return canonical;
+  // Other adapters may repeat a row across pages. Require the same durable ID,
+  // source, exact occurrence and event URL; a title/day/venue is not identity.
+  const stamp = Date.parse(event.startAt);
+  return event.id && event.sourceId && event.eventUrl && Number.isFinite(stamp)
+    ? JSON.stringify([event.id, event.sourceId, event.eventUrl, stamp])
+    : null;
+}
+
 function dedupe(items) {
-  const map = new Map();
-  for (const event of items) {
-    const key = `${normalized(event.title)}|${String(event.startAt).slice(0, 10)}|${normalized(event.venueName || event.address || event.city)}`;
-    const existing = map.get(key);
-    if (!existing) { map.set(key, event); continue; }
-    if ((event.sourceKind || "").startsWith("official") && !(existing.sourceKind || "").startsWith("official")) map.set(key, event);
-  }
-  return [...map.values()].sort((a, b) => String(a.startAt).localeCompare(String(b.startAt)) || String(a.title).localeCompare(String(b.title)));
+  // Keep the established official-source preference, but only merge rows that
+  // share a strict occurrence identity. Stable sorting preserves source order
+  // among equally authoritative rows and never mutates the collected input.
+  const preferred = items.slice().sort((a, b) =>
+    Number((b.sourceKind || "").startsWith("official")) - Number((a.sourceKind || "").startsWith("official")));
+  return dedupeCanonicalEvents(preferred, collectedEventKey)
+    .sort((a, b) => String(a.startAt).localeCompare(String(b.startAt)) || String(a.title).localeCompare(String(b.title)));
 }
 
 const supplemental = [];

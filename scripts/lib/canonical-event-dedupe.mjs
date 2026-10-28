@@ -45,14 +45,14 @@ export function canonicalEventKey(event) {
   if(teams.length!==2 || teams.some(team=>!team) || !venue || !Number.isFinite(stamp)) return null;
   return `${teams.join('|')}|${venue}|${stamp}`;
 }
-export function dedupeCanonicalEvents(events) {
+export function dedupeCanonicalEvents(events, keyForEvent = canonicalEventKey) {
   const seen=new Map(), output=[];
   for(const event of events) {
-    const key=canonicalEventKey(event), existing=key && seen.get(key);
+    const key=keyForEvent(event), existing=key && seen.get(key);
     if(!existing) {const copy={...event};output.push(copy);if(key)seen.set(key,copy);continue;}
     existing.sourceUrls=[...new Set([...(existing.sourceUrls||[]),existing.eventUrl,existing.sourceUrl,existing.ticketUrl,...(event.sourceUrls||[]),event.eventUrl,event.sourceUrl,event.ticketUrl].filter(Boolean))];
     existing.sourceIds=[...new Set([...(existing.sourceIds||[]),existing.sourceId,...(event.sourceIds||[]),event.sourceId].filter(Boolean))];
-    existing.duplicateEventIds=[...new Set([...(existing.duplicateEventIds||[]),event.id,...(event.duplicateEventIds||[])].filter(Boolean))];
+    existing.duplicateEventIds=[...new Set([...(existing.duplicateEventIds||[]),event.id,...(event.duplicateEventIds||[])].filter(id => id && id !== existing.id))];
   }
   return output;
 }

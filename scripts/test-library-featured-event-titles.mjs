@@ -20,6 +20,7 @@ try {
   await mkdir(join(root, 'scripts/lib'), { recursive: true });
   await mkdir(join(root, 'data/build'), { recursive: true });
   await copyFile(new URL('./import-supplemental-city-events.mjs', import.meta.url), join(root, 'scripts/import-supplemental-city-events.mjs'));
+  await copyFile(new URL('./lib/canonical-event-dedupe.mjs', import.meta.url), join(root, 'scripts/lib/canonical-event-dedupe.mjs'));
   const headings = [
     ['6abe6719e06996003a8073b8', `<span>${title}</span><span>Featured Event. ${title}</span>`, title],
     ['6abe6719e06996003a8073b9', 'Featured Event. How Curators Choose Programmes', 'How Curators Choose Programmes'],

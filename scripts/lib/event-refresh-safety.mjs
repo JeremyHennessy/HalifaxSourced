@@ -1,4 +1,5 @@
 import { canonicalEventKey, preservePublishedEventIds, assertUniqueEventIds } from "./canonical-event-dedupe.mjs";
+import { applyReviewedEventQuarantine } from "./reviewed-event-quarantine.mjs";
 
 const DAY = 86400000;
 const normalize = value => String(value || "").normalize("NFKD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
@@ -64,8 +65,10 @@ export function reconcileFutureEventLosses(current, previous, options = {}) {
   if (!Number.isFinite(now)) throw new Error("Invalid refresh guard clock");
   const recentStartCutoff = now - Number(options.pastGraceHours ?? 6) * 3600000;
   const maxTime = now + Number(options.futureDays ?? 400) * DAY;
-  const previousEvents = previous.events || [];
-  const currentEvents = preservePublishedEventIds(current.events || [], previousEvents);
+  const previousQuarantine = applyReviewedEventQuarantine(previous.events || [], options.reviewedQuarantine);
+  const currentQuarantine = applyReviewedEventQuarantine(current.events || [], options.reviewedQuarantine);
+  const previousEvents = previousQuarantine.events;
+  const currentEvents = preservePublishedEventIds(currentQuarantine.events, previousEvents);
   current = { ...current, events: currentEvents };
   const representedIds = new Set(currentEvents.flatMap(event => [
     event.id, ...(event.duplicateEventIds || []), ...(event.supersedesEventIds || [])
@@ -147,6 +150,7 @@ export function reconcileFutureEventLosses(current, previous, options = {}) {
     retained,
     heldRemovals,
     ignoredPrevious,
-    blocked: heldRemovals.length > 0
+    reviewedQuarantine: { previous: previousQuarantine.receipt, current: currentQuarantine.receipt },
+    blocked: heldRemovals.length > 0 || previousQuarantine.blocked || currentQuarantine.blocked
   };
 }

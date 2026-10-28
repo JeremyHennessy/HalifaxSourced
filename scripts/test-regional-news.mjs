@@ -182,7 +182,8 @@ const cityNewsSource = reviewedRegistry.sources.find(row => row.id === 'citynews
 assert.equal(cityNewsSource.status, 'admitted');
 assert.equal(cityNewsSource.enabled, false);
 assert.equal(cityNewsSource.feedUrl, null);
-assert.match(cityNewsSource.admission.accessEvidence, /turn277view2/);
+assert.match(cityNewsSource.admission.accessEvidence, /Successful text\/html web-reader result with 136 lines/);
+assert.doesNotMatch(cityNewsSource.admission.accessEvidence, /turn\d+(?:view|search|fetch)\d+/);
 assert.match(cityNewsSource.admission.accessEvidence, /2026-10-27T20:53:39\.000Z through 2026-10-27T20:53:45\.000Z/);
 assert.match(cityNewsSource.admission.accessEvidence, /upper bound, not an exact fetch time/);
 const reviewedPayload = buildNews(reviewedDecisions, reviewedRegistry);
@@ -212,3 +213,143 @@ assert.equal(manualSourceRequests, 0);
 assert.equal(manualSourceResult.diagnostics[0].status, 'disabled');
 assert.deepEqual(manualSourceResult.candidates, []);
 console.log('Reviewed CityNews regression passed: exact approved pair, day precision, bounded observation provenance, null summary and disabled collection.');
+
+// Reviewed October 27 expansion is additive. Freeze the pre-expansion decisions
+// and six registry entries so new manual admissions cannot rewrite old clocks,
+// preview permissions, disabled sources or historic access evidence. The sole
+// pre-existing source change removes CityNews's opaque tool receipt reference;
+// its publisher URL, 136-line receipt, windows, access outcome and states stay intact.
+const { createHash } = await import('node:crypto');
+const digest = value => createHash('sha256').update(JSON.stringify(value)).digest('hex');
+const retainedDecisionHashes = {
+ 'news-81a930d96a2a76a3cbe04cb9':'ed2df10c0b2b2485535756233862c07f9d3574b8f9681f3d35cba4bcd063f0f2',
+ 'news-c3ab1f08f5c4ffbe39559478':'79298fd6cd566f5fe41fd6f8acdb20c9c908ee8950c5da0c3ec2cf1bd4d361e1',
+ 'news-8f4e6405f6c6e8856e667bc9':'66a204d14cd3a5fec764ba2d551a52623535411fb8db4d25b46bb8c985930532',
+ 'news-1fb9284920d1d77fe4f03345':'7a44c7a91547fcc68f7c5a89a8361de3235c0a9b6ebccc24e2fc5940e2ad57e3'
+};
+const retainedSourceHashes = {
+ 'global-halifax':'776bc3f4c284a1c0974c9b658f665847aea6604cf5b43be146e181ca4c3fb61c',
+ 'halifax-libraries':'c627bc6b6cf69f56db59b8d695f7fdba0d2b65ac3046dbb5c711c38aa42de7ee',
+ 'ns-traffic':'c35bd1ad19248763cb20b9525de78d8e55f912155d84aecab9d6eebcc8acf377',
+ 'ns-newsroom':'8067ad18e890f5bdcb2e48dcc83310e9cd241287d129f44792532ba8aaef8594',
+ 'cbc-ns':'2e40823dce5379438e53ccd20ea48d58721f08b4d06b455efa43591dd6d4067a',
+ 'citynews-halifax':'f0f6d664ce44551f0751f22a92b668c06d860b41a1ce5f6ebf969a7a559ddc72'
+};
+for (const [id, hash] of Object.entries(retainedDecisionHashes)) {
+ assert.equal(digest(reviewedDecisions.decisions.find(row => row.id === id)), hash, `Preserve complete original decision ${id}`);
+}
+for (const [id, hash] of Object.entries(retainedSourceHashes)) {
+ assert.equal(digest(reviewedRegistry.sources.find(row => row.id === id)), hash, `Preserve original source settings and evidence ${id}`);
+}
+const expansionExpected = [
+  [
+    "news-977c0ec8249d5d55b6e58cf0",
+    "global-halifax",
+    "https://globalnews.ca/news/12113825/nova-scotia-adopt-a-bat/",
+    "Bat-conservation fundraiser launched in Nova Scotia",
+    "2026-10-22",
+    "Nova Scotia",
+    "2026-10-27T23:42:35.000Z"
+  ],
+  [
+    "news-a718562303b817d0277762d0",
+    "global-halifax",
+    "https://globalnews.ca/news/12109690/halifax-forum-community-meeting-reschedule/",
+    "Council backs rescheduling Halifax Forum public meeting",
+    "2026-10-20",
+    "Halifax",
+    "2026-10-27T23:43:18.000Z"
+  ],
+  [
+    "news-e268646611a4077b2c01e2d3",
+    "the-coast",
+    "https://www.thecoast.ca/lifestyle/halifaxs-emily-morgulis-builds-activewear-brand-inspired-by-her-grandmother/",
+    "Halifax entrepreneur develops Swazona activewear brand",
+    "2026-10-26",
+    "Halifax",
+    "2026-10-27T23:42:54.660Z"
+  ],
+  [
+    "news-08a8b678e60a3118a41ad9ae",
+    "the-coast",
+    "https://www.thecoast.ca/news-opinion/best-of-halifax-2027-nominate-your-favourites-now/",
+    "The Coast opens nominations for Best of Halifax 2027",
+    "2026-10-22",
+    "Halifax",
+    "2026-10-27T23:42:46.934Z"
+  ],
+  [
+    "news-ad7f15af910c05d9de5b8b62",
+    "the-coast",
+    "https://www.thecoast.ca/arts-music/sketching-the-meaning-of-home-the-artist-behind-royales-halifax-box-art/",
+    "Halifax artist creates local landmark illustrations for Royale",
+    "2026-10-08",
+    "Halifax",
+    "2026-10-27T23:42:41.053Z"
+  ],
+  [
+    "news-32a5904109882638e7e54f5c",
+    "the-coast",
+    "https://www.thecoast.ca/arts-music/arts-culture/a-new-trading-card-game-is-taking-nova-scotia-by-storm/",
+    "Nova Scotia-made card game finds players in Halifax and Dartmouth",
+    "2026-10-07",
+    "Nova Scotia",
+    "2026-10-27T23:42:46.934Z"
+  ],
+  [
+    "news-f0ba9c95723962946dc570c7",
+    "the-signal",
+    "https://signalhfx.ca/live-nocturne-2026-a-fun-thoughtful-night-out-in-the-embodied-city/",
+    "The Signal reports on Nocturne art projects in Halifax and Dartmouth",
+    "2026-10-17",
+    "Halifax Regional Municipality",
+    "2026-10-27T23:42:41.053Z"
+  ]
+];
+for (const [id, sourceId, canonicalUrl, title, publishedAt, region, observedAt] of expansionExpected) {
+ const row = reviewedPayload.items.find(item => item.id === id);
+ assert(row, `Missing reviewed item ${id}`);
+ assert.deepEqual([row.sourceId, row.canonicalUrl, row.title, row.publishedAt, row.region, row.observedAt], [sourceId, canonicalUrl, title, publishedAt, region, observedAt]);
+ assert.equal(row.sourceGUID, canonicalUrl);
+ assert.equal(row.id, newsId(canonicalUrl));
+ assert.equal(row.publishedPrecision, 'day');
+ assert.equal(row.modifiedAt, null, 'Unqualified publisher update clocks cannot become UTC instants');
+ assert.equal(row.summary, null);
+ assert.equal(row.summaryKind, 'none');
+ assert.equal(row.reviewedAt, '2026-10-27T23:48:37.000Z');
+ assert(row.reviewedAt > row.observedAt && row.observedAt > row.publishedAt);
+ assert(row.regionEvidence.length > 20, 'Story evidence, not publisher headquarters, supports geography');
+ for (const term of [/Manual primary-page evidence:/, /Crawled:/, /exact cache freshness and origin retrieval time unknown/, /upper bound of/, /not an exact origin fetch time/, /not a republication licence/]) assert.match(row.rightsBasis, term);
+ assert(row.rightsBasis.includes(row.canonicalUrl), 'Public evidence identifies the canonical publisher page');
+ assert.doesNotMatch(row.rightsBasis, /turn\d+(?:view|search|fetch)\d+|\/(?:tmp|workspace|home)\/|sediment:|[?&](?:token|signature|sig|api_key)=/i, 'No internal tool receipts, private paths or signed URLs in new public provenance');
+ const source = reviewedRegistry.sources.find(item => item.id === sourceId);
+ assert.equal(canonicalNewsUrl(row.canonicalUrl, source.allowedHosts), row.canonicalUrl);
+ assert.deepEqual(Object.keys(row).sort(), Object.keys(cityNewsRecord).sort(), 'No publisher-body, image or unreviewed metadata fields');
+ for (const unsafe of [
+   {reviewStatus:'pending'}, {body:'publisher body'}, {imageUrl:'https://example.org/photo.jpg'},
+   {summary:'feed excerpt', summaryKind:'feed_description'}, {canonicalUrl:'javascript:alert(1)'},
+   {canonicalUrl:'https://user:secret@'+new URL(canonicalUrl).hostname+'/'},
+   {regionEvidence:''}, {publishedAt:'2026-02-30'}, {publishedAt:row.observedAt, publishedPrecision:'day'}
+ ]) assert.throws(() => buildNews({version:1,decisions:[{id,status:'approved',record:{...row,...unsafe}}]},reviewedRegistry));
+ const proposedOnly = {...reviewedRegistry,sources:reviewedRegistry.sources.map(item=>item.id===sourceId?{...item,status:'proposed',enabled:false,admission:null}:item)};
+ assert.throws(() => buildNews({version:1,decisions:[{id,status:'approved',record:row}]},proposedOnly), /invalid_accepted_news_shape/);
+}
+assert.equal(reviewedPayload.items.length, 11);
+assert.equal(new Set(reviewedPayload.items.map(row=>row.sourceId)).size, 5);
+assert.equal(reviewedRegistry.sources.length, 8);
+assert.deepEqual(reviewedRegistry.sources.filter(row=>row.enabled).map(row=>row.id), ['global-halifax'], 'Only the existing preview feed stays enabled');
+for (const id of ['the-coast','the-signal']) {
+ const source = reviewedRegistry.sources.find(row=>row.id===id);
+ assert.equal(source.status,'admitted'); assert.equal(source.enabled,false); assert.equal(source.feedUrl,null);
+ assert.doesNotMatch(JSON.stringify(source.admission), /turn\d+(?:view|search|fetch)\d+|\/(?:tmp|workspace|home)\/|sediment:|[?&](?:token|signature|sig|api_key)=/i);
+ assert.match(source.admission.schemaEvidence,/manually reviewed/);
+ assert.match(source.admission.rightsEvidence,/No blanket reuse or automated collection permission inferred/);
+ let calls=0;
+ const result = await collectNews({version:1,sources:[source]}, {now:'2026-10-28T00:00:00.000Z',fetchFeed:async()=>{calls++;throw new Error('manual_source_must_not_collect');}});
+ assert.equal(calls,0);assert.equal(result.diagnostics[0].status,'disabled');assert.deepEqual(result.candidates,[]);
+}
+assert.deepEqual(await readJson('data/build/news.json'), reviewedPayload);
+assert.equal(await readFile(new URL('../data/news.js',import.meta.url),'utf8'), newsScript(reviewedPayload));
+assert.deepEqual(buildNews(reviewedDecisions, reviewedRegistry), reviewedPayload, 'No review or observation clock churn on rebuild');
+assert.match(await readFile(new URL('../index.html',import.meta.url),'utf8'), /data\/news\.js\?v=20261027-news-expansion-1/);
+console.log('Reviewed publisher expansion passed: 7 original-title links, 11 total items/5 publishers, all 4 original decisions and 6 original source states preserved (one opaque CityNews receipt removed), cached observation windows, exact JSON/JS parity, no media/body/unreviewed promotion, 2 manual-only admissions.');

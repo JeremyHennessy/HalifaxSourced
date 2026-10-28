@@ -5,6 +5,7 @@ import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { iso, latest, freshness, snapshotValue } from './lib/update-consistency.mjs';
 import { sourceRunHealth } from './lib/source-run-health.mjs';
+import { validateOnboardingBacklog } from './lib/source-onboarding-backlog.mjs';
 const root = new URL('../', import.meta.url);
 const rows = value => Array.isArray(value) ? value.filter(x => x && typeof x === 'object' && !Array.isArray(x)) : [];
 const label = value => typeof value === 'string' ? value.replace(/[\x00-\x1f]/g, '').slice(0, 200) : null;
@@ -80,6 +81,7 @@ export function buildCatalog(inputs) {
     row.contentAt = latest([row.contentAt, content && (!observed || Date.parse(content) <= Date.parse(observed) + 864e5) ? content : null]);
     if (!row.provenance.includes(path)) row.provenance.push(path);
     entries.set(id, row);
+    return row;
   }
   const city = inputs['data/build/city-events.json'] || {};
   for (const path of ['data/event-source-registry.json','data/event-source-supplements.json']) for (const record of rows(inputs[path]?.sources)) {
@@ -87,6 +89,20 @@ export function buildCatalog(inputs) {
     for (const stat of rows(city.sourceStats).filter(s => s.sourceId === record.id)) add('city-events', {...record, ...stat}, 'data/build/city-events.json', 'city-events', {registry:true, defaultEnabled:true, sourceId:record.id, receipt:true});
   }
   for (const [path,family,workflow] of [['data/place-source-registry.json','discovery-directories','restaurant-discovery-preview.yml'],['data/news-source-registry.json','news','news-preview.yml']]) for (const record of rows(inputs[path]?.sources)) add(family,record,path,family === 'news' ? 'regional-news' : null,{registry:true, workflow});
+  // This is the importer's exact static input, not an inferred news admission.
+  // Opening leads and snapshot generatedAt are not per-feed collection receipts.
+  const openingPath = 'data/opening-watch-source-registry.json';
+  const openingSnapshotPath = 'data/build/opening-watch-leads.json';
+  const openingSnapshot = inputs[openingSnapshotPath] || {};
+  for (const source of rows(inputs[openingPath]?.sources)) {
+    const record = {...source, kind:source.type};
+    const options = {workflow:'restaurant-discovery-preview.yml'};
+    add('opening-watch', record, openingPath, null, options);
+    if (rows(openingSnapshot.sources).some(row => publicUrl(row.url) === publicUrl(source.url)))
+      add('opening-watch', record, openingSnapshotPath, null, options);
+    for (const failure of rows(openingSnapshot.failures).filter(row => publicUrl(row.sourceUrl || row.url) === publicUrl(source.url)))
+      add('opening-watch', {...record, ...failure, url:source.url}, openingSnapshotPath, null, {...options, receipt:true, failure:true});
+  }
   for (const record of rows(inputs['data/event-source-candidates.json']?.candidates)) add('event-candidates',record,'data/event-source-candidates.json',null,{registry:true, held:/review|restricted|blocked|denied/.test(record.status || '')});
   const adapters = [
     ['official-sites','official-site-signals','official-sources',['results'],true],
@@ -128,6 +144,29 @@ export function buildCatalog(inputs) {
   // Catalog source references cover discovery, public map, editorial, owner, and
   // other families without claiming that an attached link was collected recently.
   for (const place of rows(Array.isArray(placePayload) ? placePayload : placePayload?.restaurants)) for (const source of rows(place.sources)) add('catalog-references', {...source, restaurantId:place.id, name:place.name, kind:source.type, city:place.neighborhood}, 'data/build/catalog.json', null);
+  // Manual onboarding observations are not collection receipts or link-QA
+  // provenance. Never merge these holds into existing operational row state.
+  const onboardingPath = 'data/source-onboarding-backlog.json';
+  if (inputs[onboardingPath]) {
+    const backlog = validateOnboardingBacklog(inputs[onboardingPath]);
+    for (const candidate of backlog.candidates) {
+      const row = add('source-onboarding', {id:candidate.id, name:candidate.name, url:candidate.url, enabled:false,
+        kind:candidate.categories.join(', '), city:candidate.geography}, onboardingPath, null, {registry:true, held:true});
+      row.lastAttemptAt = null; // Do not inherit a link-QA clock for this URL.
+      row.review = {kind:'candidate', status:'disabled_review_required', priority:candidate.priority, rank:candidate.rank,
+        interface:candidate.interface, format:{...candidate.format}, distinction:candidate.distinction,
+        existingRepresentation:candidate.existingRepresentation, accessLimitations:candidate.accessLimitations,
+        rightsLimitations:candidate.rightsLimitations, nextSafeAction:candidate.nextSafeAction,
+        evidence:candidate.evidence.map(item => ({url:publicUrl(item.url), observation:item.observation}))};
+    }
+    for (const hold of backlog.holds) {
+      const row = add('source-onboarding', {id:hold.id, name:hold.name, url:hold.url, enabled:false,
+        kind:'Manual onboarding hold'}, onboardingPath, null, {registry:true, held:true, allowNoUrl:true});
+      row.lastAttemptAt = null;
+      row.review = {kind:'hold', status:'mandatory_hold', holdReason:hold.holdReason,
+        evidence:[{url:publicUrl(hold.url), observation:hold.evidence}], nextSafeAction:hold.nextSafeAction};
+    }
+  }
   const sources = [...entries.values()].sort((a,b) => a.id.localeCompare(b.id));
   const snapshotAt = latest(sources.flatMap(row => [row.lastAttemptAt,row.lastSuccessAt]));
   for (const row of sources) {
@@ -136,10 +175,14 @@ export function buildCatalog(inputs) {
     row.freshness = freshness(row.lastSuccessAt, snapshotAt, row.targetHours);
     row.state = row.held ? 'held' : row.failing ? 'failing' : row.freshness === 'stale' ? 'stale' : row.enabled === true ? 'enabled' : 'unknown';
   }
-  return {version:1, snapshotAt, scope:'Offline inventory of committed registries, source relationships, and published evidence. Not live operations. Unknown clocks remain unknown; contentAt is publication/change time, not event date. Held overrides failure. Link discovery is not successful collection. Freshness is evaluated at the latest recorded evidence clock; the admin view also evaluates age at viewing time.', counts:{total:sources.length, ...Object.fromEntries(['enabled','held','failing','stale','unknown'].map(state => [state,sources.filter(x => x.state === state).length]))}, sources};
+  const urls = new Set(sources.map(row => row.url).filter(Boolean));
+  // Count endpoint hosts, not publishers or registrable domains. Ignore the
+  // conventional www alias and DNS trailing dot, while retaining subdomains.
+  const hosts = new Set([...urls].map(url => new URL(url).hostname.toLowerCase().replace(/\.$/, '').replace(/^www\./, '')));
+  return {version:1, snapshotAt, scope:'Offline inventory of committed registries, source relationships, and published evidence. Not live operations. Counts total and state totals are catalogue rows, including evidence/relationships; distinctUrls counts sanitized URLs; distinctHosts counts lowercase hostnames without leading www or a trailing DNS dot. Neither distinct count measures publishers. Target cadence is policy, not proof of an active schedule. Unknown clocks remain unknown; contentAt is publication/change time, not event date. Held overrides failure. Link discovery is not successful collection. Source-onboarding rows are disabled review candidates/manual holds, not ingested content or operational source admissions. Freshness is evaluated at the latest recorded evidence clock; the admin view also evaluates age at viewing time.', counts:{total:sources.length, distinctUrls:urls.size, distinctHosts:hosts.size, ...Object.fromEntries(['enabled','held','failing','stale','unknown'].map(state => [state,sources.filter(x => x.state === state).length]))}, sources};
 }
 export async function buildFromDisk() {
-  const paths = ['data/update-policy.json','data/place-source-registry.json','data/news-source-registry.json','data/event-source-candidates.json','data/feed-review-overrides.json','data/social-profile-review-overrides.json','data/source-quarantine.json','data/event-source-registry.json','data/event-source-supplements.json','data/social-platform-registry.json','data/source-link-access-holds.json', ...['catalog','city-events','first-party-sources','official-site-signals','structured-place-facts','structured-specials','website-feed-signals','website-page-intelligence','verified-source-pages','structured-events','social-signals','public-special-source-leads','directory-restaurant-leads','patio-directory-facts','ns-food-inspections'].map(x => `data/build/${x}.json`)];
+  const paths = ['data/update-policy.json','data/place-source-registry.json','data/news-source-registry.json','data/opening-watch-source-registry.json','data/source-onboarding-backlog.json','data/event-source-candidates.json','data/feed-review-overrides.json','data/social-profile-review-overrides.json','data/source-quarantine.json','data/event-source-registry.json','data/event-source-supplements.json','data/social-platform-registry.json','data/source-link-access-holds.json', ...['catalog','city-events','opening-watch-leads','first-party-sources','official-site-signals','structured-place-facts','structured-specials','website-feed-signals','website-page-intelligence','verified-source-pages','structured-events','social-signals','public-special-source-leads','directory-restaurant-leads','patio-directory-facts','ns-food-inspections'].map(x => `data/build/${x}.json`)];
   const inputs = {};
   for (const path of paths) {
     try { inputs[path] = JSON.parse(await readFile(new URL(path,root),'utf8')); }
