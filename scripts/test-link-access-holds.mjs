@@ -24,7 +24,8 @@ const fullReviewedPolicy = JSON.parse(await readFile(new URL('../data/source-lin
 // Preserve the original 224-receipt regression corpus independently of the
 // ten previously reviewed exact holds, six source-refresh holds, seven
 // Quality Gate holds, three Social Source holds and two current place-fact holds.
-const policyBeforePlaceFacts = {...structuredClone(fullReviewedPolicy), historicalEvidence:structuredClone(fullReviewedPolicy.historicalEvidence.slice(0, -2))};
+const policyBeforeBedfordMenus = {...structuredClone(fullReviewedPolicy), historicalEvidence:structuredClone(fullReviewedPolicy.historicalEvidence.slice(0, -1))};
+const policyBeforePlaceFacts = {...structuredClone(policyBeforeBedfordMenus), historicalEvidence:structuredClone(policyBeforeBedfordMenus.historicalEvidence.slice(0, -2))};
 const policyBeforeThumbnail = {...structuredClone(policyBeforePlaceFacts), historicalEvidence:structuredClone(policyBeforePlaceFacts.historicalEvidence.slice(0, -3))};
 const policyBeforeTako = {...structuredClone(policyBeforeThumbnail), historicalEvidence:structuredClone(policyBeforeThumbnail.historicalEvidence.slice(0, -7))};
 const reviewedBeforeCurrentRun = {...structuredClone(policyBeforeTako), historicalEvidence:structuredClone(policyBeforeTako.historicalEvidence.slice(0, -6))};
@@ -260,7 +261,8 @@ process.on('exit', () => {
   assert.equal(policyBeforeTako.historicalEvidence.length, reviewedBeforeCurrentRun.historicalEvidence.length + 6, 'Only six exact source-refresh HTTP 403 receipts extend the reviewed policy');
   assert.equal(policyBeforeThumbnail.historicalEvidence.length, policyBeforeTako.historicalEvidence.length + 7, 'Only seven exact Tako Sushi & Ramen HTTP 401 receipts extend the reviewed policy');
   assert.equal(policyBeforePlaceFacts.historicalEvidence.length, policyBeforeThumbnail.historicalEvidence.length + 3, 'Only three exact thumbnail-discovery HTTP 403 receipts extend the reviewed policy');
-  assert.equal(fullReviewedPolicy.historicalEvidence.length, policyBeforePlaceFacts.historicalEvidence.length + 2, 'Only two exact structured-place-fact HTTP 403 receipts extend the reviewed policy');
+  assert.equal(policyBeforeBedfordMenus.historicalEvidence.length, policyBeforePlaceFacts.historicalEvidence.length + 2, 'Only two exact structured-place-fact HTTP 403 receipts extend the reviewed policy');
+  assert.equal(fullReviewedPolicy.historicalEvidence.length, policyBeforeBedfordMenus.historicalEvidence.length + 1, 'Only the exact Bedford Basin Market menus HTTP 403 receipt extends the reviewed policy');
   const newBarriosGroups = priorReviewedPolicy.historicalEvidence.slice(-8, -3);
   for (const group of newBarriosGroups) {
     const p = group.provenance;
@@ -513,7 +515,7 @@ assert.equal(acceptedBarriosHolds.find('https://barrioshfx.ca/unknown-page'), nu
   await gate(thumbnailCheck.report);
   checked('three receipt-backed thumbnail URL holds are unattempted; sibling paths remain independently eligible');
 
-  const placeFactGroups = fullReviewedPolicy.historicalEvidence.slice(-2);
+  const placeFactGroups = policyBeforeBedfordMenus.historicalEvidence.slice(-2);
   const placeFactUrls = [
     'https://www.skipthedishes.com/?utm_source=mashaweemediterraneangrill.ca&utm_medium=microsites&utm_campaign=microsites',
     'https://www.skipthedishes.com/?utm_source=inspringhotpot.com&utm_medium=microsites&utm_campaign=microsites'
@@ -537,10 +539,10 @@ assert.equal(acceptedBarriosHolds.find('https://barrioshfx.ca/unknown-page'), nu
     assert.equal(group.observations[0].url, placeFactUrls[index]);
     assert.equal(group.observations[0].status, 403);
   });
-  const acceptedPlaceFactHolds = createAccessHolds(fullReviewedPolicy);
+  const acceptedPlaceFactHolds = createAccessHolds(policyBeforeBedfordMenus);
   placeFactUrls.forEach(url => assert.equal(acceptedPlaceFactHolds.find(url)?.scope, 'url', 'The exact denied place-fact URL is held: ' + url));
   placeFactSiblings.forEach(url => assert.equal(acceptedPlaceFactHolds.find(url), null, 'An unevidenced place-fact sibling remains eligible: ' + url));
-  await configure({policy:fullReviewedPolicy, catalog:catalogFor([...placeFactUrls, ...placeFactSiblings])});
+  await configure({policy:policyBeforeBedfordMenus, catalog:catalogFor([...placeFactUrls, ...placeFactSiblings])});
   const placeFactCheck = await collect(Object.fromEntries(placeFactSiblings.map(url => [url, [ok]])));
   assert.equal(placeFactCheck.report.counts.held, 2);
   assert.equal(placeFactCheck.report.counts.attempted, 2);
@@ -548,6 +550,36 @@ assert.equal(acceptedBarriosHolds.find('https://barrioshfx.ca/unknown-page'), nu
   placeFactCheck.report.results.slice(0,2).forEach((row,index)=>held(row,placeFactGroups[index].observations[0]));
   await gate(placeFactCheck.report);
   checked('two receipt-backed place-fact URL holds are unattempted; sibling query variants remain independently eligible');
+
+  const bedfordMenusGroup = fullReviewedPolicy.historicalEvidence.at(-1);
+  const bedfordMenusUrl = 'https://www.bedfordbasinmarket.com/menus';
+  const bedfordMenusSibling = 'https://www.bedfordbasinmarket.com/menus-archive';
+  {
+    const p = bedfordMenusGroup.provenance;
+    assert.equal(p.kind, 'reviewed_workflow_log');
+    assert.equal(p.workflowRunId, '40721374103');
+    assert.equal(p.workflowJob, 'refresh');
+    assert.equal(p.workflowJobId, 122932883913);
+    assert.equal(p.sourceCommitSha, '26b786e4064e3948ca9c8e47839e1459b6fd913d');
+    assert.equal(p.accessPolicySha256, digest(policyBeforeBedfordMenus), 'Bedford menus receipt references the exact pre-hold policy');
+    assert.equal(p.logSha256, '08dddfdbbf1228bb02c469cc8cbfde68834aeed1b2e3c962cae9a3a2e2ff3251');
+    assert.equal(p.diagnosticSha256, digest(p.diagnostic));
+    assert.equal(p.receiptSha256, digest(p.diagnostic.evidence.receipt));
+    assert.deepEqual(bedfordMenusGroup.observations, [p.diagnostic.evidence.hold.evidence]);
+    assert.equal(bedfordMenusGroup.observations[0].url, bedfordMenusUrl);
+    assert.equal(bedfordMenusGroup.observations[0].status, 403);
+  }
+  const acceptedBedfordMenusHolds = createAccessHolds(fullReviewedPolicy);
+  assert.equal(acceptedBedfordMenusHolds.find(bedfordMenusUrl)?.scope, 'url', 'The exact denied Bedford menus URL is held');
+  assert.equal(acceptedBedfordMenusHolds.find(bedfordMenusSibling), null, 'An unevidenced Bedford menus sibling remains eligible');
+  await configure({policy:fullReviewedPolicy, catalog:catalogFor([bedfordMenusUrl, bedfordMenusSibling])});
+  const bedfordMenusCheck = await collect({[bedfordMenusSibling]:[ok]});
+  assert.equal(bedfordMenusCheck.report.counts.held, 1);
+  assert.equal(bedfordMenusCheck.report.counts.attempted, 1);
+  assert.deepEqual(bedfordMenusCheck.events.filter(e=>e.event==='fetch').map(e=>e.url), [bedfordMenusSibling]);
+  held(bedfordMenusCheck.report.results[0], bedfordMenusGroup.observations[0]);
+  await gate(bedfordMenusCheck.report);
+  checked('Bedford Basin Market exact menus URL is unattempted; an unevidenced sibling path remains eligible');
 
 
   assert(committedPolicy.historicalEvidence[0].observations.every(row => row.status === 403 && new URL(row.url).hostname === 'junglejims.ca'));
