@@ -1,7 +1,8 @@
 // Guarded review adapter. No browser requests or direct publication.
-// A future reviewed activation must enable the registry; currently it is false.
+// Registry readiness, previous outcome and durable pending evidence gate every request.
 import assert from 'node:assert/strict';
-import {readFile} from 'node:fs/promises';
+import fs from 'node:fs/promises';
+import {basename} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {fetchGuardedSource,withSourceDeadline} from './fetch-public-source.mjs';
 import {openWeatherReviewJournal} from './weather-review-journal.mjs';
@@ -16,11 +17,11 @@ async function boundedBody(response,signal) {
   const chunks=[];let length=0;
   try {
     for(;;){signal.throwIfAborted();const {done,value}=await reader.read();if(done)break;length+=value.byteLength;assert.ok(length<=524288,'body limit');chunks.push(value);}
-    signal.throwIfAborted();return new TextDecoder('utf-8',{fatal:true,ignoreBOM:true}).decode(Buffer.concat(chunks));
+    signal.throwIfAborted();const bytes=Buffer.concat(chunks);if(size!==null&&(!response.headers.get('content-encoding')||response.headers.get('content-encoding').trim().toLowerCase()==='identity'))assert.equal(bytes.length,Number(size),'incomplete response body');return bytes;
   } catch(error){void reader.cancel().catch(()=>{});throw error;}
 }
 export async function collectEcccReview({previous=null,journalPath=journalDefault,registry=null,previousCapture=null}={}) {
-  const config=registry||JSON.parse(await readFile(registryUrl,'utf8'));
+  const config=registry||JSON.parse(await fs.readFile(registryUrl,'utf8'));
   assert.equal(config.version,1);assert.equal(config.sources?.length,1);
   const source=config.sources[0];assert.equal(source.id,'eccc-halifax-citypage');assert.equal(source.endpoint,ENDPOINT);
   assert.equal(source.enabled,true,'Weather collection is disabled; recorded snapshot only.');
@@ -36,6 +37,8 @@ export async function collectEcccReview({previous=null,journalPath=journalDefaul
       if(validator!==undefined){assert.ok(typeof validator==='string'&&validator.length>0&&validator.length<=512&&!/[\r\n]/.test(validator));headers[target]=validator;}
     }
   }
+  const responseEvidencePath=journalPath+'.response.json';
+  try{await fs.lstat(responseEvidencePath);throw Object.assign(new Error('EEXIST: Existing weather response evidence; reviewed recovery required'),{code:'EEXIST'});}catch(error){if(error.code!=='ENOENT')throw error;}
   const attemptedAt=new Date().toISOString();
   const pending={status:'pending',attemptedAt,url:ENDPOINT};
   // Fail closed before any source/robots request unless the pending bytes,
@@ -57,10 +60,16 @@ export async function collectEcccReview({previous=null,journalPath=journalDefaul
         return {...previousCapture,validationReceipt,candidate:{...previous,lastAttempt:{status:'not_modified',attemptedAt,completedAt:validationReceipt.completedAt}}};
       }
       assert.equal(response.status,200,'weather response not successful');
-      const responseHeaders=Object.fromEntries(['date','content-type','etag','last-modified','cache-control'].map(key=>[key,response.headers.get(key)]).filter(([,value])=>value!==null));
+      const responseHeaders=Object.fromEntries(['date','content-type','content-encoding','content-length','etag','last-modified','cache-control'].map(key=>[key,response.headers.get(key)]).filter(([,value])=>value!==null));
       assert.match(responseHeaders['content-type']||'',/^application\/(?:geo\+)?json(?:;|$)/i);
-      const body=await boundedBody(response,signal);
-      const receipt={version:1,url:ENDPOINT,attemptedAt,responseAt,retrievedAt:new Date().toISOString(),httpStatus:200,responseHeaders,bodyBytes:Buffer.byteLength(body),sha256:hash(body)};
+      const bytes=await boundedBody(response,signal);
+      const receipt={version:1,url:ENDPOINT,attemptedAt,responseAt,retrievedAt:new Date().toISOString(),httpStatus:200,responseHeaders,bodyBytes:bytes.length,sha256:hash(bytes)};
+      // Durable fetch-body bytes precede character decoding/semantic validation. This is
+      // review evidence, never an accepted capture or publication input.
+      responseEvidence={...responseEvidence,retrievedAt:receipt.retrievedAt,bodyBytes:receipt.bodyBytes,sha256:receipt.sha256,evidenceFile:basename(responseEvidencePath),evidenceRetained:false};
+      const evidence=await openWeatherReviewJournal(responseEvidencePath,{version:1,kind:'unaccepted_eccc_complete_response_evidence',semanticAcceptance:false,receipt,bodyEncoding:'base64_fetch_body_bytes_before_utf8_decoding',bodyBase64:bytes.toString('base64')});
+      await evidence.close();responseEvidence.evidenceRetained=true;
+      const body=new TextDecoder('utf-8',{fatal:true,ignoreBOM:true}).decode(bytes);
       const data=projectEccc(body,receipt);data.fixture=false;
       return {body,receipt,candidate:acceptedEnvelope(data,receipt)};
     },20000);
@@ -68,7 +77,7 @@ export async function collectEcccReview({previous=null,journalPath=journalDefaul
     return {...result,reviewOnly:true}; // caller must explicitly review; no public writes
   } catch(error) {
     const attempt={status:error.code==='SOURCE_ACCESS_HOLD'?'held':'failed',attemptedAt,completedAt:new Date().toISOString(),reason:[error.code,error.message].filter(Boolean).join(': ').slice(0,240)};
-    await persist({...attempt,response:responseEvidence});
+    await persist({...attempt,response:responseEvidence,...(error.weatherClock?{clockViolation:error.weatherClock}:{})});
     return {candidate:retainOnFailure(previous,attempt),reviewOnly:true,error:attempt.reason};
   } finally {await journal.close();}
 }

@@ -33,7 +33,15 @@ export function metric(node, unit, min = -Infinity, max = Infinity) {
   assert.ok(typeof value === 'number' && Number.isFinite(value) && value >= min && value <= max, 'invalid metric');
   return value; // A declared 0.75% remains 0.75%, never 75%.
 }
-function notFuture(value, retrievedAt) { stamp(value); assert.ok(Date.parse(value) <= Date.parse(retrievedAt), 'future source clock'); return value; }
+function notFuture(value, retrievedAt, path, role) {
+  stamp(value);
+  if(Date.parse(value)>Date.parse(retrievedAt)){
+    const error=new assert.AssertionError({message:`future source clock at ${path} (${role})`,actual:value,expected:retrievedAt,operator:'<='});
+    error.weatherClock={kind:'future_source_clock',path,role,value,retrievedAt,aheadByMilliseconds:Date.parse(value)-Date.parse(retrievedAt)};
+    throw error;
+  }
+  return value;
+}
 export function projectEccc(body, receipt) {
   assert.equal(typeof body, 'string'); assert.ok(Buffer.byteLength(body) <= 524288);
   assert.equal(receipt.url, ENDPOINT); assert.equal(receipt.httpStatus, 200);
@@ -41,13 +49,13 @@ export function projectEccc(body, receipt) {
   assert.equal(receipt.sha256, hash(body), 'receipt/body mismatch');
   assert.equal(receipt.bodyBytes, Buffer.byteLength(body));
   const retrievedAt = stamp(receipt.retrievedAt);
-  notFuture(receipt.attemptedAt, retrievedAt); notFuture(receipt.responseAt, retrievedAt);
+  notFuture(receipt.attemptedAt,retrievedAt,'receipt.attemptedAt','acquisition_request'); notFuture(receipt.responseAt,retrievedAt,'receipt.responseAt','acquisition_response');
   assert.ok(Date.parse(receipt.responseAt) >= Date.parse(receipt.attemptedAt));
   const raw = JSON.parse(body);
   assert.equal(raw.type, 'FeatureCollection'); assert.equal(raw.numberMatched, 2); assert.equal(raw.numberReturned, 2);
   assert.ok(Array.isArray(raw.features)); assert.equal(raw.features.length, 2);
   assert.ok(Array.isArray(raw.links)); assert.ok(!raw.links.some(x => x.rel === 'next'), 'partial city pages');
-  const apiResponseGeneratedAt = notFuture(raw.timeStamp, retrievedAt);
+  const apiResponseGeneratedAt = notFuture(raw.timeStamp,retrievedAt,'FeatureCollection.timeStamp','api_response_generated_at');
   assert.equal(new Set(raw.features.map(f => f.id)).size, 2);
   const features = EXPECTED.map(expected => {
     const f = raw.features.find(f => f.id === expected.id); assert.ok(f, 'unexpected city record');
@@ -60,7 +68,7 @@ export function projectEccc(body, receipt) {
     assert.equal(station?.lat?.en, expected.latitude); assert.equal(station?.lon?.en, expected.longitude);
     assert.ok(Array.isArray(p.warnings) && p.warnings.length <= 30, 'missing/unbounded warnings');
     assert.ok(p.warnings.every(w => w && typeof w === 'object' && !Array.isArray(w)), 'unreviewed warning shape');
-    for (const clock of [p.lastUpdated,p.currentConditions.timestamp?.en,p.forecastGroup?.timestamp?.en,p.hourlyForecastGroup?.timestamp?.en]) notFuture(clock,retrievedAt);
+    for(const [field,clock,role] of [['lastUpdated',p.lastUpdated,'source_updated_at'],['currentConditions.timestamp.en',p.currentConditions.timestamp?.en,'station_observed_at'],['forecastGroup.timestamp.en',p.forecastGroup?.timestamp?.en,'regional_forecast_issued_at'],['hourlyForecastGroup.timestamp.en',p.hourlyForecastGroup?.timestamp?.en,'hourly_forecast_issued_at']])notFuture(clock,retrievedAt,`features[${expected.id}].properties.${field}`,role);
     assert.ok(Date.parse(p.currentConditions.timestamp.en) <= Date.parse(p.lastUpdated));
     return f;
   });

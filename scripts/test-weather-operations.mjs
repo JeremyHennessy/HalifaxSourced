@@ -8,8 +8,9 @@ import {fileURLToPath} from 'node:url';
 import {captureBundle,captureManifest,validateCapture,loadCurrentWeather,jsonBytes,weatherBrowserBytes,preserveCapture} from './lib/weather-capture.mjs';
 import {packageWeather,validateWeatherArtifact} from './lib/weather-publication.mjs';
 import {finalReceipt} from './lib/weather-run-lineage.mjs';
+import {hash} from './lib/eccc-weather.mjs';
 import {collectEcccReview} from './lib/eccc-weather-adapter.mjs';
-import {validateWeatherCache} from './weather-preview-lineage.mjs';
+import {validateWeatherCache,weatherCollectionOutcome} from './weather-preview-lineage.mjs';
 import {LANES,planPreviewUpdates,laneForPath} from './lib/preview-coordinator.mjs';
 import contract from '../weather-contract.js';
 const copy=x=>structuredClone(x),read=p=>readFile(new URL('../'+p,import.meta.url),'utf8');
@@ -42,6 +43,19 @@ try{
   const files=async (base,path='')=>(await Promise.all((await readdir(join(base,path),{withFileTypes:true})).map(e=>e.isDirectory()?files(base,join(path,e.name)):join(path,e.name)))).flat();
   const artifactFiles=await files(artifactRoot),options={root,artifactRoot,artifactFiles,runId:'200',headSha:identity.sha};
   assert.deepEqual((await validateWeatherArtifact(options)).sort(),['data/weather/current.json','data/build/halifax-weather.json','data/weather.js',manifest.capturePath].sort());
+  // Preserve legacy failed cache payloads, but never accept them as normal publication.
+  const originalContract=JSON.parse(await readFile(join(artifactRoot,'artifacts/weather-publication-contract.json'),'utf8'));
+  for(const status of ['failed','held','partial','pending']){
+    const failed=copy(payload);failed.blocked=true;failed.decision='collected';failed.manifest.lastAttempt={status,attemptedAt:'2026-10-28T06:38:27.184Z',completedAt:'2026-10-28T06:38:27.502Z',reason:'ERR_ASSERTION: future source clock'};
+    const failedBytes=jsonBytes(failed),failedReceipt=finalReceipt(identity,failedBytes);validateWeatherCache(failed);
+    assert.equal(weatherCollectionOutcome(failed).publicationEligible,false);assert.equal(weatherCollectionOutcome(failed).newCaptureAccepted,false);
+    const rejectedOutput=join(temp,'rejected-'+status);assert.equal(await packageWeather({root,output:rejectedOutput,payloadBytes:failedBytes,receipt:failedReceipt,identity}),false);await assert.rejects(readdir(rejectedOutput),{code:'ENOENT'});
+    await writeFile(join(artifactRoot,'artifacts/weather-preview.json'),failedBytes);await writeFile(join(artifactRoot,'artifacts/weather-preview-final.json'),jsonBytes(failedReceipt));await writeFile(join(artifactRoot,'artifacts/weather-publication-contract.json'),jsonBytes({...originalContract,payloadSha256:hash(failedBytes)}));
+    await assert.rejects(validateWeatherArtifact(options),/blocked or unsuccessful weather source outcome is not publishable/);
+  }
+  const blockedSuccess={...payload,blocked:true};assert.equal(weatherCollectionOutcome(blockedSuccess).publicationEligible,false);
+  const mismatch={...payload,decision:'not_modified'};assert.equal(weatherCollectionOutcome(mismatch).publicationEligible,false);
+  await writeFile(join(artifactRoot,'artifacts/weather-preview.json'),bytes);await writeFile(join(artifactRoot,'artifacts/weather-preview-final.json'),jsonBytes(final));await writeFile(join(artifactRoot,'artifacts/weather-publication-contract.json'),jsonBytes(originalContract));
   await assert.rejects(validateWeatherArtifact({...options,artifactFiles:[...artifactFiles,'data/news.js']}),/unexpected/);
   await assert.rejects(validateWeatherArtifact({...options,artifactFiles:artifactFiles.filter(p=>p!=='data/weather.js')}),/unexpected/);
   await assert.rejects(validateWeatherArtifact({...options,runId:'201'}));

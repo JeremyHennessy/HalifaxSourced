@@ -98,7 +98,9 @@ jobs:
           WEATHER_SAVED_CACHE_HIT: ${{ steps.saved-final.outputs.cache-hit }}
           WEATHER_SAVED_CACHE_KEY: ${{ steps.saved-final.outputs.cache-matched-key }}
         run: node scripts/weather-preview-lineage.mjs verify-final-save
-      - name: Package only validated weather facts and health for separate review
+      - name: Report source acceptance separately from successful private state persistence
+        run: node scripts/weather-preview-lineage.mjs report
+      - name: Package only successful weather capture or revalidation for separate review
         run: node scripts/package-weather-preview.mjs
       - name: Upload strict weather-only publication candidate
         uses: actions/upload-artifact@v4
@@ -115,6 +117,7 @@ jobs:
           path: |
             artifacts/weather-preview*.json
             artifacts/eccc-weather-review-journal.jsonl
+            artifacts/eccc-weather-review-journal.jsonl.response.json
             artifacts/source-access-diagnostics.jsonl
           if-no-files-found: warn
 # MANUAL ONLY. No broad fallback, v2 migration, automatic recovery or hold reset.
@@ -124,4 +127,4 @@ jobs:
 # Reviewed recovery and actual bootstrap readiness require separate verification.
 # No active schedule, write token, direct publication, AI/model calls or deployment.
 # After reviewed bootstrap + exact successor verification, proposed cadence: 17 * * * *.
-# Source registry remains disabled. No fallback/reset/recovery input is exposed.
+# Manual source readiness never authorizes scheduling. No fallback/reset/recovery input is exposed.

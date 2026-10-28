@@ -13,9 +13,10 @@ const writeJson=(p,x)=>writeFile(p,jsonBytes(x),{flag:'wx'});
 export function validateWeatherCache(payload){
   assert.deepEqual(Object.keys(payload).sort(),['blocked','capture','decision','manifest','version']);assert.equal(payload.version,1);assert.equal(typeof payload.blocked,'boolean');
   const envelope=validateCapture(payload.manifest,jsonBytes(payload.capture));
-  assert.ok(['collected','not_modified','retained_hold','cadence_deferred','bootstrap'].includes(payload.decision));
+  assert.ok(['collected','not_modified','rejected','retained_hold','cadence_deferred','bootstrap'].includes(payload.decision));
   if(!['success','not_modified'].includes(envelope.lastAttempt.status))assert.equal(payload.blocked,true,'lost failure hold');
-  if(payload.decision==='retained_hold')assert.equal(payload.blocked,true);
+  if(['rejected','retained_hold'].includes(payload.decision))assert.equal(payload.blocked,true);
+  if(payload.decision==='rejected')assert.ok(!['success','not_modified'].includes(envelope.lastAttempt.status),'rejected decision cannot claim source success');
   return payload;
 }
 export async function createLineagePlan({env,paths,metadata}){const plan=await resolveWeatherLineage({env,metadata});await writeJson(paths.plan,plan);return plan;}
@@ -43,7 +44,7 @@ export async function collectWithLineage({env,paths,registry,metadata,collect=co
     const good=outcome.candidate?.lastAttempt?.status==='success',unchanged=outcome.candidate?.lastAttempt?.status==='not_modified';
     const capture=good?captureBundle(outcome.body,outcome.receipt):previous.capture;
     const manifest=captureManifest(capture,{mode:'reviewed_refresh',lastAttempt:outcome.candidate.lastAttempt,sourceRun:plan.current});
-    result={version:1,manifest,capture,blocked:!good&&!unchanged,decision:unchanged?'not_modified':'collected'};
+    result={version:1,manifest,capture,blocked:!good&&!unchanged,decision:unchanged?'not_modified':good?'collected':'rejected'};
   }
   validateWeatherCache(result);if(previous.blocked)assert.equal(result.blocked,true,'lost hold');
   await writeFile(paths.payload,jsonBytes(result));
@@ -56,6 +57,17 @@ async function verified({env,paths}){
   const bytes=await readFile(paths.payload);validateWeatherCache(JSON.parse(bytes));
   requireSamePlan(await json(paths.collected),{version:1,kind:'weather_preview_collected',identity:plan.current,payloadSha256:payloadDigest(bytes),transportDecisionsDrained:true});return {plan,bytes};
 }
+export function weatherCollectionOutcome(payload){
+ validateWeatherCache(payload);const status=payload.manifest.lastAttempt.status;
+ const accepted=!payload.blocked&&((payload.decision==='collected'&&status==='success')||(payload.decision==='not_modified'&&status==='not_modified'));
+ return {version:1,kind:'weather_source_collection_outcome',sourceStatus:status,decision:payload.decision,blocked:payload.blocked,newCaptureAccepted:accepted&&status==='success',retainedCaptureRevalidated:accepted&&status==='not_modified',publicationEligible:accepted,sourceAttemptAt:payload.manifest.lastAttempt.attemptedAt,sourceCompletedAt:payload.manifest.lastAttempt.completedAt,retainedCaptureRetrievedAt:payload.capture.receipt.retrievedAt,retainedCaptureSha256:payload.manifest.captureSha256,summary:accepted?(status==='success'?'Source refresh accepted for separate publication review; not deployed.':'Retained capture conditionally revalidated; original fact clocks unchanged.'):'No source refresh accepted for publication. Retained facts and blocking state are private review evidence; successful cache persistence is not a successful weather refresh.'};
+}
+export async function reportWeatherOutcome({env,paths}){
+ const {plan,bytes}=await verified({env,paths});verifyFinalReceipt(await json(paths.receipt),plan.current,bytes);
+ const result={...weatherCollectionOutcome(JSON.parse(bytes)),privateContinuity:'final_payload_receipt_verified'};await writeJson(new URL('weather-preview-outcome.json',paths.payload),result);
+ if(env.GITHUB_STEP_SUMMARY)await appendFile(env.GITHUB_STEP_SUMMARY,`## ECCC weather collection outcome\n\n${result.summary}\n\n- Source status: **${result.sourceStatus}**; blocked: **${result.blocked}**.\n- New capture accepted: **${result.newCaptureAccepted}**.\n- Publication eligible: **${result.publicationEligible}**.\n- Private payload/final-receipt continuity: verified.\n- Retained capture retrieved: ${result.retainedCaptureRetrievedAt}.\n`);
+ console.log(JSON.stringify(result,null,2));return result;
+}
 export async function completeLineage({env,paths}){const {plan,bytes}=await verified({env,paths});requireExactCache({hit:env.WEATHER_SAVED_CACHE_HIT,matchedKey:env.WEATHER_SAVED_CACHE_KEY,expectedKey:plan.cacheKey});await writeJson(paths.receipt,finalReceipt(plan.current,bytes));}
 export async function verifyReceiptSaved({env,paths}){const {plan,bytes}=await verified({env,paths});verifyFinalReceipt(await json(paths.receipt),plan.current,bytes);requireExactCache({hit:env.WEATHER_SAVED_CACHE_HIT,matchedKey:env.WEATHER_SAVED_CACHE_KEY,expectedKey:plan.cacheKey+'-final'});}
 async function main(){const env=process.env,paths=lineagePaths(new URL('artifacts/',root));await mkdir(new URL('artifacts/',root),{recursive:true});const registry=await json(new URL('data/weather-source-registry.json',root));assert.equal(registry.sources[0].enabled,true,'Weather review is disabled; no metadata/source requests permitted');
@@ -63,6 +75,7 @@ async function main(){const env=process.env,paths=lineagePaths(new URL('artifact
  switch(process.argv[2]){
  case 'plan':{const plan=await createLineagePlan({env,paths});assert.ok(env.GITHUB_OUTPUT);await appendFile(env.GITHUB_OUTPUT,`bootstrap=${plan.predecessor===null}\ncache-key=${plan.cacheKey}\npredecessor-cache-key=${plan.predecessorCacheKey||''}\n`);break;}
  case 'collect':await collectWithLineage({env,paths,registry});break;
+ case 'report':await reportWeatherOutcome({env,paths});break;
  case 'complete':await completeLineage({env,paths});break;
  case 'verify-final-save':await verifyReceiptSaved({env,paths});break;
  default:throw Error('weather_lineage_invalid_command');}}

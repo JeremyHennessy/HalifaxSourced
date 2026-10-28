@@ -28,11 +28,11 @@ function mockedIO({failAt=-1,stallAt=-1,preexisting=false,journalExists=false,sy
   fs.mkdir=async(path,options)=>{await step('mkdir:'+path);assert.equal(options.recursive,undefined);assert.equal(options.mode,0o700);assert.ok(directories.has(path.slice(0,path.lastIndexOf('/'))||'/'));directories.add(path);};
   fs.open=async(path,flags)=>{
     if(flags==='wx'){
-      assert.equal(path,journalPath);await step('open-journal:wx');
-      if(journalExists)throw Object.assign(new Error('existing journal'),{code:'EEXIST'});
-      journalExists=true;let closed=false;
+      assert.ok([journalPath,journalPath+'.response.json'].includes(path));const responseEvidence=path!==journalPath;await step(responseEvidence?'open-response-evidence:wx':'open-journal:wx');
+      if(!responseEvidence&&journalExists)throw Object.assign(new Error('existing journal'),{code:'EEXIST'});
+      if(!responseEvidence)journalExists=true;let closed=false;
       return {
-        async writeFile(value){assert.equal(closed,false);const entry=JSON.parse(value);await step('write-journal:'+entry.status);},
+        async writeFile(value){assert.equal(closed,false);const entry=JSON.parse(value);await step(responseEvidence?'write-response-evidence:'+entry.kind:'write-journal:'+entry.status);},
         async sync(){assert.equal(closed,false);await step('sync-journal');},
         async close(){closed=true;await step('close-journal');}
       };
