@@ -1,6 +1,6 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dedupeCanonicalEvents } from "./lib/canonical-event-dedupe.mjs";
-import { applyReviewedEventQuarantine, REVIEWED_EVENT_QUARANTINE_PATH } from "./lib/reviewed-event-quarantine.mjs";
+import { applyReviewedEventQuarantines, REVIEWED_EVENT_QUARANTINE_PATHS } from "./lib/reviewed-event-quarantine.mjs";
 
 const buildUrl = new URL("../data/build/city-events.json", import.meta.url);
 const jsUrl = new URL("../data/city-events.js", import.meta.url);
@@ -9,8 +9,8 @@ const payload = JSON.parse(await readFile(buildUrl, "utf8"));
 const registry = JSON.parse(await readFile(registryUrl, "utf8"));
 const sources = new Map((registry.sources || []).map((source) => [source.id, source]));
 const inputEvents = Array.isArray(payload.events) ? payload.events : [];
-const archive = JSON.parse(await readFile(new URL("../" + REVIEWED_EVENT_QUARANTINE_PATH, import.meta.url), "utf8"));
-const quarantine = applyReviewedEventQuarantine(inputEvents, archive);
+const archives = await Promise.all(REVIEWED_EVENT_QUARANTINE_PATHS.map(async path => JSON.parse(await readFile(new URL("../" + path, import.meta.url), "utf8"))));
+const quarantine = applyReviewedEventQuarantines(inputEvents, archives);
 // Write an explicit receipt even when a changed reviewed ID blocks the build.
 // The candidate/runtime payloads must remain untouched on that failure.
 await mkdir(new URL("../artifacts", import.meta.url), { recursive: true });
