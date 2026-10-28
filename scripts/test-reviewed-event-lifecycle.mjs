@@ -7,17 +7,17 @@ import { reconcileFutureEventLosses } from './lib/event-refresh-safety.mjs';
 const archive = JSON.parse(await readFile(new URL('../data/quarantine/city-event-lifecycle-20261028.json', import.meta.url), 'utf8'));
 const current = JSON.parse(await readFile(new URL('../data/build/city-events.json', import.meta.url), 'utf8'));
 const reviewed = archive.records.map(entry => entry.rawAcceptedRecord);
-assert.equal(validateReviewedEventQuarantine(archive).size, 5);
-assert.equal(reviewed.length, 5);
+assert.equal(validateReviewedEventQuarantine(archive).size, 6);
+assert.equal(reviewed.length, 6);
 for (const entry of archive.records) assert.equal(eventRecordSha256(entry.rawAcceptedRecord), entry.expectedRawRecordCanonicalSha256);
 
 const projection = applyReviewedEventQuarantines(reviewed, [archive]);
 assert.equal(projection.blocked, false);
 assert.equal(projection.events.length, 0);
-assert.equal(projection.receipt.quarantinedCount, 5);
+assert.equal(projection.receipt.quarantinedCount, 6);
 assert.deepEqual(projection.receipt.quarantinedBySource, {
   'halifax-public-libraries': 2,
-  'bedford-library-events': 3
+  'bedford-library-events': 4
 });
 const changed = { ...reviewed[0], title: reviewed[0].title + ' changed' };
 const mismatch = applyReviewedEventQuarantines([changed], [archive]);
@@ -60,7 +60,7 @@ assert.equal(refreshed.blocked, false);
 assert.equal(refreshed.heldRemovals.length, 0);
 assert.equal(refreshed.payload.events.length, 1);
 assert.equal(refreshed.payload.events[0].id, previousCarleton.id);
-assert.equal(refreshed.reviewedQuarantine.previous.quarantinedCount, 5);
+assert.equal(refreshed.reviewedQuarantine.previous.quarantinedCount, 6);
 
 const unexpected = { ...reviewed[1], id: 'unreviewed-future-omission' };
 const held = reconcileFutureEventLosses({ events: [], sourceStats: [{ sourceId: unexpected.sourceId, status: 'ok', eventCount: 1 }] }, { events: [unexpected] }, {
@@ -70,4 +70,4 @@ const held = reconcileFutureEventLosses({ events: [], sourceStats: [{ sourceId: 
 assert.equal(held.blocked, true);
 assert.equal(held.heldRemovals[0].eventId, unexpected.id);
 
-console.log('Reviewed event lifecycle passed: five exact lifecycle exclusions, immutable raw evidence, one-to-one Carleton title-status identity migration, and unrelated omissions still fail closed.');
+console.log('Reviewed event lifecycle passed: six exact lifecycle exclusions, immutable raw evidence, one-to-one Carleton title-status identity migration, and unrelated omissions still fail closed.');
