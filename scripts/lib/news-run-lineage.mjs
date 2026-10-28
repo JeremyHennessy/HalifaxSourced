@@ -7,9 +7,15 @@ const positive = value => Number.isSafeInteger(Number(value)) && Number(value) >
 const sha = value => typeof value === 'string' && /^[a-f0-9]{40}$/.test(value);
 export const payloadDigest = bytes => createHash('sha256').update(bytes).digest('hex');
 const same = (a,b) => JSON.stringify(a) === JSON.stringify(b);
+const allowedEvent = event => event === 'workflow_dispatch' || event === 'schedule';
 
 export function environmentIdentity(env) {
-  if (env.GITHUB_REPOSITORY !== NEWS_REPOSITORY || env.GITHUB_SERVER_URL !== 'https://github.com' || env.GITHUB_API_URL !== 'https://api.github.com' || env.GITHUB_EVENT_NAME !== 'workflow_dispatch' || env.GITHUB_RUN_ATTEMPT !== '1' || ![env.GITHUB_REPOSITORY_ID,env.GITHUB_RUN_ID,env.GITHUB_RUN_NUMBER].every(positive) || !sha(env.GITHUB_SHA) || !env.GITHUB_REF?.startsWith('refs/heads/') || env.GITHUB_WORKFLOW_REF !== `${NEWS_REPOSITORY}/${NEWS_WORKFLOW}@${env.GITHUB_REF}` || !['true','false'].includes(env.NEWS_INITIALIZE_REVIEW_CACHE)) fail('invalid_current_environment_or_rerun');
+  // Scheduled events have no dispatch inputs. Only an absent/empty/false value
+  // is admissible for them; they can never opt into bootstrap or reset a cache.
+  const validInitialization = env.GITHUB_EVENT_NAME === 'schedule'
+    ? [undefined,'','false'].includes(env.NEWS_INITIALIZE_REVIEW_CACHE)
+    : ['true','false'].includes(env.NEWS_INITIALIZE_REVIEW_CACHE);
+  if (env.GITHUB_REPOSITORY !== NEWS_REPOSITORY || env.GITHUB_SERVER_URL !== 'https://github.com' || env.GITHUB_API_URL !== 'https://api.github.com' || !allowedEvent(env.GITHUB_EVENT_NAME) || env.GITHUB_RUN_ATTEMPT !== '1' || ![env.GITHUB_REPOSITORY_ID,env.GITHUB_RUN_ID,env.GITHUB_RUN_NUMBER].every(positive) || !sha(env.GITHUB_SHA) || !env.GITHUB_REF?.startsWith('refs/heads/') || env.GITHUB_WORKFLOW_REF !== `${NEWS_REPOSITORY}/${NEWS_WORKFLOW}@${env.GITHUB_REF}` || !validInitialization) fail('invalid_current_environment_or_rerun');
   return {repository:NEWS_REPOSITORY,repositoryId:String(env.GITHUB_REPOSITORY_ID),workflowPath:NEWS_WORKFLOW,runId:String(env.GITHUB_RUN_ID),runNumber:Number(env.GITHUB_RUN_NUMBER),runAttempt:1,sha:env.GITHUB_SHA,ref:env.GITHUB_REF};
 }
 
@@ -27,7 +33,9 @@ export async function githubMetadata(path, {fetchImpl = globalThis.fetch} = {}) 
 }
 
 function runIdentity(run, base) {
-  if (!run || ![run.id,run.workflow_id,run.run_number,run.run_attempt].every(positive) || run.repository?.full_name !== base.repository || String(run.repository?.id) !== base.repositoryId || run.path !== NEWS_WORKFLOW || !sha(run.head_sha) || run.event !== 'workflow_dispatch' || `refs/heads/${run.head_branch}` !== base.ref) fail('invalid_run_metadata');
+  if (!run || ![run.id,run.workflow_id,run.run_number,run.run_attempt].every(positive) || run.repository?.full_name !== base.repository || String(run.repository?.id) !== base.repositoryId || run.path !== NEWS_WORKFLOW || !sha(run.head_sha) || !allowedEvent(run.event) || (run.run_number === 1 && run.event !== 'workflow_dispatch') || `refs/heads/${run.head_branch}` !== base.ref) fail('invalid_run_metadata');
+  // Keep the v3 identity/cache/receipt format compatible with the verified manual
+  // bootstrap. Event identity is checked independently against official metadata.
   return {repository:base.repository,repositoryId:base.repositoryId,workflowPath:NEWS_WORKFLOW,workflowId:String(run.workflow_id),runId:String(run.id),runNumber:run.run_number,runAttempt:run.run_attempt,sha:run.head_sha,ref:base.ref};
 }
 export function cacheKey(identity) {
@@ -39,13 +47,14 @@ export async function resolveNewsLineage({env, metadata = githubMetadata}) {
   if (repository?.full_name !== expected.repository || String(repository.id) !== expected.repositoryId || repository.private !== false || `refs/heads/${repository.default_branch}` !== expected.ref) fail('not_public_default_branch');
   const currentRun = await metadata(`/repos/${NEWS_REPOSITORY}/actions/runs/${expected.runId}`);
   const current = runIdentity(currentRun,expected);
+  if (currentRun.event !== env.GITHUB_EVENT_NAME) fail('current_event_mismatch');
   for (const [key,value] of Object.entries(expected)) if (current[key] !== value) fail('current_identity_mismatch');
   if (currentRun.status !== 'in_progress' || currentRun.conclusion !== null) fail('current_not_running');
   if (current.runNumber === 1) {
-    if (env.NEWS_INITIALIZE_REVIEW_CACHE !== 'true') fail('explicit_first_run_bootstrap_required');
-    return {version:3,current,predecessor:null,cacheKey:cacheKey(current),predecessorCacheKey:null};
+    if (env.GITHUB_EVENT_NAME !== 'workflow_dispatch' || env.NEWS_INITIALIZE_REVIEW_CACHE !== 'true') fail('explicit_first_run_bootstrap_required');
+    return {version:3,current,predecessor:null,cacheKey:cacheKey(current),predecessorCacheKey:null,events:{current:currentRun.event,predecessor:null}};
   }
-  if (env.NEWS_INITIALIZE_REVIEW_CACHE !== 'false') fail('bootstrap_is_not_recovery');
+  if (env.NEWS_INITIALIZE_REVIEW_CACHE === 'true') fail('bootstrap_is_not_recovery');
   // Do not filter by branch/status/event: failed, skipped and cancelled runs must
   // remain visible. A bounded listing that cannot locate N-1 fails closed.
   const list = await metadata(`/repos/${NEWS_REPOSITORY}/actions/workflows/${current.workflowId}/runs?per_page=100&page=1`);
@@ -55,8 +64,8 @@ export async function resolveNewsLineage({env, metadata = githubMetadata}) {
   const listed = runIdentity(matches[0],expected);
   const predecessorRun = await metadata(`/repos/${NEWS_REPOSITORY}/actions/runs/${listed.runId}`);
   const predecessor = runIdentity(predecessorRun,expected);
-  if (!same(predecessor,listed) || predecessor.workflowId !== current.workflowId || predecessor.runNumber !== current.runNumber-1 || predecessor.runId === current.runId || predecessor.runAttempt !== 1 || predecessorRun.status !== 'completed' || predecessorRun.conclusion !== 'success' || matches[0].status !== 'completed' || matches[0].conclusion !== 'success') fail('predecessor_not_exact_success_attempt_one');
-  return {version:3,current,predecessor,cacheKey:cacheKey(current),predecessorCacheKey:cacheKey(predecessor)};
+  if (!same(predecessor,listed) || predecessorRun.event !== matches[0].event || predecessor.workflowId !== current.workflowId || predecessor.runNumber !== current.runNumber-1 || predecessor.runId === current.runId || predecessor.runAttempt !== 1 || predecessorRun.status !== 'completed' || predecessorRun.conclusion !== 'success' || matches[0].status !== 'completed' || matches[0].conclusion !== 'success') fail('predecessor_not_exact_success_attempt_one');
+  return {version:3,current,predecessor,cacheKey:cacheKey(current),predecessorCacheKey:cacheKey(predecessor),events:{current:currentRun.event,predecessor:predecessorRun.event}};
 }
 export function requireExactCache({hit,matchedKey,expectedKey}) {
   if (hit !== 'true' || matchedKey !== expectedKey) fail('exact_cache_missing');

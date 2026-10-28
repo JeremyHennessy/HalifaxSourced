@@ -15,6 +15,7 @@ const validateCollectedPayload = bytes => {
 const writeJson = (path,value) => writeFile(path,JSON.stringify(value,null,2)+'\n',{flag:'wx'});
 function requireCurrent(plan,env) {
   const current = environmentIdentity(env);
+  if (plan.events?.current !== env.GITHUB_EVENT_NAME) fail('plan_current_event_mismatch');
   for (const [key,value] of Object.entries(current)) if (plan.current?.[key] !== value) fail('plan_current_identity_mismatch');
 }
 export async function createLineagePlan({env, paths, metadata}) {

@@ -28,11 +28,43 @@ assert.match(plan.cacheKey,/^news-review-v3-123-44-2-200-1-b{40}$/);
 const bootEnv = {...env,GITHUB_RUN_ID:'100',GITHUB_RUN_NUMBER:'1',GITHUB_SHA:prior.head_sha,NEWS_INITIALIZE_REVIEW_CACHE:'true'};
 const bootMeta = metadataFixture({run:{...prior,status:'in_progress',conclusion:null}});
 assert.equal((await resolveNewsLineage({env:bootEnv,metadata:bootMeta})).predecessor,null);
-for (const patch of [{GITHUB_RUN_ATTEMPT:'2'},{GITHUB_RUN_ATTEMPT:'01'},{GITHUB_RUN_NUMBER:'0'},{GITHUB_RUN_NUMBER:'NaN'},{GITHUB_REPOSITORY_ID:'wrong'},{GITHUB_SHA:'bad'},{GITHUB_REPOSITORY:'evil/fork'},{GITHUB_SERVER_URL:'https://example.org'},{GITHUB_API_URL:'https://example.org'},{GITHUB_EVENT_NAME:'pull_request'},{GITHUB_EVENT_NAME:'schedule'},{GITHUB_WORKFLOW_REF:'other'},{NEWS_INITIALIZE_REVIEW_CACHE:undefined}]) {
+function chainFixture(currentEvent,predecessorEvent='workflow_dispatch',runNumber=3) {
+ const run={...current,event:currentEvent,run_number:runNumber};
+ const predecessor={...prior,event:predecessorEvent,run_number:runNumber-1};
+ return {
+  env:{...env,GITHUB_EVENT_NAME:currentEvent,GITHUB_RUN_NUMBER:String(runNumber),NEWS_INITIALIZE_REVIEW_CACHE:currentEvent==='schedule'?undefined:'false'},
+  metadata:metadataFixture({run,predecessor,list:{total_count:runNumber,workflow_runs:[run,predecessor]}}),run,predecessor
+ };
+}
+const scheduledChain=chainFixture('schedule','workflow_dispatch',2);
+const eventChains=['workflow_dispatch','schedule'].flatMap(currentEvent=>['workflow_dispatch','schedule'].map(predecessorEvent=>chainFixture(currentEvent,predecessorEvent)));
+for (const chain of [scheduledChain,...eventChains]) {
+ const resolved=await resolveNewsLineage(chain);
+ assert.equal(resolved.current.runNumber,Number(chain.env.GITHUB_RUN_NUMBER));
+ assert.equal(resolved.predecessor.runNumber,resolved.current.runNumber-1);
+}
+// Absent dispatch inputs are normal only on schedule; true never is. Preserve
+// the v3 cache/receipt identity so a verified pre-schedule manual run remains usable.
+for(const requested of [undefined,'','false']) {
+ const scheduled=await resolveNewsLineage({...scheduledChain,env:{...scheduledChain.env,NEWS_INITIALIZE_REVIEW_CACHE:requested}});
+ assert.deepEqual({...scheduled,events:plan.events},plan);
+ assert.deepEqual(scheduled.events,{current:'schedule',predecessor:'workflow_dispatch'});
+}
+for (const patch of [{GITHUB_RUN_ATTEMPT:'2'},{GITHUB_RUN_ATTEMPT:'01'},{GITHUB_RUN_NUMBER:'0'},{GITHUB_RUN_NUMBER:'NaN'},{GITHUB_REPOSITORY_ID:'wrong'},{GITHUB_SHA:'bad'},{GITHUB_REPOSITORY:'evil/fork'},{GITHUB_SERVER_URL:'https://example.org'},{GITHUB_API_URL:'https://example.org'},{GITHUB_EVENT_NAME:'pull_request'},{GITHUB_EVENT_NAME:'pull_request_target'},{GITHUB_EVENT_NAME:'push'},{GITHUB_EVENT_NAME:'repository_dispatch'},{GITHUB_EVENT_NAME:'workflow_run'},{GITHUB_EVENT_NAME:'schedule',NEWS_INITIALIZE_REVIEW_CACHE:'true'},{GITHUB_EVENT_NAME:'schedule',NEWS_INITIALIZE_REVIEW_CACHE:'invalid'},{GITHUB_WORKFLOW_REF:'other'},{NEWS_INITIALIZE_REVIEW_CACHE:undefined}]) {
  let reads=0; await assert.rejects(resolveNewsLineage({env:{...env,...patch},metadata:async()=>{reads++;throw new Error('must_not_read');}})); assert.equal(reads,0);
 }
 for (const patch of [{private:true},{default_branch:'other'},{id:124},{full_name:'other/repo'}]) await assert.rejects(resolveNewsLineage({env,metadata:metadataFixture({repo:{...repository,...patch}})}));
-for (const patch of [{run_attempt:2},{run_number:3},{head_sha:'c'.repeat(40)},{workflow_id:null},{path:'.github/workflows/other.yml'},{repository:{...repository,id:124}},{status:'completed',conclusion:'success'},{status:'queued'},{head_branch:'feature'},{event:'push'}]) await assert.rejects(resolveNewsLineage({env,metadata:metadataFixture({run:{...current,...patch}})}));
+for (const patch of [{run_attempt:2},{run_number:3},{head_sha:'c'.repeat(40)},{workflow_id:null},{path:'.github/workflows/other.yml'},{repository:{...repository,id:124}},{status:'completed',conclusion:'success'},{status:'queued'},{head_branch:'feature'},{event:'push'},{event:'schedule'},{event:'pull_request'}]) await assert.rejects(resolveNewsLineage({env,metadata:metadataFixture({run:{...current,...patch}})}));
+await assert.rejects(resolveNewsLineage({env:scheduledChain.env,metadata:metadataFixture()}),/current_event_mismatch/);
+for(const requested of [undefined,'','false','true']) await assert.rejects(resolveNewsLineage({env:{...bootEnv,GITHUB_EVENT_NAME:'schedule',NEWS_INITIALIZE_REVIEW_CACHE:requested},metadata:metadataFixture({run:{...prior,event:'schedule',status:'in_progress',conclusion:null}})}));
+for (const chain of eventChains) {
+ for (const event of ['push','pull_request','pull_request_target','workflow_run','repository_dispatch']) {
+  const predecessor={...chain.predecessor,event};
+  await assert.rejects(resolveNewsLineage({env:chain.env,metadata:metadataFixture({run:chain.run,predecessor,list:{total_count:3,workflow_runs:[chain.run,predecessor]}})}),/invalid_run_metadata/);
+ }
+ // Two individually allowed events must still agree between list and direct API.
+ await assert.rejects(resolveNewsLineage({env:chain.env,metadata:metadataFixture({run:chain.run,predecessor:{...chain.predecessor,event:chain.predecessor.event==='schedule'?'workflow_dispatch':'schedule'},list:{total_count:3,workflow_runs:[chain.run,chain.predecessor]}})}),/predecessor_not_exact_success_attempt_one/);
+}
 for (const status of ['failure','cancelled','timed_out','skipped','neutral','action_required','stale',null]) await assert.rejects(resolveNewsLineage({env,metadata:metadataFixture({predecessor:{...prior,conclusion:status}})}));
 for (const patch of [{status:'in_progress'},{run_attempt:2},{workflow_id:45},{head_sha:'c'.repeat(40)},{run_number:0},{head_branch:'feature'},{path:'.github/workflows/other.yml'},{repository:{...repository,id:124}}]) await assert.rejects(resolveNewsLineage({env,metadata:metadataFixture({predecessor:{...prior,...patch}})}));
 for (const list of [{total_count:0,workflow_runs:[]},{total_count:2,workflow_runs:[current,{...prior,run_number:3}]},{total_count:3,workflow_runs:[current,prior,prior]}, {}, {total_count:0,workflow_runs:[prior]}, {total_count:1,workflow_runs:[{}]}]) await assert.rejects(resolveNewsLineage({env,metadata:metadataFixture({list})}));
@@ -77,26 +109,29 @@ for(const patch of [{version:2},{kind:'other'},{identity:{...receipt.identity,ru
 assert.throws(()=>verifyFinalReceipt(receipt,plan.predecessor,Buffer.from(payload+' ')));
 const restoreEnv={...env,NEWS_PAYLOAD_CACHE_HIT:'true',NEWS_PAYLOAD_CACHE_KEY:plan.predecessorCacheKey,NEWS_RECEIPT_CACHE_HIT:'true',NEWS_RECEIPT_CACHE_KEY:`${plan.predecessorCacheKey}-final`};
 let scenarios=0;
-async function scenario(fn,{bootstrap=false}={}) {
+async function scenario(fn,{bootstrap=false,chain}={}) {
  const dir=await mkdtemp(`${tmpdir()}/news-lineage-`), paths=lineagePaths(pathToFileURL(`${dir}/`));
- const testEnv=copy(bootstrap?bootEnv:restoreEnv), metadata=bootstrap?bootMeta:metadataFixture();
+ const testEnv=copy(chain?.env || (bootstrap?bootEnv:restoreEnv)), metadata=chain?.metadata || (bootstrap?bootMeta:metadataFixture());
  try {
-  await createLineagePlan({env:testEnv,paths,metadata});
-  if(!bootstrap) {await writeFile(paths.payload,payload);await writeFile(paths.receipt,JSON.stringify(receipt));}
-  await fn({env:testEnv,paths,metadata});scenarios++;
+  const currentPlan=await createLineagePlan({env:testEnv,paths,metadata});
+  if(!bootstrap) {
+   Object.assign(testEnv,{NEWS_PAYLOAD_CACHE_HIT:'true',NEWS_PAYLOAD_CACHE_KEY:currentPlan.predecessorCacheKey,NEWS_RECEIPT_CACHE_HIT:'true',NEWS_RECEIPT_CACHE_KEY:`${currentPlan.predecessorCacheKey}-final`});
+   await writeFile(paths.payload,payload);await writeFile(paths.receipt,JSON.stringify(finalReceipt(currentPlan.predecessor,payload)));
+  }
+  await fn({env:testEnv,paths,metadata,plan:currentPlan});scenarios++;
  } finally {await rm(dir,{recursive:true,force:true});}
 }
 const missing=async path=>assert.rejects(access(path),{code:'ENOENT'});
 const noFalseZeroRequests = error => {assert.doesNotMatch(error.message,/no_source_requests|no_requests/);return true;};
 // Every rejection below must precede both the robots and news transport boundary.
-async function blocked(change) {
+async function blocked(change,options) {
  await scenario(async context=>{
   let robots=0,feeds=0;
   const options={...context,registry,collect:async()=>{robots++;feeds++;assert.fail('transport_must_not_start');}};
   await change(options);
   await assert.rejects(collectWithLineage(options));
   assert.equal(robots,0);assert.equal(feeds,0);await missing(options.paths.collected);
- });
+ },options);
 }
 for(const patch of [{NEWS_PAYLOAD_CACHE_HIT:'false'},{NEWS_PAYLOAD_CACHE_KEY:'news-review-v2-123'},{NEWS_PAYLOAD_CACHE_KEY:plan.cacheKey},{NEWS_RECEIPT_CACHE_HIT:''},{NEWS_RECEIPT_CACHE_KEY:`${plan.predecessorCacheKey}-final-stale`},{GITHUB_RUN_ATTEMPT:'2'},{NEWS_INITIALIZE_REVIEW_CACHE:'true'}]) await blocked(async o=>Object.assign(o.env,patch));
 for(const field of ['payload','receipt']) await blocked(async o=>rm(o.paths[field]));
@@ -111,6 +146,54 @@ await blocked(async o=>{o.metadata=metadataFixture({predecessor:{...prior,run_at
 await blocked(async o=>{o.metadata=metadataFixture({list:{total_count:0,workflow_runs:[]}});});
 // Rerunning a prior succeeded run must also invalidate an already restored cache.
 await blocked(async o=>{o.metadata=metadataFixture({predecessor:{...prior,status:'in_progress',conclusion:null,run_attempt:2}});});
+
+// Scheduled/manual transitions use the same exact receipt protocol, including
+// existing manual v3 receipts. Every broken chain stays outside both transports.
+for(const chain of [scheduledChain,...eventChains]) {
+ const options={chain};
+ for(const patch of [{GITHUB_RUN_ATTEMPT:'2'},{GITHUB_EVENT_NAME:'push'},{GITHUB_EVENT_NAME:'pull_request'},{GITHUB_REPOSITORY:'evil/fork'},{NEWS_INITIALIZE_REVIEW_CACHE:'true'},{NEWS_PAYLOAD_CACHE_HIT:'false'},{NEWS_RECEIPT_CACHE_HIT:'false'},{NEWS_PAYLOAD_CACHE_KEY:'older-successful-cache'},{NEWS_RECEIPT_CACHE_KEY:'fallback-final'}]) await blocked(async o=>Object.assign(o.env,patch),options);
+ for(const field of ['payload','receipt']) await blocked(async o=>rm(o.paths[field]),options);
+ await blocked(async o=>writeFile(o.paths.payload,JSON.stringify(empty)),options);
+ await blocked(async o=>writeFile(o.paths.receipt,JSON.stringify({...finalReceipt(o.plan.predecessor,payload),transportDecisionsDrained:false})),options);
+ for(const patch of [{conclusion:'failure'},{conclusion:'cancelled'},{conclusion:'timed_out'},{status:'in_progress',conclusion:null},{run_attempt:2},{event:'push'},{event:'pull_request'}]) await blocked(async o=>{
+  const predecessor={...chain.predecessor,...patch};
+  o.metadata=metadataFixture({run:chain.run,predecessor,list:{total_count:3,workflow_runs:[chain.run,predecessor]}});
+ },options);
+ if(chain.predecessor.run_number>1) await blocked(async o=>{
+  // Even two mutually consistent API replies cannot change the admitted event
+  // between plan and collection. Event fields stay in the uncached plan only.
+  const predecessor={...chain.predecessor,event:chain.predecessor.event==='schedule'?'workflow_dispatch':'schedule'};
+  o.metadata=metadataFixture({run:chain.run,predecessor,list:{total_count:3,workflow_runs:[chain.run,predecessor]}});
+ },options);
+ await scenario(async context=>{
+  let robots=0,feeds=0;
+  await collectWithLineage({...context,registry,collect:async()=>{
+   const previous=JSON.parse(await readFile(context.paths.payload,'utf8'));
+   const result=await collectNews(registry,{previous,now:'2027-10-27T12:00:00.000Z',fetchFeed:async()=>{robots++;feeds++;throw new Error('held_source_must_not_request');}});
+   assert.equal(result.diagnostics[0].accessHeld,true);
+   assert.equal(result.diagnostics[0].error,'transport_unresolved');
+   assert.equal(result.diagnostics[0].lastAttemptAt,held.diagnostics[0].lastAttemptAt);
+   await writeFile(context.paths.payload,JSON.stringify(result));
+  }});
+  assert.equal(robots,0);assert.equal(feeds,0);
+  const saved={...context.env,NEWS_SAVED_CACHE_HIT:'true',NEWS_SAVED_CACHE_KEY:context.plan.cacheKey};
+  await assert.rejects(completeLineage({env:{...saved,GITHUB_EVENT_NAME:chain.run.event==='schedule'?'workflow_dispatch':'schedule',NEWS_INITIALIZE_REVIEW_CACHE:'false'},paths:context.paths}),/plan_current_event_mismatch/);
+  await missing(context.paths.receipt);
+  await completeLineage({env:saved,paths:context.paths});
+  await verifyReceiptSaved({env:{...saved,NEWS_SAVED_CACHE_KEY:`${context.plan.cacheKey}-final`},paths:context.paths});
+  verifyFinalReceipt(JSON.parse(await readFile(context.paths.receipt)),context.plan.current,await readFile(context.paths.payload));
+ },options);
+}
+// A first-ever scheduled event never initializes, even with no dispatch inputs
+// or an asserted true input. Rejection precedes file creation and both transports.
+for(const requested of [undefined,'','false','true']) {
+ const dir=await mkdtemp(`${tmpdir()}/news-first-schedule-`),paths=lineagePaths(pathToFileURL(`${dir}/`));
+ let robots=0,feeds=0;
+ try {
+  await assert.rejects(collectWithLineage({env:{...bootEnv,GITHUB_EVENT_NAME:'schedule',NEWS_INITIALIZE_REVIEW_CACHE:requested},paths,registry,metadata:metadataFixture({run:{...prior,event:'schedule',status:'in_progress',conclusion:null}}),collect:async()=>{robots++;feeds++;}}));
+  assert.equal(robots,0);assert.equal(feeds,0);await missing(paths.payload);await missing(paths.collected);
+ } finally {await rm(dir,{recursive:true,force:true});}
+}
 
 await scenario(async context=>{
  const events=[];
@@ -198,9 +281,31 @@ for(const field of ['payload','receipt']) await scenario(async context=>{
 },{bootstrap:true});
 
 // The shipped workflow must call these tested gates in order, without an alternate
-// direct collector path, prefix fallback, schedule, permissive errors or writes.
+// direct collector path, prefix fallback, unguarded event, permissive error or write.
 const workflow=await readFile(new URL('../.github/workflows/news-preview.yml',import.meta.url),'utf8');
-for(const forbidden of [/restore-keys:/,/news-review-v2/,/\n\s+schedule:/,/continue-on-error:/,/contents: write/,/actions: write/,/secrets\./,/node scripts\/import-regional-news.mjs/]) assert.doesNotMatch(workflow,forbidden);
+for(const forbidden of [/restore-keys:/,/news-review-v2/,/continue-on-error:/,/contents: write/,/actions: write/,/secrets\./,/node scripts\/import-regional-news.mjs/]) assert.doesNotMatch(workflow,forbidden);
+assert.equal(workflow.split('permissions:\n')[0],`name: Regional News Preview (Review Required)
+on:
+  # Review-only collection attempts, not successful collection or publication.
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+    inputs:
+      initialize_review_cache:
+        description: "Initialize only the genuine first run; never resets prior cache or holds"
+        type: boolean
+        default: false
+        required: false
+`);
+assert.match(workflow,/permissions:\n  contents: read\nconcurrency:/);
+assert.match(workflow,/    if: \(github.event_name == 'schedule' \|\| github.event_name == 'workflow_dispatch'\) && github.ref == format\('refs\/heads\/\{0\}', github.event.repository.default_branch\)/);
+assert.match(workflow,/timeout-minutes: 10/);
+assert.match(workflow,/NEWS_INITIALIZE_REVIEW_CACHE: \$\{\{ inputs.initialize_review_cache \}\}/);
+const updatePolicy=JSON.parse(await readFile(new URL('../data/update-policy.json',import.meta.url),'utf8'));
+assert.equal(updatePolicy.lanes.find(lane=>lane.id==='regional-news').targetHours,6);
+assert.match(updatePolicy.unchangedPolicy,/No content commit or full Quality Gate for receipt-only changes/);
+const promotion=await readFile(new URL('../.github/workflows/promote-preview-artifacts.yml',import.meta.url),'utf8');
+assert.doesNotMatch(promotion,/Regional News Preview|regional-news-review-only|news-preview.yml/);
 for(const command of ['plan','collect','complete','verify-final-save']) assert.equal(workflow.split(`node scripts/news-preview-lineage.mjs ${command}\n`).length-1,1);
 const stages=['node scripts/news-preview-lineage.mjs plan','id: review-cache','id: final-receipt','node scripts/news-preview-lineage.mjs collect','name: Save only a completed current payload','id: saved-payload','node scripts/news-preview-lineage.mjs complete','name: Save final receipt separately','id: saved-final','node scripts/news-preview-lineage.mjs verify-final-save'];
 for(let i=1;i<stages.length;i++) assert.ok(workflow.indexOf(stages[i])>workflow.indexOf(stages[i-1]),stages[i]);
@@ -210,4 +315,4 @@ const quality=await readFile(new URL('../.github/workflows/quality-gate.yml',imp
 assert.match(quality,/node scripts\/test-news-run-lineage.mjs/);
 assert.match(workflow,/uses: actions\/checkout@v6\n        with:\n          ref: \$\{\{ github.sha \}\}/);
 assert.match(workflow,/concurrency:[\s\S]*?cancel-in-progress: false/);
-console.log(`News lineage tests passed: metadata/current/N-1 identity matrix, strict first-run bootstrap, exact v3 cache/receipt/digest verification, ${scenarios} offline file/transport scenarios, interrupted/rerun/cache-loss stops and workflow ordering. No network calls.`);
+console.log(`News lineage tests passed: manual/scheduled current/N-1 event identity matrix, manual-only first-run bootstrap, exact compatible v3 cache/receipt/digest verification, ${scenarios} offline file/transport scenarios, interrupted/rerun/cache-loss/held-source stops and guarded six-hour review-only workflow ordering. No network calls.`);
