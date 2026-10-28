@@ -1,5 +1,8 @@
 name: Regional News Preview (Review Required)
 on:
+  # Review-only collection attempts, not successful collection or publication.
+  schedule:
+    - cron: "17 */6 * * *"
   workflow_dispatch:
     inputs:
       initialize_review_cache:
@@ -15,7 +18,7 @@ concurrency:
 jobs:
   preview:
     # Never restore privileged review state or fetch sources from PR branches.
-    if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    if: (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') && github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
     runs-on: ubuntu-latest
     timeout-minutes: 10
     env:
@@ -106,9 +109,10 @@ jobs:
             artifacts/news-preview*.json
             artifacts/source-access-diagnostics.jsonl
           if-no-files-found: warn
-# MANUAL ONLY. No broad fallback, v2 migration, automatic recovery or hold reset.
+# GUARDED REVIEW ONLY. Scheduled runs never initialize or reset retained state.
+# No broad fallback, v2 migration, automatic recovery or hold reset.
 # N requires exact N-1 success/attempt 1 plus its exact v3 payload/final receipt.
 # Cache loss, failed/cancelled/interrupted predecessor or rerun breaks the chain;
 # even robots requests stop. Empty API history never authorizes initialization.
-# Reviewed recovery and actual bootstrap readiness require separate verification.
-# No schedule, write token, promotion, publication, AI/model calls or deployment.
+# Reviewed recovery requires separate verification; a cron attempt is not success.
+# No write token, promotion, publication, AI/model calls or deployment.

@@ -170,7 +170,7 @@ assert.match(workflow,/initialize_review_cache:[\s\S]*?default: false/);
 assert.match(workflow,/NEWS_INITIALIZE_REVIEW_CACHE: \$\{\{ inputs.initialize_review_cache \}\}/);
 assert.match(workflow,/node scripts\/news-preview-lineage.mjs collect/);
 assert.doesNotMatch(workflow,/restore-keys:/);
-assert.doesNotMatch(workflow,/\n\s+schedule:/);
+assert.match(workflow,/\n  schedule:\n    - cron: "17 \*\/6 \* \* \*"/);
 console.log('News date/bootstrap tests passed: RFC calendar precision, failure preservation, first-run-only explicit initialization, no reset or default cache-miss requests.');
 
 // Real reviewed manual-only newsroom record: exact approved JSON/browser pair,

@@ -1550,10 +1550,11 @@ assert.equal(acceptedBarriosHolds.find('https://barrioshfx.ca/unknown-page'), nu
   assert.equal(workflowNames.length, 14, 'Review new workflow filters before expanding this change scope');
   const workflows = Object.fromEntries(await Promise.all(workflowNames.map(async name => [name,await readFile(new URL('../.github/workflows/' + name, import.meta.url),'utf8')])));
   const newsWorkflow = workflows['news-preview.yml'];
-  assert(newsWorkflow.includes('  workflow_dispatch:'), 'News preview is manually dispatched');
-  assert(!/^  (?:pull_request|pull_request_target|push|schedule):/m.test(newsWorkflow), 'News collection never runs on PR/push/schedule');
+  assert(newsWorkflow.includes('  workflow_dispatch:'), 'News preview preserves explicit manual dispatch');
+  assert(newsWorkflow.includes('  schedule:\n    - cron: "17 */6 * * *"'), 'News attempts review-only collection every six hours through the same lineage guard');
+  assert(!/^  (?:pull_request|pull_request_target|push|repository_dispatch|workflow_run):/m.test(newsWorkflow), 'News collection never runs on PR/push/other event triggers');
   assert(newsWorkflow.includes('  contents: read') && !newsWorkflow.includes('contents: write'), 'News has no content write permission');
-  assert(newsWorkflow.includes("if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)"), 'News only uses trusted default branch');
+  assert(newsWorkflow.includes("if: (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') && github.ref == format('refs/heads/{0}', github.event.repository.default_branch)"), 'News only admits manual/scheduled events on the trusted default branch');
   assert(newsWorkflow.includes('node scripts/news-preview-lineage.mjs plan') && newsWorkflow.includes('node scripts/news-preview-lineage.mjs collect'), 'News must verify exact current/predecessor lineage before collection');
   assert(newsWorkflow.includes('NEWS_PAYLOAD_CACHE_HIT: ${{ steps.review-cache.outputs.cache-hit }}') && newsWorkflow.includes('NEWS_PAYLOAD_CACHE_KEY: ${{ steps.review-cache.outputs.cache-matched-key }}'), 'News must require the exact predecessor payload, not a partial cache match');
   assert(newsWorkflow.includes('NEWS_RECEIPT_CACHE_HIT: ${{ steps.final-receipt.outputs.cache-hit }}') && newsWorkflow.includes('NEWS_RECEIPT_CACHE_KEY: ${{ steps.final-receipt.outputs.cache-matched-key }}'), 'News must verify the exact predecessor final receipt before transport');
@@ -1631,7 +1632,7 @@ assert.equal(acceptedBarriosHolds.find('https://barrioshfx.ca/unknown-page'), nu
       'Reject Restaurant collector activation or unsafe PR envelope: ' + label);
   }
   console.log('Changed-scope PR matrix: ' + scopeMatrix.map(row => row.workflow + '=' + (row.matched.length ? 'triggered' : row.pullRequest ? 'not-matched' : 'no-PR-trigger')).join(', '));
-  checked('all 14 workflow PR filters reviewed; manual news lane excluded; eight protected validations selected; Restaurant PR collector remains excluded and ' + (restaurantBoundaryMutations.length + 2) + ' boundary mutations rejected');
+  checked('all 14 workflow PR filters reviewed; guarded manual/scheduled news lane excluded from PRs; eight protected validations selected; Restaurant PR collector remains excluded and ' + (restaurantBoundaryMutations.length + 2) + ' boundary mutations rejected');
 
   // This standalone fixture owns its own temporary tree. Execute its real
   // sibling entrypoint with an explicit transport denial, not sandbox copies.
