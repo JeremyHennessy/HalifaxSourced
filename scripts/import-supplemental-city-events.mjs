@@ -62,6 +62,15 @@ function absoluteUrl(value, base) {
 }
 function normalized(value) { return inline(value).toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, ""); }
 function hashId(...parts) { return createHash("sha1").update(parts.join("|")).digest("hex").slice(0, 16); }
+function supplementalEventId(source, raw, eventUrl) {
+  const parts = [raw.title, raw.startAt, raw.venueName || raw.address || "Halifax"];
+  // BiblioCommons can publish separate detail records with the same title,
+  // venue and occurrence time. Preserve the established seed for every other
+  // adapter, but make a library detail URL part of a newly collected identity.
+  // Published IDs are restored later from canonical detail URL + occurrence.
+  if (raw.identityKey) parts.push(raw.identityKey);
+  return `${source.id}-${hashId(...parts)}`;
+}
 function monthNumber(value) {
   const key = String(value || "").toLowerCase();
   const full = MONTHS.indexOf(key);
@@ -110,7 +119,7 @@ function makeEvent(source, raw) {
   if (!raw.title || !raw.startAt || !inRange(raw.startAt, raw.endAt || raw.startAt)) return null;
   const eventUrl = absoluteUrl(raw.eventUrl || source.url, source.url) || source.url;
   const event = {
-    id: `${source.id}-${hashId(raw.title, raw.startAt, raw.venueName || raw.address || "Halifax")}`,
+    id: supplementalEventId(source, raw, eventUrl),
     title: inline(raw.title).slice(0, 240),
     startAt: raw.startAt,
     // An explicitly unknown end is evidence, not a zero-duration performance.
@@ -408,7 +417,7 @@ async function importLibraries(source) {
       if (!title || !location) { diagnostic.missingLocation++; continue; }
       const when = libraryWhen(block);
       if (!when) { diagnostic.missingOccurrence++; continue; }
-      const event = makeEvent(source, { ...when, title: identityTitle, venueName: location[0], city: location[1], categories: libraryCategories(block, title), eventUrl: current.url });
+      const event = makeEvent(source, { ...when, title: identityTitle, venueName: location[0], city: location[1], categories: libraryCategories(block, title), eventUrl: current.url, identityKey: current.url });
       if (event) { event.title = title.slice(0, 240); events.push(event); diagnostic.emitted++; }
     }
     if (libraryDelayMs) await sleep(libraryDelayMs);
