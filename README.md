@@ -240,8 +240,8 @@ GitHub Pages deployment is gated behind the `Quality Gate` workflow. Pull reques
 
 ### Recorded Halifax weather foundation
 
-`#weather` presents one official ECCC regional forecast plus explicitly named Stanfield and Shearwater observations, with immutable source clocks and view-time freshness. It is a recorded manual snapshot, not live collection or an accuracy/calibration claim. The weather registry remains disabled; no new schedule or browser source requests. See [the weather contract and admission evidence](docs/weather-foundation.md) for source rights, six-point HRM scope limits, stale/unavailable warning semantics, fixture provenance and tests.
+`#weather` presents one official ECCC regional forecast plus explicitly named Stanfield and Shearwater observations, with immutable source clocks and view-time freshness. It is a recorded manual snapshot, not live collection or an accuracy/calibration claim. The existing city-page registry is enabled for guarded manual acceptance; automatic scheduling remains disabled and browsers never contact weather sources. See [the weather contract and admission evidence](docs/weather-foundation.md) for source rights, six-point HRM scope limits, stale/unavailable warning semantics, fixture provenance and tests.
 
 ### Halifax weather refresh operations
 
-The accepted current-capture manifest is separate from immutable regression fixtures. The exact-run ECCC-only review producer and strict weather-only promotion lane are implemented but **source collection and cron remain disabled**. See [the activation/acceptance and publication boundary](docs/weather-refresh-operations.md). No extra provider, credentials, permission expansion or news publication is included.
+The accepted current-capture manifest is separate from immutable regression fixtures. The exact-run ECCC-only review producer and strict weather-only promotion lane are implemented with **manual source acceptance enabled and cron disabled**. See [the activation/acceptance and publication boundary](docs/weather-refresh-operations.md). No extra provider, credentials, permission expansion or news publication is included.

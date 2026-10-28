@@ -3,10 +3,10 @@
   "sources": [
     {
       "id": "eccc-halifax-citypage",
-      "name": "ECCC Halifax regional weather \u2014 recorded snapshot; refresh disabled",
+      "name": "ECCC Halifax regional weather: guarded manual refresh",
       "kind": "Official regional forecast and named station observations",
-      "enabled": false,
-      "state": "manual_snapshot_refresh_disabled",
+      "enabled": true,
+      "state": "manual_refresh_ready",
       "url": "https://api.weather.gc.ca/collections/citypageweather-realtime",
       "endpoint": "https://api.weather.gc.ca/collections/citypageweather-realtime/items?f=json&lang=en&bbox=-63.61,44.63,-63.55,44.67&limit=3",
       "geographicScope": [
@@ -39,7 +39,7 @@
         "retries": 0,
         "maximumReturnedFeatures": 2
       },
-      "reviewNote": "One guarded admission sample accepted for source facts, not continuous operation. No schedule, paid provider, forecast accuracy or calibration claim. Unknown/nonempty warning details require original official pages.",
+      "reviewNote": "Existing source admission and guarded refresh implementation have passed review. Manual collection is enabled for bounded live acceptance; automatic schedule remains disabled. Successful source capture and publication are separate gates. No forecast accuracy or calibration claim.",
       "refreshPolicy": {
         "targetCadenceHours": 1,
         "minimumIntervalMinutes": 55,

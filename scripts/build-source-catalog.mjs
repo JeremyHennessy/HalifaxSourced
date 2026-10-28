@@ -5,6 +5,8 @@ import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { iso, latest, freshness, snapshotValue } from './lib/update-consistency.mjs';
 import { sourceRunHealth } from './lib/source-run-health.mjs';
+import modelViewContract from '../weather-model-contract.js';
+import {loadPublicModelProjection} from './lib/weather-model-publication.mjs';
 import { validateOnboardingBacklog } from './lib/source-onboarding-backlog.mjs';
 const root = new URL('../', import.meta.url);
 const rows = value => Array.isArray(value) ? value.filter(x => x && typeof x === 'object' && !Array.isArray(x)) : [];
@@ -107,6 +109,32 @@ export function buildCatalog(inputs) {
       observationTimes:rows(accepted.observations).map(x=>({station:label(x.stationName),observedAt:iso(x.observedAt)})),
       warningCheckedAt:iso(accepted.warnings?.checkedAt), coverage:label(accepted.warnings?.coverage)};
   }
+  // Model providers are separate from the official ECCC city-page authority.
+  // A published field receipt is historical evidence, never an enabled collector.
+  const modelRegistryPath='data/weather-model-registry.json',modelSnapshotPath='data/build/halifax-weather-models.json';
+  const modelRegistry=inputs[modelRegistryPath],modelSnapshot=inputs[modelSnapshotPath];
+  let modelSnapshotValid=false;
+  try { modelViewContract.validate(modelSnapshot); modelSnapshotValid=true; } catch { /* No success inferred from malformed/missing snapshots. */ }
+  for(const source of rows(modelRegistry?.sources)){
+    const record={id:source.id,name:source.id==='eccc'?'ECCC numerical-model GeoMet (city-page authority separate)':source.name,url:source.documentationUrl||source.termsUrl,enabled:false,kind:'Numerical model-source provider',geographicScope:['Halifax-only reviewed model scope'],parserMode:label(Array.isArray(source.acceptedDecoderIds)?source.acceptedDecoderIds.join(', '):null)};
+    const row=add('weather-models',record,modelRegistryPath,null,{registry:true,allowNoUrl:true});if(!row)continue;
+    const forecastRows=modelSnapshotValid?rows(modelSnapshot.forecasts).flatMap(f=>rows(f.contributors).filter(c=>c.sourceId===source.id).map(c=>({...c,validAt:f.validAt,locationId:f.locationId}))):[];
+    const captured=forecastRows.length>0,validTimes=[...new Set(forecastRows.map(c=>iso(c.validAt)).filter(Boolean))].sort();
+    const sourceState=modelSnapshotValid?rows(modelSnapshot.sourceStates).find(x=>x.id===source.id):null;
+    const receiptEvidence=inputs['weather-evidence/model-receipts'];
+    const receipts=modelSnapshotValid&&receiptEvidence?.archiveSha256===modelSnapshot.archiveSha256?rows(receiptEvidence.captures).filter(c=>c.sourceId===source.id&&[200,206].includes(c.status)&&iso(c.attemptedAt)&&iso(c.completedAt)&&Date.parse(c.attemptedAt)<=Date.parse(c.completedAt)&&forecastRows.some(f=>f.sourceBodySha256===c.bodySha256&&iso(f.firstRetrievedAt)===iso(c.completedAt))):[];
+    row.lastAttemptAt=latest(receipts.map(c=>c.attemptedAt)); // Latest retained field request, not a later combined refresh attempt.
+    row.lastSuccessAt=captured?latest(forecastRows.map(c=>c.firstRetrievedAt)):null;
+    row.contentAt=null; // Model reference, retrieval and aggregate issuance are not provider publication.
+    if(captured)row.provenance.push(modelSnapshotPath);
+    row.weatherModels={admission:captured?'published_snapshot':'unadmitted',collection:'Automatic model refresh disabled; saved captures are not a live integration or schedule',accessState:label(sourceState?.accessState||source.accessState)||'unknown',reason:source.id==='eccc'?'GeoMet point route held. Canadian model ingestion is not implemented; Datamart is a separate official service requiring compliant AMQPS for systematic updates, not HTTP directory polling.':label(sourceState?.reason||source.serviceAdmission)||'No admitted model capture',
+      registeredModelIds:rows(modelRegistry?.models).filter(m=>m.sourceId===source.id).map(m=>label(m.id)).filter(Boolean).sort(),modelIds:[...new Set(forecastRows.map(c=>label(c.modelId)).filter(Boolean))].sort(),captureCount:new Set(forecastRows.map(c=>c.sourceBodySha256)).size,locationIds:[...new Set(forecastRows.map(c=>label(c.locationId)).filter(Boolean))].sort(),
+      modelReferenceTimes:[...new Set(forecastRows.map(c=>iso(c.modelReferenceTime)).filter(Boolean))].sort(),sourceIssuedAt:null,firstAvailableAt:null,
+      lastRetainedCaptureAttemptAt:row.lastAttemptAt,firstRetrievedAt:captured?forecastRows.map(c=>iso(c.firstRetrievedAt)).filter(Boolean).sort()[0]:null,lastRetrievedAt:row.lastSuccessAt,
+      validInstantCount:validTimes.length,validFrom:validTimes[0]||null,validThrough:validTimes.at(-1)||null,
+      snapshotIssuedAt:captured?iso(modelSnapshot.issuedAt):null,
+      combinedSnapshotAttempt:captured?{status:label(modelSnapshot.lastAttempt.status),attemptedAt:iso(modelSnapshot.lastAttempt.attemptedAt),completedAt:iso(modelSnapshot.lastAttempt.completedAt)}:null};
+  }
   // This is the importer's exact static input, not an inferred news admission.
   // Opening leads and snapshot generatedAt are not per-feed collection receipts.
   const openingPath = 'data/opening-watch-source-registry.json';
@@ -200,11 +228,15 @@ export function buildCatalog(inputs) {
   return {version:1, snapshotAt, scope:'Offline inventory of committed registries, source relationships, and published evidence. Not live operations. Counts total and state totals are catalogue rows, including evidence/relationships; distinctUrls counts sanitized URLs; distinctHosts counts lowercase hostnames without leading www or a trailing DNS dot. Neither distinct count measures publishers. Target cadence is policy, not proof of an active schedule. Unknown clocks remain unknown; contentAt is publication/change time, not event date. Held overrides failure. Link discovery is not successful collection. Source-onboarding rows are disabled review candidates/manual holds, not ingested content or operational source admissions. Freshness is evaluated at the latest recorded evidence clock; the admin view also evaluates age at viewing time.', counts:{total:sources.length, distinctUrls:urls.size, distinctHosts:hosts.size, ...Object.fromEntries(['enabled','held','failing','stale','unknown'].map(state => [state,sources.filter(x => x.state === state).length]))}, sources};
 }
 export async function buildFromDisk() {
-  const paths = ['data/weather-source-registry.json','data/build/halifax-weather.json','data/update-policy.json','data/place-source-registry.json','data/news-source-registry.json','data/opening-watch-source-registry.json','data/source-onboarding-backlog.json','data/event-source-candidates.json','data/feed-review-overrides.json','data/social-profile-review-overrides.json','data/source-quarantine.json','data/event-source-registry.json','data/event-source-supplements.json','data/social-platform-registry.json','data/source-link-access-holds.json', ...['catalog','city-events','opening-watch-leads','first-party-sources','official-site-signals','structured-place-facts','structured-specials','website-feed-signals','website-page-intelligence','verified-source-pages','structured-events','social-signals','public-special-source-leads','directory-restaurant-leads','patio-directory-facts','ns-food-inspections'].map(x => `data/build/${x}.json`)];
+  const paths = ['data/weather-model-registry.json','data/build/halifax-weather-models.json','data/weather-source-registry.json','data/build/halifax-weather.json','data/update-policy.json','data/place-source-registry.json','data/news-source-registry.json','data/opening-watch-source-registry.json','data/source-onboarding-backlog.json','data/event-source-candidates.json','data/feed-review-overrides.json','data/social-profile-review-overrides.json','data/source-quarantine.json','data/event-source-registry.json','data/event-source-supplements.json','data/social-platform-registry.json','data/source-link-access-holds.json', ...['catalog','city-events','opening-watch-leads','first-party-sources','official-site-signals','structured-place-facts','structured-specials','website-feed-signals','website-page-intelligence','verified-source-pages','structured-events','social-signals','public-special-source-leads','directory-restaurant-leads','patio-directory-facts','ns-food-inspections'].map(x => `data/build/${x}.json`)];
   const inputs = {};
   for (const path of paths) {
     try { inputs[path] = JSON.parse(await readFile(new URL(path,root),'utf8')); }
     catch (error) { if (error.code !== 'ENOENT') throw error; const fallback = path.replace('data/build/','data/').replace(/\.json$/,'.js'); if (fallback !== path) { try { inputs[path] = snapshotValue(await readFile(new URL(fallback,root),'utf8')); } catch (fallbackError) { if (fallbackError.code !== 'ENOENT') throw fallbackError; } } }
+  }
+  if(inputs['data/build/halifax-weather-models.json']){
+    const accepted=await loadPublicModelProjection(root);
+    inputs['weather-evidence/model-receipts']={archiveSha256:accepted.projection.archiveSha256,captures:accepted.archive.captures.map(c=>({sourceId:c.sourceId,status:c.receipt.status,bodySha256:c.id,attemptedAt:c.receipt.attemptedAt,completedAt:c.receipt.completedAt}))};
   }
   const output = JSON.stringify(buildCatalog(inputs),null,2)+'\n';
   const target = new URL('data/build/source-catalog.json', root);

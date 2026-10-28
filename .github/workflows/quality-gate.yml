@@ -13,7 +13,31 @@ permissions:
   contents: read
 
 jobs:
+  weather-model-decoder:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout exact release source
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - name: Set up Node for offline model replay
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Set up reviewed decoder Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install hash-locked decoder in isolated environment
+        run: |
+          python -m venv "$RUNNER_TEMP/weather-grib-venv"
+          "$RUNNER_TEMP/weather-grib-venv/bin/python" -m pip --isolated install --require-hashes --no-deps --only-binary=:all: --index-url https://pypi.org/simple --retries 0 --timeout 20 -r scripts/weather/requirements-eccodes-reviewed.txt
+      - name: Replay actual accepted model captures without source requests
+        run: WEATHER_GRIB_PYTHON="$RUNNER_TEMP/weather-grib-venv/bin/python" node scripts/test-weather-grib-replay.mjs
+
   data-integrity:
+    needs: weather-model-decoder
     runs-on: ubuntu-latest
     timeout-minutes: 45
     env:
@@ -48,9 +72,10 @@ jobs:
           node scripts/test-news-ui.mjs
           node scripts/test-home-discovery.mjs
           node scripts/test-source-catalog.mjs
+          node scripts/test-weather-source-catalog.mjs
           node scripts/test-library-event-boundaries.mjs
 
-      - name: Test recorded Halifax weather offline (collection remains disabled)
+      - name: Test accepted Halifax weather offline (no source requests)
         run: |
           node scripts/test-weather.mjs
           node scripts/check-weather.mjs
@@ -58,6 +83,14 @@ jobs:
           node scripts/test-weather-run-lineage.mjs
           node scripts/test-weather-journal.mjs
           node scripts/test-weather-ui.mjs
+          node scripts/test-weather-aggregation.mjs
+          node scripts/test-weather-model-adversarial.mjs
+          node scripts/test-weather-model-archive.mjs
+          node scripts/test-weather-ecmwf-adapter.mjs
+          node scripts/build-weather-models.mjs
+          node scripts/check-weather-models.mjs
+          node scripts/test-weather-model-publication.mjs
+          node scripts/test-weather-model-ui.mjs
 
       - name: Run structured-special evidence regression
         run: |

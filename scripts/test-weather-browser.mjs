@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {existsSync} from 'node:fs';
 import {mkdir,writeFile,readFile} from 'node:fs/promises';
 import {projectEccc,acceptedEnvelope} from './lib/eccc-weather.mjs';
+import {loadPublicModelProjection} from './lib/weather-model-publication.mjs';
 import {loadCurrentWeather} from './lib/weather-capture.mjs';
 import {installOfflineResources} from './lib/offline-browser-resources.mjs';
 let playwright;
@@ -20,11 +21,14 @@ try{
   const resources=await installOfflineResources(context,base);
   const page=await context.newPage();
   const actual=(await loadCurrentWeather()).envelope;
+  const actualModels=(await loadPublicModelProjection()).projection;
   await page.clock.install({time:new Date()});
   await page.goto(base+'/#weather',{waitUntil:'networkidle'});
   await page.locator('#weatherForecastHeading').waitFor();
   // First verify the actual packaged release semantically, at viewing time.
   assert.deepEqual(await page.evaluate(()=>window.HalifaxWeather),actual);
+  assert.deepEqual(await page.evaluate(()=>window.HalifaxWeatherModels),actualModels);
+  await page.locator('#weatherModelsHeading').waitFor();
   const currentView=await page.evaluate(()=>window.HalifaxWeatherContract.evaluate(window.HalifaxWeather));
   assert.equal(await page.locator('#weatherForecastHeading').count(),1);
   if(currentView.warnings.status==='unavailable')assert.match(await page.locator('#weatherWarningHeading').innerText(),/unavailable/);
@@ -33,6 +37,35 @@ try{
   await page.setViewportSize({width:390,height:844});
   await page.screenshot({path:new URL('weather-current-mobile.png',artifacts).pathname,fullPage:true});
   await page.setViewportSize({width:1440,height:1000});
+  // Real accepted model snapshot: semantic gates and browser edges, not fixed source values.
+  await page.clock.setFixedTime(new Date(Date.parse(actualModels.issuedAt)+1));
+  await page.evaluate(()=>renderWeather());
+  let modelContent=await page.locator('[aria-labelledby="weatherModelsHeading"]').innerText();
+  assert.match(modelContent,/GFS \+ ECMWF IFS/);assert.match(modelContent,/no automatic model refresh/);
+  assert.match(modelContent,/No improvement in prediction accuracy has been established/);
+  assert.match(modelContent,/Open-Meteo.*held/);assert.match(modelContent,/Deutscher Wetterdienst.*held/);
+  await page.locator('[data-weather-model-details="halifax_peninsula"]').evaluate(element=>element.open=true);
+  await page.locator('[data-weather-model-details^="halifax_peninsula-"]').first().evaluate(element=>element.open=true);
+  for(const width of [1440,768,390,320]){
+    await page.setViewportSize({width,height:900});
+    const geometry=await page.evaluate(()=>({viewport:innerWidth,documentWidth:document.documentElement.scrollWidth}));
+    assert.ok(geometry.documentWidth<=width,'Expanded model provenance overflow: '+JSON.stringify(geometry));
+  }
+  await page.setViewportSize({width:1440,height:1000});
+  await page.screenshot({path:new URL('weather-models-current-desktop.png',artifacts).pathname,fullPage:true});
+  await page.setViewportSize({width:390,height:844});
+  await page.screenshot({path:new URL('weather-models-current-mobile.png',artifacts).pathname,fullPage:true});
+  await page.evaluate(()=>{window.__acceptedModelSnapshot=structuredClone(window.HalifaxWeatherModels);window.HalifaxWeatherModels.lastAttempt.status='failed';renderWeather();});
+  assert.match(await page.locator('[aria-labelledby="weatherModelsHeading"]').innerText(),/Latest model attempt failed.*not current/);
+  assert.equal(await page.evaluate(()=>window.HalifaxWeatherModelContract.evaluate(window.HalifaxWeatherModels).currentHeadlines.length),0);
+  await page.clock.setFixedTime(new Date(Math.max(...actualModels.forecasts.map(row=>Date.parse(row.validAt)))+1));
+  await page.evaluate(()=>{window.HalifaxWeatherModels=structuredClone(window.__acceptedModelSnapshot);renderWeather();});
+  assert.equal(await page.evaluate(()=>window.HalifaxWeatherModelContract.evaluate(window.HalifaxWeatherModels).currentHeadlines.length),0);
+  assert.match(await page.locator('[aria-labelledby="weatherModelsHeading"]').innerText(),/historical|unavailable/i);
+  await page.screenshot({path:new URL('weather-models-historical-mobile.png',artifacts).pathname,fullPage:true});
+  await page.evaluate(()=>{for(const details of document.querySelectorAll('[data-weather-model-details]'))details.open=false;});
+  await page.setViewportSize({width:1440,height:1000});
+  checks.push('actual GFS/IFS projection, expanded320–1440px model view, held sources, visible attribution, failed retention and target expiry');
   // Fixed regression cases remain deterministic even after the accepted capture advances.
   const fixtureReceipt=JSON.parse(await readFile(new URL('fixtures/weather/eccc-citypage-20261028-receipt.json',import.meta.url),'utf8'));
   const fixture=acceptedEnvelope(projectEccc(await readFile(new URL('fixtures/weather/eccc-citypage-20261028.json',import.meta.url),'utf8'),fixtureReceipt),fixtureReceipt);
@@ -95,7 +128,7 @@ try{
   await page.screenshot({path:new URL('weather-stale-mobile.png',artifacts).pathname,fullPage:true});
   checks.push('exact warning expiry, stale retained issue clocks, repeated DST hour distinguished');
   await page.waitForLoadState('networkidle');resources.assertClean();
-  assert.ok(!resources.evidence.requests.some(row=>new URL(row.url).hostname==='api.weather.gc.ca'),'No browser weather API calls');
+  assert.ok(!resources.evidence.requests.some(row=>['api.weather.gc.ca','nomads.ncep.noaa.gov','data.ecmwf.int','api.open-meteo.com','ensemble-api.open-meteo.com'].includes(new URL(row.url).hostname)),'No browser weather API calls');
   await writeFile(new URL('weather-browser-report.json',artifacts),JSON.stringify({passed:true,checks,sizes,dst,stateCheck,resources:resources.evidence},null,2));
   console.log('Weather hosted browser assertions passed: '+checks.join('; '));
   await context.close();

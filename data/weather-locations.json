@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "scope": "six_reviewed_halifax_points_not_entire_municipality",
+  "wholeMunicipalityCoverageCertified": false,
+  "headlineEstimand": "equal_mean_of_all_three_core_points_only",
+  "points": [
+    {"id":"halifax_peninsula","name":"Halifax Peninsula","latitude":44.6488,"longitude":-63.5752,"role":"core"},
+    {"id":"bedford","name":"Bedford","latitude":44.7318,"longitude":-63.6619,"role":"core"},
+    {"id":"dartmouth","name":"Dartmouth","latitude":44.6661,"longitude":-63.5676,"role":"core"},
+    {"id":"clayton_park","name":"Clayton Park","latitude":44.6718,"longitude":-63.6530,"role":"context"},
+    {"id":"lower_sackville","name":"Lower Sackville","latitude":44.7757,"longitude":-63.6786,"role":"context"},
+    {"id":"eastern_passage","name":"Eastern Passage","latitude":44.6109,"longitude":-63.4820,"role":"context"}
+  ]
+}

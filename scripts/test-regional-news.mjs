@@ -359,3 +359,5 @@ console.log('Reviewed publisher expansion passed: the original 7 expansion links
 
 // Manual backfill and additional publisher types stay additive and offline.
 await import('./test-news-archive-expansion.mjs');
+
+await import('./test-official-news-expansion.mjs');

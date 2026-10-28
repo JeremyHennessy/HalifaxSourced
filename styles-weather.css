@@ -5,3 +5,5 @@
 .weather-forecast-lead h3{margin:0 0 .5rem;font-size:1rem}
 .weather-forecast-lead p{margin:0;line-height:1.6}
 .weather-record-note>summary{font-weight:700;cursor:pointer}
+
+.weather-source-locator { overflow-wrap: anywhere; word-break: break-word; }
