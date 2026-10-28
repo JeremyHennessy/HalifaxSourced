@@ -87,6 +87,25 @@ if (desktopState.overflow > 2) {
 }
 await page.screenshot({ path: resolve("artifacts", "ui-check-admin-status-desktop.png"), fullPage: true });
 
+// The receipt updates operational clocks only; it must not turn the static
+// catalogue into a claim of live monitoring or newly published candidate news.
+async function verifyNewsReceipt() {
+  await page.locator('[data-catalog-family]').selectOption('news');
+  await page.locator('[data-catalog-query]').fill('Global News Halifax');
+  const rows=page.locator('[data-catalog-results] .source-catalog-row');
+  if(await rows.count()!==1) throw new Error('Expected exactly one Global Halifax catalogue row');
+  const row=rows.first(),text=await row.innerText();
+  if(!text.includes('Published receipt snapshot, not live monitoring.') || !text.includes('No candidate publication is implied.')) throw new Error('News receipt scope missing');
+  if(!text.includes('Last successful collection') || !text.includes('Latest content publication/change')) throw new Error('News health/content clocks are not separate');
+  const clocks=await row.locator('.source-catalog-clocks dd').allTextContents();
+  if(clocks.length!==3 || /unknown/i.test(clocks[0]) || clocks[0]!==clocks[1] || !/unknown/i.test(clocks[2])) throw new Error('Expected successful check and unknown content clock');
+  if(await row.locator('a[href^="https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/"]').count()!==1) throw new Error('Verified run provenance link missing');
+  if(await page.evaluate(()=>document.documentElement.scrollWidth-document.documentElement.clientWidth)>2) throw new Error('News receipt overflows viewport');
+  await page.locator('[data-catalog-query]').fill('');
+  await page.locator('[data-catalog-family]').selectOption('');
+}
+await verifyNewsReceipt();
+
 await page.setViewportSize({ width: 390, height: 844 });
 await page.goto(`${url}/#admin/status`, { waitUntil: "networkidle" });
 await page.waitForFunction(() => window.__halifaxAdminStatus?.loaded === true);
@@ -101,6 +120,7 @@ const mobileState = await page.evaluate(() => ({
 if (mobileState.metricCards < 4 || mobileState.dataRows < 5 || mobileState.sourceRows < 5 || mobileState.reviewRows < 5 || mobileState.overflow > 2 || !mobileState.bottomNavVisible) {
   throw new Error(`Expected mobile admin status to fit and stay populated, got ${JSON.stringify(mobileState)}.`);
 }
+await verifyNewsReceipt();
 await page.screenshot({ path: resolve("artifacts", "ui-check-admin-status-iphone.png"), fullPage: true });
 
 await browser.close();
