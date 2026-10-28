@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "url": "https://api.weather.gc.ca/collections/citypageweather-realtime/items?f=json&lang=en&bbox=-63.61,44.63,-63.55,44.67&limit=3",
+  "sourceCommitSha": "43d9f73662216ee40c5a65404324e3593b38bd13",
+  "kind": "manual_source_admission_probe",
+  "purpose": "Official Halifax city forecast, observations and warnings only; no collection activation",
+  "allowedCityNames": [
+    "Halifax",
+    "Dartmouth"
+  ],
+  "attemptedAt": "2026-10-28T00:43:26.981Z",
+  "requestHeaders": {
+    "User-Agent": "HalifaxSourced-SourceReview/1.0 (+https://github.com/JeremyHennessy/HalifaxSourced; single bounded Halifax official-weather admission probe)",
+    "Accept": "application/geo+json, application/json;q=0.9"
+  },
+  "maximumBytes": 524288,
+  "maximumFeatures": 3,
+  "timeoutMs": 20000,
+  "redirectPolicy": "none",
+  "status": "received_pending_semantic_review",
+  "responseAt": "2026-10-28T00:43:33.582Z",
+  "httpStatus": 200,
+  "responseHeaders": {
+    "date": "Wed, 28 Oct 2026 00:43:33 GMT",
+    "content-type": "application/json"
+  },
+  "bodyBytes": 64781,
+  "sha256": "448b6c163d4a8083f17adecb6620c82ba5b6fa52c61844c999ea349abb374ccb",
+  "featureCount": 2,
+  "retrievedAt": "2026-10-28T00:43:33.585Z"
+}

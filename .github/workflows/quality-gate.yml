@@ -50,6 +50,12 @@ jobs:
           node scripts/test-source-catalog.mjs
           node scripts/test-library-event-boundaries.mjs
 
+      - name: Test recorded Halifax weather offline (collection remains disabled)
+        run: |
+          node scripts/test-weather.mjs
+          node scripts/test-weather-journal.mjs
+          node scripts/test-weather-ui.mjs
+
       - name: Run structured-special evidence regression
         run: |
           node scripts/test-structured-specials-model.mjs
@@ -421,6 +427,7 @@ jobs:
           node scripts/test-map-tile-controls.mjs
           node scripts/test-home-carousel-classic-scrollbar.mjs
           node scripts/verify-ui.mjs
+          node scripts/test-weather-browser.mjs
           node scripts/verify-reviewed-corrections.mjs
           node scripts/verify-regional-restaurants.mjs
           node scripts/verify-admin-status.mjs

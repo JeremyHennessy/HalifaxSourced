@@ -437,6 +437,15 @@ function catalogReviewMetadata(row) {
     <details><summary>Review observations (not collection receipts)</summary>${evidence.map(item => `<p>${statusEscape(item.observation)}${item.url ? `<br>${catalogLink(item.url, item.url)}` : ""}</p>`).join("")}</details>
   </section>`;
 }
+function catalogWeatherMetadata(row) {
+  if (row.family !== "weather" || !row.weather) return "";
+  const data = row.weather;
+  return `<section aria-label="Recorded weather source evidence"><p><strong>${statusEscape(data.collection)}</strong></p>
+    <p>Regional forecast issued: ${catalogClock(data.forecastIssuedAt)} · Retrieved: ${catalogClock(data.retrievedAt)}</p>
+    ${(Array.isArray(data.observationTimes) ? data.observationTimes : []).map(item => `<p>${statusEscape(item.station)} — observed: ${catalogClock(item.observedAt)}</p>`).join("")}
+    <p>Warning page check: ${catalogClock(data.warningCheckedAt)}. ${statusEscape(data.coverage || "Coverage unknown")}</p>
+    <p>These recorded clocks do not establish current weather or an all-clear. <a href="#weather">View weather freshness and limits</a>.</p></section>`;
+}
 function renderCatalogRow(row) {
   const state = catalogCurrentState(row);
   return `<article class="source-catalog-row">
@@ -446,6 +455,7 @@ function renderCatalogRow(row) {
     <dl class="source-catalog-clocks"><div><dt>Last attempt</dt><dd>${catalogClock(row.lastAttemptAt)}</dd></div><div><dt>Last successful collection</dt><dd>${catalogClock(row.lastSuccessAt)}</dd></div><div><dt>Latest content publication/change</dt><dd>${catalogClock(row.contentAt)}</dd></div></dl>
     <p>Collection enabled: ${row.enabled === true ? "yes (registered)" : row.enabled === false ? "no" : "unknown"} · Target lane cadence (not live scheduling): ${row.targetHours ? `${statusEscape(row.targetHours)} hours` : "unknown"} · Parser: ${statusEscape(row.parser || "unknown")}</p>
     ${catalogReviewMetadata(row)}
+    ${catalogWeatherMetadata(row)}
     <details><summary>Provenance and operations</summary><p>Source ID: ${statusEscape(row.sourceId || "unknown")}<br>Catalogue ID: ${statusEscape(row.id)}</p><p>${(row.provenance || []).map(path => statusEscape(path)).join("<br>")}</p><p>${row.workflowUrl ? catalogLink(row.workflowUrl, "Inspect workflow runs / authenticated dispatch") : "No mapped workflow"} · ${catalogLink(row.reviewUrl, "Review changes")}</p></details>
   </article>`;
 }

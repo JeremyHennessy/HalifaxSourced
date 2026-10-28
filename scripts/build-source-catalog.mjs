@@ -89,6 +89,24 @@ export function buildCatalog(inputs) {
     for (const stat of rows(city.sourceStats).filter(s => s.sourceId === record.id)) add('city-events', {...record, ...stat}, 'data/build/city-events.json', 'city-events', {registry:true, defaultEnabled:true, sourceId:record.id, receipt:true});
   }
   for (const [path,family,workflow] of [['data/place-source-registry.json','discovery-directories','restaurant-discovery-preview.yml'],['data/news-source-registry.json','news','news-preview.yml']]) for (const record of rows(inputs[path]?.sources)) add(family,record,path,family === 'news' ? 'regional-news' : null,{registry:true, workflow});
+  // A recorded source receipt is evidence, not an active collection schedule.
+  const weatherPath = 'data/weather-source-registry.json', weatherSnapshotPath = 'data/build/halifax-weather.json';
+  const weatherSnapshot = inputs[weatherSnapshotPath];
+  for (const source of rows(inputs[weatherPath]?.sources)) {
+    const row = add('weather',source,weatherPath,null,{registry:true});
+    if (source.id !== 'eccc-halifax-citypage' || !row) continue;
+    const accepted = weatherSnapshot?.version === 1 ? weatherSnapshot.lastKnownGood : null;
+    if (accepted?.sourceUrl !== source.endpoint) continue;
+    row.provenance.push(weatherSnapshotPath);
+    row.lastAttemptAt = iso(weatherSnapshot.lastAttempt?.attemptedAt);
+    row.lastSuccessAt = iso(accepted.retrievedAt);
+    row.contentAt = iso(accepted.forecast?.issuedAt);
+    row.failing = !['success',undefined].includes(weatherSnapshot.lastAttempt?.status);
+    row.weather = {collection:'Disabled — recorded manual snapshot; no schedule',
+      forecastIssuedAt:iso(accepted.forecast?.issuedAt), retrievedAt:iso(accepted.retrievedAt),
+      observationTimes:rows(accepted.observations).map(x=>({station:label(x.stationName),observedAt:iso(x.observedAt)})),
+      warningCheckedAt:iso(accepted.warnings?.checkedAt), coverage:label(accepted.warnings?.coverage)};
+  }
   // This is the importer's exact static input, not an inferred news admission.
   // Opening leads and snapshot generatedAt are not per-feed collection receipts.
   const openingPath = 'data/opening-watch-source-registry.json';
@@ -182,7 +200,7 @@ export function buildCatalog(inputs) {
   return {version:1, snapshotAt, scope:'Offline inventory of committed registries, source relationships, and published evidence. Not live operations. Counts total and state totals are catalogue rows, including evidence/relationships; distinctUrls counts sanitized URLs; distinctHosts counts lowercase hostnames without leading www or a trailing DNS dot. Neither distinct count measures publishers. Target cadence is policy, not proof of an active schedule. Unknown clocks remain unknown; contentAt is publication/change time, not event date. Held overrides failure. Link discovery is not successful collection. Source-onboarding rows are disabled review candidates/manual holds, not ingested content or operational source admissions. Freshness is evaluated at the latest recorded evidence clock; the admin view also evaluates age at viewing time.', counts:{total:sources.length, distinctUrls:urls.size, distinctHosts:hosts.size, ...Object.fromEntries(['enabled','held','failing','stale','unknown'].map(state => [state,sources.filter(x => x.state === state).length]))}, sources};
 }
 export async function buildFromDisk() {
-  const paths = ['data/update-policy.json','data/place-source-registry.json','data/news-source-registry.json','data/opening-watch-source-registry.json','data/source-onboarding-backlog.json','data/event-source-candidates.json','data/feed-review-overrides.json','data/social-profile-review-overrides.json','data/source-quarantine.json','data/event-source-registry.json','data/event-source-supplements.json','data/social-platform-registry.json','data/source-link-access-holds.json', ...['catalog','city-events','opening-watch-leads','first-party-sources','official-site-signals','structured-place-facts','structured-specials','website-feed-signals','website-page-intelligence','verified-source-pages','structured-events','social-signals','public-special-source-leads','directory-restaurant-leads','patio-directory-facts','ns-food-inspections'].map(x => `data/build/${x}.json`)];
+  const paths = ['data/weather-source-registry.json','data/build/halifax-weather.json','data/update-policy.json','data/place-source-registry.json','data/news-source-registry.json','data/opening-watch-source-registry.json','data/source-onboarding-backlog.json','data/event-source-candidates.json','data/feed-review-overrides.json','data/social-profile-review-overrides.json','data/source-quarantine.json','data/event-source-registry.json','data/event-source-supplements.json','data/social-platform-registry.json','data/source-link-access-holds.json', ...['catalog','city-events','opening-watch-leads','first-party-sources','official-site-signals','structured-place-facts','structured-specials','website-feed-signals','website-page-intelligence','verified-source-pages','structured-events','social-signals','public-special-source-leads','directory-restaurant-leads','patio-directory-facts','ns-food-inspections'].map(x => `data/build/${x}.json`)];
   const inputs = {};
   for (const path of paths) {
     try { inputs[path] = JSON.parse(await readFile(new URL(path,root),'utf8')); }

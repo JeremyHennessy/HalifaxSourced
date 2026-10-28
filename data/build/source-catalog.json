@@ -1,15 +1,15 @@
 {
   "version": 1,
-  "snapshotAt": "2026-10-24T11:13:08.213Z",
+  "snapshotAt": "2026-10-28T00:43:33.585Z",
   "scope": "Offline inventory of committed registries, source relationships, and published evidence. Not live operations. Counts total and state totals are catalogue rows, including evidence/relationships; distinctUrls counts sanitized URLs; distinctHosts counts lowercase hostnames without leading www or a trailing DNS dot. Neither distinct count measures publishers. Target cadence is policy, not proof of an active schedule. Unknown clocks remain unknown; contentAt is publication/change time, not event date. Held overrides failure. Link discovery is not successful collection. Source-onboarding rows are disabled review candidates/manual holds, not ingested content or operational source admissions. Freshness is evaluated at the latest recorded evidence clock; the admin view also evaluates age at viewing time.",
   "counts": {
-    "total": 4660,
-    "distinctUrls": 2455,
-    "distinctHosts": 422,
-    "enabled": 28,
-    "held": 455,
+    "total": 4661,
+    "distinctUrls": 2456,
+    "distinctHosts": 423,
+    "enabled": 15,
+    "held": 456,
     "failing": 158,
-    "stale": 221,
+    "stale": 234,
     "unknown": 3798
   },
   "sources": [
@@ -21371,8 +21371,8 @@
         "data/build/city-events.json",
         "data/event-source-registry.json"
       ],
-      "freshness": "fresh",
-      "state": "enabled"
+      "freshness": "stale",
+      "state": "stale"
     },
     {
       "id": "city-events:0ca69c8768b7510df9f2",
@@ -21396,8 +21396,8 @@
         "data/build/city-events.json",
         "data/event-source-registry.json"
       ],
-      "freshness": "fresh",
-      "state": "enabled"
+      "freshness": "stale",
+      "state": "stale"
     },
     {
       "id": "city-events:270379b5455603e30804",
@@ -21421,8 +21421,8 @@
         "data/build/city-events.json",
         "data/event-source-registry.json"
       ],
-      "freshness": "fresh",
-      "state": "enabled"
+      "freshness": "stale",
+      "state": "stale"
     },
     {
       "id": "city-events:551d13aa562f6e883756",
@@ -21471,8 +21471,8 @@
         "data/build/city-events.json",
         "data/event-source-supplements.json"
       ],
-      "freshness": "fresh",
-      "state": "enabled"
+      "freshness": "stale",
+      "state": "stale"
     },
     {
       "id": "city-events:74e3d827d8ad0340c7bf",
@@ -21496,8 +21496,8 @@
         "data/build/city-events.json",
         "data/event-source-registry.json"
       ],
-      "freshness": "fresh",
-      "state": "enabled"
+      "freshness": "stale",
+      "state": "stale"
     },
     {
       "id": "city-events:77432061f3c54a5cd8f6",
@@ -21521,8 +21521,8 @@
         "data/build/city-events.json",
         "data/event-source-supplements.json"
       ],
-      "freshness": "fresh",
-      "state": "enabled"
+      "freshness": "stale",
+      "state": "stale"
     },
     {
       "id": "city-events:77bdc90812b3b1133942",
@@ -21546,8 +21546,8 @@
         "data/build/city-events.json",
         "data/event-source-supplements.json"
       ],
-      "freshness": "fresh",
-      "state": "enabled"
+      "freshness": "stale",
+      "state": "stale"
     },
     {
       "id": "city-events:78dd474a2497fda4bd4e",
@@ -21571,8 +21571,8 @@
         "data/build/city-events.json",
         "data/event-source-supplements.json"
       ],
-      "freshness": "fresh",
-      "state": "enabled"
+      "freshness": "stale",
+      "state": "stale"
     },
     {
       "id": "city-events:9a1aa018deaa389a40c7",
@@ -21596,8 +21596,8 @@
         "data/build/city-events.json",
         "data/event-source-registry.json"
       ],
-      "freshness": "fresh",
-      "state": "enabled"
+      "freshness": "stale",
+      "state": "stale"
     },
     {
       "id": "city-events:b5930f467c49f6156778",
@@ -21621,8 +21621,8 @@
         "data/build/city-events.json",
         "data/event-source-supplements.json"
       ],
-      "freshness": "fresh",
-      "state": "enabled"
+      "freshness": "stale",
+      "state": "stale"
     },
     {
       "id": "city-events:bb57df14487f088cf212",
@@ -21671,8 +21671,8 @@
         "data/build/city-events.json",
         "data/event-source-registry.json"
       ],
-      "freshness": "fresh",
-      "state": "enabled"
+      "freshness": "stale",
+      "state": "stale"
     },
     {
       "id": "city-events:c76696e3b31e5b3baadf",
@@ -21696,8 +21696,8 @@
         "data/build/city-events.json",
         "data/event-source-registry.json"
       ],
-      "freshness": "fresh",
-      "state": "enabled"
+      "freshness": "stale",
+      "state": "stale"
     },
     {
       "id": "city-events:d42637820b0ef9e40884",
@@ -21771,8 +21771,8 @@
         "data/build/city-events.json",
         "data/event-source-registry.json"
       ],
-      "freshness": "fresh",
-      "state": "enabled"
+      "freshness": "stale",
+      "state": "stale"
     },
     {
       "id": "discovery-directories:3205cb2aa83c99c3240e",
@@ -88667,6 +88667,48 @@
       ],
       "freshness": "unknown",
       "state": "unknown"
+    },
+    {
+      "id": "weather:e2ed3a6d06b2cfd67f46",
+      "sourceId": "eccc-halifax-citypage",
+      "family": "weather",
+      "name": "ECCC Halifax regional weather — recorded snapshot; refresh disabled",
+      "url": "https://api.weather.gc.ca/collections/citypageweather-realtime",
+      "category": "Official regional forecast and named station observations",
+      "geography": "Halifax Peninsula, Bedford, Dartmouth, Clayton Park, Lower Sackville, Eastern Passage",
+      "enabled": false,
+      "held": true,
+      "failing": false,
+      "lastAttemptAt": "2026-10-28T00:43:26.981Z",
+      "lastSuccessAt": "2026-10-28T00:43:33.585Z",
+      "contentAt": "2026-10-27T19:00:00.000Z",
+      "targetHours": null,
+      "workflowUrl": null,
+      "reviewUrl": "https://github.com/JeremyHennessy/HalifaxSourced/pulls",
+      "parser": "eccc-citypage-v1-strict-halifax",
+      "provenance": [
+        "data/build/halifax-weather.json",
+        "data/weather-source-registry.json"
+      ],
+      "weather": {
+        "collection": "Disabled — recorded manual snapshot; no schedule",
+        "forecastIssuedAt": "2026-10-27T19:00:00.000Z",
+        "retrievedAt": "2026-10-28T00:43:33.585Z",
+        "observationTimes": [
+          {
+            "station": "Halifax Stanfield Int'l Airport",
+            "observedAt": "2026-10-28T00:00:00.000Z"
+          },
+          {
+            "station": "Shearwater Airport",
+            "observedAt": "2026-10-28T00:00:00.000Z"
+          }
+        ],
+        "warningCheckedAt": "2026-10-28T00:43:33.585Z",
+        "coverage": "Only the two checked ECCC Halifax city pages; not all HRM or all hazards."
+      },
+      "freshness": "unknown",
+      "state": "held"
     },
     {
       "id": "website-feeds:0273339e5e8f5c68a3df",
