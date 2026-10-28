@@ -1,7 +1,12 @@
 import { createHash } from 'node:crypto';
 
 export const REVIEWED_EVENT_QUARANTINE_PATH = 'data/quarantine/library-store-navigation-20261027.json';
+export const REVIEWED_EVENT_QUARANTINE_PATHS = [
+  REVIEWED_EVENT_QUARANTINE_PATH,
+  'data/quarantine/city-event-lifecycle-20261028.json'
+];
 const GUARD_FIELDS = ['id', 'sourceId', 'title', 'eventUrl', 'startAt', 'endAt', 'observedAt'];
+const DISPOSITIONS = new Set(['reviewed_invalid_navigation_extraction', 'reviewed_source_lifecycle_exclusion']);
 
 // Stable JSON hashing preserves the complete original evidence, independent of
 // object-key order. This is not a title/URL/day heuristic or a source freshness clock.
@@ -15,7 +20,7 @@ export function eventRecordSha256(record) {
 }
 
 export function validateReviewedEventQuarantine(archive) {
-  if (archive?.version !== 1 || archive.disposition !== 'reviewed_invalid_navigation_extraction'
+  if (archive?.version !== 1 || !DISPOSITIONS.has(archive.disposition)
     || !archive.archiveId || !Number.isFinite(Date.parse(archive.decisionReviewedAt))
     || !Array.isArray(archive.records) || archive.rawArchiveRecordCount !== archive.records.length
     || !Array.isArray(archive.activeQuarantineIds) || !Array.isArray(archive.protectedDetailIds)) {
@@ -80,6 +85,38 @@ export function applyReviewedEventQuarantine(events, archive = null) {
       quarantined,
       mismatchCount: mismatches.length,
       mismatches
+    }
+  };
+}
+
+export function applyReviewedEventQuarantines(events, archives = []) {
+  const list = Array.isArray(archives) ? archives : [archives];
+  let kept = events, blocked = false;
+  const receipts = [];
+  for (const archive of list.filter(Boolean)) {
+    const result = applyReviewedEventQuarantine(kept, archive);
+    kept = result.events;
+    blocked ||= result.blocked;
+    receipts.push(result.receipt);
+  }
+  const quarantinedBySource = {};
+  for (const receipt of receipts) for (const [sourceId, count] of Object.entries(receipt.quarantinedBySource)) {
+    quarantinedBySource[sourceId] = (quarantinedBySource[sourceId] || 0) + count;
+  }
+  return {
+    events: kept,
+    blocked,
+    receipt: {
+      archiveIds: receipts.map(receipt => receipt.archiveId),
+      activeDecisionCount: receipts.reduce((sum, receipt) => sum + receipt.activeDecisionCount, 0),
+      inputEventCount: events.length,
+      keptEventCount: kept.length,
+      quarantinedCount: receipts.reduce((sum, receipt) => sum + receipt.quarantinedCount, 0),
+      quarantinedBySource,
+      quarantined: receipts.flatMap(receipt => receipt.quarantined),
+      mismatchCount: receipts.reduce((sum, receipt) => sum + receipt.mismatchCount, 0),
+      mismatches: receipts.flatMap(receipt => receipt.mismatches),
+      archives: receipts
     }
   };
 }
