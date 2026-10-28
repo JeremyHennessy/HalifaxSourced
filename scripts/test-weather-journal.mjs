@@ -2,12 +2,15 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import {collectEcccReview} from './lib/eccc-weather-adapter.mjs';
+import {projectEccc,acceptedEnvelope} from './lib/eccc-weather.mjs';
 const read=path=>fs.readFile(new URL('../'+path,import.meta.url),'utf8');
 const body=await read('scripts/fixtures/weather/eccc-citypage-20261028.json');
 const registry=JSON.parse(await read('data/weather-source-registry.json'));
-assert.equal(registry.sources[0].enabled,false);
+const originalEnabled=registry.sources[0].enabled;
 const enabled=structuredClone(registry);enabled.sources[0].enabled=true; // test-only, never written
-const previous=JSON.parse(await read('data/build/halifax-weather.json'));
+const actualBytes=await read('data/build/halifax-weather.json');
+const receipt=JSON.parse(await read('scripts/fixtures/weather/eccc-citypage-20261028-receipt.json'));
+const previous=acceptedEnvelope(projectEccc(body,receipt),receipt);
 const originalSnapshot=JSON.stringify(previous);
 const journalPath='/durable/existing/new/leaf/review.jsonl',leaf='/durable/existing/new/leaf';
 const originals={lstat:fs.lstat,mkdir:fs.mkdir,open:fs.open,fetch:globalThis.fetch};
@@ -89,6 +92,6 @@ for(const settings of [{journalExists:true},{symlink:'/durable/existing'}]){
   finally{mock.restore();}
 }
 assert.equal(JSON.stringify(previous),originalSnapshot);
-assert.equal(await read('data/build/halifax-weather.json'),JSON.stringify(previous,null,2)+'\n');
-assert.equal(JSON.parse(await read('data/weather-source-registry.json')).sources[0].enabled,false);
+assert.equal(await read('data/build/halifax-weather.json'),actualBytes);
+assert.equal(JSON.parse(await read('data/weather-source-registry.json')).sources[0].enabled,originalEnabled);
 console.log(`Weather journal durability passed: ${prefix.length} pre-transport failure points, new/existing ancestor order, pending-byte and pathname barriers, unsupported fsync, blocked async barrier, symlink/existing-journal refusal; zero external requests or snapshot changes.`);

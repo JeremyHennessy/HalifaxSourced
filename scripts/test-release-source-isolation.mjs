@@ -15,10 +15,13 @@ const snapshots = [
   ["directory-restaurant-leads", "HALIFAX_DIRECTORY_RESTAURANT_LEADS", "restaurant-discovery-preview.yml", "import-review-directory-restaurants.mjs"]
 ];
 const snapshotPaths = snapshots.flatMap(([name]) => [`data/${name}.js`, `data/build/${name}.json`]);
+const weatherManifest = JSON.parse(await readFile(join(repository, "data/weather/current.json"), "utf8"));
+assert.match(weatherManifest.capturePath, /^data\/weather\/captures\/[a-f0-9]{64}\.json$/);
+snapshotPaths.push("data/weather/current.json",weatherManifest.capturePath,"data/weather.js","data/build/halifax-weather.json");
 // Adding a release entry point requires an explicit classification here. The
 // offline entries below are also executed, not merely trusted by their names.
 const offlineScripts = new Set([
-  "build-regional-news", "check-news", "build-source-catalog",
+  "build-regional-news", "check-news", "build-source-catalog", "check-weather",
   "export-catalog", "check-public-special-source-leads", "check-patio-directory-facts",
   "build-structured-specials", "resolve-place-candidates", "check-place-source-resolution",
   "build-recent-social-posts", "build-reviewed-social-posts", "check-local-restaurant-policy",

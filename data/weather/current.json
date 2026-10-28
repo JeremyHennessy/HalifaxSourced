@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "kind": "accepted_eccc_halifax_capture",
+  "mode": "recorded_snapshot_no_refresh",
+  "capturePath": "data/weather/captures/da7ea2b8dcc69ad149f64034d5eb755f0414e41b5f94c359ad37ea8a168cc488.json",
+  "captureSha256": "da7ea2b8dcc69ad149f64034d5eb755f0414e41b5f94c359ad37ea8a168cc488",
+  "lastAttempt": {
+    "status": "success",
+    "attemptedAt": "2026-10-28T00:43:26.981Z",
+    "completedAt": "2026-10-28T00:43:33.585Z"
+  },
+  "sourceRun": null
+}

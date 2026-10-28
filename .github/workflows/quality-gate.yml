@@ -53,6 +53,9 @@ jobs:
       - name: Test recorded Halifax weather offline (collection remains disabled)
         run: |
           node scripts/test-weather.mjs
+          node scripts/check-weather.mjs
+          node scripts/test-weather-operations.mjs
+          node scripts/test-weather-run-lineage.mjs
           node scripts/test-weather-journal.mjs
           node scripts/test-weather-ui.mjs
 

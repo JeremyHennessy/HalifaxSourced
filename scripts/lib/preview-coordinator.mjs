@@ -6,7 +6,8 @@ export const LANES = [
     {branch:'codex/promote-city-events-preview-v2', sha:'cf297092c01613441b241bcf6627c33f413ad729'}
   ] },
   { artifact: 'source-expansion-preview', workflow: 'Source Expansion Preview', file: 'source-expansion-preview.yml', priority: 2, group: 'source-social', branch: 'codex/promote-source-expansion-preview-v2', retiredBranches: [{branch:'codex/promote-source-expansion-preview', sha:'f1af8dc099331a27f0da2528b3c86114c446ea5d'}] },
-  { artifact: 'social-source-preview', workflow: 'Social Source Preview', file: 'social-source-preview.yml', priority: 3, group: 'source-social' }
+  { artifact: 'social-source-preview', workflow: 'Social Source Preview', file: 'social-source-preview.yml', priority: 3, group: 'source-social' },
+  { artifact: 'weather-preview', workflow: 'ECCC Halifax Weather Preview (Review Required)', file: 'weather-preview.yml', priority: 4, group: 'weather', manualOnly: true }
 ].map(lane => ({ ...lane, branch: lane.branch || `codex/promote-${lane.artifact}`, retiredBranches: lane.retiredBranches || [] }));
 export function promotionLane(artifact) {
   const lane=LANES.find(row=>row.artifact===artifact);
@@ -18,6 +19,7 @@ export function reservedBranchNames(artifact) {
   return LANES.filter(peer=>peer.group===lane.group).flatMap(peer=>[peer.branch,...peer.retiredBranches.map(row=>row.branch)]);
 }
 export function laneForPath(path) {
+  if (/^data\/weather(?:\/|\.js$)|^data\/build\/halifax-weather\.json$/.test(path)) return 'weather';
   if (/^data\/(?:build\/)?(?:city-events|event-entity-resolution)\.(?:js|json)$/.test(path)) return 'events';
   if (/^data\/(?:build\/)?(?:official-site-signals|verified-source-pages|structured-events|patio-directory-facts|public-special-source-leads|first-party-sources|website-feed-signals|website-page-intelligence|social-signals|recent-social-posts|reviewed-social-posts|thumbnail-candidates|thumbnail-coverage-report)\.(?:js|json)$/.test(path)) return 'source-social';
   return null;
@@ -55,6 +57,7 @@ export function planPreviewUpdates(state) {
   const manual = state.manual || null;
   if (manual && (!LANES.some(lane => lane.artifact === manual.artifact) || !/^\d+$/.test(String(manual.runId)))) throw new Error('Manual promotion requires an allowlisted artifact and an exact numeric run ID.');
   for (const lane of LANES) {
+    if (lane.manualOnly && !manual) continue;
     if (manual && lane.artifact !== manual.artifact) continue;
     const laneState = state.lanes?.[lane.artifact] || {};
     const eligible = (laneState.runs || []).filter(run => !validateRun(run, lane, state.repository, state.now)).sort((a, b) => stamp(b.created_at) - stamp(a.created_at) || Number(b.id) - Number(a.id));
@@ -85,7 +88,7 @@ export function planPreviewUpdates(state) {
       if (stamp(state.now) - stamp(failures[0].completedAt) < delay) { block('retry-backoff'); continue; }
     }
     const item = { artifact_name: lane.artifact, run_id: String(run.id), workflow_name: lane.workflow,
-      source_run_url: run.html_url, source_run_created_at: run.created_at,
+      source_run_url: run.html_url, source_run_created_at: run.created_at, source_head_sha: run.head_sha,
       expected_sha: laneState.branch?.sha || '', released_sha: laneState.branch?.mergedHeadSha || '', priority: lane.priority };
     include.push(item);
     decisions.push({ ...decision, status: 'ready', reason: failures.length ? 'bounded-retry' : 'latest-retained-eligible' });

@@ -1,24 +1,54 @@
 {
   "version": 1,
-  "sources": [{
-    "id": "eccc-halifax-citypage",
-    "name": "ECCC Halifax regional weather — recorded snapshot; refresh disabled",
-    "kind": "Official regional forecast and named station observations",
-    "enabled": false,
-    "state": "manual_snapshot_refresh_disabled",
-    "url": "https://api.weather.gc.ca/collections/citypageweather-realtime",
-    "endpoint": "https://api.weather.gc.ca/collections/citypageweather-realtime/items?f=json&lang=en&bbox=-63.61,44.63,-63.55,44.67&limit=3",
-    "geographicScope": ["Halifax Peninsula", "Bedford", "Dartmouth", "Clayton Park", "Lower Sackville", "Eastern Passage"],
-    "parserMode": "eccc-citypage-v1-strict-halifax",
-    "expectedCityIds": ["ns-19", "ns-40"],
-    "expectedStationCodes": ["yhz", "yaw"],
-    "forecastRegion": "Halifax Metro and Halifax County West",
-    "boundaryClaim": "Six reviewed HRM points only; no municipal polygon completeness claim or separate point forecasts.",
-    "attribution": "Data Source: Environment and Climate Change Canada",
-    "licenceUrl": "https://eccc-msc.github.io/open-data/licence/readme_en/",
-    "documentationUrl": "https://eccc-msc.github.io/open-data/msc-data/citypage-weather/readme_citypageweather_en/",
-    "usagePolicyUrl": "https://eccc-msc.github.io/open-data/usage-policy/readme_en/",
-    "requestPolicy": {"maximumBytes": 524288, "timeoutMs": 20000, "redirects": false, "retries": 0, "maximumReturnedFeatures": 2},
-    "reviewNote": "One guarded admission sample accepted for source facts, not continuous operation. No schedule, paid provider, forecast accuracy or calibration claim. Unknown/nonempty warning details require original official pages."
-  }]
+  "sources": [
+    {
+      "id": "eccc-halifax-citypage",
+      "name": "ECCC Halifax regional weather \u2014 recorded snapshot; refresh disabled",
+      "kind": "Official regional forecast and named station observations",
+      "enabled": false,
+      "state": "manual_snapshot_refresh_disabled",
+      "url": "https://api.weather.gc.ca/collections/citypageweather-realtime",
+      "endpoint": "https://api.weather.gc.ca/collections/citypageweather-realtime/items?f=json&lang=en&bbox=-63.61,44.63,-63.55,44.67&limit=3",
+      "geographicScope": [
+        "Halifax Peninsula",
+        "Bedford",
+        "Dartmouth",
+        "Clayton Park",
+        "Lower Sackville",
+        "Eastern Passage"
+      ],
+      "parserMode": "eccc-citypage-v1-strict-halifax",
+      "expectedCityIds": [
+        "ns-19",
+        "ns-40"
+      ],
+      "expectedStationCodes": [
+        "yhz",
+        "yaw"
+      ],
+      "forecastRegion": "Halifax Metro and Halifax County West",
+      "boundaryClaim": "Six reviewed HRM points only; no municipal polygon completeness claim or separate point forecasts.",
+      "attribution": "Data Source: Environment and Climate Change Canada",
+      "licenceUrl": "https://eccc-msc.github.io/open-data/licence/readme_en/",
+      "documentationUrl": "https://eccc-msc.github.io/open-data/msc-data/citypage-weather/readme_citypageweather_en/",
+      "usagePolicyUrl": "https://eccc-msc.github.io/open-data/usage-policy/readme_en/",
+      "requestPolicy": {
+        "maximumBytes": 524288,
+        "timeoutMs": 20000,
+        "redirects": false,
+        "retries": 0,
+        "maximumReturnedFeatures": 2
+      },
+      "reviewNote": "One guarded admission sample accepted for source facts, not continuous operation. No schedule, paid provider, forecast accuracy or calibration claim. Unknown/nonempty warning details require original official pages.",
+      "refreshPolicy": {
+        "targetCadenceHours": 1,
+        "minimumIntervalMinutes": 55,
+        "scheduleEnabled": false,
+        "bootstrap": "explicit_first_manual_run_only",
+        "continuity": "exact_sequential_attempt_one_payload_and_final_receipt",
+        "recovery": "reviewed_evidence_required_no_reset_or_retry",
+        "publication": "separate_weather_only_review_full_quality_gate"
+      }
+    }
+  ]
 }

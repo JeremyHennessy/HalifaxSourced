@@ -1,7 +1,8 @@
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import vm from 'node:vm';
-import { LANES, planPreviewUpdates, validateRun, PR_CREATION_BLOCKER, laneForPath, promotionLane, reservedBranchNames } from './lib/preview-coordinator.mjs';
+import { LANES as ALL_LANES, planPreviewUpdates, validateRun, PR_CREATION_BLOCKER, laneForPath, promotionLane, reservedBranchNames } from './lib/preview-coordinator.mjs';
+const LANES=ALL_LANES.filter(lane=>!lane.manualOnly);
 const repository = 'JeremyHennessy/HalifaxSourced';
 const now = '2026-10-20T15:00:00Z';
 const runFor = (lane, id = 100 + lane.priority, at = '2026-10-20T12:00:00Z') => ({ id, name: lane.workflow, path: `.github/workflows/${lane.file}`, status: 'completed', conclusion: 'success', head_branch: 'main', head_repository: { full_name: repository }, event: 'schedule', created_at: at, html_url: `https://github.com/${repository}/actions/runs/${id}`, artifacts: [{ name: lane.artifact, expired: false, expires_at: '2026-11-20T12:00:00Z' }] });
