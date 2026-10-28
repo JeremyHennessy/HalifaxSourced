@@ -4,7 +4,7 @@ import { spawnSync } from 'node:child_process';
 import { tmpdir } from 'node:os';
 import { dirname, join } from 'node:path';
 import vm from 'node:vm';
-import { applyReviewedEventQuarantine, eventRecordSha256, REVIEWED_EVENT_QUARANTINE_PATH, validateReviewedEventQuarantine } from './lib/reviewed-event-quarantine.mjs';
+import { applyReviewedEventQuarantine, eventRecordSha256, REVIEWED_EVENT_QUARANTINE_PATH, REVIEWED_EVENT_QUARANTINE_PATHS, validateReviewedEventQuarantine } from './lib/reviewed-event-quarantine.mjs';
 import { reconcileFutureEventLosses } from './lib/event-refresh-safety.mjs';
 
 const read = path => readFile(new URL('../' + path, import.meta.url), 'utf8');
@@ -111,7 +111,7 @@ try {
     'scripts/sanitize-city-events.mjs', 'scripts/reconcile-city-event-source-drift.mjs',
     'scripts/lib/reviewed-event-quarantine.mjs', 'scripts/lib/event-refresh-safety.mjs',
     'scripts/lib/canonical-event-dedupe.mjs', 'scripts/lib/deny-source-network.mjs',
-    'data/event-source-registry.json', REVIEWED_EVENT_QUARANTINE_PATH
+    'data/event-source-registry.json', ...REVIEWED_EVENT_QUARANTINE_PATHS
   ]) {
     await mkdir(dirname(join(root, path)), { recursive: true });
     await copyFile(new URL('../' + path, import.meta.url), join(root, path));
@@ -124,8 +124,8 @@ try {
   let runResult = run('sanitize-city-events.mjs');
   assert.equal(runResult.status, 0, runResult.stderr);
   const sanitized = JSON.parse(await readFile(buildPath, 'utf8'));
-  assert.equal(sanitized.events.length, 6);
-  assert.equal(sanitized.scopeAudit.reviewedQuarantine.quarantinedCount, 89);
+  assert.equal(sanitized.events.length, 1);
+  assert.equal(sanitized.scopeAudit.reviewedQuarantine.quarantinedCount, 94);
   for (const event of sanitized.events) {
     const original = details.find(item => item.id === event.id);
     assert(original);
@@ -156,12 +156,12 @@ try {
   await writeFile(buildPath, currentBytes);
   runResult = spawnSync(process.execPath, ['--import', clockPath, '--import', join(root, 'scripts/lib/deny-source-network.mjs'), join(root, 'scripts/reconcile-city-event-source-drift.mjs'), previousPath], { encoding: 'utf8' });
   assert.notEqual(runResult.status, 0);
-  assert.match(runResult.stderr, /6 accepted unexpired events disappeared/);
+  assert.match(runResult.stderr, /1 accepted unexpired events disappeared/);
   const report = JSON.parse(await readFile(join(root, 'artifacts/city-event-source-drift-report.json'), 'utf8'));
   assert.equal(report.blocked, true);
-  assert.equal(report.heldRemovalCount, 6);
+  assert.equal(report.heldRemovalCount, 1);
   assert.equal(report.retainedAfterFailureCount, 24);
-  assert.equal(report.reviewedQuarantine.previous.quarantinedCount, 89);
+  assert.equal(report.reviewedQuarantine.previous.quarantinedCount, 94);
   assert.equal(await readFile(buildPath, 'utf8'), currentBytes, 'Blocked diagnostics must not overwrite or promote the candidate');
   assert.equal(await readFile(jsPath, 'utf8'), '// untouched candidate');
   assert.equal(await readFile(join(root, REVIEWED_EVENT_QUARANTINE_PATH), 'utf8'), archiveBytes);

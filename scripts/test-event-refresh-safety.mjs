@@ -120,7 +120,7 @@ try {
   await mkdir(join(root, "scripts", "lib"), { recursive: true });
   await mkdir(join(root, "data", "build"), { recursive: true });
   await mkdir(join(root, "data", "quarantine"), { recursive: true });
-  for (const path of ["scripts/reconcile-city-event-source-drift.mjs", "scripts/lib/event-refresh-safety.mjs", "scripts/lib/canonical-event-dedupe.mjs", "scripts/lib/reviewed-event-quarantine.mjs", "data/quarantine/library-store-navigation-20261027.json"]) {
+  for (const path of ["scripts/reconcile-city-event-source-drift.mjs", "scripts/lib/event-refresh-safety.mjs", "scripts/lib/canonical-event-dedupe.mjs", "scripts/lib/reviewed-event-quarantine.mjs", "data/quarantine/library-store-navigation-20261027.json", "data/quarantine/city-event-lifecycle-20261028.json"]) {
     await copyFile(new URL("../" + path, import.meta.url), join(root, path));
   }
   const actualNow = Date.now();

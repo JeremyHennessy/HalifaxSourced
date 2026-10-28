@@ -10,8 +10,10 @@ on:
     paths:
       - .github/workflows/city-events-preview.yml
       - data/quarantine/library-store-navigation-20261027.json
+      - data/quarantine/city-event-lifecycle-20261028.json
       - scripts/lib/reviewed-event-quarantine.mjs
       - scripts/test-reviewed-event-quarantine.mjs
+      - scripts/test-reviewed-event-lifecycle.mjs
       - scripts/fixtures/library-navigation-drift-20261027.json
       - data/reviewed-event-locations.json
       - scripts/lib/reviewed-event-locations.mjs
@@ -55,8 +57,10 @@ on:
     paths:
       - .github/workflows/city-events-preview.yml
       - data/quarantine/library-store-navigation-20261027.json
+      - data/quarantine/city-event-lifecycle-20261028.json
       - scripts/lib/reviewed-event-quarantine.mjs
       - scripts/test-reviewed-event-quarantine.mjs
+      - scripts/test-reviewed-event-lifecycle.mjs
       - scripts/fixtures/library-navigation-drift-20261027.json
       - data/reviewed-event-locations.json
       - scripts/lib/reviewed-event-locations.mjs
@@ -118,6 +122,7 @@ jobs:
           node scripts/test-event-identity-continuity.mjs
           node scripts/test-event-refresh-safety.mjs
           node scripts/test-reviewed-event-quarantine.mjs
+          node scripts/test-reviewed-event-lifecycle.mjs
           node scripts/test-event-refresh-dedupe.mjs
           node scripts/test-canonical-event-dedupe.mjs
           node scripts/test-library-event-boundaries.mjs
