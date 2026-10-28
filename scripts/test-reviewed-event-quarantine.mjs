@@ -156,7 +156,7 @@ try {
   await writeFile(buildPath, currentBytes);
   runResult = spawnSync(process.execPath, ['--import', clockPath, '--import', join(root, 'scripts/lib/deny-source-network.mjs'), join(root, 'scripts/reconcile-city-event-source-drift.mjs'), previousPath], { encoding: 'utf8' });
   assert.notEqual(runResult.status, 0);
-  assert.match(runResult.stderr, /1 accepted unexpired event disappeared/);
+  assert.match(runResult.stderr, /1 accepted unexpired events disappeared/);
   const report = JSON.parse(await readFile(join(root, 'artifacts/city-event-source-drift-report.json'), 'utf8'));
   assert.equal(report.blocked, true);
   assert.equal(report.heldRemovalCount, 1);
