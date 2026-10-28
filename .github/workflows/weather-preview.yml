@@ -20,9 +20,73 @@ concurrency:
   group: halifax-weather-review-cache
   cancel-in-progress: false
 jobs:
+  reserve_recovery:
+    # A saved cache is not reliably restorable from the same job. Complete the
+    # reservation job first so the preview job can verify the persisted bytes.
+    if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch) && inputs.reviewed_recovery != 'none'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      WEATHER_INITIALIZE_REVIEW_CACHE: ${{ inputs.initialize_review_cache == true && 'true' || 'false' }}
+      WEATHER_REVIEWED_RECOVERY_ID: ${{ inputs.reviewed_recovery || 'none' }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Offline contract, cache and run-lineage tests before reservation
+        run: |
+          node scripts/test-weather.mjs
+          node scripts/test-weather-operations.mjs
+          node scripts/test-weather-run-lineage.mjs
+          node scripts/test-eccc-reviewed-recovery.mjs
+      - name: Validate accepted snapshot before reservation
+        run: node scripts/check-weather.mjs
+      - name: Verify current run and exact sequential predecessor before reservation
+        id: lineage
+        run: node scripts/weather-preview-lineage.mjs plan
+      - name: Restore only the exact successful predecessor payload for reservation
+        id: review-cache
+        uses: actions/cache/restore@v4
+        with:
+          path: artifacts/weather-preview.json
+          key: ${{ steps.lineage.outputs.predecessor-cache-key }}
+          fail-on-cache-miss: true
+      - name: Restore only that predecessor's final receipt for reservation
+        id: final-receipt
+        uses: actions/cache/restore@v4
+        with:
+          path: artifacts/weather-preview-final.json
+          key: ${{ steps.lineage.outputs.predecessor-cache-key }}-final
+          fail-on-cache-miss: true
+      - name: Check the fixed one-use recovery consumption key before reservation
+        id: recovery-existing
+        uses: actions/cache/restore@v4
+        with:
+          path: artifacts/weather-recovery-consumption.json
+          key: ${{ steps.lineage.outputs.recovery-cache-key }}
+          lookup-only: true
+      - name: Exclusively reserve only the exact reviewed immediate-successor recovery
+        env:
+          WEATHER_PAYLOAD_CACHE_HIT: ${{ steps.review-cache.outputs.cache-hit }}
+          WEATHER_PAYLOAD_CACHE_KEY: ${{ steps.review-cache.outputs.cache-matched-key }}
+          WEATHER_RECEIPT_CACHE_HIT: ${{ steps.final-receipt.outputs.cache-hit }}
+          WEATHER_RECEIPT_CACHE_KEY: ${{ steps.final-receipt.outputs.cache-matched-key }}
+          WEATHER_RECOVERY_EXISTING_HIT: ${{ steps.recovery-existing.outputs.cache-hit }}
+          WEATHER_RECOVERY_EXISTING_KEY: ${{ steps.recovery-existing.outputs.cache-matched-key }}
+        run: node scripts/weather-preview-lineage.mjs reserve-recovery
+      - name: Persist the consumed reservation before any source acquisition
+        uses: actions/cache/save@v4
+        with:
+          path: artifacts/weather-recovery-consumption.json
+          key: ${{ steps.lineage.outputs.recovery-cache-key }}
+
   preview:
     # Never restore privileged review state or fetch sources from PR branches.
-    if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    needs: reserve_recovery
+    if: always() && github.ref == format('refs/heads/{0}', github.event.repository.default_branch) && (inputs.reviewed_recovery == 'none' || needs.reserve_recovery.result == 'success')
     runs-on: ubuntu-latest
     timeout-minutes: 10
     env:
@@ -62,30 +126,6 @@ jobs:
           path: artifacts/weather-preview-final.json
           key: ${{ steps.lineage.outputs.predecessor-cache-key }}-final
           fail-on-cache-miss: true
-      - name: Check the fixed one-use recovery consumption key before reservation
-        if: steps.lineage.outputs.recovery-requested == 'true'
-        id: recovery-existing
-        uses: actions/cache/restore@v4
-        with:
-          path: artifacts/weather-recovery-consumption.json
-          key: ${{ steps.lineage.outputs.recovery-cache-key }}
-          lookup-only: true
-      - name: Exclusively reserve only the exact reviewed immediate-successor recovery
-        if: steps.lineage.outputs.recovery-requested == 'true'
-        env:
-          WEATHER_PAYLOAD_CACHE_HIT: ${{ steps.review-cache.outputs.cache-hit }}
-          WEATHER_PAYLOAD_CACHE_KEY: ${{ steps.review-cache.outputs.cache-matched-key }}
-          WEATHER_RECEIPT_CACHE_HIT: ${{ steps.final-receipt.outputs.cache-hit }}
-          WEATHER_RECEIPT_CACHE_KEY: ${{ steps.final-receipt.outputs.cache-matched-key }}
-          WEATHER_RECOVERY_EXISTING_HIT: ${{ steps.recovery-existing.outputs.cache-hit }}
-          WEATHER_RECOVERY_EXISTING_KEY: ${{ steps.recovery-existing.outputs.cache-matched-key }}
-        run: node scripts/weather-preview-lineage.mjs reserve-recovery
-      - name: Persist the consumed reservation before any source acquisition
-        if: steps.lineage.outputs.recovery-requested == 'true'
-        uses: actions/cache/save@v4
-        with:
-          path: artifacts/weather-recovery-consumption.json
-          key: ${{ steps.lineage.outputs.recovery-cache-key }}
       - name: Restore and verify actual reservation bytes, not merely a cache lookup
         if: steps.lineage.outputs.recovery-requested == 'true'
         id: recovery-saved
