@@ -6,6 +6,21 @@ import { reconcileFutureEventLosses } from './lib/event-refresh-safety.mjs';
 
 // A missing optional ticket URL must not become the library's general calendar URL.
 const supplementalImporter = await readFile(new URL('./import-supplemental-city-events.mjs',import.meta.url),'utf8');
+const hashIdFunction = supplementalImporter.match(/^function hashId\([^\n]+\n/m)?.[0];
+const supplementalEventIdFunction = supplementalImporter.match(/^function supplementalEventId\([\s\S]*?^\}/m)?.[0];
+assert.ok(hashIdFunction && supplementalEventIdFunction, 'Supplemental event identity helpers must exist');
+const identityContext = vm.createContext({ createHash: (await import('node:crypto')).createHash });
+vm.runInContext(`${hashIdFunction}\n${supplementalEventIdFunction}`, identityContext);
+const librarySource = { id: 'halifax-public-libraries' };
+const libraryOccurrence = { title: 'Sharing Dance with Older Adults', startAt: '2026-11-03T14:00:00.000Z', venueName: 'Central Library' };
+const olderDetail = 'https://halifax.bibliocommons.com/v2/events/6a73843fe700090faa68b99a';
+const newerDetail = 'https://halifax.bibliocommons.com/v2/events/6ad90e29fee2d21deb24d6a9';
+const legacyId = vm.runInContext('supplementalEventId(source, raw, eventUrl)', vm.createContext({ ...identityContext, source: librarySource, raw: libraryOccurrence, eventUrl: olderDetail }));
+const olderId = vm.runInContext('supplementalEventId(source, raw, eventUrl)', vm.createContext({ ...identityContext, source: librarySource, raw: { ...libraryOccurrence, identityKey: olderDetail }, eventUrl: olderDetail }));
+const newerId = vm.runInContext('supplementalEventId(source, raw, eventUrl)', vm.createContext({ ...identityContext, source: librarySource, raw: { ...libraryOccurrence, identityKey: newerDetail }, eventUrl: newerDetail }));
+assert.notEqual(olderId, newerId, 'Distinct official library detail records cannot receive the same new ID');
+assert.notEqual(olderId, legacyId, 'Library detail identity must disambiguate the legacy title/time seed');
+assert.equal(vm.runInContext('supplementalEventId(source, raw, eventUrl)', vm.createContext({ ...identityContext, source: librarySource, raw: { ...libraryOccurrence, identityKey: olderDetail }, eventUrl: olderDetail })), olderId, 'Library detail IDs remain deterministic');
 const absoluteUrlFunction = supplementalImporter.match(/^function absoluteUrl\(value, base\) \{[\s\S]*?^\}/m)?.[0];
 assert.ok(absoluteUrlFunction, 'Supplemental URL normalization function must exist');
 const urlContext = vm.createContext({URL});

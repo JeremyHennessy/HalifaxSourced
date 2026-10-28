@@ -190,7 +190,8 @@ try {
 console.log('Curated accounting passed: build/browser parity, Bedford 89 vs 1 and Carleton 10 vs 3, failure/hold/zero receipts, absent receipts, catalogue clocks and repeated application.');
 
 // Real supplemental CLI, fixture transport only: both daily performances are
-// emitted by the parser, repeated pages remain duplicates, and legacy IDs stay.
+// emitted by the parser, repeated pages remain duplicates, and detail-seeded
+// IDs remain deterministic across refreshes.
 const importRoot = await mkdtemp(join(tmpdir(), 'halifax-supplemental-occurrences-'));
 try {
   await mkdir(join(importRoot, 'scripts/lib'), { recursive: true });
@@ -213,13 +214,18 @@ try {
   }] }));
   await writeFile(join(importRoot, 'data/build/city-events.json'), JSON.stringify({ events: [], range: { start: '2026-11-01', end: '2026-12-01' } }));
   const { spawnSync } = await import('node:child_process');
+  let generatedIds;
   for (let attempt = 0; attempt < 2; attempt++) {
     const run = spawnSync(process.execPath, [join(importRoot, 'scripts/import-supplemental-city-events.mjs')], {
       encoding: 'utf8', env: { ...process.env, LIBRARY_EVENT_DELAY_MS: '0' }
     });
     assert.equal(run.status, 0, run.stderr);
     const output = JSON.parse(await readFile(join(importRoot, 'data/build/city-events.json'), 'utf8'));
-    assert.deepEqual(output.events.map(event => event.id), [matinee.id, evening.id], 'Real ID generation is unchanged');
+    const ids = output.events.map(event => event.id);
+    assert.equal(new Set(ids).size, 2, 'Distinct library detail records receive distinct IDs');
+    assert.notDeepEqual(ids, [matinee.id, evening.id], 'New library IDs include the official detail identity');
+    if (generatedIds) assert.deepEqual(ids, generatedIds, 'Library detail IDs are deterministic across refreshes');
+    generatedIds = ids;
     assert.deepEqual(output.events.map(event => event.eventUrl), [matinee.eventUrl, evening.eventUrl]);
     assert.equal(output.sourceStats[0].eventCount, 4, 'Collector yield still counts emitted rows before dedupe');
     assert.equal(output.supplementalAudit.addedBeforeDedupe, 4);
@@ -251,4 +257,4 @@ try {
   assert.notEqual(missingRegionalOwner.status, 0, 'Provenance aliases alone must not bypass the regional owner gate');
   assert.match(missingRegionalOwner.stderr, /regional_source_events_missing_after_sanitize/);
 } finally { await rm(importRoot, { recursive: true, force: true }); }
-console.log('Supplemental CLI passed: mocked same-day performances retain exact legacy IDs across repeated pages and repeated runs; raw collector counts stay honest.');
+  console.log('Supplemental CLI passed: mocked same-day performances keep deterministic detail-seeded IDs across repeated pages and repeated runs; raw collector counts stay honest.');
