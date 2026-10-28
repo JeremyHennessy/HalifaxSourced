@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       initialize_review_cache:
-        description: "Initialize only the first reviewed run; never resets prior cache or holds"
+        description: "Initialize only the genuine first run; never resets prior cache or holds"
         type: boolean
         default: false
         required: false
@@ -18,50 +18,97 @@ jobs:
     if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    env:
+      NEWS_INITIALIZE_REVIEW_CACHE: ${{ inputs.initialize_review_cache }}
     steps:
       - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.sha }}
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Offline contract and cache tests
-        run: node scripts/test-regional-news.mjs
+      - name: Offline contract, cache and run-lineage tests
+        run: |
+          node scripts/test-regional-news.mjs
+          node scripts/test-news-run-lineage.mjs
       - name: Validate accepted snapshot
         run: node scripts/check-news.mjs
-      - name: Restore review metadata and access-hold cache
+      - name: Verify current run and exact sequential predecessor with public GitHub metadata
+        id: lineage
+        run: node scripts/news-preview-lineage.mjs plan
+      - name: Restore only the exact successful predecessor payload
+        if: steps.lineage.outputs.bootstrap == 'false'
         id: review-cache
         uses: actions/cache/restore@v4
         with:
           path: artifacts/news-preview.json
-          key: news-review-v2-${{ github.repository_id }}-${{ github.run_id }}-${{ github.run_attempt }}
-          restore-keys: |
-            news-review-v2-${{ github.repository_id }}-
-      - name: Validate cache or explicitly initialize first reviewed run only
-        env:
-          NEWS_INITIALIZE_REVIEW_CACHE: ${{ inputs.initialize_review_cache }}
-        run: node scripts/import-regional-news.mjs --prepare-review-cache
-      - name: Collect admitted feed metadata only
+          key: ${{ steps.lineage.outputs.predecessor-cache-key }}
+          fail-on-cache-miss: true
+      - name: Restore only that predecessor's final receipt
+        if: steps.lineage.outputs.bootstrap == 'false'
+        id: final-receipt
+        uses: actions/cache/restore@v4
+        with:
+          path: artifacts/news-preview-final.json
+          key: ${{ steps.lineage.outputs.predecessor-cache-key }}-final
+          fail-on-cache-miss: true
+      - name: Verify receipt and digest before any news or robots request
         id: collect
         env:
-          NEWS_REQUIRE_CACHE: '1'
-        run: node scripts/import-regional-news.mjs
-      - name: Preserve metadata and denial state even when transport is denied
-        if: always() && steps.collect.outcome != 'skipped'
+          NEWS_PAYLOAD_CACHE_HIT: ${{ steps.review-cache.outputs.cache-hit }}
+          NEWS_PAYLOAD_CACHE_KEY: ${{ steps.review-cache.outputs.cache-matched-key }}
+          NEWS_RECEIPT_CACHE_HIT: ${{ steps.final-receipt.outputs.cache-hit }}
+          NEWS_RECEIPT_CACHE_KEY: ${{ steps.final-receipt.outputs.cache-matched-key }}
+        run: node scripts/news-preview-lineage.mjs collect
+      - name: Save only a completed current payload
         uses: actions/cache/save@v4
         with:
           path: artifacts/news-preview.json
-          key: news-review-v2-${{ github.repository_id }}-${{ github.run_id }}-${{ github.run_attempt }}
-      - name: Upload nonpublishable review evidence
+          key: ${{ steps.lineage.outputs.cache-key }}
+      # cache/save can warn and exit zero. Its outcome alone is not proof of save.
+      - name: Verify exact current payload cache exists after save
+        id: saved-payload
+        uses: actions/cache/restore@v4
+        with:
+          path: artifacts/news-preview.json
+          key: ${{ steps.lineage.outputs.cache-key }}
+          lookup-only: true
+          fail-on-cache-miss: true
+      - name: Write final receipt only after collection drains and payload save is verified
+        env:
+          NEWS_SAVED_CACHE_HIT: ${{ steps.saved-payload.outputs.cache-hit }}
+          NEWS_SAVED_CACHE_KEY: ${{ steps.saved-payload.outputs.cache-matched-key }}
+        run: node scripts/news-preview-lineage.mjs complete
+      - name: Save final receipt separately after payload verification
+        uses: actions/cache/save@v4
+        with:
+          path: artifacts/news-preview-final.json
+          key: ${{ steps.lineage.outputs.cache-key }}-final
+      - name: Verify exact final receipt cache exists after save
+        id: saved-final
+        uses: actions/cache/restore@v4
+        with:
+          path: artifacts/news-preview-final.json
+          key: ${{ steps.lineage.outputs.cache-key }}-final
+          lookup-only: true
+          fail-on-cache-miss: true
+      - name: Fail closed if the final receipt was not saved
+        env:
+          NEWS_SAVED_CACHE_HIT: ${{ steps.saved-final.outputs.cache-hit }}
+          NEWS_SAVED_CACHE_KEY: ${{ steps.saved-final.outputs.cache-matched-key }}
+        run: node scripts/news-preview-lineage.mjs verify-final-save
+      - name: Upload nonpublishable review evidence even after an interrupted or denied collection
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: regional-news-review-only
           path: |
-            artifacts/news-preview.json
+            artifacts/news-preview*.json
             artifacts/source-access-diagnostics.jsonl
           if-no-files-found: warn
-# MANUAL ONLY. Cache misses/corruption stop requests. An initial reviewed cache
-# may be initialized explicitly only on run_number=1 and run_attempt=1.
-# Later cache loss/retries require reviewed recovery, never a reset of holds.
-# No 6-hour schedule until durable denial storage survives cache eviction AND
-# runner interruption between receiving a restriction and saving this cache.
-# No write token, promotion, publication, AI/model calls, or deployment.
+# MANUAL ONLY. No broad fallback, v2 migration, automatic recovery or hold reset.
+# N requires exact N-1 success/attempt 1 plus its exact v3 payload/final receipt.
+# Cache loss, failed/cancelled/interrupted predecessor or rerun breaks the chain;
+# even robots requests stop. Empty API history never authorizes initialization.
+# Reviewed recovery and actual bootstrap readiness require separate verification.
+# No schedule, write token, promotion, publication, AI/model calls or deployment.

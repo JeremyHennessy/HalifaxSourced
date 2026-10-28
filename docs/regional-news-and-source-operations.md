@@ -42,7 +42,7 @@ Existing UTC schedules: city events every six hours at minute 23; public social 
 
 The new Regional News Preview remains **manual**, default-branch-only, serialized and bounded to ten minutes. It uses existing GitHub authentication for dispatch and no contents-write permission. Its explicit first-ever run may initialize an empty review cache only when requested; later missing/corrupt caches stop all network requests. Initialization cannot clear a retained hold.
 
-Six-hour unattended news collection is deliberately not enabled yet. GitHub cache eviction or a terminated runner can lose a newly observed access restriction before cache save. Activation requires a durable pre-request/final-receipt mechanism that fails closed after interruptions, and a tested source-specific release policy. A cache hit alone is not proof of that guarantee.
+Six-hour unattended news collection is deliberately not enabled. The [v3 run-lineage guard](news-preview-run-lineage.md) now requires the exact sequential predecessor’s successful first attempt, exact payload/final-receipt caches and payload digest before any news or robots request. A failed/interrupted run or cache loss breaks the chain rather than falling back to older state. Only the genuine first run can explicitly initialize; there is no automatic recovery or hold reset. Separate implementation review, actual bootstrap readiness and source-specific release-policy verification are still required before considering activation. This does not provide a shared durable store or authorize retries in other workflows.
 
 GitHub workflow links are not permission to retry a restricted source. New paid services, secrets or broader access are not part of this implementation.
 

@@ -1,0 +1,213 @@
+import assert from 'node:assert/strict';
+import { mkdtemp,readFile,writeFile,access,rm } from 'node:fs/promises';
+import { tmpdir } from 'node:os';
+import { EventEmitter } from 'node:events';
+import { pathToFileURL } from 'node:url';
+import { environmentIdentity,resolveNewsLineage,githubMetadata,cacheKey,finalReceipt,verifyFinalReceipt,requireExactCache,NEWS_REPOSITORY,NEWS_WORKFLOW } from './lib/news-run-lineage.mjs';
+import { lineagePaths,createLineagePlan,collectWithLineage,completeLineage,verifyReceiptSaved,runCollector } from './news-preview-lineage.mjs';
+import { collectNews } from './import-regional-news.mjs';
+globalThis.fetch = () => { throw new Error('network_forbidden_in_news_lineage_tests'); };
+const copy = value => structuredClone(value);
+const env = {GITHUB_REPOSITORY:NEWS_REPOSITORY,GITHUB_REPOSITORY_ID:'123',GITHUB_SERVER_URL:'https://github.com',GITHUB_API_URL:'https://api.github.com',GITHUB_EVENT_NAME:'workflow_dispatch',GITHUB_RUN_ID:'200',GITHUB_RUN_NUMBER:'2',GITHUB_RUN_ATTEMPT:'1',GITHUB_SHA:'b'.repeat(40),GITHUB_REF:'refs/heads/main',GITHUB_WORKFLOW_REF:`${NEWS_REPOSITORY}/${NEWS_WORKFLOW}@refs/heads/main`,NEWS_INITIALIZE_REVIEW_CACHE:'false'};
+const repository = {id:123,full_name:NEWS_REPOSITORY,private:false,default_branch:'main'};
+const prior = {id:100,workflow_id:44,run_number:1,run_attempt:1,repository,path:NEWS_WORKFLOW,head_sha:'a'.repeat(40),head_branch:'main',event:'workflow_dispatch',status:'completed',conclusion:'success'};
+const current = {...prior,id:200,run_number:2,head_sha:env.GITHUB_SHA,status:'in_progress',conclusion:null};
+function metadataFixture({repo=repository,run=current,predecessor=prior,list={total_count:2,workflow_runs:[current,prior]},onCall=()=>{}} = {}) {
+  return async path => {
+    onCall(path);
+    if (path === `/repos/${NEWS_REPOSITORY}`) return copy(repo);
+    if (path === `/repos/${NEWS_REPOSITORY}/actions/runs/${run.id}`) return copy(run);
+    if (path === `/repos/${NEWS_REPOSITORY}/actions/runs/${predecessor.id}`) return copy(predecessor);
+    if (path === `/repos/${NEWS_REPOSITORY}/actions/workflows/${run.workflow_id}/runs?per_page=100&page=1`) return copy(list);
+    throw new Error(`unexpected_fixture_metadata_path:${path}`);
+  };
+}
+const plan = await resolveNewsLineage({env,metadata:metadataFixture()});
+assert.equal(plan.predecessor.runNumber,1);
+assert.match(plan.cacheKey,/^news-review-v3-123-44-2-200-1-b{40}$/);
+const bootEnv = {...env,GITHUB_RUN_ID:'100',GITHUB_RUN_NUMBER:'1',GITHUB_SHA:prior.head_sha,NEWS_INITIALIZE_REVIEW_CACHE:'true'};
+const bootMeta = metadataFixture({run:{...prior,status:'in_progress',conclusion:null}});
+assert.equal((await resolveNewsLineage({env:bootEnv,metadata:bootMeta})).predecessor,null);
+for (const patch of [{GITHUB_RUN_ATTEMPT:'2'},{GITHUB_RUN_ATTEMPT:'01'},{GITHUB_RUN_NUMBER:'0'},{GITHUB_RUN_NUMBER:'NaN'},{GITHUB_REPOSITORY_ID:'wrong'},{GITHUB_SHA:'bad'},{GITHUB_REPOSITORY:'evil/fork'},{GITHUB_SERVER_URL:'https://example.org'},{GITHUB_API_URL:'https://example.org'},{GITHUB_EVENT_NAME:'pull_request'},{GITHUB_EVENT_NAME:'schedule'},{GITHUB_WORKFLOW_REF:'other'},{NEWS_INITIALIZE_REVIEW_CACHE:undefined}]) {
+ let reads=0; await assert.rejects(resolveNewsLineage({env:{...env,...patch},metadata:async()=>{reads++;throw new Error('must_not_read');}})); assert.equal(reads,0);
+}
+for (const patch of [{private:true},{default_branch:'other'},{id:124},{full_name:'other/repo'}]) await assert.rejects(resolveNewsLineage({env,metadata:metadataFixture({repo:{...repository,...patch}})}));
+for (const patch of [{run_attempt:2},{run_number:3},{head_sha:'c'.repeat(40)},{workflow_id:null},{path:'.github/workflows/other.yml'},{repository:{...repository,id:124}},{status:'completed',conclusion:'success'},{status:'queued'},{head_branch:'feature'},{event:'push'}]) await assert.rejects(resolveNewsLineage({env,metadata:metadataFixture({run:{...current,...patch}})}));
+for (const status of ['failure','cancelled','timed_out','skipped','neutral','action_required','stale',null]) await assert.rejects(resolveNewsLineage({env,metadata:metadataFixture({predecessor:{...prior,conclusion:status}})}));
+for (const patch of [{status:'in_progress'},{run_attempt:2},{workflow_id:45},{head_sha:'c'.repeat(40)},{run_number:0},{head_branch:'feature'},{path:'.github/workflows/other.yml'},{repository:{...repository,id:124}}]) await assert.rejects(resolveNewsLineage({env,metadata:metadataFixture({predecessor:{...prior,...patch}})}));
+for (const list of [{total_count:0,workflow_runs:[]},{total_count:2,workflow_runs:[current,{...prior,run_number:3}]},{total_count:3,workflow_runs:[current,prior,prior]}, {}, {total_count:0,workflow_runs:[prior]}, {total_count:1,workflow_runs:[{}]}]) await assert.rejects(resolveNewsLineage({env,metadata:metadataFixture({list})}));
+await assert.rejects(resolveNewsLineage({env:{...env,NEWS_INITIALIZE_REVIEW_CACHE:'true'},metadata:metadataFixture({list:{total_count:0,workflow_runs:[]}})}),/bootstrap_is_not_recovery/);
+await assert.rejects(resolveNewsLineage({env:{...bootEnv,NEWS_INITIALIZE_REVIEW_CACHE:'false'},metadata:bootMeta}),/bootstrap_required/);
+await assert.rejects(resolveNewsLineage({env,metadata:async()=>{throw new Error('api_unavailable');}}));
+for (const hit of ['false','',undefined]) assert.throws(()=>requireExactCache({hit,matchedKey:plan.predecessorCacheKey,expectedKey:plan.predecessorCacheKey}));
+assert.throws(()=>requireExactCache({hit:'true',matchedKey:`${plan.predecessorCacheKey}-other`,expectedKey:plan.predecessorCacheKey}));
+
+// Test bounded official-API transport itself, including no credentials/redirects.
+const goodApi = async(url,options) => {assert.equal(url,`https://api.github.com/repos/${NEWS_REPOSITORY}`);assert.equal(options.redirect,'error');assert.equal(options.headers.Authorization,undefined);assert.equal(options.headers.authorization,undefined);return new Response(JSON.stringify(repository),{headers:{'content-type':'application/json'}});};
+assert.deepEqual(await githubMetadata(`/repos/${NEWS_REPOSITORY}`,{fetchImpl:goodApi}),repository);
+for (const response of [new Response('{}',{status:403,headers:{'content-type':'application/json'}}),new Response('{}',{status:429,headers:{'content-type':'application/json'}}),new Response('{}',{headers:{'content-type':'text/html'}}),new Response('not-json',{headers:{'content-type':'application/json'}}),new Response('{}',{headers:{'content-type':'application/json','content-length':'2000001'}}),new Response('x'.repeat(2_000_001),{headers:{'content-type':'application/json'}})]) await assert.rejects(githubMetadata(`/repos/${NEWS_REPOSITORY}`,{fetchImpl:async()=>response}));
+await assert.rejects(githubMetadata('https://publisher.example/feed',{fetchImpl:()=>assert.fail('invalid path requested')}));
+
+const now='2026-10-27T12:00:00.000Z';
+const source = {id:'fixture',name:'Fixture newsroom',source_type:'official_public_notice',homeUrl:'https://www.example.org/',feedUrl:'https://www.example.org/feed',allowedHosts:['www.example.org'],enabled:true,status:'admitted',admission:{reviewedAt:now,reviewer:'Fixture reviewer',accessEvidence:'Fixture only',schemaEvidence:'Fixture RSS',dateEvidence:'Fixture dates',rightsEvidence:'Fixture original metadata'}};
+// Exercise the actual production child-process completion adapter. A process
+// must exit successfully, not merely emit a payload or start/finish a callback.
+for(const [code,signal] of [[0,null],[1,null],[null,'SIGTERM']]) {
+ const child=new EventEmitter();let finished=false;
+ const done=runCollector({spawnImpl:(command,args,options)=>{
+  assert.equal(command,process.execPath);assert.deepEqual(args,['scripts/import-regional-news.mjs']);assert.equal(options.stdio,'inherit');return child;
+ }}).then(()=>{finished=true;});
+ await Promise.resolve();assert.equal(finished,false);
+ child.emit('exit',code,signal);
+ if(code===0) {await done;assert.equal(finished,true);} else await assert.rejects(done,/news_collector_not_complete/);
+}
+await assert.rejects(runCollector({spawnImpl:()=>{const child=new EventEmitter();queueMicrotask(()=>child.emit('error',new Error('spawn_failed')));return child;}}),/spawn_failed/);
+const registry = {version:1,sources:[source]};
+const empty={version:2,disposition:'nonpublishable_requires_review',candidates:[],diagnostics:[]};
+const held=await collectNews(registry,{now,fetchFeed:async()=>{throw Object.assign(new Error('transport_unresolved'),{accessHeld:true});}});
+let heldRequests=0;
+const stillHeld=await collectNews(registry,{now:'2027-10-27T12:00:00.000Z',previous:held,fetchFeed:async()=>{heldRequests++;throw new Error('must_not_retry_unknown');}});
+assert.equal(heldRequests,0);assert.equal(stillHeld.diagnostics[0].error,'transport_unresolved');
+assert.equal(stillHeld.diagnostics[0].accessHeld,true);
+assert.equal(stillHeld.diagnostics[0].lastAttemptAt,held.diagnostics[0].lastAttemptAt);
+const payload=Buffer.from(JSON.stringify(held)+'\n');
+const receipt=finalReceipt(plan.predecessor,payload);
+verifyFinalReceipt(receipt,plan.predecessor,payload);
+for(const patch of [{version:2},{kind:'other'},{identity:{...receipt.identity,runId:'101'}},{identity:{...receipt.identity,runAttempt:2}},{identity:{...receipt.identity,sha:'c'.repeat(40)}},{identity:{...receipt.identity,workflowId:'45'}},{identity:{...receipt.identity,repository:'other/repo'}},{cacheKey:'news-review-v2-123'},{transportDecisionsDrained:false},{payloadCacheVerified:false},{payloadSha256:'0'.repeat(64)},{unknown:true}]) assert.throws(()=>verifyFinalReceipt({...receipt,...patch},plan.predecessor,payload));
+assert.throws(()=>verifyFinalReceipt(receipt,plan.predecessor,Buffer.from(payload+' ')));
+const restoreEnv={...env,NEWS_PAYLOAD_CACHE_HIT:'true',NEWS_PAYLOAD_CACHE_KEY:plan.predecessorCacheKey,NEWS_RECEIPT_CACHE_HIT:'true',NEWS_RECEIPT_CACHE_KEY:`${plan.predecessorCacheKey}-final`};
+let scenarios=0;
+async function scenario(fn,{bootstrap=false}={}) {
+ const dir=await mkdtemp(`${tmpdir()}/news-lineage-`), paths=lineagePaths(pathToFileURL(`${dir}/`));
+ const testEnv=copy(bootstrap?bootEnv:restoreEnv), metadata=bootstrap?bootMeta:metadataFixture();
+ try {
+  await createLineagePlan({env:testEnv,paths,metadata});
+  if(!bootstrap) {await writeFile(paths.payload,payload);await writeFile(paths.receipt,JSON.stringify(receipt));}
+  await fn({env:testEnv,paths,metadata});scenarios++;
+ } finally {await rm(dir,{recursive:true,force:true});}
+}
+const missing=async path=>assert.rejects(access(path),{code:'ENOENT'});
+const noFalseZeroRequests = error => {assert.doesNotMatch(error.message,/no_source_requests|no_requests/);return true;};
+// Every rejection below must precede both the robots and news transport boundary.
+async function blocked(change) {
+ await scenario(async context=>{
+  let robots=0,feeds=0;
+  const options={...context,registry,collect:async()=>{robots++;feeds++;assert.fail('transport_must_not_start');}};
+  await change(options);
+  await assert.rejects(collectWithLineage(options));
+  assert.equal(robots,0);assert.equal(feeds,0);await missing(options.paths.collected);
+ });
+}
+for(const patch of [{NEWS_PAYLOAD_CACHE_HIT:'false'},{NEWS_PAYLOAD_CACHE_KEY:'news-review-v2-123'},{NEWS_PAYLOAD_CACHE_KEY:plan.cacheKey},{NEWS_RECEIPT_CACHE_HIT:''},{NEWS_RECEIPT_CACHE_KEY:`${plan.predecessorCacheKey}-final-stale`},{GITHUB_RUN_ATTEMPT:'2'},{NEWS_INITIALIZE_REVIEW_CACHE:'true'}]) await blocked(async o=>Object.assign(o.env,patch));
+for(const field of ['payload','receipt']) await blocked(async o=>rm(o.paths[field]));
+await blocked(async o=>writeFile(o.paths.payload,'bad-json'));
+await blocked(async o=>writeFile(o.paths.payload,JSON.stringify(empty)));
+await blocked(async o=>writeFile(o.paths.receipt,JSON.stringify({...receipt,transportDecisionsDrained:false})));
+await blocked(async o=>writeFile(o.paths.receipt,'bad-json'));
+await blocked(async o=>writeFile(o.paths.plan,JSON.stringify({...plan,current:{...plan.current,sha:'f'.repeat(40)}})));
+await blocked(async o=>{o.metadata=async()=>{throw new Error('rate_limited');};});
+for(const conclusion of ['cancelled','failure','timed_out']) await blocked(async o=>{o.metadata=metadataFixture({predecessor:{...prior,conclusion}});});
+await blocked(async o=>{o.metadata=metadataFixture({predecessor:{...prior,run_attempt:2}});});
+await blocked(async o=>{o.metadata=metadataFixture({list:{total_count:0,workflow_runs:[]}});});
+// Rerunning a prior succeeded run must also invalidate an already restored cache.
+await blocked(async o=>{o.metadata=metadataFixture({predecessor:{...prior,status:'in_progress',conclusion:null,run_attempt:2}});});
+
+await scenario(async context=>{
+ const events=[];
+ const metadata=metadataFixture({onCall:path=>events.push(`metadata:${path}`)});
+ // www/apex + retired ID hold remains intact through the lineage protocol.
+ const alias={...source,id:'renamed',homeUrl:'https://example.org/',feedUrl:'https://example.org/feed',allowedHosts:['example.org']};
+ let robots=0,feeds=0;
+ await collectWithLineage({...context,metadata,registry:{version:1,sources:[alias]},collect:async()=>{
+  events.push('collector-start');
+  const previous=JSON.parse(await readFile(context.paths.payload,'utf8'));
+  const result=await collectNews({version:1,sources:[alias]},{previous,now,fetchFeed:async()=>{robots++;feeds++;throw new Error('held_alias_must_not_request');}});
+  events.push('transport-decisions-drained');
+  await writeFile(context.paths.payload,JSON.stringify(result));events.push('payload-written');
+ }});
+ assert.equal(robots,0);assert.equal(feeds,0);
+ assert.ok(events.indexOf('collector-start')>=4);
+ assert.deepEqual(events.slice(-3),['collector-start','transport-decisions-drained','payload-written']);
+ assert.deepEqual(JSON.parse(await readFile(context.paths.predecessorReceipt,'utf8')),receipt);
+ await missing(context.paths.receipt);
+ const saved={...context.env,NEWS_SAVED_CACHE_HIT:'true',NEWS_SAVED_CACHE_KEY:plan.cacheKey};
+ // Action success/warning without an exact cache must not create a receipt.
+ for(const patch of [{NEWS_SAVED_CACHE_HIT:'false'},{NEWS_SAVED_CACHE_KEY:plan.predecessorCacheKey},{NEWS_SAVED_CACHE_KEY:`${plan.cacheKey}-prefix`}]) {
+  await assert.rejects(completeLineage({env:{...saved,...patch},paths:context.paths}),noFalseZeroRequests);await missing(context.paths.receipt);
+ }
+ await completeLineage({env:saved,paths:context.paths});
+ const currentReceipt=JSON.parse(await readFile(context.paths.receipt,'utf8'));
+ verifyFinalReceipt(currentReceipt,plan.current,await readFile(context.paths.payload));
+ await assert.rejects(verifyReceiptSaved({env:{...saved,NEWS_SAVED_CACHE_HIT:'false'},paths:context.paths}),noFalseZeroRequests);
+ await assert.rejects(verifyReceiptSaved({env:saved,paths:context.paths}));
+ await verifyReceiptSaved({env:{...saved,NEWS_SAVED_CACHE_KEY:`${plan.cacheKey}-final`},paths:context.paths});
+ // Payload loss/corruption after successful collection cannot be completed.
+ await writeFile(context.paths.payload,JSON.stringify(empty));
+ await assert.rejects(verifyReceiptSaved({env:{...saved,NEWS_SAVED_CACHE_KEY:`${plan.cacheKey}-final`},paths:context.paths}));
+});
+// Failure/interruption after receiving a restriction keeps the payload evidence,
+// but no completion marker or final receipt can bless it (nor a restored file).
+for(const mutate of [false,true]) await scenario(async context=>{
+ await assert.rejects(collectWithLineage({...context,registry,collect:async()=>{
+  if(mutate) await writeFile(context.paths.payload,payload);
+  throw new Error('collector_killed_or_exit_nonzero_after_transport');
+ }}));
+ assert.deepEqual(await readFile(context.paths.payload),payload);
+ await missing(context.paths.collected);await missing(context.paths.receipt);
+ await assert.rejects(completeLineage({env:{...context.env,NEWS_SAVED_CACHE_HIT:'true',NEWS_SAVED_CACHE_KEY:plan.cacheKey},paths:context.paths}));
+});
+await scenario(async context=>{
+ await writeFile(context.paths.collected,JSON.stringify({version:3,kind:'news_preview_collected',identity:plan.predecessor,payloadSha256:receipt.payloadSha256,transportDecisionsDrained:true}));
+ await assert.rejects(completeLineage({env:{...context.env,NEWS_SAVED_CACHE_HIT:'true',NEWS_SAVED_CACHE_KEY:plan.cacheKey},paths:context.paths}));
+});
+await scenario(async context=>{
+ // A stale restored file plus an asserted cache hit is never completion.
+ await assert.rejects(completeLineage({env:{...context.env,NEWS_SAVED_CACHE_HIT:'true',NEWS_SAVED_CACHE_KEY:plan.cacheKey},paths:context.paths}));
+ assert.deepEqual(JSON.parse(await readFile(context.paths.receipt)),receipt);
+});
+await scenario(async context=>{
+ await assert.rejects(collectWithLineage({...context,registry,collect:async()=>writeFile(context.paths.payload,JSON.stringify(empty))}),error=>{assert.match(error.message,/lost_access_hold/);return noFalseZeroRequests(error);});
+ await missing(context.paths.collected);
+});
+await scenario(async context=>{
+ await assert.rejects(collectWithLineage({...context,registry,collect:async()=>writeFile(context.paths.payload,JSON.stringify({version:'bad'}))}),noFalseZeroRequests);
+ await missing(context.paths.collected);
+});
+await scenario(async context=>{
+ await collectWithLineage({...context,registry,collect:async()=>{}});
+ await writeFile(context.paths.payload,JSON.stringify({version:'bad'}));
+ await assert.rejects(completeLineage({env:{...context.env,NEWS_SAVED_CACHE_HIT:'true',NEWS_SAVED_CACHE_KEY:plan.cacheKey},paths:context.paths}),noFalseZeroRequests);
+});
+await scenario(async context=>{
+ let requests=0;
+ await collectWithLineage({...context,registry,collect:async()=>{
+  const previous=JSON.parse(await readFile(context.paths.payload));assert.deepEqual(previous,empty);
+  const result=await collectNews(registry,{previous,now,fetchFeed:async()=>{requests++;return '<rss version="2.0"><channel></channel></rss>';}});
+  await writeFile(context.paths.payload,JSON.stringify(result));
+ }});
+ assert.equal(requests,1);
+ await access(context.paths.collected);
+ await assert.rejects(collectWithLineage({...context,registry,collect:()=>assert.fail('second bootstrap')}));
+},{bootstrap:true});
+for(const field of ['payload','receipt']) await scenario(async context=>{
+ await writeFile(context.paths[field],field==='payload'?payload:JSON.stringify(receipt));
+ let requests=0;
+ await assert.rejects(collectWithLineage({...context,registry,collect:async()=>{requests++;}}));
+ assert.equal(requests,0);
+ if(field==='payload') assert.deepEqual(await readFile(context.paths.payload),payload);
+},{bootstrap:true});
+
+// The shipped workflow must call these tested gates in order, without an alternate
+// direct collector path, prefix fallback, schedule, permissive errors or writes.
+const workflow=await readFile(new URL('../.github/workflows/news-preview.yml',import.meta.url),'utf8');
+for(const forbidden of [/restore-keys:/,/news-review-v2/,/\n\s+schedule:/,/continue-on-error:/,/contents: write/,/actions: write/,/secrets\./,/node scripts\/import-regional-news.mjs/]) assert.doesNotMatch(workflow,forbidden);
+for(const command of ['plan','collect','complete','verify-final-save']) assert.equal(workflow.split(`node scripts/news-preview-lineage.mjs ${command}\n`).length-1,1);
+const stages=['node scripts/news-preview-lineage.mjs plan','id: review-cache','id: final-receipt','node scripts/news-preview-lineage.mjs collect','name: Save only a completed current payload','id: saved-payload','node scripts/news-preview-lineage.mjs complete','name: Save final receipt separately','id: saved-final','node scripts/news-preview-lineage.mjs verify-final-save'];
+for(let i=1;i<stages.length;i++) assert.ok(workflow.indexOf(stages[i])>workflow.indexOf(stages[i-1]),stages[i]);
+assert.equal((workflow.match(/lookup-only: true/g)||[]).length,2);
+assert.equal((workflow.match(/fail-on-cache-miss: true/g)||[]).length,4);
+const quality=await readFile(new URL('../.github/workflows/quality-gate.yml',import.meta.url),'utf8');
+assert.match(quality,/node scripts\/test-news-run-lineage.mjs/);
+assert.match(workflow,/uses: actions\/checkout@v6\n        with:\n          ref: \$\{\{ github.sha \}\}/);
+assert.match(workflow,/concurrency:[\s\S]*?cancel-in-progress: false/);
+console.log(`News lineage tests passed: metadata/current/N-1 identity matrix, strict first-run bootstrap, exact v3 cache/receipt/digest verification, ${scenarios} offline file/transport scenarios, interrupted/rerun/cache-loss stops and workflow ordering. No network calls.`);

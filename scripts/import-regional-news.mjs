@@ -49,7 +49,7 @@ export async function collectNews(registry, {fetchFeed, now = new Date().toISOSt
     const sameConfig = old?.configHash === fingerprint(source);
     const state = {sourceId:source.id,sourceHost:old?.accessHeld ? old.sourceHost : new URL(source.feedUrl || source.homeUrl).hostname,configHash:fingerprint(source),status:'disabled',etag:sameConfig ? old.etag : null,lastModified:sameConfig ? old.lastModified : null,lastAttemptAt:old?.lastAttemptAt || null,lastSuccessAt:sameConfig ? old.lastSuccessAt : null,retryNotBefore:old?.retryNotBefore || null,accessHeld:Boolean(old?.accessHeld || heldHosts.has(accessHost(source.feedUrl || source.homeUrl)))};
     const retained = previous.candidates.filter(r => r.sourceId === source.id);
-    if (state.accessHeld) { candidates.push(...retained); diagnostics.push({...state,status:'access_held'}); continue; }
+    if (state.accessHeld) { candidates.push(...retained); diagnostics.push({...state,status:'access_held',...(old?.error ? {error:old.error} : {})}); continue; }
     if (!source.enabled) { candidates.push(...retained); diagnostics.push(state); continue; }
     if (state.retryNotBefore && state.retryNotBefore > now) { candidates.push(...retained); diagnostics.push({...state,status:'failed_preserved'}); continue; }
     state.lastAttemptAt = now;
