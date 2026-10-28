@@ -59,20 +59,50 @@ export function dedupeCanonicalEvents(events, keyForEvent = canonicalEventKey) {
 
 // Refreshes may improve titles or change source order, but published occurrence
 // IDs are durable user data (saved events and calendar UIDs). Match only the
-// same strict identities already admitted by canonicalEventKey, never titles
-// or a shared calendar URL alone. Do not copy stale content or observation dates.
+// same strict identities already admitted by canonicalEventKey. As a bounded
+// fallback, one exact source + event URL + occurrence interval may keep its ID
+// when the publisher adds a status prefix such as "SOLD OUT". A shared URL,
+// changed source or changed occurrence is never sufficient. Do not copy stale
+// content or observation dates.
 export function preservePublishedEventIds(events, previousEvents) {
   const previousByKey = new Map();
+  const previousByOccurrence = new Map();
+  const titleWithoutSoldOut = value => {
+    const match = String(value || '').match(/^\s*sold\s*out\s*[:\-–—]\s*(.+)$/i);
+    return match ? normalize(match[1]) : null;
+  };
+  const occurrenceKey = event => {
+    try {
+      const parsed = new URL(event.eventUrl);
+      const stamp = Date.parse(event.startAt);
+      const endStamp = Date.parse(event.endAt || event.startAt);
+      if (!['https:', 'http:'].includes(parsed.protocol) || !event.sourceId || !Number.isFinite(stamp) || !Number.isFinite(endStamp)) return null;
+      parsed.hash = '';
+      return `${event.sourceId}|${parsed.href.replace(/\/$/, '')}|${stamp}|${endStamp}`;
+    } catch { return null; }
+  };
   for (const event of previousEvents) {
     const key = canonicalEventKey(event);
-    if (!key || !event.id) continue;
-    const list = previousByKey.get(key) || [];
-    list.push(event);
-    previousByKey.set(key, list);
+    if (!event.id) continue;
+    if (key) {
+      const list = previousByKey.get(key) || [];
+      list.push(event);
+      previousByKey.set(key, list);
+    }
+    const occurrence = occurrenceKey(event);
+    if (occurrence) {
+      const list = previousByOccurrence.get(occurrence) || [];
+      list.push(event);
+      previousByOccurrence.set(occurrence, list);
+    }
   }
   const current = dedupeCanonicalEvents(events);
   const output = current.map(event => {
-    const matches = previousByKey.get(canonicalEventKey(event)) || [];
+    const canonicalMatches = previousByKey.get(canonicalEventKey(event)) || [];
+    const occurrenceMatches = (previousByOccurrence.get(occurrenceKey(event)) || []).filter(previous =>
+      titleWithoutSoldOut(event.title) === normalize(previous.title)
+      || titleWithoutSoldOut(previous.title) === normalize(event.title));
+    const matches = canonicalMatches.length ? canonicalMatches : occurrenceMatches;
     const ids = new Set(matches.map(previous => previous.id));
     if (ids.size > 1) throw new Error('Ambiguous published event identity: ' + [...ids].join(', '));
     if (!matches.length) return event;
