@@ -1,0 +1,340 @@
+{
+  "version": 1,
+  "archiveId": "city-event-lifecycle-20261028",
+  "disposition": "reviewed_source_lifecycle_exclusion",
+  "reason": "Exact reviewed event lifecycle decisions only: one official cancellation and four successful-source withdrawals. Raw accepted evidence and source clocks remain preserved; unrelated omissions stay protected.",
+  "decisionReviewedAt": "2026-10-28T13:15:11.207Z",
+  "verifiedAgainstCommit": "754db8b8543dc36d6d18d0cb89f81fc6fdad5acd",
+  "rawArchiveRecordCount": 5,
+  "activeQuarantineIds": [
+    "halifax-public-libraries-18e0f73c90fb3674",
+    "halifax-public-libraries-4b80fdd1a4cca573",
+    "bedford-library-events-82bb7fc4a9f33612",
+    "bedford-library-events-cee0720ae1991ade",
+    "bedford-library-events-5c576dbdd2297ef2"
+  ],
+  "protectedDetailIds": [
+    "the-carleton-2d6665b8890674d0"
+  ],
+  "provenance": {
+    "repository": "JeremyHennessy/HalifaxSourced",
+    "scheduledRun": {
+      "id": 40693203541,
+      "url": "https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/40693203541",
+      "sourceCommit": "754db8b8543dc36d6d18d0cb89f81fc6fdad5acd",
+      "startedAt": "2026-10-28T13:04:51Z",
+      "completedAt": "2026-10-28T13:07:09Z",
+      "artifact": {
+        "id": 12818012407,
+        "url": "https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/40693203541/artifacts/12818012407",
+        "zipSha256": "c480516944507ee3f6bd11151582ffd7537575b844926d14cbef2bd5e19db4ea"
+      }
+    },
+    "currentCandidate": {
+      "generatedAt": "2026-10-28T13:05:15.605Z",
+      "inputEventCount": 1449,
+      "keptEventCount": 1360,
+      "heldRemovalCount": 6
+    },
+    "decisionBasis": "Exact-record offline review of the fail-closed diagnostics plus current official pages. No restricted source was retried, no timestamp was refreshed, and the separate Carleton occurrence remains protected."
+  },
+  "records": [
+    {
+      "expected": {
+        "id": "halifax-public-libraries-18e0f73c90fb3674",
+        "sourceId": "halifax-public-libraries",
+        "title": "Information Session: Canadian Law & Caring For Your Kids",
+        "eventUrl": "https://halifax.bibliocommons.com/v2/events/6a73809cb44674e2601c74d6",
+        "startAt": "2026-10-28T17:00:00.000Z",
+        "endAt": "2026-10-28T19:00:00.000Z",
+        "observedAt": "2026-10-24T11:11:19.659Z"
+      },
+      "expectedRawRecordCanonicalSha256": "ef6768df0839a9de862ca5027d39ee3a6632525d2cce2355c8c3fe32d3ef69ad",
+      "rawAcceptedRecord": {
+        "id": "halifax-public-libraries-18e0f73c90fb3674",
+        "title": "Information Session: Canadian Law & Caring For Your Kids",
+        "startAt": "2026-10-28T17:00:00.000Z",
+        "endAt": "2026-10-28T19:00:00.000Z",
+        "allDay": false,
+        "venueName": "Keshen Goodman Public Library",
+        "address": null,
+        "city": "Halifax",
+        "categories": [
+          "Community",
+          "Family"
+        ],
+        "eventUrl": "https://halifax.bibliocommons.com/v2/events/6a73809cb44674e2601c74d6",
+        "ticketUrl": null,
+        "price": null,
+        "sourceId": "halifax-public-libraries",
+        "sourceName": "Halifax Public Libraries",
+        "sourceKind": "public_library_calendar",
+        "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
+        "observedAt": "2026-10-24T11:11:19.659Z",
+        "reviewState": "source_observed",
+        "duplicateEventIds": [],
+        "venueId": "keshen-goodman-library",
+        "neighbourhood": null,
+        "organizerId": "halifax-public-libraries",
+        "organizerName": "Halifax Public Libraries"
+      },
+      "decision": {
+        "kind": "official_source_cancelled",
+        "reviewedAt": "2026-10-28T13:15:11.207Z",
+        "reason": "The current official Halifax Public Libraries listing marks this exact October 28 occurrence Cancelled."
+      },
+      "evidence": [
+        {
+          "kind": "current_official_source",
+          "url": "https://halifax.bibliocommons.com/v2/events?types=625010b09b89292800c10e1a",
+          "observedAt": "2026-10-28T13:15:11.207Z",
+          "observation": "Official listing shows the exact title, October 28 2:00–4:00 p.m. occurrence and Cancelled status."
+        },
+        {
+          "kind": "scheduled_refresh_diagnostics",
+          "url": "https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/40693203541/artifacts/12818012407",
+          "path": "city-event-source-drift-report.json",
+          "observation": "Exact accepted ID appears in heldRemovals after a successful source collection; no record was silently removed."
+        }
+      ]
+    },
+    {
+      "expected": {
+        "id": "halifax-public-libraries-4b80fdd1a4cca573",
+        "sourceId": "halifax-public-libraries",
+        "title": "Bedford Chess Club: Preteens",
+        "eventUrl": "https://halifax.bibliocommons.com/v2/events/6a8f3345be148200298a463f",
+        "startAt": "2026-12-10T19:30:00.000Z",
+        "endAt": "2026-12-10T20:30:00.000Z",
+        "observedAt": "2026-10-24T11:12:19.872Z"
+      },
+      "expectedRawRecordCanonicalSha256": "c5d122ef2a1546ac27a6c0280e66a7cd2e5530a093bb63f4349943e7c2004e6a",
+      "rawAcceptedRecord": {
+        "id": "halifax-public-libraries-4b80fdd1a4cca573",
+        "title": "Bedford Chess Club: Preteens",
+        "startAt": "2026-12-10T19:30:00.000Z",
+        "endAt": "2026-12-10T20:30:00.000Z",
+        "allDay": false,
+        "venueName": "Bedford Public Library",
+        "address": "15 Dartmouth Road, Bedford, NS B4A 3X6",
+        "city": "Bedford",
+        "categories": [
+          "Community"
+        ],
+        "eventUrl": "https://halifax.bibliocommons.com/v2/events/6a8f3345be148200298a463f",
+        "ticketUrl": null,
+        "price": null,
+        "sourceId": "halifax-public-libraries",
+        "sourceName": "Halifax Public Libraries",
+        "sourceKind": "public_library_calendar",
+        "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
+        "observedAt": "2026-10-24T11:12:19.872Z",
+        "reviewState": "source_observed",
+        "duplicateEventIds": [],
+        "venueId": "bedford-library",
+        "neighbourhood": null,
+        "organizerId": "halifax-public-libraries",
+        "organizerName": "Halifax Public Libraries"
+      },
+      "decision": {
+        "kind": "reviewed_successful_source_withdrawal",
+        "reviewedAt": "2026-10-28T13:15:11.207Z",
+        "reason": "The successful current official Bedford calendar omits this exact future occurrence; the bounded scheduled refresh independently reported the same exact-record omission."
+      },
+      "evidence": [
+        {
+          "kind": "current_official_source",
+          "url": "https://halifax.bibliocommons.com/v2/events?locations=BED",
+          "observedAt": "2026-10-28T13:15:11.207Z",
+          "observation": "Official current Bedford calendar/series projection no longer contains this exact occurrence."
+        },
+        {
+          "kind": "scheduled_refresh_diagnostics",
+          "url": "https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/40693203541/artifacts/12818012407",
+          "path": "city-event-source-drift-report.json",
+          "observation": "Exact accepted ID appears in heldRemovals after a successful source collection; no record was silently removed."
+        }
+      ]
+    },
+    {
+      "expected": {
+        "id": "bedford-library-events-82bb7fc4a9f33612",
+        "sourceId": "bedford-library-events",
+        "title": "Cookies & Computers",
+        "eventUrl": "https://halifax.bibliocommons.com/v2/events/6abab4a3ebad22004541877f",
+        "startAt": "2026-12-11T19:30:00.000Z",
+        "endAt": "2026-12-11T20:30:00.000Z",
+        "observedAt": "2026-10-24T11:13:12.357Z"
+      },
+      "expectedRawRecordCanonicalSha256": "0256a3deafa6a0ad724f87472b40fb82dae4027314cb509e3da03cbde8fab8bf",
+      "rawAcceptedRecord": {
+        "id": "bedford-library-events-82bb7fc4a9f33612",
+        "title": "Cookies & Computers",
+        "startAt": "2026-12-11T19:30:00.000Z",
+        "endAt": "2026-12-11T20:30:00.000Z",
+        "allDay": false,
+        "venueName": "Bedford Public Library",
+        "address": "15 Dartmouth Road, Bedford, NS B4A 3X6",
+        "city": "Bedford",
+        "categories": [
+          "Arts"
+        ],
+        "eventUrl": "https://halifax.bibliocommons.com/v2/events/6abab4a3ebad22004541877f",
+        "ticketUrl": null,
+        "price": null,
+        "sourceId": "bedford-library-events",
+        "sourceName": "Bedford Public Library",
+        "sourceKind": "official_library_location_calendar",
+        "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
+        "observedAt": "2026-10-24T11:13:12.357Z",
+        "reviewState": "source_observed",
+        "latitude": 44.7314,
+        "longitude": -63.6571,
+        "duplicateEventIds": [],
+        "venueId": "bedford-library",
+        "neighbourhood": null,
+        "organizerId": "halifax-public-libraries",
+        "organizerName": "Halifax Public Libraries"
+      },
+      "decision": {
+        "kind": "reviewed_successful_source_withdrawal",
+        "reviewedAt": "2026-10-28T13:15:11.207Z",
+        "reason": "The successful current official Bedford calendar omits this exact future occurrence; the bounded scheduled refresh independently reported the same exact-record omission."
+      },
+      "evidence": [
+        {
+          "kind": "current_official_source",
+          "url": "https://halifax.bibliocommons.com/v2/events?series=6aba6fd386d8450031194b57",
+          "observedAt": "2026-10-28T13:15:11.207Z",
+          "observation": "Official current Bedford calendar/series projection no longer contains this exact occurrence."
+        },
+        {
+          "kind": "scheduled_refresh_diagnostics",
+          "url": "https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/40693203541/artifacts/12818012407",
+          "path": "city-event-source-drift-report.json",
+          "observation": "Exact accepted ID appears in heldRemovals after a successful source collection; no record was silently removed."
+        }
+      ]
+    },
+    {
+      "expected": {
+        "id": "bedford-library-events-cee0720ae1991ade",
+        "sourceId": "bedford-library-events",
+        "title": "Bedford Chess Club: Preteens",
+        "eventUrl": "https://halifax.bibliocommons.com/v2/events/6a8f3345be148200298a4640",
+        "startAt": "2026-12-17T19:30:00.000Z",
+        "endAt": "2026-12-17T20:30:00.000Z",
+        "observedAt": "2026-10-24T11:13:12.358Z"
+      },
+      "expectedRawRecordCanonicalSha256": "efc853db196cf898c5052503a052dbf9a01f02b1b17ac10ec6d1fd78227a4d01",
+      "rawAcceptedRecord": {
+        "id": "bedford-library-events-cee0720ae1991ade",
+        "title": "Bedford Chess Club: Preteens",
+        "startAt": "2026-12-17T19:30:00.000Z",
+        "endAt": "2026-12-17T20:30:00.000Z",
+        "allDay": false,
+        "venueName": "Bedford Public Library",
+        "address": "15 Dartmouth Road, Bedford, NS B4A 3X6",
+        "city": "Bedford",
+        "categories": [
+          "Community"
+        ],
+        "eventUrl": "https://halifax.bibliocommons.com/v2/events/6a8f3345be148200298a4640",
+        "ticketUrl": null,
+        "price": null,
+        "sourceId": "bedford-library-events",
+        "sourceName": "Bedford Public Library",
+        "sourceKind": "official_library_location_calendar",
+        "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
+        "observedAt": "2026-10-24T11:13:12.358Z",
+        "reviewState": "source_observed",
+        "latitude": 44.7314,
+        "longitude": -63.6571,
+        "duplicateEventIds": [],
+        "venueId": "bedford-library",
+        "neighbourhood": null,
+        "organizerId": "halifax-public-libraries",
+        "organizerName": "Halifax Public Libraries"
+      },
+      "decision": {
+        "kind": "reviewed_successful_source_withdrawal",
+        "reviewedAt": "2026-10-28T13:15:11.207Z",
+        "reason": "The successful current official Bedford calendar omits this exact future occurrence; the bounded scheduled refresh independently reported the same exact-record omission."
+      },
+      "evidence": [
+        {
+          "kind": "current_official_source",
+          "url": "https://halifax.bibliocommons.com/v2/events?locations=BED",
+          "observedAt": "2026-10-28T13:15:11.207Z",
+          "observation": "Official current Bedford calendar/series projection no longer contains this exact occurrence."
+        },
+        {
+          "kind": "scheduled_refresh_diagnostics",
+          "url": "https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/40693203541/artifacts/12818012407",
+          "path": "city-event-source-drift-report.json",
+          "observation": "Exact accepted ID appears in heldRemovals after a successful source collection; no record was silently removed."
+        }
+      ]
+    },
+    {
+      "expected": {
+        "id": "bedford-library-events-5c576dbdd2297ef2",
+        "sourceId": "bedford-library-events",
+        "title": "Cookies & Computers",
+        "eventUrl": "https://halifax.bibliocommons.com/v2/events/6abab4a3ebad220045418780",
+        "startAt": "2026-12-18T19:30:00.000Z",
+        "endAt": "2026-12-18T20:30:00.000Z",
+        "observedAt": "2026-10-24T11:13:12.358Z"
+      },
+      "expectedRawRecordCanonicalSha256": "0a60f7d17dea3096818dd83288b10811a2c744f58aa8e163442195438ae46e85",
+      "rawAcceptedRecord": {
+        "id": "bedford-library-events-5c576dbdd2297ef2",
+        "title": "Cookies & Computers",
+        "startAt": "2026-12-18T19:30:00.000Z",
+        "endAt": "2026-12-18T20:30:00.000Z",
+        "allDay": false,
+        "venueName": "Bedford Public Library",
+        "address": "15 Dartmouth Road, Bedford, NS B4A 3X6",
+        "city": "Bedford",
+        "categories": [
+          "Arts"
+        ],
+        "eventUrl": "https://halifax.bibliocommons.com/v2/events/6abab4a3ebad220045418780",
+        "ticketUrl": null,
+        "price": null,
+        "sourceId": "bedford-library-events",
+        "sourceName": "Bedford Public Library",
+        "sourceKind": "official_library_location_calendar",
+        "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
+        "observedAt": "2026-10-24T11:13:12.358Z",
+        "reviewState": "source_observed",
+        "latitude": 44.7314,
+        "longitude": -63.6571,
+        "duplicateEventIds": [],
+        "venueId": "bedford-library",
+        "neighbourhood": null,
+        "organizerId": "halifax-public-libraries",
+        "organizerName": "Halifax Public Libraries"
+      },
+      "decision": {
+        "kind": "reviewed_successful_source_withdrawal",
+        "reviewedAt": "2026-10-28T13:15:11.207Z",
+        "reason": "The successful current official Bedford calendar omits this exact future occurrence; the bounded scheduled refresh independently reported the same exact-record omission."
+      },
+      "evidence": [
+        {
+          "kind": "current_official_source",
+          "url": "https://halifax.bibliocommons.com/v2/events?series=6aba6fd386d8450031194b57",
+          "observedAt": "2026-10-28T13:15:11.207Z",
+          "observation": "Official current Bedford calendar/series projection no longer contains this exact occurrence."
+        },
+        {
+          "kind": "scheduled_refresh_diagnostics",
+          "url": "https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/40693203541/artifacts/12818012407",
+          "path": "city-event-source-drift-report.json",
+          "observation": "Exact accepted ID appears in heldRemovals after a successful source collection; no record was silently removed."
+        }
+      ]
+    }
+  ]
+}
