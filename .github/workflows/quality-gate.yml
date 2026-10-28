@@ -82,6 +82,7 @@ jobs:
           node scripts/test-weather-operations.mjs
           node scripts/test-weather-run-lineage.mjs
           node scripts/test-weather-journal.mjs
+          node scripts/test-weather-clock-diagnostics.mjs
           node scripts/test-weather-ui.mjs
           node scripts/test-weather-aggregation.mjs
           node scripts/test-weather-model-adversarial.mjs

@@ -1,11 +1,11 @@
 // Weather-only artifact contract; never trusts executable JS supplied by a producer.
 import assert from 'node:assert/strict';
-import {readFile,writeFile,mkdir} from 'node:fs/promises';
+import {readFile,writeFile,mkdir,lstat} from 'node:fs/promises';
 import {execFileSync} from 'node:child_process';
 import {resolve,dirname} from 'node:path';
 import {hash} from './eccc-weather.mjs';
 import {MANIFEST_PATH,jsonBytes,validateCapture,weatherBrowserBytes,loadCurrentWeather} from './weather-capture.mjs';
-import {validateWeatherCache} from '../weather-preview-lineage.mjs';
+import {validateWeatherCache,weatherCollectionOutcome} from '../weather-preview-lineage.mjs';
 import {verifyFinalReceipt} from './weather-run-lineage.mjs';
 export const WEATHER_ARTIFACT='weather-preview';
 export const WEATHER_REVIEW_FILES=['artifacts/weather-publication-contract.json','artifacts/weather-preview.json','artifacts/weather-preview-final.json'];
@@ -21,8 +21,10 @@ export async function packageWeather({root,output,payloadBytes,receipt,identity}
   verifyFinalReceipt(receipt,identity,payloadBytes);
   const payload=validateWeatherCache(JSON.parse(payloadBytes));
   const manifest=payload.manifest,envelope=validateCapture(manifest,jsonBytes(payload.capture));
-  // Deferred/held carry-forward runs are evidence only, not new publication.
-  if(!['collected','not_modified'].includes(payload.decision))return false;
+  // Normal publication accepts successful collection/revalidation only. Legacy
+  // failed 'collected' payloads remain valid private state, never publication.
+  try{await lstat(output);throw new Error('weather publication output already exists');}catch(error){if(error.code!=='ENOENT')throw error;}
+  if(!weatherCollectionOutcome(payload).publicationEligible)return false;
   assert.deepEqual(manifest.sourceRun,identity);
   const contract={version:1,kind:'weather_only_publication',identity,codeSha256:await weatherCodeDigest(root),payloadSha256:hash(payloadBytes)};
   const files={[MANIFEST_PATH]:jsonBytes(manifest),[manifest.capturePath]:jsonBytes(payload.capture),'data/build/halifax-weather.json':jsonBytes(envelope),'data/weather.js':weatherBrowserBytes(envelope),'artifacts/weather-publication-contract.json':jsonBytes(contract),'artifacts/weather-preview.json':payloadBytes,'artifacts/weather-preview-final.json':jsonBytes(receipt)};
@@ -34,9 +36,8 @@ export async function validateWeatherArtifact({root,artifactRoot,artifactFiles,r
   const contract=JSON.parse(await read(WEATHER_REVIEW_FILES[0]));
   assert.deepEqual(Object.keys(contract).sort(),['codeSha256','identity','kind','payloadSha256','version']);assert.equal(contract.version,1);assert.equal(contract.kind,'weather_only_publication');
   assert.equal(contract.identity.repository,'JeremyHennessy/HalifaxSourced');assert.equal(contract.identity.workflowPath,'.github/workflows/weather-preview.yml');assert.equal(contract.identity.runAttempt,1);assert.equal(contract.identity.ref,'refs/heads/main');assert.equal(contract.identity.runId,String(runId));assert.match(headSha||'',/^[a-f0-9]{40}$/);assert.equal(contract.identity.sha,headSha,'producer run SHA mismatch');
-  assert.equal(contract.codeSha256,await weatherCodeDigest(root),'tested app/code baseline changed; recollect/review, never restore an old tree');
   const bytes=await read('artifacts/weather-preview.json');assert.equal(hash(bytes),contract.payloadSha256);verifyFinalReceipt(JSON.parse(await read('artifacts/weather-preview-final.json')),contract.identity,bytes);
-  const payload=validateWeatherCache(JSON.parse(bytes));assert.ok(['collected','not_modified'].includes(payload.decision));assert.deepEqual(payload.manifest.sourceRun,contract.identity);
+  const payload=validateWeatherCache(JSON.parse(bytes));assert.equal(weatherCollectionOutcome(payload).publicationEligible,true,'blocked or unsuccessful weather source outcome is not publishable');assert.equal(contract.codeSha256,await weatherCodeDigest(root),'tested app/code baseline changed; recollect/review, never restore an old tree');assert.deepEqual(payload.manifest.sourceRun,contract.identity);
   const manifest=JSON.parse(await read(MANIFEST_PATH));assert.deepEqual(manifest,payload.manifest);
   const promoted=[...WEATHER_DATA_FILES,manifest.capturePath];assert.deepEqual(artifactFiles.slice().sort(),[...promoted,...WEATHER_REVIEW_FILES].sort(),'unexpected or missing weather artifact files');
   const captureBytes=await read(manifest.capturePath);assert.equal(captureBytes,jsonBytes(payload.capture));const envelope=validateCapture(manifest,captureBytes);
