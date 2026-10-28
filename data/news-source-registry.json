@@ -201,6 +201,46 @@
         "dateEvidence": "Article pages show August 22, September 12 and October 3, 2026, respectively. Preserve original calendar dates and day precision. No refreshed publication date, inferred modification time or publication clock derived from current cache date.",
         "rightsEvidence": "Original title and attributed outbound link only. No body, quotation, image or logo reuse permission inferred. These news links do not owner-confirm business lifecycles or authorize changing restaurant-directory/opening-watch records. Uncertain predictions, opinion and reader comments are excluded from annotations."
       }
+    },
+    {
+      "id": "halifax-water",
+      "name": "Halifax Water",
+      "source_type": "official_public_notice",
+      "homeUrl": "https://www.halifaxwater.ca/notices-and-news",
+      "feedUrl": null,
+      "allowedHosts": [
+        "www.halifaxwater.ca"
+      ],
+      "enabled": false,
+      "status": "admitted",
+      "admission": {
+        "reviewedAt": "2026-10-28T04:49:13.924Z",
+        "reviewer": "Halifax Sourced official-source review",
+        "accessEvidence": "Official utility index and January 14 rate notice acquired through unchanged access/robots guards; HTTP 200. Article SHA-256 1c63f28bf43ad51a99b1e6a37da38956d1cb5f53120c3cd220987d25a480b85e. No automatic article collector or feed admitted.",
+        "schemaEvidence": "Manually reviewed original factual headline and canonical outbound link only. No summaries, article bodies, photographs, logos or patient profiles imported. This is a source announcement, not independent journalism.",
+        "dateEvidence": "Publication dates read from each article, not related-content alerts or retrieval time. Day precision retained. Earlier notices remain historical announcements, not a live service-status feed.",
+        "rightsEvidence": "Original factual annotations and links with publisher attribution only. Public access and robots allowance do not confer full-text or image reuse rights; no general republication licence is claimed."
+      }
+    },
+    {
+      "id": "nova-scotia-health",
+      "name": "Nova Scotia Health",
+      "source_type": "official_public_notice",
+      "homeUrl": "https://www.nshealth.ca/news-and-notices",
+      "feedUrl": null,
+      "allowedHosts": [
+        "www.nshealth.ca"
+      ],
+      "enabled": false,
+      "status": "admitted",
+      "admission": {
+        "reviewedAt": "2026-10-28T04:49:13.924Z",
+        "reviewer": "Halifax Sourced official-source review",
+        "accessEvidence": "Official media page, news index and three linked institutional notices acquired through unchanged access/robots guards; HTTP 200. Article hashes retained in the bounded review evidence. An RSS link was discovered, but no feed transport or automatic adapter is admitted.",
+        "schemaEvidence": "Manually reviewed original factual headline and canonical outbound link only. No summaries, article bodies, photographs, logos or patient profiles imported. This is a source announcement, not independent journalism.",
+        "dateEvidence": "Publication dates read from each article, not related-content alerts or retrieval time. Day precision retained. Earlier notices remain historical announcements, not a live service-status feed.",
+        "rightsEvidence": "Original factual annotations and links with publisher attribution only. Public access and robots allowance do not confer full-text or image reuse rights; no general republication licence is claimed."
+      }
     }
   ]
 }

@@ -2,6 +2,8 @@
 
 ## Delivered scope
 
+Latest addition: [four official public-service links](official-news-expansion-20261028.md) from Halifax Water and Nova Scotia Health. Both are manual-only, with no admitted RSS collector.
+
 - `#news` is a separate, URL-filtered news/notices view. It does not change restaurant search or the five mobile tabs; mobile navigation exposes it through More.
 - `#admin/status` adds a searchable, paginated source catalogue built from committed registries and evidence. This is a public, sanitized release snapshot, not a private administration backend or a live run monitor.
 - The initial published news selection contains three manually reviewed Nova Scotia government links with original factual annotations. They are labelled official announcements, not independent journalism. Calendar-only publication evidence stays at day precision.
@@ -44,7 +46,7 @@ Regional News Preview attempts **review-only collection every six hours at minut
 
 The [v3 run-lineage guard](news-preview-run-lineage.md) requires the exact sequential predecessor’s successful first attempt, exact payload/final-receipt caches and payload digest before any news or robots request. Current and predecessor metadata accept only verified manual/scheduled events; existing v3 manual receipts remain compatible. A failed/interrupted run or cache loss breaks the chain rather than falling back to older state. Later cron attempts stay blocked; there is no automatic recovery or hold reset. Activation requires independent review, actual bootstrap and second-manual-run continuation evidence, exact-head CI and unchanged source-policy verification. This does not provide a shared durable store or authorize retries in other workflows.
 
-The six-hour target describes **scheduled attempts**, not guaranteed successful collection or automatic publication. Individual source clocks distinguish successful collection from failed, held, disabled or backed-off sources. Global Halifax remains the only enabled feed; the other ten sources and all 47 reviewed published records are unchanged. Collection artifacts remain nonpublishable until explicit review; they are excluded from automatic promotion. Receipt-only updates stay in workflow artifacts/caches, not content commits, full releases or deployment. The public source catalogue remains a sanitized release snapshot, not a live schedule monitor.
+The six-hour target describes **scheduled attempts**, not guaranteed successful collection or automatic publication. Individual source clocks distinguish successful collection from failed, held, disabled or backed-off sources. Global Halifax remains the only enabled feed; the other twelve registry sources remain disabled. The accepted archive has 51 reviewed records after four manual official-source additions; the previous 47 records are unchanged. Collection artifacts remain nonpublishable until explicit review; they are excluded from automatic promotion. Receipt-only updates stay in workflow artifacts/caches, not content commits, full releases or deployment. The public source catalogue remains a sanitized release snapshot, not a live schedule monitor.
 
 GitHub workflow links are not permission to retry a restricted source. New paid services, secrets or broader access are not part of this implementation.
 

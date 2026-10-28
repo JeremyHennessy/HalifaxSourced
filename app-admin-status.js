@@ -446,6 +446,21 @@ function catalogWeatherMetadata(row) {
     <p>Warning page check: ${catalogClock(data.warningCheckedAt)}. ${statusEscape(data.coverage || "Coverage unknown")}</p>
     <p>These recorded clocks do not establish current weather or an all-clear. <a href="#weather">View weather freshness and limits</a>.</p></section>`;
 }
+function catalogWeatherModelMetadata(row) {
+  if (row.family !== "weather-models" || !row.weatherModels) return "";
+  const data = row.weatherModels, captured = data.admission === "published_snapshot", batch = data.combinedSnapshotAttempt;
+  const list = values => (Array.isArray(values) ? values : []).map(statusEscape).join(", ") || "None admitted";
+  return `<section aria-label="Reviewed weather model-source evidence"><p><strong>${captured ? "Published model snapshot retained — not automatic refresh" : "Unadmitted model provider — no successful integration established"}</strong></p>
+    <p>${statusEscape(data.collection)}. ${statusEscape(data.accessState)} — ${statusEscape(data.reason)}</p>
+    <p>Registered products (not activation): ${list(data.registeredModelIds)}</p>
+    <p>Captured models: ${list(data.modelIds)} · Distinct retained fields: ${Number.isInteger(data.captureCount) ? data.captureCount : "Unknown"} · Reviewed points: ${list(data.locationIds)}</p>
+    <p>Model reference/cycle (not publication): ${(Array.isArray(data.modelReferenceTimes) ? data.modelReferenceTimes : []).map(catalogClock).join(", ") || "Unknown"}. Provider publication / first availability: Unknown.</p>
+    <p>Latest retained field request started: ${catalogClock(data.lastRetainedCaptureAttemptAt)}. This is not the later combined snapshot attempt.</p>
+    <p>First retained field receipt: ${catalogClock(data.firstRetrievedAt)} · Latest retained field receipt: ${catalogClock(data.lastRetrievedAt)} · Derived snapshot issuance: ${catalogClock(data.snapshotIssuedAt)}</p>
+    <p>${Number.isInteger(data.validInstantCount) ? data.validInstantCount : "Unknown"} saved valid instants: ${catalogClock(data.validFrom)} to ${catalogClock(data.validThrough)}. This is not continuous hourly coverage.</p>
+    ${batch ? `<p>Combined model-snapshot attempt (not a per-provider attempt): ${statusEscape(batch.status)} · started ${catalogClock(batch.attemptedAt)} · completed ${catalogClock(batch.completedAt)}.</p>` : ""}
+    <p>Provider publication and first-availability clocks remain unknown; retained request clocks do not establish continuous collection. Saved receipts do not establish current conditions or improved prediction. <a href="#weather">View model freshness, source limits and separate official warnings</a>.</p></section>`;
+}
 function renderCatalogRow(row) {
   const state = catalogCurrentState(row);
   return `<article class="source-catalog-row">
@@ -456,6 +471,7 @@ function renderCatalogRow(row) {
     <p>Collection enabled: ${row.enabled === true ? "yes (registered)" : row.enabled === false ? "no" : "unknown"} · Target lane cadence (not live scheduling): ${row.targetHours ? `${statusEscape(row.targetHours)} hours` : "unknown"} · Parser: ${statusEscape(row.parser || "unknown")}</p>
     ${catalogReviewMetadata(row)}
     ${catalogWeatherMetadata(row)}
+    ${catalogWeatherModelMetadata(row)}
     <details><summary>Provenance and operations</summary><p>Source ID: ${statusEscape(row.sourceId || "unknown")}<br>Catalogue ID: ${statusEscape(row.id)}</p><p>${(row.provenance || []).map(path => statusEscape(path)).join("<br>")}</p><p>${row.workflowUrl ? catalogLink(row.workflowUrl, "Inspect workflow runs / authenticated dispatch") : "No mapped workflow"} · ${catalogLink(row.reviewUrl, "Review changes")}</p></details>
   </article>`;
 }
@@ -467,7 +483,7 @@ function bindSourceCatalog(payload) {
   const previous = host.querySelector("[data-catalog-previous]"), next = host.querySelector("[data-catalog-next]");
   let page = 0;
   const pageSize = 30;
-  const searchable = payload.sources.map(row => ({row, text:[row.name,row.url,row.sourceId,row.family,row.category,row.geography,...(row.family === "source-onboarding" && row.review ? [row.review.status,row.review.distinction,row.review.existingRepresentation,row.review.interface,row.review.format?.observed,row.review.holdReason,row.review.accessLimitations,row.review.rightsLimitations,row.review.nextSafeAction,...(row.review.evidence || []).map(item => item.observation)] : [])].join(" ").toLowerCase()}));
+  const searchable = payload.sources.map(row => ({row, text:[row.name,row.url,row.sourceId,row.family,row.category,row.geography,...(row.family === "weather-models" && row.weatherModels ? [row.weatherModels.admission,row.weatherModels.accessState,row.weatherModels.reason,...(row.weatherModels.modelIds || []),...(row.weatherModels.registeredModelIds || [])] : []),...(row.family === "source-onboarding" && row.review ? [row.review.status,row.review.distinction,row.review.existingRepresentation,row.review.interface,row.review.format?.observed,row.review.holdReason,row.review.accessLimitations,row.review.rightsLimitations,row.review.nextSafeAction,...(row.review.evidence || []).map(item => item.observation)] : [])].join(" ").toLowerCase()}));
   function render() {
     const term = query.value.trim().toLowerCase();
     const filtered = searchable.filter(({row,text}) => (!term || text.includes(term)) && (!state.value || catalogCurrentState(row) === state.value) && (!family.value || row.family === family.value));

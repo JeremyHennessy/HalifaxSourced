@@ -1,0 +1,407 @@
+{
+  "version": 1,
+  "policyVersion": "halifax-family-balanced-v1",
+  "liveCollectionEnabled": false,
+  "automaticCalibrationPromotion": false,
+  "familyPolicy": "Conservative dependency groups, not measured independence; no family count converted into confidence. GEM products one group; IFS/AIFS/ENS one group; GFS/GEFS one group. Provider mirrors never add votes.",
+  "officialForecastRole": "ECCC city-page forecast and official warnings are separate authority/comparators, never an additional GEM vote.",
+  "sources": [
+    {
+      "id": "eccc",
+      "name": "Environment and Climate Change Canada",
+      "enabled": false,
+      "accessState": "held_geomet_robots_policy",
+      "termsUrl": "https://eccc-msc.github.io/open-data/licence/readme_en/",
+      "documentationUrl": "https://eccc-msc.github.io/open-data/",
+      "commercialReuse": "licence_permits_with_attribution",
+      "serviceAdmission": "GetFeatureInfo route disallowed_or_unavailable; no alternate ECCC route attempted",
+      "termsReviewedDate": "2026-10-28",
+      "accessObservation": {
+        "url": "https://geo.weather.gc.ca/robots.txt",
+        "httpStatus": 200,
+        "retrievedAt": "2026-10-28T04:06:25.754Z",
+        "sha256": "4a90453a94abab235a1ee43eccc9213d8817bef0bb81478ebe11b68a66617865",
+        "intendedRoute": "GetFeatureInfo",
+        "outcome": "held_robots_policy",
+        "dataEndpointRequested": false,
+        "recovery": "reviewed_evidence_required_no_alternate_route",
+        "headersReceivedAt": "2026-10-28T04:06:25.752Z"
+      }
+    },
+    {
+      "id": "ecmwf",
+      "name": "ECMWF Open Data",
+      "enabled": false,
+      "accessState": "bounded_captures_reviewed_not_operational",
+      "termsUrl": "https://www.ecmwf.int/en/forecasts/datasets/open-data",
+      "documentationUrl": "https://confluence.ecmwf.int/display/UDOC/ECMWF+Open+Data+-+Real+Time",
+      "commercialReuse": "CC_BY_4_with_ECMWF_terms",
+      "serviceAdmission": "actual_public_free_IFS_0p25_control_temperature_fields_only_not_scheduled_feed",
+      "termsReviewedDate": "2026-10-28",
+      "acceptedAdmissionReviewIds": [
+        "ecmwf-ifs-bounded-20261028T043751.996Z",
+        "ecmwf-ifs-horizon-20261028"
+      ],
+      "acceptedDecoderIds": [
+        "ecmwf-ifs-temperature-eccodes-v1"
+      ],
+      "accessObservation": {
+        "url": "https://data.ecmwf.int/forecasts/20261027/18z/ifs/0p25/oper/20261027180000-12h-oper-fc.grib2",
+        "httpStatus": 206,
+        "headersReceivedAt": "2026-10-28T04:37:51.945Z",
+        "retrievedAt": "2026-10-28T04:37:51.996Z",
+        "bodyBytes": 315359,
+        "sha256": "b3062c7185595f4a6d41d2378f040c2c9ffa8eed8e0a0751568af905dd018bfb",
+        "outcome": "bounded_raw_grib_decoded_review_only",
+        "modelReferenceTime": "2026-10-27T18:00:00Z",
+        "sourceIssuedAt": null,
+        "firstAvailableAt": null,
+        "sourceEnabled": false,
+        "scope": "one2mtemperaturefield; reviewedHalifaxpointprojections only; no globalUIcoverage"
+      }
+    },
+    {
+      "id": "noaa",
+      "name": "NOAA/NCEP",
+      "enabled": false,
+      "accessState": "single_bounded_capture_reviewed_not_operational",
+      "termsUrl": "https://www.weather.gov/disclaimer",
+      "documentationUrl": "https://nomads.ncep.noaa.gov/",
+      "commercialReuse": "public_domain_NWS_information_unless_excepted_no_endorsement",
+      "serviceAdmission": "one_exact_GFS_TMP_2m_00Z_f006_bounded_capture_only_not_scheduled_feed",
+      "usagePolicyUrl": "https://nomads.ncep.noaa.gov/info.php?page=gribfilter",
+      "requestPolicy": {
+        "minRequestSpacingMs": 10000,
+        "retries": 0,
+        "redirects": false,
+        "fallbacks": []
+      },
+      "termsReviewedDate": "2026-10-28",
+      "acceptedAdmissionReviewIds": [
+        "noaa-gfs-bounded-20261028T042441.137Z",
+        "noaa-gfs-horizon-20261028"
+      ],
+      "acceptedDecoderIds": [
+        "gfs-temperature-eccodes-v1"
+      ],
+      "accessObservation": {
+        "url": "https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25.pl?file=gfs.t00z.pgrb2.0p25.f006&lev_2_m_above_ground=on&var_TMP=on&subregion=&leftlon=-63.75&rightlon=-63.5&toplat=44.75&bottomlat=44.5&dir=%2Fgfs.20261028%2F00%2Fatmos",
+        "httpStatus": 200,
+        "headersReceivedAt": "2026-10-28T04:24:41.134Z",
+        "retrievedAt": "2026-10-28T04:24:41.137Z",
+        "bodyBytes": 183,
+        "sha256": "1c1a8bfa8ce5796e2ef33ac503c62adc24991673599cf616fd7a6d92647f0453",
+        "outcome": "bounded_raw_grib_decoded_review_only",
+        "sourceEnabled": false,
+        "modelReferenceTime": "2026-10-28T00:00:00Z",
+        "sourceIssuedAt": null,
+        "firstAvailableAt": null,
+        "validAt": "2026-10-28T06:00:00Z",
+        "variable": "temperature_2m",
+        "actualGridBounds": {
+          "west": -63.75,
+          "east": -63.5,
+          "south": 44.5,
+          "north": 44.75
+        },
+        "acceptedLocationIds": [
+          "halifax_peninsula",
+          "bedford",
+          "dartmouth"
+        ],
+        "completeness": "three_core_points_one_variable_one_valid_instant_only; no_context_point_or_whole_municipality_coverage"
+      }
+    },
+    {
+      "id": "dwd",
+      "name": "Deutscher Wetterdienst",
+      "enabled": false,
+      "accessState": "held_documentation_access_403",
+      "termsUrl": "https://www.dwd.de/EN/service/copyright/copyright_node.html",
+      "documentationUrl": "https://www.dwd.de/EN/ourservices/opendata/opendata.html",
+      "commercialReuse": "pending_current_terms_review",
+      "serviceAdmission": "pending_exact_global_product_and_transport",
+      "accessObservation": {
+        "url": "https://www.dwd.de/EN/ourservices/opendata/opendata.html",
+        "httpStatus": 403,
+        "scope": "documentation_only",
+        "reviewedDate": "2026-10-28",
+        "dataEndpointRequested": false,
+        "recovery": "reviewed_evidence_required_no_alternate_route"
+      }
+    },
+    {
+      "id": "open_meteo",
+      "name": "Open-Meteo distribution service",
+      "enabled": false,
+      "accessState": "held_service_eligibility_unknown",
+      "termsUrl": "https://open-meteo.com/en/terms",
+      "commercialReuse": "data_CC_BY_does_not_authorize_commercial_free_API",
+      "serviceAdmission": "free_API_noncommercial_only_no_eligible_subscription_or_noncommercial_basis_established",
+      "termsReviewedDate": "2026-10-28"
+    },
+    {
+      "id": "ukmo",
+      "name": "UK Met Office",
+      "enabled": false,
+      "accessState": "held_unreviewed_source_access",
+      "commercialReuse": "unreviewed",
+      "serviceAdmission": "no_direct_or_redistributor_access_admitted"
+    },
+    {
+      "id": "meteofrance",
+      "name": "Météo-France",
+      "enabled": false,
+      "accessState": "held_unreviewed_source_access",
+      "commercialReuse": "unreviewed",
+      "serviceAdmission": "no_direct_or_redistributor_access_admitted"
+    },
+    {
+      "id": "jma",
+      "name": "JMA",
+      "enabled": false,
+      "accessState": "held_unreviewed_source_access",
+      "commercialReuse": "unreviewed",
+      "serviceAdmission": "no_direct_or_redistributor_access_admitted"
+    },
+    {
+      "id": "kma",
+      "name": "KMA",
+      "enabled": false,
+      "accessState": "held_unreviewed_source_access",
+      "commercialReuse": "unreviewed",
+      "serviceAdmission": "no_direct_or_redistributor_access_admitted"
+    },
+    {
+      "id": "bom",
+      "name": "Bureau of Meteorology",
+      "enabled": false,
+      "accessState": "held_unreviewed_source_access",
+      "commercialReuse": "unreviewed",
+      "serviceAdmission": "no_direct_or_redistributor_access_admitted"
+    },
+    {
+      "id": "cma",
+      "name": "China Meteorological Administration",
+      "enabled": false,
+      "accessState": "held_unreviewed_source_access",
+      "commercialReuse": "unreviewed",
+      "serviceAdmission": "no_direct_or_redistributor_access_admitted"
+    }
+  ],
+  "models": [
+    {
+      "id": "gem_hrdps",
+      "name": "HRDPS",
+      "sourceId": "eccc",
+      "dependencyGroup": "gem",
+      "enabled": false,
+      "admission": "pending_actual_schema_issue_time_units_scope_and_transport",
+      "maxRunAgeHours": 36,
+      "memberIds": null,
+      "memberIdentityStatus": "not_applicable",
+      "projection": "deterministic"
+    },
+    {
+      "id": "gem_rdps",
+      "name": "GEM Regional",
+      "sourceId": "eccc",
+      "dependencyGroup": "gem",
+      "enabled": false,
+      "admission": "pending_actual_schema_issue_time_units_scope_and_transport",
+      "maxRunAgeHours": 36,
+      "memberIds": null,
+      "memberIdentityStatus": "not_applicable",
+      "projection": "deterministic"
+    },
+    {
+      "id": "gem_gdps",
+      "name": "GEM Global",
+      "sourceId": "eccc",
+      "dependencyGroup": "gem",
+      "enabled": false,
+      "admission": "pending_actual_schema_issue_time_units_scope_and_transport",
+      "maxRunAgeHours": 36,
+      "memberIds": null,
+      "memberIdentityStatus": "not_applicable",
+      "projection": "deterministic"
+    },
+    {
+      "id": "gem_geps",
+      "name": "GEPS",
+      "sourceId": "eccc",
+      "dependencyGroup": "gem",
+      "enabled": false,
+      "admission": "pending_actual_schema_issue_time_units_scope_and_transport",
+      "maxRunAgeHours": 36,
+      "memberIds": null,
+      "memberIdentityStatus": "unverified",
+      "projection": "ensemble"
+    },
+    {
+      "id": "ecmwf_ifs",
+      "name": "ECMWF IFS",
+      "sourceId": "ecmwf",
+      "dependencyGroup": "ecmwf",
+      "enabled": false,
+      "admission": "pending_actual_schema_issue_time_units_scope_and_transport",
+      "maxRunAgeHours": 24,
+      "memberIds": null,
+      "memberIdentityStatus": "not_applicable",
+      "projection": "deterministic",
+      "freshnessPolicy": "Conservative review-only cycle-age exclusion at aggregate issuance; not a publication SLA or forecast-skill guarantee. Select latest actually observed eligible cycle; never invent newer cycle."
+    },
+    {
+      "id": "ecmwf_aifs",
+      "name": "ECMWF AIFS",
+      "sourceId": "ecmwf",
+      "dependencyGroup": "ecmwf",
+      "enabled": false,
+      "admission": "pending_actual_schema_issue_time_units_scope_and_transport",
+      "maxRunAgeHours": 36,
+      "memberIds": null,
+      "memberIdentityStatus": "not_applicable",
+      "projection": "deterministic"
+    },
+    {
+      "id": "ecmwf_ifs_ens",
+      "name": "ECMWF IFS ENS",
+      "sourceId": "ecmwf",
+      "dependencyGroup": "ecmwf",
+      "enabled": false,
+      "admission": "pending_actual_schema_issue_time_units_scope_and_transport",
+      "maxRunAgeHours": 36,
+      "memberIds": null,
+      "memberIdentityStatus": "unverified",
+      "projection": "ensemble"
+    },
+    {
+      "id": "ecmwf_aifs_ens",
+      "name": "ECMWF AIFS ENS",
+      "sourceId": "ecmwf",
+      "dependencyGroup": "ecmwf",
+      "enabled": false,
+      "admission": "pending_actual_schema_issue_time_units_scope_and_transport",
+      "maxRunAgeHours": 36,
+      "memberIds": null,
+      "memberIdentityStatus": "unverified",
+      "projection": "ensemble"
+    },
+    {
+      "id": "gfs",
+      "name": "GFS",
+      "sourceId": "noaa",
+      "dependencyGroup": "gfs",
+      "enabled": false,
+      "admission": "pending_actual_schema_issue_time_units_scope_and_transport",
+      "maxRunAgeHours": 18,
+      "memberIds": null,
+      "memberIdentityStatus": "not_applicable",
+      "projection": "deterministic",
+      "freshnessPolicy": "Conservative review-only cycle-age exclusion at aggregate issuance; not a publication SLA or forecast-skill guarantee. Select latest actually observed eligible cycle; never invent newer cycle."
+    },
+    {
+      "id": "gefs",
+      "name": "GEFS",
+      "sourceId": "noaa",
+      "dependencyGroup": "gfs",
+      "enabled": false,
+      "admission": "pending_actual_schema_issue_time_units_scope_and_transport",
+      "maxRunAgeHours": 36,
+      "memberIds": null,
+      "memberIdentityStatus": "unverified",
+      "projection": "ensemble"
+    },
+    {
+      "id": "icon_global",
+      "name": "ICON Global",
+      "sourceId": "dwd",
+      "dependencyGroup": "icon",
+      "enabled": false,
+      "admission": "pending_actual_schema_issue_time_units_scope_and_transport",
+      "maxRunAgeHours": 36,
+      "memberIds": null,
+      "memberIdentityStatus": "not_applicable",
+      "projection": "deterministic"
+    },
+    {
+      "id": "ukmo_global",
+      "name": "UKMO Global",
+      "sourceId": "ukmo",
+      "dependencyGroup": "ukmo",
+      "enabled": false,
+      "admission": "pending_actual_schema_issue_time_units_scope_and_transport",
+      "maxRunAgeHours": 36,
+      "memberIds": null,
+      "memberIdentityStatus": "not_applicable",
+      "projection": "deterministic"
+    },
+    {
+      "id": "meteofrance_arpege",
+      "name": "Météo-France ARPEGE",
+      "sourceId": "meteofrance",
+      "dependencyGroup": "arpege",
+      "enabled": false,
+      "admission": "pending_actual_schema_issue_time_units_scope_and_transport",
+      "maxRunAgeHours": 36,
+      "memberIds": null,
+      "memberIdentityStatus": "not_applicable",
+      "projection": "deterministic"
+    },
+    {
+      "id": "jma_gsm",
+      "name": "JMA GSM",
+      "sourceId": "jma",
+      "dependencyGroup": "jma",
+      "enabled": false,
+      "admission": "pending_actual_schema_issue_time_units_scope_and_transport",
+      "maxRunAgeHours": 36,
+      "memberIds": null,
+      "memberIdentityStatus": "not_applicable",
+      "projection": "deterministic"
+    },
+    {
+      "id": "kma_global",
+      "name": "KMA Global",
+      "sourceId": "kma",
+      "dependencyGroup": "kma",
+      "enabled": false,
+      "admission": "pending_actual_schema_issue_time_units_scope_and_transport",
+      "maxRunAgeHours": 36,
+      "memberIds": null,
+      "memberIdentityStatus": "not_applicable",
+      "projection": "deterministic"
+    },
+    {
+      "id": "bom_access_global",
+      "name": "BOM ACCESS-G",
+      "sourceId": "bom",
+      "dependencyGroup": "bom",
+      "enabled": false,
+      "admission": "pending_actual_schema_issue_time_units_scope_and_transport",
+      "maxRunAgeHours": 36,
+      "memberIds": null,
+      "memberIdentityStatus": "not_applicable",
+      "projection": "deterministic"
+    },
+    {
+      "id": "cma_grapes_global",
+      "name": "CMA GRAPES",
+      "sourceId": "cma",
+      "dependencyGroup": "cma",
+      "enabled": false,
+      "admission": "pending_actual_schema_issue_time_units_scope_and_transport",
+      "maxRunAgeHours": 36,
+      "memberIds": null,
+      "memberIdentityStatus": "not_applicable",
+      "projection": "deterministic"
+    }
+  ],
+  "clockContract": {
+    "modelReferenceTime": "GRIB analysis/forecast base time, not source publication",
+    "sourceIssuedAt": "actual source publication if evidenced; otherwise null",
+    "firstAvailableAt": "actual publication availability if evidenced; otherwise null",
+    "firstRetrievedAt": "actual completed source body receipt, conservative evidence of availability",
+    "issuedAt": "immutable aggregate issuance after all eligible receipt times"
+  }
+}

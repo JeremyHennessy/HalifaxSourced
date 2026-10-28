@@ -18,10 +18,15 @@ const snapshotPaths = snapshots.flatMap(([name]) => [`data/${name}.js`, `data/bu
 const weatherManifest = JSON.parse(await readFile(join(repository, "data/weather/current.json"), "utf8"));
 assert.match(weatherManifest.capturePath, /^data\/weather\/captures\/[a-f0-9]{64}\.json$/);
 snapshotPaths.push("data/weather/current.json",weatherManifest.capturePath,"data/weather.js","data/build/halifax-weather.json");
+const modelManifest = JSON.parse(await readFile(join(repository, "weather-evidence/current.json"), "utf8"));
+assert.match(modelManifest.archivePath, /^weather-evidence\/issuances\/[a-f0-9]{64}\.json$/);
+snapshotPaths.push("weather-evidence/current.json", modelManifest.archivePath, "data/weather-models.js", "data/build/halifax-weather-models.json");
+assert.match(workflow, /data-integrity:\s*\n\s+needs: weather-model-decoder/);
+assert.match(workflow, /node scripts\/test-weather-grib-replay\.mjs/);
 // Adding a release entry point requires an explicit classification here. The
 // offline entries below are also executed, not merely trusted by their names.
 const offlineScripts = new Set([
-  "build-regional-news", "check-news", "build-source-catalog", "check-weather",
+  "build-regional-news", "check-news", "build-source-catalog", "check-weather", "build-weather-models", "check-weather-models",
   "export-catalog", "check-public-special-source-leads", "check-patio-directory-facts",
   "build-structured-specials", "resolve-place-candidates", "check-place-source-resolution",
   "build-recent-social-posts", "build-reviewed-social-posts", "check-local-restaurant-policy",
@@ -201,7 +206,7 @@ try {
   // deterministic one. The frozen clock is only a regression fixture.
   const baseline = join(root, "baseline");
   await mkdir(baseline);
-  for (const folder of ["data", "scripts", "assets"]) await cp(join(repository, folder), join(baseline, folder), { recursive: true });
+  for (const folder of ["data", "scripts", "assets", "weather-evidence"]) await cp(join(repository, folder), join(baseline, folder), { recursive: true });
   for (const file of await readdir(repository)) {
     if (file.endsWith(".js") || file === "index.html") await cp(join(repository, file), join(baseline, file));
   }

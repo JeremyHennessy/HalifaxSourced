@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "kind": "accepted_reviewed_halifax_model_issuance",
+  "archivePath": "weather-evidence/issuances/95c1ef4d0e8bc76530944256f341981144dc8be4b8f4fe1ae4693e55fbf35fb0.json",
+  "archiveSha256": "95c1ef4d0e8bc76530944256f341981144dc8be4b8f4fe1ae4693e55fbf35fb0",
+  "baseRegistrySha256": "7591ef489352a7c1855ffb900fffe1ecf6083367f6317cb5a552501a64814484",
+  "lastAttempt": {
+    "status": "success",
+    "attemptedAt": "2026-10-28T04:41:34.806Z",
+    "completedAt": "2026-10-28T04:43:12.237Z"
+  }
+}

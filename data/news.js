@@ -235,6 +235,32 @@ window.HALIFAX_NEWS = {
       "rightsBasis": "Original factual title and attributed outbound link only; no copied body, quotations, excerpts, descriptions, photos, logos or video. Public accessibility is not a republication licence or automated collection permission. Manual primary-page evidence: https://halifax.citynews.ca/2026/10/24/investment-in-aircraft-has-big-payoff-during-the-2026-wildfire-season/ . Crawled: today. Exact cache freshness and origin retrieval time unknown. observedAt is the upper bound of 2026-10-28T00:34:57.475Z through 2026-10-28T00:36:34.479Z, not an exact origin fetch time. Publisher explicitly displays original publication date 2026-10-24. Unqualified local clock or day-only display; no timezone-qualified instant inferred; modifiedAt remains null."
     },
     {
+      "id": "news-5102bf3e0adc2479105fb7b8",
+      "canonicalUrl": "https://www.nshealth.ca/news-and-notices/upcoming-public-health-mobile-unit-clinics-across-province-10",
+      "sourceId": "nova-scotia-health",
+      "sourceName": "Nova Scotia Health",
+      "sourceGUID": "https://www.nshealth.ca/news-and-notices/upcoming-public-health-mobile-unit-clinics-across-province-10",
+      "source_type": "official_public_notice",
+      "title": "October announcement lists provincial mobile public-health clinics",
+      "region": "Nova Scotia",
+      "regionEvidence": "The October 23 announcement lists clinics in several zones, including Fall River. Some listed dates are now past; this record is an announcement archive, not current appointment availability.",
+      "topics": [
+        "Healthcare",
+        "Community"
+      ],
+      "publishedAt": "2026-10-23",
+      "publishedPrecision": "day",
+      "modifiedAt": null,
+      "observedAt": "2026-10-28T04:42:45.934Z",
+      "reviewStatus": "approved",
+      "correctionStatus": "none",
+      "summary": null,
+      "summaryKind": "none",
+      "reviewedAt": "2026-10-28T04:49:13.924Z",
+      "reviewer": "Halifax Sourced official-source review",
+      "rightsBasis": "Original factual headline and attributed outbound link only. No article body, quotations, images, official marks or patient information reproduced. Source publication date retained; no general reuse licence inferred."
+    },
+    {
       "id": "news-08a8b678e60a3118a41ad9ae",
       "canonicalUrl": "https://www.thecoast.ca/news-opinion/best-of-halifax-2027-nominate-your-favourites-now/",
       "sourceId": "the-coast",
@@ -568,6 +594,58 @@ window.HALIFAX_NEWS = {
       "reviewedAt": "2026-10-27T19:53:00.000Z",
       "reviewer": "Halifax Sourced source review",
       "rightsBasis": "Original factual link annotation; attributed official source. No copied article body, quotations, photographs or official marks. Publisher terms: https://www.novascotia.ca/copyright"
+    },
+    {
+      "id": "news-9c0c2b4be7addff0f7eca8de",
+      "canonicalUrl": "https://www.nshealth.ca/news-and-notices/need-family-practice-registry-update-october-2026",
+      "sourceId": "nova-scotia-health",
+      "sourceName": "Nova Scotia Health",
+      "sourceGUID": "https://www.nshealth.ca/news-and-notices/need-family-practice-registry-update-october-2026",
+      "source_type": "official_public_notice",
+      "title": "Nova Scotia Health publishes October family-practice registry update",
+      "region": "Nova Scotia",
+      "regionEvidence": "The article reports province-wide aggregate registry figures, not individual patient records.",
+      "topics": [
+        "Healthcare",
+        "Provincial affairs"
+      ],
+      "publishedAt": "2026-10-14",
+      "publishedPrecision": "day",
+      "modifiedAt": null,
+      "observedAt": "2026-10-28T04:42:45.752Z",
+      "reviewStatus": "approved",
+      "correctionStatus": "none",
+      "summary": null,
+      "summaryKind": "none",
+      "reviewedAt": "2026-10-28T04:49:13.924Z",
+      "reviewer": "Halifax Sourced official-source review",
+      "rightsBasis": "Original factual headline and attributed outbound link only. No article body, quotations, images, official marks or patient information reproduced. Source publication date retained; no general reuse licence inferred."
+    },
+    {
+      "id": "news-0ce6e04d9c25e603d43eead5",
+      "canonicalUrl": "https://www.nshealth.ca/news-and-notices/improving-safety-security-new-south-shore-regional-hospital-emergency-department",
+      "sourceId": "nova-scotia-health",
+      "sourceName": "Nova Scotia Health",
+      "sourceGUID": "https://www.nshealth.ca/news-and-notices/improving-safety-security-new-south-shore-regional-hospital-emergency-department",
+      "source_type": "official_public_notice",
+      "title": "South Shore hospital announces entrance screening system",
+      "region": "South Shore",
+      "regionEvidence": "The article explicitly locates South Shore Regional Hospital in Bridgewater, not Halifax.",
+      "topics": [
+        "Healthcare",
+        "Infrastructure"
+      ],
+      "publishedAt": "2026-10-09",
+      "publishedPrecision": "day",
+      "modifiedAt": null,
+      "observedAt": "2026-10-28T04:42:46.114Z",
+      "reviewStatus": "approved",
+      "correctionStatus": "none",
+      "summary": null,
+      "summaryKind": "none",
+      "reviewedAt": "2026-10-28T04:49:13.924Z",
+      "reviewer": "Halifax Sourced official-source review",
+      "rightsBasis": "Original factual headline and attributed outbound link only. No article body, quotations, images, official marks or patient information reproduced. Source publication date retained; no general reuse licence inferred."
     },
     {
       "id": "news-ad7f15af910c05d9de5b8b62",
@@ -1215,6 +1293,32 @@ window.HALIFAX_NEWS = {
       "reviewedAt": "2026-10-28T00:40:32.000Z",
       "reviewer": "Halifax Sourced source review",
       "rightsBasis": "Original factual title and attributed outbound link only; no copied body, quotations, excerpts, descriptions, photos, logos or video. Public accessibility is not a republication licence or automated collection permission. Manual primary-page evidence: https://signalhfx.ca/fundraising-and-friend-raising-a-lil-affair-raises-1200-for-local-womens-shelters/ . Crawled: last month. Exact cache freshness and origin retrieval time unknown. observedAt is the upper bound of 2026-10-28T00:34:53.673Z through 2026-10-28T00:34:54.426Z, not an exact origin fetch time. Publisher displays March 24, 2026, 2:49 p.m. with no verified timezone; retain publication day only."
+    },
+    {
+      "id": "news-7c9082a1a78753859de476c4",
+      "canonicalUrl": "https://www.halifaxwater.ca/news/halifax-water-rates-finalized-nsrab",
+      "sourceId": "halifax-water",
+      "sourceName": "Halifax Water",
+      "sourceGUID": "https://www.halifaxwater.ca/news/halifax-water-rates-finalized-nsrab",
+      "source_type": "official_public_notice",
+      "title": "Regulator finalizes Halifax Water rate changes for 2026",
+      "region": "Halifax",
+      "regionEvidence": "The municipal utility announcement concerns Halifax Water customers and its January/April 2026 rate changes.",
+      "topics": [
+        "Utilities",
+        "Local government"
+      ],
+      "publishedAt": "2026-01-14",
+      "publishedPrecision": "day",
+      "modifiedAt": null,
+      "observedAt": "2026-10-28T04:40:00.867Z",
+      "reviewStatus": "approved",
+      "correctionStatus": "none",
+      "summary": null,
+      "summaryKind": "none",
+      "reviewedAt": "2026-10-28T04:49:13.924Z",
+      "reviewer": "Halifax Sourced official-source review",
+      "rightsBasis": "Original factual headline and attributed outbound link only. No article body, quotations, images, official marks or patient information reproduced. Source publication date retained; no general reuse licence inferred."
     }
   ]
 };

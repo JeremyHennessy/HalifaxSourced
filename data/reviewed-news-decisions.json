@@ -1403,6 +1403,126 @@
         "reviewer": "Halifax Sourced source review",
         "rightsBasis": "Original factual title and attributed canonical outbound link only. No copied body, quotes, excerpts, descriptions, photos, video or logos. Public accessibility is not a republication licence; no automated collection or publication permission inferred. Primary article: https://halifax.retales.ca/2026/08/freshco-arrives-2/ . Crawled: last week. Exact cache freshness and origin retrieval time unknown. observedAt is the upper bound of 2026-10-28T00:35:23.985Z through 2026-10-28T00:35:25.308Z, not an exact origin fetch time. Publisher publication day retained; modification time unknown. Existing opening-watch organization; no directory/lifecycle update or new-source discovery claim."
       }
+    },
+    {
+      "id": "news-7c9082a1a78753859de476c4",
+      "status": "approved",
+      "record": {
+        "id": "news-7c9082a1a78753859de476c4",
+        "canonicalUrl": "https://www.halifaxwater.ca/news/halifax-water-rates-finalized-nsrab",
+        "sourceId": "halifax-water",
+        "sourceName": "Halifax Water",
+        "sourceGUID": "https://www.halifaxwater.ca/news/halifax-water-rates-finalized-nsrab",
+        "source_type": "official_public_notice",
+        "title": "Regulator finalizes Halifax Water rate changes for 2026",
+        "region": "Halifax",
+        "regionEvidence": "The municipal utility announcement concerns Halifax Water customers and its January/April 2026 rate changes.",
+        "topics": [
+          "Utilities",
+          "Local government"
+        ],
+        "publishedAt": "2026-01-14",
+        "publishedPrecision": "day",
+        "modifiedAt": null,
+        "observedAt": "2026-10-28T04:40:00.867Z",
+        "reviewStatus": "approved",
+        "correctionStatus": "none",
+        "summary": null,
+        "summaryKind": "none",
+        "reviewedAt": "2026-10-28T04:49:13.924Z",
+        "reviewer": "Halifax Sourced official-source review",
+        "rightsBasis": "Original factual headline and attributed outbound link only. No article body, quotations, images, official marks or patient information reproduced. Source publication date retained; no general reuse licence inferred."
+      }
+    },
+    {
+      "id": "news-9c0c2b4be7addff0f7eca8de",
+      "status": "approved",
+      "record": {
+        "id": "news-9c0c2b4be7addff0f7eca8de",
+        "canonicalUrl": "https://www.nshealth.ca/news-and-notices/need-family-practice-registry-update-october-2026",
+        "sourceId": "nova-scotia-health",
+        "sourceName": "Nova Scotia Health",
+        "sourceGUID": "https://www.nshealth.ca/news-and-notices/need-family-practice-registry-update-october-2026",
+        "source_type": "official_public_notice",
+        "title": "Nova Scotia Health publishes October family-practice registry update",
+        "region": "Nova Scotia",
+        "regionEvidence": "The article reports province-wide aggregate registry figures, not individual patient records.",
+        "topics": [
+          "Healthcare",
+          "Provincial affairs"
+        ],
+        "publishedAt": "2026-10-14",
+        "publishedPrecision": "day",
+        "modifiedAt": null,
+        "observedAt": "2026-10-28T04:42:45.752Z",
+        "reviewStatus": "approved",
+        "correctionStatus": "none",
+        "summary": null,
+        "summaryKind": "none",
+        "reviewedAt": "2026-10-28T04:49:13.924Z",
+        "reviewer": "Halifax Sourced official-source review",
+        "rightsBasis": "Original factual headline and attributed outbound link only. No article body, quotations, images, official marks or patient information reproduced. Source publication date retained; no general reuse licence inferred."
+      }
+    },
+    {
+      "id": "news-5102bf3e0adc2479105fb7b8",
+      "status": "approved",
+      "record": {
+        "id": "news-5102bf3e0adc2479105fb7b8",
+        "canonicalUrl": "https://www.nshealth.ca/news-and-notices/upcoming-public-health-mobile-unit-clinics-across-province-10",
+        "sourceId": "nova-scotia-health",
+        "sourceName": "Nova Scotia Health",
+        "sourceGUID": "https://www.nshealth.ca/news-and-notices/upcoming-public-health-mobile-unit-clinics-across-province-10",
+        "source_type": "official_public_notice",
+        "title": "October announcement lists provincial mobile public-health clinics",
+        "region": "Nova Scotia",
+        "regionEvidence": "The October 23 announcement lists clinics in several zones, including Fall River. Some listed dates are now past; this record is an announcement archive, not current appointment availability.",
+        "topics": [
+          "Healthcare",
+          "Community"
+        ],
+        "publishedAt": "2026-10-23",
+        "publishedPrecision": "day",
+        "modifiedAt": null,
+        "observedAt": "2026-10-28T04:42:45.934Z",
+        "reviewStatus": "approved",
+        "correctionStatus": "none",
+        "summary": null,
+        "summaryKind": "none",
+        "reviewedAt": "2026-10-28T04:49:13.924Z",
+        "reviewer": "Halifax Sourced official-source review",
+        "rightsBasis": "Original factual headline and attributed outbound link only. No article body, quotations, images, official marks or patient information reproduced. Source publication date retained; no general reuse licence inferred."
+      }
+    },
+    {
+      "id": "news-0ce6e04d9c25e603d43eead5",
+      "status": "approved",
+      "record": {
+        "id": "news-0ce6e04d9c25e603d43eead5",
+        "canonicalUrl": "https://www.nshealth.ca/news-and-notices/improving-safety-security-new-south-shore-regional-hospital-emergency-department",
+        "sourceId": "nova-scotia-health",
+        "sourceName": "Nova Scotia Health",
+        "sourceGUID": "https://www.nshealth.ca/news-and-notices/improving-safety-security-new-south-shore-regional-hospital-emergency-department",
+        "source_type": "official_public_notice",
+        "title": "South Shore hospital announces entrance screening system",
+        "region": "South Shore",
+        "regionEvidence": "The article explicitly locates South Shore Regional Hospital in Bridgewater, not Halifax.",
+        "topics": [
+          "Healthcare",
+          "Infrastructure"
+        ],
+        "publishedAt": "2026-10-09",
+        "publishedPrecision": "day",
+        "modifiedAt": null,
+        "observedAt": "2026-10-28T04:42:46.114Z",
+        "reviewStatus": "approved",
+        "correctionStatus": "none",
+        "summary": null,
+        "summaryKind": "none",
+        "reviewedAt": "2026-10-28T04:49:13.924Z",
+        "reviewer": "Halifax Sourced official-source review",
+        "rightsBasis": "Original factual headline and attributed outbound link only. No article body, quotations, images, official marks or patient information reproduced. Source publication date retained; no general reuse licence inferred."
+      }
     }
   ]
 }

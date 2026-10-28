@@ -81,7 +81,7 @@ const renderContext={...context,window:{HALIFAX_NEWS:actualPayload},appView:{inn
  document:{querySelector:()=>({addEventListener(name,handler){assert.equal(name,'submit');submit=handler;}})},navigate(hash){renderContext.nextHash=hash;}};
 vm.createContext(renderContext);vm.runInContext(source,renderContext);
 renderContext.renderNews();
-assert.match(renderContext.appView.innerHTML,/28 reviewed items · Page 2 of 3/);
+assert.match(renderContext.appView.innerHTML,/31 reviewed items · Page 2 of 3/);
 assert.equal((renderContext.appView.innerHTML.match(/class="news-card"/g)||[]).length,12);
 assert.match(renderContext.appView.innerHTML,/href="#news\?month=2026-10"/);
 assert.match(renderContext.appView.innerHTML,/href="#news\?month=2026-10&amp;page=3"/);
@@ -97,7 +97,7 @@ assert.match(renderContext.appView.innerHTML,/0 reviewed items/);
 assert.match(renderContext.appView.innerHTML,/No items match these filters/);
 // Restore the prior URL (as Back/Forward does), including selected month/page.
 renderContext.route=()=>({params:new URLSearchParams('month=2026-10&page=2')});renderContext.renderNews();
-assert.match(renderContext.appView.innerHTML,/28 reviewed items · Page 2 of 3/);
+assert.match(renderContext.appView.innerHTML,/31 reviewed items · Page 2 of 3/);
 const stable=renderContext.appView.innerHTML;renderContext.renderNews();assert.equal(renderContext.appView.innerHTML,stable);
 assert.equal(JSON.stringify(actualPayload),payloadBefore,'Date filters cannot mutate the accepted snapshot');
 assert(html.includes('app-news.js?v=20261028-news-archive-1'));

@@ -292,11 +292,11 @@ const expected = [
 
 for (const [id, hash] of Object.entries(baselineDecisionHashes)) assert.equal(digest(decisions.decisions.find(row=>row.id===id)), hash, 'Original decision: '+id);
 for (const [id, hash] of Object.entries(baselineSourceHashes)) assert.equal(digest(registry.sources.find(row=>row.id===id)), hash, 'Original source state: '+id);
-assert.equal(payload.items.length,47);
-assert.equal(new Set(payload.items.map(row=>row.canonicalUrl)).size,47);
-assert.equal(registry.sources.length,11);
+assert.equal(payload.items.length,51);
+assert.equal(new Set(payload.items.map(row=>row.canonicalUrl)).size,51);
+assert.equal(registry.sources.length,13);
 assert.deepEqual(Object.fromEntries([...new Set(payload.items.map(row=>row.sourceId))].sort().map(id=>[id,payload.items.filter(row=>row.sourceId===id).length])), {
- 'citynews-halifax':8,'dalhousie-gazette':3,'global-halifax':10,'halifax-retales':3,'ns-newsroom':3,'the-coast':11,'the-laker-news':3,'the-signal':6
+ 'citynews-halifax':8,'dalhousie-gazette':3,'global-halifax':10,'halifax-retales':3,'halifax-water':1,'nova-scotia-health':3,'ns-newsroom':3,'the-coast':11,'the-laker-news':3,'the-signal':6
 });
 const originalKeys = Object.keys(payload.items.find(row=>row.id===Object.keys(baselineDecisionHashes)[0])).sort();
 for (const [id, sourceId, title, publishedAt, region] of expected) {
@@ -334,8 +334,8 @@ for (const id of ['dalhousie-gazette','the-laker-news','halifax-retales']) {
  assert.throws(()=>validateNewsRegistry({version:1,sources:[{...source,enabled:true}]}),/news_source_not_admitted/);
 }
 const monthCounts=Object.fromEntries([...new Set(payload.items.map(row=>row.publishedAt.slice(0,7)))].sort().map(month=>[month,payload.items.filter(row=>row.publishedAt.startsWith(month)).length]));
-assert.deepEqual(monthCounts,{'2026-03':2,'2026-04':3,'2026-08':5,'2026-09':9,'2026-10':28});
-assert.equal(payload.items.at(-1).publishedAt,'2026-03-24');
+assert.deepEqual(monthCounts,{'2026-01':1,'2026-03':2,'2026-04':3,'2026-08':5,'2026-09':9,'2026-10':31});
+assert.equal(payload.items.at(-1).publishedAt,'2026-01-14');
 assert.equal(payload.items[0].publishedAt,'2026-10-27');
 const musicWeek=payload.items.find(row=>row.canonicalUrl.endsWith('/the-nova-scotia-music-week-lineup-so-far/'));
 assert.equal(musicWeek.publishedAt,'2026-08-11','Original publication date, not later October update');
@@ -349,4 +349,4 @@ for (const id of ['dalhousie-gazette','the-laker-news','halifax-retales']) {
 }
 const openingSource=await load('data/opening-watch-source-registry.json');
 assert.equal(digest(openingSource),'8e317f399738769c0a0de5285da56bd3c92df76c3c73e019caad58d22edcfe33','ReTales News links cannot change the opening-watch collector');
-console.log('Archive expansion passed: 36 additions, 47 total/8 represented sources, original eleven decisions/eight source states frozen, 3 manual-only News admissions, truthful business-publication type, publication dates, cache limits, no media or collectors.');
+console.log('Archive expansion passed: 36 additions, 51 total/10 represented sources, original eleven decisions/eight source states frozen, 3 manual-only News admissions, truthful business-publication type, publication dates, cache limits, no media or collectors.');

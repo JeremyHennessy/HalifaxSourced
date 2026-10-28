@@ -1,0 +1,1019 @@
+// Reviewed model captures; offline projection preserves original clocks.
+window.HalifaxWeatherModels = {
+  "version": 1,
+  "kind": "halifax_model_forecast_snapshot",
+  "issuedAt": "2026-10-28T04:45:02.765Z",
+  "lastAttempt": {
+    "status": "success",
+    "attemptedAt": "2026-10-28T04:41:34.806Z",
+    "completedAt": "2026-10-28T04:43:12.237Z"
+  },
+  "refreshMode": "recorded_reviewed_snapshot_no_automatic_refresh",
+  "receiptMaxAgeHours": 12,
+  "points": [
+    {
+      "id": "halifax_peninsula",
+      "name": "Halifax Peninsula",
+      "latitude": 44.6488,
+      "longitude": -63.5752,
+      "role": "core"
+    },
+    {
+      "id": "bedford",
+      "name": "Bedford",
+      "latitude": 44.7318,
+      "longitude": -63.6619,
+      "role": "core"
+    },
+    {
+      "id": "dartmouth",
+      "name": "Dartmouth",
+      "latitude": 44.6661,
+      "longitude": -63.5676,
+      "role": "core"
+    }
+  ],
+  "models": [
+    {
+      "id": "ecmwf_ifs",
+      "name": "ECMWF IFS",
+      "sourceId": "ecmwf",
+      "family": "ecmwf",
+      "maxRunAgeHours": 24
+    },
+    {
+      "id": "gfs",
+      "name": "GFS",
+      "sourceId": "noaa",
+      "family": "gfs",
+      "maxRunAgeHours": 18
+    }
+  ],
+  "sourceStates": [
+    {
+      "id": "eccc",
+      "name": "ECCC numerical-model GeoMet (official forecast separate)",
+      "status": "held",
+      "accessState": "held_geomet_robots_policy",
+      "reason": "GetFeatureInfo route disallowed_or_unavailable; no alternate ECCC route attempted",
+      "termsUrl": "https://eccc-msc.github.io/open-data/licence/readme_en/",
+      "documentationUrl": "https://eccc-msc.github.io/open-data/",
+      "contributes": false
+    },
+    {
+      "id": "ecmwf",
+      "name": "ECMWF Open Data",
+      "status": "accepted",
+      "accessState": "bounded_captures_reviewed_not_operational",
+      "reason": "Saved reviewed fields only; no automatic model refresh is active.",
+      "termsUrl": "https://www.ecmwf.int/en/forecasts/datasets/open-data",
+      "documentationUrl": "https://confluence.ecmwf.int/display/UDOC/ECMWF+Open+Data+-+Real+Time",
+      "contributes": true
+    },
+    {
+      "id": "noaa",
+      "name": "NOAA/NCEP",
+      "status": "accepted",
+      "accessState": "single_bounded_capture_reviewed_not_operational",
+      "reason": "Saved reviewed fields only; no automatic model refresh is active.",
+      "termsUrl": "https://www.weather.gov/disclaimer",
+      "documentationUrl": "https://nomads.ncep.noaa.gov/",
+      "contributes": true
+    },
+    {
+      "id": "dwd",
+      "name": "Deutscher Wetterdienst",
+      "status": "held",
+      "accessState": "held_documentation_access_403",
+      "reason": "pending_exact_global_product_and_transport",
+      "termsUrl": "https://www.dwd.de/EN/service/copyright/copyright_node.html",
+      "documentationUrl": "https://www.dwd.de/EN/ourservices/opendata/opendata.html",
+      "contributes": false
+    },
+    {
+      "id": "open_meteo",
+      "name": "Open-Meteo distribution service",
+      "status": "held",
+      "accessState": "held_service_eligibility_unknown",
+      "reason": "free_API_noncommercial_only_no_eligible_subscription_or_noncommercial_basis_established",
+      "termsUrl": "https://open-meteo.com/en/terms",
+      "documentationUrl": null,
+      "contributes": false
+    },
+    {
+      "id": "ukmo",
+      "name": "UK Met Office",
+      "status": "held",
+      "accessState": "held_unreviewed_source_access",
+      "reason": "no_direct_or_redistributor_access_admitted",
+      "termsUrl": null,
+      "documentationUrl": null,
+      "contributes": false
+    },
+    {
+      "id": "meteofrance",
+      "name": "Météo-France",
+      "status": "held",
+      "accessState": "held_unreviewed_source_access",
+      "reason": "no_direct_or_redistributor_access_admitted",
+      "termsUrl": null,
+      "documentationUrl": null,
+      "contributes": false
+    },
+    {
+      "id": "jma",
+      "name": "JMA",
+      "status": "held",
+      "accessState": "held_unreviewed_source_access",
+      "reason": "no_direct_or_redistributor_access_admitted",
+      "termsUrl": null,
+      "documentationUrl": null,
+      "contributes": false
+    },
+    {
+      "id": "kma",
+      "name": "KMA",
+      "status": "held",
+      "accessState": "held_unreviewed_source_access",
+      "reason": "no_direct_or_redistributor_access_admitted",
+      "termsUrl": null,
+      "documentationUrl": null,
+      "contributes": false
+    },
+    {
+      "id": "bom",
+      "name": "Bureau of Meteorology",
+      "status": "held",
+      "accessState": "held_unreviewed_source_access",
+      "reason": "no_direct_or_redistributor_access_admitted",
+      "termsUrl": null,
+      "documentationUrl": null,
+      "contributes": false
+    },
+    {
+      "id": "cma",
+      "name": "China Meteorological Administration",
+      "status": "held",
+      "accessState": "held_unreviewed_source_access",
+      "reason": "no_direct_or_redistributor_access_admitted",
+      "termsUrl": null,
+      "documentationUrl": null,
+      "contributes": false
+    }
+  ],
+  "forecasts": [
+    {
+      "locationId": "halifax_peninsula",
+      "validAt": "2026-10-28T06:00:00Z",
+      "predictionC": 0.6234927368164449,
+      "status": "available",
+      "families": [
+        "ecmwf",
+        "gfs"
+      ],
+      "spread": {
+        "kind": "uncalibrated_model_disagreement",
+        "minC": -0.11029296874994543,
+        "maxC": 1.3572784423828352
+      },
+      "candidateId": "c75d0f9148b7a19e33c0502a62937ab1f70a655e66a39d8d4fb935ffb8aa64bd",
+      "contributors": [
+        {
+          "modelId": "ecmwf_ifs",
+          "sourceId": "ecmwf",
+          "family": "ecmwf",
+          "valueC": 1.3572784423828352,
+          "modelReferenceTime": "2026-10-27T18:00:00Z",
+          "sourceIssuedAt": null,
+          "firstAvailableAt": null,
+          "firstRetrievedAt": "2026-10-28T04:37:51.996Z",
+          "sourceUrl": "https://data.ecmwf.int/forecasts/20261027/18z/ifs/0p25/oper/20261027180000-12h-oper-fc.grib2",
+          "sourceBodySha256": "b3062c7185595f4a6d41d2378f040c2c9ffa8eed8e0a0751568af905dd018bfb",
+          "eligibleAtIssue": true,
+          "support": {
+            "gridLatitude": 44.75,
+            "gridLongitude": -63.5,
+            "distanceKm": 12.72663068940646
+          }
+        },
+        {
+          "modelId": "gfs",
+          "sourceId": "noaa",
+          "family": "gfs",
+          "valueC": -0.11029296874994543,
+          "modelReferenceTime": "2026-10-28T00:00:00Z",
+          "sourceIssuedAt": null,
+          "firstAvailableAt": null,
+          "firstRetrievedAt": "2026-10-28T04:24:41.137Z",
+          "sourceUrl": "https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25.pl?file=gfs.t00z.pgrb2.0p25.f006&lev_2_m_above_ground=on&var_TMP=on&subregion=&leftlon=-63.75&rightlon=-63.5&toplat=44.75&bottomlat=44.5&dir=%2Fgfs.20261028%2F00%2Fatmos",
+          "sourceBodySha256": "1c1a8bfa8ce5796e2ef33ac503c62adc24991673599cf616fd7a6d92647f0453",
+          "eligibleAtIssue": true,
+          "support": {
+            "gridLatitude": 44.75,
+            "gridLongitude": -63.5,
+            "distanceKm": 12.72663068940646
+          }
+        }
+      ],
+      "omissions": []
+    },
+    {
+      "locationId": "bedford",
+      "validAt": "2026-10-28T06:00:00Z",
+      "predictionC": 0.4834927368164301,
+      "status": "available",
+      "families": [
+        "ecmwf",
+        "gfs"
+      ],
+      "spread": {
+        "kind": "uncalibrated_model_disagreement",
+        "minC": -0.390292968749975,
+        "maxC": 1.3572784423828352
+      },
+      "candidateId": "e1d2470382371fb63a25c40adaf5d1f19016e6275931c3ea0028a20aaeeca092",
+      "contributors": [
+        {
+          "modelId": "ecmwf_ifs",
+          "sourceId": "ecmwf",
+          "family": "ecmwf",
+          "valueC": 1.3572784423828352,
+          "modelReferenceTime": "2026-10-27T18:00:00Z",
+          "sourceIssuedAt": null,
+          "firstAvailableAt": null,
+          "firstRetrievedAt": "2026-10-28T04:37:51.996Z",
+          "sourceUrl": "https://data.ecmwf.int/forecasts/20261027/18z/ifs/0p25/oper/20261027180000-12h-oper-fc.grib2",
+          "sourceBodySha256": "b3062c7185595f4a6d41d2378f040c2c9ffa8eed8e0a0751568af905dd018bfb",
+          "eligibleAtIssue": true,
+          "support": {
+            "gridLatitude": 44.75,
+            "gridLongitude": -63.75,
+            "distanceKm": 7.24684600619144
+          }
+        },
+        {
+          "modelId": "gfs",
+          "sourceId": "noaa",
+          "family": "gfs",
+          "valueC": -0.390292968749975,
+          "modelReferenceTime": "2026-10-28T00:00:00Z",
+          "sourceIssuedAt": null,
+          "firstAvailableAt": null,
+          "firstRetrievedAt": "2026-10-28T04:24:41.137Z",
+          "sourceUrl": "https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25.pl?file=gfs.t00z.pgrb2.0p25.f006&lev_2_m_above_ground=on&var_TMP=on&subregion=&leftlon=-63.75&rightlon=-63.5&toplat=44.75&bottomlat=44.5&dir=%2Fgfs.20261028%2F00%2Fatmos",
+          "sourceBodySha256": "1c1a8bfa8ce5796e2ef33ac503c62adc24991673599cf616fd7a6d92647f0453",
+          "eligibleAtIssue": true,
+          "support": {
+            "gridLatitude": 44.75,
+            "gridLongitude": -63.75,
+            "distanceKm": 7.24684600619144
+          }
+        }
+      ],
+      "omissions": []
+    },
+    {
+      "locationId": "dartmouth",
+      "validAt": "2026-10-28T06:00:00Z",
+      "predictionC": 0.6234927368164449,
+      "status": "available",
+      "families": [
+        "ecmwf",
+        "gfs"
+      ],
+      "spread": {
+        "kind": "uncalibrated_model_disagreement",
+        "minC": -0.11029296874994543,
+        "maxC": 1.3572784423828352
+      },
+      "candidateId": "ea941d2c44362dbe1f67b6800ccf491fea39e00d5e2df62627f454a5e9c7567a",
+      "contributors": [
+        {
+          "modelId": "ecmwf_ifs",
+          "sourceId": "ecmwf",
+          "family": "ecmwf",
+          "valueC": 1.3572784423828352,
+          "modelReferenceTime": "2026-10-27T18:00:00Z",
+          "sourceIssuedAt": null,
+          "firstAvailableAt": null,
+          "firstRetrievedAt": "2026-10-28T04:37:51.996Z",
+          "sourceUrl": "https://data.ecmwf.int/forecasts/20261027/18z/ifs/0p25/oper/20261027180000-12h-oper-fc.grib2",
+          "sourceBodySha256": "b3062c7185595f4a6d41d2378f040c2c9ffa8eed8e0a0751568af905dd018bfb",
+          "eligibleAtIssue": true,
+          "support": {
+            "gridLatitude": 44.75,
+            "gridLongitude": -63.5,
+            "distanceKm": 10.750913542612077
+          }
+        },
+        {
+          "modelId": "gfs",
+          "sourceId": "noaa",
+          "family": "gfs",
+          "valueC": -0.11029296874994543,
+          "modelReferenceTime": "2026-10-28T00:00:00Z",
+          "sourceIssuedAt": null,
+          "firstAvailableAt": null,
+          "firstRetrievedAt": "2026-10-28T04:24:41.137Z",
+          "sourceUrl": "https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25.pl?file=gfs.t00z.pgrb2.0p25.f006&lev_2_m_above_ground=on&var_TMP=on&subregion=&leftlon=-63.75&rightlon=-63.5&toplat=44.75&bottomlat=44.5&dir=%2Fgfs.20261028%2F00%2Fatmos",
+          "sourceBodySha256": "1c1a8bfa8ce5796e2ef33ac503c62adc24991673599cf616fd7a6d92647f0453",
+          "eligibleAtIssue": true,
+          "support": {
+            "gridLatitude": 44.75,
+            "gridLongitude": -63.5,
+            "distanceKm": 10.750913542612077
+          }
+        }
+      ],
+      "omissions": []
+    },
+    {
+      "locationId": "halifax_peninsula",
+      "validAt": "2026-10-28T09:00:00Z",
+      "predictionC": -0.7830972290038858,
+      "status": "available",
+      "families": [
+        "ecmwf",
+        "gfs"
+      ],
+      "spread": {
+        "kind": "uncalibrated_model_disagreement",
+        "minC": -1.7905078124999818,
+        "maxC": 0.22431335449221024
+      },
+      "candidateId": "8f6a9015de6657f7f2bd28d68ab68f357c6053612e850425cb0ae3b7716e05dd",
+      "contributors": [
+        {
+          "modelId": "ecmwf_ifs",
+          "sourceId": "ecmwf",
+          "family": "ecmwf",
+          "valueC": 0.22431335449221024,
+          "modelReferenceTime": "2026-10-27T18:00:00Z",
+          "sourceIssuedAt": null,
+          "firstAvailableAt": null,
+          "firstRetrievedAt": "2026-10-28T04:41:52.627Z",
+          "sourceUrl": "https://data.ecmwf.int/forecasts/20261027/18z/ifs/0p25/oper/20261027180000-15h-oper-fc.grib2",
+          "sourceBodySha256": "d4d947fffad3e135700505004da932ce2bba2311b55d1fe77c1192704818a484",
+          "eligibleAtIssue": true,
+          "support": {
+            "gridLatitude": 44.75,
+            "gridLongitude": -63.5,
+            "distanceKm": 12.72663068940646
+          }
+        },
+        {
+          "modelId": "gfs",
+          "sourceId": "noaa",
+          "family": "gfs",
+          "valueC": -1.7905078124999818,
+          "modelReferenceTime": "2026-10-28T00:00:00Z",
+          "sourceIssuedAt": null,
+          "firstAvailableAt": null,
+          "firstRetrievedAt": "2026-10-28T04:41:41.775Z",
+          "sourceUrl": "https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25.pl?file=gfs.t00z.pgrb2.0p25.f009&lev_2_m_above_ground=on&var_TMP=on&subregion=&leftlon=-63.75&rightlon=-63.5&toplat=44.75&bottomlat=44.5&dir=%2Fgfs.20261028%2F00%2Fatmos",
+          "sourceBodySha256": "04a424c6867047c5a86806f0e8f7c4fbd1478062412fbf275342eb0ae8d00f3c",
+          "eligibleAtIssue": true,
+          "support": {
+            "gridLatitude": 44.75,
+            "gridLongitude": -63.5,
+            "distanceKm": 12.72663068940646
+          }
+        }
+      ],
+      "omissions": []
+    },
+    {
+      "locationId": "bedford",
+      "validAt": "2026-10-28T09:00:00Z",
+      "predictionC": -0.6480972290038949,
+      "status": "available",
+      "families": [
+        "ecmwf",
+        "gfs"
+      ],
+      "spread": {
+        "kind": "uncalibrated_model_disagreement",
+        "minC": -1.7705078125,
+        "maxC": 0.47431335449221024
+      },
+      "candidateId": "58199eb347ac9e309c2ae76693a453090e587d8db0697ab59f27e03b399186a8",
+      "contributors": [
+        {
+          "modelId": "ecmwf_ifs",
+          "sourceId": "ecmwf",
+          "family": "ecmwf",
+          "valueC": 0.47431335449221024,
+          "modelReferenceTime": "2026-10-27T18:00:00Z",
+          "sourceIssuedAt": null,
+          "firstAvailableAt": null,
+          "firstRetrievedAt": "2026-10-28T04:41:52.627Z",
+          "sourceUrl": "https://data.ecmwf.int/forecasts/20261027/18z/ifs/0p25/oper/20261027180000-15h-oper-fc.grib2",
+          "sourceBodySha256": "d4d947fffad3e135700505004da932ce2bba2311b55d1fe77c1192704818a484",
+          "eligibleAtIssue": true,
+          "support": {
+            "gridLatitude": 44.75,
+            "gridLongitude": -63.75,
+            "distanceKm": 7.24684600619144
+          }
+        },
+        {
+          "modelId": "gfs",
+          "sourceId": "noaa",
+          "family": "gfs",
+          "valueC": -1.7705078125,
+          "modelReferenceTime": "2026-10-28T00:00:00Z",
+          "sourceIssuedAt": null,
+          "firstAvailableAt": null,
+          "firstRetrievedAt": "2026-10-28T04:41:41.775Z",
+          "sourceUrl": "https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25.pl?file=gfs.t00z.pgrb2.0p25.f009&lev_2_m_above_ground=on&var_TMP=on&subregion=&leftlon=-63.75&rightlon=-63.5&toplat=44.75&bottomlat=44.5&dir=%2Fgfs.20261028%2F00%2Fatmos",
+          "sourceBodySha256": "04a424c6867047c5a86806f0e8f7c4fbd1478062412fbf275342eb0ae8d00f3c",
+          "eligibleAtIssue": true,
+          "support": {
+            "gridLatitude": 44.75,
+            "gridLongitude": -63.75,
+            "distanceKm": 7.24684600619144
+          }
+        }
+      ],
+      "omissions": []
+    },
+    {
+      "locationId": "dartmouth",
+      "validAt": "2026-10-28T09:00:00Z",
+      "predictionC": -0.7830972290038858,
+      "status": "available",
+      "families": [
+        "ecmwf",
+        "gfs"
+      ],
+      "spread": {
+        "kind": "uncalibrated_model_disagreement",
+        "minC": -1.7905078124999818,
+        "maxC": 0.22431335449221024
+      },
+      "candidateId": "ea0a61e56f54ba1179ccfae74788de99ff312b0461e275f013e89cc1e936d8ac",
+      "contributors": [
+        {
+          "modelId": "ecmwf_ifs",
+          "sourceId": "ecmwf",
+          "family": "ecmwf",
+          "valueC": 0.22431335449221024,
+          "modelReferenceTime": "2026-10-27T18:00:00Z",
+          "sourceIssuedAt": null,
+          "firstAvailableAt": null,
+          "firstRetrievedAt": "2026-10-28T04:41:52.627Z",
+          "sourceUrl": "https://data.ecmwf.int/forecasts/20261027/18z/ifs/0p25/oper/20261027180000-15h-oper-fc.grib2",
+          "sourceBodySha256": "d4d947fffad3e135700505004da932ce2bba2311b55d1fe77c1192704818a484",
+          "eligibleAtIssue": true,
+          "support": {
+            "gridLatitude": 44.75,
+            "gridLongitude": -63.5,
+            "distanceKm": 10.750913542612077
+          }
+        },
+        {
+          "modelId": "gfs",
+          "sourceId": "noaa",
+          "family": "gfs",
+          "valueC": -1.7905078124999818,
+          "modelReferenceTime": "2026-10-28T00:00:00Z",
+          "sourceIssuedAt": null,
+          "firstAvailableAt": null,
+          "firstRetrievedAt": "2026-10-28T04:41:41.775Z",
+          "sourceUrl": "https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25.pl?file=gfs.t00z.pgrb2.0p25.f009&lev_2_m_above_ground=on&var_TMP=on&subregion=&leftlon=-63.75&rightlon=-63.5&toplat=44.75&bottomlat=44.5&dir=%2Fgfs.20261028%2F00%2Fatmos",
+          "sourceBodySha256": "04a424c6867047c5a86806f0e8f7c4fbd1478062412fbf275342eb0ae8d00f3c",
+          "eligibleAtIssue": true,
+          "support": {
+            "gridLatitude": 44.75,
+            "gridLongitude": -63.5,
+            "distanceKm": 10.750913542612077
+          }
+        }
+      ],
+      "omissions": []
+    },
+    {
+      "locationId": "halifax_peninsula",
+      "validAt": "2026-10-28T12:00:00Z",
+      "predictionC": 1.2329833984375398,
+      "status": "available",
+      "families": [
+        "ecmwf",
+        "gfs"
+      ],
+      "spread": {
+        "kind": "uncalibrated_model_disagreement",
+        "minC": 0.7500000000000568,
+        "maxC": 1.7159667968750227
+      },
+      "candidateId": "c38a4e734f6e81e40a391b89c0b8fc8d8d3f532a51f90cd29ed61b5904833331",
+      "contributors": [
+        {
+          "modelId": "ecmwf_ifs",
+          "sourceId": "ecmwf",
+          "family": "ecmwf",
+          "valueC": 1.7159667968750227,
+          "modelReferenceTime": "2026-10-27T18:00:00Z",
+          "sourceIssuedAt": null,
+          "firstAvailableAt": null,
+          "firstRetrievedAt": "2026-10-28T04:42:18.004Z",
+          "sourceUrl": "https://data.ecmwf.int/forecasts/20261027/18z/ifs/0p25/oper/20261027180000-18h-oper-fc.grib2",
+          "sourceBodySha256": "8f06b22edafd5aca1801beb6310ac836e129824700847dda3c73a0647e110bea",
+          "eligibleAtIssue": true,
+          "support": {
+            "gridLatitude": 44.75,
+            "gridLongitude": -63.5,
+            "distanceKm": 12.72663068940646
+          }
+        },
+        {
+          "modelId": "gfs",
+          "sourceId": "noaa",
+          "family": "gfs",
+          "valueC": 0.7500000000000568,
+          "modelReferenceTime": "2026-10-28T00:00:00Z",
+          "sourceIssuedAt": null,
+          "firstAvailableAt": null,
+          "firstRetrievedAt": "2026-10-28T04:41:56.515Z",
+          "sourceUrl": "https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25.pl?file=gfs.t00z.pgrb2.0p25.f012&lev_2_m_above_ground=on&var_TMP=on&subregion=&leftlon=-63.75&rightlon=-63.5&toplat=44.75&bottomlat=44.5&dir=%2Fgfs.20261028%2F00%2Fatmos",
+          "sourceBodySha256": "bc082362dd3cc54a176b9fe5172fbf52b1a61d1829a1767803cba818faeda597",
+          "eligibleAtIssue": true,
+          "support": {
+            "gridLatitude": 44.75,
+            "gridLongitude": -63.5,
+            "distanceKm": 12.72663068940646
+          }
+        }
+      ],
+      "omissions": []
+    },
+    {
+      "locationId": "bedford",
+      "validAt": "2026-10-28T12:00:00Z",
+      "predictionC": 1.1079833984375398,
+      "status": "available",
+      "families": [
+        "ecmwf",
+        "gfs"
+      ],
+      "spread": {
+        "kind": "uncalibrated_model_disagreement",
+        "minC": 0.7500000000000568,
+        "maxC": 1.4659667968750227
+      },
+      "candidateId": "70e92b3e0fcaaff49df4b53746b95b9fa47b2b76267992926095a46db5c27270",
+      "contributors": [
+        {
+          "modelId": "ecmwf_ifs",
+          "sourceId": "ecmwf",
+          "family": "ecmwf",
+          "valueC": 1.4659667968750227,
+          "modelReferenceTime": "2026-10-27T18:00:00Z",
+          "sourceIssuedAt": null,
+          "firstAvailableAt": null,
+          "firstRetrievedAt": "2026-10-28T04:42:18.004Z",
+          "sourceUrl": "https://data.ecmwf.int/forecasts/20261027/18z/ifs/0p25/oper/20261027180000-18h-oper-fc.grib2",
+          "sourceBodySha256": "8f06b22edafd5aca1801beb6310ac836e129824700847dda3c73a0647e110bea",
+          "eligibleAtIssue": true,
+          "support": {
+            "gridLatitude": 44.75,
+            "gridLongitude": -63.75,
+            "distanceKm": 7.24684600619144
+          }
+        },
+        {
+          "modelId": "gfs",
+          "sourceId": "noaa",
+          "family": "gfs",
+          "valueC": 0.7500000000000568,
+          "modelReferenceTime": "2026-10-28T00:00:00Z",
+          "sourceIssuedAt": null,
+          "firstAvailableAt": null,
+          "firstRetrievedAt": "2026-10-28T04:41:56.515Z",
+          "sourceUrl": "https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25.pl?file=gfs.t00z.pgrb2.0p25.f012&lev_2_m_above_ground=on&var_TMP=on&subregion=&leftlon=-63.75&rightlon=-63.5&toplat=44.75&bottomlat=44.5&dir=%2Fgfs.20261028%2F00%2Fatmos",
+          "sourceBodySha256": "bc082362dd3cc54a176b9fe5172fbf52b1a61d1829a1767803cba818faeda597",
+          "eligibleAtIssue": true,
+          "support": {
+            "gridLatitude": 44.75,
+            "gridLongitude": -63.75,
+            "distanceKm": 7.24684600619144
+          }
+        }
+      ],
+      "omissions": []
+    },
+    {
+      "locationId": "dartmouth",
+      "validAt": "2026-10-28T12:00:00Z",
+      "predictionC": 1.2329833984375398,
+      "status": "available",
+      "families": [
+        "ecmwf",
+        "gfs"
+      ],
+      "spread": {
+        "kind": "uncalibrated_model_disagreement",
+        "minC": 0.7500000000000568,
+        "maxC": 1.7159667968750227
+      },
+      "candidateId": "f2b568546fb6e9b8a36dc4841c7714065325c80c5829cebf8ac5e3a21956c640",
+      "contributors": [
+        {
+          "modelId": "ecmwf_ifs",
+          "sourceId": "ecmwf",
+          "family": "ecmwf",
+          "valueC": 1.7159667968750227,
+          "modelReferenceTime": "2026-10-27T18:00:00Z",
+          "sourceIssuedAt": null,
+          "firstAvailableAt": null,
+          "firstRetrievedAt": "2026-10-28T04:42:18.004Z",
+          "sourceUrl": "https://data.ecmwf.int/forecasts/20261027/18z/ifs/0p25/oper/20261027180000-18h-oper-fc.grib2",
+          "sourceBodySha256": "8f06b22edafd5aca1801beb6310ac836e129824700847dda3c73a0647e110bea",
+          "eligibleAtIssue": true,
+          "support": {
+            "gridLatitude": 44.75,
+            "gridLongitude": -63.5,
+            "distanceKm": 10.750913542612077
+          }
+        },
+        {
+          "modelId": "gfs",
+          "sourceId": "noaa",
+          "family": "gfs",
+          "valueC": 0.7500000000000568,
+          "modelReferenceTime": "2026-10-28T00:00:00Z",
+          "sourceIssuedAt": null,
+          "firstAvailableAt": null,
+          "firstRetrievedAt": "2026-10-28T04:41:56.515Z",
+          "sourceUrl": "https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25.pl?file=gfs.t00z.pgrb2.0p25.f012&lev_2_m_above_ground=on&var_TMP=on&subregion=&leftlon=-63.75&rightlon=-63.5&toplat=44.75&bottomlat=44.5&dir=%2Fgfs.20261028%2F00%2Fatmos",
+          "sourceBodySha256": "bc082362dd3cc54a176b9fe5172fbf52b1a61d1829a1767803cba818faeda597",
+          "eligibleAtIssue": true,
+          "support": {
+            "gridLatitude": 44.75,
+            "gridLongitude": -63.5,
+            "distanceKm": 10.750913542612077
+          }
+        }
+      ],
+      "omissions": []
+    },
+    {
+      "locationId": "halifax_peninsula",
+      "validAt": "2026-10-28T15:00:00Z",
+      "predictionC": 6.339897155761747,
+      "status": "available",
+      "families": [
+        "ecmwf",
+        "gfs"
+      ],
+      "spread": {
+        "kind": "uncalibrated_model_disagreement",
+        "minC": 6.20533142089846,
+        "maxC": 6.474462890625034
+      },
+      "candidateId": "5672063a752b3b744118dbbb202dbf67d7966260273b6b0f04fc3e5c44625e50",
+      "contributors": [
+        {
+          "modelId": "ecmwf_ifs",
+          "sourceId": "ecmwf",
+          "family": "ecmwf",
+          "valueC": 6.20533142089846,
+          "modelReferenceTime": "2026-10-27T18:00:00Z",
+          "sourceIssuedAt": null,
+          "firstAvailableAt": null,
+          "firstRetrievedAt": "2026-10-28T04:42:45.324Z",
+          "sourceUrl": "https://data.ecmwf.int/forecasts/20261027/18z/ifs/0p25/oper/20261027180000-21h-oper-fc.grib2",
+          "sourceBodySha256": "a60a1801400bfdb3dee2ea9710f6273a0bfac77c8922fc84bee1bd99586fe21b",
+          "eligibleAtIssue": true,
+          "support": {
+            "gridLatitude": 44.75,
+            "gridLongitude": -63.5,
+            "distanceKm": 12.72663068940646
+          }
+        },
+        {
+          "modelId": "gfs",
+          "sourceId": "noaa",
+          "family": "gfs",
+          "valueC": 6.474462890625034,
+          "modelReferenceTime": "2026-10-28T00:00:00Z",
+          "sourceIssuedAt": null,
+          "firstAvailableAt": null,
+          "firstRetrievedAt": "2026-10-28T04:42:09.951Z",
+          "sourceUrl": "https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25.pl?file=gfs.t00z.pgrb2.0p25.f015&lev_2_m_above_ground=on&var_TMP=on&subregion=&leftlon=-63.75&rightlon=-63.5&toplat=44.75&bottomlat=44.5&dir=%2Fgfs.20261028%2F00%2Fatmos",
+          "sourceBodySha256": "93a68c19252e6487ece7d2b05970ccb608e464dd6e3161df53f0d6c5312a12e5",
+          "eligibleAtIssue": true,
+          "support": {
+            "gridLatitude": 44.75,
+            "gridLongitude": -63.5,
+            "distanceKm": 12.72663068940646
+          }
+        }
+      ],
+      "omissions": []
+    },
+    {
+      "locationId": "bedford",
+      "validAt": "2026-10-28T15:00:00Z",
+      "predictionC": 6.164897155761736,
+      "status": "available",
+      "families": [
+        "ecmwf",
+        "gfs"
+      ],
+      "spread": {
+        "kind": "uncalibrated_model_disagreement",
+        "minC": 5.95533142089846,
+        "maxC": 6.374462890625011
+      },
+      "candidateId": "940584f586079681a9960ca45e6413208c1385f94ebc04fd43ba14061ab001c0",
+      "contributors": [
+        {
+          "modelId": "ecmwf_ifs",
+          "sourceId": "ecmwf",
+          "family": "ecmwf",
+          "valueC": 5.95533142089846,
+          "modelReferenceTime": "2026-10-27T18:00:00Z",
+          "sourceIssuedAt": null,
+          "firstAvailableAt": null,
+          "firstRetrievedAt": "2026-10-28T04:42:45.324Z",
+          "sourceUrl": "https://data.ecmwf.int/forecasts/20261027/18z/ifs/0p25/oper/20261027180000-21h-oper-fc.grib2",
+          "sourceBodySha256": "a60a1801400bfdb3dee2ea9710f6273a0bfac77c8922fc84bee1bd99586fe21b",
+          "eligibleAtIssue": true,
+          "support": {
+            "gridLatitude": 44.75,
+            "gridLongitude": -63.75,
+            "distanceKm": 7.24684600619144
+          }
+        },
+        {
+          "modelId": "gfs",
+          "sourceId": "noaa",
+          "family": "gfs",
+          "valueC": 6.374462890625011,
+          "modelReferenceTime": "2026-10-28T00:00:00Z",
+          "sourceIssuedAt": null,
+          "firstAvailableAt": null,
+          "firstRetrievedAt": "2026-10-28T04:42:09.951Z",
+          "sourceUrl": "https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25.pl?file=gfs.t00z.pgrb2.0p25.f015&lev_2_m_above_ground=on&var_TMP=on&subregion=&leftlon=-63.75&rightlon=-63.5&toplat=44.75&bottomlat=44.5&dir=%2Fgfs.20261028%2F00%2Fatmos",
+          "sourceBodySha256": "93a68c19252e6487ece7d2b05970ccb608e464dd6e3161df53f0d6c5312a12e5",
+          "eligibleAtIssue": true,
+          "support": {
+            "gridLatitude": 44.75,
+            "gridLongitude": -63.75,
+            "distanceKm": 7.24684600619144
+          }
+        }
+      ],
+      "omissions": []
+    },
+    {
+      "locationId": "dartmouth",
+      "validAt": "2026-10-28T15:00:00Z",
+      "predictionC": 6.339897155761747,
+      "status": "available",
+      "families": [
+        "ecmwf",
+        "gfs"
+      ],
+      "spread": {
+        "kind": "uncalibrated_model_disagreement",
+        "minC": 6.20533142089846,
+        "maxC": 6.474462890625034
+      },
+      "candidateId": "176c085d6cfb2ac9cb96b25e6674eab2bca5cc439b146a1f185c1fb294fb1891",
+      "contributors": [
+        {
+          "modelId": "ecmwf_ifs",
+          "sourceId": "ecmwf",
+          "family": "ecmwf",
+          "valueC": 6.20533142089846,
+          "modelReferenceTime": "2026-10-27T18:00:00Z",
+          "sourceIssuedAt": null,
+          "firstAvailableAt": null,
+          "firstRetrievedAt": "2026-10-28T04:42:45.324Z",
+          "sourceUrl": "https://data.ecmwf.int/forecasts/20261027/18z/ifs/0p25/oper/20261027180000-21h-oper-fc.grib2",
+          "sourceBodySha256": "a60a1801400bfdb3dee2ea9710f6273a0bfac77c8922fc84bee1bd99586fe21b",
+          "eligibleAtIssue": true,
+          "support": {
+            "gridLatitude": 44.75,
+            "gridLongitude": -63.5,
+            "distanceKm": 10.750913542612077
+          }
+        },
+        {
+          "modelId": "gfs",
+          "sourceId": "noaa",
+          "family": "gfs",
+          "valueC": 6.474462890625034,
+          "modelReferenceTime": "2026-10-28T00:00:00Z",
+          "sourceIssuedAt": null,
+          "firstAvailableAt": null,
+          "firstRetrievedAt": "2026-10-28T04:42:09.951Z",
+          "sourceUrl": "https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25.pl?file=gfs.t00z.pgrb2.0p25.f015&lev_2_m_above_ground=on&var_TMP=on&subregion=&leftlon=-63.75&rightlon=-63.5&toplat=44.75&bottomlat=44.5&dir=%2Fgfs.20261028%2F00%2Fatmos",
+          "sourceBodySha256": "93a68c19252e6487ece7d2b05970ccb608e464dd6e3161df53f0d6c5312a12e5",
+          "eligibleAtIssue": true,
+          "support": {
+            "gridLatitude": 44.75,
+            "gridLongitude": -63.5,
+            "distanceKm": 10.750913542612077
+          }
+        }
+      ],
+      "omissions": []
+    },
+    {
+      "locationId": "halifax_peninsula",
+      "validAt": "2026-10-28T18:00:00Z",
+      "predictionC": 8.260850524902366,
+      "status": "available",
+      "families": [
+        "ecmwf",
+        "gfs"
+      ],
+      "spread": {
+        "kind": "uncalibrated_model_disagreement",
+        "minC": 8.06073913574221,
+        "maxC": 8.460961914062523
+      },
+      "candidateId": "0aa208798056192d9b586bfa31d37f997fb96a7b05334894ad612b07187a5afd",
+      "contributors": [
+        {
+          "modelId": "ecmwf_ifs",
+          "sourceId": "ecmwf",
+          "family": "ecmwf",
+          "valueC": 8.06073913574221,
+          "modelReferenceTime": "2026-10-27T18:00:00Z",
+          "sourceIssuedAt": null,
+          "firstAvailableAt": null,
+          "firstRetrievedAt": "2026-10-28T04:43:11.647Z",
+          "sourceUrl": "https://data.ecmwf.int/forecasts/20261027/18z/ifs/0p25/oper/20261027180000-24h-oper-fc.grib2",
+          "sourceBodySha256": "931e18ffa2fe854ec184b0ce1d5d3b51dd5faab8ceade4ddf39e1e30689b47a4",
+          "eligibleAtIssue": true,
+          "support": {
+            "gridLatitude": 44.75,
+            "gridLongitude": -63.5,
+            "distanceKm": 12.72663068940646
+          }
+        },
+        {
+          "modelId": "gfs",
+          "sourceId": "noaa",
+          "family": "gfs",
+          "valueC": 8.460961914062523,
+          "modelReferenceTime": "2026-10-28T00:00:00Z",
+          "sourceIssuedAt": null,
+          "firstAvailableAt": null,
+          "firstRetrievedAt": "2026-10-28T04:42:23.439Z",
+          "sourceUrl": "https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25.pl?file=gfs.t00z.pgrb2.0p25.f018&lev_2_m_above_ground=on&var_TMP=on&subregion=&leftlon=-63.75&rightlon=-63.5&toplat=44.75&bottomlat=44.5&dir=%2Fgfs.20261028%2F00%2Fatmos",
+          "sourceBodySha256": "dc921ce359c496e9f6fb7638fd99282eb71f19f4bda446c1a8503ed29b87336c",
+          "eligibleAtIssue": true,
+          "support": {
+            "gridLatitude": 44.75,
+            "gridLongitude": -63.5,
+            "distanceKm": 12.72663068940646
+          }
+        }
+      ],
+      "omissions": []
+    },
+    {
+      "locationId": "bedford",
+      "validAt": "2026-10-28T18:00:00Z",
+      "predictionC": 8.385850524902366,
+      "status": "available",
+      "families": [
+        "ecmwf",
+        "gfs"
+      ],
+      "spread": {
+        "kind": "uncalibrated_model_disagreement",
+        "minC": 8.31073913574221,
+        "maxC": 8.460961914062523
+      },
+      "candidateId": "842602bfacde6efec453280dab3e2708afd4808ad36ee21533d208f70d6f2d84",
+      "contributors": [
+        {
+          "modelId": "ecmwf_ifs",
+          "sourceId": "ecmwf",
+          "family": "ecmwf",
+          "valueC": 8.31073913574221,
+          "modelReferenceTime": "2026-10-27T18:00:00Z",
+          "sourceIssuedAt": null,
+          "firstAvailableAt": null,
+          "firstRetrievedAt": "2026-10-28T04:43:11.647Z",
+          "sourceUrl": "https://data.ecmwf.int/forecasts/20261027/18z/ifs/0p25/oper/20261027180000-24h-oper-fc.grib2",
+          "sourceBodySha256": "931e18ffa2fe854ec184b0ce1d5d3b51dd5faab8ceade4ddf39e1e30689b47a4",
+          "eligibleAtIssue": true,
+          "support": {
+            "gridLatitude": 44.75,
+            "gridLongitude": -63.75,
+            "distanceKm": 7.24684600619144
+          }
+        },
+        {
+          "modelId": "gfs",
+          "sourceId": "noaa",
+          "family": "gfs",
+          "valueC": 8.460961914062523,
+          "modelReferenceTime": "2026-10-28T00:00:00Z",
+          "sourceIssuedAt": null,
+          "firstAvailableAt": null,
+          "firstRetrievedAt": "2026-10-28T04:42:23.439Z",
+          "sourceUrl": "https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25.pl?file=gfs.t00z.pgrb2.0p25.f018&lev_2_m_above_ground=on&var_TMP=on&subregion=&leftlon=-63.75&rightlon=-63.5&toplat=44.75&bottomlat=44.5&dir=%2Fgfs.20261028%2F00%2Fatmos",
+          "sourceBodySha256": "dc921ce359c496e9f6fb7638fd99282eb71f19f4bda446c1a8503ed29b87336c",
+          "eligibleAtIssue": true,
+          "support": {
+            "gridLatitude": 44.75,
+            "gridLongitude": -63.75,
+            "distanceKm": 7.24684600619144
+          }
+        }
+      ],
+      "omissions": []
+    },
+    {
+      "locationId": "dartmouth",
+      "validAt": "2026-10-28T18:00:00Z",
+      "predictionC": 8.260850524902366,
+      "status": "available",
+      "families": [
+        "ecmwf",
+        "gfs"
+      ],
+      "spread": {
+        "kind": "uncalibrated_model_disagreement",
+        "minC": 8.06073913574221,
+        "maxC": 8.460961914062523
+      },
+      "candidateId": "1b49c60f79dca4993197540b6a746dea20e4d5aa7b58deaf7503d1707c9e9be4",
+      "contributors": [
+        {
+          "modelId": "ecmwf_ifs",
+          "sourceId": "ecmwf",
+          "family": "ecmwf",
+          "valueC": 8.06073913574221,
+          "modelReferenceTime": "2026-10-27T18:00:00Z",
+          "sourceIssuedAt": null,
+          "firstAvailableAt": null,
+          "firstRetrievedAt": "2026-10-28T04:43:11.647Z",
+          "sourceUrl": "https://data.ecmwf.int/forecasts/20261027/18z/ifs/0p25/oper/20261027180000-24h-oper-fc.grib2",
+          "sourceBodySha256": "931e18ffa2fe854ec184b0ce1d5d3b51dd5faab8ceade4ddf39e1e30689b47a4",
+          "eligibleAtIssue": true,
+          "support": {
+            "gridLatitude": 44.75,
+            "gridLongitude": -63.5,
+            "distanceKm": 10.750913542612077
+          }
+        },
+        {
+          "modelId": "gfs",
+          "sourceId": "noaa",
+          "family": "gfs",
+          "valueC": 8.460961914062523,
+          "modelReferenceTime": "2026-10-28T00:00:00Z",
+          "sourceIssuedAt": null,
+          "firstAvailableAt": null,
+          "firstRetrievedAt": "2026-10-28T04:42:23.439Z",
+          "sourceUrl": "https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25.pl?file=gfs.t00z.pgrb2.0p25.f018&lev_2_m_above_ground=on&var_TMP=on&subregion=&leftlon=-63.75&rightlon=-63.5&toplat=44.75&bottomlat=44.5&dir=%2Fgfs.20261028%2F00%2Fatmos",
+          "sourceBodySha256": "dc921ce359c496e9f6fb7638fd99282eb71f19f4bda446c1a8503ed29b87336c",
+          "eligibleAtIssue": true,
+          "support": {
+            "gridLatitude": 44.75,
+            "gridLongitude": -63.5,
+            "distanceKm": 10.750913542612077
+          }
+        }
+      ],
+      "omissions": []
+    }
+  ],
+  "archiveSha256": "58b3e20281038bd7b9ddfa8603ef8299aecc1b73f090f69a9c3e711001e9ff40",
+  "accuracyImprovementEstablished": false,
+  "wholeMunicipalityCoverageCertified": false,
+  "variableCoverage": [
+    "temperature_2m"
+  ],
+  "contextPointCoverage": "not_in_this_capture",
+  "attribution": [
+    {
+      "sourceId": "noaa",
+      "text": "NOAA/NCEP GFS data; derived point extraction and equal-family aggregation by HalifaxSourced. No NOAA endorsement.",
+      "url": "https://www.weather.gov/disclaimer"
+    },
+    {
+      "sourceId": "ecmwf",
+      "text": "This service is based on data and products of the European Centre for Medium-Range Weather Forecasts (ECMWF). © 2026 ECMWF. Data licensed CC BY 4.0; HalifaxSourced modified the data through nearest-grid point extraction and equal-family aggregation. ECMWF disclaims liability for data errors, omissions, availability and resulting loss or damage. No endorsement or accuracy warranty is implied.",
+      "url": "https://www.ecmwf.int/en/forecasts/datasets/open-data",
+      "termsUrl": "https://apps.ecmwf.int/datasets/licences/general/",
+      "licenceUrl": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "limitations": [
+    "Model grid forecasts, not station observations or calibrated neighbourhood forecasts.",
+    "Only two admitted model families, three core points, temperature and the displayed valid instants; not all weather sources.",
+    "Raw model disagreement is not a calibrated prediction interval or probability.",
+    "Model reference time is not publication time; publication/first availability remain unknown where not evidenced.",
+    "No prospective skill improvement has been established."
+  ]
+};
