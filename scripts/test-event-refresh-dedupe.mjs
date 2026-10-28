@@ -7,7 +7,7 @@ const root=await mkdtemp(join(tmpdir(),'halifax-event-refresh-'));
 try {
   await mkdir(join(root,'scripts','lib'),{recursive:true});await mkdir(join(root,'data','build'),{recursive:true});
   await mkdir(join(root,'data','quarantine'),{recursive:true});
-  for(const file of ['scripts/sanitize-city-events.mjs','scripts/resolve-city-event-entities.mjs','scripts/lib/canonical-event-dedupe.mjs','scripts/lib/reviewed-event-quarantine.mjs','data/quarantine/library-store-navigation-20261027.json','scripts/lib/reviewed-event-locations.mjs','data/reviewed-event-locations.json'])await copyFile(new URL('../'+file,import.meta.url),join(root,file));
+  for(const file of ['scripts/sanitize-city-events.mjs','scripts/resolve-city-event-entities.mjs','scripts/lib/canonical-event-dedupe.mjs','scripts/lib/reviewed-event-quarantine.mjs','data/quarantine/library-store-navigation-20261027.json','data/quarantine/city-event-lifecycle-20261028.json','scripts/lib/reviewed-event-locations.mjs','data/reviewed-event-locations.json'])await copyFile(new URL('../'+file,import.meta.url),join(root,file));
   const venue={venueId:'scotiabank-centre-halifax',name:'Scotiabank Centre',address:'1800 Argyle Street, Halifax',city:'Halifax',sourceIds:['team','venue']};
   await writeFile(join(root,'data','venue-registry.json'),JSON.stringify({venues:[venue]}));
   await writeFile(join(root,'data','organizer-registry.json'),JSON.stringify({organizers:[]}));
