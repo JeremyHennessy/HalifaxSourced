@@ -18,6 +18,8 @@ const snapshotPaths = snapshots.flatMap(([name]) => [`data/${name}.js`, `data/bu
 const weatherManifest = JSON.parse(await readFile(join(repository, "data/weather/current.json"), "utf8"));
 assert.match(weatherManifest.capturePath, /^data\/weather\/captures\/[a-f0-9]{64}\.json$/);
 snapshotPaths.push("data/weather/current.json",weatherManifest.capturePath,"data/weather.js","data/build/halifax-weather.json");
+const newsManifest = JSON.parse(await readFile(join(repository, "news-evidence/current.json"), "utf8"));
+snapshotPaths.push("news-evidence/current.json",...Object.keys(newsManifest.files).map(name=>`news-evidence/runs/${newsManifest.runId}/${name}`),"data/news.js","data/build/news.json","data/reviewed-news-decisions.json");
 const modelManifest = JSON.parse(await readFile(join(repository, "weather-evidence/current.json"), "utf8"));
 assert.match(modelManifest.archivePath, /^weather-evidence\/issuances\/[a-f0-9]{64}\.json$/);
 snapshotPaths.push("weather-evidence/current.json", modelManifest.archivePath, "data/weather-models.js", "data/build/halifax-weather-models.json");
@@ -206,7 +208,7 @@ try {
   // deterministic one. The frozen clock is only a regression fixture.
   const baseline = join(root, "baseline");
   await mkdir(baseline);
-  for (const folder of ["data", "scripts", "assets", "weather-evidence"]) await cp(join(repository, folder), join(baseline, folder), { recursive: true });
+  for (const folder of ["data", "scripts", "assets", "weather-evidence", "news-evidence"]) await cp(join(repository, folder), join(baseline, folder), { recursive: true });
   for (const file of await readdir(repository)) {
     if (file.endsWith(".js") || file === "index.html") await cp(join(repository, file), join(baseline, file));
   }

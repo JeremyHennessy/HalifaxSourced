@@ -461,6 +461,11 @@ function catalogWeatherModelMetadata(row) {
     ${batch ? `<p>Combined model-snapshot attempt (not a per-provider attempt): ${statusEscape(batch.status)} · started ${catalogClock(batch.attemptedAt)} · completed ${catalogClock(batch.completedAt)}.</p>` : ""}
     <p>Provider publication and first-availability clocks remain unknown; retained request clocks do not establish continuous collection. Saved receipts do not establish current conditions or improved prediction. <a href="#weather">View model freshness, source limits and separate official warnings</a>.</p></section>`;
 }
+function catalogNewsHealthMetadata(row) {
+  if(row.family !== "news" || !row.newsHealth) return "";
+  const health=row.newsHealth;
+  return '<section aria-label="News collection receipt"><p><strong>Published receipt snapshot, not live monitoring.</strong> Status: '+statusEscape(health.status)+'. '+catalogLink(health.run.url,'Inspect verified news run #'+health.run.number)+' · completed '+catalogClock(health.run.completedAt)+' · reviewed '+catalogClock(health.reviewedAt)+'.</p><p>Successful collection checks do not refresh content publication or first-seen dates, approve candidates, or establish on-time scheduling. No candidate publication is implied.</p></section>';
+}
 function renderCatalogRow(row) {
   const state = catalogCurrentState(row);
   return `<article class="source-catalog-row">
@@ -469,6 +474,7 @@ function renderCatalogRow(row) {
     <p>${row.url ? catalogLink(row.url, row.url) : "Source URL unknown"}</p>
     <dl class="source-catalog-clocks"><div><dt>Last attempt</dt><dd>${catalogClock(row.lastAttemptAt)}</dd></div><div><dt>Last successful collection</dt><dd>${catalogClock(row.lastSuccessAt)}</dd></div><div><dt>Latest content publication/change</dt><dd>${catalogClock(row.contentAt)}</dd></div></dl>
     <p>Collection enabled: ${row.enabled === true ? "yes (registered)" : row.enabled === false ? "no" : "unknown"} · Target lane cadence (not live scheduling): ${row.targetHours ? `${statusEscape(row.targetHours)} hours` : "unknown"} · Parser: ${statusEscape(row.parser || "unknown")}</p>
+    ${catalogNewsHealthMetadata(row)}
     ${catalogReviewMetadata(row)}
     ${catalogWeatherMetadata(row)}
     ${catalogWeatherModelMetadata(row)}

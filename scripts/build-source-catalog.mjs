@@ -4,6 +4,7 @@ import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { iso, latest, freshness, snapshotValue } from './lib/update-consistency.mjs';
+import {loadNewsHealth,isVerifiedNewsHealth} from './lib/news-health-receipt.mjs';
 import { sourceRunHealth } from './lib/source-run-health.mjs';
 import modelViewContract from '../weather-model-contract.js';
 import {loadPublicModelProjection} from './lib/weather-model-publication.mjs';
@@ -91,6 +92,27 @@ export function buildCatalog(inputs) {
     for (const stat of rows(city.sourceStats).filter(s => s.sourceId === record.id)) add('city-events', {...record, ...stat}, 'data/build/city-events.json', 'city-events', {registry:true, defaultEnabled:true, sourceId:record.id, receipt:true});
   }
   for (const [path,family,workflow] of [['data/place-source-registry.json','discovery-directories','restaurant-discovery-preview.yml'],['data/news-source-registry.json','news','news-preview.yml']]) for (const record of rows(inputs[path]?.sources)) add(family,record,path,family === 'news' ? 'regional-news' : null,{registry:true, workflow});
+  const newsHealth=inputs['news-evidence/verified-health'];
+  if(newsHealth){
+    if(!isVerifiedNewsHealth(newsHealth)) throw new Error('Unverified news health projection');
+    const newsSources=rows(inputs['data/news-source-registry.json']?.sources);
+    if(JSON.stringify(newsSources.map(s=>s.id).sort())!==JSON.stringify(newsHealth.sources.map(s=>s.sourceId).sort())) throw new Error('News health source set mismatch');
+    for(const source of newsSources){
+      const health=newsHealth.sources.find(d=>d.sourceId===source.id);
+      const fingerprint=createHash('sha256').update(JSON.stringify([source.id,source.feedUrl,source.allowedHosts,source.source_type])).digest('hex');
+      if(!health || health.configHash!==fingerprint || health.enabled!==source.enabled || health.sourceHost!==new URL(source.feedUrl||source.homeUrl).hostname) throw new Error('News health source configuration mismatch');
+      const row=[...entries.values()].find(r=>r.family==='news' && r.sourceId===source.id);
+      row.lastAttemptAt=latest([row.lastAttemptAt,health.lastAttemptAt]);
+      row.lastSuccessAt=health.lastSuccessAt;
+      row.held ||= health.accessHeld;
+      row.failing ||= health.status==='failed_preserved';
+      // Never derive contentAt from a request, release, receipt review, or candidate.
+      row.provenance.push('news-evidence/current.json');
+      row.newsHealth={status:health.status,run:newsHealth.run,reviewedAt:newsHealth.reviewedAt,artifactId:newsHealth.artifactId,
+        artifactSha256:newsHealth.artifactSha256,payloadSha256:newsHealth.payloadSha256,retryNotBefore:health.retryNotBefore,
+        scope:newsHealth.scope};
+    }
+  }
   // A recorded source receipt is evidence, not an active collection schedule.
   const weatherPath = 'data/weather-source-registry.json', weatherSnapshotPath = 'data/build/halifax-weather.json';
   const weatherSnapshot = inputs[weatherSnapshotPath];
@@ -234,6 +256,7 @@ export async function buildFromDisk() {
     try { inputs[path] = JSON.parse(await readFile(new URL(path,root),'utf8')); }
     catch (error) { if (error.code !== 'ENOENT') throw error; const fallback = path.replace('data/build/','data/').replace(/\.json$/,'.js'); if (fallback !== path) { try { inputs[path] = snapshotValue(await readFile(new URL(fallback,root),'utf8')); } catch (fallbackError) { if (fallbackError.code !== 'ENOENT') throw fallbackError; } } }
   }
+  inputs['news-evidence/verified-health']=await loadNewsHealth(root,inputs['data/news-source-registry.json']);
   if(inputs['data/build/halifax-weather-models.json']){
     const accepted=await loadPublicModelProjection(root);
     inputs['weather-evidence/model-receipts']={archiveSha256:accepted.projection.archiveSha256,captures:accepted.archive.captures.map(c=>({sourceId:c.sourceId,status:c.receipt.status,bodySha256:c.id,attemptedAt:c.receipt.attemptedAt,completedAt:c.receipt.completedAt}))};

@@ -17,7 +17,7 @@ function run(command, override = {}, success = true, message = '') {
   checks++;
 }
 try {
-  for (const directory of ['assets', 'data/build', 'vendor', 'docs']) await mkdir(join(source, directory), { recursive: true });
+  for (const directory of ['assets', 'data/build', 'vendor', 'docs', 'news-evidence/runs/12345']) await mkdir(join(source, directory), { recursive: true });
   await writeFile(join(source, 'index.html'), '<h1>Release fixture</h1>');
   await writeFile(join(source, '.nojekyll'), '');
   await writeFile(join(source, 'app-core.js'), 'const fixture = true;');
@@ -26,8 +26,13 @@ try {
   await writeFile(join(source, 'data/restaurant-media.js'), 'window.HALIFAX_RESTAURANT_MEDIA = {"records": []};');
   await writeFile(join(source, 'data/build/deployment-metadata.json'), JSON.stringify({ sourceCommitSha: sha, qualityWorkflowRunId: runId, counts: { canonicalPlaces: 4, activePlaces: 3, archivedPlaces: 1, rightsApprovedMedia: 2 } }));
   await writeFile(join(source, 'data/build/content-coverage-report.json'), JSON.stringify({ sourceCommitSha: sha, restaurantCoverage: { totalCanonicalPlaces: 4, activeCanonicalPlaces: 3, archivedLifecyclePlaces: 1, withUsableMedia: 2 } }));
+  await writeFile(join(source,'news-evidence/runs/12345/artifact.zip'),'review-only candidate archive');
+  await writeFile(join(source,'news-evidence/current.json'),'review-only evidence manifest');
   run('build');
   run('verify');
+  const manifest=JSON.parse(await readFile(join(release,'data/build/release-manifest.json')));
+  assert.ok(!Object.keys(manifest.files).some(path=>path.includes('news-evidence'))); checks++;
+  await assert.rejects(readFile(join(release,'news-evidence/current.json')),{code:'ENOENT'}); checks++;
   assert.equal(await readFile(join(release, '.nojekyll'), 'utf8'), ''); checks++;
   run('verify', { SOURCE_COMMIT_SHA: 'b'.repeat(40) }, false, 'Different source SHA must fail');
   run('verify', { QUALITY_WORKFLOW_RUN_ID: '54321' }, false, 'Different workflow run must fail');

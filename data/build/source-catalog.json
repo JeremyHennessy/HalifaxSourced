@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "snapshotAt": "2026-10-28T04:43:11.647Z",
+  "snapshotAt": "2026-10-28T13:06:02.058Z",
   "scope": "Offline inventory of committed registries, source relationships, and published evidence. Not live operations. Counts total and state totals are catalogue rows, including evidence/relationships; distinctUrls counts sanitized URLs; distinctHosts counts lowercase hostnames without leading www or a trailing DNS dot. Neither distinct count measures publishers. Target cadence is policy, not proof of an active schedule. Unknown clocks remain unknown; contentAt is publication/change time, not event date. Held overrides failure. Link discovery is not successful collection. Source-onboarding rows are disabled review candidates/manual holds, not ingested content or operational source admissions. Freshness is evaluated at the latest recorded evidence clock; the admin view also evaluates age at viewing time.",
   "counts": {
     "total": 4674,
@@ -28165,8 +28165,27 @@
       "reviewUrl": "https://github.com/JeremyHennessy/HalifaxSourced/pulls",
       "parser": null,
       "provenance": [
-        "data/news-source-registry.json"
+        "data/news-source-registry.json",
+        "news-evidence/current.json"
       ],
+      "newsHealth": {
+        "status": "disabled",
+        "run": {
+          "id": "40693348332",
+          "number": 3,
+          "attempt": 1,
+          "sha": "754db8b8543dc36d6d18d0cb89f81fc6fdad5acd",
+          "event": "schedule",
+          "url": "https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/40693348332",
+          "completedAt": "2026-10-28T13:06:09.000Z"
+        },
+        "reviewedAt": "2026-10-28T13:22:17.760Z",
+        "artifactId": "12817389677",
+        "artifactSha256": "badec203a30b7988a147229c5a671f81f021a64c0ee92d86029d48a17cf32cc3",
+        "payloadSha256": "3d352bd8ef6979998c8103b29a9cfbd1f622e2aacab54fd37e255b0d63f11246",
+        "retryNotBefore": null,
+        "scope": "Published receipt snapshot, not live monitoring. Collection checks are not content publication, candidate approval, or proof of on-time scheduling."
+      },
       "freshness": "unknown",
       "state": "held"
     },
@@ -28189,8 +28208,27 @@
       "reviewUrl": "https://github.com/JeremyHennessy/HalifaxSourced/pulls",
       "parser": null,
       "provenance": [
-        "data/news-source-registry.json"
+        "data/news-source-registry.json",
+        "news-evidence/current.json"
       ],
+      "newsHealth": {
+        "status": "disabled",
+        "run": {
+          "id": "40693348332",
+          "number": 3,
+          "attempt": 1,
+          "sha": "754db8b8543dc36d6d18d0cb89f81fc6fdad5acd",
+          "event": "schedule",
+          "url": "https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/40693348332",
+          "completedAt": "2026-10-28T13:06:09.000Z"
+        },
+        "reviewedAt": "2026-10-28T13:22:17.760Z",
+        "artifactId": "12817389677",
+        "artifactSha256": "badec203a30b7988a147229c5a671f81f021a64c0ee92d86029d48a17cf32cc3",
+        "payloadSha256": "3d352bd8ef6979998c8103b29a9cfbd1f622e2aacab54fd37e255b0d63f11246",
+        "retryNotBefore": null,
+        "scope": "Published receipt snapshot, not live monitoring. Collection checks are not content publication, candidate approval, or proof of on-time scheduling."
+      },
       "freshness": "unknown",
       "state": "held"
     },
@@ -28213,8 +28251,27 @@
       "reviewUrl": "https://github.com/JeremyHennessy/HalifaxSourced/pulls",
       "parser": null,
       "provenance": [
-        "data/news-source-registry.json"
+        "data/news-source-registry.json",
+        "news-evidence/current.json"
       ],
+      "newsHealth": {
+        "status": "disabled",
+        "run": {
+          "id": "40693348332",
+          "number": 3,
+          "attempt": 1,
+          "sha": "754db8b8543dc36d6d18d0cb89f81fc6fdad5acd",
+          "event": "schedule",
+          "url": "https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/40693348332",
+          "completedAt": "2026-10-28T13:06:09.000Z"
+        },
+        "reviewedAt": "2026-10-28T13:22:17.760Z",
+        "artifactId": "12817389677",
+        "artifactSha256": "badec203a30b7988a147229c5a671f81f021a64c0ee92d86029d48a17cf32cc3",
+        "payloadSha256": "3d352bd8ef6979998c8103b29a9cfbd1f622e2aacab54fd37e255b0d63f11246",
+        "retryNotBefore": null,
+        "scope": "Published receipt snapshot, not live monitoring. Collection checks are not content publication, candidate approval, or proof of on-time scheduling."
+      },
       "freshness": "unknown",
       "state": "held"
     },
@@ -28237,8 +28294,27 @@
       "reviewUrl": "https://github.com/JeremyHennessy/HalifaxSourced/pulls",
       "parser": null,
       "provenance": [
-        "data/news-source-registry.json"
+        "data/news-source-registry.json",
+        "news-evidence/current.json"
       ],
+      "newsHealth": {
+        "status": "disabled",
+        "run": {
+          "id": "40693348332",
+          "number": 3,
+          "attempt": 1,
+          "sha": "754db8b8543dc36d6d18d0cb89f81fc6fdad5acd",
+          "event": "schedule",
+          "url": "https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/40693348332",
+          "completedAt": "2026-10-28T13:06:09.000Z"
+        },
+        "reviewedAt": "2026-10-28T13:22:17.760Z",
+        "artifactId": "12817389677",
+        "artifactSha256": "badec203a30b7988a147229c5a671f81f021a64c0ee92d86029d48a17cf32cc3",
+        "payloadSha256": "3d352bd8ef6979998c8103b29a9cfbd1f622e2aacab54fd37e255b0d63f11246",
+        "retryNotBefore": null,
+        "scope": "Published receipt snapshot, not live monitoring. Collection checks are not content publication, candidate approval, or proof of on-time scheduling."
+      },
       "freshness": "unknown",
       "state": "held"
     },
@@ -28253,17 +28329,36 @@
       "enabled": true,
       "held": false,
       "failing": false,
-      "lastAttemptAt": null,
-      "lastSuccessAt": null,
+      "lastAttemptAt": "2026-10-28T13:06:02.058Z",
+      "lastSuccessAt": "2026-10-28T13:06:02.058Z",
       "contentAt": null,
       "targetHours": 6,
       "workflowUrl": "https://github.com/JeremyHennessy/HalifaxSourced/actions/workflows/news-preview.yml",
       "reviewUrl": "https://github.com/JeremyHennessy/HalifaxSourced/pulls",
       "parser": null,
       "provenance": [
-        "data/news-source-registry.json"
+        "data/news-source-registry.json",
+        "news-evidence/current.json"
       ],
-      "freshness": "unknown",
+      "newsHealth": {
+        "status": "pending_review",
+        "run": {
+          "id": "40693348332",
+          "number": 3,
+          "attempt": 1,
+          "sha": "754db8b8543dc36d6d18d0cb89f81fc6fdad5acd",
+          "event": "schedule",
+          "url": "https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/40693348332",
+          "completedAt": "2026-10-28T13:06:09.000Z"
+        },
+        "reviewedAt": "2026-10-28T13:22:17.760Z",
+        "artifactId": "12817389677",
+        "artifactSha256": "badec203a30b7988a147229c5a671f81f021a64c0ee92d86029d48a17cf32cc3",
+        "payloadSha256": "3d352bd8ef6979998c8103b29a9cfbd1f622e2aacab54fd37e255b0d63f11246",
+        "retryNotBefore": null,
+        "scope": "Published receipt snapshot, not live monitoring. Collection checks are not content publication, candidate approval, or proof of on-time scheduling."
+      },
+      "freshness": "fresh",
       "state": "enabled"
     },
     {
@@ -28285,8 +28380,27 @@
       "reviewUrl": "https://github.com/JeremyHennessy/HalifaxSourced/pulls",
       "parser": null,
       "provenance": [
-        "data/news-source-registry.json"
+        "data/news-source-registry.json",
+        "news-evidence/current.json"
       ],
+      "newsHealth": {
+        "status": "disabled",
+        "run": {
+          "id": "40693348332",
+          "number": 3,
+          "attempt": 1,
+          "sha": "754db8b8543dc36d6d18d0cb89f81fc6fdad5acd",
+          "event": "schedule",
+          "url": "https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/40693348332",
+          "completedAt": "2026-10-28T13:06:09.000Z"
+        },
+        "reviewedAt": "2026-10-28T13:22:17.760Z",
+        "artifactId": "12817389677",
+        "artifactSha256": "badec203a30b7988a147229c5a671f81f021a64c0ee92d86029d48a17cf32cc3",
+        "payloadSha256": "3d352bd8ef6979998c8103b29a9cfbd1f622e2aacab54fd37e255b0d63f11246",
+        "retryNotBefore": null,
+        "scope": "Published receipt snapshot, not live monitoring. Collection checks are not content publication, candidate approval, or proof of on-time scheduling."
+      },
       "freshness": "unknown",
       "state": "held"
     },
@@ -28309,8 +28423,27 @@
       "reviewUrl": "https://github.com/JeremyHennessy/HalifaxSourced/pulls",
       "parser": null,
       "provenance": [
-        "data/news-source-registry.json"
+        "data/news-source-registry.json",
+        "news-evidence/current.json"
       ],
+      "newsHealth": {
+        "status": "disabled",
+        "run": {
+          "id": "40693348332",
+          "number": 3,
+          "attempt": 1,
+          "sha": "754db8b8543dc36d6d18d0cb89f81fc6fdad5acd",
+          "event": "schedule",
+          "url": "https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/40693348332",
+          "completedAt": "2026-10-28T13:06:09.000Z"
+        },
+        "reviewedAt": "2026-10-28T13:22:17.760Z",
+        "artifactId": "12817389677",
+        "artifactSha256": "badec203a30b7988a147229c5a671f81f021a64c0ee92d86029d48a17cf32cc3",
+        "payloadSha256": "3d352bd8ef6979998c8103b29a9cfbd1f622e2aacab54fd37e255b0d63f11246",
+        "retryNotBefore": null,
+        "scope": "Published receipt snapshot, not live monitoring. Collection checks are not content publication, candidate approval, or proof of on-time scheduling."
+      },
       "freshness": "unknown",
       "state": "held"
     },
@@ -28333,8 +28466,27 @@
       "reviewUrl": "https://github.com/JeremyHennessy/HalifaxSourced/pulls",
       "parser": null,
       "provenance": [
-        "data/news-source-registry.json"
+        "data/news-source-registry.json",
+        "news-evidence/current.json"
       ],
+      "newsHealth": {
+        "status": "disabled",
+        "run": {
+          "id": "40693348332",
+          "number": 3,
+          "attempt": 1,
+          "sha": "754db8b8543dc36d6d18d0cb89f81fc6fdad5acd",
+          "event": "schedule",
+          "url": "https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/40693348332",
+          "completedAt": "2026-10-28T13:06:09.000Z"
+        },
+        "reviewedAt": "2026-10-28T13:22:17.760Z",
+        "artifactId": "12817389677",
+        "artifactSha256": "badec203a30b7988a147229c5a671f81f021a64c0ee92d86029d48a17cf32cc3",
+        "payloadSha256": "3d352bd8ef6979998c8103b29a9cfbd1f622e2aacab54fd37e255b0d63f11246",
+        "retryNotBefore": null,
+        "scope": "Published receipt snapshot, not live monitoring. Collection checks are not content publication, candidate approval, or proof of on-time scheduling."
+      },
       "freshness": "unknown",
       "state": "held"
     },
@@ -28357,8 +28509,27 @@
       "reviewUrl": "https://github.com/JeremyHennessy/HalifaxSourced/pulls",
       "parser": null,
       "provenance": [
-        "data/news-source-registry.json"
+        "data/news-source-registry.json",
+        "news-evidence/current.json"
       ],
+      "newsHealth": {
+        "status": "disabled",
+        "run": {
+          "id": "40693348332",
+          "number": 3,
+          "attempt": 1,
+          "sha": "754db8b8543dc36d6d18d0cb89f81fc6fdad5acd",
+          "event": "schedule",
+          "url": "https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/40693348332",
+          "completedAt": "2026-10-28T13:06:09.000Z"
+        },
+        "reviewedAt": "2026-10-28T13:22:17.760Z",
+        "artifactId": "12817389677",
+        "artifactSha256": "badec203a30b7988a147229c5a671f81f021a64c0ee92d86029d48a17cf32cc3",
+        "payloadSha256": "3d352bd8ef6979998c8103b29a9cfbd1f622e2aacab54fd37e255b0d63f11246",
+        "retryNotBefore": null,
+        "scope": "Published receipt snapshot, not live monitoring. Collection checks are not content publication, candidate approval, or proof of on-time scheduling."
+      },
       "freshness": "unknown",
       "state": "held"
     },
@@ -28381,8 +28552,27 @@
       "reviewUrl": "https://github.com/JeremyHennessy/HalifaxSourced/pulls",
       "parser": null,
       "provenance": [
-        "data/news-source-registry.json"
+        "data/news-source-registry.json",
+        "news-evidence/current.json"
       ],
+      "newsHealth": {
+        "status": "disabled",
+        "run": {
+          "id": "40693348332",
+          "number": 3,
+          "attempt": 1,
+          "sha": "754db8b8543dc36d6d18d0cb89f81fc6fdad5acd",
+          "event": "schedule",
+          "url": "https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/40693348332",
+          "completedAt": "2026-10-28T13:06:09.000Z"
+        },
+        "reviewedAt": "2026-10-28T13:22:17.760Z",
+        "artifactId": "12817389677",
+        "artifactSha256": "badec203a30b7988a147229c5a671f81f021a64c0ee92d86029d48a17cf32cc3",
+        "payloadSha256": "3d352bd8ef6979998c8103b29a9cfbd1f622e2aacab54fd37e255b0d63f11246",
+        "retryNotBefore": null,
+        "scope": "Published receipt snapshot, not live monitoring. Collection checks are not content publication, candidate approval, or proof of on-time scheduling."
+      },
       "freshness": "unknown",
       "state": "held"
     },
@@ -28405,8 +28595,27 @@
       "reviewUrl": "https://github.com/JeremyHennessy/HalifaxSourced/pulls",
       "parser": null,
       "provenance": [
-        "data/news-source-registry.json"
+        "data/news-source-registry.json",
+        "news-evidence/current.json"
       ],
+      "newsHealth": {
+        "status": "disabled",
+        "run": {
+          "id": "40693348332",
+          "number": 3,
+          "attempt": 1,
+          "sha": "754db8b8543dc36d6d18d0cb89f81fc6fdad5acd",
+          "event": "schedule",
+          "url": "https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/40693348332",
+          "completedAt": "2026-10-28T13:06:09.000Z"
+        },
+        "reviewedAt": "2026-10-28T13:22:17.760Z",
+        "artifactId": "12817389677",
+        "artifactSha256": "badec203a30b7988a147229c5a671f81f021a64c0ee92d86029d48a17cf32cc3",
+        "payloadSha256": "3d352bd8ef6979998c8103b29a9cfbd1f622e2aacab54fd37e255b0d63f11246",
+        "retryNotBefore": null,
+        "scope": "Published receipt snapshot, not live monitoring. Collection checks are not content publication, candidate approval, or proof of on-time scheduling."
+      },
       "freshness": "unknown",
       "state": "held"
     },
@@ -28429,8 +28638,27 @@
       "reviewUrl": "https://github.com/JeremyHennessy/HalifaxSourced/pulls",
       "parser": null,
       "provenance": [
-        "data/news-source-registry.json"
+        "data/news-source-registry.json",
+        "news-evidence/current.json"
       ],
+      "newsHealth": {
+        "status": "disabled",
+        "run": {
+          "id": "40693348332",
+          "number": 3,
+          "attempt": 1,
+          "sha": "754db8b8543dc36d6d18d0cb89f81fc6fdad5acd",
+          "event": "schedule",
+          "url": "https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/40693348332",
+          "completedAt": "2026-10-28T13:06:09.000Z"
+        },
+        "reviewedAt": "2026-10-28T13:22:17.760Z",
+        "artifactId": "12817389677",
+        "artifactSha256": "badec203a30b7988a147229c5a671f81f021a64c0ee92d86029d48a17cf32cc3",
+        "payloadSha256": "3d352bd8ef6979998c8103b29a9cfbd1f622e2aacab54fd37e255b0d63f11246",
+        "retryNotBefore": null,
+        "scope": "Published receipt snapshot, not live monitoring. Collection checks are not content publication, candidate approval, or proof of on-time scheduling."
+      },
       "freshness": "unknown",
       "state": "held"
     },
@@ -28453,8 +28681,27 @@
       "reviewUrl": "https://github.com/JeremyHennessy/HalifaxSourced/pulls",
       "parser": null,
       "provenance": [
-        "data/news-source-registry.json"
+        "data/news-source-registry.json",
+        "news-evidence/current.json"
       ],
+      "newsHealth": {
+        "status": "disabled",
+        "run": {
+          "id": "40693348332",
+          "number": 3,
+          "attempt": 1,
+          "sha": "754db8b8543dc36d6d18d0cb89f81fc6fdad5acd",
+          "event": "schedule",
+          "url": "https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/40693348332",
+          "completedAt": "2026-10-28T13:06:09.000Z"
+        },
+        "reviewedAt": "2026-10-28T13:22:17.760Z",
+        "artifactId": "12817389677",
+        "artifactSha256": "badec203a30b7988a147229c5a671f81f021a64c0ee92d86029d48a17cf32cc3",
+        "payloadSha256": "3d352bd8ef6979998c8103b29a9cfbd1f622e2aacab54fd37e255b0d63f11246",
+        "retryNotBefore": null,
+        "scope": "Published receipt snapshot, not live monitoring. Collection checks are not content publication, candidate approval, or proof of on-time scheduling."
+      },
       "freshness": "unknown",
       "state": "held"
     },

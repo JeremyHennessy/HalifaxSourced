@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "kind": "reviewed_news_operational_receipt",
+  "runId": "40693348332",
+  "reviewedAt": "2026-10-28T13:22:17.760Z",
+  "files": {
+    "artifact.zip": "badec203a30b7988a147229c5a671f81f021a64c0ee92d86029d48a17cf32cc3",
+    "run.json": "2d8e08c1b5ec67af97f127fdcbcb5387fb31a212da2fbf57628e334446689599",
+    "artifact.json": "22a2c81cc6e3be4306d772164924cf40fff0e4f42f27db2a02a629fe6be22da3",
+    "jobs.json": "ff02b8f6f72d6c8502831723b0a94746d76425acec800ef422271a0a6bb747be"
+  }
+}
