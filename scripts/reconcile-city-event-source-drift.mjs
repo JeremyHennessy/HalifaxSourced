@@ -1,6 +1,6 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { reconcileFutureEventLosses } from "./lib/event-refresh-safety.mjs";
-import { REVIEWED_EVENT_QUARANTINE_PATH } from "./lib/reviewed-event-quarantine.mjs";
+import { REVIEWED_EVENT_QUARANTINE_PATHS } from "./lib/reviewed-event-quarantine.mjs";
 
 const previousPath = process.env.CITY_EVENTS_PREVIOUS_PATH || process.argv[2];
 if (!previousPath) throw new Error("Set CITY_EVENTS_PREVIOUS_PATH or pass the previous city-events JSON path.");
@@ -8,9 +8,9 @@ const currentPath = new URL("../data/build/city-events.json", import.meta.url);
 const jsPath = new URL("../data/city-events.js", import.meta.url);
 const current = JSON.parse(await readFile(currentPath, "utf8"));
 const previous = JSON.parse(await readFile(previousPath, "utf8"));
-const reviewedQuarantine = JSON.parse(await readFile(new URL("../" + REVIEWED_EVENT_QUARANTINE_PATH, import.meta.url), "utf8"));
+const reviewedQuarantines = await Promise.all(REVIEWED_EVENT_QUARANTINE_PATHS.map(async path => JSON.parse(await readFile(new URL("../" + path, import.meta.url), "utf8"))));
 const result = reconcileFutureEventLosses(current, previous, {
-  reviewedQuarantine,
+  reviewedQuarantine: reviewedQuarantines,
   futureDays: Number(current?.range?.futureDays || 400)
 });
 
