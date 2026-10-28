@@ -5,6 +5,28 @@ import {hash,stamp} from './eccc-weather.mjs';
 import {digest,stableJson,locationContract} from './weather-aggregation.mjs';
 import {aggregateIssuedArchive} from './weather-model-archive.mjs';
 export const MODEL_MANIFEST='weather-evidence/current.json';
+export const REFRESH_ADMISSION_REVIEW_ID='halifax-gfs-ifs-refresh-v1';
+export function validateModelManifest(manifest){
+ const extra=manifest.version===2?['refreshReceipt']:[];
+ assert.deepEqual(Object.keys(manifest).sort(),['archivePath','archiveSha256','baseRegistrySha256','kind','lastAttempt','version',...extra].sort());
+ assert.ok([1,2].includes(manifest.version));assert.equal(manifest.kind,'accepted_reviewed_halifax_model_issuance');
+ for(const key of ['archiveSha256','baseRegistrySha256'])assert.match(manifest[key],/^[a-f0-9]{64}$/);
+ assert.equal(manifest.archivePath,`weather-evidence/issuances/${manifest.archiveSha256}.json`);
+ if(manifest.version===2){
+  assert.deepEqual(Object.keys(manifest.lastAttempt).sort(),['attemptedAt','completedAt','reason','status']);assert.equal(manifest.lastAttempt.status,'success');assert.equal(manifest.lastAttempt.reason,'complete');
+  const receipt=manifest.refreshReceipt;
+  assert.deepEqual(Object.keys(receipt).sort(),['admissionReviewId','candidateSha256','finalSha256','kind','policySha256','runNumber','version']);
+  assert.equal(receipt.version,1);assert.equal(receipt.kind,'reviewed_manual_model_refresh');assert.equal(receipt.admissionReviewId,REFRESH_ADMISSION_REVIEW_ID);
+  assert.ok(Number.isSafeInteger(receipt.runNumber)&&receipt.runNumber>0&&receipt.runNumber<=9999);
+  for(const key of ['candidateSha256','finalSha256','policySha256'])assert.match(receipt[key],/^[a-f0-9]{64}$/);
+ }
+ return manifest;
+}
+export function manifestModelRegistry(registry,manifest){
+ validateModelManifest(manifest);const result=structuredClone(registry);
+ if(manifest.version===2)for(const source of result.sources.filter(s=>['noaa','ecmwf'].includes(s.id)))source.acceptedAdmissionReviewIds=[...new Set([...source.acceptedAdmissionReviewIds,manifest.refreshReceipt.admissionReviewId])];
+ return result;
+}
 export function reviewedModelRegistry(registry){
  assert.equal(registry.liveCollectionEnabled,false);const r=structuredClone(registry);
  for(const model of r.models)model.enabled=['gfs','ecmwf_ifs'].includes(model.id);
@@ -12,9 +34,9 @@ export function reviewedModelRegistry(registry){
  return r; // Contribution from reviewed captures, never authorization to collect or schedule.
 }
 const targetKey=t=>stableJson({locationId:t.locationId,variable:t.variable,unit:t.unit,validStart:Date.parse(stamp(t.validStart)),validEnd:Date.parse(stamp(t.validEnd)),eventDefinition:t.eventDefinition??null});
-export function publicModelProjection(archive,{registry,locations,lastAttempt}){
+export function publicModelProjection(archive,{registry,locations,lastAttempt,refreshReceipt=null}){
  const acceptedRegistry=reviewedModelRegistry(registry),result=aggregateIssuedArchive(archive,{registry:acceptedRegistry,locations});
- assert.ok(['success','failed','held','partial','pending','unknown'].includes(lastAttempt.status));stamp(lastAttempt.attemptedAt);stamp(lastAttempt.completedAt);assert.ok(Date.parse(lastAttempt.completedAt)>=Date.parse(lastAttempt.attemptedAt));if(lastAttempt.status==='success')assert.ok(Date.parse(lastAttempt.completedAt)<=Date.parse(archive.issuedAt),'successful capture after frozen issuance');assert.ok(Date.parse(lastAttempt.completedAt)>=Math.max(...archive.captures.map(c=>Date.parse(c.receipt.completedAt))),'health receipt cannot predate accepted facts');
+ assert.ok(['success','failed','held','partial','pending','unknown'].includes(lastAttempt.status));stamp(lastAttempt.attemptedAt);stamp(lastAttempt.completedAt);assert.ok(Date.parse(lastAttempt.completedAt)>=Date.parse(lastAttempt.attemptedAt));if(lastAttempt.status==='success'){if(refreshReceipt){assert.equal(refreshReceipt.kind,'reviewed_manual_model_refresh');assert.equal(refreshReceipt.admissionReviewId,REFRESH_ADMISSION_REVIEW_ID);assert.ok(Date.parse(lastAttempt.attemptedAt)<=Date.parse(archive.issuedAt)&&Date.parse(lastAttempt.completedAt)>=Date.parse(archive.issuedAt),'reviewed run must span its frozen issuance');}else assert.ok(Date.parse(lastAttempt.completedAt)<=Date.parse(archive.issuedAt),'successful capture after frozen issuance');}assert.ok(Date.parse(lastAttempt.completedAt)>=Math.max(...archive.captures.map(c=>Date.parse(c.receipt.completedAt))),'health receipt cannot predate accepted facts');
  const models=acceptedRegistry.models.filter(m=>m.enabled),points=[...locationContract(locations).values()].filter(p=>p.role==='core');
  assert.ok(archive.targets.length>0&&archive.targets.length<=30,'small reviewed forecast horizon');
  assert.ok(archive.targets.every(t=>points.some(p=>p.id===t.locationId)&&t.variable==='temperature_2m'&&t.unit==='C'&&t.validStart===t.validEnd&&t.eventDefinition===null),'public projection only reviewed core temperature instants');
@@ -34,9 +56,9 @@ export function publicModelProjection(archive,{registry,locations,lastAttempt}){
 }
 export async function loadPublicModelProjection(root=new URL('../../',import.meta.url)){
  const manifest=JSON.parse(await readFile(new URL(MODEL_MANIFEST,root),'utf8'));
- assert.deepEqual(Object.keys(manifest).sort(),['archivePath','archiveSha256','baseRegistrySha256','kind','lastAttempt','version']);assert.equal(manifest.version,1);assert.equal(manifest.kind,'accepted_reviewed_halifax_model_issuance');assert.match(manifest.archiveSha256,/^[a-f0-9]{64}$/);assert.equal(manifest.archivePath,`weather-evidence/issuances/${manifest.archiveSha256}.json`);
+ validateModelManifest(manifest);
  const bytes=await readFile(new URL(manifest.archivePath,root));assert.ok(bytes.length<=32*1024*1024);assert.equal(hash(bytes),manifest.archiveSha256,'immutable accepted archive bytes');
  const registry=JSON.parse(await readFile(new URL('data/weather-model-registry.json',root))),locations=JSON.parse(await readFile(new URL('data/weather-locations.json',root)));assert.equal(digest(registry),manifest.baseRegistrySha256,'accepted admission policy changed');
- return {manifest,archive:JSON.parse(bytes),projection:publicModelProjection(JSON.parse(bytes),{registry,locations,lastAttempt:manifest.lastAttempt})};
+ return {manifest,archive:JSON.parse(bytes),projection:publicModelProjection(JSON.parse(bytes),{registry:manifestModelRegistry(registry,manifest),locations,lastAttempt:manifest.lastAttempt,refreshReceipt:manifest.refreshReceipt})};
 }
 export const publicModelBytes=projection=>'// Reviewed model captures; offline projection preserves original clocks.\nwindow.HalifaxWeatherModels = '+JSON.stringify(projection,null,2).replace(/</g,'\\u003c')+';\n';

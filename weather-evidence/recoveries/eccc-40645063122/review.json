@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "kind": "single_reviewed_eccc_semantic_recovery",
+  "reviewId": "eccc-40645063122-http200-clock-review-1",
+  "endpoint": "https://api.weather.gc.ca/collections/citypageweather-realtime/items?f=json&lang=en&bbox=-63.61,44.63,-63.55,44.67&limit=3",
+  "originalIdentity": {
+    "repository": "JeremyHennessy/HalifaxSourced",
+    "repositoryId": "1348899318",
+    "workflowPath": ".github/workflows/weather-preview.yml",
+    "workflowId": "399017463",
+    "runId": "40645063122",
+    "runNumber": 1,
+    "runAttempt": 1,
+    "sha": "2af4b308391a6696b02208bd7afdc07b093d3135",
+    "ref": "refs/heads/main"
+  },
+  "payloadSha256": "8f1d941299b710244387af37cf1678e06e77c0544f8b8eed6035fde34a6e45b1",
+  "finalReceiptSha256": "bd2c5136c2f86ee6b661085a0352784a42d1d7c75d40aa2f848debf68cd3bfcc",
+  "journalSha256": "6db258c2103f3e7dab7115a6b8e735fa3462a669feae0303fa697ec814136e66",
+  "originalReason": "ERR_ASSERTION: future source clock",
+  "notBefore": "2026-10-28T07:33:27.502Z",
+  "expiresAt": "2026-10-29T00:00:00.000Z",
+  "expectedRunNumber": 2,
+  "expectedRunAttempt": 1,
+  "event": "workflow_dispatch",
+  "maximumSourceRequests": 1,
+  "reviewedDiagnosticBaseTree": "76677b77075dd7276fdb8e84328ddbe168190a7e",
+  "approvedCodeDigest": "fc9b598a9fd0e6c8a4220623475ccfeee1f82375580c01aff03959b70c98c760"
+}

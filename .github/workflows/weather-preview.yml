@@ -7,6 +7,13 @@ on:
         type: boolean
         default: false
         required: false
+      reviewed_recovery:
+        description: "One reviewed HTTP200 semantic recovery for run40645063122 only; never a reset"
+        type: choice
+        default: none
+        options:
+          - none
+          - eccc-40645063122-http200-clock-review-1
 permissions:
   contents: read
 concurrency:
@@ -20,6 +27,7 @@ jobs:
     timeout-minutes: 10
     env:
       WEATHER_INITIALIZE_REVIEW_CACHE: ${{ inputs.initialize_review_cache == true && 'true' || 'false' }}
+      WEATHER_REVIEWED_RECOVERY_ID: ${{ inputs.reviewed_recovery || 'none' }}
     steps:
       - uses: actions/checkout@v6
         with:
@@ -32,6 +40,7 @@ jobs:
           node scripts/test-weather.mjs
           node scripts/test-weather-operations.mjs
           node scripts/test-weather-run-lineage.mjs
+          node scripts/test-eccc-reviewed-recovery.mjs
       - name: Validate accepted snapshot
         run: node scripts/check-weather.mjs
       - name: Verify current run and exact sequential predecessor with public GitHub metadata
@@ -53,6 +62,38 @@ jobs:
           path: artifacts/weather-preview-final.json
           key: ${{ steps.lineage.outputs.predecessor-cache-key }}-final
           fail-on-cache-miss: true
+      - name: Check the fixed one-use recovery consumption key before reservation
+        if: steps.lineage.outputs.recovery-requested == 'true'
+        id: recovery-existing
+        uses: actions/cache/restore@v4
+        with:
+          path: artifacts/weather-recovery-consumption.json
+          key: ${{ steps.lineage.outputs.recovery-cache-key }}
+          lookup-only: true
+      - name: Exclusively reserve only the exact reviewed immediate-successor recovery
+        if: steps.lineage.outputs.recovery-requested == 'true'
+        env:
+          WEATHER_PAYLOAD_CACHE_HIT: ${{ steps.review-cache.outputs.cache-hit }}
+          WEATHER_PAYLOAD_CACHE_KEY: ${{ steps.review-cache.outputs.cache-matched-key }}
+          WEATHER_RECEIPT_CACHE_HIT: ${{ steps.final-receipt.outputs.cache-hit }}
+          WEATHER_RECEIPT_CACHE_KEY: ${{ steps.final-receipt.outputs.cache-matched-key }}
+          WEATHER_RECOVERY_EXISTING_HIT: ${{ steps.recovery-existing.outputs.cache-hit }}
+          WEATHER_RECOVERY_EXISTING_KEY: ${{ steps.recovery-existing.outputs.cache-matched-key }}
+        run: node scripts/weather-preview-lineage.mjs reserve-recovery
+      - name: Persist the consumed reservation before any source acquisition
+        if: steps.lineage.outputs.recovery-requested == 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: artifacts/weather-recovery-consumption.json
+          key: ${{ steps.lineage.outputs.recovery-cache-key }}
+      - name: Restore and verify actual reservation bytes, not merely a cache lookup
+        if: steps.lineage.outputs.recovery-requested == 'true'
+        id: recovery-saved
+        uses: actions/cache/restore@v4
+        with:
+          path: artifacts/weather-recovery-consumption.json
+          key: ${{ steps.lineage.outputs.recovery-cache-key }}
+          fail-on-cache-miss: true
       - name: Verify receipt and digest before any weather or source request
         id: collect
         env:
@@ -60,6 +101,8 @@ jobs:
           WEATHER_PAYLOAD_CACHE_KEY: ${{ steps.review-cache.outputs.cache-matched-key }}
           WEATHER_RECEIPT_CACHE_HIT: ${{ steps.final-receipt.outputs.cache-hit }}
           WEATHER_RECEIPT_CACHE_KEY: ${{ steps.final-receipt.outputs.cache-matched-key }}
+          WEATHER_RECOVERY_CACHE_HIT: ${{ steps.recovery-saved.outputs.cache-hit }}
+          WEATHER_RECOVERY_CACHE_KEY: ${{ steps.recovery-saved.outputs.cache-matched-key }}
         run: node scripts/weather-preview-lineage.mjs collect
       - name: Save only a completed current payload
         uses: actions/cache/save@v4
@@ -116,6 +159,8 @@ jobs:
           name: halifax-weather-review-only
           path: |
             artifacts/weather-preview*.json
+            artifacts/weather-recovery*.json
+            artifacts/weather-recovery*.jsonl
             artifacts/eccc-weather-review-journal.jsonl
             artifacts/eccc-weather-review-journal.jsonl.response.json
             artifacts/source-access-diagnostics.jsonl
@@ -124,7 +169,8 @@ jobs:
 # N requires exact N-1 success/attempt 1 plus its exact v1 payload/final receipt.
 # Cache loss, failed/cancelled/interrupted predecessor or rerun breaks the chain;
 # even source requests stop. Empty API history never authorizes initialization.
-# Reviewed recovery and actual bootstrap readiness require separate verification.
+# One explicitly reviewed recovery is pinned to run40645063122; see its descriptor.
+# Durable one-use reservation, exact immediate successor and runtime code digest required.
 # No active schedule, write token, direct publication, AI/model calls or deployment.
 # After reviewed bootstrap + exact successor verification, proposed cadence: 17 * * * *.
-# Manual source readiness never authorizes scheduling. No fallback/reset/recovery input is exposed.
+# Manual source readiness never authorizes scheduling. No generic fallback/reset input exists.

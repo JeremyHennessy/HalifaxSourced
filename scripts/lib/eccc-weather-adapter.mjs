@@ -5,6 +5,7 @@ import fs from 'node:fs/promises';
 import {basename} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {fetchGuardedSource,withSourceDeadline} from './fetch-public-source.mjs';
+import {consumeReviewedRecoveryCapability,beforeReviewedRecoveryRequest} from './eccc-reviewed-recovery.mjs';
 import {openWeatherReviewJournal} from './weather-review-journal.mjs';
 import {ENDPOINT,hash,projectEccc,acceptedEnvelope,retainOnFailure} from './eccc-weather.mjs';
 const registryUrl=new URL('../../data/weather-source-registry.json',import.meta.url);
@@ -20,14 +21,16 @@ async function boundedBody(response,signal) {
     signal.throwIfAborted();const bytes=Buffer.concat(chunks);if(size!==null&&(!response.headers.get('content-encoding')||response.headers.get('content-encoding').trim().toLowerCase()==='identity'))assert.equal(bytes.length,Number(size),'incomplete response body');return bytes;
   } catch(error){void reader.cancel().catch(()=>{});throw error;}
 }
-export async function collectEcccReview({previous=null,journalPath=journalDefault,registry=null,previousCapture=null}={}) {
+export async function collectEcccReview({previous=null,journalPath=journalDefault,registry=null,previousCapture=null,recoveryCapability=null}={}) {
   const config=registry||JSON.parse(await fs.readFile(registryUrl,'utf8'));
   assert.equal(config.version,1);assert.equal(config.sources?.length,1);
   const source=config.sources[0];assert.equal(source.id,'eccc-halifax-citypage');assert.equal(source.endpoint,ENDPOINT);
   assert.equal(source.enabled,true,'Weather collection is disabled; recorded snapshot only.');
   assert.deepEqual(source.expectedCityIds,['ns-19','ns-40']);
   assert.deepEqual(source.expectedStationCodes,['yhz','yaw']);
-  if(previous?.lastAttempt)assert.ok(['success','not_modified'].includes(previous.lastAttempt.status),'Previous weather outcome held; reviewed recovery required');
+  let recoveryRecord=null;
+  if(recoveryCapability){assert.equal(previous?.lastAttempt?.status,'failed');recoveryRecord=consumeReviewedRecoveryCapability(recoveryCapability,previous);}
+  else if(previous?.lastAttempt)assert.ok(['success','not_modified'].includes(previous.lastAttempt.status),'Previous weather outcome held; reviewed recovery required');
   const headers={'User-Agent':UA,Accept:'application/geo+json, application/json;q=0.9'};
   if(previousCapture){
     projectEccc(previousCapture.body,previousCapture.receipt);
@@ -40,7 +43,7 @@ export async function collectEcccReview({previous=null,journalPath=journalDefaul
   const responseEvidencePath=journalPath+'.response.json';
   try{await fs.lstat(responseEvidencePath);throw Object.assign(new Error('EEXIST: Existing weather response evidence; reviewed recovery required'),{code:'EEXIST'});}catch(error){if(error.code!=='ENOENT')throw error;}
   const attemptedAt=new Date().toISOString();
-  const pending={status:'pending',attemptedAt,url:ENDPOINT};
+  const pending={status:'pending',attemptedAt,url:ENDPOINT,...(recoveryRecord?{reviewedRecovery:recoveryRecord}:{})};
   // Fail closed before any source/robots request unless the pending bytes,
   // journal pathname and complete parent directory chain are durable. Existing
   // journals still block reuse; failed barriers never delete or bypass them.
@@ -50,7 +53,7 @@ export async function collectEcccReview({previous=null,journalPath=journalDefaul
   try {
     let requests=0;
     const result=await withSourceDeadline(async signal=>{
-      const response=await fetchGuardedSource(ENDPOINT,{signal,headers},async target=>String(target)===ENDPOINT&&requests++===0);
+      const response=await fetchGuardedSource(ENDPOINT,{signal,headers},async target=>String(target)===ENDPOINT&&requests++===0,recoveryCapability?{beforeRequest:target=>beforeReviewedRecoveryRequest(recoveryCapability,target)}:{});
       const responseAt=new Date().toISOString();
       responseEvidence={url:ENDPOINT,httpStatus:response.status,responseAt};
       if(response.status===304){
