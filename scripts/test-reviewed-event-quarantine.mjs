@@ -125,7 +125,7 @@ try {
   assert.equal(runResult.status, 0, runResult.stderr);
   const sanitized = JSON.parse(await readFile(buildPath, 'utf8'));
   assert.equal(sanitized.events.length, 1);
-  assert.equal(sanitized.scopeAudit.reviewedQuarantine.quarantinedCount, 89);
+  assert.equal(sanitized.scopeAudit.reviewedQuarantine.quarantinedCount, 94);
   for (const event of sanitized.events) {
     const original = details.find(item => item.id === event.id);
     assert(original);
@@ -161,7 +161,7 @@ try {
   assert.equal(report.blocked, true);
   assert.equal(report.heldRemovalCount, 1);
   assert.equal(report.retainedAfterFailureCount, 24);
-  assert.equal(report.reviewedQuarantine.previous.quarantinedCount, 89);
+  assert.equal(report.reviewedQuarantine.previous.quarantinedCount, 94);
   assert.equal(await readFile(buildPath, 'utf8'), currentBytes, 'Blocked diagnostics must not overwrite or promote the candidate');
   assert.equal(await readFile(jsPath, 'utf8'), '// untouched candidate');
   assert.equal(await readFile(join(root, REVIEWED_EVENT_QUARANTINE_PATH), 'utf8'), archiveBytes);
