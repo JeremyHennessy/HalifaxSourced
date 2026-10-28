@@ -168,7 +168,8 @@ try {
 const workflow = await readFile(new URL('../.github/workflows/news-preview.yml',import.meta.url),'utf8');
 assert.match(workflow,/initialize_review_cache:[\s\S]*?default: false/);
 assert.match(workflow,/NEWS_INITIALIZE_REVIEW_CACHE: \$\{\{ inputs.initialize_review_cache \}\}/);
-assert.match(workflow,/node scripts\/import-regional-news.mjs --prepare-review-cache/);
+assert.match(workflow,/node scripts\/news-preview-lineage.mjs collect/);
+assert.doesNotMatch(workflow,/restore-keys:/);
 assert.doesNotMatch(workflow,/\n\s+schedule:/);
 console.log('News date/bootstrap tests passed: RFC calendar precision, failure preservation, first-run-only explicit initialization, no reset or default cache-miss requests.');
 

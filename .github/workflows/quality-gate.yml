@@ -44,6 +44,7 @@ jobs:
           node scripts/build-regional-news.mjs
           node scripts/check-news.mjs
           node scripts/test-regional-news.mjs
+          node scripts/test-news-run-lineage.mjs
           node scripts/test-news-ui.mjs
           node scripts/test-home-discovery.mjs
           node scripts/test-source-catalog.mjs

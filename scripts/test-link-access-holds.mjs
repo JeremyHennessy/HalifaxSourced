@@ -1554,7 +1554,10 @@ assert.equal(acceptedBarriosHolds.find('https://barrioshfx.ca/unknown-page'), nu
   assert(!/^  (?:pull_request|pull_request_target|push|schedule):/m.test(newsWorkflow), 'News collection never runs on PR/push/schedule');
   assert(newsWorkflow.includes('  contents: read') && !newsWorkflow.includes('contents: write'), 'News has no content write permission');
   assert(newsWorkflow.includes("if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)"), 'News only uses trusted default branch');
-  assert(newsWorkflow.includes("NEWS_REQUIRE_CACHE: '1'"), 'News cannot silently discard denied-source history');
+  assert(newsWorkflow.includes('node scripts/news-preview-lineage.mjs plan') && newsWorkflow.includes('node scripts/news-preview-lineage.mjs collect'), 'News must verify exact current/predecessor lineage before collection');
+  assert(newsWorkflow.includes('NEWS_PAYLOAD_CACHE_HIT: ${{ steps.review-cache.outputs.cache-hit }}') && newsWorkflow.includes('NEWS_PAYLOAD_CACHE_KEY: ${{ steps.review-cache.outputs.cache-matched-key }}'), 'News must require the exact predecessor payload, not a partial cache match');
+  assert(newsWorkflow.includes('NEWS_RECEIPT_CACHE_HIT: ${{ steps.final-receipt.outputs.cache-hit }}') && newsWorkflow.includes('NEWS_RECEIPT_CACHE_KEY: ${{ steps.final-receipt.outputs.cache-matched-key }}'), 'News must verify the exact predecessor final receipt before transport');
+  assert(!newsWorkflow.includes('restore-keys:'), 'News must not recover older state that silently discards denied-source history');
   function prPaths(source) {
     const start = source.indexOf('  pull_request:\n');
     if (start < 0) return null;
