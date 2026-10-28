@@ -34,7 +34,9 @@ jobs:
           python -m venv "$RUNNER_TEMP/weather-grib-venv"
           "$RUNNER_TEMP/weather-grib-venv/bin/python" -m pip --isolated install --require-hashes --no-deps --only-binary=:all: --index-url https://pypi.org/simple --retries 0 --timeout 20 -r scripts/weather/requirements-eccodes-reviewed.txt
       - name: Replay actual accepted model captures without source requests
-        run: WEATHER_GRIB_PYTHON="$RUNNER_TEMP/weather-grib-venv/bin/python" node scripts/test-weather-grib-replay.mjs
+        run: |
+          WEATHER_GRIB_PYTHON="$RUNNER_TEMP/weather-grib-venv/bin/python" node scripts/test-weather-grib-replay.mjs
+          WEATHER_GRIB_PYTHON="$RUNNER_TEMP/weather-grib-venv/bin/python" node scripts/test-weather-model-refresh.mjs
 
   data-integrity:
     needs: weather-model-decoder
@@ -83,6 +85,7 @@ jobs:
           node scripts/test-weather-run-lineage.mjs
           node scripts/test-weather-journal.mjs
           node scripts/test-weather-clock-diagnostics.mjs
+          node scripts/test-eccc-reviewed-recovery.mjs
           node scripts/test-weather-ui.mjs
           node scripts/test-weather-aggregation.mjs
           node scripts/test-weather-model-adversarial.mjs
@@ -92,6 +95,10 @@ jobs:
           node scripts/check-weather-models.mjs
           node scripts/test-weather-model-publication.mjs
           node scripts/test-weather-model-ui.mjs
+          node scripts/test-weather-model-discovery.mjs
+          node scripts/test-weather-model-refresh-state.mjs
+          node scripts/test-weather-model-refresh-transport.mjs
+          node scripts/test-weather-model-refresh.mjs
 
       - name: Run structured-special evidence regression
         run: |

@@ -1,0 +1,2 @@
+{"status":"pending","attemptedAt":"2026-10-28T06:38:27.184Z","url":"https://api.weather.gc.ca/collections/citypageweather-realtime/items?f=json&lang=en&bbox=-63.61,44.63,-63.55,44.67&limit=3"}
+{"status":"failed","attemptedAt":"2026-10-28T06:38:27.184Z","completedAt":"2026-10-28T06:38:27.502Z","reason":"ERR_ASSERTION: future source clock","response":{"url":"https://api.weather.gc.ca/collections/citypageweather-realtime/items?f=json&lang=en&bbox=-63.61,44.63,-63.55,44.67&limit=3","httpStatus":200,"responseAt":"2026-10-28T06:38:27.499Z"}}

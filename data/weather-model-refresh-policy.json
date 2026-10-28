@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "kind": "manual_halifax_model_refresh_policy",
+  "enabled": false,
+  "scheduleEnabled": false,
+  "sourceIds": ["noaa", "ecmwf"],
+  "modelIds": ["gfs", "ecmwf_ifs"],
+  "pointIds": ["halifax_peninsula", "bedford", "dartmouth"],
+  "variable": "temperature_2m",
+  "unit": "C",
+  "admissionReviewId": "halifax-gfs-ifs-refresh-v1",
+  "minimumCadenceMinutes": 55,
+  "maxTargets": 5,
+  "targetSpacingHours": 3,
+  "futureWindowHours": 24,
+  "normalization": "existing_reviewed_decoder_and_family_aggregation",
+  "publication": "review_only_no_public_artifact_writes",
+  "retention": "512MiB_private_store_hard_stop_no_automatic_deletion",
+  "readiness": "disabled_pending_independent_review_and_exact_main_verification"
+}

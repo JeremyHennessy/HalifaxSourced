@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "kind": "weather_preview_final",
+  "identity": {
+    "repository": "JeremyHennessy/HalifaxSourced",
+    "repositoryId": "1348899318",
+    "workflowPath": ".github/workflows/weather-preview.yml",
+    "workflowId": "399017463",
+    "runId": "40645063122",
+    "runNumber": 1,
+    "runAttempt": 1,
+    "sha": "2af4b308391a6696b02208bd7afdc07b093d3135",
+    "ref": "refs/heads/main"
+  },
+  "cacheKey": "weather-review-v1-1348899318-399017463-1-40645063122-1-2af4b308391a6696b02208bd7afdc07b093d3135",
+  "payloadSha256": "8f1d941299b710244387af37cf1678e06e77c0544f8b8eed6035fde34a6e45b1",
+  "transportDecisionsDrained": true,
+  "payloadCacheVerified": true
+}

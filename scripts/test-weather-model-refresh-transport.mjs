@@ -1,0 +1,33 @@
+import assert from 'node:assert/strict';
+import {createRefreshTransport,REFRESH_LIMITS,RefreshStop,transientDisposition} from './lib/weather-model-refresh-transport.mjs';
+import {sha256} from './lib/weather-model-refresh-state.mjs';
+globalThis.fetch=()=>assert.fail('transport tests require injected offline response');
+let groups=0;const url='https://nomads.ncep.noaa.gov/cgi-bin/filter_gfs_0p25.pl',now='2026-10-28T05:00:00.000Z';
+function setup(response,{fetcher,guard,limits}={}){
+ const events=[],blobs=new Map(),calls=[];let tick=0;
+ const run={append:async e=>{events.push(e);},blob:async bytes=>{const id=sha256(bytes);blobs.set(id,bytes);return id;},readBlob:async id=>{assert.ok(blobs.has(id));return blobs.get(id);}};
+ const access=guard||{access:{find:()=>null},pendingAccessHolds:[],pendingTransportReviews:[],drainDecisions:async()=>{}};
+ const fake=fetcher||(async(target,options,allows,observer)=>{assert.equal(events.at(-1).event,'request_pending','durable pending precedes request');assert.ok(await allows(target));observer.beforeRequest(target);calls.push({target,options});observer.afterResponse(target,response,{observedAt:now});return response;});
+ const transport=createRefreshTransport({run,now:()=>now,monotonic:()=>tick,sleep:async ms=>{tick+=ms;},fetcher:fake,guard:access,limits:{...REFRESH_LIMITS,...limits}});
+ const request=(extra={})=>transport.request({url,sourceId:'noaa',kind:'listing',maximumBytes:1024,robots:{state:'absent'},...extra});return {run,events,blobs,calls,transport,request};
+}
+let t=setup(new Response('hello',{status:200,headers:{etag:'"x"','content-length':'5'}}));const first=await t.request();assert.equal(first.complete,true);assert.equal(first.bodySha256,sha256(Buffer.from('hello')));assert.equal(t.calls[0].options.headers['Accept-Encoding'],'identity');assert.equal(t.transport.stats().operations,1);groups++;
+t=setup(new Response(null,{status:304}));t.blobs.set(first.bodySha256,first.body);const revalidated=await t.request({cached:first});assert.equal(revalidated.completedAt,first.completedAt);assert.equal(revalidated.bodySha256,first.bodySha256);assert.equal(t.calls[0].options.headers['If-None-Match'],'"x"');assert.equal(revalidated.revalidation.status,304);groups++;
+t=setup(new Response(null,{status:304}));await assert.rejects(()=>t.request(),/304 without/);groups++;
+for(const status of [401,403,429,404,500]){t=setup(new Response('error',{status}));await assert.rejects(()=>t.request(),e=>e instanceof RefreshStop&&e.disposition==='held');}groups++;
+t=setup(new Response('maintenance',{status:503,headers:{'Retry-After':'7200'}}));let error;try{await t.request();}catch(e){error=e;}assert.equal(error.disposition,'backoff');const backoff=transientDisposition(error.details.receipt,Buffer.from(error.details.bodyBase64,'base64'));assert.equal(backoff.nextAttemptNotBefore,'2026-10-28T07:00:00.000Z');assert.equal(backoff.transientCount,1);assert.equal(transientDisposition(error.details.receipt,Buffer.from('maintenance'),3).disposition,'held');assert.equal(transientDisposition(error.details.receipt,Buffer.from('verify your browser')).disposition,'held');assert.equal(transientDisposition(error.details.receipt,Buffer.from(' '.repeat(65536)+'verify your browser')).disposition,'held');assert.equal(transientDisposition({...error.details.receipt,headers:{'retry-after':'invalid'}},Buffer.from('maintenance')).disposition,'held');groups++;
+for(const [headers,body]of [[{'content-length':'5000'},'small'],[{'content-encoding':'gzip'},'small'],[{'content-length':'7'},'small']]){t=setup(new Response(body,{headers}));await assert.rejects(()=>t.request(),e=>e.disposition==='held');assert.equal(t.events.at(-1).event,'request_unresolved');}groups++;
+t=setup(new Response('x'.repeat(2000)));await assert.rejects(()=>t.request(),/byte limit/);groups++;
+t=setup(null,{fetcher:async()=>{throw Error('socket lost');}});await assert.rejects(()=>t.request(),e=>e.disposition==='held');assert.equal(t.events.at(-1).complete,false);groups++;
+t=setup(new Response('redirect',{status:302,headers:{location:'https://nomads.ncep.noaa.gov/alternate'}}));await assert.rejects(()=>t.request(),/redirect/);assert.equal(t.calls.length,1);groups++;
+t=setup(new Response('data'));await assert.rejects(()=>t.request({robots:{state:'unavailable'}}),/robots/);assert.equal(t.events.length,0);groups++;
+t=setup(new Response('data'),{guard:{access:{find:()=>({id:'held'})}}});await assert.rejects(()=>t.request(),/source_access_hold/);assert.equal(t.events.length,0);groups++;
+t=setup(new Response('data'));await assert.rejects(()=>t.request({url:'https://open-meteo.com/'}),/unreviewed/);await assert.rejects(()=>t.request({sourceId:'ecmwf'}));assert.equal(t.events.length,0);groups++;
+t=setup(new Response('unbounded'));await assert.rejects(()=>t.request({url:'https://data.ecmwf.int/forecasts/test.grib2',sourceId:'ecmwf',kind:'field'}),/requires exact bounded Range/);assert.equal(t.events.length,0);groups++;
+const rangeUrl='https://data.ecmwf.int/forecasts/20261027/18z/ifs/0p25/oper/20261027180000-12h-oper-fc.grib2';t=setup(new Response('GRIB',{status:206,headers:{'content-range':'bytes 10-13/100'}}));const field=await t.request({url:rangeUrl,sourceId:'ecmwf',kind:'field',range:'bytes=10-13'});assert.equal(field.bodyBytes,4);groups++;
+for(const status of [200,206]){t=setup(new Response('GRIB',{status,headers:{'content-range':'bytes 10-14/100'}}));await assert.rejects(()=>t.request({url:rangeUrl,sourceId:'ecmwf',kind:'field',range:'bytes=10-13'}),e=>e.disposition==='held');}groups++;
+t=setup(null,{limits:{deadlineMs:10},fetcher:async()=>new Promise(()=>{})});await assert.rejects(()=>t.request(),e=>e.disposition==='held');assert.equal(t.events.at(-1).status,null);groups++;
+t=setup(new Response('x'),{limits:{requests:0}});await assert.rejects(()=>t.request(),/budget/);assert.equal(t.events.length,0);groups++;
+t=setup(new Response('<html>verify your browser</html>',{status:200}));await assert.rejects(()=>t.request(),/metadata_access_challenge/);groups++;
+ t=setup(new Response('data'));t.run.append=async()=>{throw Error('fsync failed');};await assert.rejects(()=>t.request(),/fsync failed/);assert.equal(t.calls.length,0);groups++;
+ console.log(`${groups} offline refresh transport groups passed: pending barrier, identity bytes, conditional clocks, exact Range, transient/backoff vs access/unknown holds, limits and no alternate routes.`);

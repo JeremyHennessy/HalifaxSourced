@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import {readFile,stat} from 'node:fs/promises';
 import {spawnSync} from 'node:child_process';
-import {loadPublicModelProjection,publicModelProjection,publicModelBytes} from './lib/weather-model-publication.mjs';
+import {loadPublicModelProjection,publicModelProjection,publicModelBytes,manifestModelRegistry} from './lib/weather-model-publication.mjs';
 import {digest} from './lib/weather-aggregation.mjs';
 globalThis.fetch=()=>assert.fail('Public model projection is offline');
 const root=new URL('../',import.meta.url),{manifest,archive,projection}=await loadPublicModelProjection(root),registry=JSON.parse(await readFile(new URL('data/weather-model-registry.json',root))),locations=JSON.parse(await readFile(new URL('data/weather-locations.json',root)));
@@ -11,9 +11,9 @@ assert.ok(projection.forecasts.length>0);for(const f of projection.forecasts){as
 for(const id of ['eccc','dwd','open_meteo']){const source=projection.sourceStates.find(s=>s.id===id);assert.equal(source.contributes,false);assert.equal(source.status,'held');}
 assert.ok(projection.sourceStates.filter(s=>s.contributes).every(s=>['ecmwf','noaa'].includes(s.id)&&s.status==='accepted'));
 const text=JSON.stringify(projection);assert.doesNotMatch(text,/bodyBase64|responseHeaders|set-cookie|rangeEvidence|\/workspace\/|\/tmp\/|authorization|api[_-]?key/i,'raw/source diagnostics must not enter browser artifact');assert.ok(projection.attribution.some(a=>a.sourceId==='ecmwf'&&a.licenceUrl==='https://creativecommons.org/licenses/by/4.0/'));
-for(const change of [a=>a.issuedAt='2026-01-01T00:00:00Z',a=>a.captures[0].decoded.points[0].valueC+=1,a=>a.outcomes.pop(),a=>a.outcomes[0].rows[0].firstRetrievedAt=a.issuedAt,a=>a.targets[0].locationId='moncton']){const bad=structuredClone(archive);change(bad);assert.throws(()=>publicModelProjection(bad,{registry,locations,lastAttempt:manifest.lastAttempt}));}
+for(const change of [a=>a.issuedAt='2026-01-01T00:00:00Z',a=>a.captures[0].decoded.points[0].valueC+=1,a=>a.outcomes.pop(),a=>a.outcomes[0].rows[0].firstRetrievedAt=a.issuedAt,a=>a.targets[0].locationId='moncton']){const bad=structuredClone(archive);change(bad);assert.throws(()=>publicModelProjection(bad,{registry:manifestModelRegistry(registry,manifest),locations,lastAttempt:manifest.lastAttempt,refreshReceipt:manifest.refreshReceipt}));}
 const laterFailure={status:'failed',attemptedAt:new Date(Date.parse(archive.issuedAt)+3600000).toISOString(),completedAt:new Date(Date.parse(archive.issuedAt)+3601000).toISOString()};
-const retained=publicModelProjection(archive,{registry,locations,lastAttempt:laterFailure});assert.equal(retained.issuedAt,projection.issuedAt);assert.deepEqual(retained.forecasts,projection.forecasts,'later failure cannot freshen or rewrite retained facts');assert.equal(retained.lastAttempt.status,'failed');
+const retained=publicModelProjection(archive,{registry:manifestModelRegistry(registry,manifest),locations,lastAttempt:laterFailure});assert.equal(retained.issuedAt,projection.issuedAt);assert.deepEqual(retained.forecasts,projection.forecasts,'later failure cannot freshen or rewrite retained facts');assert.equal(retained.lastAttempt.status,'failed');
 const before=await readFile(new URL('data/weather-models.js',root)),mtime=(await stat(new URL('data/weather-models.js',root))).mtimeMs;
 for(let i=0;i<2;i++){const run=spawnSync(process.execPath,['scripts/build-weather-models.mjs'],{cwd:root,encoding:'utf8'});assert.equal(run.status,0,run.stderr);assert.equal((await stat(new URL('data/weather-models.js',root))).mtimeMs,mtime);assert.deepEqual(await readFile(new URL('data/weather-models.js',root)),before);}
 assert.equal(before.toString(),publicModelBytes(projection));assert.ok(archive.captures.filter(c=>c.sourceId==='ecmwf').every(c=>c.receipt.rangeEvidence.listing.kind==='reviewed_listing_anchor_extract'&&!c.receipt.rangeEvidence.listing.bodyBase64));
