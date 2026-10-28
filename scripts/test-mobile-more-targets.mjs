@@ -18,7 +18,7 @@ assert.match(targetRule, /flex-shrink:0;/, 'Do not let the heading shrink its cl
 const sheetMarkup = html.match(/<aside[^>]*data-mobile-more-sheet[\s\S]*?<\/aside>/)?.[0] || '';
 assert.match(sheetMarkup, /<button[^>]*data-mobile-more-close[^>]*aria-label="Close more navigation"/);
 assert.deepEqual([...sheetMarkup.matchAll(/<a href="([^"]+)"/g)].map(match => match[1]),
-  ['#news', '#specials', '#menus', '#saved', '#explore?feature=opening'], 'Retain every More-menu destination');
+  ['#news', '#weather', '#specials', '#menus', '#saved', '#explore?feature=opening'], 'Retain every More-menu destination');
 
 // Exercise the actual audit branch without launching a browser. In particular,
 // 43.99999999999994 must still fail, and the failure must not print as 44px.

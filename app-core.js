@@ -413,14 +413,15 @@ function navigateDiscovery(values = {}, name = "explore", reset = false) {
   navigate(discoveryHash(name, { ...(reset ? discoveryStateFromParams(new URLSearchParams()) : state), ...values }));
 }
 function renderRoute() {
+  if (typeof clearWeatherViewRefresh === "function") clearWeatherViewRefresh();
   destroyMap();
   const current = route();
   updateNav(current.name);
-  // News owns its URL filters; they must not overwrite restaurant discovery state.
-  if (current.name !== "news") Object.assign(state, discoveryStateFromParams(current.params));
+  // News and Weather must not overwrite restaurant discovery state.
+  if (!["news", "weather"].includes(current.name)) Object.assign(state, discoveryStateFromParams(current.params));
   globalSearch.value = state.query;
   if (["explore", "map"].includes(current.name)) state.discoveryReturnHash = discoveryHash(current.name);
-  const titles = { home: "Local news, events & food", explore: "Restaurants", events: "Events", news: "Local news & notices", specials: "Specials", menus: "Menus", map: "Restaurant map", saved: "Saved places" };
+  const titles = { home: "Local news, events & food", explore: "Restaurants", events: "Events", news: "Local news & notices", weather: "Halifax weather", specials: "Specials", menus: "Menus", map: "Restaurant map", saved: "Saved places" };
   const restaurantTitle = current.name === "restaurant" ? restaurants.find(item => item.id === current.id)?.name : null;
   document.title = `${restaurantTitle || titles[current.name] || "Discover local"} | Halifax Sourced`;
 
@@ -428,6 +429,7 @@ function renderRoute() {
     case "explore": renderExplore(); break;
     case "events": renderEvents(); break;
     case "news": renderNews(); break;
+    case "weather": renderWeather(); break;
     case "specials": renderSpecials(); break;
     case "menus": renderMenus(); break;
     case "map": renderMapPage(); break;

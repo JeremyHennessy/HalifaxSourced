@@ -237,3 +237,7 @@ GitHub Pages deployment is gated behind the `Quality Gate` workflow. Pull reques
 ### SQLite export scope
 
 `data/build/halifax_sourced.sqlite` is a partial research export, not a complete mirror of the app. Its `export_contract` table and `data/build/sqlite-export-contract.json` version the scope. Restaurant IDs and source coverage scores preserve catalog parity, including inactive records. The `events` and `specials` tables contain curated restaurant arrays only, not the structured city-event or offer datasets. Structured place facts and operating lifecycle are not included. Use the canonical JSON and source payloads for operating status, current hours, current offers, and complete event coverage. Unknown fields remain unknown; rebuild time is not source verification time.
+
+### Recorded Halifax weather foundation
+
+`#weather` presents one official ECCC regional forecast plus explicitly named Stanfield and Shearwater observations, with immutable source clocks and view-time freshness. It is a recorded manual snapshot, not live collection or an accuracy/calibration claim. The weather registry remains disabled; no new schedule or browser source requests. See [the weather contract and admission evidence](docs/weather-foundation.md) for source rights, six-point HRM scope limits, stale/unavailable warning semantics, fixture provenance and tests.
