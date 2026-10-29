@@ -25,8 +25,14 @@ assert.equal(mismatch.blocked, true);
 assert.deepEqual(mismatch.events, [changed]);
 assert.equal(mismatch.receipt.mismatchCount, 1);
 
-const previousCarleton = current.events.find(event => event.id === 'the-carleton-2d6665b8890674d0');
-assert(previousCarleton);
+const publishedCarleton = current.events.find(event => event.id === 'the-carleton-2d6665b8890674d0');
+assert(publishedCarleton);
+// Keep this as the historical pre-status record even after the accepted
+// snapshot itself has adopted the publisher's SOLD OUT title.
+const previousCarleton = {
+  ...publishedCarleton,
+  title: 'AfterWords Literary Festival – Dodge City: In Conversation'
+};
 const freshCarleton = {
   ...previousCarleton,
   id: 'the-carleton-b0bd3f0b147abd21',
