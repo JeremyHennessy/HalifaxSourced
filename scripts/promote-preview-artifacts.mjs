@@ -82,6 +82,7 @@ const REVIEW_ONLY_FILES_BY_ARTIFACT = {
   ],
   "city-events-preview": [
     "artifacts/city-event-source-drift-report.json",
+    "artifacts/city-event-quarantine-report.json",
     "artifacts/city-event-integrity-report.json",
     "artifacts/event-entity-resolution-report.json",
     "artifacts/city-event-additions-report.json"
