@@ -15,7 +15,10 @@ import {sourceAccessState} from './lib/source-access-state.mjs';
 import {ENDPOINT,hash} from './lib/eccc-weather.mjs';
 const root=new URL('../',import.meta.url),read=path=>fs.readFile(new URL(path,root)),copy=structuredClone;
 const payloadBytes=await read(RECOVERY_DIRECTORY+'/original-payload.json'),finalBytes=await read(RECOVERY_DIRECTORY+'/original-final.json'),journalBytes=await read(RECOVERY_DIRECTORY+'/original-journal.jsonl'),payload=JSON.parse(payloadBytes),previous=validateCapture(payload.manifest,jsonBytes(payload.capture));
-const review=await loadRecoveryReview(),codeState=await recoveryCodeState(),registry=JSON.parse(await read('data/weather-source-registry.json')),now='2026-10-28T08:00:00.000Z';
+// Quality rebuilds deterministic tracked data before this retired-recovery test.
+// Hash its actual bytes so any change still retires the reviewed capability, but
+// leave the clean-checkout requirement on production reserve/authorize paths.
+const review=await loadRecoveryReview(),codeState=await recoveryCodeState({requireClean:false}),registry=JSON.parse(await read('data/weather-source-registry.json')),now='2026-10-28T08:00:00.000Z';
 const repository={id:1348899318,full_name:'JeremyHennessy/HalifaxSourced',private:false,default_branch:'main'};
 const prior={id:40645063122,workflow_id:399017463,run_number:1,run_attempt:1,repository,path:ORIGINAL_IDENTITY.workflowPath,head_sha:ORIGINAL_IDENTITY.sha,head_branch:'main',event:'workflow_dispatch',status:'completed',conclusion:'success'};
 const current={...prior,id:40645063123,run_number:2,head_sha:codeState.checkoutSha,status:'in_progress',conclusion:null};
