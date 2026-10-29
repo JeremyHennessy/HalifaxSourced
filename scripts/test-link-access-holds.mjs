@@ -23,8 +23,10 @@ const dependencies = [
 const fullReviewedPolicy = JSON.parse(await readFile(new URL('../data/source-link-access-holds.json', import.meta.url), 'utf8'));
 // Preserve the original 224-receipt regression corpus independently of the
 // ten previously reviewed exact holds, six source-refresh holds, seven
-// Quality Gate holds, three Social Source holds and two current place-fact holds.
-const policyBeforeBedfordMenus = {...structuredClone(fullReviewedPolicy), historicalEvidence:structuredClone(fullReviewedPolicy.historicalEvidence.slice(0, -1))};
+// Quality Gate holds, three Social Source holds, two current place-fact holds,
+// the Bedford menus hold and the current Crème robots hold.
+const policyBeforeCremeRobots = {...structuredClone(fullReviewedPolicy), historicalEvidence:structuredClone(fullReviewedPolicy.historicalEvidence.slice(0, -1))};
+const policyBeforeBedfordMenus = {...structuredClone(policyBeforeCremeRobots), historicalEvidence:structuredClone(policyBeforeCremeRobots.historicalEvidence.slice(0, -1))};
 const policyBeforePlaceFacts = {...structuredClone(policyBeforeBedfordMenus), historicalEvidence:structuredClone(policyBeforeBedfordMenus.historicalEvidence.slice(0, -2))};
 const policyBeforeThumbnail = {...structuredClone(policyBeforePlaceFacts), historicalEvidence:structuredClone(policyBeforePlaceFacts.historicalEvidence.slice(0, -3))};
 const policyBeforeTako = {...structuredClone(policyBeforeThumbnail), historicalEvidence:structuredClone(policyBeforeThumbnail.historicalEvidence.slice(0, -7))};
@@ -255,6 +257,8 @@ process.on('exit', () => {
   validateAccessPolicy(policyBeforeTako);
   validateAccessPolicy(policyBeforeThumbnail);
   validateAccessPolicy(policyBeforePlaceFacts);
+  validateAccessPolicy(policyBeforeBedfordMenus);
+  validateAccessPolicy(policyBeforeCremeRobots);
   validateAccessPolicy(fullReviewedPolicy);
   assert.equal(priorReviewedPolicy.historicalEvidence.length, committedPolicy.historicalEvidence.length + 8, 'Only five Barrios groups, one Secret Sauce group, one Greco feed group and one happy-hour API group added to immutable baseline');
   assert.equal(reviewedBeforeCurrentRun.historicalEvidence.length, priorReviewedPolicy.historicalEvidence.length + 2, 'Only the exact Little Pisa homepage and menu receipts extend the prior reviewed policy');
@@ -262,7 +266,8 @@ process.on('exit', () => {
   assert.equal(policyBeforeThumbnail.historicalEvidence.length, policyBeforeTako.historicalEvidence.length + 7, 'Only seven exact Tako Sushi & Ramen HTTP 401 receipts extend the reviewed policy');
   assert.equal(policyBeforePlaceFacts.historicalEvidence.length, policyBeforeThumbnail.historicalEvidence.length + 3, 'Only three exact thumbnail-discovery HTTP 403 receipts extend the reviewed policy');
   assert.equal(policyBeforeBedfordMenus.historicalEvidence.length, policyBeforePlaceFacts.historicalEvidence.length + 2, 'Only two exact structured-place-fact HTTP 403 receipts extend the reviewed policy');
-  assert.equal(fullReviewedPolicy.historicalEvidence.length, policyBeforeBedfordMenus.historicalEvidence.length + 1, 'Only the exact Bedford Basin Market menus HTTP 403 receipt extends the reviewed policy');
+  assert.equal(policyBeforeCremeRobots.historicalEvidence.length, policyBeforeBedfordMenus.historicalEvidence.length + 1, 'Only the exact Bedford Basin Market menus HTTP 403 receipt extends the reviewed policy');
+  assert.equal(fullReviewedPolicy.historicalEvidence.length, policyBeforeCremeRobots.historicalEvidence.length + 1, 'Only the exact Crème robots.txt HTTP 403 receipt extends the reviewed policy');
   const newBarriosGroups = priorReviewedPolicy.historicalEvidence.slice(-8, -3);
   for (const group of newBarriosGroups) {
     const p = group.provenance;
@@ -551,7 +556,7 @@ assert.equal(acceptedBarriosHolds.find('https://barrioshfx.ca/unknown-page'), nu
   await gate(placeFactCheck.report);
   checked('two receipt-backed place-fact URL holds are unattempted; sibling query variants remain independently eligible');
 
-  const bedfordMenusGroup = fullReviewedPolicy.historicalEvidence.at(-1);
+  const bedfordMenusGroup = policyBeforeCremeRobots.historicalEvidence.at(-1);
   const bedfordMenusUrl = 'https://www.bedfordbasinmarket.com/menus';
   const bedfordMenusSibling = 'https://www.bedfordbasinmarket.com/menus-archive';
   {
@@ -569,10 +574,10 @@ assert.equal(acceptedBarriosHolds.find('https://barrioshfx.ca/unknown-page'), nu
     assert.equal(bedfordMenusGroup.observations[0].url, bedfordMenusUrl);
     assert.equal(bedfordMenusGroup.observations[0].status, 403);
   }
-  const acceptedBedfordMenusHolds = createAccessHolds(fullReviewedPolicy);
+  const acceptedBedfordMenusHolds = createAccessHolds(policyBeforeCremeRobots);
   assert.equal(acceptedBedfordMenusHolds.find(bedfordMenusUrl)?.scope, 'url', 'The exact denied Bedford menus URL is held');
   assert.equal(acceptedBedfordMenusHolds.find(bedfordMenusSibling), null, 'An unevidenced Bedford menus sibling remains eligible');
-  await configure({policy:fullReviewedPolicy, catalog:catalogFor([bedfordMenusUrl, bedfordMenusSibling])});
+  await configure({policy:policyBeforeCremeRobots, catalog:catalogFor([bedfordMenusUrl, bedfordMenusSibling])});
   const bedfordMenusCheck = await collect({[bedfordMenusSibling]:[ok]});
   assert.equal(bedfordMenusCheck.report.counts.held, 1);
   assert.equal(bedfordMenusCheck.report.counts.attempted, 1);
@@ -580,6 +585,36 @@ assert.equal(acceptedBarriosHolds.find('https://barrioshfx.ca/unknown-page'), nu
   held(bedfordMenusCheck.report.results[0], bedfordMenusGroup.observations[0]);
   await gate(bedfordMenusCheck.report);
   checked('Bedford Basin Market exact menus URL is unattempted; an unevidenced sibling path remains eligible');
+
+  const cremeRobotsGroup = fullReviewedPolicy.historicalEvidence.at(-1);
+  const cremeRobotsUrl = 'https://cremehalifax.com/robots.txt';
+  const cremeRobotsSibling = 'https://cremehalifax.com/menu';
+  {
+    const p = cremeRobotsGroup.provenance;
+    assert.equal(p.kind, 'reviewed_workflow_log');
+    assert.equal(p.workflowRunId, '40908032917');
+    assert.equal(p.workflowJob, 'refresh');
+    assert.equal(p.workflowJobId, 123568060541);
+    assert.equal(p.sourceCommitSha, 'e95e2d4a7539ba289a6be4b9e80732240b93dd34');
+    assert.equal(p.accessPolicySha256, digest(policyBeforeCremeRobots), 'Crème robots receipt references the exact pre-hold policy');
+    assert.equal(p.logSha256, 'ee18b6213eb72d7fac70fe1fa8ecb064917bdc4865fcb38478439390be6f8674');
+    assert.equal(p.diagnosticSha256, digest(p.diagnostic));
+    assert.equal(p.receiptSha256, digest(p.diagnostic.evidence.receipt));
+    assert.deepEqual(cremeRobotsGroup.observations, [p.diagnostic.evidence.hold.evidence]);
+    assert.equal(cremeRobotsGroup.observations[0].url, cremeRobotsUrl);
+    assert.equal(cremeRobotsGroup.observations[0].status, 403);
+  }
+  const acceptedCremeRobotsHolds = createAccessHolds(fullReviewedPolicy);
+  assert.equal(acceptedCremeRobotsHolds.find(cremeRobotsUrl)?.scope, 'url', 'The exact denied Crème robots URL is held');
+  assert.equal(acceptedCremeRobotsHolds.find(cremeRobotsSibling), null, 'An unevidenced Crème sibling remains eligible');
+  await configure({policy:fullReviewedPolicy, catalog:catalogFor([cremeRobotsUrl, cremeRobotsSibling])});
+  const cremeRobotsCheck = await collect({[cremeRobotsSibling]:[ok]});
+  assert.equal(cremeRobotsCheck.report.counts.held, 1);
+  assert.equal(cremeRobotsCheck.report.counts.attempted, 1);
+  assert.deepEqual(cremeRobotsCheck.events.filter(e=>e.event==='fetch').map(e=>e.url), [cremeRobotsSibling]);
+  held(cremeRobotsCheck.report.results[0], cremeRobotsGroup.observations[0]);
+  await gate(cremeRobotsCheck.report);
+  checked('Crème exact robots URL is unattempted; an unevidenced sibling path remains eligible');
 
 
   assert(committedPolicy.historicalEvidence[0].observations.every(row => row.status === 403 && new URL(row.url).hostname === 'junglejims.ca'));
