@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-24T11:13:21.069Z",
-  "eventCount": 1449,
-  "venueResolved": 1401,
-  "organizerResolved": 1428,
-  "restaurantResolved": 11,
-  "unresolvedVenue": 48,
+  "generatedAt": "2026-10-29T13:13:47.131Z",
+  "eventCount": 1332,
+  "venueResolved": 1280,
+  "organizerResolved": 1311,
+  "restaurantResolved": 10,
+  "unresolvedVenue": 52,
   "unresolvedOrganizer": 21,
   "resolutions": [
     {
@@ -13,28 +13,6 @@
       "sourceId": "tourism-ns-events",
       "venueId": null,
       "venueBasis": null,
-      "organizerId": null,
-      "organizerBasis": null,
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "tourism-ns-events-ab953759ccba7e25",
-      "title": "Halifax Wanderers 2026 Season",
-      "sourceId": "tourism-ns-events",
-      "venueId": "wanderers-grounds-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": null,
-      "organizerBasis": null,
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "tourism-ns-events-128b619c76c31253",
-      "title": "Halifax Tides FC 2026 Season",
-      "sourceId": "tourism-ns-events",
-      "venueId": "wanderers-grounds-halifax",
-      "venueBasis": "exact_normalized_venue_name",
       "organizerId": null,
       "organizerBasis": null,
       "restaurantId": null,
@@ -70,28 +48,6 @@
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": null,
       "organizerBasis": null,
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "https://novascotia.com/event/dracula-a-comedy-of-terrors/#event",
-      "title": "Dracula: A Comedy of Terrors",
-      "sourceId": "tourism-ns-events",
-      "venueId": "neptune-theatre-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": null,
-      "organizerBasis": null,
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-901ee50f7e2f073a",
-      "title": "Library Store",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
       "restaurantId": null,
       "restaurantBasis": null
     },
@@ -195,259 +151,6 @@
       "restaurantBasis": "exact_venue_place_name"
     },
     {
-      "eventId": "woodlawn-library-events-99798233783b6b4a",
-      "title": "No One Fights Alone: Cancer Support",
-      "sourceId": "woodlawn-library-events",
-      "venueId": "woodlawn-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-dbffbf165dee348e",
-      "title": "Art Explorers",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "captain-william-spry-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-198e268e8ae0fa60",
-      "title": "Family Craft Drop-in",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "alderney-gate-library-events-bf5237b96483fab8",
-      "title": "Family Drop-in",
-      "sourceId": "alderney-gate-library-events",
-      "venueId": "alderney-gate-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "bedford-library-events-68ab169915bf5f81",
-      "title": "Library Store",
-      "sourceId": "bedford-library-events",
-      "venueId": "bedford-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-3a81d917354660b3",
-      "title": "Puppet Show: The Great Halloween Costume Caper",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "keshen-goodman-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "bedford-library-events-20781097868f48be",
-      "title": "Puppet Show: Too Much Noise on Halloween Night",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "bedford-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-320ae61d2aab6a51",
-      "title": "Web Design 101",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "keshen-goodman-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "woodlawn-library-events-781108694489a263",
-      "title": "Books & Blocks",
-      "sourceId": "woodlawn-library-events",
-      "venueId": "woodlawn-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-ef6802381a1efc05",
-      "title": "Halifax North's 60th Anniversary",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "halifax-north-memorial-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-62b44e5073a969c6",
-      "title": "Adventurers’ Guild: Dungeons & Dragons for Youth",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "captain-william-spry-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "alderney-gate-library-events-abcc517237b632f7",
-      "title": "Dartmouth Junior Chess Club",
-      "sourceId": "alderney-gate-library-events",
-      "venueId": "alderney-gate-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "alderney-gate-library-events-8e5d3bafce880688",
-      "title": "Estate Planning Clinic",
-      "sourceId": "alderney-gate-library-events",
-      "venueId": "alderney-gate-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "the-carleton-20aad502c22e9ce6",
-      "title": "SOLD OUT: Garnet Rogers – Saturday matinee",
-      "sourceId": "the-carleton",
-      "venueId": "the-carleton-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "the-carleton",
-      "organizerBasis": "source_id",
-      "restaurantId": "osm-node-771690675-the-carleton",
-      "restaurantBasis": "exact_venue_place_name"
-    },
-    {
-      "eventId": "halifax-public-libraries-94b6c8921ee2037b",
-      "title": "Exploring Cultural Roots Through Music: Mi’kmaq Connections Youth Workshop",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-7eeda4176a3f9a8e",
-      "title": "Introductory Beading Workshop with Lora Nyx",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "dartmouth-north-library-temporary",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-6580afda5a67e516",
-      "title": "Library Store",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "bedford-library-events-9d3efe6e8a8fec69",
-      "title": "Super Saturday: Halloween Crafts",
-      "sourceId": "bedford-library-events",
-      "venueId": "bedford-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "woodlawn-library-events-db5cb4206d9a2db6",
-      "title": "Drama Llamas",
-      "sourceId": "woodlawn-library-events",
-      "venueId": "woodlawn-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "alderney-gate-library-events-e21d9401a4788ade",
-      "title": "STEAM Team: Scary Science",
-      "sourceId": "alderney-gate-library-events",
-      "venueId": "alderney-gate-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-27dc36c50699a377",
-      "title": "Exploring Cultural Roots Through Music: Morgan Toney & Keith Mullins",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "https://novascotia.com/event/spontaneity-duo-competition/#event",
-      "title": "Spontaneity: Duo Competition",
-      "sourceId": "tourism-ns-events",
-      "venueId": null,
-      "venueBasis": null,
-      "organizerId": null,
-      "organizerBasis": null,
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-mooseheads-home-774b090badc454a5",
-      "title": "Halifax Mooseheads vs Charlottetown",
-      "sourceId": "halifax-mooseheads-home",
-      "venueId": "scotiabank-centre-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-mooseheads",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
       "eventId": "rejigged-2026-10-24-ete-inn-echo",
       "title": "ReJigged Festival: É.T.É., Yaëlle Azoulay, Nic Gareiss and Inn Echo",
       "sourceId": "rejigged-festival-2026",
@@ -455,556 +158,6 @@
       "venueBasis": null,
       "organizerId": null,
       "organizerBasis": null,
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "the-carleton-74ee86152e5a2b63",
-      "title": "Lynn Miles",
-      "sourceId": "the-carleton",
-      "venueId": "the-carleton-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "the-carleton",
-      "organizerBasis": "source_id",
-      "restaurantId": "osm-node-771690675-the-carleton",
-      "restaurantBasis": "exact_venue_place_name"
-    },
-    {
-      "eventId": "halifax-convention-centre-c1126eb44b40aa03",
-      "title": "CDA 2026 Annual Conference and Trade Show",
-      "sourceId": "halifax-convention-centre",
-      "venueId": "halifax-convention-centre",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-convention-centre",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "alderney-gate-library-events-bb5d93c39360b5aa",
-      "title": "Big Blue Blocks",
-      "sourceId": "alderney-gate-library-events",
-      "venueId": "alderney-gate-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "the-carleton-fa0e389bb8847767",
-      "title": "SOLD OUT: Hawai’i to Halifax: A Musical Tribute to J. Chalmers Doane",
-      "sourceId": "the-carleton",
-      "venueId": "the-carleton-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "the-carleton",
-      "organizerBasis": "source_id",
-      "restaurantId": "osm-node-771690675-the-carleton",
-      "restaurantBasis": "exact_venue_place_name"
-    },
-    {
-      "eventId": "halifax-public-libraries-8a7fdff7c67b162a",
-      "title": "An Afternoon of Creature Connections with the Evergreen Writers Group Featured Event. An Afternoon of Creature Connections with the Evergreen Writers Group",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-1b88b339ae59c207",
-      "title": "Introductory Beading Workshop with Lora Nyx",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-c40b9f765b0e84ac",
-      "title": "Kid-Stitch: Felted Poppies",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "woodlawn-library-events-3fa7bec1785f216a",
-      "title": "Acoustic Song Circle",
-      "sourceId": "woodlawn-library-events",
-      "venueId": "woodlawn-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "bedford-library-events-43c7358ce38b26f8",
-      "title": "Build & Play",
-      "sourceId": "bedford-library-events",
-      "venueId": "bedford-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "hfx-wanderers-home-f09490b61552ad2d",
-      "title": "HFX Wanderers FC vs FC Supra Du Quebec FC",
-      "sourceId": "hfx-wanderers-home",
-      "venueId": "wanderers-grounds-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "hfx-wanderers",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "the-carleton-4d414ffd3a0b3f43",
-      "title": "SOLD OUT: First Of Bells – Début Performance!",
-      "sourceId": "the-carleton",
-      "venueId": "the-carleton-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "the-carleton",
-      "organizerBasis": "source_id",
-      "restaurantId": "osm-node-771690675-the-carleton",
-      "restaurantBasis": "exact_venue_place_name"
-    },
-    {
-      "eventId": "halifax-public-libraries-61c41ded0a8dbeb9",
-      "title": "Library Store",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-60c986b7c3e8b98b",
-      "title": "Nova Scotia Legal Aid: Drop-in Support",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-7424f4ef65721a19",
-      "title": "5-Week Citizenship Preparation Course",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-fdd7fe0219e8cc8a",
-      "title": "Rompers & Rhymes",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "keshen-goodman-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-a06ff9b9d3f357b6",
-      "title": "Tales for Tots",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-c89ce75b1a11bd7e",
-      "title": "Parkinson Society of Nova Scotia Support Group",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "keshen-goodman-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-ca0698e6107076f8",
-      "title": "¡Hola! A Spanish Meet-Up",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "keshen-goodman-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-f532c86d9c5b88c2",
-      "title": "Sewing DIY Drop-in",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-2fa61fd60110a011",
-      "title": "After the Bell: After School Club",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "dartmouth-north-library-temporary",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-e270aa7cf2767fd0",
-      "title": "After the Bell: After School Hang-Out",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "halifax-north-memorial-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-f75087c9fdf6e49c",
-      "title": "STEAMsational",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "halifax-north-memorial-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "alderney-gate-library-events-8eb98258a2c3126d",
-      "title": "Pre-teen Dungeons & Dragons",
-      "sourceId": "alderney-gate-library-events",
-      "venueId": "alderney-gate-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-f0975ef2c058f1f0",
-      "title": "Creative Studio DIY Drop-in",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-7e1ad5c12b236e52",
-      "title": "Acoustic Song Circle",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-8926b428d9690b0e",
-      "title": "Fostering Indigenous-Jewish Dialogue: Preserving Difficult Indigenous & Jewish Histories",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-3c23957cc27e9ca6",
-      "title": "Library Store",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-93e443c2d6f106fd",
-      "title": "Housing Support Drop-in Clinic",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "halifax-north-memorial-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-200a687f7e496e58",
-      "title": "Family Drop-in",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "captain-william-spry-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-86e96adfdbc30793",
-      "title": "Seniors Social",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "halifax-north-memorial-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-31a775b9e76195b2",
-      "title": "Baby & Tot Drop-in",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "bedford-library-events-273b3c9d32606f86",
-      "title": "Baby's First Books",
-      "sourceId": "bedford-library-events",
-      "venueId": "bedford-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-0a741c86052e5cb0",
-      "title": "Preschool Halloween Party",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "keshen-goodman-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-c4ddd6017c41e43e",
-      "title": "Puppet Show: Halloween Magic",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "alderney-gate-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-d7085e6926855caa",
-      "title": "Baby & Tot Drop-in",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "halifax-north-memorial-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-1b2fdcccbe1052b1",
-      "title": "Aging in Place: Understanding Care Options & Funding",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-f2d7850c7be7e518",
-      "title": "Job Search Support with Job Junction",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "keshen-goodman-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "woodlawn-library-events-90de2131b0f7b6db",
-      "title": "Needle Niche",
-      "sourceId": "woodlawn-library-events",
-      "venueId": "woodlawn-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-be5d434c80130325",
-      "title": "Alderney Ideas Seminar: Online & In-Person",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "alderney-gate-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-7c844041820972df",
-      "title": "Tuesday Tech Drop-in",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "keshen-goodman-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-6a9876a331c7dad0",
-      "title": "STEAM Team",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "dartmouth-north-library-temporary",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-b9eb4e87442b0b6e",
-      "title": "The Drop",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "halifax-north-memorial-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-2e4c27f47499c294",
-      "title": "3D Ghost Portraits",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "keshen-goodman-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-5c3ab2671cbee41a",
-      "title": "Art in the Afternoon: Halloween Paint Party",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "captain-william-spry-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-9d1649904df3e90e",
-      "title": "Code Club",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-ab71ca306cddc7d1",
-      "title": "Pre-teen Dungeons & Dragons",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "alderney-gate-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-01d50a8506eaf738",
-      "title": "Study Buddies for Newcomers",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "keshen-goodman-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-669dc7768bb5abed",
-      "title": "BreakSpace",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-a36385f9c52905c8",
-      "title": "Art Night Drop-in",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-9e849dc5459eb600",
-      "title": "Fostering Indigenous-Jewish Dialogue in Mi'kma'ki: Film Screenings & Conversation",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
       "restaurantId": null,
       "restaurantBasis": null
     },
@@ -1020,363 +173,11 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-8439a0888fe1c16a",
-      "title": "Paint Night: Halloween",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "captain-william-spry-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-21cf800fdaf7d2ce",
-      "title": "The Great Puzzle Exchange: 2026 Edition",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "keshen-goodman-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-90ed24c0b4404edd",
-      "title": "Holding Space: A Men's Wellness Group",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-be2d4d0b6051e716",
-      "title": "Creative Studio DIY Drop-in",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "woodlawn-library-events-f172bbe248d6c8cc",
-      "title": "Baby's First Books",
-      "sourceId": "woodlawn-library-events",
-      "venueId": "woodlawn-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-1c557bf4e28f0769",
-      "title": "Common Threads: Fibre Arts Drop-in",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "captain-william-spry-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-35c7c13c562fa056",
-      "title": "Chair Yoga",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "keshen-goodman-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-916b1d115cc7a406",
-      "title": "Shake, Rattle & Read",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "bedford-library-events-3520d905a2ff6d51",
-      "title": "Tinkering Toddlers",
-      "sourceId": "bedford-library-events",
-      "venueId": "bedford-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-4833a0563960596d",
-      "title": "Little Learners",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "halifax-north-memorial-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "bedford-library-events-ce569c4dcfd90d16",
-      "title": "Community Crafters",
-      "sourceId": "bedford-library-events",
-      "venueId": "bedford-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-e25aac489a6a2681",
-      "title": "Common Threads: Fibre Arts Drop-in",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-f8cc76505be0eb06",
-      "title": "Newcomer Women’s Program",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "halifax-north-memorial-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-31c6d3d10e7802bb",
-      "title": "Service Canada Information Session",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "captain-william-spry-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-e259a4bb4b471798",
-      "title": "Movie: Death Becomes Her",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "woodlawn-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-435bdf9c3dc2b3ff",
-      "title": "Craft Club: Pom-Pom Tassel Ghosts",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "alderney-gate-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-18e0f73c90fb3674",
-      "title": "Information Session: Canadian Law & Caring For Your Kids",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "keshen-goodman-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-ecb8089331727a32",
-      "title": "Library Store",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-b12d1df09341adb4",
-      "title": "Tween Scene",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "dartmouth-north-library-temporary",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "bedford-library-events-35dd25dfe25a2d01",
-      "title": "After School Club",
-      "sourceId": "bedford-library-events",
-      "venueId": "bedford-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-3ef82537de579724",
-      "title": "Children's Sensory Hour",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-de96f0a7bbaaf666",
-      "title": "Makers Gonna Make: Ghost Painting",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "alderney-gate-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-b7674bc1572590ad",
-      "title": "Play Zone",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "captain-william-spry-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-7e7a4a60b5eac611",
-      "title": "Newcomer Kids' English Club",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "keshen-goodman-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-73e99784eeeef794",
-      "title": "Teen Night: Werewolf",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "alderney-gate-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-d9d88550ce8ffd1d",
-      "title": "Clayton Park Chess Club",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "keshen-goodman-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-f6366054cf09ac43",
-      "title": "Movie: The Rocky Horror Picture Show Screening & Panel Discussion",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-5fbccc4089295fec",
-      "title": "Spryfield Chess Club",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "captain-william-spry-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-41b4d742d188053b",
-      "title": "Teen Night",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "halifax-north-memorial-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-5a37f64fb3592a54",
-      "title": "Cricut 102: Print-Then-Cut Stickers",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-6453a3efe633b470",
-      "title": "Movie: Nosferatu",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "woodlawn-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "the-carleton-230a988080d25aef",
-      "title": "SOLD OUT: Irish Mythen",
-      "sourceId": "the-carleton",
-      "venueId": "the-carleton-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "the-carleton",
-      "organizerBasis": "source_id",
-      "restaurantId": "osm-node-771690675-the-carleton",
-      "restaurantBasis": "exact_venue_place_name"
-    },
-    {
       "eventId": "halifax-public-libraries-1d67c325f833190f",
       "title": "Welcome Housing & Support Drop-in Clinic",
-      "sourceId": "halifax-public-libraries",
+      "sourceId": "alderney-gate-library-events",
       "venueId": "alderney-gate-library",
-      "venueBasis": "exact_normalized_venue_name",
+      "venueBasis": "source_id",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
       "restaurantId": null,
@@ -1385,9 +186,9 @@
     {
       "eventId": "halifax-public-libraries-6adb366c35a9e55d",
       "title": "Newcomer English Language Learning Group",
-      "sourceId": "halifax-public-libraries",
+      "sourceId": "alderney-gate-library-events",
       "venueId": "alderney-gate-library",
-      "venueBasis": "exact_normalized_venue_name",
+      "venueBasis": "source_id",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
       "restaurantId": null,
@@ -1407,9 +208,9 @@
     {
       "eventId": "halifax-public-libraries-cfe3121a64ca6552",
       "title": "Tinkering Toddlers",
-      "sourceId": "halifax-public-libraries",
+      "sourceId": "woodlawn-library-events",
       "venueId": "woodlawn-library",
-      "venueBasis": "exact_normalized_venue_name",
+      "venueBasis": "source_id",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
       "restaurantId": null,
@@ -1451,9 +252,9 @@
     {
       "eventId": "halifax-public-libraries-900059603bb3ac05",
       "title": "Tinkering Toddlers",
-      "sourceId": "halifax-public-libraries",
+      "sourceId": "alderney-gate-library-events",
       "venueId": "alderney-gate-library",
-      "venueBasis": "exact_normalized_venue_name",
+      "venueBasis": "source_id",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
       "restaurantId": null,
@@ -1649,9 +450,9 @@
     {
       "eventId": "halifax-public-libraries-1afd4cfa67456562",
       "title": "Teen Night",
-      "sourceId": "halifax-public-libraries",
+      "sourceId": "woodlawn-library-events",
       "venueId": "woodlawn-library",
-      "venueBasis": "exact_normalized_venue_name",
+      "venueBasis": "source_id",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
       "restaurantId": null,
@@ -1713,22 +514,11 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-a24ca532706da1a0",
-      "title": "Library Store",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
       "eventId": "halifax-public-libraries-be768d608c68a2ad",
       "title": "Puppet Show: The Walking Bathroom",
-      "sourceId": "halifax-public-libraries",
+      "sourceId": "woodlawn-library-events",
       "venueId": "woodlawn-library",
-      "venueBasis": "exact_normalized_venue_name",
+      "venueBasis": "source_id",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
       "restaurantId": null,
@@ -1737,9 +527,9 @@
     {
       "eventId": "halifax-public-libraries-fe81b18f3e69b66e",
       "title": "Baby's First Books",
-      "sourceId": "halifax-public-libraries",
+      "sourceId": "alderney-gate-library-events",
       "venueId": "alderney-gate-library",
-      "venueBasis": "exact_normalized_venue_name",
+      "venueBasis": "source_id",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
       "restaurantId": null,
@@ -1748,9 +538,9 @@
     {
       "eventId": "halifax-public-libraries-139a68ca921f8dda",
       "title": "Community Café",
-      "sourceId": "halifax-public-libraries",
+      "sourceId": "alderney-gate-library-events",
       "venueId": "alderney-gate-library",
-      "venueBasis": "exact_normalized_venue_name",
+      "venueBasis": "source_id",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
       "restaurantId": null,
@@ -1761,6 +551,17 @@
       "title": "Shake, Rattle & Read",
       "sourceId": "bedford-library-events",
       "venueId": "bedford-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "woodlawn-library-events-4be83a51169d9fe2",
+      "title": "Puppet Show: The Walking Bathroom",
+      "sourceId": "woodlawn-library-events",
+      "venueId": "woodlawn-library",
       "venueBasis": "source_id",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -1801,6 +602,17 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "halifax-public-libraries-6bd00a0b6d9805b9",
+      "title": "Books & Brushes: Fall Leaves Bookmarks",
+      "sourceId": "halifax-public-libraries",
+      "venueId": "captain-william-spry-library",
+      "venueBasis": "exact_normalized_venue_name",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "bedford-library-events-cdc48c05c2fb9baf",
       "title": "Cookies & Computers",
       "sourceId": "bedford-library-events",
@@ -1814,9 +626,9 @@
     {
       "eventId": "halifax-public-libraries-675b1da238a95d01",
       "title": "Kids' Club",
-      "sourceId": "halifax-public-libraries",
+      "sourceId": "woodlawn-library-events",
       "venueId": "woodlawn-library",
-      "venueBasis": "exact_normalized_venue_name",
+      "venueBasis": "source_id",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
       "restaurantId": null,
@@ -1825,9 +637,9 @@
     {
       "eventId": "halifax-public-libraries-8deca554b53339d7",
       "title": "Teen Dungeons & Dragons",
-      "sourceId": "halifax-public-libraries",
+      "sourceId": "alderney-gate-library-events",
       "venueId": "alderney-gate-library",
-      "venueBasis": "exact_normalized_venue_name",
+      "venueBasis": "source_id",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
       "restaurantId": null,
@@ -1872,6 +684,17 @@
       "sourceId": "halifax-public-libraries",
       "venueId": "keshen-goodman-library",
       "venueBasis": "exact_normalized_venue_name",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "bedford-library-events-feb14bb4cb2c7b85",
+      "title": "Family Drop-in",
+      "sourceId": "bedford-library-events",
+      "venueId": "bedford-library",
+      "venueBasis": "source_id",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
       "restaurantId": null,
@@ -1924,9 +747,9 @@
     {
       "eventId": "woodlawn-library-events-563297028b16a69d",
       "title": "Workshop Series: 2SLGBTQIA+ Improv for Anxiety",
-      "sourceId": "halifax-public-libraries",
+      "sourceId": "woodlawn-library-events",
       "venueId": "woodlawn-library",
-      "venueBasis": "exact_normalized_venue_name",
+      "venueBasis": "source_id",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
       "restaurantId": null,
@@ -2010,6 +833,17 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "halifax-public-libraries-5e3e85c3eff42b69",
+      "title": "Creative Writing: A Practical Course",
+      "sourceId": "halifax-public-libraries",
+      "venueId": "woodlawn-library",
+      "venueBasis": "exact_normalized_venue_name",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "halifax-public-libraries-ebef96278647317e",
       "title": "Halloween Party!",
       "sourceId": "halifax-public-libraries",
@@ -2025,17 +859,6 @@
       "title": "Laughter Yoga",
       "sourceId": "halifax-public-libraries",
       "venueId": "keshen-goodman-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-97a781acb4f591f7",
-      "title": "Library Store",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -2099,7 +922,7 @@
     },
     {
       "eventId": "halifax-public-libraries-beb0f3b9cdac72e4",
-      "title": "AfterWords Literary Festival: Kids’ Day/Journée Jeunesse Featured Event. AfterWords Literary Festival: Kids’ Day/Journée Jeunesse",
+      "title": "AfterWords Literary Festival: Kids’ Day/Journée Jeunesse",
       "sourceId": "halifax-public-libraries",
       "venueId": "central-library-halifax",
       "venueBasis": "exact_normalized_venue_name",
@@ -2154,7 +977,7 @@
     },
     {
       "eventId": "the-carleton-2d6665b8890674d0",
-      "title": "AfterWords Literary Festival – Dodge City: In Conversation",
+      "title": "SOLD OUT: AfterWords Literary Festival – Dodge City: In Conversation",
       "sourceId": "the-carleton",
       "venueId": "the-carleton-halifax",
       "venueBasis": "source_id",
@@ -2186,17 +1009,6 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-c0a028effb9c93c6",
-      "title": "Library Store",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
       "eventId": "halifax-public-libraries-2cfaefb3694e83fd",
       "title": "Newcomers Active Seniors",
       "sourceId": "halifax-public-libraries",
@@ -2219,6 +1031,17 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "halifax-public-libraries-9d757303e2389f6e",
+      "title": "Rompers & Rhymes",
+      "sourceId": "halifax-public-libraries",
+      "venueId": "keshen-goodman-library",
+      "venueBasis": "exact_normalized_venue_name",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "halifax-public-libraries-c2c8610e35bc282c",
       "title": "Tales for Tots",
       "sourceId": "halifax-public-libraries",
@@ -2226,6 +1049,17 @@
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "the-carleton-71e1161aec5a8fa0",
+      "title": "SOLD OUT: AfterWords Literary Festival – The World We Long For: Readings and Conversation",
+      "sourceId": "the-carleton",
+      "venueId": null,
+      "venueBasis": "reviewed_non_branch_location",
+      "organizerId": "the-carleton",
+      "organizerBasis": "source_id",
       "restaurantId": null,
       "restaurantBasis": null
     },
@@ -2318,6 +1152,17 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "halifax-public-libraries-f6393fc063a6acab",
+      "title": "Holocaust Education Week: Researching Holocaust Victims & Survivors",
+      "sourceId": "halifax-public-libraries",
+      "venueId": "central-library-halifax",
+      "venueBasis": "exact_normalized_venue_name",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "halifax-public-libraries-ed5eccff8ea893f2",
       "title": "Tuesday Tech Drop-in",
       "sourceId": "halifax-public-libraries",
@@ -2351,17 +1196,6 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-96a1f4e81384e51e",
-      "title": "Library Store",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
       "eventId": "halifax-public-libraries-568a61cef330035c",
       "title": "Seniors Social",
       "sourceId": "halifax-public-libraries",
@@ -2374,6 +1208,17 @@
     },
     {
       "eventId": "halifax-public-libraries-f36c7549ccd818bc",
+      "title": "Sharing Dance with Older Adults",
+      "sourceId": "halifax-public-libraries",
+      "venueId": "central-library-halifax",
+      "venueBasis": "exact_normalized_venue_name",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "halifax-public-libraries-ffb9d7e463f7101c",
       "title": "Sharing Dance with Older Adults",
       "sourceId": "halifax-public-libraries",
       "venueId": "central-library-halifax",
@@ -2472,6 +1317,17 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "the-carleton-7164d758f0d374a1",
+      "title": "SOLD OUT: AfterWords Literary Festival – On Occasion: Readings and Conversation",
+      "sourceId": "the-carleton",
+      "venueId": "the-carleton-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "the-carleton",
+      "organizerBasis": "source_id",
+      "restaurantId": "osm-node-771690675-the-carleton",
+      "restaurantBasis": "exact_venue_place_name"
+    },
+    {
       "eventId": "halifax-public-libraries-9a87faa40c0ac47b",
       "title": "Top Scams Targeting Consumers",
       "sourceId": "halifax-public-libraries",
@@ -2516,10 +1372,32 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "halifax-public-libraries-90389be6f145f5cb",
+      "title": "STEAM Team",
+      "sourceId": "halifax-public-libraries",
+      "venueId": "dartmouth-north-library-temporary",
+      "venueBasis": "exact_normalized_venue_name",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "halifax-public-libraries-dea440dbb6e9381a",
       "title": "The Drop",
       "sourceId": "halifax-public-libraries",
       "venueId": "halifax-north-memorial-library",
+      "venueBasis": "exact_normalized_venue_name",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "halifax-public-libraries-384e128684056306",
+      "title": "Art Club",
+      "sourceId": "halifax-public-libraries",
+      "venueId": "keshen-goodman-library",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -2626,10 +1504,10 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-0817aeafa924a2fc",
-      "title": "Library Store",
+      "eventId": "halifax-public-libraries-e2ec7530566ff241",
+      "title": "Common Threads: Fibre Arts Drop-in",
       "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
+      "venueId": "captain-william-spry-library",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -2681,6 +1559,17 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "the-carleton-cdd44a6b051edc36",
+      "title": "AfterWords Literary Festival: Still Here/GeneratioNS",
+      "sourceId": "the-carleton",
+      "venueId": "the-carleton-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "the-carleton",
+      "organizerBasis": "source_id",
+      "restaurantId": "osm-node-771690675-the-carleton",
+      "restaurantBasis": "exact_venue_place_name"
+    },
+    {
       "eventId": "halifax-public-libraries-85d422f65667ec9a",
       "title": "Common Threads: Fibre Arts Drop-in",
       "sourceId": "halifax-public-libraries",
@@ -2696,6 +1585,17 @@
       "title": "Newcomer Women’s Program",
       "sourceId": "halifax-public-libraries",
       "venueId": "halifax-north-memorial-library",
+      "venueBasis": "exact_normalized_venue_name",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "halifax-public-libraries-99eb1a6f3b61651d",
+      "title": "Aphasia Café",
+      "sourceId": "halifax-public-libraries",
+      "venueId": "keshen-goodman-library",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -2858,7 +1758,7 @@
     },
     {
       "eventId": "halifax-public-libraries-61827c10225b7c4f",
-      "title": "An Evening with the Giller Prize Shortlist Authors Featured Event. An Evening with the Giller Prize Shortlist Authors",
+      "title": "An Evening with the Giller Prize Shortlist Authors",
       "sourceId": "halifax-public-libraries",
       "venueId": "central-library-halifax",
       "venueBasis": "exact_normalized_venue_name",
@@ -2868,8 +1768,19 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "bedford-library-events-142aaf5835d5ea3e",
-      "title": "Library Store",
+      "eventId": "halifax-public-libraries-3549205af585cd6f",
+      "title": "Meet Juno, a St. John Ambulance Therapy Dog Meet Juno, a St. John Ambulance Therapy Dog",
+      "sourceId": "alderney-gate-library-events",
+      "venueId": "alderney-gate-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "halifax-public-libraries-bf075ce8e4c98f69",
+      "title": "Paint Night: Holiday Watercolour",
       "sourceId": "bedford-library-events",
       "venueId": "bedford-library",
       "venueBasis": "source_id",
@@ -2879,26 +1790,15 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-3549205af585cd6f",
-      "title": "Meet Juno, a St. John Ambulance Therapy Dog",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "alderney-gate-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-bf075ce8e4c98f69",
-      "title": "Paint Night: Holiday Watercolour",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "bedford-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
+      "eventId": "the-carleton-910f8a7dbcdeadaf",
+      "title": "An Evening With Alan Cross",
+      "sourceId": "the-carleton",
+      "venueId": "the-carleton-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "the-carleton",
+      "organizerBasis": "source_id",
+      "restaurantId": "osm-node-771690675-the-carleton",
+      "restaurantBasis": "exact_venue_place_name"
     },
     {
       "eventId": "halifax-public-libraries-440467a59b772263",
@@ -2945,17 +1845,6 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-18d4dd45f633c557",
-      "title": "Library Store",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
       "eventId": "halifax-public-libraries-5deeca66debb3897",
       "title": "Little Readers",
       "sourceId": "halifax-public-libraries",
@@ -2989,6 +1878,17 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "halifax-public-libraries-a6327f269221cae0",
+      "title": "Tinkering Toddlers",
+      "sourceId": "halifax-public-libraries",
+      "venueId": "alderney-gate-library",
+      "venueBasis": "exact_normalized_venue_name",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "halifax-public-libraries-3e7169bbca2920e6",
       "title": "Job Search Support with Job Junction",
       "sourceId": "halifax-public-libraries",
@@ -2998,6 +1898,17 @@
       "organizerBasis": "source_name_token",
       "restaurantId": null,
       "restaurantBasis": null
+    },
+    {
+      "eventId": "the-carleton-642c922684d66242",
+      "title": "AfterWords Literary Festival – To Be Seen and Treated As Human: In Conversation",
+      "sourceId": "the-carleton",
+      "venueId": "the-carleton-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "the-carleton",
+      "organizerBasis": "source_id",
+      "restaurantId": "osm-node-771690675-the-carleton",
+      "restaurantBasis": "exact_venue_place_name"
     },
     {
       "eventId": "halifax-public-libraries-3fca63b4d7e66a44",
@@ -3110,6 +2021,17 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "halifax-public-libraries-09bb9dab9a3fa059",
+      "title": "AI for All: Intro to AI Literacy",
+      "sourceId": "halifax-public-libraries",
+      "venueId": "central-library-halifax",
+      "venueBasis": "exact_normalized_venue_name",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "halifax-public-libraries-7b777a319fd50e00",
       "title": "Teen Night",
       "sourceId": "halifax-public-libraries",
@@ -3172,6 +2094,17 @@
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "https://novascotia.com/event/essential-opera-presents-in-her-hands-the-tragedy-of-lady-macbeth/#event",
+      "title": "Essential Opera Presents: In Her Hands: The Tragedy of Lady Macbeth",
+      "sourceId": "tourism-ns-events",
+      "venueId": null,
+      "venueBasis": null,
+      "organizerId": null,
+      "organizerBasis": null,
       "restaurantId": null,
       "restaurantBasis": null
     },
@@ -3268,17 +2201,6 @@
       "title": "Community Café",
       "sourceId": "halifax-public-libraries",
       "venueId": "alderney-gate-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-15fb2602805e3bcd",
-      "title": "Library Store",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -3429,10 +2351,10 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-dea0ff7b7011c232",
-      "title": "Captain William Spry Public Library's 40th Anniversary",
+      "eventId": "halifax-public-libraries-ec4a1e7836a26e31",
+      "title": "Build with Big Blue Blocks",
       "sourceId": "halifax-public-libraries",
-      "venueId": "captain-william-spry-library",
+      "venueId": "central-library-halifax",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -3440,10 +2362,10 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-5cc6fc0c6068a4be",
-      "title": "Family Drop-in",
+      "eventId": "halifax-public-libraries-dea0ff7b7011c232",
+      "title": "Captain William Spry Public Library's 40th Anniversary",
       "sourceId": "halifax-public-libraries",
-      "venueId": "alderney-gate-library",
+      "venueId": "captain-william-spry-library",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -3462,10 +2384,10 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-a8bec45f68ce4457",
-      "title": "Library Store",
+      "eventId": "halifax-public-libraries-5cc6fc0c6068a4be",
+      "title": "Family Drop-in",
       "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
+      "venueId": "alderney-gate-library",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -3532,6 +2454,17 @@
       "title": "Creative Studio DIY Drop-in",
       "sourceId": "halifax-public-libraries",
       "venueId": "central-library-halifax",
+      "venueBasis": "exact_normalized_venue_name",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "halifax-public-libraries-2489cfb98eac47a7",
+      "title": "Dinovember",
+      "sourceId": "halifax-public-libraries",
+      "venueId": "keshen-goodman-library",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -3616,8 +2549,8 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-b7d59f9cacd525a7",
-      "title": "Library Store",
+      "eventId": "halifax-public-libraries-891d2a7d119a372e",
+      "title": "Alliance Française: Speak-Dating French Conversation Group",
       "sourceId": "halifax-public-libraries",
       "venueId": "central-library-halifax",
       "venueBasis": "exact_normalized_venue_name",
@@ -3656,6 +2589,17 @@
       "venueBasis": null,
       "organizerId": "symphony-nova-scotia",
       "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "halifax-public-libraries-b52b49616aa079f1",
+      "title": "Performance: Singamajiggin' with Mr. Mark",
+      "sourceId": "halifax-public-libraries",
+      "venueId": "keshen-goodman-library",
+      "venueBasis": "exact_normalized_venue_name",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
       "restaurantId": null,
       "restaurantBasis": null
     },
@@ -3761,17 +2705,6 @@
     {
       "eventId": "halifax-public-libraries-2cd912d8cafbfd55",
       "title": "Making the Most of Your Memory",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-38e00b01669ca33b",
-      "title": "Library Store",
       "sourceId": "halifax-public-libraries",
       "venueId": "central-library-halifax",
       "venueBasis": "exact_normalized_venue_name",
@@ -3946,10 +2879,10 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-82184c17f0992231",
-      "title": "Library Store",
+      "eventId": "halifax-public-libraries-54d002426d058d11",
+      "title": "Shake, Rattle & Read",
       "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
+      "venueId": "alderney-gate-library",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -3957,10 +2890,10 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-54d002426d058d11",
-      "title": "Shake, Rattle & Read",
+      "eventId": "halifax-public-libraries-f843618bdda828af",
+      "title": "Tots & Tunes",
       "sourceId": "halifax-public-libraries",
-      "venueId": "alderney-gate-library",
+      "venueId": "keshen-goodman-library",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -4049,6 +2982,17 @@
       "title": "The Drop",
       "sourceId": "halifax-public-libraries",
       "venueId": "halifax-north-memorial-library",
+      "venueBasis": "exact_normalized_venue_name",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "halifax-public-libraries-54602bd6d289d288",
+      "title": "Art Club",
+      "sourceId": "halifax-public-libraries",
+      "venueId": "keshen-goodman-library",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -4156,7 +3100,7 @@
     },
     {
       "eventId": "halifax-public-libraries-910c43b8b1e09152",
-      "title": "An Evening with Peter Mansbridge Featured Event. An Evening with Peter Mansbridge",
+      "title": "An Evening with Peter Mansbridge",
       "sourceId": "halifax-public-libraries",
       "venueId": "central-library-halifax",
       "venueBasis": "exact_normalized_venue_name",
@@ -4298,10 +3242,10 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-657210649d3fdc5e",
-      "title": "Library Store",
+      "eventId": "halifax-public-libraries-46609c34eb8859c1",
+      "title": "Tech Drop-in",
       "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
+      "venueId": "halifax-north-memorial-library",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -4463,6 +3407,17 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "https://novascotia.com/event/craft-nova-scotia-designer-craft-show/#event",
+      "title": "Craft Nova Scotia Designer Craft Show",
+      "sourceId": "tourism-ns-events",
+      "venueId": null,
+      "venueBasis": null,
+      "organizerId": null,
+      "organizerBasis": null,
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "halifax-public-libraries-e806916c1fd75e99",
       "title": "Crafting with Fibres",
       "sourceId": "halifax-public-libraries",
@@ -4551,17 +3506,6 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "https://novascotia.com/event/craft-nova-scotia-designer-craft-show/#event",
-      "title": "Craft Nova Scotia Designer Craft Show",
-      "sourceId": "craft-nova-scotia-2026",
-      "venueId": null,
-      "venueBasis": null,
-      "organizerId": null,
-      "organizerBasis": null,
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
       "eventId": "halifax-public-libraries-a1ac461195873957",
       "title": "Moving with Mocean: A Dance Class for Everyone",
       "sourceId": "halifax-public-libraries",
@@ -4578,17 +3522,6 @@
       "sourceId": "bedford-library-events",
       "venueId": "bedford-library",
       "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-793d2559ed791ff7",
-      "title": "Library Store",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
       "restaurantId": null,
@@ -4716,22 +3649,22 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-13f4b7ff0847aba6",
+      "eventId": "bedford-library-events-0f2563345232c8aa",
       "title": "Family Drop-in",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "alderney-gate-library",
-      "venueBasis": "exact_normalized_venue_name",
+      "sourceId": "bedford-library-events",
+      "venueId": "bedford-library",
+      "venueBasis": "source_id",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
       "restaurantId": null,
       "restaurantBasis": null
     },
     {
-      "eventId": "bedford-library-events-0f2563345232c8aa",
+      "eventId": "halifax-public-libraries-13f4b7ff0847aba6",
       "title": "Family Drop-in",
-      "sourceId": "bedford-library-events",
-      "venueId": "bedford-library",
-      "venueBasis": "source_id",
+      "sourceId": "halifax-public-libraries",
+      "venueId": "alderney-gate-library",
+      "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
       "restaurantId": null,
@@ -4749,10 +3682,10 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-81f2fb86850bcbb2",
-      "title": "Library Store",
+      "eventId": "halifax-public-libraries-e37a09cfd344fdad",
+      "title": "Books & Blocks",
       "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
+      "venueId": "woodlawn-library",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -4925,22 +3858,22 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "bedford-library-events-601e4ee89c435dc4",
-      "title": "Build & Play",
-      "sourceId": "bedford-library-events",
-      "venueId": "bedford-library",
-      "venueBasis": "source_id",
+      "eventId": "halifax-public-libraries-147a8dd1abc6cc7a",
+      "title": "Acoustic Song Circle",
+      "sourceId": "halifax-public-libraries",
+      "venueId": "woodlawn-library",
+      "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
       "restaurantId": null,
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-cfc5579c28828b12",
-      "title": "Library Store",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
+      "eventId": "bedford-library-events-601e4ee89c435dc4",
+      "title": "Build & Play",
+      "sourceId": "bedford-library-events",
+      "venueId": "bedford-library",
+      "venueBasis": "source_id",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
       "restaurantId": null,
@@ -5079,10 +4012,10 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-2d721171c99bacde",
-      "title": "Library Store",
+      "eventId": "halifax-public-libraries-cf4630e4e3ef8bfa",
+      "title": "Pre-teen Dungeons & Dragons",
       "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
+      "venueId": "alderney-gate-library",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -5113,7 +4046,7 @@
     },
     {
       "eventId": "halifax-public-libraries-06de73d1dba3fa40",
-      "title": "Book Launch: How to Eat With Your Hands - Roti Shoti & Other Ways to Settle In, by Khalil Akhtar Featured Event. Book Launch: How to Eat With Your Hands - Roti Shoti & Other Ways to Settle In, by Khalil Akhtar",
+      "title": "Book Launch: How to Eat With Your Hands - Roti Shoti & Other Ways to Settle In, by Khalil Akhtar",
       "sourceId": "halifax-public-libraries",
       "venueId": "central-library-halifax",
       "venueBasis": "exact_normalized_venue_name",
@@ -5244,17 +4177,6 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-6df88e958f372f31",
-      "title": "Library Store",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
       "eventId": "halifax-public-libraries-5852c66d4adbfffa",
       "title": "Needle Niche",
       "sourceId": "halifax-public-libraries",
@@ -5314,6 +4236,17 @@
       "title": "The Drop",
       "sourceId": "halifax-public-libraries",
       "venueId": "halifax-north-memorial-library",
+      "venueBasis": "exact_normalized_venue_name",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "halifax-public-libraries-d3487e99ba0ed877",
+      "title": "Art Club",
+      "sourceId": "halifax-public-libraries",
+      "venueId": "keshen-goodman-library",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -5464,22 +4397,11 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "bedford-library-events-71b145db753003c1",
-      "title": "Library Store",
+      "eventId": "halifax-public-libraries-1d472f3fbb0f285b",
+      "title": "Puppet Show: We Are in a Puppet Show",
       "sourceId": "bedford-library-events",
       "venueId": "bedford-library",
       "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-1d472f3fbb0f285b",
-      "title": "Puppet Show: We Are in a Puppet Show",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "bedford-library",
-      "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
       "restaurantId": null,
@@ -5556,17 +4478,6 @@
       "title": "Newcomer Women’s Program",
       "sourceId": "halifax-public-libraries",
       "venueId": "halifax-north-memorial-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-390de6d274dd99e1",
-      "title": "Library Store",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -5706,6 +4617,17 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "halifax-public-libraries-f4e24e559063e774",
+      "title": "3D Scanning 101",
+      "sourceId": "halifax-public-libraries",
+      "venueId": "central-library-halifax",
+      "venueBasis": "exact_normalized_venue_name",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "halifax-public-libraries-c0bfc48709fc76ae",
       "title": "Meet Juno, a St. John Ambulance Therapy Dog",
       "sourceId": "halifax-public-libraries",
@@ -5717,8 +4639,19 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "halifax-public-libraries-fff69575ecd09727",
+      "title": "The Art of Handcrafting: Celebrating Identity & Culture Through Afro-Inspired Accessories",
+      "sourceId": "halifax-public-libraries",
+      "venueId": "woodlawn-library",
+      "venueBasis": "exact_normalized_venue_name",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "halifax-public-libraries-3984e4312963d4a4",
-      "title": "Daily Magic: A Celebration of Wonder, Music & the Written Word Featured Event. Daily Magic: A Celebration of Wonder, Music & the Written Word",
+      "title": "Daily Magic: A Celebration of Wonder, Music & the Written Word",
       "sourceId": "halifax-public-libraries",
       "venueId": "central-library-halifax",
       "venueBasis": "exact_normalized_venue_name",
@@ -5882,8 +4815,8 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-d9cba49cd0a9c371",
-      "title": "Library Store",
+      "eventId": "halifax-public-libraries-daa2f532fb589f20",
+      "title": "Creative Studio DIY Drop-in",
       "sourceId": "halifax-public-libraries",
       "venueId": "central-library-halifax",
       "venueBasis": "exact_normalized_venue_name",
@@ -5927,7 +4860,7 @@
     },
     {
       "eventId": "halifax-public-libraries-373238c4de075ece",
-      "title": "The Hangout: Make Your Own Zine",
+      "title": "The Hangout: Mad Science's Fire & Ice",
       "sourceId": "halifax-public-libraries",
       "venueId": "central-library-halifax",
       "venueBasis": "exact_normalized_venue_name",
@@ -6029,17 +4962,6 @@
       "title": "Crafting with Fibres",
       "sourceId": "halifax-public-libraries",
       "venueId": "keshen-goodman-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-0497ec00e3467669",
-      "title": "Library Store",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -6168,6 +5090,17 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "halifax-public-libraries-94db77fbfba95216",
+      "title": "PD Day: Giant Games",
+      "sourceId": "halifax-public-libraries",
+      "venueId": "keshen-goodman-library",
+      "venueBasis": "exact_normalized_venue_name",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "halifax-public-libraries-ee3b0bc85cba5518",
       "title": "Taskmaster: Team Edition",
       "sourceId": "halifax-public-libraries",
@@ -6195,17 +5128,6 @@
       "sourceId": "halifax-public-libraries",
       "venueId": "captain-william-spry-library",
       "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "bedford-library-events-4bd8c911b59b9f58",
-      "title": "Cookies & Computers",
-      "sourceId": "bedford-library-events",
-      "venueId": "bedford-library",
-      "venueBasis": "source_id",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
       "restaurantId": null,
@@ -6256,6 +5178,17 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "https://novascotia.com/event/victorian-christmas-at-the-halifax-citadel/#event",
+      "title": "Victorian Christmas at the Halifax Citadel",
+      "sourceId": "tourism-ns-events",
+      "venueId": null,
+      "venueBasis": null,
+      "organizerId": null,
+      "organizerBasis": null,
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "halifax-public-libraries-a552b43ef366b3bc",
       "title": "!Cuenta Cuentos! Bilingual Storytime",
       "sourceId": "halifax-public-libraries",
@@ -6300,10 +5233,10 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-a443afc5920d1d45",
-      "title": "Embroidery 101",
+      "eventId": "halifax-public-libraries-3fc2cf096663c4f0",
+      "title": "Books & Blocks",
       "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
+      "venueId": "woodlawn-library",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -6311,8 +5244,8 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-31efe0188aa2d3ca",
-      "title": "Library Store",
+      "eventId": "halifax-public-libraries-a443afc5920d1d45",
+      "title": "Embroidery 101",
       "sourceId": "halifax-public-libraries",
       "venueId": "central-library-halifax",
       "venueBasis": "exact_normalized_venue_name",
@@ -6421,6 +5354,17 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "https://novascotia.com/event/nova-scotia-power-holiday-parade-of-lights/#event",
+      "title": "Nova Scotia Power Holiday Parade of Lights",
+      "sourceId": "tourism-ns-events",
+      "venueId": null,
+      "venueBasis": null,
+      "organizerId": null,
+      "organizerBasis": null,
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "bedford-library-events-6d23bf4db2c9cbf1",
       "title": "Super Saturday",
       "sourceId": "bedford-library-events",
@@ -6498,10 +5442,10 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-a6367907352fe694",
-      "title": "Library Store",
+      "eventId": "halifax-public-libraries-6ff0586e279924f4",
+      "title": "Big Blue Blocks",
       "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
+      "venueId": "alderney-gate-library",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -6549,6 +5493,17 @@
       "venueBasis": null,
       "organizerId": "symphony-nova-scotia",
       "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "halifax-public-libraries-e76fd63e54a88bd0",
+      "title": "The Art & Craft of Writing Murder Mysteries with Will Ferguson",
+      "sourceId": "halifax-public-libraries",
+      "venueId": "central-library-halifax",
+      "venueBasis": "exact_normalized_venue_name",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
       "restaurantId": null,
       "restaurantBasis": null
     },
@@ -6663,8 +5618,8 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-d153e96941641c4c",
-      "title": "Library Store",
+      "eventId": "halifax-public-libraries-14cfaa3508ec6970",
+      "title": "Creative Studio DIY Drop-in",
       "sourceId": "halifax-public-libraries",
       "venueId": "central-library-halifax",
       "venueBasis": "exact_normalized_venue_name",
@@ -6675,7 +5630,7 @@
     },
     {
       "eventId": "halifax-public-libraries-bd362705435f0a25",
-      "title": "An Evening with Brad Gushue Featured Event. An Evening with Brad Gushue",
+      "title": "An Evening with Brad Gushue",
       "sourceId": "halifax-public-libraries",
       "venueId": "central-library-halifax",
       "venueBasis": "exact_normalized_venue_name",
@@ -6817,10 +5772,10 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-7263b3e959653c6d",
-      "title": "Library Store",
+      "eventId": "halifax-public-libraries-2a771e53f55b527d",
+      "title": "Alderney Ideas Seminar: Online & In-Person",
       "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
+      "venueId": "alderney-gate-library",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -6854,6 +5809,17 @@
       "title": "The Drop",
       "sourceId": "halifax-public-libraries",
       "venueId": "halifax-north-memorial-library",
+      "venueBasis": "exact_normalized_venue_name",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "halifax-public-libraries-ec4fb9165688432b",
+      "title": "Art Club",
+      "sourceId": "halifax-public-libraries",
+      "venueId": "keshen-goodman-library",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -6960,8 +5926,8 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-ddb265fbf58c5d0b",
-      "title": "Library Store",
+      "eventId": "halifax-public-libraries-4ba3e2a782711e75",
+      "title": "Creative Studio DIY Drop-in",
       "sourceId": "halifax-public-libraries",
       "venueId": "central-library-halifax",
       "venueBasis": "exact_normalized_venue_name",
@@ -7136,6 +6102,17 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "halifax-public-libraries-ff7b8ce37916f5d9",
+      "title": "Makers Gonna Make",
+      "sourceId": "halifax-public-libraries",
+      "venueId": "alderney-gate-library",
+      "venueBasis": "exact_normalized_venue_name",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "halifax-public-libraries-540766ed489ab1bf",
       "title": "Newcomer Kids' English Club",
       "sourceId": "halifax-public-libraries",
@@ -7162,6 +6139,17 @@
       "title": "Clayton Park Chess Club",
       "sourceId": "halifax-public-libraries",
       "venueId": "keshen-goodman-library",
+      "venueBasis": "exact_normalized_venue_name",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "halifax-public-libraries-13e0bd82b07da9a3",
+      "title": "Movie: The Odyssey",
+      "sourceId": "halifax-public-libraries",
+      "venueId": "woodlawn-library",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -7235,17 +6223,6 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-182a4c38c8d4e36b",
-      "title": "Library Store",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
       "eventId": "halifax-public-libraries-6fda9c6a51327103",
       "title": "Newcomer English Language Learning Group",
       "sourceId": "halifax-public-libraries",
@@ -7261,6 +6238,17 @@
       "title": "Reading & Conversation Circle",
       "sourceId": "halifax-public-libraries",
       "venueId": "keshen-goodman-library",
+      "venueBasis": "exact_normalized_venue_name",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "halifax-public-libraries-0b0d7015ea2bbf06",
+      "title": "Tinkering Toddlers",
+      "sourceId": "halifax-public-libraries",
+      "venueId": "woodlawn-library",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -7330,6 +6318,17 @@
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "https://novascotia.com/event/french-tour-of-colville-forrestall-pratt-pratt-the-work-behind-the-work/#event",
+      "title": "French Tour of Colville, Forrestall, Pratt & Pratt: The Work Behind The Work",
+      "sourceId": "tourism-ns-events",
+      "venueId": null,
+      "venueBasis": null,
+      "organizerId": null,
+      "organizerBasis": null,
       "restaurantId": null,
       "restaurantBasis": null
     },
@@ -7543,10 +6542,10 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-b3185056b162a0f2",
-      "title": "Library Store",
+      "eventId": "halifax-public-libraries-753567ceff06c979",
+      "title": "Puppet Show: Monster Loves Reading",
       "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
+      "venueId": "woodlawn-library",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -7611,9 +6610,9 @@
     {
       "eventId": "halifax-public-libraries-526dfec5b0b7cb57",
       "title": "Cookies & Computers",
-      "sourceId": "halifax-public-libraries",
+      "sourceId": "bedford-library-events",
       "venueId": "bedford-library",
-      "venueBasis": "exact_normalized_venue_name",
+      "venueBasis": "source_id",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
       "restaurantId": null,
@@ -7625,17 +6624,6 @@
       "sourceId": "halifax-public-libraries",
       "venueId": "woodlawn-library",
       "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "bedford-library-events-108bde7091d7e8a8",
-      "title": "Library Store",
-      "sourceId": "bedford-library-events",
-      "venueId": "bedford-library",
-      "venueBasis": "source_id",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
       "restaurantId": null,
@@ -7708,32 +6696,10 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-d517fea5e0124241",
-      "title": "Library Store",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
       "eventId": "halifax-public-libraries-213548718c16507a",
       "title": "Family Craft Drop-in",
       "sourceId": "halifax-public-libraries",
       "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-d7d4a6230f8f1a2e",
-      "title": "Family Drop-in",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "alderney-gate-library",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -7746,6 +6712,17 @@
       "sourceId": "bedford-library-events",
       "venueId": "bedford-library",
       "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "halifax-public-libraries-d7d4a6230f8f1a2e",
+      "title": "Family Drop-in",
+      "sourceId": "halifax-public-libraries",
+      "venueId": "alderney-gate-library",
+      "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
       "restaurantId": null,
@@ -7917,8 +6894,8 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-1c19d991c46ace3c",
-      "title": "Library Store",
+      "eventId": "halifax-public-libraries-74131585a34b1f21",
+      "title": "Weave a Tapestry: Frozen Vapor Person",
       "sourceId": "halifax-public-libraries",
       "venueId": "central-library-halifax",
       "venueBasis": "exact_normalized_venue_name",
@@ -8049,10 +7026,10 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-66ec3d98b87329fd",
-      "title": "Library Store",
+      "eventId": "halifax-public-libraries-e8d0755396569e65",
+      "title": "Introduction to Self-Compassion",
       "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
+      "venueId": "woodlawn-library",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -8192,22 +7169,22 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "bedford-library-events-b4cb314f6ac726dc",
-      "title": "Baby's First Books",
-      "sourceId": "bedford-library-events",
-      "venueId": "bedford-library",
-      "venueBasis": "source_id",
+      "eventId": "halifax-public-libraries-6eb011af785ce2a5",
+      "title": "Baby & Tot Drop-in",
+      "sourceId": "halifax-public-libraries",
+      "venueId": "central-library-halifax",
+      "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
       "restaurantId": null,
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-69cf67766da5587c",
-      "title": "Library Store",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
+      "eventId": "bedford-library-events-b4cb314f6ac726dc",
+      "title": "Baby's First Books",
+      "sourceId": "bedford-library-events",
+      "venueId": "bedford-library",
+      "venueBasis": "source_id",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
       "restaurantId": null,
@@ -8335,6 +7312,17 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "halifax-public-libraries-9c39d562c2db3b61",
+      "title": "Art Club",
+      "sourceId": "halifax-public-libraries",
+      "venueId": "keshen-goodman-library",
+      "venueBasis": "exact_normalized_venue_name",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "halifax-public-libraries-5ea2410624690a4a",
       "title": "Art in the Afternoon: Winter Paint Party",
       "sourceId": "halifax-public-libraries",
@@ -8361,6 +7349,17 @@
       "title": "Pre-teen Dungeons & Dragons",
       "sourceId": "halifax-public-libraries",
       "venueId": "alderney-gate-library",
+      "venueBasis": "exact_normalized_venue_name",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "halifax-public-libraries-fea5013cca00dd61",
+      "title": "BreakSpace",
+      "sourceId": "halifax-public-libraries",
+      "venueId": "central-library-halifax",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -8478,8 +7477,8 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-dcbd7ebcf0ab6d93",
-      "title": "Library Store",
+      "eventId": "halifax-public-libraries-c4f763bc5cc62e87",
+      "title": "Common Threads: Fibre Arts Drop-in",
       "sourceId": "halifax-public-libraries",
       "venueId": "central-library-halifax",
       "venueBasis": "exact_normalized_venue_name",
@@ -8643,10 +7642,10 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-385350af05862199",
-      "title": "Library Store",
+      "eventId": "halifax-public-libraries-8a6e09b455e6e366",
+      "title": "Welcome Housing & Support Drop-in Clinic",
       "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
+      "venueId": "alderney-gate-library",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -8808,6 +7807,17 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "halifax-public-libraries-362f3621794ab076",
+      "title": "Christ Church Cemetery Stories",
+      "sourceId": "halifax-public-libraries",
+      "venueId": "alderney-gate-library",
+      "venueBasis": "exact_normalized_venue_name",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "halifax-public-libraries-ddab7997aafd5b5e",
       "title": "Teen Night",
       "sourceId": "halifax-public-libraries",
@@ -8931,17 +7941,6 @@
     {
       "eventId": "halifax-public-libraries-4df49e035b613d9d",
       "title": "Wiggles & Giggles",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-24a89c838a1e5d30",
-      "title": "Library Store",
       "sourceId": "halifax-public-libraries",
       "venueId": "central-library-halifax",
       "venueBasis": "exact_normalized_venue_name",
@@ -9127,17 +8126,6 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-98c5610e2608a7b8",
-      "title": "Library Store",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
       "eventId": "halifax-public-libraries-750eecf9c67dc6b0",
       "title": "Puppet Show: Holiday Double Feature",
       "sourceId": "halifax-public-libraries",
@@ -9314,10 +8302,10 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-2c0cf319a6952826",
-      "title": "Library Store",
+      "eventId": "halifax-public-libraries-71ba90dad2efdc56",
+      "title": "Acoustic Song Circle",
       "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
+      "venueId": "woodlawn-library",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -9479,10 +8467,10 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-5c6c02440ce6f551",
-      "title": "Library Store",
+      "eventId": "halifax-public-libraries-fc74ff6f560ecd03",
+      "title": "Baby & Tot Drop-in",
       "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
+      "venueId": "halifax-north-memorial-library",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -9538,6 +8526,17 @@
       "title": "The Drop",
       "sourceId": "halifax-public-libraries",
       "venueId": "halifax-north-memorial-library",
+      "venueBasis": "exact_normalized_venue_name",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "halifax-public-libraries-1f51f0126036f0ac",
+      "title": "Art Club",
+      "sourceId": "halifax-public-libraries",
+      "venueId": "keshen-goodman-library",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -9637,6 +8636,17 @@
       "title": "Queer Newcomer & Immigrant Program",
       "sourceId": "halifax-public-libraries",
       "venueId": "central-library-halifax",
+      "venueBasis": "exact_normalized_venue_name",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "halifax-public-libraries-c6a160219e0b599f",
+      "title": "Workshop: Holiday Floral Arrangement",
+      "sourceId": "halifax-public-libraries",
+      "venueId": "woodlawn-library",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -9758,17 +8768,6 @@
       "title": "Aphasia Café",
       "sourceId": "halifax-public-libraries",
       "venueId": "keshen-goodman-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-52d75f273a092734",
-      "title": "Library Store",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -9908,10 +8907,10 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-9dee47144dd1fe33",
-      "title": "Library Store",
+      "eventId": "halifax-public-libraries-2458ae1c10359dc1",
+      "title": "Newcomer English Language Learning Group",
       "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
+      "venueId": "alderney-gate-library",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -9987,28 +8986,6 @@
     {
       "eventId": "bedford-library-events-31522e2e67fef74c",
       "title": "Tech 1-to-1 Support",
-      "sourceId": "bedford-library-events",
-      "venueId": "bedford-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-4b80fdd1a4cca573",
-      "title": "Bedford Chess Club: Preteens",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "bedford-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "bedford-library-events-ab2f3e5d102102d4",
-      "title": "Library Store",
       "sourceId": "bedford-library-events",
       "venueId": "bedford-library",
       "venueBasis": "source_id",
@@ -10117,10 +9094,10 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-83c8ed147125415e",
-      "title": "Library Store",
+      "eventId": "halifax-public-libraries-058e975d7bf75ca1",
+      "title": "Family Drop-in",
       "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
+      "venueId": "woodlawn-library",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -10183,17 +9160,6 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "bedford-library-events-82bb7fc4a9f33612",
-      "title": "Cookies & Computers",
-      "sourceId": "bedford-library-events",
-      "venueId": "bedford-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
       "eventId": "halifax-public-libraries-563c5d6075a9d68d",
       "title": "Kids' Club",
       "sourceId": "halifax-public-libraries",
@@ -10229,17 +9195,6 @@
     {
       "eventId": "halifax-public-libraries-cf11a4b28d96468d",
       "title": "Family Craft Drop-in",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-aa58df1f1bc00ebd",
-      "title": "Library Store",
       "sourceId": "halifax-public-libraries",
       "venueId": "central-library-halifax",
       "venueBasis": "exact_normalized_venue_name",
@@ -10381,17 +9336,6 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-0036d465c0d1041d",
-      "title": "Library Store",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
       "eventId": "halifax-public-libraries-2fc3ee0b18e6eec9",
       "title": "Newcomers Active Seniors",
       "sourceId": "halifax-public-libraries",
@@ -10515,17 +9459,6 @@
     {
       "eventId": "halifax-public-libraries-c1c4fd037d097deb",
       "title": "Tea & Tales: Winter Solstice",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-baf017521787ac2d",
-      "title": "Library Store",
       "sourceId": "halifax-public-libraries",
       "venueId": "central-library-halifax",
       "venueBasis": "exact_normalized_venue_name",
@@ -10689,17 +9622,6 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-d05a8c3644d7f33b",
-      "title": "Library Store",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
       "eventId": "halifax-public-libraries-c04e9f837684899d",
       "title": "Teen Night: Holiday Party",
       "sourceId": "halifax-public-libraries",
@@ -10843,21 +9765,10 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "bedford-library-events-cee0720ae1991ade",
-      "title": "Bedford Chess Club: Preteens",
-      "sourceId": "bedford-library-events",
-      "venueId": "bedford-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-a81deafd6a452bed",
-      "title": "Library Store",
+      "eventId": "halifax-public-libraries-57c17b4ef53c1dfd",
+      "title": "Tween Night",
       "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
+      "venueId": "halifax-north-memorial-library",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -10935,28 +9846,6 @@
       "title": "Holiday Music Performance with Daniel Matto & Scott Taylor",
       "sourceId": "halifax-public-libraries",
       "venueId": "dartmouth-north-library-temporary",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "bedford-library-events-5c576dbdd2297ef2",
-      "title": "Cookies & Computers",
-      "sourceId": "bedford-library-events",
-      "venueId": "bedford-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-a8661fd862372b95",
-      "title": "Library Store",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -11151,17 +10040,6 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-11ae2ef82f250114",
-      "title": "Library Store",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
       "eventId": "halifax-public-libraries-c8a334efa9d18475",
       "title": "Chair Yoga",
       "sourceId": "halifax-public-libraries",
@@ -11272,10 +10150,10 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-1577ce7e394b75b5",
-      "title": "Library Store",
+      "eventId": "halifax-public-libraries-c830246ee25ff343",
+      "title": "Laughter Yoga",
       "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
+      "venueId": "keshen-goodman-library",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -11393,10 +10271,10 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-bf4d445d00896c61",
-      "title": "Library Store",
+      "eventId": "halifax-public-libraries-28b570ea2379d4b6",
+      "title": "Book Talk with Carol Bruneau, Stephens Gerard Malone & Joanne Merriam",
       "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
+      "venueId": "keshen-goodman-library",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -11536,10 +10414,10 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-4326f718003ae408",
-      "title": "Library Store",
+      "eventId": "halifax-public-libraries-22a4b820aa9c7a29",
+      "title": "Fibre-UP!",
       "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
+      "venueId": "woodlawn-library",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -11668,10 +10546,10 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-f2d20c37cbf58e42",
-      "title": "Library Store",
+      "eventId": "halifax-public-libraries-9312843d5aa4596d",
+      "title": "Art in the Afternoon",
       "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
+      "venueId": "captain-william-spry-library",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -11782,17 +10660,6 @@
       "title": "Community Café",
       "sourceId": "halifax-public-libraries",
       "venueId": "alderney-gate-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-4e60ba99c6b6dfc8",
-      "title": "Library Store",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -11965,10 +10832,10 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-2afa54619b23ac50",
-      "title": "Library Store",
+      "eventId": "halifax-public-libraries-503de600e3546cd6",
+      "title": "Clayton Park Chess Club",
       "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
+      "venueId": "keshen-goodman-library",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -12108,10 +10975,10 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-1e32658277055057",
-      "title": "Library Store",
+      "eventId": "halifax-public-libraries-b34f9215930ced7e",
+      "title": "Take Charge of Your Stress: 4-Week Program",
       "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
+      "venueId": "woodlawn-library",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -12229,10 +11096,10 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-7be859af6cbd178a",
-      "title": "Library Store",
+      "eventId": "halifax-public-libraries-6735cd1eaabda6bd",
+      "title": "Crafting with Fibres",
       "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
+      "venueId": "keshen-goodman-library",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -12339,8 +11206,8 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-6e47ce4f85250464",
-      "title": "Library Store",
+      "eventId": "halifax-public-libraries-64399e8ab21fe1fa",
+      "title": "How to Speak Assertively: 4-Week Program",
       "sourceId": "halifax-public-libraries",
       "venueId": "central-library-halifax",
       "venueBasis": "exact_normalized_venue_name",
@@ -12526,17 +11393,6 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-43bb927eb1b7c089",
-      "title": "Library Store",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
       "eventId": "neptune-theatre-0234f7976c2b6015",
       "title": "Urinetown The Musical",
       "sourceId": "neptune-theatre",
@@ -12574,6 +11430,17 @@
       "title": "Health Strategies for Perimenopause & Beyond: 3-Week Program",
       "sourceId": "halifax-public-libraries",
       "venueId": "woodlawn-library",
+      "venueBasis": "exact_normalized_venue_name",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "halifax-public-libraries-78d585c66ed8c601",
+      "title": "The Art of Handcrafting: Celebrating Identity & Culture Through Afro-Inspired Accessories",
+      "sourceId": "halifax-public-libraries",
+      "venueId": "keshen-goodman-library",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -12684,17 +11551,6 @@
       "title": "Crafting with Fibres",
       "sourceId": "halifax-public-libraries",
       "venueId": "keshen-goodman-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-9b39227ac04cd6f3",
-      "title": "Library Store",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -12834,17 +11690,6 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-170081a4e15721a6",
-      "title": "Library Store",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
       "eventId": "halifax-public-libraries-f7d65fce75d06b8a",
       "title": "Newcomer English Language Learning Group",
       "sourceId": "halifax-public-libraries",
@@ -12977,17 +11822,6 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-f20081a492809845",
-      "title": "Library Store",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
       "eventId": "halifax-public-libraries-4428c962eec4f8f3",
       "title": "Mediterranean Inspired Eating",
       "sourceId": "halifax-public-libraries",
@@ -13098,8 +11932,8 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-22f442374b11729d",
-      "title": "Library Store",
+      "eventId": "halifax-public-libraries-a294f3d59d52fa0e",
+      "title": "The Hangout",
       "sourceId": "halifax-public-libraries",
       "venueId": "central-library-halifax",
       "venueBasis": "exact_normalized_venue_name",
@@ -13263,10 +12097,10 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-e168de2349ee444a",
-      "title": "Library Store",
+      "eventId": "halifax-public-libraries-80426a6400b2c193",
+      "title": "Book Club: The Lion Women of Tehran",
       "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
+      "venueId": "keshen-goodman-library",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -13461,10 +12295,10 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-725a0ce1fce1f187",
-      "title": "Library Store",
+      "eventId": "halifax-public-libraries-3d2c5d5793ea1be0",
+      "title": "Clayton Park Chess Club",
       "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
+      "venueId": "keshen-goodman-library",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -13538,6 +12372,17 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "halifax-public-libraries-283c5012a684c94c",
+      "title": "Author Talk with Duncan Miller: Canada's Navy in the First Gulf War - A First-Hand Account",
+      "sourceId": "halifax-public-libraries",
+      "venueId": "keshen-goodman-library",
+      "venueBasis": "exact_normalized_venue_name",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "symphony-nova-scotia-abecea9b2a948a99",
       "title": "Aquakultre & Symphony Nova Scotia",
       "sourceId": "symphony-nova-scotia",
@@ -13582,8 +12427,8 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-eecdf3bf964eb8d8",
-      "title": "Library Store",
+      "eventId": "halifax-public-libraries-f0b0145165d44432",
+      "title": "Take Charge of Your Stress",
       "sourceId": "halifax-public-libraries",
       "venueId": "central-library-halifax",
       "venueBasis": "exact_normalized_venue_name",
@@ -13703,10 +12548,10 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-2d63f9cf0a3060de",
-      "title": "Library Store",
+      "eventId": "halifax-public-libraries-966308d0eac8086b",
+      "title": "Art in the Afternoon",
       "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
+      "venueId": "captain-william-spry-library",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -13857,17 +12702,6 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-661fcf2237690e28",
-      "title": "Library Store",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
       "eventId": "bedford-library-events-cbb396fa003d5bb1",
       "title": "Book Club: Becoming",
       "sourceId": "bedford-library-events",
@@ -13967,10 +12801,10 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-16956d7bf9a9166a",
-      "title": "Library Store",
+      "eventId": "halifax-public-libraries-d4388d156853bc28",
+      "title": "Teen Night",
       "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
+      "venueId": "woodlawn-library",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -14077,10 +12911,10 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-c34c2e50b6cc3061",
-      "title": "Library Store",
+      "eventId": "halifax-public-libraries-58588ab9138480d8",
+      "title": "Newcomer English Language Learning Group",
       "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
+      "venueId": "alderney-gate-library",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -14209,17 +13043,6 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-796b2c7b120f613e",
-      "title": "Library Store",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
       "eventId": "halifax-public-libraries-3dc9e1c372d1a227",
       "title": "The Hangout",
       "sourceId": "halifax-public-libraries",
@@ -14330,10 +13153,10 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-c42f4e9478590460",
-      "title": "Library Store",
+      "eventId": "halifax-public-libraries-6b1faf7d9f784c20",
+      "title": "Clayton Park Chess Club",
       "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
+      "venueId": "keshen-goodman-library",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -14473,10 +13296,10 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-4c6f44c558c0b74a",
-      "title": "Library Store",
+      "eventId": "halifax-public-libraries-786c7aa8f86d35d1",
+      "title": "Art in the Afternoon",
       "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
+      "venueId": "captain-william-spry-library",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -14596,17 +13419,6 @@
     {
       "eventId": "halifax-public-libraries-96665d4dcd9412f1",
       "title": "Sunday Fun-Day",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-56f202f490038227",
-      "title": "Library Store",
       "sourceId": "halifax-public-libraries",
       "venueId": "central-library-halifax",
       "venueBasis": "exact_normalized_venue_name",
@@ -14748,17 +13560,6 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-ea866ba63a5db915",
-      "title": "Library Store",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
       "eventId": "halifax-public-libraries-4013652a0908246f",
       "title": "Art in the Afternoon",
       "sourceId": "halifax-public-libraries",
@@ -14869,17 +13670,6 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-331928ede86cfebb",
-      "title": "Library Store",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
       "eventId": "halifax-public-libraries-1cb90b1d2d078c98",
       "title": "Shake, Rattle & Read",
       "sourceId": "halifax-public-libraries",
@@ -14973,17 +13763,6 @@
       "sourceId": "bedford-library-events",
       "venueId": "bedford-library",
       "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-d081f4d404cf3f38",
-      "title": "Library Store",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
       "restaurantId": null,
@@ -15089,17 +13868,6 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-dff810f66aa8ae23",
-      "title": "Library Store",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
       "eventId": "halifax-public-libraries-809eb63e3c2d34f8",
       "title": "Book Club: The Cure for Drowning",
       "sourceId": "halifax-public-libraries",
@@ -15166,10 +13934,10 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-ce81190333e8b1dd",
-      "title": "Library Store",
+      "eventId": "halifax-public-libraries-1de1deb60b0a1a23",
+      "title": "Teen Night",
       "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
+      "venueId": "woodlawn-library",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -15265,17 +14033,6 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-1c74b37443bfaa7d",
-      "title": "Library Store",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
       "eventId": "halifax-public-libraries-f2c92dc337ab7407",
       "title": "Crafting with Fibres",
       "sourceId": "halifax-public-libraries",
@@ -15342,17 +14099,6 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-d0e34bb88254e99f",
-      "title": "Library Store",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
       "eventId": "halifax-public-libraries-6b12da36aa3b502d",
       "title": "Crafting with Fibres",
       "sourceId": "halifax-public-libraries",
@@ -15408,10 +14154,10 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-2de181813218eaf6",
-      "title": "Library Store",
+      "eventId": "halifax-public-libraries-bf4b986f2956523c",
+      "title": "Crafting with Fibres",
       "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
+      "venueId": "keshen-goodman-library",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -15474,17 +14220,6 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-8ef8fbf11800f358",
-      "title": "Library Store",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
       "eventId": "halifax-public-libraries-d94df8e489a6ce6b",
       "title": "Crafting with Fibres",
       "sourceId": "halifax-public-libraries",
@@ -15533,17 +14268,6 @@
       "title": "Laughter Yoga",
       "sourceId": "halifax-public-libraries",
       "venueId": "keshen-goodman-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-d7abc10c07f0a670",
-      "title": "Library Store",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -15617,17 +14341,6 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-862f2926ddb1f06b",
-      "title": "Library Store",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
       "eventId": "halifax-public-libraries-f03b2f8b368e011d",
       "title": "Laughter Yoga",
       "sourceId": "halifax-public-libraries",
@@ -15672,13 +14385,13 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "light-house-arts-centre-733fac2fcc9a9f40",
-      "title": "Critical Mass 2026 — Light House Arts Centre",
-      "sourceId": "light-house-arts-centre",
-      "venueId": "light-house-arts-centre-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "light-house-arts-centre",
-      "organizerBasis": "source_id",
+      "eventId": "halifax-public-libraries-aae4ebcfe3a722b2",
+      "title": "Crafting with Fibres",
+      "sourceId": "halifax-public-libraries",
+      "venueId": "keshen-goodman-library",
+      "venueBasis": "exact_normalized_venue_name",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
       "restaurantId": null,
       "restaurantBasis": null
     },
