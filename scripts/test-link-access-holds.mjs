@@ -24,8 +24,10 @@ const fullReviewedPolicy = JSON.parse(await readFile(new URL('../data/source-lin
 // Preserve the original 224-receipt regression corpus independently of the
 // ten previously reviewed exact holds, six source-refresh holds, seven
 // Quality Gate holds, three Social Source holds, two current place-fact holds,
-// the Bedford menus hold and the current Crème robots hold.
-const policyBeforeCremeRobots = {...structuredClone(fullReviewedPolicy), historicalEvidence:structuredClone(fullReviewedPolicy.historicalEvidence.slice(0, -1))};
+// the Bedford menus hold, the Crème robots hold and three exact Crème
+// release-link holds reviewed from the failed exact-head Quality run.
+const policyBeforeCremeQuality = {...structuredClone(fullReviewedPolicy), historicalEvidence:structuredClone(fullReviewedPolicy.historicalEvidence.slice(0, -3))};
+const policyBeforeCremeRobots = {...structuredClone(policyBeforeCremeQuality), historicalEvidence:structuredClone(policyBeforeCremeQuality.historicalEvidence.slice(0, -1))};
 const policyBeforeBedfordMenus = {...structuredClone(policyBeforeCremeRobots), historicalEvidence:structuredClone(policyBeforeCremeRobots.historicalEvidence.slice(0, -1))};
 const policyBeforePlaceFacts = {...structuredClone(policyBeforeBedfordMenus), historicalEvidence:structuredClone(policyBeforeBedfordMenus.historicalEvidence.slice(0, -2))};
 const policyBeforeThumbnail = {...structuredClone(policyBeforePlaceFacts), historicalEvidence:structuredClone(policyBeforePlaceFacts.historicalEvidence.slice(0, -3))};
@@ -259,6 +261,7 @@ process.on('exit', () => {
   validateAccessPolicy(policyBeforePlaceFacts);
   validateAccessPolicy(policyBeforeBedfordMenus);
   validateAccessPolicy(policyBeforeCremeRobots);
+  validateAccessPolicy(policyBeforeCremeQuality);
   validateAccessPolicy(fullReviewedPolicy);
   assert.equal(priorReviewedPolicy.historicalEvidence.length, committedPolicy.historicalEvidence.length + 8, 'Only five Barrios groups, one Secret Sauce group, one Greco feed group and one happy-hour API group added to immutable baseline');
   assert.equal(reviewedBeforeCurrentRun.historicalEvidence.length, priorReviewedPolicy.historicalEvidence.length + 2, 'Only the exact Little Pisa homepage and menu receipts extend the prior reviewed policy');
@@ -267,7 +270,8 @@ process.on('exit', () => {
   assert.equal(policyBeforePlaceFacts.historicalEvidence.length, policyBeforeThumbnail.historicalEvidence.length + 3, 'Only three exact thumbnail-discovery HTTP 403 receipts extend the reviewed policy');
   assert.equal(policyBeforeBedfordMenus.historicalEvidence.length, policyBeforePlaceFacts.historicalEvidence.length + 2, 'Only two exact structured-place-fact HTTP 403 receipts extend the reviewed policy');
   assert.equal(policyBeforeCremeRobots.historicalEvidence.length, policyBeforeBedfordMenus.historicalEvidence.length + 1, 'Only the exact Bedford Basin Market menus HTTP 403 receipt extends the reviewed policy');
-  assert.equal(fullReviewedPolicy.historicalEvidence.length, policyBeforeCremeRobots.historicalEvidence.length + 1, 'Only the exact Crème robots.txt HTTP 403 receipt extends the reviewed policy');
+  assert.equal(policyBeforeCremeQuality.historicalEvidence.length, policyBeforeCremeRobots.historicalEvidence.length + 1, 'Only the exact Crème robots.txt HTTP 403 receipt extends the reviewed policy');
+  assert.equal(fullReviewedPolicy.historicalEvidence.length, policyBeforeCremeQuality.historicalEvidence.length + 3, 'Only the exact Crème homepage, menu and store HTTP 403 receipts extend the reviewed policy');
   const newBarriosGroups = priorReviewedPolicy.historicalEvidence.slice(-8, -3);
   for (const group of newBarriosGroups) {
     const p = group.provenance;
@@ -586,9 +590,8 @@ assert.equal(acceptedBarriosHolds.find('https://barrioshfx.ca/unknown-page'), nu
   await gate(bedfordMenusCheck.report);
   checked('Bedford Basin Market exact menus URL is unattempted; an unevidenced sibling path remains eligible');
 
-  const cremeRobotsGroup = fullReviewedPolicy.historicalEvidence.at(-1);
+  const cremeRobotsGroup = policyBeforeCremeQuality.historicalEvidence.at(-1);
   const cremeRobotsUrl = 'https://cremehalifax.com/robots.txt';
-  const cremeRobotsSibling = 'https://cremehalifax.com/menu';
   {
     const p = cremeRobotsGroup.provenance;
     assert.equal(p.kind, 'reviewed_workflow_log');
@@ -604,17 +607,42 @@ assert.equal(acceptedBarriosHolds.find('https://barrioshfx.ca/unknown-page'), nu
     assert.equal(cremeRobotsGroup.observations[0].url, cremeRobotsUrl);
     assert.equal(cremeRobotsGroup.observations[0].status, 403);
   }
-  const acceptedCremeRobotsHolds = createAccessHolds(fullReviewedPolicy);
+  const acceptedCremeRobotsHolds = createAccessHolds(policyBeforeCremeQuality);
   assert.equal(acceptedCremeRobotsHolds.find(cremeRobotsUrl)?.scope, 'url', 'The exact denied Crème robots URL is held');
-  assert.equal(acceptedCremeRobotsHolds.find(cremeRobotsSibling), null, 'An unevidenced Crème sibling remains eligible');
-  await configure({policy:fullReviewedPolicy, catalog:catalogFor([cremeRobotsUrl, cremeRobotsSibling])});
-  const cremeRobotsCheck = await collect({[cremeRobotsSibling]:[ok]});
-  assert.equal(cremeRobotsCheck.report.counts.held, 1);
-  assert.equal(cremeRobotsCheck.report.counts.attempted, 1);
-  assert.deepEqual(cremeRobotsCheck.events.filter(e=>e.event==='fetch').map(e=>e.url), [cremeRobotsSibling]);
-  held(cremeRobotsCheck.report.results[0], cremeRobotsGroup.observations[0]);
-  await gate(cremeRobotsCheck.report);
-  checked('Crème exact robots URL is unattempted; an unevidenced sibling path remains eligible');
+  const cremeQualityUrls = ['https://cremehalifax.com/', 'https://cremehalifax.com/menu', 'https://cremehalifax.com/store'];
+  const cremeQualityGroups = fullReviewedPolicy.historicalEvidence.slice(-3);
+  for (const [index, group] of cremeQualityGroups.entries()) {
+    const p = group.provenance;
+    assert.equal(p.kind, 'reviewed_workflow_log');
+    assert.equal(p.workflowRunId, '40911513282');
+    assert.equal(p.workflowJob, 'data-integrity');
+    assert.equal(p.workflowJobId, 123581604485);
+    assert.equal(p.sourceCommitSha, 'd546378b8306738a10d8b8650b2e0b7645fa7d77');
+    assert.equal(p.accessPolicySha256, digest(policyBeforeCremeQuality), 'Crème release-link receipt references the exact robots-only policy');
+    assert.equal(p.logSha256, '6047d367bac00a1da952ff156d312206940cfe7562c5522a7370316ba4a82db1');
+    assert.equal(p.diagnosticSha256, digest(p.diagnostic));
+    assert.equal(p.receiptSha256, digest(p.diagnostic.evidence.receipt));
+    assert.deepEqual(group.observations, [p.diagnostic.evidence.hold.evidence]);
+    assert.equal(group.observations[0].url, cremeQualityUrls[index]);
+    assert.equal(group.observations[0].status, 403);
+  }
+  const cremeUnevidencedSibling = 'https://cremehalifax.com/about';
+  const acceptedCremeHolds = createAccessHolds(fullReviewedPolicy);
+  for (const url of [cremeRobotsUrl, ...cremeQualityUrls]) {
+    assert.equal(acceptedCremeHolds.find(url)?.scope, 'url', `The exact denied Crème URL is held: ${url}`);
+  }
+  assert.equal(acceptedCremeHolds.find(cremeUnevidencedSibling), null, 'An unevidenced Crème sibling remains eligible');
+  await configure({policy:fullReviewedPolicy, catalog:catalogFor([cremeRobotsUrl, ...cremeQualityUrls, cremeUnevidencedSibling])});
+  const cremeCheck = await collect({[cremeUnevidencedSibling]:[ok]});
+  assert.equal(cremeCheck.report.counts.held, 4);
+  assert.equal(cremeCheck.report.counts.attempted, 1);
+  assert.deepEqual(cremeCheck.events.filter(e=>e.event==='fetch').map(e=>e.url), [cremeUnevidencedSibling]);
+  for (const group of [cremeRobotsGroup, ...cremeQualityGroups]) {
+    const result = cremeCheck.report.results.find(row => row.url === group.observations[0].url);
+    held(result, group.observations[0]);
+  }
+  await gate(cremeCheck.report);
+  checked('Four exact Crème denied URLs are unattempted; an unevidenced sibling path remains eligible');
 
 
   assert(committedPolicy.historicalEvidence[0].observations.every(row => row.status === 403 && new URL(row.url).hostname === 'junglejims.ca'));

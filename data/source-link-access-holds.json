@@ -4086,6 +4086,213 @@
           "observedAt": "2026-10-29T16:05:15.376Z"
         }
       ]
+    },
+    {
+      "provenance": {
+        "kind": "reviewed_workflow_log",
+        "repository": "JeremyHennessy/HalifaxSourced",
+        "sourceCommitSha": "d546378b8306738a10d8b8650b2e0b7645fa7d77",
+        "workflowRunId": "40911513282",
+        "workflowRunAttempt": "1",
+        "workflowJob": "data-integrity",
+        "workflowJobId": 123581604485,
+        "accessPolicySha256": "97c6d7b225680ebe08d8637ecd45e8c3196fda4aa7bf00ba9e7fa30bfb085fbe",
+        "logSha256": "6047d367bac00a1da952ff156d312206940cfe7562c5522a7370316ba4a82db1",
+        "diagnosticSha256": "1d26ae959f582e8caf56c10f5124f8be9b4602d7e67e9814fa3299cd5253b520",
+        "receiptSha256": "d9cb29e3b689406bbe2ae6c65b2e215db525a80f15130255d97f32667fdf9caa",
+        "loggedAt": "2026-10-29T16:35:20.538Z",
+        "diagnostic": {
+          "version": 1,
+          "disposition": "nonpublishable_requires_review",
+          "kind": "http_restriction",
+          "repository": "JeremyHennessy/HalifaxSourced",
+          "workflowJob": "data-integrity",
+          "loggedAt": "2026-10-29T16:35:20.538Z",
+          "sourceCommitSha": "d546378b8306738a10d8b8650b2e0b7645fa7d77",
+          "sourceWorkflowRunId": "40911513282",
+          "sourceWorkflowRunAttempt": "1",
+          "accessPolicySha256": "97c6d7b225680ebe08d8637ecd45e8c3196fda4aa7bf00ba9e7fa30bfb085fbe",
+          "evidence": {
+            "hold": {
+              "id": "76e8b63a4e815a1b1827eec636daeee4713abe5db6cbcd0959cc3d4407a0b2f3",
+              "scope": "url",
+              "target": "https://cremehalifax.com/",
+              "reason": "access_restricted",
+              "resume": "reviewed_evidence_required",
+              "evidence": {
+                "url": "https://cremehalifax.com/",
+                "finalUrl": "https://cremehalifax.com/",
+                "status": 403,
+                "observedAt": "2026-10-29T16:35:20.538Z"
+              },
+              "provenance": {
+                "kind": "current_run",
+                "sourceCommitSha": "d546378b8306738a10d8b8650b2e0b7645fa7d77",
+                "sourceWorkflowRunId": "40911513282",
+                "sourceWorkflowRunAttempt": "1",
+                "accessPolicySha256": "97c6d7b225680ebe08d8637ecd45e8c3196fda4aa7bf00ba9e7fa30bfb085fbe",
+                "requestId": "51"
+              }
+            },
+            "receipt": {
+              "requestId": "51",
+              "url": "https://cremehalifax.com/",
+              "status": 403,
+              "observedAt": "2026-10-29T16:35:20.538Z",
+              "attemptedAt": "2026-10-29T16:35:20.071Z",
+              "mediaType": "text/html"
+            },
+            "late": false,
+            "suspensionId": null
+          }
+        }
+      },
+      "observations": [
+        {
+          "url": "https://cremehalifax.com/",
+          "finalUrl": "https://cremehalifax.com/",
+          "status": 403,
+          "observedAt": "2026-10-29T16:35:20.538Z"
+        }
+      ]
+    },
+    {
+      "provenance": {
+        "kind": "reviewed_workflow_log",
+        "repository": "JeremyHennessy/HalifaxSourced",
+        "sourceCommitSha": "d546378b8306738a10d8b8650b2e0b7645fa7d77",
+        "workflowRunId": "40911513282",
+        "workflowRunAttempt": "1",
+        "workflowJob": "data-integrity",
+        "workflowJobId": 123581604485,
+        "accessPolicySha256": "97c6d7b225680ebe08d8637ecd45e8c3196fda4aa7bf00ba9e7fa30bfb085fbe",
+        "logSha256": "6047d367bac00a1da952ff156d312206940cfe7562c5522a7370316ba4a82db1",
+        "diagnosticSha256": "2f23ac2b95139781c4f6f4b21f48eb5f680220b0d03651479f6451e1f0b3143b",
+        "receiptSha256": "10a4df98dea967d4e116cb10cc6fe6a67bd8b1e79d065ffbdf59924b49aaf4f7",
+        "loggedAt": "2026-10-29T16:35:47.113Z",
+        "diagnostic": {
+          "version": 1,
+          "disposition": "nonpublishable_requires_review",
+          "kind": "http_restriction",
+          "repository": "JeremyHennessy/HalifaxSourced",
+          "workflowJob": "data-integrity",
+          "loggedAt": "2026-10-29T16:35:47.113Z",
+          "sourceCommitSha": "d546378b8306738a10d8b8650b2e0b7645fa7d77",
+          "sourceWorkflowRunId": "40911513282",
+          "sourceWorkflowRunAttempt": "1",
+          "accessPolicySha256": "97c6d7b225680ebe08d8637ecd45e8c3196fda4aa7bf00ba9e7fa30bfb085fbe",
+          "evidence": {
+            "hold": {
+              "id": "8fc316d68a574fed94124ca5097a536e5fc5715a179c176601add15849c8047e",
+              "scope": "url",
+              "target": "https://cremehalifax.com/menu",
+              "reason": "access_restricted",
+              "resume": "reviewed_evidence_required",
+              "evidence": {
+                "url": "https://cremehalifax.com/menu",
+                "finalUrl": "https://cremehalifax.com/menu",
+                "status": 403,
+                "observedAt": "2026-10-29T16:35:47.112Z"
+              },
+              "provenance": {
+                "kind": "current_run",
+                "sourceCommitSha": "d546378b8306738a10d8b8650b2e0b7645fa7d77",
+                "sourceWorkflowRunId": "40911513282",
+                "sourceWorkflowRunAttempt": "1",
+                "accessPolicySha256": "97c6d7b225680ebe08d8637ecd45e8c3196fda4aa7bf00ba9e7fa30bfb085fbe",
+                "requestId": "554"
+              }
+            },
+            "receipt": {
+              "requestId": "554",
+              "url": "https://cremehalifax.com/menu",
+              "status": 403,
+              "observedAt": "2026-10-29T16:35:47.112Z",
+              "attemptedAt": "2026-10-29T16:35:47.000Z",
+              "mediaType": "text/html"
+            },
+            "late": false,
+            "suspensionId": null
+          }
+        }
+      },
+      "observations": [
+        {
+          "url": "https://cremehalifax.com/menu",
+          "finalUrl": "https://cremehalifax.com/menu",
+          "status": 403,
+          "observedAt": "2026-10-29T16:35:47.112Z"
+        }
+      ]
+    },
+    {
+      "provenance": {
+        "kind": "reviewed_workflow_log",
+        "repository": "JeremyHennessy/HalifaxSourced",
+        "sourceCommitSha": "d546378b8306738a10d8b8650b2e0b7645fa7d77",
+        "workflowRunId": "40911513282",
+        "workflowRunAttempt": "1",
+        "workflowJob": "data-integrity",
+        "workflowJobId": 123581604485,
+        "accessPolicySha256": "97c6d7b225680ebe08d8637ecd45e8c3196fda4aa7bf00ba9e7fa30bfb085fbe",
+        "logSha256": "6047d367bac00a1da952ff156d312206940cfe7562c5522a7370316ba4a82db1",
+        "diagnosticSha256": "bc2c31daca61e2c94aa46b14f9fa4881d9173b7153ce4e2e755029c89f43427f",
+        "receiptSha256": "600bed8dc65d5452383d3b8d20055489a5ad632cde566409eada69d6d2e2248d",
+        "loggedAt": "2026-10-29T16:35:47.246Z",
+        "diagnostic": {
+          "version": 1,
+          "disposition": "nonpublishable_requires_review",
+          "kind": "http_restriction",
+          "repository": "JeremyHennessy/HalifaxSourced",
+          "workflowJob": "data-integrity",
+          "loggedAt": "2026-10-29T16:35:47.246Z",
+          "sourceCommitSha": "d546378b8306738a10d8b8650b2e0b7645fa7d77",
+          "sourceWorkflowRunId": "40911513282",
+          "sourceWorkflowRunAttempt": "1",
+          "accessPolicySha256": "97c6d7b225680ebe08d8637ecd45e8c3196fda4aa7bf00ba9e7fa30bfb085fbe",
+          "evidence": {
+            "hold": {
+              "id": "bf4e2bf524c180fdc7576fae82bb9a24917c39f0ab0162711431dd7dbfed5bfe",
+              "scope": "url",
+              "target": "https://cremehalifax.com/store",
+              "reason": "access_restricted",
+              "resume": "reviewed_evidence_required",
+              "evidence": {
+                "url": "https://cremehalifax.com/store",
+                "finalUrl": "https://cremehalifax.com/store",
+                "status": 403,
+                "observedAt": "2026-10-29T16:35:47.246Z"
+              },
+              "provenance": {
+                "kind": "current_run",
+                "sourceCommitSha": "d546378b8306738a10d8b8650b2e0b7645fa7d77",
+                "sourceWorkflowRunId": "40911513282",
+                "sourceWorkflowRunAttempt": "1",
+                "accessPolicySha256": "97c6d7b225680ebe08d8637ecd45e8c3196fda4aa7bf00ba9e7fa30bfb085fbe",
+                "requestId": "555"
+              }
+            },
+            "receipt": {
+              "requestId": "555",
+              "url": "https://cremehalifax.com/store",
+              "status": 403,
+              "observedAt": "2026-10-29T16:35:47.246Z",
+              "attemptedAt": "2026-10-29T16:35:47.118Z",
+              "mediaType": "text/html"
+            },
+            "late": false,
+            "suspensionId": null
+          }
+        }
+      },
+      "observations": [
+        {
+          "url": "https://cremehalifax.com/store",
+          "finalUrl": "https://cremehalifax.com/store",
+          "status": 403,
+          "observedAt": "2026-10-29T16:35:47.246Z"
+        }
+      ]
     }
   ]
 }
