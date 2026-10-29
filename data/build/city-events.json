@@ -2580,8 +2580,11 @@
       "organizerName": "Halifax Public Libraries"
     },
     {
-      "id": "the-carleton-b0bd3f0b147abd21",
+      "id": "the-carleton-2d6665b8890674d0",
       "title": "SOLD OUT: AfterWords Literary Festival – Dodge City: In Conversation",
+      "duplicateEventIds": [
+        "the-carleton-b0bd3f0b147abd21"
+      ],
       "startAt": "2026-11-01T20:00:00.000Z",
       "endAt": "2026-11-01T22:00:00.000Z",
       "allDay": false,
