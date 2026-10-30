@@ -582,8 +582,7 @@ await captureIphone("spring-garden-reviewed");
 for (const target of [
   { id: "osm-node-13262595504-mappatura-bistro", title: "Mappatura Bistro", address: "5883 Spring Garden", menu: "mappaturabistro.ca/menu", socialProfiles: 2 },
   { id: "osm-node-26041177-your-father-s-moustache", title: "Your Father's Moustache", address: "5686 Spring Garden", menu: "yourfathersmoustache.ca/our-menu" },
-  { id: "osm-node-5161526522-sushi-nami-royale", title: "Sushi Nami Royale", address: "1458 Queen", menu: "sushinami.ca/downtown-halifax", socialProfiles: 3 },
-  { id: "osm-node-3791840157-krave-burger", title: "Krave Burger", address: "5680 Spring Garden", menu: "kraveburger.com/menu" }
+  { id: "osm-node-5161526522-sushi-nami-royale", title: "Sushi Nami Royale", address: "1458 Queen", menu: "sushinami.ca/downtown-halifax", socialProfiles: 3 }
 ]) {
   await page.goto(`${url}/#restaurant/${target.id}`, { waitUntil: "networkidle" });
   await page.locator("h1", { hasText: target.title }).waitFor();
@@ -607,6 +606,21 @@ for (const target of [
     await captureIphone("spring-garden-batch-2");
   }
 }
+
+await page.goto(`${url}/#restaurant/osm-node-3791840157-krave-burger`, { waitUntil: "networkidle" });
+await page.locator("h1", { hasText: "Krave Burger" }).waitFor();
+const closedSpringGardenKrave = await page.evaluate(() => {
+  const restaurant = restaurants.find((item) => item.id === "osm-node-3791840157-krave-burger");
+  return {
+    operatingStatus: restaurant?.operatingStatus || "",
+    openingHours: restaurant?.openingHours ?? null,
+    neighborhood: restaurant?.neighborhood || "",
+    address: restaurant?.address || "",
+    evidenceUrl: restaurant?.operatingStatusEvidence?.sourceUrl || ""
+  };
+});
+if (closedSpringGardenKrave.operatingStatus !== "permanently_closed" || closedSpringGardenKrave.openingHours !== null || closedSpringGardenKrave.neighborhood !== "Spring Garden" || !closedSpringGardenKrave.address.includes("5680 Spring Garden") || !closedSpringGardenKrave.evidenceUrl.includes("halifax.retales.ca/2026/10/krave-closes-spring-garden-location")) throw new Error(`Expected the reviewed closed Spring Garden Krave lifecycle, got ${JSON.stringify(closedSpringGardenKrave)}.`);
+if (await page.locator("#detailInfo .sidebar-link", { hasText: "Menu" }).count() !== 0) throw new Error("The closed Spring Garden Krave location must not render an active Menu action.");
 
 // Public image previews must use only the exact retained source URL, without
 // changing the media permission predicate or the responsive card structure.
