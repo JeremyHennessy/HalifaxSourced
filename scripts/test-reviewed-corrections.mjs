@@ -51,6 +51,21 @@ for (const records of [app.restaurants, catalog.restaurants]) {
   assert(!dartmouth.aliasIds?.includes(halifax.id), 'These are separate locations, not duplicate identities');
 }
 assert(active.has(woodenDartmouthId));
+const springGardenKraveId = 'osm-node-3791840157-krave-burger';
+const dartmouthKraveId = 'osm-node-12143325435-krave-burger';
+for (const records of [app.restaurants, catalog.restaurants]) {
+  const springGardenKrave = records.find(record => record.id === springGardenKraveId);
+  const dartmouthKrave = records.find(record => record.id === dartmouthKraveId);
+  assert.equal(springGardenKrave.operatingStatus, 'permanently_closed');
+  assert.equal(springGardenKrave.openingHours, null, 'Do not retain pre-closure Spring Garden hours');
+  assert.equal(springGardenKrave.closureDate, undefined, 'The report date is not an inferred final-service date');
+  assert.equal(springGardenKrave.operatingStatusEvidence.sourceUrl, 'https://halifax.retales.ca/2026/10/krave-closes-spring-garden-location/');
+  assert.match(springGardenKrave.operatingStatusEvidence.claim, /distinct Dartmouth location remains active/);
+  assert.equal(dartmouthKrave.address, '370 Pleasant Street');
+  assert.notEqual(dartmouthKrave.operatingStatus, 'permanently_closed', 'Do not archive the separate Pleasant Street location');
+}
+assert(!active.has(springGardenKraveId));
+assert(active.has(dartmouthKraveId));
 const batteryAlias = 'osm-node-14139904501-battery-park-beer-bar-and-eatery';
 assert.deepEqual(app.saved, ['battery-park'], 'Old and canonical saved IDs reconcile to one persisted bookmark');
 assert.deepEqual(JSON.parse(savedWrites.at(-1)), ['battery-park']);

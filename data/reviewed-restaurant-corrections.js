@@ -1,6 +1,6 @@
 window.HALIFAX_RESTAURANT_CORRECTIONS = {
   "version": 3,
-  "reviewedAt": "2026-10-26",
+  "reviewedAt": "2026-10-30",
   "policy": "Reviewed location evidence overrides stale imports; observation dates are retained and uncertain coordinates, hours, successor identities and closure day remain unknown.",
   "records": [
     {
@@ -321,6 +321,41 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
       "observedAt": "2026-10-20",
       "reviewedAt": "2026-10-20",
       "reviewState": "verified"
+    },
+    {
+      "restaurantId": "osm-node-3791840157-krave-burger",
+      "fields": {
+        "operatingStatus": "permanently_closed",
+        "openingHours": null
+      },
+      "sourceUrl": "https://halifax.retales.ca/2026/10/krave-closes-spring-garden-location/",
+      "claim": "Halifax ReTales' October 24 report states that the Spring Garden Krave Burger location had served its final burger. A fresh check of the owner site and owner Instagram profile lists only 370 Pleasant Street in Dartmouth. October 24 is retained as the report date, not an inferred final-service date; the distinct Dartmouth location remains active.",
+      "observedAt": "2026-10-30T17:14:43Z",
+      "reviewedAt": "2026-10-30T17:14:43Z",
+      "reviewState": "verified",
+      "supportingEvidence": [
+        {
+          "type": "local_opening_watch",
+          "url": "https://halifax.retales.ca/2026/10/krave-closes-spring-garden-location/",
+          "observedAt": "2026-10-30T17:14:43Z",
+          "contentSha256": "64c34ad714771225ac5d8ce9d3b560f9a3e17ed9e651a2bdae8cd87c07097fad",
+          "claim": "Location-specific closure report for 5680 Spring Garden Road; the article's October 24 display date is not converted into an inferred final-service date."
+        },
+        {
+          "type": "official_website",
+          "url": "http://kraveburger.com/",
+          "observedAt": "2026-10-30T17:14:49Z",
+          "contentSha256": "2253fc5fc84befb8118649391b0c8f1f47a0b08703789bd033c8deea4d291500",
+          "claim": "Current owner site lists only 370 Pleasant Street, Dartmouth and telephone 902-444-0733."
+        },
+        {
+          "type": "official_social_public_page",
+          "url": "https://www.instagram.com/kraveburger/",
+          "observedAt": "2026-10-30T17:14:56Z",
+          "contentSha256": "5c7c24dbb0495278a75d6bf3cc39aa27ea37c27ad9527e8aa91717452da9f1c3",
+          "claim": "Public owner profile lists 370 Pleasant Street, Dartmouth; this was a public-page read, not a Meta API attempt."
+        }
+      ]
     },
     {
       "restaurantId": "osm-node-11001023964-lockside-canteen",
