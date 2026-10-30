@@ -77,7 +77,51 @@ assert.throws(()=>requireExactCache({hit:'true',matchedKey:`${plan.predecessorCa
 // Test bounded official-API transport itself, including no credentials/redirects.
 const goodApi = async(url,options) => {assert.equal(url,`https://api.github.com/repos/${NEWS_REPOSITORY}`);assert.equal(options.redirect,'error');assert.equal(options.headers.Authorization,undefined);assert.equal(options.headers.authorization,undefined);return new Response(JSON.stringify(repository),{headers:{'content-type':'application/json'}});};
 assert.deepEqual(await githubMetadata(`/repos/${NEWS_REPOSITORY}`,{fetchImpl:goodApi}),repository);
-for (const response of [new Response('{}',{status:403,headers:{'content-type':'application/json'}}),new Response('{}',{status:429,headers:{'content-type':'application/json'}}),new Response('{}',{headers:{'content-type':'text/html'}}),new Response('not-json',{headers:{'content-type':'application/json'}}),new Response('{}',{headers:{'content-type':'application/json','content-length':'2000001'}}),new Response('x'.repeat(2_000_001),{headers:{'content-type':'application/json'}})]) await assert.rejects(githubMetadata(`/repos/${NEWS_REPOSITORY}`,{fetchImpl:async()=>response}));
+const preflightCases=[
+ ['403','http_status',new Response('{}',{status:403,headers:{'content-type':'application/json'}}),403],
+ ['429','http_status',new Response('{}',{status:429,headers:{'content-type':'application/json'}}),429],
+ ['5xx','http_status',new Response('{}',{status:503,headers:{'content-type':'application/json'}}),503],
+ ['wrong MIME','wrong_mime',new Response('{}',{headers:{'content-type':'text/html'}}),200],
+ ['missing body','missing_body',new Response(null,{headers:{'content-type':'application/json'}}),200],
+ ['oversized declared body','oversized_declared_body',new Response('{}',{headers:{'content-type':'application/json','content-length':'2000001'}}),200],
+ ['oversized streamed body','oversized_body',new Response('x'.repeat(2_000_001),{headers:{'content-type':'application/json'}}),200],
+ ['malformed JSON','malformed_json',new Response('not-json',{headers:{'content-type':'application/json'}}),200]
+];
+for(const [label,errorClass,response,status] of preflightCases){
+ await assert.rejects(githubMetadata(`/repos/${NEWS_REPOSITORY}`,{fetchImpl:async()=>response}),error=>{
+  assert.equal(error.metadataDiagnostic.errorClass,errorClass,label);assert.equal(error.metadataDiagnostic.target,`/repos/${NEWS_REPOSITORY}`);assert.equal(error.metadataDiagnostic.status,status);return true;
+ });
+}
+await assert.rejects(githubMetadata(`/repos/${NEWS_REPOSITORY}`,{fetchImpl:async()=>{const error=new Error('secret network detail');error.name='TimeoutError';throw error;}}),error=>{assert.deepEqual(error.metadataDiagnostic,{target:`/repos/${NEWS_REPOSITORY}`,status:null,mime:null,declaredBodyBytes:null,errorClass:'timeout'});assert.doesNotMatch(error.message,/secret network detail/);return true;});
+await assert.rejects(githubMetadata(`/repos/${NEWS_REPOSITORY}`,{fetchImpl:async()=>{throw new Error('secret network detail');}}),error=>{assert.equal(error.metadataDiagnostic.errorClass,'transport_unknown');assert.doesNotMatch(error.message,/secret network detail/);return true;});
+// A failed initial plan persists only the bounded receipt, before there is any
+// plan or collector eligibility. Even a failed receipt write remains blocked.
+for(const [label,errorClass,response] of [...preflightCases.slice(0,5),['timeout','timeout',null]]){
+ const dir=await mkdtemp(`${tmpdir()}/news-preflight-`),paths=lineagePaths(pathToFileURL(`${dir}/`)),summary=`${dir}/summary.md`;let collectorCalls=0;
+ try{
+  const fetchImpl=async()=>{if(label==='timeout'){const error=new Error('secret timeout detail');error.name='TimeoutError';throw error;}return response;};
+  const failedMetadata=path=>githubMetadata(path,{fetchImpl});
+  await assert.rejects(createLineagePlan({env:{...env,GITHUB_STEP_SUMMARY:summary},paths,metadata:failedMetadata,now:()=>new Date('2026-10-30T00:00:00.000Z')}));
+  await assert.rejects(collectWithLineage({env,paths,metadata:failedMetadata,collect:async()=>{collectorCalls++;}}));
+  const diagnostic=JSON.parse(await readFile(paths.preflightFailure,'utf8'));
+  assert.equal(diagnostic.kind,'news_preview_preflight_failure');assert.equal(diagnostic.phase,'lineage_preflight');assert.equal(diagnostic.errorClass,errorClass);assert.equal(diagnostic.runIdentity.runId,env.GITHUB_RUN_ID);assert.equal(diagnostic.target,`/repos/${NEWS_REPOSITORY}`);assert.equal(diagnostic.observedAt,'2026-10-30T00:00:00.000Z');
+  assert.doesNotMatch(JSON.stringify(diagnostic),/secret|not-json|\{\}/);assert.equal(collectorCalls,0);await assert.rejects(access(paths.plan),{code:'ENOENT'});
+  const report=await readFile(summary,'utf8');assert.match(report,/Operational status:\*\* blocked during lineage preflight/);assert.match(report,/Published content freshness:\*\* unchanged/);
+ } finally {await rm(dir,{recursive:true,force:true});}
+}
+{
+ const dir=await mkdtemp(`${tmpdir()}/news-preflight-write-failure-`),paths=lineagePaths(pathToFileURL(`${dir}/`));
+ try{await writeFile(paths.preflightFailure,'sentinel');await assert.rejects(createLineagePlan({env,paths,metadata:async()=>{throw new Error('metadata unavailable');}}));assert.equal(await readFile(paths.preflightFailure,'utf8'),'sentinel');await assert.rejects(access(paths.plan),{code:'ENOENT'});}finally{await rm(dir,{recursive:true,force:true});}
+}
+{
+ const dir=await mkdtemp(`${tmpdir()}/news-preflight-untrusted-error-`),paths=lineagePaths(pathToFileURL(`${dir}/`));
+ try{
+  const unsafe=new Error('secret details');unsafe.metadataDiagnostic={target:'/private/path?token=secret',status:999,mime:'a'.repeat(500),declaredBodyBytes:-1,errorClass:'secret-error-class'};
+  await assert.rejects(createLineagePlan({env,paths,metadata:async()=>{throw unsafe;}}));
+  const diagnostic=JSON.parse(await readFile(paths.preflightFailure,'utf8'));
+  assert.equal(diagnostic.target,`/repos/${NEWS_REPOSITORY}`);assert.equal(diagnostic.status,null);assert.equal(diagnostic.mime,null);assert.equal(diagnostic.declaredBodyBytes,null);assert.equal(diagnostic.errorClass,'transport_unknown');assert.doesNotMatch(JSON.stringify(diagnostic),/secret|private/);
+ }finally{await rm(dir,{recursive:true,force:true});}
+}
 await assert.rejects(githubMetadata('https://publisher.example/feed',{fetchImpl:()=>assert.fail('invalid path requested')}));
 
 const now='2026-10-27T12:00:00.000Z';
@@ -315,4 +359,5 @@ const quality=await readFile(new URL('../.github/workflows/quality-gate.yml',imp
 assert.match(quality,/node scripts\/test-news-run-lineage.mjs/);
 assert.match(workflow,/uses: actions\/checkout@v6\n        with:\n          ref: \$\{\{ github.sha \}\}/);
 assert.match(workflow,/concurrency:[\s\S]*?cancel-in-progress: false/);
+assert.match(workflow,/name: Upload nonpublishable review evidence even after an interrupted or denied collection[\s\S]*?if: always\(\)[\s\S]*?artifacts\/news-preview\*\.json/);
 console.log(`News lineage tests passed: manual/scheduled current/N-1 event identity matrix, manual-only first-run bootstrap, exact compatible v3 cache/receipt/digest verification, ${scenarios} offline file/transport scenarios, interrupted/rerun/cache-loss/held-source stops and guarded six-hour review-only workflow ordering. No network calls.`);

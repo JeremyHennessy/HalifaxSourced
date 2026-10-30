@@ -23,12 +23,24 @@ export function environmentIdentity(env) {
 // request is possible here. Rate limiting, unavailable API and bad JSON are stops.
 export async function githubMetadata(path, {fetchImpl = globalThis.fetch} = {}) {
   if (!/^\/repos\/JeremyHennessy\/HalifaxSourced(?:\/actions\/(?:runs\/\d+|workflows\/\d+\/runs\?per_page=100&page=1))?$/.test(path)) fail('invalid_metadata_path');
-  const response = await fetchImpl(`https://api.github.com${path}`,{redirect:'error',signal:AbortSignal.timeout(10000),headers:{Accept:'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28','User-Agent':'HalifaxSourced-news-lineage'}});
-  if (response.status !== 200 || !/^application\/json(?:;|$)/i.test(response.headers.get('content-type') || '') || Number(response.headers.get('content-length')) > 2_000_000 || !response.body) fail('metadata_http');
+  const diagnostic = {target:path,status:null,mime:null,declaredBodyBytes:null,errorClass:'transport_unknown'};
+  const error = errorClass => { const failure = new Error(`news_lineage_${errorClass}`); failure.metadataDiagnostic = {...diagnostic,errorClass}; throw failure; };
+  let response;
+  try { response = await fetchImpl(`https://api.github.com${path}`,{redirect:'error',signal:AbortSignal.timeout(10000),headers:{Accept:'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28','User-Agent':'HalifaxSourced-news-lineage'}}); }
+  catch (cause) { error(cause?.name === 'TimeoutError' || cause?.name === 'AbortError' ? 'timeout' : 'transport_unknown'); }
+  diagnostic.status = Number.isSafeInteger(response.status) ? response.status : null;
+  diagnostic.mime = (response.headers.get('content-type') || '').split(';',1)[0].trim().toLowerCase() || null;
+  const declared = response.headers.get('content-length');
+  diagnostic.declaredBodyBytes = declared !== null && /^\d+$/.test(declared) && Number.isSafeInteger(Number(declared)) ? Number(declared) : null;
+  if (response.status !== 200) error('http_status');
+  if (diagnostic.mime !== 'application/json') error('wrong_mime');
+  if (diagnostic.declaredBodyBytes !== null && diagnostic.declaredBodyBytes > 2_000_000) error('oversized_declared_body');
+  if (!response.body) error('missing_body');
   const reader = response.body.getReader(); let size = 0; const chunks = [];
   try {
-    while (true) { const {done,value} = await reader.read(); if (done) break; size += value.byteLength; if (size > 2_000_000) fail('metadata_size'); chunks.push(Buffer.from(value)); }
-    return JSON.parse(new TextDecoder('utf-8',{fatal:true}).decode(Buffer.concat(chunks)));
+    while (true) { let item; try { item = await reader.read(); } catch(cause) { error(cause?.name === 'TimeoutError' || cause?.name === 'AbortError' ? 'timeout' : 'transport_unknown'); } if (item.done) break; size += item.value.byteLength; if (size > 2_000_000) error('oversized_body'); chunks.push(Buffer.from(item.value)); }
+    let decoded; try { decoded = new TextDecoder('utf-8',{fatal:true}).decode(Buffer.concat(chunks)); } catch { error('malformed_json'); }
+    try { return JSON.parse(decoded); } catch { error('malformed_json'); }
   } finally { await reader.cancel().catch(()=>{}); }
 }
 

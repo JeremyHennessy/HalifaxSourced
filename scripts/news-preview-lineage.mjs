@@ -2,11 +2,11 @@ import { mkdir, readFile, writeFile, appendFile, rename, access } from 'node:fs/
 import { spawn } from 'node:child_process';
 import { pathToFileURL } from 'node:url';
 import { validateNewsCache, prepareNewsCache } from './import-regional-news.mjs';
-import { environmentIdentity, resolveNewsLineage, requireSamePlan, requireExactCache, verifyFinalReceipt, finalReceipt, payloadDigest } from './lib/news-run-lineage.mjs';
+import { environmentIdentity, githubMetadata, resolveNewsLineage, requireSamePlan, requireExactCache, verifyFinalReceipt, finalReceipt, payloadDigest } from './lib/news-run-lineage.mjs';
 const root = new URL('../',import.meta.url);
 const json = async path => JSON.parse(await readFile(path,'utf8'));
 const fail = message => { throw new Error(`news_lineage_${message}`); };
-export const lineagePaths = base => ({payload:new URL('news-preview.json',base),receipt:new URL('news-preview-final.json',base),predecessorReceipt:new URL('news-preview-predecessor.json',base),plan:new URL('news-preview-lineage-plan.json',base),collected:new URL('news-preview-collected.json',base)});
+export const lineagePaths = base => ({payload:new URL('news-preview.json',base),receipt:new URL('news-preview-final.json',base),predecessorReceipt:new URL('news-preview-predecessor.json',base),plan:new URL('news-preview-lineage-plan.json',base),collected:new URL('news-preview-collected.json',base),preflightFailure:new URL('news-preview-preflight-failure.json',base)});
 const absent = async path => { try { await access(path); fail('unexpected_existing_completion_or_bootstrap_file'); } catch(e) { if (e.code !== 'ENOENT') throw e; } };
 const validateCollectedPayload = bytes => {
   try { return validateNewsCache(JSON.parse(bytes)); }
@@ -18,10 +18,58 @@ function requireCurrent(plan,env) {
   if (plan.events?.current !== env.GITHUB_EVENT_NAME) fail('plan_current_event_mismatch');
   for (const [key,value] of Object.entries(current)) if (plan.current?.[key] !== value) fail('plan_current_identity_mismatch');
 }
-export async function createLineagePlan({env, paths, metadata}) {
-  const plan = await resolveNewsLineage({env,metadata});
-  await writeJson(paths.plan,plan);
-  return plan;
+const allowedMetadataTarget = path => typeof path === 'string' && /^\/repos\/JeremyHennessy\/HalifaxSourced(?:\/actions\/(?:runs\/[1-9][0-9]*|workflows\/[1-9][0-9]*\/runs\?per_page=100&page=1))?$/.test(path) ? path : null;
+const diagnosticErrorClasses = new Set(['http_status','wrong_mime','oversized_declared_body','oversized_body','missing_body','malformed_json','timeout','transport_unknown','metadata_validation']);
+const errorClassFor = error => {
+  if (diagnosticErrorClasses.has(error?.metadataDiagnostic?.errorClass)) return error.metadataDiagnostic.errorClass;
+  if (error?.name === 'TimeoutError' || error?.name === 'AbortError') return 'timeout';
+  if (String(error?.message || '').startsWith('news_lineage_')) return 'metadata_validation';
+  return 'transport_unknown';
+};
+export async function createLineagePlan({env, paths, metadata, now = () => new Date()}) {
+  let attemptedTarget = null;
+  const trackedMetadata = async path => {
+    attemptedTarget = allowedMetadataTarget(path);
+    try { return await (metadata || githubMetadata)(path); }
+    catch (error) { if (!error.metadataDiagnostic) error.metadataDiagnostic = {target:attemptedTarget,errorClass:errorClassFor(error)}; throw error; }
+  };
+  try {
+    const plan = await resolveNewsLineage({env,metadata:trackedMetadata});
+    await writeJson(paths.plan,plan);
+    return plan;
+  } catch (error) {
+    let identity = null;
+    try { identity = environmentIdentity(env); } catch {}
+    const detail = error.metadataDiagnostic || {};
+    const clock = now();
+    const diagnostic = {
+      version:1,
+      kind:'news_preview_preflight_failure',
+      runIdentity:identity,
+      phase:'lineage_preflight',
+      target:allowedMetadataTarget(detail.target) || attemptedTarget,
+      status:Number.isSafeInteger(detail.status) && detail.status >= 100 && detail.status <= 599 ? detail.status : null,
+      mime:typeof detail.mime === 'string' && detail.mime.length <= 80 && /^[a-z0-9.+-]+\/[a-z0-9.+-]+$/.test(detail.mime) ? detail.mime : null,
+      declaredBodyBytes:Number.isSafeInteger(detail.declaredBodyBytes) && detail.declaredBodyBytes >= 0 ? detail.declaredBodyBytes : null,
+      errorClass:errorClassFor(error),
+      observedAt:(clock instanceof Date ? clock : new Date(clock)).toISOString()
+    };
+    // Diagnostics are best effort evidence only. A write failure preserves the
+    // preflight failure and cannot create a plan or make the run eligible.
+    try { await writeJson(paths.preflightFailure,diagnostic); } catch {}
+    if (env.GITHUB_STEP_SUMMARY) {
+      const lines = [
+        '## Regional news review preflight',
+        '',
+        `**Operational status:** blocked during lineage preflight (${diagnostic.errorClass}).`,
+        `**GitHub metadata target:** ${diagnostic.target || 'not reached'}.`,
+        '**Published content freshness:** unchanged; this attempt did not collect sources or establish new content freshness.',
+        ''
+      ].join('\n');
+      try { await appendFile(env.GITHUB_STEP_SUMMARY,lines); } catch {}
+    }
+    throw error;
+  }
 }
 export async function collectWithLineage({env,paths,registry,metadata,collect}) {
   // Recheck official current/predecessor metadata after restore, before even
