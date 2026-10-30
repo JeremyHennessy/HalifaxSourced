@@ -1,17 +1,17 @@
 window.HALIFAX_CITY_EVENTS = {
   "version": 4,
-  "generatedAt": "2026-10-29T22:49:42.994Z",
+  "generatedAt": "2026-10-30T05:56:26.043Z",
   "range": {
-    "start": "2026-10-29T16:49:27.969Z",
-    "end": "2027-12-03T22:49:27.969Z"
+    "start": "2026-10-29T23:56:08.943Z",
+    "end": "2027-12-04T05:56:08.943Z"
   },
-  "eventCount": 1311,
+  "eventCount": 1319,
   "categoryCounts": {
-    "Food & Drink": 48,
+    "Food & Drink": 47,
     "Comedy": 7,
-    "Arts": 573,
+    "Arts": 582,
     "Festivals": 19,
-    "Music": 155,
+    "Music": 154,
     "Community": 769,
     "Outdoor": 34,
     "Family": 52,
@@ -25,36 +25,36 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "mode": "tourism_event_crawl",
-      "observedAt": "2026-10-29T22:49:37.901Z",
-      "eventCount": 72,
-      "durationMs": 9932,
+      "observedAt": "2026-10-30T05:56:17.402Z",
+      "eventCount": 68,
+      "durationMs": 8460,
       "status": "ok"
     },
     {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "mode": "mooseheads_home_table",
-      "observedAt": "2026-10-29T22:49:38.510Z",
+      "observedAt": "2026-10-30T05:56:18.011Z",
       "eventCount": 25,
-      "durationMs": 609,
+      "durationMs": 608,
       "status": "ok"
     },
     {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "mode": "scotiabank_calendar",
-      "observedAt": "2026-10-29T22:49:38.615Z",
+      "observedAt": "2026-10-30T05:56:18.117Z",
       "eventCount": 60,
-      "durationMs": 105,
+      "durationMs": 106,
       "status": "ok"
     },
     {
       "sourceId": "hfx-wanderers-home",
       "sourceName": "HFX Wanderers 2026 Home Schedule",
       "mode": "sports_bullet_schedule",
-      "observedAt": "2026-10-29T22:49:39.422Z",
+      "observedAt": "2026-10-30T05:56:18.865Z",
       "eventCount": 0,
-      "durationMs": 807,
+      "durationMs": 748,
       "status": "failed",
       "reason": "http_404"
     },
@@ -62,9 +62,9 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-tides-home",
       "sourceName": "Halifax Tides 2026 Home Schedule",
       "mode": "sports_bullet_schedule",
-      "observedAt": "2026-10-29T22:49:40.195Z",
+      "observedAt": "2026-10-30T05:56:19.623Z",
       "eventCount": 0,
-      "durationMs": 773,
+      "durationMs": 758,
       "status": "failed",
       "reason": "http_404"
     },
@@ -72,9 +72,9 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "mode": "lighthouse_index",
-      "observedAt": "2026-10-29T22:49:40.360Z",
+      "observedAt": "2026-10-30T05:56:19.784Z",
       "eventCount": 0,
-      "durationMs": 165,
+      "durationMs": 161,
       "status": "failed",
       "reason": "robots_disallow",
       "retainedEventCount": 24
@@ -83,36 +83,36 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "mode": "html_calendar",
-      "observedAt": "2026-10-29T22:49:41.102Z",
+      "observedAt": "2026-10-30T05:56:24.329Z",
       "eventCount": 10,
-      "durationMs": 741,
+      "durationMs": 4545,
       "status": "ok"
     },
     {
       "sourceId": "neptune-theatre",
       "sourceName": "Neptune Theatre",
       "mode": "neptune_season",
-      "observedAt": "2026-10-29T22:49:41.819Z",
+      "observedAt": "2026-10-30T05:56:25.077Z",
       "eventCount": 3,
-      "durationMs": 717,
+      "durationMs": 748,
       "status": "ok"
     },
     {
       "sourceId": "halifax-thunderbirds",
       "sourceName": "Halifax Thunderbirds",
       "mode": "embedded_event_data",
-      "observedAt": "2026-10-29T22:49:42.429Z",
+      "observedAt": "2026-10-30T05:56:25.436Z",
       "eventCount": 0,
-      "durationMs": 610,
+      "durationMs": 359,
       "status": "ok"
     },
     {
       "sourceId": "halifax-events-community",
       "sourceName": "HalifaxEvents.ca",
       "mode": "tribe_list_crawl",
-      "observedAt": "2026-10-29T22:49:42.974Z",
+      "observedAt": "2026-10-30T05:56:26.027Z",
       "eventCount": 0,
-      "durationMs": 545,
+      "durationMs": 591,
       "status": "ok"
     },
     {
@@ -120,48 +120,48 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Convention Centre",
       "status": "ok",
       "eventCount": 1,
-      "observedAt": "2026-10-29T22:49:44.185Z",
-      "durationMs": 1058
+      "observedAt": "2026-10-30T05:56:26.972Z",
+      "durationMs": 797
     },
     {
       "sourceId": "symphony-nova-scotia",
       "sourceName": "Symphony Nova Scotia",
       "status": "ok",
-      "eventCount": 32,
-      "observedAt": "2026-10-29T22:49:44.593Z",
-      "durationMs": 407
+      "eventCount": 31,
+      "observedAt": "2026-10-30T05:56:27.148Z",
+      "durationMs": 175
     },
     {
       "sourceId": "halifax-public-libraries",
       "sourceName": "Halifax Public Libraries",
       "status": "ok",
-      "eventCount": 1159,
-      "observedAt": "2026-10-29T22:51:41.782Z",
-      "durationMs": 117189
+      "eventCount": 1169,
+      "observedAt": "2026-10-30T05:58:03.595Z",
+      "durationMs": 96447
     },
     {
       "sourceId": "alderney-gate-library-events",
       "sourceName": "Alderney Gate Public Library",
       "status": "ok",
       "eventCount": 8,
-      "observedAt": "2026-10-29T22:51:43.437Z",
-      "durationMs": 1654
+      "observedAt": "2026-10-30T05:58:05.607Z",
+      "durationMs": 2011
     },
     {
       "sourceId": "woodlawn-library-events",
       "sourceName": "Woodlawn Public Library",
       "status": "ok",
       "eventCount": 8,
-      "observedAt": "2026-10-29T22:51:45.034Z",
-      "durationMs": 1597
+      "observedAt": "2026-10-30T05:58:06.076Z",
+      "durationMs": 469
     },
     {
       "sourceId": "bedford-library-events",
       "sourceName": "Bedford Public Library",
       "status": "ok",
-      "eventCount": 83,
-      "observedAt": "2026-10-29T22:51:49.186Z",
-      "durationMs": 4152
+      "eventCount": 84,
+      "observedAt": "2026-10-30T05:58:10.727Z",
+      "durationMs": 4651
     },
     {
       "sourceId": "alderney-landing-events",
@@ -181,21 +181,21 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "HFX Wanderers 2026 Home Schedule",
       "url": "https://novascotia.com/event/halifax-wanderers-2026-season/",
       "reason": "http_404",
-      "observedAt": "2026-10-29T22:49:39.422Z"
+      "observedAt": "2026-10-30T05:56:18.865Z"
     },
     {
       "sourceId": "halifax-tides-home",
       "sourceName": "Halifax Tides 2026 Home Schedule",
       "url": "https://novascotia.com/event/halifax-tides-2026-season/",
       "reason": "http_404",
-      "observedAt": "2026-10-29T22:49:40.195Z"
+      "observedAt": "2026-10-30T05:56:19.623Z"
     },
     {
       "sourceId": "light-house-arts-centre",
       "sourceName": "Light House Arts Centre",
       "url": "https://www.lighthouseartscentre.ca/events/",
       "reason": "robots_disallow",
-      "observedAt": "2026-10-29T22:49:40.360Z"
+      "observedAt": "2026-10-30T05:56:19.784Z"
     },
     {
       "sourceId": "alderney-landing-events",
@@ -229,7 +229,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-10-29T22:49:29.457Z",
+      "observedAt": "2026-10-30T05:56:10.423Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -258,7 +258,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-10-29T22:49:29.837Z",
+      "observedAt": "2026-10-30T05:56:10.764Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -381,7 +381,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-10-29T22:49:29.913Z",
+      "observedAt": "2026-10-30T05:56:10.845Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -413,7 +413,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:41.678Z",
+      "observedAt": "2026-10-30T05:58:03.492Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-23814a114d9f00a4"
@@ -442,7 +442,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-10-29T22:49:29.994Z",
+      "observedAt": "2026-10-30T05:56:10.915Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -871,196 +871,12 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Convention Centre",
       "sourceKind": "official_venue_calendar",
       "sourceUrl": "https://www.halifaxconventioncentre.com/Events",
-      "observedAt": "2026-10-29T22:49:44.185Z",
+      "observedAt": "2026-10-30T05:56:26.972Z",
       "reviewState": "source_observed",
       "venueId": "halifax-convention-centre",
       "neighbourhood": "Downtown",
       "organizerId": "halifax-convention-centre",
       "organizerName": "Halifax Convention Centre"
-    },
-    {
-      "id": "https://novascotia.com/event/creative-minds-music-and-storytelling-with-raymond-sewell/#event",
-      "title": "Creative Minds: Music and Storytelling with Raymond Sewell",
-      "startAt": "2026-10-29T19:00:00.000Z",
-      "endAt": "2026-10-29T20:15:00.000Z",
-      "allDay": false,
-      "venueName": "Art Gallery of Nova Scotia",
-      "address": "1723 Hollis Street, Halifax, B3J 1V9, Halifax, NS, CA",
-      "city": "Halifax",
-      "categories": [
-        "Music",
-        "Arts"
-      ],
-      "price": null,
-      "ticketUrl": "https://agns.ca/event/creative-minds-music-and-storytelling-with-raymond-sewell/",
-      "eventUrl": "https://novascotia.com/event/creative-minds-music-and-storytelling-with-raymond-sewell/",
-      "sourceUrl": "https://novascotia.com/event/creative-minds-music-and-storytelling-with-raymond-sewell/",
-      "sourceId": "tourism-ns-events",
-      "sourceName": "Tourism Nova Scotia Events",
-      "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-10-29T22:49:30.150Z",
-      "reviewState": "source-observed",
-      "alternateSources": [
-        {
-          "sourceId": "tourism-ns-events",
-          "sourceName": "Tourism Nova Scotia Events",
-          "sourceUrl": "https://novascotia.com/event/creative-minds-music-and-storytelling-with-raymond-sewell/"
-        }
-      ]
-    },
-    {
-      "id": "halifax-public-libraries-d66cdd5573c58620",
-      "title": "Teen Night",
-      "startAt": "2026-10-29T21:00:00.000Z",
-      "endAt": "2026-10-29T23:00:00.000Z",
-      "allDay": false,
-      "venueName": "Central Library",
-      "address": null,
-      "city": "Halifax",
-      "categories": [
-        "Arts"
-      ],
-      "eventUrl": "https://halifax.bibliocommons.com/v2/events/6a9b25964cb69d003e25d0ec",
-      "ticketUrl": null,
-      "price": null,
-      "sourceId": "halifax-public-libraries",
-      "sourceName": "Halifax Public Libraries",
-      "sourceKind": "public_library_calendar",
-      "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:41.679Z",
-      "reviewState": "source_observed",
-      "duplicateEventIds": [
-        "halifax-public-libraries-b8fda31168f0f1ad"
-      ],
-      "venueId": "central-library-halifax",
-      "neighbourhood": null,
-      "organizerId": "halifax-public-libraries",
-      "organizerName": "Halifax Public Libraries"
-    },
-    {
-      "id": "halifax-public-libraries-22000957fdfbb981",
-      "title": "Notary Clinic",
-      "startAt": "2026-10-29T21:30:00.000Z",
-      "endAt": "2026-10-29T23:30:00.000Z",
-      "allDay": false,
-      "venueName": "Keshen Goodman Public Library",
-      "address": null,
-      "city": "Halifax",
-      "categories": [
-        "Community"
-      ],
-      "eventUrl": "https://halifax.bibliocommons.com/v2/events/6a3ab9f0f56bd86e00b88d55",
-      "ticketUrl": null,
-      "price": null,
-      "sourceId": "halifax-public-libraries",
-      "sourceName": "Halifax Public Libraries",
-      "sourceKind": "public_library_calendar",
-      "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:41.679Z",
-      "reviewState": "source_observed",
-      "duplicateEventIds": [
-        "halifax-public-libraries-ffcdde6d09344370"
-      ],
-      "venueId": "keshen-goodman-library",
-      "neighbourhood": null,
-      "organizerId": "halifax-public-libraries",
-      "organizerName": "Halifax Public Libraries"
-    },
-    {
-      "id": "halifax-public-libraries-1afd4cfa67456562",
-      "title": "Teen Night",
-      "startAt": "2026-10-29T22:00:00.000Z",
-      "endAt": "2026-10-29T23:30:00.000Z",
-      "allDay": false,
-      "venueName": "Woodlawn Public Library",
-      "address": "31 Eisener Boulevard, Dartmouth, NS B2W 0J1",
-      "city": "Dartmouth",
-      "categories": [
-        "Community"
-      ],
-      "eventUrl": "https://halifax.bibliocommons.com/events/6a9861b869166f088b96cee3",
-      "ticketUrl": null,
-      "price": null,
-      "sourceId": "woodlawn-library-events",
-      "sourceName": "Woodlawn Public Library",
-      "sourceKind": "official_library_location_calendar",
-      "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/woodlawn-public-library/",
-      "observedAt": "2026-10-29T22:51:45.030Z",
-      "reviewState": "source_observed",
-      "latitude": 44.6715,
-      "longitude": -63.5316,
-      "sourceUrls": [
-        "https://halifax.bibliocommons.com/events/6a9861b869166f088b96cee3",
-        "https://www.halifaxpubliclibraries.ca/locations/woodlawn-public-library/",
-        "https://halifax.bibliocommons.com/v2/events/6a9861b869166f088b96cee3",
-        "https://halifax.bibliocommons.com/v2/events"
-      ],
-      "sourceIds": [
-        "woodlawn-library-events",
-        "halifax-public-libraries"
-      ],
-      "duplicateEventIds": [
-        "halifax-public-libraries-86d380a3f7f364a3",
-        "woodlawn-library-events-1afd4cfa67456562"
-      ],
-      "venueId": "woodlawn-library",
-      "neighbourhood": null,
-      "organizerId": "halifax-public-libraries",
-      "organizerName": "Halifax Public Libraries"
-    },
-    {
-      "id": "symphony-nova-scotia-c35c930a16cc60a7",
-      "title": "Beethoven’s Pastoral Symphony",
-      "startAt": "2026-10-29T22:30:00.000Z",
-      "endAt": null,
-      "allDay": false,
-      "venueName": "Rebecca Cohn",
-      "address": null,
-      "city": "Halifax",
-      "categories": [
-        "Music",
-        "Arts"
-      ],
-      "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/rebecca-cohn-auditorium/beethovens-pastoral-symphony-2026/",
-      "ticketUrl": null,
-      "price": null,
-      "sourceId": "symphony-nova-scotia",
-      "sourceName": "Symphony Nova Scotia",
-      "sourceKind": "official_arts_calendar",
-      "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-29T22:49:44.587Z",
-      "reviewState": "source_observed",
-      "organizerId": "symphony-nova-scotia",
-      "organizerName": "Symphony Nova Scotia"
-    },
-    {
-      "id": "the-carleton-330dee86cb34d8be",
-      "title": "SOLD OUT: Roxy & T.U.S.S. Perform Amy Winehouse’s Back To Black – Thursday",
-      "startAt": "2026-10-29T22:30:00.000Z",
-      "endAt": "2026-10-30T00:30:00.000Z",
-      "allDay": false,
-      "venueName": "The Carleton",
-      "address": "1685 Argyle Street, Halifax, NS",
-      "city": "Halifax",
-      "categories": [
-        "Music",
-        "Food & Drink",
-        "Arts"
-      ],
-      "price": null,
-      "ticketUrl": null,
-      "eventUrl": "https://www.thecarleton.ca/events/roxy-the-underground-soul-sound-8/",
-      "sourceUrl": "https://www.thecarleton.ca/events/roxy-the-underground-soul-sound-8/",
-      "sourceId": "the-carleton",
-      "sourceName": "The Carleton",
-      "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-29T22:49:41.100Z",
-      "reviewState": "source-observed",
-      "venueId": "the-carleton-halifax",
-      "neighbourhood": "Downtown",
-      "organizerId": "the-carleton",
-      "organizerName": "The Carleton",
-      "restaurantId": "osm-node-771690675-the-carleton"
     },
     {
       "id": "halifax-public-libraries-e3b32ff35478511c",
@@ -1081,7 +897,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:41.680Z",
+      "observedAt": "2026-10-30T05:58:03.492Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-c7facab41e132caf"
@@ -1110,7 +926,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:41.680Z",
+      "observedAt": "2026-10-30T05:58:03.492Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b05a6f16a5da7895"
@@ -1140,7 +956,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:41.680Z",
+      "observedAt": "2026-10-30T05:58:03.493Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-adf3afdbbd007ed6"
@@ -1169,7 +985,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Woodlawn Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/woodlawn-public-library/",
-      "observedAt": "2026-10-29T22:51:45.030Z",
+      "observedAt": "2026-10-30T05:58:06.072Z",
       "reviewState": "source_observed",
       "latitude": 44.6715,
       "longitude": -63.5316,
@@ -1211,7 +1027,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Alderney Gate Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
-      "observedAt": "2026-10-29T22:51:43.432Z",
+      "observedAt": "2026-10-30T05:58:05.603Z",
       "reviewState": "source_observed",
       "latitude": 44.6665,
       "longitude": -63.5684,
@@ -1253,7 +1069,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Alderney Gate Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
-      "observedAt": "2026-10-29T22:51:43.432Z",
+      "observedAt": "2026-10-30T05:58:05.603Z",
       "reviewState": "source_observed",
       "latitude": 44.6665,
       "longitude": -63.5684,
@@ -1295,7 +1111,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:49.080Z",
+      "observedAt": "2026-10-30T05:58:10.622Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -1336,7 +1152,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Woodlawn Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/woodlawn-public-library/",
-      "observedAt": "2026-10-29T22:51:45.030Z",
+      "observedAt": "2026-10-30T05:58:06.072Z",
       "reviewState": "source_observed",
       "latitude": 44.6715,
       "longitude": -63.5316,
@@ -1377,7 +1193,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:41.566Z",
+      "observedAt": "2026-10-30T05:58:03.495Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-45bd91782c9d8a0e"
@@ -1406,7 +1222,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:41.567Z",
+      "observedAt": "2026-10-30T05:58:03.380Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-9e21e97dc22bc7c0"
@@ -1435,7 +1251,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:41.567Z",
+      "observedAt": "2026-10-30T05:58:03.381Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-15c03ac293898f3b"
@@ -1464,7 +1280,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:41.568Z",
+      "observedAt": "2026-10-30T05:58:03.382Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "captain-william-spry-library",
@@ -1491,7 +1307,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:49.081Z",
+      "observedAt": "2026-10-30T05:58:10.622Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -1533,7 +1349,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Woodlawn Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/woodlawn-public-library/",
-      "observedAt": "2026-10-29T22:51:45.031Z",
+      "observedAt": "2026-10-30T05:58:06.073Z",
       "reviewState": "source_observed",
       "latitude": 44.6715,
       "longitude": -63.5316,
@@ -1575,7 +1391,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Alderney Gate Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
-      "observedAt": "2026-10-29T22:51:43.433Z",
+      "observedAt": "2026-10-30T05:58:05.604Z",
       "reviewState": "source_observed",
       "latitude": 44.6665,
       "longitude": -63.5684,
@@ -1617,7 +1433,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:41.569Z",
+      "observedAt": "2026-10-30T05:58:03.382Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-37c2c8692fb7a038"
@@ -1647,7 +1463,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-10-29T22:49:30.228Z",
+      "observedAt": "2026-10-30T05:56:11.069Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -1678,7 +1494,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-29T22:49:41.100Z",
+      "observedAt": "2026-10-30T05:56:24.327Z",
       "reviewState": "source-observed",
       "venueId": "the-carleton-halifax",
       "neighbourhood": "Downtown",
@@ -1706,7 +1522,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:41.569Z",
+      "observedAt": "2026-10-30T05:58:03.383Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-905e2b7475ecd6a2"
@@ -1737,7 +1553,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:49.081Z",
+      "observedAt": "2026-10-30T05:58:10.622Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -1777,7 +1593,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:41.570Z",
+      "observedAt": "2026-10-30T05:58:03.383Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-8b9cb23f78f37e97"
@@ -1806,7 +1622,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:40.812Z",
+      "observedAt": "2026-10-30T05:58:03.384Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-d7971ea4f09011f6"
@@ -1835,7 +1651,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Alderney Gate Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
-      "observedAt": "2026-10-29T22:51:43.433Z",
+      "observedAt": "2026-10-30T05:58:05.604Z",
       "reviewState": "source_observed",
       "latitude": 44.6665,
       "longitude": -63.5684,
@@ -1878,7 +1694,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:41.570Z",
+      "observedAt": "2026-10-30T05:58:03.383Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-46e0603c086561f1"
@@ -1908,7 +1724,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Woodlawn Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/woodlawn-public-library/",
-      "observedAt": "2026-10-29T22:51:45.031Z",
+      "observedAt": "2026-10-30T05:58:06.073Z",
       "reviewState": "source_observed",
       "latitude": 44.6715,
       "longitude": -63.5316,
@@ -1951,7 +1767,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Woodlawn Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/woodlawn-public-library/",
-      "observedAt": "2026-10-29T22:51:45.032Z",
+      "observedAt": "2026-10-30T05:58:06.074Z",
       "reviewState": "source_observed",
       "latitude": 44.6715,
       "longitude": -63.5316,
@@ -1993,7 +1809,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Alderney Gate Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
-      "observedAt": "2026-10-29T22:51:43.434Z",
+      "observedAt": "2026-10-30T05:58:05.605Z",
       "reviewState": "source_observed",
       "latitude": 44.6665,
       "longitude": -63.5684,
@@ -2036,7 +1852,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:40.813Z",
+      "observedAt": "2026-10-30T05:58:02.438Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-7ebd7909a7b72292"
@@ -2065,7 +1881,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:40.814Z",
+      "observedAt": "2026-10-30T05:58:02.438Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-c20c4630dd94095f"
@@ -2096,7 +1912,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-29T22:49:41.100Z",
+      "observedAt": "2026-10-30T05:56:24.327Z",
       "reviewState": "source-observed",
       "venueId": "the-carleton-halifax",
       "neighbourhood": "Downtown",
@@ -2123,7 +1939,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Alderney Gate Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
-      "observedAt": "2026-10-29T22:51:43.434Z",
+      "observedAt": "2026-10-30T05:58:05.605Z",
       "reviewState": "source_observed",
       "latitude": 44.6665,
       "longitude": -63.5684,
@@ -2165,7 +1981,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:40.814Z",
+      "observedAt": "2026-10-30T05:58:02.439Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b81a4b34b6ca4a5a"
@@ -2185,18 +2001,33 @@ window.HALIFAX_CITY_EVENTS = {
       "address": "31 Eisener Boulevard, Dartmouth, NS B2W 0J1",
       "city": "Dartmouth",
       "categories": [
-        "Arts"
+        "Arts",
+        "Community"
       ],
-      "eventUrl": "https://halifax.bibliocommons.com/v2/events/6ab178d7101eb7003f31ea36",
+      "eventUrl": "https://halifax.bibliocommons.com/events/6ab178d7101eb7003f31ea36",
       "ticketUrl": null,
       "price": null,
-      "sourceId": "halifax-public-libraries",
-      "sourceName": "Halifax Public Libraries",
-      "sourceKind": "public_library_calendar",
-      "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:40.815Z",
+      "sourceId": "woodlawn-library-events",
+      "sourceName": "Woodlawn Public Library",
+      "sourceKind": "official_library_location_calendar",
+      "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/woodlawn-public-library/",
+      "observedAt": "2026-10-30T05:58:06.074Z",
       "reviewState": "source_observed",
-      "duplicateEventIds": [],
+      "latitude": 44.6715,
+      "longitude": -63.5316,
+      "sourceUrls": [
+        "https://halifax.bibliocommons.com/events/6ab178d7101eb7003f31ea36",
+        "https://www.halifaxpubliclibraries.ca/locations/woodlawn-public-library/",
+        "https://halifax.bibliocommons.com/v2/events/6ab178d7101eb7003f31ea36",
+        "https://halifax.bibliocommons.com/v2/events"
+      ],
+      "sourceIds": [
+        "woodlawn-library-events",
+        "halifax-public-libraries"
+      ],
+      "duplicateEventIds": [
+        "woodlawn-library-events-594fcc37aa214f7b"
+      ],
       "venueId": "woodlawn-library",
       "neighbourhood": null,
       "organizerId": "halifax-public-libraries",
@@ -2221,7 +2052,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:40.816Z",
+      "observedAt": "2026-10-30T05:58:02.440Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-0d3e57254355cee3"
@@ -2250,7 +2081,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:40.816Z",
+      "observedAt": "2026-10-30T05:58:02.440Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-17477c8130bc7185"
@@ -2279,7 +2110,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:40.815Z",
+      "observedAt": "2026-10-30T05:58:02.440Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-4b23df4265809db3"
@@ -2308,7 +2139,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:49.081Z",
+      "observedAt": "2026-10-30T05:58:10.623Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -2350,7 +2181,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:40.816Z",
+      "observedAt": "2026-10-30T05:58:02.441Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-922403f7401389db"
@@ -2380,7 +2211,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:39.945Z",
+      "observedAt": "2026-10-30T05:58:02.441Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-c7a301e9f139b7b1"
@@ -2411,7 +2242,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-29T22:49:41.100Z",
+      "observedAt": "2026-10-30T05:56:24.327Z",
       "reviewState": "source-observed",
       "venueId": "the-carleton-halifax",
       "neighbourhood": "Downtown",
@@ -2440,7 +2271,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:39.945Z",
+      "observedAt": "2026-10-30T05:58:02.441Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-665addac75946c23"
@@ -2469,7 +2300,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:39.945Z",
+      "observedAt": "2026-10-30T05:58:02.442Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b3850f1559bd450f"
@@ -2498,7 +2329,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:39.946Z",
+      "observedAt": "2026-10-30T05:58:02.442Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-ea3bb013ff8d0d26"
@@ -2527,7 +2358,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:39.946Z",
+      "observedAt": "2026-10-30T05:58:01.527Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-ed40e0a155d5f1e3"
@@ -2557,7 +2388,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:49.082Z",
+      "observedAt": "2026-10-30T05:58:10.623Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -2603,7 +2434,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-29T22:49:41.101Z",
+      "observedAt": "2026-10-30T05:56:24.328Z",
       "reviewState": "source-observed",
       "venueId": "the-carleton-halifax",
       "neighbourhood": "Downtown",
@@ -2630,7 +2461,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:39.947Z",
+      "observedAt": "2026-10-30T05:58:01.528Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-a8772526414b84df"
@@ -2659,7 +2490,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:39.948Z",
+      "observedAt": "2026-10-30T05:58:01.529Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-c8ac855762e37448"
@@ -2688,7 +2519,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:39.947Z",
+      "observedAt": "2026-10-30T05:58:01.529Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-f8c28c72f143cf29"
@@ -2718,7 +2549,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:39.947Z",
+      "observedAt": "2026-10-30T05:58:01.528Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-4dbc4f7db869357f"
@@ -2747,7 +2578,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:39.948Z",
+      "observedAt": "2026-10-30T05:58:01.529Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "keshen-goodman-library",
@@ -2774,7 +2605,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:39.948Z",
+      "observedAt": "2026-10-30T05:58:01.530Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-3a936b8f29475ae8"
@@ -2805,7 +2636,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-29T22:49:41.101Z",
+      "observedAt": "2026-10-30T05:56:24.328Z",
       "reviewState": "source-observed",
       "reviewedAt": "2026-10-27T21:47:17.000Z",
       "sourceEvidence": [
@@ -2870,7 +2701,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:38.990Z",
+      "observedAt": "2026-10-30T05:58:01.530Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-cf0138d5f5b7a6ee"
@@ -2899,7 +2730,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:39.949Z",
+      "observedAt": "2026-10-30T05:58:01.530Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-d67ae77a9b1ad08a"
@@ -2928,7 +2759,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:38.991Z",
+      "observedAt": "2026-10-30T05:58:01.531Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-7252744369654166"
@@ -2957,7 +2788,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:38.991Z",
+      "observedAt": "2026-10-30T05:58:01.531Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-f3ab41d9f1822ee9"
@@ -2987,7 +2818,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:38.991Z",
+      "observedAt": "2026-10-30T05:58:01.531Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-fa30b5b752ac3da7"
@@ -3016,7 +2847,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:38.992Z",
+      "observedAt": "2026-10-30T05:58:01.532Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-185c821d48422ad3"
@@ -3045,7 +2876,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:38.992Z",
+      "observedAt": "2026-10-30T05:58:00.798Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-3e9ef21609462ecd"
@@ -3074,7 +2905,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:38.992Z",
+      "observedAt": "2026-10-30T05:58:00.799Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-fe85646da703d1ca"
@@ -3103,7 +2934,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:38.993Z",
+      "observedAt": "2026-10-30T05:58:00.799Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "central-library-halifax",
@@ -3130,7 +2961,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:38.993Z",
+      "observedAt": "2026-10-30T05:58:00.799Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-ff47269e72814104"
@@ -3159,7 +2990,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:38.993Z",
+      "observedAt": "2026-10-30T05:58:00.800Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-3c309af19d3cabe5"
@@ -3189,7 +3020,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:38.994Z",
+      "observedAt": "2026-10-30T05:58:00.801Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-f480ae0da396d1b9"
@@ -3218,7 +3049,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:38.994Z",
+      "observedAt": "2026-10-30T05:58:00.800Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-dff811c0fad15706"
@@ -3249,7 +3080,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:38.993Z",
+      "observedAt": "2026-10-30T05:58:00.800Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-6c19ba350572150d"
@@ -3280,7 +3111,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:38.994Z",
+      "observedAt": "2026-10-30T05:58:00.801Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "central-library-halifax",
@@ -3307,7 +3138,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:38.082Z",
+      "observedAt": "2026-10-30T05:58:00.802Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-1fe48ae2cabe6b06"
@@ -3336,7 +3167,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:49.082Z",
+      "observedAt": "2026-10-30T05:58:10.623Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -3377,7 +3208,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:38.995Z",
+      "observedAt": "2026-10-30T05:58:00.801Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-9325170b5a0f0e6e"
@@ -3406,7 +3237,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:38.082Z",
+      "observedAt": "2026-10-30T05:58:00.802Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-6057ae191a9b5ba9"
@@ -3435,7 +3266,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:38.082Z",
+      "observedAt": "2026-10-30T05:58:00.802Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-81f0aade62529559"
@@ -3464,7 +3295,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:49.082Z",
+      "observedAt": "2026-10-30T05:58:10.624Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -3506,7 +3337,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:38.084Z",
+      "observedAt": "2026-10-30T05:58:00.049Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-2346de9906602e7b"
@@ -3535,7 +3366,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:38.083Z",
+      "observedAt": "2026-10-30T05:58:00.803Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-5747a9d595696751"
@@ -3566,7 +3397,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-29T22:49:41.101Z",
+      "observedAt": "2026-10-30T05:56:24.328Z",
       "reviewState": "source-observed",
       "venueId": "the-carleton-halifax",
       "neighbourhood": "Downtown",
@@ -3593,7 +3424,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:38.083Z",
+      "observedAt": "2026-10-30T05:58:00.049Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-8c1185d351ff54bf"
@@ -3622,7 +3453,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:38.084Z",
+      "observedAt": "2026-10-30T05:58:00.050Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-9c14d144a8c65bf0"
@@ -3651,7 +3482,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:38.085Z",
+      "observedAt": "2026-10-30T05:58:00.050Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-66262a6a8eee5c69"
@@ -3680,7 +3511,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:38.085Z",
+      "observedAt": "2026-10-30T05:58:00.050Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-f887a2e21dac7e7c"
@@ -3710,7 +3541,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:38.085Z",
+      "observedAt": "2026-10-30T05:58:00.051Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "dartmouth-north-library-temporary",
@@ -3737,7 +3568,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:38.086Z",
+      "observedAt": "2026-10-30T05:58:00.051Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-3893d6417dd147c9"
@@ -3749,7 +3580,7 @@ window.HALIFAX_CITY_EVENTS = {
     },
     {
       "id": "halifax-public-libraries-384e128684056306",
-      "title": "Art Club",
+      "title": "Art Club: Clay Creations - Sculpt",
       "startAt": "2026-11-03T19:30:00.000Z",
       "endAt": "2026-11-03T20:30:00.000Z",
       "allDay": false,
@@ -3766,9 +3597,11 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:38.087Z",
+      "observedAt": "2026-10-30T05:58:00.052Z",
       "reviewState": "source_observed",
-      "duplicateEventIds": [],
+      "duplicateEventIds": [
+        "halifax-public-libraries-76b43fe018e2184e"
+      ],
       "venueId": "keshen-goodman-library",
       "neighbourhood": null,
       "organizerId": "halifax-public-libraries",
@@ -3794,7 +3627,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:38.086Z",
+      "observedAt": "2026-10-30T05:58:00.052Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-750aa4b30fbee3f7"
@@ -3823,7 +3656,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:38.086Z",
+      "observedAt": "2026-10-30T05:58:00.051Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-f0b11b2857cd6368"
@@ -3852,7 +3685,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:37.461Z",
+      "observedAt": "2026-10-30T05:58:00.053Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-0742896b8ffa062d"
@@ -3881,7 +3714,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:37.461Z",
+      "observedAt": "2026-10-30T05:58:00.052Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-285173d8acb5c93a"
@@ -3910,7 +3743,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:37.462Z",
+      "observedAt": "2026-10-30T05:57:59.133Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-0fad37d92ee593c4"
@@ -3939,7 +3772,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:37.462Z",
+      "observedAt": "2026-10-30T05:57:59.133Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b3fd0d32ba527fe2"
@@ -3968,7 +3801,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:37.463Z",
+      "observedAt": "2026-10-30T05:57:59.134Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-74991005d78aaed3"
@@ -3997,7 +3830,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:37.463Z",
+      "observedAt": "2026-10-30T05:57:59.134Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-36f6e65ffbba3f0f"
@@ -4026,7 +3859,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:37.463Z",
+      "observedAt": "2026-10-30T05:57:59.134Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-8e714ed160bf6ec9"
@@ -4055,7 +3888,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:37.464Z",
+      "observedAt": "2026-10-30T05:57:59.135Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "captain-william-spry-library",
@@ -4082,7 +3915,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:37.464Z",
+      "observedAt": "2026-10-30T05:57:59.135Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-fb44332309c5d5f4"
@@ -4111,7 +3944,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:49.083Z",
+      "observedAt": "2026-10-30T05:58:10.624Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -4152,7 +3985,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:36.382Z",
+      "observedAt": "2026-10-30T05:57:59.136Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-dd6b304cd0713e2c"
@@ -4181,7 +4014,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:49.083Z",
+      "observedAt": "2026-10-30T05:58:10.624Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -4225,7 +4058,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-29T22:49:41.101Z",
+      "observedAt": "2026-10-30T05:56:24.328Z",
       "reviewState": "source-observed",
       "venueId": "the-carleton-halifax",
       "neighbourhood": "Downtown",
@@ -4253,7 +4086,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:36.382Z",
+      "observedAt": "2026-10-30T05:57:59.136Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-a92701416a4c0724"
@@ -4282,7 +4115,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:36.383Z",
+      "observedAt": "2026-10-30T05:57:59.137Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-41a11b698cd3be50"
@@ -4311,7 +4144,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:36.383Z",
+      "observedAt": "2026-10-30T05:57:58.302Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "keshen-goodman-library",
@@ -4338,7 +4171,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:36.383Z",
+      "observedAt": "2026-10-30T05:57:58.302Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-5c2617fe74f92227"
@@ -4367,7 +4200,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:36.383Z",
+      "observedAt": "2026-10-30T05:57:58.302Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-f84fe31b91021af6"
@@ -4397,7 +4230,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:36.384Z",
+      "observedAt": "2026-10-30T05:57:58.302Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-ba0574ef55a7a489"
@@ -4426,7 +4259,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:36.384Z",
+      "observedAt": "2026-10-30T05:57:58.303Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-dc60af508072ebac"
@@ -4456,7 +4289,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:49.083Z",
+      "observedAt": "2026-10-30T05:58:10.625Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -4498,7 +4331,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:36.385Z",
+      "observedAt": "2026-10-30T05:57:58.304Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-0c580f5a2fecc640"
@@ -4527,7 +4360,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:36.385Z",
+      "observedAt": "2026-10-30T05:57:58.303Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-98a23873249faaf0"
@@ -4557,7 +4390,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:36.385Z",
+      "observedAt": "2026-10-30T05:57:58.304Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b519e035328ae0ef"
@@ -4587,7 +4420,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:36.386Z",
+      "observedAt": "2026-10-30T05:57:58.304Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-8c870822b3a71b48"
@@ -4617,7 +4450,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:36.386Z",
+      "observedAt": "2026-10-30T05:57:58.304Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-4a3c57b11f16cfe7"
@@ -4646,7 +4479,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:36.386Z",
+      "observedAt": "2026-10-30T05:57:58.305Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-bd99a4ef244e42b8"
@@ -4675,7 +4508,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:35.397Z",
+      "observedAt": "2026-10-30T05:57:58.305Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-9a4b0f0c6b692549"
@@ -4704,7 +4537,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:35.398Z",
+      "observedAt": "2026-10-30T05:57:58.306Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b2de107facd4f5aa"
@@ -4733,7 +4566,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:35.398Z",
+      "observedAt": "2026-10-30T05:57:57.516Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-1e439550604ac111"
@@ -4763,7 +4596,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:35.399Z",
+      "observedAt": "2026-10-30T05:57:57.516Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-9bcccb343b5b1777"
@@ -4792,7 +4625,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Alderney Gate Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://www.halifaxpubliclibraries.ca/locations/alderney-gate-public-library/",
-      "observedAt": "2026-10-29T22:51:43.435Z",
+      "observedAt": "2026-10-30T05:58:05.606Z",
       "reviewState": "source_observed",
       "latitude": 44.6665,
       "longitude": -63.5684,
@@ -4834,7 +4667,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:49.084Z",
+      "observedAt": "2026-10-30T05:58:10.625Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -4876,7 +4709,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-29T22:49:41.101Z",
+      "observedAt": "2026-10-30T05:56:24.328Z",
       "reviewState": "source-observed",
       "reviewedAt": "2026-10-27T21:47:17.000Z",
       "sourceEvidence": [
@@ -4936,7 +4769,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:35.400Z",
+      "observedAt": "2026-10-30T05:57:57.517Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-21edfc05444afe53"
@@ -4965,7 +4798,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:35.400Z",
+      "observedAt": "2026-10-30T05:57:57.517Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-fb31b01ab3358546"
@@ -4994,7 +4827,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:35.401Z",
+      "observedAt": "2026-10-30T05:57:57.518Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-70c11d4b5eb1fb22"
@@ -5023,7 +4856,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:35.400Z",
+      "observedAt": "2026-10-30T05:57:57.518Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-11c49cac95fbcd7a"
@@ -5052,7 +4885,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:35.402Z",
+      "observedAt": "2026-10-30T05:57:57.519Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-9216c88bb6b2bc3f"
@@ -5081,7 +4914,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:35.402Z",
+      "observedAt": "2026-10-30T05:57:57.519Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-6210c291c91ce77e"
@@ -5110,7 +4943,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:35.401Z",
+      "observedAt": "2026-10-30T05:57:57.518Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-78698ade97c79c57"
@@ -5139,7 +4972,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:35.401Z",
+      "observedAt": "2026-10-30T05:57:57.519Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "alderney-gate-library",
@@ -5166,7 +4999,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:34.442Z",
+      "observedAt": "2026-10-30T05:57:57.520Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-022d03a0c5877333"
@@ -5197,7 +5030,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-29T22:49:41.101Z",
+      "observedAt": "2026-10-30T05:56:24.328Z",
       "reviewState": "source-observed",
       "venueId": "the-carleton-halifax",
       "neighbourhood": "Downtown",
@@ -5224,7 +5057,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:34.442Z",
+      "observedAt": "2026-10-30T05:57:57.520Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-9062e6d2252d4f74"
@@ -5253,7 +5086,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:34.443Z",
+      "observedAt": "2026-10-30T05:57:57.521Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-f5500975aaa77ad5"
@@ -5282,7 +5115,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:34.443Z",
+      "observedAt": "2026-10-30T05:57:57.520Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-33ade7937a83f034"
@@ -5311,7 +5144,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:34.443Z",
+      "observedAt": "2026-10-30T05:57:57.521Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-6032e95a2b7c1638"
@@ -5340,7 +5173,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:34.444Z",
+      "observedAt": "2026-10-30T05:57:56.395Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-ebb69f2bdc31cff3"
@@ -5369,7 +5202,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:49.084Z",
+      "observedAt": "2026-10-30T05:58:10.625Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -5411,7 +5244,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-10-29T22:49:30.382Z",
+      "observedAt": "2026-10-30T05:56:11.222Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -5440,7 +5273,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:34.444Z",
+      "observedAt": "2026-10-30T05:57:56.396Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-dcdb0acd2f48ab92"
@@ -5470,7 +5303,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:34.445Z",
+      "observedAt": "2026-10-30T05:57:56.396Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-5fe6b125d4dbe956"
@@ -5500,7 +5333,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:34.445Z",
+      "observedAt": "2026-10-30T05:57:56.397Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-0bc1225544676cfb"
@@ -5529,7 +5362,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:34.445Z",
+      "observedAt": "2026-10-30T05:57:56.397Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "central-library-halifax",
@@ -5556,7 +5389,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:34.446Z",
+      "observedAt": "2026-10-30T05:57:56.397Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-1be30e24d3becf88"
@@ -5586,7 +5419,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:34.446Z",
+      "observedAt": "2026-10-30T05:57:56.398Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-ada0fd10e47edb58"
@@ -5616,7 +5449,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:33.669Z",
+      "observedAt": "2026-10-30T05:57:56.399Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-2a76dd8ae42e7c45"
@@ -5645,7 +5478,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:49.084Z",
+      "observedAt": "2026-10-30T05:58:10.626Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -5686,7 +5519,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:33.669Z",
+      "observedAt": "2026-10-30T05:57:56.399Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b992984ea1efc5ed"
@@ -5715,7 +5548,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:33.670Z",
+      "observedAt": "2026-10-30T05:57:56.399Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-9a119659dd6ea468"
@@ -5724,6 +5557,34 @@ window.HALIFAX_CITY_EVENTS = {
       "neighbourhood": null,
       "organizerId": "halifax-public-libraries",
       "organizerName": "Halifax Public Libraries"
+    },
+    {
+      "id": "the-carleton-1132e3de9eb6fd67",
+      "title": "Alan Cross Presents: UNCHARTED",
+      "startAt": "2026-11-05T23:30:00.000Z",
+      "endAt": "2026-11-06T01:30:00.000Z",
+      "allDay": false,
+      "venueName": "The Carleton",
+      "address": "1685 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Music",
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": "https://www.thecarleton.ca/events/alan-cross-presents-uncharted/",
+      "sourceUrl": "https://www.thecarleton.ca/events/alan-cross-presents-uncharted/",
+      "sourceId": "the-carleton",
+      "sourceName": "The Carleton",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-10-30T05:56:24.329Z",
+      "reviewState": "source-observed",
+      "venueId": "the-carleton-halifax",
+      "neighbourhood": "Downtown",
+      "organizerId": "the-carleton",
+      "organizerName": "The Carleton",
+      "restaurantId": "osm-node-771690675-the-carleton"
     },
     {
       "id": "https://novascotia.com/event/essential-opera-presents-in-her-hands-the-tragedy-of-lady-macbeth/#event",
@@ -5745,7 +5606,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-10-29T22:49:33.658Z",
+      "observedAt": "2026-10-30T05:56:11.297Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -5775,7 +5636,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-10-29T22:49:31.467Z",
+      "observedAt": "2026-10-30T05:56:13.174Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -5806,7 +5667,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-10-29T22:49:30.805Z",
+      "observedAt": "2026-10-30T05:56:12.535Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -5835,7 +5696,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:33.670Z",
+      "observedAt": "2026-10-30T05:57:55.461Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-dfb63fdfb4a78bcd"
@@ -5865,7 +5726,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:33.670Z",
+      "observedAt": "2026-10-30T05:57:55.462Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-913e6a970443ecc3"
@@ -5895,7 +5756,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:33.671Z",
+      "observedAt": "2026-10-30T05:57:55.462Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-56694ca5ee0bf8f7"
@@ -5926,7 +5787,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:33.671Z",
+      "observedAt": "2026-10-30T05:57:55.462Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-31eda5ea411599e4"
@@ -5955,7 +5816,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:33.671Z",
+      "observedAt": "2026-10-30T05:57:55.463Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-45f388e5d2e25444"
@@ -5984,7 +5845,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:33.672Z",
+      "observedAt": "2026-10-30T05:57:55.464Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-6d69f3314fbedd50"
@@ -6014,7 +5875,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:33.672Z",
+      "observedAt": "2026-10-30T05:57:55.463Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-0fff37e1ec87d812"
@@ -6043,7 +5904,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:49.084Z",
+      "observedAt": "2026-10-30T05:58:10.626Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -6084,7 +5945,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:33.673Z",
+      "observedAt": "2026-10-30T05:57:55.464Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-30897afe52be6625"
@@ -6115,7 +5976,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:32.411Z",
+      "observedAt": "2026-10-30T05:57:55.464Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-8ab2177c1239ea04"
@@ -6145,7 +6006,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-10-29T22:49:30.724Z",
+      "observedAt": "2026-10-30T05:56:12.460Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -6174,7 +6035,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:32.412Z",
+      "observedAt": "2026-10-30T05:57:55.465Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-5a26d00fe9b7857d"
@@ -6203,7 +6064,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:32.412Z",
+      "observedAt": "2026-10-30T05:57:55.465Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-37171ed8138c72d7"
@@ -6233,7 +6094,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:32.413Z",
+      "observedAt": "2026-10-30T05:57:54.417Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-3794246e5ad14ca9"
@@ -6262,7 +6123,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:32.413Z",
+      "observedAt": "2026-10-30T05:57:54.418Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-1c4e7b77ded4d75d"
@@ -6291,7 +6152,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:49.085Z",
+      "observedAt": "2026-10-30T05:58:10.626Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -6333,7 +6194,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:32.413Z",
+      "observedAt": "2026-10-30T05:57:54.417Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-defc833725e665a2"
@@ -6362,7 +6223,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:32.413Z",
+      "observedAt": "2026-10-30T05:57:54.417Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-f226f91adb2f3243"
@@ -6391,7 +6252,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:32.414Z",
+      "observedAt": "2026-10-30T05:57:54.418Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-5bafcfd2a565f890"
@@ -6420,7 +6281,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-29T22:49:38.508Z",
+      "observedAt": "2026-10-30T05:56:18.010Z",
       "reviewState": "source-observed",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
@@ -6457,7 +6318,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:32.415Z",
+      "observedAt": "2026-10-30T05:57:54.419Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "central-library-halifax",
@@ -6486,7 +6347,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:32.415Z",
+      "observedAt": "2026-10-30T05:57:54.420Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-3f2b3320e54103de"
@@ -6517,7 +6378,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:49.085Z",
+      "observedAt": "2026-10-30T05:58:10.626Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -6559,7 +6420,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:32.414Z",
+      "observedAt": "2026-10-30T05:57:54.419Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-ce4417831f63e543"
@@ -6588,7 +6449,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:31.580Z",
+      "observedAt": "2026-10-30T05:57:54.420Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-40f14e28e1b7a3cd"
@@ -6617,7 +6478,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:31.580Z",
+      "observedAt": "2026-10-30T05:57:54.420Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-e2478b62b8f1341c"
@@ -6646,7 +6507,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:31.581Z",
+      "observedAt": "2026-10-30T05:57:53.545Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-e397b31321956b45"
@@ -6675,7 +6536,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:31.581Z",
+      "observedAt": "2026-10-30T05:57:54.421Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-c2177944604120ee"
@@ -6704,7 +6565,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:31.582Z",
+      "observedAt": "2026-10-30T05:57:53.545Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-2b207b40fe2cdda6"
@@ -6733,7 +6594,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:31.582Z",
+      "observedAt": "2026-10-30T05:57:53.545Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-0f60cc83faf4d47b"
@@ -6762,7 +6623,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:31.583Z",
+      "observedAt": "2026-10-30T05:57:53.546Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "keshen-goodman-library",
@@ -6790,7 +6651,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:31.583Z",
+      "observedAt": "2026-10-30T05:57:53.546Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-5c7e6375c9a30e87"
@@ -6802,7 +6663,7 @@ window.HALIFAX_CITY_EVENTS = {
     },
     {
       "id": "bedford-library-events-dde033b2c1a00b65",
-      "title": "Super Saturday",
+      "title": "Super Saturday: Bookmarks",
       "startAt": "2026-11-07T18:00:00.000Z",
       "endAt": "2026-11-07T19:00:00.000Z",
       "allDay": false,
@@ -6819,7 +6680,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:49.085Z",
+      "observedAt": "2026-10-30T05:58:10.627Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -6834,7 +6695,9 @@ window.HALIFAX_CITY_EVENTS = {
       ],
       "duplicateEventIds": [
         "halifax-public-libraries-d7ae9f0151a22b16",
-        "bedford-library-events-d7ae9f0151a22b16"
+        "bedford-library-events-d7ae9f0151a22b16",
+        "halifax-public-libraries-6885e9338c93d70d",
+        "bedford-library-events-6885e9338c93d70d"
       ],
       "venueId": "bedford-library",
       "neighbourhood": null,
@@ -6861,7 +6724,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:31.583Z",
+      "observedAt": "2026-10-30T05:57:53.547Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-f783daa7ce7baf71"
@@ -6892,7 +6755,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:31.584Z",
+      "observedAt": "2026-10-30T05:57:53.547Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-052d954a82e8eff0"
@@ -6921,7 +6784,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:31.584Z",
+      "observedAt": "2026-10-30T05:57:53.547Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-97ebd089a53a553a"
@@ -6950,7 +6813,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:31.584Z",
+      "observedAt": "2026-10-30T05:57:53.548Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-baeeeaf11bf0ca45"
@@ -6979,7 +6842,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-29T22:49:38.509Z",
+      "observedAt": "2026-10-30T05:56:18.010Z",
       "reviewState": "source-observed",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
@@ -7016,7 +6879,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:31.585Z",
+      "observedAt": "2026-10-30T05:57:53.548Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "central-library-halifax",
@@ -7043,7 +6906,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:30.472Z",
+      "observedAt": "2026-10-30T05:57:53.548Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-61de4efa1889a7a8"
@@ -7072,7 +6935,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:30.472Z",
+      "observedAt": "2026-10-30T05:57:53.548Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-0ad83f8673740041"
@@ -7102,7 +6965,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-29T22:49:44.587Z",
+      "observedAt": "2026-10-30T05:56:27.142Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -7127,7 +6990,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:30.474Z",
+      "observedAt": "2026-10-30T05:57:52.659Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "keshen-goodman-library",
@@ -7155,7 +7018,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:30.473Z",
+      "observedAt": "2026-10-30T05:57:53.549Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-888af1f85616669b"
@@ -7184,7 +7047,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:30.474Z",
+      "observedAt": "2026-10-30T05:57:52.659Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b8f50e8ed0ce6d6f"
@@ -7214,7 +7077,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:30.473Z",
+      "observedAt": "2026-10-30T05:57:53.549Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-ac27438f08f0caa0"
@@ -7243,7 +7106,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:30.474Z",
+      "observedAt": "2026-10-30T05:57:52.660Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-636ef887cab379c2"
@@ -7273,7 +7136,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:49.086Z",
+      "observedAt": "2026-10-30T05:58:10.627Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -7316,7 +7179,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:30.475Z",
+      "observedAt": "2026-10-30T05:57:52.660Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-872861f2460e88b3"
@@ -7345,7 +7208,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:30.475Z",
+      "observedAt": "2026-10-30T05:57:52.661Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-a17ab9b596865cbb"
@@ -7374,7 +7237,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:30.476Z",
+      "observedAt": "2026-10-30T05:57:52.661Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-94fc3d605693fd66"
@@ -7403,7 +7266,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:30.476Z",
+      "observedAt": "2026-10-30T05:57:52.661Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-8616c92a4bce45de"
@@ -7432,7 +7295,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:30.477Z",
+      "observedAt": "2026-10-30T05:57:52.662Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-ce8e99f19b9e4a63"
@@ -7461,7 +7324,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:29.568Z",
+      "observedAt": "2026-10-30T05:57:52.663Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-448056ccd1d025f2"
@@ -7490,7 +7353,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:29.567Z",
+      "observedAt": "2026-10-30T05:57:52.662Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-f50911b5a3c7c8e7"
@@ -7519,7 +7382,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:29.568Z",
+      "observedAt": "2026-10-30T05:57:52.663Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-47c4125be604cb81"
@@ -7548,7 +7411,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:29.568Z",
+      "observedAt": "2026-10-30T05:57:52.663Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-7de59efb69ed4fef"
@@ -7578,7 +7441,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:29.569Z",
+      "observedAt": "2026-10-30T05:57:52.664Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-c3d040f8094507fd"
@@ -7607,7 +7470,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:29.569Z",
+      "observedAt": "2026-10-30T05:57:51.863Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-69f4dcc13e87f3d2"
@@ -7636,7 +7499,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:29.569Z",
+      "observedAt": "2026-10-30T05:57:51.863Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-831d431540c20f46"
@@ -7665,7 +7528,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:29.569Z",
+      "observedAt": "2026-10-30T05:57:51.863Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-2a48d18a930fe1a2"
@@ -7694,7 +7557,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:29.570Z",
+      "observedAt": "2026-10-30T05:57:51.864Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-e365aa5345a9042c"
@@ -7723,7 +7586,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:29.570Z",
+      "observedAt": "2026-10-30T05:57:51.864Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-f6ff3b187f210c74"
@@ -7752,7 +7615,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:29.570Z",
+      "observedAt": "2026-10-30T05:57:51.864Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-cdee9365b71e0a52"
@@ -7782,7 +7645,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:29.571Z",
+      "observedAt": "2026-10-30T05:57:51.865Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-f3523bbf34e8059a"
@@ -7811,7 +7674,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:29.571Z",
+      "observedAt": "2026-10-30T05:57:51.864Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-4efd2bbbb5b43a51"
@@ -7840,7 +7703,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:29.572Z",
+      "observedAt": "2026-10-30T05:57:51.866Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-bb3c9693bd888701"
@@ -7869,7 +7732,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:49.086Z",
+      "observedAt": "2026-10-30T05:58:10.627Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -7910,7 +7773,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:29.572Z",
+      "observedAt": "2026-10-30T05:57:51.865Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-359df44c5927b125"
@@ -7939,7 +7802,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:28.725Z",
+      "observedAt": "2026-10-30T05:57:51.866Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "keshen-goodman-library",
@@ -7966,7 +7829,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:28.726Z",
+      "observedAt": "2026-10-30T05:57:51.867Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-f92870c6b5da9161"
@@ -7996,7 +7859,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:48.967Z",
+      "observedAt": "2026-10-30T05:58:10.508Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -8037,7 +7900,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:28.727Z",
+      "observedAt": "2026-10-30T05:57:50.542Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-eb35b8f321ea2253"
@@ -8066,7 +7929,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:28.726Z",
+      "observedAt": "2026-10-30T05:57:51.867Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-d75999bc8cfa96ea"
@@ -8095,7 +7958,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:28.727Z",
+      "observedAt": "2026-10-30T05:57:50.542Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-863a34558db5e67d"
@@ -8124,7 +7987,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:28.727Z",
+      "observedAt": "2026-10-30T05:57:50.542Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-6f66bf70c4071149"
@@ -8154,7 +8017,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:28.728Z",
+      "observedAt": "2026-10-30T05:57:50.543Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-c9578a12d87ad21b"
@@ -8183,7 +8046,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:28.728Z",
+      "observedAt": "2026-10-30T05:57:50.543Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-86b285ff03e56a4d"
@@ -8195,7 +8058,7 @@ window.HALIFAX_CITY_EVENTS = {
     },
     {
       "id": "halifax-public-libraries-54602bd6d289d288",
-      "title": "Art Club",
+      "title": "Art Club: Clay Creations - Decorate",
       "startAt": "2026-11-10T19:30:00.000Z",
       "endAt": "2026-11-10T20:30:00.000Z",
       "allDay": false,
@@ -8212,9 +8075,11 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:28.729Z",
+      "observedAt": "2026-10-30T05:57:50.544Z",
       "reviewState": "source_observed",
-      "duplicateEventIds": [],
+      "duplicateEventIds": [
+        "halifax-public-libraries-b40c80fa50854288"
+      ],
       "venueId": "keshen-goodman-library",
       "neighbourhood": null,
       "organizerId": "halifax-public-libraries",
@@ -8239,7 +8104,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:28.729Z",
+      "observedAt": "2026-10-30T05:57:50.544Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-955cdf3bcb9d8c78"
@@ -8268,7 +8133,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:28.729Z",
+      "observedAt": "2026-10-30T05:57:50.543Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-70956e10e882b1c6"
@@ -8297,7 +8162,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:28.728Z",
+      "observedAt": "2026-10-30T05:57:50.543Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-d802522ee5b2069a"
@@ -8326,7 +8191,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:28.730Z",
+      "observedAt": "2026-10-30T05:57:50.545Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-f26b6a804f64c7d3"
@@ -8355,7 +8220,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:28.730Z",
+      "observedAt": "2026-10-30T05:57:50.544Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b16b17c5e8f7b802"
@@ -8384,7 +8249,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:26.592Z",
+      "observedAt": "2026-10-30T05:57:50.546Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-589c8902e1f4286e"
@@ -8413,7 +8278,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:26.591Z",
+      "observedAt": "2026-10-30T05:57:50.545Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-84cf3eeb12838af9"
@@ -8442,7 +8307,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:26.591Z",
+      "observedAt": "2026-10-30T05:57:50.546Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-9b10838fc99b945c"
@@ -8471,7 +8336,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:26.591Z",
+      "observedAt": "2026-10-30T05:57:50.545Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-198b1f3f49684e20"
@@ -8500,7 +8365,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:26.592Z",
+      "observedAt": "2026-10-30T05:57:49.652Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-6fa59522b7cbe1e4"
@@ -8529,7 +8394,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:26.592Z",
+      "observedAt": "2026-10-30T05:57:49.653Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-172a886a8f945778"
@@ -8558,7 +8423,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "neptune-theatre",
       "sourceName": "Neptune Theatre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-29T22:49:41.819Z",
+      "observedAt": "2026-10-30T05:56:25.076Z",
       "reviewState": "source-observed",
       "venueId": "neptune-theatre-halifax",
       "neighbourhood": "Downtown",
@@ -8584,7 +8449,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:26.593Z",
+      "observedAt": "2026-10-30T05:57:49.653Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-7864f8a17c95b521"
@@ -8613,7 +8478,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:26.594Z",
+      "observedAt": "2026-10-30T05:57:49.654Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-1126b93d39a1d693"
@@ -8642,7 +8507,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:26.593Z",
+      "observedAt": "2026-10-30T05:57:49.653Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-f92c90f5698e48bf"
@@ -8671,7 +8536,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:26.593Z",
+      "observedAt": "2026-10-30T05:57:49.654Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-7bd9790408567903"
@@ -8700,7 +8565,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:26.595Z",
+      "observedAt": "2026-10-30T05:57:49.655Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-028dd790bbb93719"
@@ -8729,7 +8594,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:26.595Z",
+      "observedAt": "2026-10-30T05:57:49.655Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-08e5b0fee309e7a4"
@@ -8758,7 +8623,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:26.594Z",
+      "observedAt": "2026-10-30T05:57:49.654Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-777785981f6face0"
@@ -8787,7 +8652,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:26.594Z",
+      "observedAt": "2026-10-30T05:57:49.655Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-4cecc078f41b92e2"
@@ -8816,7 +8681,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:26.595Z",
+      "observedAt": "2026-10-30T05:57:49.656Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-09ab19e9be58c5c6"
@@ -8845,7 +8710,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:23.426Z",
+      "observedAt": "2026-10-30T05:57:49.656Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-ab7f6b92a6228851"
@@ -8874,7 +8739,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:23.426Z",
+      "observedAt": "2026-10-30T05:57:49.656Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "halifax-north-memorial-library",
@@ -8901,7 +8766,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:23.427Z",
+      "observedAt": "2026-10-30T05:57:49.657Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-a7ef857c603ef43a"
@@ -8930,7 +8795,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:48.968Z",
+      "observedAt": "2026-10-30T05:58:10.509Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -8971,7 +8836,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:23.428Z",
+      "observedAt": "2026-10-30T05:57:48.853Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-d77df225e04efee3"
@@ -9000,7 +8865,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:48.968Z",
+      "observedAt": "2026-10-30T05:58:10.509Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -9042,7 +8907,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:23.428Z",
+      "observedAt": "2026-10-30T05:57:48.853Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-d32c1e66fcca628c"
@@ -9072,7 +8937,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:23.429Z",
+      "observedAt": "2026-10-30T05:57:48.854Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-ddfa7e940b6cc7e5"
@@ -9102,7 +8967,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:23.429Z",
+      "observedAt": "2026-10-30T05:57:48.854Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-62e69af9b0376f00"
@@ -9131,7 +8996,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:23.429Z",
+      "observedAt": "2026-10-30T05:57:48.855Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-4a04d5e36b04a091"
@@ -9160,7 +9025,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:23.430Z",
+      "observedAt": "2026-10-30T05:57:48.855Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-6023280e5c9b0f57"
@@ -9189,7 +9054,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:23.430Z",
+      "observedAt": "2026-10-30T05:57:48.855Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-3668dffa9fdf5f8b"
@@ -9219,7 +9084,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:22.315Z",
+      "observedAt": "2026-10-30T05:57:48.855Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-796c990b09add8e3"
@@ -9248,7 +9113,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:48.968Z",
+      "observedAt": "2026-10-30T05:58:10.509Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -9289,7 +9154,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:22.316Z",
+      "observedAt": "2026-10-30T05:57:48.856Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-239093a0891b6aa4"
@@ -9318,7 +9183,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:22.316Z",
+      "observedAt": "2026-10-30T05:57:48.032Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-ade85bd0a4fa1b5d"
@@ -9350,7 +9215,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-10-29T22:49:31.548Z",
+      "observedAt": "2026-10-30T05:56:13.251Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -9413,7 +9278,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:22.316Z",
+      "observedAt": "2026-10-30T05:57:48.032Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-a98440b5b9ce1480"
@@ -9442,7 +9307,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:22.317Z",
+      "observedAt": "2026-10-30T05:57:48.033Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-5e46b1edd2b44afd"
@@ -9472,7 +9337,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:22.317Z",
+      "observedAt": "2026-10-30T05:57:48.033Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-ad15fc6607686f2b"
@@ -9503,7 +9368,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:22.317Z",
+      "observedAt": "2026-10-30T05:57:48.033Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-5daf84e7c0da82bc"
@@ -9532,7 +9397,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:22.318Z",
+      "observedAt": "2026-10-30T05:57:48.034Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-6bba425682c7ad7d"
@@ -9562,7 +9427,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:22.318Z",
+      "observedAt": "2026-10-30T05:57:48.034Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-0ffc2235e0e3ad77"
@@ -9591,7 +9456,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:48.969Z",
+      "observedAt": "2026-10-30T05:58:10.510Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -9632,7 +9497,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:22.319Z",
+      "observedAt": "2026-10-30T05:57:48.035Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-fe3c3209b22897a2"
@@ -9663,7 +9528,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:21.181Z",
+      "observedAt": "2026-10-30T05:57:48.035Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-0a7065588ee46d62"
@@ -9692,7 +9557,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:48.969Z",
+      "observedAt": "2026-10-30T05:58:10.510Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -9733,7 +9598,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:21.182Z",
+      "observedAt": "2026-10-30T05:57:48.036Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-1e54bf6eb5dd39ab"
@@ -9762,7 +9627,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:21.182Z",
+      "observedAt": "2026-10-30T05:57:48.036Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-070d8fc96ac3499a"
@@ -9791,7 +9656,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:21.182Z",
+      "observedAt": "2026-10-30T05:57:48.036Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-6f514e52022442bc"
@@ -9820,7 +9685,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:21.183Z",
+      "observedAt": "2026-10-30T05:57:47.116Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-bb07df0e51f2691f"
@@ -9849,7 +9714,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:48.969Z",
+      "observedAt": "2026-10-30T05:58:10.510Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -9891,7 +9756,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:21.183Z",
+      "observedAt": "2026-10-30T05:57:47.115Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-1e47346a6c86b447"
@@ -9920,7 +9785,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:21.183Z",
+      "observedAt": "2026-10-30T05:57:47.115Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-e2a4a8db60d27c48"
@@ -9949,7 +9814,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:21.184Z",
+      "observedAt": "2026-10-30T05:57:47.116Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-977bfdce9dc96a13"
@@ -9979,7 +9844,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-29T22:49:44.587Z",
+      "observedAt": "2026-10-30T05:56:27.142Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -10003,7 +9868,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:21.185Z",
+      "observedAt": "2026-10-30T05:57:47.117Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-8fb847de810b05fd"
@@ -10033,7 +9898,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:21.184Z",
+      "observedAt": "2026-10-30T05:57:47.117Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-3f56e0fcf51dee25"
@@ -10064,7 +9929,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:48.969Z",
+      "observedAt": "2026-10-30T05:58:10.511Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -10106,7 +9971,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:21.185Z",
+      "observedAt": "2026-10-30T05:57:47.118Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-6cd00907c2f94342"
@@ -10135,7 +10000,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:21.185Z",
+      "observedAt": "2026-10-30T05:57:47.117Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-407ef7b85370244d"
@@ -10164,7 +10029,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:19.224Z",
+      "observedAt": "2026-10-30T05:57:47.118Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "woodlawn-library",
@@ -10191,7 +10056,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:19.224Z",
+      "observedAt": "2026-10-30T05:57:47.119Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-c013b3375c19d6fa"
@@ -10220,7 +10085,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:19.225Z",
+      "observedAt": "2026-10-30T05:57:46.268Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b756a9863fd1af86"
@@ -10249,7 +10114,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:19.224Z",
+      "observedAt": "2026-10-30T05:57:46.267Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b45c44f07a4027fd"
@@ -10278,7 +10143,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:19.225Z",
+      "observedAt": "2026-10-30T05:57:46.268Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-520c83a119d56b0a"
@@ -10307,7 +10172,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:19.226Z",
+      "observedAt": "2026-10-30T05:57:46.269Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-6c57529a2cc2b5f6"
@@ -10336,7 +10201,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:19.226Z",
+      "observedAt": "2026-10-30T05:57:46.269Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-e56e57a04b2cccdb"
@@ -10348,7 +10213,7 @@ window.HALIFAX_CITY_EVENTS = {
     },
     {
       "id": "bedford-library-events-50912d660722b03e",
-      "title": "Super Saturday",
+      "title": "Super Saturday: Paper Snowflakes",
       "startAt": "2026-11-14T18:00:00.000Z",
       "endAt": "2026-11-14T19:00:00.000Z",
       "allDay": false,
@@ -10365,7 +10230,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:48.970Z",
+      "observedAt": "2026-10-30T05:58:10.511Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -10380,7 +10245,9 @@ window.HALIFAX_CITY_EVENTS = {
       ],
       "duplicateEventIds": [
         "halifax-public-libraries-d8929e55e6bb5286",
-        "bedford-library-events-d8929e55e6bb5286"
+        "bedford-library-events-d8929e55e6bb5286",
+        "halifax-public-libraries-9c4d6b88169f93a6",
+        "bedford-library-events-9c4d6b88169f93a6"
       ],
       "venueId": "bedford-library",
       "neighbourhood": null,
@@ -10407,7 +10274,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:19.225Z",
+      "observedAt": "2026-10-30T05:57:46.268Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-21e91c27226d0b73"
@@ -10437,7 +10304,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:19.226Z",
+      "observedAt": "2026-10-30T05:57:46.269Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-004134de0b10440f"
@@ -10466,7 +10333,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:19.227Z",
+      "observedAt": "2026-10-30T05:57:46.270Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-3bde7c95da1560d1"
@@ -10495,7 +10362,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-29T22:49:38.509Z",
+      "observedAt": "2026-10-30T05:56:18.010Z",
       "reviewState": "source-observed",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
@@ -10532,7 +10399,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:19.227Z",
+      "observedAt": "2026-10-30T05:57:46.270Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-dc4f3c2229a02a43"
@@ -10561,7 +10428,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:19.227Z",
+      "observedAt": "2026-10-30T05:57:46.270Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-2f740376af51fd02"
@@ -10591,7 +10458,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:19.228Z",
+      "observedAt": "2026-10-30T05:57:46.271Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-6569dfab7f8df871"
@@ -10620,7 +10487,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:18.208Z",
+      "observedAt": "2026-10-30T05:57:46.271Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-13299fa392a8000c"
@@ -10649,7 +10516,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:18.208Z",
+      "observedAt": "2026-10-30T05:57:46.271Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "woodlawn-library",
@@ -10677,7 +10544,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:48.970Z",
+      "observedAt": "2026-10-30T05:58:10.511Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -10718,7 +10585,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-29T22:49:38.509Z",
+      "observedAt": "2026-10-30T05:56:18.010Z",
       "reviewState": "source-observed",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
@@ -10755,7 +10622,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:18.210Z",
+      "observedAt": "2026-10-30T05:57:45.339Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b1e8ec6f5773830b"
@@ -10784,7 +10651,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:18.210Z",
+      "observedAt": "2026-10-30T05:57:45.338Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-292557469e6dcec8"
@@ -10814,7 +10681,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:18.209Z",
+      "observedAt": "2026-10-30T05:57:45.338Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-01160e4d65d4ef0c"
@@ -10843,7 +10710,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:18.210Z",
+      "observedAt": "2026-10-30T05:57:45.339Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-2241a3e0745d0501"
@@ -10872,7 +10739,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:18.211Z",
+      "observedAt": "2026-10-30T05:57:45.339Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-03c0d655e5f14445"
@@ -10902,7 +10769,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:18.211Z",
+      "observedAt": "2026-10-30T05:57:45.340Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-5aebab2112f6ff83"
@@ -10931,7 +10798,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:18.212Z",
+      "observedAt": "2026-10-30T05:57:45.340Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-f1f34ef724e2ce47"
@@ -10960,7 +10827,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:18.211Z",
+      "observedAt": "2026-10-30T05:57:45.340Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-92caeffe7d023fd8"
@@ -10989,7 +10856,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:18.212Z",
+      "observedAt": "2026-10-30T05:57:45.341Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-6ee360af3e7ed40c"
@@ -11018,7 +10885,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:18.212Z",
+      "observedAt": "2026-10-30T05:57:45.341Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-754a15fd4ca0535b"
@@ -11048,7 +10915,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:17.253Z",
+      "observedAt": "2026-10-30T05:57:45.341Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-398439ecfba29eb9"
@@ -11077,7 +10944,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:17.253Z",
+      "observedAt": "2026-10-30T05:57:45.342Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "alderney-gate-library",
@@ -11104,7 +10971,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:17.254Z",
+      "observedAt": "2026-10-30T05:57:45.342Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-2ec8f10bd4fa5c6d"
@@ -11133,7 +11000,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:17.254Z",
+      "observedAt": "2026-10-30T05:57:45.342Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-304d57785d0c1722"
@@ -11163,7 +11030,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:17.254Z",
+      "observedAt": "2026-10-30T05:57:45.342Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-6263212622fb73f6"
@@ -11192,7 +11059,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:17.255Z",
+      "observedAt": "2026-10-30T05:57:44.332Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-dbe3b03b621b1e0d"
@@ -11221,7 +11088,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:17.255Z",
+      "observedAt": "2026-10-30T05:57:44.332Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-c23fd7943906fcf1"
@@ -11251,7 +11118,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:17.256Z",
+      "observedAt": "2026-10-30T05:57:44.333Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-e412c45acc2afa10"
@@ -11280,7 +11147,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:17.255Z",
+      "observedAt": "2026-10-30T05:57:44.332Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-201d49e4abcb506f"
@@ -11311,7 +11178,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:17.256Z",
+      "observedAt": "2026-10-30T05:57:44.333Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-49d13ce0eb60f94e"
@@ -11340,7 +11207,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:17.257Z",
+      "observedAt": "2026-10-30T05:57:44.334Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-c7567fde40cbe3dc"
@@ -11369,7 +11236,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:48.970Z",
+      "observedAt": "2026-10-30T05:58:10.512Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -11410,7 +11277,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:17.257Z",
+      "observedAt": "2026-10-30T05:57:44.334Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-fed33c0f5be32f79"
@@ -11439,7 +11306,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:17.257Z",
+      "observedAt": "2026-10-30T05:57:44.334Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-fb6cb75eb0d3fd92"
@@ -11468,7 +11335,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:17.257Z",
+      "observedAt": "2026-10-30T05:57:44.334Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-c872c3781d1cbf69"
@@ -11497,7 +11364,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:16.062Z",
+      "observedAt": "2026-10-30T05:57:44.335Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-219a6a7c0abc38ec"
@@ -11526,7 +11393,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:17.258Z",
+      "observedAt": "2026-10-30T05:57:44.335Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b4eeb40f9884c964"
@@ -11555,7 +11422,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:16.062Z",
+      "observedAt": "2026-10-30T05:57:44.335Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-ae89f3df2fcf1a71"
@@ -11584,7 +11451,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:16.063Z",
+      "observedAt": "2026-10-30T05:57:43.611Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-69c770a3648659e1"
@@ -11613,7 +11480,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:16.063Z",
+      "observedAt": "2026-10-30T05:57:43.611Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-0edd9df9969a70f4"
@@ -11643,7 +11510,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:16.063Z",
+      "observedAt": "2026-10-30T05:57:43.611Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-4e48b407476e560f"
@@ -11672,7 +11539,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:16.064Z",
+      "observedAt": "2026-10-30T05:57:43.612Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-e0315171e3da6902"
@@ -11684,7 +11551,7 @@ window.HALIFAX_CITY_EVENTS = {
     },
     {
       "id": "halifax-public-libraries-d3487e99ba0ed877",
-      "title": "Art Club",
+      "title": "Art Club: Embroidery Bookmarks",
       "startAt": "2026-11-17T19:30:00.000Z",
       "endAt": "2026-11-17T20:30:00.000Z",
       "allDay": false,
@@ -11701,9 +11568,11 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:16.065Z",
+      "observedAt": "2026-10-30T05:57:43.613Z",
       "reviewState": "source_observed",
-      "duplicateEventIds": [],
+      "duplicateEventIds": [
+        "halifax-public-libraries-9d16c9973994cb04"
+      ],
       "venueId": "keshen-goodman-library",
       "neighbourhood": null,
       "organizerId": "halifax-public-libraries",
@@ -11728,7 +11597,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:16.065Z",
+      "observedAt": "2026-10-30T05:57:43.613Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-936bd61a04d9b6c9"
@@ -11758,7 +11627,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:16.064Z",
+      "observedAt": "2026-10-30T05:57:43.612Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-d33031ce3681c74d"
@@ -11787,7 +11656,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:16.064Z",
+      "observedAt": "2026-10-30T05:57:43.612Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-f359f260d6f00111"
@@ -11817,7 +11686,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:16.065Z",
+      "observedAt": "2026-10-30T05:57:43.613Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-d356680d192fbd42"
@@ -11846,7 +11715,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:16.066Z",
+      "observedAt": "2026-10-30T05:57:43.614Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-fd0a02b215fba753"
@@ -11875,7 +11744,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:16.066Z",
+      "observedAt": "2026-10-30T05:57:43.613Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-8ba17abe77457a07"
@@ -11904,7 +11773,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:15.242Z",
+      "observedAt": "2026-10-30T05:57:43.614Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-73565a2d99505df0"
@@ -11933,7 +11802,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:15.243Z",
+      "observedAt": "2026-10-30T05:57:43.614Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-296e8d85698aaa90"
@@ -11962,7 +11831,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:15.243Z",
+      "observedAt": "2026-10-30T05:57:43.615Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-3d9de3f2ab7230ab"
@@ -11991,7 +11860,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:15.244Z",
+      "observedAt": "2026-10-30T05:57:42.702Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b45c7af4093c1735"
@@ -12020,7 +11889,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:15.244Z",
+      "observedAt": "2026-10-30T05:57:42.702Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-dd296492d1aecce4"
@@ -12049,7 +11918,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:15.244Z",
+      "observedAt": "2026-10-30T05:57:42.702Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-392b9b42b2e4c167"
@@ -12078,7 +11947,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:15.245Z",
+      "observedAt": "2026-10-30T05:57:42.703Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-189db3ac2e453dd5"
@@ -12107,7 +11976,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:48.971Z",
+      "observedAt": "2026-10-30T05:58:10.512Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -12148,7 +12017,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:15.245Z",
+      "observedAt": "2026-10-30T05:57:42.703Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-1af883b5f691e2a2"
@@ -12177,7 +12046,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:15.246Z",
+      "observedAt": "2026-10-30T05:57:42.704Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-00e3ebd633c2bd88"
@@ -12206,7 +12075,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:15.246Z",
+      "observedAt": "2026-10-30T05:57:42.704Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-0e9e69827f6b2076"
@@ -12235,7 +12104,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:48.971Z",
+      "observedAt": "2026-10-30T05:58:10.512Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -12277,7 +12146,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:15.247Z",
+      "observedAt": "2026-10-30T05:57:42.705Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-211ecd008de70940"
@@ -12307,7 +12176,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:15.247Z",
+      "observedAt": "2026-10-30T05:57:42.705Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-fc8e6ee6987aaba1"
@@ -12336,7 +12205,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:14.381Z",
+      "observedAt": "2026-10-30T05:57:42.705Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-6111eaa6d8755336"
@@ -12367,7 +12236,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:14.381Z",
+      "observedAt": "2026-10-30T05:57:42.706Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-724fa2b97dc5c660"
@@ -12379,7 +12248,7 @@ window.HALIFAX_CITY_EVENTS = {
     },
     {
       "id": "halifax-public-libraries-46cd9087317ba7b5",
-      "title": "Craft Club",
+      "title": "Craft Club: Seed Bead Necklaces",
       "startAt": "2026-11-18T18:00:00.000Z",
       "endAt": "2026-11-18T19:30:00.000Z",
       "allDay": false,
@@ -12397,10 +12266,11 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:14.381Z",
+      "observedAt": "2026-10-30T05:57:42.036Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
-        "halifax-public-libraries-b8fe3e43ef3e4582"
+        "halifax-public-libraries-b8fe3e43ef3e4582",
+        "halifax-public-libraries-15b82fcaee3c5554"
       ],
       "venueId": "alderney-gate-library",
       "neighbourhood": "Downtown Dartmouth",
@@ -12426,7 +12296,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:14.382Z",
+      "observedAt": "2026-10-30T05:57:42.036Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-f6508eaa31a9264e"
@@ -12456,7 +12326,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:48.971Z",
+      "observedAt": "2026-10-30T05:58:10.512Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -12498,7 +12368,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:14.383Z",
+      "observedAt": "2026-10-30T05:57:42.037Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-15b587f63a181512"
@@ -12527,7 +12397,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:14.382Z",
+      "observedAt": "2026-10-30T05:57:42.037Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-f78fb2c13094a41c"
@@ -12557,7 +12427,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:14.383Z",
+      "observedAt": "2026-10-30T05:57:42.037Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-0e4644ca333f9f65"
@@ -12586,7 +12456,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:14.383Z",
+      "observedAt": "2026-10-30T05:57:42.038Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-6034038961ea5056"
@@ -12615,7 +12485,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:14.383Z",
+      "observedAt": "2026-10-30T05:57:42.038Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-200ccbefd26725a6"
@@ -12644,7 +12514,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:48.972Z",
+      "observedAt": "2026-10-30T05:58:10.513Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -12685,7 +12555,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:14.384Z",
+      "observedAt": "2026-10-30T05:57:42.039Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-320091c3926a8ca7"
@@ -12714,7 +12584,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:14.385Z",
+      "observedAt": "2026-10-30T05:57:42.039Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-267dbef0dbf65f9a"
@@ -12743,7 +12613,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:13.010Z",
+      "observedAt": "2026-10-30T05:57:42.040Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "central-library-halifax",
@@ -12770,7 +12640,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:13.010Z",
+      "observedAt": "2026-10-30T05:57:42.039Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-bf7ddee4f19b8066"
@@ -12800,7 +12670,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:13.011Z",
+      "observedAt": "2026-10-30T05:57:42.040Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "woodlawn-library",
@@ -12829,7 +12699,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:13.011Z",
+      "observedAt": "2026-10-30T05:57:41.152Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-7da4bfc4bee99b79"
@@ -12858,7 +12728,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:13.011Z",
+      "observedAt": "2026-10-30T05:57:41.152Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-3f54af46be958fc7"
@@ -12887,7 +12757,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:13.012Z",
+      "observedAt": "2026-10-30T05:57:41.153Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-5d2d1496f55fe517"
@@ -12916,7 +12786,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:13.012Z",
+      "observedAt": "2026-10-30T05:57:41.152Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-efa76017af2a880e"
@@ -12945,7 +12815,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:13.012Z",
+      "observedAt": "2026-10-30T05:57:41.153Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-406baf022087e623"
@@ -12974,7 +12844,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:13.013Z",
+      "observedAt": "2026-10-30T05:57:41.154Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-338c7d0d37d43071"
@@ -13003,7 +12873,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:13.014Z",
+      "observedAt": "2026-10-30T05:57:41.154Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-08768ddff62ad873"
@@ -13032,7 +12902,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:13.013Z",
+      "observedAt": "2026-10-30T05:57:41.153Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-68fa91ccd8ac9a6a"
@@ -13061,7 +12931,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:13.013Z",
+      "observedAt": "2026-10-30T05:57:41.154Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-03c29c4fb7648f6c"
@@ -13090,7 +12960,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:13.014Z",
+      "observedAt": "2026-10-30T05:57:41.155Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-7545a434248b2173"
@@ -13120,7 +12990,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:13.014Z",
+      "observedAt": "2026-10-30T05:57:41.155Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-319de7ed28384288"
@@ -13149,7 +13019,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:13.014Z",
+      "observedAt": "2026-10-30T05:57:41.155Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-ed124debd84b21cf"
@@ -13178,7 +13048,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:48.972Z",
+      "observedAt": "2026-10-30T05:58:10.513Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -13219,7 +13089,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:11.685Z",
+      "observedAt": "2026-10-30T05:57:41.156Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-1a1a560772c83b0f"
@@ -13248,7 +13118,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:11.684Z",
+      "observedAt": "2026-10-30T05:57:41.156Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-dd8bf19f8d9be1a0"
@@ -13277,7 +13147,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:11.685Z",
+      "observedAt": "2026-10-30T05:57:41.156Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "central-library-halifax",
@@ -13304,7 +13174,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:11.685Z",
+      "observedAt": "2026-10-30T05:57:41.157Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-51c3161314866fb0"
@@ -13333,7 +13203,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:48.972Z",
+      "observedAt": "2026-10-30T05:58:10.513Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -13374,7 +13244,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:11.686Z",
+      "observedAt": "2026-10-30T05:57:40.533Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-1ab7165feb619405"
@@ -13404,7 +13274,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:11.687Z",
+      "observedAt": "2026-10-30T05:57:40.534Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-89fd4c704f8dc0e4"
@@ -13434,7 +13304,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:11.687Z",
+      "observedAt": "2026-10-30T05:57:40.534Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-af01c8d053714990"
@@ -13463,7 +13333,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:11.688Z",
+      "observedAt": "2026-10-30T05:57:40.535Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-e5db7e0878f88df6"
@@ -13492,7 +13362,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:11.688Z",
+      "observedAt": "2026-10-30T05:57:40.536Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-41f386f720619a9d"
@@ -13522,7 +13392,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:11.688Z",
+      "observedAt": "2026-10-30T05:57:40.535Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-a98cd1225c8ae2fc"
@@ -13551,7 +13421,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:48.972Z",
+      "observedAt": "2026-10-30T05:58:10.514Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -13569,6 +13439,33 @@ window.HALIFAX_CITY_EVENTS = {
         "bedford-library-events-580b0ef41f8e08a7"
       ],
       "venueId": "bedford-library",
+      "neighbourhood": null,
+      "organizerId": "halifax-public-libraries",
+      "organizerName": "Halifax Public Libraries"
+    },
+    {
+      "id": "halifax-public-libraries-3c2a1ddf234ca711",
+      "title": "D'Wolfe Pack Concert: A Musical Time Machine",
+      "startAt": "2026-11-19T23:00:00.000Z",
+      "endAt": "2026-11-20T00:00:00.000Z",
+      "allDay": false,
+      "venueName": "Central Library",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Music",
+        "Arts"
+      ],
+      "eventUrl": "https://halifax.bibliocommons.com/v2/events/6ae3e64d29c3d60033337abc",
+      "ticketUrl": null,
+      "price": null,
+      "sourceId": "halifax-public-libraries",
+      "sourceName": "Halifax Public Libraries",
+      "sourceKind": "public_library_calendar",
+      "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
+      "observedAt": "2026-10-30T05:57:40.537Z",
+      "reviewState": "source_observed",
+      "venueId": "central-library-halifax",
       "neighbourhood": null,
       "organizerId": "halifax-public-libraries",
       "organizerName": "Halifax Public Libraries"
@@ -13592,7 +13489,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:10.560Z",
+      "observedAt": "2026-10-30T05:57:40.536Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-17a63707269cfdd3"
@@ -13621,7 +13518,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:10.560Z",
+      "observedAt": "2026-10-30T05:57:40.537Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-09cd0a318c39ad03"
@@ -13651,7 +13548,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-29T22:49:44.588Z",
+      "observedAt": "2026-10-30T05:56:27.142Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -13675,7 +13572,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:10.561Z",
+      "observedAt": "2026-10-30T05:57:40.537Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-1d9888c15692c91f"
@@ -13705,7 +13602,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:10.561Z",
+      "observedAt": "2026-10-30T05:57:39.773Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-80a0c63aa8a3fdb6"
@@ -13736,7 +13633,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:10.561Z",
+      "observedAt": "2026-10-30T05:57:39.773Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-feee473cc807d94e"
@@ -13766,7 +13663,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:10.562Z",
+      "observedAt": "2026-10-30T05:57:39.774Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-87af45c885a55f1d"
@@ -13795,7 +13692,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:10.563Z",
+      "observedAt": "2026-10-30T05:57:39.775Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-1585dba825527422"
@@ -13825,7 +13722,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:10.562Z",
+      "observedAt": "2026-10-30T05:57:39.774Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-4c33ee1bda20aafe"
@@ -13854,7 +13751,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:48.973Z",
+      "observedAt": "2026-10-30T05:58:10.514Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -13895,7 +13792,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:10.563Z",
+      "observedAt": "2026-10-30T05:57:39.775Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-0b069224c305febc"
@@ -13926,7 +13823,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:10.563Z",
+      "observedAt": "2026-10-30T05:57:39.775Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b1afc44c1c74774e"
@@ -13955,7 +13852,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:09.579Z",
+      "observedAt": "2026-10-30T05:57:39.048Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-ce9377b9eaca15c6"
@@ -13984,7 +13881,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:10.564Z",
+      "observedAt": "2026-10-30T05:57:39.776Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b142730fe4a9ee35"
@@ -14013,12 +13910,52 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:09.578Z",
+      "observedAt": "2026-10-30T05:57:39.776Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-baa5759512975493"
       ],
       "venueId": "keshen-goodman-library",
+      "neighbourhood": null,
+      "organizerId": "halifax-public-libraries",
+      "organizerName": "Halifax Public Libraries"
+    },
+    {
+      "id": "bedford-library-events-03b4213bca840261",
+      "title": "PD Day: Giant Games",
+      "startAt": "2026-11-20T18:00:00.000Z",
+      "endAt": "2026-11-20T19:00:00.000Z",
+      "allDay": false,
+      "venueName": "Bedford Public Library",
+      "address": "15 Dartmouth Road, Bedford, NS B4A 3X6",
+      "city": "Bedford",
+      "categories": [
+        "Community"
+      ],
+      "eventUrl": "https://halifax.bibliocommons.com/v2/events/6ae3e5e59b955d531f7baa5a",
+      "ticketUrl": null,
+      "price": null,
+      "sourceId": "bedford-library-events",
+      "sourceName": "Bedford Public Library",
+      "sourceKind": "official_library_location_calendar",
+      "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
+      "observedAt": "2026-10-30T05:58:10.514Z",
+      "reviewState": "source_observed",
+      "latitude": 44.7314,
+      "longitude": -63.6571,
+      "sourceUrls": [
+        "https://halifax.bibliocommons.com/v2/events/6ae3e5e59b955d531f7baa5a",
+        "https://halifax.bibliocommons.com/v2/events?locations=BED",
+        "https://halifax.bibliocommons.com/v2/events"
+      ],
+      "sourceIds": [
+        "bedford-library-events",
+        "halifax-public-libraries"
+      ],
+      "duplicateEventIds": [
+        "halifax-public-libraries-03b4213bca840261"
+      ],
+      "venueId": "bedford-library",
       "neighbourhood": null,
       "organizerId": "halifax-public-libraries",
       "organizerName": "Halifax Public Libraries"
@@ -14042,11 +13979,38 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:09.579Z",
+      "observedAt": "2026-10-30T05:57:39.048Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "keshen-goodman-library",
       "neighbourhood": null,
+      "organizerId": "halifax-public-libraries",
+      "organizerName": "Halifax Public Libraries"
+    },
+    {
+      "id": "halifax-public-libraries-187e7ac79953a90e",
+      "title": "PD Day: Robot Fashion Show",
+      "startAt": "2026-11-20T18:00:00.000Z",
+      "endAt": "2026-11-20T19:30:00.000Z",
+      "allDay": false,
+      "venueName": "Alderney Gate Public Library",
+      "address": "60 Alderney Drive, Dartmouth, NS B2Y 4P8",
+      "city": "Dartmouth",
+      "categories": [
+        "Arts",
+        "Outdoor"
+      ],
+      "eventUrl": "https://halifax.bibliocommons.com/v2/events/6abff93ade300e004517c4a2",
+      "ticketUrl": null,
+      "price": null,
+      "sourceId": "halifax-public-libraries",
+      "sourceName": "Halifax Public Libraries",
+      "sourceKind": "public_library_calendar",
+      "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
+      "observedAt": "2026-10-30T05:57:39.049Z",
+      "reviewState": "source_observed",
+      "venueId": "alderney-gate-library",
+      "neighbourhood": "Downtown Dartmouth",
       "organizerId": "halifax-public-libraries",
       "organizerName": "Halifax Public Libraries"
     },
@@ -14069,43 +14033,13 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:09.578Z",
+      "observedAt": "2026-10-30T05:57:39.776Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-5ba71ad7151ac415"
       ],
       "venueId": "dartmouth-north-library-temporary",
       "neighbourhood": null,
-      "organizerId": "halifax-public-libraries",
-      "organizerName": "Halifax Public Libraries"
-    },
-    {
-      "id": "halifax-public-libraries-9800ce385a5106c9",
-      "title": "PD Day: Robot Fashion Show",
-      "startAt": "2026-11-20T18:30:00.000Z",
-      "endAt": "2026-11-20T19:30:00.000Z",
-      "allDay": false,
-      "venueName": "Alderney Gate Public Library",
-      "address": "60 Alderney Drive, Dartmouth, NS B2Y 4P8",
-      "city": "Dartmouth",
-      "categories": [
-        "Arts",
-        "Outdoor"
-      ],
-      "eventUrl": "https://halifax.bibliocommons.com/v2/events/6abff93ade300e004517c4a2",
-      "ticketUrl": null,
-      "price": null,
-      "sourceId": "halifax-public-libraries",
-      "sourceName": "Halifax Public Libraries",
-      "sourceKind": "public_library_calendar",
-      "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:09.579Z",
-      "reviewState": "source_observed",
-      "duplicateEventIds": [
-        "halifax-public-libraries-8adae5a4ace0a73d"
-      ],
-      "venueId": "alderney-gate-library",
-      "neighbourhood": "Downtown Dartmouth",
       "organizerId": "halifax-public-libraries",
       "organizerName": "Halifax Public Libraries"
     },
@@ -14128,7 +14062,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:09.581Z",
+      "observedAt": "2026-10-30T05:57:39.050Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-c68884cefd3cf8c3"
@@ -14157,7 +14091,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:09.580Z",
+      "observedAt": "2026-10-30T05:57:39.049Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-87b34f7d3717aae3"
@@ -14187,7 +14121,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:09.580Z",
+      "observedAt": "2026-10-30T05:57:39.049Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-194f20e0f6f1980f"
@@ -14216,7 +14150,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:09.580Z",
+      "observedAt": "2026-10-30T05:57:39.049Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-a0af7a049622a9a7"
@@ -14245,7 +14179,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:09.581Z",
+      "observedAt": "2026-10-30T05:57:39.050Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-546daaeafd1e03ca"
@@ -14274,7 +14208,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-10-29T22:49:31.707Z",
+      "observedAt": "2026-10-30T05:56:13.406Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -14303,7 +14237,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:09.581Z",
+      "observedAt": "2026-10-30T05:57:39.051Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b79ba2d55591e87c"
@@ -14332,7 +14266,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:09.582Z",
+      "observedAt": "2026-10-30T05:57:39.051Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-e32e2bab570b0b90"
@@ -14362,7 +14296,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:09.582Z",
+      "observedAt": "2026-10-30T05:57:39.051Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-f3669e03ad409678"
@@ -14391,7 +14325,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:48.274Z",
+      "observedAt": "2026-10-30T05:58:09.706Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -14432,7 +14366,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:08.170Z",
+      "observedAt": "2026-10-30T05:57:38.326Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "woodlawn-library",
@@ -14459,7 +14393,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:08.170Z",
+      "observedAt": "2026-10-30T05:57:38.327Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-be721f8a7e690988"
@@ -14488,7 +14422,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:08.170Z",
+      "observedAt": "2026-10-30T05:57:38.327Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-2efb6a138d584a3f"
@@ -14517,7 +14451,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:08.171Z",
+      "observedAt": "2026-10-30T05:57:38.328Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-eefca506912cd8d7"
@@ -14546,7 +14480,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:08.171Z",
+      "observedAt": "2026-10-30T05:57:38.328Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-f83dadf22cb48db0"
@@ -14575,7 +14509,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:08.171Z",
+      "observedAt": "2026-10-30T05:57:38.327Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-8a09c9367c19e91c"
@@ -14604,7 +14538,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:08.172Z",
+      "observedAt": "2026-10-30T05:57:38.328Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-1af3d8cbd5fc1140"
@@ -14633,7 +14567,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:08.172Z",
+      "observedAt": "2026-10-30T05:57:38.329Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-a3253939a8938cba"
@@ -14662,7 +14596,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:08.173Z",
+      "observedAt": "2026-10-30T05:57:38.329Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-cec6e6824c2cda63"
@@ -14691,7 +14625,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:08.173Z",
+      "observedAt": "2026-10-30T05:57:38.330Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-9cb8fc19dd010372"
@@ -14720,7 +14654,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:08.172Z",
+      "observedAt": "2026-10-30T05:57:38.329Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b566d681637cd5a7"
@@ -14750,7 +14684,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-10-29T22:49:31.626Z",
+      "observedAt": "2026-10-30T05:56:13.329Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -14762,7 +14696,7 @@ window.HALIFAX_CITY_EVENTS = {
     },
     {
       "id": "bedford-library-events-6d23bf4db2c9cbf1",
-      "title": "Super Saturday",
+      "title": "Super Saturday: Giant Games",
       "startAt": "2026-11-21T18:00:00.000Z",
       "endAt": "2026-11-21T19:00:00.000Z",
       "allDay": false,
@@ -14779,7 +14713,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:48.275Z",
+      "observedAt": "2026-10-30T05:58:09.707Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -14794,7 +14728,9 @@ window.HALIFAX_CITY_EVENTS = {
       ],
       "duplicateEventIds": [
         "halifax-public-libraries-6ab4981e0eef0335",
-        "bedford-library-events-6ab4981e0eef0335"
+        "bedford-library-events-6ab4981e0eef0335",
+        "halifax-public-libraries-9aa6c71ec35589eb",
+        "bedford-library-events-9aa6c71ec35589eb"
       ],
       "venueId": "bedford-library",
       "neighbourhood": null,
@@ -14820,7 +14756,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:07.134Z",
+      "observedAt": "2026-10-30T05:57:38.330Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-47586d1989f9e4fd"
@@ -14850,7 +14786,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:07.134Z",
+      "observedAt": "2026-10-30T05:57:38.331Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-d9af157bf36c8437"
@@ -14881,7 +14817,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:07.134Z",
+      "observedAt": "2026-10-30T05:57:37.608Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-5e99bd5a33d6f12d"
@@ -14910,7 +14846,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:07.135Z",
+      "observedAt": "2026-10-30T05:57:37.609Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-357bfa93d4006b3d"
@@ -14940,7 +14876,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-29T22:49:44.588Z",
+      "observedAt": "2026-10-30T05:56:27.143Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -14964,7 +14900,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-29T22:49:38.612Z",
+      "observedAt": "2026-10-30T05:56:18.114Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -14990,7 +14926,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:07.135Z",
+      "observedAt": "2026-10-30T05:57:37.609Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "alderney-gate-library",
@@ -15018,7 +14954,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:48.275Z",
+      "observedAt": "2026-10-30T05:58:09.707Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -15060,7 +14996,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:07.135Z",
+      "observedAt": "2026-10-30T05:57:37.609Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-54eeeded9ac0241d"
@@ -15089,7 +15025,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:07.136Z",
+      "observedAt": "2026-10-30T05:57:37.610Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-602e1a984ee34735"
@@ -15119,7 +15055,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-29T22:49:44.588Z",
+      "observedAt": "2026-10-30T05:56:27.143Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -15143,7 +15079,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:07.136Z",
+      "observedAt": "2026-10-30T05:57:37.610Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "central-library-halifax",
@@ -15170,7 +15106,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:07.137Z",
+      "observedAt": "2026-10-30T05:57:37.611Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-90b06ffe3879bb0c"
@@ -15199,7 +15135,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:07.137Z",
+      "observedAt": "2026-10-30T05:57:37.611Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-a1ba26f4eced5b65"
@@ -15228,7 +15164,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:07.137Z",
+      "observedAt": "2026-10-30T05:57:37.611Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-f767dc468afe2a6b"
@@ -15257,7 +15193,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:07.138Z",
+      "observedAt": "2026-10-30T05:57:37.612Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b728b33befc16e3c"
@@ -15286,7 +15222,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:07.138Z",
+      "observedAt": "2026-10-30T05:57:37.612Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-74c9c4fe7fc301a7"
@@ -15315,7 +15251,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:06.305Z",
+      "observedAt": "2026-10-30T05:57:37.612Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-a01c06e603fbb8ff"
@@ -15344,7 +15280,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:06.306Z",
+      "observedAt": "2026-10-30T05:57:37.613Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-55b9b2c0decb992d"
@@ -15373,7 +15309,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:06.306Z",
+      "observedAt": "2026-10-30T05:57:36.507Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-a6ad9f4625a69345"
@@ -15403,7 +15339,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:06.306Z",
+      "observedAt": "2026-10-30T05:57:36.507Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-d2d1d680f333f576"
@@ -15432,7 +15368,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:06.307Z",
+      "observedAt": "2026-10-30T05:57:36.507Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-311b8a8f15d02495"
@@ -15461,7 +15397,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:06.307Z",
+      "observedAt": "2026-10-30T05:57:36.508Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "central-library-halifax",
@@ -15488,7 +15424,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:06.307Z",
+      "observedAt": "2026-10-30T05:57:36.508Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-8f2e9acc74422799"
@@ -15517,7 +15453,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:06.308Z",
+      "observedAt": "2026-10-30T05:57:36.508Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-c6fe0cf93052c2cf"
@@ -15546,7 +15482,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:06.308Z",
+      "observedAt": "2026-10-30T05:57:36.509Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-2a4fca08e1234d16"
@@ -15576,7 +15512,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:06.309Z",
+      "observedAt": "2026-10-30T05:57:36.509Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-6f08759291b8c03c"
@@ -15605,7 +15541,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:06.308Z",
+      "observedAt": "2026-10-30T05:57:36.509Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-c44573a2fd1c059f"
@@ -15636,7 +15572,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:06.309Z",
+      "observedAt": "2026-10-30T05:57:36.510Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-185ca274dee5a100"
@@ -15665,7 +15601,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:06.310Z",
+      "observedAt": "2026-10-30T05:57:36.511Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-d6bcb2c553451365"
@@ -15694,7 +15630,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:48.275Z",
+      "observedAt": "2026-10-30T05:58:09.707Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -15735,7 +15671,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:06.310Z",
+      "observedAt": "2026-10-30T05:57:36.510Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b77c18637870179a"
@@ -15764,7 +15700,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:06.310Z",
+      "observedAt": "2026-10-30T05:57:36.511Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b605d2acb1dd74eb"
@@ -15793,7 +15729,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:04.994Z",
+      "observedAt": "2026-10-30T05:57:36.511Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-dbada06f270b345b"
@@ -15822,7 +15758,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:04.995Z",
+      "observedAt": "2026-10-30T05:57:35.698Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-215b8672701852d9"
@@ -15851,7 +15787,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:04.994Z",
+      "observedAt": "2026-10-30T05:57:36.511Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-a9563564dc812b37"
@@ -15880,7 +15816,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:04.995Z",
+      "observedAt": "2026-10-30T05:57:35.698Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "alderney-gate-library",
@@ -15907,7 +15843,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:04.996Z",
+      "observedAt": "2026-10-30T05:57:35.698Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-ff746ed992abb7a0"
@@ -15937,7 +15873,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:04.996Z",
+      "observedAt": "2026-10-30T05:57:35.699Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-e97e120a0dfed593"
@@ -15966,7 +15902,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:04.996Z",
+      "observedAt": "2026-10-30T05:57:35.699Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-ad91535e6c1e9645"
@@ -15978,7 +15914,7 @@ window.HALIFAX_CITY_EVENTS = {
     },
     {
       "id": "halifax-public-libraries-ec4fb9165688432b",
-      "title": "Art Club",
+      "title": "Art Club: Knitting",
       "startAt": "2026-11-24T19:30:00.000Z",
       "endAt": "2026-11-24T20:30:00.000Z",
       "allDay": false,
@@ -15995,9 +15931,11 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:04.998Z",
+      "observedAt": "2026-10-30T05:57:35.700Z",
       "reviewState": "source_observed",
-      "duplicateEventIds": [],
+      "duplicateEventIds": [
+        "halifax-public-libraries-66015a337f1a735a"
+      ],
       "venueId": "keshen-goodman-library",
       "neighbourhood": null,
       "organizerId": "halifax-public-libraries",
@@ -16022,7 +15960,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:04.997Z",
+      "observedAt": "2026-10-30T05:57:35.700Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-8fdacd0f7ea57e35"
@@ -16051,7 +15989,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:04.997Z",
+      "observedAt": "2026-10-30T05:57:35.699Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-c0e766ef8f627c5d"
@@ -16080,7 +16018,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:04.997Z",
+      "observedAt": "2026-10-30T05:57:35.699Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-4de5d13534bd9e12"
@@ -16109,7 +16047,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:04.998Z",
+      "observedAt": "2026-10-30T05:57:35.701Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-ed8acbde5d968fcf"
@@ -16138,7 +16076,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:04.999Z",
+      "observedAt": "2026-10-30T05:57:35.701Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-95aa00b232d573d8"
@@ -16167,7 +16105,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:04.998Z",
+      "observedAt": "2026-10-30T05:57:35.700Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-f387b1373a0fd97c"
@@ -16196,7 +16134,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:04.236Z",
+      "observedAt": "2026-10-30T05:57:35.701Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-882886eda67e93d6"
@@ -16225,7 +16163,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:04.237Z",
+      "observedAt": "2026-10-30T05:57:34.743Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-857ea09d98b4f5bd"
@@ -16254,7 +16192,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:04.237Z",
+      "observedAt": "2026-10-30T05:57:34.743Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-e0e3bb27ebd76fb8"
@@ -16283,7 +16221,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:04.237Z",
+      "observedAt": "2026-10-30T05:57:34.744Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "central-library-halifax",
@@ -16310,7 +16248,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:04.238Z",
+      "observedAt": "2026-10-30T05:57:34.744Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-0b5d3c71b2c7e09c"
@@ -16339,7 +16277,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:04.238Z",
+      "observedAt": "2026-10-30T05:57:34.744Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-05bda350928b4d9c"
@@ -16368,7 +16306,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:04.238Z",
+      "observedAt": "2026-10-30T05:57:34.745Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-46368d74add6e1a1"
@@ -16397,7 +16335,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:04.239Z",
+      "observedAt": "2026-10-30T05:57:34.746Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-d50d6ea30272dde3"
@@ -16426,7 +16364,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:04.239Z",
+      "observedAt": "2026-10-30T05:57:34.745Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-4896211d726f81a0"
@@ -16455,7 +16393,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:48.276Z",
+      "observedAt": "2026-10-30T05:58:09.708Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -16496,7 +16434,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:04.240Z",
+      "observedAt": "2026-10-30T05:57:34.746Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-9a569e403dd63c92"
@@ -16525,7 +16463,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:48.276Z",
+      "observedAt": "2026-10-30T05:58:09.708Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -16567,7 +16505,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:04.240Z",
+      "observedAt": "2026-10-30T05:57:34.746Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-1f34d8d1a83dd7c6"
@@ -16596,7 +16534,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:03.315Z",
+      "observedAt": "2026-10-30T05:57:34.747Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-673a6e27894dce7a"
@@ -16625,7 +16563,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:03.315Z",
+      "observedAt": "2026-10-30T05:57:34.747Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-dd458509c7665dee"
@@ -16637,7 +16575,7 @@ window.HALIFAX_CITY_EVENTS = {
     },
     {
       "id": "halifax-public-libraries-e5a352b561bac88f",
-      "title": "Craft Club",
+      "title": "Craft Club: Felt Coffee Sleeve",
       "startAt": "2026-11-25T18:00:00.000Z",
       "endAt": "2026-11-25T19:30:00.000Z",
       "allDay": false,
@@ -16655,10 +16593,11 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:03.316Z",
+      "observedAt": "2026-10-30T05:57:33.608Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
-        "halifax-public-libraries-d372301497f02dee"
+        "halifax-public-libraries-d372301497f02dee",
+        "halifax-public-libraries-2e00146c49341591"
       ],
       "venueId": "alderney-gate-library",
       "neighbourhood": "Downtown Dartmouth",
@@ -16684,7 +16623,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:03.316Z",
+      "observedAt": "2026-10-30T05:57:33.608Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-1bd101ff1a9fcec9"
@@ -16714,7 +16653,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:48.276Z",
+      "observedAt": "2026-10-30T05:58:09.708Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -16756,7 +16695,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:03.317Z",
+      "observedAt": "2026-10-30T05:57:33.609Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-81ac0aa6120a8878"
@@ -16785,7 +16724,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:03.317Z",
+      "observedAt": "2026-10-30T05:57:33.609Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "alderney-gate-library",
@@ -16813,7 +16752,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:03.317Z",
+      "observedAt": "2026-10-30T05:57:33.609Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b557fcb0c0151ffe"
@@ -16842,7 +16781,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:03.318Z",
+      "observedAt": "2026-10-30T05:57:33.610Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-64bd5c494d2bfc7f"
@@ -16871,7 +16810,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:03.318Z",
+      "observedAt": "2026-10-30T05:57:33.610Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-1e1d6ea593bc39ed"
@@ -16900,7 +16839,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:03.318Z",
+      "observedAt": "2026-10-30T05:57:33.610Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "woodlawn-library",
@@ -16927,7 +16866,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:03.319Z",
+      "observedAt": "2026-10-30T05:57:33.611Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-cce801879933a2a0"
@@ -16956,7 +16895,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:03.319Z",
+      "observedAt": "2026-10-30T05:57:33.611Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-791489ea77f72bf7"
@@ -16985,7 +16924,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:03.319Z",
+      "observedAt": "2026-10-30T05:57:33.611Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-98f80013a3d7e882"
@@ -17014,7 +16953,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:48.276Z",
+      "observedAt": "2026-10-30T05:58:09.709Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -17055,7 +16994,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:02.271Z",
+      "observedAt": "2026-10-30T05:57:33.612Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-6d7867acfc59b560"
@@ -17084,7 +17023,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:02.272Z",
+      "observedAt": "2026-10-30T05:57:32.816Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-e801060e90dbc119"
@@ -17113,7 +17052,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:02.273Z",
+      "observedAt": "2026-10-30T05:57:32.817Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-549561f3cddd206c"
@@ -17142,7 +17081,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:02.273Z",
+      "observedAt": "2026-10-30T05:57:32.816Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-ec0e475c093f998f"
@@ -17171,7 +17110,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:02.273Z",
+      "observedAt": "2026-10-30T05:57:32.817Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "woodlawn-library",
@@ -17198,7 +17137,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:02.274Z",
+      "observedAt": "2026-10-30T05:57:32.818Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-2e40ac33cbab4bf6"
@@ -17227,7 +17166,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:02.274Z",
+      "observedAt": "2026-10-30T05:57:32.818Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-9f8a2d2893e6f6e1"
@@ -17256,7 +17195,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:02.274Z",
+      "observedAt": "2026-10-30T05:57:32.817Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-94735cd2f09c8db4"
@@ -17285,7 +17224,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:02.274Z",
+      "observedAt": "2026-10-30T05:57:32.818Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-a2a528758f0d9672"
@@ -17314,7 +17253,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:02.275Z",
+      "observedAt": "2026-10-30T05:57:32.819Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-5ad9d5cad848b0d1"
@@ -17343,7 +17282,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:02.275Z",
+      "observedAt": "2026-10-30T05:57:32.819Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-81aef7ba35aa55a3"
@@ -17373,7 +17312,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "tourism-ns-events",
       "sourceName": "Tourism Nova Scotia Events",
       "sourceKind": "official_tourism_calendar",
-      "observedAt": "2026-10-29T22:49:35.954Z",
+      "observedAt": "2026-10-30T05:56:16.624Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -17402,7 +17341,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:02.275Z",
+      "observedAt": "2026-10-30T05:57:32.819Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-bddded63e2c4921a"
@@ -17431,7 +17370,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:02.276Z",
+      "observedAt": "2026-10-30T05:57:32.819Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-cc03ec36e0873795"
@@ -17460,7 +17399,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:02.276Z",
+      "observedAt": "2026-10-30T05:57:32.820Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-efc2ddbc6b1f3645"
@@ -17489,7 +17428,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:48.277Z",
+      "observedAt": "2026-10-30T05:58:09.709Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -17531,7 +17470,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:01.387Z",
+      "observedAt": "2026-10-30T05:57:32.820Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-0779953015a9606c"
@@ -17561,7 +17500,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:01.387Z",
+      "observedAt": "2026-10-30T05:57:31.798Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-d1c6a9f13db21a0a"
@@ -17591,7 +17530,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:01.388Z",
+      "observedAt": "2026-10-30T05:57:31.798Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-98c5ef133b0e7f61"
@@ -17620,7 +17559,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:01.388Z",
+      "observedAt": "2026-10-30T05:57:31.799Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-22152165f666b764"
@@ -17650,7 +17589,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:01.388Z",
+      "observedAt": "2026-10-30T05:57:31.799Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-38386afdb234b855"
@@ -17679,7 +17618,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:48.277Z",
+      "observedAt": "2026-10-30T05:58:09.709Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -17720,7 +17659,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:01.389Z",
+      "observedAt": "2026-10-30T05:57:31.800Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-1c256082a38dfd99"
@@ -17750,7 +17689,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:01.390Z",
+      "observedAt": "2026-10-30T05:57:31.800Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-8a5f59efc6e055ac"
@@ -17779,7 +17718,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:01.389Z",
+      "observedAt": "2026-10-30T05:57:31.800Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-4cb2e6fa5cf5f1e1"
@@ -17808,7 +17747,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:01.390Z",
+      "observedAt": "2026-10-30T05:57:31.801Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b032cc239a36896d"
@@ -17838,7 +17777,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:01.390Z",
+      "observedAt": "2026-10-30T05:57:31.801Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-42fdd07e4f23c3bb"
@@ -17867,7 +17806,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:01.390Z",
+      "observedAt": "2026-10-30T05:57:31.801Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-7f58ad234c941930"
@@ -17896,7 +17835,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:00.466Z",
+      "observedAt": "2026-10-30T05:57:31.002Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-ae3dd3fbae5ce6a2"
@@ -17926,7 +17865,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:01.391Z",
+      "observedAt": "2026-10-30T05:57:31.802Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-726da71dd9de4824"
@@ -17955,7 +17894,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:48.277Z",
+      "observedAt": "2026-10-30T05:58:09.709Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -17996,7 +17935,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:00.466Z",
+      "observedAt": "2026-10-30T05:57:31.002Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "woodlawn-library",
@@ -18023,7 +17962,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:00.467Z",
+      "observedAt": "2026-10-30T05:57:31.002Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-8f9e6e589a5b2c33"
@@ -18054,7 +17993,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:00.467Z",
+      "observedAt": "2026-10-30T05:57:31.003Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-1c3b44729e622fbf"
@@ -18083,7 +18022,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:00.467Z",
+      "observedAt": "2026-10-30T05:57:31.003Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-74746454e205dd12"
@@ -18112,7 +18051,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:00.468Z",
+      "observedAt": "2026-10-30T05:57:31.004Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-8dc5c37bdb98b503"
@@ -18141,7 +18080,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:59.575Z",
+      "observedAt": "2026-10-30T05:57:31.005Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-73bf36704567cbe9"
@@ -18170,7 +18109,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:48.278Z",
+      "observedAt": "2026-10-30T05:58:09.710Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -18212,7 +18151,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:00.468Z",
+      "observedAt": "2026-10-30T05:57:31.004Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b035d65020d41cba"
@@ -18241,7 +18180,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:51:00.468Z",
+      "observedAt": "2026-10-30T05:57:31.004Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-22b8039a2cf48d4b"
@@ -18270,7 +18209,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:59.576Z",
+      "observedAt": "2026-10-30T05:57:29.929Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-97df756a6e9dc830"
@@ -18299,7 +18238,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-29T22:49:38.509Z",
+      "observedAt": "2026-10-30T05:56:18.010Z",
       "reviewState": "source-observed",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
@@ -18337,7 +18276,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-29T22:49:44.588Z",
+      "observedAt": "2026-10-30T05:56:27.143Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -18361,7 +18300,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:59.576Z",
+      "observedAt": "2026-10-30T05:57:29.930Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-07d7604948451901"
@@ -18391,7 +18330,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:59.576Z",
+      "observedAt": "2026-10-30T05:57:29.929Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-8329933b94360c83"
@@ -18422,7 +18361,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:59.577Z",
+      "observedAt": "2026-10-30T05:57:29.930Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b476128b8bab1106"
@@ -18453,7 +18392,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:48.278Z",
+      "observedAt": "2026-10-30T05:58:09.710Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -18495,7 +18434,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:59.577Z",
+      "observedAt": "2026-10-30T05:57:29.930Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-cf006ea8a5f2737d"
@@ -18525,7 +18464,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:59.577Z",
+      "observedAt": "2026-10-30T05:57:29.931Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-141d6aa02342bdd4"
@@ -18554,7 +18493,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:59.578Z",
+      "observedAt": "2026-10-30T05:57:29.931Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b6a3a29c39e4a3ba"
@@ -18583,7 +18522,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:59.578Z",
+      "observedAt": "2026-10-30T05:57:29.932Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-d08f3a32e72074e4"
@@ -18612,7 +18551,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:59.579Z",
+      "observedAt": "2026-10-30T05:57:29.932Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-258bbe066a45936b"
@@ -18641,7 +18580,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:59.579Z",
+      "observedAt": "2026-10-30T05:57:29.932Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-0438b631e4f880dc"
@@ -18670,7 +18609,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:58.590Z",
+      "observedAt": "2026-10-30T05:57:29.932Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-efc4f12c962ed934"
@@ -18765,7 +18704,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-29T22:49:44.589Z",
+      "observedAt": "2026-10-30T05:56:27.143Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -18790,7 +18729,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:58.591Z",
+      "observedAt": "2026-10-30T05:57:29.933Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-ed7911d98c4331ed"
@@ -18819,7 +18758,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:58.591Z",
+      "observedAt": "2026-10-30T05:57:29.933Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-436c78ae96238ade"
@@ -18848,7 +18787,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:48.278Z",
+      "observedAt": "2026-10-30T05:58:09.710Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -18890,7 +18829,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:58.591Z",
+      "observedAt": "2026-10-30T05:57:29.142Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-dc8936e3ad8f7e20"
@@ -18920,7 +18859,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:58.592Z",
+      "observedAt": "2026-10-30T05:57:29.143Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-22a3ad95c7149f20"
@@ -18949,7 +18888,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-29T22:49:38.612Z",
+      "observedAt": "2026-10-30T05:56:18.114Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -18975,7 +18914,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:58.592Z",
+      "observedAt": "2026-10-30T05:57:29.143Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-0d169faac0f5d5e0"
@@ -19004,7 +18943,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:58.592Z",
+      "observedAt": "2026-10-30T05:57:29.143Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "central-library-halifax",
@@ -19031,7 +18970,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-29T22:49:38.509Z",
+      "observedAt": "2026-10-30T05:56:18.010Z",
       "reviewState": "source-observed",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
@@ -19069,7 +19008,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:58.593Z",
+      "observedAt": "2026-10-30T05:57:29.144Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-093cf2f8368c2b40"
@@ -19098,7 +19037,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:58.593Z",
+      "observedAt": "2026-10-30T05:57:29.144Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-819fbaabfe352197"
@@ -19128,7 +19067,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:58.593Z",
+      "observedAt": "2026-10-30T05:57:29.144Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-8d067bfda5d91004"
@@ -19157,7 +19096,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:58.594Z",
+      "observedAt": "2026-10-30T05:57:29.145Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-7c6f196fde8886eb"
@@ -19187,7 +19126,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:48.279Z",
+      "observedAt": "2026-10-30T05:58:09.711Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -19228,7 +19167,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:57.595Z",
+      "observedAt": "2026-10-30T05:57:29.145Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-34b8a97d42d8e097"
@@ -19257,7 +19196,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:57.595Z",
+      "observedAt": "2026-10-30T05:57:29.146Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-0bfddeeb94d4877d"
@@ -19286,7 +19225,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:57.596Z",
+      "observedAt": "2026-10-30T05:57:29.146Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-512fb249718f7874"
@@ -19315,7 +19254,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:57.596Z",
+      "observedAt": "2026-10-30T05:57:28.301Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-f17bef04b719d837"
@@ -19344,7 +19283,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:57.597Z",
+      "observedAt": "2026-10-30T05:57:28.302Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-4ce81b05a762f946"
@@ -19373,7 +19312,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:57.597Z",
+      "observedAt": "2026-10-30T05:57:28.301Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "woodlawn-library",
@@ -19400,7 +19339,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:57.597Z",
+      "observedAt": "2026-10-30T05:57:28.301Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-fdc09fa1e445cd52"
@@ -19429,7 +19368,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:57.598Z",
+      "observedAt": "2026-10-30T05:57:28.302Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-87c1bcbd3e43db15"
@@ -19458,7 +19397,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:57.598Z",
+      "observedAt": "2026-10-30T05:57:28.302Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-9aab94368fc9bc94"
@@ -19488,7 +19427,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:57.598Z",
+      "observedAt": "2026-10-30T05:57:28.303Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-eae3a40648995a1f"
@@ -19517,7 +19456,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:57.598Z",
+      "observedAt": "2026-10-30T05:57:28.303Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-e6dd1829ea3716b2"
@@ -19546,7 +19485,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:57.599Z",
+      "observedAt": "2026-10-30T05:57:28.303Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-e7f98ce0a3af3f18"
@@ -19575,7 +19514,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:57.599Z",
+      "observedAt": "2026-10-30T05:57:28.303Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-5675423185675e86"
@@ -19604,7 +19543,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:57.599Z",
+      "observedAt": "2026-10-30T05:57:28.304Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-bc6a83f229d46dc1"
@@ -19633,7 +19572,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:57.600Z",
+      "observedAt": "2026-10-30T05:57:28.304Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-42cf41064cba3f83"
@@ -19663,7 +19602,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:56.738Z",
+      "observedAt": "2026-10-30T05:57:28.305Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-7e43c3ce6caa8203"
@@ -19692,7 +19631,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:57.600Z",
+      "observedAt": "2026-10-30T05:57:28.304Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-5a027222214c6849"
@@ -19723,7 +19662,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:56.738Z",
+      "observedAt": "2026-10-30T05:57:28.305Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-23de2b326950e492"
@@ -19752,7 +19691,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:56.739Z",
+      "observedAt": "2026-10-30T05:57:27.451Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "central-library-halifax",
@@ -19779,7 +19718,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:48.279Z",
+      "observedAt": "2026-10-30T05:58:09.711Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -19820,7 +19759,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:56.740Z",
+      "observedAt": "2026-10-30T05:57:27.452Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-8b29f972f2ed5cca"
@@ -19849,7 +19788,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:56.739Z",
+      "observedAt": "2026-10-30T05:57:27.451Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-1ed3007e193a8f14"
@@ -19878,7 +19817,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:56.740Z",
+      "observedAt": "2026-10-30T05:57:27.452Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-ae68ae6aeba7f73b"
@@ -19907,7 +19846,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:48.279Z",
+      "observedAt": "2026-10-30T05:58:09.711Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -19948,7 +19887,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:56.741Z",
+      "observedAt": "2026-10-30T05:57:27.453Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-45327336013a1874"
@@ -19977,7 +19916,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:56.741Z",
+      "observedAt": "2026-10-30T05:57:27.453Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-544f888cd1e0861b"
@@ -20006,7 +19945,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:56.740Z",
+      "observedAt": "2026-10-30T05:57:27.452Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-2eb515efa6b388ea"
@@ -20035,7 +19974,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:56.742Z",
+      "observedAt": "2026-10-30T05:57:27.453Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-d24d1c8221520e5e"
@@ -20064,7 +20003,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:55.946Z",
+      "observedAt": "2026-10-30T05:57:27.454Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-3e3165117c7ac49c"
@@ -20093,7 +20032,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:56.742Z",
+      "observedAt": "2026-10-30T05:57:27.454Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-6a6a1f4c514e7fc2"
@@ -20122,7 +20061,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:55.947Z",
+      "observedAt": "2026-10-30T05:57:27.454Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-650de501b488b573"
@@ -20134,7 +20073,7 @@ window.HALIFAX_CITY_EVENTS = {
     },
     {
       "id": "halifax-public-libraries-9c39d562c2db3b61",
-      "title": "Art Club",
+      "title": "Art Club: Styrofoam Printmaking",
       "startAt": "2026-12-01T19:30:00.000Z",
       "endAt": "2026-12-01T20:30:00.000Z",
       "allDay": false,
@@ -20151,9 +20090,11 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:55.948Z",
+      "observedAt": "2026-10-30T05:57:26.548Z",
       "reviewState": "source_observed",
-      "duplicateEventIds": [],
+      "duplicateEventIds": [
+        "halifax-public-libraries-433ba399f1a2865b"
+      ],
       "venueId": "keshen-goodman-library",
       "neighbourhood": null,
       "organizerId": "halifax-public-libraries",
@@ -20178,7 +20119,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:55.948Z",
+      "observedAt": "2026-10-30T05:57:26.548Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b9c8d325cb527bfd"
@@ -20208,7 +20149,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:55.947Z",
+      "observedAt": "2026-10-30T05:57:26.547Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b9e0389d8c2483df"
@@ -20237,7 +20178,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:55.947Z",
+      "observedAt": "2026-10-30T05:57:26.547Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-850fe393360578d7"
@@ -20266,7 +20207,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:55.949Z",
+      "observedAt": "2026-10-30T05:57:26.549Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "central-library-halifax",
@@ -20293,7 +20234,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:55.949Z",
+      "observedAt": "2026-10-30T05:57:26.549Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-6526b5ab945cf733"
@@ -20323,7 +20264,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:55.950Z",
+      "observedAt": "2026-10-30T05:57:26.549Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-bcc599732e11dd86"
@@ -20352,7 +20293,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:55.950Z",
+      "observedAt": "2026-10-30T05:57:26.550Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-fbe134d08392cfae"
@@ -20381,7 +20322,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:55.950Z",
+      "observedAt": "2026-10-30T05:57:26.550Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-f2403f8096fd09c1"
@@ -20410,7 +20351,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:54.968Z",
+      "observedAt": "2026-10-30T05:57:26.551Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-5dc0921a849b747a"
@@ -20439,7 +20380,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:54.969Z",
+      "observedAt": "2026-10-30T05:57:26.551Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-f09949d84808c329"
@@ -20468,7 +20409,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:54.969Z",
+      "observedAt": "2026-10-30T05:57:26.551Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-247a0e8b440a0719"
@@ -20497,7 +20438,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:54.970Z",
+      "observedAt": "2026-10-30T05:57:25.558Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-efc1ab481532cb58"
@@ -20526,7 +20467,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:54.970Z",
+      "observedAt": "2026-10-30T05:57:25.558Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-fe97bbd5f4851db0"
@@ -20555,7 +20496,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:48.279Z",
+      "observedAt": "2026-10-30T05:58:09.711Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -20597,7 +20538,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:54.971Z",
+      "observedAt": "2026-10-30T05:57:25.559Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "central-library-halifax",
@@ -20624,7 +20565,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:54.971Z",
+      "observedAt": "2026-10-30T05:57:25.559Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-1bf0de214b540156"
@@ -20653,7 +20594,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:54.971Z",
+      "observedAt": "2026-10-30T05:57:25.560Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-e8f2a42d3ff90c7a"
@@ -20665,7 +20606,7 @@ window.HALIFAX_CITY_EVENTS = {
     },
     {
       "id": "halifax-public-libraries-f05830aae1f776ad",
-      "title": "Craft Club",
+      "title": "Craft Club: Card Making",
       "startAt": "2026-12-02T18:00:00.000Z",
       "endAt": "2026-12-02T19:30:00.000Z",
       "allDay": false,
@@ -20683,10 +20624,11 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:54.972Z",
+      "observedAt": "2026-10-30T05:57:25.560Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
-        "halifax-public-libraries-a0055871e9550389"
+        "halifax-public-libraries-a0055871e9550389",
+        "halifax-public-libraries-5651ec30b6b0cdad"
       ],
       "venueId": "alderney-gate-library",
       "neighbourhood": "Downtown Dartmouth",
@@ -20713,7 +20655,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:48.280Z",
+      "observedAt": "2026-10-30T05:58:09.712Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -20755,7 +20697,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:54.973Z",
+      "observedAt": "2026-10-30T05:57:25.561Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-a242d8ae9c416fc2"
@@ -20784,7 +20726,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:54.972Z",
+      "observedAt": "2026-10-30T05:57:25.561Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-fafee16be7b21917"
@@ -20814,7 +20756,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:54.973Z",
+      "observedAt": "2026-10-30T05:57:25.561Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-f062390ba1ed6099"
@@ -20844,7 +20786,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:54.973Z",
+      "observedAt": "2026-10-30T05:57:25.561Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-73a0d546834ea30a"
@@ -20873,7 +20815,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:54.973Z",
+      "observedAt": "2026-10-30T05:57:25.562Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-8aa22e977e024f1e"
@@ -20902,7 +20844,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:54.974Z",
+      "observedAt": "2026-10-30T05:57:25.562Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-7e89b9ef9d177536"
@@ -20931,7 +20873,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:53.680Z",
+      "observedAt": "2026-10-30T05:57:24.486Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-38710a547979aadd"
@@ -20960,7 +20902,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:53.680Z",
+      "observedAt": "2026-10-30T05:57:24.487Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-49d9276fc7ef5d42"
@@ -20989,7 +20931,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:53.680Z",
+      "observedAt": "2026-10-30T05:57:24.487Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-82324bac74c7fdf8"
@@ -21018,7 +20960,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:53.681Z",
+      "observedAt": "2026-10-30T05:57:24.487Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-7c5ee9c92ec2e5a2"
@@ -21047,7 +20989,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:53.681Z",
+      "observedAt": "2026-10-30T05:57:24.488Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "alderney-gate-library",
@@ -21074,7 +21016,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:53.681Z",
+      "observedAt": "2026-10-30T05:57:24.488Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-ed39cb0ea631e369"
@@ -21103,7 +21045,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:53.682Z",
+      "observedAt": "2026-10-30T05:57:24.489Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-7dee8c07cec8d1ad"
@@ -21132,7 +21074,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:53.682Z",
+      "observedAt": "2026-10-30T05:57:24.488Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-3ad640b011a568cb"
@@ -21161,7 +21103,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:53.682Z",
+      "observedAt": "2026-10-30T05:57:24.489Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-7d31113edc5620c0"
@@ -21190,7 +21132,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:53.683Z",
+      "observedAt": "2026-10-30T05:57:24.490Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-63bfe70a65d07a7e"
@@ -21219,7 +21161,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:53.683Z",
+      "observedAt": "2026-10-30T05:57:24.490Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-729d7ee6a53ffa24"
@@ -21248,7 +21190,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:53.683Z",
+      "observedAt": "2026-10-30T05:57:24.489Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b2daa3f7cca84ff4"
@@ -21277,7 +21219,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:53.684Z",
+      "observedAt": "2026-10-30T05:57:24.490Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-4a5473f693ad7656"
@@ -21306,7 +21248,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:51.580Z",
+      "observedAt": "2026-10-30T05:57:24.491Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-7066ec9bc7a609cf"
@@ -21335,7 +21277,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:51.580Z",
+      "observedAt": "2026-10-30T05:57:24.491Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-88f9e8450a6c1235"
@@ -21364,7 +21306,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:48.280Z",
+      "observedAt": "2026-10-30T05:58:08.716Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -21405,7 +21347,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:51.580Z",
+      "observedAt": "2026-10-30T05:57:23.721Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-6954c222ef5266d2"
@@ -21435,7 +21377,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:51.581Z",
+      "observedAt": "2026-10-30T05:57:23.721Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-9832043af29e5d3e"
@@ -21465,7 +21407,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:51.581Z",
+      "observedAt": "2026-10-30T05:57:23.722Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-6f55ca272b05c778"
@@ -21494,7 +21436,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:51.582Z",
+      "observedAt": "2026-10-30T05:57:23.722Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "alderney-gate-library",
@@ -21521,7 +21463,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:51.582Z",
+      "observedAt": "2026-10-30T05:57:23.722Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-a86e0a02e004cb58"
@@ -21550,7 +21492,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:51.582Z",
+      "observedAt": "2026-10-30T05:57:23.723Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-e7605476254b09a1"
@@ -21579,7 +21521,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:47.368Z",
+      "observedAt": "2026-10-30T05:58:08.717Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -21620,7 +21562,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:51.583Z",
+      "observedAt": "2026-10-30T05:57:23.723Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-4e99c01c4d00be97"
@@ -21649,7 +21591,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:51.583Z",
+      "observedAt": "2026-10-30T05:57:23.724Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-bacb72385747c1d6"
@@ -21679,7 +21621,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:51.584Z",
+      "observedAt": "2026-10-30T05:57:23.725Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-14807bec63bf3938"
@@ -21710,7 +21652,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:51.584Z",
+      "observedAt": "2026-10-30T05:57:23.724Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-926e60d52ec28988"
@@ -21739,7 +21681,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:51.584Z",
+      "observedAt": "2026-10-30T05:57:23.724Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-d345e0d70357406f"
@@ -21768,7 +21710,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:50.464Z",
+      "observedAt": "2026-10-30T05:57:22.670Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-bbac81b81bac16ec"
@@ -21798,7 +21740,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:50.463Z",
+      "observedAt": "2026-10-30T05:57:23.725Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-18c562efce3c4c25"
@@ -21827,7 +21769,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:47.369Z",
+      "observedAt": "2026-10-30T05:58:08.717Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -21868,7 +21810,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:50.464Z",
+      "observedAt": "2026-10-30T05:57:22.671Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-859708b58152c415"
@@ -21897,7 +21839,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:47.369Z",
+      "observedAt": "2026-10-30T05:58:08.717Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -21938,7 +21880,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:50.465Z",
+      "observedAt": "2026-10-30T05:57:22.671Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-a72b11f719e25849"
@@ -21967,7 +21909,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:50.465Z",
+      "observedAt": "2026-10-30T05:57:22.672Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-67f22f2ecd5561f6"
@@ -21978,9 +21920,9 @@ window.HALIFAX_CITY_EVENTS = {
       "organizerName": "Halifax Public Libraries"
     },
     {
-      "id": "halifax-public-libraries-44e7722da72928a5",
+      "id": "halifax-public-libraries-513dcc2d6c2e15a6",
       "title": "Pajama Party & Stuffy Sleepover",
-      "startAt": "2026-12-04T18:30:00.000Z",
+      "startAt": "2026-12-04T18:00:00.000Z",
       "endAt": "2026-12-04T19:30:00.000Z",
       "allDay": false,
       "venueName": "Alderney Gate Public Library",
@@ -21996,11 +21938,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:50.466Z",
+      "observedAt": "2026-10-30T05:57:22.672Z",
       "reviewState": "source_observed",
-      "duplicateEventIds": [
-        "halifax-public-libraries-303c65962d746826"
-      ],
       "venueId": "alderney-gate-library",
       "neighbourhood": "Downtown Dartmouth",
       "organizerId": "halifax-public-libraries",
@@ -22025,7 +21964,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:50.467Z",
+      "observedAt": "2026-10-30T05:57:22.673Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-779f0c37351b001f"
@@ -22054,7 +21993,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:47.369Z",
+      "observedAt": "2026-10-30T05:58:08.718Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -22095,7 +22034,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:50.466Z",
+      "observedAt": "2026-10-30T05:57:22.673Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-2db116064ffc49d0"
@@ -22125,7 +22064,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:50.466Z",
+      "observedAt": "2026-10-30T05:57:22.672Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-e6c154054fd44938"
@@ -22154,7 +22093,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:50.467Z",
+      "observedAt": "2026-10-30T05:57:22.674Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-0bf422f4b4cbd059"
@@ -22183,7 +22122,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-29T22:49:38.612Z",
+      "observedAt": "2026-10-30T05:56:18.114Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -22210,7 +22149,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-29T22:49:44.589Z",
+      "observedAt": "2026-10-30T05:56:27.144Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -22235,7 +22174,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:49.682Z",
+      "observedAt": "2026-10-30T05:57:22.674Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-338a2b24fe2f69d7"
@@ -22264,7 +22203,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:49.682Z",
+      "observedAt": "2026-10-30T05:57:21.325Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-f602ed35ea4ef70a"
@@ -22293,7 +22232,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:49.682Z",
+      "observedAt": "2026-10-30T05:57:21.325Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-7ebb9a4ab41ac901"
@@ -22322,7 +22261,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:49.683Z",
+      "observedAt": "2026-10-30T05:57:21.325Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-5c42a7b117341d82"
@@ -22351,7 +22290,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:49.683Z",
+      "observedAt": "2026-10-30T05:57:21.326Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-7b765306b4c99355"
@@ -22380,7 +22319,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:49.683Z",
+      "observedAt": "2026-10-30T05:57:21.326Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-496b24f97e0337ea"
@@ -22409,7 +22348,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:49.684Z",
+      "observedAt": "2026-10-30T05:57:21.327Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-d4137f712da896f6"
@@ -22438,7 +22377,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:49.684Z",
+      "observedAt": "2026-10-30T05:57:21.327Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-1bcf30f834bcb3d5"
@@ -22467,7 +22406,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:49.685Z",
+      "observedAt": "2026-10-30T05:57:21.328Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-75940a8be9fd687a"
@@ -22496,7 +22435,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:49.684Z",
+      "observedAt": "2026-10-30T05:57:21.327Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-edbb4c8c09cd27fa"
@@ -22526,7 +22465,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:47.370Z",
+      "observedAt": "2026-10-30T05:58:08.718Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -22567,7 +22506,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:49.686Z",
+      "observedAt": "2026-10-30T05:57:21.328Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-1c09d03a7fd081d6"
@@ -22597,7 +22536,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:49.685Z",
+      "observedAt": "2026-10-30T05:57:21.328Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-0b8116a83225ede8"
@@ -22626,7 +22565,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:47.370Z",
+      "observedAt": "2026-10-30T05:58:08.718Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -22668,7 +22607,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-29T22:49:44.589Z",
+      "observedAt": "2026-10-30T05:56:27.144Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -22693,7 +22632,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:48.558Z",
+      "observedAt": "2026-10-30T05:57:20.481Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-111407b94adf569d"
@@ -22723,7 +22662,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:48.558Z",
+      "observedAt": "2026-10-30T05:57:20.481Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b69e7babd7c25ccb"
@@ -22753,7 +22692,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-29T22:49:38.613Z",
+      "observedAt": "2026-10-30T05:56:18.114Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -22779,7 +22718,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:48.558Z",
+      "observedAt": "2026-10-30T05:57:20.482Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-ede38fc28fcde4db"
@@ -22808,7 +22747,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:48.559Z",
+      "observedAt": "2026-10-30T05:57:20.482Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-afc233047b64cb62"
@@ -22837,7 +22776,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:48.559Z",
+      "observedAt": "2026-10-30T05:57:20.482Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-fe9e37e132a89bd1"
@@ -22866,7 +22805,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:48.559Z",
+      "observedAt": "2026-10-30T05:57:20.482Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "woodlawn-library",
@@ -22893,7 +22832,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-29T22:49:38.509Z",
+      "observedAt": "2026-10-30T05:56:18.010Z",
       "reviewState": "source-observed",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
@@ -22930,7 +22869,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:48.560Z",
+      "observedAt": "2026-10-30T05:57:20.483Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-d339500734570f1e"
@@ -22960,7 +22899,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:48.560Z",
+      "observedAt": "2026-10-30T05:57:20.483Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-a84cc70e6e0b9828"
@@ -22989,7 +22928,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:48.560Z",
+      "observedAt": "2026-10-30T05:57:20.483Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-f305bfee668f2891"
@@ -23018,7 +22957,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:48.561Z",
+      "observedAt": "2026-10-30T05:57:20.484Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-22510696a896a8f0"
@@ -23047,7 +22986,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:48.561Z",
+      "observedAt": "2026-10-30T05:57:20.484Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-1a97293f6546d471"
@@ -23077,7 +23016,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:47.574Z",
+      "observedAt": "2026-10-30T05:57:20.484Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-80329715491b106e"
@@ -23106,7 +23045,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:47.574Z",
+      "observedAt": "2026-10-30T05:57:19.646Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-6b8a09d09f1f9818"
@@ -23135,7 +23074,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:47.575Z",
+      "observedAt": "2026-10-30T05:57:19.646Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-fdebf5b3f547816d"
@@ -23164,7 +23103,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:47.575Z",
+      "observedAt": "2026-10-30T05:57:19.647Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-7ade5b98426a58c2"
@@ -23194,7 +23133,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:47.576Z",
+      "observedAt": "2026-10-30T05:57:19.648Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-70ac08afe6ae1c6f"
@@ -23223,7 +23162,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:47.575Z",
+      "observedAt": "2026-10-30T05:57:19.647Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-0714d1bbe1f17aaa"
@@ -23254,7 +23193,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:47.576Z",
+      "observedAt": "2026-10-30T05:57:19.648Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-9cdba00e14885916"
@@ -23283,7 +23222,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:47.576Z",
+      "observedAt": "2026-10-30T05:57:19.648Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-a469afbcc3400073"
@@ -23312,7 +23251,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:47.577Z",
+      "observedAt": "2026-10-30T05:57:19.649Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "halifax-north-memorial-library",
@@ -23339,7 +23278,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:47.577Z",
+      "observedAt": "2026-10-30T05:57:19.649Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-2947923cc8456417"
@@ -23368,7 +23307,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:47.577Z",
+      "observedAt": "2026-10-30T05:57:19.649Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-cc8ca418e8c7f985"
@@ -23397,7 +23336,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:47.578Z",
+      "observedAt": "2026-10-30T05:57:19.650Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-c8eee0cc39625fcb"
@@ -23426,7 +23365,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:47.578Z",
+      "observedAt": "2026-10-30T05:57:19.650Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-91c82bf560c22a48"
@@ -23455,7 +23394,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:47.578Z",
+      "observedAt": "2026-10-30T05:57:19.650Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-173a9429fdb95655"
@@ -23467,7 +23406,7 @@ window.HALIFAX_CITY_EVENTS = {
     },
     {
       "id": "halifax-public-libraries-1f51f0126036f0ac",
-      "title": "Art Club",
+      "title": "Art Club: Weaving",
       "startAt": "2026-12-08T19:30:00.000Z",
       "endAt": "2026-12-08T20:30:00.000Z",
       "allDay": false,
@@ -23484,9 +23423,11 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:46.511Z",
+      "observedAt": "2026-10-30T05:57:18.622Z",
       "reviewState": "source_observed",
-      "duplicateEventIds": [],
+      "duplicateEventIds": [
+        "halifax-public-libraries-bf81c6aca0afc89f"
+      ],
       "venueId": "keshen-goodman-library",
       "neighbourhood": null,
       "organizerId": "halifax-public-libraries",
@@ -23511,7 +23452,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:46.511Z",
+      "observedAt": "2026-10-30T05:57:19.651Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-35cf8c7889819b60"
@@ -23540,7 +23481,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:47.579Z",
+      "observedAt": "2026-10-30T05:57:19.651Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-140a40a51b1a8ed4"
@@ -23569,7 +23510,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:46.511Z",
+      "observedAt": "2026-10-30T05:57:18.623Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-67e1662baef6a81d"
@@ -23598,7 +23539,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:46.512Z",
+      "observedAt": "2026-10-30T05:57:18.623Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-3240c406a52a17a4"
@@ -23628,7 +23569,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:46.512Z",
+      "observedAt": "2026-10-30T05:57:18.623Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-3bb23f46efa2c831"
@@ -23657,7 +23598,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:46.513Z",
+      "observedAt": "2026-10-30T05:57:18.624Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-91373f47afa12b57"
@@ -23687,7 +23628,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:46.513Z",
+      "observedAt": "2026-10-30T05:57:18.625Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-2f2b5aaac6113cc8"
@@ -23716,7 +23657,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:46.512Z",
+      "observedAt": "2026-10-30T05:57:18.624Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-ad40c24292473198"
@@ -23745,7 +23686,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:46.513Z",
+      "observedAt": "2026-10-30T05:57:18.624Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-766969aea4a7f909"
@@ -23774,7 +23715,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:46.513Z",
+      "observedAt": "2026-10-30T05:57:18.625Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "woodlawn-library",
@@ -23801,7 +23742,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:46.514Z",
+      "observedAt": "2026-10-30T05:57:18.625Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-2858a80138fca3c9"
@@ -23830,7 +23771,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:46.515Z",
+      "observedAt": "2026-10-30T05:57:18.626Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b62de973641935c5"
@@ -23859,7 +23800,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:46.515Z",
+      "observedAt": "2026-10-30T05:57:18.626Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-ac1e7f57f7c9ad47"
@@ -23888,7 +23829,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:46.515Z",
+      "observedAt": "2026-10-30T05:57:18.626Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-d0150f791ef02864"
@@ -23917,7 +23858,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:45.651Z",
+      "observedAt": "2026-10-30T05:57:18.627Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-fd0f557a0b8395b1"
@@ -23946,7 +23887,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:45.652Z",
+      "observedAt": "2026-10-30T05:57:17.624Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-8284e981a5b9737e"
@@ -23975,7 +23916,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:47.370Z",
+      "observedAt": "2026-10-30T05:58:08.718Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -24016,7 +23957,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:45.653Z",
+      "observedAt": "2026-10-30T05:57:17.625Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-4d1e56316a7bba09"
@@ -24046,7 +23987,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:45.653Z",
+      "observedAt": "2026-10-30T05:57:17.625Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-26be793a78a901c4"
@@ -24075,7 +24016,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:45.653Z",
+      "observedAt": "2026-10-30T05:57:17.625Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b39e17172ca53f34"
@@ -24104,7 +24045,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:45.654Z",
+      "observedAt": "2026-10-30T05:57:17.626Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-25b1958f27abd5c1"
@@ -24134,7 +24075,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:47.371Z",
+      "observedAt": "2026-10-30T05:58:08.719Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -24176,7 +24117,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:45.654Z",
+      "observedAt": "2026-10-30T05:57:17.626Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-70ada9d119420b8a"
@@ -24206,7 +24147,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:45.655Z",
+      "observedAt": "2026-10-30T05:57:17.627Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-a98160d93c87d735"
@@ -24236,7 +24177,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:45.655Z",
+      "observedAt": "2026-10-30T05:57:17.627Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-8917bd47d3cb6f3e"
@@ -24265,7 +24206,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:45.655Z",
+      "observedAt": "2026-10-30T05:57:17.627Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-3ef1ce411633a518"
@@ -24294,7 +24235,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:44.771Z",
+      "observedAt": "2026-10-30T05:57:16.650Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-6fe205249f7771d9"
@@ -24323,7 +24264,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:44.771Z",
+      "observedAt": "2026-10-30T05:57:17.628Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-d5fffd1a31cd8b9b"
@@ -24352,7 +24293,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:44.771Z",
+      "observedAt": "2026-10-30T05:57:16.651Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-5554da51eb5ae63b"
@@ -24382,7 +24323,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:47.371Z",
+      "observedAt": "2026-10-30T05:58:08.719Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -24423,7 +24364,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:44.772Z",
+      "observedAt": "2026-10-30T05:57:16.651Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b8dd9d88caa132b8"
@@ -24452,7 +24393,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:47.371Z",
+      "observedAt": "2026-10-30T05:58:08.719Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -24493,7 +24434,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:44.773Z",
+      "observedAt": "2026-10-30T05:57:16.652Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-5a4bcd33e3069a1b"
@@ -24522,7 +24463,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:44.774Z",
+      "observedAt": "2026-10-30T05:57:16.653Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "alderney-gate-library",
@@ -24549,7 +24490,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:44.773Z",
+      "observedAt": "2026-10-30T05:57:16.652Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-99b3a3fec3851a02"
@@ -24578,7 +24519,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:44.773Z",
+      "observedAt": "2026-10-30T05:57:16.653Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-f9032329a671b9dd"
@@ -24607,7 +24548,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:44.774Z",
+      "observedAt": "2026-10-30T05:57:16.653Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-984d93028e7cf347"
@@ -24636,7 +24577,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:44.774Z",
+      "observedAt": "2026-10-30T05:57:16.653Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-7633e33c3efe8620"
@@ -24665,7 +24606,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:44.775Z",
+      "observedAt": "2026-10-30T05:57:16.654Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-6f218231a53da0de"
@@ -24694,7 +24635,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:44.775Z",
+      "observedAt": "2026-10-30T05:57:16.654Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-d6ed5d9eb736b0c7"
@@ -24723,7 +24664,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:47.371Z",
+      "observedAt": "2026-10-30T05:58:08.720Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -24764,7 +24705,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:44.776Z",
+      "observedAt": "2026-10-30T05:57:16.655Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-ca7734bcf549eb7d"
@@ -24794,7 +24735,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:43.160Z",
+      "observedAt": "2026-10-30T05:57:16.655Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-10a42636ee5c3050"
@@ -24824,7 +24765,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:43.160Z",
+      "observedAt": "2026-10-30T05:57:15.815Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-51ce0ddef10843dd"
@@ -24854,7 +24795,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:43.160Z",
+      "observedAt": "2026-10-30T05:57:15.816Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-1cb68e3d4c9ad197"
@@ -24883,7 +24824,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:47.372Z",
+      "observedAt": "2026-10-30T05:58:08.720Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -24924,7 +24865,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:43.161Z",
+      "observedAt": "2026-10-30T05:57:15.816Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-a7234dedf18b0e31"
@@ -24953,7 +24894,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:43.161Z",
+      "observedAt": "2026-10-30T05:57:15.817Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-5819c0e6f6a4ea55"
@@ -24982,7 +24923,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:43.162Z",
+      "observedAt": "2026-10-30T05:57:15.817Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-77a01cf5b36cfbfc"
@@ -25012,7 +24953,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:43.162Z",
+      "observedAt": "2026-10-30T05:57:15.818Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-8ba9ce6608ef9399"
@@ -25043,7 +24984,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:43.162Z",
+      "observedAt": "2026-10-30T05:57:15.817Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "woodlawn-library",
@@ -25071,7 +25012,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:43.163Z",
+      "observedAt": "2026-10-30T05:57:15.818Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-4f75a72e73e6121a"
@@ -25100,7 +25041,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:47.372Z",
+      "observedAt": "2026-10-30T05:58:08.720Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -25141,7 +25082,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:43.163Z",
+      "observedAt": "2026-10-30T05:57:15.819Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-35d22cecc1e8875e"
@@ -25170,7 +25111,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:42.067Z",
+      "observedAt": "2026-10-30T05:57:15.045Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-7a957c237160395b"
@@ -25199,7 +25140,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:42.068Z",
+      "observedAt": "2026-10-30T05:57:15.046Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-3a6e910bc2e37d26"
@@ -25229,7 +25170,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:42.068Z",
+      "observedAt": "2026-10-30T05:57:15.046Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-799810913e5bd971"
@@ -25258,7 +25199,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-29T22:49:38.613Z",
+      "observedAt": "2026-10-30T05:56:18.114Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -25285,7 +25226,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:42.069Z",
+      "observedAt": "2026-10-30T05:57:15.047Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-e3bd040a4c815338"
@@ -25316,7 +25257,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:42.069Z",
+      "observedAt": "2026-10-30T05:57:15.047Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-53940c11322a4a84"
@@ -25345,7 +25286,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:42.069Z",
+      "observedAt": "2026-10-30T05:57:15.047Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-bf6a7f749882674a"
@@ -25375,7 +25316,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:42.070Z",
+      "observedAt": "2026-10-30T05:57:15.048Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-042683c602bda5bc"
@@ -25404,7 +25345,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:42.070Z",
+      "observedAt": "2026-10-30T05:57:15.048Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-1dda93824f046b92"
@@ -25433,7 +25374,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:42.070Z",
+      "observedAt": "2026-10-30T05:57:15.048Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-9a58c014f685272c"
@@ -25462,7 +25403,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:42.071Z",
+      "observedAt": "2026-10-30T05:57:15.049Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-0d918db1cea87a67"
@@ -25492,7 +25433,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:42.071Z",
+      "observedAt": "2026-10-30T05:57:15.049Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-571a53eaec970b2d"
@@ -25521,7 +25462,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-29T22:49:38.509Z",
+      "observedAt": "2026-10-30T05:56:18.010Z",
       "reviewState": "source-observed",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
@@ -25558,7 +25499,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:40.534Z",
+      "observedAt": "2026-10-30T05:57:14.048Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-5aa2247088c31abc"
@@ -25587,7 +25528,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-29T22:49:38.509Z",
+      "observedAt": "2026-10-30T05:56:18.010Z",
       "reviewState": "source-observed",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
@@ -25624,7 +25565,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:40.534Z",
+      "observedAt": "2026-10-30T05:57:14.048Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-2dd579a0730db5f7"
@@ -25653,7 +25594,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:40.535Z",
+      "observedAt": "2026-10-30T05:57:14.048Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-1326f2ad6c8462c2"
@@ -25682,7 +25623,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:40.535Z",
+      "observedAt": "2026-10-30T05:57:14.049Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-ce2aa9b83b04af3d"
@@ -25711,7 +25652,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:40.535Z",
+      "observedAt": "2026-10-30T05:57:14.049Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-52e23abd03f1b51b"
@@ -25740,7 +25681,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:40.536Z",
+      "observedAt": "2026-10-30T05:57:14.050Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-8792a42031b5435e"
@@ -25770,7 +25711,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:40.536Z",
+      "observedAt": "2026-10-30T05:57:14.050Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-551f02e3451f04fc"
@@ -25799,7 +25740,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:40.537Z",
+      "observedAt": "2026-10-30T05:57:14.050Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-8e78e28efab9c667"
@@ -25828,7 +25769,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:40.537Z",
+      "observedAt": "2026-10-30T05:57:14.051Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-47518605247391d2"
@@ -25857,7 +25798,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:40.537Z",
+      "observedAt": "2026-10-30T05:57:14.051Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-96ba295f6e531a6e"
@@ -25886,7 +25827,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:38.253Z",
+      "observedAt": "2026-10-30T05:57:13.395Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-fecaa8d79fbb4397"
@@ -25915,7 +25856,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:38.254Z",
+      "observedAt": "2026-10-30T05:57:13.395Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-7692c17393043a82"
@@ -25946,7 +25887,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:38.254Z",
+      "observedAt": "2026-10-30T05:57:13.396Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-f6b5d13ada3a3947"
@@ -25975,7 +25916,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:38.254Z",
+      "observedAt": "2026-10-30T05:57:13.396Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-9349b3f24383f97a"
@@ -26004,7 +25945,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:38.254Z",
+      "observedAt": "2026-10-30T05:57:13.396Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-22a49449aaa7547e"
@@ -26033,7 +25974,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:38.255Z",
+      "observedAt": "2026-10-30T05:57:13.397Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-37dce9578840d434"
@@ -26062,7 +26003,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:38.255Z",
+      "observedAt": "2026-10-30T05:57:13.397Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-0789cff354c06ec7"
@@ -26091,7 +26032,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:38.256Z",
+      "observedAt": "2026-10-30T05:57:13.397Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-3483b27df1a9360a"
@@ -26120,7 +26061,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:38.256Z",
+      "observedAt": "2026-10-30T05:57:13.398Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-33e49fddc80b1bb2"
@@ -26149,7 +26090,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:38.256Z",
+      "observedAt": "2026-10-30T05:57:13.398Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-36e9bb893bf1f23e"
@@ -26179,7 +26120,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:38.256Z",
+      "observedAt": "2026-10-30T05:57:13.398Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-92bf1c652dbd1cb2"
@@ -26208,7 +26149,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:38.257Z",
+      "observedAt": "2026-10-30T05:57:13.399Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-002c5c140ba68f35"
@@ -26237,7 +26178,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:38.257Z",
+      "observedAt": "2026-10-30T05:57:13.399Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-72c8ef72d19a4963"
@@ -26266,7 +26207,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:38.257Z",
+      "observedAt": "2026-10-30T05:57:13.399Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-84ce4e5542deec61"
@@ -26295,7 +26236,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:36.870Z",
+      "observedAt": "2026-10-30T05:57:12.524Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-766495c504800719"
@@ -26324,7 +26265,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:36.870Z",
+      "observedAt": "2026-10-30T05:57:12.524Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-0e7616dccf861995"
@@ -26353,7 +26294,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:47.373Z",
+      "observedAt": "2026-10-30T05:58:08.721Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -26395,7 +26336,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:36.871Z",
+      "observedAt": "2026-10-30T05:57:12.525Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-c8f59cacb63a2f8a"
@@ -26424,7 +26365,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:36.871Z",
+      "observedAt": "2026-10-30T05:57:12.526Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-16f0bd8795f0561a"
@@ -26454,7 +26395,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:47.373Z",
+      "observedAt": "2026-10-30T05:58:08.721Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -26495,7 +26436,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:36.872Z",
+      "observedAt": "2026-10-30T05:57:12.526Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-e51ea6282c42a409"
@@ -26524,7 +26465,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:36.873Z",
+      "observedAt": "2026-10-30T05:57:12.527Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-c796922a0ff93945"
@@ -26553,7 +26494,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:36.873Z",
+      "observedAt": "2026-10-30T05:57:12.527Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-0ad5c63e38c52288"
@@ -26582,7 +26523,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:36.873Z",
+      "observedAt": "2026-10-30T05:57:12.527Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-72b4a434a82b2f3e"
@@ -26611,7 +26552,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:36.874Z",
+      "observedAt": "2026-10-30T05:57:12.528Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-3cf687383765f881"
@@ -26640,7 +26581,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:36.133Z",
+      "observedAt": "2026-10-30T05:57:11.633Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-c4b8b151187b2ddb"
@@ -26669,7 +26610,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:36.133Z",
+      "observedAt": "2026-10-30T05:57:11.633Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-01e2ab664681baff"
@@ -26698,7 +26639,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:36.134Z",
+      "observedAt": "2026-10-30T05:57:11.634Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-21ba957c4ddd7490"
@@ -26727,7 +26668,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:36.133Z",
+      "observedAt": "2026-10-30T05:57:11.633Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-6c281cf50187f0da"
@@ -26756,7 +26697,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:47.373Z",
+      "observedAt": "2026-10-30T05:58:08.721Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -26797,7 +26738,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:36.134Z",
+      "observedAt": "2026-10-30T05:57:11.635Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-43505e3f8267287e"
@@ -26826,7 +26767,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:36.134Z",
+      "observedAt": "2026-10-30T05:57:11.634Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-83837179a2cb3929"
@@ -26855,7 +26796,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:36.135Z",
+      "observedAt": "2026-10-30T05:57:11.635Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b5c8e8f098267536"
@@ -26885,7 +26826,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:36.135Z",
+      "observedAt": "2026-10-30T05:57:11.635Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "halifax-north-memorial-library",
@@ -26912,7 +26853,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:36.135Z",
+      "observedAt": "2026-10-30T05:57:11.635Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b8af4b02e7ff87b5"
@@ -26941,7 +26882,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:47.374Z",
+      "observedAt": "2026-10-30T05:58:08.722Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -26982,7 +26923,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:36.136Z",
+      "observedAt": "2026-10-30T05:57:11.636Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-097561bf746dbe4a"
@@ -27011,7 +26952,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:36.136Z",
+      "observedAt": "2026-10-30T05:57:11.637Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-fb9476b35522927a"
@@ -27041,7 +26982,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:36.137Z",
+      "observedAt": "2026-10-30T05:57:11.637Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-693d9e6ecd7d7bd3"
@@ -27070,7 +27011,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:35.154Z",
+      "observedAt": "2026-10-30T05:57:10.404Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-de93f045e293c9ce"
@@ -27100,7 +27041,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:35.154Z",
+      "observedAt": "2026-10-30T05:57:10.404Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-560e7dab70389d88"
@@ -27129,7 +27070,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-29T22:49:38.509Z",
+      "observedAt": "2026-10-30T05:56:18.010Z",
       "reviewState": "source-observed",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
@@ -27167,7 +27108,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-29T22:49:44.589Z",
+      "observedAt": "2026-10-30T05:56:27.144Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -27191,7 +27132,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:35.155Z",
+      "observedAt": "2026-10-30T05:57:10.405Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-377a23dcf4d2c52f"
@@ -27220,7 +27161,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:35.155Z",
+      "observedAt": "2026-10-30T05:57:10.405Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-58fa2206eeba65ed"
@@ -27249,7 +27190,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:35.155Z",
+      "observedAt": "2026-10-30T05:57:10.406Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-a3cc4a85d0c299e1"
@@ -27278,7 +27219,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:35.156Z",
+      "observedAt": "2026-10-30T05:57:10.406Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-06b00d82c94d8b2c"
@@ -27307,7 +27248,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:35.156Z",
+      "observedAt": "2026-10-30T05:57:10.406Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-6014f5e98a999653"
@@ -27336,7 +27277,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:35.156Z",
+      "observedAt": "2026-10-30T05:57:10.406Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-5a907a66f1c414fa"
@@ -27365,7 +27306,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:35.157Z",
+      "observedAt": "2026-10-30T05:57:10.407Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-1089fabb89783070"
@@ -27395,7 +27336,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:35.157Z",
+      "observedAt": "2026-10-30T05:57:10.407Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-4bcc92d3542a764d"
@@ -27425,7 +27366,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:35.157Z",
+      "observedAt": "2026-10-30T05:57:10.407Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-46bbe57708b4008c"
@@ -27454,7 +27395,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-29T22:49:38.613Z",
+      "observedAt": "2026-10-30T05:56:18.115Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -27481,7 +27422,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-29T22:49:44.589Z",
+      "observedAt": "2026-10-30T05:56:27.144Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -27505,7 +27446,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:33.666Z",
+      "observedAt": "2026-10-30T05:57:09.656Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-e9e2398d44910c62"
@@ -27536,7 +27477,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:33.666Z",
+      "observedAt": "2026-10-30T05:57:09.657Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-916bd1b47e08d815"
@@ -27565,7 +27506,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:33.667Z",
+      "observedAt": "2026-10-30T05:57:09.657Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-8a9c6f4a5e7bf05c"
@@ -27595,7 +27536,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:33.667Z",
+      "observedAt": "2026-10-30T05:57:09.658Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-25080fc3802908f1"
@@ -27624,7 +27565,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:33.667Z",
+      "observedAt": "2026-10-30T05:57:09.658Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-0d052f33188c6225"
@@ -27655,7 +27596,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-29T22:49:38.613Z",
+      "observedAt": "2026-10-30T05:56:18.115Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -27681,7 +27622,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:33.668Z",
+      "observedAt": "2026-10-30T05:57:09.658Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-0e8da8cd90e4db06"
@@ -27712,7 +27653,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-29T22:49:38.613Z",
+      "observedAt": "2026-10-30T05:56:18.115Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -27747,7 +27688,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-29T22:49:38.613Z",
+      "observedAt": "2026-10-30T05:56:18.115Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -27780,7 +27721,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:32.710Z",
+      "observedAt": "2026-10-30T05:57:09.659Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-28919efe6e5e9988"
@@ -27809,7 +27750,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:32.711Z",
+      "observedAt": "2026-10-30T05:57:08.663Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-6550b75d5f1cce5b"
@@ -27838,7 +27779,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:32.711Z",
+      "observedAt": "2026-10-30T05:57:08.664Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-9b69376bf35da623"
@@ -27867,7 +27808,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-29T22:49:38.509Z",
+      "observedAt": "2026-10-30T05:56:18.010Z",
       "reviewState": "source-observed",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
@@ -27904,7 +27845,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:32.711Z",
+      "observedAt": "2026-10-30T05:57:08.664Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-73029519ddbc54c0"
@@ -27933,7 +27874,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:32.712Z",
+      "observedAt": "2026-10-30T05:57:08.664Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "keshen-goodman-library",
@@ -27960,7 +27901,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-29T22:49:38.509Z",
+      "observedAt": "2026-10-30T05:56:18.011Z",
       "reviewState": "source-observed",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
@@ -27997,7 +27938,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:32.712Z",
+      "observedAt": "2026-10-30T05:57:08.664Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-41ee16fc4e1152ef"
@@ -28026,7 +27967,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:32.712Z",
+      "observedAt": "2026-10-30T05:57:08.665Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-118ea58f3c1e45d7"
@@ -28055,7 +27996,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:32.713Z",
+      "observedAt": "2026-10-30T05:57:08.665Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-6a7a8ba5128134be"
@@ -28084,7 +28025,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:31.066Z",
+      "observedAt": "2026-10-30T05:57:08.666Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-2d16b57fa2d2645d"
@@ -28113,7 +28054,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-29T22:49:38.509Z",
+      "observedAt": "2026-10-30T05:56:18.011Z",
       "reviewState": "source-observed",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
@@ -28150,7 +28091,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:31.067Z",
+      "observedAt": "2026-10-30T05:57:07.096Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-ddb1ea76f1b5c309"
@@ -28179,7 +28120,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:31.067Z",
+      "observedAt": "2026-10-30T05:57:07.096Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-029436d7eabd7d93"
@@ -28209,7 +28150,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:31.067Z",
+      "observedAt": "2026-10-30T05:57:07.097Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-5b07a7d89918f68c"
@@ -28239,7 +28180,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-29T22:49:38.613Z",
+      "observedAt": "2026-10-30T05:56:18.115Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -28265,7 +28206,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:31.068Z",
+      "observedAt": "2026-10-30T05:57:07.097Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "keshen-goodman-library",
@@ -28292,7 +28233,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-29T22:49:38.509Z",
+      "observedAt": "2026-10-30T05:56:18.011Z",
       "reviewState": "source-observed",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
@@ -28329,7 +28270,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:31.068Z",
+      "observedAt": "2026-10-30T05:57:07.098Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-5877a3a6eb9767d7"
@@ -28358,7 +28299,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:31.069Z",
+      "observedAt": "2026-10-30T05:57:07.098Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-d60cc54b9d5887fb"
@@ -28387,7 +28328,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:47.374Z",
+      "observedAt": "2026-10-30T05:58:08.722Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -28428,7 +28369,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:31.069Z",
+      "observedAt": "2026-10-30T05:57:07.099Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-801b69f05ea0f84f"
@@ -28457,7 +28398,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:31.070Z",
+      "observedAt": "2026-10-30T05:57:07.099Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-f9d784e8f5cc4669"
@@ -28486,7 +28427,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:30.014Z",
+      "observedAt": "2026-10-30T05:57:05.955Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-5b173b31711ca497"
@@ -28515,7 +28456,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:30.014Z",
+      "observedAt": "2026-10-30T05:57:05.955Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-94211639c1e9a0df"
@@ -28544,7 +28485,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:30.015Z",
+      "observedAt": "2026-10-30T05:57:05.956Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-aeb47093ad7b4e4e"
@@ -28573,7 +28514,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:30.015Z",
+      "observedAt": "2026-10-30T05:57:05.956Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-bce808d212bd27bf"
@@ -28602,7 +28543,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:30.015Z",
+      "observedAt": "2026-10-30T05:57:05.956Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-88cff3ca423e7403"
@@ -28631,7 +28572,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:30.016Z",
+      "observedAt": "2026-10-30T05:57:05.957Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-97b67037be52de5f"
@@ -28660,7 +28601,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:30.016Z",
+      "observedAt": "2026-10-30T05:57:05.957Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "woodlawn-library",
@@ -28687,7 +28628,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:30.016Z",
+      "observedAt": "2026-10-30T05:57:05.957Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-16a1c0a126008340"
@@ -28717,7 +28658,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:30.017Z",
+      "observedAt": "2026-10-30T05:57:05.958Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-90ea4ccc925d866d"
@@ -28747,7 +28688,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:30.017Z",
+      "observedAt": "2026-10-30T05:57:05.958Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-04b473d2713a0fcd"
@@ -28776,7 +28717,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:30.017Z",
+      "observedAt": "2026-10-30T05:57:05.958Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-060f318bed6820c9"
@@ -28805,7 +28746,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:30.018Z",
+      "observedAt": "2026-10-30T05:57:05.959Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-bce52a8571608b9c"
@@ -28835,7 +28776,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:30.018Z",
+      "observedAt": "2026-10-30T05:57:05.959Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-c77b2aa8d390d561"
@@ -28865,12 +28806,38 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:29.166Z",
+      "observedAt": "2026-10-30T05:57:05.089Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-0248e6e8a8cdbc83"
       ],
       "venueId": "woodlawn-library",
+      "neighbourhood": null,
+      "organizerId": "halifax-public-libraries",
+      "organizerName": "Halifax Public Libraries"
+    },
+    {
+      "id": "halifax-public-libraries-f2df13abea81c8fd",
+      "title": "Repair Café",
+      "startAt": "2027-01-17T14:00:00.000Z",
+      "endAt": "2027-01-17T18:00:00.000Z",
+      "allDay": false,
+      "venueName": "Keshen Goodman Public Library",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Arts"
+      ],
+      "eventUrl": "https://halifax.bibliocommons.com/v2/events/6ae3e6a89b955d531f7baa70",
+      "ticketUrl": null,
+      "price": null,
+      "sourceId": "halifax-public-libraries",
+      "sourceName": "Halifax Public Libraries",
+      "sourceKind": "public_library_calendar",
+      "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
+      "observedAt": "2026-10-30T05:57:05.090Z",
+      "reviewState": "source_observed",
+      "venueId": "keshen-goodman-library",
       "neighbourhood": null,
       "organizerId": "halifax-public-libraries",
       "organizerName": "Halifax Public Libraries"
@@ -28894,7 +28861,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:29.166Z",
+      "observedAt": "2026-10-30T05:57:05.090Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b43ce4eb5297173d"
@@ -28924,7 +28891,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-29T22:49:44.590Z",
+      "observedAt": "2026-10-30T05:56:27.144Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -28948,7 +28915,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:29.167Z",
+      "observedAt": "2026-10-30T05:57:05.090Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-d29cda1131476071"
@@ -28978,7 +28945,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:29.167Z",
+      "observedAt": "2026-10-30T05:57:05.091Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-4641bea3f3529901"
@@ -29007,7 +28974,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:29.167Z",
+      "observedAt": "2026-10-30T05:57:05.091Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "captain-william-spry-library",
@@ -29034,7 +29001,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:29.168Z",
+      "observedAt": "2026-10-30T05:57:05.091Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-59ff987f23374adf"
@@ -29063,7 +29030,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:29.168Z",
+      "observedAt": "2026-10-30T05:57:05.092Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-d5bc4034f603d26f"
@@ -29092,7 +29059,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:28.270Z",
+      "observedAt": "2026-10-30T05:57:04.319Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-d9e3820e04f9dbf9"
@@ -29121,7 +29088,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-29T22:49:38.509Z",
+      "observedAt": "2026-10-30T05:56:18.011Z",
       "reviewState": "source-observed",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
@@ -29158,7 +29125,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:28.271Z",
+      "observedAt": "2026-10-30T05:57:04.319Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-baa28eb8cd6e0a11"
@@ -29187,7 +29154,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:28.271Z",
+      "observedAt": "2026-10-30T05:57:04.319Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-85fbeb450c677f73"
@@ -29217,7 +29184,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:28.271Z",
+      "observedAt": "2026-10-30T05:57:04.320Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-c4c0c89a7665b597"
@@ -29246,7 +29213,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:28.272Z",
+      "observedAt": "2026-10-30T05:57:04.320Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-8b5200a3747358fb"
@@ -29275,7 +29242,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:28.272Z",
+      "observedAt": "2026-10-30T05:57:04.320Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-ef6db2e16efebace"
@@ -29305,7 +29272,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:28.272Z",
+      "observedAt": "2026-10-30T05:57:04.321Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-d82cdae9c8a5bda6"
@@ -29334,7 +29301,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:28.273Z",
+      "observedAt": "2026-10-30T05:57:04.321Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-4ee6cd51b6b53e13"
@@ -29363,7 +29330,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-29T22:49:38.614Z",
+      "observedAt": "2026-10-30T05:56:18.115Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -29390,7 +29357,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-29T22:49:44.590Z",
+      "observedAt": "2026-10-30T05:56:27.145Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -29414,7 +29381,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:28.273Z",
+      "observedAt": "2026-10-30T05:57:04.322Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-2c7553f8de3ace27"
@@ -29444,7 +29411,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-29T22:49:44.590Z",
+      "observedAt": "2026-10-30T05:56:27.145Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -29468,7 +29435,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-29T22:49:38.509Z",
+      "observedAt": "2026-10-30T05:56:18.011Z",
       "reviewState": "source-observed",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
@@ -29505,7 +29472,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:28.273Z",
+      "observedAt": "2026-10-30T05:57:04.322Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-c62eb65e40831ff5"
@@ -29534,7 +29501,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:27.515Z",
+      "observedAt": "2026-10-30T05:57:03.510Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-e8aced4e1a1bcc07"
@@ -29563,7 +29530,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:27.515Z",
+      "observedAt": "2026-10-30T05:57:03.511Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-0ba6e18396f6b11d"
@@ -29592,7 +29559,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:27.516Z",
+      "observedAt": "2026-10-30T05:57:03.511Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-f0eebcc6a7df3d03"
@@ -29621,7 +29588,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:27.516Z",
+      "observedAt": "2026-10-30T05:57:03.511Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-857b58bd6e21c85d"
@@ -29651,7 +29618,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:27.517Z",
+      "observedAt": "2026-10-30T05:57:03.512Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-512c0906dc49a826"
@@ -29680,7 +29647,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:27.516Z",
+      "observedAt": "2026-10-30T05:57:03.512Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-23ad98bcabdaee18"
@@ -29709,7 +29676,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:27.517Z",
+      "observedAt": "2026-10-30T05:57:03.512Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-a10a1e2591cd093f"
@@ -29738,7 +29705,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:27.518Z",
+      "observedAt": "2026-10-30T05:57:03.513Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-3ecd86c53b0a6ffb"
@@ -29767,7 +29734,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:27.518Z",
+      "observedAt": "2026-10-30T05:57:03.513Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "keshen-goodman-library",
@@ -29794,7 +29761,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-29T22:49:38.509Z",
+      "observedAt": "2026-10-30T05:56:18.011Z",
       "reviewState": "source-observed",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
@@ -29831,7 +29798,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:27.518Z",
+      "observedAt": "2026-10-30T05:57:03.513Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-0d64138e6cd06a5e"
@@ -29861,7 +29828,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:27.519Z",
+      "observedAt": "2026-10-30T05:57:02.724Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-da9737ccdc6009e9"
@@ -29890,7 +29857,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:47.374Z",
+      "observedAt": "2026-10-30T05:58:08.722Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -29931,7 +29898,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:26.388Z",
+      "observedAt": "2026-10-30T05:57:02.725Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-378ba548e5f79d36"
@@ -29961,7 +29928,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-29T22:49:44.590Z",
+      "observedAt": "2026-10-30T05:56:27.145Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -29985,7 +29952,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:26.389Z",
+      "observedAt": "2026-10-30T05:57:02.725Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-ceb95ad69a5456a1"
@@ -30015,7 +29982,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:26.389Z",
+      "observedAt": "2026-10-30T05:57:02.726Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-ab67ac008b6b674c"
@@ -30045,7 +30012,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-29T22:49:38.614Z",
+      "observedAt": "2026-10-30T05:56:18.115Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -30072,7 +30039,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-29T22:49:38.614Z",
+      "observedAt": "2026-10-30T05:56:18.115Z",
       "reviewState": "source-observed",
       "alternateSources": [
         {
@@ -30106,7 +30073,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:26.390Z",
+      "observedAt": "2026-10-30T05:57:02.727Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-d599b2336b36ab75"
@@ -30135,7 +30102,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:26.390Z",
+      "observedAt": "2026-10-30T05:57:02.727Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-90f5098ddc7aa461"
@@ -30164,7 +30131,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:26.390Z",
+      "observedAt": "2026-10-30T05:57:02.727Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "woodlawn-library",
@@ -30191,7 +30158,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:47.374Z",
+      "observedAt": "2026-10-30T05:58:08.041Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -30232,7 +30199,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:25.625Z",
+      "observedAt": "2026-10-30T05:57:02.040Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-5820ecaa1b496171"
@@ -30261,7 +30228,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:25.626Z",
+      "observedAt": "2026-10-30T05:57:02.040Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-722ec50adf17eab0"
@@ -30290,7 +30257,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:25.626Z",
+      "observedAt": "2026-10-30T05:57:02.041Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-a8b5ad070667e4d2"
@@ -30319,7 +30286,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:25.627Z",
+      "observedAt": "2026-10-30T05:57:02.041Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-eed75d7c6d940714"
@@ -30348,7 +30315,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:25.627Z",
+      "observedAt": "2026-10-30T05:57:02.041Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-8c96b05a61eb991f"
@@ -30377,7 +30344,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:25.627Z",
+      "observedAt": "2026-10-30T05:57:02.042Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-dd1e1c1117279bed"
@@ -30407,7 +30374,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:25.628Z",
+      "observedAt": "2026-10-30T05:57:02.042Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-3940d1778e836239"
@@ -30436,7 +30403,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-29T22:49:38.509Z",
+      "observedAt": "2026-10-30T05:56:18.011Z",
       "reviewState": "source-observed",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
@@ -30473,7 +30440,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:25.628Z",
+      "observedAt": "2026-10-30T05:57:02.042Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-efb1ee4edfb369c8"
@@ -30502,7 +30469,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:25.628Z",
+      "observedAt": "2026-10-30T05:57:02.043Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "keshen-goodman-library",
@@ -30530,7 +30497,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:24.760Z",
+      "observedAt": "2026-10-30T05:57:00.936Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-8e709956a4de9621"
@@ -30559,7 +30526,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:24.761Z",
+      "observedAt": "2026-10-30T05:57:00.937Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-d61dfa262b4da4ab"
@@ -30588,7 +30555,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-29T22:49:38.510Z",
+      "observedAt": "2026-10-30T05:56:18.011Z",
       "reviewState": "source-observed",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
@@ -30625,7 +30592,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:24.761Z",
+      "observedAt": "2026-10-30T05:57:00.937Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-316f3745e252d1a3"
@@ -30654,7 +30621,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-29T22:49:38.614Z",
+      "observedAt": "2026-10-30T05:56:18.116Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -30680,7 +30647,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:24.762Z",
+      "observedAt": "2026-10-30T05:57:00.937Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-e595e5fd70abe2dd"
@@ -30709,7 +30676,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:24.762Z",
+      "observedAt": "2026-10-30T05:57:00.938Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-ea22554291c9897f"
@@ -30738,7 +30705,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:24.762Z",
+      "observedAt": "2026-10-30T05:57:00.938Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-f326b1cc34e0b1e6"
@@ -30767,7 +30734,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:24.763Z",
+      "observedAt": "2026-10-30T05:57:00.207Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-c3e1a05be5cb4711"
@@ -30796,7 +30763,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:23.974Z",
+      "observedAt": "2026-10-30T05:57:00.207Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "central-library-halifax",
@@ -30823,7 +30790,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:23.975Z",
+      "observedAt": "2026-10-30T05:57:00.208Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-873b5f042ccd9673"
@@ -30852,7 +30819,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:23.975Z",
+      "observedAt": "2026-10-30T05:57:00.208Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-dd31bf1d4789c8f8"
@@ -30881,7 +30848,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:23.975Z",
+      "observedAt": "2026-10-30T05:57:00.208Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-df2b8ae835685cf2"
@@ -30910,7 +30877,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:23.976Z",
+      "observedAt": "2026-10-30T05:57:00.208Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-09d869c9d67fb721"
@@ -30940,7 +30907,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:23.976Z",
+      "observedAt": "2026-10-30T05:57:00.209Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-3c66494387d60aac"
@@ -30970,7 +30937,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:23.976Z",
+      "observedAt": "2026-10-30T05:57:00.209Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-8edc84edacbee3b4"
@@ -30999,7 +30966,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:23.977Z",
+      "observedAt": "2026-10-30T05:57:00.209Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-c68cad0bf4cba7f8"
@@ -31029,7 +30996,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-29T22:49:44.590Z",
+      "observedAt": "2026-10-30T05:56:27.145Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -31053,7 +31020,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:23.977Z",
+      "observedAt": "2026-10-30T05:57:00.210Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-5e9345582f04a794"
@@ -31083,7 +31050,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:23.977Z",
+      "observedAt": "2026-10-30T05:57:00.210Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-0a938005731c4d37"
@@ -31112,7 +31079,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-29T22:49:38.614Z",
+      "observedAt": "2026-10-30T05:56:18.116Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -31138,7 +31105,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:23.978Z",
+      "observedAt": "2026-10-30T05:57:00.210Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-383ce2faa301812f"
@@ -31168,7 +31135,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:23.978Z",
+      "observedAt": "2026-10-30T05:57:00.211Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-4b4f161acf775ef5"
@@ -31197,7 +31164,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-29T22:49:38.510Z",
+      "observedAt": "2026-10-30T05:56:18.011Z",
       "reviewState": "source-observed",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
@@ -31234,7 +31201,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:23.978Z",
+      "observedAt": "2026-10-30T05:56:59.331Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-6252c95c39e5d2cc"
@@ -31263,7 +31230,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-29T22:49:38.510Z",
+      "observedAt": "2026-10-30T05:56:18.011Z",
       "reviewState": "source-observed",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
@@ -31301,7 +31268,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "neptune-theatre",
       "sourceName": "Neptune Theatre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-29T22:49:41.819Z",
+      "observedAt": "2026-10-30T05:56:25.077Z",
       "reviewState": "source-observed",
       "venueId": "neptune-theatre-halifax",
       "neighbourhood": "Downtown",
@@ -31327,7 +31294,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:22.454Z",
+      "observedAt": "2026-10-30T05:56:59.332Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-99754e9747698751"
@@ -31356,7 +31323,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:22.454Z",
+      "observedAt": "2026-10-30T05:56:59.333Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-e7ee7bceefca90c8"
@@ -31385,7 +31352,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:22.454Z",
+      "observedAt": "2026-10-30T05:56:59.332Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-8452dad0c4223843"
@@ -31415,7 +31382,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:22.455Z",
+      "observedAt": "2026-10-30T05:56:59.333Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "keshen-goodman-library",
@@ -31442,7 +31409,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-29T22:49:38.614Z",
+      "observedAt": "2026-10-30T05:56:18.116Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -31468,7 +31435,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:22.455Z",
+      "observedAt": "2026-10-30T05:56:59.334Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-eaace71581b98541"
@@ -31497,7 +31464,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:22.455Z",
+      "observedAt": "2026-10-30T05:56:59.335Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-33c1f44bf6816b24"
@@ -31526,7 +31493,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:22.456Z",
+      "observedAt": "2026-10-30T05:56:59.335Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-0013c0faa613fc8b"
@@ -31555,7 +31522,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-29T22:49:38.614Z",
+      "observedAt": "2026-10-30T05:56:18.116Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -31581,7 +31548,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:22.456Z",
+      "observedAt": "2026-10-30T05:56:59.335Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-7086a2f8830d7e48"
@@ -31610,7 +31577,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:22.457Z",
+      "observedAt": "2026-10-30T05:56:59.336Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-422ff10f18296296"
@@ -31640,7 +31607,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:21.145Z",
+      "observedAt": "2026-10-30T05:56:58.320Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-44684b6ba21fb061"
@@ -31669,7 +31636,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:21.145Z",
+      "observedAt": "2026-10-30T05:56:58.320Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-183b5eb2cf6e6668"
@@ -31698,7 +31665,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:21.145Z",
+      "observedAt": "2026-10-30T05:56:58.321Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-ed285a7f95683abf"
@@ -31728,7 +31695,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:21.146Z",
+      "observedAt": "2026-10-30T05:56:58.321Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-d6733adb0ec68290"
@@ -31757,12 +31724,38 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:21.146Z",
+      "observedAt": "2026-10-30T05:56:58.322Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-965c6049398338fe"
       ],
       "venueId": "central-library-halifax",
+      "neighbourhood": null,
+      "organizerId": "halifax-public-libraries",
+      "organizerName": "Halifax Public Libraries"
+    },
+    {
+      "id": "halifax-public-libraries-b39039ba52f5ded1",
+      "title": "Repair Café",
+      "startAt": "2027-02-21T14:00:00.000Z",
+      "endAt": "2027-02-21T18:00:00.000Z",
+      "allDay": false,
+      "venueName": "Keshen Goodman Public Library",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Arts"
+      ],
+      "eventUrl": "https://halifax.bibliocommons.com/v2/events/6ae3e6a89b955d531f7baa71",
+      "ticketUrl": null,
+      "price": null,
+      "sourceId": "halifax-public-libraries",
+      "sourceName": "Halifax Public Libraries",
+      "sourceKind": "public_library_calendar",
+      "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
+      "observedAt": "2026-10-30T05:56:58.322Z",
+      "reviewState": "source_observed",
+      "venueId": "keshen-goodman-library",
       "neighbourhood": null,
       "organizerId": "halifax-public-libraries",
       "organizerName": "Halifax Public Libraries"
@@ -31786,7 +31779,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:21.146Z",
+      "observedAt": "2026-10-30T05:56:58.322Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-85da3ba636f25dc9"
@@ -31816,7 +31809,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-29T22:49:44.590Z",
+      "observedAt": "2026-10-30T05:56:27.145Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -31840,7 +31833,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-29T22:49:38.510Z",
+      "observedAt": "2026-10-30T05:56:18.011Z",
       "reviewState": "source-observed",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
@@ -31877,7 +31870,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:21.147Z",
+      "observedAt": "2026-10-30T05:56:58.323Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-d06307d398f98eda"
@@ -31906,7 +31899,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:21.147Z",
+      "observedAt": "2026-10-30T05:56:58.323Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-4942657fab3cd8e9"
@@ -31935,7 +31928,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:21.147Z",
+      "observedAt": "2026-10-30T05:56:58.323Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-0ace5268ae9670d5"
@@ -31964,7 +31957,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:20.315Z",
+      "observedAt": "2026-10-30T05:56:57.373Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-4f350907ee323ab6"
@@ -31993,7 +31986,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:20.315Z",
+      "observedAt": "2026-10-30T05:56:57.373Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-a196b101157f45a5"
@@ -32022,7 +32015,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:20.315Z",
+      "observedAt": "2026-10-30T05:56:57.373Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-a688d0dae8d41bd8"
@@ -32051,7 +32044,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:20.316Z",
+      "observedAt": "2026-10-30T05:56:57.374Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-1089af73169abaa4"
@@ -32080,7 +32073,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:20.316Z",
+      "observedAt": "2026-10-30T05:56:57.374Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-ee814ebd1822f726"
@@ -32109,7 +32102,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:20.316Z",
+      "observedAt": "2026-10-30T05:56:57.374Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-9051f3d87a0599c0"
@@ -32139,7 +32132,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:20.317Z",
+      "observedAt": "2026-10-30T05:56:57.375Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-d23a884e966ded9d"
@@ -32168,7 +32161,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:20.317Z",
+      "observedAt": "2026-10-30T05:56:57.375Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-ea47b16a84d48824"
@@ -32197,7 +32190,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:20.317Z",
+      "observedAt": "2026-10-30T05:56:57.375Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-07ca3f3de4f8e71d"
@@ -32227,7 +32220,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:20.318Z",
+      "observedAt": "2026-10-30T05:56:57.376Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-58a8bca1846f2929"
@@ -32257,7 +32250,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-29T22:49:44.591Z",
+      "observedAt": "2026-10-30T05:56:27.145Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -32282,7 +32275,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:18.863Z",
+      "observedAt": "2026-10-30T05:56:56.481Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-41fc291165c89252"
@@ -32312,7 +32305,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-29T22:49:44.591Z",
+      "observedAt": "2026-10-30T05:56:27.146Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -32338,7 +32331,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:18.864Z",
+      "observedAt": "2026-10-30T05:56:56.481Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-8498093ca7dcd352"
@@ -32367,7 +32360,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:18.864Z",
+      "observedAt": "2026-10-30T05:56:56.481Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-1a544829dfbc54ca"
@@ -32397,7 +32390,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:18.864Z",
+      "observedAt": "2026-10-30T05:56:56.482Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-2aed4150bf8b924e"
@@ -32426,7 +32419,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:18.865Z",
+      "observedAt": "2026-10-30T05:56:56.482Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-35bebc1b2ef5648a"
@@ -32455,7 +32448,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:46.111Z",
+      "observedAt": "2026-10-30T05:58:08.041Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -32496,7 +32489,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:18.865Z",
+      "observedAt": "2026-10-30T05:56:56.483Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-9dd980d6e9f29d26"
@@ -32526,7 +32519,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:18.866Z",
+      "observedAt": "2026-10-30T05:56:56.483Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-e422d3f9e820c029"
@@ -32555,7 +32548,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:18.866Z",
+      "observedAt": "2026-10-30T05:56:56.483Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b045a9a4b0b2e05b"
@@ -32584,7 +32577,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:18.866Z",
+      "observedAt": "2026-10-30T05:56:55.307Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-2df6ae3dbbe967fa"
@@ -32613,7 +32606,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:18.867Z",
+      "observedAt": "2026-10-30T05:56:55.307Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-c74c127f5b21b1f7"
@@ -32642,7 +32635,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:18.217Z",
+      "observedAt": "2026-10-30T05:56:55.308Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-dc8a132bdf32daa3"
@@ -32671,7 +32664,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:18.217Z",
+      "observedAt": "2026-10-30T05:56:55.308Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-95d86f8d622c9682"
@@ -32700,7 +32693,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:18.218Z",
+      "observedAt": "2026-10-30T05:56:55.308Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-c6c79411e80e58b8"
@@ -32730,7 +32723,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:18.218Z",
+      "observedAt": "2026-10-30T05:56:55.309Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "central-library-halifax",
@@ -32757,7 +32750,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-29T22:49:38.510Z",
+      "observedAt": "2026-10-30T05:56:18.011Z",
       "reviewState": "source-observed",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
@@ -32794,7 +32787,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:18.218Z",
+      "observedAt": "2026-10-30T05:56:55.309Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-9a0ea8498f848e38"
@@ -32823,7 +32816,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:18.219Z",
+      "observedAt": "2026-10-30T05:56:55.309Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-0bafd0bb23de05a4"
@@ -32853,7 +32846,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:18.219Z",
+      "observedAt": "2026-10-30T05:56:55.310Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-413fe1667db3d721"
@@ -32882,7 +32875,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:18.220Z",
+      "observedAt": "2026-10-30T05:56:55.310Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b0454bd1913d2705"
@@ -32911,7 +32904,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-29T22:49:38.614Z",
+      "observedAt": "2026-10-30T05:56:18.116Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -32937,7 +32930,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:18.220Z",
+      "observedAt": "2026-10-30T05:56:54.461Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-a182670f275796da"
@@ -32966,7 +32959,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:18.220Z",
+      "observedAt": "2026-10-30T05:56:54.461Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-4e112356aadcd4b8"
@@ -32995,7 +32988,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-29T22:49:38.510Z",
+      "observedAt": "2026-10-30T05:56:18.011Z",
       "reviewState": "source-observed",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
@@ -33032,7 +33025,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:18.221Z",
+      "observedAt": "2026-10-30T05:56:54.462Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-4d54de94163e12ff"
@@ -33061,7 +33054,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:16.701Z",
+      "observedAt": "2026-10-30T05:56:54.462Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-74d64205066e0671"
@@ -33090,7 +33083,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:16.701Z",
+      "observedAt": "2026-10-30T05:56:54.463Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-4b254e2bf1b5e66c"
@@ -33119,7 +33112,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:16.702Z",
+      "observedAt": "2026-10-30T05:56:54.463Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-9ac9ee1e516e125d"
@@ -33148,7 +33141,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:16.702Z",
+      "observedAt": "2026-10-30T05:56:54.463Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-9448485b6b6784ba"
@@ -33177,7 +33170,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:16.702Z",
+      "observedAt": "2026-10-30T05:56:54.464Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "keshen-goodman-library",
@@ -33204,7 +33197,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:16.702Z",
+      "observedAt": "2026-10-30T05:56:54.464Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b239712d8d919e35"
@@ -33233,7 +33226,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:16.703Z",
+      "observedAt": "2026-10-30T05:56:54.465Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-9975fa5f68b0d556"
@@ -33262,7 +33255,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-29T22:49:38.614Z",
+      "observedAt": "2026-10-30T05:56:18.116Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -33289,7 +33282,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:16.703Z",
+      "observedAt": "2026-10-30T05:56:54.465Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b7e8e0cbf7889580"
@@ -33318,7 +33311,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-29T22:49:38.614Z",
+      "observedAt": "2026-10-30T05:56:18.116Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -33345,7 +33338,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:16.703Z",
+      "observedAt": "2026-10-30T05:56:54.465Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-5e9aec0155295dd6"
@@ -33375,7 +33368,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-29T22:49:44.591Z",
+      "observedAt": "2026-10-30T05:56:27.146Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -33399,7 +33392,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:16.704Z",
+      "observedAt": "2026-10-30T05:56:53.491Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-ce6bbcfbd525070d"
@@ -33429,7 +33422,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:16.704Z",
+      "observedAt": "2026-10-30T05:56:53.491Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-3be99d94e577d63b"
@@ -33458,7 +33451,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-29T22:49:38.614Z",
+      "observedAt": "2026-10-30T05:56:18.116Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -33484,7 +33477,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-29T22:49:38.614Z",
+      "observedAt": "2026-10-30T05:56:18.116Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -33510,7 +33503,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-29T22:49:38.614Z",
+      "observedAt": "2026-10-30T05:56:18.116Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -33537,7 +33530,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:15.768Z",
+      "observedAt": "2026-10-30T05:56:53.492Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-3f195dd65c3cb4ea"
@@ -33566,7 +33559,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-29T22:49:38.615Z",
+      "observedAt": "2026-10-30T05:56:18.116Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -33592,7 +33585,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-29T22:49:38.615Z",
+      "observedAt": "2026-10-30T05:56:18.116Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -33618,7 +33611,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-29T22:49:38.615Z",
+      "observedAt": "2026-10-30T05:56:18.116Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -33644,7 +33637,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:15.769Z",
+      "observedAt": "2026-10-30T05:56:53.492Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-2bf2a2199a72d277"
@@ -33673,7 +33666,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:15.769Z",
+      "observedAt": "2026-10-30T05:56:53.492Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "keshen-goodman-library",
@@ -33700,7 +33693,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:15.770Z",
+      "observedAt": "2026-10-30T05:56:53.493Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-243f07b470f873d4"
@@ -33729,7 +33722,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:15.770Z",
+      "observedAt": "2026-10-30T05:56:53.493Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-e445e58fffae0a44"
@@ -33758,7 +33751,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:15.770Z",
+      "observedAt": "2026-10-30T05:56:52.347Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-bb3a8132dc3f058e"
@@ -33787,7 +33780,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:15.771Z",
+      "observedAt": "2026-10-30T05:56:52.347Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b8e77749f0fddb5d"
@@ -33817,7 +33810,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:12.489Z",
+      "observedAt": "2026-10-30T05:56:52.348Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-0b6b2d340afe9e8d"
@@ -33846,7 +33839,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-29T22:49:38.615Z",
+      "observedAt": "2026-10-30T05:56:18.116Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -33872,7 +33865,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:12.490Z",
+      "observedAt": "2026-10-30T05:56:52.348Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "keshen-goodman-library",
@@ -33900,7 +33893,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-29T22:49:44.591Z",
+      "observedAt": "2026-10-30T05:56:27.146Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -33924,7 +33917,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "halifax-mooseheads-home",
       "sourceName": "Halifax Mooseheads Home Schedule",
       "sourceKind": "official_sports_schedule",
-      "observedAt": "2026-10-29T22:49:38.510Z",
+      "observedAt": "2026-10-30T05:56:18.011Z",
       "reviewState": "source-observed",
       "sourceUrls": [
         "https://www.scotiabank-centre.com/events/2026-2027-halifax-mooseheads",
@@ -33941,6 +33934,32 @@ window.HALIFAX_CITY_EVENTS = {
       "neighbourhood": "Downtown",
       "organizerId": "halifax-mooseheads",
       "organizerName": "Halifax Mooseheads"
+    },
+    {
+      "id": "halifax-public-libraries-7479d7351290b121",
+      "title": "Repair Café",
+      "startAt": "2027-03-21T13:00:00.000Z",
+      "endAt": "2027-03-21T17:00:00.000Z",
+      "allDay": false,
+      "venueName": "Keshen Goodman Public Library",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Arts"
+      ],
+      "eventUrl": "https://halifax.bibliocommons.com/v2/events/6ae3e6a89b955d531f7baa72",
+      "ticketUrl": null,
+      "price": null,
+      "sourceId": "halifax-public-libraries",
+      "sourceName": "Halifax Public Libraries",
+      "sourceKind": "public_library_calendar",
+      "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
+      "observedAt": "2026-10-30T05:56:52.349Z",
+      "reviewState": "source_observed",
+      "venueId": "keshen-goodman-library",
+      "neighbourhood": null,
+      "organizerId": "halifax-public-libraries",
+      "organizerName": "Halifax Public Libraries"
     },
     {
       "id": "halifax-public-libraries-3f922fb509fc899b",
@@ -33961,7 +33980,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:12.490Z",
+      "observedAt": "2026-10-30T05:56:52.349Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-2cffde2dfde9ae03"
@@ -33990,7 +34009,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:12.491Z",
+      "observedAt": "2026-10-30T05:56:52.349Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-32c234ebe274ec59"
@@ -34019,7 +34038,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:12.491Z",
+      "observedAt": "2026-10-30T05:56:52.350Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "central-library-halifax",
@@ -34046,7 +34065,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:12.491Z",
+      "observedAt": "2026-10-30T05:56:51.579Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-18c4fdccbc4e59f2"
@@ -34075,7 +34094,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:11.674Z",
+      "observedAt": "2026-10-30T05:56:51.579Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-d6afcf4f913be6f7"
@@ -34104,7 +34123,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:11.674Z",
+      "observedAt": "2026-10-30T05:56:51.580Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b863c0446b984a0c"
@@ -34133,7 +34152,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:11.675Z",
+      "observedAt": "2026-10-30T05:56:51.580Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-1e29905c2715238b"
@@ -34163,7 +34182,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:11.675Z",
+      "observedAt": "2026-10-30T05:56:51.580Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-53ebca4962eeccbc"
@@ -34192,7 +34211,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:11.676Z",
+      "observedAt": "2026-10-30T05:56:51.581Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-af64d798bec99fce"
@@ -34221,7 +34240,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:11.676Z",
+      "observedAt": "2026-10-30T05:56:51.581Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-07f2b209c8fed7c7"
@@ -34251,7 +34270,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:11.677Z",
+      "observedAt": "2026-10-30T05:56:51.581Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-780619207dadcd43"
@@ -34280,7 +34299,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:11.677Z",
+      "observedAt": "2026-10-30T05:56:51.582Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-af26752f0fd553c6"
@@ -34309,7 +34328,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:11.678Z",
+      "observedAt": "2026-10-30T05:56:51.582Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-29d5bc3f810d510f"
@@ -34338,7 +34357,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:11.678Z",
+      "observedAt": "2026-10-30T05:56:51.582Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "captain-william-spry-library",
@@ -34365,7 +34384,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:11.679Z",
+      "observedAt": "2026-10-30T05:56:50.475Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-0527ebfa6ca4fcda"
@@ -34394,7 +34413,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:10.916Z",
+      "observedAt": "2026-10-30T05:56:50.476Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-753d3171bc577abd"
@@ -34423,7 +34442,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:10.916Z",
+      "observedAt": "2026-10-30T05:56:50.476Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-139c675a5169c1cb"
@@ -34452,7 +34471,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:10.917Z",
+      "observedAt": "2026-10-30T05:56:50.476Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-59bef9a23e4a6c78"
@@ -34481,7 +34500,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:10.917Z",
+      "observedAt": "2026-10-30T05:56:50.477Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-9b1b75d248f74d5d"
@@ -34511,7 +34530,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:10.917Z",
+      "observedAt": "2026-10-30T05:56:50.477Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-6860c5f5c20167e3"
@@ -34540,7 +34559,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:10.918Z",
+      "observedAt": "2026-10-30T05:56:50.477Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-7a61dda21c4bddd9"
@@ -34570,7 +34589,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-29T22:49:44.591Z",
+      "observedAt": "2026-10-30T05:56:27.146Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -34594,7 +34613,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:10.918Z",
+      "observedAt": "2026-10-30T05:56:50.478Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-7e82a251b7785e45"
@@ -34623,7 +34642,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:10.918Z",
+      "observedAt": "2026-10-30T05:56:50.478Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-80f156cad7d831a8"
@@ -34652,7 +34671,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:10.919Z",
+      "observedAt": "2026-10-30T05:56:49.511Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b478dd7706bef82f"
@@ -34681,7 +34700,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-29T22:49:38.615Z",
+      "observedAt": "2026-10-30T05:56:18.116Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -34707,7 +34726,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:10.919Z",
+      "observedAt": "2026-10-30T05:56:49.511Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-9ff46288c8711808"
@@ -34736,7 +34755,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:46.111Z",
+      "observedAt": "2026-10-30T05:58:08.042Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -34777,7 +34796,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:09.644Z",
+      "observedAt": "2026-10-30T05:56:49.512Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-cfa2d4611c112a99"
@@ -34806,7 +34825,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:09.644Z",
+      "observedAt": "2026-10-30T05:56:49.513Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-23643c87c5ffc3ef"
@@ -34835,7 +34854,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:09.645Z",
+      "observedAt": "2026-10-30T05:56:49.513Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-f42759bd264cc054"
@@ -34864,7 +34883,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:09.645Z",
+      "observedAt": "2026-10-30T05:56:49.513Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-df4eb2b57e60fee2"
@@ -34893,7 +34912,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:09.645Z",
+      "observedAt": "2026-10-30T05:56:49.514Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-99e7bafd87e7eb4e"
@@ -34922,7 +34941,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:09.646Z",
+      "observedAt": "2026-10-30T05:56:49.514Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-e68c8cfca888483c"
@@ -34952,7 +34971,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:09.646Z",
+      "observedAt": "2026-10-30T05:56:48.721Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-96961244d64fd58a"
@@ -34982,7 +35001,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:09.647Z",
+      "observedAt": "2026-10-30T05:56:48.721Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b48ad42c71a863a0"
@@ -35011,7 +35030,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:09.647Z",
+      "observedAt": "2026-10-30T05:56:48.721Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "woodlawn-library",
@@ -35038,7 +35057,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:08.274Z",
+      "observedAt": "2026-10-30T05:56:48.722Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-92ec79c7c892c4fe"
@@ -35069,7 +35088,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-29T22:49:44.591Z",
+      "observedAt": "2026-10-30T05:56:27.146Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -35094,7 +35113,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:08.275Z",
+      "observedAt": "2026-10-30T05:56:48.722Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-1fc334c971824e1b"
@@ -35123,7 +35142,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:08.275Z",
+      "observedAt": "2026-10-30T05:56:48.722Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-493fe8f4d34f4740"
@@ -35152,7 +35171,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:08.276Z",
+      "observedAt": "2026-10-30T05:56:48.723Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-df26eb9454043fab"
@@ -35181,7 +35200,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:08.276Z",
+      "observedAt": "2026-10-30T05:56:48.723Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-672a95dfcd3bfbed"
@@ -35210,7 +35229,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:08.276Z",
+      "observedAt": "2026-10-30T05:56:47.891Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-a49508d9db452ec1"
@@ -35239,7 +35258,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:08.277Z",
+      "observedAt": "2026-10-30T05:56:47.891Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-11da5cf95a59c6f3"
@@ -35268,7 +35287,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:08.277Z",
+      "observedAt": "2026-10-30T05:56:47.891Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-8dac72e2150a9da6"
@@ -35297,7 +35316,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:07.092Z",
+      "observedAt": "2026-10-30T05:56:47.892Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "alderney-gate-library",
@@ -35325,7 +35344,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:07.092Z",
+      "observedAt": "2026-10-30T05:56:47.892Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-ac66358b8903d55e"
@@ -35354,7 +35373,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:07.093Z",
+      "observedAt": "2026-10-30T05:56:47.892Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-0c2225cf98444654"
@@ -35383,7 +35402,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:07.093Z",
+      "observedAt": "2026-10-30T05:56:47.893Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-c780e9bce6022f06"
@@ -35412,7 +35431,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-29T22:49:38.615Z",
+      "observedAt": "2026-10-30T05:56:18.116Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -35438,12 +35457,38 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-29T22:49:38.615Z",
+      "observedAt": "2026-10-30T05:56:18.116Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
       "organizerId": "scotiabank-centre",
       "organizerName": "Scotiabank Centre"
+    },
+    {
+      "id": "halifax-public-libraries-178c0314d0164796",
+      "title": "Repair Café",
+      "startAt": "2027-04-18T13:00:00.000Z",
+      "endAt": "2027-04-18T17:00:00.000Z",
+      "allDay": false,
+      "venueName": "Keshen Goodman Public Library",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Arts"
+      ],
+      "eventUrl": "https://halifax.bibliocommons.com/v2/events/6ae3e6a89b955d531f7baa73",
+      "ticketUrl": null,
+      "price": null,
+      "sourceId": "halifax-public-libraries",
+      "sourceName": "Halifax Public Libraries",
+      "sourceKind": "public_library_calendar",
+      "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
+      "observedAt": "2026-10-30T05:56:47.893Z",
+      "reviewState": "source_observed",
+      "venueId": "keshen-goodman-library",
+      "neighbourhood": null,
+      "organizerId": "halifax-public-libraries",
+      "organizerName": "Halifax Public Libraries"
     },
     {
       "id": "symphony-nova-scotia-9bd452a86a1a3ecf",
@@ -35465,7 +35510,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-29T22:49:44.592Z",
+      "observedAt": "2026-10-30T05:56:27.146Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -35489,7 +35534,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:07.094Z",
+      "observedAt": "2026-10-30T05:56:47.893Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-a60c0aa735215094"
@@ -35518,7 +35563,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:07.094Z",
+      "observedAt": "2026-10-30T05:56:47.894Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b816ed4d928e825b"
@@ -35547,7 +35592,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:07.095Z",
+      "observedAt": "2026-10-30T05:56:47.013Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-8d88b7fdb841cb51"
@@ -35576,7 +35621,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:06.406Z",
+      "observedAt": "2026-10-30T05:56:47.014Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-5da22574e1b0311c"
@@ -35605,7 +35650,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:06.406Z",
+      "observedAt": "2026-10-30T05:56:47.014Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-3e1898f8e102b737"
@@ -35635,7 +35680,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:06.407Z",
+      "observedAt": "2026-10-30T05:56:47.014Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-80cc9f3efa27b996"
@@ -35664,7 +35709,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:06.407Z",
+      "observedAt": "2026-10-30T05:56:47.015Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-517831b68ebc34ec"
@@ -35693,7 +35738,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:06.407Z",
+      "observedAt": "2026-10-30T05:56:47.015Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-885efa1a3e24f6f1"
@@ -35723,7 +35768,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-29T22:49:44.592Z",
+      "observedAt": "2026-10-30T05:56:27.147Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -35748,7 +35793,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-29T22:49:44.592Z",
+      "observedAt": "2026-10-30T05:56:27.147Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -35773,7 +35818,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:06.408Z",
+      "observedAt": "2026-10-30T05:56:47.016Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-e53690e5d6b4911c"
@@ -35802,7 +35847,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:06.408Z",
+      "observedAt": "2026-10-30T05:56:47.016Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-de337adff3bb539c"
@@ -35831,7 +35876,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:06.409Z",
+      "observedAt": "2026-10-30T05:56:45.839Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-7361f602b481cf6b"
@@ -35860,7 +35905,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:06.409Z",
+      "observedAt": "2026-10-30T05:56:45.840Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-9b0c7930dd72ba3a"
@@ -35889,7 +35934,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:05.428Z",
+      "observedAt": "2026-10-30T05:56:45.840Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-27fd2c42076afbd6"
@@ -35918,7 +35963,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:05.429Z",
+      "observedAt": "2026-10-30T05:56:45.840Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "keshen-goodman-library",
@@ -35945,7 +35990,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:05.429Z",
+      "observedAt": "2026-10-30T05:56:45.841Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-a17c69eb87621145"
@@ -35975,7 +36020,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:05.430Z",
+      "observedAt": "2026-10-30T05:56:45.841Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-8d6829fb1b5d7205"
@@ -36004,7 +36049,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:05.430Z",
+      "observedAt": "2026-10-30T05:56:45.841Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-fb41807938b930a1"
@@ -36034,7 +36079,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-29T22:49:44.592Z",
+      "observedAt": "2026-10-30T05:56:27.147Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -36058,7 +36103,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:05.430Z",
+      "observedAt": "2026-10-30T05:56:45.842Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-f62c55488c249e18"
@@ -36087,7 +36132,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:05.431Z",
+      "observedAt": "2026-10-30T05:56:44.722Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-0cc35c66d46df687"
@@ -36116,7 +36161,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:05.431Z",
+      "observedAt": "2026-10-30T05:56:44.723Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-eb1023d1f29d61b0"
@@ -36145,7 +36190,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:03.965Z",
+      "observedAt": "2026-10-30T05:56:44.723Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-18245a8b629d761c"
@@ -36175,7 +36220,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-29T22:49:44.592Z",
+      "observedAt": "2026-10-30T05:56:27.147Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -36199,7 +36244,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:03.965Z",
+      "observedAt": "2026-10-30T05:56:44.723Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-7b5d60d4e0e01a3c"
@@ -36228,7 +36273,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "neptune-theatre",
       "sourceName": "Neptune Theatre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-29T22:49:41.819Z",
+      "observedAt": "2026-10-30T05:56:25.077Z",
       "reviewState": "source-observed",
       "venueId": "neptune-theatre-halifax",
       "neighbourhood": "Downtown",
@@ -36254,7 +36299,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:46.111Z",
+      "observedAt": "2026-10-30T05:58:08.042Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -36295,7 +36340,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:03.966Z",
+      "observedAt": "2026-10-30T05:56:44.724Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "captain-william-spry-library",
@@ -36322,7 +36367,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:03.966Z",
+      "observedAt": "2026-10-30T05:56:44.725Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b096e13809e27d8d"
@@ -36351,7 +36396,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:03.967Z",
+      "observedAt": "2026-10-30T05:56:44.725Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-dbc1cc14da648ed3"
@@ -36380,7 +36425,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:03.967Z",
+      "observedAt": "2026-10-30T05:56:44.725Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-0c4f3eb8bd8f6e8b"
@@ -36409,7 +36454,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:03.968Z",
+      "observedAt": "2026-10-30T05:56:43.808Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-91d391addd721ce3"
@@ -36439,7 +36484,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:03.968Z",
+      "observedAt": "2026-10-30T05:56:43.808Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-0d008ce7730a710e"
@@ -36468,7 +36513,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:02.879Z",
+      "observedAt": "2026-10-30T05:56:43.808Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-87d5923322498f11"
@@ -36497,7 +36542,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:02.879Z",
+      "observedAt": "2026-10-30T05:56:43.809Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-533a523e747ac437"
@@ -36527,7 +36572,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:02.880Z",
+      "observedAt": "2026-10-30T05:56:43.809Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-bf6dd56d9487d551"
@@ -36557,7 +36602,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:02.880Z",
+      "observedAt": "2026-10-30T05:56:43.809Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-f07a2fea2de2d901"
@@ -36587,7 +36632,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-29T22:49:44.592Z",
+      "observedAt": "2026-10-30T05:56:27.147Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -36611,7 +36656,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:02.880Z",
+      "observedAt": "2026-10-30T05:56:43.810Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-34baaad9361d733e"
@@ -36640,7 +36685,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:02.881Z",
+      "observedAt": "2026-10-30T05:56:43.810Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-56e622bd2b7bf1cc"
@@ -36669,7 +36714,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:02.881Z",
+      "observedAt": "2026-10-30T05:56:42.973Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-02660c14b8152a33"
@@ -36698,7 +36743,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:02.882Z",
+      "observedAt": "2026-10-30T05:56:42.973Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-73c31df1828fec2b"
@@ -36727,7 +36772,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:02.882Z",
+      "observedAt": "2026-10-30T05:56:42.974Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-338642af4c790684"
@@ -36756,7 +36801,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:01.978Z",
+      "observedAt": "2026-10-30T05:56:42.974Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-fa0f7561f0703fa7"
@@ -36786,7 +36831,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:01.978Z",
+      "observedAt": "2026-10-30T05:56:42.975Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-bd85c90aefc63a45"
@@ -36816,7 +36861,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:01.979Z",
+      "observedAt": "2026-10-30T05:56:42.975Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-90494cb524755187"
@@ -36845,7 +36890,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:01.979Z",
+      "observedAt": "2026-10-30T05:56:42.975Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-eabc960fa2bc5605"
@@ -36874,7 +36919,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:01.979Z",
+      "observedAt": "2026-10-30T05:56:42.975Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-09c4926a80234ea6"
@@ -36904,7 +36949,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-29T22:49:44.593Z",
+      "observedAt": "2026-10-30T05:56:27.148Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
@@ -36929,10 +36974,36 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Symphony Nova Scotia",
       "sourceKind": "official_arts_calendar",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
-      "observedAt": "2026-10-29T22:49:44.593Z",
+      "observedAt": "2026-10-30T05:56:27.148Z",
       "reviewState": "source_observed",
       "organizerId": "symphony-nova-scotia",
       "organizerName": "Symphony Nova Scotia"
+    },
+    {
+      "id": "halifax-public-libraries-65d83254dec95a4c",
+      "title": "Repair Café",
+      "startAt": "2027-05-16T13:00:00.000Z",
+      "endAt": "2027-05-16T17:00:00.000Z",
+      "allDay": false,
+      "venueName": "Keshen Goodman Public Library",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Arts"
+      ],
+      "eventUrl": "https://halifax.bibliocommons.com/v2/events/6ae3e6a89b955d531f7baa74",
+      "ticketUrl": null,
+      "price": null,
+      "sourceId": "halifax-public-libraries",
+      "sourceName": "Halifax Public Libraries",
+      "sourceKind": "public_library_calendar",
+      "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
+      "observedAt": "2026-10-30T05:56:42.976Z",
+      "reviewState": "source_observed",
+      "venueId": "keshen-goodman-library",
+      "neighbourhood": null,
+      "organizerId": "halifax-public-libraries",
+      "organizerName": "Halifax Public Libraries"
     },
     {
       "id": "halifax-public-libraries-d1d024f8e73f6fb3",
@@ -36953,7 +37024,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:01.980Z",
+      "observedAt": "2026-10-30T05:56:42.976Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-41fe7dc6cbeb7dc4"
@@ -36982,7 +37053,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:01.980Z",
+      "observedAt": "2026-10-30T05:56:42.072Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-42c61bb9f39c273c"
@@ -37011,7 +37082,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:01.981Z",
+      "observedAt": "2026-10-30T05:56:42.072Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-a710d5ca5aefce72"
@@ -37040,7 +37111,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:01.084Z",
+      "observedAt": "2026-10-30T05:56:42.073Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-7a625c4f2c08d907"
@@ -37069,7 +37140,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:01.085Z",
+      "observedAt": "2026-10-30T05:56:42.073Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-0a759d9e1f5e05be"
@@ -37099,7 +37170,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:01.085Z",
+      "observedAt": "2026-10-30T05:56:42.073Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-5a32d8d7bc1bd2d6"
@@ -37128,7 +37199,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:01.085Z",
+      "observedAt": "2026-10-30T05:56:42.073Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-0cc16481f7dad632"
@@ -37157,7 +37228,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:01.086Z",
+      "observedAt": "2026-10-30T05:56:42.074Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-ca40b02f89ee099a"
@@ -37186,7 +37257,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:01.086Z",
+      "observedAt": "2026-10-30T05:56:42.074Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b764e698300c78ec"
@@ -37216,7 +37287,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:01.086Z",
+      "observedAt": "2026-10-30T05:56:42.075Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b180499c41b031f4"
@@ -37245,7 +37316,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:01.087Z",
+      "observedAt": "2026-10-30T05:56:42.075Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-6d3e1d6a767c2b27"
@@ -37274,7 +37345,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:01.087Z",
+      "observedAt": "2026-10-30T05:56:40.909Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-c0622e3afcd91322"
@@ -37303,7 +37374,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:00.049Z",
+      "observedAt": "2026-10-30T05:56:40.910Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-01ddc9145a2cac1d"
@@ -37332,7 +37403,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:00.049Z",
+      "observedAt": "2026-10-30T05:56:40.910Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-2a04f2868e9e3ced"
@@ -37362,7 +37433,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:00.049Z",
+      "observedAt": "2026-10-30T05:56:40.910Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-937da61bb7b2d0cd"
@@ -37391,7 +37462,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:00.050Z",
+      "observedAt": "2026-10-30T05:56:40.911Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-cc996a857359e342"
@@ -37420,7 +37491,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:00.050Z",
+      "observedAt": "2026-10-30T05:56:40.911Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-2264173f72591fcd"
@@ -37449,7 +37520,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:00.051Z",
+      "observedAt": "2026-10-30T05:56:40.912Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-538fcddd927df1f9"
@@ -37478,7 +37549,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:50:00.051Z",
+      "observedAt": "2026-10-30T05:56:40.203Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-88cd2aa58db1680e"
@@ -37507,7 +37578,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:46.112Z",
+      "observedAt": "2026-10-30T05:58:08.042Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -37548,7 +37619,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:58.941Z",
+      "observedAt": "2026-10-30T05:56:40.204Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-eddfac8671f12648"
@@ -37577,7 +37648,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:58.941Z",
+      "observedAt": "2026-10-30T05:56:40.204Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-def484e8eac194fd"
@@ -37606,7 +37677,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:58.942Z",
+      "observedAt": "2026-10-30T05:56:40.205Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-f443ec277f9ae7c8"
@@ -37635,7 +37706,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:58.942Z",
+      "observedAt": "2026-10-30T05:56:40.205Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-50d69da8c832d25d"
@@ -37664,7 +37735,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:58.943Z",
+      "observedAt": "2026-10-30T05:56:40.205Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-7fc39c45d727afb0"
@@ -37693,7 +37764,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:58.943Z",
+      "observedAt": "2026-10-30T05:56:40.206Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-dd99200db6ebf9a3"
@@ -37722,7 +37793,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:58.943Z",
+      "observedAt": "2026-10-30T05:56:39.429Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-a77fc3f8db79e30e"
@@ -37752,7 +37823,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:58.944Z",
+      "observedAt": "2026-10-30T05:56:39.429Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-ba7f775e8d2764d6"
@@ -37781,7 +37852,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:58.944Z",
+      "observedAt": "2026-10-30T05:56:39.429Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-fe9079aa2b7738c0"
@@ -37810,7 +37881,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:58.060Z",
+      "observedAt": "2026-10-30T05:56:39.430Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-80c6ce05c8413dda"
@@ -37839,7 +37910,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:58.060Z",
+      "observedAt": "2026-10-30T05:56:39.430Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-6e306876f89629a7"
@@ -37868,7 +37939,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:58.061Z",
+      "observedAt": "2026-10-30T05:56:39.430Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b7f57e918a0b0bcb"
@@ -37897,7 +37968,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:58.061Z",
+      "observedAt": "2026-10-30T05:56:39.431Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-62d0f52ac484f2a1"
@@ -37926,7 +37997,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:58.061Z",
+      "observedAt": "2026-10-30T05:56:39.431Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-2222bef6eb8eb24e"
@@ -37955,7 +38026,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:58.062Z",
+      "observedAt": "2026-10-30T05:56:38.629Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-20cb4a0f7a1b753d"
@@ -37984,7 +38055,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:56.630Z",
+      "observedAt": "2026-10-30T05:56:38.629Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "woodlawn-library",
@@ -38011,7 +38082,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:56.630Z",
+      "observedAt": "2026-10-30T05:56:38.629Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-c9b5c435920a4ed0"
@@ -38040,7 +38111,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:56.630Z",
+      "observedAt": "2026-10-30T05:56:38.630Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-d3c9e5aca8455e01"
@@ -38070,12 +38141,38 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:56.631Z",
+      "observedAt": "2026-10-30T05:56:38.630Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-64f565577c172a2b"
       ],
       "venueId": "woodlawn-library",
+      "neighbourhood": null,
+      "organizerId": "halifax-public-libraries",
+      "organizerName": "Halifax Public Libraries"
+    },
+    {
+      "id": "halifax-public-libraries-0a97aaf1548b1172",
+      "title": "Repair Café",
+      "startAt": "2027-06-20T13:00:00.000Z",
+      "endAt": "2027-06-20T17:00:00.000Z",
+      "allDay": false,
+      "venueName": "Keshen Goodman Public Library",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Arts"
+      ],
+      "eventUrl": "https://halifax.bibliocommons.com/v2/events/6ae3e6a89b955d531f7baa75",
+      "ticketUrl": null,
+      "price": null,
+      "sourceId": "halifax-public-libraries",
+      "sourceName": "Halifax Public Libraries",
+      "sourceKind": "public_library_calendar",
+      "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
+      "observedAt": "2026-10-30T05:56:38.630Z",
+      "reviewState": "source_observed",
+      "venueId": "keshen-goodman-library",
       "neighbourhood": null,
       "organizerId": "halifax-public-libraries",
       "organizerName": "Halifax Public Libraries"
@@ -38099,7 +38196,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:56.631Z",
+      "observedAt": "2026-10-30T05:56:38.631Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-d32a82dfcd2e57f5"
@@ -38128,7 +38225,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:56.631Z",
+      "observedAt": "2026-10-30T05:56:38.631Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-599943b90fa02b9b"
@@ -38157,7 +38254,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:56.632Z",
+      "observedAt": "2026-10-30T05:56:37.620Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-1413f216e60d65dc"
@@ -38186,7 +38283,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:56.632Z",
+      "observedAt": "2026-10-30T05:56:37.621Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-1fc1ab4928439079"
@@ -38215,7 +38312,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:55.752Z",
+      "observedAt": "2026-10-30T05:56:37.621Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-f3bdce3bea0a48c9"
@@ -38244,7 +38341,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:55.753Z",
+      "observedAt": "2026-10-30T05:56:37.622Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-e08f4ba89f2c7144"
@@ -38273,7 +38370,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:55.753Z",
+      "observedAt": "2026-10-30T05:56:37.623Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-eb78afb9bb012daf"
@@ -38302,7 +38399,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Bedford Public Library",
       "sourceKind": "official_library_location_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
-      "observedAt": "2026-10-29T22:51:46.112Z",
+      "observedAt": "2026-10-30T05:58:08.043Z",
       "reviewState": "source_observed",
       "latitude": 44.7314,
       "longitude": -63.6571,
@@ -38343,7 +38440,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:55.754Z",
+      "observedAt": "2026-10-30T05:56:36.672Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-70551935d4fe09ae"
@@ -38372,7 +38469,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:54.714Z",
+      "observedAt": "2026-10-30T05:56:36.672Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-a3c725eb9fa8a39f"
@@ -38401,11 +38498,37 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:54.715Z",
+      "observedAt": "2026-10-30T05:56:36.673Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-5e1ad5fd75166b44"
       ],
+      "venueId": "keshen-goodman-library",
+      "neighbourhood": null,
+      "organizerId": "halifax-public-libraries",
+      "organizerName": "Halifax Public Libraries"
+    },
+    {
+      "id": "halifax-public-libraries-2fa5a0cd310a657d",
+      "title": "Repair Café",
+      "startAt": "2027-07-18T13:00:00.000Z",
+      "endAt": "2027-07-18T17:00:00.000Z",
+      "allDay": false,
+      "venueName": "Keshen Goodman Public Library",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Arts"
+      ],
+      "eventUrl": "https://halifax.bibliocommons.com/v2/events/6ae3e6a89b955d531f7baa76",
+      "ticketUrl": null,
+      "price": null,
+      "sourceId": "halifax-public-libraries",
+      "sourceName": "Halifax Public Libraries",
+      "sourceKind": "public_library_calendar",
+      "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
+      "observedAt": "2026-10-30T05:56:36.673Z",
+      "reviewState": "source_observed",
       "venueId": "keshen-goodman-library",
       "neighbourhood": null,
       "organizerId": "halifax-public-libraries",
@@ -38430,7 +38553,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:54.716Z",
+      "observedAt": "2026-10-30T05:56:35.387Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-c55564227a43eb57"
@@ -38459,7 +38582,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:53.840Z",
+      "observedAt": "2026-10-30T05:56:35.388Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-a3a9ff05a8706ee0"
@@ -38488,7 +38611,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:53.841Z",
+      "observedAt": "2026-10-30T05:56:35.389Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-9f03ec9133a45a6e"
@@ -38517,7 +38640,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:53.841Z",
+      "observedAt": "2026-10-30T05:56:35.389Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-797997e7d6f3de1c"
@@ -38546,7 +38669,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:53.842Z",
+      "observedAt": "2026-10-30T05:56:34.588Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-b89d3ae4e75ca391"
@@ -38575,9 +38698,35 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:53.842Z",
+      "observedAt": "2026-10-30T05:56:34.588Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
+      "venueId": "keshen-goodman-library",
+      "neighbourhood": null,
+      "organizerId": "halifax-public-libraries",
+      "organizerName": "Halifax Public Libraries"
+    },
+    {
+      "id": "halifax-public-libraries-dab64f51dbb8e59a",
+      "title": "Repair Café",
+      "startAt": "2027-08-15T13:00:00.000Z",
+      "endAt": "2027-08-15T17:00:00.000Z",
+      "allDay": false,
+      "venueName": "Keshen Goodman Public Library",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Arts"
+      ],
+      "eventUrl": "https://halifax.bibliocommons.com/v2/events/6ae3e6a89b955d531f7baa77",
+      "ticketUrl": null,
+      "price": null,
+      "sourceId": "halifax-public-libraries",
+      "sourceName": "Halifax Public Libraries",
+      "sourceKind": "public_library_calendar",
+      "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
+      "observedAt": "2026-10-30T05:56:34.589Z",
+      "reviewState": "source_observed",
       "venueId": "keshen-goodman-library",
       "neighbourhood": null,
       "organizerId": "halifax-public-libraries",
@@ -38602,7 +38751,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:52.562Z",
+      "observedAt": "2026-10-30T05:56:34.589Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-7b9eb360342c1b4d"
@@ -38631,7 +38780,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:52.562Z",
+      "observedAt": "2026-10-30T05:56:33.713Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-d8d53a07f3567333"
@@ -38660,7 +38809,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:52.563Z",
+      "observedAt": "2026-10-30T05:56:33.713Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-ec88573997b80f94"
@@ -38689,7 +38838,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:51.586Z",
+      "observedAt": "2026-10-30T05:56:33.714Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-eabc4e91eba1e15e"
@@ -38718,7 +38867,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:51.586Z",
+      "observedAt": "2026-10-30T05:56:33.714Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-1cc8edde93c61736"
@@ -38747,7 +38896,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:51.586Z",
+      "observedAt": "2026-10-30T05:56:33.715Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-554a5db59f38ef51"
@@ -38776,11 +38925,37 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:51.587Z",
+      "observedAt": "2026-10-30T05:56:32.797Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-8e52f50f2816b8bf"
       ],
+      "venueId": "keshen-goodman-library",
+      "neighbourhood": null,
+      "organizerId": "halifax-public-libraries",
+      "organizerName": "Halifax Public Libraries"
+    },
+    {
+      "id": "halifax-public-libraries-9bbe1dd6ca13509c",
+      "title": "Repair Café",
+      "startAt": "2027-09-19T13:00:00.000Z",
+      "endAt": "2027-09-19T17:00:00.000Z",
+      "allDay": false,
+      "venueName": "Keshen Goodman Public Library",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Arts"
+      ],
+      "eventUrl": "https://halifax.bibliocommons.com/v2/events/6ae3e6a89b955d531f7baa78",
+      "ticketUrl": null,
+      "price": null,
+      "sourceId": "halifax-public-libraries",
+      "sourceName": "Halifax Public Libraries",
+      "sourceKind": "public_library_calendar",
+      "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
+      "observedAt": "2026-10-30T05:56:32.798Z",
+      "reviewState": "source_observed",
       "venueId": "keshen-goodman-library",
       "neighbourhood": null,
       "organizerId": "halifax-public-libraries",
@@ -38805,7 +38980,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:50.576Z",
+      "observedAt": "2026-10-30T05:56:32.798Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-0381329f77769c67"
@@ -38834,7 +39009,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:50.577Z",
+      "observedAt": "2026-10-30T05:56:32.799Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-c7e1368a03aaf2a5"
@@ -38863,7 +39038,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:50.577Z",
+      "observedAt": "2026-10-30T05:56:31.991Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-11d1409e6783e076"
@@ -38892,7 +39067,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:50.578Z",
+      "observedAt": "2026-10-30T05:56:31.991Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-eff8ca6651dac712"
@@ -38921,7 +39096,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceId": "scotiabank-centre",
       "sourceName": "Scotiabank Centre",
       "sourceKind": "official_venue_calendar",
-      "observedAt": "2026-10-29T22:49:38.615Z",
+      "observedAt": "2026-10-30T05:56:18.117Z",
       "reviewState": "source-observed",
       "venueId": "scotiabank-centre-halifax",
       "neighbourhood": "Downtown",
@@ -38947,11 +39122,37 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:49.658Z",
+      "observedAt": "2026-10-30T05:56:31.992Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-f4ece856827c0a23"
       ],
+      "venueId": "keshen-goodman-library",
+      "neighbourhood": null,
+      "organizerId": "halifax-public-libraries",
+      "organizerName": "Halifax Public Libraries"
+    },
+    {
+      "id": "halifax-public-libraries-5c130473988e4f12",
+      "title": "Repair Café",
+      "startAt": "2027-10-17T13:00:00.000Z",
+      "endAt": "2027-10-17T17:00:00.000Z",
+      "allDay": false,
+      "venueName": "Keshen Goodman Public Library",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Arts"
+      ],
+      "eventUrl": "https://halifax.bibliocommons.com/v2/events/6ae3e6a89b955d531f7baa79",
+      "ticketUrl": null,
+      "price": null,
+      "sourceId": "halifax-public-libraries",
+      "sourceName": "Halifax Public Libraries",
+      "sourceKind": "public_library_calendar",
+      "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
+      "observedAt": "2026-10-30T05:56:31.993Z",
+      "reviewState": "source_observed",
       "venueId": "keshen-goodman-library",
       "neighbourhood": null,
       "organizerId": "halifax-public-libraries",
@@ -38976,7 +39177,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:49.659Z",
+      "observedAt": "2026-10-30T05:56:31.186Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-ed01c8c8bf1bcc18"
@@ -39005,7 +39206,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:49.659Z",
+      "observedAt": "2026-10-30T05:56:31.187Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-6c51581629395ced"
@@ -39034,7 +39235,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:48.324Z",
+      "observedAt": "2026-10-30T05:56:31.187Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-1fd999616759d4ca"
@@ -39063,7 +39264,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:48.325Z",
+      "observedAt": "2026-10-30T05:56:31.188Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-538343fe5b5a2842"
@@ -39092,7 +39293,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:48.325Z",
+      "observedAt": "2026-10-30T05:56:30.351Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-3e5903c48267d5e7"
@@ -39121,11 +39322,37 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:47.491Z",
+      "observedAt": "2026-10-30T05:56:30.352Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-94c5e3b06abc0c85"
       ],
+      "venueId": "keshen-goodman-library",
+      "neighbourhood": null,
+      "organizerId": "halifax-public-libraries",
+      "organizerName": "Halifax Public Libraries"
+    },
+    {
+      "id": "halifax-public-libraries-ba14115349ba86c7",
+      "title": "Repair Café",
+      "startAt": "2027-11-21T14:00:00.000Z",
+      "endAt": "2027-11-21T18:00:00.000Z",
+      "allDay": false,
+      "venueName": "Keshen Goodman Public Library",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Arts"
+      ],
+      "eventUrl": "https://halifax.bibliocommons.com/v2/events/6ae3e6a89b955d531f7baa7a",
+      "ticketUrl": null,
+      "price": null,
+      "sourceId": "halifax-public-libraries",
+      "sourceName": "Halifax Public Libraries",
+      "sourceKind": "public_library_calendar",
+      "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
+      "observedAt": "2026-10-30T05:56:30.352Z",
+      "reviewState": "source_observed",
       "venueId": "keshen-goodman-library",
       "neighbourhood": null,
       "organizerId": "halifax-public-libraries",
@@ -39150,7 +39377,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:47.491Z",
+      "observedAt": "2026-10-30T05:56:30.353Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [
         "halifax-public-libraries-744215da25944c01"
@@ -39179,7 +39406,7 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceName": "Halifax Public Libraries",
       "sourceKind": "public_library_calendar",
       "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
-      "observedAt": "2026-10-29T22:49:47.492Z",
+      "observedAt": "2026-10-30T05:56:29.656Z",
       "reviewState": "source_observed",
       "duplicateEventIds": [],
       "venueId": "keshen-goodman-library",
@@ -39218,8 +39445,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceFailure": {
         "sourceId": "light-house-arts-centre",
         "reason": "robots_disallow",
-        "attemptedAt": "2026-10-29T22:49:40.360Z",
-        "previousGeneratedAt": "2026-10-29T13:11:45.476Z"
+        "attemptedAt": "2026-10-30T05:56:19.784Z",
+        "previousGeneratedAt": "2026-10-29T22:49:42.994Z"
       }
     },
     {
@@ -39253,8 +39480,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceFailure": {
         "sourceId": "light-house-arts-centre",
         "reason": "robots_disallow",
-        "attemptedAt": "2026-10-29T22:49:40.360Z",
-        "previousGeneratedAt": "2026-10-29T13:11:45.476Z"
+        "attemptedAt": "2026-10-30T05:56:19.784Z",
+        "previousGeneratedAt": "2026-10-29T22:49:42.994Z"
       }
     },
     {
@@ -39287,8 +39514,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceFailure": {
         "sourceId": "light-house-arts-centre",
         "reason": "robots_disallow",
-        "attemptedAt": "2026-10-29T22:49:40.360Z",
-        "previousGeneratedAt": "2026-10-29T13:11:45.476Z"
+        "attemptedAt": "2026-10-30T05:56:19.784Z",
+        "previousGeneratedAt": "2026-10-29T22:49:42.994Z"
       }
     },
     {
@@ -39321,8 +39548,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceFailure": {
         "sourceId": "light-house-arts-centre",
         "reason": "robots_disallow",
-        "attemptedAt": "2026-10-29T22:49:40.360Z",
-        "previousGeneratedAt": "2026-10-29T13:11:45.476Z"
+        "attemptedAt": "2026-10-30T05:56:19.784Z",
+        "previousGeneratedAt": "2026-10-29T22:49:42.994Z"
       }
     },
     {
@@ -39355,8 +39582,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceFailure": {
         "sourceId": "light-house-arts-centre",
         "reason": "robots_disallow",
-        "attemptedAt": "2026-10-29T22:49:40.360Z",
-        "previousGeneratedAt": "2026-10-29T13:11:45.476Z"
+        "attemptedAt": "2026-10-30T05:56:19.784Z",
+        "previousGeneratedAt": "2026-10-29T22:49:42.994Z"
       }
     },
     {
@@ -39390,8 +39617,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceFailure": {
         "sourceId": "light-house-arts-centre",
         "reason": "robots_disallow",
-        "attemptedAt": "2026-10-29T22:49:40.360Z",
-        "previousGeneratedAt": "2026-10-29T13:11:45.476Z"
+        "attemptedAt": "2026-10-30T05:56:19.784Z",
+        "previousGeneratedAt": "2026-10-29T22:49:42.994Z"
       }
     },
     {
@@ -39433,8 +39660,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceFailure": {
         "sourceId": "light-house-arts-centre",
         "reason": "robots_disallow",
-        "attemptedAt": "2026-10-29T22:49:40.360Z",
-        "previousGeneratedAt": "2026-10-29T13:11:45.476Z"
+        "attemptedAt": "2026-10-30T05:56:19.784Z",
+        "previousGeneratedAt": "2026-10-29T22:49:42.994Z"
       }
     },
     {
@@ -39469,8 +39696,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceFailure": {
         "sourceId": "light-house-arts-centre",
         "reason": "robots_disallow",
-        "attemptedAt": "2026-10-29T22:49:40.360Z",
-        "previousGeneratedAt": "2026-10-29T13:11:45.476Z"
+        "attemptedAt": "2026-10-30T05:56:19.784Z",
+        "previousGeneratedAt": "2026-10-29T22:49:42.994Z"
       }
     },
     {
@@ -39503,8 +39730,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceFailure": {
         "sourceId": "light-house-arts-centre",
         "reason": "robots_disallow",
-        "attemptedAt": "2026-10-29T22:49:40.360Z",
-        "previousGeneratedAt": "2026-10-29T13:11:45.476Z"
+        "attemptedAt": "2026-10-30T05:56:19.784Z",
+        "previousGeneratedAt": "2026-10-29T22:49:42.994Z"
       }
     },
     {
@@ -39537,8 +39764,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceFailure": {
         "sourceId": "light-house-arts-centre",
         "reason": "robots_disallow",
-        "attemptedAt": "2026-10-29T22:49:40.360Z",
-        "previousGeneratedAt": "2026-10-29T13:11:45.476Z"
+        "attemptedAt": "2026-10-30T05:56:19.784Z",
+        "previousGeneratedAt": "2026-10-29T22:49:42.994Z"
       }
     },
     {
@@ -39571,8 +39798,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceFailure": {
         "sourceId": "light-house-arts-centre",
         "reason": "robots_disallow",
-        "attemptedAt": "2026-10-29T22:49:40.360Z",
-        "previousGeneratedAt": "2026-10-29T13:11:45.476Z"
+        "attemptedAt": "2026-10-30T05:56:19.784Z",
+        "previousGeneratedAt": "2026-10-29T22:49:42.994Z"
       }
     },
     {
@@ -39605,8 +39832,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceFailure": {
         "sourceId": "light-house-arts-centre",
         "reason": "robots_disallow",
-        "attemptedAt": "2026-10-29T22:49:40.360Z",
-        "previousGeneratedAt": "2026-10-29T13:11:45.476Z"
+        "attemptedAt": "2026-10-30T05:56:19.784Z",
+        "previousGeneratedAt": "2026-10-29T22:49:42.994Z"
       }
     },
     {
@@ -39639,8 +39866,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceFailure": {
         "sourceId": "light-house-arts-centre",
         "reason": "robots_disallow",
-        "attemptedAt": "2026-10-29T22:49:40.360Z",
-        "previousGeneratedAt": "2026-10-29T13:11:45.476Z"
+        "attemptedAt": "2026-10-30T05:56:19.784Z",
+        "previousGeneratedAt": "2026-10-29T22:49:42.994Z"
       }
     },
     {
@@ -39673,8 +39900,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceFailure": {
         "sourceId": "light-house-arts-centre",
         "reason": "robots_disallow",
-        "attemptedAt": "2026-10-29T22:49:40.360Z",
-        "previousGeneratedAt": "2026-10-29T13:11:45.476Z"
+        "attemptedAt": "2026-10-30T05:56:19.784Z",
+        "previousGeneratedAt": "2026-10-29T22:49:42.994Z"
       }
     },
     {
@@ -39708,8 +39935,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceFailure": {
         "sourceId": "light-house-arts-centre",
         "reason": "robots_disallow",
-        "attemptedAt": "2026-10-29T22:49:40.360Z",
-        "previousGeneratedAt": "2026-10-29T13:11:45.476Z"
+        "attemptedAt": "2026-10-30T05:56:19.784Z",
+        "previousGeneratedAt": "2026-10-29T22:49:42.994Z"
       }
     },
     {
@@ -39743,8 +39970,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceFailure": {
         "sourceId": "light-house-arts-centre",
         "reason": "robots_disallow",
-        "attemptedAt": "2026-10-29T22:49:40.360Z",
-        "previousGeneratedAt": "2026-10-29T13:11:45.476Z"
+        "attemptedAt": "2026-10-30T05:56:19.784Z",
+        "previousGeneratedAt": "2026-10-29T22:49:42.994Z"
       }
     },
     {
@@ -39778,8 +40005,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceFailure": {
         "sourceId": "light-house-arts-centre",
         "reason": "robots_disallow",
-        "attemptedAt": "2026-10-29T22:49:40.360Z",
-        "previousGeneratedAt": "2026-10-29T13:11:45.476Z"
+        "attemptedAt": "2026-10-30T05:56:19.784Z",
+        "previousGeneratedAt": "2026-10-29T22:49:42.994Z"
       }
     },
     {
@@ -39812,8 +40039,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceFailure": {
         "sourceId": "light-house-arts-centre",
         "reason": "robots_disallow",
-        "attemptedAt": "2026-10-29T22:49:40.360Z",
-        "previousGeneratedAt": "2026-10-29T13:11:45.476Z"
+        "attemptedAt": "2026-10-30T05:56:19.784Z",
+        "previousGeneratedAt": "2026-10-29T22:49:42.994Z"
       }
     },
     {
@@ -39847,8 +40074,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceFailure": {
         "sourceId": "light-house-arts-centre",
         "reason": "robots_disallow",
-        "attemptedAt": "2026-10-29T22:49:40.360Z",
-        "previousGeneratedAt": "2026-10-29T13:11:45.476Z"
+        "attemptedAt": "2026-10-30T05:56:19.784Z",
+        "previousGeneratedAt": "2026-10-29T22:49:42.994Z"
       }
     },
     {
@@ -39882,8 +40109,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceFailure": {
         "sourceId": "light-house-arts-centre",
         "reason": "robots_disallow",
-        "attemptedAt": "2026-10-29T22:49:40.360Z",
-        "previousGeneratedAt": "2026-10-29T13:11:45.476Z"
+        "attemptedAt": "2026-10-30T05:56:19.784Z",
+        "previousGeneratedAt": "2026-10-29T22:49:42.994Z"
       }
     },
     {
@@ -39917,8 +40144,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceFailure": {
         "sourceId": "light-house-arts-centre",
         "reason": "robots_disallow",
-        "attemptedAt": "2026-10-29T22:49:40.360Z",
-        "previousGeneratedAt": "2026-10-29T13:11:45.476Z"
+        "attemptedAt": "2026-10-30T05:56:19.784Z",
+        "previousGeneratedAt": "2026-10-29T22:49:42.994Z"
       }
     },
     {
@@ -39952,8 +40179,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceFailure": {
         "sourceId": "light-house-arts-centre",
         "reason": "robots_disallow",
-        "attemptedAt": "2026-10-29T22:49:40.360Z",
-        "previousGeneratedAt": "2026-10-29T13:11:45.476Z"
+        "attemptedAt": "2026-10-30T05:56:19.784Z",
+        "previousGeneratedAt": "2026-10-29T22:49:42.994Z"
       }
     },
     {
@@ -39986,8 +40213,8 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceFailure": {
         "sourceId": "light-house-arts-centre",
         "reason": "robots_disallow",
-        "attemptedAt": "2026-10-29T22:49:40.360Z",
-        "previousGeneratedAt": "2026-10-29T13:11:45.476Z"
+        "attemptedAt": "2026-10-30T05:56:19.784Z",
+        "previousGeneratedAt": "2026-10-29T22:49:42.994Z"
       }
     },
     {
@@ -40021,22 +40248,22 @@ window.HALIFAX_CITY_EVENTS = {
       "sourceFailure": {
         "sourceId": "light-house-arts-centre",
         "reason": "robots_disallow",
-        "attemptedAt": "2026-10-29T22:49:40.360Z",
-        "previousGeneratedAt": "2026-10-29T13:11:45.476Z"
+        "attemptedAt": "2026-10-30T05:56:19.784Z",
+        "previousGeneratedAt": "2026-10-29T22:49:42.994Z"
       }
     }
   ],
-  "sanitizedAt": "2026-10-29T22:51:56.096Z",
+  "sanitizedAt": "2026-10-30T05:58:17.423Z",
   "scopeAudit": {
-    "inputEvents": 1311,
+    "inputEvents": 1319,
     "reviewedQuarantine": {
       "archiveIds": [
         "library-store-navigation-20261027",
         "city-event-lifecycle-20261028"
       ],
       "activeDecisionCount": 95,
-      "inputEventCount": 1311,
-      "keptEventCount": 1311,
+      "inputEventCount": 1319,
+      "keptEventCount": 1319,
       "quarantinedCount": 0,
       "quarantinedBySource": {},
       "quarantined": [],
@@ -40046,8 +40273,8 @@ window.HALIFAX_CITY_EVENTS = {
         {
           "archiveId": "library-store-navigation-20261027",
           "activeDecisionCount": 89,
-          "inputEventCount": 1311,
-          "keptEventCount": 1311,
+          "inputEventCount": 1319,
+          "keptEventCount": 1319,
           "quarantinedCount": 0,
           "quarantinedBySource": {},
           "quarantined": [],
@@ -40057,8 +40284,8 @@ window.HALIFAX_CITY_EVENTS = {
         {
           "archiveId": "city-event-lifecycle-20261028",
           "activeDecisionCount": 6,
-          "inputEventCount": 1311,
-          "keptEventCount": 1311,
+          "inputEventCount": 1319,
+          "keptEventCount": 1319,
           "quarantinedCount": 0,
           "quarantinedBySource": {},
           "quarantined": [],
@@ -40067,10 +40294,10 @@ window.HALIFAX_CITY_EVENTS = {
         }
       ]
     },
-    "keptEvents": 1311,
+    "keptEvents": 1319,
     "canonicalDuplicatesMerged": 0,
     "removedOutOfScope": 0,
-    "categoryReclassified": 127,
+    "categoryReclassified": 128,
     "allowedMunicipalities": [
       "Halifax",
       "Dartmouth",
@@ -40078,57 +40305,57 @@ window.HALIFAX_CITY_EVENTS = {
     ],
     "removedSample": []
   },
-  "supplementalAt": "2026-10-29T22:51:49.195Z",
+  "supplementalAt": "2026-10-30T05:58:10.737Z",
   "supplementalAudit": {
-    "addedBeforeDedupe": 1291,
+    "addedBeforeDedupe": 1301,
     "sourceStats": [
       {
         "sourceId": "halifax-convention-centre",
         "sourceName": "Halifax Convention Centre",
         "status": "ok",
         "eventCount": 1,
-        "observedAt": "2026-10-29T22:49:44.185Z",
-        "durationMs": 1058
+        "observedAt": "2026-10-30T05:56:26.972Z",
+        "durationMs": 797
       },
       {
         "sourceId": "symphony-nova-scotia",
         "sourceName": "Symphony Nova Scotia",
         "status": "ok",
-        "eventCount": 32,
-        "observedAt": "2026-10-29T22:49:44.593Z",
-        "durationMs": 407
+        "eventCount": 31,
+        "observedAt": "2026-10-30T05:56:27.148Z",
+        "durationMs": 175
       },
       {
         "sourceId": "halifax-public-libraries",
         "sourceName": "Halifax Public Libraries",
         "status": "ok",
-        "eventCount": 1159,
-        "observedAt": "2026-10-29T22:51:41.782Z",
-        "durationMs": 117189
+        "eventCount": 1169,
+        "observedAt": "2026-10-30T05:58:03.595Z",
+        "durationMs": 96447
       },
       {
         "sourceId": "alderney-gate-library-events",
         "sourceName": "Alderney Gate Public Library",
         "status": "ok",
         "eventCount": 8,
-        "observedAt": "2026-10-29T22:51:43.437Z",
-        "durationMs": 1654
+        "observedAt": "2026-10-30T05:58:05.607Z",
+        "durationMs": 2011
       },
       {
         "sourceId": "woodlawn-library-events",
         "sourceName": "Woodlawn Public Library",
         "status": "ok",
         "eventCount": 8,
-        "observedAt": "2026-10-29T22:51:45.034Z",
-        "durationMs": 1597
+        "observedAt": "2026-10-30T05:58:06.076Z",
+        "durationMs": 469
       },
       {
         "sourceId": "bedford-library-events",
         "sourceName": "Bedford Public Library",
         "status": "ok",
-        "eventCount": 83,
-        "observedAt": "2026-10-29T22:51:49.186Z",
-        "durationMs": 4152
+        "eventCount": 84,
+        "observedAt": "2026-10-30T05:58:10.727Z",
+        "durationMs": 4651
       },
       {
         "sourceId": "alderney-landing-events",
@@ -40155,7 +40382,7 @@ window.HALIFAX_CITY_EVENTS = {
     ]
   },
   "manualAdditions": {
-    "appliedAt": "2026-10-29T22:51:49.404Z",
+    "appliedAt": "2026-10-30T05:58:10.938Z",
     "source": "data/build/city-event-additions.json",
     "eventCount": 14,
     "sourceContributions": [
@@ -40295,12 +40522,12 @@ window.HALIFAX_CITY_EVENTS = {
     "removedSupersededIds": []
   },
   "entityResolution": {
-    "appliedAt": "2026-10-29T22:51:56.219Z",
+    "appliedAt": "2026-10-30T05:58:17.543Z",
     "venueRegistryVersion": 3,
     "organizerRegistryVersion": 2,
-    "venueResolved": 1259,
-    "organizerResolved": 1290,
+    "venueResolved": 1269,
+    "organizerResolved": 1299,
     "restaurantResolved": 10,
-    "eventCount": 1311
+    "eventCount": 1319
   }
 };
