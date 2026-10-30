@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-29T22:51:56.247Z",
-  "eventCount": 1311,
-  "venueResolved": 1259,
-  "organizerResolved": 1290,
+  "generatedAt": "2026-10-30T05:58:17.573Z",
+  "eventCount": 1319,
+  "venueResolved": 1269,
+  "organizerResolved": 1299,
   "restaurantResolved": 10,
-  "unresolvedVenue": 52,
-  "unresolvedOrganizer": 21,
+  "unresolvedVenue": 50,
+  "unresolvedOrganizer": 20,
   "resolutions": [
     {
       "eventId": "https://novascotia.com/event/better-times-comedy/#event",
@@ -182,72 +182,6 @@
       "organizerBasis": "source_id",
       "restaurantId": null,
       "restaurantBasis": null
-    },
-    {
-      "eventId": "https://novascotia.com/event/creative-minds-music-and-storytelling-with-raymond-sewell/#event",
-      "title": "Creative Minds: Music and Storytelling with Raymond Sewell",
-      "sourceId": "tourism-ns-events",
-      "venueId": null,
-      "venueBasis": null,
-      "organizerId": null,
-      "organizerBasis": null,
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-d66cdd5573c58620",
-      "title": "Teen Night",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "central-library-halifax",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-22000957fdfbb981",
-      "title": "Notary Clinic",
-      "sourceId": "halifax-public-libraries",
-      "venueId": "keshen-goodman-library",
-      "venueBasis": "exact_normalized_venue_name",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "halifax-public-libraries-1afd4cfa67456562",
-      "title": "Teen Night",
-      "sourceId": "woodlawn-library-events",
-      "venueId": "woodlawn-library",
-      "venueBasis": "source_id",
-      "organizerId": "halifax-public-libraries",
-      "organizerBasis": "source_name_token",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "symphony-nova-scotia-c35c930a16cc60a7",
-      "title": "Beethoven’s Pastoral Symphony",
-      "sourceId": "symphony-nova-scotia",
-      "venueId": null,
-      "venueBasis": null,
-      "organizerId": "symphony-nova-scotia",
-      "organizerBasis": "source_id",
-      "restaurantId": null,
-      "restaurantBasis": null
-    },
-    {
-      "eventId": "the-carleton-330dee86cb34d8be",
-      "title": "SOLD OUT: Roxy & T.U.S.S. Perform Amy Winehouse’s Back To Black – Thursday",
-      "sourceId": "the-carleton",
-      "venueId": "the-carleton-halifax",
-      "venueBasis": "source_id",
-      "organizerId": "the-carleton",
-      "organizerBasis": "source_id",
-      "restaurantId": "osm-node-771690675-the-carleton",
-      "restaurantBasis": "exact_venue_place_name"
     },
     {
       "eventId": "halifax-public-libraries-e3b32ff35478511c",
@@ -604,9 +538,9 @@
     {
       "eventId": "halifax-public-libraries-5e3e85c3eff42b69",
       "title": "Creative Writing: A Practical Course",
-      "sourceId": "halifax-public-libraries",
+      "sourceId": "woodlawn-library-events",
       "venueId": "woodlawn-library",
-      "venueBasis": "exact_normalized_venue_name",
+      "venueBasis": "source_id",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
       "restaurantId": null,
@@ -745,7 +679,7 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "the-carleton-2d6665b8890674d0",
+      "eventId": "the-carleton-b0bd3f0b147abd21",
       "title": "SOLD OUT: AfterWords Literary Festival – Dodge City: In Conversation",
       "sourceId": "the-carleton",
       "venueId": "the-carleton-halifax",
@@ -1164,7 +1098,7 @@
     },
     {
       "eventId": "halifax-public-libraries-384e128684056306",
-      "title": "Art Club",
+      "title": "Art Club: Clay Creations - Sculpt",
       "sourceId": "halifax-public-libraries",
       "venueId": "keshen-goodman-library",
       "venueBasis": "exact_normalized_venue_name",
@@ -1867,6 +1801,17 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "the-carleton-1132e3de9eb6fd67",
+      "title": "Alan Cross Presents: UNCHARTED",
+      "sourceId": "the-carleton",
+      "venueId": "the-carleton-halifax",
+      "venueBasis": "source_id",
+      "organizerId": "the-carleton",
+      "organizerBasis": "source_id",
+      "restaurantId": "osm-node-771690675-the-carleton",
+      "restaurantBasis": "exact_venue_place_name"
+    },
+    {
       "eventId": "https://novascotia.com/event/essential-opera-presents-in-her-hands-the-tragedy-of-lady-macbeth/#event",
       "title": "Essential Opera Presents: In Her Hands: The Tragedy of Lady Macbeth",
       "sourceId": "tourism-ns-events",
@@ -2253,7 +2198,7 @@
     },
     {
       "eventId": "bedford-library-events-dde033b2c1a00b65",
-      "title": "Super Saturday",
+      "title": "Super Saturday: Bookmarks",
       "sourceId": "bedford-library-events",
       "venueId": "bedford-library",
       "venueBasis": "source_id",
@@ -2759,7 +2704,7 @@
     },
     {
       "eventId": "halifax-public-libraries-54602bd6d289d288",
-      "title": "Art Club",
+      "title": "Art Club: Clay Creations - Decorate",
       "sourceId": "halifax-public-libraries",
       "venueId": "keshen-goodman-library",
       "venueBasis": "exact_normalized_venue_name",
@@ -3529,7 +3474,7 @@
     },
     {
       "eventId": "bedford-library-events-50912d660722b03e",
-      "title": "Super Saturday",
+      "title": "Super Saturday: Paper Snowflakes",
       "sourceId": "bedford-library-events",
       "venueId": "bedford-library",
       "venueBasis": "source_id",
@@ -4013,7 +3958,7 @@
     },
     {
       "eventId": "halifax-public-libraries-d3487e99ba0ed877",
-      "title": "Art Club",
+      "title": "Art Club: Embroidery Bookmarks",
       "sourceId": "halifax-public-libraries",
       "venueId": "keshen-goodman-library",
       "venueBasis": "exact_normalized_venue_name",
@@ -4266,7 +4211,7 @@
     },
     {
       "eventId": "halifax-public-libraries-46cd9087317ba7b5",
-      "title": "Craft Club",
+      "title": "Craft Club: Seed Bead Necklaces",
       "sourceId": "halifax-public-libraries",
       "venueId": "alderney-gate-library",
       "venueBasis": "exact_normalized_venue_name",
@@ -4694,6 +4639,17 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "halifax-public-libraries-3c2a1ddf234ca711",
+      "title": "D'Wolfe Pack Concert: A Musical Time Machine",
+      "sourceId": "halifax-public-libraries",
+      "venueId": "central-library-halifax",
+      "venueBasis": "exact_normalized_venue_name",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "halifax-public-libraries-3083125f3b5e8815",
       "title": "DIY Investing: Is It Right for You?",
       "sourceId": "halifax-public-libraries",
@@ -4859,6 +4815,17 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "bedford-library-events-03b4213bca840261",
+      "title": "PD Day: Giant Games",
+      "sourceId": "bedford-library-events",
+      "venueId": "bedford-library",
+      "venueBasis": "source_id",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "halifax-public-libraries-94db77fbfba95216",
       "title": "PD Day: Giant Games",
       "sourceId": "halifax-public-libraries",
@@ -4870,10 +4837,10 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-ee3b0bc85cba5518",
-      "title": "Taskmaster: Team Edition",
+      "eventId": "halifax-public-libraries-187e7ac79953a90e",
+      "title": "PD Day: Robot Fashion Show",
       "sourceId": "halifax-public-libraries",
-      "venueId": "dartmouth-north-library-temporary",
+      "venueId": "alderney-gate-library",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -4881,10 +4848,10 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-9800ce385a5106c9",
-      "title": "PD Day: Robot Fashion Show",
+      "eventId": "halifax-public-libraries-ee3b0bc85cba5518",
+      "title": "Taskmaster: Team Edition",
       "sourceId": "halifax-public-libraries",
-      "venueId": "alderney-gate-library",
+      "venueId": "dartmouth-north-library-temporary",
       "venueBasis": "exact_normalized_venue_name",
       "organizerId": "halifax-public-libraries",
       "organizerBasis": "source_name_token",
@@ -5135,7 +5102,7 @@
     },
     {
       "eventId": "bedford-library-events-6d23bf4db2c9cbf1",
-      "title": "Super Saturday",
+      "title": "Super Saturday: Giant Games",
       "sourceId": "bedford-library-events",
       "venueId": "bedford-library",
       "venueBasis": "source_id",
@@ -5586,7 +5553,7 @@
     },
     {
       "eventId": "halifax-public-libraries-ec4fb9165688432b",
-      "title": "Art Club",
+      "title": "Art Club: Knitting",
       "sourceId": "halifax-public-libraries",
       "venueId": "keshen-goodman-library",
       "venueBasis": "exact_normalized_venue_name",
@@ -5828,7 +5795,7 @@
     },
     {
       "eventId": "halifax-public-libraries-e5a352b561bac88f",
-      "title": "Craft Club",
+      "title": "Craft Club: Felt Coffee Sleeve",
       "sourceId": "halifax-public-libraries",
       "venueId": "alderney-gate-library",
       "venueBasis": "exact_normalized_venue_name",
@@ -7082,7 +7049,7 @@
     },
     {
       "eventId": "halifax-public-libraries-9c39d562c2db3b61",
-      "title": "Art Club",
+      "title": "Art Club: Styrofoam Printmaking",
       "sourceId": "halifax-public-libraries",
       "venueId": "keshen-goodman-library",
       "venueBasis": "exact_normalized_venue_name",
@@ -7280,7 +7247,7 @@
     },
     {
       "eventId": "halifax-public-libraries-f05830aae1f776ad",
-      "title": "Craft Club",
+      "title": "Craft Club: Card Making",
       "sourceId": "halifax-public-libraries",
       "venueId": "alderney-gate-library",
       "venueBasis": "exact_normalized_venue_name",
@@ -7752,7 +7719,7 @@
       "restaurantBasis": null
     },
     {
-      "eventId": "halifax-public-libraries-44e7722da72928a5",
+      "eventId": "halifax-public-libraries-513dcc2d6c2e15a6",
       "title": "Pajama Party & Stuffy Sleepover",
       "sourceId": "halifax-public-libraries",
       "venueId": "alderney-gate-library",
@@ -8303,7 +8270,7 @@
     },
     {
       "eventId": "halifax-public-libraries-1f51f0126036f0ac",
-      "title": "Art Club",
+      "title": "Art Club: Weaving",
       "sourceId": "halifax-public-libraries",
       "venueId": "keshen-goodman-library",
       "venueBasis": "exact_normalized_venue_name",
@@ -10271,6 +10238,17 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "halifax-public-libraries-f2df13abea81c8fd",
+      "title": "Repair Café",
+      "sourceId": "halifax-public-libraries",
+      "venueId": "keshen-goodman-library",
+      "venueBasis": "exact_normalized_venue_name",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "halifax-public-libraries-8530658ed41e187b",
       "title": "Kid-Stitch",
       "sourceId": "halifax-public-libraries",
@@ -11349,6 +11327,17 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "halifax-public-libraries-b39039ba52f5ded1",
+      "title": "Repair Café",
+      "sourceId": "halifax-public-libraries",
+      "venueId": "keshen-goodman-library",
+      "venueBasis": "exact_normalized_venue_name",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "halifax-public-libraries-e5c905f25a8c5436",
       "title": "Kid-Stitch",
       "sourceId": "halifax-public-libraries",
@@ -12174,6 +12163,17 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "halifax-public-libraries-7479d7351290b121",
+      "title": "Repair Café",
+      "sourceId": "halifax-public-libraries",
+      "venueId": "keshen-goodman-library",
+      "venueBasis": "exact_normalized_venue_name",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "halifax-public-libraries-3f922fb509fc899b",
       "title": "Sunday Fun-Day",
       "sourceId": "halifax-public-libraries",
@@ -12742,6 +12742,17 @@
       "venueBasis": "source_id",
       "organizerId": "scotiabank-centre",
       "organizerBasis": "source_id",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "halifax-public-libraries-178c0314d0164796",
+      "title": "Repair Café",
+      "sourceId": "halifax-public-libraries",
+      "venueId": "keshen-goodman-library",
+      "venueBasis": "exact_normalized_venue_name",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
       "restaurantId": null,
       "restaurantBasis": null
     },
@@ -13318,6 +13329,17 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "halifax-public-libraries-65d83254dec95a4c",
+      "title": "Repair Café",
+      "sourceId": "halifax-public-libraries",
+      "venueId": "keshen-goodman-library",
+      "venueBasis": "exact_normalized_venue_name",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "halifax-public-libraries-d1d024f8e73f6fb3",
       "title": "Sunday Fun-Day",
       "sourceId": "halifax-public-libraries",
@@ -13747,6 +13769,17 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "halifax-public-libraries-0a97aaf1548b1172",
+      "title": "Repair Café",
+      "sourceId": "halifax-public-libraries",
+      "venueId": "keshen-goodman-library",
+      "venueBasis": "exact_normalized_venue_name",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "halifax-public-libraries-2432563890b1eb2e",
       "title": "Sunday Fun-Day",
       "sourceId": "halifax-public-libraries",
@@ -13868,6 +13901,17 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "halifax-public-libraries-2fa5a0cd310a657d",
+      "title": "Repair Café",
+      "sourceId": "halifax-public-libraries",
+      "venueId": "keshen-goodman-library",
+      "venueBasis": "exact_normalized_venue_name",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "halifax-public-libraries-6b12da36aa3b502d",
       "title": "Crafting with Fibres",
       "sourceId": "halifax-public-libraries",
@@ -13925,6 +13969,17 @@
     {
       "eventId": "halifax-public-libraries-bf4b986f2956523c",
       "title": "Crafting with Fibres",
+      "sourceId": "halifax-public-libraries",
+      "venueId": "keshen-goodman-library",
+      "venueBasis": "exact_normalized_venue_name",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "halifax-public-libraries-dab64f51dbb8e59a",
+      "title": "Repair Café",
       "sourceId": "halifax-public-libraries",
       "venueId": "keshen-goodman-library",
       "venueBasis": "exact_normalized_venue_name",
@@ -14011,6 +14066,17 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "halifax-public-libraries-9bbe1dd6ca13509c",
+      "title": "Repair Café",
+      "sourceId": "halifax-public-libraries",
+      "venueId": "keshen-goodman-library",
+      "venueBasis": "exact_normalized_venue_name",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "halifax-public-libraries-789393cc14a59a15",
       "title": "Crafting with Fibres",
       "sourceId": "halifax-public-libraries",
@@ -14077,6 +14143,17 @@
       "restaurantBasis": null
     },
     {
+      "eventId": "halifax-public-libraries-5c130473988e4f12",
+      "title": "Repair Café",
+      "sourceId": "halifax-public-libraries",
+      "venueId": "keshen-goodman-library",
+      "venueBasis": "exact_normalized_venue_name",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
       "eventId": "halifax-public-libraries-dbae3d9f6675d830",
       "title": "Crafting with Fibres",
       "sourceId": "halifax-public-libraries",
@@ -14134,6 +14211,17 @@
     {
       "eventId": "halifax-public-libraries-e97ec92ebbb1a3a9",
       "title": "Crafting with Fibres",
+      "sourceId": "halifax-public-libraries",
+      "venueId": "keshen-goodman-library",
+      "venueBasis": "exact_normalized_venue_name",
+      "organizerId": "halifax-public-libraries",
+      "organizerBasis": "source_name_token",
+      "restaurantId": null,
+      "restaurantBasis": null
+    },
+    {
+      "eventId": "halifax-public-libraries-ba14115349ba86c7",
+      "title": "Repair Café",
       "sourceId": "halifax-public-libraries",
       "venueId": "keshen-goodman-library",
       "venueBasis": "exact_normalized_venue_name",
