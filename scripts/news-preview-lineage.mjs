@@ -19,8 +19,9 @@ function requireCurrent(plan,env) {
   for (const [key,value] of Object.entries(current)) if (plan.current?.[key] !== value) fail('plan_current_identity_mismatch');
 }
 const allowedMetadataTarget = path => typeof path === 'string' && /^\/repos\/JeremyHennessy\/HalifaxSourced(?:\/actions\/(?:runs\/[1-9][0-9]*|workflows\/[1-9][0-9]*\/runs\?per_page=100&page=1))?$/.test(path) ? path : null;
+const diagnosticErrorClasses = new Set(['http_status','wrong_mime','oversized_declared_body','oversized_body','missing_body','malformed_json','timeout','transport_unknown','metadata_validation']);
 const errorClassFor = error => {
-  if (error?.metadataDiagnostic?.errorClass) return error.metadataDiagnostic.errorClass;
+  if (diagnosticErrorClasses.has(error?.metadataDiagnostic?.errorClass)) return error.metadataDiagnostic.errorClass;
   if (error?.name === 'TimeoutError' || error?.name === 'AbortError') return 'timeout';
   if (String(error?.message || '').startsWith('news_lineage_')) return 'metadata_validation';
   return 'transport_unknown';
@@ -47,8 +48,8 @@ export async function createLineagePlan({env, paths, metadata, now = () => new D
       runIdentity:identity,
       phase:'lineage_preflight',
       target:allowedMetadataTarget(detail.target) || attemptedTarget,
-      status:Number.isSafeInteger(detail.status) ? detail.status : null,
-      mime:typeof detail.mime === 'string' && /^[a-z0-9.+-]+\/[a-z0-9.+-]+$/.test(detail.mime) ? detail.mime : null,
+      status:Number.isSafeInteger(detail.status) && detail.status >= 100 && detail.status <= 599 ? detail.status : null,
+      mime:typeof detail.mime === 'string' && detail.mime.length <= 80 && /^[a-z0-9.+-]+\/[a-z0-9.+-]+$/.test(detail.mime) ? detail.mime : null,
       declaredBodyBytes:Number.isSafeInteger(detail.declaredBodyBytes) && detail.declaredBodyBytes >= 0 ? detail.declaredBodyBytes : null,
       errorClass:errorClassFor(error),
       observedAt:(clock instanceof Date ? clock : new Date(clock)).toISOString()

@@ -113,6 +113,15 @@ for(const [label,errorClass,response] of [...preflightCases.slice(0,5),['timeout
  const dir=await mkdtemp(`${tmpdir()}/news-preflight-write-failure-`),paths=lineagePaths(pathToFileURL(`${dir}/`));
  try{await writeFile(paths.preflightFailure,'sentinel');await assert.rejects(createLineagePlan({env,paths,metadata:async()=>{throw new Error('metadata unavailable');}}));assert.equal(await readFile(paths.preflightFailure,'utf8'),'sentinel');await assert.rejects(access(paths.plan),{code:'ENOENT'});}finally{await rm(dir,{recursive:true,force:true});}
 }
+{
+ const dir=await mkdtemp(`${tmpdir()}/news-preflight-untrusted-error-`),paths=lineagePaths(pathToFileURL(`${dir}/`));
+ try{
+  const unsafe=new Error('secret details');unsafe.metadataDiagnostic={target:'/private/path?token=secret',status:999,mime:'a'.repeat(500),declaredBodyBytes:-1,errorClass:'secret-error-class'};
+  await assert.rejects(createLineagePlan({env,paths,metadata:async()=>{throw unsafe;}}));
+  const diagnostic=JSON.parse(await readFile(paths.preflightFailure,'utf8'));
+  assert.equal(diagnostic.target,`/repos/${NEWS_REPOSITORY}`);assert.equal(diagnostic.status,null);assert.equal(diagnostic.mime,null);assert.equal(diagnostic.declaredBodyBytes,null);assert.equal(diagnostic.errorClass,'transport_unknown');assert.doesNotMatch(JSON.stringify(diagnostic),/secret|private/);
+ }finally{await rm(dir,{recursive:true,force:true});}
+}
 await assert.rejects(githubMetadata('https://publisher.example/feed',{fetchImpl:()=>assert.fail('invalid path requested')}));
 
 const now='2026-10-27T12:00:00.000Z';
