@@ -20,7 +20,7 @@
     }
   ],
   "counts": {
-    "records": 179,
+    "records": 177,
     "hours": 9,
     "phone": 76,
     "email": 10,
@@ -28,7 +28,7 @@
     "features": 131,
     "menus": 143,
     "reservations": 57,
-    "ordering": 79
+    "ordering": 77
   },
   "records": [
     {
@@ -12122,76 +12122,6 @@
         }
       ],
       "ordering": []
-    },
-    {
-      "restaurantId": "vernons-thunderbird-diner-hammonds-plains",
-      "name": "Vernon’s Thunderbird Diner",
-      "sourceUrl": "https://vernonsdiner.ca/",
-      "observedAt": "2026-10-30T22:06:44.000Z",
-      "lastVerifiedAt": "2026-10-30T22:06:44.000Z",
-      "sourceKind": "official_website_structured_facts",
-      "reviewState": "verified_source",
-      "hours": null,
-      "phone": null,
-      "email": null,
-      "address": null,
-      "features": [],
-      "menus": [],
-      "reservations": [],
-      "ordering": [
-        {
-          "provider": "chownow",
-          "url": "https://order.chownow.com/order/8504/locations?add_cn_ordering_class=true",
-          "locationSpecific": true,
-          "mode": "first_party_or_direct",
-          "observedAt": "2026-10-30T22:06:44.000Z",
-          "verifiedAt": "2026-10-30T22:06:44.000Z",
-          "status": "verified_link"
-        }
-      ],
-      "reviewEvidence": {
-        "retrievedAt": "2026-10-30T22:06:44.000Z",
-        "method": "browser-crawled snapshot; no raw HTTP fetch",
-        "sourceCrawlAge": "yesterday",
-        "sourcePages": [
-          "https://vernonsdiner.ca/"
-        ]
-      }
-    },
-    {
-      "restaurantId": "palladium-cole-harbour",
-      "name": "Palladium Family Restaurant",
-      "sourceUrl": "https://palladiumfamily.ca/",
-      "observedAt": "2026-10-30T22:06:44.000Z",
-      "lastVerifiedAt": "2026-10-30T22:06:44.000Z",
-      "sourceKind": "official_website_structured_facts",
-      "reviewState": "verified_source",
-      "hours": null,
-      "phone": null,
-      "email": null,
-      "address": null,
-      "features": [],
-      "menus": [],
-      "reservations": [],
-      "ordering": [
-        {
-          "provider": "restaurant_owned",
-          "url": "https://palladium-family-restaurant.popmenu.com/",
-          "locationSpecific": true,
-          "mode": "first_party_or_direct",
-          "observedAt": "2026-10-30T22:06:44.000Z",
-          "verifiedAt": "2026-10-30T22:06:44.000Z",
-          "status": "verified_link"
-        }
-      ],
-      "reviewEvidence": {
-        "retrievedAt": "2026-10-30T22:06:44.000Z",
-        "method": "browser-crawled snapshot; no raw HTTP fetch",
-        "sourceCrawlAge": "today",
-        "sourcePages": [
-          "https://palladiumfamily.ca/"
-        ]
-      }
     },
     {
       "restaurantId": "deerfield-pub-at-glen-arbour-hammonds-plains",

@@ -70,8 +70,8 @@ for (let index = 0; index < before.restaurants.length; index++) {
   }
 }
 const counts = records => ({ ordering: records.filter(record => record.hasOrdering).length, reservations: records.filter(record => record.hasReservation).length });
-assert.deepEqual(counts(before.restaurants), { ordering: 63, reservations: 98 });
-assert.deepEqual(counts(after.restaurants), { ordering: 60, reservations: 98 });
+assert.deepEqual(counts(before.restaurants), { ordering: 61, reservations: 98 });
+assert.deepEqual(counts(after.restaurants), { ordering: 58, reservations: 98 });
 const keywordOnly = before.restaurants.filter(record => record.hasReservation && !record.reservationLinks?.length);
 assert.equal(keywordOnly.length, 42);
 for (const prior of keywordOnly) {
@@ -79,7 +79,7 @@ for (const prior of keywordOnly) {
   assert.equal(final.hasReservation, prior.hasReservation, 'Do not redefine keyword-only reservation capability');
   assert.deepEqual(final.reservationLinks, prior.reservationLinks);
 }
-assert.equal(after.context.window.__halifaxOrderingLinkedRestaurantCount, 60);
+assert.equal(after.context.window.__halifaxOrderingLinkedRestaurantCount, 58);
 assert.equal(after.context.window.__halifaxReservationLinkedRestaurantCount, 98);
 const filteredIds = JSON.parse(vm.runInContext('JSON.stringify(filteredRestaurants({feature:"ordering"}).map(record=>record.id))', after.context));
 for (const id of changed) assert(!filteredIds.includes(id), 'Array-length fallback must not restore rejected availability');
