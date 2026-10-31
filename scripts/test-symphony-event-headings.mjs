@@ -9,6 +9,7 @@ try {
   await mkdir(join(root, "scripts", "lib"), { recursive: true });
   await mkdir(join(root, "data", "build"), { recursive: true });
   await copyFile(new URL("./import-supplemental-city-events.mjs", import.meta.url), join(root, "scripts", "import-supplemental-city-events.mjs"));
+  await copyFile(new URL("./lib/library-pagination-plan.mjs", import.meta.url), join(root, "scripts/lib/library-pagination-plan.mjs"));
   await copyFile(new URL("./lib/canonical-event-dedupe.mjs", import.meta.url), join(root, "scripts/lib/canonical-event-dedupe.mjs"));
   const fixture = `
     <h3>Choose a concert by&hellip;</h3>

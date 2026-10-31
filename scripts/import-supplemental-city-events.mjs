@@ -1,6 +1,7 @@
 import { fetchGuardedSource as fetch } from "./lib/fetch-public-source.mjs";
 import { createHash } from "node:crypto";
 import { canonicalEventKey, dedupeCanonicalEvents } from "./lib/canonical-event-dedupe.mjs";
+import { descendingPageNumbers, planLibraryPagination } from "./lib/library-pagination-plan.mjs";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 
 const payloadUrl = new URL("../data/build/city-events.json", import.meta.url);
@@ -103,10 +104,6 @@ function inRange(startAt, endAt = startAt) {
   const start = Date.parse(startAt);
   const end = Date.parse(endAt);
   return Number.isFinite(start) && Number.isFinite(end) && end >= rangeStart && start <= rangeEnd;
-}
-function descendingPageNumbers(totalPages, pageLimit) {
-  const count = Math.max(1, Math.min(Number(totalPages) || 1, Number(pageLimit) || 1));
-  return Array.from({ length: count }, (_, index) => count - index);
 }
 async function fetchHtml(url) {
   const response = await fetch(url, { headers: { "User-Agent": userAgent, Accept: "text/html,application/xhtml+xml" }, redirect: "follow", signal: AbortSignal.timeout(timeoutMs) });
@@ -385,6 +382,7 @@ function libraryEventCards(html, pageUrl) {
 }
 
 const libraryParserDiagnostics = [];
+const libraryPaginationDiagnostics = [];
 
 async function importLibraries(source) {
   const allowedLocations = source.allowedLocations || {};
@@ -392,15 +390,14 @@ async function importLibraries(source) {
   const firstUrl = `${source.url}${source.url.includes("?") ? "&" : "?"}page=1`;
   const firstPage = await fetchHtml(firstUrl);
   const firstPlain = clean(firstPage.text);
-  const totalMatch = firstPlain.match(/\b\d+\s+to\s+\d+\s+of\s+([\d,]+)\s+items\b/i);
-  const expectedPages = totalMatch
-    ? Math.ceil(Number(totalMatch[1].replace(/,/g, "")) / 20)
-    : 1;
+  const paginationPlan = planLibraryPagination(firstPlain, libraryPageLimit);
+  const { pageNumbers, ...paginationSummary } = paginationPlan;
+  libraryPaginationDiagnostics.push({ sourceId: source.id, ...paginationSummary });
   // BiblioCommons removes ended events from the front of the live result set.
   // Walking upward then skips records as every later offset shifts left. Start
   // at the last page and walk backward so those shifts only create duplicates,
   // which the established event dedupe removes.
-  for (const pageNumber of descendingPageNumbers(expectedPages, libraryPageLimit)) {
+  for (const pageNumber of pageNumbers) {
     const url = `${source.url}${source.url.includes("?") ? "&" : "?"}page=${pageNumber}`;
     const page = pageNumber === 1 ? firstPage : await fetchHtml(url);
     const parsed = libraryEventCards(page.text, page.resolvedUrl);
@@ -501,7 +498,7 @@ const output = {
   events
 };
 await mkdir(new URL("../artifacts/", import.meta.url), { recursive: true });
-await writeFile(new URL("../artifacts/library-event-parser-report.json", import.meta.url), JSON.stringify({ version: 1, pages: libraryParserDiagnostics }, null, 2));
+await writeFile(new URL("../artifacts/library-event-parser-report.json", import.meta.url), JSON.stringify({ version: 1, pagination: libraryPaginationDiagnostics, pages: libraryParserDiagnostics }, null, 2));
 await writeFile(payloadUrl, JSON.stringify(output, null, 2));
 await writeFile(jsUrl, `window.HALIFAX_CITY_EVENTS = ${JSON.stringify(output, null, 2)};\n`);
 console.log(`Supplemental city events: collected=${supplemental.length}, merged-total=${events.length}, failures=${failures.length}.`);
