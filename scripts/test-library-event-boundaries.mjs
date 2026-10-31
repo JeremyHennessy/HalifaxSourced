@@ -1,6 +1,60 @@
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import vm from 'node:vm';
+import { planLibraryPagination } from './lib/library-pagination-plan.mjs';
+
+const absentPagination = planLibraryPagination('No result count in this listing.', 150);
+assert.equal(absentPagination.parsedExpectedPageCount, null);
+assert.equal(absentPagination.parseQuality, 'missing');
+assert.equal(absentPagination.parseReason, 'reported_total_count_missing');
+assert.equal(absentPagination.fallbackToOneReason, 'reported_total_count_missing');
+assert.equal(absentPagination.enumeratedPageCount, 1);
+assert.equal(absentPagination.pageCapTruncated, false);
+assert.deepEqual(absentPagination.pageNumbers, [1]);
+
+const malformedPagination = planLibraryPagination('1 to 20 of many items', 150);
+assert.equal(malformedPagination.parsedExpectedPageCount, null);
+assert.equal(malformedPagination.parseQuality, 'malformed');
+assert.equal(malformedPagination.parseReason, 'reported_total_count_malformed');
+assert.equal(malformedPagination.fallbackToOneReason, 'reported_total_count_malformed');
+assert.deepEqual(malformedPagination.pageNumbers, [1]);
+
+const malformedGrouping = planLibraryPagination('1 to 20 of 1,,000 items', 150);
+assert.equal(malformedGrouping.parsedExpectedPageCount, 50, 'Legacy numeric selection is retained for malformed grouping');
+assert.equal(malformedGrouping.parseQuality, 'malformed');
+assert.equal(malformedGrouping.parseReason, 'invalid_thousands_grouping');
+assert.equal(malformedGrouping.fallbackToOneReason, null);
+assert.equal(malformedGrouping.enumeratedPageCount, 50);
+assert.deepEqual(malformedGrouping.pageNumbers.slice(0, 2), [50, 49]);
+assert.equal(malformedGrouping.pageNumbers.at(-1), 1);
+
+const commaOnly = planLibraryPagination('1 to 20 of , items', 150);
+assert.equal(commaOnly.parsedExpectedPageCount, 0);
+assert.equal(commaOnly.parseQuality, 'malformed');
+assert.equal(commaOnly.parseReason, 'invalid_thousands_grouping');
+assert.equal(commaOnly.fallbackToOneReason, 'non_positive_expected_page_count');
+assert.deepEqual(commaOnly.pageNumbers, [1], 'Legacy zero-count selection still falls back to page 1');
+
+const cappedPagination = planLibraryPagination('1 to 20 of 3,200 items', 150);
+assert.equal(cappedPagination.parsedExpectedPageCount, 160);
+assert.equal(cappedPagination.fallbackToOneReason, null);
+assert.equal(cappedPagination.enumeratedPageCount, 150);
+assert.equal(cappedPagination.pageCapTruncated, true);
+assert.deepEqual(cappedPagination.pageNumbers.slice(0, 2), [150, 149]);
+assert.equal(cappedPagination.pageNumbers.at(-1), 1);
+
+const overflowPagination = planLibraryPagination(`1 to 20 of ${'9'.repeat(400)} items`, 150);
+assert.equal(overflowPagination.parsedExpectedPageCount, null);
+assert.equal(overflowPagination.parseQuality, 'overflow');
+assert.equal(overflowPagination.parseReason, 'reported_total_count_out_of_safe_range');
+assert.equal(overflowPagination.fallbackToOneReason, null);
+assert.equal(overflowPagination.enumeratedPageCount, 150);
+assert.equal(overflowPagination.pageCapTruncated, true);
+assert.deepEqual(overflowPagination.pageNumbers.slice(0, 2), [150, 149]);
+assert.equal(overflowPagination.pageNumbers.at(-1), 1);
+const overflowDiagnostic = JSON.parse(JSON.stringify(overflowPagination));
+assert.equal(overflowDiagnostic.parsedExpectedPageCount, null, 'Overflow is represented as JSON null, never Infinity');
+assert.equal(overflowDiagnostic.enumeratedPageCount, 150);
 
 // Load the production pure parser, without running collection or touching data.
 const source = await readFile(new URL('./import-supplemental-city-events.mjs', import.meta.url), 'utf8');
@@ -53,6 +107,7 @@ try {
   await mkdir(join(root, 'scripts/lib'), { recursive: true });
   await mkdir(join(root, 'data/build'), { recursive: true });
   await copyFile(new URL('./import-supplemental-city-events.mjs', import.meta.url), join(root, 'scripts/import-supplemental-city-events.mjs'));
+  await copyFile(new URL('./lib/library-pagination-plan.mjs', import.meta.url), join(root, 'scripts/lib/library-pagination-plan.mjs'));
   await copyFile(new URL('./lib/canonical-event-dedupe.mjs', import.meta.url), join(root, 'scripts/lib/canonical-event-dedupe.mjs'));
   const fixture = '<p>1 to 20 of 40 items</p>' + navigation
     + card(heading(`/events/${second}`, 'Missing date') + '<div>Central Library</div>')
@@ -67,7 +122,7 @@ try {
     }`);
   await writeFile(join(root, 'data/event-source-supplements.json'), JSON.stringify({sources: [{ id: 'library', name: 'Library', mode: 'bibliocommons_events', url: page.split('?')[0], allowedLocations: { 'Central Library': 'Halifax' } }]}));
   await writeFile(join(root, 'data/build/city-events.json'), JSON.stringify({events: [], range: { start: '2026-10-01', end: '2026-11-01' }}));
-  const run = spawnSync(process.execPath, [join(root, 'scripts/import-supplemental-city-events.mjs')], { encoding: 'utf8', env: { ...process.env, LIBRARY_EVENT_DELAY_MS: '0' } });
+  const run = spawnSync(process.execPath, [join(root, 'scripts/import-supplemental-city-events.mjs')], { encoding: 'utf8', env: { ...process.env, LIBRARY_EVENT_DELAY_MS: '0', LIBRARY_EVENT_PAGE_LIMIT: '150' } });
   assert.equal(run.status, 0, run.stderr);
   const output = JSON.parse(await readFile(join(root, 'data/build/city-events.json'), 'utf8'));
   assert.equal(output.events.length, 1, 'Repeated pages dedupe, missing fields and navigation do not become events');
@@ -76,7 +131,13 @@ try {
   assert.equal(output.events[0].endAt, '2026-10-25T18:30:00.000Z');
   const diagnostic = await readFile(join(root, 'artifacts/library-event-parser-report.json'), 'utf8');
   assert(!diagnostic.includes('<') && !diagnostic.includes('Real event'), 'Diagnostics must not retain scraped content');
-  for (const summary of JSON.parse(diagnostic).pages) {
+  const diagnosticReport = JSON.parse(diagnostic);
+  assert.deepEqual(diagnosticReport.pagination, [{
+    sourceId: 'library', parsedExpectedPageCount: 2, fallbackToOneReason: null,
+    parseQuality: 'valid', parseReason: null, pageLimit: 150,
+    enumeratedPageCount: 2, pageCapTruncated: false
+  }]);
+  for (const summary of diagnosticReport.pages) {
     assert.equal(summary.nonDetailLinks, 1);
     assert.equal(summary.missingOccurrence, 1);
     assert.equal(summary.missingLocation, 1);
