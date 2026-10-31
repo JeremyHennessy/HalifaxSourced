@@ -196,7 +196,7 @@ const importRoot = await mkdtemp(join(tmpdir(), 'halifax-supplemental-occurrence
 try {
   await mkdir(join(importRoot, 'scripts/lib'), { recursive: true });
   await mkdir(join(importRoot, 'data/build'), { recursive: true });
-  for (const file of ['scripts/import-supplemental-city-events.mjs', 'scripts/lib/canonical-event-dedupe.mjs']) {
+  for (const file of ['scripts/import-supplemental-city-events.mjs', 'scripts/lib/canonical-event-dedupe.mjs', 'scripts/lib/library-pagination-plan.mjs']) {
     await copyFile(new URL('../' + file, import.meta.url), join(importRoot, file));
   }
   const html = '<p>1 to 20 of 40 items</p>' + [
