@@ -49,6 +49,10 @@ function renderRestaurantDetail(id) {
   const website = active ? safeUrl(restaurant.website) : null;
   const menuLink = safeUrl(restaurant.menuLinks?.[0]?.url);
   const reservation = safeUrl(HalifaxDataIntegrity.primaryActionUrl(restaurant.id, 'reservations', restaurant.reservationLinks));
+  const reservationLink = reservation ? (restaurant.reservationLinks || []).find(link => safeUrl(link?.url) === reservation) : null;
+  const reservationInquiry = reservationLink?.label === "Reservation inquiry";
+  const reservationActionLabel = reservationInquiry ? "Reservation inquiry" : "Book table";
+  const reservationSidebarLabel = reservationInquiry ? "Reservation inquiry" : "Reservations";
   const ordering = safeUrl(HalifaxDataIntegrity.primaryActionUrl(restaurant.id, 'ordering', restaurant.orderingLinks));
   const sourceLinks = uniqueSourceLinks(restaurant);
   const socialProfiles = (restaurant.socialProfiles || []).filter((profile) => safeUrl(profile.url));
@@ -82,7 +86,7 @@ function renderRestaurantDetail(id) {
           </div>
           ${active ? `<div class="mobile-essential-actions">
             ${menuLink ? `<a class="button primary" href="${escapeHtml(menuLink)}" target="_blank" rel="noreferrer">View menu ↗</a>` : ordering ? `<a class="button primary" href="${escapeHtml(ordering)}" target="_blank" rel="noreferrer">Order online ↗</a>` : ""}
-            ${reservation ? `<a class="button teal" href="${escapeHtml(reservation)}" target="_blank" rel="noreferrer">Book table ↗</a>` : website ? `<a class="button teal" href="${escapeHtml(website)}" target="_blank" rel="noreferrer">Official site ↗</a>` : ""}
+            ${reservation ? `<a class="button teal" href="${escapeHtml(reservation)}" target="_blank" rel="noreferrer">${escapeHtml(reservationActionLabel)} ↗</a>` : website ? `<a class="button teal" href="${escapeHtml(website)}" target="_blank" rel="noreferrer">Official site ↗</a>` : ""}
             <button class="button secondary save-detail" type="button" data-save-id="${escapeHtml(restaurant.id)}">${state.saved.has(restaurant.id) ? "♥ Saved" : "♡ Save"}</button>
           </div>` : ""}
         </section>
@@ -99,7 +103,7 @@ function renderRestaurantDetail(id) {
         ${active && restaurant.phone ? infoCard("Phone", restaurant.phone, "☎") : ""}
         ${active && restaurant.email ? infoCard("Email" + (restaurant.contactScope === "shared_brand" ? " (shared business contact)" : ""), restaurant.email, "@") : ""}
         ${active && safeUrl(restaurant.contactUrl) ? `<div class="sidebar-card"><a class="sidebar-link" href="${escapeHtml(safeUrl(restaurant.contactUrl))}" target="_blank" rel="noreferrer">Official contact page ↗</a></div>` : ""}
-        ${website || menuLink || reservation || ordering ? `<div class="sidebar-card detail-official-actions"><h2>Official actions</h2>${website ? `<a class="sidebar-link" href="${escapeHtml(website)}" target="_blank" rel="noreferrer">Website ↗</a>` : ""}${menuLink ? `<a class="sidebar-link" href="${escapeHtml(menuLink)}" target="_blank" rel="noreferrer">Menu ↗</a>` : ""}${reservation ? `<a class="sidebar-link" href="${escapeHtml(reservation)}" target="_blank" rel="noreferrer">Reservations ↗</a>` : ""}${ordering ? `<a class="sidebar-link" href="${escapeHtml(ordering)}" target="_blank" rel="noreferrer">Order online ↗</a>` : ""}</div>` : ""}
+        ${website || menuLink || reservation || ordering ? `<div class="sidebar-card detail-official-actions"><h2>Official actions</h2>${website ? `<a class="sidebar-link" href="${escapeHtml(website)}" target="_blank" rel="noreferrer">Website ↗</a>` : ""}${menuLink ? `<a class="sidebar-link" href="${escapeHtml(menuLink)}" target="_blank" rel="noreferrer">Menu ↗</a>` : ""}${reservation ? `<a class="sidebar-link" href="${escapeHtml(reservation)}" target="_blank" rel="noreferrer">${escapeHtml(reservationSidebarLabel)} ↗</a>` : ""}${ordering ? `<a class="sidebar-link" href="${escapeHtml(ordering)}" target="_blank" rel="noreferrer">Order online ↗</a>` : ""}</div>` : ""}
         ${socialProfiles.length ? `<div class="sidebar-card detail-follow-card"><h2>Follow</h2>${socialProfiles.slice(0, 8).map((profile) => `<a class="sidebar-link" href="${escapeHtml(safeUrl(profile.url))}" target="_blank" rel="noreferrer">${escapeHtml(socialPlatformLabel(profile.platform))}${profile.handle ? ` · @${escapeHtml(String(profile.handle).replace(/^@/, ""))}` : ""} ↗</a>`).join("")}</div>` : ""}
         ${linkHubs.length ? `<div class="sidebar-card"><h2>Official link hub</h2>${linkHubs.slice(0, 3).map((hub) => `<a class="sidebar-link" href="${escapeHtml(safeUrl(hub.url))}" target="_blank" rel="noreferrer">${escapeHtml(linkHubLabel(hub.platform))} ↗</a>`).join("")}</div>` : ""}
         ${restaurant.coordinates ? `<div class="sidebar-card"><h2>Map</h2><div id="detailMap" class="detail-map"></div><a class="sidebar-link" href="https://www.openstreetmap.org/?mlat=${restaurant.coordinates.lat}&mlon=${restaurant.coordinates.lon}#map=17/${restaurant.coordinates.lat}/${restaurant.coordinates.lon}" target="_blank" rel="noreferrer">Open map ↗</a></div>` : ""}

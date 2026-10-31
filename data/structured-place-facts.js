@@ -1,6 +1,6 @@
 window.HALIFAX_STRUCTURED_PLACE_FACTS = {
   "version": 1,
-  "generatedAt": "2026-09-04T13:24:35.360Z",
+  "generatedAt": "2026-10-30T22:06:44.000Z",
   "checkedPlaces": 230,
   "failures": [
     {
@@ -20,14 +20,14 @@ window.HALIFAX_STRUCTURED_PLACE_FACTS = {
     }
   ],
   "counts": {
-    "records": 176,
+    "records": 177,
     "hours": 9,
     "phone": 76,
     "email": 10,
     "address": 28,
     "features": 131,
     "menus": 143,
-    "reservations": 56,
+    "reservations": 57,
     "ordering": 77
   },
   "records": [
@@ -12122,6 +12122,42 @@ window.HALIFAX_STRUCTURED_PLACE_FACTS = {
         }
       ],
       "ordering": []
+    },
+    {
+      "restaurantId": "deerfield-pub-at-glen-arbour-hammonds-plains",
+      "name": "Deerfield Pub at Glen Arbour",
+      "sourceUrl": "https://www.deerfieldpub.ca/",
+      "observedAt": "2026-10-30T22:06:44.000Z",
+      "lastVerifiedAt": "2026-10-30T22:06:44.000Z",
+      "sourceKind": "official_website_structured_facts",
+      "reviewState": "verified_source",
+      "hours": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "features": [],
+      "menus": [],
+      "reservations": [
+        {
+          "provider": "restaurant_owned",
+          "url": "https://www.deerfieldpub.ca/contact/",
+          "locationSpecific": true,
+          "observedAt": "2026-10-30T22:06:44.000Z",
+          "verifiedAt": "2026-10-30T22:06:44.000Z",
+          "status": "verified_link",
+          "label": "Reservation inquiry"
+        }
+      ],
+      "ordering": [],
+      "reviewEvidence": {
+        "retrievedAt": "2026-10-30T22:06:44.000Z",
+        "method": "browser-crawled snapshot; no raw HTTP fetch",
+        "sourceCrawlAge": "today for owner home page; 3 weeks ago for contact page",
+        "sourcePages": [
+          "https://www.deerfieldpub.ca/",
+          "https://www.deerfieldpub.ca/contact/"
+        ]
+      }
     }
   ],
   "sourceHistory": [

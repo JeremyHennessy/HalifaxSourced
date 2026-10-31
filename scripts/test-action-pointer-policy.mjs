@@ -70,8 +70,8 @@ for (let index = 0; index < before.restaurants.length; index++) {
   }
 }
 const counts = records => ({ ordering: records.filter(record => record.hasOrdering).length, reservations: records.filter(record => record.hasReservation).length });
-assert.deepEqual(counts(before.restaurants), { ordering: 61, reservations: 97 });
-assert.deepEqual(counts(after.restaurants), { ordering: 58, reservations: 97 });
+assert.deepEqual(counts(before.restaurants), { ordering: 61, reservations: 98 });
+assert.deepEqual(counts(after.restaurants), { ordering: 58, reservations: 98 });
 const keywordOnly = before.restaurants.filter(record => record.hasReservation && !record.reservationLinks?.length);
 assert.equal(keywordOnly.length, 42);
 for (const prior of keywordOnly) {
@@ -80,7 +80,7 @@ for (const prior of keywordOnly) {
   assert.deepEqual(final.reservationLinks, prior.reservationLinks);
 }
 assert.equal(after.context.window.__halifaxOrderingLinkedRestaurantCount, 58);
-assert.equal(after.context.window.__halifaxReservationLinkedRestaurantCount, 97);
+assert.equal(after.context.window.__halifaxReservationLinkedRestaurantCount, 98);
 const filteredIds = JSON.parse(vm.runInContext('JSON.stringify(filteredRestaurants({feature:"ordering"}).map(record=>record.id))', after.context));
 for (const id of changed) assert(!filteredIds.includes(id), 'Array-length fallback must not restore rejected availability');
 
@@ -134,6 +134,36 @@ vm.runInContext(`
   bindRestaurantDetailTabs=()=>{}; bindCommonActions=()=>{};
   requestAnimationFrame=()=>{};
 `, after.context);
+const reservationFactLabels = JSON.parse(vm.runInContext(`JSON.stringify([
+  reservationFactLabel({label:'Reservation inquiry',status:'verified_link',locationSpecific:true,provider:'restaurant_owned'}),
+  reservationFactLabel({label:'<img src=x onerror=alert(1)>',status:'verified_link',locationSpecific:true,provider:'restaurant_owned'}),
+  reservationFactLabel({label:'Instant booking',status:'verified_link',locationSpecific:true,provider:'restaurant_owned'}),
+  reservationFactLabel({provider:'tock'})
+])`, after.context));
+assert.deepEqual(reservationFactLabels, [
+  'Reservation inquiry', 'Book with restaurant owned', 'Book with restaurant owned', 'Book with tock'
+], 'Only the exact reviewed reservation-inquiry label is preserved; other labels use the provider fallback');
+const deerfield = after.restaurants.find(record => record.id === 'deerfield-pub-at-glen-arbour-hammonds-plains');
+assert(deerfield, 'Deerfield is present in the canonical restaurant projection');
+const deerfieldReservation = HalifaxDataIntegrity.primaryActionUrl(deerfield.id, 'reservations', deerfield.reservationLinks);
+assert.equal(deerfield.reservationLinks.find(link => link.url === deerfieldReservation)?.label, 'Reservation inquiry');
+vm.runInContext(`renderRestaurantDetail(${JSON.stringify(deerfield.id)})`, after.context);
+const deerfieldHtml = vm.runInContext('appView.innerHTML', after.context);
+assert.equal((deerfieldHtml.match(/Reservation inquiry ↗/g) || []).length, 2, 'Mobile and sidebar actions both identify the contact form as a reservation inquiry');
+assert(deerfieldHtml.includes(`href="${deerfieldReservation}"`));
+assert(!/>(?:Book table|Book now|Instant booking|Live booking|Reservations) ↗<\/a>/i.test(deerfieldHtml), 'Do not present the inquiry form as an instant booking action');
+const reviewedReservationLabel = deerfield.reservationLinks.find(link => link.url === deerfieldReservation).label;
+vm.runInContext(`restaurants.find(record=>record.id===${JSON.stringify(deerfield.id)}).reservationLinks.find(link=>link.url===${JSON.stringify(deerfieldReservation)}).label = '<img src=x onerror=alert(1)>'`, after.context);
+vm.runInContext(`renderRestaurantDetail(${JSON.stringify(deerfield.id)})`, after.context);
+const injectedLabelHtml = vm.runInContext('appView.innerHTML', after.context);
+assert(!injectedLabelHtml.includes('<img src=x'), 'Arbitrary reservation labels are never rendered as markup');
+assert(injectedLabelHtml.includes('>Book table ↗</a>') && injectedLabelHtml.includes('>Reservations ↗</a>'), 'Unrecognized labels retain the existing generic action wording');
+vm.runInContext(`restaurants.find(record=>record.id===${JSON.stringify(deerfield.id)}).reservationLinks.find(link=>link.url===${JSON.stringify(deerfieldReservation)}).label = ${JSON.stringify(reviewedReservationLabel)}`, after.context);
+const genericReservation = after.restaurants.find(record => record.id !== deerfield.id && HalifaxDataIntegrity.primaryActionUrl(record.id, 'reservations', record.reservationLinks));
+assert(genericReservation, 'Existing generic reservation example remains available');
+vm.runInContext(`renderRestaurantDetail(${JSON.stringify(genericReservation.id)})`, after.context);
+const genericReservationHtml = vm.runInContext('appView.innerHTML', after.context);
+assert(genericReservationHtml.includes('Book table ↗') && genericReservationHtml.includes('Reservations ↗'), 'Generic reservations retain their existing mobile and sidebar labels');
 for (const id of changed) {
   vm.runInContext(`renderRestaurantDetail(${JSON.stringify(id)})`, after.context);
   const rendered = vm.runInContext('appView.innerHTML', after.context);

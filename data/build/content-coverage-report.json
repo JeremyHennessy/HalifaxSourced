@@ -1,15 +1,15 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-06T04:15:34.993Z",
+  "generatedAt": "2026-10-30T22:17:27.720Z",
   "sourceCommitSha": null,
   "baselineCommitHint": null,
   "definitions": {
     "canonicalPlaces": "Current user-facing merge of catalog restaurants plus reviewed discovery records, matching the app's existing name-based discovery merge behavior.",
     "verifiedOfficialWebsite": "Official-site fetch returned a successful HTTP status or the first-party discovery layer successfully fetched the restaurant-owned site.",
-    "menuLink": "Verified menu source, first-party menu action, or official-site menu candidate link. Verified menu is reported separately.",
+    "menuLink": "Verified menu source, active canonical menu source pointer, reviewed location menu, first-party menu action, or official-site menu candidate link. Verified menu is reported separately.",
     "specials": "Curated special, verified specials page, first-party specials-related action, or official-site specials signal. Exact terms are not assumed current unless separately structured.",
     "socialCoverage": "Count of canonical places associated with at least one supported profile; link hubs are reported separately from social networks.",
-    "staleRestaurant": "Latest available restaurant freshness/official-site/first-party observation is more than 90 days old. Unknown dates are reported separately.",
+    "staleRestaurant": "Latest dated restaurant-specific source observation, excluding import/rebuild/freshnessDate timestamps, is more than 90 days old. Unknown dates are reported separately.",
     "eventVenueMatch": "Conservative exact normalized venue-name match to a canonical place; no canonical venue entity exists yet.",
     "duplicateEventCount": "Additional current event records sharing normalized title, local date, and normalized venue/address key.",
     "canonicalRestaurantsWithStructuredUpcomingEvents": "Distinct canonical restaurant IDs that have one or more upcoming structured event records. This is a place count.",
@@ -17,36 +17,36 @@
     "lifecycleStatus": "Reviewed restaurant operating state. Inactive records remain addressable as archived details but are excluded from active discovery, menus, specials and maps."
   },
   "restaurantCoverage": {
-    "totalCanonicalPlaces": 564,
-    "activeCanonicalPlaces": 563,
+    "totalCanonicalPlaces": 656,
+    "activeCanonicalPlaces": 639,
     "archivedLifecyclePlaces": 1,
     "curatedRestaurants": 10,
     "osmRestaurants": 736,
-    "locallyDiscoveredRestaurants": 12,
-    "catalogMergedRestaurants": 554,
-    "withOfficialWebsite": 237,
-    "withVerifiedOfficialWebsite": 241,
-    "withInspectionMatch": 326,
-    "withMenuLink": 167,
-    "withVerifiedMenuLink": 147,
-    "withSpecials": 103,
-    "withVerifiedSpecials": 43,
-    "withReservationLink": 64,
-    "withOnlineOrderingLink": 80,
-    "withEventEvidence": 48,
+    "locallyDiscoveredRestaurants": 75,
+    "catalogMergedRestaurants": 656,
+    "withOfficialWebsite": 338,
+    "withVerifiedOfficialWebsite": 181,
+    "withInspectionMatch": 282,
+    "withMenuLink": 196,
+    "withVerifiedMenuLink": 121,
+    "withSpecials": 87,
+    "withVerifiedSpecials": 27,
+    "withReservationLink": 57,
+    "withOnlineOrderingLink": 61,
+    "withEventEvidence": 44,
     "withStructuredUpcomingEvents": 1,
-    "withAtLeastOneSocialProfile": 161,
-    "withAnySocialOrLinkHub": 161,
+    "withAtLeastOneSocialProfile": 146,
+    "withAnySocialOrLinkHub": 146,
     "socialByPlatform": {
-      "instagram": 149,
-      "facebook": 142,
-      "tiktok": 18,
+      "instagram": 135,
+      "facebook": 118,
+      "tiktok": 11,
       "threads": 0,
-      "x": 65,
-      "youtube": 13,
-      "linkedin": 8,
+      "x": 49,
+      "youtube": 4,
+      "linkedin": 3,
       "bluesky": 2,
-      "pinterest": 3,
+      "pinterest": 1,
       "snapchat": 0,
       "linktree": 0,
       "beacons": 0,
@@ -55,34 +55,38 @@
       "bento": 0
     },
     "withLinkHub": 0,
-    "withPhone": 206,
-    "withStructuredOrSourceHours": 195,
-    "withCoordinates": 553,
-    "withNeighbourhood": 564,
-    "withCuisineClassification": 564,
-    "withAccessibilityInformation": 168,
+    "withPhone": 301,
+    "withStructuredOrSourceHours": 249,
+    "withCoordinates": 574,
+    "withNeighbourhood": 656,
+    "withCuisineClassification": 624,
+    "withAccessibilityInformation": 167,
     "withPatioInformation": 72,
-    "withUsableMedia": 7,
+    "withUsableMedia": 10,
+    "approvedLicensedMediaRecords": 11,
     "retainedMediaSourceReferences": 99,
     "lifecycle": {
-      "active": 11,
+      "active": 96,
+      "seasonally_closed": 4,
       "temporarily_closed": 0,
-      "permanently_closed": 1,
-      "moved": 0,
+      "permanently_closed": 8,
+      "moved": 2,
+      "replaced": 3,
       "coming_soon": 0,
-      "unknown": 552
+      "unknown": 504,
+      "listed_current": 39
     },
     "freshness": {
-      "lt7Days": 1,
-      "days7To30": 0,
-      "days30To90": 563,
+      "lt7Days": 44,
+      "days7To30": 95,
+      "days30To90": 175,
       "gt90Days": 0,
-      "unknown": 0
+      "unknown": 342
     },
     "staleRestaurantRecords": 0,
     "publicSpecialSourceLayer": {
       "generatedAt": "2026-09-04T13:32:30.604Z",
-      "sourceFailures": 0,
+      "sourceFailures": 2,
       "total": 143,
       "resolved": 92,
       "unresolved": 48,
@@ -104,44 +108,44 @@
       "withSourceImage": 75
     },
     "currentResolutionRisks": {
-      "discoveryNameOnlyMerges": 2
+      "discoveryNameOnlyMerges": 0
     }
   },
   "restaurantCoveragePercent": {
-    "officialWebsite": 42,
-    "verifiedOfficialWebsite": 42.7,
-    "inspection": 57.8,
-    "menu": 29.6,
-    "verifiedMenu": 26.1,
-    "specials": 18.3,
-    "verifiedSpecials": 7.6,
-    "reservations": 11.3,
-    "ordering": 14.2,
-    "events": 8.5,
+    "officialWebsite": 51.5,
+    "verifiedOfficialWebsite": 27.6,
+    "inspection": 43,
+    "menu": 29.9,
+    "verifiedMenu": 18.4,
+    "specials": 13.3,
+    "verifiedSpecials": 4.1,
+    "reservations": 8.7,
+    "ordering": 9.3,
+    "events": 6.7,
     "structuredUpcomingEvents": 0.2,
-    "social": 28.5,
-    "phone": 36.5,
-    "hours": 34.6,
-    "coordinates": 98,
+    "social": 22.3,
+    "phone": 45.9,
+    "hours": 38,
+    "coordinates": 87.5,
     "neighbourhood": 100,
-    "cuisine": 100,
-    "accessibility": 29.8,
-    "patio": 12.8,
-    "media": 1.2
+    "cuisine": 95.1,
+    "accessibility": 25.5,
+    "patio": 11,
+    "media": 1.5
   },
   "socialAudit": {
-    "placesWithSocial": 161,
+    "placesWithSocial": 146,
     "placesWithLinkHub": 0,
     "platformPlaceCounts": {
-      "instagram": 149,
-      "facebook": 142,
-      "tiktok": 18,
+      "instagram": 135,
+      "facebook": 118,
+      "tiktok": 11,
       "threads": 0,
-      "x": 65,
-      "youtube": 13,
-      "linkedin": 8,
+      "x": 49,
+      "youtube": 4,
+      "linkedin": 3,
       "bluesky": 2,
-      "pinterest": 3,
+      "pinterest": 1,
       "snapchat": 0,
       "linktree": 0,
       "beacons": 0,
@@ -149,13 +153,13 @@
       "campsite": 0,
       "bento": 0
     },
-    "profileAssociations": 421,
-    "sharedProfileKeys": 41,
-    "sharedBrandOnlyPlaces": 32,
+    "profileAssociations": 339,
+    "sharedProfileKeys": 25,
+    "sharedBrandOnlyPlaces": 20,
     "candidatePlacesAwaitingVerification": 0,
     "staleSocialVerificationPlaces": 0,
-    "noWebsitePlaces": 327,
-    "websiteButNoSocialPlaces": 102,
+    "noWebsitePlaces": 318,
+    "websiteButNoSocialPlaces": 198,
     "priorityGapQueue": {
       "websiteButNoSocial": [
         {
@@ -172,6 +176,11 @@
           "id": "osm-node-2702737179-9-nine",
           "name": "9 + Nine",
           "website": "https://9plus9.ca/"
+        },
+        {
+          "id": "osm-node-6152777540-annie-s-place-cafe-and-catering",
+          "name": "Annie's Place Café & Catering",
+          "website": "http://anniesplacecafe.ca/"
         },
         {
           "id": "osm-node-9652937830-arirang-korean-and-japanese",
@@ -204,6 +213,11 @@
           "website": "https://budapestbisztro.ca/"
         },
         {
+          "id": "osm-node-6031036960-buta-ramen",
+          "name": "Buta Ramen — Halifax",
+          "website": "https://butaramen.ca/"
+        },
+        {
           "id": "osm-node-3791528457-cabin-coffee",
           "name": "Cabin Coffee",
           "website": "https://cabincoffeehalifax.com/"
@@ -216,7 +230,7 @@
         {
           "id": "osm-node-4421124794-cafe-marco-polo",
           "name": "Cafe Marco Polo",
-          "website": "https://justuscoffee.com/locations/kings-wharf-dartmouth"
+          "website": "https://cafemarcopolodartmouth.com/"
         },
         {
           "id": "osm-node-30825944-canton-garden",
@@ -232,6 +246,11 @@
           "id": "osm-node-2721708515-cha-baa-thai",
           "name": "Cha Baa Thai",
           "website": "https://www.chabaathairestaurant.ca/"
+        },
+        {
+          "id": "osm-node-5134046822-chain-yard-urban-cidery",
+          "name": "Chain Yard Urban Cidery",
+          "website": "https://www.chainyardcider.com/"
         },
         {
           "id": "osm-way-319792807-chinatown",
@@ -254,6 +273,11 @@
           "website": "https://claywesthalifax.business.site/"
         },
         {
+          "id": "osm-node-13958623779-coffee-street",
+          "name": "Coffee Street",
+          "website": "https://www.coffeestreet.ca/"
+        },
+        {
           "id": "osm-node-11752773940-colleen-s-pub",
           "name": "Colleen's Pub",
           "website": "https://www.facebook.com/oldwrinkleranch/"
@@ -272,6 +296,11 @@
           "id": "osm-node-2721708504-curry-village",
           "name": "Curry Village",
           "website": "https://www.curryvillage.ca/"
+        },
+        {
+          "id": "osm-node-1689418194-da-zero-ristorante",
+          "name": "Da Zero Ristorante",
+          "website": "https://dazeroristorante.ca/"
         },
         {
           "id": "osm-node-5863968654-dharma-sushi",
@@ -304,9 +333,19 @@
           "website": "https://m.facebook.com/FattoushMediterraneanGrill/"
         },
         {
+          "id": "osm-node-13262827285-first-sight-coffee-and-bar",
+          "name": "First Sight Coffee & Bar",
+          "website": "https://firstsighthalifax.ca/"
+        },
+        {
           "id": "osm-node-3789811257-flynn-s-dairy-bar",
           "name": "Flynn's Dairy Bar",
           "website": "https://www.facebook.com/flynns711/"
+        },
+        {
+          "id": "osm-node-13235716922-foody-jojo-waffle-and-sandwich",
+          "name": "Foody JoJo Waffle & Sandwich",
+          "website": "https://www.foodyjojo.ca/"
         },
         {
           "id": "osm-node-11282329952-freeman-s-little-new-york",
@@ -334,11 +373,6 @@
           "website": "https://www.gingerbreadhausbakery.com/"
         },
         {
-          "id": "osm-node-4416774495-glitter-bean-cafe",
-          "name": "Glitter Bean Cafe",
-          "website": "https://www.glitterbeancafe.com/contact"
-        },
-        {
           "id": "osm-node-3792869657-great-wall-restaurant",
           "name": "Great Wall Restaurant",
           "website": "http://www.thegreatwall.ca/"
@@ -354,11 +388,6 @@
           "website": "http://www.heppys.com"
         },
         {
-          "id": "osm-node-4421959790-humani-t",
-          "name": "Humani-T",
-          "website": "https://humanitea.com/"
-        },
-        {
           "id": "osm-node-12410003853-jacky-s-cafe",
           "name": "Jacky's Cafe",
           "website": "https://jackyscafehalifax.com/"
@@ -366,7 +395,7 @@
         {
           "id": "osm-node-2624400763-java-blend",
           "name": "Java Blend",
-          "website": "https://javablendcoffee.com/contact"
+          "website": "https://javablendcoffee.com/pages/contact-us"
         },
         {
           "id": "osm-node-1920646706-jenny-s-place",
@@ -392,6 +421,11 @@
           "id": "osm-node-11552505443-jukai-japanese-and-thai",
           "name": "JUKAI Japanese & Thai",
           "website": "https://www.jukairestaurant.com"
+        },
+        {
+          "id": "osm-node-26041176-kai-brady-s",
+          "name": "Kai Brady's Fancy Dive Bar",
+          "website": "https://kaibradys.com/"
         },
         {
           "id": "osm-node-5723553932-kam-moon",
@@ -454,6 +488,11 @@
           "website": "https://matadorahfx.ca/"
         },
         {
+          "id": "osm-way-671922221-mckelvie-s",
+          "name": "McKelvie's",
+          "website": "https://www.mckelvies.ca/"
+        },
+        {
           "id": "osm-node-1920618295-metro-pizza",
           "name": "Metro Pizza",
           "website": "https://metropizzahalifax.ca/"
@@ -489,6 +528,11 @@
           "website": "https://newwingwah.ca/"
         },
         {
+          "id": "osm-node-3791859257-oasis-pub-and-eatery",
+          "name": "Oasis Pub and Eatery",
+          "website": "https://oasishfx.com/"
+        },
+        {
           "id": "osm-node-4965917621-patrons-golf-and-lounge",
           "name": "Patrons Golf & Lounge",
           "website": "https://www.patronsgolflounge.ca/"
@@ -516,7 +560,7 @@
         {
           "id": "osm-node-8376551845-portland-street-creperie",
           "name": "Portland Street Creperie",
-          "website": "http://www.portlandstreetcreperie.com/"
+          "website": "https://www.xn--portlandstreetcrperie-d6b.com/"
         },
         {
           "id": "osm-node-4417927494-primal-kitchen",
@@ -566,12 +610,12 @@
         {
           "id": "osm-node-11552151862-sushi-jet",
           "name": "Sushi Jet",
-          "website": "https://sushi-jet.com/location/dartmouth"
+          "website": "https://www.sushijetdartmouth.ca/"
         },
         {
           "id": "osm-node-11552180279-sushi-jet",
           "name": "Sushi Jet",
-          "website": "https://sushi-jet.com/location/Halifax"
+          "website": "https://www.sushijethalifax.com/"
         },
         {
           "id": "osm-node-2721708502-suzuki-japanese-restaurant",
@@ -609,54 +653,14 @@
           "website": "http://www.butchersblockpub.com/"
         },
         {
-          "id": "osm-node-11752688345-the-grounds-cafe-by-drift-coffee",
-          "name": "The Grounds Cafe by Drift Coffee",
-          "website": "https://www.instagram.com/driftcoffeehfx/"
+          "id": "osm-node-7947984988-the-hungry-hut",
+          "name": "The Hungry Hut",
+          "website": "https://thehungryhut.com/"
         },
         {
           "id": "osm-node-3789835257-the-juice-press",
           "name": "The Juice Press",
           "website": "https://bishopslanding.com/dining/juice-press-inc/"
-        },
-        {
-          "id": "osm-node-37132665-the-loose-cannon",
-          "name": "The Loose Cannon",
-          "website": "https://theloosecannon.ca/"
-        },
-        {
-          "id": "osm-node-3801119557-the-middle-spoon-desserterie-and-bar",
-          "name": "The Middle Spoon Desserterie & Bar",
-          "website": "https://www.themiddlespoon.ca/"
-        },
-        {
-          "id": "osm-node-3797106957-the-nook",
-          "name": "The Nook",
-          "website": "http://www.thenookhfx.ca/#about"
-        },
-        {
-          "id": "osm-node-1689418207-the-old-triangle-irish-pub",
-          "name": "The Old Triangle Irish Pub",
-          "website": "https://www.oldtriangle.com/welcome/"
-        },
-        {
-          "id": "osm-node-3791832157-turkish-delight",
-          "name": "Turkish Delight",
-          "website": "https://www.turkishdelighthalifax.ca/contact-us"
-        },
-        {
-          "id": "osm-node-4420631892-two-if-by-sea",
-          "name": "Two if By Sea",
-          "website": "https://www.twoifbyseacafe.ca/"
-        },
-        {
-          "id": "osm-node-13286458034-vandal-doughnuts",
-          "name": "Vandal Doughnuts",
-          "website": "https://vandaldoughnuts.ca/"
-        },
-        {
-          "id": "osm-node-33117793-wasabi-house",
-          "name": "Wasabi House",
-          "website": "http://www.wasabihouse.ca/"
         }
       ],
       "noWebsite": [
@@ -719,11 +723,6 @@
           "id": "osm-node-3796325157-angelique-french-bakery-and-cafe",
           "name": "Angelique French Bakery & Cafe",
           "neighborhood": "Halifax Peninsula"
-        },
-        {
-          "id": "osm-node-6152777540-annie-s-place-cafe-and-catering",
-          "name": "Annie's Place Café & Catering",
-          "neighborhood": "Downtown"
         },
         {
           "id": "osm-node-30899821-arirang",
@@ -803,7 +802,7 @@
         {
           "id": "osm-node-8142485078-blue-elephant-thai-restaurant",
           "name": "Blue Elephant Thai Restaurant",
-          "neighborhood": "Armdale / Fairview"
+          "neighborhood": "Larry Uteck / Bedford South"
         },
         {
           "id": "osm-node-11577593719-blue-olive-greek-tavern",
@@ -851,11 +850,6 @@
           "neighborhood": "Downtown"
         },
         {
-          "id": "osm-node-2721726004-bubba-ray-s-sports-bar",
-          "name": "Bubba Ray's Sports Bar",
-          "neighborhood": "Downtown"
-        },
-        {
           "id": "osm-node-3789619357-bubba-ray-s-sports-bar",
           "name": "Bubba Ray's Sports Bar",
           "neighborhood": "Downtown"
@@ -869,11 +863,6 @@
           "id": "osm-node-11532103797-burrito-jax",
           "name": "Burrito Jax",
           "neighborhood": "North End"
-        },
-        {
-          "id": "osm-node-6031036960-buta-ramen",
-          "name": "Buta Ramen",
-          "neighborhood": "South End"
         },
         {
           "id": "osm-node-4952843922-byblos-lebanese-restaurant",
@@ -911,11 +900,6 @@
           "neighborhood": "West End"
         },
         {
-          "id": "osm-node-12984675528-cafe-lunette",
-          "name": "Café Lunette",
-          "neighborhood": "Downtown"
-        },
-        {
           "id": "osm-node-475876899-cafe-ristretto",
           "name": "Cafe Ristretto",
           "neighborhood": "Waterfront"
@@ -949,11 +933,6 @@
           "id": "osm-node-3796313457-chaii-samosa",
           "name": "Chaii Samosa",
           "neighborhood": "Halifax Peninsula"
-        },
-        {
-          "id": "osm-node-5134046822-chain-yard-urban-cidery",
-          "name": "Chain Yard Urban Cidery",
-          "neighborhood": "North End"
         },
         {
           "id": "osm-node-5160893922-chatime",
@@ -1001,11 +980,6 @@
           "neighborhood": "Downtown"
         },
         {
-          "id": "osm-node-13958623779-coffee-street",
-          "name": "Coffee Street",
-          "neighborhood": "Halifax Peninsula"
-        },
-        {
           "id": "osm-node-12718532662-costco-food-court",
           "name": "Costco Food Court",
           "neighborhood": "Armdale / Fairview"
@@ -1043,22 +1017,12 @@
         {
           "id": "osm-node-7347265248-creamy-rainbow-bakery-and-cafe",
           "name": "Creamy Rainbow Bakery and Cafe",
-          "neighborhood": "Downtown"
+          "neighborhood": "Spring Garden"
         },
         {
           "id": "osm-node-5139886025-crepe-crepe-cafe",
           "name": "Crepe Crepe Cafe",
           "neighborhood": "South End"
-        },
-        {
-          "id": "osm-node-1689418194-da-zero-ristorante",
-          "name": "Da Zero Ristorante",
-          "neighborhood": "South End"
-        },
-        {
-          "id": "osm-node-12908626114-dairy-bar",
-          "name": "Dairy Bar",
-          "neighborhood": "Downtown"
         },
         {
           "id": "osm-node-10916309830-darya",
@@ -1146,82 +1110,129 @@
           "neighborhood": "North End"
         },
         {
-          "id": "osm-node-13262827285-first-sight-coffee-and-bar",
-          "name": "First Sight Coffee & Bar",
-          "neighborhood": "Downtown"
-        },
-        {
           "id": "osm-node-1139389702-five-fishermen",
           "name": "Five Fishermen",
           "neighborhood": "Downtown"
         },
         {
-          "id": "osm-node-13235716922-foody-jojo-waffle-and-sandwich",
-          "name": "Foody Jojo Waffle & Sandwich",
-          "neighborhood": "Halifax Peninsula"
+          "id": "osm-node-3800896161-fran-s-fish-n-chips",
+          "name": "Fran's Fish n' Chips",
+          "neighborhood": "Dartmouth"
+        },
+        {
+          "id": "osm-node-5157406524-freedom",
+          "name": "Freedom",
+          "neighborhood": "Downtown"
+        },
+        {
+          "id": "osm-node-33117714-freeman-s-lil-new-york",
+          "name": "Freeman's Lil New York",
+          "neighborhood": "Downtown"
+        },
+        {
+          "id": "osm-node-33078684-freshly-squeezed",
+          "name": "Freshly Squeezed",
+          "neighborhood": "Downtown"
+        },
+        {
+          "id": "osm-way-1268236935-freshly-squeezed",
+          "name": "Freshly Squeezed",
+          "neighborhood": "West End"
+        },
+        {
+          "id": "osm-node-13262680651-freshslice-pizza",
+          "name": "Freshslice Pizza",
+          "neighborhood": "Downtown"
+        },
+        {
+          "id": "osm-node-6361446470-funky-munky-ice-cream-hut",
+          "name": "Funky Munky Ice Cream Hut",
+          "neighborhood": "Dartmouth"
+        },
+        {
+          "id": "osm-node-8064219419-gangnam",
+          "name": "Gangnam",
+          "neighborhood": "South End"
+        },
+        {
+          "id": "osm-way-88879257-garrison-brewery",
+          "name": "Garrison Brewery",
+          "neighborhood": "South End"
+        },
+        {
+          "id": "osm-node-5150250521-george-s-bubble-tea",
+          "name": "George's Bubble Tea",
+          "neighborhood": "South End"
         }
       ]
     }
   },
   "eventCoverage": {
-    "currentCityEvents": 126,
-    "allStoredCityEvents": 189,
-    "cityEventSources": 8,
+    "currentCityEvents": 1291,
+    "allStoredCityEvents": 1319,
+    "cityEventSources": 12,
     "bySource": {
-      "Tourism Nova Scotia Events": 14,
-      "Halifax Mooseheads Home Schedule": 31,
-      "HFX Wanderers 2026 Home Schedule": 2,
-      "Scotiabank Centre": 26,
-      "Symphony Nova Scotia": 33,
-      "Light House Arts Centre": 16,
-      "Halifax Tides 2026 Home Schedule": 1,
-      "Neptune Theatre": 3
+      "Tourism Nova Scotia Events": 13,
+      "Halifax Public Libraries": 1064,
+      "The Carleton": 10,
+      "Bedford Public Library": 82,
+      "Alderney Gate Public Library": 4,
+      "Woodlawn Public Library": 3,
+      "Halifax Mooseheads Home Schedule": 25,
+      "Symphony Nova Scotia": 31,
+      "Neptune Theatre": 3,
+      "Scotiabank Centre": 31,
+      "Halifax International Wine Festival": 1,
+      "Light House Arts Centre": 24
     },
     "byCategory": {
-      "Food & Drink": 5,
-      "Arts": 71,
-      "Outdoor": 3,
-      "Community": 9,
-      "Comedy": 3,
-      "Sports": 52,
-      "Music": 46,
-      "Festivals": 3,
-      "Family": 3
+      "Food & Drink": 45,
+      "Comedy": 7,
+      "Arts": 569,
+      "Sports": 39,
+      "Community": 752,
+      "Music": 147,
+      "Family": 49,
+      "Festivals": 14,
+      "Outdoor": 33,
+      "Markets": 1
     },
     "byMunicipality": {
-      "Halifax": 126
+      "Halifax": 900,
+      "Bedford": 82,
+      "Dartmouth": 309
     },
-    "withVenueRestaurantNameMatch": 0,
-    "withCoordinates": 0,
-    "withTicketLink": 126,
-    "withPrice": 7,
+    "withVenueRestaurantNameMatch": 11,
+    "withCoordinates": 89,
+    "withTicketLink": 33,
+    "withPrice": 6,
     "freeEvents": 0,
-    "duplicateEventCount": 0,
+    "duplicateEventCount": 3,
     "structuredRestaurantEvents": 20,
-    "structuredUpcomingRestaurantEvents": 2,
+    "structuredUpcomingRestaurantEvents": 1,
     "canonicalRestaurantsWithStructuredUpcomingEvents": 1,
-    "upcomingStructuredRestaurantEventRecords": 2,
-    "expiredStructuredRestaurantEvents": 18,
-    "next7Days": 3,
-    "next30Days": 25
+    "upcomingStructuredRestaurantEventRecords": 1,
+    "expiredStructuredRestaurantEvents": 19,
+    "next7Days": 155,
+    "next30Days": 582
   },
   "discoveryCoverage": {
-    "directoryRecords": 769,
-    "directoryNewToCatalog": 581,
-    "openingWatchLeads": 12,
-    "reviewedDiscoveredRestaurants": 12
+    "directoryRecords": 1093,
+    "directoryNewToCatalog": 824,
+    "openingWatchLeads": 19,
+    "reviewedDiscoveredRestaurants": 75
   },
   "sourceFailures": {
-    "officialWebsiteChecks": 63,
+    "officialWebsiteChecks": 51,
     "firstPartyWebsiteDiscovery": 1,
     "verifiedSourcePages": 21,
     "structuredRestaurantEvents": 12,
     "websiteFeeds": 3,
     "socialApis": 3,
-    "cityEventSources": 1,
+    "cityEventSources": 4,
     "openingWatchSources": 0,
-    "restaurantDirectorySources": 0,
-    "publicSpecialSources": 0,
+    "restaurantDirectorySources": 1,
+    "publicSpecialSources": 2,
     "patioDirectorySources": 0
   },
   "credentials": {
@@ -1229,9 +1240,9 @@
     "instagram": "missing"
   },
   "unresolved": {
-    "sharedSocialAssociations": 41,
-    "possibleDuplicateCurrentEvents": 0,
+    "sharedSocialAssociations": 25,
+    "possibleDuplicateCurrentEvents": 3,
     "staleRestaurantRecords": 0,
-    "unknownFreshnessRestaurantRecords": 0
+    "unknownFreshnessRestaurantRecords": 342
   }
 }

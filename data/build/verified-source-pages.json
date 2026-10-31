@@ -354,8 +354,10 @@
       "observedAt": "2026-09-04T13:17:34.417Z",
       "verifiedAt": "2026-09-04T13:18:51.134Z",
       "contentType": "text/html;charset=utf-8",
-      "locationValidated": false,
-      "reviewState": "verified"
+      "locationValidated": true,
+      "reviewState": "verified",
+      "locationReviewedAt": "2026-10-30T21:47:44Z",
+      "locationReviewMethod": "owner homepage and menu page crawler snapshots both showed the canonical address; no raw HTTP status captured"
     },
     {
       "restaurantId": "osm-node-10038454787-bird-s-nest-cafe",
@@ -6207,6 +6209,71 @@
       "verifiedAt": "2026-09-04T13:18:47.546Z",
       "contentType": "text/html; charset=UTF-8",
       "locationValidated": false,
+      "reviewState": "verified"
+    },
+    {
+      "restaurantId": "acadian-enzo-hammonds-plains",
+      "kind": "menu",
+      "url": "https://www.acadianenzo.com/menu",
+      "label": "Menu",
+      "sourceWebsite": "https://www.acadianenzo.com/",
+      "sourceKind": "official_page",
+      "verificationMethod": "reachable_official_page",
+      "observedAt": "2026-10-21T01:49:40.797501+00:00",
+      "verifiedAt": "2026-10-21T01:49:43.978102+00:00",
+      "locationValidated": true,
+      "reviewState": "verified"
+    },
+    {
+      "restaurantId": "mill-cove-brew-pub-bedford",
+      "kind": "menu",
+      "url": "https://millcovebrewpub.com/menu-3-col/",
+      "label": "Menu",
+      "sourceWebsite": "https://millcovebrewpub.com/",
+      "sourceKind": "official_page",
+      "verificationMethod": "reachable_official_page",
+      "observedAt": "2026-10-21T13:01:30.467486+00:00",
+      "verifiedAt": "2026-10-21T13:10:10.538180+00:00",
+      "locationValidated": true,
+      "reviewState": "verified"
+    },
+    {
+      "restaurantId": "cha-baa-thai-bedford",
+      "kind": "menu",
+      "url": "https://chabaathai.ca/our-menu/",
+      "label": "Menu",
+      "sourceWebsite": "https://chabaathai.ca/bedford/",
+      "sourceKind": "official_page",
+      "verificationMethod": "reachable_official_page",
+      "observedAt": "2026-10-21T13:02:45.881759+00:00",
+      "verifiedAt": "2026-10-21T13:10:10.538180+00:00",
+      "locationValidated": true,
+      "reviewState": "verified"
+    },
+    {
+      "restaurantId": "thai-ivory-bedford",
+      "kind": "menu",
+      "url": "https://www.thaiivorycuisine.ca/menu",
+      "label": "Menu",
+      "sourceWebsite": "https://www.thaiivorycuisine.ca/home",
+      "sourceKind": "official_page",
+      "verificationMethod": "reachable_official_page",
+      "observedAt": "2026-10-21T13:03:34.820042+00:00",
+      "verifiedAt": "2026-10-21T13:10:10.538180+00:00",
+      "locationValidated": true,
+      "reviewState": "verified"
+    },
+    {
+      "restaurantId": "on-the-wedge-bedford",
+      "kind": "menu",
+      "url": "https://www.onthewedgepizza.com/pizza/",
+      "label": "Menu",
+      "sourceWebsite": "https://www.onthewedgepizza.com/",
+      "sourceKind": "official_page",
+      "verificationMethod": "reachable_official_page",
+      "observedAt": "2026-10-21T13:06:40.740016+00:00",
+      "verifiedAt": "2026-10-21T13:10:10.538180+00:00",
+      "locationValidated": true,
       "reviewState": "verified"
     }
   ],

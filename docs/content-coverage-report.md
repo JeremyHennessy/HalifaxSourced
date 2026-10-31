@@ -1,6 +1,6 @@
 # Halifax Sourced content coverage baseline
 
-Generated: 2026-10-06T04:15:34.993Z
+Generated: 2026-10-30T22:17:27.720Z
 
 This report measures the currently committed production data layers. It is a content-completeness baseline, **not a restaurant quality or popularity rating**. Unknown data remains unknown; source leads are not converted into fabricated facts.
 
@@ -8,43 +8,43 @@ This report measures the currently committed production data layers. It is a con
 
 | Metric | Places | Coverage |
 | --- | ---: | ---: |
-| Canonical places | 564 | 100% |
-| Official website | 237 | 42% |
-| Verified/reachable official website | 241 | 42.7% |
-| Public inspection match | 326 | 57.8% |
-| Menu link | 167 | 29.6% |
-| Verified menu link | 147 | 26.1% |
-| Special evidence | 103 | 18.3% |
-| Verified specials source | 43 | 7.6% |
-| Reservation link | 64 | 11.3% |
-| Online ordering link | 80 | 14.2% |
-| Event evidence | 48 | 8.5% |
+| Canonical places | 656 | 100% |
+| Official website | 338 | 51.5% |
+| Verified/reachable official website | 181 | 27.6% |
+| Public inspection match | 282 | 43% |
+| Menu link | 196 | 29.9% |
+| Verified menu link | 121 | 18.4% |
+| Special evidence | 87 | 13.3% |
+| Verified specials source | 27 | 4.1% |
+| Reservation link | 57 | 8.7% |
+| Online ordering link | 61 | 9.3% |
+| Event evidence | 44 | 6.7% |
 | Structured upcoming restaurant events | 1 | 0.2% |
-| At least one social network profile | 161 | 28.5% |
-| Phone | 206 | 36.5% |
-| Hours | 195 | 34.6% |
-| Coordinates | 553 | 98% |
-| Neighbourhood | 564 | 100% |
-| Cuisine classification | 564 | 100% |
-| Accessibility information | 168 | 29.8% |
-| Patio information | 72 | 12.8% |
-| Usable rights-approved media | 7 | 1.2% |
+| At least one social network profile | 146 | 22.3% |
+| Phone | 301 | 45.9% |
+| Hours | 249 | 38% |
+| Coordinates | 574 | 87.5% |
+| Neighbourhood | 656 | 100% |
+| Cuisine classification | 624 | 95.1% |
+| Accessibility information | 167 | 25.5% |
+| Patio information | 72 | 11% |
+| Usable rights-approved media | 10 | 1.5% |
 
-Raw layers: 10 curated, 736 OpenStreetMap, 12 reviewed local-discovery records, 554 pre-discovery catalog records.
+Raw layers: 10 curated, 736 OpenStreetMap, 75 reviewed local-discovery records, 656 pre-discovery catalog records.
 
 ## Social coverage
 
 | Platform | Places | Coverage |
 | --- | ---: | ---: |
-| instagram | 149 | 26.4% |
-| facebook | 142 | 25.2% |
-| tiktok | 18 | 3.2% |
+| instagram | 135 | 20.6% |
+| facebook | 118 | 18% |
+| tiktok | 11 | 1.7% |
 | threads | 0 | 0% |
-| x | 65 | 11.5% |
-| youtube | 13 | 2.3% |
-| linkedin | 8 | 1.4% |
-| bluesky | 2 | 0.4% |
-| pinterest | 3 | 0.5% |
+| x | 49 | 7.5% |
+| youtube | 4 | 0.6% |
+| linkedin | 3 | 0.5% |
+| bluesky | 2 | 0.3% |
+| pinterest | 1 | 0.2% |
 | snapchat | 0 | 0% |
 | linktree | 0 | 0% |
 | beacons | 0 | 0% |
@@ -52,74 +52,81 @@ Raw layers: 10 curated, 736 OpenStreetMap, 12 reviewed local-discovery records, 
 | campsite | 0 | 0% |
 | bento | 0 | 0% |
 
-- Website but no social network found: **102**
-- No official website in the canonical record: **327**
-- Shared-profile keys: **41**; places with shared-brand profiles only: **32**
+- Website but no social network found: **198**
+- No official website in the canonical record: **318**
+- Shared-profile keys: **25**; places with shared-brand profiles only: **20**
 - Candidate social associations awaiting verification: **0**
 - Social source observations older than 90 days: **0**
 
 ## City events
 
-- Current/upcoming events: **126**
-- Sources represented: **8**
-- Next 7 days: **3**; next 30 days: **25**
-- Ticket links: **126**; price information: **7**; explicitly free: **0**
-- Coordinates: **0**
-- Conservative exact venue-name → restaurant matches: **0**
-- Possible duplicate current event records: **0**
+- Current/upcoming events: **1291**
+- Sources represented: **12**
+- Next 7 days: **155**; next 30 days: **582**
+- Ticket links: **33**; price information: **6**; explicitly free: **0**
+- Coordinates: **89**
+- Conservative exact venue-name → restaurant matches: **11**
+- Possible duplicate current event records: **3**
 
 ### Events by municipality
 
-- Halifax: 126
+- Halifax: 900
+- Bedford: 82
+- Dartmouth: 309
 
 ### Events by category
 
-- Arts: 71
-- Sports: 52
-- Music: 46
-- Community: 9
-- Food & Drink: 5
-- Outdoor: 3
-- Comedy: 3
-- Festivals: 3
-- Family: 3
+- Community: 752
+- Arts: 569
+- Music: 147
+- Family: 49
+- Food & Drink: 45
+- Sports: 39
+- Outdoor: 33
+- Festivals: 14
+- Comedy: 7
+- Markets: 1
 
 ### Events by source
 
-- Symphony Nova Scotia: 33
-- Halifax Mooseheads Home Schedule: 31
-- Scotiabank Centre: 26
-- Light House Arts Centre: 16
-- Tourism Nova Scotia Events: 14
+- Halifax Public Libraries: 1064
+- Bedford Public Library: 82
+- Symphony Nova Scotia: 31
+- Scotiabank Centre: 31
+- Halifax Mooseheads Home Schedule: 25
+- Light House Arts Centre: 24
+- Tourism Nova Scotia Events: 13
+- The Carleton: 10
+- Alderney Gate Public Library: 4
+- Woodlawn Public Library: 3
 - Neptune Theatre: 3
-- HFX Wanderers 2026 Home Schedule: 2
-- Halifax Tides 2026 Home Schedule: 1
+- Halifax International Wine Festival: 1
 
 ## Freshness
 
-- < 7 days: 1
-- 7–30 days: 0
-- 30–90 days: 563
+- < 7 days: 44
+- 7–30 days: 95
+- 30–90 days: 175
 - > 90 days: 0
-- Unknown: 0
+- Unknown: 342
 
 ## Source failures visible in the current data
 
-- officialWebsiteChecks: 63
+- officialWebsiteChecks: 51
 - firstPartyWebsiteDiscovery: 1
 - verifiedSourcePages: 21
 - structuredRestaurantEvents: 12
 - websiteFeeds: 3
 - socialApis: 3
-- cityEventSources: 1
+- cityEventSources: 4
 - openingWatchSources: 0
-- restaurantDirectorySources: 0
-- publicSpecialSources: 0
+- restaurantDirectorySources: 1
+- publicSpecialSources: 2
 - patioDirectorySources: 0
 
 ## Known model gaps exposed by this baseline
 
-- Reviewed discovery still follows the app's existing name-based merge behavior; name-only merges observed: **2**.
+- Reviewed discovery uses canonical IDs and reviewed aliases, never names alone; name-only merges: **0**.
 - City events do not yet have canonical venue/organizer entities; the venue relationship number above is only a conservative name match.
 - Accessibility and patio coverage are only counted when explicit fields/OSM tags/official-site evidence exist; absence is not treated as “no.”
 - Social link hubs are measured separately from social networks.
@@ -128,6 +135,6 @@ Machine-readable details, gap queues, definitions, and failure counts are in `da
 
 ## Lifecycle and restaurant-event definitions
 
-- Active canonical places: **563**; archived lifecycle records: **1**.
+- Active canonical places: **639**; archived lifecycle records: **1**.
 - Canonical restaurants with at least one upcoming structured restaurant event: **1**. This is a distinct-place count.
-- Upcoming structured restaurant event records: **2** of **20** stored records. This is an event-record count and can include multiple events for one restaurant.
+- Upcoming structured restaurant event records: **1** of **20** stored records. This is an event-record count and can include multiple events for one restaurant.
