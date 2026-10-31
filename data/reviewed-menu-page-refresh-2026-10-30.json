@@ -1,0 +1,123 @@
+{
+  "reviewedAt": "2026-10-30T21:44:18.000Z",
+  "method": "Opened official restaurant-owned menu URLs using the web page retrieval tool; did not request any third-party directory or submit site forms.",
+  "recentObservations": [
+    {
+      "restaurantId": "mediterra-kitchen-lower-sackville",
+      "menuUrl": "https://mediterrakitchen.ca/our-menu/",
+      "pageObservation": "Our Menu page returned restaurant food-and-drink menu content and lists 111 Cobequid Road, Lower Sackville at the top.",
+      "retrievalFreshness": "The page tool reported it had crawled the page 3 days earlier.",
+      "action": "Research observation only. The exact canonical identity was confirmed, but this is a crawler snapshot without a raw origin response/status/content-type receipt; keep the menu unpromoted until supported direct-origin evidence is captured."
+    },
+    {
+      "restaurantId": "pavia-herring-cove",
+      "menuUrl": "https://www.paviagallery.com/menu",
+      "pageObservation": "The Our MENU page lists café menu items and says its menu changes seasonally.",
+      "retrievalFreshness": "The page tool reported it had crawled the page last week.",
+      "action": "Research observation only. The exact canonical identity was confirmed, but this is a crawler snapshot without a raw origin response/status/content-type receipt; keep the menu unpromoted until supported direct-origin evidence is captured."
+    },
+    {
+      "restaurantId": "boondocks-eastern-passage",
+      "menuUrl": "https://www.boondocksrestaurant.ca/copy-of-menu",
+      "pageObservation": "The official page contains appetizers, main meals, kids meals, desserts, and its footer gives the Eastern Passage address and phone number.",
+      "retrievalFreshness": "The page tool reported it had crawled the page 5 days earlier.",
+      "action": "Research observation only. The exact canonical identity was confirmed, but this is a crawler snapshot without a raw origin response/status/content-type receipt; keep the menu unpromoted until supported direct-origin evidence is captured."
+    }
+  ],
+  "heldForFreshObservation": [
+    {
+      "restaurantId": "toms-family-restaurant-lower-sackville",
+      "menuUrl": "https://www.tomsfamilyrestaurant.ca/desert/",
+      "observation": "Official page labels the destination Dinner and links two image menus dated August 20, 2026.",
+      "retrievalFreshness": "The page tool reported it had crawled the page last month.",
+      "action": "Identity maps exactly to an existing canonical record, but the page tool reported the cached representation as crawled last month. Keep the menu destination pending a fresher source observation; October 20 receipt is background only."
+    },
+    {
+      "restaurantId": "palladium-cole-harbour",
+      "menuUrl": "https://palladiumfamily.ca/our-menu/",
+      "observation": "Official Our Menu page gives the restaurant name and Cole Harbour Road address and links to online ordering; extracted ordering page did not expose menu items.",
+      "retrievalFreshness": "The page tool reported it had crawled the page last month.",
+      "action": "Identity maps exactly to an existing canonical record, but the page tool reported the cached representation as crawled last month. Keep the menu destination pending a fresher source observation; October 20 receipt is background only."
+    }
+  ],
+  "priorReceipts": "October 20 direct receipts were treated as background only. Current page-tool retrieval timestamps, page-tool crawl-age labels, and source publication dates are kept distinct; no source publication date was available for these menus.",
+  "promotionHold": "MediTerra, PAVIA, and Boondocks remain research-only menu observations because the retrieved content came from cached crawler snapshots without a raw origin response/status/content-type receipt. Tom’s and Palladium also remain held for freshness. Promote only after supported direct-origin verification; preserve crawl, retrieval, and source publication clocks separately.",
+  "canonicalProfileReview": {
+    "reviewedAt": "2026-10-30T21:47:44Z",
+    "restaurantId": "highwayman",
+    "canonicalIdentity": {
+      "name": "Highwayman",
+      "address": "1673 Barrington Street, Halifax, NS B3J 1Z9",
+      "website": "https://www.highwaymanhfx.com/"
+    },
+    "menuUrl": "https://www.highwaymanhfx.com/food-menu",
+    "sourceEvidence": {
+      "officialHomepage": "https://www.highwaymanhfx.com/",
+      "officialMenuIndex": "https://www.highwaymanhfx.com/menus",
+      "resolvedMenuUrl": "https://www.highwaymanhfx.com/food-menu",
+      "toolRetrievalAt": "2026-10-30T21:44:18Z",
+      "crawlFreshnessReported": "The page retrieval tool reported both owner pages as crawled today; exact crawl timestamp unavailable.",
+      "publishedAt": null,
+      "directHttpStatusCaptured": false,
+      "notes": [
+        "Official homepage labels OUR FOOD MENU and the menu page retrieved current food menu content.",
+        "Homepage and menu page footer both identify 1673 Barrington Street, Halifax, matching the canonical catalog record.",
+        "The retrieved /menus URL redirects to /food-menu; the verified record uses the destination.",
+        "No menu publication/effective date was shown. Tool crawl time, retrieval time, and source publication time are stored as separate facts."
+      ]
+    },
+    "action": "Revalidated the existing official food-menu destination and confirmed the canonical location from owner-page snapshots. Preserved the original direct-fetch observedAt and verifiedAt clocks; recorded locationReviewedAt separately. No inventory entry or menu content was added."
+  },
+  "identityReconciliation": {
+    "reviewedAt": "2026-10-30",
+    "catalogBuild": "Fresh standard export via node scripts/export-catalog.mjs (656 canonical places); the committed data/build/catalog.json was a stale 554-record generated artifact.",
+    "method": [
+      "Compared normalized accepted business names against all canonical catalog names.",
+      "Compared full accepted street addresses against canonical catalog addresses.",
+      "Compared owner-site hostnames and known reviewed source records."
+    ],
+    "matches": [
+      {
+        "id": "toms-family-restaurant-lower-sackville",
+        "name": "Tom's Family Restaurant",
+        "address": "585 Sackville Drive, Lower Sackville, NS B4C 2S4",
+        "website": "https://www.tomsfamilyrestaurant.ca/",
+        "canonicalId": "toms-family-restaurant-lower-sackville",
+        "match": "exact ID, normalized name, street address, and website hostname in fresh standard catalog export"
+      },
+      {
+        "id": "mediterra-kitchen-lower-sackville",
+        "name": "MediTerra Kitchen",
+        "address": "111 Cobequid Road, Lower Sackville, NS B4C 2N1",
+        "website": "https://mediterrakitchen.ca/",
+        "canonicalId": "mediterra-kitchen-lower-sackville",
+        "match": "exact ID, normalized name, street address, and website hostname in fresh standard catalog export"
+      },
+      {
+        "id": "pavia-herring-cove",
+        "name": "PAVIA Gallery – Espresso Bar & Café",
+        "address": "995 Herring Cove Road, Herring Cove, NS B3V 1H6",
+        "website": "https://www.paviagallery.com/",
+        "canonicalId": "pavia-herring-cove",
+        "match": "exact ID, normalized name, street address, and website hostname in fresh standard catalog export"
+      },
+      {
+        "id": "boondocks-eastern-passage",
+        "name": "Boondocks Restaurant",
+        "address": "6 Government Wharf Rd, Eastern Passage, NS B3G 1M7",
+        "website": "https://www.boondocksrestaurant.ca/",
+        "canonicalId": "boondocks-eastern-passage",
+        "match": "exact ID, normalized name, street address, and website hostname in fresh standard catalog export"
+      },
+      {
+        "id": "palladium-cole-harbour",
+        "name": "Palladium Family Restaurant",
+        "address": "942 Cole Harbour Rd, Dartmouth, NS B2V 1E6",
+        "website": "https://palladiumfamily.ca/",
+        "canonicalId": "palladium-cole-harbour",
+        "match": "exact ID, normalized name, street address, and website hostname in fresh standard catalog export"
+      }
+    ],
+    "decision": "All five are existing accepted canonical locations in the CI-built catalog. No inventory entries or aliases were created."
+  }
+}

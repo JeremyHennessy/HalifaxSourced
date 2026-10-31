@@ -22,6 +22,12 @@ function mergeActionLinks(existing = [], additions = [], labelFn = (item) => ite
   return output;
 }
 
+function reservationFactLabel(item) {
+  const reviewedLabel = typeof item?.label === "string" ? item.label.trim() : "";
+  if (reviewedLabel === "Reservation inquiry" && item?.status === "verified_link" && item?.locationSpecific === true) return reviewedLabel;
+  return `Book with ${String(item?.provider || "restaurant").replaceAll("_", " ")}`;
+}
+
 for (const restaurant of restaurants) {
   const facts = structuredFactsByRestaurant.get(restaurant.id) || null;
   restaurant.structuredFacts = facts;
@@ -33,7 +39,7 @@ for (const restaurant of restaurants) {
   restaurant.structuredAddress = facts?.address || null;
   restaurant.structuredEmail = facts?.email || null;
   restaurant.menuLinks = mergeActionLinks(restaurant.menuLinks, facts?.menus, (item) => item.title || `${String(item.menuType || "menu").replaceAll("_", " ")} menu`);
-  restaurant.reservationLinks = mergeActionLinks(restaurant.reservationLinks, facts?.reservations, (item) => `Book with ${String(item.provider || "restaurant").replaceAll("_", " ")}`);
+  restaurant.reservationLinks = mergeActionLinks(restaurant.reservationLinks, facts?.reservations, reservationFactLabel);
   restaurant.orderingLinks = mergeActionLinks(restaurant.orderingLinks, facts?.ordering, (item) => `Order via ${String(item.provider || "restaurant").replaceAll("_", " ")}`);
   restaurant.hasMenu = Boolean(restaurant.hasMenu || facts?.menus?.length);
   restaurant.hasReservation = Boolean(restaurant.hasReservation || facts?.reservations?.length);

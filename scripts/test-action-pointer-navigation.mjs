@@ -60,6 +60,37 @@ try {
       await page.waitForSelector('.restaurant-title h1');
       await inspect(id, false);
     }
+    const deerfield = 'deerfield-pub-at-glen-arbour-hammonds-plains';
+    const deerfieldUrl = 'https://www.deerfieldpub.ca/contact/';
+    await page.evaluate(id => { location.hash = '#restaurant/' + id; }, deerfield);
+    await page.waitForFunction(id => document.querySelector('.save-detail')?.dataset.saveId === id, deerfield);
+    const inquiryActions = await page.evaluate(url => {
+      const textFor = selector => [...document.querySelectorAll(`${selector} a[href]`)]
+        .find(link => link.href === url)?.textContent.trim() || null;
+      const labels = [textFor('.mobile-essential-actions'), textFor('.detail-official-actions')].filter(Boolean);
+      return { labels, liveBookingLabel: labels.some(label => /book table|book now|instant booking|live booking|^reservations/i.test(label)) };
+    }, deerfieldUrl);
+    assert.deepEqual(inquiryActions.labels, ['Reservation inquiry ↗', 'Reservation inquiry ↗']);
+    assert.equal(inquiryActions.liveBookingLabel, false, 'The inquiry form must not be presented as a live booking action');
+    const unsafeLabelActions = await page.evaluate(id => {
+      const place = restaurants.find(record => record.id === id);
+      const link = place.reservationLinks.find(item => item.url === 'https://www.deerfieldpub.ca/contact/');
+      link.label = '<img src=x onerror=alert(1)>';
+      renderRestaurantDetail(id);
+      return {
+        actionImages: document.querySelectorAll('.mobile-essential-actions img, .detail-official-actions img').length,
+        mobile: [...document.querySelectorAll('.mobile-essential-actions a[href]')].find(item => item.href === link.url)?.textContent.trim(),
+        sidebar: [...document.querySelectorAll('.detail-official-actions a[href]')].find(item => item.href === link.url)?.textContent.trim()
+      };
+    }, deerfield);
+    assert.equal(unsafeLabelActions.actionImages, 0, 'An arbitrary review label cannot inject action markup');
+    assert.equal(unsafeLabelActions.mobile, 'Book table ↗');
+    assert.equal(unsafeLabelActions.sidebar, 'Reservations ↗');
+    await page.evaluate(id => {
+      const link = restaurants.find(record => record.id === id).reservationLinks.find(item => item.url === 'https://www.deerfieldpub.ca/contact/');
+      link.label = 'Reservation inquiry';
+      renderRestaurantDetail(id);
+    }, deerfield);
     const mexis = 'osm-node-6910685885-mexi-s';
     await page.evaluate(id => { location.hash = '#restaurant/' + id; }, mexis);
     await page.waitForFunction(id => document.querySelector('.save-detail')?.dataset.saveId === id, mexis);
