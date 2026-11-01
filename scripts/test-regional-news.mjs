@@ -354,7 +354,7 @@ for (const id of ['the-coast','the-signal']) {
 assert.deepEqual(await readJson('data/build/news.json'), reviewedPayload);
 assert.equal(await readFile(new URL('../data/news.js',import.meta.url),'utf8'), newsScript(reviewedPayload));
 assert.deepEqual(buildNews(reviewedDecisions, reviewedRegistry), reviewedPayload, 'No review or observation clock churn on rebuild');
-assert.match(await readFile(new URL('../index.html',import.meta.url),'utf8'), /data\/news\.js\?v=20261028-news-archive-1/);
+assert.match(await readFile(new URL('../index.html',import.meta.url),'utf8'), /data\/news\.js\?v=20261101-news-manual-1/);
 console.log('Reviewed publisher expansion passed: the original 7 expansion links remain, all 4 original decisions and 6 original source states preserved (one opaque CityNews receipt removed), cached observation windows, exact JSON/JS parity, no media/body/unreviewed promotion, 2 manual-only admissions.');
 
 // Manual backfill and additional publisher types stay additive and offline.

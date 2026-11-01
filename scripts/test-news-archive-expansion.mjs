@@ -292,11 +292,11 @@ const expected = [
 
 for (const [id, hash] of Object.entries(baselineDecisionHashes)) assert.equal(digest(decisions.decisions.find(row=>row.id===id)), hash, 'Original decision: '+id);
 for (const [id, hash] of Object.entries(baselineSourceHashes)) assert.equal(digest(registry.sources.find(row=>row.id===id)), hash, 'Original source state: '+id);
-assert.equal(payload.items.length,51);
-assert.equal(new Set(payload.items.map(row=>row.canonicalUrl)).size,51);
+assert.equal(payload.items.length,55);
+assert.equal(new Set(payload.items.map(row=>row.canonicalUrl)).size,55);
 assert.equal(registry.sources.length,13);
 assert.deepEqual(Object.fromEntries([...new Set(payload.items.map(row=>row.sourceId))].sort().map(id=>[id,payload.items.filter(row=>row.sourceId===id).length])), {
- 'citynews-halifax':8,'dalhousie-gazette':3,'global-halifax':10,'halifax-retales':3,'halifax-water':1,'nova-scotia-health':3,'ns-newsroom':3,'the-coast':11,'the-laker-news':3,'the-signal':6
+ 'citynews-halifax':8,'dalhousie-gazette':4,'global-halifax':10,'halifax-retales':3,'halifax-water':1,'nova-scotia-health':3,'ns-newsroom':3,'the-coast':11,'the-laker-news':6,'the-signal':6
 });
 const originalKeys = Object.keys(payload.items.find(row=>row.id===Object.keys(baselineDecisionHashes)[0])).sort();
 for (const [id, sourceId, title, publishedAt, region] of expected) {
@@ -319,6 +319,32 @@ for (const [id, sourceId, title, publishedAt, region] of expected) {
   assert.throws(()=>buildNews({version:1,decisions:[{id,status:'approved',record:{...row,...unsafe}}]},registry));
  }
 }
+const manualNov1 = [
+  ['news-450d9f0b7d98e559b9f70790','the-laker-news','https://thelaker.ca/hurricanes-rapid-growth-gets-5000-boost-from-canada-post-community-foundation/','Corridor Volleyball receives community-foundation grant','2026-10-31','East Hants',['Sports','Community']],
+  ['news-895be09c7bf9531cbb444257','the-laker-news','https://thelaker.ca/houston-announces-tentative-agreement-reached-with-cupe-school-operations-proceeding-as-usual/','The Laker reports tentative school-operations agreement','2026-10-30','Nova Scotia',['Education','Provincial affairs']],
+  ['news-78e18bcd44e76f6538f05ff8','the-laker-news','https://thelaker.ca/e-h-horne-school-receives-provincial-heritage-designation-after-years-of-community-dedication/','Enfield’s former Horne school receives heritage designation','2026-10-29','East Hants',['Education','Community']],
+  ['news-afbcf5b6bb735f09c5e9dddd','dalhousie-gazette','https://dalgazette.com/sports/both-tigers-soccer-clubs-advance-to-aus-final/','Dalhousie soccer teams advance to conference finals','2026-10-31','Halifax',['Sports']]
+];
+assert.equal(new Set(manualNov1.map(row=>row[2])).size,4);
+for (const [id,sourceId,url,title,publishedAt,region,topics] of manualNov1) {
+ const row=payload.items.find(item=>item.id===id);
+ assert(row,'Missing reviewed Nov 1 manual link: '+id);
+ assert.deepEqual([row.sourceId,row.canonicalUrl,row.title,row.publishedAt,row.region,row.topics],[sourceId,url,title,publishedAt,region,topics]);
+ assert.equal(row.sourceGUID,url);assert.equal(row.id,newsId(url));assert.equal(row.publishedPrecision,'day');
+ assert.equal(row.modifiedAt,null);assert.equal(row.summary,null);assert.equal(row.summaryKind,'none');
+ assert.equal(row.observedAt,'2026-11-01T18:31:45.000Z');assert.equal(row.reviewedAt,'2026-11-01T18:36:13.000Z');
+ assert.match(row.rightsBasis,/reader-observation window 2026-11-01T18:31:24Z through 2026-11-01T18:31:45Z/);
+ assert.match(row.rightsBasis,/upper bound and not an origin retrieval time/);
+ assert.match(row.rightsBasis,/does not establish a general reuse licence/i);assert.match(row.rightsBasis,/no body, quote, image or author text copied/i);
+ assert.deepEqual(Object.keys(row).sort(),originalKeys,'Manual metadata-only addition must not add body or media fields');
+ assert.equal(canonicalNewsUrl(url,registry.sources.find(source=>source.id===sourceId).allowedHosts),url);
+ assert.doesNotMatch(JSON.stringify(row),/canonical.tag|rel=canonical|canonical-tag-verified/i,'No unobserved canonical-tag assertion');
+}
+const labour=payload.items.find(row=>row.id==='news-895be09c7bf9531cbb444257');
+assert.match(labour.title,/reports tentative/);assert.match(labour.regionEvidence,/not reported as ratified/);assert.doesNotMatch(`${labour.title} ${labour.regionEvidence}`,/currently operating|ratified agreement/i);
+const soccer=payload.items.find(row=>row.id==='news-afbcf5b6bb735f09c5e9dddd');
+assert.match(soccer.regionEvidence,/St\. John’s/);assert.match(soccer.regionEvidence,/no Halifax match venue or event listing is implied/);assert.doesNotMatch(soccer.title,/match time|kickoff|scheduled for|event listing/i);
+for (const id of ['the-laker-news','dalhousie-gazette']) {const source=registry.sources.find(row=>row.id===id);assert.equal(source.status,'admitted');assert.equal(source.enabled,false);assert.equal(source.feedUrl,null);}
 assert(NEWS_TYPES.includes('local_business_publication'));
 assert.equal(NEWS_TYPES.includes('aggregator'),false);
 assert(!registry.sources.some(row=>row.id==='haligonia'));
@@ -334,9 +360,9 @@ for (const id of ['dalhousie-gazette','the-laker-news','halifax-retales']) {
  assert.throws(()=>validateNewsRegistry({version:1,sources:[{...source,enabled:true}]}),/news_source_not_admitted/);
 }
 const monthCounts=Object.fromEntries([...new Set(payload.items.map(row=>row.publishedAt.slice(0,7)))].sort().map(month=>[month,payload.items.filter(row=>row.publishedAt.startsWith(month)).length]));
-assert.deepEqual(monthCounts,{'2026-01':1,'2026-03':2,'2026-04':3,'2026-08':5,'2026-09':9,'2026-10':31});
+assert.deepEqual(monthCounts,{'2026-01':1,'2026-03':2,'2026-04':3,'2026-08':5,'2026-09':9,'2026-10':35});
 assert.equal(payload.items.at(-1).publishedAt,'2026-01-14');
-assert.equal(payload.items[0].publishedAt,'2026-10-27');
+assert.equal(payload.items[0].publishedAt,'2026-10-31');
 const musicWeek=payload.items.find(row=>row.canonicalUrl.endsWith('/the-nova-scotia-music-week-lineup-so-far/'));
 assert.equal(musicWeek.publishedAt,'2026-08-11','Original publication date, not later October update');
 assert.equal(payload.items.filter(row=>row.canonicalUrl.startsWith('https://globalnews.ca/video/')).length,2,'Video-report pages remain outbound links only');
@@ -349,4 +375,4 @@ for (const id of ['dalhousie-gazette','the-laker-news','halifax-retales']) {
 }
 const openingSource=await load('data/opening-watch-source-registry.json');
 assert.equal(digest(openingSource),'8e317f399738769c0a0de5285da56bd3c92df76c3c73e019caad58d22edcfe33','ReTales News links cannot change the opening-watch collector');
-console.log('Archive expansion passed: 36 additions, 51 total/10 represented sources, original eleven decisions/eight source states frozen, 3 manual-only News admissions, truthful business-publication type, publication dates, cache limits, no media or collectors.');
+console.log('Archive expansion passed: 40 additions, 55 total/10 represented sources, original eleven decisions/eight source states frozen, manual-only News links, truthful publication dates, bounded observation provenance, no media or collectors.');
