@@ -281,7 +281,9 @@ jobs:
         run: node scripts/test-hours-state.mjs
 
       - name: Test event date helpers
-        run: node scripts/test-event-date-helpers.mjs
+        run: |
+          node scripts/test-event-date-helpers.mjs
+          node scripts/test-event-cost-kind.mjs
 
       - name: Check structured specials
         run: node scripts/check-structured-specials.mjs

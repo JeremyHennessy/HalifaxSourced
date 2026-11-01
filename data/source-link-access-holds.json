@@ -4293,6 +4293,144 @@
           "observedAt": "2026-10-29T16:35:47.246Z"
         }
       ]
+    },
+    {
+      "provenance": {
+        "kind": "reviewed_workflow_log",
+        "repository": "JeremyHennessy/HalifaxSourced",
+        "sourceCommitSha": "e6ada1958a842f1d40aff2f6d5871a7a20e90c67",
+        "workflowRunId": "41236138101",
+        "workflowRunAttempt": "1",
+        "workflowJob": "data-integrity",
+        "workflowJobId": 124640659132,
+        "accessPolicySha256": "cdb52c316b724a483c209267885cf8bcc61bcd3139e72a4e14dedcb1ea8dab1c",
+        "logSha256": "34ed4734cd0f682c82b5a98d7031a2efaa395101690acb41b2fd7ed7d095ac64",
+        "diagnosticSha256": "402608dee66fa12d49d11bcd2bd810b0c701a6cac484c53f25b9d731b211eeb1",
+        "receiptSha256": "fe2839ce1603369b57728b8ca43598e8263da14584f357301c63e870bd8da06f",
+        "loggedAt": "2026-10-31T19:59:48.591Z",
+        "diagnostic": {
+          "version": 1,
+          "disposition": "nonpublishable_requires_review",
+          "kind": "http_restriction",
+          "repository": "JeremyHennessy/HalifaxSourced",
+          "workflowJob": "data-integrity",
+          "loggedAt": "2026-10-31T19:59:48.591Z",
+          "sourceCommitSha": "e6ada1958a842f1d40aff2f6d5871a7a20e90c67",
+          "sourceWorkflowRunId": "41236138101",
+          "sourceWorkflowRunAttempt": "1",
+          "accessPolicySha256": "cdb52c316b724a483c209267885cf8bcc61bcd3139e72a4e14dedcb1ea8dab1c",
+          "evidence": {
+            "hold": {
+              "id": "80c139ce5bd2d2d259f41eca675a582fe592389c1a3a8bfab16a1d20ce789b1b",
+              "scope": "url",
+              "target": "https://order.chownow.com/order/8504/locations?add_cn_ordering_class=true",
+              "reason": "access_restricted",
+              "resume": "reviewed_evidence_required",
+              "evidence": {
+                "url": "https://order.chownow.com/order/8504/locations?add_cn_ordering_class=true",
+                "finalUrl": "https://order.chownow.com/order/8504/locations?add_cn_ordering_class=true",
+                "status": 403,
+                "observedAt": "2026-10-31T19:59:48.591Z"
+              },
+              "provenance": {
+                "kind": "current_run",
+                "sourceCommitSha": "e6ada1958a842f1d40aff2f6d5871a7a20e90c67",
+                "sourceWorkflowRunId": "41236138101",
+                "sourceWorkflowRunAttempt": "1",
+                "accessPolicySha256": "cdb52c316b724a483c209267885cf8bcc61bcd3139e72a4e14dedcb1ea8dab1c",
+                "requestId": "1008"
+              }
+            },
+            "receipt": {
+              "requestId": "1008",
+              "url": "https://order.chownow.com/order/8504/locations?add_cn_ordering_class=true",
+              "status": 403,
+              "observedAt": "2026-10-31T19:59:48.591Z",
+              "attemptedAt": "2026-10-31T19:59:48.508Z",
+              "mediaType": "text/html"
+            },
+            "late": false,
+            "suspensionId": null
+          }
+        }
+      },
+      "observations": [
+        {
+          "url": "https://order.chownow.com/order/8504/locations?add_cn_ordering_class=true",
+          "finalUrl": "https://order.chownow.com/order/8504/locations?add_cn_ordering_class=true",
+          "status": 403,
+          "observedAt": "2026-10-31T19:59:48.591Z"
+        }
+      ]
+    },
+    {
+      "provenance": {
+        "kind": "reviewed_workflow_log",
+        "repository": "JeremyHennessy/HalifaxSourced",
+        "sourceCommitSha": "e6ada1958a842f1d40aff2f6d5871a7a20e90c67",
+        "workflowRunId": "41236138101",
+        "workflowRunAttempt": "1",
+        "workflowJob": "data-integrity",
+        "workflowJobId": 124640659132,
+        "accessPolicySha256": "cdb52c316b724a483c209267885cf8bcc61bcd3139e72a4e14dedcb1ea8dab1c",
+        "logSha256": "34ed4734cd0f682c82b5a98d7031a2efaa395101690acb41b2fd7ed7d095ac64",
+        "diagnosticSha256": "72d6624bf077bd7c71aaff8f525f36c70c9a617dd599941fb73136658155f670",
+        "receiptSha256": "01e4793365f727edd153f48b9a6c29ac9faa01646a366b5eae8f310aacd58ae6",
+        "loggedAt": "2026-10-31T19:59:48.684Z",
+        "diagnostic": {
+          "version": 1,
+          "disposition": "nonpublishable_requires_review",
+          "kind": "http_restriction",
+          "repository": "JeremyHennessy/HalifaxSourced",
+          "workflowJob": "data-integrity",
+          "loggedAt": "2026-10-31T19:59:48.684Z",
+          "sourceCommitSha": "e6ada1958a842f1d40aff2f6d5871a7a20e90c67",
+          "sourceWorkflowRunId": "41236138101",
+          "sourceWorkflowRunAttempt": "1",
+          "accessPolicySha256": "cdb52c316b724a483c209267885cf8bcc61bcd3139e72a4e14dedcb1ea8dab1c",
+          "evidence": {
+            "hold": {
+              "id": "5d1b39006bd1d530bdbb9dc0a0f63e6a507285bbb2c67adec40620501374d7c3",
+              "scope": "url",
+              "target": "https://palladium-family-restaurant.popmenu.com/",
+              "reason": "access_restricted",
+              "resume": "reviewed_evidence_required",
+              "evidence": {
+                "url": "https://palladium-family-restaurant.popmenu.com/",
+                "finalUrl": "https://palladium-family-restaurant.popmenu.com/",
+                "status": 403,
+                "observedAt": "2026-10-31T19:59:48.684Z"
+              },
+              "provenance": {
+                "kind": "current_run",
+                "sourceCommitSha": "e6ada1958a842f1d40aff2f6d5871a7a20e90c67",
+                "sourceWorkflowRunId": "41236138101",
+                "sourceWorkflowRunAttempt": "1",
+                "accessPolicySha256": "cdb52c316b724a483c209267885cf8bcc61bcd3139e72a4e14dedcb1ea8dab1c",
+                "requestId": "1010"
+              }
+            },
+            "receipt": {
+              "requestId": "1010",
+              "url": "https://palladium-family-restaurant.popmenu.com/",
+              "status": 403,
+              "observedAt": "2026-10-31T19:59:48.684Z",
+              "attemptedAt": "2026-10-31T19:59:48.516Z",
+              "mediaType": "text/html"
+            },
+            "late": false,
+            "suspensionId": null
+          }
+        }
+      },
+      "observations": [
+        {
+          "url": "https://palladium-family-restaurant.popmenu.com/",
+          "finalUrl": "https://palladium-family-restaurant.popmenu.com/",
+          "status": 403,
+          "observedAt": "2026-10-31T19:59:48.684Z"
+        }
+      ]
     }
   ]
 }
