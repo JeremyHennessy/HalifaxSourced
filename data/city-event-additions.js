@@ -876,7 +876,9 @@ window.HALIFAX_CITY_EVENT_ADDITIONS = JSON.parse(`{
             "The official listing describes a four-week outdoor winter celebration; no blanket admission price was asserted."
           ]
         }
-      ]
+      ],
+      "alternateSources": [],
+      "supersedesEventIds": []
     }
   ]
 }`);
