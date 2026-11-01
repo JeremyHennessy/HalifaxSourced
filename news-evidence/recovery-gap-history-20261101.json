@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "kind": "read_only_news_recovery_gap_history",
+  "repository": "JeremyHennessy/HalifaxSourced",
+  "workflowPath": ".github/workflows/news-preview.yml",
+  "workflowId": "398735078",
+  "reviewedAt": "2026-11-01T18:01:52Z",
+  "anchor": {
+    "runNumber": 5,
+    "runId": "40826153584",
+    "attempt": 1,
+    "sha": "0a622a37c4aca0e8512f0e22b9f55ccefacf7a2d",
+    "artifactId": "12876876744",
+    "artifactSize": 4456,
+    "artifactSha256": "5217023f1dce43cd8fe2405ffdeda02ac22107a0cfc6a0f28da95d5aa0a6c7d5",
+    "payloadSha256": "da918b2e6170b22d10ec24fb3f93c6218fc3ef801c816a547b85797b4a5aee8d",
+    "cacheKey": "news-review-v3-1348899318-398735078-5-40826153584-1-0a622a37c4aca0e8512f0e22b9f55ccefacf7a2d"
+  },
+  "interpretation": "Runs 6 through 15 are completed scheduled failures at the lineage preflight step. The collect/restore steps were skipped. These failures do not evidence publisher or robots outages. For run 6, the old implementation did not retain the HTTP status, so the exact metadata failure cause is unknown. For runs 7-13 and 15, the exact thrown preflight reason is not retained here; run 14 is reported as news_lineage_predecessor_not_exact_success_attempt_one. Artifacts 10-15 are preflight diagnostics only and were not downloaded in this work. No publisher requests were made.",
+  "runs": [
+    {"number":6,"id":"40879781916","attempt":1,"event":"schedule","status":"completed","conclusion":"failure","headSha":"1ea15cee06f1a3254006bf45b0fc2ef0965889c1","createdAt":"2026-10-29T13:12:14Z","completedAt":"2026-10-29T13:12:27Z","jobId":"123467898904","failedStep":"Verify current run and exact sequential predecessor with public GitHub metadata","collectStep":"skipped","failureDetail":"news_lineage_metadata_http was reported independently; exact HTTP status/cause is unavailable","artifact":null},
+    {"number":7,"id":"40968810420","attempt":1,"event":"schedule","status":"completed","conclusion":"failure","headSha":"fc06ab6ebf845d7d524829886a27abe6eca5203e","createdAt":"2026-10-29T22:49:55Z","completedAt":"2026-10-29T22:50:14Z","jobId":"123780041510","failedStep":"Verify current run and exact sequential predecessor with public GitHub metadata","collectStep":"skipped","failureDetail":"Exact thrown preflight reason not retained","artifact":null},
+    {"number":8,"id":"41011226857","attempt":1,"event":"schedule","status":"completed","conclusion":"failure","headSha":"0ab2f710413b72dd91f795c6c1dd74ba97c5c4e2","createdAt":"2026-10-30T05:56:46Z","completedAt":"2026-10-30T05:56:58Z","jobId":"123917314097","failedStep":"Verify current run and exact sequential predecessor with public GitHub metadata","collectStep":"skipped","failureDetail":"Exact thrown preflight reason not retained","artifact":null},
+    {"number":9,"id":"41060268783","attempt":1,"event":"schedule","status":"completed","conclusion":"failure","headSha":"e1d9ba4503d2e6b303564b7a229c8116e4d4f544","createdAt":"2026-10-30T13:04:51Z","completedAt":"2026-10-30T13:05:04Z","jobId":"124077958477","failedStep":"Verify current run and exact sequential predecessor with public GitHub metadata","collectStep":"skipped","failureDetail":"Exact thrown preflight reason not retained","artifact":null},
+    {"number":10,"id":"41138186425","attempt":1,"event":"schedule","status":"completed","conclusion":"failure","headSha":"7548879898c3c9f8c00d22c25cfac3c1ce1df638","createdAt":"2026-10-30T22:26:53Z","completedAt":"2026-10-30T22:27:07Z","jobId":"124345728096","failedStep":"Verify current run and exact sequential predecessor with public GitHub metadata","collectStep":"skipped","failureDetail":"Exact thrown preflight reason not retained","artifact":{"id":"13017139601","size":564,"sha256":"b8fc889dadd3f17cd565c398a7095af32f936093e5705e82582c218d8273f76a","use":"preflight diagnostic; not downloaded"}},
+    {"number":11,"id":"41174328152","attempt":1,"event":"schedule","status":"completed","conclusion":"failure","headSha":"7001f90b4a220540a6210f4539303342597b3c99","createdAt":"2026-10-31T05:52:55Z","completedAt":"2026-10-31T05:53:08Z","jobId":"124458625010","failedStep":"Verify current run and exact sequential predecessor with public GitHub metadata","collectStep":"skipped","failureDetail":"Exact thrown preflight reason not retained","artifact":{"id":"13032612148","size":564,"sha256":"90680ef91c936374f4a0e18a70ecc3064e722709c2870855e666fd8924e99344","use":"preflight diagnostic; not downloaded"}},
+    {"number":12,"id":"41202321145","attempt":1,"event":"schedule","status":"completed","conclusion":"failure","headSha":"7001f90b4a220540a6210f4539303342597b3c99","createdAt":"2026-10-31T12:42:48Z","completedAt":"2026-10-31T12:43:01Z","jobId":"124540394195","failedStep":"Verify current run and exact sequential predecessor with public GitHub metadata","collectStep":"skipped","failureDetail":"Exact thrown preflight reason not retained","artifact":{"id":"13042942996","size":563,"sha256":"c9809568c37a06f057ff81a27a964ad8b63e14014b79aae8ce39ca64f1f14d0c","use":"preflight diagnostic; not downloaded"}},
+    {"number":13,"id":"41244742181","attempt":1,"event":"schedule","status":"completed","conclusion":"failure","headSha":"934b6aca57f7ed4530931b7a7a18bb3a029a56b5","createdAt":"2026-10-31T21:41:14Z","completedAt":"2026-10-31T21:41:29Z","jobId":"124665711810","failedStep":"Verify current run and exact sequential predecessor with public GitHub metadata","collectStep":"skipped","failureDetail":"Exact thrown preflight reason not retained","artifact":{"id":"13058354817","size":563,"sha256":"49707999b3fab33f93be56916858f39e3c5811f39dc4e6cc9b2ca640d8369553e","use":"preflight diagnostic; not downloaded"}},
+    {"number":14,"id":"41280216473","attempt":1,"event":"schedule","status":"completed","conclusion":"failure","headSha":"934b6aca57f7ed4530931b7a7a18bb3a029a56b5","createdAt":"2026-11-01T06:17:19Z","completedAt":"2026-11-01T06:17:31Z","jobId":"124770445207","failedStep":"Verify current run and exact sequential predecessor with public GitHub metadata","collectStep":"skipped","failureDetail":"news_lineage_predecessor_not_exact_success_attempt_one","artifact":{"id":"13073365288","size":561,"sha256":"dd7902cdcfcd28a68ef931f28f9f25d31074eb76cc3551faffc311171fb9729a","use":"preflight diagnostic; not downloaded"}},
+    {"number":15,"id":"41334078069","attempt":1,"event":"schedule","status":"completed","conclusion":"failure","headSha":"5f280dc90f777f12a6e24b5798b7fe5d617a9533","createdAt":"2026-11-01T17:57:20Z","completedAt":"2026-11-01T17:57:32Z","jobId":"124930071813","failedStep":"Verify current run and exact sequential predecessor with public GitHub metadata","collectStep":"skipped","failureDetail":"Exact thrown preflight reason not retained","artifact":{"id":"13094506663","size":565,"sha256":"113aec32f0967292c099e52df95a8da91304e2afaecb1bddb7a0fad64d28dcd5","use":"preflight diagnostic; not downloaded"}}
+  ],
+  "currentCachePersistence": "unverified",
+  "publisherAccess": "not attempted"
+}

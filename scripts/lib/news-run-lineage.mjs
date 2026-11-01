@@ -22,7 +22,8 @@ export function environmentIdentity(env) {
 // Public official metadata only. No token, redirect, retry, publisher or robots
 // request is possible here. Rate limiting, unavailable API and bad JSON are stops.
 export async function githubMetadata(path, {fetchImpl = globalThis.fetch} = {}) {
-  if (!/^\/repos\/JeremyHennessy\/HalifaxSourced(?:\/actions\/(?:runs\/\d+|workflows\/\d+\/runs\?per_page=100&page=1))?$/.test(path)) fail('invalid_metadata_path');
+  const safePath = /^\/repos\/JeremyHennessy\/HalifaxSourced(?:\/actions\/(?:runs\/[1-9][0-9]*|runs\/[1-9][0-9]*\/(?:jobs|artifacts)\?per_page=100&page=(?:[1-9]|1[0-9]|20)|artifacts\/[1-9][0-9]*|workflows\/[1-9][0-9]*\/runs\?per_page=100&page=(?:[1-9]|1[0-9]|20)))?$/.test(path);
+  if (!safePath) fail('invalid_metadata_path');
   const diagnostic = {target:path,status:null,mime:null,declaredBodyBytes:null,errorClass:'transport_unknown'};
   const error = errorClass => { const failure = new Error(`news_lineage_${errorClass}`); failure.metadataDiagnostic = {...diagnostic,errorClass}; throw failure; };
   let response;
