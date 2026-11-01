@@ -1523,6 +1523,125 @@
         "reviewer": "Halifax Sourced official-source review",
         "rightsBasis": "Original factual headline and attributed outbound link only. No article body, quotations, images, official marks or patient information reproduced. Source publication date retained; no general reuse licence inferred."
       }
+    },
+    {
+      "id": "news-450d9f0b7d98e559b9f70790",
+      "status": "approved",
+      "record": {
+        "id": "news-450d9f0b7d98e559b9f70790",
+        "canonicalUrl": "https://thelaker.ca/hurricanes-rapid-growth-gets-5000-boost-from-canada-post-community-foundation/",
+        "sourceId": "the-laker-news",
+        "sourceName": "The Laker News",
+        "sourceGUID": "https://thelaker.ca/hurricanes-rapid-growth-gets-5000-boost-from-canada-post-community-foundation/",
+        "source_type": "newsroom",
+        "title": "Corridor Volleyball receives community-foundation grant",
+        "region": "East Hants",
+        "regionEvidence": "The reviewed report identifies Corridor Volleyball and places the story in Enfield/East Hants.",
+        "topics": [
+          "Sports",
+          "Community"
+        ],
+        "publishedAt": "2026-10-31",
+        "publishedPrecision": "day",
+        "modifiedAt": null,
+        "observedAt": "2026-11-01T18:31:45.000Z",
+        "reviewStatus": "approved",
+        "correctionStatus": "none",
+        "summary": null,
+        "summaryKind": "none",
+        "reviewedAt": "2026-11-01T18:36:13.000Z",
+        "reviewer": "Halifax Sourced source review",
+        "rightsBasis": "Individual link review from reader-observation window 2026-11-01T18:31:24Z through 2026-11-01T18:31:45Z; cache labels varied, so observedAt is only that window’s upper bound and not an origin retrieval time. The supplied review reports a $5,000 community-foundation grant and no observed sponsored/opinion label. Publisher attribution and original factual title only; no body, quote, image or author text copied. Public access does not establish a general reuse licence. Publisher terms reserve all rights."
+      }
+    },
+    {
+      "id": "news-895be09c7bf9531cbb444257",
+      "status": "approved",
+      "record": {
+        "id": "news-895be09c7bf9531cbb444257",
+        "canonicalUrl": "https://thelaker.ca/houston-announces-tentative-agreement-reached-with-cupe-school-operations-proceeding-as-usual/",
+        "sourceId": "the-laker-news",
+        "sourceName": "The Laker News",
+        "sourceGUID": "https://thelaker.ca/houston-announces-tentative-agreement-reached-with-cupe-school-operations-proceeding-as-usual/",
+        "source_type": "newsroom",
+        "title": "The Laker reports tentative school-operations agreement",
+        "region": "Nova Scotia",
+        "regionEvidence": "The reviewed item is a Halifax-dateline report about a tentative agreement affecting provincial school-operations workers; the agreement is not reported as ratified.",
+        "topics": [
+          "Education",
+          "Provincial affairs"
+        ],
+        "publishedAt": "2026-10-30",
+        "publishedPrecision": "day",
+        "modifiedAt": null,
+        "observedAt": "2026-11-01T18:31:45.000Z",
+        "reviewStatus": "approved",
+        "correctionStatus": "none",
+        "summary": null,
+        "summaryKind": "none",
+        "reviewedAt": "2026-11-01T18:36:13.000Z",
+        "reviewer": "Halifax Sourced source review",
+        "rightsBasis": "Individual link review from reader-observation window 2026-11-01T18:31:24Z through 2026-11-01T18:31:45Z; cache labels varied, so observedAt is only that window’s upper bound and not an origin retrieval time. Title attributes the report and retains the tentative status; no claim is made about ratification or current school operations. Publisher attribution and original factual title only; no body, quote, image or author text copied. Public access does not establish a general reuse licence. Publisher terms reserve all rights."
+      }
+    },
+    {
+      "id": "news-78e18bcd44e76f6538f05ff8",
+      "status": "approved",
+      "record": {
+        "id": "news-78e18bcd44e76f6538f05ff8",
+        "canonicalUrl": "https://thelaker.ca/e-h-horne-school-receives-provincial-heritage-designation-after-years-of-community-dedication/",
+        "sourceId": "the-laker-news",
+        "sourceName": "The Laker News",
+        "sourceGUID": "https://thelaker.ca/e-h-horne-school-receives-provincial-heritage-designation-after-years-of-community-dedication/",
+        "source_type": "newsroom",
+        "title": "Enfield’s former Horne school receives heritage designation",
+        "region": "East Hants",
+        "regionEvidence": "The reviewed report identifies the former Horne school in Enfield, East Hants.",
+        "topics": [
+          "Education",
+          "Community"
+        ],
+        "publishedAt": "2026-10-29",
+        "publishedPrecision": "day",
+        "modifiedAt": null,
+        "observedAt": "2026-11-01T18:31:45.000Z",
+        "reviewStatus": "approved",
+        "correctionStatus": "none",
+        "summary": null,
+        "summaryKind": "none",
+        "reviewedAt": "2026-11-01T18:36:13.000Z",
+        "reviewer": "Halifax Sourced source review",
+        "rightsBasis": "Individual link review from reader-observation window 2026-11-01T18:31:24Z through 2026-11-01T18:31:45Z; cache labels varied, so observedAt is only that window’s upper bound and not an origin retrieval time. The supplied review reports a provincial heritage designation and no observed sponsored/opinion label. Publisher attribution and original factual title only; no body, quote, image or author text copied. Public access does not establish a general reuse licence. Publisher terms reserve all rights."
+      }
+    },
+    {
+      "id": "news-afbcf5b6bb735f09c5e9dddd",
+      "status": "approved",
+      "record": {
+        "id": "news-afbcf5b6bb735f09c5e9dddd",
+        "canonicalUrl": "https://dalgazette.com/sports/both-tigers-soccer-clubs-advance-to-aus-final/",
+        "sourceId": "dalhousie-gazette",
+        "sourceName": "The Dalhousie Gazette",
+        "sourceGUID": "https://dalgazette.com/sports/both-tigers-soccer-clubs-advance-to-aus-final/",
+        "source_type": "newsroom",
+        "title": "Dalhousie soccer teams advance to conference finals",
+        "region": "Halifax",
+        "regionEvidence": "The reviewed sports report concerns Dalhousie Tigers teams, supporting Halifax university-affiliation coverage; it states the women’s final is in St. John’s, so no Halifax match venue or event listing is implied.",
+        "topics": [
+          "Sports"
+        ],
+        "publishedAt": "2026-10-31",
+        "publishedPrecision": "day",
+        "modifiedAt": null,
+        "observedAt": "2026-11-01T18:31:45.000Z",
+        "reviewStatus": "approved",
+        "correctionStatus": "none",
+        "summary": null,
+        "summaryKind": "none",
+        "reviewedAt": "2026-11-01T18:36:13.000Z",
+        "reviewer": "Halifax Sourced source review",
+        "rightsBasis": "Individual link review from reader-observation window 2026-11-01T18:31:24Z through 2026-11-01T18:31:45Z; cache labels varied, so observedAt is only that window’s upper bound and not an origin retrieval time. The supplied review identifies the named authors Dylan Buckman and Riley Shields and a source weekday inconsistency; no match times/dates or event-listing claims are used. Publisher attribution and original factual title only; no body, quote, image or author text copied. Public access does not establish a general reuse licence. Publisher footer reserves all rights."
+      }
     }
   ]
 }
