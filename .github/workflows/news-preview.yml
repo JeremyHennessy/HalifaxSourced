@@ -10,6 +10,36 @@ on:
         type: boolean
         default: false
         required: false
+      recovery_approval:
+        description: "Approve the named one-use run-5 checkpoint recovery"
+        type: boolean
+        default: false
+        required: false
+      approve_global_feed_call:
+        description: "Separately approve one Global Halifax feed request"
+        type: boolean
+        default: false
+        required: false
+      recovery_checkpoint_mode:
+        description: "Select exactly one run-5 checkpoint transport; no fallback"
+        type: choice
+        options:
+          - exact-cache
+          - exact-artifact
+        default: exact-cache
+        required: false
+      recovery_predecessor_run_id:
+        description: "Exact current failed predecessor run ID; re-resolved before collection"
+        type: string
+        required: false
+      recovery_predecessor_run_number:
+        description: "Exact current failed predecessor run number; re-resolved before collection"
+        type: string
+        required: false
+      recovery_descriptor_sha256:
+        description: "SHA-256 of the separately reviewed immutable recovery descriptor"
+        type: string
+        required: false
 permissions:
   contents: read
 concurrency:
@@ -23,6 +53,12 @@ jobs:
     timeout-minutes: 10
     env:
       NEWS_INITIALIZE_REVIEW_CACHE: ${{ inputs.initialize_review_cache }}
+      NEWS_RECOVERY_APPROVED: ${{ inputs.recovery_approval }}
+      NEWS_RECOVERY_GLOBAL_CALL_APPROVED: ${{ inputs.approve_global_feed_call }}
+      NEWS_RECOVERY_CHECKPOINT_MODE: ${{ inputs.recovery_checkpoint_mode }}
+      NEWS_RECOVERY_PREDECESSOR_RUN_ID: ${{ inputs.recovery_predecessor_run_id }}
+      NEWS_RECOVERY_PREDECESSOR_RUN_NUMBER: ${{ inputs.recovery_predecessor_run_number }}
+      NEWS_RECOVERY_DESCRIPTOR_SHA256: ${{ inputs.recovery_descriptor_sha256 }}
     steps:
       - uses: actions/checkout@v6
         with:
@@ -34,13 +70,14 @@ jobs:
         run: |
           node scripts/test-regional-news.mjs
           node scripts/test-news-run-lineage.mjs
+          node scripts/test-news-preview-recovery.mjs
       - name: Validate accepted snapshot
         run: node scripts/check-news.mjs
       - name: Verify current run and exact sequential predecessor with public GitHub metadata
         id: lineage
         run: node scripts/news-preview-lineage.mjs plan
       - name: Restore only the exact successful predecessor payload
-        if: steps.lineage.outputs.bootstrap == 'false'
+        if: steps.lineage.outputs.bootstrap == 'false' && steps.lineage.outputs.recovery != 'true'
         id: review-cache
         uses: actions/cache/restore@v4
         with:
@@ -48,13 +85,46 @@ jobs:
           key: ${{ steps.lineage.outputs.predecessor-cache-key }}
           fail-on-cache-miss: true
       - name: Restore only that predecessor's final receipt
-        if: steps.lineage.outputs.bootstrap == 'false'
+        if: steps.lineage.outputs.bootstrap == 'false' && steps.lineage.outputs.recovery != 'true'
         id: final-receipt
         uses: actions/cache/restore@v4
         with:
           path: artifacts/news-preview-final.json
           key: ${{ steps.lineage.outputs.predecessor-cache-key }}-final
           fail-on-cache-miss: true
+      - name: Restore only the pinned run-5 payload checkpoint
+        if: steps.lineage.outputs.recovery == 'true' && steps.lineage.outputs.checkpoint-mode == 'exact-cache'
+        id: recovery-payload
+        uses: actions/cache/restore@v4
+        with:
+          path: artifacts/news-preview.json
+          key: ${{ steps.lineage.outputs.checkpoint-cache-key }}
+          fail-on-cache-miss: true
+      - name: Restore only the pinned run-5 final receipt
+        if: steps.lineage.outputs.recovery == 'true' && steps.lineage.outputs.checkpoint-mode == 'exact-cache'
+        id: recovery-receipt
+        uses: actions/cache/restore@v4
+        with:
+          path: artifacts/news-preview-final.json
+          key: ${{ steps.lineage.outputs.checkpoint-cache-key }}-final
+          fail-on-cache-miss: true
+      - name: Download only the pinned run-5 artifact ZIP
+        if: steps.lineage.outputs.recovery == 'true' && steps.lineage.outputs.checkpoint-mode == 'exact-artifact'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            fs.mkdirSync('artifacts', { recursive: true });
+            const response = await github.rest.actions.downloadArtifact({ owner: context.repo.owner, repo: context.repo.repo, artifact_id: 12876876744, archive_format: 'zip' });
+            fs.writeFileSync('artifacts/news-preview-anchor.zip', Buffer.from(response.data));
+      - name: Verify run-5 bytes, receipts, gap history and current policy before claiming recovery
+        if: steps.lineage.outputs.recovery == 'true'
+        env:
+          NEWS_RECOVERY_PAYLOAD_CACHE_HIT: ${{ steps.recovery-payload.outputs.cache-hit }}
+          NEWS_RECOVERY_PAYLOAD_CACHE_KEY: ${{ steps.recovery-payload.outputs.cache-matched-key }}
+          NEWS_RECOVERY_RECEIPT_CACHE_HIT: ${{ steps.recovery-receipt.outputs.cache-hit }}
+          NEWS_RECOVERY_RECEIPT_CACHE_KEY: ${{ steps.recovery-receipt.outputs.cache-matched-key }}
+        run: node scripts/news-preview-lineage.mjs claim-recovery
       - name: Verify receipt and digest before any news or robots request
         id: collect
         env:
@@ -62,6 +132,10 @@ jobs:
           NEWS_PAYLOAD_CACHE_KEY: ${{ steps.review-cache.outputs.cache-matched-key }}
           NEWS_RECEIPT_CACHE_HIT: ${{ steps.final-receipt.outputs.cache-hit }}
           NEWS_RECEIPT_CACHE_KEY: ${{ steps.final-receipt.outputs.cache-matched-key }}
+          NEWS_RECOVERY_PAYLOAD_CACHE_HIT: ${{ steps.recovery-payload.outputs.cache-hit }}
+          NEWS_RECOVERY_PAYLOAD_CACHE_KEY: ${{ steps.recovery-payload.outputs.cache-matched-key }}
+          NEWS_RECOVERY_RECEIPT_CACHE_HIT: ${{ steps.recovery-receipt.outputs.cache-hit }}
+          NEWS_RECOVERY_RECEIPT_CACHE_KEY: ${{ steps.recovery-receipt.outputs.cache-matched-key }}
         run: node scripts/news-preview-lineage.mjs collect
       - name: Save only a completed current payload
         uses: actions/cache/save@v4
@@ -107,6 +181,7 @@ jobs:
           name: regional-news-review-only
           path: |
             artifacts/news-preview*.json
+            artifacts/news-preview-anchor.zip
             artifacts/source-access-diagnostics.jsonl
           if-no-files-found: warn
 # GUARDED REVIEW ONLY. Scheduled runs never initialize or reset retained state.

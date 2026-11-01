@@ -340,6 +340,36 @@ on:
         type: boolean
         default: false
         required: false
+      recovery_approval:
+        description: "Approve the named one-use run-5 checkpoint recovery"
+        type: boolean
+        default: false
+        required: false
+      approve_global_feed_call:
+        description: "Separately approve one Global Halifax feed request"
+        type: boolean
+        default: false
+        required: false
+      recovery_checkpoint_mode:
+        description: "Select exactly one run-5 checkpoint transport; no fallback"
+        type: choice
+        options:
+          - exact-cache
+          - exact-artifact
+        default: exact-cache
+        required: false
+      recovery_predecessor_run_id:
+        description: "Exact current failed predecessor run ID; re-resolved before collection"
+        type: string
+        required: false
+      recovery_predecessor_run_number:
+        description: "Exact current failed predecessor run number; re-resolved before collection"
+        type: string
+        required: false
+      recovery_descriptor_sha256:
+        description: "SHA-256 of the separately reviewed immutable recovery descriptor"
+        type: string
+        required: false
 `);
 assert.match(workflow,/permissions:\n  contents: read\nconcurrency:/);
 assert.match(workflow,/    if: \(github.event_name == 'schedule' \|\| github.event_name == 'workflow_dispatch'\) && github.ref == format\('refs\/heads\/\{0\}', github.event.repository.default_branch\)/);
@@ -354,7 +384,7 @@ for(const command of ['plan','collect','complete','verify-final-save']) assert.e
 const stages=['node scripts/news-preview-lineage.mjs plan','id: review-cache','id: final-receipt','node scripts/news-preview-lineage.mjs collect','name: Save only a completed current payload','id: saved-payload','node scripts/news-preview-lineage.mjs complete','name: Save final receipt separately','id: saved-final','node scripts/news-preview-lineage.mjs verify-final-save'];
 for(let i=1;i<stages.length;i++) assert.ok(workflow.indexOf(stages[i])>workflow.indexOf(stages[i-1]),stages[i]);
 assert.equal((workflow.match(/lookup-only: true/g)||[]).length,2);
-assert.equal((workflow.match(/fail-on-cache-miss: true/g)||[]).length,4);
+assert.equal((workflow.match(/fail-on-cache-miss: true/g)||[]).length,6);
 const quality=await readFile(new URL('../.github/workflows/quality-gate.yml',import.meta.url),'utf8');
 assert.match(quality,/node scripts\/test-news-run-lineage.mjs/);
 assert.match(workflow,/uses: actions\/checkout@v6\n        with:\n          ref: \$\{\{ github.sha \}\}/);
