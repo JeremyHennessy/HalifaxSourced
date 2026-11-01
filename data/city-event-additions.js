@@ -2,7 +2,7 @@
 
 window.HALIFAX_CITY_EVENT_ADDITIONS = JSON.parse(`{
   "version": 1,
-  "generatedAt": "2026-10-23T05:16:48.006Z",
+  "generatedAt": "2026-11-01T22:19:28.535Z",
   "policy": "Curated city-event additions are source-backed records used when current official or local calendars have not yet been promoted into the primary city-events build.",
   "sources": [
     {
@@ -828,6 +828,55 @@ window.HALIFAX_CITY_EVENT_ADDITIONS = JSON.parse(`{
         "conversionPolicy": "scripts/import-city-events.mjs: localIso / atlanticOffset",
         "basis": "The source prints local wall times, not a timezone or UTC timestamp. America/Halifax and the ISO instants are derived from the Halifax venue location using the existing application policy."
       },
+      "alternateSources": [],
+      "supersedesEventIds": []
+    },
+    {
+      "id": "https://novascotia.com/event/evergreen-festival/#event",
+      "title": "Evergreen Festival",
+      "startAt": "2026-11-27",
+      "endAt": "2026-12-20",
+      "allDay": true,
+      "venueName": "Downtown Halifax, Halifax Waterfront, Downtown Dartmouth",
+      "address": "Various locations in Downtown Halifax, Halifax Waterfront, and Downtown Dartmouth",
+      "city": "Halifax",
+      "categories": [
+        "Festivals",
+        "Family",
+        "Food & Drink",
+        "Arts",
+        "Music",
+        "Outdoor"
+      ],
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": "https://novascotia.com/event/evergreen-festival/",
+      "sourceUrl": "https://novascotia.com/event/evergreen-festival/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_event_page",
+      "observedAt": "2026-11-01T22:19:28.535Z",
+      "reviewedAt": "2026-11-01T22:19:28.535Z",
+      "reviewState": "source_observed",
+      "neighbourhood": "Multiple Halifax and Dartmouth locations",
+      "sourceEvidence": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/evergreen-festival/",
+          "basis": "official_primary",
+          "observedAt": "2026-11-01T22:19:28.535Z",
+          "reviewedAt": "2026-11-01T22:19:28.535Z",
+          "observationBasis": "Upper bound of the successful official-page web-reader review window, not an exact HTTP fetch timestamp.",
+          "sourceCrawlAgeReported": "today",
+          "sourceCrawlTimestamp": null,
+          "observedFacts": [
+            "November 27–December 20, 2026.",
+            "Locations include Downtown Halifax, Halifax Waterfront, and Downtown Dartmouth.",
+            "The official listing describes a four-week outdoor winter celebration; no blanket admission price was asserted."
+          ]
+        }
+      ],
       "alternateSources": [],
       "supersedesEventIds": []
     }
