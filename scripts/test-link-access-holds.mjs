@@ -21,12 +21,15 @@ const dependencies = [
   'restaurant-corrections.js', 'source-integrity.js'
 ];
 const fullReviewedPolicy = JSON.parse(await readFile(new URL('../data/source-link-access-holds.json', import.meta.url), 'utf8'));
+// The two newest exact URL restrictions are checked separately below. Keep
+// prior snapshot-based corpus assertions anchored before these additions.
+const policyBeforeLatestRestrictions = {...structuredClone(fullReviewedPolicy), historicalEvidence:structuredClone(fullReviewedPolicy.historicalEvidence.slice(0, -2))};
 // Preserve the original 224-receipt regression corpus independently of the
 // ten previously reviewed exact holds, six source-refresh holds, seven
 // Quality Gate holds, three Social Source holds, two current place-fact holds,
 // the Bedford menus hold, the Crème robots hold and three exact Crème
 // release-link holds reviewed from the failed exact-head Quality run.
-const policyBeforeCremeQuality = {...structuredClone(fullReviewedPolicy), historicalEvidence:structuredClone(fullReviewedPolicy.historicalEvidence.slice(0, -3))};
+const policyBeforeCremeQuality = {...structuredClone(policyBeforeLatestRestrictions), historicalEvidence:structuredClone(policyBeforeLatestRestrictions.historicalEvidence.slice(0, -3))};
 const policyBeforeCremeRobots = {...structuredClone(policyBeforeCremeQuality), historicalEvidence:structuredClone(policyBeforeCremeQuality.historicalEvidence.slice(0, -1))};
 const policyBeforeBedfordMenus = {...structuredClone(policyBeforeCremeRobots), historicalEvidence:structuredClone(policyBeforeCremeRobots.historicalEvidence.slice(0, -1))};
 const policyBeforePlaceFacts = {...structuredClone(policyBeforeBedfordMenus), historicalEvidence:structuredClone(policyBeforeBedfordMenus.historicalEvidence.slice(0, -2))};
@@ -271,7 +274,8 @@ process.on('exit', () => {
   assert.equal(policyBeforeBedfordMenus.historicalEvidence.length, policyBeforePlaceFacts.historicalEvidence.length + 2, 'Only two exact structured-place-fact HTTP 403 receipts extend the reviewed policy');
   assert.equal(policyBeforeCremeRobots.historicalEvidence.length, policyBeforeBedfordMenus.historicalEvidence.length + 1, 'Only the exact Bedford Basin Market menus HTTP 403 receipt extends the reviewed policy');
   assert.equal(policyBeforeCremeQuality.historicalEvidence.length, policyBeforeCremeRobots.historicalEvidence.length + 1, 'Only the exact Crème robots.txt HTTP 403 receipt extends the reviewed policy');
-  assert.equal(fullReviewedPolicy.historicalEvidence.length, policyBeforeCremeQuality.historicalEvidence.length + 3, 'Only the exact Crème homepage, menu and store HTTP 403 receipts extend the reviewed policy');
+  assert.equal(policyBeforeLatestRestrictions.historicalEvidence.length, policyBeforeCremeQuality.historicalEvidence.length + 3, 'Only the exact Crème homepage, menu and store HTTP 403 receipts extend the reviewed policy');
+  assert.equal(fullReviewedPolicy.historicalEvidence.length, policyBeforeLatestRestrictions.historicalEvidence.length + 2, 'Only the two latest exact restaurant URL restrictions extend the prior policy');
   const newBarriosGroups = priorReviewedPolicy.historicalEvidence.slice(-8, -3);
   for (const group of newBarriosGroups) {
     const p = group.provenance;
@@ -610,7 +614,7 @@ assert.equal(acceptedBarriosHolds.find('https://barrioshfx.ca/unknown-page'), nu
   const acceptedCremeRobotsHolds = createAccessHolds(policyBeforeCremeQuality);
   assert.equal(acceptedCremeRobotsHolds.find(cremeRobotsUrl)?.scope, 'url', 'The exact denied Crème robots URL is held');
   const cremeQualityUrls = ['https://cremehalifax.com/', 'https://cremehalifax.com/menu', 'https://cremehalifax.com/store'];
-  const cremeQualityGroups = fullReviewedPolicy.historicalEvidence.slice(-3);
+  const cremeQualityGroups = policyBeforeLatestRestrictions.historicalEvidence.slice(-3);
   for (const [index, group] of cremeQualityGroups.entries()) {
     const p = group.provenance;
     assert.equal(p.kind, 'reviewed_workflow_log');
@@ -644,6 +648,36 @@ assert.equal(acceptedBarriosHolds.find('https://barrioshfx.ca/unknown-page'), nu
   await gate(cremeCheck.report);
   checked('Four exact Crème denied URLs are unattempted; an unevidenced sibling path remains eligible');
 
+  const latestRestrictionGroups = fullReviewedPolicy.historicalEvidence.slice(-2);
+  const latestRestrictedUrls = latestRestrictionGroups.map(group => group.observations[0].url);
+  assert.deepEqual(latestRestrictedUrls, [
+    'https://order.chownow.com/order/8504/locations?add_cn_ordering_class=true',
+    'https://palladium-family-restaurant.popmenu.com/'
+  ]);
+  const latestAccess = createAccessHolds(fullReviewedPolicy);
+  for (const group of latestRestrictionGroups) {
+    const row = group.observations[0];
+    const hold = latestAccess.find(row.url);
+    assert.equal(hold?.scope, 'url');
+    assert.equal(hold?.target, row.url);
+    assert.equal(hold?.reason, 'access_restricted');
+    assert.equal(row.status, 403);
+  }
+  const latestRedirectStarts = latestRestrictedUrls.map((url, index) => new URL(`/redirect-test-${index}`, url).href);
+  await configure({policy:fullReviewedPolicy, catalog:catalogFor([...latestRestrictedUrls, ...latestRedirectStarts])});
+  const latestRestrictionCheck = await collect(Object.fromEntries(latestRedirectStarts.map((url, index) => [url,[{status:302,headers:{location:latestRestrictedUrls[index]}}]])));
+  assert.deepEqual(latestRestrictionCheck.events.filter(event => event.event === 'fetch').map(event => event.url), latestRedirectStarts, 'Direct and redirected held targets never reach transport');
+  for (let index = 0; index < latestRestrictedUrls.length; index++) {
+    const direct = latestRestrictionCheck.report.results[index];
+    const redirected = latestRestrictionCheck.report.results[index + latestRestrictedUrls.length];
+    held(direct, latestRestrictionGroups[index].observations[0]);
+    held(redirected, null, true);
+    assert.equal(redirected.holdTarget, latestRestrictedUrls[index]);
+    assert.equal(redirected.receipts.length, 1);
+    assert.equal(redirected.receipts[0].redirectUrl, latestRestrictedUrls[index]);
+  }
+  await gate(latestRestrictionCheck.report);
+  checked('latest ChowNow and Palladium exact 403 holds suppress direct requests and redirect destinations');
 
   assert(committedPolicy.historicalEvidence[0].observations.every(row => row.status === 403 && new URL(row.url).hostname === 'junglejims.ca'));
   assert.equal(committedPolicy.historicalEvidence[1].observations[0].status, 429);

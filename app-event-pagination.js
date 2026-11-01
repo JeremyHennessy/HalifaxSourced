@@ -189,10 +189,42 @@ function eventCityName(event) {
 function eventCostKind(event) {
   const raw = String(event.price || "").trim();
   if (!raw) return "unknown";
-  if (/\bfree\b|no charge|complimentary/i.test(raw)) return "free";
-  const values = raw.match(/\d+(?:\.\d+)?/g)?.map(Number).filter(Number.isFinite) || [];
-  if (values.length && values.every((value) => value === 0)) return "free";
-  if (values.some((value) => value > 0) || /\$|cad|ticket|admission/i.test(raw)) return "paid";
+  const normalized = raw.replace(/\s+/g, " ").replace(/[.!]+$/, "").trim().toLowerCase();
+  const freeAdmissionValues = new Set([
+    "free", "no charge", "free admission", "admission free", "admission is free",
+    "free entry", "entry free", "entry is free", "free to attend", "free event",
+    "no admission fee", "no entry fee", "no charge for admission", "no charge to attend",
+    "complimentary admission", "complimentary entry", "free admission for everyone", "free admission for everybody",
+    "$0 admission", "$0.00 admission", "admission $0", "admission $0.00", "admission: $0", "admission: $0.00",
+    "$0 entry", "$0.00 entry", "entry $0", "entry $0.00", "general admission $0", "$0 general admission"
+  ]);
+  if (freeAdmissionValues.has(normalized)) return "free";
+
+  const clauses = normalized.split(/[;|,]+/).map((clause) => clause.trim());
+  const amountPattern = /(?:\$\s*\d+(?:\.\d{1,2})?|\b\d+(?:\.\d+)?\s*(?:cad|dollars?)\b)/i;
+  const admissionPricePattern = /(?:\$\s*\d+(?:\.\d{1,2})?|\b\d+(?:\.\d+)?\s*(?:cad|dollars?)\b)\s*(?:general\s+)?(?:admission|entry|tickets?)\b|\b(?:general\s+)?(?:admission|entry|tickets?)\b\s*(?:(?:fee|price|cost)\s*)?(?:(?:is|are|costs?|at|:|of)\s*)?(?:\$\s*\d+(?:\.\d{1,2})?|\b\d+(?:\.\d+)?\s*(?:cad|dollars?)\b)/i;
+  const groupPricePattern = /\b(?:adults?|non-members?|public)\b\s*(?:(?:pay|at|:|—|–|-)\s*)?(?:\$\s*\d+(?:\.\d{1,2})?|\b\d+(?:\.\d+)?\s*(?:cad|dollars?)\b)|(?:\$\s*\d+(?:\.\d{1,2})?|\b\d+(?:\.\d+)?\s*(?:cad|dollars?)\b)\s+for\s+(?:adults?|non-members?|the public)\b/i;
+  const admissionPriceMatches = clauses.map((clause) => ({ clause, match: clause.match(admissionPricePattern) })).filter(({ match }) => match);
+  const groupPriceMatches = clauses.map((clause) => ({ clause, match: clause.match(groupPricePattern) })).filter(({ match }) => match);
+  const negatedPriceMatch = [...admissionPriceMatches, ...groupPriceMatches].some(({ clause, match }) =>
+    /\b(?:no|not|without)\s*$/i.test(clause.slice(0, match.index))
+  );
+  if (negatedPriceMatch) return "unknown";
+
+  const pricedMatches = [...admissionPriceMatches, ...groupPriceMatches];
+  const freeAdmissionMention = /\bfree\s+(?:admission|entry)\b|\b(?:admission|entry)\s+(?:is\s+)?free\b/i.test(normalized);
+  const positiveAdmissionPrice = pricedMatches.some(({ match }) => {
+    const value = Number(match[0].match(amountPattern)?.[0].replace(/[^\d.]/g, ""));
+    return Number.isFinite(value) && value > 0;
+  });
+  if (positiveAdmissionPrice) {
+    if (freeAdmissionMention && admissionPriceMatches.length && !groupPriceMatches.length) return "unknown";
+    return "paid";
+  }
+
+  if (/^(?:\$\s*\d+(?:\.\d{1,2})?|\d+(?:\.\d+)?(?:\s*(?:cad|dollars?))?)$/i.test(normalized)) {
+    return Number(normalized.match(/\d+(?:\.\d+)?/)?.[0]) === 0 ? "free" : "paid";
+  }
   return "unknown";
 }
 
