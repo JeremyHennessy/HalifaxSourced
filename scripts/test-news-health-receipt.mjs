@@ -101,5 +101,5 @@ const temp=await mkdtemp(join(tmpdir(),'news-health-absent-'));try{assert.equal(
 const retained=['data/news.js','data/build/news.json','data/reviewed-news-decisions.json','data/news-source-registry.json'];const before=await Promise.all(retained.map(p=>readFile(new URL(p,root))));
 await buildFromDisk();const catalogue=await readFile(new URL('data/build/source-catalog.json',root));await buildFromDisk();assert.deepEqual(await readFile(new URL('data/build/source-catalog.json',root)),catalogue);checks++;
 for(let i=0;i<retained.length;i++)assert.deepEqual(await readFile(new URL(retained[i],root)),before[i],retained[i]+' must stay byte-identical');checks++;
-assert.equal((await json('data/build/news.json')).items.length,51);
+assert.equal((await json('data/build/news.json')).items.length,55);
 console.log(`${checks} news health receipt checks passed; offline, no candidate promotion, accepted content unchanged.`);

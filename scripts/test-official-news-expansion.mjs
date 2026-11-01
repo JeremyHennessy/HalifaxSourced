@@ -52,10 +52,14 @@ const frozen={
   "news-2caae9ef6e642875a81fe845": "29c1c0bdf752739e5ee9b6de5078df4f174e7a6bbccd217fbbb1169bcebdfa80",
   "news-410ba17ed973314980f9c257": "f196dddf889ec22bda892faf197974f9a709c3ebdc343a12522e22fc496e1120",
   "news-0fdaf0f2b9bd4ebadb94aa48": "bc7eba5ab66aede0462db8ab91d1e608d4d27fdc3f61956a2ac60437c70430a6",
-  "news-717e5f25c006916b345afd55": "a175eb038a86c88cd300f39331d2a7d859e2c8b9b2e10856498e1fda79bcd806"
+  "news-717e5f25c006916b345afd55": "a175eb038a86c88cd300f39331d2a7d859e2c8b9b2e10856498e1fda79bcd806",
+  "news-450d9f0b7d98e559b9f70790": "251b560dc544aae23680e0924af7c59f52b7dfb5b95dfab9a2fadba4731403fd",
+  "news-895be09c7bf9531cbb444257": "c8188a905b1f980e43de29d4e2be64f961b1766063343fc3da489f13735d3ff1",
+  "news-78e18bcd44e76f6538f05ff8": "468f4e6c5737ccc7e29e30ecb829a58b8735195b59bfb9f60b21cc35d49fee06",
+  "news-afbcf5b6bb735f09c5e9dddd": "b0f19f48d798bd3d179351332ad69434dd5120286f9dababa42adf29d74b8b20"
 };
 for(const[id,hash]of Object.entries(frozen)){const row=decisions.decisions.find(x=>x.id===id);assert(row);assert.equal(createHash('sha256').update(JSON.stringify(row)).digest('hex'),hash,'Existing decision changed: '+id);}
-assert.equal(payload.items.length,51);assert.equal(Object.keys(frozen).length,47);
+assert.equal(payload.items.length,55);assert.equal(Object.keys(frozen).length,51);
 assert.deepEqual(registry.sources.filter(x=>x.enabled).map(x=>x.id),['global-halifax']);
 for(const id of ['halifax-water','nova-scotia-health']){const source=registry.sources.find(x=>x.id===id);assert.equal(source.enabled,false);assert.equal(source.feedUrl,null);assert.equal(source.source_type,'official_public_notice');let requests=0;await collectNews({version:1,sources:[source]},{now:'2026-10-28T05:00:00.000Z',fetchFeed:async()=>{requests++;throw Error('manual-only source');}});assert.equal(requests,0);assert.throws(()=>validateNewsRegistry({version:1,sources:[{...source,enabled:true}]}));}
 const additions=payload.items.filter(x=>!frozen[x.id]);assert.equal(additions.length,4);
@@ -64,4 +68,4 @@ const water=additions.find(x=>x.sourceId==='halifax-water');assert.equal(water.p
 const clinic=additions.find(x=>x.canonicalUrl.includes('mobile-unit'));assert.equal(clinic.publishedAt,'2026-10-23');assert.match(clinic.regionEvidence,/now past/);assert.doesNotMatch(clinic.title,/current|available|today/i);
 const south=additions.find(x=>x.canonicalUrl.includes('south-shore'));assert.equal(south.publishedAt,'2026-10-09');assert.equal(south.region,'South Shore');assert.match(south.regionEvidence,/Bridgewater, not Halifax/);
 const family=additions.find(x=>x.canonicalUrl.includes('family-practice'));assert.equal(family.publishedAt,'2026-10-14');assert.equal(family.region,'Nova Scotia');
-console.log('Official news expansion passed: 47 frozen decisions, four factual links, two disabled manual sources, dates/privacy/regions and no collector activation.');
+console.log('Official news expansion passed: 51 frozen decisions, four factual links, two disabled manual sources, dates/privacy/regions and no collector activation.');
