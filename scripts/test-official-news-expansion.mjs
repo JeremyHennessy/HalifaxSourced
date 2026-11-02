@@ -59,10 +59,10 @@ const frozen={
   "news-afbcf5b6bb735f09c5e9dddd": "b0f19f48d798bd3d179351332ad69434dd5120286f9dababa42adf29d74b8b20"
 };
 for(const[id,hash]of Object.entries(frozen)){const row=decisions.decisions.find(x=>x.id===id);assert(row);assert.equal(createHash('sha256').update(JSON.stringify(row)).digest('hex'),hash,'Existing decision changed: '+id);}
-assert.equal(payload.items.length,55);assert.equal(Object.keys(frozen).length,51);
+assert.equal(payload.items.length,56);assert.equal(Object.keys(frozen).length,51);
 assert.deepEqual(registry.sources.filter(x=>x.enabled).map(x=>x.id),['global-halifax']);
 for(const id of ['halifax-water','nova-scotia-health']){const source=registry.sources.find(x=>x.id===id);assert.equal(source.enabled,false);assert.equal(source.feedUrl,null);assert.equal(source.source_type,'official_public_notice');let requests=0;await collectNews({version:1,sources:[source]},{now:'2026-10-28T05:00:00.000Z',fetchFeed:async()=>{requests++;throw Error('manual-only source');}});assert.equal(requests,0);assert.throws(()=>validateNewsRegistry({version:1,sources:[{...source,enabled:true}]}));}
-const additions=payload.items.filter(x=>!frozen[x.id]);assert.equal(additions.length,4);
+const additions=payload.items.filter(x=>!frozen[x.id]&&x.source_type==='official_public_notice');assert.equal(additions.length,4);
 for(const r of additions){assert.equal(r.id,newsId(r.canonicalUrl));assert.equal(r.summary,null);assert.equal(r.summaryKind,'none');assert.equal(r.source_type,'official_public_notice');assert.equal(r.publishedPrecision,'day');assert(r.publishedAt<r.observedAt&&r.observedAt<=r.reviewedAt);assert(!['body','image','imageUrl','patientName'].some(k=>k in r));for(const patch of [{body:'copied'},{summary:'unreviewed',summaryKind:'feed_description'},{reviewStatus:'pending'}])assert.throws(()=>buildNews({version:1,decisions:[{id:r.id,status:'approved',record:{...r,...patch}}]},registry));}
 const water=additions.find(x=>x.sourceId==='halifax-water');assert.equal(water.publishedAt,'2026-01-14');assert.equal(water.region,'Halifax');
 const clinic=additions.find(x=>x.canonicalUrl.includes('mobile-unit'));assert.equal(clinic.publishedAt,'2026-10-23');assert.match(clinic.regionEvidence,/now past/);assert.doesNotMatch(clinic.title,/current|available|today/i);
