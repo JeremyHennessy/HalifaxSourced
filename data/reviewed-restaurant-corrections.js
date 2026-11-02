@@ -2886,53 +2886,23 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
       "fields": {
         "hours": {
           "monday": [
-            {
-              "open": "11:30",
-              "close": "22:00",
-              "overnight": false,
-              "sourceForm": "reviewed_visible_official_hours"
-            }
+            { "open": "11:30", "close": "22:00", "overnight": false, "sourceForm": "reviewed_visible_official_hours" }
           ],
           "tuesday": [],
           "wednesday": [
-            {
-              "open": "11:30",
-              "close": "23:00",
-              "overnight": false,
-              "sourceForm": "reviewed_visible_official_hours"
-            }
+            { "open": "11:30", "close": "23:00", "overnight": false, "sourceForm": "reviewed_visible_official_hours" }
           ],
           "thursday": [
-            {
-              "open": "11:30",
-              "close": "23:00",
-              "overnight": false,
-              "sourceForm": "reviewed_visible_official_hours"
-            }
+            { "open": "11:30", "close": "23:00", "overnight": false, "sourceForm": "reviewed_visible_official_hours" }
           ],
           "friday": [
-            {
-              "open": "11:30",
-              "close": "00:00",
-              "overnight": true,
-              "sourceForm": "reviewed_visible_official_hours"
-            }
+            { "open": "11:30", "close": "00:00", "overnight": true, "sourceForm": "reviewed_visible_official_hours" }
           ],
           "saturday": [
-            {
-              "open": "11:30",
-              "close": "00:00",
-              "overnight": true,
-              "sourceForm": "reviewed_visible_official_hours"
-            }
+            { "open": "11:30", "close": "00:00", "overnight": true, "sourceForm": "reviewed_visible_official_hours" }
           ],
           "sunday": [
-            {
-              "open": "11:30",
-              "close": "22:00",
-              "overnight": false,
-              "sourceForm": "reviewed_visible_official_hours"
-            }
+            { "open": "11:30", "close": "22:00", "overnight": false, "sourceForm": "reviewed_visible_official_hours" }
           ]
         },
         "hoursVerifiedAt": "2026-10-25T17:13:47Z",
