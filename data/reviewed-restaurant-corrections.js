@@ -4,6 +4,18 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
   "policy": "Reviewed location evidence overrides stale imports; observation dates are retained and uncertain coordinates, hours, successor identities and closure day remain unknown.",
   "records": [
     {
+      "restaurantId": "osm-node-11552505443-jukai-japanese-and-thai",
+      "fields": {
+        "phone": "902-405-5551"
+      },
+      "sourceUrl": "https://www.jukairestaurant.com/",
+      "claim": "The current owner homepage identifies JUKAI Japanese & Thai at 49 Kings Wharf Place, Unit 103-104, Dartmouth and publishes phone 902-405-5551. The Downtown Dartmouth directory independently publishes the same name, owner domain, unit and phone, while its conflicting civic number 42 remains unresolved and is not used to replace the owner and provincial-inspection address of 49 Kings Wharf Place. The owner site's malformed Monday schedule entry, unresolved dynamic menu and social activity are not published.",
+      "observedAt": "2026-11-02T19:20:35.363Z",
+      "reviewedAt": "2026-11-02T19:20:35.363Z",
+      "evidenceSha256": "8bb8a51b0f0fe7beeaac1cd881b0af6d853a15d1f7a9668a791cd6613a877abb",
+      "reviewState": "verified"
+    },
+    {
       "restaurantId": "osm-node-12938312911-churned",
       "fields": {
         "address": "104 Portland Street, Dartmouth, NS",
