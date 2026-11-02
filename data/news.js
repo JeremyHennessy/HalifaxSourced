@@ -2,6 +2,32 @@ window.HALIFAX_NEWS = {
   "version": 1,
   "items": [
     {
+      "id": "news-d0858ebb9a5c2eacfd06c2b3",
+      "canonicalUrl": "https://halifax.citynews.ca/2026/11/02/halloween-night-brought-three-emergencies-within-forty-minutes-fire-fighters-say/",
+      "sourceId": "citynews-halifax",
+      "sourceName": "CityNews Halifax",
+      "sourceGUID": "https://halifax.citynews.ca/2026/11/02/halloween-night-brought-three-emergencies-within-forty-minutes-fire-fighters-say/",
+      "source_type": "newsroom",
+      "title": "Halloween night brought three emergencies within forty minutes, Fire Fighters say",
+      "region": "Halifax Regional Municipality",
+      "regionEvidence": "The reviewed report places the three emergency responses in Dartmouth, Spryfield and Spring Garden Road within Halifax Regional Municipality.",
+      "topics": [
+        "Public safety",
+        "Emergency services"
+      ],
+      "publishedAt": "2026-11-02",
+      "publishedPrecision": "day",
+      "modifiedAt": null,
+      "observedAt": "2026-11-02T22:17:08.000Z",
+      "reviewStatus": "approved",
+      "correctionStatus": "none",
+      "summary": null,
+      "summaryKind": "none",
+      "reviewedAt": "2026-11-02T22:17:08.000Z",
+      "reviewer": "Halifax Sourced source review",
+      "rightsBasis": "Individual public-page review returned 99 text/html lines and was labelled crawled today; 2026-11-02T22:17:08.000Z is the reader-observation upper bound, not an exact origin retrieval time. The publisher displays Nov 2, 2026 at 10:26:48 AM without a verified timezone, so publication day only is retained. Publisher attribution, original factual title and outbound link only; no body, quote, excerpt, author text, social content, image or logo copied. Public access does not establish a general reuse or republication licence."
+    },
+    {
       "id": "news-450d9f0b7d98e559b9f70790",
       "canonicalUrl": "https://thelaker.ca/hurricanes-rapid-growth-gets-5000-boost-from-canada-post-community-foundation/",
       "sourceId": "the-laker-news",
