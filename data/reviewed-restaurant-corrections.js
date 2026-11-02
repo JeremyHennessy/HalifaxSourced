@@ -1,8 +1,44 @@
 window.HALIFAX_RESTAURANT_CORRECTIONS = {
   "version": 3,
-  "reviewedAt": "2026-10-30",
+  "reviewedAt": "2026-11-02",
   "policy": "Reviewed location evidence overrides stale imports; observation dates are retained and uncertain coordinates, hours, successor identities and closure day remain unknown.",
   "records": [
+    {
+      "restaurantId": "osm-node-12938312911-churned",
+      "fields": {
+        "address": "104 Portland Street, Dartmouth, NS",
+        "phone": "902-702-4958",
+        "website": "https://www.churned.ca/",
+        "openingHours": "Tuesday–Thursday 12pm–8pm; Saturday–Sunday 12pm–9pm; Monday closed",
+        "socialProfiles": [
+          {
+            "platform": "instagram",
+            "platformKind": "social",
+            "handle": "churned.icecream",
+            "url": "https://www.instagram.com/churned.icecream/",
+            "profileUrl": "https://www.instagram.com/churned.icecream/",
+            "label": "Instagram",
+            "locationSpecific": true,
+            "sharedBrandProfile": false,
+            "discoveredFrom": "https://www.churned.ca/",
+            "associationBasis": "linked_from_official_website",
+            "observedAt": "2026-11-02T15:49:09.055Z",
+            "lastVerifiedAt": "2026-11-02T15:49:09.055Z",
+            "reviewState": "verified_link",
+            "confidence": "authoritative",
+            "status": "active"
+          }
+        ],
+        "evidenceStatus": "verified",
+        "summary": "Owner-verified independent Downtown Dartmouth ice cream shop at 104 Portland Street with current contact details, partial weekly hours and an official-site-linked Instagram profile; independently corroborated by the Downtown Dartmouth directory and Nova Scotia food-inspection registry."
+      },
+      "sourceUrl": "https://www.churned.ca/",
+      "claim": "The current owner homepage identifies Churned at 104 Portland Street, Dartmouth/Kjipuktuk, gives phone 902-702-4958, and publishes Tuesday–Thursday 12pm–8pm, Saturday–Sunday 12pm–9pm, and Monday closed. Friday is not listed and remains unknown. The homepage links Instagram profile @churned.icecream; no Meta page or API request was made. The current Downtown Dartmouth directory and Nova Scotia food-inspection registry independently corroborate the same location. These owner facts replace the stale OpenStreetMap Tuesday–Sunday 2pm–9pm schedule while preserving the accepted coordinate and source history. No offers, events, menu, publisher date, media rights or additional social activity are inferred.",
+      "observedAt": "2026-11-02T15:49:09.055Z",
+      "reviewedAt": "2026-11-02T15:49:09.055Z",
+      "evidenceSha256": "b21cb3e796e55442f4dda4e551c37534bb0bbf0574e8c303f2a3694b92f25ed3",
+      "reviewState": "verified"
+    },
     {
       "restaurantId": "osm-node-6031036960-buta-ramen",
       "fields": {
@@ -2850,23 +2886,53 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
       "fields": {
         "hours": {
           "monday": [
-            { "open": "11:30", "close": "22:00", "overnight": false, "sourceForm": "reviewed_visible_official_hours" }
+            {
+              "open": "11:30",
+              "close": "22:00",
+              "overnight": false,
+              "sourceForm": "reviewed_visible_official_hours"
+            }
           ],
           "tuesday": [],
           "wednesday": [
-            { "open": "11:30", "close": "23:00", "overnight": false, "sourceForm": "reviewed_visible_official_hours" }
+            {
+              "open": "11:30",
+              "close": "23:00",
+              "overnight": false,
+              "sourceForm": "reviewed_visible_official_hours"
+            }
           ],
           "thursday": [
-            { "open": "11:30", "close": "23:00", "overnight": false, "sourceForm": "reviewed_visible_official_hours" }
+            {
+              "open": "11:30",
+              "close": "23:00",
+              "overnight": false,
+              "sourceForm": "reviewed_visible_official_hours"
+            }
           ],
           "friday": [
-            { "open": "11:30", "close": "00:00", "overnight": true, "sourceForm": "reviewed_visible_official_hours" }
+            {
+              "open": "11:30",
+              "close": "00:00",
+              "overnight": true,
+              "sourceForm": "reviewed_visible_official_hours"
+            }
           ],
           "saturday": [
-            { "open": "11:30", "close": "00:00", "overnight": true, "sourceForm": "reviewed_visible_official_hours" }
+            {
+              "open": "11:30",
+              "close": "00:00",
+              "overnight": true,
+              "sourceForm": "reviewed_visible_official_hours"
+            }
           ],
           "sunday": [
-            { "open": "11:30", "close": "22:00", "overnight": false, "sourceForm": "reviewed_visible_official_hours" }
+            {
+              "open": "11:30",
+              "close": "22:00",
+              "overnight": false,
+              "sourceForm": "reviewed_visible_official_hours"
+            }
           ]
         },
         "hoursVerifiedAt": "2026-10-25T17:13:47Z",
