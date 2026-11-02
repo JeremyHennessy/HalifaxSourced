@@ -4431,6 +4431,75 @@
           "observedAt": "2026-10-31T19:59:48.684Z"
         }
       ]
+    },
+    {
+      "provenance": {
+        "kind": "reviewed_workflow_log",
+        "repository": "JeremyHennessy/HalifaxSourced",
+        "sourceCommitSha": "5334d9cdad0970c6dff9e46707349f8ac2e5a7c4",
+        "workflowRunId": "41447064065",
+        "workflowRunAttempt": "1",
+        "workflowJob": "data-integrity",
+        "workflowJobId": 125283402242,
+        "accessPolicySha256": "d378a278a7dbe08e87d1b04fa6d4cbc217cc18009f63092fd7ac2d644bf96695",
+        "logSha256": "a08afef259eefc90e69b3107223507f215220e5df1a59c9821aef8591ac826e8",
+        "diagnosticSha256": "2d742af96d762f935a41758c16a8f6af5d78665ffab0e1e2034ea8447306c7c8",
+        "receiptSha256": "ae7eaf01010f5ff768d1e4e38f84771c668508b026b32d98a960d340c9ac0a14",
+        "loggedAt": "2026-11-02T12:51:12.817Z",
+        "diagnostic": {
+          "version": 1,
+          "disposition": "nonpublishable_requires_review",
+          "kind": "http_restriction",
+          "repository": "JeremyHennessy/HalifaxSourced",
+          "workflowJob": "data-integrity",
+          "loggedAt": "2026-11-02T12:51:12.817Z",
+          "sourceCommitSha": "5334d9cdad0970c6dff9e46707349f8ac2e5a7c4",
+          "sourceWorkflowRunId": "41447064065",
+          "sourceWorkflowRunAttempt": "1",
+          "accessPolicySha256": "d378a278a7dbe08e87d1b04fa6d4cbc217cc18009f63092fd7ac2d644bf96695",
+          "evidence": {
+            "hold": {
+              "id": "8a84f5d46dfa2b9f6f6b727857775eaa81236e1ed10acf9ece9b1ebcc35ffde5",
+              "scope": "host",
+              "target": "thegreatwall.ca",
+              "reason": "rate_limited",
+              "resume": "reviewed_evidence_required",
+              "evidence": {
+                "url": "http://www.thegreatwall.ca/",
+                "finalUrl": "https://www.thegreatwall.ca/",
+                "status": 429,
+                "observedAt": "2026-11-02T12:51:12.817Z"
+              },
+              "provenance": {
+                "kind": "current_run",
+                "sourceCommitSha": "5334d9cdad0970c6dff9e46707349f8ac2e5a7c4",
+                "sourceWorkflowRunId": "41447064065",
+                "sourceWorkflowRunAttempt": "1",
+                "accessPolicySha256": "d378a278a7dbe08e87d1b04fa6d4cbc217cc18009f63092fd7ac2d644bf96695",
+                "requestId": "92"
+              }
+            },
+            "receipt": {
+              "requestId": "92",
+              "url": "https://www.thegreatwall.ca/",
+              "status": 429,
+              "observedAt": "2026-11-02T12:51:12.817Z",
+              "attemptedAt": "2026-11-02T12:51:12.426Z",
+              "mediaType": "text/html"
+            },
+            "late": false,
+            "suspensionId": null
+          }
+        }
+      },
+      "observations": [
+        {
+          "url": "http://www.thegreatwall.ca/",
+          "finalUrl": "https://www.thegreatwall.ca/",
+          "status": 429,
+          "observedAt": "2026-11-02T12:51:12.817Z"
+        }
+      ]
     }
   ]
 }
