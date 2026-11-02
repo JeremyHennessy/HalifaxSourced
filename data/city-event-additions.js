@@ -909,8 +909,6 @@ window.HALIFAX_CITY_EVENT_ADDITIONS = JSON.parse(`{
       "observedAt": "2026-11-02T12:15:18.237Z",
       "reviewedAt": "2026-11-02T12:15:18.237Z",
       "reviewState": "source_observed",
-      "organizerId": "sugar-nursery",
-      "organizerName": "Sugar Nursery",
       "sourceEvidence": [
         {
           "sourceId": "tourism-ns-events",
