@@ -2,7 +2,7 @@
 
 window.HALIFAX_CITY_EVENT_ADDITIONS = JSON.parse(`{
   "version": 1,
-  "generatedAt": "2026-11-01T22:19:28.535Z",
+  "generatedAt": "2026-11-02T12:15:18.237Z",
   "policy": "Curated city-event additions are source-backed records used when current official or local calendars have not yet been promoted into the primary city-events build.",
   "sources": [
     {
@@ -93,6 +93,12 @@ window.HALIFAX_CITY_EVENT_ADDITIONS = JSON.parse(`{
       "sourceId": "the-carleton",
       "sourceName": "The Carleton",
       "sourceUrl": "https://www.thecarleton.ca/events/garnet-rogers-2/",
+      "authority": "official_primary"
+    },
+    {
+      "sourceId": "sugar-nursery-handmade-holidays-2026",
+      "sourceName": "Sugar Nursery",
+      "sourceUrl": "https://sugarnursery.ca/products/handmade-for-the-holidays",
       "authority": "official_primary"
     }
   ],
@@ -878,6 +884,70 @@ window.HALIFAX_CITY_EVENT_ADDITIONS = JSON.parse(`{
         }
       ],
       "alternateSources": [],
+      "supersedesEventIds": []
+    },
+    {
+      "id": "https://novascotia.com/event/handmade-for-the-holidays/#event",
+      "title": "Handmade for the Holidays",
+      "startAt": "2026-11-21",
+      "endAt": "2026-11-22",
+      "allDay": true,
+      "venueName": "Sugar Nursery",
+      "address": "6055 St Albans St, Halifax, NS B3K 1S2",
+      "city": "Halifax",
+      "categories": [
+        "Arts",
+        "Food & Drink"
+      ],
+      "price": "CA$195; currently sold out",
+      "ticketUrl": "https://sugarnursery.ca/products/handmade-for-the-holidays",
+      "eventUrl": "https://novascotia.com/event/handmade-for-the-holidays/",
+      "sourceUrl": "https://novascotia.com/event/handmade-for-the-holidays/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_event_page",
+      "observedAt": "2026-11-02T12:15:18.237Z",
+      "reviewedAt": "2026-11-02T12:15:18.237Z",
+      "reviewState": "source_observed",
+      "sourceEvidence": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/handmade-for-the-holidays/",
+          "basis": "official_primary",
+          "observedAt": "2026-11-02T12:15:18.237Z",
+          "reviewedAt": "2026-11-02T12:15:18.237Z",
+          "observationBasis": "Upper bound of the successful official-page web-reader review window, not an exact HTTP fetch timestamp.",
+          "sourceCrawlAgeReported": "today",
+          "sourceCrawlTimestamp": null,
+          "observedFacts": [
+            "November 21–22, 2026 at Sugar Nursery, 6055 St Albans St, Halifax.",
+            "The official tourism listing states CA$195 and classifies the event under Arts & Culture and Food & Drink."
+          ]
+        },
+        {
+          "sourceId": "sugar-nursery-handmade-holidays-2026",
+          "sourceName": "Sugar Nursery",
+          "sourceUrl": "https://sugarnursery.ca/products/handmade-for-the-holidays",
+          "basis": "owner_site_corroboration",
+          "observedAt": "2026-11-02T12:15:18.237Z",
+          "reviewedAt": "2026-11-02T12:15:18.237Z",
+          "observationBasis": "Upper bound of the successful owner-page web-reader review window, not an exact HTTP fetch timestamp.",
+          "sourceCrawlAgeReported": "today",
+          "sourceCrawlTimestamp": null,
+          "observedFacts": [
+            "The owner product page confirms the Handmade for the Holidays class and CA$195 price.",
+            "The current owner page marks registration sold out and the owner site identifies the studio address as 6055 St Albans Street, Halifax."
+          ]
+        }
+      ],
+      "alternateSources": [
+        {
+          "sourceId": "sugar-nursery-handmade-holidays-2026",
+          "sourceName": "Sugar Nursery",
+          "sourceUrl": "https://sugarnursery.ca/products/handmade-for-the-holidays"
+        }
+      ],
       "supersedesEventIds": []
     }
   ]
