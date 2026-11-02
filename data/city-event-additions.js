@@ -2,7 +2,7 @@
 
 window.HALIFAX_CITY_EVENT_ADDITIONS = JSON.parse(`{
   "version": 1,
-  "generatedAt": "2026-11-02T12:15:18.237Z",
+  "generatedAt": "2026-11-02T12:43:31.925Z",
   "policy": "Curated city-event additions are source-backed records used when current official or local calendars have not yet been promoted into the primary city-events build.",
   "sources": [
     {
@@ -99,6 +99,12 @@ window.HALIFAX_CITY_EVENT_ADDITIONS = JSON.parse(`{
       "sourceId": "sugar-nursery-handmade-holidays-2026",
       "sourceName": "Sugar Nursery",
       "sourceUrl": "https://sugarnursery.ca/products/handmade-for-the-holidays",
+      "authority": "official_primary"
+    },
+    {
+      "sourceId": "sugar-nursery-sweet-saturdays-2026",
+      "sourceName": "Sugar Nursery Cake Studio",
+      "sourceUrl": "https://sugarnursery.ca/pages/cake-studio",
       "authority": "official_primary"
     }
   ],
@@ -948,6 +954,59 @@ window.HALIFAX_CITY_EVENT_ADDITIONS = JSON.parse(`{
           "sourceUrl": "https://sugarnursery.ca/products/handmade-for-the-holidays"
         }
       ],
+      "supersedesEventIds": []
+    },
+    {
+      "id": "https://sugarnursery.ca/pages/cake-studio#sweet-saturday-2026-11-07",
+      "title": "Sugar Nursery Sweet Saturday",
+      "startAt": "2026-11-07T14:00:00.000Z",
+      "endAt": "2026-11-07T19:00:00.000Z",
+      "allDay": false,
+      "venueName": "Sugar Nursery Cake Studio",
+      "address": "6055 St Albans Street, Halifax, NS B3K 1S2",
+      "city": "Halifax",
+      "categories": [
+        "Food & Drink",
+        "Community"
+      ],
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": "https://sugarnursery.ca/pages/cake-studio",
+      "sourceUrl": "https://sugarnursery.ca/pages/cake-studio",
+      "sourceId": "sugar-nursery-sweet-saturdays-2026",
+      "sourceName": "Sugar Nursery Cake Studio",
+      "sourceKind": "official_owner_event_page",
+      "observedAt": "2026-11-02T12:43:31.925Z",
+      "reviewedAt": "2026-11-02T12:43:31.925Z",
+      "reviewState": "source_observed",
+      "sourceEvidence": [
+        {
+          "sourceId": "sugar-nursery-sweet-saturdays-2026",
+          "sourceName": "Sugar Nursery Cake Studio",
+          "sourceUrl": "https://sugarnursery.ca/pages/cake-studio",
+          "basis": "official_primary",
+          "observedAt": "2026-11-02T12:43:31.925Z",
+          "reviewedAt": "2026-11-02T12:43:31.925Z",
+          "observationBasis": "Upper bound of the successful owner-page web-reader review window, not an exact HTTP fetch timestamp.",
+          "sourceCrawlAgeReported": "3 days ago",
+          "sourceCrawlTimestamp": null,
+          "observedFacts": [
+            "November 7, 2026 from 10:00 am–3:00 pm Halifax local time, or until sold out.",
+            "Sugar Nursery Cake Studio, 6055 St Albans Street, Halifax, hosts the retail Sweet Saturday occurrence.",
+            "No admission price was asserted; the owner page describes treats available for purchase."
+          ]
+        }
+      ],
+      "timeReview": {
+        "reviewedAt": "2026-11-02T12:43:31.925Z",
+        "sourceDate": "2026-11-07",
+        "sourceStartTime": "10:00am",
+        "sourceEndTime": "3:00pm",
+        "derivedTimeZone": "America/Halifax",
+        "conversionPolicy": "scripts/import-city-events.mjs: localIso / atlanticOffset",
+        "basis": "The owner page prints Halifax local wall times without a timezone or UTC timestamp. America/Halifax and the ISO instants are derived from the Halifax venue using the existing application policy."
+      },
+      "alternateSources": [],
       "supersedesEventIds": []
     }
   ]

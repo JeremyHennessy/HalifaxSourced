@@ -21,9 +21,11 @@ const dependencies = [
   'restaurant-corrections.js', 'source-integrity.js'
 ];
 const fullReviewedPolicy = JSON.parse(await readFile(new URL('../data/source-link-access-holds.json', import.meta.url), 'utf8'));
-// The two newest exact URL restrictions are checked separately below. Keep
-// prior snapshot-based corpus assertions anchored before these additions.
-const policyBeforeLatestRestrictions = {...structuredClone(fullReviewedPolicy), historicalEvidence:structuredClone(fullReviewedPolicy.historicalEvidence.slice(0, -2))};
+// The newest host-wide 429 and two preceding exact URL restrictions are checked
+// separately below. Keep prior snapshot-based corpus assertions anchored before
+// these additions.
+const policyBeforeLatestRateLimit = {...structuredClone(fullReviewedPolicy), historicalEvidence:structuredClone(fullReviewedPolicy.historicalEvidence.slice(0, -1))};
+const policyBeforeLatestRestrictions = {...structuredClone(policyBeforeLatestRateLimit), historicalEvidence:structuredClone(policyBeforeLatestRateLimit.historicalEvidence.slice(0, -2))};
 // Preserve the original 224-receipt regression corpus independently of the
 // ten previously reviewed exact holds, six source-refresh holds, seven
 // Quality Gate holds, three Social Source holds, two current place-fact holds,
@@ -265,6 +267,8 @@ process.on('exit', () => {
   validateAccessPolicy(policyBeforeBedfordMenus);
   validateAccessPolicy(policyBeforeCremeRobots);
   validateAccessPolicy(policyBeforeCremeQuality);
+  validateAccessPolicy(policyBeforeLatestRestrictions);
+  validateAccessPolicy(policyBeforeLatestRateLimit);
   validateAccessPolicy(fullReviewedPolicy);
   assert.equal(priorReviewedPolicy.historicalEvidence.length, committedPolicy.historicalEvidence.length + 8, 'Only five Barrios groups, one Secret Sauce group, one Greco feed group and one happy-hour API group added to immutable baseline');
   assert.equal(reviewedBeforeCurrentRun.historicalEvidence.length, priorReviewedPolicy.historicalEvidence.length + 2, 'Only the exact Little Pisa homepage and menu receipts extend the prior reviewed policy');
@@ -275,7 +279,8 @@ process.on('exit', () => {
   assert.equal(policyBeforeCremeRobots.historicalEvidence.length, policyBeforeBedfordMenus.historicalEvidence.length + 1, 'Only the exact Bedford Basin Market menus HTTP 403 receipt extends the reviewed policy');
   assert.equal(policyBeforeCremeQuality.historicalEvidence.length, policyBeforeCremeRobots.historicalEvidence.length + 1, 'Only the exact Crème robots.txt HTTP 403 receipt extends the reviewed policy');
   assert.equal(policyBeforeLatestRestrictions.historicalEvidence.length, policyBeforeCremeQuality.historicalEvidence.length + 3, 'Only the exact Crème homepage, menu and store HTTP 403 receipts extend the reviewed policy');
-  assert.equal(fullReviewedPolicy.historicalEvidence.length, policyBeforeLatestRestrictions.historicalEvidence.length + 2, 'Only the two latest exact restaurant URL restrictions extend the prior policy');
+  assert.equal(policyBeforeLatestRateLimit.historicalEvidence.length, policyBeforeLatestRestrictions.historicalEvidence.length + 2, 'Only the two latest exact restaurant URL restrictions extend the prior policy');
+  assert.equal(fullReviewedPolicy.historicalEvidence.length, policyBeforeLatestRateLimit.historicalEvidence.length + 1, 'Only the exact Great Wall host-wide 429 receipt extends the prior policy');
   const newBarriosGroups = priorReviewedPolicy.historicalEvidence.slice(-8, -3);
   for (const group of newBarriosGroups) {
     const p = group.provenance;
@@ -648,7 +653,7 @@ assert.equal(acceptedBarriosHolds.find('https://barrioshfx.ca/unknown-page'), nu
   await gate(cremeCheck.report);
   checked('Four exact Crème denied URLs are unattempted; an unevidenced sibling path remains eligible');
 
-  const latestRestrictionGroups = fullReviewedPolicy.historicalEvidence.slice(-2);
+  const latestRestrictionGroups = policyBeforeLatestRateLimit.historicalEvidence.slice(-2);
   const latestRestrictedUrls = latestRestrictionGroups.map(group => group.observations[0].url);
   assert.deepEqual(latestRestrictedUrls, [
     'https://order.chownow.com/order/8504/locations?add_cn_ordering_class=true',
@@ -678,6 +683,30 @@ assert.equal(acceptedBarriosHolds.find('https://barrioshfx.ca/unknown-page'), nu
   }
   await gate(latestRestrictionCheck.report);
   checked('latest ChowNow and Palladium exact 403 holds suppress direct requests and redirect destinations');
+
+  const latestRateLimitGroup = fullReviewedPolicy.historicalEvidence.at(-1);
+  const latestRateLimitProvenance = latestRateLimitGroup.provenance;
+  assert.deepEqual(latestRateLimitGroup.observations, [{
+    url:'http://www.thegreatwall.ca/',
+    finalUrl:'https://www.thegreatwall.ca/',
+    status:429,
+    observedAt:'2026-11-02T12:51:12.817Z'
+  }]);
+  assert.equal(latestRateLimitProvenance.kind, 'reviewed_workflow_log');
+  assert.equal(latestRateLimitProvenance.sourceCommitSha, '5334d9cdad0970c6dff9e46707349f8ac2e5a7c4');
+  assert.equal(latestRateLimitProvenance.workflowRunId, '41447064065');
+  assert.equal(latestRateLimitProvenance.workflowRunAttempt, '1');
+  assert.equal(latestRateLimitProvenance.workflowJob, 'data-integrity');
+  assert.equal(latestRateLimitProvenance.workflowJobId, 125283402242);
+  assert.equal(latestRateLimitProvenance.accessPolicySha256, digest(policyBeforeLatestRateLimit));
+  assert.equal(latestRateLimitProvenance.logSha256, 'a08afef259eefc90e69b3107223507f215220e5df1a59c9821aef8591ac826e8');
+  assert.equal(latestRateLimitProvenance.diagnosticSha256, digest(latestRateLimitProvenance.diagnostic));
+  assert.equal(latestRateLimitProvenance.receiptSha256, digest(latestRateLimitProvenance.diagnostic.evidence.receipt));
+  assert.equal(latestRateLimitProvenance.diagnostic.evidence.hold.scope, 'host');
+  assert.equal(latestRateLimitProvenance.diagnostic.evidence.hold.target, 'thegreatwall.ca');
+  assert.equal(latestRateLimitProvenance.diagnostic.evidence.hold.reason, 'rate_limited');
+  assert.equal(latestRateLimitProvenance.diagnostic.evidence.receipt.attemptedAt, '2026-11-02T12:51:12.426Z');
+  checked('latest Great Wall 429 is pinned to the exact reviewed job log and retained as a canonical host hold');
 
   assert(committedPolicy.historicalEvidence[0].observations.every(row => row.status === 403 && new URL(row.url).hostname === 'junglejims.ca'));
   assert.equal(committedPolicy.historicalEvidence[1].observations[0].status, 429);
