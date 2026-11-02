@@ -2349,6 +2349,15 @@ window.HALIFAX_STRUCTURED_PLACE_FACTS = {
           "observedAt": "2026-09-04T12:50:45.772Z",
           "verifiedAt": "2026-09-04T12:50:45.772Z",
           "status": "verified_link"
+        },
+        {
+          "provider": "ritual",
+          "url": "https://ritual.co/order/cafe-lunette-halifax/cc371f",
+          "locationSpecific": true,
+          "mode": "first_party_or_direct",
+          "observedAt": "2026-11-02T20:17:31.000Z",
+          "verifiedAt": "2026-11-02T20:17:31.000Z",
+          "status": "verified_link"
         }
       ]
     },
