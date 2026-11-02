@@ -10,25 +10,6 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
         "phone": "902-702-4958",
         "website": "https://www.churned.ca/",
         "openingHours": "Tuesday–Thursday 12pm–8pm; Saturday–Sunday 12pm–9pm; Monday closed",
-        "socialProfiles": [
-          {
-            "platform": "instagram",
-            "platformKind": "social",
-            "handle": "churned.icecream",
-            "url": "https://www.instagram.com/churned.icecream/",
-            "profileUrl": "https://www.instagram.com/churned.icecream/",
-            "label": "Instagram",
-            "locationSpecific": true,
-            "sharedBrandProfile": false,
-            "discoveredFrom": "https://www.churned.ca/",
-            "associationBasis": "linked_from_official_website",
-            "observedAt": "2026-11-02T15:49:09.055Z",
-            "lastVerifiedAt": "2026-11-02T15:49:09.055Z",
-            "reviewState": "verified_link",
-            "confidence": "authoritative",
-            "status": "active"
-          }
-        ],
         "evidenceStatus": "verified",
         "summary": "Owner-verified independent Downtown Dartmouth ice cream shop at 104 Portland Street with current contact details, partial weekly hours and an official-site-linked Instagram profile; independently corroborated by the Downtown Dartmouth directory and Nova Scotia food-inspection registry."
       },
