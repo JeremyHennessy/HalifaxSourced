@@ -2464,8 +2464,9 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
       "address": "20 Wentworth Street, Dartmouth, NS B2Y 2S6",
       "neighborhood": "Downtown Dartmouth",
       "website": "https://www.tulipanrestaurant.com/",
-      "phone": null,
+      "phone": "902-469-0346",
       "openingHours": null,
+      "menuUrl": "https://www.tulipanrestaurant.com/s/Tulipan-Menu-emne.pdf",
       "email": "info@tulipanrestaurant.com",
       "coordinates": null,
       "cuisines": [
@@ -2476,18 +2477,32 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
       "events": [],
       "operatingStatus": "active",
       "operatingStatusEvidence": {
-        "claim": "Current location and contact published on the restaurant-owned site.",
+        "claim": "The current restaurant-owned site publishes Tulipan at 20 Wentworth Street with its contact email and a current menu. The current Downtown Dartmouth directory independently lists the same restaurant, address, owner domain and phone 902-469-0346. Weekly hours and coordinates remain unknown.",
         "sourceUrl": "https://www.tulipanrestaurant.com/",
-        "observedAt": "2026-10-19",
+        "observedAt": "2026-11-02T17:21:26Z",
         "reviewState": "verified",
         "location": "20 Wentworth Street, Dartmouth, NS B2Y 2S6"
       },
       "sources": [
         {
           "type": "official_website",
-          "label": "Reviewed official location",
+          "label": "Current owner location and contact",
           "url": "https://www.tulipanrestaurant.com/",
-          "observedAt": "2026-10-19",
+          "observedAt": "2026-11-02T17:21:26Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_menu",
+          "label": "Current owner-published menu",
+          "url": "https://www.tulipanrestaurant.com/s/Tulipan-Menu-emne.pdf",
+          "observedAt": "2026-11-02T17:21:26Z",
+          "status": "verified"
+        },
+        {
+          "type": "business_district_directory",
+          "label": "Current Downtown Dartmouth location, phone and owner-domain link",
+          "url": "https://www.downtowndartmouth.ca/fooddrink",
+          "observedAt": "2026-11-02T17:21:26Z",
           "status": "verified"
         }
       ],
