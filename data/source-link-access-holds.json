@@ -4500,6 +4500,146 @@
           "observedAt": "2026-11-02T12:51:12.817Z"
         }
       ]
+    },
+    {
+      "provenance": {
+        "kind": "reviewed_workflow_log",
+        "repository": "JeremyHennessy/HalifaxSourced",
+        "sourceCommitSha": "47b935b38edc015ca8a0dbf53217c92f99c3d196",
+        "workflowRunId": "41703128719",
+        "workflowRunAttempt": "1",
+        "workflowJob": "data-integrity",
+        "workflowJobId": 126152353616,
+        "accessPolicySha256": "5c8beabdea06da4467ad336d493334ab133f7378fa9d84718e749660925ce014",
+        "logSha256": "419d72cc0cc7cad2e0a754dc42c1ce98c589ad4a5195f7556b2889aedbaba81d",
+        "diagnosticSha256": "4ed9e3cc866eb954f62457bdc1f1e4776a4f1f44d9ef0525b7a28a370c990706",
+        "receiptSha256": "16c94e01cf83d00888b62dcf5cd3e0c73e275fa83d5b663936005cc6fdad9776",
+        "loggedAt": "2026-11-03T19:34:54.027Z",
+        "diagnostic": {
+          "version": 1,
+          "disposition": "nonpublishable_requires_review",
+          "kind": "http_restriction",
+          "repository": "JeremyHennessy/HalifaxSourced",
+          "workflowJob": "data-integrity",
+          "loggedAt": "2026-11-03T19:34:54.027Z",
+          "sourceCommitSha": "47b935b38edc015ca8a0dbf53217c92f99c3d196",
+          "sourceWorkflowRunId": "41703128719",
+          "sourceWorkflowRunAttempt": "1",
+          "accessPolicySha256": "5c8beabdea06da4467ad336d493334ab133f7378fa9d84718e749660925ce014",
+          "evidence": {
+            "hold": {
+              "id": "d59325ee2d669a50f5000277e5ae9d9a10cbb8c7256b9e0c154ae653e62813b1",
+              "scope": "url",
+              "target": "http://matadorahfx.ca/wp-content/uploads/2026/05/Matadora-Food-Menu-Spring-2026-Final.pdf",
+              "reason": "access_restricted",
+              "resume": "reviewed_evidence_required",
+              "evidence": {
+                "url": "http://matadorahfx.ca/wp-content/uploads/2026/05/Matadora-Food-Menu-Spring-2026-Final.pdf",
+                "finalUrl": "http://matadorahfx.ca/wp-content/uploads/2026/05/Matadora-Food-Menu-Spring-2026-Final.pdf",
+                "status": 403,
+                "observedAt": "2026-11-03T19:34:54.027Z"
+              },
+              "provenance": {
+                "kind": "current_run",
+                "sourceCommitSha": "47b935b38edc015ca8a0dbf53217c92f99c3d196",
+                "sourceWorkflowRunId": "41703128719",
+                "sourceWorkflowRunAttempt": "1",
+                "accessPolicySha256": "5c8beabdea06da4467ad336d493334ab133f7378fa9d84718e749660925ce014",
+                "requestId": "535"
+              }
+            },
+            "receipt": {
+              "requestId": "535",
+              "url": "http://matadorahfx.ca/wp-content/uploads/2026/05/Matadora-Food-Menu-Spring-2026-Final.pdf",
+              "status": 403,
+              "observedAt": "2026-11-03T19:34:54.027Z",
+              "attemptedAt": "2026-11-03T19:34:53.923Z",
+              "mediaType": "",
+              "retryAfter": "0",
+              "retryNotBefore": "2026-11-03T19:34:54.027Z"
+            },
+            "late": false,
+            "suspensionId": null
+          }
+        }
+      },
+      "observations": [
+        {
+          "url": "http://matadorahfx.ca/wp-content/uploads/2026/05/Matadora-Food-Menu-Spring-2026-Final.pdf",
+          "finalUrl": "http://matadorahfx.ca/wp-content/uploads/2026/05/Matadora-Food-Menu-Spring-2026-Final.pdf",
+          "status": 403,
+          "observedAt": "2026-11-03T19:34:54.027Z"
+        }
+      ]
+    },
+    {
+      "provenance": {
+        "kind": "reviewed_workflow_log",
+        "repository": "JeremyHennessy/HalifaxSourced",
+        "sourceCommitSha": "67f7477e95a13bde14a67b6d5243a2f8a34a53cf",
+        "workflowRunId": "41705228339",
+        "workflowRunAttempt": "1",
+        "workflowJob": "data-integrity",
+        "workflowJobId": 126159621453,
+        "accessPolicySha256": "d7042b23096092b1f43c1850b223ba99d4b08e19bdb9391ec5184c50f88d481d",
+        "logSha256": "f3e779b4f386dafaa6f6325665938903113826a1195c0f5f0e0f8e61bf1d18aa",
+        "diagnosticSha256": "7f5e0b8526fd75d8342ed84af8d8cb504dcdd371dcc2137f1697dc8351e0e5e0",
+        "receiptSha256": "1d2fffcd12cf9d4eeb79f2ce1f18775aa786a225d03ab5399a3ce7df9faa7403",
+        "loggedAt": "2026-11-03T19:47:10.830Z",
+        "diagnostic": {
+          "version": 1,
+          "disposition": "nonpublishable_requires_review",
+          "kind": "http_restriction",
+          "repository": "JeremyHennessy/HalifaxSourced",
+          "workflowJob": "data-integrity",
+          "loggedAt": "2026-11-03T19:47:10.830Z",
+          "sourceCommitSha": "67f7477e95a13bde14a67b6d5243a2f8a34a53cf",
+          "sourceWorkflowRunId": "41705228339",
+          "sourceWorkflowRunAttempt": "1",
+          "accessPolicySha256": "d7042b23096092b1f43c1850b223ba99d4b08e19bdb9391ec5184c50f88d481d",
+          "evidence": {
+            "hold": {
+              "id": "e162d823a4755450dc431cb8d8965e4c7f3f1222ec94febfd55c2754b183e00d",
+              "scope": "url",
+              "target": "https://nogginsfarm.ca/farm-markets/coburg-market/",
+              "reason": "access_restricted",
+              "resume": "reviewed_evidence_required",
+              "evidence": {
+                "url": "https://nogginsfarm.ca/farm-markets/coburg-market/",
+                "finalUrl": "https://nogginsfarm.ca/farm-markets/coburg-market/",
+                "status": 403,
+                "observedAt": "2026-11-03T19:47:10.829Z"
+              },
+              "provenance": {
+                "kind": "current_run",
+                "sourceCommitSha": "67f7477e95a13bde14a67b6d5243a2f8a34a53cf",
+                "sourceWorkflowRunId": "41705228339",
+                "sourceWorkflowRunAttempt": "1",
+                "accessPolicySha256": "d7042b23096092b1f43c1850b223ba99d4b08e19bdb9391ec5184c50f88d481d",
+                "requestId": "145"
+              }
+            },
+            "receipt": {
+              "requestId": "145",
+              "url": "https://nogginsfarm.ca/farm-markets/coburg-market/",
+              "status": 403,
+              "observedAt": "2026-11-03T19:47:10.829Z",
+              "attemptedAt": "2026-11-03T19:47:07.487Z",
+              "mediaType": "text/html"
+            },
+            "late": false,
+            "suspensionId": null
+          }
+        }
+      },
+      "observations": [
+        {
+          "url": "https://nogginsfarm.ca/farm-markets/coburg-market/",
+          "finalUrl": "https://nogginsfarm.ca/farm-markets/coburg-market/",
+          "status": 403,
+          "observedAt": "2026-11-03T19:47:10.829Z"
+        }
+      ]
     }
   ]
 }

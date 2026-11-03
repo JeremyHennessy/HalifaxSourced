@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-30T22:06:44.000Z",
+  "generatedAt": "2026-11-03T18:34:38.162Z",
   "checkedPlaces": 230,
   "failures": [
     {
@@ -20,15 +20,15 @@
     }
   ],
   "counts": {
-    "records": 177,
+    "records": 188,
     "hours": 9,
-    "phone": 76,
+    "phone": 83,
     "email": 10,
     "address": 28,
-    "features": 131,
-    "menus": 143,
-    "reservations": 57,
-    "ordering": 77
+    "features": 139,
+    "menus": 152,
+    "reservations": 63,
+    "ordering": 79
   },
   "records": [
     {
@@ -12167,6 +12167,564 @@
           "https://www.deerfieldpub.ca/contact/"
         ]
       }
+    },
+    {
+      "restaurantId": "canteen-on-portland-dartmouth",
+      "name": "The Canteen on Portland",
+      "sourceUrl": "https://www.thecanteen.ca/",
+      "observedAt": "2026-11-03T18:34:11.290Z",
+      "lastVerifiedAt": "2026-11-03T18:34:11.290Z",
+      "sourceKind": "official_website_structured_facts",
+      "reviewState": "verified_source",
+      "hours": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "features": [
+        {
+          "feature": "brunch",
+          "evidencePhrase": "BRUNCH",
+          "sourceUrl": "https://www.thecanteen.ca/",
+          "observedAt": "2026-11-03T18:34:11.290Z",
+          "lastVerifiedAt": "2026-11-03T18:34:11.290Z",
+          "confidence": "official_source_explicit_text"
+        },
+        {
+          "feature": "takeout",
+          "evidencePhrase": "TAKE-OUT",
+          "sourceUrl": "https://www.thecanteen.ca/",
+          "observedAt": "2026-11-03T18:34:11.290Z",
+          "lastVerifiedAt": "2026-11-03T18:34:11.290Z",
+          "confidence": "official_source_explicit_text"
+        }
+      ],
+      "menus": [
+        {
+          "menuType": "general",
+          "title": "Folder: MENUS",
+          "url": "https://www.thecanteen.ca/menus",
+          "format": "html",
+          "locationSpecific": true,
+          "verifiedAt": "2026-09-04T13:33:45.677Z",
+          "source": "official_website_link",
+          "status": "verified_link"
+        },
+        {
+          "menuType": "general",
+          "title": "SEE OUR MENUS",
+          "url": "https://www.thecanteen.ca/mainmenus",
+          "format": "html",
+          "locationSpecific": true,
+          "verifiedAt": "2026-09-04T13:33:45.677Z",
+          "source": "official_website_link",
+          "status": "verified_link"
+        }
+      ],
+      "reservations": [
+        {
+          "provider": "opentable",
+          "url": "https://www.opentable.ca/restref/client/?lang=en-CA&ot_source=Restaurant%20website&restref=994912&corrid=8cefe7c3-6080-4d7d-ac77-6dcc1e2be132",
+          "locationSpecific": true,
+          "observedAt": "2026-09-04T13:33:45.677Z",
+          "verifiedAt": "2026-09-04T13:33:45.677Z",
+          "status": "verified_link"
+        }
+      ],
+      "ordering": [
+        {
+          "provider": "toast",
+          "url": "https://order.toasttab.com/online/the-canteen-on-portland",
+          "locationSpecific": true,
+          "mode": "first_party_or_direct",
+          "observedAt": "2026-09-04T13:33:45.677Z",
+          "verifiedAt": "2026-09-04T13:33:45.677Z",
+          "status": "verified_link"
+        }
+      ]
+    },
+    {
+      "restaurantId": "darty-brewing-dartmouth",
+      "name": "Darty Brewing Co.",
+      "sourceUrl": "https://www.dartybrewing.ca/",
+      "observedAt": "2026-11-03T18:34:11.294Z",
+      "lastVerifiedAt": "2026-11-03T18:34:11.294Z",
+      "sourceKind": "official_website_structured_facts",
+      "reviewState": "verified_source",
+      "hours": null,
+      "phone": "902-466-7818",
+      "email": null,
+      "address": null,
+      "features": [
+        {
+          "feature": "delivery",
+          "evidencePhrase": "delivery",
+          "sourceUrl": "https://www.dartybrewing.ca/",
+          "observedAt": "2026-11-03T18:34:11.294Z",
+          "lastVerifiedAt": "2026-11-03T18:34:11.294Z",
+          "confidence": "official_source_explicit_text"
+        }
+      ],
+      "menus": [],
+      "reservations": [],
+      "ordering": []
+    },
+    {
+      "restaurantId": "lake-city-cider-dartmouth",
+      "name": "Lake City Cider",
+      "sourceUrl": "https://lakecitycider.ca/",
+      "observedAt": "2026-11-03T18:34:11.795Z",
+      "lastVerifiedAt": "2026-11-03T18:34:11.795Z",
+      "sourceKind": "official_website_structured_facts",
+      "reviewState": "verified_source",
+      "hours": null,
+      "phone": "902-466-7818",
+      "email": null,
+      "address": null,
+      "features": [
+        {
+          "feature": "patio",
+          "evidencePhrase": "patio",
+          "sourceUrl": "https://lakecitycider.ca/",
+          "observedAt": "2026-11-03T18:34:11.795Z",
+          "lastVerifiedAt": "2026-11-03T18:34:11.795Z",
+          "confidence": "official_source_explicit_text"
+        },
+        {
+          "feature": "delivery",
+          "evidencePhrase": "delivery",
+          "sourceUrl": "https://lakecitycider.ca/",
+          "observedAt": "2026-11-03T18:34:11.795Z",
+          "lastVerifiedAt": "2026-11-03T18:34:11.795Z",
+          "confidence": "official_source_explicit_text"
+        }
+      ],
+      "menus": [],
+      "reservations": [],
+      "ordering": [
+        {
+          "provider": "restaurant_owned",
+          "url": "https://lakecitycider.ca/collections/cider",
+          "locationSpecific": true,
+          "mode": "first_party_or_direct",
+          "observedAt": "2026-09-04T13:33:46.065Z",
+          "verifiedAt": "2026-09-04T13:33:46.065Z",
+          "status": "verified_link"
+        }
+      ]
+    },
+    {
+      "restaurantId": "magnolia-halifax",
+      "name": "Magnolia",
+      "sourceUrl": "https://www.magnoliahfx.com/",
+      "observedAt": "2026-11-03T18:34:11.963Z",
+      "lastVerifiedAt": "2026-11-03T18:34:11.963Z",
+      "sourceKind": "official_website_structured_facts",
+      "reviewState": "verified_source",
+      "hours": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "features": [],
+      "menus": [
+        {
+          "menuType": "general",
+          "title": "Menu",
+          "url": "https://www.magnoliahfx.com/s/menu_may2026.pdf",
+          "format": "pdf",
+          "locationSpecific": true,
+          "verifiedAt": "2026-09-04T13:33:45.552Z",
+          "source": "official_website_link",
+          "status": "verified_link"
+        },
+        {
+          "menuType": "happy_hour",
+          "title": "Weekly Specials & Happy Hour Menu",
+          "url": "https://www.magnoliahfx.com/s/trianglemenu_sept25.pdf",
+          "format": "pdf",
+          "locationSpecific": true,
+          "verifiedAt": "2026-09-04T13:33:45.552Z",
+          "source": "official_website_link",
+          "status": "verified_link"
+        },
+        {
+          "menuType": "drinks",
+          "title": "Food & Drink Menu",
+          "url": "https://www.magnoliahfx.com/s/menu_sept2025.pdf",
+          "format": "pdf",
+          "locationSpecific": true,
+          "verifiedAt": "2026-09-04T13:33:45.552Z",
+          "source": "official_website_link",
+          "status": "verified_link"
+        }
+      ],
+      "reservations": [
+        {
+          "provider": "resy",
+          "url": "https://resy.com/cities/halifax-ns/venues/magnolia",
+          "locationSpecific": true,
+          "observedAt": "2026-09-04T13:33:45.552Z",
+          "verifiedAt": "2026-09-04T13:33:45.552Z",
+          "status": "verified_link"
+        }
+      ],
+      "ordering": []
+    },
+    {
+      "restaurantId": "marias-pantry-dartmouth",
+      "name": "Maria's Pantry",
+      "sourceUrl": "https://www.mariaspantry.ca/",
+      "observedAt": "2026-11-03T18:34:11.967Z",
+      "lastVerifiedAt": "2026-11-03T18:34:11.967Z",
+      "sourceKind": "official_website_structured_facts",
+      "reviewState": "verified_source",
+      "hours": null,
+      "phone": "9024072029",
+      "email": null,
+      "address": null,
+      "features": [
+        {
+          "feature": "catering",
+          "evidencePhrase": "Catering",
+          "sourceUrl": "https://www.mariaspantry.ca/",
+          "observedAt": "2026-11-03T18:34:11.967Z",
+          "lastVerifiedAt": "2026-11-03T18:34:11.967Z",
+          "confidence": "official_source_explicit_text"
+        },
+        {
+          "feature": "takeout",
+          "evidencePhrase": "take out",
+          "sourceUrl": "https://www.mariaspantry.ca/",
+          "observedAt": "2026-11-03T18:34:11.967Z",
+          "lastVerifiedAt": "2026-11-03T18:34:11.967Z",
+          "confidence": "official_source_explicit_text"
+        }
+      ],
+      "menus": [
+        {
+          "menuType": "general",
+          "title": "Menu",
+          "url": "https://www.mariaspantry.ca/#menu",
+          "format": "html",
+          "locationSpecific": true,
+          "verifiedAt": "2026-09-04T13:33:45.644Z",
+          "source": "official_website_link",
+          "status": "verified_link"
+        },
+        {
+          "menuType": "general",
+          "title": "Menu",
+          "url": "https://www.mariaspantry.ca/products/pages/about#menu",
+          "format": "html",
+          "locationSpecific": true,
+          "verifiedAt": "2026-09-04T13:33:45.644Z",
+          "source": "official_website_link",
+          "status": "verified_link"
+        }
+      ],
+      "reservations": [],
+      "ordering": []
+    },
+    {
+      "restaurantId": "oxalis-dartmouth",
+      "name": "Oxalis Restaurant",
+      "sourceUrl": "https://www.oxalisrestaurant.com/",
+      "observedAt": "2026-11-03T18:34:32.190Z",
+      "lastVerifiedAt": "2026-11-03T18:34:32.190Z",
+      "sourceKind": "official_website_structured_facts",
+      "reviewState": "verified_source",
+      "hours": null,
+      "phone": "+19024666454",
+      "email": null,
+      "address": null,
+      "features": [],
+      "menus": [
+        {
+          "menuType": "general",
+          "title": "Menu",
+          "url": "https://www.oxalisrestaurant.com/s/Menu-8rs2.pdf",
+          "format": "pdf",
+          "locationSpecific": true,
+          "verifiedAt": "2026-09-04T13:33:45.710Z",
+          "source": "official_website_link",
+          "status": "verified_link"
+        }
+      ],
+      "reservations": [
+        {
+          "provider": "resy",
+          "url": "https://resy.com/cities/yhz/oxalis-restaurant-ca",
+          "locationSpecific": true,
+          "observedAt": "2026-09-04T13:33:45.710Z",
+          "verifiedAt": "2026-09-04T13:33:45.710Z",
+          "status": "verified_link"
+        }
+      ],
+      "ordering": []
+    },
+    {
+      "restaurantId": "side-hustle-snack-bar-dartmouth",
+      "name": "Side Hustle Snack Bar",
+      "sourceUrl": "https://www.sidehustlesnackbar.com/",
+      "observedAt": "2026-11-03T18:34:32.209Z",
+      "lastVerifiedAt": "2026-11-03T18:34:32.209Z",
+      "sourceKind": "official_website_structured_facts",
+      "reviewState": "verified_source",
+      "hours": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "features": [
+        {
+          "feature": "brunch",
+          "evidencePhrase": "brunch",
+          "sourceUrl": "https://www.sidehustlesnackbar.com/",
+          "observedAt": "2026-11-03T18:34:32.209Z",
+          "lastVerifiedAt": "2026-11-03T18:34:32.209Z",
+          "confidence": "official_source_explicit_text"
+        }
+      ],
+      "menus": [
+        {
+          "menuType": "drinks",
+          "title": "FOOD & DRINK",
+          "url": "https://www.sidehustlesnackbar.com/menu-1",
+          "format": "html",
+          "locationSpecific": true,
+          "verifiedAt": "2026-09-04T13:33:45.778Z",
+          "source": "official_website_link",
+          "status": "verified_link"
+        }
+      ],
+      "reservations": [],
+      "ordering": []
+    },
+    {
+      "restaurantId": "stardust-bar-kitchen-halifax",
+      "name": "Stardust Bar + Kitchen",
+      "sourceUrl": "https://www.stardustbar.ca/",
+      "observedAt": "2026-11-03T18:34:32.535Z",
+      "lastVerifiedAt": "2026-11-03T18:34:32.535Z",
+      "sourceKind": "official_website_structured_facts",
+      "reviewState": "verified_source",
+      "hours": null,
+      "phone": null,
+      "email": null,
+      "address": null,
+      "features": [
+        {
+          "feature": "brunch",
+          "evidencePhrase": "BRUNCH",
+          "sourceUrl": "https://www.stardustbar.ca/",
+          "observedAt": "2026-11-03T18:34:32.535Z",
+          "lastVerifiedAt": "2026-11-03T18:34:32.535Z",
+          "confidence": "official_source_explicit_text"
+        }
+      ],
+      "menus": [
+        {
+          "menuType": "drinks",
+          "title": "Drink Menu",
+          "url": "https://www.stardustbar.ca/drink-menu",
+          "format": "html",
+          "locationSpecific": true,
+          "verifiedAt": "2026-09-04T13:33:45.313Z",
+          "source": "official_website_link",
+          "status": "verified_link"
+        }
+      ],
+      "reservations": [
+        {
+          "provider": "restaurant_owned",
+          "url": "https://www.stardustbar.ca/reservations",
+          "locationSpecific": true,
+          "observedAt": "2026-09-04T13:33:45.313Z",
+          "verifiedAt": "2026-09-04T13:33:45.313Z",
+          "status": "verified_link"
+        }
+      ],
+      "ordering": []
+    },
+    {
+      "restaurantId": "tribute-halifax",
+      "name": "Tribute",
+      "sourceUrl": "https://www.tributerestaurant.ca/",
+      "observedAt": "2026-11-03T18:34:32.687Z",
+      "lastVerifiedAt": "2026-11-03T18:34:32.687Z",
+      "sourceKind": "official_website_structured_facts",
+      "reviewState": "verified_source",
+      "hours": null,
+      "phone": "19024929222",
+      "email": null,
+      "address": null,
+      "features": [],
+      "menus": [
+        {
+          "menuType": "general",
+          "title": "Menu",
+          "url": "https://www.tributerestaurant.ca/menu",
+          "format": "html",
+          "locationSpecific": true,
+          "verifiedAt": "2026-09-04T13:33:45.283Z",
+          "source": "official_website_link",
+          "status": "verified_link"
+        }
+      ],
+      "reservations": [
+        {
+          "provider": "restaurant_owned",
+          "url": "https://www.tributerestaurant.ca/reserve",
+          "locationSpecific": true,
+          "observedAt": "2026-09-04T13:33:45.283Z",
+          "verifiedAt": "2026-09-04T13:33:45.283Z",
+          "status": "verified_link"
+        }
+      ],
+      "ordering": []
+    },
+    {
+      "restaurantId": "water-polo-halifax",
+      "name": "Water Polo Restaurant",
+      "sourceUrl": "https://www.waterpolohfx.ca/",
+      "observedAt": "2026-11-03T18:34:32.939Z",
+      "lastVerifiedAt": "2026-11-03T18:34:32.939Z",
+      "sourceKind": "official_website_structured_facts",
+      "reviewState": "verified_source",
+      "hours": null,
+      "phone": "902-474-7269",
+      "email": null,
+      "address": null,
+      "features": [
+        {
+          "feature": "waterfront",
+          "evidencePhrase": "Waterfront",
+          "sourceUrl": "https://www.waterpolohfx.ca/",
+          "observedAt": "2026-11-03T18:34:32.939Z",
+          "lastVerifiedAt": "2026-11-03T18:34:32.939Z",
+          "confidence": "official_source_explicit_text"
+        },
+        {
+          "feature": "brunch",
+          "evidencePhrase": "Brunch",
+          "sourceUrl": "https://www.waterpolohfx.ca/",
+          "observedAt": "2026-11-03T18:34:32.939Z",
+          "lastVerifiedAt": "2026-11-03T18:34:32.939Z",
+          "confidence": "official_source_explicit_text"
+        },
+        {
+          "feature": "private_dining",
+          "evidencePhrase": "Private Dining",
+          "sourceUrl": "https://www.waterpolohfx.ca/",
+          "observedAt": "2026-11-03T18:34:32.939Z",
+          "lastVerifiedAt": "2026-11-03T18:34:32.939Z",
+          "confidence": "official_source_explicit_text"
+        }
+      ],
+      "menus": [
+        {
+          "menuType": "drinks",
+          "title": "The Bar",
+          "url": "https://www.waterpolohfx.ca/menus/#cocktails/",
+          "format": "html",
+          "locationSpecific": true,
+          "verifiedAt": "2026-09-04T13:33:44.710Z",
+          "source": "official_website_link",
+          "status": "verified_link"
+        },
+        {
+          "menuType": "dinner",
+          "title": "The Kitchen",
+          "url": "https://www.waterpolohfx.ca/menus/#dinner/",
+          "format": "html",
+          "locationSpecific": true,
+          "verifiedAt": "2026-09-04T13:33:44.710Z",
+          "source": "official_website_link",
+          "status": "verified_link"
+        },
+        {
+          "menuType": "general",
+          "title": "View Menus",
+          "url": "https://www.waterpolohfx.ca/menus",
+          "format": "html",
+          "locationSpecific": true,
+          "verifiedAt": "2026-09-04T13:33:44.710Z",
+          "source": "official_website_link",
+          "status": "verified_link"
+        },
+        {
+          "menuType": "brunch",
+          "title": "View Menu",
+          "url": "https://www.waterpolohfx.ca/menus/#brunch",
+          "format": "html",
+          "locationSpecific": true,
+          "verifiedAt": "2026-09-04T13:33:44.710Z",
+          "source": "official_website_link",
+          "status": "verified_link"
+        }
+      ],
+      "reservations": [
+        {
+          "provider": "sevenrooms",
+          "url": "https://www.sevenrooms.com/explore/waterpolo/reservations/create/search/",
+          "locationSpecific": true,
+          "observedAt": "2026-09-04T13:33:44.710Z",
+          "verifiedAt": "2026-09-04T13:33:44.710Z",
+          "status": "verified_link"
+        }
+      ],
+      "ordering": []
+    },
+    {
+      "restaurantId": "osm-node-13141377001-india-paradise",
+      "name": "India Paradise",
+      "sourceUrl": "https://www.indiaparadise.ca/halifax/downtown/home",
+      "observedAt": "2026-11-03T18:34:33.040Z",
+      "lastVerifiedAt": "2026-11-03T18:34:33.040Z",
+      "sourceKind": "official_website_structured_facts",
+      "reviewState": "verified_source",
+      "hours": null,
+      "phone": "(902)446-6677",
+      "email": null,
+      "address": null,
+      "features": [
+        {
+          "feature": "catering",
+          "evidencePhrase": "Catering",
+          "sourceUrl": "https://www.indiaparadise.ca/halifax/downtown/home",
+          "observedAt": "2026-11-03T18:34:33.040Z",
+          "lastVerifiedAt": "2026-11-03T18:34:33.040Z",
+          "confidence": "official_source_explicit_text"
+        },
+        {
+          "feature": "takeout",
+          "evidencePhrase": "Takeout",
+          "sourceUrl": "https://www.indiaparadise.ca/halifax/downtown/home",
+          "observedAt": "2026-11-03T18:34:33.040Z",
+          "lastVerifiedAt": "2026-11-03T18:34:33.040Z",
+          "confidence": "official_source_explicit_text"
+        },
+        {
+          "feature": "delivery",
+          "evidencePhrase": "Delivery",
+          "sourceUrl": "https://www.indiaparadise.ca/halifax/downtown/home",
+          "observedAt": "2026-11-03T18:34:33.040Z",
+          "lastVerifiedAt": "2026-11-03T18:34:33.040Z",
+          "confidence": "official_source_explicit_text"
+        }
+      ],
+      "menus": [
+        {
+          "menuType": "general",
+          "title": "Menu",
+          "url": "https://www.indiaparadise.ca/halifax/downtown/food",
+          "format": "html",
+          "locationSpecific": true,
+          "verifiedAt": "2026-10-06T01:20:49.169Z",
+          "source": "official_website_link",
+          "status": "verified_link"
+        }
+      ],
+      "reservations": [],
+      "ordering": []
     }
   ],
   "sourceHistory": [
@@ -13367,5 +13925,76 @@
       }
     }
   ],
-  "reviewedFieldRejectionsAt": "2026-10-20"
+  "reviewedFieldRejectionsAt": "2026-10-20",
+  "refreshObservations": [
+    {
+      "restaurantId": "canteen-on-portland-dartmouth",
+      "state": "changed",
+      "checkedAt": "2026-11-03T18:34:11.290Z",
+      "attempted": true
+    },
+    {
+      "restaurantId": "magnolia-halifax",
+      "state": "changed",
+      "checkedAt": "2026-11-03T18:34:11.963Z",
+      "attempted": true
+    },
+    {
+      "restaurantId": "darty-brewing-dartmouth",
+      "state": "changed",
+      "checkedAt": "2026-11-03T18:34:11.294Z",
+      "attempted": true
+    },
+    {
+      "restaurantId": "lake-city-cider-dartmouth",
+      "state": "changed",
+      "checkedAt": "2026-11-03T18:34:11.795Z",
+      "attempted": true
+    },
+    {
+      "restaurantId": "marias-pantry-dartmouth",
+      "state": "changed",
+      "checkedAt": "2026-11-03T18:34:11.967Z",
+      "attempted": true
+    },
+    {
+      "restaurantId": "oxalis-dartmouth",
+      "state": "changed",
+      "checkedAt": "2026-11-03T18:34:32.190Z",
+      "attempted": true
+    },
+    {
+      "restaurantId": "side-hustle-snack-bar-dartmouth",
+      "state": "changed",
+      "checkedAt": "2026-11-03T18:34:32.209Z",
+      "attempted": true
+    },
+    {
+      "restaurantId": "stardust-bar-kitchen-halifax",
+      "state": "changed",
+      "checkedAt": "2026-11-03T18:34:32.535Z",
+      "attempted": true
+    },
+    {
+      "restaurantId": "tribute-halifax",
+      "state": "changed",
+      "checkedAt": "2026-11-03T18:34:32.687Z",
+      "attempted": true
+    },
+    {
+      "restaurantId": "water-polo-halifax",
+      "state": "changed",
+      "checkedAt": "2026-11-03T18:34:32.939Z",
+      "attempted": true
+    },
+    {
+      "restaurantId": "osm-node-13141377001-india-paradise",
+      "state": "changed",
+      "checkedAt": "2026-11-03T18:34:33.040Z",
+      "attempted": true
+    }
+  ],
+  "refreshCounts": {
+    "changed": 11
+  }
 }
