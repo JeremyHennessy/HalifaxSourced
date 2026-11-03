@@ -21,10 +21,11 @@ const dependencies = [
   'restaurant-corrections.js', 'source-integrity.js'
 ];
 const fullReviewedPolicy = JSON.parse(await readFile(new URL('../data/source-link-access-holds.json', import.meta.url), 'utf8'));
-// The newest host-wide 429 and two preceding exact URL restrictions are checked
-// separately below. Keep prior snapshot-based corpus assertions anchored before
-// these additions.
-const policyBeforeLatestRateLimit = {...structuredClone(fullReviewedPolicy), historicalEvidence:structuredClone(fullReviewedPolicy.historicalEvidence.slice(0, -1))};
+// The newest exact Matadora 403, preceding host-wide 429 and two preceding exact
+// URL restrictions are checked separately below. Keep prior snapshot-based
+// corpus assertions anchored before these additions.
+const policyBeforeMatadora = {...structuredClone(fullReviewedPolicy), historicalEvidence:structuredClone(fullReviewedPolicy.historicalEvidence.slice(0, -1))};
+const policyBeforeLatestRateLimit = {...structuredClone(policyBeforeMatadora), historicalEvidence:structuredClone(policyBeforeMatadora.historicalEvidence.slice(0, -1))};
 const policyBeforeLatestRestrictions = {...structuredClone(policyBeforeLatestRateLimit), historicalEvidence:structuredClone(policyBeforeLatestRateLimit.historicalEvidence.slice(0, -2))};
 // Preserve the original 224-receipt regression corpus independently of the
 // ten previously reviewed exact holds, six source-refresh holds, seven
@@ -269,6 +270,7 @@ process.on('exit', () => {
   validateAccessPolicy(policyBeforeCremeQuality);
   validateAccessPolicy(policyBeforeLatestRestrictions);
   validateAccessPolicy(policyBeforeLatestRateLimit);
+  validateAccessPolicy(policyBeforeMatadora);
   validateAccessPolicy(fullReviewedPolicy);
   assert.equal(priorReviewedPolicy.historicalEvidence.length, committedPolicy.historicalEvidence.length + 8, 'Only five Barrios groups, one Secret Sauce group, one Greco feed group and one happy-hour API group added to immutable baseline');
   assert.equal(reviewedBeforeCurrentRun.historicalEvidence.length, priorReviewedPolicy.historicalEvidence.length + 2, 'Only the exact Little Pisa homepage and menu receipts extend the prior reviewed policy');
@@ -280,7 +282,8 @@ process.on('exit', () => {
   assert.equal(policyBeforeCremeQuality.historicalEvidence.length, policyBeforeCremeRobots.historicalEvidence.length + 1, 'Only the exact Crème robots.txt HTTP 403 receipt extends the reviewed policy');
   assert.equal(policyBeforeLatestRestrictions.historicalEvidence.length, policyBeforeCremeQuality.historicalEvidence.length + 3, 'Only the exact Crème homepage, menu and store HTTP 403 receipts extend the reviewed policy');
   assert.equal(policyBeforeLatestRateLimit.historicalEvidence.length, policyBeforeLatestRestrictions.historicalEvidence.length + 2, 'Only the two latest exact restaurant URL restrictions extend the prior policy');
-  assert.equal(fullReviewedPolicy.historicalEvidence.length, policyBeforeLatestRateLimit.historicalEvidence.length + 1, 'Only the exact Great Wall host-wide 429 receipt extends the prior policy');
+  assert.equal(policyBeforeMatadora.historicalEvidence.length, policyBeforeLatestRateLimit.historicalEvidence.length + 1, 'Only the exact Great Wall host-wide 429 receipt extends the prior policy');
+  assert.equal(fullReviewedPolicy.historicalEvidence.length, policyBeforeMatadora.historicalEvidence.length + 1, 'Only the exact Matadora menu HTTP 403 receipt extends the prior policy');
   const newBarriosGroups = priorReviewedPolicy.historicalEvidence.slice(-8, -3);
   for (const group of newBarriosGroups) {
     const p = group.provenance;
@@ -684,7 +687,7 @@ assert.equal(acceptedBarriosHolds.find('https://barrioshfx.ca/unknown-page'), nu
   await gate(latestRestrictionCheck.report);
   checked('latest ChowNow and Palladium exact 403 holds suppress direct requests and redirect destinations');
 
-  const latestRateLimitGroup = fullReviewedPolicy.historicalEvidence.at(-1);
+  const latestRateLimitGroup = policyBeforeMatadora.historicalEvidence.at(-1);
   const latestRateLimitProvenance = latestRateLimitGroup.provenance;
   assert.deepEqual(latestRateLimitGroup.observations, [{
     url:'http://www.thegreatwall.ca/',
@@ -707,6 +710,35 @@ assert.equal(acceptedBarriosHolds.find('https://barrioshfx.ca/unknown-page'), nu
   assert.equal(latestRateLimitProvenance.diagnostic.evidence.hold.reason, 'rate_limited');
   assert.equal(latestRateLimitProvenance.diagnostic.evidence.receipt.attemptedAt, '2026-11-02T12:51:12.426Z');
   checked('latest Great Wall 429 is pinned to the exact reviewed job log and retained as a canonical host hold');
+
+  const matadoraGroup = fullReviewedPolicy.historicalEvidence.at(-1);
+  const matadoraProvenance = matadoraGroup.provenance;
+  const matadoraMenu = 'http://matadorahfx.ca/wp-content/uploads/2026/05/Matadora-Food-Menu-Spring-2026-Final.pdf';
+  assert.deepEqual(matadoraGroup.observations, [{
+    url:matadoraMenu,
+    finalUrl:matadoraMenu,
+    status:403,
+    observedAt:'2026-11-03T19:34:54.027Z'
+  }]);
+  assert.equal(matadoraProvenance.kind, 'reviewed_workflow_log');
+  assert.equal(matadoraProvenance.sourceCommitSha, '47b935b38edc015ca8a0dbf53217c92f99c3d196');
+  assert.equal(matadoraProvenance.workflowRunId, '41703128719');
+  assert.equal(matadoraProvenance.workflowRunAttempt, '1');
+  assert.equal(matadoraProvenance.workflowJob, 'data-integrity');
+  assert.equal(matadoraProvenance.workflowJobId, 126152353616);
+  assert.equal(matadoraProvenance.accessPolicySha256, digest(policyBeforeMatadora));
+  assert.equal(matadoraProvenance.logSha256, '419d72cc0cc7cad2e0a754dc42c1ce98c589ad4a5195f7556b2889aedbaba81d');
+  assert.equal(matadoraProvenance.diagnosticSha256, digest(matadoraProvenance.diagnostic));
+  assert.equal(matadoraProvenance.receiptSha256, digest(matadoraProvenance.diagnostic.evidence.receipt));
+  assert.equal(matadoraProvenance.diagnostic.evidence.hold.scope, 'url');
+  assert.equal(matadoraProvenance.diagnostic.evidence.hold.target, matadoraMenu);
+  assert.equal(matadoraProvenance.diagnostic.evidence.hold.reason, 'access_restricted');
+  assert.equal(matadoraProvenance.diagnostic.evidence.receipt.attemptedAt, '2026-11-03T19:34:53.923Z');
+  assert.equal(matadoraProvenance.diagnostic.evidence.receipt.retryAfter, '0');
+  assert.equal(matadoraProvenance.diagnostic.evidence.receipt.retryNotBefore, '2026-11-03T19:34:54.027Z');
+  assert.equal(createAccessHolds(fullReviewedPolicy).find(matadoraMenu)?.scope, 'url');
+  assert.equal(createAccessHolds(fullReviewedPolicy).find('http://matadorahfx.ca/wp-content/uploads/2026/08/Matadora-Cocktails-Beer-Aperitivo-Summer-2026-Final.pdf'), null);
+  checked('latest Matadora menu 403 is pinned to the exact reviewed job log and retained as one canonical URL hold');
 
   assert(committedPolicy.historicalEvidence[0].observations.every(row => row.status === 403 && new URL(row.url).hostname === 'junglejims.ca'));
   assert.equal(committedPolicy.historicalEvidence[1].observations[0].status, 429);
