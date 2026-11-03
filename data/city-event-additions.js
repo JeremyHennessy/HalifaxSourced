@@ -2,7 +2,7 @@
 
 window.HALIFAX_CITY_EVENT_ADDITIONS = JSON.parse(`{
   "version": 1,
-  "generatedAt": "2026-11-02T12:43:31.925Z",
+  "generatedAt": "2026-11-03T01:22:01.148Z",
   "policy": "Curated city-event additions are source-backed records used when current official or local calendars have not yet been promoted into the primary city-events build.",
   "sources": [
     {
@@ -105,6 +105,12 @@ window.HALIFAX_CITY_EVENT_ADDITIONS = JSON.parse(`{
       "sourceId": "sugar-nursery-sweet-saturdays-2026",
       "sourceName": "Sugar Nursery Cake Studio",
       "sourceUrl": "https://sugarnursery.ca/pages/cake-studio",
+      "authority": "official_primary"
+    },
+    {
+      "sourceId": "halifax-convention-centre",
+      "sourceName": "Halifax Convention Centre",
+      "sourceUrl": "https://www.halifaxconventioncentre.com/Events",
       "authority": "official_primary"
     }
   ],
@@ -1006,6 +1012,50 @@ window.HALIFAX_CITY_EVENT_ADDITIONS = JSON.parse(`{
         "conversionPolicy": "scripts/import-city-events.mjs: localIso / atlanticOffset",
         "basis": "The owner page prints Halifax local wall times without a timezone or UTC timestamp. America/Halifax and the ISO instants are derived from the Halifax venue using the existing application policy."
       },
+      "alternateSources": [],
+      "supersedesEventIds": []
+    },
+    {
+      "id": "halifax-convention-centre-776808f1016d5651",
+      "title": "Hal-Con Sci-Fi Convention",
+      "startAt": "2026-11-06",
+      "endAt": "2026-11-08",
+      "allDay": true,
+      "venueName": "Halifax Convention Centre",
+      "address": "1650 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Community"
+      ],
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": "https://www.halifaxconventioncentre.com/events/231601/",
+      "sourceUrl": "https://www.halifaxconventioncentre.com/Events",
+      "sourceId": "halifax-convention-centre",
+      "sourceName": "Halifax Convention Centre",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-11-03T01:02:35.473Z",
+      "reviewedAt": "2026-11-03T01:22:01.148Z",
+      "reviewState": "source_observed",
+      "neighbourhood": "Downtown Halifax",
+      "sourceEvidence": [
+        {
+          "sourceId": "halifax-convention-centre",
+          "sourceName": "Halifax Convention Centre",
+          "sourceUrl": "https://www.halifaxconventioncentre.com/events/231601/",
+          "basis": "official_primary",
+          "observedAt": "2026-11-03T01:02:35.473Z",
+          "reviewedAt": "2026-11-03T01:22:01.148Z",
+          "observationBasis": "Scheduled collector observed the official event record; independent HTTP review confirmed the same official page and dates.",
+          "sourceCrawlAgeReported": null,
+          "sourceCrawlTimestamp": "2026-11-03T01:02:35.473Z",
+          "observedFacts": [
+            "Hal-Con Sci-Fi Convention.",
+            "Friday, November 6, 2026 to Sunday, November 8, 2026.",
+            "Halifax Convention Centre; no admission price was asserted."
+          ]
+        }
+      ],
       "alternateSources": [],
       "supersedesEventIds": []
     }
