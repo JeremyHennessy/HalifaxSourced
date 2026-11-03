@@ -1028,14 +1028,14 @@ window.HALIFAX_CITY_EVENT_ADDITIONS = JSON.parse(`{
         "Community"
       ],
       "price": null,
-      "ticketUrl": null,
+      "ticketUrl": "https://hal-con.com/tickets",
       "eventUrl": "https://www.halifaxconventioncentre.com/events/231601/",
       "sourceUrl": "https://www.halifaxconventioncentre.com/Events",
       "sourceId": "halifax-convention-centre",
       "sourceName": "Halifax Convention Centre",
       "sourceKind": "official_venue_calendar",
       "observedAt": "2026-11-03T01:02:35.473Z",
-      "reviewedAt": "2026-11-03T01:22:01.148Z",
+      "reviewedAt": "2026-11-03T02:01:21.570Z",
       "reviewState": "source_observed",
       "neighbourhood": "Downtown Halifax",
       "sourceEvidence": [
@@ -1054,10 +1054,31 @@ window.HALIFAX_CITY_EVENT_ADDITIONS = JSON.parse(`{
             "Friday, November 6, 2026 to Sunday, November 8, 2026.",
             "Halifax Convention Centre; no admission price was asserted."
           ]
+        },
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/hal-con/",
+          "basis": "official_secondary",
+          "observedAt": "2026-10-30T05:56:13.174Z",
+          "reviewedAt": "2026-11-03T02:01:21.570Z",
+          "observationBasis": "Retained from the accepted Tourism Nova Scotia occurrence while consolidating the same November 6–8 dates and Halifax Convention Centre identity into the owner-venue record.",
+          "observedFacts": [
+            "Hal-Con 2026 at Halifax Convention Centre from November 6 through November 8, 2026.",
+            "The accepted tourism occurrence linked the official Hal-Con ticket page."
+          ]
         }
       ],
-      "alternateSources": [],
-      "supersedesEventIds": []
+      "alternateSources": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/hal-con/"
+        }
+      ],
+      "supersedesEventIds": [
+        "https://novascotia.com/event/hal-con/#event"
+      ]
     }
   ]
 }`);
