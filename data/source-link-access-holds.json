@@ -4709,6 +4709,144 @@
           "observedAt": "2026-11-04T16:33:44.807Z"
         }
       ]
+    },
+    {
+      "provenance": {
+        "kind": "reviewed_workflow_log",
+        "repository": "JeremyHennessy/HalifaxSourced",
+        "sourceCommitSha": "524fea540868cbac6556e8342faa383b7428f55d",
+        "workflowRunId": "41876560696",
+        "workflowRunAttempt": "1",
+        "workflowJob": "data-integrity",
+        "workflowJobId": 126738613834,
+        "accessPolicySha256": "33af347ac5ba49a009240a300c06a36652426777a13bccbc411bfdf244bb3626",
+        "logSha256": "4b7aa5c28a423d1ca56b8e4a049e3465cc6c2c728b47ff2d99a17944e6351fc5",
+        "diagnosticSha256": "b776b1748f44e09e1d8cf20e937f7eb8ccffe47631958dab171ac981ee85bbda",
+        "receiptSha256": "c03d0905fc86aed5fd3f7293360159a21d26e0ba1f3644647b9011079efae4c7",
+        "loggedAt": "2026-11-04T17:28:07.472Z",
+        "diagnostic": {
+          "version": 1,
+          "disposition": "nonpublishable_requires_review",
+          "kind": "http_restriction",
+          "repository": "JeremyHennessy/HalifaxSourced",
+          "workflowJob": "data-integrity",
+          "loggedAt": "2026-11-04T17:28:07.472Z",
+          "sourceCommitSha": "524fea540868cbac6556e8342faa383b7428f55d",
+          "sourceWorkflowRunId": "41876560696",
+          "sourceWorkflowRunAttempt": "1",
+          "accessPolicySha256": "33af347ac5ba49a009240a300c06a36652426777a13bccbc411bfdf244bb3626",
+          "evidence": {
+            "hold": {
+              "id": "f835e2ba6acf2b023277c7be7664f0ae7513632e14a6fb9dd1768e2e88daad58",
+              "scope": "url",
+              "target": "https://stonepizza.ca/",
+              "reason": "access_restricted",
+              "resume": "reviewed_evidence_required",
+              "evidence": {
+                "url": "https://stonepizza.ca/",
+                "finalUrl": "https://stonepizza.ca/",
+                "status": 403,
+                "observedAt": "2026-11-04T17:28:07.471Z"
+              },
+              "provenance": {
+                "kind": "current_run",
+                "sourceCommitSha": "524fea540868cbac6556e8342faa383b7428f55d",
+                "sourceWorkflowRunId": "41876560696",
+                "sourceWorkflowRunAttempt": "1",
+                "accessPolicySha256": "33af347ac5ba49a009240a300c06a36652426777a13bccbc411bfdf244bb3626",
+                "requestId": "176"
+              }
+            },
+            "receipt": {
+              "requestId": "176",
+              "url": "https://stonepizza.ca/",
+              "status": 403,
+              "observedAt": "2026-11-04T17:28:07.471Z",
+              "attemptedAt": "2026-11-04T17:28:06.307Z",
+              "mediaType": "text/html"
+            },
+            "late": false,
+            "suspensionId": null
+          }
+        }
+      },
+      "observations": [
+        {
+          "url": "https://stonepizza.ca/",
+          "finalUrl": "https://stonepizza.ca/",
+          "status": 403,
+          "observedAt": "2026-11-04T17:28:07.471Z"
+        }
+      ]
+    },
+    {
+      "provenance": {
+        "kind": "reviewed_workflow_log",
+        "repository": "JeremyHennessy/HalifaxSourced",
+        "sourceCommitSha": "524fea540868cbac6556e8342faa383b7428f55d",
+        "workflowRunId": "41876560696",
+        "workflowRunAttempt": "1",
+        "workflowJob": "data-integrity",
+        "workflowJobId": 126738613834,
+        "accessPolicySha256": "33af347ac5ba49a009240a300c06a36652426777a13bccbc411bfdf244bb3626",
+        "logSha256": "4b7aa5c28a423d1ca56b8e4a049e3465cc6c2c728b47ff2d99a17944e6351fc5",
+        "diagnosticSha256": "ade54141414dec0c206ed9c7f2caabfcda8cc4e5501fec4cb6fc2cf70394e8e3",
+        "receiptSha256": "0052b51ad1ff0371462a3d09e40c68af93198e389c9d7f0f8c6e709780ebed0f",
+        "loggedAt": "2026-11-04T17:28:33.909Z",
+        "diagnostic": {
+          "version": 1,
+          "disposition": "nonpublishable_requires_review",
+          "kind": "http_restriction",
+          "repository": "JeremyHennessy/HalifaxSourced",
+          "workflowJob": "data-integrity",
+          "loggedAt": "2026-11-04T17:28:33.909Z",
+          "sourceCommitSha": "524fea540868cbac6556e8342faa383b7428f55d",
+          "sourceWorkflowRunId": "41876560696",
+          "sourceWorkflowRunAttempt": "1",
+          "accessPolicySha256": "33af347ac5ba49a009240a300c06a36652426777a13bccbc411bfdf244bb3626",
+          "evidence": {
+            "hold": {
+              "id": "20a84ff43c9ba5f38254c15d5f9380f1e0f582b5e39b6964ec1028b23dd875da",
+              "scope": "url",
+              "target": "https://stonepizza.ca/pizza/",
+              "reason": "access_restricted",
+              "resume": "reviewed_evidence_required",
+              "evidence": {
+                "url": "https://stonepizza.ca/pizza/",
+                "finalUrl": "https://stonepizza.ca/pizza/",
+                "status": 403,
+                "observedAt": "2026-11-04T17:28:33.909Z"
+              },
+              "provenance": {
+                "kind": "current_run",
+                "sourceCommitSha": "524fea540868cbac6556e8342faa383b7428f55d",
+                "sourceWorkflowRunId": "41876560696",
+                "sourceWorkflowRunAttempt": "1",
+                "accessPolicySha256": "33af347ac5ba49a009240a300c06a36652426777a13bccbc411bfdf244bb3626",
+                "requestId": "674"
+              }
+            },
+            "receipt": {
+              "requestId": "674",
+              "url": "https://stonepizza.ca/pizza/",
+              "status": 403,
+              "observedAt": "2026-11-04T17:28:33.909Z",
+              "attemptedAt": "2026-11-04T17:28:33.879Z",
+              "mediaType": "text/html"
+            },
+            "late": false,
+            "suspensionId": null
+          }
+        }
+      },
+      "observations": [
+        {
+          "url": "https://stonepizza.ca/pizza/",
+          "finalUrl": "https://stonepizza.ca/pizza/",
+          "status": 403,
+          "observedAt": "2026-11-04T17:28:33.909Z"
+        }
+      ]
     }
   ]
 }
