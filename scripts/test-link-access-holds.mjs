@@ -21,10 +21,12 @@ const dependencies = [
   'restaurant-corrections.js', 'source-integrity.js'
 ];
 const fullReviewedPolicy = JSON.parse(await readFile(new URL('../data/source-link-access-holds.json', import.meta.url), 'utf8'));
-// The newest exact Noggins 403, preceding Matadora 403, host-wide 429 and two
-// preceding exact URL restrictions are checked separately below. Keep prior
-// snapshot-based corpus assertions anchored before these additions.
-const policyBeforeLatestNoggins = {...structuredClone(fullReviewedPolicy), historicalEvidence:structuredClone(fullReviewedPolicy.historicalEvidence.slice(0, -1))};
+// The newest exact Stone Pizza robots 403, preceding Noggins and Matadora
+// 403s, host-wide 429 and two preceding exact URL restrictions are checked
+// separately below. Keep prior snapshot-based corpus assertions anchored.
+const policyBeforeStoneQuality = {...structuredClone(fullReviewedPolicy), historicalEvidence:structuredClone(fullReviewedPolicy.historicalEvidence.slice(0, -2))};
+const policyBeforeStone = {...structuredClone(policyBeforeStoneQuality), historicalEvidence:structuredClone(policyBeforeStoneQuality.historicalEvidence.slice(0, -1))};
+const policyBeforeLatestNoggins = {...structuredClone(policyBeforeStone), historicalEvidence:structuredClone(policyBeforeStone.historicalEvidence.slice(0, -1))};
 const policyBeforeMatadora = {...structuredClone(policyBeforeLatestNoggins), historicalEvidence:structuredClone(policyBeforeLatestNoggins.historicalEvidence.slice(0, -1))};
 const policyBeforeLatestRateLimit = {...structuredClone(policyBeforeMatadora), historicalEvidence:structuredClone(policyBeforeMatadora.historicalEvidence.slice(0, -1))};
 const policyBeforeLatestRestrictions = {...structuredClone(policyBeforeLatestRateLimit), historicalEvidence:structuredClone(policyBeforeLatestRateLimit.historicalEvidence.slice(0, -2))};
@@ -273,6 +275,8 @@ process.on('exit', () => {
   validateAccessPolicy(policyBeforeLatestRateLimit);
   validateAccessPolicy(policyBeforeMatadora);
   validateAccessPolicy(policyBeforeLatestNoggins);
+  validateAccessPolicy(policyBeforeStone);
+  validateAccessPolicy(policyBeforeStoneQuality);
   validateAccessPolicy(fullReviewedPolicy);
   assert.equal(priorReviewedPolicy.historicalEvidence.length, committedPolicy.historicalEvidence.length + 8, 'Only five Barrios groups, one Secret Sauce group, one Greco feed group and one happy-hour API group added to immutable baseline');
   assert.equal(reviewedBeforeCurrentRun.historicalEvidence.length, priorReviewedPolicy.historicalEvidence.length + 2, 'Only the exact Little Pisa homepage and menu receipts extend the prior reviewed policy');
@@ -286,7 +290,9 @@ process.on('exit', () => {
   assert.equal(policyBeforeLatestRateLimit.historicalEvidence.length, policyBeforeLatestRestrictions.historicalEvidence.length + 2, 'Only the two latest exact restaurant URL restrictions extend the prior policy');
   assert.equal(policyBeforeMatadora.historicalEvidence.length, policyBeforeLatestRateLimit.historicalEvidence.length + 1, 'Only the exact Great Wall host-wide 429 receipt extends the prior policy');
   assert.equal(policyBeforeLatestNoggins.historicalEvidence.length, policyBeforeMatadora.historicalEvidence.length + 1, 'Only the exact Matadora menu HTTP 403 receipt extends the prior policy');
-  assert.equal(fullReviewedPolicy.historicalEvidence.length, policyBeforeLatestNoggins.historicalEvidence.length + 1, 'Only the exact Noggins Coburg HTTP 403 receipt extends the prior policy');
+  assert.equal(policyBeforeStone.historicalEvidence.length, policyBeforeLatestNoggins.historicalEvidence.length + 1, 'Only the exact Noggins Coburg HTTP 403 receipt extends the prior policy');
+  assert.equal(policyBeforeStoneQuality.historicalEvidence.length, policyBeforeStone.historicalEvidence.length + 1, 'Only the exact Stone Pizza robots HTTP 403 receipt extends the prior policy');
+  assert.equal(fullReviewedPolicy.historicalEvidence.length, policyBeforeStoneQuality.historicalEvidence.length + 2, 'Only the exact Stone Pizza homepage and pizza-page HTTP 403 receipts extend the robots-only policy');
   const newBarriosGroups = priorReviewedPolicy.historicalEvidence.slice(-8, -3);
   for (const group of newBarriosGroups) {
     const p = group.provenance;
@@ -743,7 +749,7 @@ assert.equal(acceptedBarriosHolds.find('https://barrioshfx.ca/unknown-page'), nu
   assert.equal(createAccessHolds(fullReviewedPolicy).find('http://matadorahfx.ca/wp-content/uploads/2026/08/Matadora-Cocktails-Beer-Aperitivo-Summer-2026-Final.pdf'), null);
   checked('latest Matadora menu 403 is pinned to the exact reviewed job log and retained as one canonical URL hold');
 
-  const nogginsGroup = fullReviewedPolicy.historicalEvidence.at(-1);
+  const nogginsGroup = policyBeforeStone.historicalEvidence.at(-1);
   const nogginsProvenance = nogginsGroup.provenance;
   const nogginsCoburg = 'https://nogginsfarm.ca/farm-markets/coburg-market/';
   assert.deepEqual(nogginsGroup.observations, [{
@@ -769,6 +775,66 @@ assert.equal(acceptedBarriosHolds.find('https://barrioshfx.ca/unknown-page'), nu
   assert.equal(createAccessHolds(fullReviewedPolicy).find(nogginsCoburg)?.scope, 'url');
   assert.equal(createAccessHolds(fullReviewedPolicy).find('https://nogginsfarm.ca/farm-markets/wolfville-market/'), null);
   checked('latest Noggins Coburg 403 is pinned to the exact reviewed job log and retained as one canonical URL hold');
+
+  const stoneGroup = policyBeforeStoneQuality.historicalEvidence.at(-1);
+  const stoneProvenance = stoneGroup.provenance;
+  const stoneRobots = 'https://stonepizza.ca/robots.txt';
+  assert.deepEqual(stoneGroup.observations, [{
+    url:stoneRobots,
+    finalUrl:stoneRobots,
+    status:403,
+    observedAt:'2026-11-04T16:33:44.807Z'
+  }]);
+  assert.equal(stoneProvenance.kind, 'reviewed_workflow_log');
+  assert.equal(stoneProvenance.sourceCommitSha, 'c01a7bd22034296f4ad6981c3298c420a0717981');
+  assert.equal(stoneProvenance.workflowRunId, '41868421203');
+  assert.equal(stoneProvenance.workflowRunAttempt, '1');
+  assert.equal(stoneProvenance.workflowJob, 'social-refresh');
+  assert.equal(stoneProvenance.workflowJobId, 126708591319);
+  assert.equal(stoneProvenance.accessPolicySha256, digest(policyBeforeStone));
+  assert.equal(stoneProvenance.logSha256, 'f66e020b46b219dcafe6ee782398edac934fa3830aa15edb88bbb135027823a1');
+  assert.equal(stoneProvenance.diagnosticSha256, digest(stoneProvenance.diagnostic));
+  assert.equal(stoneProvenance.receiptSha256, digest(stoneProvenance.diagnostic.evidence.receipt));
+  assert.equal(stoneProvenance.diagnostic.evidence.hold.scope, 'url');
+  assert.equal(stoneProvenance.diagnostic.evidence.hold.target, stoneRobots);
+  assert.equal(stoneProvenance.diagnostic.evidence.hold.reason, 'access_restricted');
+  assert.equal(stoneProvenance.diagnostic.evidence.receipt.attemptedAt, '2026-11-04T16:33:44.522Z');
+  const robotsOnlyAccess = createAccessHolds(policyBeforeStoneQuality);
+  assert.equal(robotsOnlyAccess.find(stoneRobots)?.scope, 'url');
+  assert.equal(robotsOnlyAccess.find('https://stonepizza.ca/'), null);
+  checked('Stone Pizza robots 403 is pinned to the first reviewed job log; the corroborating run is not duplicated');
+
+  const stoneQualityGroups = fullReviewedPolicy.historicalEvidence.slice(-2);
+  const stoneQualityUrls = ['https://stonepizza.ca/', 'https://stonepizza.ca/pizza/'];
+  const stoneQualityObserved = ['2026-11-04T17:28:07.471Z', '2026-11-04T17:28:33.909Z'];
+  const stoneQualityAttempted = ['2026-11-04T17:28:06.307Z', '2026-11-04T17:28:33.879Z'];
+  for (const [index, group] of stoneQualityGroups.entries()) {
+    const p = group.provenance;
+    assert.deepEqual(group.observations, [{
+      url:stoneQualityUrls[index],
+      finalUrl:stoneQualityUrls[index],
+      status:403,
+      observedAt:stoneQualityObserved[index]
+    }]);
+    assert.equal(p.kind, 'reviewed_workflow_log');
+    assert.equal(p.sourceCommitSha, '524fea540868cbac6556e8342faa383b7428f55d');
+    assert.equal(p.workflowRunId, '41876560696');
+    assert.equal(p.workflowRunAttempt, '1');
+    assert.equal(p.workflowJob, 'data-integrity');
+    assert.equal(p.workflowJobId, 126738613834);
+    assert.equal(p.accessPolicySha256, digest(policyBeforeStoneQuality));
+    assert.equal(p.logSha256, '4b7aa5c28a423d1ca56b8e4a049e3465cc6c2c728b47ff2d99a17944e6351fc5');
+    assert.equal(p.diagnosticSha256, digest(p.diagnostic));
+    assert.equal(p.receiptSha256, digest(p.diagnostic.evidence.receipt));
+    assert.equal(p.diagnostic.evidence.hold.scope, 'url');
+    assert.equal(p.diagnostic.evidence.hold.target, stoneQualityUrls[index]);
+    assert.equal(p.diagnostic.evidence.hold.reason, 'access_restricted');
+    assert.equal(p.diagnostic.evidence.receipt.attemptedAt, stoneQualityAttempted[index]);
+  }
+  const fullAccess = createAccessHolds(fullReviewedPolicy);
+  stoneQualityUrls.forEach(url => assert.equal(fullAccess.find(url)?.scope, 'url'));
+  assert.equal(fullAccess.find('https://stonepizza.ca/about/'), null);
+  checked('Quality diagnostics pin the exact Stone Pizza homepage and pizza-page holds; an unevidenced sibling remains eligible');
 
   assert(committedPolicy.historicalEvidence[0].observations.every(row => row.status === 403 && new URL(row.url).hostname === 'junglejims.ca'));
   assert.equal(committedPolicy.historicalEvidence[1].observations[0].status, 429);
