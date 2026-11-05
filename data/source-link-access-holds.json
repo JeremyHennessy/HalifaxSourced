@@ -4847,6 +4847,75 @@
           "observedAt": "2026-11-04T17:28:33.909Z"
         }
       ]
+    },
+    {
+      "provenance": {
+        "kind": "reviewed_workflow_log",
+        "repository": "JeremyHennessy/HalifaxSourced",
+        "sourceCommitSha": "77a6a13ba77dba3e77f19c6df5f7c5ccce1b2e55",
+        "workflowRunId": "42068305798",
+        "workflowRunAttempt": "1",
+        "workflowJob": "social-refresh",
+        "workflowJobId": 127388660211,
+        "accessPolicySha256": "405adb31940294dcede2a0eca1820f6e3f0ac7e3ec8d590e446be0f353e329ee",
+        "logSha256": "421b20c494feca8c0176811916918eed3161d145a27e14d60990081dbdc9361f",
+        "diagnosticSha256": "dafc7762610f0aa17e6df568d9c13abbbd988e0b6eb0c8cc4b60aeac8fdb3bdb",
+        "receiptSha256": "5225c83e4a83d9deba60ab93e9cb326e615c444c9dfe69aa9b8406bee554f927",
+        "loggedAt": "2026-11-05T16:49:10.778Z",
+        "diagnostic": {
+          "version": 1,
+          "disposition": "nonpublishable_requires_review",
+          "kind": "http_restriction",
+          "repository": "JeremyHennessy/HalifaxSourced",
+          "workflowJob": "social-refresh",
+          "loggedAt": "2026-11-05T16:49:10.778Z",
+          "sourceCommitSha": "77a6a13ba77dba3e77f19c6df5f7c5ccce1b2e55",
+          "sourceWorkflowRunId": "42068305798",
+          "sourceWorkflowRunAttempt": "1",
+          "accessPolicySha256": "405adb31940294dcede2a0eca1820f6e3f0ac7e3ec8d590e446be0f353e329ee",
+          "evidence": {
+            "hold": {
+              "id": "368a44df3e45ff9260d9f25a928297951209b8e75cae0b0172892b390d27669d",
+              "scope": "url",
+              "target": "https://kofukujapaneseandthai.ca/",
+              "reason": "access_restricted",
+              "resume": "reviewed_evidence_required",
+              "evidence": {
+                "url": "https://www.kofukujapaneseandthai.ca/",
+                "finalUrl": "https://www.kofukujapaneseandthai.ca/",
+                "status": 403,
+                "observedAt": "2026-11-05T16:49:10.778Z"
+              },
+              "provenance": {
+                "kind": "current_run",
+                "sourceCommitSha": "77a6a13ba77dba3e77f19c6df5f7c5ccce1b2e55",
+                "sourceWorkflowRunId": "42068305798",
+                "sourceWorkflowRunAttempt": "1",
+                "accessPolicySha256": "405adb31940294dcede2a0eca1820f6e3f0ac7e3ec8d590e446be0f353e329ee",
+                "requestId": "189"
+              }
+            },
+            "receipt": {
+              "requestId": "189",
+              "url": "https://www.kofukujapaneseandthai.ca/",
+              "status": 403,
+              "observedAt": "2026-11-05T16:49:10.778Z",
+              "attemptedAt": "2026-11-05T16:49:10.751Z",
+              "mediaType": "text/html"
+            },
+            "late": false,
+            "suspensionId": null
+          }
+        }
+      },
+      "observations": [
+        {
+          "url": "https://www.kofukujapaneseandthai.ca/",
+          "finalUrl": "https://www.kofukujapaneseandthai.ca/",
+          "status": 403,
+          "observedAt": "2026-11-05T16:49:10.778Z"
+        }
+      ]
     }
   ]
 }

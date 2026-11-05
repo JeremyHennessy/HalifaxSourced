@@ -21,10 +21,11 @@ const dependencies = [
   'restaurant-corrections.js', 'source-integrity.js'
 ];
 const fullReviewedPolicy = JSON.parse(await readFile(new URL('../data/source-link-access-holds.json', import.meta.url), 'utf8'));
-// The newest exact Stone Pizza robots 403, preceding Noggins and Matadora
+// The newest exact Kofuku homepage 403, Stone Pizza robots 403, preceding Noggins and Matadora
 // 403s, host-wide 429 and two preceding exact URL restrictions are checked
 // separately below. Keep prior snapshot-based corpus assertions anchored.
-const policyBeforeStoneQuality = {...structuredClone(fullReviewedPolicy), historicalEvidence:structuredClone(fullReviewedPolicy.historicalEvidence.slice(0, -2))};
+const policyBeforeKofuku = {...structuredClone(fullReviewedPolicy), historicalEvidence:structuredClone(fullReviewedPolicy.historicalEvidence.slice(0, -1))};
+const policyBeforeStoneQuality = {...structuredClone(policyBeforeKofuku), historicalEvidence:structuredClone(policyBeforeKofuku.historicalEvidence.slice(0, -2))};
 const policyBeforeStone = {...structuredClone(policyBeforeStoneQuality), historicalEvidence:structuredClone(policyBeforeStoneQuality.historicalEvidence.slice(0, -1))};
 const policyBeforeLatestNoggins = {...structuredClone(policyBeforeStone), historicalEvidence:structuredClone(policyBeforeStone.historicalEvidence.slice(0, -1))};
 const policyBeforeMatadora = {...structuredClone(policyBeforeLatestNoggins), historicalEvidence:structuredClone(policyBeforeLatestNoggins.historicalEvidence.slice(0, -1))};
@@ -277,6 +278,7 @@ process.on('exit', () => {
   validateAccessPolicy(policyBeforeLatestNoggins);
   validateAccessPolicy(policyBeforeStone);
   validateAccessPolicy(policyBeforeStoneQuality);
+  validateAccessPolicy(policyBeforeKofuku);
   validateAccessPolicy(fullReviewedPolicy);
   assert.equal(priorReviewedPolicy.historicalEvidence.length, committedPolicy.historicalEvidence.length + 8, 'Only five Barrios groups, one Secret Sauce group, one Greco feed group and one happy-hour API group added to immutable baseline');
   assert.equal(reviewedBeforeCurrentRun.historicalEvidence.length, priorReviewedPolicy.historicalEvidence.length + 2, 'Only the exact Little Pisa homepage and menu receipts extend the prior reviewed policy');
@@ -292,7 +294,8 @@ process.on('exit', () => {
   assert.equal(policyBeforeLatestNoggins.historicalEvidence.length, policyBeforeMatadora.historicalEvidence.length + 1, 'Only the exact Matadora menu HTTP 403 receipt extends the prior policy');
   assert.equal(policyBeforeStone.historicalEvidence.length, policyBeforeLatestNoggins.historicalEvidence.length + 1, 'Only the exact Noggins Coburg HTTP 403 receipt extends the prior policy');
   assert.equal(policyBeforeStoneQuality.historicalEvidence.length, policyBeforeStone.historicalEvidence.length + 1, 'Only the exact Stone Pizza robots HTTP 403 receipt extends the prior policy');
-  assert.equal(fullReviewedPolicy.historicalEvidence.length, policyBeforeStoneQuality.historicalEvidence.length + 2, 'Only the exact Stone Pizza homepage and pizza-page HTTP 403 receipts extend the robots-only policy');
+  assert.equal(policyBeforeKofuku.historicalEvidence.length, policyBeforeStoneQuality.historicalEvidence.length + 2, 'Only the exact Stone Pizza homepage and pizza-page HTTP 403 receipts extend the robots-only policy');
+  assert.equal(fullReviewedPolicy.historicalEvidence.length, policyBeforeKofuku.historicalEvidence.length + 1, 'Only the exact Kofuku homepage HTTP 403 receipt extends the prior policy');
   const newBarriosGroups = priorReviewedPolicy.historicalEvidence.slice(-8, -3);
   for (const group of newBarriosGroups) {
     const p = group.provenance;
@@ -804,7 +807,7 @@ assert.equal(acceptedBarriosHolds.find('https://barrioshfx.ca/unknown-page'), nu
   assert.equal(robotsOnlyAccess.find('https://stonepizza.ca/'), null);
   checked('Stone Pizza robots 403 is pinned to the first reviewed job log; the corroborating run is not duplicated');
 
-  const stoneQualityGroups = fullReviewedPolicy.historicalEvidence.slice(-2);
+  const stoneQualityGroups = policyBeforeKofuku.historicalEvidence.slice(-2);
   const stoneQualityUrls = ['https://stonepizza.ca/', 'https://stonepizza.ca/pizza/'];
   const stoneQualityObserved = ['2026-11-04T17:28:07.471Z', '2026-11-04T17:28:33.909Z'];
   const stoneQualityAttempted = ['2026-11-04T17:28:06.307Z', '2026-11-04T17:28:33.879Z'];
@@ -835,6 +838,35 @@ assert.equal(acceptedBarriosHolds.find('https://barrioshfx.ca/unknown-page'), nu
   stoneQualityUrls.forEach(url => assert.equal(fullAccess.find(url)?.scope, 'url'));
   assert.equal(fullAccess.find('https://stonepizza.ca/about/'), null);
   checked('Quality diagnostics pin the exact Stone Pizza homepage and pizza-page holds; an unevidenced sibling remains eligible');
+
+  const kofukuGroup = fullReviewedPolicy.historicalEvidence.at(-1);
+  const kofukuProvenance = kofukuGroup.provenance;
+  const kofukuCanonical = 'https://kofukujapaneseandthai.ca/';
+  const kofukuObserved = 'https://www.kofukujapaneseandthai.ca/';
+  assert.deepEqual(kofukuGroup.observations, [{
+    url:kofukuObserved,
+    finalUrl:kofukuObserved,
+    status:403,
+    observedAt:'2026-11-05T16:49:10.778Z'
+  }]);
+  assert.equal(kofukuProvenance.kind, 'reviewed_workflow_log');
+  assert.equal(kofukuProvenance.sourceCommitSha, '77a6a13ba77dba3e77f19c6df5f7c5ccce1b2e55');
+  assert.equal(kofukuProvenance.workflowRunId, '42068305798');
+  assert.equal(kofukuProvenance.workflowRunAttempt, '1');
+  assert.equal(kofukuProvenance.workflowJob, 'social-refresh');
+  assert.equal(kofukuProvenance.workflowJobId, 127388660211);
+  assert.equal(kofukuProvenance.accessPolicySha256, digest(policyBeforeKofuku));
+  assert.equal(kofukuProvenance.logSha256, '421b20c494feca8c0176811916918eed3161d145a27e14d60990081dbdc9361f');
+  assert.equal(kofukuProvenance.diagnosticSha256, digest(kofukuProvenance.diagnostic));
+  assert.equal(kofukuProvenance.receiptSha256, digest(kofukuProvenance.diagnostic.evidence.receipt));
+  assert.equal(kofukuProvenance.diagnostic.evidence.hold.scope, 'url');
+  assert.equal(kofukuProvenance.diagnostic.evidence.hold.target, kofukuCanonical);
+  assert.equal(kofukuProvenance.diagnostic.evidence.hold.reason, 'access_restricted');
+  assert.equal(kofukuProvenance.diagnostic.evidence.receipt.attemptedAt, '2026-11-05T16:49:10.751Z');
+  assert.equal(fullAccess.find(kofukuCanonical)?.scope, 'url');
+  assert.equal(fullAccess.find(kofukuObserved)?.scope, 'url');
+  assert.equal(fullAccess.find('https://kofukujapaneseandthai.ca/menu/')?.scope, undefined);
+  checked('Kofuku homepage 403 is pinned to the reviewed job log and normalized only to the exact canonical homepage');
 
   assert(committedPolicy.historicalEvidence[0].observations.every(row => row.status === 403 && new URL(row.url).hostname === 'junglejims.ca'));
   assert.equal(committedPolicy.historicalEvidence[1].observations[0].status, 429);
