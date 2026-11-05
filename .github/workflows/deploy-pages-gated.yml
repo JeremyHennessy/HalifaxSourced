@@ -67,8 +67,12 @@ jobs:
       - name: Upload verified site artifact
         uses: actions/upload-pages-artifact@v4
         with:
+          name: github-pages-${{ github.run_attempt }}
           path: .release-site
 
       - name: Deploy verified site
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          artifact_name: github-pages-${{ github.run_attempt }}
+          timeout: 1200000
