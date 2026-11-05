@@ -2,7 +2,7 @@
 
 window.HALIFAX_CITY_EVENT_ADDITIONS = JSON.parse(`{
   "version": 1,
-  "generatedAt": "2026-11-03T01:22:01.148Z",
+  "generatedAt": "2026-11-05T20:27:17.144Z",
   "policy": "Curated city-event additions are source-backed records used when current official or local calendars have not yet been promoted into the primary city-events build.",
   "sources": [
     {
@@ -1079,6 +1079,53 @@ window.HALIFAX_CITY_EVENT_ADDITIONS = JSON.parse(`{
       "supersedesEventIds": [
         "https://novascotia.com/event/hal-con/#event"
       ]
+    },
+    {
+      "id": "symphony-nova-scotia-e14772301b38cd74",
+      "title": "NSYO: Music in Motion (A Side-by-Side Concert)",
+      "startAt": "2026-11-21T23:30:00.000Z",
+      "endAt": null,
+      "allDay": false,
+      "venueName": "Halifax United Church",
+      "address": null,
+      "city": "Halifax",
+      "categories": [
+        "Music",
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/halifax-united-church/nsyo-music-in-motion/",
+      "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "sourceId": "symphony-nova-scotia",
+      "sourceName": "Symphony Nova Scotia",
+      "sourceKind": "official_arts_calendar",
+      "observedAt": "2026-11-05T20:01:59.347Z",
+      "reviewedAt": "2026-11-05T20:27:17.144Z",
+      "reviewState": "source_observed",
+      "sourceEvidence": [
+        {
+          "sourceId": "symphony-nova-scotia",
+          "sourceName": "Symphony Nova Scotia",
+          "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/halifax-united-church/nsyo-music-in-motion/",
+          "basis": "official_primary",
+          "observedAt": "2026-11-05T20:01:59.347Z",
+          "reviewedAt": "2026-11-05T20:27:17.144Z",
+          "observationBasis": "Scheduled collector observed the official event record; independent official-page review confirmed the same November 21 occurrence, start time, venue, and event URL.",
+          "sourceCrawlAgeReported": null,
+          "sourceCrawlTimestamp": "2026-11-05T20:01:59.347Z",
+          "observedFacts": [
+            "NSYO: Music in Motion is scheduled for Saturday, November 21, 2026 at 7:30 pm Halifax local time.",
+            "The official listing identifies Halifax United Church as the venue.",
+            "The collected official event URL and start instant match the previously published occurrence; only the generated title-derived identifier changed."
+          ]
+        }
+      ],
+      "alternateSources": [],
+      "duplicateEventIds": [
+        "symphony-nova-scotia-321e23eaed780ba1"
+      ],
+      "supersedesEventIds": []
     }
   ]
 }`);
