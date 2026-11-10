@@ -171,13 +171,21 @@ async function importOfficialLocationEvents(source) {
   const events = [];
   for (let index = 0; index < headings.length; index += 1) {
     const current = headings[index];
+    const eventUrl = absoluteUrl(current[1], page.resolvedUrl);
+    let detailUrl;
+    try { detailUrl = new URL(eventUrl); } catch { continue; }
+    if (detailUrl.protocol !== "https:"
+      || detailUrl.hostname !== "halifax.bibliocommons.com"
+      || detailUrl.username
+      || detailUrl.password
+      || !/^\/(?:v2\/)?events\/[a-f0-9]{24}\/?$/i.test(detailUrl.pathname)) continue;
     const nextIndex = headings[index + 1]?.index ?? page.text.length;
     const block = page.text.slice(current.index, nextIndex);
     if (/\bcancelled\b/i.test(inline(block))) continue;
     const when = locationPageWhen(block);
     const title = inline(current[2]).replace(/, part of a series.*$/i, "");
     if (!when || !title) continue;
-    const event = makeEvent(source, { ...when, title, venueName: source.venueName, address: source.venueAddress, city: source.city, categories: simpleEventCategories(title), eventUrl: absoluteUrl(current[1], page.resolvedUrl) });
+    const event = makeEvent(source, { ...when, title, venueName: source.venueName, address: source.venueAddress, city: source.city, categories: simpleEventCategories(title), eventUrl: detailUrl.href });
     if (event) events.push(event);
   }
   return events;

@@ -113,22 +113,34 @@ try {
     + card(heading(`/events/${second}`, 'Missing date') + '<div>Central Library</div>')
     + card(details + heading(`/v2/events/${id}`))
     + card(heading('/events/6abe6719e06996003a8073ba', 'Missing venue') + '<p>on October 25, 2026, 2:00pm</p>');
+  const locationPage = 'https://www.halifaxpubliclibraries.ca/locations/alderney-gate/';
+  const locationFixture = '<h3><a href="https://www.google.com/maps/dir/?api=1">Get Directions, opens a new window</a></h3>'
+    + '<div>Oct 25 | 9:30am–10:30am</div>'
+    + '<h3><a href="https://halifax.bibliocommons.com/events/6abe6719e06996003a8073ba">Real location event</a></h3>'
+    + '<div>Oct 25 | 9:30am–10:30am</div>';
   await writeFile(join(root, 'scripts/lib/fetch-public-source.mjs'), `
     import { appendFile } from 'node:fs/promises';
     export async function fetchGuardedSource(url) {
-      if (!/^https:\\/\\/halifax\\.bibliocommons\\.com\\/v2\\/events\\?page=[12]$/.test(url)) throw new Error('Unexpected mock request');
+      const isListing = /^https:\\/\\/halifax\\.bibliocommons\\.com\\/v2\\/events\\?page=[12]$/.test(url);
+      if (!isListing && url !== ${JSON.stringify(locationPage)}) throw new Error('Unexpected mock request');
       await appendFile(${JSON.stringify(join(root, 'requests.log'))}, url+'\\n');
-      return new Response(${JSON.stringify(fixture)}, { headers: { 'content-type': 'text/html' } });
+      return new Response(isListing ? ${JSON.stringify(fixture)} : ${JSON.stringify(locationFixture)}, { headers: { 'content-type': 'text/html' } });
     }`);
-  await writeFile(join(root, 'data/event-source-supplements.json'), JSON.stringify({sources: [{ id: 'library', name: 'Library', mode: 'bibliocommons_events', url: page.split('?')[0], allowedLocations: { 'Central Library': 'Halifax' } }]}));
+  await writeFile(join(root, 'data/event-source-supplements.json'), JSON.stringify({sources: [
+    { id: 'library', name: 'Library', mode: 'bibliocommons_events', url: page.split('?')[0], allowedLocations: { 'Central Library': 'Halifax' } },
+    { id: 'alderney', name: 'Alderney Gate Library', mode: 'official_location_events', url: locationPage, venueName: 'Alderney Gate Public Library', venueAddress: '60 Alderney Drive', city: 'Dartmouth' }
+  ]}));
   await writeFile(join(root, 'data/build/city-events.json'), JSON.stringify({events: [], range: { start: '2026-10-01', end: '2026-11-01' }}));
   const run = spawnSync(process.execPath, [join(root, 'scripts/import-supplemental-city-events.mjs')], { encoding: 'utf8', env: { ...process.env, LIBRARY_EVENT_DELAY_MS: '0', LIBRARY_EVENT_PAGE_LIMIT: '150' } });
   assert.equal(run.status, 0, run.stderr);
   const output = JSON.parse(await readFile(join(root, 'data/build/city-events.json'), 'utf8'));
-  assert.equal(output.events.length, 1, 'Repeated pages dedupe, missing fields and navigation do not become events');
-  assert.equal(output.events[0].title, 'Real event');
-  assert.equal(output.events[0].startAt, '2026-10-25T17:00:00.000Z');
-  assert.equal(output.events[0].endAt, '2026-10-25T18:30:00.000Z');
+  assert.equal(output.events.length, 2, 'Repeated pages dedupe, missing fields and navigation do not become events');
+  assert(!output.events.some((event) => event.title.startsWith('Get Directions')), 'Location navigation links never become events');
+  const listingEvent = output.events.find((event) => event.title === 'Real event');
+  assert.equal(listingEvent.startAt, '2026-10-25T17:00:00.000Z');
+  assert.equal(listingEvent.endAt, '2026-10-25T18:30:00.000Z');
+  const locationEvent = output.events.find((event) => event.title === 'Real location event');
+  assert.equal(locationEvent.eventUrl, 'https://halifax.bibliocommons.com/events/6abe6719e06996003a8073ba');
   const diagnostic = await readFile(join(root, 'artifacts/library-event-parser-report.json'), 'utf8');
   assert(!diagnostic.includes('<') && !diagnostic.includes('Real event'), 'Diagnostics must not retain scraped content');
   const diagnosticReport = JSON.parse(diagnostic);
@@ -142,6 +154,6 @@ try {
     assert.equal(summary.missingOccurrence, 1);
     assert.equal(summary.missingLocation, 1);
   }
-  assert.deepEqual((await readFile(join(root, 'requests.log'), 'utf8')).trim().split('\n'), [page, page.replace('page=1', 'page=2')]);
-  console.log('Library importer offline regression: repeated pages, explicit occurrence metadata, incomplete cards and content-free diagnostics passed.');
+  assert.deepEqual((await readFile(join(root, 'requests.log'), 'utf8')).trim().split('\n'), [page, page.replace('page=1', 'page=2'), locationPage]);
+  console.log('Library importer offline regression: repeated pages, explicit occurrence metadata, location navigation rejection, incomplete cards and content-free diagnostics passed.');
 } finally { await rm(root, { recursive: true, force: true }); }
