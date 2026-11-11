@@ -186,6 +186,24 @@ try {
     assert.deepEqual(repeatedBuild.manualAdditions.sourceContributions, built.manualAdditions.sourceContributions);
     assert.deepEqual(input, before, 'Source input fixtures are immutable');
   }
+  const canonical = additions.events[0];
+  const refreshedAlias = {
+    ...structuredClone(canonical),
+    id: 'fresh-title-derived-id',
+    observedAt: '2026-10-28T12:00:00Z',
+    duplicateEventIds: []
+  };
+  const aliasInput = { ...original, events: [refreshedAlias] };
+  const aliasBuild = await buildApply(aliasInput);
+  const aliasRuntime = browserApply(aliasInput);
+  for (const output of [aliasBuild, aliasRuntime]) {
+    const retained = output.events.find(event => event.id === canonical.id);
+    assert(retained, 'Curated canonical ID replaces a fresh title-derived alias for the same official occurrence.');
+    assert(retained.duplicateEventIds.includes(refreshedAlias.id));
+    assert(!retained.duplicateEventIds.includes(retained.id));
+    assert(!output.events.some(event => event.id === refreshedAlias.id));
+  }
+  assert.deepEqual(aliasBuild.events, aliasRuntime.events, 'Build/browser identity repair stays in parity.');
 } finally { await rm(accountingRoot, { recursive: true, force: true }); }
 console.log('Curated accounting passed: build/browser parity, Bedford 89 vs 1 and Carleton 10 vs 3, failure/hold/zero receipts, absent receipts, catalogue clocks and repeated application.');
 
