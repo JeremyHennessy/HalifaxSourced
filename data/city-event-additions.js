@@ -1252,11 +1252,18 @@ window.HALIFAX_CITY_EVENT_ADDITIONS = JSON.parse(`{
     const id = addition?.id ? String(addition.id) : "";
     const key = eventKey(addition);
     const occurrence = occurrenceKey(addition);
-    const exactIndex = byId.has(id) ? byId.get(id) : byKey.get(key);
+    const exactIdIndex = byId.get(id);
+    const exactKeyIndex = byKey.get(key);
     const occurrenceIndex = byOccurrence.get(occurrence);
-    const index = Number.isInteger(exactIndex) ? exactIndex : occurrenceIndex;
+    const index = Number.isInteger(exactIdIndex)
+      ? exactIdIndex
+      : Number.isInteger(exactKeyIndex)
+        ? exactKeyIndex
+        : occurrenceIndex;
     if (Number.isInteger(index)) {
-      const occurrenceMatch = !Number.isInteger(exactIndex) && Number.isInteger(occurrenceIndex);
+      const occurrenceMatch = !Number.isInteger(exactIdIndex)
+        && Number.isInteger(occurrenceIndex)
+        && occurrenceIndex === index;
       events[index] = occurrenceMatch
         ? mergeCanonicalOccurrence(events[index], addition)
         : mergeEvents(events[index], addition);
