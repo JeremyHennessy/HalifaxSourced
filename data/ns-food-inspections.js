@@ -1,5 +1,5 @@
 window.HALIFAX_NS_FOOD_INSPECTIONS = {
-  "generatedAt": "2026-10-20T07:20:13.079Z",
+  "generatedAt": "2026-11-12T19:27:53.425Z",
   "source": "Government of Nova Scotia Food Establishment Inspection Reports",
   "sourceUrl": "https://novascotia.ca/nse/food-protection/reports/",
   "cities": [
@@ -7,9 +7,9 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
     "Dartmouth",
     "Bedford"
   ],
-  "count": 1923,
+  "count": 1927,
   "refresh": {
-    "observedAt": "2026-10-20T07:20:13.079Z",
+    "observedAt": "2026-11-12T19:27:53.425Z",
     "refreshedCities": [
       "Halifax",
       "Dartmouth",
@@ -17,97 +17,69 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
     ],
     "retainedCities": [],
     "sourceAsOf": {
-      "Halifax": "19 Oct, 2026 3:22 AM",
-      "Dartmouth": "19 Oct, 2026 3:22 AM",
-      "Bedford": "19 Oct, 2026 3:22 AM"
+      "Halifax": "12 Nov, 2026 3:10 AM",
+      "Dartmouth": "12 Nov, 2026 3:10 AM",
+      "Bedford": "12 Nov, 2026 3:10 AM"
     },
     "missingFromLatestSearch": [
       {
-        "facilityId": "3615319",
+        "facilityId": "6367103",
         "city": "Halifax"
       },
       {
-        "facilityId": "2769694",
+        "facilityId": "3138155",
         "city": "Halifax"
       },
       {
-        "facilityId": "1395362",
-        "city": "Bedford"
-      },
-      {
-        "facilityId": "1308928",
+        "facilityId": "2344085",
         "city": "Halifax"
       },
       {
-        "facilityId": "2485160",
-        "city": "Halifax"
-      },
-      {
-        "facilityId": "3424964",
-        "city": "Halifax"
-      },
-      {
-        "facilityId": "3672572",
-        "city": "Halifax"
-      },
-      {
-        "facilityId": "1308337",
-        "city": "Halifax"
-      },
-      {
-        "facilityId": "3155727",
-        "city": "Halifax"
-      },
-      {
-        "facilityId": "3819520",
-        "city": "Halifax"
-      },
-      {
-        "facilityId": "1637698",
-        "city": "Halifax"
-      },
-      {
-        "facilityId": "2573125",
-        "city": "Halifax"
-      },
-      {
-        "facilityId": "3512572",
-        "city": "Halifax"
-      },
-      {
-        "facilityId": "3578214",
-        "city": "Halifax"
-      },
-      {
-        "facilityId": "2593120",
-        "city": "Bedford"
-      },
-      {
-        "facilityId": "3807148",
+        "facilityId": "1882297",
         "city": "Dartmouth"
       },
       {
-        "facilityId": "2533460",
+        "facilityId": "3524182",
         "city": "Halifax"
       },
       {
-        "facilityId": "1616067",
-        "city": "Halifax"
-      },
-      {
-        "facilityId": "3151354",
+        "facilityId": "3656034",
         "city": "Bedford"
       },
       {
-        "facilityId": "3798680",
+        "facilityId": "3174747",
         "city": "Bedford"
       },
       {
-        "facilityId": "2996911",
+        "facilityId": "2194754",
         "city": "Halifax"
       },
       {
-        "facilityId": "3594942",
+        "facilityId": "3598791",
+        "city": "Halifax"
+      },
+      {
+        "facilityId": "2727865",
+        "city": "Bedford"
+      },
+      {
+        "facilityId": "3547536",
+        "city": "Halifax"
+      },
+      {
+        "facilityId": "2807872",
+        "city": "Halifax"
+      },
+      {
+        "facilityId": "2796704",
+        "city": "Halifax"
+      },
+      {
+        "facilityId": "1312622",
+        "city": "Halifax"
+      },
+      {
+        "facilityId": "1401420",
         "city": "Halifax"
       }
     ],
@@ -122,8 +94,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1309123",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4627594",
@@ -133,8 +105,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4627594",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2607956",
@@ -144,8 +116,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2607956",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2001608",
@@ -155,8 +127,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2001608",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2743540",
@@ -166,8 +138,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2743540",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2336335",
@@ -177,8 +149,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2336335",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3360562",
@@ -188,8 +160,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3360562",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3688043",
@@ -199,8 +171,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3688043",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3532971",
@@ -210,8 +182,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3532971",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3684837",
@@ -221,8 +193,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3684837",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2776345",
@@ -232,8 +204,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2776345",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3291504",
@@ -243,8 +215,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3291504",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6364885",
@@ -254,8 +226,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6364885",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3410630",
@@ -265,8 +237,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3410630",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2585612",
@@ -276,8 +248,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2585612",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2376777",
@@ -287,8 +259,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2376777",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1313144",
@@ -298,8 +270,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1313144",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310193",
@@ -309,8 +281,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310193",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2147942",
@@ -320,8 +292,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2147942",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3528562",
@@ -331,8 +303,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3528562",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312365",
@@ -342,8 +314,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312365",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1977915",
@@ -353,8 +325,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1977915",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2566361",
@@ -364,8 +336,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2566361",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2895946",
@@ -375,8 +347,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2895946",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6365271",
@@ -386,8 +358,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6365271",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2522449",
@@ -397,8 +369,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2522449",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3886913",
@@ -408,8 +380,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3886913",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6367396",
@@ -419,8 +391,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6367396",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3697121",
@@ -430,8 +402,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3697121",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4634523",
@@ -441,8 +413,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4634523",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3366358",
@@ -452,8 +424,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3366358",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3881639",
@@ -463,8 +435,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3881639",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4624988",
@@ -474,8 +446,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4624988",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2569151",
@@ -485,8 +457,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2569151",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2551750",
@@ -496,8 +468,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2551750",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1738325",
@@ -507,8 +479,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1738325",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1562685",
@@ -518,8 +490,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1562685",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1810836",
@@ -529,8 +501,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1810836",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312098",
@@ -540,8 +512,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312098",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312711",
@@ -551,8 +523,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312711",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2368789",
@@ -562,8 +534,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2368789",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3414748",
@@ -573,8 +545,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3414748",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2492163",
@@ -584,8 +556,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2492163",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2811181",
@@ -595,8 +567,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2811181",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3579402",
@@ -606,8 +578,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3579402",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1307902",
@@ -617,19 +589,19 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1307902",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
-      "id": "ns-food-6367103",
-      "facilityId": "6367103",
-      "name": "Al Hilal Restaurant",
-      "address": "386 HERRING COVE, HALIFAX",
-      "city": "Halifax",
-      "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6367103",
+      "id": "ns-food-4640645",
+      "facilityId": "4640645",
+      "name": "Al Maha Halal Meat and grocery",
+      "address": "187 WINDMILL, DARTMOUTH",
+      "city": "Dartmouth",
+      "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4640645",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1307959",
@@ -639,8 +611,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1307959",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3564622",
@@ -650,8 +622,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3564622",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2361082",
@@ -661,8 +633,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2361082",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3144570",
@@ -672,8 +644,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3144570",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4629921",
@@ -683,8 +655,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4629921",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312579",
@@ -694,8 +666,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312579",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2984129",
@@ -705,8 +677,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2984129",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2585978",
@@ -716,8 +688,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2585978",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1630428",
@@ -727,8 +699,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1630428",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3667085",
@@ -738,8 +710,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3667085",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3569600",
@@ -749,8 +721,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3569600",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2598443",
@@ -760,8 +732,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2598443",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1307904",
@@ -771,8 +743,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1307904",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3496649",
@@ -782,8 +754,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3496649",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2558160",
@@ -793,8 +765,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2558160",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2507566",
@@ -804,8 +776,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2507566",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3362508",
@@ -815,8 +787,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3362508",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2712747",
@@ -826,8 +798,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2712747",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2983802",
@@ -837,8 +809,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2983802",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4636637",
@@ -848,8 +820,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4636637",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4636635",
@@ -859,8 +831,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4636635",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1309189",
@@ -870,8 +842,19 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1309189",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
+    },
+    {
+      "id": "ns-food-4626714",
+      "facilityId": "4626714",
+      "name": "Anardana Indian Bar & Restaurant",
+      "address": "6140 YOUNG, HALIFAX",
+      "city": "Halifax",
+      "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4626714",
+      "source": "Government of Nova Scotia Food Establishment Inspection Reports",
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2906618",
@@ -881,8 +864,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2906618",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2895689",
@@ -892,8 +875,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2895689",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3672496",
@@ -903,8 +886,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3672496",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1849080",
@@ -914,8 +897,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1849080",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3576804",
@@ -925,8 +908,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3576804",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3645775",
@@ -936,8 +919,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3645775",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4632263",
@@ -947,8 +930,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4632263",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1616812",
@@ -958,8 +941,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1616812",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2647672",
@@ -969,8 +952,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2647672",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3170424",
@@ -980,8 +963,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3170424",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2617798",
@@ -991,8 +974,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2617798",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2389944",
@@ -1002,19 +985,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2389944",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
-    },
-    {
-      "id": "ns-food-3138155",
-      "facilityId": "3138155",
-      "name": "Apartment 3 Expresso Bar - South",
-      "address": "1565 SOUTH PARK, HALIFAX",
-      "city": "Halifax",
-      "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3138155",
-      "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310583",
@@ -1024,8 +996,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310583",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1709390",
@@ -1035,8 +1007,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1709390",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4625009",
@@ -1046,8 +1018,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4625009",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1942031",
@@ -1057,8 +1029,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1942031",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308266",
@@ -1068,8 +1040,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308266",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1313356",
@@ -1079,8 +1051,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1313356",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3417825",
@@ -1090,8 +1062,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3417825",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2653507",
@@ -1101,8 +1073,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2653507",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308563",
@@ -1112,8 +1084,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308563",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3003260",
@@ -1123,8 +1095,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3003260",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310261",
@@ -1134,8 +1106,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310261",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308174",
@@ -1145,8 +1117,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308174",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3575215",
@@ -1156,8 +1128,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3575215",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3878529",
@@ -1167,8 +1139,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3878529",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2467323",
@@ -1178,8 +1150,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2467323",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2785406",
@@ -1189,8 +1161,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2785406",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2785300",
@@ -1200,8 +1172,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2785300",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2852212",
@@ -1211,8 +1183,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2852212",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2786399",
@@ -1222,8 +1194,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2786399",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3347925",
@@ -1233,8 +1205,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3347925",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310614",
@@ -1244,8 +1216,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310614",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2337975",
@@ -1255,8 +1227,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2337975",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310085",
@@ -1266,8 +1238,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310085",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6364787",
@@ -1277,8 +1249,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6364787",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311214",
@@ -1288,8 +1260,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311214",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310693",
@@ -1299,8 +1271,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310693",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311025",
@@ -1310,8 +1282,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311025",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2345967",
@@ -1321,8 +1293,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2345967",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2907719",
@@ -1332,8 +1304,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2907719",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1914805",
@@ -1343,8 +1315,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1914805",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2720870",
@@ -1354,8 +1326,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2720870",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3879442",
@@ -1365,8 +1337,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3879442",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3573893",
@@ -1376,8 +1348,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3573893",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308919",
@@ -1387,8 +1359,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308919",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2400628",
@@ -1398,8 +1370,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2400628",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3819398",
@@ -1409,8 +1381,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3819398",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6361534",
@@ -1420,8 +1392,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6361534",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1948516",
@@ -1431,8 +1403,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1948516",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2118924",
@@ -1442,8 +1414,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2118924",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308327",
@@ -1453,8 +1425,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308327",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312516",
@@ -1464,8 +1436,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312516",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4625624",
@@ -1475,8 +1447,19 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4625624",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
+    },
+    {
+      "id": "ns-food-4639467",
+      "facilityId": "4639467",
+      "name": "BCBC Preschool",
+      "address": "50 DONALDSON, HALIFAX",
+      "city": "Halifax",
+      "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4639467",
+      "source": "Government of Nova Scotia Food Establishment Inspection Reports",
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2996753",
@@ -1486,19 +1469,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2996753",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
-    },
-    {
-      "id": "ns-food-2344085",
-      "facilityId": "2344085",
-      "name": "BEAVERTAILS",
-      "address": "1549 LOWER WATER, HALIFAX",
-      "city": "Halifax",
-      "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2344085",
-      "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2984109",
@@ -1508,8 +1480,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2984109",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2084730",
@@ -1519,8 +1491,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2084730",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312052",
@@ -1530,8 +1502,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312052",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308481",
@@ -1541,8 +1513,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308481",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1561628",
@@ -1552,8 +1524,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1561628",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2724959",
@@ -1563,8 +1535,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2724959",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6361543",
@@ -1574,8 +1546,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6361543",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308498",
@@ -1585,8 +1557,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308498",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3379417",
@@ -1596,8 +1568,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3379417",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3238856",
@@ -1607,8 +1579,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3238856",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311049",
@@ -1618,8 +1590,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311049",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3127283",
@@ -1629,8 +1601,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3127283",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3404713",
@@ -1640,8 +1612,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3404713",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3882871",
@@ -1651,8 +1623,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3882871",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6364559",
@@ -1662,8 +1634,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6364559",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312477",
@@ -1673,8 +1645,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312477",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312475",
@@ -1684,8 +1656,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312475",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312478",
@@ -1695,8 +1667,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312478",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312476",
@@ -1706,8 +1678,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312476",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312580",
@@ -1717,8 +1689,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312580",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312474",
@@ -1728,8 +1700,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312474",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1896406",
@@ -1739,8 +1711,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1896406",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1356856",
@@ -1750,8 +1722,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1356856",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2334048",
@@ -1761,8 +1733,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2334048",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2334006",
@@ -1772,8 +1744,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2334006",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2334030",
@@ -1783,8 +1755,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2334030",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2334015",
@@ -1794,8 +1766,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2334015",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2334072",
@@ -1805,8 +1777,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2334072",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2334040",
@@ -1816,8 +1788,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2334040",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2334065",
@@ -1827,8 +1799,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2334065",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308497",
@@ -1838,8 +1810,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308497",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1313115",
@@ -1849,8 +1821,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1313115",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1346729",
@@ -1860,8 +1832,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1346729",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3004869",
@@ -1871,8 +1843,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3004869",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311599",
@@ -1882,8 +1854,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311599",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3672121",
@@ -1893,8 +1865,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3672121",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4629461",
@@ -1904,8 +1876,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4629461",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6364718",
@@ -1915,8 +1887,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6364718",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2984006",
@@ -1926,8 +1898,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2984006",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2765400",
@@ -1937,19 +1909,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2765400",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
-    },
-    {
-      "id": "ns-food-1882297",
-      "facilityId": "1882297",
-      "name": "BIG LIFE WHOLE FOODS",
-      "address": "84 PORTLAND, DARTMOUTH",
-      "city": "Dartmouth",
-      "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1882297",
-      "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1584256",
@@ -1959,8 +1920,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1584256",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1974485",
@@ -1970,8 +1931,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1974485",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2522852",
@@ -1981,8 +1942,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2522852",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311352",
@@ -1992,8 +1953,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311352",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2370666",
@@ -2003,8 +1964,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2370666",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2338787",
@@ -2014,8 +1975,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2338787",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2595780",
@@ -2025,8 +1986,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2595780",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4630066",
@@ -2036,8 +1997,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4630066",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310329",
@@ -2047,8 +2008,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310329",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2857270",
@@ -2058,8 +2019,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2857270",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2169826",
@@ -2069,8 +2030,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2169826",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2785378",
@@ -2080,8 +2041,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2785378",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3811606",
@@ -2091,8 +2052,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3811606",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2987474",
@@ -2102,8 +2063,19 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2987474",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
+    },
+    {
+      "id": "ns-food-4637004",
+      "facilityId": "4637004",
+      "name": "Bliss caffeine bar",
+      "address": "1451 SOUTH PARK, HALIFAX",
+      "city": "Halifax",
+      "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4637004",
+      "source": "Government of Nova Scotia Food Establishment Inspection Reports",
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2817053",
@@ -2113,8 +2085,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2817053",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2451240",
@@ -2124,8 +2096,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2451240",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2371344",
@@ -2135,8 +2107,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2371344",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1714823",
@@ -2146,8 +2118,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1714823",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2568223",
@@ -2157,8 +2129,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2568223",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1900920",
@@ -2168,8 +2140,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1900920",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2798755",
@@ -2179,8 +2151,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2798755",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4627529",
@@ -2190,8 +2162,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4627529",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2818491",
@@ -2201,8 +2173,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2818491",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6364005",
@@ -2212,8 +2184,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6364005",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3693573",
@@ -2223,8 +2195,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3693573",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2551275",
@@ -2234,8 +2206,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2551275",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2483298",
@@ -2245,8 +2217,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2483298",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2646603",
@@ -2256,8 +2228,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2646603",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3121741",
@@ -2267,8 +2239,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3121741",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2544189",
@@ -2278,8 +2250,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2544189",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3382563",
@@ -2289,8 +2261,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3382563",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3644410",
@@ -2300,8 +2272,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3644410",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311396",
@@ -2311,8 +2283,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311396",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312298",
@@ -2322,8 +2294,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312298",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311604",
@@ -2333,8 +2305,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311604",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311630",
@@ -2344,8 +2316,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311630",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2987619",
@@ -2355,8 +2327,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2987619",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2988252",
@@ -2366,8 +2338,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2988252",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2988198",
@@ -2377,8 +2349,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2988198",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6366415",
@@ -2388,8 +2360,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6366415",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3813990",
@@ -2399,8 +2371,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3813990",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308789",
@@ -2410,8 +2382,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308789",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1313272",
@@ -2421,8 +2393,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1313272",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308270",
@@ -2432,8 +2404,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308270",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2759907",
@@ -2443,8 +2415,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2759907",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308508",
@@ -2454,8 +2426,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308508",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3528558",
@@ -2465,8 +2437,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3528558",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3523070",
@@ -2476,8 +2448,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3523070",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3411456",
@@ -2487,8 +2459,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3411456",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2843020",
@@ -2498,8 +2470,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2843020",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2498471",
@@ -2509,8 +2481,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2498471",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3547461",
@@ -2520,8 +2492,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3547461",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2528616",
@@ -2531,8 +2503,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2528616",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308691",
@@ -2542,8 +2514,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308691",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2989401",
@@ -2553,8 +2525,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2989401",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4638472",
@@ -2564,8 +2536,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4638472",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2809586",
@@ -2575,8 +2547,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2809586",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2455478",
@@ -2586,8 +2558,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2455478",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2963303",
@@ -2597,8 +2569,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2963303",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2410815",
@@ -2608,8 +2580,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2410815",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1758664",
@@ -2619,8 +2591,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1758664",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3881682",
@@ -2630,8 +2602,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3881682",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2967144",
@@ -2641,8 +2613,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2967144",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2564579",
@@ -2652,8 +2624,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2564579",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2029672",
@@ -2663,8 +2635,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2029672",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2373530",
@@ -2674,8 +2646,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2373530",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2792648",
@@ -2685,8 +2657,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2792648",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3662918",
@@ -2696,8 +2668,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3662918",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3670746",
@@ -2707,8 +2679,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3670746",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3582680",
@@ -2718,8 +2690,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3582680",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2383699",
@@ -2729,8 +2701,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2383699",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1916165",
@@ -2740,8 +2712,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1916165",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2383693",
@@ -2751,8 +2723,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2383693",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2826293",
@@ -2762,8 +2734,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2826293",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310819",
@@ -2773,8 +2745,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310819",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3698254",
@@ -2784,8 +2756,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3698254",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3489997",
@@ -2795,8 +2767,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3489997",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6365185",
@@ -2806,8 +2778,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6365185",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2983293",
@@ -2817,8 +2789,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2983293",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2382179",
@@ -2828,8 +2800,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2382179",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2619282",
@@ -2839,8 +2811,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2619282",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4625893",
@@ -2850,8 +2822,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4625893",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4633226",
@@ -2861,8 +2833,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4633226",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3884076",
@@ -2872,8 +2844,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3884076",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3494023",
@@ -2883,8 +2855,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3494023",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310633",
@@ -2894,8 +2866,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310633",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2626311",
@@ -2905,8 +2877,19 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2626311",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
+    },
+    {
+      "id": "ns-food-4630113",
+      "facilityId": "4630113",
+      "name": "Cabbage Patch Kimchi Inc.",
+      "address": "7071 BAYERS, HALIFAX",
+      "city": "Halifax",
+      "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4630113",
+      "source": "Government of Nova Scotia Food Establishment Inspection Reports",
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3107042",
@@ -2916,8 +2899,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3107042",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3339876",
@@ -2927,8 +2910,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3339876",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1398889",
@@ -2938,8 +2921,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1398889",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3807032",
@@ -2949,8 +2932,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3807032",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6365814",
@@ -2960,8 +2943,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6365814",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2469372",
@@ -2971,8 +2954,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2469372",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2506112",
@@ -2982,8 +2965,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2506112",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3588649",
@@ -2993,8 +2976,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3588649",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2906715",
@@ -3004,8 +2987,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2906715",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2481231",
@@ -3015,8 +2998,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2481231",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3513170",
@@ -3026,8 +3009,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3513170",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1849758",
@@ -3037,8 +3020,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1849758",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311857",
@@ -3048,8 +3031,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311857",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2943427",
@@ -3059,8 +3042,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2943427",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1335406",
@@ -3070,8 +3053,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1335406",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2853600",
@@ -3081,8 +3064,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2853600",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3101689",
@@ -3092,8 +3075,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3101689",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2227374",
@@ -3103,8 +3086,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2227374",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3503897",
@@ -3114,19 +3097,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3503897",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
-    },
-    {
-      "id": "ns-food-3524182",
-      "facilityId": "3524182",
-      "name": "Capital Sports Circle Bar",
-      "address": "6300 LADY HAMMOND, HALIFAX",
-      "city": "Halifax",
-      "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3524182",
-      "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1737636",
@@ -3136,8 +3108,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1737636",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3547853",
@@ -3147,8 +3119,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3547853",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2469834",
@@ -3158,8 +3130,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2469834",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1320658",
@@ -3169,8 +3141,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1320658",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1536279",
@@ -3180,8 +3152,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1536279",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2054828",
@@ -3191,8 +3163,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2054828",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311174",
@@ -3202,8 +3174,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311174",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1835877",
@@ -3213,8 +3185,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1835877",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1307968",
@@ -3224,8 +3196,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1307968",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1307948",
@@ -3235,8 +3207,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1307948",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3163508",
@@ -3246,8 +3218,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3163508",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2968545",
@@ -3257,8 +3229,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2968545",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1543675",
@@ -3268,8 +3240,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1543675",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2456720",
@@ -3279,8 +3251,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2456720",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311238",
@@ -3290,8 +3262,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311238",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1846554",
@@ -3301,8 +3273,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1846554",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6364196",
@@ -3312,8 +3284,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6364196",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3624532",
@@ -3323,19 +3295,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3624532",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
-    },
-    {
-      "id": "ns-food-3656034",
-      "facilityId": "3656034",
-      "name": "Chai Samosa",
-      "address": "793 BEDFORD, BEDFORD",
-      "city": "Bedford",
-      "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3656034",
-      "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3017069",
@@ -3345,8 +3306,19 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3017069",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
+    },
+    {
+      "id": "ns-food-4638848",
+      "facilityId": "4638848",
+      "name": "CHAI SUTTA BAR",
+      "address": "1075 QUEEN, HALIFAX",
+      "city": "Halifax",
+      "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4638848",
+      "source": "Government of Nova Scotia Food Establishment Inspection Reports",
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3353377",
@@ -3356,8 +3328,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3353377",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2655436",
@@ -3367,8 +3339,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2655436",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2388309",
@@ -3378,8 +3350,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2388309",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2590076",
@@ -3389,8 +3361,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2590076",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1898249",
@@ -3400,8 +3372,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1898249",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4632541",
@@ -3411,8 +3383,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4632541",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2094164",
@@ -3422,8 +3394,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2094164",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1720036",
@@ -3433,8 +3405,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1720036",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308868",
@@ -3444,8 +3416,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308868",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2988917",
@@ -3455,8 +3427,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2988917",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2847456",
@@ -3466,8 +3438,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2847456",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3105227",
@@ -3477,8 +3449,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3105227",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2149308",
@@ -3488,8 +3460,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2149308",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2703223",
@@ -3499,8 +3471,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2703223",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2414947",
@@ -3510,8 +3482,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2414947",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2930731",
@@ -3521,8 +3493,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2930731",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2124828",
@@ -3532,8 +3504,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2124828",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3523038",
@@ -3543,8 +3515,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3523038",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2996930",
@@ -3554,8 +3526,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2996930",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1679582",
@@ -3565,8 +3537,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1679582",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2416945",
@@ -3576,8 +3548,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2416945",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2187855",
@@ -3587,8 +3559,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2187855",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4630656",
@@ -3598,8 +3570,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4630656",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3648161",
@@ -3609,8 +3581,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3648161",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3651544",
@@ -3620,8 +3592,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3651544",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3536363",
@@ -3631,8 +3603,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3536363",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2769473",
@@ -3642,8 +3614,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2769473",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308273",
@@ -3653,8 +3625,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308273",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2541547",
@@ -3664,8 +3636,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2541547",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2373578",
@@ -3675,8 +3647,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2373578",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3570159",
@@ -3686,8 +3658,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3570159",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2703060",
@@ -3697,8 +3669,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2703060",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312360",
@@ -3708,8 +3680,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312360",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2877504",
@@ -3719,8 +3691,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2877504",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3678772",
@@ -3730,8 +3702,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3678772",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1911322",
@@ -3741,8 +3713,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1911322",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1911366",
@@ -3752,8 +3724,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1911366",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2628563",
@@ -3763,8 +3735,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2628563",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2111962",
@@ -3774,8 +3746,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2111962",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3389494",
@@ -3785,8 +3757,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3389494",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3389567",
@@ -3796,8 +3768,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3389567",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312686",
@@ -3807,8 +3779,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312686",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1361400",
@@ -3818,8 +3790,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1361400",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312685",
@@ -3829,8 +3801,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312685",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312690",
@@ -3840,8 +3812,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312690",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312694",
@@ -3851,8 +3823,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312694",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312692",
@@ -3862,8 +3834,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312692",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312625",
@@ -3873,8 +3845,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312625",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312627",
@@ -3884,8 +3856,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312627",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3128449",
@@ -3895,8 +3867,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3128449",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2360906",
@@ -3906,8 +3878,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2360906",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2360895",
@@ -3917,8 +3889,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2360895",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2360940",
@@ -3928,8 +3900,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2360940",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2360931",
@@ -3939,8 +3911,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2360931",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2827489",
@@ -3950,8 +3922,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2827489",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3457373",
@@ -3961,8 +3933,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3457373",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3546335",
@@ -3972,8 +3944,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3546335",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3689310",
@@ -3983,8 +3955,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3689310",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1398850",
@@ -3994,8 +3966,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1398850",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3201727",
@@ -4005,8 +3977,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3201727",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2892866",
@@ -4016,8 +3988,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2892866",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1782018",
@@ -4027,8 +3999,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1782018",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2939752",
@@ -4038,8 +4010,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2939752",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3800068",
@@ -4049,8 +4021,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3800068",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2819873",
@@ -4060,8 +4032,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2819873",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2641242",
@@ -4071,8 +4043,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2641242",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3805768",
@@ -4082,19 +4054,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3805768",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
-    },
-    {
-      "id": "ns-food-3174747",
-      "facilityId": "3174747",
-      "name": "Coffee by Pourdad",
-      "address": "90 HOGAN, BEDFORD",
-      "city": "Bedford",
-      "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3174747",
-      "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3547472",
@@ -4104,8 +4065,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3547472",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4638354",
@@ -4115,8 +4076,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4638354",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2866914",
@@ -4126,8 +4087,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2866914",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2880066",
@@ -4137,8 +4098,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2880066",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312057",
@@ -4148,8 +4109,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312057",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3419413",
@@ -4159,8 +4120,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3419413",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3892130",
@@ -4170,8 +4131,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3892130",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310670",
@@ -4181,8 +4142,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310670",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2380647",
@@ -4192,8 +4153,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2380647",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1307939",
@@ -4203,8 +4164,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1307939",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3379941",
@@ -4214,8 +4175,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3379941",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6365388",
@@ -4225,8 +4186,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6365388",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3573853",
@@ -4236,8 +4197,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3573853",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2107792",
@@ -4247,8 +4208,19 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2107792",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
+    },
+    {
+      "id": "ns-food-4628972",
+      "facilityId": "4628972",
+      "name": "Cora Halifax #559",
+      "address": "1535 DRESDEN, HALIFAX",
+      "city": "Halifax",
+      "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4628972",
+      "source": "Government of Nova Scotia Food Establishment Inspection Reports",
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311496",
@@ -4258,8 +4230,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311496",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311601",
@@ -4269,8 +4241,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311601",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2360902",
@@ -4280,8 +4252,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2360902",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2360900",
@@ -4291,8 +4263,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2360900",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2185459",
@@ -4302,8 +4274,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2185459",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310302",
@@ -4313,8 +4285,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310302",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1415577",
@@ -4324,8 +4296,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1415577",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308775",
@@ -4335,8 +4307,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308775",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2454394",
@@ -4346,8 +4318,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2454394",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2562528",
@@ -4357,8 +4329,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2562528",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311405",
@@ -4368,8 +4340,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311405",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3800670",
@@ -4379,8 +4351,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3800670",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312429",
@@ -4390,8 +4362,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312429",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3614124",
@@ -4401,8 +4373,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3614124",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3344664",
@@ -4412,8 +4384,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3344664",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4624990",
@@ -4423,8 +4395,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4624990",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2518302",
@@ -4434,8 +4406,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2518302",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2656880",
@@ -4445,8 +4417,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2656880",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2819906",
@@ -4456,8 +4428,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2819906",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2746877",
@@ -4467,8 +4439,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2746877",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4630136",
@@ -4478,8 +4450,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4630136",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3827510",
@@ -4489,8 +4461,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3827510",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2498512",
@@ -4500,8 +4472,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2498512",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3635080",
@@ -4511,8 +4483,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3635080",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1401859",
@@ -4522,8 +4494,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1401859",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2600299",
@@ -4533,19 +4505,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2600299",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
-    },
-    {
-      "id": "ns-food-2194754",
-      "facilityId": "2194754",
-      "name": "CULTURES",
-      "address": "7001 MUMFORD, HALIFAX",
-      "city": "Halifax",
-      "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2194754",
-      "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312025",
@@ -4555,8 +4516,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312025",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312309",
@@ -4566,8 +4527,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312309",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311467",
@@ -4577,8 +4538,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311467",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3627860",
@@ -4588,8 +4549,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3627860",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310555",
@@ -4599,8 +4560,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310555",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2996920",
@@ -4610,8 +4571,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2996920",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3615447",
@@ -4621,8 +4582,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3615447",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3382286",
@@ -4632,8 +4593,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3382286",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308921",
@@ -4643,8 +4604,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308921",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3584608",
@@ -4654,8 +4615,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3584608",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2644484",
@@ -4665,8 +4626,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2644484",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2575383",
@@ -4676,8 +4637,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2575383",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3485264",
@@ -4687,8 +4648,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3485264",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2166433",
@@ -4698,8 +4659,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2166433",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308895",
@@ -4709,8 +4670,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308895",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310510",
@@ -4720,8 +4681,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310510",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2399337",
@@ -4731,8 +4692,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2399337",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2897375",
@@ -4742,8 +4703,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2897375",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1307867",
@@ -4753,8 +4714,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1307867",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6363980",
@@ -4764,8 +4725,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6363980",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3420266",
@@ -4775,8 +4736,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3420266",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2995999",
@@ -4786,8 +4747,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2995999",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1313524",
@@ -4797,8 +4758,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1313524",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1767160",
@@ -4808,8 +4769,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1767160",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1313727",
@@ -4819,8 +4780,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1313727",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1313726",
@@ -4830,8 +4791,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1313726",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1309758",
@@ -4841,8 +4802,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1309758",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1309095",
@@ -4852,8 +4813,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1309095",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312542",
@@ -4863,8 +4824,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312542",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1440367",
@@ -4874,8 +4835,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1440367",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310822",
@@ -4885,8 +4846,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310822",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2401308",
@@ -4896,8 +4857,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2401308",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308920",
@@ -4907,8 +4868,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308920",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2470935",
@@ -4918,8 +4879,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2470935",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2968466",
@@ -4929,8 +4890,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2968466",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2056799",
@@ -4940,8 +4901,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2056799",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310674",
@@ -4951,8 +4912,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310674",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1669739",
@@ -4962,8 +4923,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1669739",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311939",
@@ -4973,8 +4934,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311939",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2702277",
@@ -4984,8 +4945,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2702277",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2968449",
@@ -4995,8 +4956,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2968449",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3476572",
@@ -5006,8 +4967,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3476572",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3005254",
@@ -5017,8 +4978,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3005254",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2398264",
@@ -5028,8 +4989,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2398264",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3437439",
@@ -5039,8 +5000,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3437439",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3392406",
@@ -5050,8 +5011,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3392406",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3697114",
@@ -5061,8 +5022,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3697114",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2920052",
@@ -5072,8 +5033,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2920052",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1664784",
@@ -5083,8 +5044,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1664784",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2147289",
@@ -5094,8 +5055,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2147289",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2848089",
@@ -5105,8 +5066,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2848089",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2154662",
@@ -5116,8 +5077,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2154662",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2842998",
@@ -5127,8 +5088,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2842998",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1313599",
@@ -5138,8 +5099,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1313599",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310475",
@@ -5149,8 +5110,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310475",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2996660",
@@ -5160,8 +5121,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2996660",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2792265",
@@ -5171,8 +5132,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2792265",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2907672",
@@ -5182,8 +5143,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2907672",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2133688",
@@ -5193,8 +5154,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2133688",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2190373",
@@ -5204,8 +5165,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2190373",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1814579",
@@ -5215,8 +5176,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1814579",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312432",
@@ -5226,8 +5187,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312432",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1831919",
@@ -5237,8 +5198,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1831919",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310042",
@@ -5248,8 +5209,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310042",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312518",
@@ -5259,8 +5220,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312518",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311322",
@@ -5270,8 +5231,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311322",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2702307",
@@ -5281,8 +5242,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2702307",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3010746",
@@ -5292,8 +5253,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3010746",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2665897",
@@ -5303,8 +5264,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2665897",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2850964",
@@ -5314,8 +5275,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2850964",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312551",
@@ -5325,8 +5286,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312551",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311729",
@@ -5336,8 +5297,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311729",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1625523",
@@ -5347,8 +5308,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1625523",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2989437",
@@ -5358,8 +5319,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2989437",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1394469",
@@ -5369,8 +5330,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1394469",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312670",
@@ -5380,8 +5341,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312670",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2794018",
@@ -5391,8 +5352,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2794018",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3521984",
@@ -5402,8 +5363,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3521984",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1307916",
@@ -5413,8 +5374,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1307916",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2127814",
@@ -5424,8 +5385,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2127814",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4625155",
@@ -5435,8 +5396,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4625155",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4625157",
@@ -5446,8 +5407,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4625157",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1500085",
@@ -5457,8 +5418,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1500085",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2359765",
@@ -5468,8 +5429,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2359765",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3170146",
@@ -5479,8 +5440,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3170146",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2960186",
@@ -5490,8 +5451,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2960186",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310419",
@@ -5501,8 +5462,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310419",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2809418",
@@ -5512,8 +5473,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2809418",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3615364",
@@ -5523,8 +5484,19 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3615364",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
+    },
+    {
+      "id": "ns-food-4631217",
+      "facilityId": "4631217",
+      "name": "Ecfcakes & Bites",
+      "address": "3460 DUTCH VILLAGE, HALIFAX",
+      "city": "Halifax",
+      "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4631217",
+      "source": "Government of Nova Scotia Food Establishment Inspection Reports",
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6361518",
@@ -5534,8 +5506,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6361518",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3603693",
@@ -5545,8 +5517,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3603693",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3004855",
@@ -5556,8 +5528,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3004855",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1579864",
@@ -5567,8 +5539,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1579864",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6361148",
@@ -5578,8 +5550,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6361148",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2773435",
@@ -5589,8 +5561,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2773435",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311270",
@@ -5600,8 +5572,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311270",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2818273",
@@ -5611,8 +5583,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2818273",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6360745",
@@ -5622,8 +5594,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6360745",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1668716",
@@ -5633,8 +5605,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1668716",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311771",
@@ -5644,8 +5616,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311771",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6361775",
@@ -5655,8 +5627,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6361775",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3360520",
@@ -5666,8 +5638,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3360520",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3003761",
@@ -5677,8 +5649,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3003761",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3351808",
@@ -5688,8 +5660,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3351808",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3807908",
@@ -5699,8 +5671,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3807908",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3483033",
@@ -5710,8 +5682,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3483033",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2734165",
@@ -5721,8 +5693,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2734165",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3672515",
@@ -5732,8 +5704,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3672515",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4630152",
@@ -5743,8 +5715,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4630152",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1479182",
@@ -5754,8 +5726,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1479182",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1320689",
@@ -5765,8 +5737,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1320689",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1378808",
@@ -5776,8 +5748,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1378808",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2150624",
@@ -5787,8 +5759,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2150624",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6365386",
@@ -5798,8 +5770,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6365386",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3546444",
@@ -5809,8 +5781,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3546444",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4630074",
@@ -5820,8 +5792,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4630074",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308300",
@@ -5831,8 +5803,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308300",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2686031",
@@ -5842,8 +5814,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2686031",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3614211",
@@ -5853,8 +5825,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3614211",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3547184",
@@ -5864,8 +5836,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3547184",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1648006",
@@ -5875,8 +5847,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1648006",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3364704",
@@ -5886,8 +5858,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3364704",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308324",
@@ -5897,8 +5869,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308324",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3004828",
@@ -5908,8 +5880,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3004828",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3346886",
@@ -5919,8 +5891,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3346886",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310090",
@@ -5930,19 +5902,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310090",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
-    },
-    {
-      "id": "ns-food-3598791",
-      "facilityId": "3598791",
-      "name": "Falafel Factory",
-      "address": "604 BEDFORD, HALIFAX",
-      "city": "Halifax",
-      "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3598791",
-      "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3688051",
@@ -5952,8 +5913,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3688051",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1405561",
@@ -5963,8 +5924,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1405561",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1602707",
@@ -5974,8 +5935,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1602707",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312660",
@@ -5985,8 +5946,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312660",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1672537",
@@ -5996,8 +5957,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1672537",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1742172",
@@ -6007,8 +5968,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1742172",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1313463",
@@ -6018,8 +5979,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1313463",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2631741",
@@ -6029,8 +5990,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2631741",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2914384",
@@ -6040,8 +6001,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2914384",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310995",
@@ -6051,8 +6012,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310995",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1513627",
@@ -6062,8 +6023,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1513627",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1356106",
@@ -6073,8 +6034,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1356106",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311167",
@@ -6084,8 +6045,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311167",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3886926",
@@ -6095,8 +6056,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3886926",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310727",
@@ -6106,8 +6067,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310727",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4634508",
@@ -6117,8 +6078,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4634508",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308699",
@@ -6128,8 +6089,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308699",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2594829",
@@ -6139,8 +6100,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2594829",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2633516",
@@ -6150,8 +6111,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2633516",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4631072",
@@ -6161,8 +6122,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4631072",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3814798",
@@ -6172,8 +6133,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3814798",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2781204",
@@ -6183,8 +6144,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2781204",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3441627",
@@ -6194,8 +6155,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3441627",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2525655",
@@ -6205,8 +6166,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2525655",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2622350",
@@ -6216,8 +6177,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2622350",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3642899",
@@ -6227,8 +6188,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3642899",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2978375",
@@ -6238,8 +6199,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2978375",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6364492",
@@ -6249,8 +6210,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6364492",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3891585",
@@ -6260,8 +6221,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3891585",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3886668",
@@ -6271,8 +6232,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3886668",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3615225",
@@ -6282,8 +6243,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3615225",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3564685",
@@ -6293,8 +6254,19 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3564685",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
+    },
+    {
+      "id": "ns-food-4635318",
+      "facilityId": "4635318",
+      "name": "Foundations Early Learning Centre",
+      "address": "8 BEACON, DARTMOUTH",
+      "city": "Dartmouth",
+      "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4635318",
+      "source": "Government of Nova Scotia Food Establishment Inspection Reports",
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3328353",
@@ -6304,8 +6276,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3328353",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2815532",
@@ -6315,8 +6287,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2815532",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1307826",
@@ -6326,8 +6298,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1307826",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311626",
@@ -6337,8 +6309,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311626",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2649815",
@@ -6348,8 +6320,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2649815",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1307940",
@@ -6359,8 +6331,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1307940",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2550754",
@@ -6370,8 +6342,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2550754",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2460737",
@@ -6381,8 +6353,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2460737",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4629620",
@@ -6392,8 +6364,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4629620",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3819545",
@@ -6403,8 +6375,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3819545",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4625019",
@@ -6414,8 +6386,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4625019",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4628297",
@@ -6425,8 +6397,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4628297",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1610733",
@@ -6436,8 +6408,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1610733",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311541",
@@ -6447,8 +6419,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311541",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1307824",
@@ -6458,8 +6430,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1307824",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4636270",
@@ -6469,8 +6441,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4636270",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4629964",
@@ -6480,8 +6452,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4629964",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3369689",
@@ -6491,8 +6463,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3369689",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3546154",
@@ -6502,8 +6474,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3546154",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2564590",
@@ -6513,8 +6485,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2564590",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3597523",
@@ -6524,8 +6496,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3597523",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4631361",
@@ -6535,8 +6507,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4631361",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3482064",
@@ -6546,8 +6518,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3482064",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4625154",
@@ -6557,8 +6529,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4625154",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1478888",
@@ -6568,8 +6540,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1478888",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1601003",
@@ -6579,8 +6551,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1601003",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2569674",
@@ -6590,8 +6562,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2569674",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2747953",
@@ -6601,8 +6573,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2747953",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2206517",
@@ -6612,8 +6584,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2206517",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3421686",
@@ -6623,8 +6595,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3421686",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1309776",
@@ -6634,8 +6606,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1309776",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311380",
@@ -6645,8 +6617,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311380",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311346",
@@ -6656,8 +6628,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311346",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1675663",
@@ -6667,8 +6639,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1675663",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2585724",
@@ -6678,8 +6650,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2585724",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2371546",
@@ -6689,8 +6661,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2371546",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310127",
@@ -6700,8 +6672,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310127",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310312",
@@ -6711,8 +6683,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310312",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2482803",
@@ -6722,8 +6694,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2482803",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2930777",
@@ -6733,8 +6705,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2930777",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6361920",
@@ -6744,8 +6716,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6361920",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3124851",
@@ -6755,8 +6727,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3124851",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2447227",
@@ -6766,8 +6738,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2447227",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2162366",
@@ -6777,8 +6749,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2162366",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4636467",
@@ -6788,8 +6760,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4636467",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3547332",
@@ -6799,8 +6771,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3547332",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3453647",
@@ -6810,8 +6782,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3453647",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3562142",
@@ -6821,8 +6793,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3562142",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3688394",
@@ -6832,8 +6804,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3688394",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3807054",
@@ -6843,8 +6815,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3807054",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6365590",
@@ -6854,8 +6826,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6365590",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3558489",
@@ -6865,8 +6837,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3558489",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2540916",
@@ -6876,8 +6848,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2540916",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1926280",
@@ -6887,8 +6859,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1926280",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2565774",
@@ -6898,8 +6870,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2565774",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2538948",
@@ -6909,8 +6881,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2538948",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2052364",
@@ -6920,8 +6892,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2052364",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310546",
@@ -6931,8 +6903,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310546",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1307870",
@@ -6942,8 +6914,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1307870",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308517",
@@ -6953,8 +6925,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308517",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2183671",
@@ -6964,8 +6936,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2183671",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2486886",
@@ -6975,8 +6947,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2486886",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1307938",
@@ -6986,8 +6958,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1307938",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4636009",
@@ -6997,8 +6969,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4636009",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2480515",
@@ -7008,8 +6980,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2480515",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2829639",
@@ -7019,8 +6991,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2829639",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2507439",
@@ -7030,8 +7002,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2507439",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4638732",
@@ -7041,8 +7013,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4638732",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2920405",
@@ -7052,8 +7024,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2920405",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6364883",
@@ -7063,8 +7035,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6364883",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312145",
@@ -7074,8 +7046,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312145",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2641792",
@@ -7085,8 +7057,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2641792",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2040083",
@@ -7096,8 +7068,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2040083",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1730269",
@@ -7107,8 +7079,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1730269",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1730289",
@@ -7118,8 +7090,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1730289",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3347859",
@@ -7129,8 +7101,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3347859",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311807",
@@ -7140,8 +7112,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311807",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3564317",
@@ -7151,8 +7123,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3564317",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1746413",
@@ -7162,8 +7134,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1746413",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2649581",
@@ -7173,8 +7145,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2649581",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2769731",
@@ -7184,8 +7156,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2769731",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1792142",
@@ -7195,8 +7167,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1792142",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1307880",
@@ -7206,8 +7178,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1307880",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3327992",
@@ -7217,8 +7189,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3327992",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2370150",
@@ -7228,8 +7200,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2370150",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2391421",
@@ -7239,8 +7211,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2391421",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3814898",
@@ -7250,8 +7222,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3814898",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2492885",
@@ -7261,8 +7233,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2492885",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2401629",
@@ -7272,8 +7244,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2401629",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308864",
@@ -7283,8 +7255,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308864",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2591003",
@@ -7294,8 +7266,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2591003",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2709043",
@@ -7305,8 +7277,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2709043",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2131591",
@@ -7316,8 +7288,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2131591",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2048474",
@@ -7327,8 +7299,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2048474",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3878732",
@@ -7338,8 +7310,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3878732",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311801",
@@ -7349,8 +7321,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311801",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4628951",
@@ -7360,8 +7332,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4628951",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2983738",
@@ -7371,8 +7343,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2983738",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3197385",
@@ -7382,8 +7354,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3197385",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3138097",
@@ -7393,8 +7365,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3138097",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3138067",
@@ -7404,8 +7376,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3138067",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2603990",
@@ -7415,8 +7387,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2603990",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4632533",
@@ -7426,8 +7398,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4632533",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2508862",
@@ -7437,8 +7409,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2508862",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3615286",
@@ -7448,8 +7420,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3615286",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310976",
@@ -7459,8 +7431,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310976",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3282750",
@@ -7470,8 +7442,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3282750",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2551301",
@@ -7481,8 +7453,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2551301",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3681005",
@@ -7492,8 +7464,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3681005",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2416372",
@@ -7503,8 +7475,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2416372",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2996878",
@@ -7514,8 +7486,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2996878",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1767158",
@@ -7525,8 +7497,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1767158",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312695",
@@ -7536,8 +7508,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312695",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3591111",
@@ -7547,8 +7519,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3591111",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4630157",
@@ -7558,8 +7530,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4630157",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311774",
@@ -7569,8 +7541,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311774",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2465833",
@@ -7580,8 +7552,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2465833",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2222738",
@@ -7591,8 +7563,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2222738",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312101",
@@ -7602,8 +7574,19 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312101",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
+    },
+    {
+      "id": "ns-food-3638425",
+      "facilityId": "3638425",
+      "name": "Harvest Clean Eats",
+      "address": "1625 MARKET, HALIFAX",
+      "city": "Halifax",
+      "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3638425",
+      "source": "Government of Nova Scotia Food Establishment Inspection Reports",
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3420555",
@@ -7613,8 +7596,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3420555",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3802369",
@@ -7624,19 +7607,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3802369",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
-    },
-    {
-      "id": "ns-food-3638425",
-      "facilityId": "3638425",
-      "name": "HARVEST Clean Eats",
-      "address": "1625 MARKET, HALIFAX",
-      "city": "Halifax",
-      "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3638425",
-      "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3482948",
@@ -7646,8 +7618,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3482948",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310036",
@@ -7657,8 +7629,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310036",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3562171",
@@ -7668,8 +7640,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3562171",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3819346",
@@ -7679,8 +7651,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3819346",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1536562",
@@ -7690,8 +7662,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1536562",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3814015",
@@ -7701,8 +7673,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3814015",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6366627",
@@ -7712,8 +7684,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6366627",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4640024",
@@ -7723,8 +7695,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4640024",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3807895",
@@ -7734,8 +7706,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3807895",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4636121",
@@ -7745,8 +7717,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4636121",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1313424",
@@ -7756,8 +7728,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1313424",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1951427",
@@ -7767,8 +7739,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1951427",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3389274",
@@ -7778,8 +7750,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3389274",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4636060",
@@ -7789,8 +7761,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4636060",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6366218",
@@ -7800,8 +7772,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6366218",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6367503",
@@ -7811,8 +7783,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6367503",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1307974",
@@ -7822,8 +7794,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1307974",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2571811",
@@ -7833,8 +7805,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2571811",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2547760",
@@ -7844,8 +7816,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2547760",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3483721",
@@ -7855,8 +7827,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3483721",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3413490",
@@ -7866,8 +7838,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3413490",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2151708",
@@ -7877,8 +7849,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2151708",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2985716",
@@ -7888,8 +7860,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2985716",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3696054",
@@ -7899,8 +7871,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3696054",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3504431",
@@ -7910,8 +7882,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3504431",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6366025",
@@ -7921,8 +7893,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6366025",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6366462",
@@ -7932,8 +7904,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6366462",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2059808",
@@ -7943,8 +7915,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2059808",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2598938",
@@ -7954,8 +7926,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2598938",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2211270",
@@ -7965,8 +7937,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2211270",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2416384",
@@ -7976,8 +7948,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2416384",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2830416",
@@ -7987,8 +7959,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2830416",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2205860",
@@ -7998,8 +7970,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2205860",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2595817",
@@ -8009,8 +7981,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2595817",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310866",
@@ -8020,8 +7992,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310866",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3824068",
@@ -8031,8 +8003,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3824068",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2814329",
@@ -8042,8 +8014,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2814329",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1628901",
@@ -8053,8 +8025,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1628901",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2548321",
@@ -8064,8 +8036,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2548321",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1621747",
@@ -8075,8 +8047,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1621747",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1307942",
@@ -8086,8 +8058,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1307942",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2966438",
@@ -8097,8 +8069,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2966438",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2408188",
@@ -8108,8 +8080,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2408188",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1811147",
@@ -8119,8 +8091,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1811147",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2044336",
@@ -8130,8 +8102,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2044336",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2818879",
@@ -8141,8 +8113,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2818879",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6366920",
@@ -8152,8 +8124,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6366920",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3598941",
@@ -8163,8 +8135,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3598941",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1307842",
@@ -8174,19 +8146,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1307842",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
-    },
-    {
-      "id": "ns-food-2727865",
-      "facilityId": "2727865",
-      "name": "I G C Convenience Store and Laundromat",
-      "address": "1312 BEDFORD, BEDFORD",
-      "city": "Bedford",
-      "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2727865",
-      "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1897779",
@@ -8196,8 +8157,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1897779",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2347777",
@@ -8207,8 +8168,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2347777",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2021098",
@@ -8218,8 +8179,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2021098",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3563500",
@@ -8229,8 +8190,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3563500",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3615246",
@@ -8240,8 +8201,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3615246",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2520805",
@@ -8251,8 +8212,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2520805",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3549940",
@@ -8262,8 +8223,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3549940",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3581997",
@@ -8273,8 +8234,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3581997",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3391553",
@@ -8284,8 +8245,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3391553",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3363423",
@@ -8295,8 +8256,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3363423",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2529222",
@@ -8306,8 +8267,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2529222",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3549057",
@@ -8317,8 +8278,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3549057",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1534631",
@@ -8328,8 +8289,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1534631",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4626221",
@@ -8339,8 +8300,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4626221",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6365529",
@@ -8350,8 +8311,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6365529",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3631203",
@@ -8361,8 +8322,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3631203",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3646701",
@@ -8372,8 +8333,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3646701",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312324",
@@ -8383,8 +8344,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312324",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3814854",
@@ -8394,8 +8355,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3814854",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1688283",
@@ -8405,8 +8366,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1688283",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3359342",
@@ -8416,8 +8377,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3359342",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3409238",
@@ -8427,8 +8388,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3409238",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3391223",
@@ -8438,8 +8399,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3391223",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3532916",
@@ -8449,8 +8410,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3532916",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3409812",
@@ -8460,8 +8421,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3409812",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3409839",
@@ -8471,8 +8432,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3409839",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1468073",
@@ -8482,8 +8443,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1468073",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1395422",
@@ -8493,8 +8454,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1395422",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3460266",
@@ -8504,8 +8465,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3460266",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1743030",
@@ -8515,8 +8476,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1743030",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311483",
@@ -8526,8 +8487,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311483",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310303",
@@ -8537,8 +8498,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310303",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3561776",
@@ -8548,8 +8509,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3561776",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312661",
@@ -8559,8 +8520,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312661",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3810556",
@@ -8570,8 +8531,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3810556",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2574314",
@@ -8581,8 +8542,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2574314",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2639407",
@@ -8592,8 +8553,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2639407",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3692167",
@@ -8603,8 +8564,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3692167",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2852052",
@@ -8614,8 +8575,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2852052",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3887083",
@@ -8625,8 +8586,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3887083",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1415572",
@@ -8636,8 +8597,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1415572",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1978331",
@@ -8647,8 +8608,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1978331",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3012753",
@@ -8658,8 +8619,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3012753",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308245",
@@ -8669,8 +8630,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308245",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2828476",
@@ -8680,8 +8641,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2828476",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3654341",
@@ -8691,19 +8652,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3654341",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
-    },
-    {
-      "id": "ns-food-3547536",
-      "facilityId": "3547536",
-      "name": "Jellies Restaurant",
-      "address": "6250 QUINPOOL, HALIFAX",
-      "city": "Halifax",
-      "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3547536",
-      "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310924",
@@ -8713,8 +8663,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310924",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4632155",
@@ -8724,8 +8674,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4632155",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2906735",
@@ -8735,8 +8685,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2906735",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2111723",
@@ -8746,8 +8696,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2111723",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1443402",
@@ -8757,8 +8707,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1443402",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311183",
@@ -8768,8 +8718,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311183",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2056048",
@@ -8779,8 +8729,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2056048",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2210211",
@@ -8790,8 +8740,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2210211",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1520826",
@@ -8801,8 +8751,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1520826",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308840",
@@ -8812,8 +8762,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308840",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308725",
@@ -8823,8 +8773,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308725",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3691051",
@@ -8834,8 +8784,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3691051",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3540887",
@@ -8845,8 +8795,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3540887",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3573919",
@@ -8856,8 +8806,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3573919",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2650324",
@@ -8867,8 +8817,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2650324",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308487",
@@ -8878,8 +8828,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308487",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3359909",
@@ -8889,8 +8839,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3359909",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312349",
@@ -8900,8 +8850,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312349",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3554803",
@@ -8911,8 +8861,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3554803",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6361091",
@@ -8922,8 +8872,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6361091",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3536253",
@@ -8933,8 +8883,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3536253",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3662941",
@@ -8944,8 +8894,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3662941",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2494999",
@@ -8955,8 +8905,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2494999",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3410717",
@@ -8966,8 +8916,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3410717",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2050749",
@@ -8977,8 +8927,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2050749",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1496599",
@@ -8988,8 +8938,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1496599",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6363986",
@@ -8999,8 +8949,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6363986",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6361843",
@@ -9010,8 +8960,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6361843",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3528548",
@@ -9021,8 +8971,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3528548",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2162357",
@@ -9032,8 +8982,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2162357",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2827217",
@@ -9043,8 +8993,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2827217",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3670733",
@@ -9054,8 +9004,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3670733",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3107148",
@@ -9065,8 +9015,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3107148",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2655609",
@@ -9076,8 +9026,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2655609",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3598932",
@@ -9087,8 +9037,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3598932",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3200842",
@@ -9098,8 +9048,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3200842",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2573051",
@@ -9109,19 +9059,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2573051",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
-    },
-    {
-      "id": "ns-food-2807872",
-      "facilityId": "2807872",
-      "name": "Kawther Market",
-      "address": "629 BEDFORD, HALIFAX",
-      "city": "Halifax",
-      "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2807872",
-      "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6363369",
@@ -9131,8 +9070,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6363369",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3004916",
@@ -9142,8 +9081,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3004916",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3515298",
@@ -9153,8 +9092,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3515298",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2500012",
@@ -9164,8 +9103,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2500012",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2648776",
@@ -9175,8 +9114,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2648776",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2468713",
@@ -9186,8 +9125,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2468713",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1576201",
@@ -9197,8 +9136,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1576201",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2557747",
@@ -9208,8 +9147,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2557747",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2650871",
@@ -9219,8 +9158,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2650871",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2533473",
@@ -9230,8 +9169,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2533473",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3311622",
@@ -9241,8 +9180,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3311622",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3351792",
@@ -9252,19 +9191,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3351792",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
-    },
-    {
-      "id": "ns-food-1677590",
-      "facilityId": "1677590",
-      "name": "KENTUCKY FRIED CHICKEN (Tacoma Dr)",
-      "address": "75 TACOMA, DARTMOUTH",
-      "city": "Dartmouth",
-      "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1677590",
-      "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1677595",
@@ -9274,8 +9202,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1677595",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1677637",
@@ -9285,8 +9213,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1677637",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3584686",
@@ -9296,8 +9224,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3584686",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2627818",
@@ -9307,8 +9235,19 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2627818",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
+    },
+    {
+      "id": "ns-food-1677590",
+      "facilityId": "1677590",
+      "name": "KFC (Tacoma)",
+      "address": "75 TACOMA, DARTMOUTH",
+      "city": "Dartmouth",
+      "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1677590",
+      "source": "Government of Nova Scotia Food Establishment Inspection Reports",
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2149417",
@@ -9318,8 +9257,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2149417",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1677388",
@@ -9329,8 +9268,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1677388",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3484128",
@@ -9340,8 +9279,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3484128",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3185452",
@@ -9351,8 +9290,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3185452",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1425189",
@@ -9362,8 +9301,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1425189",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1943053",
@@ -9373,8 +9312,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1943053",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1575898",
@@ -9384,8 +9323,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1575898",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1836638",
@@ -9395,8 +9334,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1836638",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2111258",
@@ -9406,8 +9345,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2111258",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311779",
@@ -9417,8 +9356,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311779",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6363394",
@@ -9428,8 +9367,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6363394",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3816503",
@@ -9439,8 +9378,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3816503",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310540",
@@ -9450,8 +9389,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310540",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1313514",
@@ -9461,8 +9400,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1313514",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1715290",
@@ -9472,8 +9411,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1715290",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310449",
@@ -9483,8 +9422,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310449",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3360116",
@@ -9494,8 +9433,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3360116",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3471916",
@@ -9505,8 +9444,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3471916",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2790506",
@@ -9516,8 +9455,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2790506",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2569623",
@@ -9527,8 +9466,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2569623",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3356934",
@@ -9538,8 +9477,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3356934",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3814000",
@@ -9549,8 +9488,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3814000",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308328",
@@ -9560,8 +9499,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308328",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2636799",
@@ -9571,8 +9510,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2636799",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1976127",
@@ -9582,8 +9521,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1976127",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2851362",
@@ -9593,8 +9532,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2851362",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6361176",
@@ -9604,8 +9543,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6361176",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3635625",
@@ -9615,8 +9554,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3635625",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3317557",
@@ -9626,8 +9565,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3317557",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1622450",
@@ -9637,19 +9576,19 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1622450",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312316",
       "facilityId": "1312316",
-      "name": "LA GARDERIE LE PETIT VOILIER DU CARREFOUR/Pavillon",
+      "name": "LA GARDERIE LE PETIT VOILIER DU CARREFOUR",
       "address": "201 AVENUE DU PORTAGE, DARTMOUTH",
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312316",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2017879",
@@ -9659,8 +9598,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2017879",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3689615",
@@ -9670,8 +9609,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3689615",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2623147",
@@ -9681,8 +9620,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2623147",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1309139",
@@ -9692,8 +9631,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1309139",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2400616",
@@ -9703,8 +9642,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2400616",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1443313",
@@ -9714,8 +9653,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1443313",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3805366",
@@ -9725,8 +9664,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3805366",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3190256",
@@ -9736,8 +9675,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3190256",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3310316",
@@ -9747,8 +9686,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3310316",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2987509",
@@ -9758,8 +9697,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2987509",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2038934",
@@ -9769,8 +9708,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2038934",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1313518",
@@ -9780,8 +9719,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1313518",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1313517",
@@ -9791,8 +9730,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1313517",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1313537",
@@ -9802,8 +9741,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1313537",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1313547",
@@ -9813,8 +9752,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1313547",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1313519",
@@ -9824,8 +9763,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1313519",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1313541",
@@ -9835,8 +9774,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1313541",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1313386",
@@ -9846,8 +9785,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1313386",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1313543",
@@ -9857,8 +9796,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1313543",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1313539",
@@ -9868,8 +9807,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1313539",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1313556",
@@ -9879,8 +9818,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1313556",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1687053",
@@ -9890,8 +9829,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1687053",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312590",
@@ -9901,8 +9840,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312590",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1648423",
@@ -9912,8 +9851,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1648423",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1581692",
@@ -9923,8 +9862,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1581692",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1524419",
@@ -9934,8 +9873,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1524419",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1344052",
@@ -9945,8 +9884,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1344052",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1792742",
@@ -9956,8 +9895,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1792742",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1694169",
@@ -9967,8 +9906,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1694169",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1769334",
@@ -9978,8 +9917,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1769334",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3688832",
@@ -9989,8 +9928,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3688832",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1575752",
@@ -10000,8 +9939,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1575752",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2976954",
@@ -10011,8 +9950,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2976954",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2732976",
@@ -10022,8 +9961,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2732976",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1443734",
@@ -10033,8 +9972,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1443734",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312073",
@@ -10044,8 +9983,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312073",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2895973",
@@ -10055,8 +9994,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2895973",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2741040",
@@ -10066,8 +10005,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2741040",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3340990",
@@ -10077,8 +10016,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3340990",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2183266",
@@ -10088,8 +10027,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2183266",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3170844",
@@ -10099,8 +10038,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3170844",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3127241",
@@ -10110,8 +10049,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3127241",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3012893",
@@ -10121,8 +10060,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3012893",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3145266",
@@ -10132,8 +10071,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3145266",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2734697",
@@ -10143,8 +10082,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2734697",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6363743",
@@ -10154,8 +10093,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6363743",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6367655",
@@ -10165,8 +10104,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6367655",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1592475",
@@ -10176,8 +10115,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1592475",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311017",
@@ -10187,8 +10126,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311017",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3811562",
@@ -10198,8 +10137,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3811562",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3584070",
@@ -10209,8 +10148,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3584070",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3892094",
@@ -10220,8 +10159,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3892094",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1781831",
@@ -10231,8 +10170,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1781831",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4630672",
@@ -10242,8 +10181,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4630672",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2981752",
@@ -10253,8 +10192,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2981752",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4630151",
@@ -10264,8 +10203,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4630151",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3545554",
@@ -10275,8 +10214,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3545554",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3798671",
@@ -10286,8 +10225,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3798671",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310544",
@@ -10297,8 +10236,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310544",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2614876",
@@ -10308,8 +10247,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2614876",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2785283",
@@ -10319,8 +10258,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2785283",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3551012",
@@ -10330,8 +10269,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3551012",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2733012",
@@ -10341,8 +10280,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2733012",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2085236",
@@ -10352,8 +10291,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2085236",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2848042",
@@ -10363,8 +10302,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2848042",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3029556",
@@ -10374,8 +10313,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3029556",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6366094",
@@ -10385,8 +10324,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6366094",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3823892",
@@ -10396,8 +10335,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3823892",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3886461",
@@ -10407,8 +10346,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3886461",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2796668",
@@ -10418,8 +10357,19 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2796668",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
+    },
+    {
+      "id": "ns-food-4627792",
+      "facilityId": "4627792",
+      "name": "Luke's Small Goods Bakery",
+      "address": "5781 CHARLES, HALIFAX",
+      "city": "Halifax",
+      "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4627792",
+      "source": "Government of Nova Scotia Food Establishment Inspection Reports",
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2865923",
@@ -10429,8 +10379,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2865923",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2620440",
@@ -10440,8 +10390,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2620440",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1793600",
@@ -10451,8 +10401,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1793600",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1638975",
@@ -10462,8 +10412,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1638975",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3261987",
@@ -10473,8 +10423,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3261987",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3379394",
@@ -10484,8 +10434,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3379394",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2546917",
@@ -10495,8 +10445,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2546917",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2336202",
@@ -10506,8 +10456,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2336202",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310582",
@@ -10517,8 +10467,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310582",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1374506",
@@ -10528,8 +10478,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1374506",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3884299",
@@ -10539,8 +10489,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3884299",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4625909",
@@ -10550,8 +10500,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4625909",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2615745",
@@ -10561,8 +10511,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2615745",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3107115",
@@ -10572,8 +10522,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3107115",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3518241",
@@ -10583,8 +10533,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3518241",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3886487",
@@ -10594,8 +10544,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3886487",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1324578",
@@ -10605,8 +10555,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1324578",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3004892",
@@ -10616,8 +10566,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3004892",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3541203",
@@ -10627,8 +10577,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3541203",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2808146",
@@ -10638,8 +10588,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2808146",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2765458",
@@ -10649,8 +10599,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2765458",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1587253",
@@ -10660,8 +10610,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1587253",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1307873",
@@ -10671,8 +10621,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1307873",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2132077",
@@ -10682,8 +10632,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2132077",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2370696",
@@ -10693,8 +10643,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2370696",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1491555",
@@ -10704,8 +10654,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1491555",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2157393",
@@ -10715,8 +10665,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2157393",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4626802",
@@ -10726,8 +10676,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4626802",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3356936",
@@ -10737,8 +10687,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3356936",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3380294",
@@ -10748,8 +10698,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3380294",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312054",
@@ -10759,8 +10709,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312054",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2148904",
@@ -10770,8 +10720,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2148904",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310586",
@@ -10781,8 +10731,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310586",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2192436",
@@ -10792,8 +10742,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2192436",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1649141",
@@ -10803,8 +10753,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1649141",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4627269",
@@ -10814,8 +10764,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4627269",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2706065",
@@ -10825,8 +10775,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2706065",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6366615",
@@ -10836,8 +10786,19 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6366615",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
+    },
+    {
+      "id": "ns-food-4631156",
+      "facilityId": "4631156",
+      "name": "Maritime Chutney Co.",
+      "address": "3460 DUTCH VILLAGE, HALIFAX",
+      "city": "Halifax",
+      "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4631156",
+      "source": "Government of Nova Scotia Food Establishment Inspection Reports",
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3507998",
@@ -10847,8 +10808,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3507998",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1322157",
@@ -10858,8 +10819,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1322157",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3003772",
@@ -10869,8 +10830,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3003772",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1809391",
@@ -10880,8 +10841,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1809391",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3380438",
@@ -10891,8 +10852,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3380438",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2936956",
@@ -10902,8 +10863,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2936956",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3798657",
@@ -10913,8 +10874,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3798657",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1510052",
@@ -10924,8 +10885,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1510052",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1393188",
@@ -10935,8 +10896,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1393188",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2946235",
@@ -10946,8 +10907,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2946235",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2489822",
@@ -10957,8 +10918,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2489822",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2781149",
@@ -10968,8 +10929,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2781149",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6365026",
@@ -10979,8 +10940,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6365026",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1727858",
@@ -10990,8 +10951,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1727858",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3391741",
@@ -11001,8 +10962,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3391741",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4629474",
@@ -11012,8 +10973,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4629474",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3630642",
@@ -11023,8 +10984,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3630642",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2776560",
@@ -11034,8 +10995,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2776560",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2490563",
@@ -11045,8 +11006,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2490563",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1307971",
@@ -11056,8 +11017,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1307971",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2349429",
@@ -11067,8 +11028,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2349429",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4637667",
@@ -11078,8 +11039,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4637667",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2815593",
@@ -11089,8 +11050,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2815593",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1959373",
@@ -11100,8 +11061,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1959373",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2416797",
@@ -11111,8 +11072,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2416797",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2416802",
@@ -11122,8 +11083,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2416802",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2416795",
@@ -11133,8 +11094,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2416795",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3362541",
@@ -11144,8 +11105,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3362541",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1970999",
@@ -11155,8 +11116,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1970999",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2377867",
@@ -11166,8 +11127,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2377867",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1930307",
@@ -11177,8 +11138,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1930307",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1808714",
@@ -11188,8 +11149,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1808714",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2772723",
@@ -11199,8 +11160,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2772723",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1500041",
@@ -11210,8 +11171,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1500041",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1500035",
@@ -11221,8 +11182,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1500035",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1808776",
@@ -11232,8 +11193,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1808776",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1808789",
@@ -11243,8 +11204,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1808789",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1808785",
@@ -11254,8 +11215,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1808785",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1895199",
@@ -11265,8 +11226,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1895199",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1500021",
@@ -11276,8 +11237,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1500021",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3143303",
@@ -11287,8 +11248,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3143303",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3805319",
@@ -11298,8 +11259,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3805319",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3318133",
@@ -11309,8 +11270,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3318133",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1756471",
@@ -11320,8 +11281,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1756471",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6367598",
@@ -11331,8 +11292,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6367598",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4626514",
@@ -11342,8 +11303,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4626514",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308526",
@@ -11353,8 +11314,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308526",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310830",
@@ -11364,8 +11325,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310830",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1313384",
@@ -11375,8 +11336,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1313384",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2557635",
@@ -11386,8 +11347,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2557635",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2879799",
@@ -11397,8 +11358,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2879799",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312001",
@@ -11408,8 +11369,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312001",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2613015",
@@ -11419,8 +11380,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2613015",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2545340",
@@ -11430,8 +11391,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2545340",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3680627",
@@ -11441,8 +11402,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3680627",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1777267",
@@ -11452,8 +11413,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1777267",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2140612",
@@ -11463,8 +11424,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2140612",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2554531",
@@ -11474,8 +11435,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2554531",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2006065",
@@ -11485,8 +11446,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2006065",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2140622",
@@ -11496,8 +11457,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2140622",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2685628",
@@ -11507,8 +11468,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2685628",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3346621",
@@ -11518,8 +11479,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3346621",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3562548",
@@ -11529,8 +11490,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3562548",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311783",
@@ -11540,8 +11501,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311783",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1965738",
@@ -11551,8 +11512,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1965738",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1964062",
@@ -11562,8 +11523,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1964062",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2931734",
@@ -11573,8 +11534,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2931734",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3338198",
@@ -11584,8 +11545,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3338198",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311139",
@@ -11595,8 +11556,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311139",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2879786",
@@ -11606,8 +11567,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2879786",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2914437",
@@ -11617,8 +11578,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2914437",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3481357",
@@ -11628,8 +11589,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3481357",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1862841",
@@ -11639,8 +11600,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1862841",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2134586",
@@ -11650,8 +11611,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2134586",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2385784",
@@ -11661,8 +11622,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2385784",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3813688",
@@ -11672,8 +11633,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3813688",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6367487",
@@ -11683,8 +11644,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6367487",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2844933",
@@ -11694,8 +11655,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2844933",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3662956",
@@ -11705,8 +11666,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3662956",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3688164",
@@ -11716,8 +11677,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3688164",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2007875",
@@ -11727,8 +11688,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2007875",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2653501",
@@ -11738,8 +11699,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2653501",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2500052",
@@ -11749,8 +11710,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2500052",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3261756",
@@ -11760,8 +11721,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3261756",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3688446",
@@ -11771,8 +11732,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3688446",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2962490",
@@ -11782,8 +11743,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2962490",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2759677",
@@ -11793,8 +11754,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2759677",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3688125",
@@ -11804,8 +11765,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3688125",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311060",
@@ -11815,8 +11776,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311060",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2360575",
@@ -11826,8 +11787,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2360575",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4630645",
@@ -11837,8 +11798,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4630645",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3536199",
@@ -11848,8 +11809,19 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3536199",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
+    },
+    {
+      "id": "ns-food-4632141",
+      "facilityId": "4632141",
+      "name": "MomoNepal Minimeal",
+      "address": "56 SUPREME, HALIFAX",
+      "city": "Halifax",
+      "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4632141",
+      "source": "Government of Nova Scotia Food Establishment Inspection Reports",
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4637670",
@@ -11859,8 +11831,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4637670",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3462526",
@@ -11870,8 +11842,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3462526",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6360756",
@@ -11881,8 +11853,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6360756",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3118403",
@@ -11892,8 +11864,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3118403",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311928",
@@ -11903,8 +11875,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311928",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311430",
@@ -11914,8 +11886,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311430",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3579343",
@@ -11925,8 +11897,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3579343",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2098377",
@@ -11936,8 +11908,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2098377",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2484344",
@@ -11947,8 +11919,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2484344",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1878708",
@@ -11958,8 +11930,19 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1878708",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
+    },
+    {
+      "id": "ns-food-1309117",
+      "facilityId": "1309117",
+      "name": "MOSAIC COMMUNITY HOMES ASSOCIATION",
+      "address": "349 PLEASANT, DARTMOUTH",
+      "city": "Dartmouth",
+      "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1309117",
+      "source": "Government of Nova Scotia Food Establishment Inspection Reports",
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4625276",
@@ -11969,8 +11952,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4625276",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3549412",
@@ -11980,8 +11963,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3549412",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2143424",
@@ -11991,8 +11974,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2143424",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311785",
@@ -12002,8 +11985,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311785",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3668491",
@@ -12013,8 +11996,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3668491",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2619080",
@@ -12024,8 +12007,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2619080",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2086805",
@@ -12035,8 +12018,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2086805",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1323090",
@@ -12046,8 +12029,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1323090",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2941492",
@@ -12057,8 +12040,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2941492",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1565260",
@@ -12068,8 +12051,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1565260",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3553819",
@@ -12079,8 +12062,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3553819",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1637237",
@@ -12090,8 +12073,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1637237",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1637252",
@@ -12101,8 +12084,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1637252",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3424906",
@@ -12112,8 +12095,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3424906",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2712572",
@@ -12123,8 +12106,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2712572",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2801905",
@@ -12134,8 +12117,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2801905",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308947",
@@ -12145,8 +12128,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308947",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3564327",
@@ -12156,8 +12139,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3564327",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3886214",
@@ -12167,8 +12150,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3886214",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3884292",
@@ -12178,8 +12161,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3884292",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6362787",
@@ -12189,8 +12172,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6362787",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3884422",
@@ -12200,8 +12183,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3884422",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2219306",
@@ -12211,8 +12194,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2219306",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3615570",
@@ -12222,8 +12205,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3615570",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308713",
@@ -12233,8 +12216,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308713",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1879795",
@@ -12244,8 +12227,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1879795",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3563454",
@@ -12255,8 +12238,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3563454",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3615416",
@@ -12266,8 +12249,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3615416",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2833084",
@@ -12277,8 +12260,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2833084",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3179909",
@@ -12288,8 +12271,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3179909",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311786",
@@ -12299,8 +12282,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311786",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1956833",
@@ -12310,8 +12293,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1956833",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1698191",
@@ -12321,8 +12304,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1698191",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1989938",
@@ -12332,8 +12315,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1989938",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308459",
@@ -12343,8 +12326,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308459",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1313469",
@@ -12354,8 +12337,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1313469",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1313465",
@@ -12365,8 +12348,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1313465",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1313462",
@@ -12376,8 +12359,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1313462",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1313464",
@@ -12387,8 +12370,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1313464",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1307952",
@@ -12398,8 +12381,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1307952",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3533099",
@@ -12409,8 +12392,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3533099",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6365189",
@@ -12420,8 +12403,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6365189",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3471050",
@@ -12431,8 +12414,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3471050",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3380856",
@@ -12442,8 +12425,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3380856",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311787",
@@ -12453,8 +12436,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311787",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4628062",
@@ -12464,8 +12447,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4628062",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2772716",
@@ -12475,8 +12458,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2772716",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2499306",
@@ -12486,8 +12469,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2499306",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2725476",
@@ -12497,8 +12480,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2725476",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3588715",
@@ -12508,8 +12491,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3588715",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1419138",
@@ -12519,8 +12502,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1419138",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1307932",
@@ -12530,8 +12513,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1307932",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2144970",
@@ -12541,8 +12524,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2144970",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3461803",
@@ -12552,8 +12535,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3461803",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3564967",
@@ -12563,8 +12546,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3564967",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3017439",
@@ -12574,8 +12557,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3017439",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3810490",
@@ -12585,8 +12568,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3810490",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4631356",
@@ -12596,8 +12579,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4631356",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2058377",
@@ -12607,8 +12590,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2058377",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2985702",
@@ -12618,8 +12601,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2985702",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2151737",
@@ -12629,8 +12612,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2151737",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2879824",
@@ -12640,8 +12623,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2879824",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3815990",
@@ -12651,8 +12634,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3815990",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2851209",
@@ -12662,8 +12645,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2851209",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3819484",
@@ -12673,8 +12656,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3819484",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3624100",
@@ -12684,8 +12667,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3624100",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310145",
@@ -12695,8 +12678,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310145",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2135455",
@@ -12706,8 +12689,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2135455",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2524542",
@@ -12717,8 +12700,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2524542",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1309100",
@@ -12728,8 +12711,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1309100",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1522947",
@@ -12739,8 +12722,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1522947",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3648090",
@@ -12750,8 +12733,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3648090",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3546356",
@@ -12761,8 +12744,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3546356",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4633135",
@@ -12772,8 +12755,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4633135",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2496582",
@@ -12783,8 +12766,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2496582",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6367506",
@@ -12794,8 +12777,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6367506",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1313725",
@@ -12805,8 +12788,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1313725",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312655",
@@ -12816,8 +12799,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312655",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2461087",
@@ -12827,8 +12810,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2461087",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6362348",
@@ -12838,8 +12821,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6362348",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2412966",
@@ -12849,8 +12832,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2412966",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2703004",
@@ -12860,8 +12843,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2703004",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3101487",
@@ -12871,8 +12854,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3101487",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3884561",
@@ -12882,8 +12865,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3884561",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3884597",
@@ -12893,8 +12876,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3884597",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3884608",
@@ -12904,8 +12887,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3884608",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1523695",
@@ -12915,8 +12898,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1523695",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6364370",
@@ -12926,8 +12909,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6364370",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3814344",
@@ -12937,8 +12920,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3814344",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3451479",
@@ -12948,8 +12931,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3451479",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3451491",
@@ -12959,8 +12942,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3451491",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3451462",
@@ -12970,8 +12953,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3451462",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3451409",
@@ -12981,8 +12964,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3451409",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3811703",
@@ -12992,8 +12975,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3811703",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2987483",
@@ -13003,8 +12986,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2987483",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1309147",
@@ -13014,8 +12997,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1309147",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310049",
@@ -13025,8 +13008,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310049",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6365023",
@@ -13036,8 +13019,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6365023",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1577702",
@@ -13047,8 +13030,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1577702",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3676128",
@@ -13058,8 +13041,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3676128",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2983888",
@@ -13069,8 +13052,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2983888",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3351847",
@@ -13080,8 +13063,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3351847",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3004878",
@@ -13091,8 +13074,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3004878",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2468563",
@@ -13102,8 +13085,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2468563",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311119",
@@ -13113,8 +13096,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311119",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308499",
@@ -13124,8 +13107,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308499",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310996",
@@ -13135,8 +13118,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310996",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2642627",
@@ -13146,8 +13129,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2642627",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311679",
@@ -13157,8 +13140,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311679",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6360691",
@@ -13168,8 +13151,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6360691",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3523029",
@@ -13179,8 +13162,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3523029",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308504",
@@ -13190,8 +13173,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308504",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3884691",
@@ -13201,8 +13184,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3884691",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3688018",
@@ -13212,8 +13195,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3688018",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3641325",
@@ -13223,8 +13206,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3641325",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3631237",
@@ -13234,8 +13217,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3631237",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3641414",
@@ -13245,8 +13228,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3641414",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3641365",
@@ -13256,8 +13239,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3641365",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3641362",
@@ -13267,8 +13250,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3641362",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3641353",
@@ -13278,8 +13261,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3641353",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3641312",
@@ -13289,8 +13272,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3641312",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3641319",
@@ -13300,8 +13283,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3641319",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2765954",
@@ -13311,8 +13294,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2765954",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2143446",
@@ -13322,8 +13305,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2143446",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3695650",
@@ -13333,8 +13316,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3695650",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2866875",
@@ -13344,8 +13327,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2866875",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2105722",
@@ -13355,8 +13338,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2105722",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2376566",
@@ -13366,8 +13349,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2376566",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3465544",
@@ -13377,8 +13360,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3465544",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3598959",
@@ -13388,8 +13371,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3598959",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2868516",
@@ -13399,8 +13382,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2868516",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2048452",
@@ -13410,8 +13393,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2048452",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2471560",
@@ -13421,8 +13404,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2471560",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6361331",
@@ -13432,8 +13415,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6361331",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2852102",
@@ -13443,8 +13426,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2852102",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1858897",
@@ -13454,8 +13437,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1858897",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2626186",
@@ -13465,8 +13448,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2626186",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3306812",
@@ -13476,8 +13459,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3306812",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2059955",
@@ -13487,8 +13470,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2059955",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2455843",
@@ -13498,8 +13481,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2455843",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2875482",
@@ -13509,8 +13492,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2875482",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2941521",
@@ -13520,8 +13503,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2941521",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2908694",
@@ -13531,8 +13514,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2908694",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3553989",
@@ -13542,8 +13525,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3553989",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2980006",
@@ -13553,8 +13536,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2980006",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2979985",
@@ -13564,8 +13547,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2979985",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3383712",
@@ -13575,8 +13558,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3383712",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2963379",
@@ -13586,8 +13569,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2963379",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2620727",
@@ -13597,8 +13580,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2620727",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3591072",
@@ -13608,8 +13591,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3591072",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2574476",
@@ -13619,8 +13602,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2574476",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1978268",
@@ -13630,8 +13613,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1978268",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6364283",
@@ -13641,8 +13624,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6364283",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1818465",
@@ -13652,8 +13635,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1818465",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2091880",
@@ -13663,8 +13646,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2091880",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312376",
@@ -13674,8 +13657,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312376",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311767",
@@ -13685,8 +13668,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311767",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310271",
@@ -13696,8 +13679,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310271",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6366346",
@@ -13707,8 +13690,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6366346",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1307868",
@@ -13718,8 +13701,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1307868",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1307861",
@@ -13729,8 +13712,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1307861",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2776372",
@@ -13740,8 +13723,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2776372",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2008987",
@@ -13751,8 +13734,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2008987",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1404983",
@@ -13762,8 +13745,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1404983",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3389293",
@@ -13773,8 +13756,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3389293",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3498947",
@@ -13784,8 +13767,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3498947",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2717535",
@@ -13795,8 +13778,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2717535",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2967472",
@@ -13806,8 +13789,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2967472",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2538428",
@@ -13817,8 +13800,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2538428",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3368310",
@@ -13828,8 +13811,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3368310",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3363106",
@@ -13839,8 +13822,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3363106",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6362675",
@@ -13850,8 +13833,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6362675",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2132443",
@@ -13861,8 +13844,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2132443",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2118368",
@@ -13872,8 +13855,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2118368",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311790",
@@ -13883,8 +13866,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311790",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1563997",
@@ -13894,8 +13877,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1563997",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3798889",
@@ -13905,8 +13888,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3798889",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2459721",
@@ -13916,8 +13899,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2459721",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311392",
@@ -13927,8 +13910,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311392",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2748636",
@@ -13938,8 +13921,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2748636",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3884146",
@@ -13949,8 +13932,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3884146",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2808457",
@@ -13960,8 +13943,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2808457",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4636928",
@@ -13971,8 +13954,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4636928",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3812766",
@@ -13982,8 +13965,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3812766",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2984522",
@@ -13993,8 +13976,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2984522",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310901",
@@ -14004,8 +13987,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310901",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3802331",
@@ -14015,8 +13998,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3802331",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2987498",
@@ -14026,8 +14009,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2987498",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3551099",
@@ -14037,8 +14020,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3551099",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3503653",
@@ -14048,8 +14031,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3503653",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2029699",
@@ -14059,8 +14042,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2029699",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6367130",
@@ -14070,8 +14053,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6367130",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2362123",
@@ -14081,8 +14064,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2362123",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6364278",
@@ -14092,8 +14075,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6364278",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3815981",
@@ -14103,8 +14086,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3815981",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3433912",
@@ -14114,8 +14097,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3433912",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3471329",
@@ -14125,8 +14108,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3471329",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312720",
@@ -14136,8 +14119,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312720",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1307825",
@@ -14147,8 +14130,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1307825",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1993775",
@@ -14158,8 +14141,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1993775",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6365059",
@@ -14169,8 +14152,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6365059",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2764729",
@@ -14180,8 +14163,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2764729",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3145214",
@@ -14191,8 +14174,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3145214",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2920486",
@@ -14202,8 +14185,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2920486",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2817459",
@@ -14213,8 +14196,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2817459",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2657405",
@@ -14224,8 +14207,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2657405",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2593179",
@@ -14235,8 +14218,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2593179",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3826380",
@@ -14246,8 +14229,19 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3826380",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
+    },
+    {
+      "id": "ns-food-4640242",
+      "facilityId": "4640242",
+      "name": "PIZZADELIC",
+      "address": "7 LANGBRAE, HALIFAX",
+      "city": "Halifax",
+      "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4640242",
+      "source": "Government of Nova Scotia Food Establishment Inspection Reports",
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3386985",
@@ -14257,8 +14251,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3386985",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4632138",
@@ -14268,8 +14262,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4632138",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2759765",
@@ -14279,8 +14273,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2759765",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1313444",
@@ -14290,8 +14284,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1313444",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2335227",
@@ -14301,8 +14295,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2335227",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308937",
@@ -14312,8 +14306,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308937",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312391",
@@ -14323,8 +14317,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312391",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312038",
@@ -14334,8 +14328,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312038",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312517",
@@ -14345,8 +14339,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312517",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2462698",
@@ -14356,8 +14350,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2462698",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3557093",
@@ -14367,8 +14361,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3557093",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2876829",
@@ -14378,8 +14372,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2876829",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3588480",
@@ -14389,8 +14383,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3588480",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2914399",
@@ -14400,8 +14394,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2914399",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6364727",
@@ -14411,8 +14405,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6364727",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2180072",
@@ -14422,8 +14416,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2180072",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1737999",
@@ -14433,8 +14427,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1737999",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1689152",
@@ -14444,8 +14438,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1689152",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6362341",
@@ -14455,8 +14449,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6362341",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3687990",
@@ -14466,8 +14460,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3687990",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2110262",
@@ -14477,8 +14471,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2110262",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2979965",
@@ -14488,8 +14482,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2979965",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3306794",
@@ -14499,8 +14493,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3306794",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3495920",
@@ -14510,8 +14504,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3495920",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1528455",
@@ -14521,8 +14515,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1528455",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3878241",
@@ -14532,8 +14526,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3878241",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2603212",
@@ -14543,8 +14537,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2603212",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1849766",
@@ -14554,8 +14548,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1849766",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3467688",
@@ -14565,8 +14559,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3467688",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3574792",
@@ -14576,8 +14570,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3574792",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3004919",
@@ -14587,8 +14581,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3004919",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3004874",
@@ -14598,8 +14592,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3004874",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3346692",
@@ -14609,8 +14603,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3346692",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3004906",
@@ -14620,8 +14614,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3004906",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3004820",
@@ -14631,8 +14625,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3004820",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6364710",
@@ -14642,8 +14636,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6364710",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3620188",
@@ -14653,8 +14647,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3620188",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2796684",
@@ -14664,8 +14658,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2796684",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2860723",
@@ -14675,8 +14669,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2860723",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2850274",
@@ -14686,8 +14680,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2850274",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3547443",
@@ -14697,8 +14691,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3547443",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1732814",
@@ -14708,8 +14702,19 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1732814",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
+    },
+    {
+      "id": "ns-food-4639268",
+      "facilityId": "4639268",
+      "name": "PURDYS CHOCOLATIER",
+      "address": "7001 MUMFORD, HALIFAX",
+      "city": "Halifax",
+      "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4639268",
+      "source": "Government of Nova Scotia Food Establishment Inspection Reports",
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311809",
@@ -14719,8 +14724,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311809",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4626222",
@@ -14730,8 +14735,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4626222",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2851391",
@@ -14741,8 +14746,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2851391",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1543941",
@@ -14752,8 +14757,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1543941",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3620178",
@@ -14763,8 +14768,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3620178",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6363362",
@@ -14774,8 +14779,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6363362",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3684831",
@@ -14785,8 +14790,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3684831",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2844840",
@@ -14796,8 +14801,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2844840",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3542805",
@@ -14807,8 +14812,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3542805",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308466",
@@ -14818,8 +14823,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308466",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2556774",
@@ -14829,8 +14834,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2556774",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2602518",
@@ -14840,8 +14845,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2602518",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3014008",
@@ -14851,8 +14856,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3014008",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2959779",
@@ -14862,8 +14867,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2959779",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3335512",
@@ -14873,8 +14878,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3335512",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2845599",
@@ -14884,8 +14889,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2845599",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2588866",
@@ -14895,8 +14900,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2588866",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308822",
@@ -14906,8 +14911,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308822",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2114917",
@@ -14917,8 +14922,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2114917",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2557775",
@@ -14928,8 +14933,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2557775",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1852380",
@@ -14939,8 +14944,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1852380",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1313335",
@@ -14950,8 +14955,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1313335",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2510698",
@@ -14961,8 +14966,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2510698",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3003954",
@@ -14972,8 +14977,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3003954",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3492524",
@@ -14983,8 +14988,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3492524",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2652687",
@@ -14994,8 +14999,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2652687",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1746577",
@@ -15005,8 +15010,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1746577",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4638725",
@@ -15016,8 +15021,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4638725",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308892",
@@ -15027,8 +15032,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308892",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312501",
@@ -15038,8 +15043,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312501",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308850",
@@ -15049,8 +15054,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308850",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312710",
@@ -15060,8 +15065,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312710",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1313610",
@@ -15071,8 +15076,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1313610",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1874876",
@@ -15082,8 +15087,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1874876",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3658399",
@@ -15093,8 +15098,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3658399",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310463",
@@ -15104,8 +15109,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310463",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4635531",
@@ -15115,8 +15120,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4635531",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3806036",
@@ -15126,8 +15131,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3806036",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3444967",
@@ -15137,8 +15142,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3444967",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2320658",
@@ -15148,8 +15153,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2320658",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2592533",
@@ -15159,8 +15164,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2592533",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312642",
@@ -15170,8 +15175,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312642",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2021077",
@@ -15181,8 +15186,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2021077",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3100567",
@@ -15192,8 +15197,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3100567",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3823806",
@@ -15203,8 +15208,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3823806",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310844",
@@ -15214,8 +15219,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310844",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1513609",
@@ -15225,8 +15230,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1513609",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3041476",
@@ -15236,8 +15241,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3041476",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6361593",
@@ -15247,8 +15252,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6361593",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310559",
@@ -15258,8 +15263,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310559",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1313131",
@@ -15269,8 +15274,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1313131",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6361170",
@@ -15280,8 +15285,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6361170",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2171125",
@@ -15291,8 +15296,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2171125",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2917464",
@@ -15302,8 +15307,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2917464",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2895922",
@@ -15313,8 +15318,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2895922",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2336198",
@@ -15324,8 +15329,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2336198",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2768942",
@@ -15335,8 +15340,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2768942",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3615268",
@@ -15346,8 +15351,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3615268",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4627534",
@@ -15357,8 +15362,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4627534",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2468475",
@@ -15368,8 +15373,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2468475",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3670959",
@@ -15379,8 +15384,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3670959",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1313295",
@@ -15390,8 +15395,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1313295",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1313142",
@@ -15401,8 +15406,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1313142",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312674",
@@ -15412,8 +15417,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312674",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1313302",
@@ -15423,8 +15428,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1313302",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1309121",
@@ -15434,8 +15439,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1309121",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2712569",
@@ -15445,8 +15450,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2712569",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3311640",
@@ -15456,8 +15461,19 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3311640",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
+    },
+    {
+      "id": "ns-food-4636520",
+      "facilityId": "4636520",
+      "name": "Rudy's on the Arm",
+      "address": "75 BURGEE, HALIFAX",
+      "city": "Halifax",
+      "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4636520",
+      "source": "Government of Nova Scotia Food Establishment Inspection Reports",
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4635819",
@@ -15467,8 +15483,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4635819",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3135940",
@@ -15478,8 +15494,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3135940",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3674435",
@@ -15489,8 +15505,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3674435",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3562599",
@@ -15500,8 +15516,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3562599",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1309055",
@@ -15511,8 +15527,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1309055",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2932395",
@@ -15522,8 +15538,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2932395",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3622520",
@@ -15533,8 +15549,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3622520",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3006710",
@@ -15544,8 +15560,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3006710",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3512976",
@@ -15555,8 +15571,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3512976",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312102",
@@ -15566,8 +15582,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312102",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2848206",
@@ -15577,8 +15593,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2848206",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3802387",
@@ -15588,8 +15604,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3802387",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1313609",
@@ -15599,8 +15615,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1313609",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310531",
@@ -15610,8 +15626,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310531",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3101853",
@@ -15621,8 +15637,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3101853",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6361795",
@@ -15632,8 +15648,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6361795",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3803447",
@@ -15643,19 +15659,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3803447",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
-    },
-    {
-      "id": "ns-food-2796704",
-      "facilityId": "2796704",
-      "name": "Sapori Italian Street Food Ltd.",
-      "address": "1741 LOWER WATER, HALIFAX",
-      "city": "Halifax",
-      "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2796704",
-      "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1313673",
@@ -15665,8 +15670,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1313673",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4637676",
@@ -15676,8 +15681,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4637676",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2549473",
@@ -15687,8 +15692,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2549473",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2370128",
@@ -15698,8 +15703,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2370128",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3620083",
@@ -15709,8 +15714,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3620083",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2457782",
@@ -15720,8 +15725,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2457782",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2461057",
@@ -15731,8 +15736,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2461057",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6361729",
@@ -15742,8 +15747,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6361729",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6361740",
@@ -15753,8 +15758,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6361740",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6361777",
@@ -15764,8 +15769,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6361777",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6361746",
@@ -15775,8 +15780,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6361746",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6361778",
@@ -15786,8 +15791,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6361778",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6361748",
@@ -15797,8 +15802,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6361748",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6361754",
@@ -15808,8 +15813,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6361754",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6361731",
@@ -15819,8 +15824,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6361731",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6361752",
@@ -15830,8 +15835,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6361752",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6361744",
@@ -15841,8 +15846,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6361744",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6361776",
@@ -15852,8 +15857,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6361776",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6361773",
@@ -15863,8 +15868,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6361773",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6361761",
@@ -15874,8 +15879,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6361761",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6361747",
@@ -15885,8 +15890,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6361747",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6361755",
@@ -15896,8 +15901,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6361755",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6361751",
@@ -15907,8 +15912,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6361751",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6361743",
@@ -15918,8 +15923,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6361743",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6361804",
@@ -15929,8 +15934,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6361804",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6361801",
@@ -15940,8 +15945,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6361801",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1911303",
@@ -15951,8 +15956,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1911303",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1702838",
@@ -15962,8 +15967,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1702838",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3371034",
@@ -15973,8 +15978,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3371034",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2776104",
@@ -15984,8 +15989,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2776104",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310416",
@@ -15995,8 +16000,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310416",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1864839",
@@ -16006,8 +16011,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1864839",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1701150",
@@ -16017,8 +16022,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1701150",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1307941",
@@ -16028,8 +16033,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1307941",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2967132",
@@ -16039,8 +16044,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2967132",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308893",
@@ -16050,8 +16055,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308893",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4633321",
@@ -16061,8 +16066,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4633321",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2879977",
@@ -16072,8 +16077,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2879977",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6364516",
@@ -16083,8 +16088,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6364516",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3886679",
@@ -16094,8 +16099,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3886679",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2031865",
@@ -16105,8 +16110,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2031865",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3810648",
@@ -16116,8 +16121,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3810648",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2709696",
@@ -16127,8 +16132,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2709696",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6362047",
@@ -16138,8 +16143,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6362047",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2158802",
@@ -16149,8 +16154,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2158802",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3594924",
@@ -16160,8 +16165,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3594924",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2555538",
@@ -16171,8 +16176,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2555538",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1702825",
@@ -16182,8 +16187,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1702825",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2100403",
@@ -16193,8 +16198,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2100403",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3362520",
@@ -16204,8 +16209,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3362520",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2609446",
@@ -16215,8 +16220,19 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2609446",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
+    },
+    {
+      "id": "ns-food-4640052",
+      "facilityId": "4640052",
+      "name": "SHIVANI'S PARATHA HOUSE",
+      "address": "1567 GRAFTON, HALIFAX",
+      "city": "Halifax",
+      "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4640052",
+      "source": "Government of Nova Scotia Food Establishment Inspection Reports",
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4627359",
@@ -16226,8 +16242,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4627359",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6367087",
@@ -16237,8 +16253,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6367087",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6366605",
@@ -16248,8 +16264,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6366605",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3892377",
@@ -16259,8 +16275,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3892377",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1627226",
@@ -16270,8 +16286,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1627226",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1504457",
@@ -16281,8 +16297,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1504457",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3151799",
@@ -16292,8 +16308,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3151799",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4625757",
@@ -16303,8 +16319,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4625757",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1617660",
@@ -16314,8 +16330,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1617660",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3499161",
@@ -16325,8 +16341,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3499161",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3353028",
@@ -16336,8 +16352,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3353028",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2851667",
@@ -16347,8 +16363,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2851667",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6366329",
@@ -16358,8 +16374,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6366329",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4625433",
@@ -16369,8 +16385,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4625433",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1529067",
@@ -16380,8 +16396,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1529067",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1337882",
@@ -16391,8 +16407,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1337882",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3698380",
@@ -16402,8 +16418,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3698380",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310748",
@@ -16413,8 +16429,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310748",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2941049",
@@ -16424,8 +16440,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2941049",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2213427",
@@ -16435,8 +16451,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2213427",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3581409",
@@ -16446,8 +16462,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3581409",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3347852",
@@ -16457,8 +16473,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3347852",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3011268",
@@ -16468,8 +16484,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3011268",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3536338",
@@ -16479,8 +16495,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3536338",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3478018",
@@ -16490,8 +16506,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3478018",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3884330",
@@ -16501,8 +16517,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3884330",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4632234",
@@ -16512,8 +16528,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4632234",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3800797",
@@ -16523,19 +16539,19 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3800797",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3424001",
       "facilityId": "3424001",
-      "name": "Smithy's Family Restaurant",
+      "name": "Smitty's Family Restaurant",
       "address": "107 MAIN, DARTMOUTH",
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3424001",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1681419",
@@ -16545,8 +16561,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1681419",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3504274",
@@ -16556,8 +16572,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3504274",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1850496",
@@ -16567,8 +16583,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1850496",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308856",
@@ -16578,8 +16594,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308856",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3368714",
@@ -16589,8 +16605,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3368714",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1345767",
@@ -16600,8 +16616,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1345767",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2798748",
@@ -16611,8 +16627,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2798748",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308500",
@@ -16622,8 +16638,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308500",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1313447",
@@ -16633,8 +16649,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1313447",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1313449",
@@ -16644,8 +16660,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1313449",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308823",
@@ -16655,8 +16671,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308823",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1313450",
@@ -16666,8 +16682,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1313450",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308523",
@@ -16677,8 +16693,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308523",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2819301",
@@ -16688,8 +16704,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2819301",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1630050",
@@ -16699,8 +16715,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1630050",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312554",
@@ -16710,8 +16726,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312554",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1327254",
@@ -16721,8 +16737,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1327254",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1346668",
@@ -16732,8 +16748,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1346668",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1875553",
@@ -16743,8 +16759,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1875553",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1307922",
@@ -16754,8 +16770,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1307922",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2507321",
@@ -16765,8 +16781,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2507321",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2466655",
@@ -16776,8 +16792,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2466655",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2374751",
@@ -16787,8 +16803,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2374751",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2542977",
@@ -16798,8 +16814,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2542977",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3557111",
@@ -16809,8 +16825,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3557111",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1520138",
@@ -16820,8 +16836,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1520138",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4626343",
@@ -16831,8 +16847,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4626343",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2765237",
@@ -16842,8 +16858,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2765237",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312395",
@@ -16853,8 +16869,19 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312395",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
+    },
+    {
+      "id": "ns-food-4635101",
+      "facilityId": "4635101",
+      "name": "South Park Variety",
+      "address": "1333 SOUTH PARK, HALIFAX",
+      "city": "Halifax",
+      "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4635101",
+      "source": "Government of Nova Scotia Food Establishment Inspection Reports",
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310030",
@@ -16864,8 +16891,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310030",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2391285",
@@ -16875,8 +16902,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2391285",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3624552",
@@ -16886,8 +16913,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3624552",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3523020",
@@ -16897,8 +16924,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3523020",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310658",
@@ -16908,8 +16935,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310658",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3412509",
@@ -16919,8 +16946,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3412509",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1442138",
@@ -16930,8 +16957,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1442138",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2819964",
@@ -16941,8 +16968,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2819964",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1408593",
@@ -16952,8 +16979,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1408593",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2151024",
@@ -16963,8 +16990,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2151024",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1440219",
@@ -16974,8 +17001,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1440219",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311806",
@@ -16985,8 +17012,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311806",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312399",
@@ -16996,8 +17023,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312399",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312400",
@@ -17007,8 +17034,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312400",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3503796",
@@ -17018,8 +17045,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3503796",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3812905",
@@ -17029,8 +17056,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3812905",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3589425",
@@ -17040,8 +17067,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3589425",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2867924",
@@ -17051,8 +17078,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2867924",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2867697",
@@ -17062,8 +17089,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2867697",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2866831",
@@ -17073,8 +17100,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2866831",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1562772",
@@ -17084,8 +17111,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1562772",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2102921",
@@ -17095,8 +17122,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2102921",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1891554",
@@ -17106,8 +17133,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1891554",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1988091",
@@ -17117,8 +17144,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1988091",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2166140",
@@ -17128,8 +17155,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2166140",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1895973",
@@ -17139,8 +17166,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1895973",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2016122",
@@ -17150,8 +17177,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2016122",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1401397",
@@ -17161,8 +17188,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1401397",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1320887",
@@ -17172,8 +17199,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1320887",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1508231",
@@ -17183,8 +17210,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1508231",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3392953",
@@ -17194,8 +17221,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3392953",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3552869",
@@ -17205,8 +17232,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3552869",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2540898",
@@ -17216,8 +17243,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2540898",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6363989",
@@ -17227,8 +17254,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6363989",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3151678",
@@ -17238,8 +17265,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3151678",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3151577",
@@ -17249,8 +17276,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3151577",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3271773",
@@ -17260,8 +17287,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3271773",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2377354",
@@ -17271,8 +17298,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2377354",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4634967",
@@ -17282,8 +17309,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4634967",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2642482",
@@ -17293,8 +17320,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2642482",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2148875",
@@ -17304,8 +17331,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2148875",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2619019",
@@ -17315,8 +17342,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2619019",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2732962",
@@ -17326,8 +17353,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2732962",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6365212",
@@ -17337,8 +17364,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6365212",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2164589",
@@ -17348,8 +17375,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2164589",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3445062",
@@ -17359,8 +17386,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3445062",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3546139",
@@ -17370,8 +17397,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3546139",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6361273",
@@ -17381,8 +17408,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6361273",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1313600",
@@ -17392,8 +17419,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1313600",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308925",
@@ -17403,8 +17430,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308925",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1791735",
@@ -17414,19 +17441,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1791735",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
-    },
-    {
-      "id": "ns-food-1308953",
-      "facilityId": "1308953",
-      "name": "SUBWAY",
-      "address": "21 MICMAC, DARTMOUTH",
-      "city": "Dartmouth",
-      "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308953",
-      "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1391674",
@@ -17436,8 +17452,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1391674",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310255",
@@ -17447,8 +17463,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310255",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1683816",
@@ -17458,8 +17474,19 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1683816",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
+    },
+    {
+      "id": "ns-food-1308953",
+      "facilityId": "1308953",
+      "name": "SUBWAY (MicMac Blvd., Dartmouth)",
+      "address": "21 MICMAC, DARTMOUTH",
+      "city": "Dartmouth",
+      "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308953",
+      "source": "Government of Nova Scotia Food Establishment Inspection Reports",
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310704",
@@ -17469,8 +17496,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310704",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1701072",
@@ -17480,19 +17507,19 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1701072",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1696440",
       "facilityId": "1696440",
-      "name": "SUBWAY #11359",
+      "name": "SUBWAY #11359 (Spring Garden Road)",
       "address": "5683 SPRING GARDEN, HALIFAX",
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1696440",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1309759",
@@ -17502,8 +17529,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1309759",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2997374",
@@ -17513,8 +17540,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2997374",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310837",
@@ -17524,8 +17551,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310837",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2704924",
@@ -17535,8 +17562,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2704924",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1529097",
@@ -17546,8 +17573,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1529097",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2967396",
@@ -17557,8 +17584,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2967396",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2408791",
@@ -17568,8 +17595,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2408791",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310779",
@@ -17579,8 +17606,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310779",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1696253",
@@ -17590,8 +17617,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1696253",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1962527",
@@ -17601,8 +17628,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1962527",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311649",
@@ -17612,8 +17639,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311649",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311982",
@@ -17623,8 +17650,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311982",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1610125",
@@ -17634,8 +17661,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1610125",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1631097",
@@ -17645,8 +17672,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1631097",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1987812",
@@ -17656,8 +17683,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1987812",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2044973",
@@ -17667,8 +17694,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2044973",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3368655",
@@ -17678,8 +17705,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3368655",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2600919",
@@ -17689,8 +17716,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2600919",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2907121",
@@ -17700,8 +17727,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2907121",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2598044",
@@ -17711,8 +17738,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2598044",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2941555",
@@ -17722,8 +17749,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2941555",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3410456",
@@ -17733,8 +17760,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3410456",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3810571",
@@ -17744,8 +17771,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3810571",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3638916",
@@ -17755,8 +17782,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3638916",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3557911",
@@ -17766,8 +17793,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3557911",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2461049",
@@ -17777,8 +17804,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2461049",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4633237",
@@ -17788,8 +17815,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4633237",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310165",
@@ -17799,8 +17826,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310165",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3151318",
@@ -17810,8 +17837,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3151318",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4633312",
@@ -17821,8 +17848,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4633312",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1637701",
@@ -17832,8 +17859,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1637701",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308882",
@@ -17843,8 +17870,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308882",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4631250",
@@ -17854,8 +17881,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4631250",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6362793",
@@ -17865,8 +17892,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6362793",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3564293",
@@ -17876,8 +17903,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3564293",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3624568",
@@ -17887,8 +17914,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3624568",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1660756",
@@ -17898,8 +17925,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1660756",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1660748",
@@ -17909,8 +17936,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1660748",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6364262",
@@ -17920,8 +17947,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6364262",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4627553",
@@ -17931,8 +17958,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4627553",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2877495",
@@ -17942,8 +17969,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2877495",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3145275",
@@ -17953,8 +17980,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3145275",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2452617",
@@ -17964,8 +17991,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2452617",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4627789",
@@ -17975,8 +18002,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4627789",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2657422",
@@ -17986,8 +18013,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2657422",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3384685",
@@ -17997,8 +18024,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3384685",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3805742",
@@ -18008,8 +18035,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3805742",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2197150",
@@ -18019,8 +18046,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2197150",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3815145",
@@ -18030,8 +18057,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3815145",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2691532",
@@ -18041,8 +18068,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2691532",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2851000",
@@ -18052,8 +18079,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2851000",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2617563",
@@ -18063,8 +18090,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2617563",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2156028",
@@ -18074,8 +18101,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2156028",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2639398",
@@ -18085,8 +18112,19 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2639398",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
+    },
+    {
+      "id": "ns-food-4625635",
+      "facilityId": "4625635",
+      "name": "Sushi Square",
+      "address": "5201 DUKE, HALIFAX",
+      "city": "Halifax",
+      "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4625635",
+      "source": "Government of Nova Scotia Food Establishment Inspection Reports",
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3384610",
@@ -18096,8 +18134,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3384610",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3462574",
@@ -18107,8 +18145,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3462574",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1671077",
@@ -18118,8 +18156,19 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1671077",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
+    },
+    {
+      "id": "ns-food-4630676",
+      "facilityId": "4630676",
+      "name": "Sweet N' Salty",
+      "address": "1582 SALTYARD, HALIFAX",
+      "city": "Halifax",
+      "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4630676",
+      "source": "Government of Nova Scotia Food Establishment Inspection Reports",
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1641124",
@@ -18129,8 +18178,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1641124",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1687440",
@@ -18140,8 +18189,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1687440",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311667",
@@ -18151,8 +18200,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311667",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1590114",
@@ -18162,8 +18211,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1590114",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2335336",
@@ -18173,8 +18222,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2335336",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3413506",
@@ -18184,8 +18233,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3413506",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2739896",
@@ -18195,8 +18244,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2739896",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2461314",
@@ -18206,8 +18255,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2461314",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3892145",
@@ -18217,8 +18266,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3892145",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4628943",
@@ -18228,8 +18277,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4628943",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312668",
@@ -18239,8 +18288,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312668",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2558590",
@@ -18250,8 +18299,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2558590",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2377147",
@@ -18261,8 +18310,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2377147",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3315396",
@@ -18272,8 +18321,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3315396",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3882891",
@@ -18283,8 +18332,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3882891",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1987122",
@@ -18294,8 +18343,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1987122",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6363354",
@@ -18305,8 +18354,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6363354",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3142402",
@@ -18316,8 +18365,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3142402",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3467087",
@@ -18327,8 +18376,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3467087",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4627198",
@@ -18338,8 +18387,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4627198",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2342646",
@@ -18349,8 +18398,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2342646",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2996900",
@@ -18360,8 +18409,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2996900",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2804979",
@@ -18371,8 +18420,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2804979",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2150052",
@@ -18382,8 +18431,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2150052",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3389230",
@@ -18393,8 +18442,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3389230",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3884673",
@@ -18404,8 +18453,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3884673",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3593298",
@@ -18415,8 +18464,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3593298",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1942652",
@@ -18426,8 +18475,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1942652",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2164496",
@@ -18437,8 +18486,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2164496",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2587330",
@@ -18448,8 +18497,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2587330",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2962372",
@@ -18459,8 +18508,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2962372",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3802325",
@@ -18470,8 +18519,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3802325",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4634964",
@@ -18481,8 +18530,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4634964",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3493314",
@@ -18492,8 +18541,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3493314",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3676254",
@@ -18503,8 +18552,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3676254",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2150731",
@@ -18514,8 +18563,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2150731",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6360950",
@@ -18525,8 +18574,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6360950",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2794287",
@@ -18536,8 +18585,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2794287",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2021090",
@@ -18547,8 +18596,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2021090",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6363993",
@@ -18558,8 +18607,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6363993",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3328301",
@@ -18569,8 +18618,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3328301",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3536583",
@@ -18580,8 +18629,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3536583",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2733137",
@@ -18591,8 +18640,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2733137",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3811858",
@@ -18602,8 +18651,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3811858",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3557023",
@@ -18613,8 +18662,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3557023",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3810559",
@@ -18624,8 +18673,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3810559",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2865767",
@@ -18635,8 +18684,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2865767",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3674326",
@@ -18646,8 +18695,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3674326",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4632200",
@@ -18657,8 +18706,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4632200",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6365510",
@@ -18668,8 +18717,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6365510",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2831020",
@@ -18679,8 +18728,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2831020",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4624991",
@@ -18690,8 +18739,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4624991",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3422518",
@@ -18701,8 +18750,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3422518",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3002982",
@@ -18712,8 +18761,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3002982",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2996840",
@@ -18723,8 +18772,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2996840",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2968569",
@@ -18734,8 +18783,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2968569",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2156054",
@@ -18745,8 +18794,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2156054",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6365397",
@@ -18756,8 +18805,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6365397",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4627926",
@@ -18767,8 +18816,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4627926",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2996860",
@@ -18778,8 +18827,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2996860",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3812812",
@@ -18789,8 +18838,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3812812",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312047",
@@ -18800,8 +18849,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312047",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308246",
@@ -18811,8 +18860,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308246",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2709677",
@@ -18822,8 +18871,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2709677",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3635059",
@@ -18833,8 +18882,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3635059",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3802352",
@@ -18844,8 +18893,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3802352",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2785266",
@@ -18855,8 +18904,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2785266",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3559896",
@@ -18866,8 +18915,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3559896",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1640492",
@@ -18877,8 +18926,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1640492",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2766233",
@@ -18888,8 +18937,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2766233",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2919398",
@@ -18899,8 +18948,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2919398",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2194132",
@@ -18910,8 +18959,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2194132",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2709621",
@@ -18921,8 +18970,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2709621",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2790646",
@@ -18932,8 +18981,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2790646",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3088584",
@@ -18943,8 +18992,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3088584",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4631243",
@@ -18954,8 +19003,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4631243",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3692762",
@@ -18965,8 +19014,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3692762",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2722853",
@@ -18976,8 +19025,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2722853",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3803250",
@@ -18987,8 +19036,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3803250",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3820720",
@@ -18998,8 +19047,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3820720",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3536331",
@@ -19009,8 +19058,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3536331",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3878515",
@@ -19020,8 +19069,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3878515",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2967225",
@@ -19031,8 +19080,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2967225",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310592",
@@ -19042,8 +19091,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310592",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2920514",
@@ -19053,8 +19102,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2920514",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6367488",
@@ -19064,8 +19113,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6367488",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2606851",
@@ -19075,8 +19124,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2606851",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312654",
@@ -19086,19 +19135,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312654",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
-    },
-    {
-      "id": "ns-food-1312622",
-      "facilityId": "1312622",
-      "name": "TIM HORTON'S",
-      "address": "1 PINE GROVE, HALIFAX",
-      "city": "Halifax",
-      "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312622",
-      "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2360421",
@@ -19108,8 +19146,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2360421",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2360438",
@@ -19119,8 +19157,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2360438",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1954169",
@@ -19130,8 +19168,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1954169",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1941998",
@@ -19141,19 +19179,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1941998",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
-    },
-    {
-      "id": "ns-food-1401420",
-      "facilityId": "1401420",
-      "name": "Tim Hortons",
-      "address": "171 HERRING COVE, HALIFAX",
-      "city": "Halifax",
-      "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1401420",
-      "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6361293",
@@ -19163,8 +19190,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6361293",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3003245",
@@ -19174,8 +19201,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3003245",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1401738",
@@ -19185,8 +19212,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1401738",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6367244",
@@ -19196,8 +19223,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6367244",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308878",
@@ -19207,8 +19234,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308878",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312736",
@@ -19218,8 +19245,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312736",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308942",
@@ -19229,8 +19256,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308942",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1313503",
@@ -19240,8 +19267,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1313503",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1921147",
@@ -19251,8 +19278,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1921147",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310895",
@@ -19262,8 +19289,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310895",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1473918",
@@ -19273,8 +19300,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1473918",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1646388",
@@ -19284,8 +19311,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1646388",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308872",
@@ -19295,8 +19322,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308872",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1313668",
@@ -19306,8 +19333,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1313668",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1313666",
@@ -19317,8 +19344,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1313666",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2215264",
@@ -19328,8 +19355,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2215264",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1795535",
@@ -19339,8 +19366,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1795535",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1731481",
@@ -19350,8 +19377,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1731481",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2001114",
@@ -19361,8 +19388,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2001114",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1313353",
@@ -19372,8 +19399,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1313353",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1313354",
@@ -19383,8 +19410,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1313354",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1590124",
@@ -19394,8 +19421,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1590124",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1313505",
@@ -19405,8 +19432,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1313505",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1307866",
@@ -19416,8 +19443,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1307866",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310735",
@@ -19427,8 +19454,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310735",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6366423",
@@ -19438,8 +19465,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6366423",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2979569",
@@ -19449,8 +19476,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2979569",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2151817",
@@ -19460,8 +19487,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2151817",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312032",
@@ -19471,8 +19498,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312032",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2004262",
@@ -19482,8 +19509,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2004262",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308917",
@@ -19493,8 +19520,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308917",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310549",
@@ -19504,8 +19531,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310549",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3810534",
@@ -19515,8 +19542,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3810534",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1313165",
@@ -19526,8 +19553,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1313165",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3810541",
@@ -19537,8 +19564,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3810541",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3652257",
@@ -19548,8 +19575,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3652257",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312179",
@@ -19559,8 +19586,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312179",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1313351",
@@ -19570,8 +19597,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1313351",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308866",
@@ -19581,8 +19608,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308866",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2448344",
@@ -19592,8 +19619,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2448344",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2851439",
@@ -19603,8 +19630,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2851439",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2526882",
@@ -19614,8 +19641,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2526882",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3799660",
@@ -19625,8 +19652,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3799660",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4632165",
@@ -19636,8 +19663,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4632165",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2508847",
@@ -19647,8 +19674,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2508847",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1410434",
@@ -19658,8 +19685,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1410434",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6366342",
@@ -19669,8 +19696,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6366342",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3802332",
@@ -19680,8 +19707,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3802332",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310939",
@@ -19691,8 +19718,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310939",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312407",
@@ -19702,8 +19729,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312407",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2802124",
@@ -19713,8 +19740,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2802124",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1538149",
@@ -19724,8 +19751,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1538149",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3532877",
@@ -19735,8 +19762,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3532877",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4627386",
@@ -19746,8 +19773,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4627386",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3557129",
@@ -19757,8 +19784,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3557129",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3360130",
@@ -19768,8 +19795,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3360130",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6360749",
@@ -19779,8 +19806,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6360749",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3575221",
@@ -19790,8 +19817,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3575221",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1324343",
@@ -19801,8 +19828,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1324343",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3624584",
@@ -19812,8 +19839,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3624584",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2105845",
@@ -19823,8 +19850,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2105845",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3420314",
@@ -19834,8 +19861,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3420314",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2747455",
@@ -19845,8 +19872,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2747455",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312354",
@@ -19856,8 +19883,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312354",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3380225",
@@ -19867,8 +19894,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3380225",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1697841",
@@ -19878,8 +19905,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1697841",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2730193",
@@ -19889,8 +19916,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2730193",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3003299",
@@ -19900,8 +19927,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3003299",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3392039",
@@ -19911,8 +19938,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3392039",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2528632",
@@ -19922,8 +19949,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2528632",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2790639",
@@ -19933,19 +19960,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2790639",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
-    },
-    {
-      "id": "ns-food-1309117",
-      "facilityId": "1309117",
-      "name": "TWIN CITIES VILLA LTD.",
-      "address": "349 PLEASANT, DARTMOUTH",
-      "city": "Dartmouth",
-      "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1309117",
-      "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3696013",
@@ -19955,8 +19971,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3696013",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3584226",
@@ -19966,8 +19982,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3584226",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1470630",
@@ -19977,8 +19993,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1470630",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4634517",
@@ -19988,8 +20004,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4634517",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6363978",
@@ -19999,8 +20015,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6363978",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3886519",
@@ -20010,8 +20026,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3886519",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4635749",
@@ -20021,8 +20037,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4635749",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3360646",
@@ -20032,8 +20048,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3360646",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2627611",
@@ -20043,8 +20059,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2627611",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3524826",
@@ -20054,8 +20070,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3524826",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4628161",
@@ -20065,8 +20081,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4628161",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312547",
@@ -20076,8 +20092,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312547",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311741",
@@ -20087,8 +20103,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311741",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3523004",
@@ -20098,8 +20114,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3523004",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2720580",
@@ -20109,8 +20125,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2720580",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312408",
@@ -20120,8 +20136,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312408",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312409",
@@ -20131,8 +20147,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312409",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2358126",
@@ -20142,8 +20158,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2358126",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3692244",
@@ -20153,8 +20169,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3692244",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3823862",
@@ -20164,8 +20180,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3823862",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3892375",
@@ -20175,8 +20191,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3892375",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2869005",
@@ -20186,8 +20202,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2869005",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2203344",
@@ -20197,8 +20213,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2203344",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3886625",
@@ -20208,8 +20224,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3886625",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2523578",
@@ -20219,8 +20235,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2523578",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2138645",
@@ -20230,8 +20246,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2138645",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3386723",
@@ -20241,8 +20257,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3386723",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2158583",
@@ -20252,8 +20268,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2158583",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2416769",
@@ -20263,8 +20279,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2416769",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2494630",
@@ -20274,8 +20290,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2494630",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2019382",
@@ -20285,8 +20301,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2019382",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2658031",
@@ -20296,8 +20312,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2658031",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3010194",
@@ -20307,8 +20323,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3010194",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3361445",
@@ -20318,8 +20334,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3361445",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3339748",
@@ -20329,8 +20345,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3339748",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2461064",
@@ -20340,8 +20356,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2461064",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3887090",
@@ -20351,8 +20367,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3887090",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2829267",
@@ -20362,8 +20378,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2829267",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310012",
@@ -20373,8 +20389,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310012",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3620124",
@@ -20384,8 +20400,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3620124",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2985005",
@@ -20395,8 +20411,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2985005",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311760",
@@ -20406,8 +20422,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311760",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2536826",
@@ -20417,8 +20433,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2536826",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3360463",
@@ -20428,8 +20444,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3360463",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3562089",
@@ -20439,8 +20455,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3562089",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3668493",
@@ -20450,8 +20466,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3668493",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312588",
@@ -20461,8 +20477,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312588",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1307865",
@@ -20472,8 +20488,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1307865",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312538",
@@ -20483,8 +20499,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312538",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310930",
@@ -20494,8 +20510,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310930",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3815892",
@@ -20505,8 +20521,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3815892",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3638998",
@@ -20516,8 +20532,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3638998",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-4639517",
@@ -20527,8 +20543,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4639517",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1685113",
@@ -20538,8 +20554,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1685113",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3648771",
@@ -20549,8 +20565,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3648771",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3557059",
@@ -20560,8 +20576,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3557059",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310251",
@@ -20571,8 +20587,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310251",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1887481",
@@ -20582,8 +20598,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1887481",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311335",
@@ -20593,8 +20609,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311335",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312411",
@@ -20604,8 +20620,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312411",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3812797",
@@ -20615,8 +20631,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3812797",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2188431",
@@ -20626,8 +20642,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2188431",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312225",
@@ -20637,8 +20653,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312225",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312441",
@@ -20648,8 +20664,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312441",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312439",
@@ -20659,8 +20675,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312439",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312442",
@@ -20670,8 +20686,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312442",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1712908",
@@ -20681,8 +20697,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1712908",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3391132",
@@ -20692,8 +20708,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3391132",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3820127",
@@ -20703,8 +20719,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3820127",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3807780",
@@ -20714,8 +20730,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3807780",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2883926",
@@ -20725,8 +20741,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2883926",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1308182",
@@ -20736,8 +20752,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1308182",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3815704",
@@ -20747,8 +20763,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3815704",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3678480",
@@ -20758,8 +20774,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3678480",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1861325",
@@ -20769,8 +20785,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1861325",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312036",
@@ -20780,8 +20796,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312036",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1645737",
@@ -20791,8 +20807,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1645737",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1858377",
@@ -20802,8 +20818,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1858377",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1311548",
@@ -20813,8 +20829,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1311548",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2934430",
@@ -20824,8 +20840,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2934430",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3368678",
@@ -20835,8 +20851,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3368678",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3379153",
@@ -20846,8 +20862,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3379153",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2983778",
@@ -20857,8 +20873,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2983778",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3163576",
@@ -20868,8 +20884,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3163576",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2665610",
@@ -20879,8 +20895,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2665610",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3569608",
@@ -20890,8 +20906,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3569608",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2656299",
@@ -20901,8 +20917,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2656299",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1388176",
@@ -20912,8 +20928,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1388176",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1808536",
@@ -20923,8 +20939,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1808536",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1786632",
@@ -20934,8 +20950,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1786632",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1693547",
@@ -20945,8 +20961,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1693547",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2373127",
@@ -20956,8 +20972,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2373127",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1568327",
@@ -20967,8 +20983,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1568327",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3553875",
@@ -20978,8 +20994,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3553875",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2968723",
@@ -20989,8 +21005,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2968723",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2879427",
@@ -21000,8 +21016,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2879427",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2868278",
@@ -21011,8 +21027,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2868278",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3151995",
@@ -21022,8 +21038,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3151995",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2338771",
@@ -21033,8 +21049,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2338771",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3437470",
@@ -21044,8 +21060,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3437470",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3362474",
@@ -21055,8 +21071,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3362474",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312393",
@@ -21066,8 +21082,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312393",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2865778",
@@ -21077,8 +21093,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2865778",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1313332",
@@ -21088,8 +21104,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1313332",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1310853",
@@ -21099,8 +21115,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1310853",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3615532",
@@ -21110,8 +21126,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3615532",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3550969",
@@ -21121,8 +21137,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3550969",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3468309",
@@ -21132,8 +21148,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3468309",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2151828",
@@ -21143,8 +21159,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2151828",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3818344",
@@ -21154,8 +21170,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3818344",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2860710",
@@ -21165,8 +21181,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2860710",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1312600",
@@ -21176,8 +21192,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312600",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-1807605",
@@ -21187,8 +21203,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1807605",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3667071",
@@ -21198,8 +21214,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Bedford",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3667071",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3802976",
@@ -21209,8 +21225,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Dartmouth",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3802976",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3341269",
@@ -21220,8 +21236,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3341269",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2394480",
@@ -21231,8 +21247,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2394480",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-2823800",
@@ -21242,8 +21258,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2823800",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-3269203",
@@ -21253,8 +21269,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3269203",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     },
     {
       "id": "ns-food-6363831",
@@ -21264,8 +21280,8 @@ window.HALIFAX_NS_FOOD_INSPECTIONS = {
       "city": "Halifax",
       "detailUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6363831",
       "source": "Government of Nova Scotia Food Establishment Inspection Reports",
-      "currentAsOf": "19 Oct, 2026 3:22 AM",
-      "observedAt": "2026-10-20T07:20:13.079Z"
+      "currentAsOf": "12 Nov, 2026 3:10 AM",
+      "observedAt": "2026-11-12T19:27:53.425Z"
     }
   ]
 };
