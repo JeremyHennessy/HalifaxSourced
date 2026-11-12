@@ -149,7 +149,7 @@ try {
   for (const file of [
     ...adapters.map(([script]) => 'scripts/' + script),
     'scripts/lib/robots-policy.mjs', 'scripts/lib/fetch-public-source.mjs', 'scripts/lib/source-access-state.mjs', 'scripts/lib/link-access-policy.mjs', 'data/source-link-access-holds.json',
-    'scripts/lib/lifecycle-language.mjs', 'scripts/lib/source-page-classification.mjs', 'source-integrity.js'
+    'scripts/lib/lifecycle-language.mjs', 'scripts/lib/source-page-classification.mjs', 'scripts/lib/structured-event-time.mjs', 'source-integrity.js'
   ]) await copyFile(new URL('../' + file, import.meta.url), join(root, file));
   for (const [script, outputName] of adapters) for (const fixture of cases) {
     const patio = script === 'import-patio-directory-facts.mjs';
