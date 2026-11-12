@@ -7229,6 +7229,18 @@
           "observation": "Complete owner-published weekly schedule. Kitchen service only; not bar opening hours.",
           "successfulSourceReceipts": [
             {
+              "url": "https://millcovebrewpub.com/menu/",
+              "fetchedAt": "2026-11-12T19:55:37.388Z",
+              "httpStatus": 200,
+              "verificationMethod": "browser_visible_official_page",
+              "evidence": {
+                "title": "Menu: Wings, Burgers, Tacos & Haddock | Mill Cove Brew Pub",
+                "menuHeading": "MENU",
+                "address": "961 Bedford Hwy, Bedford, NS B4A 1A9",
+                "kitchenHours": "Sunday - Thursday: 4 PM - 9 PM; Friday & Saturday: 12 PM - 9 PM"
+              }
+            },
+            {
               "url": "https://millcovebrewpub.com/menu-3-col/",
               "fetchedAt": "2026-10-21T13:01:30.467486+00:00",
               "httpStatus": 200,
@@ -7253,6 +7265,18 @@
           "observedAt": "2026-11-12T19:55:37.388Z",
           "observation": "Fresh official menu page linked by the location website; a pointer only, no prices or image reuse.",
           "successfulSourceReceipts": [
+            {
+              "url": "https://millcovebrewpub.com/menu/",
+              "fetchedAt": "2026-11-12T19:55:37.388Z",
+              "httpStatus": 200,
+              "verificationMethod": "browser_visible_official_page",
+              "evidence": {
+                "title": "Menu: Wings, Burgers, Tacos & Haddock | Mill Cove Brew Pub",
+                "menuHeading": "MENU",
+                "address": "961 Bedford Hwy, Bedford, NS B4A 1A9",
+                "kitchenHours": "Sunday - Thursday: 4 PM - 9 PM; Friday & Saturday: 12 PM - 9 PM"
+              }
+            },
             {
               "url": "https://millcovebrewpub.com/menu-3-col/",
               "fetchedAt": "2026-10-21T13:01:30.467486+00:00",
@@ -7279,6 +7303,18 @@
           "observation": "Official menu/contact footer identifies the exact location, current public food service and separate kitchen hours.",
           "successfulSourceReceipts": [
             {
+              "url": "https://millcovebrewpub.com/menu/",
+              "fetchedAt": "2026-11-12T19:55:37.388Z",
+              "httpStatus": 200,
+              "verificationMethod": "browser_visible_official_page",
+              "evidence": {
+                "title": "Menu: Wings, Burgers, Tacos & Haddock | Mill Cove Brew Pub",
+                "menuHeading": "MENU",
+                "address": "961 Bedford Hwy, Bedford, NS B4A 1A9",
+                "kitchenHours": "Sunday - Thursday: 4 PM - 9 PM; Friday & Saturday: 12 PM - 9 PM"
+              }
+            },
+            {
               "url": "https://millcovebrewpub.com/menu-3-col/",
               "fetchedAt": "2026-10-21T13:01:30.467486+00:00",
               "httpStatus": 200,
@@ -7302,6 +7338,18 @@
           "observedAt": "2026-11-12T19:55:37.388Z",
           "observation": "Official menu/contact footer identifies the exact location, current public food service and separate kitchen hours.",
           "successfulSourceReceipts": [
+            {
+              "url": "https://millcovebrewpub.com/menu/",
+              "fetchedAt": "2026-11-12T19:55:37.388Z",
+              "httpStatus": 200,
+              "verificationMethod": "browser_visible_official_page",
+              "evidence": {
+                "title": "Menu: Wings, Burgers, Tacos & Haddock | Mill Cove Brew Pub",
+                "menuHeading": "MENU",
+                "address": "961 Bedford Hwy, Bedford, NS B4A 1A9",
+                "kitchenHours": "Sunday - Thursday: 4 PM - 9 PM; Friday & Saturday: 12 PM - 9 PM"
+              }
+            },
             {
               "url": "https://millcovebrewpub.com/menu-3-col/",
               "fetchedAt": "2026-10-21T13:01:30.467486+00:00",
