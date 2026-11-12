@@ -6227,13 +6227,13 @@
     {
       "restaurantId": "mill-cove-brew-pub-bedford",
       "kind": "menu",
-      "url": "https://millcovebrewpub.com/menu-3-col/",
+      "url": "https://millcovebrewpub.com/menu/",
       "label": "Menu",
       "sourceWebsite": "https://millcovebrewpub.com/",
       "sourceKind": "official_page",
       "verificationMethod": "reachable_official_page",
-      "observedAt": "2026-10-21T13:01:30.467486+00:00",
-      "verifiedAt": "2026-10-21T13:10:10.538180+00:00",
+      "observedAt": "2026-11-12T19:43:21.618Z",
+      "verifiedAt": "2026-11-12T19:43:21.618Z",
       "locationValidated": true,
       "reviewState": "verified"
     },
