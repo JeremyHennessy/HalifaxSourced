@@ -1,4 +1,5 @@
 import { fetchPublicSource } from "./lib/fetch-public-source.mjs";
+import { normalizeEventDateForSource } from "./lib/structured-event-time.mjs";
 import { createRobotsAllows } from "./lib/robots-policy.mjs";
 import integrity from "../source-integrity.js";
 import { createHash } from "node:crypto";
@@ -140,9 +141,8 @@ function jsonLdEvents(html) {
   return events;
 }
 
-function normalizeDate(value) {
-  const stamp = Date.parse(String(value ?? ""));
-  return Number.isFinite(stamp) ? new Date(stamp).toISOString() : null;
+function normalizeDate(value, sourceUrl) {
+  return normalizeEventDateForSource(value, sourceUrl);
 }
 
 function locationName(event, fallback) {
@@ -162,8 +162,8 @@ function eventId(record) {
 function normalizeEvent(event, context) {
   const type = eventType(event);
   const title = decodeText(event.name);
-  const startAt = normalizeDate(event.startDate);
-  const endAt = normalizeDate(event.endDate) || startAt;
+  const startAt = normalizeDate(event.startDate, context.pageUrl);
+  const endAt = normalizeDate(event.endDate, context.pageUrl) || startAt;
   const status = eventStatus(event);
   if (!type || !title || !startAt) return null;
   const startStamp = Date.parse(startAt);

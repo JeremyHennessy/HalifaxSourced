@@ -1,6 +1,7 @@
 import { readFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import vm from "node:vm";
+import { normalizeEventDateForSource } from "./lib/structured-event-time.mjs";
 
 const RealDate = Date;
 const FIXED_NOW = "2026-09-04T15:00:00.000Z";
@@ -259,6 +260,16 @@ const result = vm.runInContext(`(() => {
 })()`, context);
 
 const failures = [];
+const sourceTimeCases = [
+  ["2026-11-17T22:00:00-05:00", "https://durtynellys.ca/events/", "2026-11-18T02:00:00.000Z"],
+  ["2026-11-13T22:30:00+00:00", "https://durtynellys.ca/events/", "2026-11-14T02:30:00.000Z"],
+  ["2026-07-14T22:00:00-05:00", "https://durtynellys.ca/events/", "2026-07-15T01:00:00.000Z"],
+  ["2026-11-12T18:30:00-04:00", "https://tridenthalifax.ca/events/", "2026-11-12T22:30:00.000Z"]
+];
+for (const [value, sourceUrl, expected] of sourceTimeCases) {
+  const actual = normalizeEventDateForSource(value, sourceUrl);
+  if (actual !== expected) failures.push(`Structured source time normalization failed: ${sourceUrl} ${value} => ${actual}; expected ${expected}`);
+}
 if (JSON.stringify(result.explicitCityNames) !== JSON.stringify(["Bedford", "Halifax", "Dartmouth", "Dartmouth"])) failures.push(`Explicit municipality must outrank street names; absent-city fallback must remain: ${JSON.stringify(result.explicitCityNames)}`);
 if (!result.bedfordCard.includes("Bedford") || result.bedfordCard.includes(" - Dartmouth - ")) failures.push("Bedford event card must not be labeled Dartmouth because of Dartmouth Road");
 if (result.dateOnlyStart !== "2026-09-04" || result.dateOnlyEnd !== "2026-09-04") failures.push(`date-only boundary keys shifted: ${JSON.stringify(result)}`);
