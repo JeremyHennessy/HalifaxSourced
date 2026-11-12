@@ -7213,19 +7213,19 @@
         "coordinates": {
           "status": "unknown",
           "sourceUrls": [
-            "https://millcovebrewpub.com/menu-3-col/",
+            "https://millcovebrewpub.com/menu/",
             "https://www.graftonconnor.com/"
           ],
-          "observedAt": "2026-10-21T13:10:10.538180+00:00",
+          "observedAt": "2026-11-12T19:55:37.388Z",
           "observation": "Not sufficiently verified in this bounded review; no inferred value published."
         },
         "hours": {
           "status": "verified",
           "sourceUrls": [
-            "https://millcovebrewpub.com/menu-3-col/",
+            "https://millcovebrewpub.com/menu/",
             "https://www.graftonconnor.com/"
           ],
-          "observedAt": "2026-10-21T13:10:10.538180+00:00",
+          "observedAt": "2026-11-12T19:55:37.388Z",
           "observation": "Complete owner-published weekly schedule. Kitchen service only; not bar opening hours.",
           "successfulSourceReceipts": [
             {
@@ -7247,10 +7247,10 @@
         "menu": {
           "status": "verified",
           "sourceUrls": [
-            "https://millcovebrewpub.com/menu-3-col/",
+            "https://millcovebrewpub.com/menu/",
             "https://www.graftonconnor.com/"
           ],
-          "observedAt": "2026-10-21T13:10:10.538180+00:00",
+          "observedAt": "2026-11-12T19:55:37.388Z",
           "observation": "Fresh official menu page linked by the location website; a pointer only, no prices or image reuse.",
           "successfulSourceReceipts": [
             {
@@ -7267,15 +7267,15 @@
             }
           ],
           "freshContentReceived": true,
-          "url": "https://millcovebrewpub.com/menu-3-col/"
+          "url": "https://millcovebrewpub.com/menu/"
         },
         "phone": {
           "status": "verified",
           "sourceUrls": [
-            "https://millcovebrewpub.com/menu-3-col/",
+            "https://millcovebrewpub.com/menu/",
             "https://www.graftonconnor.com/"
           ],
-          "observedAt": "2026-10-21T13:10:10.538180+00:00",
+          "observedAt": "2026-11-12T19:55:37.388Z",
           "observation": "Official menu/contact footer identifies the exact location, current public food service and separate kitchen hours.",
           "successfulSourceReceipts": [
             {
@@ -7296,10 +7296,10 @@
         "contact": {
           "status": "verified",
           "sourceUrls": [
-            "https://millcovebrewpub.com/menu-3-col/",
+            "https://millcovebrewpub.com/menu/",
             "https://www.graftonconnor.com/"
           ],
-          "observedAt": "2026-10-21T13:10:10.538180+00:00",
+          "observedAt": "2026-11-12T19:55:37.388Z",
           "observation": "Official menu/contact footer identifies the exact location, current public food service and separate kitchen hours.",
           "successfulSourceReceipts": [
             {
