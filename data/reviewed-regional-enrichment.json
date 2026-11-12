@@ -7225,12 +7225,12 @@
             "https://millcovebrewpub.com/menu/",
             "https://www.graftonconnor.com/"
           ],
-          "observedAt": "2026-11-12T19:55:37.388Z",
+          "observedAt": "2026-11-12T20:17:34.644Z",
           "observation": "Complete owner-published weekly schedule. Kitchen service only; not bar opening hours.",
           "successfulSourceReceipts": [
             {
               "url": "https://millcovebrewpub.com/menu/",
-              "fetchedAt": "2026-11-12T19:55:37.388Z",
+              "fetchedAt": "2026-11-12T20:17:34.644Z",
               "httpStatus": 200,
               "verificationMethod": "browser_visible_official_page",
               "evidence": {
@@ -7238,7 +7238,9 @@
                 "menuHeading": "MENU",
                 "address": "961 Bedford Hwy, Bedford, NS B4A 1A9",
                 "kitchenHours": "Sunday - Thursday: 4 PM - 9 PM; Friday & Saturday: 12 PM - 9 PM"
-              }
+              },
+              "sha256": "1445af663449358a79da35f02c9b321c541f9d64b5813a2472fc596799feb3aa",
+              "digestScope": "browser_dom_outer_html_utf8"
             },
             {
               "url": "https://millcovebrewpub.com/menu-3-col/",
@@ -7262,12 +7264,12 @@
             "https://millcovebrewpub.com/menu/",
             "https://www.graftonconnor.com/"
           ],
-          "observedAt": "2026-11-12T19:55:37.388Z",
+          "observedAt": "2026-11-12T20:17:34.644Z",
           "observation": "Fresh official menu page linked by the location website; a pointer only, no prices or image reuse.",
           "successfulSourceReceipts": [
             {
               "url": "https://millcovebrewpub.com/menu/",
-              "fetchedAt": "2026-11-12T19:55:37.388Z",
+              "fetchedAt": "2026-11-12T20:17:34.644Z",
               "httpStatus": 200,
               "verificationMethod": "browser_visible_official_page",
               "evidence": {
@@ -7275,7 +7277,9 @@
                 "menuHeading": "MENU",
                 "address": "961 Bedford Hwy, Bedford, NS B4A 1A9",
                 "kitchenHours": "Sunday - Thursday: 4 PM - 9 PM; Friday & Saturday: 12 PM - 9 PM"
-              }
+              },
+              "sha256": "1445af663449358a79da35f02c9b321c541f9d64b5813a2472fc596799feb3aa",
+              "digestScope": "browser_dom_outer_html_utf8"
             },
             {
               "url": "https://millcovebrewpub.com/menu-3-col/",
@@ -7299,12 +7303,12 @@
             "https://millcovebrewpub.com/menu/",
             "https://www.graftonconnor.com/"
           ],
-          "observedAt": "2026-11-12T19:55:37.388Z",
+          "observedAt": "2026-11-12T20:17:34.644Z",
           "observation": "Official menu/contact footer identifies the exact location, current public food service and separate kitchen hours.",
           "successfulSourceReceipts": [
             {
               "url": "https://millcovebrewpub.com/menu/",
-              "fetchedAt": "2026-11-12T19:55:37.388Z",
+              "fetchedAt": "2026-11-12T20:17:34.644Z",
               "httpStatus": 200,
               "verificationMethod": "browser_visible_official_page",
               "evidence": {
@@ -7312,7 +7316,9 @@
                 "menuHeading": "MENU",
                 "address": "961 Bedford Hwy, Bedford, NS B4A 1A9",
                 "kitchenHours": "Sunday - Thursday: 4 PM - 9 PM; Friday & Saturday: 12 PM - 9 PM"
-              }
+              },
+              "sha256": "1445af663449358a79da35f02c9b321c541f9d64b5813a2472fc596799feb3aa",
+              "digestScope": "browser_dom_outer_html_utf8"
             },
             {
               "url": "https://millcovebrewpub.com/menu-3-col/",
@@ -7335,12 +7341,12 @@
             "https://millcovebrewpub.com/menu/",
             "https://www.graftonconnor.com/"
           ],
-          "observedAt": "2026-11-12T19:55:37.388Z",
+          "observedAt": "2026-11-12T20:17:34.644Z",
           "observation": "Official menu/contact footer identifies the exact location, current public food service and separate kitchen hours.",
           "successfulSourceReceipts": [
             {
               "url": "https://millcovebrewpub.com/menu/",
-              "fetchedAt": "2026-11-12T19:55:37.388Z",
+              "fetchedAt": "2026-11-12T20:17:34.644Z",
               "httpStatus": 200,
               "verificationMethod": "browser_visible_official_page",
               "evidence": {
@@ -7348,7 +7354,9 @@
                 "menuHeading": "MENU",
                 "address": "961 Bedford Hwy, Bedford, NS B4A 1A9",
                 "kitchenHours": "Sunday - Thursday: 4 PM - 9 PM; Friday & Saturday: 12 PM - 9 PM"
-              }
+              },
+              "sha256": "1445af663449358a79da35f02c9b321c541f9d64b5813a2472fc596799feb3aa",
+              "digestScope": "browser_dom_outer_html_utf8"
             },
             {
               "url": "https://millcovebrewpub.com/menu-3-col/",
