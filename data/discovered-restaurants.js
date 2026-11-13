@@ -9305,7 +9305,7 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     ],
     "vibe": [],
     "qualityScore": null,
-    "freshnessDate": "2026-10-21",
+    "freshnessDate": "2026-11-12",
     "evidenceStatus": "verified",
     "sourceLayer": "local_discovery",
     "address": "961 Bedford Highway, Bedford, NS B4A 1A9",
@@ -9317,21 +9317,35 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
       "coordinates": {
         "status": "unknown",
         "sourceUrls": [
-          "https://millcovebrewpub.com/menu-3-col/",
+          "https://millcovebrewpub.com/menu/",
           "https://www.graftonconnor.com/"
         ],
-        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observedAt": "2026-11-12T19:55:37.388Z",
         "observation": "Not sufficiently verified in this bounded review; no inferred value published."
       },
       "hours": {
         "status": "verified",
         "sourceUrls": [
-          "https://millcovebrewpub.com/menu-3-col/",
+          "https://millcovebrewpub.com/menu/",
           "https://www.graftonconnor.com/"
         ],
-        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observedAt": "2026-11-12T20:17:34.644Z",
         "observation": "Complete owner-published weekly schedule. Kitchen service only; not bar opening hours.",
         "successfulSourceReceipts": [
+          {
+            "url": "https://millcovebrewpub.com/menu/",
+            "fetchedAt": "2026-11-12T20:17:34.644Z",
+            "httpStatus": 200,
+            "verificationMethod": "browser_visible_official_page",
+            "evidence": {
+              "title": "Menu: Wings, Burgers, Tacos & Haddock | Mill Cove Brew Pub",
+              "menuHeading": "MENU",
+              "address": "961 Bedford Hwy, Bedford, NS B4A 1A9",
+              "kitchenHours": "Sunday - Thursday: 4 PM - 9 PM; Friday & Saturday: 12 PM - 9 PM"
+            },
+            "sha256": "1445af663449358a79da35f02c9b321c541f9d64b5813a2472fc596799feb3aa",
+            "digestScope": "browser_dom_outer_html_utf8"
+          },
           {
             "url": "https://millcovebrewpub.com/menu-3-col/",
             "fetchedAt": "2026-10-21T13:01:30.467486+00:00",
@@ -9351,12 +9365,26 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
       "menu": {
         "status": "verified",
         "sourceUrls": [
-          "https://millcovebrewpub.com/menu-3-col/",
+          "https://millcovebrewpub.com/menu/",
           "https://www.graftonconnor.com/"
         ],
-        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observedAt": "2026-11-12T20:17:34.644Z",
         "observation": "Fresh official menu page linked by the location website; a pointer only, no prices or image reuse.",
         "successfulSourceReceipts": [
+          {
+            "url": "https://millcovebrewpub.com/menu/",
+            "fetchedAt": "2026-11-12T20:17:34.644Z",
+            "httpStatus": 200,
+            "verificationMethod": "browser_visible_official_page",
+            "evidence": {
+              "title": "Menu: Wings, Burgers, Tacos & Haddock | Mill Cove Brew Pub",
+              "menuHeading": "MENU",
+              "address": "961 Bedford Hwy, Bedford, NS B4A 1A9",
+              "kitchenHours": "Sunday - Thursday: 4 PM - 9 PM; Friday & Saturday: 12 PM - 9 PM"
+            },
+            "sha256": "1445af663449358a79da35f02c9b321c541f9d64b5813a2472fc596799feb3aa",
+            "digestScope": "browser_dom_outer_html_utf8"
+          },
           {
             "url": "https://millcovebrewpub.com/menu-3-col/",
             "fetchedAt": "2026-10-21T13:01:30.467486+00:00",
@@ -9371,17 +9399,31 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
           }
         ],
         "freshContentReceived": true,
-        "url": "https://millcovebrewpub.com/menu-3-col/"
+        "url": "https://millcovebrewpub.com/menu/"
       },
       "phone": {
         "status": "verified",
         "sourceUrls": [
-          "https://millcovebrewpub.com/menu-3-col/",
+          "https://millcovebrewpub.com/menu/",
           "https://www.graftonconnor.com/"
         ],
-        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observedAt": "2026-11-12T20:17:34.644Z",
         "observation": "Official menu/contact footer identifies the exact location, current public food service and separate kitchen hours.",
         "successfulSourceReceipts": [
+          {
+            "url": "https://millcovebrewpub.com/menu/",
+            "fetchedAt": "2026-11-12T20:17:34.644Z",
+            "httpStatus": 200,
+            "verificationMethod": "browser_visible_official_page",
+            "evidence": {
+              "title": "Menu: Wings, Burgers, Tacos & Haddock | Mill Cove Brew Pub",
+              "menuHeading": "MENU",
+              "address": "961 Bedford Hwy, Bedford, NS B4A 1A9",
+              "kitchenHours": "Sunday - Thursday: 4 PM - 9 PM; Friday & Saturday: 12 PM - 9 PM"
+            },
+            "sha256": "1445af663449358a79da35f02c9b321c541f9d64b5813a2472fc596799feb3aa",
+            "digestScope": "browser_dom_outer_html_utf8"
+          },
           {
             "url": "https://millcovebrewpub.com/menu-3-col/",
             "fetchedAt": "2026-10-21T13:01:30.467486+00:00",
@@ -9400,12 +9442,26 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
       "contact": {
         "status": "verified",
         "sourceUrls": [
-          "https://millcovebrewpub.com/menu-3-col/",
+          "https://millcovebrewpub.com/menu/",
           "https://www.graftonconnor.com/"
         ],
-        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "observedAt": "2026-11-12T20:17:34.644Z",
         "observation": "Official menu/contact footer identifies the exact location, current public food service and separate kitchen hours.",
         "successfulSourceReceipts": [
+          {
+            "url": "https://millcovebrewpub.com/menu/",
+            "fetchedAt": "2026-11-12T20:17:34.644Z",
+            "httpStatus": 200,
+            "verificationMethod": "browser_visible_official_page",
+            "evidence": {
+              "title": "Menu: Wings, Burgers, Tacos & Haddock | Mill Cove Brew Pub",
+              "menuHeading": "MENU",
+              "address": "961 Bedford Hwy, Bedford, NS B4A 1A9",
+              "kitchenHours": "Sunday - Thursday: 4 PM - 9 PM; Friday & Saturday: 12 PM - 9 PM"
+            },
+            "sha256": "1445af663449358a79da35f02c9b321c541f9d64b5813a2472fc596799feb3aa",
+            "digestScope": "browser_dom_outer_html_utf8"
+          },
           {
             "url": "https://millcovebrewpub.com/menu-3-col/",
             "fetchedAt": "2026-10-21T13:01:30.467486+00:00",
@@ -9422,7 +9478,7 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
         "freshContentReceived": true
       }
     },
-    "openingHoursVerifiedAt": "2026-10-21T13:10:10.538180+00:00",
+    "openingHoursVerifiedAt": "2026-11-12T20:17:34.644Z",
     "hoursValidThrough": null,
     "hoursScope": "kitchen",
     "website": "https://millcovebrewpub.com/",
@@ -9430,10 +9486,10 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "operatingStatus": "active",
     "operatingStatusEvidence": {
       "claim": "Official menu/contact footer identifies the exact location, current public food service and separate kitchen hours.",
-      "sourceUrl": "https://millcovebrewpub.com/menu-3-col/",
+      "sourceUrl": "https://millcovebrewpub.com/menu/",
       "location": "961 Bedford Highway, Bedford, NS B4A 1A9",
-      "observedAt": "2026-10-21T13:10:10.538180+00:00",
-      "verifiedAt": "2026-10-21T13:10:10.538180+00:00",
+      "observedAt": "2026-11-12T20:17:34.644Z",
+      "verifiedAt": "2026-11-12T20:17:34.644Z",
       "reviewState": "verified"
     },
     "seasonality": null,
@@ -9442,10 +9498,10 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
       "claim": "Official website identifies Grafton Connor Group and the local group site lists Mill Cove Brew Pub among its operated venues.",
       "confidence": "reviewed local-business evidence",
       "sourceUrls": [
-        "https://millcovebrewpub.com/menu-3-col/",
+        "https://millcovebrewpub.com/menu/",
         "https://www.graftonconnor.com/"
       ],
-      "observedAt": "2026-10-21T13:10:10.538180+00:00"
+      "observedAt": "2026-11-12T20:17:34.644Z"
     },
     "openingStatus": null,
     "coordinates": null,
@@ -9457,9 +9513,9 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
       {
         "label": "Official location menu",
         "type": "menu",
-        "url": "https://millcovebrewpub.com/menu-3-col/",
+        "url": "https://millcovebrewpub.com/menu/",
         "status": "verified",
-        "observedAt": "2026-10-21T13:01:30.467486+00:00"
+        "observedAt": "2026-11-12T20:17:34.644Z"
       },
       {
         "label": "Reviewed location and local-business source",
