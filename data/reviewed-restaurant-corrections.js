@@ -853,7 +853,7 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
       "observedAt": "2026-10-26T20:25:14Z",
       "reviewedAt": "2026-10-26T20:25:14Z",
       "reviewState": "verified"
-    ,
+    },
     {
       "restaurantId": "apartment-3-south-park",
       "fields": {
