@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedAt": "2026-11-12T20:17:34.644Z",
-  "count": 75,
+  "generatedAt": "2026-11-13T22:02:11.214Z",
+  "count": 76,
   "restaurants": [
     {
       "id": "sakaba-halifax",
@@ -9309,7 +9309,7 @@
       ],
       "vibe": [],
       "qualityScore": null,
-      "freshnessDate": "2026-11-12",
+      "freshnessDate": "2026-10-21",
       "evidenceStatus": "verified",
       "sourceLayer": "local_discovery",
       "address": "961 Bedford Highway, Bedford, NS B4A 1A9",
@@ -9321,35 +9321,21 @@
         "coordinates": {
           "status": "unknown",
           "sourceUrls": [
-            "https://millcovebrewpub.com/menu/",
+            "https://millcovebrewpub.com/menu-3-col/",
             "https://www.graftonconnor.com/"
           ],
-          "observedAt": "2026-11-12T19:55:37.388Z",
+          "observedAt": "2026-10-21T13:10:10.538180+00:00",
           "observation": "Not sufficiently verified in this bounded review; no inferred value published."
         },
         "hours": {
           "status": "verified",
           "sourceUrls": [
-            "https://millcovebrewpub.com/menu/",
+            "https://millcovebrewpub.com/menu-3-col/",
             "https://www.graftonconnor.com/"
           ],
-          "observedAt": "2026-11-12T20:17:34.644Z",
+          "observedAt": "2026-10-21T13:10:10.538180+00:00",
           "observation": "Complete owner-published weekly schedule. Kitchen service only; not bar opening hours.",
           "successfulSourceReceipts": [
-            {
-              "url": "https://millcovebrewpub.com/menu/",
-              "fetchedAt": "2026-11-12T20:17:34.644Z",
-              "httpStatus": 200,
-              "verificationMethod": "browser_visible_official_page",
-              "evidence": {
-                "title": "Menu: Wings, Burgers, Tacos & Haddock | Mill Cove Brew Pub",
-                "menuHeading": "MENU",
-                "address": "961 Bedford Hwy, Bedford, NS B4A 1A9",
-                "kitchenHours": "Sunday - Thursday: 4 PM - 9 PM; Friday & Saturday: 12 PM - 9 PM"
-              },
-              "sha256": "1445af663449358a79da35f02c9b321c541f9d64b5813a2472fc596799feb3aa",
-              "digestScope": "browser_dom_outer_html_utf8"
-            },
             {
               "url": "https://millcovebrewpub.com/menu-3-col/",
               "fetchedAt": "2026-10-21T13:01:30.467486+00:00",
@@ -9369,26 +9355,12 @@
         "menu": {
           "status": "verified",
           "sourceUrls": [
-            "https://millcovebrewpub.com/menu/",
+            "https://millcovebrewpub.com/menu-3-col/",
             "https://www.graftonconnor.com/"
           ],
-          "observedAt": "2026-11-12T20:17:34.644Z",
+          "observedAt": "2026-10-21T13:10:10.538180+00:00",
           "observation": "Fresh official menu page linked by the location website; a pointer only, no prices or image reuse.",
           "successfulSourceReceipts": [
-            {
-              "url": "https://millcovebrewpub.com/menu/",
-              "fetchedAt": "2026-11-12T20:17:34.644Z",
-              "httpStatus": 200,
-              "verificationMethod": "browser_visible_official_page",
-              "evidence": {
-                "title": "Menu: Wings, Burgers, Tacos & Haddock | Mill Cove Brew Pub",
-                "menuHeading": "MENU",
-                "address": "961 Bedford Hwy, Bedford, NS B4A 1A9",
-                "kitchenHours": "Sunday - Thursday: 4 PM - 9 PM; Friday & Saturday: 12 PM - 9 PM"
-              },
-              "sha256": "1445af663449358a79da35f02c9b321c541f9d64b5813a2472fc596799feb3aa",
-              "digestScope": "browser_dom_outer_html_utf8"
-            },
             {
               "url": "https://millcovebrewpub.com/menu-3-col/",
               "fetchedAt": "2026-10-21T13:01:30.467486+00:00",
@@ -9403,31 +9375,17 @@
             }
           ],
           "freshContentReceived": true,
-          "url": "https://millcovebrewpub.com/menu/"
+          "url": "https://millcovebrewpub.com/menu-3-col/"
         },
         "phone": {
           "status": "verified",
           "sourceUrls": [
-            "https://millcovebrewpub.com/menu/",
+            "https://millcovebrewpub.com/menu-3-col/",
             "https://www.graftonconnor.com/"
           ],
-          "observedAt": "2026-11-12T20:17:34.644Z",
+          "observedAt": "2026-10-21T13:10:10.538180+00:00",
           "observation": "Official menu/contact footer identifies the exact location, current public food service and separate kitchen hours.",
           "successfulSourceReceipts": [
-            {
-              "url": "https://millcovebrewpub.com/menu/",
-              "fetchedAt": "2026-11-12T20:17:34.644Z",
-              "httpStatus": 200,
-              "verificationMethod": "browser_visible_official_page",
-              "evidence": {
-                "title": "Menu: Wings, Burgers, Tacos & Haddock | Mill Cove Brew Pub",
-                "menuHeading": "MENU",
-                "address": "961 Bedford Hwy, Bedford, NS B4A 1A9",
-                "kitchenHours": "Sunday - Thursday: 4 PM - 9 PM; Friday & Saturday: 12 PM - 9 PM"
-              },
-              "sha256": "1445af663449358a79da35f02c9b321c541f9d64b5813a2472fc596799feb3aa",
-              "digestScope": "browser_dom_outer_html_utf8"
-            },
             {
               "url": "https://millcovebrewpub.com/menu-3-col/",
               "fetchedAt": "2026-10-21T13:01:30.467486+00:00",
@@ -9446,26 +9404,12 @@
         "contact": {
           "status": "verified",
           "sourceUrls": [
-            "https://millcovebrewpub.com/menu/",
+            "https://millcovebrewpub.com/menu-3-col/",
             "https://www.graftonconnor.com/"
           ],
-          "observedAt": "2026-11-12T20:17:34.644Z",
+          "observedAt": "2026-10-21T13:10:10.538180+00:00",
           "observation": "Official menu/contact footer identifies the exact location, current public food service and separate kitchen hours.",
           "successfulSourceReceipts": [
-            {
-              "url": "https://millcovebrewpub.com/menu/",
-              "fetchedAt": "2026-11-12T20:17:34.644Z",
-              "httpStatus": 200,
-              "verificationMethod": "browser_visible_official_page",
-              "evidence": {
-                "title": "Menu: Wings, Burgers, Tacos & Haddock | Mill Cove Brew Pub",
-                "menuHeading": "MENU",
-                "address": "961 Bedford Hwy, Bedford, NS B4A 1A9",
-                "kitchenHours": "Sunday - Thursday: 4 PM - 9 PM; Friday & Saturday: 12 PM - 9 PM"
-              },
-              "sha256": "1445af663449358a79da35f02c9b321c541f9d64b5813a2472fc596799feb3aa",
-              "digestScope": "browser_dom_outer_html_utf8"
-            },
             {
               "url": "https://millcovebrewpub.com/menu-3-col/",
               "fetchedAt": "2026-10-21T13:01:30.467486+00:00",
@@ -9482,7 +9426,7 @@
           "freshContentReceived": true
         }
       },
-      "openingHoursVerifiedAt": "2026-11-12T20:17:34.644Z",
+      "openingHoursVerifiedAt": "2026-10-21T13:10:10.538180+00:00",
       "hoursValidThrough": null,
       "hoursScope": "kitchen",
       "website": "https://millcovebrewpub.com/",
@@ -9490,10 +9434,10 @@
       "operatingStatus": "active",
       "operatingStatusEvidence": {
         "claim": "Official menu/contact footer identifies the exact location, current public food service and separate kitchen hours.",
-        "sourceUrl": "https://millcovebrewpub.com/menu/",
+        "sourceUrl": "https://millcovebrewpub.com/menu-3-col/",
         "location": "961 Bedford Highway, Bedford, NS B4A 1A9",
-        "observedAt": "2026-11-12T20:17:34.644Z",
-        "verifiedAt": "2026-11-12T20:17:34.644Z",
+        "observedAt": "2026-10-21T13:10:10.538180+00:00",
+        "verifiedAt": "2026-10-21T13:10:10.538180+00:00",
         "reviewState": "verified"
       },
       "seasonality": null,
@@ -9502,10 +9446,10 @@
         "claim": "Official website identifies Grafton Connor Group and the local group site lists Mill Cove Brew Pub among its operated venues.",
         "confidence": "reviewed local-business evidence",
         "sourceUrls": [
-          "https://millcovebrewpub.com/menu/",
+          "https://millcovebrewpub.com/menu-3-col/",
           "https://www.graftonconnor.com/"
         ],
-        "observedAt": "2026-11-12T20:17:34.644Z"
+        "observedAt": "2026-10-21T13:10:10.538180+00:00"
       },
       "openingStatus": null,
       "coordinates": null,
@@ -9517,9 +9461,9 @@
         {
           "label": "Official location menu",
           "type": "menu",
-          "url": "https://millcovebrewpub.com/menu/",
+          "url": "https://millcovebrewpub.com/menu-3-col/",
           "status": "verified",
-          "observedAt": "2026-11-12T20:17:34.644Z"
+          "observedAt": "2026-10-21T13:01:30.467486+00:00"
         },
         {
           "label": "Reviewed location and local-business source",
@@ -10950,6 +10894,127 @@
         "approvedByOverride": true,
         "sourceLeadObserved": false,
         "reviewNote": "Fresh site HTML is JS shell; linked JS bundle contains exact facts. Do not import Est2020 (conflicts reported2025 opening). Not Saj House Alma Crescent. Hours are explicit rendered contact/footer strings in the linked public application bundle; menu is a location-specific pointer, not copied image/prices."
+      }
+    },
+    {
+      "id": "tartan-coffee-south-park",
+      "name": "Tartan Coffee Company",
+      "neighborhood": "South End",
+      "category": "Cafe",
+      "cuisines": [],
+      "vibe": [],
+      "qualityScore": null,
+      "freshnessDate": "2026-11-13",
+      "evidenceStatus": "verified",
+      "sourceLayer": "local_discovery",
+      "address": "1565 South Park Street, Unit 2, Halifax, NS",
+      "phone": null,
+      "email": null,
+      "contactUrl": null,
+      "contactScope": null,
+      "fieldEvidence": {
+        "coordinates": {
+          "status": "unknown",
+          "sourceUrls": [
+            "https://www.instagram.com/p/DfBSfUVgoiP/",
+            "https://halifax.retales.ca/2026/11/10043/"
+          ],
+          "observedAt": "2026-11-13T21:16:01Z",
+          "observation": "No coordinate is transferred from the predecessor; no exact owner pin was independently reviewed."
+        },
+        "hours": {
+          "status": "unknown",
+          "sourceUrls": [
+            "https://www.instagram.com/p/DfBSfUVgoiP/",
+            "https://www.tartancoffee.ca/"
+          ],
+          "observedAt": "2026-11-13T21:16:01Z",
+          "observation": "No complete current weekly schedule was verified; predecessor hours are not transferred."
+        },
+        "menu": {
+          "status": "unknown",
+          "sourceUrls": [
+            "https://www.tartancoffee.ca/"
+          ],
+          "observedAt": "2026-11-13T21:16:01Z",
+          "observation": "No current location-specific menu was verified."
+        },
+        "phone": {
+          "status": "unknown",
+          "sourceUrls": [
+            "https://www.tartancoffee.ca/"
+          ],
+          "observedAt": "2026-11-13T21:16:01Z",
+          "observation": "No current location-specific phone was verified."
+        }
+      },
+      "openingHoursVerifiedAt": null,
+      "hoursValidThrough": null,
+      "hoursScope": null,
+      "website": "https://www.tartancoffee.ca/",
+      "openingHours": null,
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The owner opening announcement says the doors opened October 28 after four years of trailer service; dated Halifax opening coverage confirms the current 1565 South Park Street location.",
+        "sourceUrl": "https://www.instagram.com/p/DfBSfUVgoiP/",
+        "location": "1565 South Park Street, Unit 2, Halifax, NS",
+        "observedAt": "2026-11-13T21:16:01Z",
+        "verifiedAt": "2026-11-13T21:16:01Z",
+        "reviewState": "verified"
+      },
+      "seasonality": null,
+      "lifecycleSchedule": null,
+      "ownershipEvidence": {
+        "claim": "The owner announcement describes the same locally operated coffee company moving from its four-year Dingle trailer operation into this café.",
+        "confidence": "reviewed local-business evidence",
+        "sourceUrls": [
+          "https://www.instagram.com/p/DfBSfUVgoiP/",
+          "https://www.tartancoffee.ca/",
+          "https://halifax.retales.ca/2026/10/cafe-talk/",
+          "https://halifax.retales.ca/2026/11/10043/"
+        ],
+        "observedAt": "2026-11-13T21:16:01Z"
+      },
+      "openingStatus": null,
+      "coordinates": null,
+      "socialProfiles": [],
+      "summary": "Local independent coffee company now operating at 1565 South Park Street after four years of seasonal trailer service at the Dingle.",
+      "specials": [],
+      "events": [],
+      "sources": [
+        {
+          "label": "Owner opening announcement",
+          "type": "social_public",
+          "url": "https://www.instagram.com/p/DfBSfUVgoiP/",
+          "status": "verified",
+          "observedAt": "2026-11-13T21:16:01Z"
+        },
+        {
+          "label": "Dated local closure and succession report",
+          "type": "local_opening_watch",
+          "url": "https://halifax.retales.ca/2026/10/cafe-talk/",
+          "status": "verified",
+          "observedAt": "2026-11-13T21:16:01Z"
+        },
+        {
+          "label": "Dated local opening report",
+          "type": "local_opening_watch",
+          "url": "https://halifax.retales.ca/2026/11/10043/",
+          "status": "verified",
+          "observedAt": "2026-11-13T21:16:01Z"
+        },
+        {
+          "label": "Owner website",
+          "type": "restaurant_site",
+          "url": "https://www.tartancoffee.ca/",
+          "status": "verified",
+          "observedAt": "2026-11-13T21:16:01Z"
+        }
+      ],
+      "discoveryReview": {
+        "approvedByOverride": true,
+        "sourceLeadObserved": false,
+        "reviewNote": "Current identity and exact civic location are supported by the owner opening announcement and two dated local reports. The predecessor site still lists stale South Park details, so its historical source record is retained but corrected separately as replaced. No hours, phone, coordinates, menu, offers, events, media rights, or exact predecessor closure date are inferred."
       }
     }
   ]
