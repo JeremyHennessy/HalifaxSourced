@@ -1,6 +1,6 @@
 window.HALIFAX_RESTAURANT_CORRECTIONS = {
   "version": 3,
-  "reviewedAt": "2026-11-02",
+  "reviewedAt": "2026-11-13",
   "policy": "Reviewed location evidence overrides stale imports; observation dates are retained and uncertain coordinates, hours, successor identities and closure day remain unknown.",
   "records": [
     {
@@ -852,6 +852,19 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
       "claim": "The Coast explicitly identifies Alex Oh Sushi & Rolls as closed. Pho No.1's current owner site and the Nova Scotia food-inspection registry identify the current restaurant at the exact 1589 Dresden Row address. Archive the stale OpenStreetMap identity as replaced while retaining its source history; the closure and replacement dates remain unknown, and the predecessor coordinate is not transferred to Pho No.1.",
       "observedAt": "2026-10-26T20:25:14Z",
       "reviewedAt": "2026-10-26T20:25:14Z",
+      "reviewState": "verified"
+    },
+    {
+      "restaurantId": "apartment-3-south-park",
+      "fields": {
+        "operatingStatus": "replaced",
+        "openingHours": null,
+        "successorId": "tartan-coffee-south-park"
+      },
+      "sourceUrl": "https://www.instagram.com/p/DfBSfUVgoiP/",
+      "claim": "Tartan Coffee Company's owner opening announcement identifies its October 28 opening after four years of trailer service. Dated Halifax opening coverage places Tartan at the exact 1565 South Park Street café, and the October 3 transition report explicitly states Apartment 3 closed its South Park location. Archive the stale Apartment 3 South Park identity as replaced while retaining its source history; its Lower Sackville location remains active. The exact predecessor closure date is unknown and is not invented, and predecessor hours, coordinates, contact details, menus, events and media rights are not transferred to Tartan.",
+      "observedAt": "2026-11-13T21:16:01Z",
+      "reviewedAt": "2026-11-13T21:16:01Z",
       "reviewState": "verified"
     }
   ],
