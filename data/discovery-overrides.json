@@ -9945,6 +9945,113 @@
       "openingHoursVerifiedAt": "2026-10-21T13:10:10.538180+00:00",
       "hoursScope": "restaurant",
       "hoursValidThrough": null
+    },
+    {
+      "id": "tartan-coffee-south-park",
+      "name": "Tartan Coffee Company",
+      "neighborhood": "South End",
+      "category": "Cafe",
+      "cuisines": [],
+      "vibe": [],
+      "freshnessDate": "2026-11-13",
+      "evidenceStatus": "verified",
+      "address": "1565 South Park Street, Unit 2, Halifax, NS",
+      "phone": null,
+      "website": "https://www.tartancoffee.ca/",
+      "openingHours": null,
+      "openingStatus": null,
+      "coordinates": null,
+      "operatingStatus": "active",
+      "seasonality": null,
+      "specials": [],
+      "events": [],
+      "summary": "Local independent coffee company now operating at 1565 South Park Street after four years of seasonal trailer service at the Dingle.",
+      "operatingStatusEvidence": {
+        "claim": "The owner opening announcement says the doors opened October 28 after four years of trailer service; dated Halifax opening coverage confirms the current 1565 South Park Street location.",
+        "sourceUrl": "https://www.instagram.com/p/DfBSfUVgoiP/",
+        "location": "1565 South Park Street, Unit 2, Halifax, NS",
+        "observedAt": "2026-11-13T21:16:01Z",
+        "verifiedAt": "2026-11-13T21:16:01Z",
+        "reviewState": "verified"
+      },
+      "ownershipEvidence": {
+        "claim": "The owner announcement describes the same locally operated coffee company moving from its four-year Dingle trailer operation into this café.",
+        "confidence": "reviewed local-business evidence",
+        "sourceUrls": [
+          "https://www.instagram.com/p/DfBSfUVgoiP/",
+          "https://www.tartancoffee.ca/",
+          "https://halifax.retales.ca/2026/10/cafe-talk/",
+          "https://halifax.retales.ca/2026/11/10043/"
+        ],
+        "observedAt": "2026-11-13T21:16:01Z"
+      },
+      "sources": [
+        {
+          "label": "Owner opening announcement",
+          "type": "social_public",
+          "url": "https://www.instagram.com/p/DfBSfUVgoiP/",
+          "status": "verified",
+          "observedAt": "2026-11-13T21:16:01Z"
+        },
+        {
+          "label": "Dated local closure and succession report",
+          "type": "local_opening_watch",
+          "url": "https://halifax.retales.ca/2026/10/cafe-talk/",
+          "status": "verified",
+          "observedAt": "2026-11-13T21:16:01Z"
+        },
+        {
+          "label": "Dated local opening report",
+          "type": "local_opening_watch",
+          "url": "https://halifax.retales.ca/2026/11/10043/",
+          "status": "verified",
+          "observedAt": "2026-11-13T21:16:01Z"
+        },
+        {
+          "label": "Owner website",
+          "type": "restaurant_site",
+          "url": "https://www.tartancoffee.ca/",
+          "status": "verified",
+          "observedAt": "2026-11-13T21:16:01Z"
+        }
+      ],
+      "fieldEvidence": {
+        "coordinates": {
+          "status": "unknown",
+          "sourceUrls": [
+            "https://www.instagram.com/p/DfBSfUVgoiP/",
+            "https://halifax.retales.ca/2026/11/10043/"
+          ],
+          "observedAt": "2026-11-13T21:16:01Z",
+          "observation": "No coordinate is transferred from the predecessor; no exact owner pin was independently reviewed."
+        },
+        "hours": {
+          "status": "unknown",
+          "sourceUrls": [
+            "https://www.instagram.com/p/DfBSfUVgoiP/",
+            "https://www.tartancoffee.ca/"
+          ],
+          "observedAt": "2026-11-13T21:16:01Z",
+          "observation": "No complete current weekly schedule was verified; predecessor hours are not transferred."
+        },
+        "menu": {
+          "status": "unknown",
+          "sourceUrls": [
+            "https://www.tartancoffee.ca/"
+          ],
+          "observedAt": "2026-11-13T21:16:01Z",
+          "observation": "No current location-specific menu was verified."
+        },
+        "phone": {
+          "status": "unknown",
+          "sourceUrls": [
+            "https://www.tartancoffee.ca/"
+          ],
+          "observedAt": "2026-11-13T21:16:01Z",
+          "observation": "No current location-specific phone was verified."
+        }
+      },
+      "reviewNote": "Current identity and exact civic location are supported by the owner opening announcement and two dated local reports. The predecessor site still lists stale South Park details, so its historical source record is retained but corrected separately as replaced. No hours, phone, coordinates, menu, offers, events, media rights, or exact predecessor closure date are inferred."
     }
   ]
 }
