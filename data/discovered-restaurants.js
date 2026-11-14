@@ -11182,5 +11182,134 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
       "sourceLeadObserved": false,
       "reviewNote": "Owner and Downtown Dartmouth sources match the active identity, Suite 102 civic address and phone; Tourism Nova Scotia independently supports local ownership. No coordinates, complete weekly hours, menu copy, social activity, offers, events, image rights, postal-code inference or predecessor relationship is published."
     }
+  },
+  {
+    "id": "the-dahlia-by-jukai-kings-wharf",
+    "name": "The Dahlia by Jukai",
+    "neighborhood": "Dartmouth",
+    "category": "Restaurant",
+    "cuisines": [
+      "Asian fusion",
+      "Japanese",
+      "Pub"
+    ],
+    "vibe": [],
+    "freshnessDate": "2026-11-13",
+    "evidenceStatus": "verified",
+    "address": "15 King’s Wharf Place, Unit 104, Dartmouth, NS",
+    "phone": "902-405-2003",
+    "website": null,
+    "openingHours": null,
+    "openingStatus": null,
+    "coordinates": null,
+    "operatingStatus": "active",
+    "seasonality": null,
+    "specials": [],
+    "events": [],
+    "summary": "Local Asian-inspired pub and sushi restaurant at King’s Wharf in Downtown Dartmouth.",
+    "operatingStatusEvidence": {
+      "claim": "The current Downtown Dartmouth, Restaurant Association of Nova Scotia and Discover Halifax listings identify the same active restaurant at 15 King’s Wharf Place, Unit 104.",
+      "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
+      "location": "15 King’s Wharf Place, Unit 104, Dartmouth, NS",
+      "observedAt": "2026-11-14T02:18:16Z",
+      "verifiedAt": "2026-11-14T02:18:16Z",
+      "reviewState": "verified"
+    },
+    "ownershipEvidence": {
+      "claim": "The Restaurant Association of Nova Scotia and current local directories identify the Dartmouth business, and the Nova Scotia Royal Gazette records THE DAHLIA BY JUKAI LTD. The reviewed evidence supports a local operator rather than a national franchise; beneficial ownership was not independently checked.",
+      "confidence": "reviewed local-business evidence",
+      "sourceUrls": [
+        "https://rans.ca/restaurants/the-dahlia-by-jukai/",
+        "https://www.downtowndartmouth.ca/fooddrink",
+        "https://novascotia.ca/just/regulations/rg1/RG1-2025-01-22.pdf"
+      ],
+      "observedAt": "2026-11-14T02:18:16Z"
+    },
+    "sources": [
+      {
+        "label": "Downtown Dartmouth directory",
+        "type": "business_directory",
+        "url": "https://www.downtowndartmouth.ca/fooddrink",
+        "status": "verified",
+        "observedAt": "2026-11-14T02:18:16Z"
+      },
+      {
+        "label": "Restaurant Association of Nova Scotia listing",
+        "type": "regional_review_source",
+        "url": "https://rans.ca/restaurants/the-dahlia-by-jukai/",
+        "status": "verified",
+        "observedAt": "2026-11-14T02:18:16Z"
+      },
+      {
+        "label": "Discover Halifax listing",
+        "type": "tourism_directory",
+        "url": "https://discoverhalifaxns.com/listings/the-dahlia-by-jukai/",
+        "status": "verified",
+        "observedAt": "2026-11-14T02:18:16Z"
+      }
+    ],
+    "fieldEvidence": {
+      "coordinates": {
+        "status": "unknown",
+        "sourceUrls": [
+          "https://www.downtowndartmouth.ca/fooddrink",
+          "https://rans.ca/restaurants/the-dahlia-by-jukai/",
+          "https://discoverhalifaxns.com/listings/the-dahlia-by-jukai/"
+        ],
+        "observedAt": "2026-11-14T02:18:16Z",
+        "observation": "No exact owner coordinate pair was independently reviewed; no nearby King’s Wharf coordinate is transferred."
+      },
+      "hours": {
+        "status": "unknown",
+        "sourceUrls": [
+          "https://www.downtowndartmouth.ca/fooddrink",
+          "https://rans.ca/restaurants/the-dahlia-by-jukai/",
+          "https://discoverhalifaxns.com/listings/the-dahlia-by-jukai/"
+        ],
+        "observedAt": "2026-11-14T02:18:16Z",
+        "observation": "No current owner-published complete weekly schedule was reachable; conflicting third-party hours are not published."
+      },
+      "menu": {
+        "status": "unknown",
+        "sourceUrls": [
+          "https://discoverhalifaxns.com/listings/the-dahlia-by-jukai/"
+        ],
+        "observedAt": "2026-11-14T02:18:16Z",
+        "observation": "Current local listings describe the restaurant’s food scope, but no stable owner menu URL or owner menu snapshot was independently reviewed."
+      },
+      "phone": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.downtowndartmouth.ca/fooddrink",
+          "https://discoverhalifaxns.com/listings/the-dahlia-by-jukai/"
+        ],
+        "observedAt": "2026-11-14T02:18:16Z",
+        "observation": "Downtown Dartmouth and Discover Halifax both publish 902-405-2003; a conflicting association phone is retained only as source history and not used."
+      },
+      "website": {
+        "status": "unknown",
+        "sourceUrls": [
+          "https://www.downtowndartmouth.ca/fooddrink",
+          "https://rans.ca/restaurants/the-dahlia-by-jukai/"
+        ],
+        "observedAt": "2026-11-14T02:18:16Z",
+        "observation": "The directory-linked thedahliapub.ca endpoint returned HTTP 404, while the association-linked alternate domain exposed no independently readable owner content; no website is published."
+      }
+    },
+    "qualityScore": null,
+    "sourceLayer": "local_discovery",
+    "email": null,
+    "contactUrl": null,
+    "contactScope": null,
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
+    "lifecycleSchedule": null,
+    "socialProfiles": [],
+    "discoveryReview": {
+      "approvedByOverride": true,
+      "sourceLeadObserved": false,
+      "reviewNote": "Three current local listings agree on the active restaurant identity and exact unit; two agree on phone 902-405-2003. The broken/unreadable owner-domain candidates are withheld. No coordinates, complete weekly hours, menu URL, social activity, offers, events, media rights, or predecessor relationship is published."
+    }
   }
 ];
