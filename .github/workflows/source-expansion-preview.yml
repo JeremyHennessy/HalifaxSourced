@@ -126,6 +126,11 @@ jobs:
         with:
           node-version: 22
 
+      - name: Build current reviewed catalog
+        run: |
+          node scripts/export-catalog.mjs
+          node scripts/check-local-restaurant-policy.mjs
+
       - name: Preserve previously verified first-party relationships
         run: cp data/build/first-party-sources.json /tmp/first-party-sources.previous.json
 
@@ -216,11 +221,6 @@ jobs:
         run: |
           node scripts/build-recent-social-posts.mjs
           node scripts/build-reviewed-social-posts.mjs
-
-      - name: Build local restaurant catalog
-        run: |
-          node scripts/export-catalog.mjs
-          node scripts/check-local-restaurant-policy.mjs
 
       - name: Discover source-backed thumbnail candidates
         env:
