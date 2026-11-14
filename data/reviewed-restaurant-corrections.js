@@ -2673,6 +2673,7 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
       "address": "1480 Queen Street, Halifax, NS B3J 0L2",
       "neighborhood": "Spring Garden",
       "website": "https://www.viacondotti.ca/",
+      "menuUrl": "https://www.viacondotti.ca/menus/",
       "phone": "902-444-1860",
       "openingHours": null,
       "email": null,
@@ -2697,6 +2698,13 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
           "label": "Reviewed official location",
           "url": "https://www.viacondotti.ca/",
           "observedAt": "2026-10-19",
+          "status": "verified"
+        },
+        {
+          "type": "menu",
+          "label": "Official menu",
+          "url": "https://www.viacondotti.ca/menus/",
+          "observedAt": "2026-11-14T22:21:59Z",
           "status": "verified"
         }
       ],
