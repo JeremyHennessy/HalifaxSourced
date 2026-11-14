@@ -5,19 +5,18 @@ import { preservePublishedEventIds } from './lib/canonical-event-dedupe.mjs';
 import { reconcileFutureEventLosses } from './lib/event-refresh-safety.mjs';
 
 const archive = JSON.parse(await readFile(new URL('../data/quarantine/city-event-lifecycle-20261028.json', import.meta.url), 'utf8'));
-const current = JSON.parse(await readFile(new URL('../data/build/city-events.json', import.meta.url), 'utf8'));
 const reviewed = archive.records.map(entry => entry.rawAcceptedRecord);
-assert.equal(validateReviewedEventQuarantine(archive).size, 6);
-assert.equal(reviewed.length, 6);
+assert.equal(validateReviewedEventQuarantine(archive).size, 32);
+assert.equal(reviewed.length, 32);
 for (const entry of archive.records) assert.equal(eventRecordSha256(entry.rawAcceptedRecord), entry.expectedRawRecordCanonicalSha256);
 
 const projection = applyReviewedEventQuarantines(reviewed, [archive]);
 assert.equal(projection.blocked, false);
 assert.equal(projection.events.length, 0);
-assert.equal(projection.receipt.quarantinedCount, 6);
+assert.equal(projection.receipt.quarantinedCount, 32);
 assert.deepEqual(projection.receipt.quarantinedBySource, {
-  'halifax-public-libraries': 2,
-  'bedford-library-events': 4
+  'halifax-public-libraries': 19,
+  'bedford-library-events': 13
 });
 const changed = { ...reviewed[0], title: reviewed[0].title + ' changed' };
 const mismatch = applyReviewedEventQuarantines([changed], [archive]);
@@ -25,8 +24,22 @@ assert.equal(mismatch.blocked, true);
 assert.deepEqual(mismatch.events, [changed]);
 assert.equal(mismatch.receipt.mismatchCount, 1);
 
-const publishedCarleton = current.events.find(event => event.id === 'the-carleton-2d6665b8890674d0');
-assert(publishedCarleton);
+// Historical identity fixture: the accepted event is now expired and can
+// legitimately leave the current snapshot, but its reviewed alias migration
+// must remain covered without pinning this test to an old generated dataset.
+const publishedCarleton = {
+  id: 'the-carleton-2d6665b8890674d0',
+  title: 'SOLD OUT: AfterWords Literary Festival – Dodge City: In Conversation',
+  duplicateEventIds: ['the-carleton-b0bd3f0b147abd21'],
+  startAt: '2026-11-01T20:00:00.000Z',
+  endAt: '2026-11-01T22:00:00.000Z',
+  venueName: 'The Carleton',
+  eventUrl: 'https://www.thecarleton.ca/events/afterwords-dodge-city-nov1/',
+  sourceUrl: 'https://www.thecarleton.ca/events/afterwords-dodge-city-nov1/',
+  sourceId: 'the-carleton',
+  sourceKind: 'official_venue_calendar',
+  observedAt: '2026-10-30T05:56:24.328Z'
+};
 // Keep this as the historical pre-status record even after the accepted
 // snapshot itself has adopted the publisher's SOLD OUT title.
 const previousCarleton = {
@@ -66,7 +79,7 @@ assert.equal(refreshed.blocked, false);
 assert.equal(refreshed.heldRemovals.length, 0);
 assert.equal(refreshed.payload.events.length, 1);
 assert.equal(refreshed.payload.events[0].id, previousCarleton.id);
-assert.equal(refreshed.reviewedQuarantine.previous.quarantinedCount, 6);
+assert.equal(refreshed.reviewedQuarantine.previous.quarantinedCount, 32);
 
 const unexpected = { ...reviewed[1], id: 'unreviewed-future-omission' };
 const held = reconcileFutureEventLosses({ events: [], sourceStats: [{ sourceId: unexpected.sourceId, status: 'ok', eventCount: 1 }] }, { events: [unexpected] }, {
@@ -76,4 +89,4 @@ const held = reconcileFutureEventLosses({ events: [], sourceStats: [{ sourceId: 
 assert.equal(held.blocked, true);
 assert.equal(held.heldRemovals[0].eventId, unexpected.id);
 
-console.log('Reviewed event lifecycle passed: six exact lifecycle exclusions, immutable raw evidence, one-to-one Carleton title-status identity migration, and unrelated omissions still fail closed.');
+console.log('Reviewed event lifecycle passed: 32 exact lifecycle exclusions, immutable raw evidence, one-to-one Carleton title-status identity migration, and unrelated omissions still fail closed.');
