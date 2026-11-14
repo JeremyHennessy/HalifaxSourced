@@ -155,6 +155,9 @@ jobs:
         with:
           node-version: 22
 
+      - name: Build current reviewed catalog
+        run: node scripts/export-catalog.mjs
+
       - name: Preserve previously verified first-party relationships
         run: cp data/build/first-party-sources.json /tmp/first-party-sources.previous.json
 
