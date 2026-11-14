@@ -86,6 +86,8 @@ assert.equal(app.find(record => record.id === 'osm-node-11552069056-sushi-cove')
 for (const records of [app, catalog.restaurants]) {
   const sushi = records.find(record => record.id === 'sushi-square-scotia-square');
   assert.equal(sushi.operatingStatus, 'active');
+  assert.equal(sushi.openingHours, 'Mo-Sa 11:00-20:00; Su closed', 'Use the exact-location Scotia Square tenant schedule, not the owner-site lunch typo');
+  assert(sushi.sources.some(source => source.type === 'official_reviewed_correction' && source.url === 'https://scotiasquare.com/individual-hours' && source.observedAt === '2026-11-14T20:21:51.188Z'));
   assert.equal(sushi.website, records === app ? null : 'https://sushisquare.ca/', 'Hide the unavailable homepage in browser state while retaining catalog history');
   assert.equal((sushi.menuLinks || []).length, 0, 'Historical enrichment must not resurrect the confirmed broken menu');
   assert(!(sushi.sources || []).some(source => source.type === 'menu'));
