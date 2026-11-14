@@ -2,7 +2,7 @@
 
 window.HALIFAX_CITY_EVENT_ADDITIONS = JSON.parse(`{
   "version": 1,
-  "generatedAt": "2026-11-05T20:27:17.144Z",
+  "generatedAt": "2026-11-14T18:17:02.437Z",
   "policy": "Curated city-event additions are source-backed records used when current official or local calendars have not yet been promoted into the primary city-events build.",
   "sources": [
     {
@@ -111,6 +111,12 @@ window.HALIFAX_CITY_EVENT_ADDITIONS = JSON.parse(`{
       "sourceId": "halifax-convention-centre",
       "sourceName": "Halifax Convention Centre",
       "sourceUrl": "https://www.halifaxconventioncentre.com/Events",
+      "authority": "official_primary"
+    },
+    {
+      "sourceId": "halifax-public-libraries",
+      "sourceName": "Halifax Public Libraries",
+      "sourceUrl": "https://www.halifaxpubliclibraries.ca/library-spaces/art-displays/",
       "authority": "official_primary"
     }
   ],
@@ -1125,6 +1131,68 @@ window.HALIFAX_CITY_EVENT_ADDITIONS = JSON.parse(`{
       "duplicateEventIds": [
         "symphony-nova-scotia-321e23eaed780ba1"
       ],
+      "supersedesEventIds": []
+    },
+    {
+      "id": "halifax-public-libraries-6334e0e412bd65c1",
+      "title": "In the Sunroom: Picturing Grief by Susan MacLeod & Savannah Tries",
+      "startAt": "2026-10-11T15:00:00.000Z",
+      "endAt": "2026-11-21T16:00:00.000Z",
+      "allDay": true,
+      "venueName": "Central Library",
+      "address": "5440 Spring Garden Road, Halifax, NS B3J 1E9",
+      "city": "Halifax",
+      "categories": [
+        "Arts",
+        "Community"
+      ],
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": "https://halifax.bibliocommons.com/v2/events/6aaadff3ca248a00291648e2",
+      "sourceUrl": "https://www.halifaxpubliclibraries.ca/library-spaces/art-displays/",
+      "sourceId": "halifax-public-libraries",
+      "sourceName": "Halifax Public Libraries",
+      "sourceKind": "official_library_event",
+      "observedAt": "2026-11-14T18:17:02.437Z",
+      "reviewedAt": "2026-11-14T18:17:02.437Z",
+      "reviewState": "source_observed",
+      "venueId": "central-library-halifax",
+      "organizerId": "halifax-public-libraries",
+      "organizerName": "Halifax Public Libraries",
+      "sourceEvidence": [
+        {
+          "sourceId": "halifax-public-libraries",
+          "sourceName": "Halifax Public Libraries",
+          "sourceUrl": "https://halifax.bibliocommons.com/v2/events/6aaadff3ca248a00291648e2",
+          "basis": "official_primary",
+          "observedAt": "2026-11-14T18:17:02.437Z",
+          "reviewedAt": "2026-11-14T18:17:02.437Z",
+          "observationBasis": "Upper bound of the successful official-page web review window; the source reader reported a crawl age of two weeks rather than an exact fetch timestamp.",
+          "sourceCrawlAgeReported": "2 weeks ago",
+          "sourceCrawlTimestamp": null,
+          "observedFacts": [
+            "The official event page labels the exhibit In Progress and lists an all-day occurrence from October 11 through November 21, 2026.",
+            "The official event page identifies Central Library, The Sunroom on Floor 5, at 5440 Spring Garden Road, Halifax.",
+            "No admission price was asserted."
+          ]
+        },
+        {
+          "sourceId": "halifax-public-libraries",
+          "sourceName": "Halifax Public Libraries",
+          "sourceUrl": "https://www.halifaxpubliclibraries.ca/library-spaces/art-displays/",
+          "basis": "official_primary",
+          "observedAt": "2026-11-14T18:17:02.437Z",
+          "reviewedAt": "2026-11-14T18:17:02.437Z",
+          "observationBasis": "Upper bound of the successful official-page web review window; the source reader reported a crawl age of one month rather than an exact fetch timestamp.",
+          "sourceCrawlAgeReported": "last month",
+          "sourceCrawlTimestamp": null,
+          "observedFacts": [
+            "The official Art Displays page lists Picturing Grief by Susan MacLeod and Savannah Tries under Current exhibits.",
+            "The official page gives the display period as October 11 through November 21, 2026 at The Sunroom at Central Library."
+          ]
+        }
+      ],
+      "alternateSources": [],
       "supersedesEventIds": []
     }
   ]
