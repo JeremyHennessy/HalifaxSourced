@@ -1,8 +1,19 @@
 window.HALIFAX_RESTAURANT_CORRECTIONS = {
   "version": 3,
-  "reviewedAt": "2026-11-13",
+  "reviewedAt": "2026-11-14",
   "policy": "Reviewed location evidence overrides stale imports; observation dates are retained and uncertain coordinates, hours, successor identities and closure day remain unknown.",
   "records": [
+    {
+      "restaurantId": "sushi-square-scotia-square",
+      "fields": {
+        "openingHours": "Mo-Sa 11:00-20:00; Su closed"
+      },
+      "sourceUrl": "https://scotiasquare.com/individual-hours",
+      "claim": "The current Scotia Square tenant-hours page identifies Sushi Square in The Mix Food Court, links the restaurant website, and publishes Monday-Saturday 11am-8pm with Sunday closed. This exact-location venue schedule resolves the restaurant site's impossible 11pm-3pm lunch typo without reactivating the separately held owner homepage or menu. Hours remain subject to change as the venue page states; coordinates, menus, offers, events and media rights remain unchanged.",
+      "observedAt": "2026-11-14T20:21:51.188Z",
+      "reviewedAt": "2026-11-14T20:21:51.188Z",
+      "reviewState": "verified"
+    },
     {
       "restaurantId": "osm-node-11552505443-jukai-japanese-and-thai",
       "fields": {
