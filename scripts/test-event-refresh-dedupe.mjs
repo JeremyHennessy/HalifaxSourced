@@ -113,7 +113,7 @@ const additions = { generatedAt: '2026-10-27T22:00:00Z',
   events: sourceIds.flatMap(sourceId => Array.from({ length: sourceId === 'the-carleton' ? 3 : 1 }, (_, index) => ({
     id: `${sourceId}-${index}`, title: `Reviewed event ${sourceId}-${index}`,
     startAt: `2026-11-${String(index + 1).padStart(2, '0')}T17:00:00Z`, endAt: `2026-11-${String(index + 1).padStart(2, '0')}T18:00:00Z`,
-    city: 'Halifax', venueName: 'Fixture venue', categories: ['Arts'], alternateSources: [], supersedesEventIds: [],
+    city: 'Halifax', venueName: 'Fixture venue', address: 'Reviewed address, Halifax, NS', categories: ['Arts'], alternateSources: [], supersedesEventIds: [],
     sourceId, sourceName: sourceId, sourceKind: 'official_venue_calendar',
     sourceUrl: `https://example.org/${sourceId}`, eventUrl: `https://example.org/${sourceId}/${index}`,
     observedAt: index ? '2026-10-24T12:00:00Z' : '2026-10-23T05:16:48.006Z',
@@ -130,7 +130,7 @@ const stats = [
 const original = { generatedAt: '2026-10-27T22:22:16Z', sourceStats: stats,
   failures: [{ sourceId: 'failed', reason: 'http_503', observedAt: '2026-10-27T22:21:00Z' }],
   supplementalAudit: { sourceStats: structuredClone(stats) },
-  events: [{ ...additions.events[0], observedAt: '2026-10-27T22:22:15.630Z', price: '$5' }] };
+  events: [{ ...additions.events[0], address: null, observedAt: '2026-10-27T22:22:15.630Z', price: '$5' }] };
 function browserApply(payload) {
   const context = vm.createContext({ window: { HALIFAX_CITY_EVENTS: structuredClone(payload), HALIFAX_CITY_EVENT_ADDITIONS: structuredClone(additions) } });
   vm.runInContext(runtimeApply, context);
@@ -150,6 +150,10 @@ function verifyAccounting(result, input) {
   assert.equal(result.events.length, additions.events.length);
   assert.deepEqual(result.events.find(event => event.id === original.events[0].id).observedAt, original.events[0].observedAt);
   assert.equal(result.events.find(event => event.id === original.events[0].id).price, '$5');
+  const inputAddress = input.events.find(event => event.id === original.events[0].id)?.address;
+  assert.equal(result.events.find(event => event.id === original.events[0].id).address,
+    String(inputAddress ?? '').trim() ? inputAddress : additions.events[0].address,
+    'Reviewed evidence fills a missing address without replacing a collected address');
   for (const contribution of result.manualAdditions.sourceContributions) {
     const expected = additions.events.filter(event => event.sourceId === contribution.sourceId);
     assert.deepEqual(contribution.eventIds, expected.map(event => event.id));
@@ -172,7 +176,9 @@ try {
     assert.equal(run.status, 0, run.stderr);
     return JSON.parse(await readFile(join(accountingRoot, 'data/build/city-events.json'), 'utf8'));
   }
-  for (const input of [original, { ...original, sourceStats: [] }, (() => { const copy = structuredClone(original); delete copy.sourceStats; return copy; })()]) {
+  for (const input of [original, { ...original, sourceStats: [] },
+    (() => { const copy = structuredClone(original); delete copy.sourceStats; return copy; })(),
+    (() => { const copy = structuredClone(original); copy.events[0].address = 'Collected address, Halifax, NS'; return copy; })()]) {
     const before = structuredClone(input);
     const built = await buildApply(input);
     const runtime = browserApply(input);

@@ -1261,6 +1261,7 @@ window.HALIFAX_CITY_EVENT_ADDITIONS = JSON.parse(`{
 
   function mergeEvents(existing, addition) {
     const merged = { ...clone(addition), ...existing };
+    if (!String(existing?.address ?? "").trim() && String(addition?.address ?? "").trim()) merged.address = addition.address;
     merged.categories = uniqueBy([...(addition.categories || []), ...(existing.categories || [])], (value) => String(value || ""));
     merged.alternateSources = uniqueBy([...(existing.alternateSources || []), ...(addition.alternateSources || [])], (source) => `${source?.sourceId || ""}|${source?.sourceUrl || ""}`);
     merged.sourceEvidence = uniqueBy([...(existing.sourceEvidence || []), ...(addition.sourceEvidence || [])], (source) => `${source?.sourceId || ""}|${source?.basis || ""}|${source?.sourceUrl || ""}`);
