@@ -10267,6 +10267,124 @@
         }
       },
       "reviewNote": "Three current local listings agree on the active restaurant identity and exact unit; two agree on phone 902-405-2003. The broken/unreadable owner-domain candidates are withheld. No coordinates, complete weekly hours, menu URL, social activity, offers, events, media rights, or predecessor relationship is published."
+    },
+    {
+      "id": "staggers-pub-grub-dartmouth",
+      "name": "Staggers Pub & Grub",
+      "neighborhood": "Downtown Dartmouth",
+      "category": "Pub",
+      "cuisines": [
+        "Pub food"
+      ],
+      "vibe": [],
+      "freshnessDate": "2026-11-14",
+      "evidenceStatus": "verified",
+      "address": "26 Portland Street, Dartmouth, NS B2Y 1G9",
+      "phone": "902-406-3661",
+      "website": null,
+      "openingHours": null,
+      "openingStatus": null,
+      "coordinates": null,
+      "operatingStatus": "active",
+      "seasonality": null,
+      "specials": [],
+      "events": [],
+      "summary": "Long-running locally operated neighbourhood pub on Portland Street in Downtown Dartmouth.",
+      "operatingStatusEvidence": {
+        "claim": "The current Downtown Dartmouth directory and 211 Nova Scotia agency profile identify Staggers Pub & Grub at 26 Portland Street with phone 902-406-3661; a current Downtown Dartmouth programming page also names the venue at that address.",
+        "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
+        "location": "26 Portland Street, Dartmouth, NS B2Y 1G9",
+        "observedAt": "2026-11-14T05:19:35Z",
+        "verifiedAt": "2026-11-14T05:19:35Z",
+        "reviewState": "verified"
+      },
+      "ownershipEvidence": {
+        "claim": "Local reporting identifies Debbie Phinney as the owner, while current Downtown Dartmouth and 211 listings preserve the same business identity, address and phone. The reviewed evidence supports a local independent pub rather than a national franchise; present beneficial ownership was not independently checked.",
+        "confidence": "reviewed local-business evidence",
+        "sourceUrls": [
+          "https://halifax.citynews.ca/2022/05/24/dartmouth-pub-becomes-space-for-queer-community-5401258/",
+          "https://globalnews.ca/video/7400958/love-your-local-staggers-pub-grub",
+          "https://www.downtowndartmouth.ca/fooddrink"
+        ],
+        "observedAt": "2026-11-14T05:19:35Z"
+      },
+      "sources": [
+        {
+          "label": "Downtown Dartmouth directory",
+          "type": "business_directory",
+          "url": "https://www.downtowndartmouth.ca/fooddrink",
+          "status": "verified",
+          "observedAt": "2026-11-14T05:19:35Z"
+        },
+        {
+          "label": "211 Nova Scotia agency profile",
+          "type": "community_service_directory",
+          "url": "https://ns.211.ca/services/65917034/agency/staggers-pub-and-grub-free-christmas-day-dinner/",
+          "status": "verified",
+          "observedAt": "2026-11-14T05:19:35Z"
+        },
+        {
+          "label": "Downtown Dartmouth venue programming",
+          "type": "local_event_venue_source",
+          "url": "https://www.downtowndartmouth.ca/stages",
+          "status": "verified",
+          "observedAt": "2026-11-14T05:19:35Z"
+        },
+        {
+          "label": "CityNews local ownership profile",
+          "type": "local_news",
+          "url": "https://halifax.citynews.ca/2022/05/24/dartmouth-pub-becomes-space-for-queer-community-5401258/",
+          "status": "verified_historical_context",
+          "observedAt": "2026-11-14T05:19:35Z"
+        }
+      ],
+      "fieldEvidence": {
+        "coordinates": {
+          "status": "unknown",
+          "sourceUrls": [
+            "https://www.downtowndartmouth.ca/fooddrink",
+            "https://ns.211.ca/services/65917034/agency/staggers-pub-and-grub-free-christmas-day-dinner/"
+          ],
+          "observedAt": "2026-11-14T05:19:35Z",
+          "observation": "No exact owner coordinate pair was independently reviewed; no nearby Portland Street coordinate is transferred."
+        },
+        "hours": {
+          "status": "unknown",
+          "sourceUrls": [
+            "https://www.downtowndartmouth.ca/fooddrink",
+            "https://ns.211.ca/services/65917034/agency/staggers-pub-and-grub-free-christmas-day-dinner/"
+          ],
+          "observedAt": "2026-11-14T05:19:35Z",
+          "observation": "No current owner-published complete weekly schedule was reachable; third-party hours are not published."
+        },
+        "menu": {
+          "status": "unknown",
+          "sourceUrls": [
+            "https://www.downtowndartmouth.ca/fooddrink"
+          ],
+          "observedAt": "2026-11-14T05:19:35Z",
+          "observation": "Current local listings describe a pub, but no stable owner menu URL or current owner menu snapshot was independently reviewed."
+        },
+        "phone": {
+          "status": "verified",
+          "sourceUrls": [
+            "https://www.downtowndartmouth.ca/fooddrink",
+            "https://ns.211.ca/services/65917034/agency/staggers-pub-and-grub-free-christmas-day-dinner/"
+          ],
+          "observedAt": "2026-11-14T05:19:35Z",
+          "observation": "Downtown Dartmouth and 211 Nova Scotia both publish 902-406-3661."
+        },
+        "website": {
+          "status": "unknown",
+          "sourceUrls": [
+            "https://www.downtowndartmouth.ca/fooddrink",
+            "https://www.staggerspub.com/"
+          ],
+          "observedAt": "2026-11-14T05:19:35Z",
+          "observation": "The directory-associated owner-domain candidate was not independently readable and the www endpoint returned HTTP 404; no website is published."
+        }
+      },
+      "reviewNote": "Current Downtown Dartmouth and 211 listings agree on the active pub identity, exact address and phone; current local programming also names the venue. The unreadable/404 owner-domain candidate is withheld. No coordinates, complete weekly hours, menu URL, social activity, offers, event occurrences, media rights, or predecessor relationship is published."
     }
   ]
 }
