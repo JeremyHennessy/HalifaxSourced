@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "generatedAt": "2026-11-13T22:04:09.463Z",
-  "count": 76,
+  "generatedAt": "2026-11-14T01:14:22.151Z",
+  "count": 77,
   "restaurants": [
     {
       "id": "sakaba-halifax",
@@ -11071,6 +11071,120 @@
         "approvedByOverride": true,
         "sourceLeadObserved": false,
         "reviewNote": "Current identity and exact civic location are supported by the owner opening announcement and two dated local reports. The predecessor site still lists stale South Park details, so its historical source record is retained but corrected separately as replaced. No hours, phone, coordinates, menu, offers, events, media rights, or exact predecessor closure date are inferred."
+      }
+    },
+    {
+      "id": "pi-kings-wharf",
+      "name": "Pi — King’s Wharf",
+      "neighborhood": "Dartmouth",
+      "category": "Restaurant",
+      "cuisines": [],
+      "vibe": [],
+      "freshnessDate": "2026-11-13",
+      "evidenceStatus": "verified",
+      "address": "67 King’s Wharf Place, Suite 102, Dartmouth, NS",
+      "phone": "902-404-8053",
+      "website": "https://pi-kingswharf.com/",
+      "openingHours": null,
+      "openingStatus": null,
+      "coordinates": null,
+      "operatingStatus": "active",
+      "seasonality": null,
+      "specials": [],
+      "events": [],
+      "summary": "Locally owned waterfront restaurant serving pizza, pasta, burgers, cocktails, wine and local craft beer at King’s Wharf in Downtown Dartmouth.",
+      "operatingStatusEvidence": {
+        "claim": "The owner homepage states that Pi is now open and publishes the current King’s Wharf address and phone; the Downtown Dartmouth directory independently lists the same identity, civic address and phone.",
+        "sourceUrl": "https://pi-kingswharf.com/",
+        "location": "67 King’s Wharf Place, Suite 102, Dartmouth, NS",
+        "observedAt": "2026-11-14T01:12:59Z",
+        "verifiedAt": "2026-11-14T01:12:59Z",
+        "reviewState": "verified"
+      },
+      "ownershipEvidence": {
+        "claim": "Tourism Nova Scotia identifies Pi as part of the 100% locally owned and operated Millstone Public House group.",
+        "confidence": "reviewed local-business evidence",
+        "sourceUrls": [
+          "https://pi-kingswharf.com/",
+          "https://www.downtowndartmouth.ca/fooddrink",
+          "https://novascotia.com/listing/pi-kings-wharf/"
+        ],
+        "observedAt": "2026-11-14T01:12:59Z"
+      },
+      "sources": [
+        {
+          "label": "Owner website",
+          "type": "restaurant_site",
+          "url": "https://pi-kingswharf.com/",
+          "status": "verified",
+          "observedAt": "2026-11-14T01:12:59Z"
+        },
+        {
+          "label": "Downtown Dartmouth directory",
+          "type": "business_directory",
+          "url": "https://www.downtowndartmouth.ca/fooddrink",
+          "status": "verified",
+          "observedAt": "2026-11-14T01:12:59Z"
+        },
+        {
+          "label": "Tourism Nova Scotia listing",
+          "type": "tourism_directory",
+          "url": "https://novascotia.com/listing/pi-kings-wharf/",
+          "status": "verified",
+          "observedAt": "2026-11-14T01:12:59Z"
+        }
+      ],
+      "fieldEvidence": {
+        "coordinates": {
+          "status": "unknown",
+          "sourceUrls": [
+            "https://pi-kingswharf.com/",
+            "https://www.downtowndartmouth.ca/fooddrink",
+            "https://novascotia.com/listing/pi-kings-wharf/"
+          ],
+          "observedAt": "2026-11-14T01:12:59Z",
+          "observation": "No exact owner coordinate pair was independently reviewed; no nearby business coordinate is transferred."
+        },
+        "hours": {
+          "status": "unknown",
+          "sourceUrls": [
+            "https://pi-kingswharf.com/"
+          ],
+          "observedAt": "2026-11-14T01:12:59Z",
+          "observation": "The owner publishes an 11:30am daily opening time but no complete closing schedule; conflicting third-party closing times are not published."
+        },
+        "menu": {
+          "status": "unknown",
+          "sourceUrls": [
+            "https://pi-kingswharf.com/"
+          ],
+          "observedAt": "2026-11-14T01:12:59Z",
+          "observation": "The owner homepage exposes food and drink menu links, but no stable location-specific menu URL or menu snapshot was independently reviewed."
+        },
+        "phone": {
+          "status": "verified",
+          "sourceUrls": [
+            "https://pi-kingswharf.com/",
+            "https://www.downtowndartmouth.ca/fooddrink"
+          ],
+          "observedAt": "2026-11-14T01:12:59Z",
+          "observation": "Owner and Downtown Dartmouth directory both publish 902-404-8053; a conflicting Tourism Nova Scotia phone is retained only as source history and not used."
+        }
+      },
+      "qualityScore": null,
+      "sourceLayer": "local_discovery",
+      "email": null,
+      "contactUrl": null,
+      "contactScope": null,
+      "openingHoursVerifiedAt": null,
+      "hoursValidThrough": null,
+      "hoursScope": null,
+      "lifecycleSchedule": null,
+      "socialProfiles": [],
+      "discoveryReview": {
+        "approvedByOverride": true,
+        "sourceLeadObserved": false,
+        "reviewNote": "Owner and Downtown Dartmouth sources match the active identity, Suite 102 civic address and phone; Tourism Nova Scotia independently supports local ownership. No coordinates, complete weekly hours, menu copy, social activity, offers, events, image rights, postal-code inference or predecessor relationship is published."
       }
     }
   ]
