@@ -186,6 +186,12 @@ function assertSourceExpansionBoundary(workflow) {
   assert(prJob.includes('        env:\n          NODE_OPTIONS: --import ${{ github.workspace }}/scripts/lib/deny-source-network.mjs\n        run: |'), 'Source Expansion must apply the network guard to its validation commands');
   const pathFilter = workflow.split('    paths:\n')[1]?.split('\npermissions:')[0];
   for (const path of sourceValidationPaths) assert(pathFilter?.split('\n').includes('      - ' + path), 'Source Expansion must validate changes to ' + path);
+  const catalogIndex = workflow.indexOf('node scripts/export-catalog.mjs');
+  const collectionIndex = workflow.indexOf('node scripts/import-official-sites.mjs');
+  assert(catalogIndex >= 0 && catalogIndex < collectionIndex,
+    'Source Expansion must build the current reviewed catalog before official-site collection');
+  assert.equal((workflow.match(/node scripts\/export-catalog\.mjs/g) || []).length, 1,
+    'Source Expansion must build the current reviewed catalog exactly once');
 }
 for (const [file, cron] of [
   ['structured-place-facts-preview.yml', '29 11 * * 2'],
@@ -372,8 +378,14 @@ function assertSocialPreviewBoundary(workflow) {
   // job key and the newly inserted schedule/manual allowlist above. An intentional
   // future producer change needs its own review and a new explicit baseline.
   assert.equal(createHash('sha256').update(workflow.slice(socialValidationPrefix.length)).digest('hex'),
-    '7cd35ab53cab2684ca4377094118a701732f0bbbb8fb8213a53826df0eae49b3',
+    '6acebc820b6e614854cacdc64754dd01a27a6e482e690f88605b26daa12f710f',
     'Social scheduled/manual producer steps, source limits, secrets and artifacts must remain byte-identical');
+  const catalogIndex = workflow.indexOf('node scripts/export-catalog.mjs');
+  const collectionIndex = workflow.indexOf('node scripts/discover-first-party-sources.mjs');
+  assert(catalogIndex >= 0 && catalogIndex < collectionIndex,
+    'Social Source must build the current reviewed catalog before first-party collection');
+  assert.equal((workflow.match(/node scripts\/export-catalog\.mjs/g) || []).length, 1,
+    'Social Source must build the current reviewed catalog exactly once');
 }
 const socialWorkflow = await readFile(new URL('../.github/workflows/social-source-preview.yml', import.meta.url), 'utf8');
 assertSocialPreviewBoundary(socialWorkflow);
