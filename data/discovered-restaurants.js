@@ -11443,5 +11443,139 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
       "sourceLeadObserved": false,
       "reviewNote": "Current Downtown Dartmouth and 211 listings agree on the active pub identity, exact address and phone; current local programming also names the venue. The unreadable/404 owner-domain candidate is withheld. No coordinates, complete weekly hours, menu URL, social activity, offers, event occurrences, media rights, or predecessor relationship is published."
     }
+  },
+  {
+    "id": "biscuit-lips-lunch-dartmouth",
+    "name": "Biscuit Lips Lunch",
+    "neighborhood": "Downtown Dartmouth",
+    "category": "Chinese",
+    "cuisines": [
+      "Chinese",
+      "Sandwiches"
+    ],
+    "vibe": [],
+    "freshnessDate": "2026-11-14",
+    "evidenceStatus": "verified",
+    "address": "40 Alderney Drive, Dartmouth, NS",
+    "phone": null,
+    "website": null,
+    "openingHours": null,
+    "openingStatus": null,
+    "coordinates": null,
+    "operatingStatus": "active",
+    "seasonality": null,
+    "specials": [],
+    "events": [],
+    "summary": "Locally operated lunch counter serving Chinese lunch dishes and sandwiches at 40 Alderney Drive in Downtown Dartmouth.",
+    "operatingStatusEvidence": {
+      "claim": "The current Downtown Dartmouth directory lists Biscuit Lips Lunch at 40 Alderney Drive, the provincial food-inspection feed retains the same active facility identity and address, and the directory-linked Ritual page currently accepts orders for pickup at that address.",
+      "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
+      "location": "40 Alderney Drive, Dartmouth, NS",
+      "observedAt": "2026-11-14T06:19:57Z",
+      "verifiedAt": "2026-11-14T06:19:57Z",
+      "reviewState": "verified"
+    },
+    "ownershipEvidence": {
+      "claim": "A Nova Scotia program list current as of November 13, 2025 identifies HAIYI WANG o/a BISCUIT LIPS LUNCH; the current Downtown Dartmouth directory and provincial inspection record preserve the same business identity and address. The reviewed evidence supports a local independent operation rather than a chain, while present beneficial ownership was not independently checked.",
+      "confidence": "reviewed local-business evidence",
+      "sourceUrls": [
+        "https://liveinnovascotia.com/sites/default/files/2024-07/Designated_AIP_employers.pdf",
+        "https://www.downtowndartmouth.ca/fooddrink",
+        "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2595780"
+      ],
+      "observedAt": "2026-11-14T06:19:57Z"
+    },
+    "sources": [
+      {
+        "label": "Downtown Dartmouth directory",
+        "type": "business_directory",
+        "url": "https://www.downtowndartmouth.ca/fooddrink",
+        "status": "verified",
+        "observedAt": "2026-11-14T06:19:57Z"
+      },
+      {
+        "label": "Nova Scotia food-inspection record",
+        "type": "government_food_inspection",
+        "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2595780",
+        "status": "verified",
+        "observedAt": "2026-11-12T19:27:53.425Z"
+      },
+      {
+        "label": "Directory-linked Ritual menu and ordering page",
+        "type": "menu",
+        "url": "https://ritual.co/order/biscuit-lips-lunch-alderney-dr-ochterloney-st-cansdartmouth/5442",
+        "status": "verified",
+        "observedAt": "2026-11-14T06:19:57Z"
+      },
+      {
+        "label": "Nova Scotia designated-employer list",
+        "type": "government_business_record",
+        "url": "https://liveinnovascotia.com/sites/default/files/2024-07/Designated_AIP_employers.pdf",
+        "status": "verified_historical_context",
+        "observedAt": "2026-11-14T06:19:57Z"
+      }
+    ],
+    "fieldEvidence": {
+      "coordinates": {
+        "status": "unknown",
+        "sourceUrls": [
+          "https://www.downtowndartmouth.ca/fooddrink",
+          "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2595780"
+        ],
+        "observedAt": "2026-11-14T06:19:57Z",
+        "observation": "No exact owner coordinate pair was independently reviewed; no nearby Alderney Drive coordinate is transferred."
+      },
+      "hours": {
+        "status": "unknown",
+        "sourceUrls": [
+          "https://www.downtowndartmouth.ca/fooddrink",
+          "https://ritual.co/order/biscuit-lips-lunch-alderney-dr-ochterloney-st-cansdartmouth/5442"
+        ],
+        "observedAt": "2026-11-14T06:19:57Z",
+        "observation": "The directory publishes no hours and the ordering page exposes only a dynamic next-opening time, not a complete stable weekly schedule; no weekly hours are published."
+      },
+      "menu": {
+        "status": "verified",
+        "sourceUrls": [
+          "https://www.downtowndartmouth.ca/fooddrink",
+          "https://ritual.co/order/biscuit-lips-lunch-alderney-dr-ochterloney-st-cansdartmouth/5442"
+        ],
+        "observedAt": "2026-11-14T06:19:57Z",
+        "observation": "The Downtown Dartmouth directory links this exact Ritual page, which currently identifies Biscuit Lips Lunch at 40 Alderney Drive and lists Chinese lunch dishes, sandwiches, appetizers, desserts and drinks."
+      },
+      "phone": {
+        "status": "unknown",
+        "sourceUrls": [
+          "https://www.downtowndartmouth.ca/fooddrink",
+          "https://ritual.co/order/biscuit-lips-lunch-alderney-dr-ochterloney-st-cansdartmouth/5442"
+        ],
+        "observedAt": "2026-11-14T06:19:57Z",
+        "observation": "The reviewed current directory and ordering page do not publish a phone number; conflicting third-party phone listings are withheld."
+      },
+      "website": {
+        "status": "unknown",
+        "sourceUrls": [
+          "https://www.downtowndartmouth.ca/fooddrink",
+          "https://ritual.co/order/biscuit-lips-lunch-alderney-dr-ochterloney-st-cansdartmouth/5442"
+        ],
+        "observedAt": "2026-11-14T06:19:57Z",
+        "observation": "The directory's website action is the third-party ordering page; no separate owner-controlled website was independently located, so no website is published."
+      }
+    },
+    "qualityScore": null,
+    "sourceLayer": "local_discovery",
+    "email": null,
+    "contactUrl": null,
+    "contactScope": null,
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
+    "lifecycleSchedule": null,
+    "socialProfiles": [],
+    "discoveryReview": {
+      "approvedByOverride": true,
+      "sourceLeadObserved": false,
+      "reviewNote": "Current Downtown Dartmouth, provincial inspection and directory-linked ordering sources agree on the active business identity and exact street address. The live ordering page is retained as a menu source, not mislabelled as an owner website. No coordinates, complete weekly hours, phone, standalone website, social activity, offers, event occurrences, media rights, or predecessor relationship is published."
+    }
   }
 ];
