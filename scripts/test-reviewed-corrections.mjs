@@ -248,6 +248,7 @@ const viaCondottiId = 'via-condotti-queen';
 const viaCondottiResolution = reviewedPlaceResolutions.find(record => record.candidateId === 'sgaba-via-condotti-http-lafrasca-ca');
 assert.equal(viaCondottiResolution?.restaurantId, viaCondottiId, 'Resolve the current Spring Garden candidate to the reviewed Via Condotti identity');
 assert.equal(viaCondottiResolution?.website, 'https://www.viacondotti.ca/', 'Retain the current owner domain, not the predecessor directory URL');
+assert.equal(viaCondottiResolution?.menuUrl, 'https://www.viacondotti.ca/menus/', 'Publish the exact-location official menu hub');
 for (const records of [app.restaurants, catalog.restaurants]) {
   const matches = records.filter(record => record.id === viaCondottiId);
   assert.equal(matches.length, 1, 'Via Condotti must remain one reviewed Spring Garden identity');
@@ -255,12 +256,14 @@ for (const records of [app.restaurants, catalog.restaurants]) {
   assert.equal(viaCondotti.address, '1480 Queen Street, Halifax, NS B3J 0L2');
   assert.equal(viaCondotti.phone, '902-444-1860');
   assert.equal(viaCondotti.website, 'https://www.viacondotti.ca/');
+  assert(viaCondotti.sources.some(source => source.type === 'menu' && source.url === 'https://www.viacondotti.ca/menus/' && source.observedAt === '2026-11-14T22:21:59Z'), 'Keep the menu source and observation time auditable');
   assert.equal(viaCondotti.coordinates, null, 'Do not inherit the predecessor location or invent coordinates');
   assert.equal(viaCondotti.openingHours, null, 'Do not infer a weekly schedule from partial service-hour evidence');
   assert.equal(viaCondotti.specials.length, 0);
   assert.equal(viaCondotti.events.length, 0);
   assert.deepEqual((viaCondotti.inspectionRecords || viaCondotti.inspections).map(record => record.facilityId), [], 'Do not attach the conflicting 1470 Queen inspection address to the reviewed 1480 Queen identity');
 }
+assert(app.restaurants.find(record => record.id === viaCondottiId).menuLinks.some(link => link.url === 'https://www.viacondotti.ca/menus/'), 'Expose the reviewed official menu hub in the browser model');
 assert(active.has(viaCondottiId));
 const phoNo1Id = 'pho-no-1-halifax';
 const alexOhId = 'osm-node-2721708499-alex-oh-sushi-rolls';
