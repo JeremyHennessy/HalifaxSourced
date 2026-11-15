@@ -2537,6 +2537,75 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
       "sourceLayer": "reviewed_location_correction"
     },
     {
+      "id": "chicking-4-you-halifax",
+      "name": "Chicking 4 You",
+      "address": "5680 Spring Garden Road, Halifax, NS B3J 1H5",
+      "neighborhood": "Spring Garden",
+      "category": "Restaurant",
+      "website": "https://chickingrestaurant.com/",
+      "phone": "902-406-7070",
+      "coordinates": null,
+      "openingHours": "Monday–Saturday 11:30am–9:30pm; Sunday 3pm–8:30pm",
+      "menuUrl": "https://chickingrestaurant.com/menu/",
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current Spring Garden Area Business Association directory identifies Chicking 4 You as a local Halifax Korean fried-chicken restaurant. The current owner site identifies Chicking at 5680 Spring Garden Road, publishes phone 902-406-7070, complete weekly hours and a current menu, while the Nova Scotia food-inspection snapshot current as of November 12, 2026 independently records THE CHICKING 4U at the same civic address. The district directory's older chicking4u.ca pointer returned HTTP 503 during this review and is retained only as failed source evidence. No coordinates, offers, events, social profile, media rights or current social-post activity are inferred.",
+        "sourceUrl": "https://chickingrestaurant.com/",
+        "observedAt": "2026-11-15T11:16:06Z",
+        "reviewState": "verified",
+        "location": "5680 Spring Garden Road, Halifax, NS B3J 1H5"
+      },
+      "cuisines": [
+        "Korean"
+      ],
+      "vibe": [
+        "casual",
+        "local"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [],
+      "sources": [
+        {
+          "type": "business_directory",
+          "label": "Current Spring Garden district identity and local Halifax restaurant description",
+          "url": "https://www.springgardenarea.com/eat-drink",
+          "observedAt": "2026-11-15T11:16:06Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Current owner identity, exact civic address, phone and weekly hours",
+          "url": "https://chickingrestaurant.com/",
+          "observedAt": "2026-11-15T11:16:06Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_menu",
+          "label": "Current owner-published menu",
+          "url": "https://chickingrestaurant.com/menu/",
+          "observedAt": "2026-11-15T11:16:06Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "District-linked former owner-domain pointer returned HTTP 503; not published",
+          "url": "https://chicking4u.ca/",
+          "observedAt": "2026-11-15T11:16:06Z",
+          "status": "failed"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Nova Scotia food-establishment identity and exact civic address, snapshot current as of November 12, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3557023",
+          "observedAt": "2026-11-12T19:27:53.425Z",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
       "id": "hanyoung-bowl-asian-kitchen-halifax",
       "name": "Hanyoung Bowl Asian Kitchen",
       "address": "5640 Spring Garden Road, Halifax, NS",
