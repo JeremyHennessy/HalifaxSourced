@@ -2723,6 +2723,69 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
       "sourceLayer": "reviewed_location_correction"
     },
     {
+      "id": "buttercreme-cafe-halifax",
+      "name": "Buttercreme Cafe",
+      "address": "1452 Dresden Row, Halifax, NS",
+      "neighborhood": "Spring Garden",
+      "category": "Cafe",
+      "website": "https://www.buttercreme.store/",
+      "phone": "902-989-5851",
+      "coordinates": null,
+      "openingHours": null,
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current Spring Garden Area Business Association directory lists Buttercreme Cafe and explicitly links its Instagram profile; the current owner website publishes the exact 1452 Dresden Row address and phone 902-989-5851; and the Nova Scotia food-inspection registry snapshot current as of November 12, 2026 records Buttercreme Cafe at the same civic address. The owner website publishes no weekly hours, and conflicting third-party schedules are not used. Its 'coming soon' text describes website content and is not treated as a restaurant opening status or date. No coordinates, menu, offers, events, media rights, social-post activity or publisher dates are inferred.",
+        "sourceUrl": "https://www.buttercreme.store/",
+        "observedAt": "2026-11-15T14:16:55Z",
+        "reviewState": "verified",
+        "location": "1452 Dresden Row, Halifax, NS"
+      },
+      "cuisines": [
+        "Cafe"
+      ],
+      "vibe": [
+        "local"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/buttercreme_cafe/",
+          "discoveredFrom": "https://www.springgardenarea.com/eat-drink",
+          "associationBasis": "trusted_directory_explicit_link",
+          "observedAt": "2026-11-15T14:16:55Z",
+          "lastVerifiedAt": "2026-11-15T14:16:55Z",
+          "reviewState": "verified"
+        }
+      ],
+      "sources": [
+        {
+          "type": "business_directory",
+          "label": "Current Spring Garden district identity, cafe description and explicit owner-social pointer",
+          "url": "https://www.springgardenarea.com/eat-drink",
+          "observedAt": "2026-11-15T14:16:55Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Current owner website exact civic address and phone; no weekly hours published",
+          "url": "https://www.buttercreme.store/",
+          "observedAt": "2026-11-15T14:16:55Z",
+          "status": "verified"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Nova Scotia food-establishment identity and exact civic address, snapshot current as of November 12, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4625893",
+          "observedAt": "2026-11-12T19:27:53.425Z",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
       "id": "early-at-elks-dartmouth",
       "name": "Early at Elks",
       "address": "19 Portland Street, Dartmouth, NS B2Y 1H1",
