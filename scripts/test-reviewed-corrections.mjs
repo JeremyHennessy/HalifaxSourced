@@ -250,7 +250,7 @@ for (const records of [app.restaurants, catalog.restaurants]) {
   assert.equal(mala.socialProfiles.length, 0, 'Do not infer a social profile from a venue page that links none');
   assert.equal(mala.specials.length, 0);
   assert.equal(mala.events.length, 0);
-  assert.deepEqual((mala.inspectionRecords || mala.inspections).map(record => record.facilityId), [], 'Do not imply a Mala Loklok inspection record');
+  assert.deepEqual((mala.inspectionRecords || mala.inspections).map(record => record.facilityId), ['2765458'], 'Bind the exact same-name and same-address Mala Loklok inspection record');
   assert(mala.sources.some(source => source.url === 'https://mala-loklok.business.site/' && source.status === 'failed'), 'Retain the venue-linked owner pointer only as failed 404 evidence');
 }
 assert(active.has(malaLoklokId));
