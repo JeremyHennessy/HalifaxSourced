@@ -254,6 +254,26 @@ for (const records of [app.restaurants, catalog.restaurants]) {
   assert(mala.sources.some(source => source.url === 'https://mala-loklok.business.site/' && source.status === 'failed'), 'Retain the venue-linked owner pointer only as failed 404 evidence');
 }
 assert(active.has(malaLoklokId));
+const addaIndianEateryId = 'adda-indian-eatery-halifax';
+for (const records of [app.restaurants, catalog.restaurants]) {
+  const matches = records.filter(record => record.id === addaIndianEateryId);
+  assert.equal(matches.length, 1, 'Adda Indian Eatery must have one reviewed Spring Garden identity');
+  const adda = matches[0];
+  assert.equal(adda.name, 'Adda Indian Eatery');
+  assert.equal(adda.address, '5640 Spring Garden Road, Halifax, NS');
+  assert.equal(adda.neighborhood, 'Spring Garden');
+  assert.equal(adda.phone, '902-422-3501');
+  assert.equal(adda.website, 'https://www.springgardenplace.ca/dining?c=adda-indian-eatery');
+  assert.equal(adda.openingHours, 'Monday closed; Tuesday–Thursday 11am–9pm; Friday–Sunday 11am–11pm');
+  assert.equal(adda.coordinates, null, 'Do not infer a unit or coordinates from the venue address');
+  assert.deepEqual([...adda.cuisines], ['Indian']);
+  assert.equal(adda.socialProfiles.length, 0, 'Do not infer social activity or profiles from third-party pages');
+  assert.equal(adda.specials.length, 0, 'Directory promotional language is not a dated current offer');
+  assert.equal(adda.events.length, 0);
+  assert.deepEqual((adda.inspectionRecords || adda.inspections).map(record => record.facilityId), ['2569151'], 'Bind the exact same-name and same-address Adda inspection record');
+  assert(adda.sources.some(source => source.url === 'https://www.addaindianeatery.com/' && source.status === 'failed'), 'Retain the venue-linked owner domain only as failed default-page evidence');
+}
+assert(active.has(addaIndianEateryId));
 const hanyoungBowlId = 'hanyoung-bowl-asian-kitchen-halifax';
 for (const records of [app.restaurants, catalog.restaurants]) {
   const matches = records.filter(record => record.id === hanyoungBowlId);
