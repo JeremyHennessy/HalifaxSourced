@@ -214,6 +214,25 @@ for (const records of [app.restaurants, catalog.restaurants]) {
   assert(records.some(record => record.id === 'side-hustle-snack-bar-dartmouth'), 'The neighbouring 21 Portland Street identity must survive');
 }
 assert(active.has(earlyAtElksId));
+const borschHouseId = 'borsch-house-halifax';
+for (const records of [app.restaurants, catalog.restaurants]) {
+  const matches = records.filter(record => record.id === borschHouseId);
+  assert.equal(matches.length, 1, 'Borsch House must have one reviewed Spring Garden identity');
+  const borsch = matches[0];
+  assert.equal(borsch.name, 'Borsch House');
+  assert.equal(borsch.address, '5640 Spring Garden Road, Halifax, NS');
+  assert.equal(borsch.neighborhood, 'Spring Garden');
+  assert.equal(borsch.website, 'https://www.springgardenplace.ca/home/borsch-house');
+  assert.equal(borsch.phone, null, 'Do not publish the venue contact as a restaurant-specific phone');
+  assert.equal(borsch.openingHours, null, 'Conflicting venue schedules must not become restaurant hours');
+  assert.equal(borsch.coordinates, null, 'Do not invent coordinates from the civic address');
+  assert.deepEqual([...borsch.cuisines], ['Ukrainian']);
+  assert.equal(borsch.socialProfiles.length, 0, 'Do not infer venue social profiles as restaurant-owned');
+  assert.equal(borsch.specials.length, 0);
+  assert.equal(borsch.events.length, 0);
+  assert(borsch.sources.some(source => source.type === 'government_inspection' && source.url.includes('Id1=3644410')));
+}
+assert(active.has(borschHouseId));
 const butaHalifaxId = 'osm-node-6031036960-buta-ramen';
 const butaDartmouthId = 'buta-ramen-dartmouth';
 for (const records of [app.restaurants, catalog.restaurants]) {
