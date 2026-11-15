@@ -257,6 +257,34 @@ for (const records of [app.restaurants, catalog.restaurants]) {
 }
 assert(active.has(buttercremeId));
 
+const blissId = 'bliss-caffeine-bar-halifax';
+for (const records of [app.restaurants, catalog.restaurants]) {
+  const matches = records.filter(record => record.id === blissId);
+  assert.equal(matches.length, 1, 'Bliss Caffeine Bar must have one reviewed Spring Garden identity');
+  const bliss = matches[0];
+  assert.equal(bliss.name, 'Bliss Caffeine Bar');
+  assert.equal(bliss.address, '1451 South Park Street, Halifax, NS B3J 2L1');
+  assert.equal(bliss.neighborhood, 'Spring Garden');
+  assert.equal(bliss.phone, '902-407-3500');
+  assert.equal(bliss.website, 'https://blisscaffeinebar.com/');
+  assert.equal(bliss.menuUrl, 'https://blisscaffeinebar.com/menu/');
+  assert.equal(bliss.openingHours, 'Monday closed; Tuesday–Sunday 8am–4pm');
+  assert.equal(bliss.coordinates, null, 'Do not borrow the former Humani-T coordinate');
+  assert.deepEqual([...bliss.cuisines], ['Cafe']);
+  assert.equal(bliss.socialProfiles.length, 0, 'Do not infer a social profile from owner or directory pages that link none');
+  assert.equal(bliss.specials.length, 0);
+  assert.equal(bliss.events.length, 0);
+  assert.deepEqual((bliss.inspectionRecords || bliss.inspections).map(record => record.facilityId).sort(), ['2817053', '4637004'], 'Bind both same-name and same-address Bliss inspection records');
+  assert(bliss.sources.some(source => source.type === 'official_menu' && source.url === 'https://blisscaffeinebar.com/menu/'));
+  const humani = records.find(record => record.id === 'osm-node-4421959790-humani-t');
+  assert(humani, 'Retain the former Humani-T identity as lifecycle history');
+  assert.equal(humani.operatingStatus, 'replaced');
+  assert.equal(humani.successorId, blissId);
+  assert.equal(humani.openingHours, null);
+}
+assert(active.has(blissId));
+assert(!active.has('osm-node-4421959790-humani-t'));
+
 const koDorakuId = 'ko-doraku-halifax';
 for (const records of [app.restaurants, catalog.restaurants]) {
   const matches = records.filter(record => record.id === koDorakuId);
