@@ -13,19 +13,22 @@ const BAYERS = 'osm-node-11552234300-sushi-nami-royale';
 const PHONE = '902-422-1636';
 const GENERIC = '+19024229020';
 const LOCATION = 'https://sushinami.ca/downtown-halifax/';
+const MENU = 'https://sushinami.ca/downtown-halifax/take-out/';
 const OBSERVED = '2026-08-29';
 const correctionsSource = await read('data/reviewed-restaurant-corrections.js');
 const payloadContext = { window: {} };
 vm.runInNewContext(correctionsSource, payloadContext);
 const corrections = JSON.parse(JSON.stringify(payloadContext.window.HALIFAX_RESTAURANT_CORRECTIONS));
 const retained = corrections.records.filter(record => record.restaurantId === QUEEN);
-assert.equal(retained.length, 1, 'One composable phone-only retention correction, not a replacement of other reviews');
+assert.equal(retained.length, 1, 'One composable Queen Street correction, not a replacement of other reviews');
 const correction = retained[0];
-assert.deepEqual(correction.fields, { phone: PHONE });
+assert.deepEqual(correction.fields, { phone: PHONE, website: LOCATION, menuUrl: MENU });
 assert.equal(correction.sourceUrl, LOCATION);
 assert.equal(correction.observedAt, OBSERVED);
-assert.equal(correction.reviewBasis, 'preserve_accepted_location_evidence');
-assert.match(correction.claim, /not a new source or current phone-ownership verification/);
+assert.equal(correction.reviewBasis, 'preserve_accepted_location_evidence_and_current_branch_menu');
+assert.equal(correction.fieldEvidence.phone.observedAt, OBSERVED);
+assert.equal(correction.fieldEvidence.menuUrl.observedAt, '2026-11-15T18:18:56Z');
+assert.match(correction.claim, /fills the missing branch-specific takeout menu link/);
 assert(Date.parse(correction.reviewedAt) > Date.parse(OBSERVED));
 const baselineCorrections = { ...corrections, records: corrections.records.filter(record => record.restaurantId !== QUEEN) };
 const serialize = payload => `window.HALIFAX_RESTAURANT_CORRECTIONS = ${JSON.stringify(payload)};`;
@@ -61,6 +64,8 @@ const final = after.records.find(record => record.id === QUEEN);
 assert.equal(prior.phone, GENERIC);
 assert.equal(prior.previousPhone, PHONE);
 assert.equal(final.phone, PHONE);
+assert.equal(final.website, LOCATION);
+assert.equal(final.menuUrl, MENU);
 assert.equal(final.previousPhone, PHONE);
 assert.equal(final.structuredPhone, GENERIC);
 assert.deepEqual(final.structuredFacts, prior.structuredFacts);
@@ -76,9 +81,10 @@ const addedEvidence = final.sources.filter(source => source.type === 'official_r
 assert.equal(addedEvidence.length, 1);
 assert.equal(addedEvidence[0].observedAt, OBSERVED);
 assert.equal(addedEvidence[0].reviewedAt, correction.reviewedAt);
-const stripped = { ...final, phone: prior.phone, sources: final.sources.filter(source => !addedEvidence.includes(source)) };
+const stripped = { ...final, phone: prior.phone, website: prior.website, menuUrl: prior.menuUrl, sources: final.sources.filter(source => !addedEvidence.includes(source)) };
+if (prior.menuUrl === undefined) delete stripped.menuUrl;
 delete stripped.reviewedCorrection;
-assert.deepEqual(stripped, prior, 'Only Queen phone and explicit review provenance change');
+assert.deepEqual(stripped, prior, 'Only Queen phone, exact branch links and explicit review provenance change');
 for (const record of before.records.filter(record => record.id !== QUEEN)) {
   assert.deepEqual(after.records.find(item => item.id === record.id), record, `Unrelated full projection changed: ${record.id}`);
 }
@@ -113,8 +119,12 @@ try {
     if (record.id !== QUEEN) assert.deepEqual(next, record, `Unrelated catalog record changed: ${record.id}`);
     else {
       const original = { ...next, sources: next.sources.filter(source => source.type !== 'official_reviewed_correction' || source.url !== LOCATION) };
+      original.phone = record.phone;
+      original.website = record.website;
+      original.menuUrl = record.menuUrl;
+      if (record.menuUrl === undefined) delete original.menuUrl;
       delete original.reviewedCorrection;
-      assert.deepEqual(original, record, 'Export already held the accepted phone; only retention provenance is added');
+      assert.deepEqual(original, record, 'Export changes only the accepted phone, exact branch links and review provenance');
     }
   }
 } finally { await rm(scratch, { recursive: true, force: true }); }

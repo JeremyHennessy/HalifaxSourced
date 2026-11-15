@@ -114,15 +114,40 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
     {
       "restaurantId": "osm-node-5161526522-sushi-nami-royale",
       "fields": {
-        "phone": "902-422-1636"
+        "phone": "902-422-1636",
+        "website": "https://sushinami.ca/downtown-halifax/",
+        "menuUrl": "https://sushinami.ca/downtown-halifax/take-out/"
       },
       "sourceUrl": "https://sushinami.ca/downtown-halifax/",
-      "claim": "Retain the accepted Queen Street phone from the 2026-08-29 location review; generic-homepage extraction does not supersede location-specific reviewed evidence. This is not a new source or current phone-ownership verification.",
+      "claim": "Retain the accepted Queen Street phone from the 2026-08-29 location review; generic-homepage extraction does not supersede location-specific reviewed evidence. A current owner-site review independently confirms the same 1458 Queen Street branch and phone, replaces the brand-wide homepage with the exact location page, and fills the missing branch-specific takeout menu link. No other branch's menu, dated offer, event occurrence, social post, media right or publisher date is inferred.",
       "observedAt": "2026-08-29",
-      "reviewedAt": "2026-10-25T22:35:00Z",
+      "reviewedAt": "2026-11-15T18:18:56Z",
       "reviewState": "verified",
-      "reviewBasis": "preserve_accepted_location_evidence",
-      "location": "1458 Queen Street, Halifax, NS B3J 2H7"
+      "reviewBasis": "preserve_accepted_location_evidence_and_current_branch_menu",
+      "location": "1458 Queen Street, Halifax, NS B3J 2H7",
+      "fieldEvidence": {
+        "phone": {
+          "sourceUrl": "https://sushinami.ca/downtown-halifax/",
+          "observedAt": "2026-08-29",
+          "reviewedAt": "2026-10-25T22:35:00Z",
+          "claim": "Preserve the accepted location-specific Queen Street phone and its original observation clock.",
+          "reviewState": "verified"
+        },
+        "website": {
+          "sourceUrl": "https://sushinami.ca/downtown-halifax/",
+          "observedAt": "2026-11-15T18:18:56Z",
+          "reviewedAt": "2026-11-15T18:18:56Z",
+          "claim": "The owner location page identifies the existing 1458 Queen Street branch.",
+          "reviewState": "verified"
+        },
+        "menuUrl": {
+          "sourceUrl": "https://sushinami.ca/downtown-halifax/take-out/",
+          "observedAt": "2026-11-15T18:18:56Z",
+          "reviewedAt": "2026-11-15T18:18:56Z",
+          "claim": "The owner location page links this Downtown Halifax takeout menu.",
+          "reviewState": "verified"
+        }
+      }
     },
     {
       "restaurantId": "osm-node-13235716922-foody-jojo-waffle-and-sandwich",
