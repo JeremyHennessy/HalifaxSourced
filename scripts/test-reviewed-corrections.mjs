@@ -319,6 +319,21 @@ for (const records of [app.restaurants, catalog.restaurants]) {
 assert(active.has(yeahHalifaxId));
 assert(active.has(yeahDartmouthId));
 
+const daZeroId = 'osm-node-1689418194-da-zero-ristorante';
+for (const records of [app.restaurants, catalog.restaurants]) {
+  const matches = records.filter(record => record.id === daZeroId);
+  assert.equal(matches.length, 1, 'Da Zero Ristorante must retain one Spring Garden identity');
+  const daZero = matches[0];
+  assert.equal(daZero.address, '1472 Cathedral Lane, Halifax, NS B3H 4L4');
+  assert.equal(daZero.neighborhood, 'Spring Garden');
+  assert.equal(daZero.website, 'https://dazeroristorante.ca/');
+  assert.equal(daZero.menuUrl, 'https://dazeroristorante.ca/menu/');
+  assert.equal(daZero.openingHours, 'Monday–Wednesday 11:30am–9:30pm; Thursday 11:30am–10pm; Friday 11:30am–11pm; Saturday 11am–11pm; Sunday 11am–9:30pm');
+  assert.equal(daZero.specials.length, 0, 'Do not infer an evergreen happy-hour offer from undated page copy');
+  assert.equal(daZero.events.length, 0);
+}
+assert(active.has(daZeroId));
+
 const koDorakuId = 'ko-doraku-halifax';
 for (const records of [app.restaurants, catalog.restaurants]) {
   const matches = records.filter(record => record.id === koDorakuId);
