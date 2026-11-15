@@ -15,7 +15,8 @@
       "name": "Symphony Nova Scotia",
       "kind": "official_arts_calendar",
       "mode": "symphony_concerts",
-      "url": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/"
+      "url": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
+      "minimumExpectedEvents": 1
     },
     {
       "id": "halifax-public-libraries",
