@@ -507,6 +507,18 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
       "reviewState": "verified"
     },
     {
+      "restaurantId": "osm-node-5161526522-sushi-nami-royale",
+      "fields": {
+        "website": "https://sushinami.ca/downtown-halifax/",
+        "menuUrl": "https://sushinami.ca/downtown-halifax/take-out/"
+      },
+      "sourceUrl": "https://sushinami.ca/downtown-halifax/",
+      "claim": "The current Sushi Nami owner site identifies the existing Downtown Halifax branch at 1458 Queen Street with phone 902-422-1636 and publishes branch-specific lunch, dinner and takeout menu links. This correction replaces the brand-wide homepage with the location page and fills the missing branch-specific takeout menu link; it does not transfer another branch's menu, infer a dated offer or event, or claim a social post, media right or publisher date.",
+      "observedAt": "2026-11-15T18:18:56Z",
+      "reviewedAt": "2026-11-15T18:18:56Z",
+      "reviewState": "verified"
+    },
+    {
       "restaurantId": "osm-node-12143582175-asia-restaurant-and-bar",
       "fields": {
         "operatingStatus": "permanently_closed",

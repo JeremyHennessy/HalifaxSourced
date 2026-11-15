@@ -334,6 +334,22 @@ for (const records of [app.restaurants, catalog.restaurants]) {
 }
 assert(active.has(daZeroId));
 
+const sushiNamiDowntownId = 'osm-node-5161526522-sushi-nami-royale';
+for (const records of [app.restaurants, catalog.restaurants]) {
+  const matches = records.filter(record => record.id === sushiNamiDowntownId);
+  assert.equal(matches.length, 1, 'Sushi Nami must retain one 1458 Queen Street identity');
+  const sushiNami = matches[0];
+  assert.equal(sushiNami.address, '1458 Queen Street, Halifax');
+  assert.equal(sushiNami.neighborhood, 'Spring Garden');
+  assert.equal(sushiNami.website, 'https://sushinami.ca/downtown-halifax/');
+  assert.equal(sushiNami.menuUrl, 'https://sushinami.ca/downtown-halifax/take-out/');
+  assert.equal(sushiNami.phone, '902-422-1636');
+  assert.equal(sushiNami.openingHours, 'Mo-Th 11:30-22:00; Fr-Sa 11:30-23:00; Su 12:00-22:00');
+  assert.equal(sushiNami.specials.length, 0, 'Do not infer a dated offer from menu headings');
+  assert.equal(sushiNami.events.length, 0);
+}
+assert(active.has(sushiNamiDowntownId));
+
 const koDorakuId = 'ko-doraku-halifax';
 for (const records of [app.restaurants, catalog.restaurants]) {
   const matches = records.filter(record => record.id === koDorakuId);
