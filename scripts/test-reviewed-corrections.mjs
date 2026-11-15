@@ -234,6 +234,29 @@ for (const records of [app.restaurants, catalog.restaurants]) {
 }
 assert(active.has(borschHouseId));
 
+const buttercremeId = 'buttercreme-cafe-halifax';
+for (const records of [app.restaurants, catalog.restaurants]) {
+  const matches = records.filter(record => record.id === buttercremeId);
+  assert.equal(matches.length, 1, 'Buttercreme Cafe must have one reviewed Spring Garden identity');
+  const buttercreme = matches[0];
+  assert.equal(buttercreme.name, 'Buttercreme Cafe');
+  assert.equal(buttercreme.address, '1452 Dresden Row, Halifax, NS');
+  assert.equal(buttercreme.neighborhood, 'Spring Garden');
+  assert.equal(buttercreme.phone, '902-989-5851');
+  assert.equal(buttercreme.website, 'https://www.buttercreme.store/');
+  assert.equal(buttercreme.openingHours, null, 'Do not publish conflicting third-party schedules');
+  assert.equal(buttercreme.coordinates, null, 'Do not invent coordinates from the civic address');
+  assert.deepEqual([...buttercreme.cuisines], ['Cafe']);
+  assert.deepEqual(buttercreme.socialProfiles.map(profile => profile.url), ['https://www.instagram.com/buttercreme_cafe/']);
+  assert.equal(buttercreme.socialProfiles[0].associationBasis, 'trusted_directory_explicit_link');
+  assert.equal(buttercreme.specials.length, 0);
+  assert.equal(buttercreme.events.length, 0);
+  assert.deepEqual((buttercreme.inspectionRecords || buttercreme.inspections).map(record => record.facilityId), ['4625893'], 'Bind the exact same-name and same-address Buttercreme Cafe inspection record');
+  assert(buttercreme.sources.some(source => source.type === 'official_website' && source.url === 'https://www.buttercreme.store/'));
+  assert(buttercreme.sources.some(source => source.type === 'government_inspection' && source.url.includes('Id1=4625893')));
+}
+assert(active.has(buttercremeId));
+
 const koDorakuId = 'ko-doraku-halifax';
 for (const records of [app.restaurants, catalog.restaurants]) {
   const matches = records.filter(record => record.id === koDorakuId);
