@@ -194,6 +194,26 @@ for (const records of [app.restaurants, catalog.restaurants]) {
 }
 assert(active.has(larryId));
 assert(app.restaurants.find(record => record.id === larryId).menuLinks.some(link => link.url === 'https://larryssandwiches.com/order'));
+const earlyAtElksId = 'early-at-elks-dartmouth';
+for (const records of [app.restaurants, catalog.restaurants]) {
+  const matches = records.filter(record => record.id === earlyAtElksId);
+  assert.equal(matches.length, 1, 'Early at Elks must have one reviewed Downtown Dartmouth identity');
+  const early = matches[0];
+  assert.equal(early.name, 'Early at Elks');
+  assert.equal(early.address, '19 Portland Street, Dartmouth, NS B2Y 1H1');
+  assert.equal(early.phone, '902-431-3557');
+  assert.equal(early.website, null, 'A directory-linked Instagram profile is not an owner website');
+  assert.equal(early.openingHours, null, 'Do not publish old third-party hours or salon hours as cafe hours');
+  assert.equal(early.coordinates, null, 'Do not invent coordinates from the civic address');
+  assert.deepEqual([...early.cuisines], ['Cafe']);
+  assert.deepEqual(early.socialProfiles.map(profile => profile.url), ['https://www.instagram.com/early.at.elks/']);
+  assert.equal(early.socialProfiles[0].associationBasis, 'trusted_directory_explicit_link');
+  assert.equal(early.specials.length, 0, 'Expired food-crawl items are not current offers');
+  assert.equal(early.events.length, 0, 'Do not invent a next food-crawl occurrence');
+  assert(!early.sources.some(source => source.type === 'government_inspection'), 'Do not imply an Early at Elks food-inspection record');
+  assert(records.some(record => record.id === 'side-hustle-snack-bar-dartmouth'), 'The neighbouring 21 Portland Street identity must survive');
+}
+assert(active.has(earlyAtElksId));
 const butaHalifaxId = 'osm-node-6031036960-buta-ramen';
 const butaDartmouthId = 'buta-ramen-dartmouth';
 for (const records of [app.restaurants, catalog.restaurants]) {
