@@ -35,12 +35,13 @@ try {
     export async function fetchGuardedSource(url) {
       await appendFile(${JSON.stringify(join(root, "requests.log"))}, url+'\\n');
       if (url !== "https://symphony.example/concerts/") throw new Error("Unexpected network target");
-      return new Response(${JSON.stringify(html)}, { headers: { "content-type": "text/html" } });
+      const body = process.env.EMPTY_SYMPHONY === '1' ? '<h3>Choose a concert by&hellip;</h3>' : ${JSON.stringify(html)};
+      return new Response(body, { headers: { "content-type": "text/html" } });
     }
   `);
   await writeFile(join(root, "data", "event-source-supplements.json"), JSON.stringify({
     sources: [
-      { id: "symphony-nova-scotia", name: "Symphony Nova Scotia", kind: "official_arts_calendar", mode: "symphony_concerts", url: "https://symphony.example/concerts/" },
+      { id: "symphony-nova-scotia", name: "Symphony Nova Scotia", kind: "official_arts_calendar", mode: "symphony_concerts", url: "https://symphony.example/concerts/", minimumExpectedEvents: 1 },
       { id: "blocked-source", name: "Blocked source", kind: "official_venue_calendar", mode: "eventon_jsonld_calendar", url: "https://blocked.example/events/", enabled: false, disabledReason: "http_403", accessReview: {lastAttemptAt: "2026-10-19T12:00:00.000Z", resumeWhen: "Owner review required"} }
     ]
   }));
@@ -80,7 +81,15 @@ try {
     assert.equal(output.failures[0].observedAt, '2026-10-19T12:00:00.000Z');
     assert.deepEqual((await readFile(join(root,'requests.log'),'utf8')).trim().split('\n'), Array(run+1).fill('https://symphony.example/concerts/'), 'Disabled sources must receive zero requests on initial import and reruns');
   }
-  console.log("Symphony heading regression passed: first concert survives navigation, dates remain isolated, range/venue guards and rerun replacement hold.");
+  const empty = spawnSync(process.execPath, [join(root, "scripts", "import-supplemental-city-events.mjs")], { encoding: "utf8", env: {...process.env, EMPTY_SYMPHONY: "1"} });
+  assert.equal(empty.status, 0, empty.stderr);
+  const emptyOutput = JSON.parse(await readFile(join(root, "data", "build", "city-events.json"), "utf8"));
+  const emptyStat = emptyOutput.sourceStats.find(stat => stat.sourceId === "symphony-nova-scotia");
+  assert.equal(emptyStat.status, "failed", "An unexpectedly empty official season must not be reported as a successful withdrawal");
+  assert.equal(emptyStat.eventCount, 0);
+  assert.equal(emptyStat.reason, "unexpected_event_count_0_below_1");
+  assert(emptyOutput.failures.some(failure => failure.sourceId === "symphony-nova-scotia" && failure.reason === emptyStat.reason));
+  console.log("Symphony heading regression passed: first concert survives navigation, dates remain isolated, range/venue guards and rerun replacement hold; an unexpected zero yield fails closed.");
 } finally {
   await rm(root, { recursive: true, force: true });
 }
