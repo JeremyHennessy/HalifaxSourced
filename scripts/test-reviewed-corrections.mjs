@@ -256,6 +256,29 @@ for (const records of [app.restaurants, catalog.restaurants]) {
 }
 assert(active.has(koDorakuId));
 
+const chickingId = 'chicking-4-you-halifax';
+for (const records of [app.restaurants, catalog.restaurants]) {
+  const matches = records.filter(record => record.id === chickingId);
+  assert.equal(matches.length, 1, 'Chicking 4 You must have one reviewed Spring Garden identity');
+  const chicking = matches[0];
+  assert.equal(chicking.name, 'Chicking 4 You');
+  assert.equal(chicking.address, '5680 Spring Garden Road, Halifax, NS B3J 1H5');
+  assert.equal(chicking.neighborhood, 'Spring Garden');
+  assert.equal(chicking.phone, '902-406-7070');
+  assert.equal(chicking.website, 'https://chickingrestaurant.com/');
+  assert.equal(chicking.menuUrl, 'https://chickingrestaurant.com/menu/');
+  assert.equal(chicking.openingHours, 'Monday–Saturday 11:30am–9:30pm; Sunday 3pm–8:30pm');
+  assert.equal(chicking.coordinates, null, 'Do not infer coordinates from the civic address');
+  assert.deepEqual([...chicking.cuisines], ['Korean']);
+  assert.equal(chicking.socialProfiles.length, 0, 'Do not infer a social profile or activity from public web references');
+  assert.equal(chicking.specials.length, 0);
+  assert.equal(chicking.events.length, 0);
+  assert.deepEqual((chicking.inspectionRecords || chicking.inspections).map(record => record.facilityId), ['3557023'], 'Bind the exact same-name and same-address Chicking 4U inspection record');
+  assert(chicking.sources.some(source => source.type === 'official_menu' && source.url === 'https://chickingrestaurant.com/menu/'));
+  assert(chicking.sources.some(source => source.url === 'https://chicking4u.ca/' && source.status === 'failed'), 'Retain the district-linked former domain only as failed evidence');
+}
+assert(active.has(chickingId));
+
 const malaLoklokId = 'mala-loklok-halifax';
 for (const records of [app.restaurants, catalog.restaurants]) {
   const matches = records.filter(record => record.id === malaLoklokId);
