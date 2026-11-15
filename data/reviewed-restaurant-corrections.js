@@ -2344,6 +2344,70 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
       "sourceLayer": "reviewed_location_correction"
     },
     {
+      "id": "hanyoung-bowl-asian-kitchen-halifax",
+      "name": "Hanyoung Bowl Asian Kitchen",
+      "address": "5640 Spring Garden Road, Halifax, NS",
+      "neighborhood": "Spring Garden",
+      "category": "Restaurant",
+      "website": "https://www.springgardenplace.ca/stores?c=hanyoung-bowl-asian-kitchen",
+      "phone": "902-429-9862",
+      "coordinates": null,
+      "openingHours": "Monday closed; Tuesday–Saturday noon–8pm; Sunday 2pm–8pm",
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current Spring Garden Area Business Association directory lists Hanyoung Bowl as an Asian fusion fast-food restaurant, and the current Spring Garden Place tenant page identifies Hanyoung Bowl Asian Kitchen at 5640 Spring Garden Road, publishes phone 902-429-9862 and Monday-closed, Tuesday-Saturday noon-8pm, Sunday 2pm-8pm hours, and explicitly links Instagram profile @hanyoungbowl. The directory-linked former owner domain currently serves unrelated gambling/spam content and is retained only as failed source evidence; it is not published as the restaurant website and its historical hours are not used. No unit, coordinates, menu, offers, events, media rights or current social-post activity are inferred.",
+        "sourceUrl": "https://www.springgardenplace.ca/stores?c=hanyoung-bowl-asian-kitchen",
+        "observedAt": "2026-11-15T06:15:54Z",
+        "reviewState": "verified",
+        "location": "5640 Spring Garden Road, Halifax, NS"
+      },
+      "cuisines": [
+        "Asian fusion"
+      ],
+      "vibe": [
+        "casual",
+        "local"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/hanyoungbowl/",
+          "discoveredFrom": "https://www.springgardenplace.ca/stores?c=hanyoung-bowl-asian-kitchen",
+          "associationBasis": "trusted_venue_explicit_link",
+          "observedAt": "2026-11-15T06:15:54Z",
+          "lastVerifiedAt": "2026-11-15T06:15:54Z",
+          "reviewState": "verified"
+        }
+      ],
+      "sources": [
+        {
+          "type": "business_directory",
+          "label": "Current Spring Garden district identity and Asian-fusion restaurant description",
+          "url": "https://www.springgardenarea.com/eat-drink",
+          "observedAt": "2026-11-15T06:15:54Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Current venue tenant identity, civic address, phone, weekly hours and explicit owner-social pointer",
+          "url": "https://www.springgardenplace.ca/stores?c=hanyoung-bowl-asian-kitchen",
+          "observedAt": "2026-11-15T06:15:54Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Former owner domain currently serves unrelated gambling/spam content; not published",
+          "url": "https://www.hanyoungbowlasiankitchen.com/",
+          "observedAt": "2026-11-15T06:15:54Z",
+          "status": "failed"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
       "id": "borsch-house-halifax",
       "name": "Borsch House",
       "address": "5640 Spring Garden Road, Halifax, NS",
