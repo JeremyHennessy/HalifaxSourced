@@ -233,6 +233,26 @@ for (const records of [app.restaurants, catalog.restaurants]) {
   assert(borsch.sources.some(source => source.type === 'government_inspection' && source.url.includes('Id1=3644410')));
 }
 assert(active.has(borschHouseId));
+
+const hanyoungBowlId = 'hanyoung-bowl-asian-kitchen-halifax';
+for (const records of [app.restaurants, catalog.restaurants]) {
+  const matches = records.filter(record => record.id === hanyoungBowlId);
+  assert.equal(matches.length, 1, 'Hanyoung Bowl must have one reviewed Spring Garden identity');
+  const hanyoung = matches[0];
+  assert.equal(hanyoung.name, 'Hanyoung Bowl Asian Kitchen');
+  assert.equal(hanyoung.address, '5640 Spring Garden Road, Halifax, NS');
+  assert.equal(hanyoung.neighborhood, 'Spring Garden');
+  assert.equal(hanyoung.phone, '902-429-9862');
+  assert.equal(hanyoung.website, 'https://www.springgardenplace.ca/stores?c=hanyoung-bowl-asian-kitchen');
+  assert.equal(hanyoung.openingHours, 'Monday closed; Tuesday–Saturday noon–8pm; Sunday 2pm–8pm');
+  assert.equal(hanyoung.coordinates, null, 'Do not infer a unit or coordinates from the venue address');
+  assert.deepEqual([...hanyoung.cuisines], ['Asian fusion']);
+  assert.equal(hanyoung.specials.length, 0);
+  assert.equal(hanyoung.events.length, 0);
+  assert(hanyoung.socialProfiles.some(profile => profile.platform === 'instagram' && profile.url === 'https://www.instagram.com/hanyoungbowl/'));
+  assert(hanyoung.sources.some(source => source.url === 'https://www.hanyoungbowlasiankitchen.com/' && source.status === 'failed'), 'Retain the hijacked former owner domain only as failed evidence');
+}
+assert(active.has(hanyoungBowlId));
 const butaHalifaxId = 'osm-node-6031036960-buta-ramen';
 const butaDartmouthId = 'buta-ramen-dartmouth';
 for (const records of [app.restaurants, catalog.restaurants]) {
