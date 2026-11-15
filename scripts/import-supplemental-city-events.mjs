@@ -477,6 +477,8 @@ for (const source of sources) {
     else if (source.mode === "official_location_events") events = await importOfficialLocationEvents(source);
     else if (source.mode === "eventon_jsonld_calendar") events = await importEventonCalendar(source);
     else throw new Error(`unsupported_mode_${source.mode}`);
+    const minimumExpectedEvents = Math.max(0, Number(source.minimumExpectedEvents || 0));
+    if (events.length < minimumExpectedEvents) throw new Error(`unexpected_event_count_${events.length}_below_${minimumExpectedEvents}`);
     supplemental.push(...events);
     sourceStats.push({ sourceId: source.id, sourceName: source.name, status: "ok", eventCount: events.length, observedAt: new Date().toISOString(), durationMs: Date.now() - started });
     console.log(`${source.name}: ${events.length} supplemental Halifax events.`);
