@@ -496,6 +496,17 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
       "reviewState": "verified"
     },
     {
+      "restaurantId": "osm-node-1689418194-da-zero-ristorante",
+      "fields": {
+        "menuUrl": "https://dazeroristorante.ca/menu/"
+      },
+      "sourceUrl": "https://dazeroristorante.ca/menu/",
+      "claim": "The current Da Zero owner site links and publishes the restaurant's menu at this URL. The same owner site identifies the existing 1472 Cathedral Lane restaurant, phone and weekly hours. This correction fills only the missing owner-menu link; it does not infer a dated offer, event occurrence, social post, media right or publisher date.",
+      "observedAt": "2026-11-15T17:19:30Z",
+      "reviewedAt": "2026-11-15T17:19:30Z",
+      "reviewState": "verified"
+    },
+    {
       "restaurantId": "osm-node-12143582175-asia-restaurant-and-bar",
       "fields": {
         "operatingStatus": "permanently_closed",
