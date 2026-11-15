@@ -1,6 +1,6 @@
 window.HALIFAX_RESTAURANT_CORRECTIONS = {
   "version": 3,
-  "reviewedAt": "2026-11-14",
+  "reviewedAt": "2026-11-15",
   "policy": "Reviewed location evidence overrides stale imports; observation dates are retained and uncertain coordinates, hours, successor identities and closure day remain unknown.",
   "records": [
     {
@@ -2337,6 +2337,59 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
           "label": "Official 2026 restaurant menu",
           "url": "https://www.evansfreshseafoods.com/menu/",
           "observedAt": "2026-10-20T10:22:50.342Z",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
+      "id": "borsch-house-halifax",
+      "name": "Borsch House",
+      "address": "5640 Spring Garden Road, Halifax, NS",
+      "neighborhood": "Spring Garden",
+      "category": "Restaurant",
+      "website": "https://www.springgardenplace.ca/home/borsch-house",
+      "phone": null,
+      "coordinates": null,
+      "openingHours": null,
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current Spring Garden Area Business Association directory lists Borsch House as a Ukrainian restaurant, the current Spring Garden Place tenant page identifies Borsch House at 5640 Spring Garden Road, and the Nova Scotia food-inspection registry snapshot current as of November 12, 2026 records Borsch House at the same civic address. The tenant page and dining directory publish conflicting schedules, so ordinary weekly hours remain unknown. No restaurant-specific phone, owner social profile, menu, coordinates, offers, events or media rights are inferred.",
+        "sourceUrl": "https://www.springgardenplace.ca/home/borsch-house",
+        "observedAt": "2026-11-15T05:17:54Z",
+        "reviewState": "verified",
+        "location": "5640 Spring Garden Road, Halifax, NS"
+      },
+      "cuisines": [
+        "Ukrainian"
+      ],
+      "vibe": [
+        "local"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [],
+      "sources": [
+        {
+          "type": "business_directory",
+          "label": "Current Spring Garden district identity and Ukrainian-restaurant description",
+          "url": "https://www.springgardenarea.com/eat-drink",
+          "observedAt": "2026-11-15T05:17:54Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Current venue tenant identity and exact civic address; conflicting schedules not published",
+          "url": "https://www.springgardenplace.ca/home/borsch-house",
+          "observedAt": "2026-11-15T05:17:54Z",
+          "status": "verified"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Nova Scotia food-establishment identity and exact civic address, snapshot current as of November 12, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3644410",
+          "observedAt": "2026-11-12T19:27:53.425Z",
           "status": "verified"
         }
       ],
