@@ -466,14 +466,15 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
     {
       "restaurantId": "osm-node-4421959790-humani-t",
       "fields": {
-        "operatingStatus": "permanently_closed",
+        "operatingStatus": "replaced",
         "website": null,
-        "openingHours": null
+        "openingHours": null,
+        "successorId": "bliss-caffeine-bar-halifax"
       },
-      "sourceUrl": "https://www.facebook.com/humanitcafe/",
-      "claim": "The former Humani-T café permanently closed; owner-posted closure evidence dates to 2021.",
-      "observedAt": "2026-09-12",
-      "reviewedAt": "2026-10-19",
+      "sourceUrl": "https://blisscaffeinebar.com/contact/",
+      "claim": "The former Humani-T café permanently closed in 2021. Bliss Caffeine Bar's current owner contact page and the Nova Scotia food-inspection registry identify the current restaurant at the exact 1451 South Park Street address. Archive Humani-T as replaced while retaining its source history; no replacement date is inferred, and its coordinates, contact details and hours are not transferred to Bliss.",
+      "observedAt": "2026-11-15T15:20:18Z",
+      "reviewedAt": "2026-11-15T15:20:18Z",
       "reviewState": "verified",
       "effectiveDate": "2021"
     },
@@ -2778,6 +2779,81 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
           "type": "government_inspection",
           "label": "Nova Scotia food-establishment identity and exact civic address, snapshot current as of November 12, 2026",
           "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4625893",
+          "observedAt": "2026-11-12T19:27:53.425Z",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
+      "id": "bliss-caffeine-bar-halifax",
+      "name": "Bliss Caffeine Bar",
+      "address": "1451 South Park Street, Halifax, NS B3J 2L1",
+      "neighborhood": "Spring Garden",
+      "category": "Cafe",
+      "website": "https://blisscaffeinebar.com/",
+      "phone": "902-407-3500",
+      "coordinates": null,
+      "openingHours": "Monday closed; Tuesday–Sunday 8am–4pm",
+      "menuUrl": "https://blisscaffeinebar.com/menu/",
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current owner contact page publishes Bliss Caffeine Bar at 1451 South Park Street with phone 902-407-3500 and Monday-closed, Tuesday-Sunday 8am-4pm hours; its current menu page publishes location-specific food, drink and pastry menus. The current Spring Garden district directory links the same owner domain, the current Discover Halifax restaurant guide independently identifies Bliss at the same address, and the Nova Scotia food-inspection snapshot current as of November 12, 2026 contains two same-name records at the exact civic address. The stale Humani-T identity at this address is archived separately as replaced. Its coordinate is not transferred. No social profile, dated offer, event occurrence, media right or publisher date is inferred.",
+        "sourceUrl": "https://blisscaffeinebar.com/contact/",
+        "observedAt": "2026-11-15T15:20:18Z",
+        "reviewState": "verified",
+        "location": "1451 South Park Street, Halifax, NS B3J 2L1"
+      },
+      "cuisines": [
+        "Cafe"
+      ],
+      "vibe": [
+        "local"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [],
+      "sources": [
+        {
+          "type": "business_directory",
+          "label": "Current Spring Garden district identity and owner-domain link",
+          "url": "https://www.springgardenarea.com/eat-drink",
+          "observedAt": "2026-11-15T15:20:18Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Current owner exact civic address, phone and complete weekly hours",
+          "url": "https://blisscaffeinebar.com/contact/",
+          "observedAt": "2026-11-15T15:20:18Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_menu",
+          "label": "Current owner-published location-specific food, drink and pastry menus",
+          "url": "https://blisscaffeinebar.com/menu/",
+          "observedAt": "2026-11-15T15:20:18Z",
+          "status": "verified"
+        },
+        {
+          "type": "tourism_directory",
+          "label": "Current Discover Halifax identity and exact civic address; article updated July 6, 2026",
+          "url": "https://discoverhalifaxns.com/ask-a-local/ask-a-local-9-must-try-women-owned-restaurants/",
+          "observedAt": "2026-11-15T15:20:18Z",
+          "status": "verified"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Nova Scotia food-establishment identity and exact civic address, snapshot current as of November 12, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4637004",
+          "observedAt": "2026-11-12T19:27:53.425Z",
+          "status": "verified"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Second same-name Nova Scotia food-establishment record at the exact civic address, snapshot current as of November 12, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2817053",
           "observedAt": "2026-11-12T19:27:53.425Z",
           "status": "verified"
         }
