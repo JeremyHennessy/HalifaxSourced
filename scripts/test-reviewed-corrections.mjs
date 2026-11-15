@@ -234,6 +234,26 @@ for (const records of [app.restaurants, catalog.restaurants]) {
 }
 assert(active.has(borschHouseId));
 
+const malaLoklokId = 'mala-loklok-halifax';
+for (const records of [app.restaurants, catalog.restaurants]) {
+  const matches = records.filter(record => record.id === malaLoklokId);
+  assert.equal(matches.length, 1, 'Mala Loklok must have one reviewed Spring Garden identity');
+  const mala = matches[0];
+  assert.equal(mala.name, 'Mala Loklok');
+  assert.equal(mala.address, '5640 Spring Garden Road, Halifax, NS');
+  assert.equal(mala.neighborhood, 'Spring Garden');
+  assert.equal(mala.phone, '902-407-5725');
+  assert.equal(mala.website, 'https://www.springgardenplace.ca/dining?c=mala-loklok');
+  assert.equal(mala.openingHours, 'Monday–Sunday 11:30am–9pm');
+  assert.equal(mala.coordinates, null, 'Do not infer a unit or coordinates from the venue address');
+  assert.deepEqual([...mala.cuisines], [], 'Do not infer a cuisine from third-party descriptions');
+  assert.equal(mala.socialProfiles.length, 0, 'Do not infer a social profile from a venue page that links none');
+  assert.equal(mala.specials.length, 0);
+  assert.equal(mala.events.length, 0);
+  assert.deepEqual((mala.inspectionRecords || mala.inspections).map(record => record.facilityId), [], 'Do not imply a Mala Loklok inspection record');
+  assert(mala.sources.some(source => source.url === 'https://mala-loklok.business.site/' && source.status === 'failed'), 'Retain the venue-linked owner pointer only as failed 404 evidence');
+}
+assert(active.has(malaLoklokId));
 const hanyoungBowlId = 'hanyoung-bowl-asian-kitchen-halifax';
 for (const records of [app.restaurants, catalog.restaurants]) {
   const matches = records.filter(record => record.id === hanyoungBowlId);
