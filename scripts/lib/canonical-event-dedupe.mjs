@@ -81,6 +81,16 @@ export function preservePublishedEventIds(events, previousEvents) {
       return `${event.sourceId}|${parsed.href.replace(/\/$/, '')}|${stamp}|${endStamp}`;
     } catch { return null; }
   };
+  const completePublishedTitle = (current, previous) => {
+    const currentTitle = String(current.title || '').trim();
+    const previousTitle = String(previous.title || '').trim();
+    if (!/(?:\u2026|\.\.\.)$/.test(currentTitle) || !previousTitle) return currentTitle;
+    const visiblePrefix = normalize(currentTitle.replace(/(?:\u2026|\.\.\.)$/, ''));
+    const complete = normalize(previousTitle);
+    return visiblePrefix && complete.length > visiblePrefix.length && complete.startsWith(visiblePrefix)
+      ? previousTitle
+      : currentTitle;
+  };
   for (const event of previousEvents) {
     const key = canonicalEventKey(event);
     if (!event.id) continue;
@@ -110,7 +120,12 @@ export function preservePublishedEventIds(events, previousEvents) {
     const aliases = [...new Set([
       ...(previous.duplicateEventIds || []), ...(event.duplicateEventIds || []), event.id
     ].filter(id => id && id !== previous.id))];
-    return { ...event, id: previous.id, duplicateEventIds: aliases };
+    return {
+      ...event,
+      title: completePublishedTitle(event, previous),
+      id: previous.id,
+      duplicateEventIds: aliases
+    };
   });
   assertUniqueEventIds(output);
   return output;

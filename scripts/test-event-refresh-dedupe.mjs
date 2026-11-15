@@ -85,6 +85,28 @@ for (const permutation of permutations(records)) {
     { now: Date.parse('2026-10-27T22:00:00Z') }).blocked, false);
 }
 assert.deepEqual(records, beforeRecords, 'Dedupe never edits accepted input evidence');
+const completeTitle = {
+  ...matinee,
+  id: 'published-complete-title',
+  title: 'The Art of Handcrafting: Celebrating Identity & Culture Through Afro-Inspired Accessories',
+  eventUrl: 'https://halifax.bibliocommons.com/v2/events/6b54d7c20f438a2f001d217b'
+};
+const truncatedRefresh = {
+  ...completeTitle,
+  id: 'refreshed-truncated-title',
+  title: 'The Art of Handcrafting: Celebrating Identity & Culture\u2026',
+  sourceId: 'woodlawn-library-events',
+  sourceKind: 'official_library_location_calendar',
+  eventUrl: completeTitle.eventUrl.replace('/v2/', '/'),
+  observedAt: '2026-11-15T18:55:55.298Z'
+};
+const titleGuarded = preservePublishedEventIds([truncatedRefresh], [completeTitle]);
+assert.equal(titleGuarded[0].id, completeTitle.id, 'The strict library occurrence keeps its published ID');
+assert.equal(titleGuarded[0].title, completeTitle.title, 'An ellipsis-truncated refresh cannot replace a complete published title');
+assert.equal(titleGuarded[0].sourceId, truncatedRefresh.sourceId, 'Fresh location-specific provenance is retained');
+assert.equal(titleGuarded[0].observedAt, truncatedRefresh.observedAt, 'The guard does not make refreshed evidence look stale');
+assert.equal(preservePublishedEventIds([{ ...truncatedRefresh, title: 'A Different Event\u2026' }], [completeTitle])[0].title,
+  'A Different Event\u2026', 'An unrelated shortened title is never expanded from stale content');
 assert.throws(() => assertUniqueEventIds(helpers.dedupe([matinee, { ...otherDetail, id: matinee.id }])),
   /Conflicting event identity/, 'Different library detail URLs with the same legacy ID remain held, not silently merged or renamed');
 const generic = { ...matinee, id: 'noncanonical', sourceKind: 'official_venue_calendar', sourceId: 'venue',
