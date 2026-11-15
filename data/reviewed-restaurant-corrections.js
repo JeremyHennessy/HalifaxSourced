@@ -2355,7 +2355,7 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
       "openingHours": "Monday–Sunday 11:30am–9pm",
       "operatingStatus": "active",
       "operatingStatusEvidence": {
-        "claim": "The current Spring Garden Area Business Association directory lists Mala Loklok, and the current Spring Garden Place tenant page identifies Mala Loklok at 5640 Spring Garden Road, publishes phone 902-407-5725 and daily 11:30am–9pm hours, and explicitly links the owner business-site pointer. That linked owner pointer currently returns HTTP 404 and is retained only as failed source evidence; it is not published as the restaurant website. Conflicting third-party schedules are not used. No unit, coordinates, cuisine, menu, inspection record, offers, events, social profile, media rights or current social-post activity are inferred.",
+        "claim": "The current Spring Garden Area Business Association directory lists Mala Loklok, and the current Spring Garden Place tenant page identifies Mala Loklok at 5640 Spring Garden Road, publishes phone 902-407-5725 and daily 11:30am–9pm hours, and explicitly links the owner business-site pointer. That linked owner pointer currently returns HTTP 404 and is retained only as failed source evidence; it is not published as the restaurant website. Conflicting third-party schedules are not used. The Nova Scotia food-inspection snapshot current as of November 12, 2026 independently records Mala Loklok at the same civic address. No unit, coordinates, cuisine, menu, offers, events, social profile, media rights or current social-post activity are inferred.",
         "sourceUrl": "https://www.springgardenplace.ca/dining?c=mala-loklok",
         "observedAt": "2026-11-15T07:19:28Z",
         "reviewState": "verified",
@@ -2389,6 +2389,13 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
           "url": "https://mala-loklok.business.site/",
           "observedAt": "2026-11-15T07:19:28Z",
           "status": "failed"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Nova Scotia food-establishment record current as of November 12, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2765458",
+          "observedAt": "2026-11-12T19:27:53.425Z",
+          "status": "verified"
         }
       ],
       "evidenceStatus": "verified",
