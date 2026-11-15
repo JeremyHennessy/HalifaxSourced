@@ -3160,15 +3160,15 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
       "neighborhood": "Spring Garden",
       "category": "Restaurant",
       "website": "https://phono1vietnameserestaurant.com/",
-      "menuUrl": "https://www.phono1vietnameserestaurant.com/pho-no1-vietnamese-restaurant/",
+      "menuUrl": "https://phono1vietnameserestaurant.com/pho-no1-vietnamese-restaurant/menu/1589-Dresden-Row/",
       "phone": "902-422-3589",
       "coordinates": null,
       "openingHours": "Mo-Th 11:00-21:00; Fr-Sa 11:00-22:00; Su 11:00-20:00",
       "operatingStatus": "active",
       "operatingStatusEvidence": {
-        "claim": "The current single-location owner site identifies Pho No.1 Vietnamese Restaurant at 1589 Dresden Row, Halifax, with phone 902-422-3589, a location menu/order page and a complete weekly schedule. The current Spring Garden directory links the same owner domain, and the Nova Scotia food-inspection snapshot independently records Pho No. 1 Vietnamese Restaurant at 1589 Dresden. The stale Alex Oh Sushi Rolls record at this address is archived separately; its coordinate is not transferred.",
+        "claim": "The current single-location owner site identifies Pho No.1 Vietnamese Restaurant at 1589 Dresden Row, Halifax, with phone 902-422-3589, a location-specific menu and a complete weekly schedule. The current Spring Garden directory links the same owner domain, and the Nova Scotia food-inspection snapshot current as of November 12, 2026 independently records Pho No. 1 Vietnamese Restaurant at 1589 Dresden. The owner menu currently says online ordering is unavailable, so no ordering action is published. The stale Alex Oh Sushi Rolls record at this address is archived separately; its coordinate is not transferred.",
         "sourceUrl": "https://phono1vietnameserestaurant.com/",
-        "observedAt": "2026-10-26T20:25:14Z",
+        "observedAt": "2026-11-15T12:11:11Z",
         "reviewState": "verified",
         "location": "1589 Dresden Row, Halifax, NS B3J 2K4"
       },
@@ -3188,28 +3188,28 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
           "type": "business_directory",
           "label": "Current Spring Garden restaurant listing and owner-domain link",
           "url": "https://www.springgardenarea.com/eat-drink",
-          "observedAt": "2026-10-26T20:25:14Z",
+          "observedAt": "2026-11-15T12:11:11Z",
           "status": "verified"
         },
         {
           "type": "official_website",
           "label": "Owner location, phone and complete weekly hours",
           "url": "https://phono1vietnameserestaurant.com/",
-          "observedAt": "2026-10-26T20:25:14Z",
+          "observedAt": "2026-11-15T12:11:11Z",
           "status": "verified"
         },
         {
           "type": "menu",
-          "label": "Owner location menu and ordering page",
-          "url": "https://www.phono1vietnameserestaurant.com/pho-no1-vietnamese-restaurant/",
-          "observedAt": "2026-10-26T20:25:14Z",
+          "label": "Current location-specific owner menu; online ordering unavailable",
+          "url": "https://phono1vietnameserestaurant.com/pho-no1-vietnamese-restaurant/menu/1589-Dresden-Row/",
+          "observedAt": "2026-11-15T12:11:11Z",
           "status": "verified"
         },
         {
           "type": "government_inspection",
-          "label": "Nova Scotia food-establishment record current as of October 19, 2026",
+          "label": "Nova Scotia food-establishment record current as of November 12, 2026",
           "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3884146",
-          "observedAt": "2026-10-20T07:20:13.079Z",
+          "observedAt": "2026-11-12T19:27:53.425Z",
           "status": "verified"
         }
       ],
