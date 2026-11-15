@@ -285,6 +285,40 @@ for (const records of [app.restaurants, catalog.restaurants]) {
 assert(active.has(blissId));
 assert(!active.has('osm-node-4421959790-humani-t'));
 
+const yeahHalifaxId = 'osm-node-11726312513-yeah-yeah-s-pizza';
+const yeahDartmouthId = 'yeah-yeahs-pizza-dartmouth';
+for (const records of [app.restaurants, catalog.restaurants]) {
+  const halifaxMatches = records.filter(record => record.id === yeahHalifaxId);
+  const dartmouthMatches = records.filter(record => record.id === yeahDartmouthId);
+  assert.equal(halifaxMatches.length, 1, 'Yeah Yeahs Halifax must retain one corrected OSM identity');
+  assert.equal(dartmouthMatches.length, 1, 'Yeah Yeahs Dartmouth must have one separate reviewed identity');
+  const halifax = halifaxMatches[0];
+  const dartmouth = dartmouthMatches[0];
+  assert.equal(halifax.neighborhood, 'West End');
+  assert.equal(halifax.address, '2983 Oxford Street, Halifax, NS');
+  assert.equal(halifax.phone, '902-463-5050');
+  assert.equal(halifax.website, 'https://www.yeahyeahspizza.com/');
+  assert.equal(halifax.menuUrl, 'https://www.yeahyeahspizza.com/menu');
+  assert.equal(halifax.openingHours, 'Open daily 11:30am–10pm; food until 9:30pm');
+  assert.equal(halifax.coordinates.lat, 44.6537042, 'Preserve the accepted Halifax OSM coordinate');
+  assert.equal(halifax.coordinates.lon, -63.6086658, 'Preserve the accepted Halifax OSM coordinate');
+  assert.deepEqual((halifax.inspectionRecords || halifax.inspections).map(record => record.facilityId), ['3437470'], 'Bind only the exact Halifax inspection branch');
+  assert.equal(dartmouth.neighborhood, 'Downtown Dartmouth');
+  assert.equal(dartmouth.address, '66 Ochterloney Street, Dartmouth, NS');
+  assert.equal(dartmouth.phone, '902-463-5050');
+  assert.equal(dartmouth.website, 'https://www.yeahyeahspizza.com/');
+  assert.equal(dartmouth.menuUrl, 'https://www.yeahyeahspizza.com/menu');
+  assert.equal(dartmouth.openingHours, 'Open daily 11:30am–8pm');
+  assert.equal(dartmouth.coordinates, null, 'Do not transfer Halifax coordinates to Dartmouth');
+  assert.deepEqual((dartmouth.inspectionRecords || dartmouth.inspections).map(record => record.facilityId), ['2338771'], 'Bind only the exact Dartmouth inspection branch');
+  assert.equal(dartmouth.specials.length, 0);
+  assert.equal(dartmouth.events.length, 0);
+  assert(dartmouth.sources.some(source => source.type === 'official_menu' && source.url === 'https://www.yeahyeahspizza.com/menu'));
+  assert(!dartmouth.aliasIds?.includes(halifax.id), 'Distinct owner-listed branches are not aliases');
+}
+assert(active.has(yeahHalifaxId));
+assert(active.has(yeahDartmouthId));
+
 const koDorakuId = 'ko-doraku-halifax';
 for (const records of [app.restaurants, catalog.restaurants]) {
   const matches = records.filter(record => record.id === koDorakuId);

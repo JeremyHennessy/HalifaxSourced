@@ -479,6 +479,23 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
       "effectiveDate": "2021"
     },
     {
+      "restaurantId": "osm-node-11726312513-yeah-yeah-s-pizza",
+      "fields": {
+        "neighborhood": "West End",
+        "address": "2983 Oxford Street, Halifax, NS",
+        "phone": "902-463-5050",
+        "website": "https://www.yeahyeahspizza.com/",
+        "menuUrl": "https://www.yeahyeahspizza.com/menu",
+        "openingHours": "Open daily 11:30am–10pm; food until 9:30pm",
+        "operatingStatus": "active"
+      },
+      "sourceUrl": "https://www.yeahyeahspizza.com/locations",
+      "claim": "The current owner site publishes separate Dartmouth and Halifax branches. The sparse OSM identity's coordinates are at the Halifax branch; the owner site identifies that branch at 2983 Oxford Street with daily 11:30am-10pm hours and food until 9:30pm, while the Nova Scotia food-inspection snapshot current as of November 12, 2026 records Yeah Yeahs Pizza at the same Halifax civic address. Keep those coordinates only on Halifax. The Dartmouth branch is reviewed separately, with no coordinate transfer between locations. The owner site links a brand-wide Instagram profile, but its current content was not accessible and no social activity, dated offer, event occurrence, media right or publisher date is inferred.",
+      "observedAt": "2026-11-15T16:17:17Z",
+      "reviewedAt": "2026-11-15T16:17:17Z",
+      "reviewState": "verified"
+    },
+    {
       "restaurantId": "osm-node-12143582175-asia-restaurant-and-bar",
       "fields": {
         "operatingStatus": "permanently_closed",
@@ -2854,6 +2871,77 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
           "type": "government_inspection",
           "label": "Second same-name Nova Scotia food-establishment record at the exact civic address, snapshot current as of November 12, 2026",
           "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2817053",
+          "observedAt": "2026-11-12T19:27:53.425Z",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
+      "id": "yeah-yeahs-pizza-dartmouth",
+      "name": "Yeah Yeahs Pizza",
+      "address": "66 Ochterloney Street, Dartmouth, NS",
+      "neighborhood": "Downtown Dartmouth",
+      "category": "Restaurant",
+      "website": "https://www.yeahyeahspizza.com/",
+      "phone": "902-463-5050",
+      "coordinates": null,
+      "openingHours": "Open daily 11:30am–8pm",
+      "menuUrl": "https://www.yeahyeahspizza.com/menu",
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current Downtown Dartmouth Business Commission directory lists Yeah Yeahs Pizza at 66 Ochterloney Street, links the owner domain and publishes phone 902-463-5050. The current owner site independently publishes the Dartmouth branch at the same address with daily 11:30am-8pm hours, a menu and a branch-selectable phone, and the Nova Scotia food-inspection snapshot current as of November 12, 2026 records Yeah Yeah's Pizza at the same civic address. The distinct Halifax branch remains on its original OSM identity and coordinates. No coordinates, social-post activity, dated offer, event occurrence, media right or publisher date are inferred for Dartmouth.",
+        "sourceUrl": "https://www.yeahyeahspizza.com/locations",
+        "observedAt": "2026-11-15T16:17:17Z",
+        "reviewState": "verified",
+        "location": "66 Ochterloney Street, Dartmouth, NS"
+      },
+      "cuisines": [
+        "Pizza"
+      ],
+      "vibe": [
+        "local"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/yeahyeahspizza/?hl=en",
+          "discoveredFrom": "https://www.yeahyeahspizza.com/",
+          "associationBasis": "official_site_explicit_link",
+          "observedAt": "2026-11-15T16:17:17Z",
+          "lastVerifiedAt": "2026-11-15T16:17:17Z",
+          "reviewState": "verified"
+        }
+      ],
+      "sources": [
+        {
+          "type": "business_directory",
+          "label": "Current Downtown Dartmouth district identity, exact civic address, phone and owner-domain link",
+          "url": "https://www.downtowndartmouth.ca/fooddrink",
+          "observedAt": "2026-11-15T16:17:17Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Current owner site distinct Dartmouth branch address, phone and complete weekly hours",
+          "url": "https://www.yeahyeahspizza.com/locations",
+          "observedAt": "2026-11-15T16:17:17Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_menu",
+          "label": "Current owner-published shared menu hub",
+          "url": "https://www.yeahyeahspizza.com/menu",
+          "observedAt": "2026-11-15T16:17:17Z",
+          "status": "verified"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Nova Scotia food-establishment identity and exact Dartmouth civic address, snapshot current as of November 12, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2338771",
           "observedAt": "2026-11-12T19:27:53.425Z",
           "status": "verified"
         }
