@@ -2344,6 +2344,64 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
       "sourceLayer": "reviewed_location_correction"
     },
     {
+      "id": "mala-loklok-halifax",
+      "name": "Mala Loklok",
+      "address": "5640 Spring Garden Road, Halifax, NS",
+      "neighborhood": "Spring Garden",
+      "category": "Restaurant",
+      "website": "https://www.springgardenplace.ca/dining?c=mala-loklok",
+      "phone": "902-407-5725",
+      "coordinates": null,
+      "openingHours": "Monday–Sunday 11:30am–9pm",
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current Spring Garden Area Business Association directory lists Mala Loklok, and the current Spring Garden Place tenant page identifies Mala Loklok at 5640 Spring Garden Road, publishes phone 902-407-5725 and daily 11:30am–9pm hours, and explicitly links the owner business-site pointer. That linked owner pointer currently returns HTTP 404 and is retained only as failed source evidence; it is not published as the restaurant website. Conflicting third-party schedules are not used. The Nova Scotia food-inspection snapshot current as of November 12, 2026 independently records Mala Loklok at the same civic address. No unit, coordinates, cuisine, menu, offers, events, social profile, media rights or current social-post activity are inferred.",
+        "sourceUrl": "https://www.springgardenplace.ca/dining?c=mala-loklok",
+        "observedAt": "2026-11-15T07:19:28Z",
+        "reviewState": "verified",
+        "location": "5640 Spring Garden Road, Halifax, NS"
+      },
+      "cuisines": [],
+      "vibe": [
+        "local"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [],
+      "sources": [
+        {
+          "type": "business_directory",
+          "label": "Current Spring Garden district identity",
+          "url": "https://www.springgardenarea.com/eat-drink",
+          "observedAt": "2026-11-15T07:19:28Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Current venue tenant identity, civic address, phone, weekly hours and owner-site pointer",
+          "url": "https://www.springgardenplace.ca/dining?c=mala-loklok",
+          "observedAt": "2026-11-15T07:19:28Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Venue-linked owner business-site pointer currently returns HTTP 404; not published",
+          "url": "https://mala-loklok.business.site/",
+          "observedAt": "2026-11-15T07:19:28Z",
+          "status": "failed"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Nova Scotia food-establishment record current as of November 12, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2765458",
+          "observedAt": "2026-11-12T19:27:53.425Z",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
       "id": "hanyoung-bowl-asian-kitchen-halifax",
       "name": "Hanyoung Bowl Asian Kitchen",
       "address": "5640 Spring Garden Road, Halifax, NS",
