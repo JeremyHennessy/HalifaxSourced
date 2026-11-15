@@ -2344,6 +2344,69 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
       "sourceLayer": "reviewed_location_correction"
     },
     {
+      "id": "early-at-elks-dartmouth",
+      "name": "Early at Elks",
+      "address": "19 Portland Street, Dartmouth, NS B2Y 1H1",
+      "neighborhood": "Downtown Dartmouth",
+      "category": "Cafe",
+      "website": null,
+      "phone": "902-431-3557",
+      "coordinates": null,
+      "openingHours": null,
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current Downtown Dartmouth Food & Drink directory lists Early at Elks at 19 Portland Street with phone 902-431-3557 and explicitly links the Early at Elks Instagram profile. The district's dated 2026 Food Crawl page independently identifies Early at Elk's at the same address and describes a regular cafe drink menu for that occurrence. Elk's Salon's current booking page corroborates the shared street address, postal code and phone, but no ownership relationship is inferred. Ordinary weekly hours, a current menu, food-inspection status, coordinates, offers, events and current social-post content remain unknown.",
+        "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
+        "observedAt": "2026-11-15T03:20:56Z",
+        "reviewState": "verified",
+        "location": "19 Portland Street, Dartmouth, NS B2Y 1H1"
+      },
+      "cuisines": [
+        "Cafe"
+      ],
+      "vibe": [
+        "local"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/early.at.elks/",
+          "discoveredFrom": "https://www.downtowndartmouth.ca/fooddrink",
+          "associationBasis": "trusted_directory_explicit_link",
+          "observedAt": "2026-11-15T03:20:56Z",
+          "lastVerifiedAt": "2026-11-15T03:20:56Z",
+          "reviewState": "verified"
+        }
+      ],
+      "sources": [
+        {
+          "type": "business_directory",
+          "label": "Current Downtown Dartmouth identity, address, phone and explicit owner-social pointer",
+          "url": "https://www.downtowndartmouth.ca/fooddrink",
+          "observedAt": "2026-11-15T03:20:56Z",
+          "status": "verified"
+        },
+        {
+          "type": "business_directory",
+          "label": "Dated 2026 district food-crawl location and cafe corroboration; no current offer inferred",
+          "url": "https://www.downtowndartmouth.ca/foodcrawl",
+          "observedAt": "2026-11-15T03:20:56Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Elk's Salon booking page corroborating the shared address, postal code and phone only",
+          "url": "https://square.site/book/YQ4NZRP9PXCP0/elk-s-salon-dartmouth-ns",
+          "observedAt": "2026-11-15T03:20:56Z",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
       "id": "larrys-sandwiches-dartmouth",
       "name": "Larry’s Sandwiches & Sides",
       "address": "63 Portland Street, Dartmouth, NS B2Y 1H1",
