@@ -2402,6 +2402,66 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
       "sourceLayer": "reviewed_location_correction"
     },
     {
+      "id": "adda-indian-eatery-halifax",
+      "name": "Adda Indian Eatery",
+      "address": "5640 Spring Garden Road, Halifax, NS",
+      "neighborhood": "Spring Garden",
+      "category": "Restaurant",
+      "website": "https://www.springgardenplace.ca/dining?c=adda-indian-eatery",
+      "phone": "902-422-3501",
+      "coordinates": null,
+      "openingHours": "Monday closed; Tuesday–Thursday 11am–9pm; Friday–Sunday 11am–11pm",
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current Spring Garden Area Business Association directory lists Adda Indian Eatery, and the current Spring Garden Place tenant page identifies Adda Indian Eatery at 5640 Spring Garden Road, publishes phone 902-422-3501 and a Monday-closed, Tuesday-Thursday 11am-9pm, Friday-Sunday 11am-11pm schedule, and explicitly links the owner domain. That owner domain currently redirects to a generic cPanel default page describing a hosting or DNS misconfiguration; it is retained only as failed source evidence and is not published as the restaurant website. The Nova Scotia food-inspection snapshot current as of November 12, 2026 independently records ADDA INDIAN EATERY at the same civic address. No unit, coordinates, menu, offers, events, social profile, media rights or current social-post activity are inferred.",
+        "sourceUrl": "https://www.springgardenplace.ca/dining?c=adda-indian-eatery",
+        "observedAt": "2026-11-15T08:16:59.598Z",
+        "reviewState": "verified",
+        "location": "5640 Spring Garden Road, Halifax, NS"
+      },
+      "cuisines": [
+        "Indian"
+      ],
+      "vibe": [
+        "local"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [],
+      "sources": [
+        {
+          "type": "business_directory",
+          "label": "Current Spring Garden district identity and Indian street-food description",
+          "url": "https://www.springgardenarea.com/eat-drink",
+          "observedAt": "2026-11-15T08:17:18.510Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Current venue tenant identity, civic address, phone, weekly hours and owner-site pointer",
+          "url": "https://www.springgardenplace.ca/dining?c=adda-indian-eatery",
+          "observedAt": "2026-11-15T08:16:59.598Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Venue-linked owner domain currently serves a generic cPanel default page; not published",
+          "url": "https://www.addaindianeatery.com/",
+          "observedAt": "2026-11-15T08:17:08.068Z",
+          "status": "failed"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Nova Scotia food-establishment record current as of November 12, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2569151",
+          "observedAt": "2026-11-12T19:27:53.425Z",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
       "id": "hanyoung-bowl-asian-kitchen-halifax",
       "name": "Hanyoung Bowl Asian Kitchen",
       "address": "5640 Spring Garden Road, Halifax, NS",
