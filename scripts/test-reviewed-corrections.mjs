@@ -234,6 +234,28 @@ for (const records of [app.restaurants, catalog.restaurants]) {
 }
 assert(active.has(borschHouseId));
 
+const koDorakuId = 'ko-doraku-halifax';
+for (const records of [app.restaurants, catalog.restaurants]) {
+  const matches = records.filter(record => record.id === koDorakuId);
+  assert.equal(matches.length, 1, 'Ko-Doraku must have one reviewed Spring Garden identity');
+  const koDoraku = matches[0];
+  assert.equal(koDoraku.name, 'Ko-Doraku');
+  assert.equal(koDoraku.address, '5640 Spring Garden Road, Halifax, NS');
+  assert.equal(koDoraku.neighborhood, 'Spring Garden');
+  assert.equal(koDoraku.phone, '902-423-8787');
+  assert.equal(koDoraku.website, 'https://ko-doraku.jimdofree.com/');
+  assert.equal(koDoraku.menuUrl, 'https://ko-doraku.jimdofree.com/menu/');
+  assert.equal(koDoraku.openingHours, null, 'Conflicting current owner and venue schedules must not become restaurant hours');
+  assert.equal(koDoraku.coordinates, null, 'Do not infer a unit or coordinates from the venue address');
+  assert.deepEqual([...koDoraku.cuisines], ['Japanese']);
+  assert.equal(koDoraku.socialProfiles.length, 0, 'Do not infer social activity or profiles from public web pages');
+  assert.equal(koDoraku.specials.length, 0);
+  assert.equal(koDoraku.events.length, 0);
+  assert.deepEqual((koDoraku.inspectionRecords || koDoraku.inspections).map(record => record.facilityId), ['2790506'], 'Bind the exact same-name and same-address Ko-Doraku inspection record');
+  assert(koDoraku.sources.some(source => source.type === 'official_menu' && source.url === 'https://ko-doraku.jimdofree.com/menu/'));
+}
+assert(active.has(koDorakuId));
+
 const malaLoklokId = 'mala-loklok-halifax';
 for (const records of [app.restaurants, catalog.restaurants]) {
   const matches = records.filter(record => record.id === malaLoklokId);

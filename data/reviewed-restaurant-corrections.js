@@ -2462,6 +2462,81 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
       "sourceLayer": "reviewed_location_correction"
     },
     {
+      "id": "ko-doraku-halifax",
+      "name": "Ko-Doraku",
+      "address": "5640 Spring Garden Road, Halifax, NS",
+      "neighborhood": "Spring Garden",
+      "category": "Restaurant",
+      "website": "https://ko-doraku.jimdofree.com/",
+      "phone": "902-423-8787",
+      "coordinates": null,
+      "openingHours": null,
+      "menuUrl": "https://ko-doraku.jimdofree.com/menu/",
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current owner site identifies Ko-Doraku as a small family-run Halifax Japanese restaurant in the lower level of Spring Garden Place and publishes phone 902-423-8787. Its location page identifies the Brenton Street entrance, while the current Spring Garden Place tenant page and Nova Scotia food-inspection snapshot identify the same restaurant at the venue's 5640 Spring Garden Road civic address and the same phone. The current owner homepage, owner location page and venue page publish materially conflicting weekly schedules, so ordinary hours remain unknown. The owner menu page is published only as a menu link; image-only menu contents are not transcribed. No unit, coordinates, offers, events, social profile, media rights or current social-post activity are inferred.",
+        "sourceUrl": "https://ko-doraku.jimdofree.com/",
+        "observedAt": "2026-11-15T10:14:58Z",
+        "reviewState": "verified",
+        "location": "5640 Spring Garden Road, Halifax, NS"
+      },
+      "cuisines": [
+        "Japanese"
+      ],
+      "vibe": [
+        "local"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [],
+      "sources": [
+        {
+          "type": "business_directory",
+          "label": "Current Spring Garden district identity and Japanese-restaurant description",
+          "url": "https://www.springgardenarea.com/eat-drink",
+          "observedAt": "2026-11-15T10:14:58Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Current owner identity, Halifax location, family-business description and phone; conflicting hours held",
+          "url": "https://ko-doraku.jimdofree.com/",
+          "observedAt": "2026-11-15T10:14:58Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Current owner location page for the Spring Garden Place lower level and Brenton Street entrance; conflicting hours held",
+          "url": "https://ko-doraku.jimdofree.com/locations-1/",
+          "observedAt": "2026-11-15T10:14:58Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Current venue tenant identity, civic address and matching phone; conflicting hours held",
+          "url": "https://www.springgardenplace.ca/dining?c=ko-doraku",
+          "observedAt": "2026-11-15T10:14:58Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_menu",
+          "label": "Current owner-published image menu and party-tray menu page",
+          "url": "https://ko-doraku.jimdofree.com/menu/",
+          "observedAt": "2026-11-15T10:14:58Z",
+          "status": "verified"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Nova Scotia food-establishment identity and exact civic address, snapshot current as of November 12, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2790506",
+          "observedAt": "2026-11-12T19:27:53.425Z",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
       "id": "hanyoung-bowl-asian-kitchen-halifax",
       "name": "Hanyoung Bowl Asian Kitchen",
       "address": "5640 Spring Garden Road, Halifax, NS",
