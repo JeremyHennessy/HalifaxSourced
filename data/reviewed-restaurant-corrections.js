@@ -4,6 +4,53 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
   "policy": "Reviewed location evidence overrides stale imports; observation dates are retained and uncertain coordinates, hours, successor identities and closure day remain unknown.",
   "records": [
     {
+      "restaurantId": "osm-node-3800067361-new-scotland-yard-emporium",
+      "fields": {
+        "name": "Morley’s Coffee",
+        "neighborhood": "Downtown Dartmouth",
+        "phone": "902-407-3899",
+        "openingHours": "Monday–Friday 7:30am–5:30pm; Saturday–Sunday 9am–5pm",
+        "evidenceStatus": "verified",
+        "summary": "Owner-associated independent Downtown Dartmouth café at 45 Portland Street, sharing its storefront with Friction Books and Taz Records."
+      },
+      "sourceUrl": "https://taz-records.myshopify.com/pages/locations",
+      "claim": "The current Taz Dartmouth location page explicitly names Morley’s Coffee in the shared Dartmouth storefront, publishes phone 902-407-3899 and regular Monday–Friday 7:30am–5:30pm and Saturday–Sunday 9am–5pm hours. Friction Books' current owner page independently states that it shares its 45 Portland Street storefront with Morley’s Coffee and links the exact Morley’s Instagram profile. The current Downtown Dartmouth directory and Nova Scotia inspection snapshot current as of November 12, 2026 independently identify Morley’s Coffee at 45 Portland Street with the same phone. This replaces only the stale OpenStreetMap name and missing contact/hours on the existing exact-address café record; its stable ID, coordinates, OpenStreetMap source history and media safeguards remain unchanged. No menu, offer, event, current social-content claim, publisher date or image right is inferred.",
+      "observedAt": "2026-11-16T20:15:51Z",
+      "reviewedAt": "2026-11-16T20:15:51Z",
+      "reviewState": "verified",
+      "reviewBasis": "current_shared_storefront_owner_pages_exact_directory_and_inspection_identity",
+      "fieldEvidence": {
+        "identity": {
+          "sourceUrl": "https://frictionbooks.com/",
+          "observedAt": "2026-11-16T20:15:51Z",
+          "reviewedAt": "2026-11-16T20:15:51Z",
+          "claim": "The current Friction Books owner page identifies the shared Morley’s Coffee storefront at 45 Portland Street, Dartmouth, B2Y 1H1 and phone 902-407-3899.",
+          "reviewState": "verified"
+        },
+        "openingHours": {
+          "sourceUrl": "https://taz-records.myshopify.com/pages/locations",
+          "observedAt": "2026-11-16T20:15:51Z",
+          "reviewedAt": "2026-11-16T20:15:51Z",
+          "claim": "The current Taz Dartmouth, Morley’s Coffee and Friction Books location page publishes the shared storefront's regular hours.",
+          "reviewState": "verified"
+        },
+        "inspectionIdentity": {
+          "sourceUrl": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2098377",
+          "observedAt": "2026-11-12T19:27:53.425Z",
+          "reviewedAt": "2026-11-16T20:15:51Z",
+          "claim": "Nova Scotia food-establishment snapshot current as of November 12, 2026 records Morley's Coffee at 45 PORTLAND, DARTMOUTH.",
+          "reviewState": "verified"
+        },
+        "socialAssociation": {
+          "sourceUrl": "https://frictionbooks.com/",
+          "observedAt": "2026-11-16T20:15:51Z",
+          "reviewedAt": "2026-11-16T20:15:51Z",
+          "claim": "The shared-storefront owner page links https://www.instagram.com/morleysdartmouth/ as Morley’s Coffee; the Meta page itself was not requested and no current post claim is made.",
+          "reviewState": "verified"
+        }
+      }
+    },
+    {
       "restaurantId": "osm-node-13286456320-creme",
       "fields": {
         "openingHours": "Daily 8am–6pm; Friday–Saturday evening service 8pm–10pm",
