@@ -1243,6 +1243,68 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
   ],
   "additions": [
     {
+      "id": "902-restaurant-catering-halifax",
+      "name": "902 Restaurant & Catering",
+      "address": "1579 Dresden Row, Halifax, NS B3J 2K4",
+      "neighborhood": "Spring Garden",
+      "category": "Restaurant",
+      "website": "https://www.902halifax.com/",
+      "menuUrl": "https://drive.google.com/drive/folders/1jZTizyMap7j5Rv40Ny4Q3VpE7irS_qug?usp=sharing",
+      "phone": "902-477-9090",
+      "coordinates": null,
+      "openingHours": "Sunday 2pm–11pm; Monday–Saturday 11am–11pm",
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current owner contact page identifies 902 Restaurant & Catering at 1579 Dresden Row, Halifax, publishes phone 902-477-9090 and location-specific Sunday 2pm–11pm and Monday–Saturday 11am–11pm hours. The owner homepage links its menu to a published Google Drive folder; the separate owner /menu page currently contains no items, so it is not used as the menu URL. The current Spring Garden directory links the same owner domain, and the Nova Scotia food-inspection snapshot current as of November 12, 2026 independently records 902 Restaurant & Catering at 1579 Dresden. Coordinates, offers, events, social activity, media rights and publisher dates remain unknown.",
+        "sourceUrl": "https://www.902halifax.com/contact-location",
+        "observedAt": "2026-11-16T10:37:52Z",
+        "reviewState": "verified",
+        "location": "1579 Dresden Row, Halifax, NS B3J 2K4"
+      },
+      "cuisines": [
+        "Mediterranean"
+      ],
+      "vibe": [
+        "casual",
+        "local"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [],
+      "sources": [
+        {
+          "type": "official_website",
+          "label": "Current owner location, phone and service hours",
+          "url": "https://www.902halifax.com/contact-location",
+          "observedAt": "2026-11-16T10:37:52Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_menu",
+          "label": "Owner-published menu folder linked from the current owner homepage",
+          "url": "https://drive.google.com/drive/folders/1jZTizyMap7j5Rv40Ny4Q3VpE7irS_qug?usp=sharing",
+          "observedAt": "2026-11-16T10:37:52Z",
+          "status": "verified"
+        },
+        {
+          "type": "business_directory",
+          "label": "Current Spring Garden district listing and exact owner domain",
+          "url": "https://www.springgardenarea.com/eat-drink",
+          "observedAt": "2026-11-16T10:37:52Z",
+          "status": "verified"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Nova Scotia food-establishment record current as of November 12, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6364885",
+          "observedAt": "2026-11-12T19:27:53.425Z",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
       "id": "twist-of-india-halifax",
       "name": "Twist of India Restaurant & Bar",
       "address": "1569 Dresden Row, Halifax, NS B3J 2K4",
