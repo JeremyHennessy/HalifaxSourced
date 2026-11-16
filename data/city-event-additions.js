@@ -2,7 +2,7 @@
 
 window.HALIFAX_CITY_EVENT_ADDITIONS = JSON.parse(`{
   "version": 1,
-  "generatedAt": "2026-11-14T18:17:02.437Z",
+  "generatedAt": "2026-11-16T22:19:51.300Z",
   "policy": "Curated city-event additions are source-backed records used when current official or local calendars have not yet been promoted into the primary city-events build.",
   "sources": [
     {
@@ -116,7 +116,7 @@ window.HALIFAX_CITY_EVENT_ADDITIONS = JSON.parse(`{
     {
       "sourceId": "halifax-public-libraries",
       "sourceName": "Halifax Public Libraries",
-      "sourceUrl": "https://www.halifaxpubliclibraries.ca/library-spaces/art-displays/",
+      "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
       "authority": "official_primary"
     }
   ],
@@ -1194,6 +1194,57 @@ window.HALIFAX_CITY_EVENT_ADDITIONS = JSON.parse(`{
       ],
       "alternateSources": [],
       "supersedesEventIds": []
+    },
+    {
+      "id": "halifax-public-libraries-8481b1bba8ed1139",
+      "title": "Movie: Gremlins",
+      "startAt": "2026-12-09T22:30:00.000Z",
+      "endAt": "2026-12-10T00:15:00.000Z",
+      "allDay": false,
+      "venueName": "Woodlawn Public Library",
+      "address": "31 Eisener Boulevard, Dartmouth, NS B2W 0J1",
+      "city": "Dartmouth",
+      "categories": [
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": "https://halifax.bibliocommons.com/v2/events/6af623c99bd80b004519050f",
+      "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
+      "sourceId": "halifax-public-libraries",
+      "sourceName": "Halifax Public Libraries",
+      "sourceKind": "public_library_calendar",
+      "observedAt": "2026-11-16T22:15:29.205Z",
+      "reviewedAt": "2026-11-16T22:19:51.300Z",
+      "reviewState": "source_observed",
+      "venueId": "woodlawn-library",
+      "organizerId": "halifax-public-libraries",
+      "organizerName": "Halifax Public Libraries",
+      "sourceEvidence": [
+        {
+          "sourceId": "halifax-public-libraries",
+          "sourceName": "Halifax Public Libraries",
+          "sourceUrl": "https://halifax.bibliocommons.com/v2/events/6af623c99bd80b004519050f",
+          "basis": "official_primary",
+          "observedAt": "2026-11-16T22:15:29.205Z",
+          "reviewedAt": "2026-11-16T22:19:51.300Z",
+          "observationBasis": "The scheduled collector observed the replacement event record; an independent official-page review confirmed the same occurrence, time, venue, address, and event URL while the previously accepted official detail URL returned the publisher's 404 page.",
+          "sourceCrawlAgeReported": "today",
+          "sourceCrawlTimestamp": "2026-11-16T22:15:29.205Z",
+          "observedFacts": [
+            "Movie: Gremlins is scheduled for Wednesday, December 9, 2026 from 6:30–8:15 p.m. Halifax local time.",
+            "The official listing identifies Woodlawn Public Library, 31 Eisener Boulevard, Dartmouth, as the location.",
+            "The former 6:00–7:45 p.m. official event URL now returns the publisher's 404 page; it is superseded rather than treated as a cancellation of the replacement occurrence."
+          ]
+        }
+      ],
+      "alternateSources": [],
+      "duplicateEventIds": [
+        "halifax-public-libraries-6fe205249f7771d9"
+      ],
+      "supersedesEventIds": [
+        "halifax-public-libraries-138e27ae3fd0e498"
+      ]
     }
   ]
 }`);
