@@ -127,6 +127,18 @@ if (garnetRogers) {
 }
 if (mergedEvents.some((event) => event.id === "the-carleton-d2693c5a7b5c42a3")) errors.push("superseded Garnet Rogers Friday record remained in the runtime event list.");
 
+const gremlins = mergedEvents.filter((event) => event.title === "Movie: Gremlins" && event.startAt.startsWith("2026-12-09"));
+if (gremlins.length !== 1) errors.push(`expected one current Movie: Gremlins record after reviewed supersession, found ${gremlins.length}.`);
+if (gremlins[0]?.id !== "halifax-public-libraries-8481b1bba8ed1139"
+  || gremlins[0]?.startAt !== "2026-12-09T22:30:00.000Z"
+  || gremlins[0]?.endAt !== "2026-12-10T00:15:00.000Z"
+  || gremlins[0]?.eventUrl !== "https://halifax.bibliocommons.com/v2/events/6af623c99bd80b004519050f") {
+  errors.push("current Movie: Gremlins official replacement identity, time, or source URL did not survive the runtime merge.");
+}
+if (mergedEvents.some((event) => event.id === "halifax-public-libraries-138e27ae3fd0e498")) {
+  errors.push("superseded Movie: Gremlins 6:00 p.m. record remained in the runtime event list.");
+}
+
 await mkdir(new URL("../artifacts", import.meta.url), { recursive: true });
 await writeFile(reportUrl, JSON.stringify({
   generatedAt: new Date().toISOString(),

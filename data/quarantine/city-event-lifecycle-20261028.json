@@ -2,10 +2,10 @@
   "version": 1,
   "archiveId": "city-event-lifecycle-20261028",
   "disposition": "reviewed_source_lifecycle_exclusion",
-  "reason": "Exact reviewed event lifecycle decisions only: two official cancellations and thirty successful-source withdrawals. Raw accepted evidence and source clocks remain preserved; unrelated omissions stay protected.",
-  "decisionReviewedAt": "2026-11-14T07:18:34.708Z",
-  "verifiedAgainstCommit": "0a1d60598a07a2b6763de34f3ecde119700dd5ef",
-  "rawArchiveRecordCount": 32,
+  "reason": "Exact reviewed event lifecycle decisions only: two official cancellations, thirty successful-source withdrawals, and one official replacement occurrence. Raw accepted evidence and source clocks remain preserved; unrelated omissions stay protected.",
+  "decisionReviewedAt": "2026-11-16T22:19:51.300Z",
+  "verifiedAgainstCommit": "aff90e0e6bff3e5cc89f19b6cb2a2ff514c770c3",
+  "rawArchiveRecordCount": 33,
   "activeQuarantineIds": [
     "halifax-public-libraries-18e0f73c90fb3674",
     "bedford-library-events-4bd8c911b59b9f58",
@@ -38,7 +38,8 @@
     "bedford-library-events-4905df750fabaddf",
     "bedford-library-events-50578682a65ddbfd",
     "bedford-library-events-d0ac75b5be85069c",
-    "halifax-public-libraries-c8a334efa9d18475"
+    "halifax-public-libraries-c8a334efa9d18475",
+    "halifax-public-libraries-138e27ae3fd0e498"
   ],
   "protectedDetailIds": [
     "the-carleton-2d6665b8890674d0"
@@ -82,6 +83,17 @@
       "previousGeneratedAt": "2026-10-30T05:56:26.043Z",
       "heldRemovalCount": 26,
       "decisionBasis": "Exact-record review of the fail-closed diagnostics. Both official library collectors completed successfully with valid exhaustive pagination; all 26 omitted future occurrences were reviewed as withdrawals. Three same-day detail URLs independently resolved to replacement content or an official 404. No failed, blocked, uncertain, or unrelated source record was admitted."
+    },
+    "gremlinsReplacementReview20261116": {
+      "reviewedAt": "2026-11-16T22:19:51.300Z",
+      "verifiedAgainstCommit": "aff90e0e6bff3e5cc89f19b6cb2a2ff514c770c3",
+      "scheduledRunId": 43967952362,
+      "artifactId": 14276187896,
+      "artifactSha256": "cba1500b8693dcaf439b70f677adaef83eacb15b6e2d8f7853bc5cd7d590448e",
+      "candidateGeneratedAt": "2026-11-16T22:13:58.778Z",
+      "previousGeneratedAt": "2026-11-14T06:35:49.331Z",
+      "heldRemovalCount": 1,
+      "decisionBasis": "The successful current official library collection replaced the accepted 6:00–7:45 p.m. Movie: Gremlins record with a new official event ID at 6:30–8:15 p.m. The current replacement detail page independently confirms the new occurrence and Woodlawn address; the previously accepted detail URL now renders the publisher's 404 page. No unrelated omission was admitted."
     }
   },
   "records": [
@@ -2130,6 +2142,72 @@
           "url": "https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/43567080117/artifacts/14102437712",
           "path": "city-event-source-drift-report.json",
           "observation": "The exact accepted ID appears in heldRemovals with currentSourceStatus=ok; the refresh failed closed and published no deletion."
+        }
+      ]
+    },
+    {
+      "expected": {
+        "id": "halifax-public-libraries-138e27ae3fd0e498",
+        "sourceId": "halifax-public-libraries",
+        "title": "Movie: Gremlins",
+        "eventUrl": "https://halifax.bibliocommons.com/v2/events/6ad906cae06996003a8501e4",
+        "startAt": "2026-12-09T22:00:00.000Z",
+        "endAt": "2026-12-09T23:45:00.000Z",
+        "observedAt": "2026-11-14T06:36:41.536Z"
+      },
+      "expectedRawRecordCanonicalSha256": "66782940728477871d524fd04ca974288121c9a4eb440ae8fd6b0ab3ae3e6715",
+      "rawAcceptedRecord": {
+        "id": "halifax-public-libraries-138e27ae3fd0e498",
+        "title": "Movie: Gremlins",
+        "startAt": "2026-12-09T22:00:00.000Z",
+        "endAt": "2026-12-09T23:45:00.000Z",
+        "allDay": false,
+        "venueName": "Woodlawn Public Library",
+        "address": "31 Eisener Boulevard, Dartmouth, NS B2W 0J1",
+        "city": "Dartmouth",
+        "categories": [
+          "Arts"
+        ],
+        "eventUrl": "https://halifax.bibliocommons.com/v2/events/6ad906cae06996003a8501e4",
+        "ticketUrl": null,
+        "price": null,
+        "sourceId": "halifax-public-libraries",
+        "sourceName": "Halifax Public Libraries",
+        "sourceKind": "public_library_calendar",
+        "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
+        "observedAt": "2026-11-14T06:36:41.536Z",
+        "reviewState": "source_observed",
+        "duplicateEventIds": [
+          "halifax-public-libraries-6fe205249f7771d9"
+        ],
+        "venueId": "woodlawn-library",
+        "neighbourhood": null,
+        "organizerId": "halifax-public-libraries",
+        "organizerName": "Halifax Public Libraries"
+      },
+      "decision": {
+        "kind": "reviewed_official_source_supersession",
+        "reviewedAt": "2026-11-16T22:19:51.300Z",
+        "reason": "The official library source replaced this exact 6:00–7:45 p.m. record with a new official event ID for the same title, date, and venue at 6:30–8:15 p.m.; the old detail URL now renders the publisher's 404 page."
+      },
+      "evidence": [
+        {
+          "kind": "current_official_source",
+          "url": "https://halifax.bibliocommons.com/v2/events/6af623c99bd80b004519050f",
+          "observedAt": "2026-11-16T22:19:51.300Z",
+          "observation": "The current official page lists Movie: Gremlins on December 9, 2026 from 6:30–8:15 p.m. at Woodlawn Public Library, 31 Eisener Boulevard, Dartmouth."
+        },
+        {
+          "kind": "superseded_official_source",
+          "url": "https://halifax.bibliocommons.com/v2/events/6ad906cae06996003a8501e4",
+          "observedAt": "2026-11-16T22:19:51.300Z",
+          "observation": "The previously accepted official detail URL now renders Halifax Public Libraries' 404 Not Found page."
+        },
+        {
+          "kind": "scheduled_refresh_diagnostics",
+          "url": "https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/43967952362/artifacts/14276187896",
+          "path": "city-event-source-drift-report.json",
+          "observation": "The exact accepted ID is the only held removal after a successful source collection, and the same artifact's candidate snapshot contains the replacement official record halifax-public-libraries-8481b1bba8ed1139. The refresh failed closed and published no deletion."
         }
       ]
     }
