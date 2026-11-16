@@ -3186,14 +3186,15 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
       "neighborhood": "Downtown Dartmouth",
       "category": "Quick eats",
       "website": "https://larryssandwiches.com/",
+      "menuUrl": "https://larryssandwiches.com/order",
       "phone": "902-449-2102",
       "coordinates": null,
       "openingHours": null,
       "operatingStatus": "active",
       "operatingStatusEvidence": {
-        "claim": "Official ordering page confirms this Dartmouth location, phone and sandwich menu. Tourism Nova Scotia identifies the local team behind Dear Friend Bar. No opening date or ordinary weekly hours established; dynamic ordering availability is not a weekly schedule.",
-        "sourceUrl": "https://larryssandwiches.com/order",
-        "observedAt": "2026-10-20",
+        "claim": "The current owner site identifies Larry’s Sandwiches & Sides at 63 Portland Street, Dartmouth, publishes phone 902-449-2102, links the current ordering menu and links the exact owner Instagram profile. Tourism Nova Scotia identifies it as a local Downtown Dartmouth concept founded by the team behind Dear Friend Bar, and the Nova Scotia food-inspection snapshot current as of November 12, 2026 records the exact name and address. The owner page's rendered all-hours schedule is internally malformed and its ordering availability is dynamic, so ordinary weekly hours remain unknown. No opening date, coordinates, offers, events, current social-content claims, media rights or publisher dates are inferred.",
+        "sourceUrl": "https://larryssandwiches.com/",
+        "observedAt": "2026-11-16T12:27:19Z",
         "reviewState": "verified",
         "location": "63 Portland Street, Dartmouth, NS B2Y 1H1"
       },
@@ -3203,27 +3204,45 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
       "vibe": [],
       "specials": [],
       "events": [],
-      "socialProfiles": [],
+      "socialProfiles": [
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/larrys.dartmouth/",
+          "profileUrl": "https://www.instagram.com/larrys.dartmouth/",
+          "discoveredFrom": "https://larryssandwiches.com/",
+          "associationBasis": "linked_from_official_website",
+          "observedAt": "2026-11-16T12:27:19Z",
+          "lastVerifiedAt": "2026-11-16T12:27:19Z",
+          "reviewState": "verified"
+        }
+      ],
       "sources": [
         {
           "type": "official_website",
           "label": "Official Dartmouth location and contact",
           "url": "https://larryssandwiches.com/",
-          "observedAt": "2026-10-20",
+          "observedAt": "2026-11-16T12:27:19Z",
           "status": "verified"
         },
         {
           "type": "menu",
           "label": "Official sandwich menu and ordering",
           "url": "https://larryssandwiches.com/order",
-          "observedAt": "2026-10-20",
+          "observedAt": "2026-11-16T12:27:19Z",
           "status": "verified"
         },
         {
           "type": "tourism_directory",
           "label": "Tourism Nova Scotia: local operator and Dartmouth address",
           "url": "https://novascotia.com/listing/larrys-sandwiches-sides/",
-          "observedAt": "2026-10-20",
+          "observedAt": "2026-11-16T12:27:19Z",
+          "status": "verified"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Nova Scotia food-establishment record current as of November 12, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3805366",
+          "observedAt": "2026-11-12T19:27:53.425Z",
           "status": "verified"
         }
       ],

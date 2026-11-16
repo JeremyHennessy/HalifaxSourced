@@ -8348,14 +8348,14 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
         "publishedText": "Mo-Th 12:00-22:00; Fr-Sa 11:00-23:00; Su 12:00-22:00"
       },
       "menu": {
-        "status": "verified",
+        "status": "historical_source_unavailable",
         "sourceUrls": [
           "https://turkuazrestaurant.ca/",
           "https://turkuazrestaurant.ca/about-us",
           "https://turkuazrestaurant.ca/menu"
         ],
         "observedAt": "2026-10-21T13:10:10.538180+00:00",
-        "observation": "Fresh official menu page linked by the location website; a pointer only, no prices or image reuse.",
+        "observation": "The official menu page was successfully reviewed on 2026-10-21. On 2026-11-16 both the owner homepage and menu route returned HTTP 404 twice during the release link audit, so no current website or menu action is published. The historical receipts remain auditable; the failed URLs are not treated as evidence that the restaurant closed.",
         "successfulSourceReceipts": [
           {
             "url": "https://turkuazrestaurant.ca/",
@@ -8377,7 +8377,34 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
           }
         ],
         "freshContentReceived": true,
-        "url": "https://turkuazrestaurant.ca/menu"
+        "url": null,
+        "lastCheckedAt": "2026-11-16T12:43:03.133Z",
+        "failureReceipts": [
+          {
+            "url": "https://turkuazrestaurant.ca/",
+            "status": 404,
+            "observedAt": "2026-11-16T12:42:58.064Z",
+            "attempt": 1
+          },
+          {
+            "url": "https://turkuazrestaurant.ca/",
+            "status": 404,
+            "observedAt": "2026-11-16T12:42:59.485Z",
+            "attempt": 2
+          },
+          {
+            "url": "https://turkuazrestaurant.ca/menu",
+            "status": 404,
+            "observedAt": "2026-11-16T12:43:03.118Z",
+            "attempt": 1
+          },
+          {
+            "url": "https://turkuazrestaurant.ca/menu",
+            "status": 404,
+            "observedAt": "2026-11-16T12:43:03.133Z",
+            "attempt": 2
+          }
+        ]
       },
       "phone": {
         "status": "verified",
@@ -8445,7 +8472,7 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "openingHoursVerifiedAt": "2026-10-21T15:11:07.122697+00:00",
     "hoursValidThrough": null,
     "hoursScope": "restaurant",
-    "website": "https://turkuazrestaurant.ca/",
+    "website": null,
     "openingHours": "Mo-Th 12:00-22:00; Fr-Sa 11:00-23:00; Su 12:00-22:00",
     "operatingStatus": "active",
     "operatingStatusEvidence": {
@@ -8476,31 +8503,17 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     "events": [],
     "sources": [
       {
-        "label": "Reviewed location and local-business source",
-        "type": "restaurant_site",
-        "url": "https://turkuazrestaurant.ca/",
+        "label": "Nova Scotia food-establishment record current as of November 12, 2026",
+        "type": "government_inspection",
+        "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2528632",
         "status": "verified",
-        "observedAt": "2026-10-21T12:59:47.360808+00:00"
-      },
-      {
-        "label": "Reviewed location and local-business source",
-        "type": "restaurant_site",
-        "url": "https://turkuazrestaurant.ca/about-us",
-        "status": "verified",
-        "observedAt": "2026-10-21T12:59:47.361957+00:00"
-      },
-      {
-        "label": "Official location menu",
-        "type": "menu",
-        "url": "https://turkuazrestaurant.ca/menu",
-        "status": "verified",
-        "observedAt": "2026-10-21T13:00:26.010166+00:00"
+        "observedAt": "2026-11-12T19:27:53.425Z"
       }
     ],
     "discoveryReview": {
       "approvedByOverride": true,
       "sourceLeadObserved": false,
-      "reviewNote": "Only today’s dynamic hours are visible; no complete weekly schedule is inferred. Separate from Turkuaz Bistro on Washmill Lake Drive. Complete weekly hours now verified from owner-linked structured contact widget; earlier today-only display limitation resolved without guessing."
+      "reviewNote": "Only today’s dynamic hours are visible; no complete weekly schedule is inferred. Separate from Turkuaz Bistro on Washmill Lake Drive. Complete weekly hours now verified from owner-linked structured contact widget; earlier today-only display limitation resolved without guessing. The owner homepage and menu route each returned HTTP 404 twice in the 2026-11-16 release audit, so current website and menu actions are withheld while the earlier successful source receipts remain in field history. This link failure is not closure evidence."
     }
   },
   {
