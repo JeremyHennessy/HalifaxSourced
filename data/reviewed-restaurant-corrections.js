@@ -1,6 +1,3 @@
-Warning: truncated output (original token count: 50367)
-Total output lines: 4420
-
 window.HALIFAX_RESTAURANT_CORRECTIONS = {
   "version": 3,
   "reviewedAt": "2026-11-16",
@@ -991,7 +988,1869 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
         "successorId": "tartan-coffee-south-park"
       },
       "sourceUrl": "https://www.instagram.com/p/DfBSfUVgoiP/",
-      "claim": "Tartan Coffee Company's owner opening announcement identifies its October 28 opening after four years of trailer service. Dated Halifax opening coverage places Tartan at the exact 1565 South Park Street café, and the October 3 transition report explicitly states Apartment 3 closed its South Park location. Archive the stale Apartment 3 South Park identity as replaced while retaining its source history; its Lower Sackville location remains active. The exact predecessor c…20367 tokens truncated…ringgardenplace.ca/stores?c=hanyoung-bowl-asian-kitchen",
+      "claim": "Tartan Coffee Company's owner opening announcement identifies its October 28 opening after four years of trailer service. Dated Halifax opening coverage places Tartan at the exact 1565 South Park Street café, and the October 3 transition report explicitly states Apartment 3 closed its South Park location. Archive the stale Apartment 3 South Park identity as replaced while retaining its source history; its Lower Sackville location remains active. The exact predecessor closure date is unknown and is not invented, and predecessor hours, coordinates, contact details, menus, events and media rights are not transferred to Tartan.",
+      "observedAt": "2026-11-13T21:16:01Z",
+      "reviewedAt": "2026-11-13T21:16:01Z",
+      "reviewState": "verified"
+    }
+  ],
+  "aliases": [
+    {
+      "from": "buta-ramen-halifax",
+      "to": "osm-node-6031036960-buta-ramen",
+      "sourceUrl": "https://butaramen.ca/",
+      "reviewedAt": "2026-10-26T18:04:00Z",
+      "reason": "The official-site discovery record and the retained OpenStreetMap record represent the same 5190 Morris Street Halifax branch with exact phone 902-422-0245. Preserve the accepted South End coordinate and both source histories under the OSM-backed canonical record; Dartmouth and Bedford remain separate locations.",
+      "evidence": [
+        {
+          "type": "official_location",
+          "url": "https://butaramen.ca/",
+          "observedAt": "2026-10-26T18:04:00Z",
+          "address": "5190 Morris Street, Halifax, NS",
+          "phone": "902-422-0245"
+        },
+        {
+          "type": "government_inspection",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2382179",
+          "observedAt": "2026-10-20T07:20:13.079Z",
+          "address": "5190 Morris Street, Halifax, NS"
+        }
+      ]
+    },
+    {
+      "from": "osm-node-14139904501-battery-park-beer-bar-and-eatery",
+      "to": "battery-park",
+      "sourceUrl": "https://batterypark.ca/",
+      "reviewedAt": "2026-10-20T18:15:55Z",
+      "reason": "The owner identifies one Battery Park Beerbar & Eatery at 62 Ochterloney Street, Dartmouth, phone 902-446-2337. The curated and OSM name variants share this exact civic/street address, phone and owner domain. Preserve the curated ID, old-ID redirect, OSM source coordinate and both source histories; this is not a generic name/domain or proximity merge.",
+      "evidence": [
+        {
+          "type": "official_location",
+          "url": "https://batterypark.ca/",
+          "observedAt": "2026-10-20T18:15:55Z",
+          "address": "62 Ochterloney Street, Dartmouth, NS B2Y 1C2",
+          "phone": "902-446-2337"
+        },
+        {
+          "type": "tourism_location",
+          "url": "https://novascotia.com/listing/battery-park-beer-bar-eatery/",
+          "observedAt": "2026-10-20T18:15:55Z",
+          "address": "62 Ochterloney Street, Dartmouth",
+          "phone": "902-446-2337"
+        },
+        {
+          "type": "committed_source_records",
+          "commit": "f5071b632b4b3c7340e2938c583bddc383498621",
+          "canonicalId": "battery-park",
+          "incomingId": "osm-node-14139904501-battery-park-beer-bar-and-eatery",
+          "incomingSourceUrl": "https://www.openstreetmap.org/node/14139904501",
+          "coordinates": {
+            "lat": 44.6669046,
+            "lon": -63.5678828
+          }
+        }
+      ]
+    },
+    {
+      "to": "osm-node-11751643550-cafe-lunette",
+      "reviewedAt": "2026-10-19",
+      "reason": "Same Café Lunette identity within 16 metres; retain the official-site and address-backed record.",
+      "from": "osm-node-12984675528-cafe-lunette"
+    },
+    {
+      "to": "osm-node-3789619357-bubba-ray-s-sports-bar",
+      "reviewedAt": "2026-10-19",
+      "reason": "Same restaurant name and exact 5650 Spring Garden address; retain both source records as evidence. Lifecycle remains unresolved.",
+      "from": "osm-node-2721726004-bubba-ray-s-sports-bar"
+    },
+    {
+      "from": "osm-node-5134084721-bar-kismet",
+      "to": "bar-kismet",
+      "reviewedAt": "2026-10-20",
+      "sourceUrl": "https://barkismet.com/",
+      "reason": "Same normalized name and matching civic street address, corroborated by official location source.",
+      "evidence": [
+        {
+          "type": "committed_source_records",
+          "commit": "84640bc3d7cc7a6005898531ac80950b780e4c85",
+          "claim": "Raw legacy pair and source attributes are captured in canonical/incoming fields."
+        },
+        {
+          "type": "official_location",
+          "url": "https://barkismet.com/",
+          "observedAt": "2026-10-20",
+          "claim": "Official location source corroborates the canonical street address.",
+          "fetchState": "page_read"
+        }
+      ]
+    },
+    {
+      "from": "osm-way-462587944-bar-kismet",
+      "to": "bar-kismet",
+      "reviewedAt": "2026-10-20",
+      "sourceUrl": "https://barkismet.com/",
+      "reason": "Same Bar Kismet name on OSM building way and exact-address node, less than 6 metres apart. Official site confirms 2733 Agricola Street. This supports this specific legacy alias, not a general proximity rule.",
+      "evidence": [
+        {
+          "type": "committed_source_records",
+          "commit": "84640bc3d7cc7a6005898531ac80950b780e4c85",
+          "claim": "Raw legacy pair and source attributes are captured in canonical/incoming fields."
+        },
+        {
+          "type": "official_location",
+          "url": "https://barkismet.com/",
+          "observedAt": "2026-10-20",
+          "claim": "Official location source corroborates the canonical street address.",
+          "fetchState": "page_read"
+        },
+        {
+          "type": "osm_node_way_pair",
+          "nodeId": "osm-node-5134084721-bar-kismet",
+          "nodeCoordinates": {
+            "lat": 44.657464,
+            "lon": -63.5961815
+          },
+          "wayCoordinates": {
+            "lat": 44.6575129,
+            "lon": -63.5961889
+          },
+          "distanceMetres": 5.47,
+          "nodeUrl": "https://www.openstreetmap.org/node/5134084721",
+          "wayUrl": "https://www.openstreetmap.org/way/462587944"
+        }
+      ]
+    },
+    {
+      "from": "osm-node-1116387649-bicycle-thief",
+      "to": "the-bicycle-thief",
+      "reviewedAt": "2026-10-20",
+      "sourceUrl": "https://bicyclethief.ca/contact-us-reservations/",
+      "reason": "Same normalized name and matching civic street address, corroborated by official location source.",
+      "evidence": [
+        {
+          "type": "committed_source_records",
+          "commit": "84640bc3d7cc7a6005898531ac80950b780e4c85",
+          "claim": "Raw legacy pair and source attributes are captured in canonical/incoming fields."
+        },
+        {
+          "type": "official_location",
+          "url": "https://bicyclethief.ca/contact-us-reservations/",
+          "observedAt": "2026-10-20",
+          "claim": "Official location source corroborates the canonical street address.",
+          "fetchState": "page_read"
+        }
+      ]
+    },
+    {
+      "from": "osm-node-2624365676-edna",
+      "to": "edna",
+      "reviewedAt": "2026-10-20",
+      "sourceUrl": "https://www.ednarestaurant.com/",
+      "reason": "Same normalized name and matching civic street address, corroborated by official location source.",
+      "evidence": [
+        {
+          "type": "committed_source_records",
+          "commit": "84640bc3d7cc7a6005898531ac80950b780e4c85",
+          "claim": "Raw legacy pair and source attributes are captured in canonical/incoming fields."
+        },
+        {
+          "type": "official_location",
+          "url": "https://www.ednarestaurant.com/",
+          "observedAt": "2026-10-20",
+          "claim": "Official location source corroborates the canonical street address.",
+          "fetchState": "page_read"
+        }
+      ]
+    },
+    {
+      "from": "osm-node-37132554-press-gang",
+      "to": "the-press-gang",
+      "reviewedAt": "2026-10-20",
+      "sourceUrl": "https://thepressgang.ca/",
+      "reason": "Official Press Gang address 5218 Prince Street matches Tourism Nova Scotia listing, whose map coordinates are within 15m of OSM node 37132554. Preserve established the-press-gang ID.",
+      "evidence": [
+        {
+          "type": "committed_source_records",
+          "commit": "84640bc3d7cc7a6005898531ac80950b780e4c85",
+          "claim": "Raw legacy pair and source attributes are captured in canonical/incoming fields."
+        },
+        {
+          "type": "official_location",
+          "url": "https://thepressgang.ca/",
+          "observedAt": "2026-10-20",
+          "claim": "Official location source corroborates the canonical street address.",
+          "fetchState": "page_read"
+        },
+        {
+          "type": "official_tourism_location",
+          "url": "https://novascotia.com/listing/press-gang-restaurant-oyster-bar/",
+          "observedAt": "2026-10-20",
+          "address": "5218 Prince Street, Halifax, B3J 3X4",
+          "coordinates": {
+            "lat": 44.647071,
+            "lon": -63.574403
+          },
+          "mapUrl": "https://www.google.com/maps?q=44.647071%2C-63.574403",
+          "coordinateEvidence": "Exact destination of official tourism Open In Google Maps link. Destination map fetch failed, but the link was observed.",
+          "distanceToOsmMetres": 14.66
+        }
+      ]
+    },
+    {
+      "from": "osm-way-463454708-the-narrows-public-house",
+      "to": "the-narrows",
+      "reviewedAt": "2026-10-20",
+      "sourceUrl": "https://www.thenarrowspublichouse.ca/",
+      "reason": "Same normalized name and matching civic street address, corroborated by official location source.",
+      "evidence": [
+        {
+          "type": "committed_source_records",
+          "commit": "84640bc3d7cc7a6005898531ac80950b780e4c85",
+          "claim": "Raw legacy pair and source attributes are captured in canonical/incoming fields."
+        },
+        {
+          "type": "official_location",
+          "url": "https://www.thenarrowspublichouse.ca/",
+          "observedAt": "2026-10-20",
+          "claim": "Official location source corroborates the canonical street address.",
+          "fetchState": "page_read"
+        }
+      ]
+    },
+    {
+      "from": "osm-node-9099100702-highwayman",
+      "to": "highwayman",
+      "reviewedAt": "2026-10-20",
+      "sourceUrl": "https://www.highwaymanhfx.com/",
+      "reason": "Same normalized name and matching civic street address, corroborated by official location source.",
+      "evidence": [
+        {
+          "type": "committed_source_records",
+          "commit": "84640bc3d7cc7a6005898531ac80950b780e4c85",
+          "claim": "Raw legacy pair and source attributes are captured in canonical/incoming fields."
+        },
+        {
+          "type": "official_location",
+          "url": "https://www.highwaymanhfx.com/",
+          "observedAt": "2026-10-20",
+          "claim": "Official location source corroborates the canonical street address.",
+          "fetchState": "page_read"
+        }
+      ]
+    },
+    {
+      "from": "osm-node-8158371727-field-guide",
+      "to": "field-guide",
+      "reviewedAt": "2026-10-20",
+      "sourceUrl": "https://fieldguidehfx.com/",
+      "reason": "Existing curated operatingStatusEvidence.location and OSM both identify 2076 Gottingen Street; same official domain. Preserve archived field-guide ID and permanently_closed status, not stale website hours.",
+      "evidence": [
+        {
+          "type": "committed_source_records",
+          "commit": "84640bc3d7cc7a6005898531ac80950b780e4c85",
+          "claim": "Raw legacy pair and source attributes are captured in canonical/incoming fields."
+        },
+        {
+          "type": "official_location",
+          "url": "https://fieldguidehfx.com/",
+          "observedAt": "2026-10-20",
+          "claim": "Official search-index snapshot includes 2076 Gottingen St., Halifax and 902-405-4506; direct page returned 502. Not evidence of current operation.",
+          "fetchState": "search_snapshot_only_direct_fetch_502"
+        },
+        {
+          "type": "retained_reviewed_closure_location",
+          "claim": "The restaurant announced that its last day of service was April 29, 2026.",
+          "location": "2076 Gottingen Street, Halifax, NS",
+          "sourceUrl": "https://www.facebook.com/fieldguidehfx/videos/2017145352561161/",
+          "verifiedAt": "2026-08-29"
+        }
+      ]
+    },
+    {
+      "from": "matadora-tapas-bar-halifax",
+      "to": "osm-node-13286396472-matadora-tapas-bar",
+      "reviewedAt": "2026-10-20",
+      "sourceUrl": "https://matadorahfx.ca/",
+      "reason": "Same normalized name and matching civic street address, corroborated by official location source.",
+      "evidence": [
+        {
+          "type": "committed_source_records",
+          "commit": "84640bc3d7cc7a6005898531ac80950b780e4c85",
+          "claim": "Raw legacy pair and source attributes are captured in canonical/incoming fields."
+        },
+        {
+          "type": "official_location",
+          "url": "https://matadorahfx.ca/",
+          "observedAt": "2026-10-20",
+          "claim": "Official location source corroborates the canonical street address.",
+          "fetchState": "page_read"
+        }
+      ]
+    }
+  ],
+  "additions": [
+    {
+      "id": "902-restaurant-catering-halifax",
+      "name": "902 Restaurant & Catering",
+      "address": "1579 Dresden Row, Halifax, NS B3J 2K4",
+      "neighborhood": "Spring Garden",
+      "category": "Restaurant",
+      "website": "https://www.902halifax.com/",
+      "menuUrl": "https://drive.google.com/drive/folders/1jZTizyMap7j5Rv40Ny4Q3VpE7irS_qug?usp=sharing",
+      "phone": "902-477-9090",
+      "coordinates": null,
+      "openingHours": "Sunday 2pm–11pm; Monday–Saturday 11am–11pm",
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current owner contact page identifies 902 Restaurant & Catering at 1579 Dresden Row, Halifax, publishes phone 902-477-9090 and location-specific Sunday 2pm–11pm and Monday–Saturday 11am–11pm hours. The owner homepage links its menu to a published Google Drive folder; the separate owner /menu page currently contains no items, so it is not used as the menu URL. The current Spring Garden directory links the same owner domain, and the Nova Scotia food-inspection snapshot current as of November 12, 2026 independently records 902 Restaurant & Catering at 1579 Dresden. Coordinates, offers, events, social activity, media rights and publisher dates remain unknown.",
+        "sourceUrl": "https://www.902halifax.com/contact-location",
+        "observedAt": "2026-11-16T10:37:52Z",
+        "reviewState": "verified",
+        "location": "1579 Dresden Row, Halifax, NS B3J 2K4"
+      },
+      "cuisines": [
+        "Mediterranean"
+      ],
+      "vibe": [
+        "casual",
+        "local"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [],
+      "sources": [
+        {
+          "type": "official_website",
+          "label": "Current owner location, phone and service hours",
+          "url": "https://www.902halifax.com/contact-location",
+          "observedAt": "2026-11-16T10:37:52Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_menu",
+          "label": "Owner-published menu folder linked from the current owner homepage",
+          "url": "https://drive.google.com/drive/folders/1jZTizyMap7j5Rv40Ny4Q3VpE7irS_qug?usp=sharing",
+          "observedAt": "2026-11-16T10:37:52Z",
+          "status": "verified"
+        },
+        {
+          "type": "business_directory",
+          "label": "Current Spring Garden district listing and exact owner domain",
+          "url": "https://www.springgardenarea.com/eat-drink",
+          "observedAt": "2026-11-16T10:37:52Z",
+          "status": "verified"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Nova Scotia food-establishment record current as of November 12, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6364885",
+          "observedAt": "2026-11-12T19:27:53.425Z",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
+      "id": "twist-of-india-halifax",
+      "name": "Twist of India Restaurant & Bar",
+      "address": "1569 Dresden Row, Halifax, NS B3J 2K4",
+      "neighborhood": "Spring Garden",
+      "category": "Restaurant",
+      "website": "https://twistofindia.ca/",
+      "phone": "902-421-9111",
+      "coordinates": null,
+      "openingHours": "Tuesday–Thursday 1pm–11pm; Friday–Saturday 1pm–2am; Sunday 1pm–1am",
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current owner site identifies Twist of India Restaurant & Bar at 1569 Dresden Row, Halifax, publishes phone 902-421-9111 and location-specific Tuesday–Thursday 1pm–11pm, Friday–Saturday 1pm–2am and Sunday 1pm–1am hours. Tourism Nova Scotia independently lists the same owner domain, address, phone and schedule, and the Nova Scotia food-inspection snapshot current as of November 12, 2026 records Twist of India Restaurant & Bar at 1569 Dresden. The owner page's full-menu button currently has no destination, so no menu URL is published. Monday hours, coordinates, offers, events, social activity, media rights and publisher dates remain unknown.",
+        "sourceUrl": "https://twistofindia.ca/",
+        "observedAt": "2026-11-16T08:23:36Z",
+        "reviewState": "verified",
+        "location": "1569 Dresden Row, Halifax, NS B3J 2K4"
+      },
+      "cuisines": [
+        "Indian",
+        "Indo-Chinese"
+      ],
+      "vibe": [
+        "casual",
+        "local"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [],
+      "sources": [
+        {
+          "type": "official_website",
+          "label": "Current owner location, phone and service hours",
+          "url": "https://twistofindia.ca/",
+          "observedAt": "2026-11-16T08:23:36Z",
+          "status": "verified"
+        },
+        {
+          "type": "tourism_directory",
+          "label": "Tourism Nova Scotia exact location, owner domain, phone and hours corroboration",
+          "url": "https://novascotia.com/listing/twist-of-india-restaurant-bar/",
+          "observedAt": "2026-11-16T08:23:36Z",
+          "status": "verified"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Nova Scotia food-establishment record current as of November 12, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3696013",
+          "observedAt": "2026-11-12T19:27:53.425Z",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
+      "id": "desi-garden-halifax",
+      "name": "Desi Garden Food Bar and Lounge",
+      "address": "1446 Queen Street, Halifax, NS B3J 2H7",
+      "neighborhood": "Spring Garden",
+      "category": "Restaurant",
+      "website": "https://www.desigarden.ca/",
+      "menuUrl": "https://www.desigarden.ca/s/Food-Menu-Desi-Garden-2-r2wr.pdf",
+      "phone": "902-830-9341",
+      "coordinates": null,
+      "openingHours": "Tu-Fr 16:00-23:00; Sa-Su 12:00-23:00; Mo closed",
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current owner site identifies Desi Garden Food Bar and Lounge at 1446 Queen Street, Halifax, with phone 902-830-9341, a current food-menu PDF and Tuesday-Friday 4pm-11pm, Saturday-Sunday noon-11pm hours; its contact page explicitly states closed Mondays. The current Spring Garden directory retains the historical The Garden Halifax name and gardenhalifax.com link, which redirects to this owner site. The owner story describes The Garden Retreat as formerly Garden Food Bar & Lounge at the same location, and the Nova Scotia food-inspection snapshot independently records Garden Food Bar & Lounge at 1446 Queen. The exact rebrand date, coordinates, dated offers and events remain unknown.",
+        "sourceUrl": "https://www.desigarden.ca/",
+        "observedAt": "2026-10-26T21:24:11Z",
+        "reviewState": "verified",
+        "location": "1446 Queen Street, Halifax, NS B3J 2H7"
+      },
+      "cuisines": [
+        "Indian"
+      ],
+      "vibe": [
+        "local"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/desigarden.hfx",
+          "reviewState": "verified"
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/desigardentakeout",
+          "reviewState": "verified"
+        }
+      ],
+      "sources": [
+        {
+          "type": "business_directory",
+          "label": "Current Spring Garden historical-name listing and redirecting owner-domain link",
+          "url": "https://www.springgardenarea.com/eat-drink",
+          "observedAt": "2026-10-26T21:24:11Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Current owner identity, location, phone, weekly hours and owner-linked profiles",
+          "url": "https://www.desigarden.ca/",
+          "observedAt": "2026-10-26T21:24:11Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Owner history preserving the former Garden identity at this location",
+          "url": "https://www.desigarden.ca/our-story",
+          "observedAt": "2026-10-26T21:24:11Z",
+          "status": "verified"
+        },
+        {
+          "type": "menu",
+          "label": "Owner food-menu PDF",
+          "url": "https://www.desigarden.ca/s/Food-Menu-Desi-Garden-2-r2wr.pdf",
+          "observedAt": "2026-10-26T21:24:11Z",
+          "status": "verified"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Nova Scotia food-establishment record current as of October 19, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3421686",
+          "observedAt": "2026-10-20T07:20:13.079Z",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
+      "id": "big-life-bakery-dartmouth",
+      "name": "Big Life Bakery",
+      "address": "84 Portland Street, Dartmouth, NS",
+      "neighborhood": "Downtown Dartmouth",
+      "category": "Bakery",
+      "website": null,
+      "phone": "902-664-9692",
+      "coordinates": null,
+      "openingHours": "Th-Fr 09:00-15:00; Sa-Su 10:00-16:00",
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current Big Life Bakery owner Instagram profile identifies the organic bakery at 84 Portland Street, Dartmouth, and publishes Thursday-Friday 9am-3pm and Saturday-Sunday 10am-4pm hours. The Downtown Dartmouth business directory directly links that owner profile and independently lists the same bakery and address with phone 902-664-9692, while the Nova Scotia food-inspection registry records BIG LIFE WHOLE FOODS at 84 Portland. Older third-party closure and legacy phone records are not used. An official website, menu and coordinates remain unknown.",
+        "sourceUrl": "https://www.instagram.com/biglifebakery/",
+        "observedAt": "2026-10-25T16:12:43Z",
+        "reviewState": "verified",
+        "location": "84 Portland Street, Dartmouth, NS"
+      },
+      "cuisines": [
+        "Bakery"
+      ],
+      "vibe": [
+        "organic",
+        "local"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/biglifebakery/",
+          "reviewState": "verified"
+        }
+      ],
+      "sources": [
+        {
+          "type": "official_social",
+          "label": "Owner address and current weekly hours",
+          "url": "https://www.instagram.com/biglifebakery/",
+          "observedAt": "2026-10-25T16:12:43Z",
+          "status": "verified"
+        },
+        {
+          "type": "business_directory",
+          "label": "Current Downtown Dartmouth address, phone and owner-social link",
+          "url": "https://www.downtowndartmouth.ca/fooddrink",
+          "observedAt": "2026-10-25T16:12:43Z",
+          "status": "verified"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Nova Scotia food-establishment record current as of October 19, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1882297",
+          "observedAt": "2026-10-20T07:20:13.079Z",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
+      "id": "daawat-traditional-kitchen-dartmouth",
+      "name": "Daawat Traditional Kitchen",
+      "address": "156 Ochterloney Street, Dartmouth, NS B2Y 1E1",
+      "neighborhood": "Downtown Dartmouth",
+      "category": "Restaurant",
+      "website": "https://daawatkitchen.ca/",
+      "phone": "902-404-3177",
+      "coordinates": null,
+      "openingHours": "Mo-Su 10:00-20:00",
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current owner site publishes Daawat Traditional Kitchen at 156 Ochterloney Street, Dartmouth, with phone 902-404-3177, daily 10am-8pm hours and a current menu. The Downtown Dartmouth business directory independently lists the same restaurant, address and phone, while the Nova Scotia food-inspection registry records PV's DAAWAT TRADITIONAL KITCHEN at 156 Ochterloney. Coordinates and social profiles remain unverified.",
+        "sourceUrl": "https://daawatkitchen.ca/",
+        "observedAt": "2026-10-25T15:20:05Z",
+        "reviewState": "verified",
+        "location": "156 Ochterloney Street, Dartmouth, NS B2Y 1E1"
+      },
+      "cuisines": [
+        "Indian"
+      ],
+      "vibe": [
+        "casual",
+        "local"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [],
+      "sources": [
+        {
+          "type": "business_directory",
+          "label": "Current Downtown Dartmouth restaurant listing",
+          "url": "https://www.downtowndartmouth.ca/fooddrink",
+          "observedAt": "2026-10-25T15:20:05Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Owner location, phone and weekly hours",
+          "url": "https://daawatkitchen.ca/",
+          "observedAt": "2026-10-25T15:20:05Z",
+          "status": "verified"
+        },
+        {
+          "type": "menu",
+          "label": "Current owner menu",
+          "url": "https://daawatkitchen.ca/",
+          "observedAt": "2026-10-25T15:20:05Z",
+          "status": "verified"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Nova Scotia food-establishment record current as of October 19, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4626222",
+          "observedAt": "2026-10-20T07:20:13.079Z",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
+      "id": "jacobs-lounge-dartmouth",
+      "name": "Jacob's Lounge",
+      "address": "106 Portland Street, Dartmouth, NS B2Y 1H8",
+      "neighborhood": "Downtown Dartmouth",
+      "category": "Restaurant & Bar",
+      "website": "https://www.jacobslounge.com/",
+      "phone": "902-461-1727",
+      "coordinates": null,
+      "openingHours": "Tu-Sa 16:00-00:00; Su-Mo closed",
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current owner site identifies Jacob's Lounge at 106 Portland Street, publishes phone 902-461-1727, temporary Tuesday-Saturday 4pm-midnight hours, and a current menu. The Downtown Dartmouth business directory independently lists the same restaurant, address, phone and owner domain, while the Nova Scotia food-inspection registry records JACOB'S LOUNGE at 106 Portland. Coordinates, social profiles, dated offers and events remain unknown.",
+        "sourceUrl": "https://www.jacobslounge.com/",
+        "observedAt": "2026-10-25T09:22:00Z",
+        "reviewState": "verified",
+        "location": "106 Portland Street, Dartmouth, NS B2Y 1H8"
+      },
+      "cuisines": [
+        "Pizza",
+        "Burgers",
+        "Pasta"
+      ],
+      "vibe": [
+        "casual",
+        "bar",
+        "local"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [],
+      "sources": [
+        {
+          "type": "official_website",
+          "label": "Owner address, contact and temporary weekly hours",
+          "url": "https://www.jacobslounge.com/",
+          "observedAt": "2026-10-25T09:22:00Z",
+          "status": "verified"
+        },
+        {
+          "type": "menu",
+          "label": "Current owner menu",
+          "url": "https://www.jacobslounge.com/menu-1",
+          "observedAt": "2026-10-25T09:22:00Z",
+          "status": "verified"
+        },
+        {
+          "type": "business_directory",
+          "label": "Current Downtown Dartmouth location, phone and owner-domain link",
+          "url": "https://www.downtowndartmouth.ca/fooddrink",
+          "observedAt": "2026-10-25T09:22:00Z",
+          "status": "verified"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Nova Scotia food-establishment record current as of October 19, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1312661",
+          "observedAt": "2026-10-20T07:20:13.079Z",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
+      "id": "little-pisa-dartmouth",
+      "name": "Little Pisa",
+      "address": "98 Portland Street, Dartmouth, NS B2Y 1H6",
+      "neighborhood": "Downtown Dartmouth",
+      "category": "Restaurant",
+      "website": "https://littlepisa.ca/",
+      "phone": "902-209-4222",
+      "coordinates": null,
+      "openingHours": "Mo-Th 11:00-21:00; Fr-Sa 11:00-21:30; Su 14:00-21:00",
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current owner site identifies Little Pisa at 98 Portland Street, publishes phone 902-209-4222, complete weekly hours and a current itemized menu. The Downtown Dartmouth business directory independently lists the same restaurant, address, phone and owner domain, while the Nova Scotia food-inspection registry records Little Pisa at 98 Portland. The stale Cafe 98 record for the exact unit is retained as a replaced predecessor. Coordinates, social profiles, dated offers and events remain unknown.",
+        "sourceUrl": "https://littlepisa.ca/about-us/",
+        "observedAt": "2026-10-25T08:48:18Z",
+        "reviewState": "verified",
+        "location": "98 Portland Street, Dartmouth, NS B2Y 1H6"
+      },
+      "cuisines": [
+        "Pizza",
+        "Italian"
+      ],
+      "vibe": [
+        "casual",
+        "local"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [],
+      "sources": [
+        {
+          "type": "official_website",
+          "label": "Owner address, contact and complete weekly hours",
+          "url": "https://littlepisa.ca/about-us/",
+          "observedAt": "2026-10-25T08:48:18Z",
+          "status": "verified"
+        },
+        {
+          "type": "menu",
+          "label": "Current itemized owner menu",
+          "url": "https://littlepisa.ca/menu-offering/",
+          "observedAt": "2026-10-25T08:48:18Z",
+          "status": "verified"
+        },
+        {
+          "type": "business_directory",
+          "label": "Current Downtown Dartmouth location, phone and owner-domain link",
+          "url": "https://www.downtowndartmouth.ca/fooddrink",
+          "observedAt": "2026-10-25T08:48:18Z",
+          "status": "verified"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Nova Scotia food-establishment record current as of October 19, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3892094",
+          "observedAt": "2026-10-20T07:20:13.079Z",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
+      "id": "port-city-coffee-dartmouth",
+      "name": "Port City Coffee Co.",
+      "address": "2 Ochterloney Street, Dartmouth, NS",
+      "neighborhood": "Downtown Dartmouth",
+      "category": "Cafe",
+      "website": "https://portcitycoffee.ca/",
+      "phone": "902-460-6575",
+      "coordinates": null,
+      "openingHours": "Mo-Fr 07:00-16:00; Sa 07:00-14:00; Su 10:00-15:00",
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current owner location page confirms Port City Coffee Co. at Alderney Landing, 2 Ochterloney Street, with Monday-Friday 7am-4pm, Saturday 7am-2pm and Sunday 10am-3pm hours. Alderney Landing and the Downtown Dartmouth directory independently confirm the location and phone 902-460-6575, while the Nova Scotia food-inspection registry records PORT CITY COFFEE at the same civic address. Coordinates, an itemized menu, social profiles, dated offers and events remain unknown.",
+        "sourceUrl": "https://portcitycoffee.ca/pages/where-to-find-us",
+        "observedAt": "2026-10-25T08:12:03Z",
+        "reviewState": "verified",
+        "location": "2 Ochterloney Street, Dartmouth, NS"
+      },
+      "cuisines": [
+        "Cafe"
+      ],
+      "vibe": [
+        "coffee",
+        "breakfast",
+        "takeaway"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [],
+      "sources": [
+        {
+          "type": "official_website",
+          "label": "Owner location, current hours and food-and-drink overview",
+          "url": "https://portcitycoffee.ca/pages/where-to-find-us",
+          "observedAt": "2026-10-25T08:12:03Z",
+          "status": "verified"
+        },
+        {
+          "type": "business_directory",
+          "label": "Current Downtown Dartmouth location and phone",
+          "url": "https://www.downtowndartmouth.ca/fooddrink",
+          "observedAt": "2026-10-25T08:12:03Z",
+          "status": "verified"
+        },
+        {
+          "type": "venue_directory",
+          "label": "Alderney Landing permanent-vendor profile confirming phone, hours and takeaway cafe offering",
+          "url": "https://www.alderneylanding.com/vendors/port-city-coffee/",
+          "observedAt": "2026-10-25T08:12:03Z",
+          "status": "verified"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Nova Scotia food-establishment record current as of October 19, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2180072",
+          "observedAt": "2026-10-20T07:20:13.079Z",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
+      "id": "ilai-halifax",
+      "name": "Ilai South Indian Restaurant",
+      "address": "1569 Dresden Row, Halifax, NS B3J 2K4",
+      "neighborhood": "Spring Garden",
+      "category": "Restaurant",
+      "website": null,
+      "phone": "782-321-7362",
+      "coordinates": null,
+      "openingHours": null,
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current Spring Garden Area Business Association directory lists Ilai as open for dine-in and takeout and links the restaurant's Instagram profile. The public owner social preview identifies the same 1569 Dresden Row location and phone 782-321-7362. Weekly hours, coordinates and a currently reachable owner website were not verified.",
+        "sourceUrl": "https://www.springgardenarea.com/eat-drink",
+        "observedAt": "2026-10-24T17:14:11Z",
+        "reviewState": "verified",
+        "location": "1569 Dresden Row, Halifax, NS B3J 2K4"
+      },
+      "cuisines": [
+        "South Indian",
+        "Indian"
+      ],
+      "vibe": [
+        "casual",
+        "local"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [
+        {
+          "platform": "instagram",
+          "handle": "ilai.halifax",
+          "url": "https://www.instagram.com/ilai.halifax/",
+          "reviewState": "verified"
+        }
+      ],
+      "sources": [
+        {
+          "type": "business_directory",
+          "label": "Current Spring Garden listing and explicit owner Instagram link",
+          "url": "https://www.springgardenarea.com/eat-drink",
+          "observedAt": "2026-10-24T17:14:11Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_social",
+          "label": "Owner Instagram profile linked by the business directory",
+          "url": "https://www.instagram.com/ilai.halifax/",
+          "observedAt": "2026-10-24T17:14:11Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_social",
+          "label": "Public owner Facebook preview confirming address and phone; direct page access restricted",
+          "url": "https://www.facebook.com/ilai.halifax/",
+          "observedAt": "2026-10-24T17:14:11Z",
+          "status": "restricted"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
+      "id": "manilla-thai-grill-halifax",
+      "name": "Manilla Thai Grill",
+      "address": "5686 Spring Garden Road, Halifax, NS B3J 1H5",
+      "neighborhood": "Spring Garden",
+      "category": "Restaurant",
+      "website": null,
+      "phone": "902-410-7979",
+      "coordinates": null,
+      "openingHours": null,
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current Spring Garden Area Business Association directory lists Manilla Thai Grill, the current owner Instagram identifies the Halifax Filipino and Thai restaurant at 5686 Spring Garden Road and publishes phone 902-410-7979, and current owner Facebook posts repeat the same phone. The Nova Scotia food-inspection snapshot current as of October 19, 2026 independently records MANILLA THAI GRILL & CATERING at the same civic address. The directory-linked owner website returned HTTP 404, so no website, menu, weekly hours or coordinates are published.",
+        "sourceUrl": "https://www.instagram.com/manillathaigrillhfx/",
+        "observedAt": "2026-10-26T00:12:58Z",
+        "reviewState": "verified",
+        "location": "5686 Spring Garden Road, Halifax, NS B3J 1H5"
+      },
+      "cuisines": [
+        "Filipino",
+        "Thai"
+      ],
+      "vibe": [
+        "casual",
+        "local"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [
+        {
+          "platform": "instagram",
+          "handle": "manillathaigrillhfx",
+          "url": "https://www.instagram.com/manillathaigrillhfx/",
+          "reviewState": "verified"
+        }
+      ],
+      "sources": [
+        {
+          "type": "business_directory",
+          "label": "Current Spring Garden restaurant listing",
+          "url": "https://www.springgardenarea.com/eat-drink",
+          "observedAt": "2026-10-24T18:18:00Z",
+          "status": "verified"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Nova Scotia food-establishment record current as of October 19, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3356936",
+          "observedAt": "2026-10-20T07:20:13.079Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_social",
+          "label": "Current owner Instagram profile confirming the Halifax identity, civic address and phone",
+          "url": "https://www.instagram.com/manillathaigrillhfx/",
+          "observedAt": "2026-10-26T00:12:58Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_social",
+          "label": "Current owner Facebook posts repeating phone 902-410-7979",
+          "url": "https://www.facebook.com/100094234341135/",
+          "observedAt": "2026-10-26T00:12:58Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Directory-linked owner domain returned HTTP 404; not published",
+          "url": "https://www.manillathaigrill.com/",
+          "observedAt": "2026-10-24T18:18:00Z",
+          "status": "failed"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
+      "id": "young-pocha-halifax",
+      "name": "Young Pocha Korean BBQ Restaurant",
+      "address": "5650 Spring Garden Road, Halifax, NS B3J 1H4",
+      "neighborhood": "Spring Garden",
+      "category": "Restaurant",
+      "website": "https://young-pocha.com/",
+      "phone": "902-932-2309",
+      "coordinates": null,
+      "openingHours": "Monday–Thursday noon–10pm; Friday–Saturday noon–midnight; Sunday noon–10pm",
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current Spring Garden Area Business Association directory lists Young Pocha, the owner site publishes the Halifax location, phone, weekly hours and menu, and the Nova Scotia food-inspection snapshot current as of October 19, 2026 independently records Young Pocha Korean Restaurant at the same civic address. The owner site's momentary ordering-disabled message is treated as ordering state, not closure evidence. No unit or coordinates are inferred.",
+        "sourceUrl": "https://young-pocha.com/location/",
+        "observedAt": "2026-10-24T19:17:00Z",
+        "reviewState": "verified",
+        "location": "5650 Spring Garden Road, Halifax, NS B3J 1H4"
+      },
+      "cuisines": [
+        "Korean",
+        "Korean BBQ"
+      ],
+      "vibe": [
+        "casual",
+        "local"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [],
+      "sources": [
+        {
+          "type": "business_directory",
+          "label": "Current Spring Garden restaurant listing",
+          "url": "https://www.springgardenarea.com/eat-drink",
+          "observedAt": "2026-10-24T19:17:00Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Owner location page with address, phone and weekly hours",
+          "url": "https://young-pocha.com/location/",
+          "observedAt": "2026-10-24T19:17:00Z",
+          "status": "verified"
+        },
+        {
+          "type": "menu",
+          "label": "Current owner menu",
+          "url": "https://young-pocha.com/menu/",
+          "observedAt": "2026-10-24T19:17:00Z",
+          "status": "verified"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Nova Scotia food-establishment record current as of October 19, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2865778",
+          "observedAt": "2026-10-20T07:20:13.079Z",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
+      "id": "beyond-pho-halifax",
+      "name": "Beyond Pho Halifax",
+      "address": "5518 Spring Garden Road, Halifax, NS",
+      "neighborhood": "Spring Garden",
+      "category": "Restaurant",
+      "website": "https://www.beyondphohalifax.com/",
+      "phone": "902-425-3133",
+      "coordinates": null,
+      "openingHours": "Pho menu daily 11:30am–9pm; barbecue menu Friday–Saturday 4pm–1am and Sunday–Thursday 4pm–midnight",
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current Spring Garden Area Business Association directory lists Beyond Pho, the current owner site identifies the restaurant at 5518 Spring Garden Road with phone 902-425-3133, publishes separate pho and barbecue service schedules and a current menu, and links the restaurant Instagram. The Nova Scotia food-inspection snapshot current as of October 19, 2026 independently records Beyond Pho Vietnamese Cuisine at the same civic address. The owner site and tourism directory disagree on postal code, so no postal code or coordinates are published.",
+        "sourceUrl": "https://www.beyondphohalifax.com/",
+        "observedAt": "2026-10-24T23:12:06Z",
+        "reviewState": "verified",
+        "location": "5518 Spring Garden Road, Halifax, NS"
+      },
+      "cuisines": [
+        "Vietnamese"
+      ],
+      "vibe": [
+        "casual",
+        "local"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [
+        {
+          "platform": "instagram",
+          "handle": "beyondpho_halifax",
+          "url": "https://www.instagram.com/beyondpho_halifax/",
+          "reviewState": "verified"
+        }
+      ],
+      "sources": [
+        {
+          "type": "business_directory",
+          "label": "Current Spring Garden restaurant listing",
+          "url": "https://www.springgardenarea.com/eat-drink",
+          "observedAt": "2026-10-24T23:12:06Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Owner homepage with exact civic address, phone and published service schedules",
+          "url": "https://www.beyondphohalifax.com/",
+          "observedAt": "2026-10-24T23:12:06Z",
+          "status": "verified"
+        },
+        {
+          "type": "menu",
+          "label": "Current owner menu",
+          "url": "https://www.beyondphohalifax.com/menu",
+          "observedAt": "2026-10-24T23:12:06Z",
+          "status": "verified"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Nova Scotia food-establishment record current as of October 19, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2984006",
+          "observedAt": "2026-10-20T07:20:13.079Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_social",
+          "label": "Instagram profile linked from the owner site",
+          "url": "https://www.instagram.com/beyondpho_halifax/",
+          "observedAt": "2026-10-24T23:12:06Z",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
+      "id": "efes-turkish-cuisine-halifax",
+      "name": "Efes Turkish Cuisine",
+      "address": "5650 Spring Garden Road, Halifax, NS B3J 1H4",
+      "neighborhood": "Spring Garden",
+      "category": "Restaurant",
+      "website": "https://efesturkish.com/",
+      "phone": "902-405-4028",
+      "coordinates": null,
+      "openingHours": "Monday–Wednesday 11:30am–9pm; Thursday–Saturday 11:30am–10pm; Sunday 4:30pm–9pm",
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current Spring Garden Area Business Association directory lists Efes Turkish Cuisine, the owner site publishes a location-specific Halifax address, phone, weekly hours and current menu while separately listing the Bedford branch, and the Nova Scotia food-inspection snapshot current as of October 19, 2026 independently records the Halifax restaurant at the same civic address. The Bedford identity, phone, hours and inspection record remain separate. No coordinates or social profiles are inferred.",
+        "sourceUrl": "https://efesturkish.com/",
+        "observedAt": "2026-10-24T23:46:44Z",
+        "reviewState": "verified",
+        "location": "5650 Spring Garden Road, Halifax, NS B3J 1H4"
+      },
+      "cuisines": [
+        "Turkish",
+        "Mediterranean"
+      ],
+      "vibe": [
+        "casual",
+        "local"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [],
+      "sources": [
+        {
+          "type": "business_directory",
+          "label": "Current Spring Garden restaurant listing",
+          "url": "https://www.springgardenarea.com/eat-drink",
+          "observedAt": "2026-10-24T23:46:44Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Owner site with separate Halifax and Bedford contact details and weekly hours",
+          "url": "https://efesturkish.com/",
+          "observedAt": "2026-10-24T23:46:44Z",
+          "status": "verified"
+        },
+        {
+          "type": "menu",
+          "label": "Current owner menu",
+          "url": "https://efesturkish.com/",
+          "observedAt": "2026-10-24T23:46:44Z",
+          "status": "verified"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Nova Scotia food-establishment record current as of October 19, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=6361775",
+          "observedAt": "2026-10-20T07:20:13.079Z",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
+      "id": "besharam-bar-grill-halifax",
+      "name": "Besharam Bar & Grill",
+      "address": "First floor, 5680 Spring Garden Road, Halifax, NS B3J 1H5",
+      "neighborhood": "Spring Garden",
+      "category": "Restaurant",
+      "website": "https://besharamfood.com/",
+      "phone": "902-444-0484",
+      "coordinates": null,
+      "openingHours": "Monday–Thursday 4pm–11pm; Friday 4pm–midnight; Saturday noon–midnight; Sunday noon–11pm",
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current Spring Garden Area Business Association directory lists Besharam Bar & Grill and links its owner domain. The owner site publishes the first-floor 5680 Spring Garden Road location, phone, complete weekly hours and current menu, while the Nova Scotia food-inspection snapshot current as of October 19, 2026 independently records Besharam Bar and Grill at the same civic address. Coordinates, social profiles and the undated happy-hour offer are withheld.",
+        "sourceUrl": "https://besharamfood.com/",
+        "observedAt": "2026-10-25T02:15:58Z",
+        "reviewState": "verified",
+        "location": "First floor, 5680 Spring Garden Road, Halifax, NS B3J 1H5"
+      },
+      "cuisines": [
+        "Indian"
+      ],
+      "vibe": [
+        "casual",
+        "local"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [],
+      "sources": [
+        {
+          "type": "business_directory",
+          "label": "Current Spring Garden restaurant listing and owner-domain link",
+          "url": "https://www.springgardenarea.com/eat-drink",
+          "observedAt": "2026-10-25T02:15:58Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Owner homepage with location, phone and complete weekly hours",
+          "url": "https://besharamfood.com/",
+          "observedAt": "2026-10-25T02:15:58Z",
+          "status": "verified"
+        },
+        {
+          "type": "menu",
+          "label": "Current owner menu",
+          "url": "https://besharamfood.com/menu/",
+          "observedAt": "2026-10-25T02:15:58Z",
+          "status": "verified"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Nova Scotia food-establishment record current as of October 19, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3004869",
+          "observedAt": "2026-10-20T07:20:13.079Z",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
+      "id": "bulwark-cider-house-halifax",
+      "name": "Bulwark Cider House",
+      "address": "1518 Dresden Row, Halifax, NS B3J 2K2",
+      "neighborhood": "Spring Garden",
+      "category": "Cidery",
+      "website": "https://bulwarkciderhouse.ca/",
+      "phone": "902-425-0076",
+      "coordinates": null,
+      "openingHours": "Monday–Wednesday 11am–10pm; Thursday–Saturday 11am–11pm; Sunday 11am–10pm",
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current Spring Garden Area Business Association directory lists Bulwark Cider House and links its owner domain. The owner location page publishes the 1518 Dresden Row address, phone and complete weekly hours; the owner food page publishes its current pizza and snack menu; and the owner story identifies Bulwark as owner-operated and Nova Scotia-based. The Nova Scotia food-inspection snapshot current as of October 19, 2026 independently records Bulwark Cider House at 1518 Dresden Row. Coordinates, social profiles and undated recurring movie-night occurrences are withheld.",
+        "sourceUrl": "https://bulwarkciderhouse.ca/location-hours/",
+        "observedAt": "2026-10-25T03:16:27Z",
+        "reviewState": "verified",
+        "location": "1518 Dresden Row, Halifax, NS B3J 2K2"
+      },
+      "cuisines": [
+        "Pizza"
+      ],
+      "vibe": [
+        "taproom",
+        "local"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [],
+      "sources": [
+        {
+          "type": "business_directory",
+          "label": "Current Spring Garden restaurant listing and owner-domain link",
+          "url": "https://www.springgardenarea.com/eat-drink",
+          "observedAt": "2026-10-25T03:16:27Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Owner location page with address, phone and complete weekly hours",
+          "url": "https://bulwarkciderhouse.ca/location-hours/",
+          "observedAt": "2026-10-25T03:16:27Z",
+          "status": "verified"
+        },
+        {
+          "type": "menu",
+          "label": "Current owner pizza and snack menu",
+          "url": "https://bulwarkciderhouse.ca/visit-us/taproom/food/",
+          "observedAt": "2026-10-25T03:16:27Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Owner-operated Nova Scotia business statement",
+          "url": "https://bulwarkciderhouse.ca/our-story/",
+          "observedAt": "2026-10-25T03:16:27Z",
+          "status": "verified"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Nova Scotia food-establishment record current as of October 19, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2792648",
+          "observedAt": "2026-10-20T07:20:13.079Z",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
+      "id": "the-arms-halifax",
+      "name": "The Arms",
+      "address": "1515 South Park Street, Halifax, NS B3J 2L2",
+      "neighborhood": "Spring Garden",
+      "category": "Pub",
+      "website": "https://www.rcr.ca/restaurants/the-arms/",
+      "phone": "902-420-9781",
+      "coordinates": null,
+      "openingHours": "Monday–Thursday 7am–10pm; Friday–Saturday 7am–11pm; Sunday 7am–10pm",
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current Spring Garden Area Business Association directory lists The Arms Pub. The Halifax operator page confirms The Arms at 1515 South Park Street, phone 902-420-9781, breakfast, lunch and dinner seven days a week, and links current menus. The Lord Nelson Hotel dining page independently publishes the same address and complete Monday–Sunday venue hours. RCR identifies itself as a Halifax restaurant operator since 1974, and the Nova Scotia food-inspection snapshot current as of October 19, 2026 records ARMS (THE) at the same civic address. Coordinates, social profiles, specials and events are withheld.",
+        "sourceUrl": "https://www.rcr.ca/restaurants/the-arms/",
+        "observedAt": "2026-10-25T03:49:14Z",
+        "reviewState": "verified",
+        "location": "1515 South Park Street, Halifax, NS B3J 2L2"
+      },
+      "cuisines": [
+        "British",
+        "Canadian"
+      ],
+      "vibe": [
+        "pub",
+        "local"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [],
+      "sources": [
+        {
+          "type": "business_directory",
+          "label": "Current Spring Garden restaurant listing",
+          "url": "https://www.springgardenarea.com/eat-drink",
+          "observedAt": "2026-10-25T03:49:14Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Halifax operator page with address, phone, service and menu hub",
+          "url": "https://www.rcr.ca/restaurants/the-arms/",
+          "observedAt": "2026-10-25T03:49:14Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Lord Nelson Hotel dining page with complete venue hours",
+          "url": "https://lordnelsonhotel.ca/services/dining",
+          "observedAt": "2026-10-25T03:49:14Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Halifax operator history since 1974",
+          "url": "https://www.rcr.ca/about/",
+          "observedAt": "2026-10-25T03:49:14Z",
+          "status": "verified"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Nova Scotia food-establishment record current as of October 19, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=1942031",
+          "observedAt": "2026-10-20T07:20:13.079Z",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
+      "id": "beavers-den-dartmouth",
+      "name": "The Beaver's Den Dartmouth",
+      "address": "101A-16 Portland Street, Dartmouth, NS B2Y 1G9",
+      "neighborhood": "Downtown Dartmouth",
+      "category": "Pub",
+      "website": "https://thebeaversden.ca/",
+      "phone": "902-333-8156",
+      "coordinates": null,
+      "openingHours": null,
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current official owner site identifies two distinct Beaver's Den locations and publishes the Dartmouth branch at 101A-16 Portland Street with phone 902-333-8156. The current Downtown Dartmouth business directory independently lists the same Portland Street branch. The directory's older phone conflicts with the owner contact, so the owner phone is retained. No location-specific weekly schedule or coordinates were verified.",
+        "sourceUrl": "https://thebeaversden.ca/",
+        "observedAt": "2026-10-24T10:13:48Z",
+        "reviewState": "verified",
+        "location": "101A-16 Portland Street, Dartmouth, NS B2Y 1G9"
+      },
+      "cuisines": [
+        "Canadian",
+        "Pub"
+      ],
+      "vibe": [
+        "pub",
+        "casual"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [],
+      "sources": [
+        {
+          "type": "official_website",
+          "label": "Owner contact for the separate Dartmouth location",
+          "url": "https://thebeaversden.ca/",
+          "observedAt": "2026-10-24T10:13:48Z",
+          "status": "verified"
+        },
+        {
+          "type": "menu",
+          "label": "Official owner menu",
+          "url": "https://thebeaversden.ca/menu",
+          "observedAt": "2026-10-24T10:13:48Z",
+          "status": "verified"
+        },
+        {
+          "type": "business_directory",
+          "label": "Current Downtown Dartmouth location listing; phone superseded by owner contact",
+          "url": "https://www.downtowndartmouth.ca/fooddrink",
+          "observedAt": "2026-10-24T10:13:48Z",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
+      "id": "chanoeys-pasta-dartmouth",
+      "name": "Chanoey’s Pasta — Dartmouth",
+      "address": "41 Portland Street, Dartmouth, NS B2Y 1H1",
+      "neighborhood": "Downtown Dartmouth",
+      "category": "Restaurant",
+      "website": "https://www.chanoeyspasta.com/",
+      "phone": "902-405-2211",
+      "coordinates": null,
+      "openingHours": "Mo-Fr 11:00-20:00; Sa-Su 15:30-20:00",
+      "effectiveDatedHours": {
+        "dateOverrides": [
+          {
+            "date": "2026-10-09",
+            "hours": "Scheduled closure Oct 9–22, 2026"
+          },
+          {
+            "date": "2026-10-10",
+            "hours": "Scheduled closure Oct 9–22, 2026"
+          },
+          {
+            "date": "2026-10-11",
+            "hours": "Scheduled closure Oct 9–22, 2026"
+          },
+          {
+            "date": "2026-10-12",
+            "hours": "Scheduled closure Oct 9–22, 2026"
+          },
+          {
+            "date": "2026-10-13",
+            "hours": "Scheduled closure Oct 9–22, 2026"
+          },
+          {
+            "date": "2026-10-14",
+            "hours": "Scheduled closure Oct 9–22, 2026"
+          },
+          {
+            "date": "2026-10-15",
+            "hours": "Scheduled closure Oct 9–22, 2026"
+          },
+          {
+            "date": "2026-10-16",
+            "hours": "Scheduled closure Oct 9–22, 2026"
+          },
+          {
+            "date": "2026-10-17",
+            "hours": "Scheduled closure Oct 9–22, 2026"
+          },
+          {
+            "date": "2026-10-18",
+            "hours": "Scheduled closure Oct 9–22, 2026"
+          },
+          {
+            "date": "2026-10-19",
+            "hours": "Scheduled closure Oct 9–22, 2026"
+          },
+          {
+            "date": "2026-10-20",
+            "hours": "Scheduled closure Oct 9–22, 2026"
+          },
+          {
+            "date": "2026-10-21",
+            "hours": "Scheduled closure Oct 9–22, 2026"
+          },
+          {
+            "date": "2026-10-22",
+            "hours": "Scheduled closure Oct 9–22, 2026"
+          }
+        ]
+      },
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current Downtown Dartmouth business directory and official site both confirm Chanoey’s Pasta at 41 Portland Street with phone 902-405-2211. The official site continues to publish its complete Monday–Sunday hours and current menu after the October 9–22, 2026 scheduled closure; that ended exception remains in date-specific history and is not treated as a continuing closure or reopening event. The Nova Scotia food-inspection snapshot current as of October 19, 2026 independently records CHANOEY PASTA Dartmouth at 41 Portland. The owner page identifies the original locally managed business; coordinates, social profiles, offers and events remain unknown.",
+        "sourceUrl": "https://www.chanoeyspasta.com/",
+        "observedAt": "2026-10-25T05:23:52Z",
+        "reviewState": "verified",
+        "location": "41 Portland Street, Dartmouth, NS B2Y 1H1"
+      },
+      "cuisines": [
+        "Italian",
+        "Pasta"
+      ],
+      "vibe": [],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [],
+      "sources": [
+        {
+          "type": "official_website",
+          "label": "Owner store hours and October 9–22 scheduled closure",
+          "url": "https://www.chanoeyspasta.com/",
+          "observedAt": "2026-10-20",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Owner Dartmouth address and phone",
+          "url": "https://www.chanoeyspasta.com/contactus",
+          "observedAt": "2026-10-20",
+          "status": "verified"
+        },
+        {
+          "type": "menu",
+          "label": "Official restaurant menu; not a time-limited promotion",
+          "url": "https://www.chanoeyspasta.com/menu",
+          "observedAt": "2026-10-20",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Owner independent business background",
+          "url": "https://www.chanoeyspasta.com/aboutus",
+          "observedAt": "2026-10-20",
+          "status": "verified"
+        },
+        {
+          "type": "local_news",
+          "label": "2020 owner interview on former Subway tenancy",
+          "url": "https://halifax.citynews.ca/2020/10/07/filipino-couples-dartmouth-restaurant-thrives-despite-hurdles-2774709/",
+          "observedAt": "2026-10-20",
+          "status": "verified"
+        },
+        {
+          "type": "business_directory",
+          "label": "Current Downtown Dartmouth location, address and phone",
+          "url": "https://www.downtowndartmouth.ca/fooddrink",
+          "observedAt": "2026-10-25T05:23:52Z",
+          "status": "verified"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Nova Scotia food-establishment record current as of October 19, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2655436",
+          "observedAt": "2026-10-20T07:20:13.079Z",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
+      "id": "evans-fresh-seafoods-dartmouth",
+      "name": "Evan’s Fresh Seafoods & Restaurant",
+      "address": "2 Ochterloney Street, Dartmouth, NS B2Y 1B2",
+      "neighborhood": "Downtown Dartmouth",
+      "category": "Restaurant",
+      "website": "https://www.evansfreshseafoods.com/",
+      "phone": "902-466-2118",
+      "coordinates": null,
+      "openingHours": "Mo-Su 11:00-20:00",
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "Owner contact page confirms the Dartmouth restaurant and 2026 kitchen hours, daily 11am–8pm. Separate fish-counter hours and weather-dependent beer garden are not restaurant hours or dated offers. Owner about page confirms local family operation; coordinates remain unverified.",
+        "sourceUrl": "https://www.evansfreshseafoods.com/contact/",
+        "observedAt": "2026-10-20T10:22:48.221Z",
+        "reviewState": "verified",
+        "location": "2 Ochterloney Street, Dartmouth, NS B2Y 1B2"
+      },
+      "cuisines": [
+        "Seafood"
+      ],
+      "vibe": [],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [],
+      "sources": [
+        {
+          "type": "official_website",
+          "label": "Owner Dartmouth contact and kitchen hours",
+          "url": "https://www.evansfreshseafoods.com/contact/",
+          "observedAt": "2026-10-20T10:22:48.221Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Owner local family-operation evidence",
+          "url": "https://www.evansfreshseafoods.com/about-us/",
+          "observedAt": "2026-10-20T10:22:49.141Z",
+          "status": "verified"
+        },
+        {
+          "type": "menu",
+          "label": "Official 2026 restaurant menu",
+          "url": "https://www.evansfreshseafoods.com/menu/",
+          "observedAt": "2026-10-20T10:22:50.342Z",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
+      "id": "mala-loklok-halifax",
+      "name": "Mala Loklok",
+      "address": "5640 Spring Garden Road, Halifax, NS",
+      "neighborhood": "Spring Garden",
+      "category": "Restaurant",
+      "website": "https://www.springgardenplace.ca/dining?c=mala-loklok",
+      "phone": "902-407-5725",
+      "coordinates": null,
+      "openingHours": "Monday–Sunday 11:30am–9pm",
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current Spring Garden Area Business Association directory lists Mala Loklok, and the current Spring Garden Place tenant page identifies Mala Loklok at 5640 Spring Garden Road, publishes phone 902-407-5725 and daily 11:30am–9pm hours, and explicitly links the owner business-site pointer. That linked owner pointer currently returns HTTP 404 and is retained only as failed source evidence; it is not published as the restaurant website. Conflicting third-party schedules are not used. The Nova Scotia food-inspection snapshot current as of November 12, 2026 independently records Mala Loklok at the same civic address. No unit, coordinates, cuisine, menu, offers, events, social profile, media rights or current social-post activity are inferred.",
+        "sourceUrl": "https://www.springgardenplace.ca/dining?c=mala-loklok",
+        "observedAt": "2026-11-15T07:19:28Z",
+        "reviewState": "verified",
+        "location": "5640 Spring Garden Road, Halifax, NS"
+      },
+      "cuisines": [],
+      "vibe": [
+        "local"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [],
+      "sources": [
+        {
+          "type": "business_directory",
+          "label": "Current Spring Garden district identity",
+          "url": "https://www.springgardenarea.com/eat-drink",
+          "observedAt": "2026-11-15T07:19:28Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Current venue tenant identity, civic address, phone, weekly hours and owner-site pointer",
+          "url": "https://www.springgardenplace.ca/dining?c=mala-loklok",
+          "observedAt": "2026-11-15T07:19:28Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Venue-linked owner business-site pointer currently returns HTTP 404; not published",
+          "url": "https://mala-loklok.business.site/",
+          "observedAt": "2026-11-15T07:19:28Z",
+          "status": "failed"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Nova Scotia food-establishment record current as of November 12, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2765458",
+          "observedAt": "2026-11-12T19:27:53.425Z",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
+      "id": "adda-indian-eatery-halifax",
+      "name": "Adda Indian Eatery",
+      "address": "5640 Spring Garden Road, Halifax, NS",
+      "neighborhood": "Spring Garden",
+      "category": "Restaurant",
+      "website": "https://www.springgardenplace.ca/dining?c=adda-indian-eatery",
+      "phone": "902-422-3501",
+      "coordinates": null,
+      "openingHours": "Monday closed; Tuesday–Thursday 11am–9pm; Friday–Sunday 11am–11pm",
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current Spring Garden Area Business Association directory lists Adda Indian Eatery, and the current Spring Garden Place tenant page identifies Adda Indian Eatery at 5640 Spring Garden Road, publishes phone 902-422-3501 and a Monday-closed, Tuesday-Thursday 11am-9pm, Friday-Sunday 11am-11pm schedule, and explicitly links the owner domain. That owner domain currently redirects to a generic cPanel default page describing a hosting or DNS misconfiguration; it is retained only as failed source evidence and is not published as the restaurant website. The Nova Scotia food-inspection snapshot current as of November 12, 2026 independently records ADDA INDIAN EATERY at the same civic address. No unit, coordinates, menu, offers, events, social profile, media rights or current social-post activity are inferred.",
+        "sourceUrl": "https://www.springgardenplace.ca/dining?c=adda-indian-eatery",
+        "observedAt": "2026-11-15T08:16:59.598Z",
+        "reviewState": "verified",
+        "location": "5640 Spring Garden Road, Halifax, NS"
+      },
+      "cuisines": [
+        "Indian"
+      ],
+      "vibe": [
+        "local"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [],
+      "sources": [
+        {
+          "type": "business_directory",
+          "label": "Current Spring Garden district identity and Indian street-food description",
+          "url": "https://www.springgardenarea.com/eat-drink",
+          "observedAt": "2026-11-15T08:17:18.510Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Current venue tenant identity, civic address, phone, weekly hours and owner-site pointer",
+          "url": "https://www.springgardenplace.ca/dining?c=adda-indian-eatery",
+          "observedAt": "2026-11-15T08:16:59.598Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Venue-linked owner domain currently serves a generic cPanel default page; not published",
+          "url": "https://www.addaindianeatery.com/",
+          "observedAt": "2026-11-15T08:17:08.068Z",
+          "status": "failed"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Nova Scotia food-establishment record current as of November 12, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2569151",
+          "observedAt": "2026-11-12T19:27:53.425Z",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
+      "id": "ko-doraku-halifax",
+      "name": "Ko-Doraku",
+      "address": "5640 Spring Garden Road, Halifax, NS",
+      "neighborhood": "Spring Garden",
+      "category": "Restaurant",
+      "website": "https://ko-doraku.jimdofree.com/",
+      "phone": "902-423-8787",
+      "coordinates": null,
+      "openingHours": null,
+      "menuUrl": "https://ko-doraku.jimdofree.com/menu/",
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current owner site identifies Ko-Doraku as a small family-run Halifax Japanese restaurant in the lower level of Spring Garden Place and publishes phone 902-423-8787. Its location page identifies the Brenton Street entrance, while the current Spring Garden Place tenant page and Nova Scotia food-inspection snapshot identify the same restaurant at the venue's 5640 Spring Garden Road civic address and the same phone. The current owner homepage, owner location page and venue page publish materially conflicting weekly schedules, so ordinary hours remain unknown. The owner menu page is published only as a menu link; image-only menu contents are not transcribed. No unit, coordinates, offers, events, social profile, media rights or current social-post activity are inferred.",
+        "sourceUrl": "https://ko-doraku.jimdofree.com/",
+        "observedAt": "2026-11-15T10:14:58Z",
+        "reviewState": "verified",
+        "location": "5640 Spring Garden Road, Halifax, NS"
+      },
+      "cuisines": [
+        "Japanese"
+      ],
+      "vibe": [
+        "local"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [],
+      "sources": [
+        {
+          "type": "business_directory",
+          "label": "Current Spring Garden district identity and Japanese-restaurant description",
+          "url": "https://www.springgardenarea.com/eat-drink",
+          "observedAt": "2026-11-15T10:14:58Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Current owner identity, Halifax location, family-business description and phone; conflicting hours held",
+          "url": "https://ko-doraku.jimdofree.com/",
+          "observedAt": "2026-11-15T10:14:58Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Current owner location page for the Spring Garden Place lower level and Brenton Street entrance; conflicting hours held",
+          "url": "https://ko-doraku.jimdofree.com/locations-1/",
+          "observedAt": "2026-11-15T10:14:58Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Current venue tenant identity, civic address and matching phone; conflicting hours held",
+          "url": "https://www.springgardenplace.ca/dining?c=ko-doraku",
+          "observedAt": "2026-11-15T10:14:58Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_menu",
+          "label": "Current owner-published image menu and party-tray menu page",
+          "url": "https://ko-doraku.jimdofree.com/menu/",
+          "observedAt": "2026-11-15T10:14:58Z",
+          "status": "verified"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Nova Scotia food-establishment identity and exact civic address, snapshot current as of November 12, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2790506",
+          "observedAt": "2026-11-12T19:27:53.425Z",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
+      "id": "chicking-4-you-halifax",
+      "name": "Chicking 4 You",
+      "address": "5680 Spring Garden Road, Halifax, NS B3J 1H5",
+      "neighborhood": "Spring Garden",
+      "category": "Restaurant",
+      "website": "https://chickingrestaurant.com/",
+      "phone": "902-406-7070",
+      "coordinates": null,
+      "openingHours": "Monday–Saturday 11:30am–9:30pm; Sunday 3pm–8:30pm",
+      "menuUrl": "https://chickingrestaurant.com/menu/",
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current Spring Garden Area Business Association directory identifies Chicking 4 You as a local Halifax Korean fried-chicken restaurant. The current owner site identifies Chicking at 5680 Spring Garden Road, publishes phone 902-406-7070, complete weekly hours and a current menu, while the Nova Scotia food-inspection snapshot current as of November 12, 2026 independently records THE CHICKING 4U at the same civic address. The district directory's older chicking4u.ca pointer returned HTTP 503 during this review and is retained only as failed source evidence. No coordinates, offers, events, social profile, media rights or current social-post activity are inferred.",
+        "sourceUrl": "https://chickingrestaurant.com/",
+        "observedAt": "2026-11-15T11:16:06Z",
+        "reviewState": "verified",
+        "location": "5680 Spring Garden Road, Halifax, NS B3J 1H5"
+      },
+      "cuisines": [
+        "Korean"
+      ],
+      "vibe": [
+        "casual",
+        "local"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [],
+      "sources": [
+        {
+          "type": "business_directory",
+          "label": "Current Spring Garden district identity and local Halifax restaurant description",
+          "url": "https://www.springgardenarea.com/eat-drink",
+          "observedAt": "2026-11-15T11:16:06Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Current owner identity, exact civic address, phone and weekly hours",
+          "url": "https://chickingrestaurant.com/",
+          "observedAt": "2026-11-15T11:16:06Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_menu",
+          "label": "Current owner-published menu",
+          "url": "https://chickingrestaurant.com/menu/",
+          "observedAt": "2026-11-15T11:16:06Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "District-linked former owner-domain pointer returned HTTP 503; not published",
+          "url": "https://chicking4u.ca/",
+          "observedAt": "2026-11-15T11:16:06Z",
+          "status": "failed"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Nova Scotia food-establishment identity and exact civic address, snapshot current as of November 12, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3557023",
+          "observedAt": "2026-11-12T19:27:53.425Z",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
+      "id": "hanyoung-bowl-asian-kitchen-halifax",
+      "name": "Hanyoung Bowl Asian Kitchen",
+      "address": "5640 Spring Garden Road, Halifax, NS",
+      "neighborhood": "Spring Garden",
+      "category": "Restaurant",
+      "website": "https://www.springgardenplace.ca/stores?c=hanyoung-bowl-asian-kitchen",
+      "phone": "902-429-9862",
+      "coordinates": null,
+      "openingHours": "Monday closed; Tuesday–Saturday noon–8pm; Sunday 2pm–8pm",
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current Spring Garden Area Business Association directory lists Hanyoung Bowl as an Asian fusion fast-food restaurant, and the current Spring Garden Place tenant page identifies Hanyoung Bowl Asian Kitchen at 5640 Spring Garden Road, publishes phone 902-429-9862 and Monday-closed, Tuesday-Saturday noon-8pm, Sunday 2pm-8pm hours, and explicitly links Instagram profile @hanyoungbowl. The directory-linked former owner domain currently serves unrelated gambling/spam content and is retained only as failed source evidence; it is not published as the restaurant website and its historical hours are not used. No unit, coordinates, menu, offers, events, media rights or current social-post activity are inferred.",
+        "sourceUrl": "https://www.springgardenplace.ca/stores?c=hanyoung-bowl-asian-kitchen",
         "observedAt": "2026-11-15T06:15:54Z",
         "reviewState": "verified",
         "location": "5640 Spring Garden Road, Halifax, NS"
