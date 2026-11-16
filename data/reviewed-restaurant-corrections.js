@@ -1243,6 +1243,61 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
   ],
   "additions": [
     {
+      "id": "twist-of-india-halifax",
+      "name": "Twist of India Restaurant & Bar",
+      "address": "1569 Dresden Row, Halifax, NS B3J 2K4",
+      "neighborhood": "Spring Garden",
+      "category": "Restaurant",
+      "website": "https://twistofindia.ca/",
+      "phone": "902-421-9111",
+      "coordinates": null,
+      "openingHours": "Tuesday–Thursday 1pm–11pm; Friday–Saturday 1pm–2am; Sunday 1pm–1am",
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current owner site identifies Twist of India Restaurant & Bar at 1569 Dresden Row, Halifax, publishes phone 902-421-9111 and location-specific Tuesday–Thursday 1pm–11pm, Friday–Saturday 1pm–2am and Sunday 1pm–1am hours. Tourism Nova Scotia independently lists the same owner domain, address, phone and schedule, and the Nova Scotia food-inspection snapshot current as of November 12, 2026 records Twist of India Restaurant & Bar at 1569 Dresden. The owner page's full-menu button currently has no destination, so no menu URL is published. Monday hours, coordinates, offers, events, social activity, media rights and publisher dates remain unknown.",
+        "sourceUrl": "https://twistofindia.ca/",
+        "observedAt": "2026-11-16T08:23:36Z",
+        "reviewState": "verified",
+        "location": "1569 Dresden Row, Halifax, NS B3J 2K4"
+      },
+      "cuisines": [
+        "Indian",
+        "Indo-Chinese"
+      ],
+      "vibe": [
+        "casual",
+        "local"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [],
+      "sources": [
+        {
+          "type": "official_website",
+          "label": "Current owner location, phone and service hours",
+          "url": "https://twistofindia.ca/",
+          "observedAt": "2026-11-16T08:23:36Z",
+          "status": "verified"
+        },
+        {
+          "type": "tourism_directory",
+          "label": "Tourism Nova Scotia exact location, owner domain, phone and hours corroboration",
+          "url": "https://novascotia.com/listing/twist-of-india-restaurant-bar/",
+          "observedAt": "2026-11-16T08:23:36Z",
+          "status": "verified"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Nova Scotia food-establishment record current as of November 12, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3696013",
+          "observedAt": "2026-11-12T19:27:53.425Z",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
+    {
       "id": "desi-garden-halifax",
       "name": "Desi Garden Food Bar and Lounge",
       "address": "1446 Queen Street, Halifax, NS B3J 2H7",
