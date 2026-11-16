@@ -1,8 +1,22 @@
 window.HALIFAX_RESTAURANT_CORRECTIONS = {
   "version": 3,
-  "reviewedAt": "2026-11-15",
+  "reviewedAt": "2026-11-16",
   "policy": "Reviewed location evidence overrides stale imports; observation dates are retained and uncertain coordinates, hours, successor identities and closure day remain unknown.",
   "records": [
+    {
+      "restaurantId": "osm-node-13286456320-creme",
+      "fields": {
+        "openingHours": "Daily 8am–6pm; Friday–Saturday evening service 8pm–10pm",
+        "evidenceStatus": "verified",
+        "summary": "Owner-verified waterfront café, patisserie and cocktail bar at 1341 Lower Water Street, Unit 123, with current daily daytime hours and separate Friday–Saturday evening service."
+      },
+      "sourceUrl": "https://cremehalifax.com/",
+      "claim": "The current owner homepage identifies Crème at 1341 Lower Water Street, Unit 123, Halifax and publishes daily 8am–6pm service plus separate Friday and Saturday evening service from 8pm–10pm. This exact-location evidence replaces the stale OpenStreetMap daily 8am–10pm schedule without inferring continuous 6pm–10pm service, offers, events, social activity, publisher dates or additional media rights. Existing coordinates, phone, website, source history and reference-only media safeguards remain unchanged.",
+      "observedAt": "2026-11-16T06:20:07.593Z",
+      "reviewedAt": "2026-11-16T06:20:07.593Z",
+      "reviewState": "verified",
+      "reviewBasis": "current_owner_exact_location_hours"
+    },
     {
       "restaurantId": "sushi-square-scotia-square",
       "fields": {
