@@ -18,12 +18,45 @@ assert.equal(leeValleyReview?.decision, 'reviewed_non_restaurant');
 assert.equal(leeValleyReview?.observedAt, '2026-10-27T16:08:48.501Z');
 assert.equal(leeValleyReview?.evidenceUrl, 'https://www.leevalley.com/');
 assert.match(leeValleyReview?.evidence ?? '', /tools retailer, not a restaurant/i);
-assert.equal(openingWatchReviewedExclusions().length, 1);
+const reviewedAnejo = openingWatchReviewDecision({
+  sourceName: 'Halifax ReTales',
+  sourceUrl: 'https://halifax.retales.ca/2026/11/ins/',
+  name: 'Anejo'
+});
+assert.equal(reviewedAnejo?.decision, 'reviewed_non_local_chain');
+assert.equal(reviewedAnejo?.evidenceUrl, 'https://www.anejo.ca/en/faq.html');
+assert.match(reviewedAnejo?.evidence ?? '', /Recipe Unlimited/i);
+const reviewedDominos = openingWatchReviewDecision({
+  sourceName: 'Halifax ReTales',
+  sourceUrl: 'https://halifax.retales.ca/2026/11/10033/',
+  name: 'Domino’s'
+});
+assert.equal(reviewedDominos?.decision, 'reviewed_non_local_chain');
+assert.match(reviewedDominos?.evidence ?? '', /national franchise network/i);
+const reviewedSpca = openingWatchReviewDecision({
+  sourceName: 'Halifax ReTales',
+  sourceUrl: 'https://halifax.retales.ca/2026/11/10033/',
+  name: 'The soon to open Sackville SPCA'
+});
+assert.equal(reviewedSpca?.decision, 'reviewed_non_restaurant');
+assert.match(reviewedSpca?.evidence ?? '', /thrift store, not a restaurant/i);
+assert.equal(openingWatchReviewedExclusions().length, 4);
 assert.equal(openingWatchReviewDecision({
   sourceName: 'Halifax ReTales',
   sourceUrl: reviewedOpeningSource,
   name: 'True Love Creperie'
 }), null, 'The restaurant lead from the same article remains pending review');
+for (const pending of [
+  ['https://halifax.retales.ca/2026/11/10043/', 'Tartan Coffee'],
+  ['https://halifax.retales.ca/2026/11/10043/', 'Windsor’s Schoolhouse Brewery'],
+  [reviewedOpeningSource, 'True Love Creperie']
+]) {
+  assert.equal(openingWatchReviewDecision({
+    sourceName: 'Halifax ReTales',
+    sourceUrl: pending[0],
+    name: pending[1]
+  }), null, `${pending[1]} remains in the restaurant review queue`);
+}
 assert.equal(openingWatchReviewDecision({
   sourceName: 'Different source',
   sourceUrl: reviewedOpeningSource,
