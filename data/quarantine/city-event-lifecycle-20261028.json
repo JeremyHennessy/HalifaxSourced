@@ -2,10 +2,10 @@
   "version": 1,
   "archiveId": "city-event-lifecycle-20261028",
   "disposition": "reviewed_source_lifecycle_exclusion",
-  "reason": "Exact reviewed event lifecycle decisions only: three official cancellations, thirty successful-source withdrawals, and one official replacement occurrence. Raw accepted evidence and source clocks remain preserved; unrelated omissions stay protected.",
-  "decisionReviewedAt": "2026-11-20T11:18:24Z",
-  "verifiedAgainstCommit": "e59270710ff6f450f1af32d6392ee3ecd1956d96",
-  "rawArchiveRecordCount": 34,
+  "reason": "Exact reviewed event lifecycle decisions only: three official cancellations, thirty successful-source withdrawals, and two official replacement occurrences. Raw accepted evidence and source clocks remain preserved; unrelated omissions stay protected.",
+  "decisionReviewedAt": "2026-11-20T12:10:19Z",
+  "verifiedAgainstCommit": "e1f851f8331484c4865ed939bcdbe9bb9fb849e2",
+  "rawArchiveRecordCount": 35,
   "activeQuarantineIds": [
     "halifax-public-libraries-18e0f73c90fb3674",
     "bedford-library-events-4bd8c911b59b9f58",
@@ -40,7 +40,8 @@
     "bedford-library-events-d0ac75b5be85069c",
     "halifax-public-libraries-c8a334efa9d18475",
     "halifax-public-libraries-138e27ae3fd0e498",
-    "halifax-public-libraries-99262d5648bef0ff"
+    "halifax-public-libraries-99262d5648bef0ff",
+    "the-carleton-d871ebe44c3f516a"
   ],
   "protectedDetailIds": [
     "the-carleton-2d6665b8890674d0"
@@ -106,6 +107,18 @@
       "previousGeneratedAt": "2026-11-14T06:35:49.331Z",
       "heldRemovalCount": 12,
       "decisionBasis": "The current official Halifax Public Libraries listing explicitly marks the exact November 27 Central Library Wiggles & Giggles occurrence Cancelled, and the successful current official library collection omitted the exact accepted ID. Only this independently verified cancellation was admitted; the other eleven held removals remain protected."
+    },
+    "coryTetfordAvailabilityReview20261120": {
+      "reviewedAt": "2026-11-20T12:10:19Z",
+      "verifiedAgainstCommit": "e1f851f8331484c4865ed939bcdbe9bb9fb849e2",
+      "scheduledRunId": 44694814053,
+      "artifactId": 14610108304,
+      "artifactSha256": "f2aa9ff89c949e7048880871199ba0c6304520181b99b2db4f8692ad1dcc9c21",
+      "candidateGeneratedAt": "2026-11-20T07:25:35.142Z",
+      "previousGeneratedAt": "2026-11-14T06:35:49.331Z",
+      "heldRemovalCount": 12,
+      "remainingUnresolvedHeldRemovalCount": 10,
+      "decisionBasis": "A bounded direct HTTP review of the current official venue page returned 200 and independently confirmed the current title, scheduled status, InStock availability, occurrence time, venue, address, and price. The scheduled candidate independently contains the same replacement title and occurrence. The prior sold-out identity is retained as a duplicate and superseded alias; ten unrelated held removals remain protected."
     }
   },
   "records": [
@@ -2286,6 +2299,67 @@
           "url": "https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/44694814053/artifacts/14610108304",
           "path": "city-event-source-drift-report.json",
           "observation": "The exact accepted ID appears in heldRemovals after a successful official library collection. The refresh failed closed, retained the record, and published no deletion."
+        }
+      ]
+    },
+    {
+      "expected": {
+        "id": "the-carleton-d871ebe44c3f516a",
+        "sourceId": "the-carleton",
+        "title": "SOLD OUT: Cory Tetford – Friday",
+        "eventUrl": "https://www.thecarleton.ca/events/cory-tetford-nov20/",
+        "startAt": "2026-11-21T00:00:00.000Z",
+        "endAt": "2026-11-21T02:00:00.000Z",
+        "observedAt": "2026-11-14T06:35:47.938Z"
+      },
+      "expectedRawRecordCanonicalSha256": "211a916b2c229336c6bb755e102dc268fd3e4ca703bd5226f41dff67c94847ed",
+      "rawAcceptedRecord": {
+        "id": "the-carleton-d871ebe44c3f516a",
+        "title": "SOLD OUT: Cory Tetford – Friday",
+        "startAt": "2026-11-21T00:00:00.000Z",
+        "endAt": "2026-11-21T02:00:00.000Z",
+        "allDay": false,
+        "venueName": "The Carleton",
+        "address": "1685 Argyle Street, Halifax, NS",
+        "city": "Halifax",
+        "categories": [
+          "Music",
+          "Arts"
+        ],
+        "price": null,
+        "ticketUrl": null,
+        "eventUrl": "https://www.thecarleton.ca/events/cory-tetford-nov20/",
+        "sourceUrl": "https://www.thecarleton.ca/events/cory-tetford-nov20/",
+        "sourceId": "the-carleton",
+        "sourceName": "The Carleton",
+        "sourceKind": "official_venue_calendar",
+        "observedAt": "2026-11-14T06:35:47.938Z",
+        "reviewState": "source-observed",
+        "venueId": "the-carleton-halifax",
+        "neighbourhood": "Downtown",
+        "organizerId": "the-carleton",
+        "organizerName": "The Carleton",
+        "restaurantId": "osm-node-771690675-the-carleton"
+      },
+      "decision": {
+        "kind": "reviewed_official_source_supersession",
+        "reviewedAt": "2026-11-20T12:10:19Z",
+        "reason": "The current official venue page replaced the sold-out title with 4 TIX JUST RELEASED!, reports the event scheduled, and marks ticket availability InStock for the same date, time, venue, and detail URL."
+      },
+      "evidence": [
+        {
+          "kind": "current_official_source",
+          "url": "https://www.thecarleton.ca/events/cory-tetford-nov20/",
+          "observedAt": "2026-11-20T12:10:19Z",
+          "httpStatus": 200,
+          "contentSha256": "2392a5f0294cbbb52db9a1e8933b6eaa1046223dee2307295c7f2e33abf688e7",
+          "observation": "The direct owner page title is 4 TIX JUST RELEASED! Cory Tetford – Friday. Its structured event record lists November 20, 2026 from 8:00–10:00 p.m. Halifax time, EventScheduled, and InStock availability."
+        },
+        {
+          "kind": "scheduled_refresh_diagnostics",
+          "url": "https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/44694814053/artifacts/14610108304",
+          "path": "city-event-source-drift-report.json",
+          "observation": "The exact accepted sold-out ID appears in heldRemovals while the same artifact's current candidate snapshot contains replacement record the-carleton-fc397e87057fd82a for the same occurrence and official URL. The refresh failed closed and published no automatic replacement."
         }
       ]
     }
