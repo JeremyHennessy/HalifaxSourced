@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-16T22:19:51.300Z",
+  "generatedAt": "2026-11-20T12:10:19Z",
   "policy": "Curated city-event additions are source-backed records used when current official or local calendars have not yet been promoted into the primary city-events build.",
   "sources": [
     {
@@ -1242,6 +1242,63 @@
       ],
       "supersedesEventIds": [
         "halifax-public-libraries-138e27ae3fd0e498"
+      ]
+    },
+    {
+      "id": "the-carleton-fc397e87057fd82a",
+      "title": "4 TIX JUST RELEASED! Cory Tetford – Friday",
+      "startAt": "2026-11-21T00:00:00.000Z",
+      "endAt": "2026-11-21T02:00:00.000Z",
+      "allDay": false,
+      "venueName": "The Carleton",
+      "address": "1685 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "categories": [
+        "Music",
+        "Arts"
+      ],
+      "price": "$50 + HST",
+      "ticketUrl": null,
+      "eventUrl": "https://www.thecarleton.ca/events/cory-tetford-nov20/",
+      "sourceUrl": "https://www.thecarleton.ca/events/cory-tetford-nov20/",
+      "sourceId": "the-carleton",
+      "sourceName": "The Carleton",
+      "sourceKind": "official_venue_calendar",
+      "observedAt": "2026-11-20T12:10:19Z",
+      "reviewedAt": "2026-11-20T12:10:19Z",
+      "reviewState": "source_observed",
+      "venueId": "the-carleton-halifax",
+      "neighbourhood": "Downtown",
+      "organizerId": "the-carleton",
+      "organizerName": "The Carleton",
+      "restaurantId": "osm-node-771690675-the-carleton",
+      "sourceEvidence": [
+        {
+          "sourceId": "the-carleton",
+          "sourceName": "The Carleton",
+          "sourceUrl": "https://www.thecarleton.ca/events/cory-tetford-nov20/",
+          "basis": "official_primary",
+          "observedAt": "2026-11-20T12:10:19Z",
+          "reviewedAt": "2026-11-20T12:10:19Z",
+          "httpStatus": 200,
+          "contentSha256": "2392a5f0294cbbb52db9a1e8933b6eaa1046223dee2307295c7f2e33abf688e7",
+          "reviewWindow": {
+            "startedAt": "2026-11-20T12:10:15Z",
+            "completedBy": "2026-11-20T12:10:19Z"
+          },
+          "observedFacts": [
+            "The current official event title says four tickets were just released for Cory Tetford – Friday.",
+            "The official structured event record lists November 20, 2026 from 8:00–10:00 p.m. Halifax time and marks the event scheduled with ticket availability InStock.",
+            "The page identifies The Carleton, 1685 Argyle Street, Halifax, and lists the price as $50 plus HST."
+          ]
+        }
+      ],
+      "alternateSources": [],
+      "duplicateEventIds": [
+        "the-carleton-d871ebe44c3f516a"
+      ],
+      "supersedesEventIds": [
+        "the-carleton-d871ebe44c3f516a"
       ]
     }
   ]
