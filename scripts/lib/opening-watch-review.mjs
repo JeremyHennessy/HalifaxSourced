@@ -34,6 +34,15 @@ const reviewedExclusions = Object.freeze([
     observedAt: "2026-11-20T13:21:08Z",
     evidenceUrl: "https://www.novascotiaspca.ca/careers/spca-thrift-store-manager-lower-sackville/",
     evidence: "The Nova Scotia SPCA's official posting identifies the soon-to-open Sackville operation as an SPCA thrift store, not a restaurant."
+  }),
+  Object.freeze({
+    sourceName: "Halifax ReTales",
+    sourceUrl: "https://halifax.retales.ca/2026/11/10043/",
+    name: "Tartan Coffee",
+    decision: "reviewed_existing_catalog_identity",
+    observedAt: "2026-11-20T18:59:17.235Z",
+    evidenceUrl: "https://www.instagram.com/p/DfBSfUVgoiP/",
+    evidence: "The exact 1565 South Park Street venue is already published as the active canonical tartan-coffee-south-park record with the owner's opening announcement and the dated local opening report retained as verified sources. This lead is the same venue, not a new restaurant."
   })
 ]);
 
