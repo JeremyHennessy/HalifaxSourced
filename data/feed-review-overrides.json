@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-29T20:10:00.000Z",
+  "generatedAt": "2026-11-20T17:22:37.000Z",
   "policy": "Reviewed feed exclusions prevent compromised, off-topic, or non-location-specific brand feeds from appearing as local restaurant updates. Feed discovery remains recorded; excluded feed posts are not published.",
   "records": [
     {
@@ -34,6 +34,16 @@
       "reason": "shared_brand_nonlocal_feed",
       "evidence": "The national brand feed is not location-specific to the Dartmouth restaurant record.",
       "observedAt": "2026-08-29",
+      "reviewState": "reviewed_exclusion"
+    },
+    {
+      "restaurantId": "osm-node-13235716922-foody-jojo-waffle-and-sandwich",
+      "feedUrls": [
+        "https://www.foodyjojo.ca/comments/feed/"
+      ],
+      "reason": "compromised_off_topic_feed",
+      "evidence": "The WordPress comments feed exposed an unrelated third-party gambling promotion rather than a restaurant-published update.",
+      "observedAt": "2026-11-20T17:19:08.254Z",
       "reviewState": "reviewed_exclusion"
     }
   ]
