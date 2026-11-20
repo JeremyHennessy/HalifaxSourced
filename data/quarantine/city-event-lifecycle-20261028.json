@@ -2,10 +2,10 @@
   "version": 1,
   "archiveId": "city-event-lifecycle-20261028",
   "disposition": "reviewed_source_lifecycle_exclusion",
-  "reason": "Exact reviewed event lifecycle decisions only: two official cancellations, thirty successful-source withdrawals, and one official replacement occurrence. Raw accepted evidence and source clocks remain preserved; unrelated omissions stay protected.",
-  "decisionReviewedAt": "2026-11-16T22:19:51.300Z",
-  "verifiedAgainstCommit": "aff90e0e6bff3e5cc89f19b6cb2a2ff514c770c3",
-  "rawArchiveRecordCount": 33,
+  "reason": "Exact reviewed event lifecycle decisions only: three official cancellations, thirty successful-source withdrawals, and one official replacement occurrence. Raw accepted evidence and source clocks remain preserved; unrelated omissions stay protected.",
+  "decisionReviewedAt": "2026-11-20T11:18:24Z",
+  "verifiedAgainstCommit": "e59270710ff6f450f1af32d6392ee3ecd1956d96",
+  "rawArchiveRecordCount": 34,
   "activeQuarantineIds": [
     "halifax-public-libraries-18e0f73c90fb3674",
     "bedford-library-events-4bd8c911b59b9f58",
@@ -39,7 +39,8 @@
     "bedford-library-events-50578682a65ddbfd",
     "bedford-library-events-d0ac75b5be85069c",
     "halifax-public-libraries-c8a334efa9d18475",
-    "halifax-public-libraries-138e27ae3fd0e498"
+    "halifax-public-libraries-138e27ae3fd0e498",
+    "halifax-public-libraries-99262d5648bef0ff"
   ],
   "protectedDetailIds": [
     "the-carleton-2d6665b8890674d0"
@@ -94,6 +95,17 @@
       "previousGeneratedAt": "2026-11-14T06:35:49.331Z",
       "heldRemovalCount": 1,
       "decisionBasis": "The successful current official library collection replaced the accepted 6:00–7:45 p.m. Movie: Gremlins record with a new official event ID at 6:30–8:15 p.m. The current replacement detail page independently confirms the new occurrence and Woodlawn address; the previously accepted detail URL now renders the publisher's 404 page. No unrelated omission was admitted."
+    },
+    "wigglesCancellationReview20261120": {
+      "reviewedAt": "2026-11-20T11:18:24Z",
+      "verifiedAgainstCommit": "e59270710ff6f450f1af32d6392ee3ecd1956d96",
+      "scheduledRunId": 44694814053,
+      "artifactId": 14610108304,
+      "artifactSha256": "f2aa9ff89c949e7048880871199ba0c6304520181b99b2db4f8692ad1dcc9c21",
+      "candidateGeneratedAt": "2026-11-20T07:25:35.142Z",
+      "previousGeneratedAt": "2026-11-14T06:35:49.331Z",
+      "heldRemovalCount": 12,
+      "decisionBasis": "The current official Halifax Public Libraries listing explicitly marks the exact November 27 Central Library Wiggles & Giggles occurrence Cancelled, and the successful current official library collection omitted the exact accepted ID. Only this independently verified cancellation was admitted; the other eleven held removals remain protected."
     }
   },
   "records": [
@@ -2208,6 +2220,72 @@
           "url": "https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/43967952362/artifacts/14276187896",
           "path": "city-event-source-drift-report.json",
           "observation": "The exact accepted ID is the only held removal after a successful source collection, and the same artifact's candidate snapshot contains the replacement official record halifax-public-libraries-8481b1bba8ed1139. The refresh failed closed and published no deletion."
+        }
+      ]
+    },
+    {
+      "expected": {
+        "id": "halifax-public-libraries-99262d5648bef0ff",
+        "sourceId": "halifax-public-libraries",
+        "title": "Wiggles & Giggles",
+        "eventUrl": "https://halifax.bibliocommons.com/v2/events/6a860a7f69166f088b9358b6",
+        "startAt": "2026-11-27T15:00:00.000Z",
+        "endAt": "2026-11-27T15:30:00.000Z",
+        "observedAt": "2026-11-14T06:36:57.011Z"
+      },
+      "expectedRawRecordCanonicalSha256": "1cc8b3204cf3f2a36010da47dc7bbe13d94dc164db7b43df1d82087434709438",
+      "rawAcceptedRecord": {
+        "id": "halifax-public-libraries-99262d5648bef0ff",
+        "title": "Wiggles & Giggles",
+        "startAt": "2026-11-27T15:00:00.000Z",
+        "endAt": "2026-11-27T15:30:00.000Z",
+        "allDay": false,
+        "venueName": "Central Library",
+        "address": null,
+        "city": "Halifax",
+        "categories": [
+          "Community"
+        ],
+        "eventUrl": "https://halifax.bibliocommons.com/v2/events/6a860a7f69166f088b9358b6",
+        "ticketUrl": null,
+        "price": null,
+        "sourceId": "halifax-public-libraries",
+        "sourceName": "Halifax Public Libraries",
+        "sourceKind": "public_library_calendar",
+        "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
+        "observedAt": "2026-11-14T06:36:57.011Z",
+        "reviewState": "source_observed",
+        "duplicateEventIds": [
+          "halifax-public-libraries-8f9e6e589a5b2c33"
+        ],
+        "venueId": "central-library-halifax",
+        "neighbourhood": null,
+        "organizerId": "halifax-public-libraries",
+        "organizerName": "Halifax Public Libraries"
+      },
+      "decision": {
+        "kind": "reviewed_official_source_cancellation",
+        "reviewedAt": "2026-11-20T11:18:24Z",
+        "reason": "The current official Halifax Public Libraries listing explicitly marks this exact November 27, 2026 Central Library occurrence Cancelled, and the successful current official collection omits the exact accepted record."
+      },
+      "evidence": [
+        {
+          "kind": "current_official_source",
+          "url": "https://halifax.bibliocommons.com/v2/events/6a860a7f69166f088b9358b6",
+          "observedAt": "2026-11-20T11:18:24Z",
+          "observation": "The official detail record identifies Wiggles & Giggles on November 27, 2026 from 11:00–11:30 a.m. at Central Library."
+        },
+        {
+          "kind": "current_official_listing",
+          "url": "https://halifax.bibliocommons.com/v2/events?audiences=59a985e944d357e82f6f8b1e&page=3",
+          "observedAt": "2026-11-20T11:18:24Z",
+          "observation": "The current official Halifax Public Libraries event listing explicitly marks the November 27 Wiggles & Giggles occurrence Cancelled."
+        },
+        {
+          "kind": "scheduled_refresh_diagnostics",
+          "url": "https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/44694814053/artifacts/14610108304",
+          "path": "city-event-source-drift-report.json",
+          "observation": "The exact accepted ID appears in heldRemovals after a successful official library collection. The refresh failed closed, retained the record, and published no deletion."
         }
       ]
     }
