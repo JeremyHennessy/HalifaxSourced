@@ -40,14 +40,20 @@ const reviewedSpca = openingWatchReviewDecision({
 });
 assert.equal(reviewedSpca?.decision, 'reviewed_non_restaurant');
 assert.match(reviewedSpca?.evidence ?? '', /thrift store, not a restaurant/i);
-assert.equal(openingWatchReviewedExclusions().length, 4);
+const reviewedTartan = openingWatchReviewDecision({
+  sourceName: 'Halifax ReTales',
+  sourceUrl: 'https://halifax.retales.ca/2026/11/10043/',
+  name: 'Tartan Coffee'
+});
+assert.equal(reviewedTartan?.decision, 'reviewed_existing_catalog_identity');
+assert.match(reviewedTartan?.evidence ?? '', /already published as the active canonical/i);
+assert.equal(openingWatchReviewedExclusions().length, 5);
 assert.equal(openingWatchReviewDecision({
   sourceName: 'Halifax ReTales',
   sourceUrl: reviewedOpeningSource,
   name: 'True Love Creperie'
 }), null, 'The restaurant lead from the same article remains pending review');
 for (const pending of [
-  ['https://halifax.retales.ca/2026/11/10043/', 'Tartan Coffee'],
   ['https://halifax.retales.ca/2026/11/10043/', 'Windsor’s Schoolhouse Brewery'],
   [reviewedOpeningSource, 'True Love Creperie']
 ]) {
