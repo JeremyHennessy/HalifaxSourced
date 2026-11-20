@@ -78,7 +78,11 @@ for (const record of feedReviewOverrides.records || []) {
     }
   }
 }
-if ((feedPayload.reviewedFeedsExcluded ?? 0) !== reviewedFeedUrls.size) failures.push({ type: "feed_review_exclusion_count_mismatch", expected: reviewedFeedUrls.size, actual: feedPayload.reviewedFeedsExcluded ?? 0 });
+const reviewedCandidateFeedsExcluded = rawRecords
+  .flatMap((record) => Array.isArray(record?.feeds) ? record.feeds : [])
+  .filter((feed) => feed?.url && feed.reviewState === "verified_link" && !oembedFeed(feed.url, feed.type) && reviewedFeedUrls.has(feed.url))
+  .length;
+if ((feedPayload.reviewedFeedsExcluded ?? 0) !== reviewedCandidateFeedsExcluded) failures.push({ type: "feed_review_exclusion_count_mismatch", expected: reviewedCandidateFeedsExcluded, actual: feedPayload.reviewedFeedsExcluded ?? 0 });
 for (const record of socialProfileOverrides.records || []) {
   const localPolicyExcluded = localPolicyExcludedIds.has(record.restaurantId);
   if (!rawRestaurantIds.has(record.restaurantId) || record.reviewState !== "reviewed_exclusion" || !allowedSocialProfileExclusionReasons.has(record.reason) || !validDate(record.observedAt) || !String(record.evidence || "").trim() || !(record.profileUrls || []).length) {
