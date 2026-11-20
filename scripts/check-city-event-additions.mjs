@@ -141,20 +141,16 @@ if (mergedEvents.some((event) => event.id === "halifax-public-libraries-138e27ae
 
 const coryTetfordUrl = "https://www.thecarleton.ca/events/cory-tetford-nov20/";
 const coryTetfordEvents = mergedEvents.filter((event) => event.eventUrl === coryTetfordUrl);
-if (coryTetfordEvents.length !== 1) errors.push(`expected one current Cory Tetford Friday record after reviewed supersession, found ${coryTetfordEvents.length}.`);
+if (coryTetfordEvents.length !== 1) errors.push(`expected one current Cory Tetford Friday source record after availability reverted to sold out, found ${coryTetfordEvents.length}.`);
 const coryTetford = coryTetfordEvents[0];
-if (coryTetford?.id !== "the-carleton-fc397e87057fd82a"
-  || coryTetford?.title !== "4 TIX JUST RELEASED! Cory Tetford – Friday"
+if (coryTetford?.id !== "the-carleton-d871ebe44c3f516a"
+  || coryTetford?.title !== "SOLD OUT: Cory Tetford – Friday"
   || coryTetford?.startAt !== "2026-11-21T00:00:00.000Z"
   || coryTetford?.endAt !== "2026-11-21T02:00:00.000Z") {
   errors.push("current Cory Tetford Friday official availability title, identity, or time did not survive the runtime merge.");
 }
-if (!(coryTetford?.duplicateEventIds || []).includes("the-carleton-d871ebe44c3f516a")
-  || !(coryTetford?.supersedesEventIds || []).includes("the-carleton-d871ebe44c3f516a")) {
-  errors.push("prior Cory Tetford Friday identity was not preserved as an alias and superseded occurrence.");
-}
-if (mergedEvents.some((event) => event.id === "the-carleton-d871ebe44c3f516a")) {
-  errors.push("superseded sold-out Cory Tetford Friday record remained in the runtime event list.");
+if (mergedEvents.some((event) => event.id === "the-carleton-fc397e87057fd82a")) {
+  errors.push("stale four-ticket Cory Tetford Friday replacement remained in the runtime event list.");
 }
 
 await mkdir(new URL("../artifacts", import.meta.url), { recursive: true });
