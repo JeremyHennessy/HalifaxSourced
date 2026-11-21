@@ -5,10 +5,15 @@ import { preservePublishedEventIds } from './lib/canonical-event-dedupe.mjs';
 import { reconcileFutureEventLosses } from './lib/event-refresh-safety.mjs';
 
 const archive = JSON.parse(await readFile(new URL('../data/quarantine/city-event-lifecycle-20261028.json', import.meta.url), 'utf8'));
+const cancellationArchive = JSON.parse(await readFile(new URL('../data/quarantine/city-event-lifecycle-20261121.json', import.meta.url), 'utf8'));
 const reviewed = archive.records.map(entry => entry.rawAcceptedRecord);
+const reviewedCancellations = cancellationArchive.records.map(entry => entry.rawAcceptedRecord);
 assert.equal(validateReviewedEventQuarantine(archive).size, 34);
+assert.equal(validateReviewedEventQuarantine(cancellationArchive).size, 6);
 assert.equal(reviewed.length, 35);
+assert.equal(reviewedCancellations.length, 6);
 for (const entry of archive.records) assert.equal(eventRecordSha256(entry.rawAcceptedRecord), entry.expectedRawRecordCanonicalSha256);
+for (const entry of cancellationArchive.records) assert.equal(eventRecordSha256(entry.rawAcceptedRecord), entry.expectedRawRecordCanonicalSha256);
 
 const projection = applyReviewedEventQuarantines(reviewed, [archive]);
 assert.equal(projection.blocked, false);
@@ -90,4 +95,17 @@ const held = reconcileFutureEventLosses({ events: [], sourceStats: [{ sourceId: 
 assert.equal(held.blocked, true);
 assert.equal(held.heldRemovals[0].eventId, unexpected.id);
 
-console.log('Reviewed event lifecycle passed: 34 active lifecycle exclusions, one restored Carleton availability record, immutable raw evidence, and unrelated omissions still fail closed.');
+const reviewedCancellationProjection = applyReviewedEventQuarantines(reviewedCancellations, [cancellationArchive]);
+assert.equal(reviewedCancellationProjection.blocked, false);
+assert.equal(reviewedCancellationProjection.events.length, 0);
+assert.equal(reviewedCancellationProjection.receipt.quarantinedCount, 6);
+assert.deepEqual(reviewedCancellationProjection.receipt.quarantinedBySource, {
+  'bedford-library-events': 2,
+  'halifax-public-libraries': 4
+});
+const changedCancellation = { ...reviewedCancellations[0], title: `${reviewedCancellations[0].title} changed` };
+const cancellationMismatch = applyReviewedEventQuarantines([changedCancellation], [cancellationArchive]);
+assert.equal(cancellationMismatch.blocked, true);
+assert.deepEqual(cancellationMismatch.events, [changedCancellation]);
+
+console.log('Reviewed event lifecycle passed: 40 active lifecycle exclusions across immutable dated archives, one restored Carleton availability record, exact-record mismatch blocking, and unrelated omissions still fail closed.');

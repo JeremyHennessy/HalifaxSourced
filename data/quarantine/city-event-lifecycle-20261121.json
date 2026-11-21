@@ -1,0 +1,428 @@
+{
+  "version": 1,
+  "archiveId": "city-event-lifecycle-20261121",
+  "disposition": "reviewed_source_lifecycle_exclusion",
+  "reason": "Exact reviewed lifecycle decisions for six official Halifax Public Libraries occurrences: five explicitly cancelled occurrences and one deleted official detail record. Raw accepted evidence and source clocks remain preserved; seven unrelated held removals remain protected.",
+  "decisionReviewedAt": "2026-11-21T20:15:47Z",
+  "verifiedAgainstCommit": "6aa4a11896e1f5ac756d931070515166dd015db4",
+  "rawArchiveRecordCount": 6,
+  "activeQuarantineIds": [
+    "bedford-library-events-ff972b370808d51c",
+    "bedford-library-events-1e67a817e1577f1c",
+    "halifax-public-libraries-9938e0faada36ce9",
+    "halifax-public-libraries-7795050d459277a7",
+    "halifax-public-libraries-be9460b50fc43a89",
+    "halifax-public-libraries-daccb34afc41a84c"
+  ],
+  "protectedDetailIds": [],
+  "provenance": {
+    "repository": "JeremyHennessy/HalifaxSourced",
+    "scheduledRun": {
+      "id": 44940680382,
+      "url": "https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/44940680382",
+      "sourceCommit": "6aa4a11896e1f5ac756d931070515166dd015db4",
+      "startedAt": "2026-11-21T19:23:27Z",
+      "completedAt": "2026-11-21T19:26:37Z",
+      "artifact": {
+        "id": 14721557105,
+        "url": "https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/44940680382/artifacts/14721557105",
+        "digest": "sha256:f1c7754ad3e2bda9277d8fed320576014b9e51d568d42bc96d1dcded113bd269"
+      }
+    },
+    "currentCandidate": {
+      "generatedAt": "2026-11-21T19:23:56.399Z",
+      "previousGeneratedAt": "2026-11-14T06:35:49.331Z",
+      "driftReportGeneratedAt": "2026-11-21T19:26:34.759Z",
+      "eventCount": 1066,
+      "heldRemovalCount": 13
+    },
+    "decisionBasis": "The bounded scheduled refresh completed both official library collectors successfully and omitted all six exact accepted records. Current official detail pages independently mark five exact occurrences Cancelled; the sixth exact official detail URL returns 404. Only those six source-proven lifecycle changes are admitted. Seven still-live or unresolved omissions remain protected, and no failed or blocked source record is admitted."
+  },
+  "records": [
+    {
+      "expected": {
+        "id": "bedford-library-events-ff972b370808d51c",
+        "sourceId": "bedford-library-events",
+        "title": "Baby's First Books",
+        "eventUrl": "https://halifax.bibliocommons.com/v2/events/6a835f4bb2047800299383e5",
+        "startAt": "2026-11-24T14:30:00.000Z",
+        "endAt": "2026-11-24T15:30:00.000Z",
+        "observedAt": "2026-11-14T06:37:17.932Z"
+      },
+      "expectedRawRecordCanonicalSha256": "775338a6e059cbb9d7b5b02f21935ddc0bebd988ac87c966759420fca6120167",
+      "rawAcceptedRecord": {
+        "id": "bedford-library-events-ff972b370808d51c",
+        "title": "Baby's First Books",
+        "startAt": "2026-11-24T14:30:00.000Z",
+        "endAt": "2026-11-24T15:30:00.000Z",
+        "allDay": false,
+        "venueName": "Bedford Public Library",
+        "address": "15 Dartmouth Road, Bedford, NS B4A 3X6",
+        "city": "Bedford",
+        "categories": [
+          "Community"
+        ],
+        "eventUrl": "https://halifax.bibliocommons.com/v2/events/6a835f4bb2047800299383e5",
+        "ticketUrl": null,
+        "price": null,
+        "sourceId": "bedford-library-events",
+        "sourceName": "Bedford Public Library",
+        "sourceKind": "official_library_location_calendar",
+        "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
+        "observedAt": "2026-11-14T06:37:17.932Z",
+        "reviewState": "source_observed",
+        "latitude": 44.7314,
+        "longitude": -63.6571,
+        "sourceUrls": [
+          "https://halifax.bibliocommons.com/v2/events/6a835f4bb2047800299383e5",
+          "https://halifax.bibliocommons.com/v2/events?locations=BED",
+          "https://halifax.bibliocommons.com/v2/events"
+        ],
+        "sourceIds": [
+          "bedford-library-events",
+          "halifax-public-libraries"
+        ],
+        "duplicateEventIds": [
+          "halifax-public-libraries-2f8e2ee04ce8321c",
+          "bedford-library-events-2f8e2ee04ce8321c"
+        ],
+        "venueId": "bedford-library",
+        "neighbourhood": null,
+        "organizerId": "halifax-public-libraries",
+        "organizerName": "Halifax Public Libraries"
+      },
+      "decision": {
+        "kind": "reviewed_official_source_withdrawal",
+        "reviewedAt": "2026-11-21T20:15:47Z",
+        "reason": "The successful official Bedford library collection omitted this exact accepted occurrence, and its exact official detail URL now returns 404."
+      },
+      "evidence": [
+        {
+          "kind": "current_official_source",
+          "url": "https://halifax.bibliocommons.com/v2/events/6a835f4bb2047800299383e5",
+          "observedAt": "2026-11-21T20:15:47Z",
+          "httpStatus": 404,
+          "observation": "The previously accepted official Baby's First Books detail URL now returns Not Found."
+        },
+        {
+          "kind": "scheduled_refresh_diagnostics",
+          "url": "https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/44940680382/artifacts/14721557105",
+          "path": "city-event-source-drift-report.json",
+          "observation": "The exact accepted ID appears in heldRemovals after a successful Bedford library collection. The refresh failed closed and published no deletion."
+        }
+      ]
+    },
+    {
+      "expected": {
+        "id": "bedford-library-events-1e67a817e1577f1c",
+        "sourceId": "bedford-library-events",
+        "title": "Book Club: All the Light We Cannot See",
+        "eventUrl": "https://halifax.bibliocommons.com/v2/events/6a836546a821f90037ee78fb",
+        "startAt": "2026-12-01T17:00:00.000Z",
+        "endAt": "2026-12-01T18:30:00.000Z",
+        "observedAt": "2026-11-14T06:37:17.816Z"
+      },
+      "expectedRawRecordCanonicalSha256": "d2d44ca2d42616896885aac2d0de63f190a5bf0a1e4fcdbca0cecad8578b5be0",
+      "rawAcceptedRecord": {
+        "id": "bedford-library-events-1e67a817e1577f1c",
+        "title": "Book Club: All the Light We Cannot See",
+        "startAt": "2026-12-01T17:00:00.000Z",
+        "endAt": "2026-12-01T18:30:00.000Z",
+        "allDay": false,
+        "venueName": "Bedford Public Library",
+        "address": "15 Dartmouth Road, Bedford, NS B4A 3X6",
+        "city": "Bedford",
+        "categories": [
+          "Community"
+        ],
+        "eventUrl": "https://halifax.bibliocommons.com/v2/events/6a836546a821f90037ee78fb",
+        "ticketUrl": null,
+        "price": null,
+        "sourceId": "bedford-library-events",
+        "sourceName": "Bedford Public Library",
+        "sourceKind": "official_library_location_calendar",
+        "sourceUrl": "https://halifax.bibliocommons.com/v2/events?locations=BED",
+        "observedAt": "2026-11-14T06:37:17.816Z",
+        "reviewState": "source_observed",
+        "latitude": 44.7314,
+        "longitude": -63.6571,
+        "sourceUrls": [
+          "https://halifax.bibliocommons.com/v2/events/6a836546a821f90037ee78fb",
+          "https://halifax.bibliocommons.com/v2/events?locations=BED",
+          "https://halifax.bibliocommons.com/v2/events"
+        ],
+        "sourceIds": [
+          "bedford-library-events",
+          "halifax-public-libraries"
+        ],
+        "duplicateEventIds": [
+          "halifax-public-libraries-d88438baacb0cc03",
+          "bedford-library-events-d88438baacb0cc03"
+        ],
+        "venueId": "bedford-library",
+        "neighbourhood": null,
+        "organizerId": "halifax-public-libraries",
+        "organizerName": "Halifax Public Libraries"
+      },
+      "decision": {
+        "kind": "reviewed_official_source_cancellation",
+        "reviewedAt": "2026-11-21T20:15:47Z",
+        "reason": "The current official Halifax Public Libraries detail page explicitly marks this exact December 1 Bedford occurrence Cancelled."
+      },
+      "evidence": [
+        {
+          "kind": "current_official_source",
+          "url": "https://halifax.bibliocommons.com/v2/events/6a836546a821f90037ee78fb",
+          "observedAt": "2026-11-21T20:15:47Z",
+          "observation": "The official detail page identifies Book Club: All the Light We Cannot See on December 1, 2026 from 1:00–2:30 p.m. at Bedford Public Library and explicitly marks it Cancelled."
+        },
+        {
+          "kind": "scheduled_refresh_diagnostics",
+          "url": "https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/44940680382/artifacts/14721557105",
+          "path": "city-event-source-drift-report.json",
+          "observation": "The exact accepted ID appears in heldRemovals after a successful Bedford library collection. The refresh failed closed and published no deletion."
+        }
+      ]
+    },
+    {
+      "expected": {
+        "id": "halifax-public-libraries-9938e0faada36ce9",
+        "sourceId": "halifax-public-libraries",
+        "title": "Tuesday Tech Drop-in",
+        "eventUrl": "https://halifax.bibliocommons.com/v2/events/6a73835780e8ce26a9547c22",
+        "startAt": "2026-12-01T18:00:00.000Z",
+        "endAt": "2026-12-01T20:00:00.000Z",
+        "observedAt": "2026-11-14T06:36:52.370Z"
+      },
+      "expectedRawRecordCanonicalSha256": "6376f1abb5d296cc3c289bcdfbbb4c460cb8d53219683d064999548147bd443e",
+      "rawAcceptedRecord": {
+        "id": "halifax-public-libraries-9938e0faada36ce9",
+        "title": "Tuesday Tech Drop-in",
+        "startAt": "2026-12-01T18:00:00.000Z",
+        "endAt": "2026-12-01T20:00:00.000Z",
+        "allDay": false,
+        "venueName": "Keshen Goodman Public Library",
+        "address": null,
+        "city": "Halifax",
+        "categories": [
+          "Community"
+        ],
+        "eventUrl": "https://halifax.bibliocommons.com/v2/events/6a73835780e8ce26a9547c22",
+        "ticketUrl": null,
+        "price": null,
+        "sourceId": "halifax-public-libraries",
+        "sourceName": "Halifax Public Libraries",
+        "sourceKind": "public_library_calendar",
+        "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
+        "observedAt": "2026-11-14T06:36:52.370Z",
+        "reviewState": "source_observed",
+        "duplicateEventIds": [
+          "halifax-public-libraries-6a6a1f4c514e7fc2"
+        ],
+        "venueId": "keshen-goodman-library",
+        "neighbourhood": null,
+        "organizerId": "halifax-public-libraries",
+        "organizerName": "Halifax Public Libraries"
+      },
+      "decision": {
+        "kind": "reviewed_official_source_cancellation",
+        "reviewedAt": "2026-11-21T20:15:47Z",
+        "reason": "The current official Halifax Public Libraries detail page explicitly marks this exact December 1 Keshen Goodman occurrence Cancelled."
+      },
+      "evidence": [
+        {
+          "kind": "current_official_source",
+          "url": "https://halifax.bibliocommons.com/v2/events/6a73835780e8ce26a9547c22",
+          "observedAt": "2026-11-21T20:15:47Z",
+          "observation": "The official detail page identifies Tuesday Tech Drop-in on December 1, 2026 from 2:00–4:00 p.m. at Keshen Goodman Public Library and explicitly marks it Cancelled."
+        },
+        {
+          "kind": "scheduled_refresh_diagnostics",
+          "url": "https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/44940680382/artifacts/14721557105",
+          "path": "city-event-source-drift-report.json",
+          "observation": "The exact accepted ID appears in heldRemovals after a successful Halifax Public Libraries collection. The refresh failed closed and published no deletion."
+        }
+      ]
+    },
+    {
+      "expected": {
+        "id": "halifax-public-libraries-7795050d459277a7",
+        "sourceId": "halifax-public-libraries",
+        "title": "French + Crafting = Fantastique with Alliance Française",
+        "eventUrl": "https://halifax.bibliocommons.com/v2/events/6a7622becca66c2f00a8ec80",
+        "startAt": "2026-12-04T19:30:00.000Z",
+        "endAt": "2026-12-04T20:30:00.000Z",
+        "observedAt": "2026-11-14T06:36:47.425Z"
+      },
+      "expectedRawRecordCanonicalSha256": "e3a6f7ae0ca2ecef4de0cc6bece27c72311f62359a15eda23e1839992bf7abc9",
+      "rawAcceptedRecord": {
+        "id": "halifax-public-libraries-7795050d459277a7",
+        "title": "French + Crafting = Fantastique with Alliance Française",
+        "startAt": "2026-12-04T19:30:00.000Z",
+        "endAt": "2026-12-04T20:30:00.000Z",
+        "allDay": false,
+        "venueName": "Central Library",
+        "address": null,
+        "city": "Halifax",
+        "categories": [
+          "Arts"
+        ],
+        "eventUrl": "https://halifax.bibliocommons.com/v2/events/6a7622becca66c2f00a8ec80",
+        "ticketUrl": null,
+        "price": null,
+        "sourceId": "halifax-public-libraries",
+        "sourceName": "Halifax Public Libraries",
+        "sourceKind": "public_library_calendar",
+        "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
+        "observedAt": "2026-11-14T06:36:47.425Z",
+        "reviewState": "source_observed",
+        "duplicateEventIds": [
+          "halifax-public-libraries-2db116064ffc49d0"
+        ],
+        "venueId": "central-library-halifax",
+        "neighbourhood": null,
+        "organizerId": "halifax-public-libraries",
+        "organizerName": "Halifax Public Libraries"
+      },
+      "decision": {
+        "kind": "reviewed_official_source_cancellation",
+        "reviewedAt": "2026-11-21T20:15:47Z",
+        "reason": "The current official Halifax Public Libraries detail page explicitly marks this exact December 4 Central Library occurrence Cancelled."
+      },
+      "evidence": [
+        {
+          "kind": "current_official_source",
+          "url": "https://halifax.bibliocommons.com/v2/events/6a7622becca66c2f00a8ec80",
+          "observedAt": "2026-11-21T20:15:47Z",
+          "observation": "The official detail page identifies French + Crafting = Fantastique with Alliance Française on December 4, 2026 from 3:30–4:30 p.m. at Central Library and explicitly marks it Cancelled."
+        },
+        {
+          "kind": "scheduled_refresh_diagnostics",
+          "url": "https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/44940680382/artifacts/14721557105",
+          "path": "city-event-source-drift-report.json",
+          "observation": "The exact accepted ID appears in heldRemovals after a successful Halifax Public Libraries collection. The refresh failed closed and published no deletion."
+        }
+      ]
+    },
+    {
+      "expected": {
+        "id": "halifax-public-libraries-be9460b50fc43a89",
+        "sourceId": "halifax-public-libraries",
+        "title": "Crafting with Fibres",
+        "eventUrl": "https://halifax.bibliocommons.com/v2/events/6a3ec884c7d3cd5800630ea3",
+        "startAt": "2026-12-25T13:00:00.000Z",
+        "endAt": "2026-12-25T16:00:00.000Z",
+        "observedAt": "2026-11-14T06:36:33.469Z"
+      },
+      "expectedRawRecordCanonicalSha256": "ca443fde61d27c9fa810ed60f44e01edaf5eef32f6a6d7812fc7114d9e7eaafa",
+      "rawAcceptedRecord": {
+        "id": "halifax-public-libraries-be9460b50fc43a89",
+        "title": "Crafting with Fibres",
+        "startAt": "2026-12-25T13:00:00.000Z",
+        "endAt": "2026-12-25T16:00:00.000Z",
+        "allDay": false,
+        "venueName": "Keshen Goodman Public Library",
+        "address": null,
+        "city": "Halifax",
+        "categories": [
+          "Arts"
+        ],
+        "eventUrl": "https://halifax.bibliocommons.com/v2/events/6a3ec884c7d3cd5800630ea3",
+        "ticketUrl": null,
+        "price": null,
+        "sourceId": "halifax-public-libraries",
+        "sourceName": "Halifax Public Libraries",
+        "sourceKind": "public_library_calendar",
+        "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
+        "observedAt": "2026-11-14T06:36:33.469Z",
+        "reviewState": "source_observed",
+        "duplicateEventIds": [
+          "halifax-public-libraries-0e8da8cd90e4db06"
+        ],
+        "venueId": "keshen-goodman-library",
+        "neighbourhood": null,
+        "organizerId": "halifax-public-libraries",
+        "organizerName": "Halifax Public Libraries"
+      },
+      "decision": {
+        "kind": "reviewed_official_source_cancellation",
+        "reviewedAt": "2026-11-21T20:15:47Z",
+        "reason": "The current official Halifax Public Libraries detail page explicitly marks this exact December 25 Keshen Goodman occurrence Cancelled."
+      },
+      "evidence": [
+        {
+          "kind": "current_official_source",
+          "url": "https://halifax.bibliocommons.com/v2/events/6a3ec884c7d3cd5800630ea3",
+          "observedAt": "2026-11-21T20:15:47Z",
+          "observation": "The official detail page identifies Crafting with Fibres on December 25, 2026 from 9:00 a.m.–12:00 p.m. at Keshen Goodman Public Library and explicitly marks it Cancelled."
+        },
+        {
+          "kind": "scheduled_refresh_diagnostics",
+          "url": "https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/44940680382/artifacts/14721557105",
+          "path": "city-event-source-drift-report.json",
+          "observation": "The exact accepted ID appears in heldRemovals after a successful Halifax Public Libraries collection. The refresh failed closed and published no deletion."
+        }
+      ]
+    },
+    {
+      "expected": {
+        "id": "halifax-public-libraries-daccb34afc41a84c",
+        "sourceId": "halifax-public-libraries",
+        "title": "Crafting with Fibres",
+        "eventUrl": "https://halifax.bibliocommons.com/v2/events/6a3ec884c7d3cd5800630ea4",
+        "startAt": "2027-01-01T13:00:00.000Z",
+        "endAt": "2027-01-01T16:00:00.000Z",
+        "observedAt": "2026-11-14T06:36:33.470Z"
+      },
+      "expectedRawRecordCanonicalSha256": "143efe8a2161b2a54511e8ee168b9bcecbd5b2608ff9e1f84cb51fd2812aa783",
+      "rawAcceptedRecord": {
+        "id": "halifax-public-libraries-daccb34afc41a84c",
+        "title": "Crafting with Fibres",
+        "startAt": "2027-01-01T13:00:00.000Z",
+        "endAt": "2027-01-01T16:00:00.000Z",
+        "allDay": false,
+        "venueName": "Keshen Goodman Public Library",
+        "address": null,
+        "city": "Halifax",
+        "categories": [
+          "Arts"
+        ],
+        "eventUrl": "https://halifax.bibliocommons.com/v2/events/6a3ec884c7d3cd5800630ea4",
+        "ticketUrl": null,
+        "price": null,
+        "sourceId": "halifax-public-libraries",
+        "sourceName": "Halifax Public Libraries",
+        "sourceKind": "public_library_calendar",
+        "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
+        "observedAt": "2026-11-14T06:36:33.470Z",
+        "reviewState": "source_observed",
+        "duplicateEventIds": [
+          "halifax-public-libraries-73029519ddbc54c0"
+        ],
+        "venueId": "keshen-goodman-library",
+        "neighbourhood": null,
+        "organizerId": "halifax-public-libraries",
+        "organizerName": "Halifax Public Libraries"
+      },
+      "decision": {
+        "kind": "reviewed_official_source_cancellation",
+        "reviewedAt": "2026-11-21T20:15:47Z",
+        "reason": "The current official Halifax Public Libraries detail page explicitly marks this exact January 1 Keshen Goodman occurrence Cancelled."
+      },
+      "evidence": [
+        {
+          "kind": "current_official_source",
+          "url": "https://halifax.bibliocommons.com/v2/events/6a3ec884c7d3cd5800630ea4",
+          "observedAt": "2026-11-21T20:15:47Z",
+          "observation": "The official detail page identifies Crafting with Fibres on January 1, 2027 from 9:00 a.m.–12:00 p.m. at Keshen Goodman Public Library and explicitly marks it Cancelled."
+        },
+        {
+          "kind": "scheduled_refresh_diagnostics",
+          "url": "https://github.com/JeremyHennessy/HalifaxSourced/actions/runs/44940680382/artifacts/14721557105",
+          "path": "city-event-source-drift-report.json",
+          "observation": "The exact accepted ID appears in heldRemovals after a successful Halifax Public Libraries collection. The refresh failed closed and published no deletion."
+        }
+      ]
+    }
+  ]
+}
