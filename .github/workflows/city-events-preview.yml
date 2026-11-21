@@ -11,6 +11,7 @@ on:
       - .github/workflows/city-events-preview.yml
       - data/quarantine/library-store-navigation-20261027.json
       - data/quarantine/city-event-lifecycle-20261028.json
+      - data/quarantine/city-event-lifecycle-20261121.json
       - scripts/lib/reviewed-event-quarantine.mjs
       - scripts/test-reviewed-event-quarantine.mjs
       - scripts/test-reviewed-event-lifecycle.mjs
@@ -58,6 +59,7 @@ on:
       - .github/workflows/city-events-preview.yml
       - data/quarantine/library-store-navigation-20261027.json
       - data/quarantine/city-event-lifecycle-20261028.json
+      - data/quarantine/city-event-lifecycle-20261121.json
       - scripts/lib/reviewed-event-quarantine.mjs
       - scripts/test-reviewed-event-quarantine.mjs
       - scripts/test-reviewed-event-lifecycle.mjs
