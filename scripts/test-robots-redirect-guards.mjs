@@ -23,5 +23,16 @@ try {
     const output=JSON.parse(await readFile(join(root,'data','build',outputName+'.json'),'utf8'));
     assert.equal(output.failures[0].reason,'robots_disallow');
   }
+  const smokehouse={id:'osm-node-8089843368-smokehouse-brewery',name:'Smokehouse Brewery',address:'2704 Agricola Street, Halifax',website:'https://smokehousebrewery.ca/'};
+  await writeFile(join(root,'data','restaurants.js'),`window.HALIFAX_RESTAURANTS = ${JSON.stringify([smokehouse])};`);
+  await writeFile(join(root,'data','build','official-site-signals.json'),JSON.stringify({results:[{restaurantId:smokehouse.id,name:smokehouse.name,website:smokehouse.website,signalMatches:{events:['event']},candidateLinks:[{href:'https://smokehousebrewery.ca/event/jokehouse-comedy-show/',text:'Jokehouse Comedy Show',signalMatches:{events:['event']}}]}]}));
+  const smokehouseLog=join(root,'smokehouse.requests.json');
+  await writeFile(join(root,'runner-smokehouse.mjs'),`import {writeFile} from 'node:fs/promises';const requests=[];globalThis.fetch=async(input)=>{requests.push(String(input));throw new Error('network-disabled:'+input);};try{await import(${JSON.stringify(pathToFileURL(join(root,'scripts','import-structured-events.mjs')).href)});}finally{await writeFile(${JSON.stringify(smokehouseLog)},JSON.stringify(requests));}`);
+  const smokehouseResult=await new Promise((resolve,reject)=>{const child=spawn(process.execPath,[join(root,'runner-smokehouse.mjs')],{cwd:root,env:{...process.env,STRUCTURED_EVENT_DELAY_MS:'0'},stdio:['ignore','pipe','pipe']});let error='';child.stderr.on('data',chunk=>error+=chunk);child.stdout.resume();child.on('error',reject);child.on('close',code=>resolve({code,error}));});
+  assert.equal(smokehouseResult.code,0,smokehouseResult.error);
+  assert.deepEqual(JSON.parse(await readFile(smokehouseLog,'utf8')),[],'Rejected remote location must not receive a robots or page request');
+  const smokehouseOutput=JSON.parse(await readFile(join(root,'data','build','structured-events.json'),'utf8'));
+  assert.equal(smokehouseOutput.events.length,0);
+  assert.deepEqual(smokehouseOutput.failures.map(item=>item.reason),['location_mismatch','location_mismatch']);
   console.log('Robots redirect guards passed offline: verifier/event importer reject dotted quarantined redirect before destination or page request.');
 } finally {await rm(root,{recursive:true,force:true});}
