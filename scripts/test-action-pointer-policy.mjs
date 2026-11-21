@@ -27,6 +27,11 @@ assert.equal(integrity.primaryActionUrl(bayers, 'unknown', [{ url: generic }]), 
 const kindSpecific = 'https://www.takosushiramen.ca/menu/chefs-special-rolls';
 assert.equal(integrity.pointerSafe('osm-node-11552510567-tako-sushi-and-ramen', 'special', kindSpecific), false);
 assert.equal(integrity.primaryActionUrl('osm-node-11552510567-tako-sushi-and-ramen', 'ordering', [{ url: kindSpecific }]), kindSpecific, 'Do not broaden an existing kind-specific rejection');
+const archivedSmokehouse = 'osm-node-8089843368-smokehouse-brewery';
+for (const kind of ['source', 'menu', 'special', 'event', 'update', 'image_preview']) {
+  assert.equal(integrity.pointerSafe(archivedSmokehouse, kind, 'https://smokehousebrewery.ca/event/jokehouse-comedy-show/'), false, 'Berwick owner content must not qualify for the archived Halifax location');
+}
+assert.equal(integrity.pointerSafe(archivedSmokehouse, 'source', 'https://www.openstreetmap.org/node/8089843368'), true, 'Historical exact-location evidence remains retained');
 
 const lifecycle = await readFile(new URL('app-lifecycle.js', root), 'utf8');
 const addedBlock = lifecycle.match(/  for \(const \[kind, field, flag\][\s\S]*?\n  }\n/);
@@ -185,6 +190,10 @@ const rejectedEvidencePaths = {
     source: ['/moncton/lunch', '/moncton/dinner/', '/moncton/kids/', '/ottawa/dinner/', '/ottawa/kids/'],
     update: ['/moncton/kids/', '/moncton/dinner/', '/moncton/lunch/']
   },
+  [archivedSmokehouse]: {
+    source: ['/taproom/taproom-events/', '/#', '/'],
+    update: []
+  },
   [downtown]: {
     source: ['/dartmouth-crossing/lunch-menu/', '/bayers-lake/lunch-menu/', '/bedford-highway/lunch-menu/', '/bayers-lake/dinner/', '/dartmouth-crossing/dinner/'],
     update: ['/dartmouth-crossing/dinner/', '/bayers-lake/dinner/', '/bedford-highway/lunch-menu/', '/bayers-lake/lunch-menu/', '/dartmouth-crossing/lunch-menu/']
@@ -210,7 +219,7 @@ for (const record of after.restaurants) {
   const removedSources = priorSources.length - actualSources.length;
   if (removedSources || rejectedUpdates.length) {
     evidenceChanges.push({ id: record.id, sourceLinks: removedSources, updates: rejectedUpdates.length });
-    const origin = record.id === 'osm-node-267592735-bluenose-ii' ? 'https://bluenoseii.ca' : record.id === 'osm-node-6910685885-mexi-s' ? 'https://www.mexicalirosas.com' : 'https://sushinami.ca';
+    const origin = record.id === 'osm-node-267592735-bluenose-ii' ? 'https://bluenoseii.ca' : record.id === 'osm-node-6910685885-mexi-s' ? 'https://www.mexicalirosas.com' : record.id === archivedSmokehouse ? 'https://smokehousebrewery.ca' : 'https://sushinami.ca';
     assert.deepEqual(priorSources.filter(link => !integrity.pointerSafe(record.id, 'source', link.url)).map(link => link.url), rejectedEvidencePaths[record.id].source.map(path => origin + path));
     assert.deepEqual(rejectedUpdates.map(update => update.postUrl), rejectedEvidencePaths[record.id].update.map(path => origin + path));
     vm.runInContext(`renderRestaurantDetail(${JSON.stringify(record.id)})`, after.context);
@@ -223,6 +232,7 @@ assert.deepEqual(evidenceChanges, [
   { id: 'osm-node-6910685885-mexi-s', sourceLinks: 5, updates: 3 },
   { id: downtown, sourceLinks: 5, updates: 5 },
   { id: bayers, sourceLinks: 6, updates: 6 },
+  { id: archivedSmokehouse, sourceLinks: 3, updates: 0 },
   { id: 'osm-node-267592735-bluenose-ii', sourceLinks: 1, updates: 1 }
 ]);
 assert.equal(vm.runInContext('JSON.stringify(restaurants)', after.context), rawBeforeRender, 'Rendering preserves every source/update object and original date');
