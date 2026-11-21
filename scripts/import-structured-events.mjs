@@ -217,6 +217,10 @@ const events = [];
 const failures = [];
 let scannedPages = 0;
 for (const page of pages) {
+  if (!integrity.pointerSafe(page.restaurantId, "event", page.pageUrl)) {
+    failures.push({ ...page, reason: "location_mismatch" });
+    continue;
+  }
   if (!(await robotsAllows(page.pageUrl))) {
     failures.push({ ...page, reason: "robots_disallow" });
     continue;
