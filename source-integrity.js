@@ -74,6 +74,10 @@
   // END BLUENOSE ADMIN POINTER SUPPRESSIONS
   function pointerSafe(restaurantId, kind, value) {
     try { const url = new URL(value); url.hash = '';
+      // The former Halifax taproom has been replaced. The current owner site
+      // identifies only the Berwick venue, so none of its consumer pointers
+      // qualify as location evidence for the archived Agricola record.
+      if (restaurantId === 'osm-node-8089843368-smokehouse-brewery' && sourceHost(url) === 'smokehousebrewery.ca') return false;
       // A shared header/footer address does not qualify another branch's menu
       // or photo. Consumable pointers must name the catalog location in the
       // first path segment; shared pages remain evidence, not location menus.

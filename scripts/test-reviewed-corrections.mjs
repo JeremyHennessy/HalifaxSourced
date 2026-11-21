@@ -66,6 +66,20 @@ for (const records of [app.restaurants, catalog.restaurants]) {
 }
 assert(!active.has(springGardenKraveId));
 assert(active.has(dartmouthKraveId));
+const smokehouseId = 'osm-node-8089843368-smokehouse-brewery';
+for (const records of [app.restaurants, catalog.restaurants]) {
+  const smokehouse = records.find(record => record.id === smokehouseId);
+  assert(smokehouse, 'Retain the former Halifax Smokehouse identity as lifecycle history');
+  assert.equal(smokehouse.operatingStatus, 'replaced');
+  assert.equal(smokehouse.website, null, 'The current Berwick owner site is not a Halifax location pointer');
+  assert.equal(smokehouse.phone, null, 'Do not retain the predecessor contact as current');
+  assert.equal(smokehouse.openingHours, null);
+  assert.equal(smokehouse.closureDate, undefined, 'Do not infer a closure date from the successor notice');
+  assert.equal(smokehouse.successorId, undefined, 'Do not auto-admit the successor before restaurant eligibility review');
+  assert.equal(smokehouse.osm.rawTags.website, 'https://smokehousebrewery.ca', 'Preserve the original imported source history');
+  assert(smokehouse.sources.some(source => source.type === 'openstreetmap'));
+}
+assert(!active.has(smokehouseId));
 const batteryAlias = 'osm-node-14139904501-battery-park-beer-bar-and-eatery';
 assert.deepEqual(app.saved, ['battery-park'], 'Old and canonical saved IDs reconcile to one persisted bookmark');
 assert.deepEqual(JSON.parse(savedWrites.at(-1)), ['battery-park']);

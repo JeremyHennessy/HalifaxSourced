@@ -1,8 +1,43 @@
 window.HALIFAX_RESTAURANT_CORRECTIONS = {
   "version": 3,
-  "reviewedAt": "2026-11-16",
+  "reviewedAt": "2026-11-21",
   "policy": "Reviewed location evidence overrides stale imports; observation dates are retained and uncertain coordinates, hours, successor identities and closure day remain unknown.",
   "records": [
+    {
+      "restaurantId": "osm-node-8089843368-smokehouse-brewery",
+      "fields": {
+        "operatingStatus": "replaced",
+        "website": null,
+        "phone": null,
+        "openingHours": null
+      },
+      "sourceUrl": "https://notices.novascotia.ca/files/agft-public-consultation/2026/agft-consultation-bar-bar-bar-2026-02-23.pdf",
+      "claim": "The former Smokehouse Brewery Halifax taproom has been replaced at the exact 2704 Agricola Street premises. Nova Scotia's liquor-licence notice names Bar Bar Bar at that address, and a current November 19 local report independently confirms the successor is operating there. Smokehouse Brewery's current owner site now identifies only its 134 Union Street, Berwick taproom. Archive the stale Halifax predecessor while retaining its OpenStreetMap and inspection history; do not infer a closure date, successor restaurant eligibility, current hours, contact details, events, offers, social activity or media rights.",
+      "observedAt": "2026-11-21T17:22:45Z",
+      "reviewedAt": "2026-11-21T17:22:45Z",
+      "reviewState": "verified",
+      "reviewBasis": "exact_address_government_successor_notice_current_owner_location_and_current_local_operation_report",
+      "supportingEvidence": [
+        {
+          "type": "government_liquor_notice",
+          "url": "https://notices.novascotia.ca/files/agft-public-consultation/2026/agft-consultation-bar-bar-bar-2026-02-23.pdf",
+          "observedAt": "2026-11-21T17:22:45Z",
+          "claim": "Nova Scotia's public notice names Bar Bar Bar at 2704 Agricola Street, Halifax. The application date is not treated as an opening or replacement date."
+        },
+        {
+          "type": "official_website",
+          "url": "https://smokehousebrewery.ca/",
+          "observedAt": "2026-11-21T17:22:45Z",
+          "claim": "Smokehouse Brewery's current owner homepage identifies its taproom at 134 Union Street, Berwick and does not identify a Halifax location."
+        },
+        {
+          "type": "current_local_report",
+          "url": "https://dalgazette.com/arts-culture/the-most-toronto-places-in-halifax/",
+          "observedAt": "2026-11-21T17:22:45Z",
+          "claim": "The November 19, 2026 report describes Bar Bar Bar as an operating North End Halifax venue and documents patrons outside it on November 15."
+        }
+      ]
+    },
     {
       "restaurantId": "osm-node-3800067361-new-scotland-yard-emporium",
       "fields": {
