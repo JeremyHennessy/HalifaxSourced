@@ -4,7 +4,8 @@ export const REVIEWED_EVENT_QUARANTINE_PATH = 'data/quarantine/library-store-nav
 export const REVIEWED_EVENT_QUARANTINE_PATHS = [
   REVIEWED_EVENT_QUARANTINE_PATH,
   'data/quarantine/city-event-lifecycle-20261028.json',
-  'data/quarantine/city-event-lifecycle-20261121.json'
+  'data/quarantine/city-event-lifecycle-20261121.json',
+  'data/quarantine/city-event-lifecycle-20261122.json'
 ];
 const GUARD_FIELDS = ['id', 'sourceId', 'title', 'eventUrl', 'startAt', 'endAt', 'observedAt'];
 const DISPOSITIONS = new Set(['reviewed_invalid_navigation_extraction', 'reviewed_source_lifecycle_exclusion']);

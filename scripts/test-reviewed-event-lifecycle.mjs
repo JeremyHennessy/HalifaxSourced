@@ -6,14 +6,19 @@ import { reconcileFutureEventLosses } from './lib/event-refresh-safety.mjs';
 
 const archive = JSON.parse(await readFile(new URL('../data/quarantine/city-event-lifecycle-20261028.json', import.meta.url), 'utf8'));
 const cancellationArchive = JSON.parse(await readFile(new URL('../data/quarantine/city-event-lifecycle-20261121.json', import.meta.url), 'utf8'));
+const rescheduleArchive = JSON.parse(await readFile(new URL('../data/quarantine/city-event-lifecycle-20261122.json', import.meta.url), 'utf8'));
 const reviewed = archive.records.map(entry => entry.rawAcceptedRecord);
 const reviewedCancellations = cancellationArchive.records.map(entry => entry.rawAcceptedRecord);
+const reviewedReschedules = rescheduleArchive.records.map(entry => entry.rawAcceptedRecord);
 assert.equal(validateReviewedEventQuarantine(archive).size, 34);
 assert.equal(validateReviewedEventQuarantine(cancellationArchive).size, 6);
+assert.equal(validateReviewedEventQuarantine(rescheduleArchive).size, 3);
 assert.equal(reviewed.length, 35);
 assert.equal(reviewedCancellations.length, 6);
+assert.equal(reviewedReschedules.length, 3);
 for (const entry of archive.records) assert.equal(eventRecordSha256(entry.rawAcceptedRecord), entry.expectedRawRecordCanonicalSha256);
 for (const entry of cancellationArchive.records) assert.equal(eventRecordSha256(entry.rawAcceptedRecord), entry.expectedRawRecordCanonicalSha256);
+for (const entry of rescheduleArchive.records) assert.equal(eventRecordSha256(entry.rawAcceptedRecord), entry.expectedRawRecordCanonicalSha256);
 
 const projection = applyReviewedEventQuarantines(reviewed, [archive]);
 assert.equal(projection.blocked, false);
@@ -108,4 +113,18 @@ const cancellationMismatch = applyReviewedEventQuarantines([changedCancellation]
 assert.equal(cancellationMismatch.blocked, true);
 assert.deepEqual(cancellationMismatch.events, [changedCancellation]);
 
-console.log('Reviewed event lifecycle passed: 40 active lifecycle exclusions across immutable dated archives, one restored Carleton availability record, exact-record mismatch blocking, and unrelated omissions still fail closed.');
+const reviewedRescheduleProjection = applyReviewedEventQuarantines(reviewedReschedules, [rescheduleArchive]);
+assert.equal(reviewedRescheduleProjection.blocked, false);
+assert.equal(reviewedRescheduleProjection.events.length, 0);
+assert.equal(reviewedRescheduleProjection.receipt.quarantinedCount, 3);
+assert.deepEqual(reviewedRescheduleProjection.receipt.quarantinedBySource, {
+  'halifax-public-libraries': 3
+});
+const currentReschedules = [
+  { ...reviewedReschedules[0], id: 'halifax-public-libraries-8e14b0aef3f87c61', startAt: '2026-12-15T19:30:00.000Z', endAt: '2026-12-15T20:30:00.000Z', observedAt: '2026-11-22T02:19:47.140Z', duplicateEventIds: [] },
+  { ...reviewedReschedules[1], id: 'halifax-public-libraries-fa5f4f22ecc26faa', startAt: '2026-12-15T17:00:00.000Z', endAt: '2026-12-15T18:00:00.000Z', observedAt: '2026-11-22T02:19:47.139Z', duplicateEventIds: [] },
+  { ...reviewedReschedules[2], id: 'halifax-public-libraries-f3911fb20bb37160', startAt: '2027-03-17T16:00:00.000Z', endAt: '2027-03-17T17:00:00.000Z', observedAt: '2026-11-22T02:19:16.811Z' }
+];
+assert.deepEqual(applyReviewedEventQuarantines(currentReschedules, [rescheduleArchive]).events, currentReschedules, 'New source-backed dates are not removed by exact old-occurrence decisions');
+
+console.log('Reviewed event lifecycle passed: 43 active lifecycle exclusions across immutable dated archives, one restored Carleton availability record, three source-rescheduled occurrences, exact-record mismatch blocking, and unrelated omissions still fail closed.');

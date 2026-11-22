@@ -1,0 +1,204 @@
+{
+  "version": 1,
+  "archiveId": "city-event-lifecycle-20261122",
+  "disposition": "reviewed_source_lifecycle_exclusion",
+  "reason": "Exact reviewed lifecycle decisions for three Halifax Public Libraries occurrences whose official detail IDs now publish different scheduled dates. The superseded accepted occurrences are retired while the newly observed source-backed dates remain eligible; five unrelated removals from robots-disallowed sources remain protected.",
+  "decisionReviewedAt": "2026-11-22T02:22:35Z",
+  "verifiedAgainstCommit": "d71c0b13e72e44652a1a0def782e1e6ca42a46fa",
+  "rawArchiveRecordCount": 3,
+  "activeQuarantineIds": [
+    "halifax-public-libraries-9c39d562c2db3b61",
+    "halifax-public-libraries-963779298d9c1eac",
+    "halifax-public-libraries-80426a6400b2c193"
+  ],
+  "protectedDetailIds": [],
+  "provenance": {
+    "repository": "JeremyHennessy/HalifaxSourced",
+    "sourceCommit": "d71c0b13e72e44652a1a0def782e1e6ca42a46fa",
+    "refreshExecution": {
+      "mode": "owner_authorized_bounded_clean_main_replay",
+      "startedAt": "2026-11-22T02:17:41.169Z",
+      "candidateGeneratedAt": "2026-11-22T02:18:09.789Z",
+      "driftReportGeneratedAt": "2026-11-22T02:20:52.747Z",
+      "previousGeneratedAt": "2026-11-14T06:35:49.331Z",
+      "eventCount": 1034,
+      "heldRemovalCount": 8,
+      "blocked": true
+    },
+    "decisionBasis": "The bounded refresh completed the official Halifax Public Libraries collector successfully and omitted the three exact accepted occurrence records. Each exact official detail URL remains live but now identifies the same source event ID with a different EventScheduled date. The refreshed candidate includes those three new schedules. Only the superseded old occurrence records are admitted; five removals from failed or robots-disallowed sources remain protected and no transient-source deletion is admitted."
+  },
+  "records": [
+    {
+      "expected": {
+        "id": "halifax-public-libraries-9c39d562c2db3b61",
+        "sourceId": "halifax-public-libraries",
+        "title": "Art Club: Styrofoam Printmaking",
+        "eventUrl": "https://halifax.bibliocommons.com/v2/events/6ae25640de300e00451d8d44",
+        "startAt": "2026-12-01T19:30:00.000Z",
+        "endAt": "2026-12-01T20:30:00.000Z",
+        "observedAt": "2026-11-14T06:36:52.372Z"
+      },
+      "expectedRawRecordCanonicalSha256": "9d6bd31c14abc8b26b9df644540cfc43bdc23aeda0cab22c1b3e6630dbe8d5a5",
+      "rawAcceptedRecord": {
+        "id": "halifax-public-libraries-9c39d562c2db3b61",
+        "title": "Art Club: Styrofoam Printmaking",
+        "startAt": "2026-12-01T19:30:00.000Z",
+        "endAt": "2026-12-01T20:30:00.000Z",
+        "allDay": false,
+        "venueName": "Keshen Goodman Public Library",
+        "address": null,
+        "city": "Halifax",
+        "categories": [
+          "Arts"
+        ],
+        "eventUrl": "https://halifax.bibliocommons.com/v2/events/6ae25640de300e00451d8d44",
+        "ticketUrl": null,
+        "price": null,
+        "sourceId": "halifax-public-libraries",
+        "sourceName": "Halifax Public Libraries",
+        "sourceKind": "public_library_calendar",
+        "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
+        "observedAt": "2026-11-14T06:36:52.372Z",
+        "reviewState": "source_observed",
+        "duplicateEventIds": [
+          "halifax-public-libraries-433ba399f1a2865b"
+        ],
+        "venueId": "keshen-goodman-library",
+        "neighbourhood": null,
+        "organizerId": "halifax-public-libraries",
+        "organizerName": "Halifax Public Libraries"
+      },
+      "decision": {
+        "kind": "reviewed_official_source_reschedule",
+        "reviewedAt": "2026-11-22T02:22:35Z",
+        "reason": "The exact official source ID no longer publishes the accepted December 1 occurrence and now publishes Art Club on December 15, 2026 from 3:30–4:30 p.m. at Keshen Goodman Public Library."
+      },
+      "evidence": [
+        {
+          "kind": "current_official_source",
+          "url": "https://halifax.bibliocommons.com/v2/events/6ae25640de300e00451d8d44",
+          "observedAt": "2026-11-22T02:22:35Z",
+          "httpStatus": 200,
+          "eventStatus": "https://schema.org/EventScheduled",
+          "currentStartAt": "2026-12-15T19:30:00.000Z",
+          "currentEndAt": "2026-12-15T20:30:00.000Z",
+          "observation": "The official detail page keeps the same source event ID and title but now schedules this occurrence for December 15, not December 1."
+        }
+      ]
+    },
+    {
+      "expected": {
+        "id": "halifax-public-libraries-963779298d9c1eac",
+        "sourceId": "halifax-public-libraries",
+        "title": "Job Search Support with Job Junction",
+        "eventUrl": "https://halifax.bibliocommons.com/v2/events/6ab3f8eb0fe10113c0032ce4",
+        "startAt": "2026-12-29T17:00:00.000Z",
+        "endAt": "2026-12-29T20:00:00.000Z",
+        "observedAt": "2026-11-14T06:36:33.469Z"
+      },
+      "expectedRawRecordCanonicalSha256": "41f4f84104ec8455fb49ccb597190c6b6adbb7a7671b0df97fd0e90d0f160714",
+      "rawAcceptedRecord": {
+        "id": "halifax-public-libraries-963779298d9c1eac",
+        "title": "Job Search Support with Job Junction",
+        "startAt": "2026-12-29T17:00:00.000Z",
+        "endAt": "2026-12-29T20:00:00.000Z",
+        "allDay": false,
+        "venueName": "Keshen Goodman Public Library",
+        "address": null,
+        "city": "Halifax",
+        "categories": [
+          "Community"
+        ],
+        "eventUrl": "https://halifax.bibliocommons.com/v2/events/6ab3f8eb0fe10113c0032ce4",
+        "ticketUrl": null,
+        "price": null,
+        "sourceId": "halifax-public-libraries",
+        "sourceName": "Halifax Public Libraries",
+        "sourceKind": "public_library_calendar",
+        "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
+        "observedAt": "2026-11-14T06:36:33.469Z",
+        "reviewState": "source_observed",
+        "duplicateEventIds": [
+          "halifax-public-libraries-28919efe6e5e9988"
+        ],
+        "venueId": "keshen-goodman-library",
+        "neighbourhood": null,
+        "organizerId": "halifax-public-libraries",
+        "organizerName": "Halifax Public Libraries"
+      },
+      "decision": {
+        "kind": "reviewed_official_source_reschedule",
+        "reviewedAt": "2026-11-22T02:22:35Z",
+        "reason": "The exact official source ID no longer publishes the accepted December 29 occurrence and now publishes Job Search Support on December 15, 2026 from 1:00–2:00 p.m. at Keshen Goodman Public Library."
+      },
+      "evidence": [
+        {
+          "kind": "current_official_source",
+          "url": "https://halifax.bibliocommons.com/v2/events/6ab3f8eb0fe10113c0032ce4",
+          "observedAt": "2026-11-22T02:22:35Z",
+          "httpStatus": 200,
+          "eventStatus": "https://schema.org/EventScheduled",
+          "currentStartAt": "2026-12-15T17:00:00.000Z",
+          "currentEndAt": "2026-12-15T18:00:00.000Z",
+          "observation": "The official detail page keeps the same source event ID and title but now schedules this occurrence for December 15, not December 29."
+        }
+      ]
+    },
+    {
+      "expected": {
+        "id": "halifax-public-libraries-80426a6400b2c193",
+        "sourceId": "halifax-public-libraries",
+        "title": "Book Club: The Lion Women of Tehran",
+        "eventUrl": "https://halifax.bibliocommons.com/v2/events/6a149483f56bd86e00b1fe6e",
+        "startAt": "2027-03-10T17:00:00.000Z",
+        "endAt": "2027-03-10T18:30:00.000Z",
+        "observedAt": "2026-11-14T06:36:17.079Z"
+      },
+      "expectedRawRecordCanonicalSha256": "061ab9167c809e74f8231b17ae25570d9e3050fb7123f323c4378e11736f8bd8",
+      "rawAcceptedRecord": {
+        "id": "halifax-public-libraries-80426a6400b2c193",
+        "title": "Book Club: The Lion Women of Tehran",
+        "startAt": "2027-03-10T17:00:00.000Z",
+        "endAt": "2027-03-10T18:30:00.000Z",
+        "allDay": false,
+        "venueName": "Keshen Goodman Public Library",
+        "address": null,
+        "city": "Halifax",
+        "categories": [
+          "Community"
+        ],
+        "eventUrl": "https://halifax.bibliocommons.com/v2/events/6a149483f56bd86e00b1fe6e",
+        "ticketUrl": null,
+        "price": null,
+        "sourceId": "halifax-public-libraries",
+        "sourceName": "Halifax Public Libraries",
+        "sourceKind": "public_library_calendar",
+        "sourceUrl": "https://halifax.bibliocommons.com/v2/events",
+        "observedAt": "2026-11-14T06:36:17.079Z",
+        "reviewState": "source_observed",
+        "duplicateEventIds": [],
+        "venueId": "keshen-goodman-library",
+        "neighbourhood": null,
+        "organizerId": "halifax-public-libraries",
+        "organizerName": "Halifax Public Libraries"
+      },
+      "decision": {
+        "kind": "reviewed_official_source_reschedule",
+        "reviewedAt": "2026-11-22T02:22:35Z",
+        "reason": "The exact official source ID no longer publishes the accepted March 10 occurrence and now publishes the book club on March 17, 2027 from 1:00–2:00 p.m. at Keshen Goodman Public Library."
+      },
+      "evidence": [
+        {
+          "kind": "current_official_source",
+          "url": "https://halifax.bibliocommons.com/v2/events/6a149483f56bd86e00b1fe6e",
+          "observedAt": "2026-11-22T02:22:35Z",
+          "httpStatus": 200,
+          "eventStatus": "https://schema.org/EventScheduled",
+          "currentStartAt": "2027-03-17T16:00:00.000Z",
+          "currentEndAt": "2027-03-17T17:00:00.000Z",
+          "observation": "The official detail page keeps the same source event ID and title but now schedules this occurrence for March 17, not March 10."
+        }
+      ]
+    }
+  ]
+}

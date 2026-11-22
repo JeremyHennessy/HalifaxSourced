@@ -139,6 +139,46 @@ if (mergedEvents.some((event) => event.id === "halifax-public-libraries-138e27ae
   errors.push("superseded Movie: Gremlins 6:00 p.m. record remained in the runtime event list.");
 }
 
+for (const expected of [
+  {
+    id: "halifax-public-libraries-8e14b0aef3f87c61",
+    supersededId: "halifax-public-libraries-9c39d562c2db3b61",
+    title: "Art Club: Styrofoam Printmaking",
+    startAt: "2026-12-15T19:30:00.000Z",
+    endAt: "2026-12-15T20:30:00.000Z",
+    eventUrl: "https://halifax.bibliocommons.com/v2/events/6ae25640de300e00451d8d44"
+  },
+  {
+    id: "halifax-public-libraries-fa5f4f22ecc26faa",
+    supersededId: "halifax-public-libraries-963779298d9c1eac",
+    title: "Job Search Support with Job Junction",
+    startAt: "2026-12-15T17:00:00.000Z",
+    endAt: "2026-12-15T18:00:00.000Z",
+    eventUrl: "https://halifax.bibliocommons.com/v2/events/6ab3f8eb0fe10113c0032ce4"
+  },
+  {
+    id: "halifax-public-libraries-f3911fb20bb37160",
+    supersededId: "halifax-public-libraries-80426a6400b2c193",
+    title: "Book Club: The Lion Women of Tehran",
+    startAt: "2027-03-17T16:00:00.000Z",
+    endAt: "2027-03-17T17:00:00.000Z",
+    eventUrl: "https://halifax.bibliocommons.com/v2/events/6a149483f56bd86e00b1fe6e"
+  }
+]) {
+  const current = mergedEvents.filter((event) => event.id === expected.id);
+  if (current.length !== 1
+    || current[0]?.title !== expected.title
+    || current[0]?.startAt !== expected.startAt
+    || current[0]?.endAt !== expected.endAt
+    || current[0]?.eventUrl !== expected.eventUrl
+    || !(current[0]?.supersedesEventIds || []).includes(expected.supersededId)) {
+    errors.push(`official library reschedule did not preserve the reviewed replacement for ${expected.id}`);
+  }
+  if (mergedEvents.some((event) => event.id === expected.supersededId)) {
+    errors.push(`superseded official library occurrence remained in the runtime event list: ${expected.supersededId}`);
+  }
+}
+
 const coryTetfordUrl = "https://www.thecarleton.ca/events/cory-tetford-nov20/";
 const coryTetfordEndAt = "2026-11-21T02:00:00.000Z";
 const coryTetfordHasEnded = Date.now() >= Date.parse(coryTetfordEndAt);

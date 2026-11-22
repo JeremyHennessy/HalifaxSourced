@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-20T12:10:19Z",
+  "generatedAt": "2026-11-22T02:22:35Z",
   "policy": "Curated city-event additions are source-backed records used when current official or local calendars have not yet been promoted into the primary city-events build.",
   "sources": [
     {
@@ -1242,6 +1242,141 @@
       ],
       "supersedesEventIds": [
         "halifax-public-libraries-138e27ae3fd0e498"
+      ]
+    },
+    {
+      "allDay": false,
+      "venueName": "Keshen Goodman Public Library",
+      "address": "330 Lacewood Drive, Halifax, NS B3S 0A3",
+      "city": "Halifax",
+      "price": null,
+      "ticketUrl": null,
+      "sourceId": "halifax-public-libraries",
+      "sourceName": "Halifax Public Libraries",
+      "sourceKind": "official_library_calendar",
+      "reviewState": "source_observed",
+      "venueId": "keshen-goodman-library",
+      "neighbourhood": null,
+      "organizerId": "halifax-public-libraries",
+      "organizerName": "Halifax Public Libraries",
+      "observedAt": "2026-11-22T02:22:35Z",
+      "id": "halifax-public-libraries-8e14b0aef3f87c61",
+      "supersedesEventIds": [
+        "halifax-public-libraries-9c39d562c2db3b61"
+      ],
+      "alternateSources": [],
+      "title": "Art Club: Styrofoam Printmaking",
+      "startAt": "2026-12-15T19:30:00.000Z",
+      "endAt": "2026-12-15T20:30:00.000Z",
+      "categories": [
+        "Arts"
+      ],
+      "eventUrl": "https://halifax.bibliocommons.com/v2/events/6ae25640de300e00451d8d44",
+      "sourceUrl": "https://halifax.bibliocommons.com/v2/events/6ae25640de300e00451d8d44",
+      "sourceEvidence": [
+        {
+          "sourceId": "halifax-public-libraries",
+          "sourceName": "Halifax Public Libraries",
+          "sourceUrl": "https://halifax.bibliocommons.com/v2/events/6ae25640de300e00451d8d44",
+          "basis": "official_primary",
+          "observedAt": "2026-11-22T02:22:35Z",
+          "httpStatus": 200,
+          "contentSha256": "e13c357c2833c47419e2e83f142fd70b62e50556a1a2e3e7cea4c76eb2629174",
+          "observedFacts": [
+            "EventScheduled on December 15, 2026 from 3:30–4:30 p.m. at Keshen Goodman Public Library.",
+            "The same official source event ID previously represented the superseded December 1 occurrence."
+          ]
+        }
+      ]
+    },
+    {
+      "allDay": false,
+      "venueName": "Keshen Goodman Public Library",
+      "address": "330 Lacewood Drive, Halifax, NS B3S 0A3",
+      "city": "Halifax",
+      "price": null,
+      "ticketUrl": null,
+      "sourceId": "halifax-public-libraries",
+      "sourceName": "Halifax Public Libraries",
+      "sourceKind": "official_library_calendar",
+      "reviewState": "source_observed",
+      "venueId": "keshen-goodman-library",
+      "neighbourhood": null,
+      "organizerId": "halifax-public-libraries",
+      "organizerName": "Halifax Public Libraries",
+      "observedAt": "2026-11-22T02:22:35Z",
+      "id": "halifax-public-libraries-fa5f4f22ecc26faa",
+      "supersedesEventIds": [
+        "halifax-public-libraries-963779298d9c1eac"
+      ],
+      "alternateSources": [],
+      "title": "Job Search Support with Job Junction",
+      "startAt": "2026-12-15T17:00:00.000Z",
+      "endAt": "2026-12-15T18:00:00.000Z",
+      "categories": [
+        "Community"
+      ],
+      "eventUrl": "https://halifax.bibliocommons.com/v2/events/6ab3f8eb0fe10113c0032ce4",
+      "sourceUrl": "https://halifax.bibliocommons.com/v2/events/6ab3f8eb0fe10113c0032ce4",
+      "sourceEvidence": [
+        {
+          "sourceId": "halifax-public-libraries",
+          "sourceName": "Halifax Public Libraries",
+          "sourceUrl": "https://halifax.bibliocommons.com/v2/events/6ab3f8eb0fe10113c0032ce4",
+          "basis": "official_primary",
+          "observedAt": "2026-11-22T02:22:35Z",
+          "httpStatus": 200,
+          "contentSha256": "8ca83a9e9bb7d39a5c0c696c1ebb37c52577b18da13e30ffc9b2faf91b661b14",
+          "observedFacts": [
+            "EventScheduled on December 15, 2026 from 1:00–2:00 p.m. at Keshen Goodman Public Library.",
+            "The same official source event ID previously represented the superseded December 29 occurrence."
+          ]
+        }
+      ]
+    },
+    {
+      "allDay": false,
+      "venueName": "Keshen Goodman Public Library",
+      "address": "330 Lacewood Drive, Halifax, NS B3S 0A3",
+      "city": "Halifax",
+      "price": null,
+      "ticketUrl": null,
+      "sourceId": "halifax-public-libraries",
+      "sourceName": "Halifax Public Libraries",
+      "sourceKind": "official_library_calendar",
+      "reviewState": "source_observed",
+      "venueId": "keshen-goodman-library",
+      "neighbourhood": null,
+      "organizerId": "halifax-public-libraries",
+      "organizerName": "Halifax Public Libraries",
+      "observedAt": "2026-11-22T02:22:35Z",
+      "id": "halifax-public-libraries-f3911fb20bb37160",
+      "supersedesEventIds": [
+        "halifax-public-libraries-80426a6400b2c193"
+      ],
+      "alternateSources": [],
+      "title": "Book Club: The Lion Women of Tehran",
+      "startAt": "2027-03-17T16:00:00.000Z",
+      "endAt": "2027-03-17T17:00:00.000Z",
+      "categories": [
+        "Community"
+      ],
+      "eventUrl": "https://halifax.bibliocommons.com/v2/events/6a149483f56bd86e00b1fe6e",
+      "sourceUrl": "https://halifax.bibliocommons.com/v2/events/6a149483f56bd86e00b1fe6e",
+      "sourceEvidence": [
+        {
+          "sourceId": "halifax-public-libraries",
+          "sourceName": "Halifax Public Libraries",
+          "sourceUrl": "https://halifax.bibliocommons.com/v2/events/6a149483f56bd86e00b1fe6e",
+          "basis": "official_primary",
+          "observedAt": "2026-11-22T02:22:35Z",
+          "httpStatus": 200,
+          "contentSha256": "6b1e36b92d3697880b3b4603d61932862b083e7e9dba08fcec3ecc39434b75c2",
+          "observedFacts": [
+            "EventScheduled on March 17, 2027 from 1:00–2:00 p.m. at Keshen Goodman Public Library.",
+            "The same official source event ID previously represented the superseded March 10 occurrence."
+          ]
+        }
       ]
     }
   ]
