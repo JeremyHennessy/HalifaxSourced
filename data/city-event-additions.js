@@ -1382,30 +1382,198 @@ window.HALIFAX_CITY_EVENT_ADDITIONS = JSON.parse(`{
 }`);
 
 (function applyCityEventAdditions() {
-  const payload = window.HALIFAX_CITY_EVENTS || (window.HALIFAX_CITY_EVENTS = { events: [] });
-  const additions = window.HALIFAX_CITY_EVENT_ADDITIONS?.events || [];
-  const events = Array.isArray(payload.events) ? payload.events : [];
-  const key = (event) => [String(event?.title || "").toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, " ").trim(), String(event?.startAt || "").slice(0, 10), String(event?.venueName || event?.address || event?.city || "halifax").toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, " ").trim()].join("|");
-  const dateValue = (value) => { const parsed = Date.parse(String(value || "")); return Number.isFinite(parsed) ? parsed : Number.NEGATIVE_INFINITY; };
-  const mergeIds = (...lists) => [...new Set(lists.flat().filter(Boolean))];
-  const newest = (left, right) => dateValue(right?.observedAt) > dateValue(left?.observedAt) ? right : left;
-  const byId = new Map(events.map((event) => [event.id, event]));
-  const byKey = new Map(events.map((event) => [key(event), event]));
-  for (const addition of additions) {
-    const superseded = new Set(addition.supersedesEventIds || []);
-    for (let index = events.length - 1; index >= 0; index -= 1) {
-      if (superseded.has(events[index]?.id)) {
-        const removed = events.splice(index, 1)[0];
-        byId.delete(removed.id);
-        byKey.delete(key(removed));
-      }
-    }
-    const existing = byId.get(addition.id) || byKey.get(key(addition));
-    if (!existing) { events.push(addition); byId.set(addition.id, addition); byKey.set(key(addition), addition); continue; }
-    const selected = newest(existing, addition);
-    const merged = { ...existing, ...selected, duplicateEventIds: mergeIds(existing.duplicateEventIds, addition.duplicateEventIds, existing.id !== addition.id ? [existing.id, addition.id] : []) };
-    const index = events.indexOf(existing);
-    events[index] = merged; byId.set(merged.id, merged); byKey.set(key(merged), merged);
+  const additions = window.HALIFAX_CITY_EVENT_ADDITIONS;
+  const payload = window.HALIFAX_CITY_EVENTS;
+  if (!payload || !Array.isArray(payload.events) || !Array.isArray(additions?.events)) return;
+
+  function clone(value) {
+    return JSON.parse(JSON.stringify(value));
   }
-  payload.events = events; payload.eventCount = events.length;
+
+  function normalize(value) {
+    return String(value ?? "")
+      .toLowerCase()
+      .normalize("NFKD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/&/g, " and ")
+      .replace(/[^a-z0-9]+/g, " ")
+      .trim();
+  }
+
+  function eventDateKey(value) {
+    const text = String(value ?? "").trim();
+    const dateOnly = /^(\d{4}-\d{2}-\d{2})$/.exec(text);
+    if (dateOnly) return dateOnly[1];
+    const parsed = new Date(text);
+    return Number.isNaN(parsed.getTime()) ? "" : parsed.toISOString().slice(0, 10);
+  }
+
+  function eventKey(event) {
+    return [
+      normalize(event?.title),
+      eventDateKey(event?.startAt),
+      normalize(event?.venueName || event?.address || event?.city || "halifax")
+    ].join("|");
+  }
+
+  function normalizedUrl(value) {
+    const url = String(value ?? "").trim().replace(/#.*$/, "").replace(/\/+$/, "");
+    return /^https?:\/\//i.test(url) ? url : "";
+  }
+
+  function occurrenceKey(event) {
+    const eventUrl = normalizedUrl(event?.eventUrl);
+    const startAt = Date.parse(String(event?.startAt || ""));
+    const sourceId = String(event?.sourceId || "").trim();
+    return eventUrl && Number.isFinite(startAt) && sourceId
+      ? `${sourceId}|${eventUrl}|${new Date(startAt).toISOString()}`
+      : "";
+  }
+
+  function uniqueBy(items, keyFn) {
+    const seen = new Set();
+    const unique = [];
+    for (const item of items || []) {
+      const key = keyFn(item);
+      if (!key || seen.has(key)) continue;
+      seen.add(key);
+      unique.push(item);
+    }
+    return unique;
+  }
+
+  function mergeEvents(existing, addition) {
+    const merged = { ...clone(addition), ...existing };
+    if (!String(existing?.address ?? "").trim() && String(addition?.address ?? "").trim()) merged.address = addition.address;
+    merged.categories = uniqueBy([...(addition.categories || []), ...(existing.categories || [])], (value) => String(value || ""));
+    merged.alternateSources = uniqueBy([...(existing.alternateSources || []), ...(addition.alternateSources || [])], (source) => `${source?.sourceId || ""}|${source?.sourceUrl || ""}`);
+    merged.sourceEvidence = uniqueBy([...(existing.sourceEvidence || []), ...(addition.sourceEvidence || [])], (source) => `${source?.sourceId || ""}|${source?.basis || ""}|${source?.sourceUrl || ""}`);
+    merged.supersedesEventIds = uniqueBy([...(existing.supersedesEventIds || []), ...(addition.supersedesEventIds || [])], (value) => String(value || ""))
+      .filter((value) => value && value !== merged.id);
+    return merged;
+  }
+
+  function mergeCanonicalOccurrence(existing, addition) {
+    const existingObservedAt = Date.parse(String(existing?.observedAt || ""));
+    const additionObservedAt = Date.parse(String(addition?.observedAt || ""));
+    const freshest = Number.isFinite(existingObservedAt)
+      && (!Number.isFinite(additionObservedAt) || existingObservedAt >= additionObservedAt)
+      ? existing
+      : addition;
+    const merged = { ...clone(addition), ...existing, ...clone(freshest), id: addition.id };
+    merged.categories = uniqueBy([...(addition.categories || []), ...(existing.categories || [])], (value) => String(value || ""));
+    merged.alternateSources = uniqueBy([...(existing.alternateSources || []), ...(addition.alternateSources || [])], (source) => `${source?.sourceId || ""}|${source?.sourceUrl || ""}`);
+    merged.sourceEvidence = uniqueBy([...(existing.sourceEvidence || []), ...(addition.sourceEvidence || [])], (source) => `${source?.sourceId || ""}|${source?.basis || ""}|${source?.sourceUrl || ""}|${source?.observedAt || ""}`);
+    merged.duplicateEventIds = uniqueBy([
+      ...(addition.duplicateEventIds || []),
+      ...(existing.duplicateEventIds || []),
+      existing.id
+    ], (value) => String(value || "")).filter((value) => value && value !== merged.id);
+    merged.supersedesEventIds = uniqueBy([...(existing.supersedesEventIds || []), ...(addition.supersedesEventIds || [])], (value) => String(value || ""))
+      .filter((value) => value && value !== merged.id);
+    return merged;
+  }
+
+  function indexUnique(map, key, index) {
+    if (!key) return;
+    map.set(key, map.has(key) ? null : index);
+  }
+
+  function sortEvents(a, b) {
+    const startA = Date.parse(String(a.startAt || ""));
+    const startB = Date.parse(String(b.startAt || ""));
+    const timeA = Number.isFinite(startA) ? startA : Number.POSITIVE_INFINITY;
+    const timeB = Number.isFinite(startB) ? startB : Number.POSITIVE_INFINITY;
+    return timeA - timeB || String(a.title || "").localeCompare(String(b.title || ""));
+  }
+
+  const events = payload.events.slice();
+  const byId = new Map();
+  const byKey = new Map();
+  const byOccurrence = new Map();
+  events.forEach((event, index) => {
+    if (event?.id) byId.set(String(event.id), index);
+    const key = eventKey(event);
+    if (key) byKey.set(key, index);
+    indexUnique(byOccurrence, occurrenceKey(event), index);
+  });
+
+  const addedIds = [];
+  const mergedIds = [];
+  for (const addition of additions.events) {
+    const id = addition?.id ? String(addition.id) : "";
+    const key = eventKey(addition);
+    const occurrence = occurrenceKey(addition);
+    const exactIdIndex = byId.get(id);
+    const exactKeyIndex = byKey.get(key);
+    const occurrenceIndex = byOccurrence.get(occurrence);
+    const index = Number.isInteger(exactIdIndex)
+      ? exactIdIndex
+      : Number.isInteger(exactKeyIndex)
+        ? exactKeyIndex
+        : occurrenceIndex;
+    if (Number.isInteger(index)) {
+      const occurrenceMatch = !Number.isInteger(exactIdIndex)
+        && Number.isInteger(occurrenceIndex)
+        && occurrenceIndex === index;
+      events[index] = occurrenceMatch
+        ? mergeCanonicalOccurrence(events[index], addition)
+        : mergeEvents(events[index], addition);
+      if (events[index]?.id) byId.set(String(events[index].id), index);
+      const mergedKey = eventKey(events[index]);
+      if (mergedKey) byKey.set(mergedKey, index);
+      mergedIds.push(events[index].id || id || key);
+      continue;
+    }
+    const next = clone(addition);
+    const nextIndex = events.push(next) - 1;
+    if (id) byId.set(id, nextIndex);
+    if (key) byKey.set(key, nextIndex);
+    indexUnique(byOccurrence, occurrenceKey(next), nextIndex);
+    addedIds.push(id || key);
+  }
+
+  const currentAdditionIds = new Set(additions.events.map((event) => String(event?.id || "")).filter(Boolean));
+  const supersededIds = new Set(additions.events.flatMap((event) => event.supersedesEventIds || []).map(String).filter(Boolean));
+  const removedSupersededIds = [];
+  const filteredEvents = events.filter((event) => {
+    const id = String(event?.id || "");
+    const remove = supersededIds.has(id) && !currentAdditionIds.has(id);
+    if (remove) removedSupersededIds.push(id);
+    return !remove;
+  });
+
+  const sorted = filteredEvents.sort(sortEvents);
+  payload.events.splice(0, payload.events.length, ...sorted);
+  payload.eventCount = payload.events.length;
+  payload.categoryCounts = payload.events.reduce((counts, event) => {
+    for (const category of event.categories || []) counts[category] = (counts[category] || 0) + 1;
+    return counts;
+  }, {});
+
+  const additionSourceIds = new Set(additions.events.map((event) => event.sourceId).filter(Boolean));
+  // Curated evidence is not a collection receipt. Keep collector counts,
+  // statuses and all attempt/success/failure clocks untouched, even on overlap.
+  const sourceContributions = [...additionSourceIds].map((sourceId) => {
+    const sourceEvents = additions.events.filter((event) => event.sourceId === sourceId);
+    const sample = sourceEvents[0] || {};
+    return {
+      sourceId,
+      sourceName: sample.sourceName || sourceId,
+      sourceKind: sample.sourceKind || "curated_city_event_addition",
+      curatedEventCount: sourceEvents.length,
+      eventIds: sourceEvents.map((event) => event.id),
+      evidenceObservedAt: uniqueBy(sourceEvents.map((event) => event.observedAt), (value) => value)
+    };
+  });
+  payload.manualAdditions = {
+    ...(payload.manualAdditions || {}),
+    appliedAt: new Date().toISOString(),
+    source: "data/city-event-additions.js",
+    eventCount: additions.events.length,
+    sourceContributions,
+    addedIds,
+    mergedIds,
+    removedSupersededIds
+  };
 })();
