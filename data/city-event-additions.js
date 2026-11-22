@@ -1266,6 +1266,7 @@ window.HALIFAX_CITY_EVENT_ADDITIONS = JSON.parse(`{
       "supersedesEventIds": [
         "halifax-public-libraries-9c39d562c2db3b61"
       ],
+      "alternateSources": [],
       "title": "Art Club: Styrofoam Printmaking",
       "startAt": "2026-12-15T19:30:00.000Z",
       "endAt": "2026-12-15T20:30:00.000Z",
@@ -1310,6 +1311,7 @@ window.HALIFAX_CITY_EVENT_ADDITIONS = JSON.parse(`{
       "supersedesEventIds": [
         "halifax-public-libraries-963779298d9c1eac"
       ],
+      "alternateSources": [],
       "title": "Job Search Support with Job Junction",
       "startAt": "2026-12-15T17:00:00.000Z",
       "endAt": "2026-12-15T18:00:00.000Z",
@@ -1354,6 +1356,7 @@ window.HALIFAX_CITY_EVENT_ADDITIONS = JSON.parse(`{
       "supersedesEventIds": [
         "halifax-public-libraries-80426a6400b2c193"
       ],
+      "alternateSources": [],
       "title": "Book Club: The Lion Women of Tehran",
       "startAt": "2027-03-17T16:00:00.000Z",
       "endAt": "2027-03-17T17:00:00.000Z",
