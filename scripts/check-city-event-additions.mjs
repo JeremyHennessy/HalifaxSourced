@@ -139,6 +139,62 @@ if (mergedEvents.some((event) => event.id === "halifax-public-libraries-138e27ae
   errors.push("superseded Movie: Gremlins 6:00 p.m. record remained in the runtime event list.");
 }
 
+const currentExactDetailEvents = [
+  {
+    id: "https://novascotia.com/event/cheerexpo-national-cheerleading-championships/#event",
+    startAt: "2027-03-19T00:00:00.000Z",
+    endAt: "2027-03-21T00:00:00.000Z",
+    tourismUrl: "https://novascotia.com/event/cheerexpo-national-cheerleading-championships/",
+    ownerUrl: "https://www.cheerexpo.com/home"
+  },
+  {
+    id: "https://novascotia.com/event/halifax-busker-festival/#event",
+    startAt: "2027-07-28T00:00:00.000Z",
+    endAt: "2027-08-02T00:00:00.000Z",
+    tourismUrl: "https://novascotia.com/event/halifax-busker-festival/",
+    ownerUrl: "https://www.buskers.ca/"
+  },
+  {
+    id: "https://novascotia.com/event/atlantic-international-film-festival-aiff/#event",
+    startAt: "2027-09-15T00:00:00.000Z",
+    endAt: "2027-09-22T00:00:00.000Z",
+    tourismUrl: "https://novascotia.com/event/atlantic-international-film-festival-aiff/",
+    ownerUrl: "https://atlanticfilmfestival.ca/"
+  }
+];
+
+for (const expected of currentExactDetailEvents) {
+  const current = mergedEvents.filter((event) => event.id === expected.id);
+  const evidenceUrls = new Set((current[0]?.sourceEvidence || []).map((source) => source.sourceUrl));
+  if (current.length !== 1
+    || current[0]?.startAt !== expected.startAt
+    || current[0]?.endAt !== expected.endAt
+    || current[0]?.eventUrl !== expected.tourismUrl
+    || !evidenceUrls.has(expected.tourismUrl)
+    || !evidenceUrls.has(expected.ownerUrl)) {
+    errors.push(`current exact-detail event retention did not survive the runtime merge: ${expected.id}`);
+  }
+}
+
+const exactDetailIds = new Set(currentExactDetailEvents.map((event) => event.id));
+const omissionContext = vm.createContext({
+  window: {
+    HALIFAX_CITY_EVENTS: {
+      ...JSON.parse(JSON.stringify(mergedPayload)),
+      events: JSON.parse(JSON.stringify(mergedEvents.filter((event) => !exactDetailIds.has(event.id))))
+    }
+  },
+  Date,
+  console
+});
+vm.runInContext(await readFile(additionsJsUrl, "utf8"), omissionContext, { filename: "data/city-event-additions.js", timeout: 20000 });
+for (const expected of currentExactDetailEvents) {
+  const recovered = omissionContext.window.HALIFAX_CITY_EVENTS.events.filter((event) => event.id === expected.id);
+  if (recovered.length !== 1 || recovered[0]?.startAt !== expected.startAt || recovered[0]?.endAt !== expected.endAt) {
+    errors.push(`curated exact-detail evidence did not restore an omitted current occurrence: ${expected.id}`);
+  }
+}
+
 for (const expected of [
   {
     id: "halifax-public-libraries-8e14b0aef3f87c61",
