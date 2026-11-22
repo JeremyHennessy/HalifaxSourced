@@ -87,6 +87,9 @@ jobs:
       - name: Add review-directory discovery candidates
         run: node scripts/import-review-directory-restaurants.mjs
 
+      - name: Rebuild current canonical catalog
+        run: node scripts/export-catalog.mjs
+
       - name: Resolve directory candidates to canonical places
         run: node scripts/resolve-place-candidates.mjs
 

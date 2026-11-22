@@ -516,10 +516,10 @@ function assertRestaurantPreviewBoundary(workflow) {
   assertPreviewPrBoundary(workflow, 'restaurant-discovery-preview.yml', '43 10 * * *', 'discover');
   assert.equal(workflow.slice(0, restaurantValidationPrefix.length), restaurantValidationPrefix,
     'Restaurant must preserve its exact offline commands, dependency paths, checkout, env, permissions, triggers and two-job envelope');
-  // Frozen producer body from merged #158 (4f3a43b), before adding only the
-  // PR exclusion. This baseline is independent of the candidate workflow.
+  // Frozen producer body after adding the current-catalog rebuild prerequisite
+  // before candidate resolution. This baseline is independent of the candidate workflow.
   assert.equal(createHash('sha256').update(workflow.slice(restaurantValidationPrefix.length)).digest('hex'),
-    '65cd547756a3295c527ad8699f142376e9881724641265163a649c545231c1a7',
+    'a5c769ed6063bf04c70f324c0350345e1f2a50f151a8c1393d999b700281e4bd',
     'Restaurant scheduled/manual commands, bounds and artifact paths/retention must remain byte-identical');
 }
 const restaurantWorkflow = await readFile(new URL('../.github/workflows/restaurant-discovery-preview.yml', import.meta.url), 'utf8');
