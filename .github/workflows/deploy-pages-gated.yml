@@ -70,6 +70,27 @@ jobs:
           name: github-pages-${{ github.run_attempt }}
           path: .release-site
 
+      - name: Wait for uploaded Pages artifact visibility
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PAGES_ARTIFACT_NAME: github-pages-${{ github.run_attempt }}
+        run: |
+          for delay in 0 1 2 4 8 15; do
+            if [ "$delay" -gt 0 ]; then sleep "$delay"; fi
+            if response="$(curl --fail-with-body --silent --show-error \
+              -H "Accept: application/vnd.github+json" \
+              -H "Authorization: Bearer ${GH_TOKEN}" \
+              -H "X-GitHub-Api-Version: 2022-11-28" \
+              "${GITHUB_API_URL}/repos/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}/artifacts?name=${PAGES_ARTIFACT_NAME}")" \
+              && jq -e --arg name "$PAGES_ARTIFACT_NAME" '.artifacts | any(.name == $name and (.expired | not))' <<<"$response" >/dev/null; then
+              echo "Pages artifact ${PAGES_ARTIFACT_NAME} is visible."
+              exit 0
+            fi
+            echo "Pages artifact ${PAGES_ARTIFACT_NAME} is not visible after ${delay}s; retrying within the bounded visibility window."
+          done
+          echo "Pages artifact ${PAGES_ARTIFACT_NAME} did not become visible within 30 seconds." >&2
+          exit 1
+
       - name: Deploy verified site
         id: deployment
         uses: actions/deploy-pages@v4
