@@ -2,7 +2,7 @@
 
 window.HALIFAX_CITY_EVENT_ADDITIONS = JSON.parse(`{
   "version": 1,
-  "generatedAt": "2026-11-22T02:22:35Z",
+  "generatedAt": "2026-11-22T07:16:10Z",
   "policy": "Curated city-event additions are source-backed records used when current official or local calendars have not yet been promoted into the primary city-events build.",
   "sources": [
     {
@@ -72,6 +72,24 @@ window.HALIFAX_CITY_EVENT_ADDITIONS = JSON.parse(`{
       "authority": "official_tourism_calendar"
     },
     {
+      "sourceId": "cheerexpo-2027",
+      "sourceName": "CheerExpo",
+      "sourceUrl": "https://www.cheerexpo.com/home",
+      "authority": "official_primary"
+    },
+    {
+      "sourceId": "halifax-busker-festival-2027",
+      "sourceName": "Halifax Busker Festival",
+      "sourceUrl": "https://www.buskers.ca/",
+      "authority": "official_primary"
+    },
+    {
+      "sourceId": "aiff-2027",
+      "sourceName": "Atlantic International Film Festival",
+      "sourceUrl": "https://atlanticfilmfestival.ca/",
+      "authority": "official_primary"
+    },
+    {
       "sourceId": "symphony-nova-scotia",
       "sourceName": "Symphony Nova Scotia",
       "sourceUrl": "https://symphonynovascotia.ca/concerts-and-tickets/concerts/",
@@ -121,6 +139,179 @@ window.HALIFAX_CITY_EVENT_ADDITIONS = JSON.parse(`{
     }
   ],
   "events": [
+    {
+      "id": "https://novascotia.com/event/cheerexpo-national-cheerleading-championships/#event",
+      "title": "CheerExpo National Cheerleading Championships",
+      "startAt": "2027-03-19T00:00:00.000Z",
+      "endAt": "2027-03-21T00:00:00.000Z",
+      "allDay": false,
+      "venueName": "Halifax Exhibition Centre",
+      "address": "200 Prospect Rd, Goodwood, NS, B3T 1P2, Canada, Halifax, NS, CA",
+      "city": "Halifax",
+      "categories": [
+        "Festivals",
+        "Arts"
+      ],
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": "https://novascotia.com/event/cheerexpo-national-cheerleading-championships/",
+      "sourceUrl": "https://novascotia.com/event/cheerexpo-national-cheerleading-championships/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-11-22T07:14:50Z",
+      "reviewState": "source_observed",
+      "alternateSources": [
+        {
+          "sourceId": "cheerexpo-2027",
+          "sourceName": "CheerExpo",
+          "sourceUrl": "https://www.cheerexpo.com/home"
+        }
+      ],
+      "sourceEvidence": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/cheerexpo-national-cheerleading-championships/",
+          "basis": "official_primary",
+          "observedAt": "2026-11-22T07:14:50Z",
+          "httpStatus": 200,
+          "contentSha256": "f962afc2f3afd850876604a6a698b52f1a20a3c1239ff7156af6139c5683c7d9",
+          "observedFacts": [
+            "The exact official tourism detail page remains live and publishes March 19–21, 2027 at Halifax Exhibition Centre.",
+            "The successful tourism list refresh omitted this still-current future event, so the accepted occurrence is carried as an exact reviewed addition rather than deleted."
+          ]
+        },
+        {
+          "sourceId": "cheerexpo-2027",
+          "sourceName": "CheerExpo",
+          "sourceUrl": "https://www.cheerexpo.com/home",
+          "basis": "official_primary",
+          "observedAt": "2026-11-22T07:15:44Z",
+          "httpStatus": 200,
+          "contentSha256": "8b5bc123f7c66e399cfe1256952e24c3348ea41b94f22cac814d6dec1f53fcac",
+          "observedFacts": [
+            "The event owner's current homepage independently publishes March 19–21, 2027."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://novascotia.com/event/halifax-busker-festival/#event",
+      "title": "Halifax Busker Festival",
+      "startAt": "2027-07-28T00:00:00.000Z",
+      "endAt": "2027-08-02T00:00:00.000Z",
+      "allDay": false,
+      "venueName": "Halifax and Dartmouth Waterfronts",
+      "address": "Various locations on the Halifax and Dartmouth waterfronts, Halifax, NS, Canada, Halifax, NS, CA",
+      "city": "Dartmouth",
+      "categories": [
+        "Festivals",
+        "Arts",
+        "Outdoor"
+      ],
+      "price": null,
+      "ticketUrl": null,
+      "eventUrl": "https://novascotia.com/event/halifax-busker-festival/",
+      "sourceUrl": "https://novascotia.com/event/halifax-busker-festival/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-11-22T07:14:54Z",
+      "reviewState": "source_observed",
+      "alternateSources": [
+        {
+          "sourceId": "halifax-busker-festival-2027",
+          "sourceName": "Halifax Busker Festival",
+          "sourceUrl": "https://www.buskers.ca/"
+        }
+      ],
+      "sourceEvidence": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/halifax-busker-festival/",
+          "basis": "official_primary",
+          "observedAt": "2026-11-22T07:14:54Z",
+          "httpStatus": 200,
+          "contentSha256": "b0ceb58d828967d89e072bdf9370aca0028b01ec15b309c8d5b4701e1b7903d5",
+          "observedFacts": [
+            "The exact official tourism detail page remains live and publishes July 28–August 2, 2027 on the Halifax and Dartmouth waterfronts.",
+            "The successful tourism list refresh omitted this still-current future event, so the accepted occurrence is carried as an exact reviewed addition rather than deleted."
+          ]
+        },
+        {
+          "sourceId": "halifax-busker-festival-2027",
+          "sourceName": "Halifax Busker Festival",
+          "sourceUrl": "https://www.buskers.ca/",
+          "basis": "official_primary",
+          "observedAt": "2026-11-22T07:15:56Z",
+          "httpStatus": 200,
+          "contentSha256": "e9257c3900162a5f4f04d14f0507711e88206a16d7a76120667bb5c1a17ff76d",
+          "observedFacts": [
+            "The festival's current official homepage independently publishes July 28–August 2, 2027."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://novascotia.com/event/atlantic-international-film-festival-aiff/#event",
+      "title": "Atlantic International Film Festival (AIFF)",
+      "startAt": "2027-09-15T00:00:00.000Z",
+      "endAt": "2027-09-22T00:00:00.000Z",
+      "allDay": false,
+      "venueName": "Cineplex Park Lane",
+      "address": "5657 Spring Garden Rd, Halifax, NS, B3J 3R4, Halifax, NS, CA",
+      "city": "Halifax",
+      "categories": [
+        "Festivals",
+        "Arts",
+        "Outdoor"
+      ],
+      "price": null,
+      "ticketUrl": "https://atlanticfilmfestival.ca/2026-tickets",
+      "eventUrl": "https://novascotia.com/event/atlantic-international-film-festival-aiff/",
+      "sourceUrl": "https://novascotia.com/event/atlantic-international-film-festival-aiff/",
+      "sourceId": "tourism-ns-events",
+      "sourceName": "Tourism Nova Scotia Events",
+      "sourceKind": "official_tourism_calendar",
+      "observedAt": "2026-11-22T07:14:59Z",
+      "reviewState": "source_observed",
+      "alternateSources": [
+        {
+          "sourceId": "aiff-2027",
+          "sourceName": "Atlantic International Film Festival",
+          "sourceUrl": "https://atlanticfilmfestival.ca/"
+        }
+      ],
+      "sourceEvidence": [
+        {
+          "sourceId": "tourism-ns-events",
+          "sourceName": "Tourism Nova Scotia Events",
+          "sourceUrl": "https://novascotia.com/event/atlantic-international-film-festival-aiff/",
+          "basis": "official_primary",
+          "observedAt": "2026-11-22T07:14:59Z",
+          "httpStatus": 200,
+          "contentSha256": "50c8faf3c205dc808deeaab1de37fd786080ec1f07a22b6935cff2beac08fdfe",
+          "observedFacts": [
+            "The exact official tourism detail page remains live and publishes September 15–22, 2027 at Cineplex Park Lane.",
+            "The successful tourism list refresh omitted this still-current future event, so the accepted occurrence is carried as an exact reviewed addition rather than deleted."
+          ]
+        },
+        {
+          "sourceId": "aiff-2027",
+          "sourceName": "Atlantic International Film Festival",
+          "sourceUrl": "https://atlanticfilmfestival.ca/",
+          "basis": "official_primary",
+          "observedAt": "2026-11-22T07:16:05Z",
+          "httpStatus": 200,
+          "contentSha256": "119bc03b9ff475a296bc9bdab8f3a20e0c4dfd69b61f4fdc42f8111ff4655672",
+          "observedFacts": [
+            "The festival's current official homepage independently publishes September 15–22, 2027."
+          ]
+        }
+      ]
+    },
     {
       "id": "bedford-library-events-1025ea0d8b163ffb",
       "title": "PD Day: Halloween Haunt Party",
