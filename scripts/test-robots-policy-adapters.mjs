@@ -409,6 +409,31 @@ async function testCityAdapter(parentRoot) {
   await targeted({name: 'tourism seed/detail success', sources: [tourism], routes: {
     [tourism.url]: {body: seedHtml}, [detail]: {body: html(event())}}, requests: [robotsUrl, tourism.url, detail],
     events: [expectedEvent(event(), tourism, detail)], rawCounts: [1]});
+  const visibleDate = new Date(Date.now() + 60 * 86400000);
+  const visibleYear = visibleDate.getUTCFullYear();
+  const visibleMonth = visibleDate.getUTCMonth();
+  const visibleMonthName = new Intl.DateTimeFormat('en-CA', {month: 'long', timeZone: 'UTC'}).format(new Date(Date.UTC(visibleYear, visibleMonth, 1)));
+  const machineStartAt = new Date(Date.UTC(visibleYear - 1, visibleMonth, 1)).toISOString();
+  const machineEndAt = new Date(Date.UTC(visibleYear, visibleMonth, 28)).toISOString();
+  const atlanticNoon = day => {
+    const probe = new Date(Date.UTC(visibleYear, visibleMonth, day, 12));
+    const parts = Object.fromEntries(new Intl.DateTimeFormat('en-CA', {timeZone: 'America/Halifax', year: 'numeric',
+      month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit', hourCycle: 'h23'})
+      .formatToParts(probe).filter(part => part.type !== 'literal').map(part => [part.type, Number(part.value)]));
+    const offset = Date.UTC(parts.year, parts.month - 1, parts.day, parts.hour, parts.minute, parts.second) - probe.getTime();
+    return new Date(Date.UTC(visibleYear, visibleMonth, day, 12) - offset).toISOString();
+  };
+  const visibleStartAt = atlanticNoon(1);
+  const visibleEndAt = atlanticNoon(28);
+  const malformedRange = event(0, {startDate: machineStartAt.slice(0, 10), endDate: machineEndAt.slice(0, 10)});
+  const visibleText = `From ${visibleMonthName} 1-28, ${visibleYear}`;
+  await targeted({name: 'tourism visible range reconciles implausible JSON-LD span', sources: [tourism], routes: {
+    [tourism.url]: {body: seedHtml}, [detail]: {body: `${html(malformedRange)}<p>${visibleText}</p>`}},
+    requests: [robotsUrl, tourism.url, detail], events: [{
+      ...expectedEvent(malformedRange, tourism, detail), startAt: visibleStartAt, endAt: visibleEndAt, allDay: true,
+      dateReview: {basis: 'official_visible_same_month_range_reconciles_implausible_machine_span', sourceUrl: detail,
+        machineStartAt, machineEndAt, visibleText}
+    }], rawCounts: [1]});
   await targeted({name: 'tourism detail denial is intentionally swallowed', policy: {body: 'User-agent: *\nDisallow: /event/fixture'},
     sources: [tourism], routes: {[tourism.url]: {body: seedHtml}}, requests: [robotsUrl, tourism.url]});
   for (const [name, destination, body, failure] of [
