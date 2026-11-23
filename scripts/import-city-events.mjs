@@ -271,9 +271,41 @@ function sectionLines(text, label, maxLines = 3) {
   return index >= 0 ? lines.slice(index + 1, index + 1 + maxLines) : [];
 }
 
+function reconcileTourismDateSpan(events, html, pageUrl) {
+  const text = cleanText(html);
+  const visible = text.match(new RegExp(`\\bFrom\\s+(${MONTHS})\\s+\\d{1,2}\\s*[-–—]\\s*\\d{1,2},\\s*20\\d{2}\\b`, "i"))?.[0];
+  const range = parseHumanDateRange(visible);
+  if (!range) return events;
+  const visibleStartAt = localIso(range.start, null, true);
+  const visibleEndAt = localIso(range.end, null, true);
+  const visibleStartStamp = Date.parse(visibleStartAt);
+  const visibleEndStamp = Date.parse(visibleEndAt);
+  const visibleSpan = visibleEndStamp - visibleStartStamp;
+  if (!Number.isFinite(visibleSpan) || visibleSpan < 0 || visibleSpan > 62 * 86400000) return events;
+  return events.map((event) => {
+    const machineStartStamp = Date.parse(event.startAt);
+    const machineEndStamp = Date.parse(event.endAt);
+    const machineSpan = machineEndStamp - machineStartStamp;
+    if (!Number.isFinite(machineSpan) || machineSpan <= 366 * 86400000) return event;
+    if (dateOnly(event.endAt) !== dateOnly(visibleEndAt)) return event;
+    return {
+      ...event,
+      startAt: visibleStartAt,
+      endAt: visibleEndAt,
+      dateReview: {
+        basis: "official_visible_same_month_range_reconciles_implausible_machine_span",
+        sourceUrl: pageUrl,
+        machineStartAt: event.startAt,
+        machineEndAt: event.endAt,
+        visibleText: visible
+      }
+    };
+  });
+}
+
 function parseTourismDetail(html, source, pageUrl) {
   const jsonLd = parseJsonLdEvents(html, source, pageUrl);
-  if (jsonLd.length) return jsonLd;
+  if (jsonLd.length) return reconcileTourismDateSpan(jsonLd, html, pageUrl);
   const text = cleanText(html);
   if (!/Halifax Metro/i.test(text)) return [];
   const title = h1Title(html);
