@@ -109,8 +109,11 @@ assert(!JSON.parse(vm.runInContext("JSON.stringify(uniqueSourceLinks(restaurants
 const archivedCove = app.find(record => record.id === 'osm-node-11552069056-sushi-cove');
 assert.equal(archivedCove.operatingStatus, 'moved', 'Unavailable source does not create a new closure claim');
 assert.deepEqual(archivedCove.structuredFeatures, []);
-assert.deepEqual(archivedCove.structuredFacts.features, []);
-assert.deepEqual(archivedCove.structuredFacts.menus, []);
+assert.equal(archivedCove.structuredFacts, null, 'Do not project current structured facts for an archived moved record');
+const historicalCove = facts.sourceHistory.find(entry => entry.reason === 'inactive_or_noncanonical' && entry.record?.restaurantId === archivedCove.id);
+assert(historicalCove, 'Retain the former Sushi Cove source observation in history');
+assert.equal(historicalCove.record.features[0]?.feature, 'takeout');
+assert.equal(historicalCove.record.menus[0]?.url, 'https://sushisquare.ca/menu/');
 const browserSaj = app.find(record => record.id === sajId);
 assert.equal(browserSaj.structuredAddress, null);
 assert.equal(browserSaj.structuredFacts.address, null);
