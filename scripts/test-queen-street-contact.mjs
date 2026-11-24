@@ -70,8 +70,8 @@ assert.equal(final.previousPhone, PHONE);
 assert.equal(final.structuredPhone, GENERIC);
 assert.deepEqual(final.structuredFacts, prior.structuredFacts);
 assert.equal(final.structuredFacts.sourceUrl, 'https://sushinami.ca/');
-assert.equal(final.structuredFacts.observedAt, '2026-09-04T13:24:27.324Z');
-assert.equal(final.structuredFacts.lastVerifiedAt, '2026-09-04T13:24:27.324Z');
+assert.equal(final.structuredFacts.observedAt, prior.structuredFacts.observedAt);
+assert.equal(final.structuredFacts.lastVerifiedAt, prior.structuredFacts.lastVerifiedAt);
 assert.equal(final.reviewedPlaceResolution.phone, PHONE);
 assert.equal(final.reviewedPlaceResolution.sourceUrl, LOCATION);
 assert.equal(final.reviewedPlaceResolution.observedAt, OBSERVED);
@@ -90,7 +90,7 @@ for (const record of before.records.filter(record => record.id !== QUEEN)) {
 }
 const bayers = after.records.find(record => record.id === BAYERS);
 assert.equal(bayers.phone, GENERIC, 'Do not reassign the generic number or change another branch in this review');
-assert.equal(bayers.structuredFacts.observedAt, '2026-09-04T13:24:15.452Z');
+assert.equal(bayers.structuredFacts.observedAt, before.records.find(record => record.id === BAYERS).structuredFacts.observedAt);
 assert.equal(bayers.hasOrdering, false, 'Preserve #217 action hold');
 assert.equal(final.hasOrdering, true, 'Preserve Queen valid action');
 
