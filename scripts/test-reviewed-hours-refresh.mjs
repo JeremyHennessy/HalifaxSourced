@@ -5,7 +5,8 @@ const read=p=>readFileSync(new URL('../'+p,import.meta.url),'utf8');
 const receipts=JSON.parse(read('data/reviewed-hours-refresh.json'));
 assert.equal(receipts.records.length,13);assert.equal(receipts.records.filter(r=>r.canonical).length,11);
 const context={window:{},Intl,Date};vm.createContext(context);vm.runInContext(read('restaurant-corrections.js')+'\n'+read('data/reviewed-restaurant-corrections.js')+'\n'+read('app-hours.js'),context);
-const records=JSON.parse(read('data/build/structured-place-facts.json')).records;
+const payload=JSON.parse(read('data/build/structured-place-facts.json'));
+const records=[...payload.records,...(payload.sourceHistory||[]).map(entry=>entry.record)];
 const applied=context.HalifaxRestaurantCorrections.applyFactFieldRejections(records,context.window.HALIFAX_RESTAURANT_CORRECTIONS);
 for(const review of receipts.records.filter(r=>r.canonical)){
  const fact=applied.find(r=>r.restaurantId===review.restaurantId);assert(fact);
