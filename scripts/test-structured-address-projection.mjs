@@ -82,9 +82,11 @@ const almonak = after.find(record => record.id === almonakId);
 const catalog = JSON.parse(await readFile(new URL('data/build/catalog.json', root), 'utf8'));
 assert.equal(almonak.address, acceptedAddress, 'Do not erase Almonak street address with municipality-only JSON-LD');
 assert.equal(almonak.address, catalog.restaurants.find(record => record.id === almonakId).address, 'Retained Almonak address must agree with the canonical export');
-assert.equal(almonak.structuredFacts.address, 'Halifax, NS, \nCanada', 'Retain rejected raw text as evidence');
-assert.equal(almonak.structuredFacts.observedAt, OBSERVED);
-assert.equal(almonak.structuredFacts.lastVerifiedAt, OBSERVED);
+assert.equal(almonak.structuredFacts.address, null, 'Do not project a missing refreshed address over the accepted civic address');
+const almonakHistory = context.window.HALIFAX_STRUCTURED_PLACE_FACTS.sourceHistory.find(entry => entry.record?.restaurantId === almonakId && entry.record.address === 'Halifax, NS, \nCanada');
+assert(almonakHistory, 'Retain rejected prior raw text in source history');
+assert.equal(almonakHistory.record.observedAt, OBSERVED);
+assert.equal(almonakHistory.record.lastVerifiedAt, OBSERVED);
 assert.equal(almonak.structuredAddress, almonak.structuredFacts.address, 'Do not rewrite the source metadata field');
 let unchangedStructuredAddresses = 0;
 for (const prior of beforeProjection) {
@@ -95,7 +97,8 @@ for (const prior of beforeProjection) {
   assert.equal(final.address, expectedAddress, `Keep all unrelated address projections unchanged: ${prior.id}`);
   if (prior.structuredFacts?.address) unchangedStructuredAddresses++;
 }
-assert.equal(unchangedStructuredAddresses, 22, 'All other current structured-address projections are unchanged');
+const expectedStructuredAddresses = beforeProjection.filter(record => record.id !== almonakId && record.structuredFacts?.address).length;
+assert.equal(unchangedStructuredAddresses, expectedStructuredAddresses, 'All other current structured-address projections are unchanged');
 const workflow = await readFile(new URL('.github/workflows/quality-gate.yml', root), 'utf8');
 assert(workflow.includes('node scripts/test-structured-address-projection.mjs'), 'Run this regression in the release Quality Gate');
 console.log(`Structured-address projection passed: Almonak civic address retained; ${unchangedStructuredAddresses} other address projections unchanged; malformed inputs held; explicit reviews and all raw clocks preserved.`);
