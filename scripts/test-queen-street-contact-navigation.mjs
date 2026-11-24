@@ -23,6 +23,7 @@ try {
           sidebarPhone: document.querySelector('.detail-info-phone > p')?.textContent,
           structuredPhone: place.structuredFacts?.phone,
           structuredObservedAt: place.structuredFacts?.observedAt,
+          rawStructuredObservedAt: window.HALIFAX_STRUCTURED_PLACE_FACTS.records.find(record => record.restaurantId === id)?.observedAt,
           acceptedObservedAt: place.reviewedPlaceResolution?.observedAt || null,
           sourceUrl: place.reviewedCorrection?.sourceUrl || null,
           observedAt: place.reviewedCorrection?.observedAt || null,
@@ -36,16 +37,15 @@ try {
       assert.equal(details.mobilePhone, phone);
       assert.equal(details.sidebarPhone, phone);
       assert.equal(details.structuredPhone, generic, 'Raw generic extraction remains evidence, not rewritten');
+      assert.equal(details.structuredObservedAt, details.rawStructuredObservedAt, 'Runtime projection preserves the packaged source clock');
       assert.equal(details.overflow, false);
       assert.deepEqual(details.rejectedSourceAnchors, [], 'Existing #217 navigation holds survive');
       if (id === queen) {
-        assert.equal(details.structuredObservedAt, '2026-09-04T13:24:27.324Z');
         assert.equal(details.acceptedObservedAt, '2026-08-29');
         assert.equal(details.observedAt, '2026-08-29');
         assert.equal(details.sourceUrl, 'https://sushinami.ca/downtown-halifax/');
         assert.equal(details.hasOrdering, true);
       } else {
-        assert.equal(details.structuredObservedAt, '2026-09-04T13:24:15.452Z');
         assert.equal(details.sourceUrl, null, 'No Queen correction may leak to Bayers');
         assert.equal(details.hasOrdering, false);
       }
