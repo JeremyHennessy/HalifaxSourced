@@ -1,6 +1,6 @@
 window.HALIFAX_OPENING_WATCH_LEADS = {
   "version": 1,
-  "generatedAt": "2026-10-24T14:13:15.899Z",
+  "generatedAt": "2026-11-24T20:58:16.426Z",
   "lookbackDays": 180,
   "sources": [
     {
@@ -9,8 +9,36 @@ window.HALIFAX_OPENING_WATCH_LEADS = {
       "url": "https://halifax.retales.ca/feed/"
     }
   ],
-  "count": 19,
+  "count": 21,
   "leads": [
+    {
+      "id": "windsor-s-schoolhouse-brewery-c44e45f1e0560eeb",
+      "name": "Windsor’s Schoolhouse Brewery",
+      "status": "opening",
+      "locationHint": "833 Sackville Dr",
+      "articleTitle": "Updates",
+      "sourceName": "Halifax ReTales",
+      "sourceType": "local_opening_watch",
+      "sourceUrl": "https://halifax.retales.ca/2026/11/10043/",
+      "publishedAt": "2026-11-08T01:51:38.000Z",
+      "observedAt": "2026-11-24T20:58:16.421Z",
+      "confidence": "local_opening_lead",
+      "reviewState": "needs-cross-check"
+    },
+    {
+      "id": "true-love-creperie-2282bc6fcd92bb07",
+      "name": "True Love Creperie",
+      "status": "opening",
+      "locationHint": "793 Bedford Hwy, not sure which unit",
+      "articleTitle": "Krave Closes Spring Garden Location",
+      "sourceName": "Halifax ReTales",
+      "sourceType": "local_opening_watch",
+      "sourceUrl": "https://halifax.retales.ca/2026/10/krave-closes-spring-garden-location/",
+      "publishedAt": "2026-10-25T02:11:45.000Z",
+      "observedAt": "2026-11-24T20:58:16.422Z",
+      "confidence": "local_opening_lead",
+      "reviewState": "needs-cross-check"
+    },
     {
       "id": "spicy-parmo-38b8a05969c35dff",
       "name": "Spicy Parmo",
@@ -278,6 +306,6 @@ window.HALIFAX_OPENING_WATCH_LEADS = {
       "reviewState": "needs-cross-check"
     }
   ],
-  "failures": [],
-  "retainedPriorWithinLookbackCount": 12
+  "retainedPriorWithinLookbackCount": 19,
+  "failures": []
 };
