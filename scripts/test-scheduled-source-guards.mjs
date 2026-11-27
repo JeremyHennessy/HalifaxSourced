@@ -492,6 +492,7 @@ const restaurantValidationCommands = [
   "node --check scripts/check-restaurant-discovery.mjs",
   "node scripts/test-dartmouth-directory-names.mjs",
   "node scripts/test-taste-ns-member-api.mjs",
+  "node scripts/test-rans-source-bounds.mjs",
   "node scripts/test-source-evidence-retention.mjs",
   "node scripts/test-restaurant-discovery-offline.mjs",
   "node scripts/test-scheduled-source-guards.mjs"
@@ -517,9 +518,10 @@ function assertRestaurantPreviewBoundary(workflow) {
   assert.equal(workflow.slice(0, restaurantValidationPrefix.length), restaurantValidationPrefix,
     'Restaurant must preserve its exact offline commands, dependency paths, checkout, env, permissions, triggers and two-job envelope');
   // Frozen producer body after adding the current-catalog rebuild prerequisite
-  // before candidate resolution. This baseline is independent of the candidate workflow.
+  // before candidate resolution and the offline RANS request-bound regression.
+  // This baseline is independent of the candidate workflow.
   assert.equal(createHash('sha256').update(workflow.slice(restaurantValidationPrefix.length)).digest('hex'),
-    'a5c769ed6063bf04c70f324c0350345e1f2a50f151a8c1393d999b700281e4bd',
+    '8837571f17f2ed2146b18489b0fb7f1e12f8a9856003354b5e2faa94e497c3ce',
     'Restaurant scheduled/manual commands, bounds and artifact paths/retention must remain byte-identical');
 }
 const restaurantWorkflow = await readFile(new URL('../.github/workflows/restaurant-discovery-preview.yml', import.meta.url), 'utf8');

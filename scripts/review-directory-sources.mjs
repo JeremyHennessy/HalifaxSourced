@@ -245,3 +245,46 @@ export async function fetchRestaurantjiDirectory(sourceMeta, helpers = {}) {
     unknown: records.filter((record) => !helpers.knownNames?.has?.(helpers.normalize?.(record.name) ?? defaultNormalize(record.name))).length
   };
 }
+
+export function isSourceAccessRestriction(error) {
+  return error?.code === "SOURCE_ACCESS_HOLD"
+    || /^http_(?:401|403|429)$/.test(String(error?.message || ""));
+}
+
+export async function fetchBoundedRansSearchIndex({
+  apiBase,
+  terms,
+  getJson,
+  onFailure = () => {},
+  perPage = 100,
+  maxPagesPerTerm = 2
+}) {
+  if (typeof getJson !== "function") throw new Error("missing_get_json_helper");
+  const ids = new Map();
+  let searchHits = 0;
+  let accessRestricted = false;
+
+  searchTerms: for (const term of terms) {
+    let totalPages = 1;
+    for (let page = 1; page <= Math.min(totalPages, maxPagesPerTerm); page += 1) {
+      const url = `${apiBase}/search?subtype=restaurant&per_page=${perPage}&page=${page}&search=${encodeURIComponent(term)}`;
+      try {
+        const { json, headers } = await getJson(url);
+        totalPages = Number(headers.get("x-wp-totalpages") || 1);
+        searchHits += Number(headers.get("x-wp-total") || json.length || 0);
+        for (const item of json || []) {
+          if (item?.id && item?.url) ids.set(item.id, { id: item.id, url: item.url, title: item.title });
+        }
+      } catch (error) {
+        onFailure({ term, page, url, error });
+        if (isSourceAccessRestriction(error)) {
+          accessRestricted = true;
+          break searchTerms;
+        }
+        break;
+      }
+    }
+  }
+
+  return { items: [...ids.values()], searchHits, accessRestricted };
+}

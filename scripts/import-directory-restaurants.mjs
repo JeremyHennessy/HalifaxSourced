@@ -1,6 +1,7 @@
 import { fetchGuardedSource as fetch } from "./lib/fetch-public-source.mjs";
 import { assertTasteMemberCompleteness, tasteDetailAddress, tasteDetailOpeningHours, tasteMemberApiUrl, tasteMemberLinksFromApi, tasteRegionId, tasteScopedDetailHtml } from "./lib/taste-ns-member-api.mjs";
 import { retainFailedSourceRecords } from "./lib/source-evidence-retention.mjs";
+import { fetchBoundedRansSearchIndex } from "./review-directory-sources.mjs";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import vm from "node:vm";
 
@@ -945,26 +946,22 @@ async function fetchRansDirectory(sourceMeta) {
   const apiBase = (sourceMeta.apiUrl || new URL("/wp-json/wp/v2", sourceMeta.url).href).replace(/\/$/, "");
   const perPage = 100;
   const maxPagesPerTerm = Math.max(1, Number(process.env.RANS_SEARCH_PAGE_LIMIT || 2));
-  const ids = new Map();
-  let searchHits = 0;
-  for (const term of RANS_SEARCH_TERMS) {
-    let totalPages = 1;
-    for (let page = 1; page <= Math.min(totalPages, maxPagesPerTerm); page += 1) {
-      const url = `${apiBase}/search?subtype=restaurant&per_page=${perPage}&page=${page}&search=${encodeURIComponent(term)}`;
-      try {
-        const { json, headers } = await getJson(url);
-        totalPages = Number(headers.get("x-wp-totalpages") || 1);
-        searchHits += Number(headers.get("x-wp-total") || json.length || 0);
-        for (const item of json || []) if (item?.id && item?.url) ids.set(item.id, { id: item.id, url: item.url, title: item.title });
-      } catch (error) {
-        failures.push({ sourceId: sourceMeta.id, sourceName: sourceMeta.name, sourceUrl: url, reason: error.message });
-        break;
-      }
-    }
-  }
+  const search = await fetchBoundedRansSearchIndex({
+    apiBase,
+    terms: RANS_SEARCH_TERMS,
+    getJson,
+    perPage,
+    maxPagesPerTerm,
+    onFailure: ({ url, error }) => failures.push({
+      sourceId: sourceMeta.id,
+      sourceName: sourceMeta.name,
+      sourceUrl: url,
+      reason: error.message
+    })
+  });
 
   const records = [];
-  const targets = [...ids.values()];
+  const targets = search.items;
   for (let index = 0; index < targets.length; index += 5) {
     const batch = targets.slice(index, index + 5);
     const results = await Promise.all(batch.map(async (item) => {
@@ -979,7 +976,7 @@ async function fetchRansDirectory(sourceMeta) {
     }));
     records.push(...results.filter(Boolean));
   }
-  return { records, links: targets, checked: targets.length, searchHits, unknown: records.filter((record) => !knownNames.has(normalize(record.name))).length };
+  return { records, links: targets, checked: targets.length, searchHits: search.searchHits, unknown: records.filter((record) => !knownNames.has(normalize(record.name))).length };
 }
 function quinpoolMemberLinks(html, baseUrl) {
   const seen = new Set();
