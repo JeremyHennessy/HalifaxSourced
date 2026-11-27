@@ -237,7 +237,15 @@ for (const expected of [
 
 const coryTetfordUrl = "https://www.thecarleton.ca/events/cory-tetford-nov20/";
 const coryTetfordEndAt = "2026-11-21T02:00:00.000Z";
-const coryTetfordHasEnded = Date.now() >= Date.parse(coryTetfordEndAt);
+// Release-isolation tests intentionally freeze the wall clock. Accepted source
+// snapshots can legitimately be newer than that fixture, so lifecycle checks
+// must also respect the newest accepted snapshot clock.
+const acceptedSnapshotTime = Math.max(
+  Date.now(),
+  Date.parse(String(additions.generatedAt || "")) || 0,
+  Date.parse(String(mergedPayload.generatedAt || "")) || 0
+);
+const coryTetfordHasEnded = acceptedSnapshotTime >= Date.parse(coryTetfordEndAt);
 const coryTetfordEvents = mergedEvents.filter((event) => event.eventUrl === coryTetfordUrl);
 if ((!coryTetfordHasEnded && coryTetfordEvents.length !== 1) || (coryTetfordHasEnded && coryTetfordEvents.length > 1)) {
   errors.push(`expected ${coryTetfordHasEnded ? "at most one retained" : "one current"} Cory Tetford Friday source record after availability reverted to sold out, found ${coryTetfordEvents.length}.`);
