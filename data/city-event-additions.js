@@ -2,7 +2,7 @@
 
 window.HALIFAX_CITY_EVENT_ADDITIONS = JSON.parse(`{
   "version": 1,
-  "generatedAt": "2026-11-22T07:16:10Z",
+  "generatedAt": "2026-11-27T22:22:17Z",
   "policy": "Curated city-event additions are source-backed records used when current official or local calendars have not yet been promoted into the primary city-events build.",
   "sources": [
     {
@@ -1568,6 +1568,49 @@ window.HALIFAX_CITY_EVENT_ADDITIONS = JSON.parse(`{
           "observedFacts": [
             "EventScheduled on March 17, 2027 from 1:00–2:00 p.m. at Keshen Goodman Public Library.",
             "The same official source event ID previously represented the superseded March 10 occurrence."
+          ]
+        }
+      ]
+    },
+    {
+      "allDay": false,
+      "venueName": "Keshen Goodman Public Library",
+      "address": "330 Lacewood Drive, Halifax, NS B3S 0A3",
+      "city": "Halifax",
+      "price": null,
+      "ticketUrl": null,
+      "sourceId": "halifax-public-libraries",
+      "sourceName": "Halifax Public Libraries",
+      "sourceKind": "official_library_calendar",
+      "reviewState": "source_observed",
+      "venueId": "keshen-goodman-library",
+      "neighbourhood": "Clayton Park",
+      "organizerId": "halifax-public-libraries",
+      "organizerName": "Halifax Public Libraries",
+      "observedAt": "2026-11-27T22:22:17Z",
+      "id": "halifax-public-libraries-b6a8f46728535483",
+      "supersedesEventIds": [],
+      "alternateSources": [],
+      "title": "Information Session: Tenancy Laws For Newcomers",
+      "startAt": "2026-11-28T14:00:00.000Z",
+      "endAt": "2026-11-28T16:00:00.000Z",
+      "categories": [
+        "Community"
+      ],
+      "eventUrl": "https://halifax.bibliocommons.com/v2/events/6a73800a88e9bf280035bf04",
+      "sourceUrl": "https://halifax.bibliocommons.com/v2/events/6a73800a88e9bf280035bf04",
+      "sourceEvidence": [
+        {
+          "sourceId": "halifax-public-libraries",
+          "sourceName": "Halifax Public Libraries",
+          "sourceUrl": "https://halifax.bibliocommons.com/v2/events/6a73800a88e9bf280035bf04",
+          "basis": "official_primary",
+          "observedAt": "2026-11-27T22:22:17Z",
+          "httpStatus": 200,
+          "eventStatus": "https://schema.org/EventScheduled",
+          "observedFacts": [
+            "Event scheduled for November 28, 2026 from 10:00 a.m.–12:00 p.m. at Keshen Goodman Public Library.",
+            "The official detail page showed registration open with 27 seats remaining when reviewed."
           ]
         }
       ]
