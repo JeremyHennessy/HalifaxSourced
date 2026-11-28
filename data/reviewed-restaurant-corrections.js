@@ -652,7 +652,7 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
         "address": "2983 Oxford Street, Halifax, NS",
         "phone": "902-463-5050",
         "website": "https://www.yeahyeahspizza.com/",
-        "menuUrl": "https://www.yeahyeahspizza.com/menu",
+        "menuUrl": "https://www.yeahyeahspizza.com/",
         "openingHours": "Open daily 11:30am–10pm; food until 9:30pm",
         "operatingStatus": "active"
       },
@@ -3259,7 +3259,7 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
       "phone": "902-463-5050",
       "coordinates": null,
       "openingHours": "Open daily 11:30am–8pm",
-      "menuUrl": "https://www.yeahyeahspizza.com/menu",
+      "menuUrl": "https://www.yeahyeahspizza.com/",
       "operatingStatus": "active",
       "operatingStatusEvidence": {
         "claim": "The current Downtown Dartmouth Business Commission directory lists Yeah Yeahs Pizza at 66 Ochterloney Street, links the owner domain and publishes phone 902-463-5050. The current owner site independently publishes the Dartmouth branch at the same address with daily 11:30am-8pm hours, a menu and a branch-selectable phone, and the Nova Scotia food-inspection snapshot current as of November 12, 2026 records Yeah Yeah's Pizza at the same civic address. The distinct Halifax branch remains on its original OSM identity and coordinates. No coordinates, social-post activity, dated offer, event occurrence, media right or publisher date are inferred for Dartmouth.",
@@ -3305,7 +3305,7 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
         {
           "type": "official_menu",
           "label": "Current owner-published shared menu hub",
-          "url": "https://www.yeahyeahspizza.com/menu",
+          "url": "https://www.yeahyeahspizza.com/",
           "observedAt": "2026-11-15T16:17:17Z",
           "status": "verified"
         },
