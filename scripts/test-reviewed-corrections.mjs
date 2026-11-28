@@ -312,7 +312,7 @@ for (const records of [app.restaurants, catalog.restaurants]) {
   assert.equal(halifax.address, '2983 Oxford Street, Halifax, NS');
   assert.equal(halifax.phone, '902-463-5050');
   assert.equal(halifax.website, 'https://www.yeahyeahspizza.com/');
-  assert.equal(halifax.menuUrl, 'https://www.yeahyeahspizza.com/menu');
+  assert.equal(halifax.menuUrl, 'https://www.yeahyeahspizza.com/');
   assert.equal(halifax.openingHours, 'Open daily 11:30am–10pm; food until 9:30pm');
   assert.equal(halifax.coordinates.lat, 44.6537042, 'Preserve the accepted Halifax OSM coordinate');
   assert.equal(halifax.coordinates.lon, -63.6086658, 'Preserve the accepted Halifax OSM coordinate');
@@ -321,13 +321,13 @@ for (const records of [app.restaurants, catalog.restaurants]) {
   assert.equal(dartmouth.address, '66 Ochterloney Street, Dartmouth, NS');
   assert.equal(dartmouth.phone, '902-463-5050');
   assert.equal(dartmouth.website, 'https://www.yeahyeahspizza.com/');
-  assert.equal(dartmouth.menuUrl, 'https://www.yeahyeahspizza.com/menu');
+  assert.equal(dartmouth.menuUrl, 'https://www.yeahyeahspizza.com/');
   assert.equal(dartmouth.openingHours, 'Open daily 11:30am–8pm');
   assert.equal(dartmouth.coordinates, null, 'Do not transfer Halifax coordinates to Dartmouth');
   assert.deepEqual((dartmouth.inspectionRecords || dartmouth.inspections).map(record => record.facilityId), ['2338771'], 'Bind only the exact Dartmouth inspection branch');
   assert.equal(dartmouth.specials.length, 0);
   assert.equal(dartmouth.events.length, 0);
-  assert(dartmouth.sources.some(source => source.type === 'official_menu' && source.url === 'https://www.yeahyeahspizza.com/menu'));
+  assert(dartmouth.sources.some(source => source.type === 'official_menu' && source.url === 'https://www.yeahyeahspizza.com/'));
   assert(!dartmouth.aliasIds?.includes(halifax.id), 'Distinct owner-listed branches are not aliases');
 }
 assert(active.has(yeahHalifaxId));
