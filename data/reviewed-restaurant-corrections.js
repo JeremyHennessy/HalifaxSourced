@@ -2114,12 +2114,12 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
       "website": "https://www.beyondphohalifax.com/",
       "phone": "902-425-3133",
       "coordinates": null,
-      "openingHours": "Pho menu daily 11:30am–9pm; barbecue menu Friday–Saturday 4pm–1am and Sunday–Thursday 4pm–midnight",
+      "openingHours": "Wok & Pho menu Monday–Thursday 11:30am–9pm and Friday–Sunday 11:30am–10pm; BBQ menu Sunday–Thursday 4pm–11:30pm and Friday–Saturday 4pm–12:30am",
       "operatingStatus": "active",
       "operatingStatusEvidence": {
         "claim": "The current Spring Garden Area Business Association directory lists Beyond Pho, the current owner site identifies the restaurant at 5518 Spring Garden Road with phone 902-425-3133, publishes separate pho and barbecue service schedules and a current menu, and links the restaurant Instagram. The Nova Scotia food-inspection snapshot current as of October 19, 2026 independently records Beyond Pho Vietnamese Cuisine at the same civic address. The owner site and tourism directory disagree on postal code, so no postal code or coordinates are published.",
         "sourceUrl": "https://www.beyondphohalifax.com/",
-        "observedAt": "2026-10-24T23:12:06Z",
+        "observedAt": "2026-11-28T15:12:03Z",
         "reviewState": "verified",
         "location": "5518 Spring Garden Road, Halifax, NS"
       },
@@ -2145,14 +2145,14 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
           "type": "business_directory",
           "label": "Current Spring Garden restaurant listing",
           "url": "https://www.springgardenarea.com/eat-drink",
-          "observedAt": "2026-10-24T23:12:06Z",
+          "observedAt": "2026-11-28T15:12:03Z",
           "status": "verified"
         },
         {
           "type": "official_website",
           "label": "Owner homepage with exact civic address, phone and published service schedules",
           "url": "https://www.beyondphohalifax.com/",
-          "observedAt": "2026-10-24T23:12:06Z",
+          "observedAt": "2026-11-28T15:12:03Z",
           "status": "verified"
         },
         {
