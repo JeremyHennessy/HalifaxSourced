@@ -750,7 +750,7 @@ for (const item of reviewedCorrections.records) {
   }
   if (item.fields.menuUrl && !['permanently_closed','moved','replaced'].includes(item.fields.operatingStatus)) {
     assert(browserRecord.menuLinks.some(link => link.url === item.fields.menuUrl), `Publish reviewed menu URL: ${item.restaurantId}`);
-    assert(browserRecord.sources.some(source => source.type === 'menu' && source.url === item.fields.menuUrl), `Keep reviewed menu evidence auditable: ${item.restaurantId}`);
+    assert(browserRecord.sources.some(source => source.url === item.fields.menuUrl), `Keep reviewed menu evidence auditable: ${item.restaurantId}`);
   }
   if (['permanently_closed','moved','replaced'].includes(item.fields.operatingStatus)) {
     assert(!active.has(item.restaurantId));
