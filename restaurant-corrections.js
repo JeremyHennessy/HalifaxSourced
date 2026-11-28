@@ -13,7 +13,15 @@
   function isActive(record, date = new Date()) { return !inactiveStatuses.has(status(record, date)); }
   function apply(records, payload, makeRecord = value => value) {
     for (const addition of payload.additions || []) {
-      if (!records.some(record => record.id === addition.id)) records.push(makeRecord(JSON.parse(JSON.stringify(addition))));
+      if (!records.some(record => record.id === addition.id)) {
+        const record = makeRecord(JSON.parse(JSON.stringify(addition)));
+        const menuSource = (record.sources || []).find(source => source.url === record.menuUrl && ['menu', 'official_menu'].includes(source.type) && source.status === 'verified');
+        if (menuSource && !(record.menuLinks || []).some(link => link.url === record.menuUrl)) {
+          record.menuLinks = [...(record.menuLinks || []), { label: menuSource.label || 'Official menu', url: record.menuUrl, verified: true, sourceKind: 'reviewed_addition' }];
+          record.hasMenu = true;
+        }
+        records.push(record);
+      }
     }
     for (const alias of payload.aliases || []) {
       const source = records.find(record => record.id === alias.from);

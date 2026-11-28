@@ -328,6 +328,8 @@ for (const records of [app.restaurants, catalog.restaurants]) {
   assert.equal(dartmouth.specials.length, 0);
   assert.equal(dartmouth.events.length, 0);
   assert(dartmouth.sources.some(source => source.type === 'official_menu' && source.url === 'https://www.yeahyeahspizza.com/'));
+  assert(dartmouth.menuLinks.some(link => link.url === 'https://www.yeahyeahspizza.com/' && link.verified), 'Publish the verified reviewed-addition menu link');
+  assert.equal(dartmouth.hasMenu, true);
   assert(!dartmouth.aliasIds?.includes(halifax.id), 'Distinct owner-listed branches are not aliases');
 }
 assert(active.has(yeahHalifaxId));
