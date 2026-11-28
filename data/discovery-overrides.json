@@ -283,6 +283,68 @@
       "reviewNote": "The current BIA directory and government registry agree on name and exact civic location. The directory-linked Facebook URL is retained only as an identity pointer; no Meta API or social-content refresh was attempted. Historical third-party hours and the obsolete metrodeli.ca domain were not published."
     },
     {
+      "id": "safarnama-fusion-indian-restaurant-dartmouth",
+      "name": "Safarnama Fusion Indian Restaurant & Bar",
+      "neighborhood": "Downtown Dartmouth",
+      "category": "Restaurant",
+      "cuisines": ["Indian", "Fusion"],
+      "vibe": ["local"],
+      "qualityScore": null,
+      "freshnessDate": "2026-11-27",
+      "evidenceStatus": "verified",
+      "address": "65 King Street, Dartmouth, NS B2Y 1E9",
+      "phone": "902-464-4686",
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current Downtown Dartmouth business directory lists Safarnama at 65 King Street, and the current owner/developer page for The Shuffle independently names Safarnama Fusion Indian Restaurant as a ground-floor tenant at 31 Queen/65 King.",
+        "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
+        "location": "65 King Street, Dartmouth, NS B2Y 1E9",
+        "observedAt": "2026-11-28T02:19:58.609Z",
+        "verifiedAt": "2026-11-28T02:19:58.609Z",
+        "reviewState": "verified"
+      },
+      "ownershipEvidence": {
+        "claim": "Current business-district and property-developer evidence identifies a local Downtown Dartmouth restaurant under this trade name. A current ordering platform associates the restaurant with Swaad Sagaa Indian Cuisine Inc., but that operator relationship and present beneficial ownership were not independently verified and are not published as first-party facts.",
+        "confidence": "reviewed local-business evidence; operator unverified",
+        "sourceUrls": ["https://www.downtowndartmouth.ca/fooddrink", "https://sidewalkred.ca/projects/the-shuffle/", "https://www.skipthedishes.com/safarnama-fusion-indian-restaurant-and-bar-dartmouth"],
+        "observedAt": "2026-11-27"
+      },
+      "socialProfiles": [
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/safarnamadartmouth/?hl=en",
+          "associationBasis": "trusted_directory_explicit_link",
+          "observedAt": "2026-11-27T19:48:34.405Z",
+          "reviewState": "verified_link"
+        }
+      ],
+      "summary": "Downtown Dartmouth fusion Indian restaurant and bar at The Shuffle. Hours and a first-party menu remain unverified.",
+      "sources": [
+        {
+          "label": "Downtown Dartmouth Food & Drink directory",
+          "type": "downtown_dartmouth_directory",
+          "url": "https://www.downtowndartmouth.ca/fooddrink",
+          "status": "verified",
+          "observedAt": "2026-11-27T19:48:34.405Z"
+        },
+        {
+          "label": "The Shuffle owner/developer page",
+          "type": "property_owner_directory",
+          "url": "https://sidewalkred.ca/projects/the-shuffle/",
+          "status": "verified",
+          "observedAt": "2026-11-28T02:19:58.609Z"
+        },
+        {
+          "label": "Current Safarnama ordering page",
+          "type": "third_party_ordering",
+          "url": "https://www.skipthedishes.com/safarnama-fusion-indian-restaurant-and-bar-dartmouth",
+          "status": "supporting",
+          "observedAt": "2026-11-28T02:19:58.609Z"
+        }
+      ],
+      "reviewNote": "Two independent current local sources agree on the Safarnama trade name and 65 King location; a current ordering page supports active food service. The directory-linked Instagram URL is retained only as an identity pointer. Hours, first-party menu, coordinates, inspection identity, operator relationship and beneficial ownership remain unknown; no Meta API or social-content refresh was attempted. Buta Ramen is preserved as a distinct tenant at the same civic address."
+    },
+    {
       "id": "darty-brewing-dartmouth",
       "name": "Darty Brewing Co.",
       "neighborhood": "Downtown Dartmouth",
