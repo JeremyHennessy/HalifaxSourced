@@ -63,6 +63,17 @@
       "url": "https://github.com/JeremyHennessy/HalifaxSourced/pull/138",
       "verifiedAt": "2026-10-27",
       "evidence": "Read-only GitHub review on 2026-10-27 confirmed PR122 and PR131 closed. Preserve history and the independent hold on PR141."
+    },
+    {
+      "id": "spring-garden-manilla-thai-grill",
+      "lane": "restaurant-facts",
+      "priority": 2,
+      "state": "needs-evidence",
+      "blocker": "The current Spring Garden Area Business Association directory lists Manilla Thai Grill and links www.manillathaigrill.com, but that owner-domain URL returned HTTP 404 on 2026-11-28. No current owner-controlled exact address, weekly hours, menu or operating-status receipt was verified. Third-party listings must not supply publication facts by themselves.",
+      "retryWhen": "A reachable owner-controlled source or a current exact-name and exact-address Government of Nova Scotia inspection receipt is verified.",
+      "url": "https://www.springgardenarea.com/eat-drink",
+      "observedAt": "2026-11-28T13:21:56Z",
+      "evidence": "The public Spring Garden Area directory was retrieved on 2026-11-28 and listed Manilla Thai Grill in Restaurants & Pubs with the description and owner-domain link. The repository had no existing Manilla Thai Grill record. The linked owner domain returned HTTP 404. Candidate retained for review only; no restaurant fact or image is approved for publication."
     }
   ]
 }
