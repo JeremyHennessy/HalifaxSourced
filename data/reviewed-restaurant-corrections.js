@@ -4,6 +4,52 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
   "policy": "Reviewed location evidence overrides stale imports; observation dates are retained and uncertain coordinates, hours, successor identities and closure day remain unknown.",
   "records": [
     {
+      "restaurantId": "osm-node-1836752911-steve-o-renos",
+      "fields": {
+        "name": "Steve-O-Reno’s",
+        "neighborhood": "Spring Garden",
+        "address": "5415 Doyle Street, Halifax, NS",
+        "website": "https://www.steveorenos.com/",
+        "phone": "902-429-3034",
+        "menuUrl": "https://www.steveorenos.com/steveorenos-menu",
+        "openingHours": "Mo-Su 08:00-16:00",
+        "evidenceStatus": "verified",
+        "summary": "Owner-verified independent Spring Garden café at 5415 Doyle Street with current contact details, daily hours and itemized breakfast/lunch menu; independently corroborated by the Spring Garden directory and Nova Scotia food-inspection registry."
+      },
+      "sourceUrl": "https://www.steveorenos.com/",
+      "claim": "The current owner site identifies Steve-O-Reno’s at 5415 Doyle Street, Halifax, publishes phone 902-429-3034, daily 8am–4pm hours and a current itemized breakfast/lunch menu. The current Spring Garden business directory independently lists Steve-O-Reno’s Cappuccino and links the same owner domain, while the Nova Scotia food-inspection snapshot current as of November 12, 2026 records Steve-O-Reno’s Cafe at 5415 Doyle. This replaces the stale OpenStreetMap 7am–2pm schedule and fills missing owner links/contact fields while preserving the stable ID, accepted coordinates, OpenStreetMap history and media safeguards. The separate former 1536 Brunswick inspection identity is not merged; no current social post, offer, event, publisher date or image right is inferred.",
+      "observedAt": "2026-11-28T16:25:10Z",
+      "reviewedAt": "2026-11-28T16:25:10Z",
+      "reviewState": "verified",
+      "reviewBasis": "current_owner_exact_location_hours_menu_directory_and_inspection_identity",
+      "supportingEvidence": [
+        {
+          "type": "official_website",
+          "url": "https://www.steveorenos.com/",
+          "observedAt": "2026-11-28T16:25:10Z",
+          "claim": "The owner homepage identifies 5415 Doyle Street, Halifax, phone 902-429-3034 and daily 8am–4pm hours."
+        },
+        {
+          "type": "official_menu",
+          "url": "https://www.steveorenos.com/steveorenos-menu",
+          "observedAt": "2026-11-28T16:25:10Z",
+          "claim": "The owner menu publishes current breakfast, lunch, baked-goods and beverage items for the Doyle Street café."
+        },
+        {
+          "type": "business_district_directory",
+          "url": "https://springgardenarea.com/directory/",
+          "observedAt": "2026-11-28T16:25:10Z",
+          "claim": "The current Spring Garden directory lists Steve-O-Reno’s Cappuccino and links the same owner domain."
+        },
+        {
+          "type": "government_food_inspection_registry",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=4634967",
+          "observedAt": "2026-11-12T19:27:53Z",
+          "claim": "Nova Scotia inspection facility 4634967 records Steve-O-Reno’s Cafe at 5415 Doyle, Halifax in the snapshot current as of November 12, 2026."
+        }
+      ]
+    },
+    {
       "restaurantId": "osm-node-8089843368-smokehouse-brewery",
       "fields": {
         "operatingStatus": "replaced",
@@ -3939,23 +3985,53 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
       "fields": {
         "hours": {
           "monday": [
-            { "open": "11:30", "close": "22:00", "overnight": false, "sourceForm": "reviewed_visible_official_hours" }
+            {
+              "open": "11:30",
+              "close": "22:00",
+              "overnight": false,
+              "sourceForm": "reviewed_visible_official_hours"
+            }
           ],
           "tuesday": [],
           "wednesday": [
-            { "open": "11:30", "close": "23:00", "overnight": false, "sourceForm": "reviewed_visible_official_hours" }
+            {
+              "open": "11:30",
+              "close": "23:00",
+              "overnight": false,
+              "sourceForm": "reviewed_visible_official_hours"
+            }
           ],
           "thursday": [
-            { "open": "11:30", "close": "23:00", "overnight": false, "sourceForm": "reviewed_visible_official_hours" }
+            {
+              "open": "11:30",
+              "close": "23:00",
+              "overnight": false,
+              "sourceForm": "reviewed_visible_official_hours"
+            }
           ],
           "friday": [
-            { "open": "11:30", "close": "00:00", "overnight": true, "sourceForm": "reviewed_visible_official_hours" }
+            {
+              "open": "11:30",
+              "close": "00:00",
+              "overnight": true,
+              "sourceForm": "reviewed_visible_official_hours"
+            }
           ],
           "saturday": [
-            { "open": "11:30", "close": "00:00", "overnight": true, "sourceForm": "reviewed_visible_official_hours" }
+            {
+              "open": "11:30",
+              "close": "00:00",
+              "overnight": true,
+              "sourceForm": "reviewed_visible_official_hours"
+            }
           ],
           "sunday": [
-            { "open": "11:30", "close": "22:00", "overnight": false, "sourceForm": "reviewed_visible_official_hours" }
+            {
+              "open": "11:30",
+              "close": "22:00",
+              "overnight": false,
+              "sourceForm": "reviewed_visible_official_hours"
+            }
           ]
         },
         "hoursVerifiedAt": "2026-10-25T17:13:47Z",
