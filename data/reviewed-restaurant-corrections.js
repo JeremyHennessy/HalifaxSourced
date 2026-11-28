@@ -1,6 +1,6 @@
 window.HALIFAX_RESTAURANT_CORRECTIONS = {
   "version": 3,
-  "reviewedAt": "2026-11-21",
+  "reviewedAt": "2026-11-28",
   "policy": "Reviewed location evidence overrides stale imports; observation dates are retained and uncertain coordinates, hours, successor identities and closure day remain unknown.",
   "records": [
     {
@@ -1027,6 +1027,19 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
       "observedAt": "2026-11-13T21:16:01Z",
       "reviewedAt": "2026-11-13T21:16:01Z",
       "reviewState": "verified"
+    },
+    {
+      "restaurantId": "osm-node-4417927494-primal-kitchen",
+      "fields": {
+        "operatingStatus": "replaced",
+        "openingHours": null,
+        "successorId": "zen-house-halifax"
+      },
+      "sourceUrl": "https://www.yellowpages.ca/search/si/1/Primal-Kitchen/Halifax%2BNS?mrchnd=1",
+      "claim": "The current Zen House owner site identifies Zen House at the exact 1463 Brenton Street address formerly represented by the stale Primal Kitchen OpenStreetMap record, and publishes its current phone, weekly hours and menu. The Spring Garden business directory links the same Zen House owner domain, while the Nova Scotia food-inspection registry independently records Zen House at 1463 Brenton. Yellow Pages explicitly marks Primal Kitchen at this exact address permanently closed. Archive Primal Kitchen as replaced while retaining its source history; the predecessor closure and replacement dates remain unknown, and its coordinates, cuisines, contact details, events, offers and media rights are not transferred to Zen House.",
+      "observedAt": "2026-11-28T05:19:15Z",
+      "reviewedAt": "2026-11-28T05:19:15Z",
+      "reviewState": "verified"
     }
   ],
   "aliases": [
@@ -1324,6 +1337,69 @@ window.HALIFAX_RESTAURANT_CORRECTIONS = {
     }
   ],
   "additions": [
+    {
+      "id": "zen-house-halifax",
+      "name": "Zen House",
+      "address": "1463 Brenton Street, Halifax, NS B3J 3S7",
+      "neighborhood": "Spring Garden",
+      "category": "Restaurant",
+      "website": "https://zenhousehalifax.com/",
+      "menuUrl": "https://zenhousehalifax.com/menu/",
+      "phone": "902-407-3388",
+      "coordinates": null,
+      "openingHours": "Mo-Su 11:00-22:00",
+      "operatingStatus": "active",
+      "operatingStatusEvidence": {
+        "claim": "The current single-location owner site identifies Zen House at 1463 Brenton Street, Halifax, publishes phone 902-407-3388, a current itemized menu and daily 11am-10pm hours. The current Spring Garden business directory links the same owner domain, and the Nova Scotia food-inspection snapshot current as of November 12, 2026 independently records Zen House at 1463 Brenton. The stale Primal Kitchen record at this address is archived separately; its coordinates, cuisines, contact details, events, offers and media rights are not transferred. No social profile or current social-content claim is inferred.",
+        "sourceUrl": "https://zenhousehalifax.com/location/",
+        "observedAt": "2026-11-28T05:19:15Z",
+        "reviewState": "verified",
+        "location": "1463 Brenton Street, Halifax, NS B3J 3S7"
+      },
+      "cuisines": [
+        "Sushi",
+        "Japanese"
+      ],
+      "vibe": [
+        "casual",
+        "local"
+      ],
+      "specials": [],
+      "events": [],
+      "socialProfiles": [],
+      "sources": [
+        {
+          "type": "business_directory",
+          "label": "Current Spring Garden restaurant listing and owner-domain link",
+          "url": "https://www.springgardenarea.com/eat-drink",
+          "observedAt": "2026-11-27T19:48:33.706Z",
+          "status": "verified"
+        },
+        {
+          "type": "official_website",
+          "label": "Owner location, phone and complete weekly hours",
+          "url": "https://zenhousehalifax.com/location/",
+          "observedAt": "2026-11-28T05:19:15Z",
+          "status": "verified"
+        },
+        {
+          "type": "menu",
+          "label": "Current itemized owner menu",
+          "url": "https://zenhousehalifax.com/menu/",
+          "observedAt": "2026-11-28T05:19:15Z",
+          "status": "verified"
+        },
+        {
+          "type": "government_inspection",
+          "label": "Nova Scotia food-establishment record current as of November 12, 2026",
+          "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=3341269",
+          "observedAt": "2026-11-12T19:27:53.425Z",
+          "status": "verified"
+        }
+      ],
+      "evidenceStatus": "verified",
+      "sourceLayer": "reviewed_location_correction"
+    },
     {
       "id": "902-restaurant-catering-halifax",
       "name": "902 Restaurant & Catering",
