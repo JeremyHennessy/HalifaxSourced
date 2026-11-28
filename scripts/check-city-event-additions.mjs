@@ -141,6 +141,13 @@ if (mergedEvents.some((event) => event.id === "halifax-public-libraries-138e27ae
 
 const currentExactDetailEvents = [
   {
+    id: "the-carleton-0eae8c2cad42cb32",
+    startAt: "2026-11-28T17:00:00.000Z",
+    endAt: "2026-11-28T18:30:00.000Z",
+    tourismUrl: "https://www.thecarleton.ca/events/kenny-dolly-nov28/",
+    ownerUrl: "https://www.thecarleton.ca/music/upcoming-performances/?direct=true"
+  },
+  {
     id: "https://novascotia.com/event/cheerexpo-national-cheerleading-championships/#event",
     startAt: "2027-03-19T00:00:00.000Z",
     endAt: "2027-03-21T00:00:00.000Z",
