@@ -361,6 +361,67 @@ window.HALIFAX_DISCOVERED_RESTAURANTS = [
     }
   },
   {
+    "id": "metro-deli-cafe-grill-dartmouth",
+    "name": "Metro Deli Cafe + Grill",
+    "neighborhood": "Downtown Dartmouth",
+    "category": "Restaurant",
+    "cuisines": ["Deli", "Cafe"],
+    "vibe": ["local"],
+    "qualityScore": null,
+    "freshnessDate": "2026-11-27",
+    "evidenceStatus": "verified",
+    "sourceLayer": "local_discovery",
+    "address": "45 Alderney Drive, Ground Floor, Dartmouth, NS B2Y 2N6",
+    "phone": "902-446-3146",
+    "email": null,
+    "contactUrl": null,
+    "contactScope": null,
+    "fieldEvidence": null,
+    "openingHoursVerifiedAt": null,
+    "hoursValidThrough": null,
+    "hoursScope": null,
+    "website": null,
+    "openingHours": null,
+    "operatingStatus": "active",
+    "operatingStatusEvidence": {
+      "claim": "The current Downtown Dartmouth business directory and the current Nova Scotia food-establishment registry independently list Metro Deli Cafe + Grill at 45 Alderney Drive with the same location identity.",
+      "sourceUrl": "https://www.downtowndartmouth.ca/fooddrink",
+      "location": "45 Alderney Drive, Ground Floor, Dartmouth, NS B2Y 2N6",
+      "observedAt": "2026-11-27T19:48:34.404Z",
+      "verifiedAt": "2026-11-27T19:48:34.404Z",
+      "reviewState": "verified"
+    },
+    "seasonality": null,
+    "lifecycleSchedule": null,
+    "ownershipEvidence": {
+      "claim": "Current local-business-district and provincial-registry evidence identifies one Dartmouth establishment under this local trade name; no non-local chain or franchise identity is attached. Present beneficial ownership was not independently verified.",
+      "confidence": "reviewed local-business evidence",
+      "sourceUrls": ["https://www.downtowndartmouth.ca/fooddrink", "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2879799"],
+      "observedAt": "2026-11-27"
+    },
+    "openingStatus": null,
+    "coordinates": null,
+    "socialProfiles": [{
+      "platform": "facebook",
+      "url": "https://www.facebook.com/metrodelicafe/",
+      "associationBasis": "trusted_directory_explicit_link",
+      "observedAt": "2026-11-27T19:48:34.404Z",
+      "reviewState": "verified_link"
+    }],
+    "summary": "Independent Downtown Dartmouth deli and cafe on the ground floor of Queen Square. Hours and menu remain unverified.",
+    "specials": [],
+    "events": [],
+    "sources": [
+      {"label": "Downtown Dartmouth Food & Drink directory", "type": "downtown_dartmouth_directory", "url": "https://www.downtowndartmouth.ca/fooddrink", "status": "verified", "observedAt": "2026-11-27T19:48:34.404Z"},
+      {"label": "Nova Scotia food-establishment registry", "type": "government_food_inspection_registry", "url": "https://novascotia.ca/nse/food-protection/reports/Details.aspx?Id1=2879799", "status": "verified", "observedAt": "2026-11-12T19:27:53.425Z"}
+    ],
+    "discoveryReview": {
+      "approvedByOverride": true,
+      "sourceLeadObserved": false,
+      "reviewNote": "The current BIA directory and government registry agree on name and exact civic location. The directory-linked Facebook URL is retained only as an identity pointer; no Meta API or social-content refresh was attempted. Historical third-party hours and the obsolete metrodeli.ca domain were not published."
+    }
+  },
+  {
     "id": "darty-brewing-dartmouth",
     "name": "Darty Brewing Co.",
     "neighborhood": "Downtown Dartmouth",
