@@ -34,6 +34,14 @@
       const evidence = { type: 'official_reviewed_correction', label: correction.claim, url: correction.sourceUrl, observedAt: correction.observedAt, reviewedAt: correction.reviewedAt, status: 'verified' };
       record.sources = record.sources.filter(item => item.type !== evidence.type || item.url !== evidence.url);
       record.sources.push(evidence);
+      if (correction.fields.menuUrl) {
+        const menuSource = { type: 'menu', label: 'Official menu', url: correction.fields.menuUrl, observedAt: correction.observedAt, reviewedAt: correction.reviewedAt, status: 'verified' };
+        const hasMenuLink = (record.menuLinks || []).some(item => item.url === menuSource.url);
+        if (!hasMenuLink && !record.sources.some(item => item.url === menuSource.url)) record.sources.push(menuSource);
+        const menuLink = { label: menuSource.label, url: menuSource.url, verified: true, sourceKind: 'reviewed_correction' };
+        if (!hasMenuLink) record.menuLinks = [...(record.menuLinks || []), menuLink];
+        record.hasMenu = true;
+      }
       if (correction.fields.operatingStatus) record.operatingStatusEvidence = { ...evidence, sourceUrl: correction.sourceUrl, claim: correction.claim, location: record.address || correction.location, reviewState: 'verified', effectiveDate: correction.effectiveDate || null };
     }
     for (const record of records) {

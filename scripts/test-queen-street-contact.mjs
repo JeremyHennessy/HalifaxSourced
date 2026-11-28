@@ -114,15 +114,21 @@ try {
   const catalogQueen = catalogAfter.find(record => record.id === QUEEN);
   assert.equal(catalogQueen.phone, final.phone, 'Runtime and export retain the same accepted contact');
   assert.equal(catalogQueen.reviewedPlaceResolution.observedAt, OBSERVED);
+  assert(catalogQueen.menuLinks.some(link => link.url === MENU), 'Export publishes the reviewed exact menu link');
+  assert(catalogQueen.sources.some(source => source.type === 'menu' && source.url === MENU), 'Export retains reviewed menu provenance');
   for (const record of catalogBefore) {
     const next = catalogAfter.find(item => item.id === record.id);
     if (record.id !== QUEEN) assert.deepEqual(next, record, `Unrelated catalog record changed: ${record.id}`);
     else {
-      const original = { ...next, sources: next.sources.filter(source => source.type !== 'official_reviewed_correction' || source.url !== LOCATION) };
+      const original = { ...next, sources: next.sources.filter(source => (source.type !== 'official_reviewed_correction' || source.url !== LOCATION) && (source.type !== 'menu' || source.url !== MENU)) };
       original.phone = record.phone;
       original.website = record.website;
       original.menuUrl = record.menuUrl;
+      original.menuLinks = record.menuLinks;
+      original.hasMenu = record.hasMenu;
       if (record.menuUrl === undefined) delete original.menuUrl;
+      if (record.menuLinks === undefined) delete original.menuLinks;
+      if (record.hasMenu === undefined) delete original.hasMenu;
       delete original.reviewedCorrection;
       assert.deepEqual(original, record, 'Export changes only the accepted phone, exact branch links and review provenance');
     }
