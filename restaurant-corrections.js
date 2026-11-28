@@ -36,10 +36,9 @@
       record.sources.push(evidence);
       if (correction.fields.menuUrl) {
         const menuSource = { type: 'menu', label: 'Official menu', url: correction.fields.menuUrl, observedAt: correction.observedAt, reviewedAt: correction.reviewedAt, status: 'verified' };
-        record.sources = record.sources.filter(item => item.type !== menuSource.type || item.url !== menuSource.url);
-        record.sources.push(menuSource);
+        if (!record.sources.some(item => item.url === menuSource.url)) record.sources.push(menuSource);
         const menuLink = { label: menuSource.label, url: menuSource.url, verified: true, sourceKind: 'reviewed_correction' };
-        record.menuLinks = [...new Map([...(record.menuLinks || []), menuLink].map(item => [item.url, item])).values()];
+        if (!(record.menuLinks || []).some(item => item.url === menuLink.url)) record.menuLinks = [...(record.menuLinks || []), menuLink];
         record.hasMenu = true;
       }
       if (correction.fields.operatingStatus) record.operatingStatusEvidence = { ...evidence, sourceUrl: correction.sourceUrl, claim: correction.claim, location: record.address || correction.location, reviewState: 'verified', effectiveDate: correction.effectiveDate || null };
