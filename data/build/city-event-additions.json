@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-27T22:22:17Z",
+  "generatedAt": "2026-11-28T08:21:17Z",
   "policy": "Curated city-event additions are source-backed records used when current official or local calendars have not yet been promoted into the primary city-events build.",
   "sources": [
     {
@@ -1609,6 +1609,62 @@
           "observedFacts": [
             "Event scheduled for November 28, 2026 from 10:00 a.m.–12:00 p.m. at Keshen Goodman Public Library.",
             "The official detail page showed registration open with 27 seats remaining when reviewed."
+          ]
+        }
+      ]
+    },
+    {
+      "allDay": false,
+      "venueName": "The Carleton",
+      "address": "1685 Argyle Street, Halifax, NS",
+      "city": "Halifax",
+      "price": null,
+      "ticketUrl": null,
+      "sourceId": "the-carleton",
+      "sourceName": "The Carleton",
+      "sourceKind": "official_venue_calendar",
+      "reviewState": "source_observed",
+      "venueId": "the-carleton-halifax",
+      "neighbourhood": "Downtown",
+      "organizerId": "the-carleton",
+      "organizerName": "The Carleton",
+      "restaurantId": "osm-node-771690675-the-carleton",
+      "observedAt": "2026-11-28T08:21:17Z",
+      "id": "the-carleton-0eae8c2cad42cb32",
+      "supersedesEventIds": [],
+      "alternateSources": [],
+      "title": "Kenny & Dolly’s A Christmas To Remember – Matinée!",
+      "startAt": "2026-11-28T17:00:00.000Z",
+      "endAt": "2026-11-28T18:30:00.000Z",
+      "categories": [
+        "Music",
+        "Arts"
+      ],
+      "eventUrl": "https://www.thecarleton.ca/events/kenny-dolly-nov28/",
+      "sourceUrl": "https://www.thecarleton.ca/events/kenny-dolly-nov28/",
+      "sourceEvidence": [
+        {
+          "sourceId": "the-carleton",
+          "sourceName": "The Carleton",
+          "sourceUrl": "https://www.thecarleton.ca/events/kenny-dolly-nov28/",
+          "basis": "official_primary",
+          "observedAt": "2026-11-28T08:21:17Z",
+          "httpStatus": 200,
+          "eventStatus": "https://schema.org/EventScheduled",
+          "observedFacts": [
+            "The official detail page lists November 28, 2026 from 1:00–2:30 p.m. at The Carleton.",
+            "The official detail and upcoming-performance pages both retained the occurrence during review; availability wording differed, so no current ticket-availability claim is asserted."
+          ]
+        },
+        {
+          "sourceId": "the-carleton",
+          "sourceName": "The Carleton",
+          "sourceUrl": "https://www.thecarleton.ca/music/upcoming-performances/?direct=true",
+          "basis": "official_primary",
+          "observedAt": "2026-11-28T08:21:17Z",
+          "httpStatus": 200,
+          "observedFacts": [
+            "The current official upcoming-performances page includes the same November 28 matinée occurrence."
           ]
         }
       ]
